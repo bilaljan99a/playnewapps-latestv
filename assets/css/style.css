@@ -1652,6 +1652,239 @@ picture, img {
     text-align: right;
 }
 
+/* ==========================================================================
+   Comparison Table Styling (Modern & Fully Responsive)
+   ========================================================================== */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 2rem 0;
+    border-radius: 14px;
+    border: 1px solid var(--border-color);
+    background: var(--surface-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+    outline: none;
+}
+
+.table-responsive:focus-visible {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.table-responsive::-webkit-scrollbar {
+    height: 7px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.03);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: rgba(100, 116, 139, 0.3);
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: rgba(100, 116, 139, 0.5);
+}
+
+table.comparison-table,
+.review-section table,
+#dynamic-review-body table {
+    width: 100%;
+    min-width: 720px;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+/* Header Row Styling */
+table.comparison-table thead,
+.review-section table thead,
+#dynamic-review-body table thead {
+    background-color: rgba(241, 245, 249, 0.9);
+}
+
+[data-theme="dark"] table.comparison-table thead,
+[data-theme="dark"] .review-section table thead,
+[data-theme="dark"] #dynamic-review-body table thead {
+    background-color: rgba(30, 41, 59, 0.9);
+}
+
+table.comparison-table thead th,
+.review-section table thead th,
+#dynamic-review-body table thead th {
+    padding: 1.125rem 1.25rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--border-color);
+    vertical-align: middle;
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* Featured Product Column (2nd Column / Subject of Review) */
+table.comparison-table thead th:nth-child(2),
+.review-section table thead th:nth-child(2),
+#dynamic-review-body table thead th:nth-child(2) {
+    background-color: rgba(37, 99, 235, 0.1);
+    color: var(--primary-color);
+    font-weight: 800;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+[data-theme="dark"] table.comparison-table thead th:nth-child(2),
+[data-theme="dark"] .review-section table thead th:nth-child(2),
+[data-theme="dark"] #dynamic-review-body table thead th:nth-child(2) {
+    background-color: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    border-bottom: 2px solid #38bdf8;
+}
+
+/* Body Cell Padding, Alignment, and Borders */
+table.comparison-table tbody th,
+table.comparison-table tbody td,
+.review-section table tbody th,
+.review-section table tbody td,
+#dynamic-review-body table tbody th,
+#dynamic-review-body table tbody td {
+    padding: 1rem 1.25rem;
+    vertical-align: middle;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 400;
+    color: var(--text-primary);
+}
+
+/* Remove border from last row */
+table.comparison-table tbody tr:last-child th,
+table.comparison-table tbody tr:last-child td,
+.review-section table tbody tr:last-child th,
+.review-section table tbody tr:last-child td,
+#dynamic-review-body table tbody tr:last-child th,
+#dynamic-review-body table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Row Headers (1st Column - Metrics / Features) */
+table.comparison-table tbody tr th:first-child,
+table.comparison-table tbody tr td:first-child,
+.review-section table tbody tr th:first-child,
+.review-section table tbody tr td:first-child,
+#dynamic-review-body table tbody tr th:first-child,
+#dynamic-review-body table tbody tr td:first-child {
+    font-weight: 600;
+    color: var(--text-primary);
+    background-color: rgba(248, 250, 252, 0.8);
+    white-space: nowrap;
+    min-width: 170px;
+    border-right: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] table.comparison-table tbody tr th:first-child,
+[data-theme="dark"] table.comparison-table tbody tr td:first-child,
+[data-theme="dark"] .review-section table tbody tr th:first-child,
+[data-theme="dark"] .review-section table tbody tr td:first-child,
+[data-theme="dark"] #dynamic-review-body table tbody tr th:first-child,
+[data-theme="dark"] #dynamic-review-body table tbody tr td:first-child {
+    background-color: rgba(15, 23, 42, 0.4);
+}
+
+/* Featured Column Body Cells (2nd Column) */
+table.comparison-table tbody tr th:nth-child(2),
+table.comparison-table tbody tr td:nth-child(2),
+.review-section table tbody tr th:nth-child(2),
+.review-section table tbody tr td:nth-child(2),
+#dynamic-review-body table tbody tr th:nth-child(2),
+#dynamic-review-body table tbody tr td:nth-child(2) {
+    font-weight: 600;
+    background-color: rgba(37, 99, 235, 0.035);
+    min-width: 165px;
+}
+
+[data-theme="dark"] table.comparison-table tbody tr th:nth-child(2),
+[data-theme="dark"] table.comparison-table tbody tr td:nth-child(2),
+[data-theme="dark"] .review-section table tbody tr th:nth-child(2),
+[data-theme="dark"] .review-section table tbody tr td:nth-child(2),
+[data-theme="dark"] #dynamic-review-body table tbody tr th:nth-child(2),
+[data-theme="dark"] #dynamic-review-body table tbody tr td:nth-child(2) {
+    background-color: rgba(56, 189, 248, 0.05);
+}
+
+/* Other Data Columns Sizing */
+table.comparison-table tbody tr th:nth-child(n+3),
+table.comparison-table tbody tr td:nth-child(n+3),
+.review-section table tbody tr th:nth-child(n+3),
+.review-section table tbody tr td:nth-child(n+3),
+#dynamic-review-body table tbody tr th:nth-child(n+3),
+#dynamic-review-body table tbody tr td:nth-child(n+3) {
+    min-width: 145px;
+}
+
+/* Alternating Row Colors (Zebra Striping) */
+table.comparison-table tbody tr:nth-child(even),
+.review-section table tbody tr:nth-child(even),
+#dynamic-review-body table tbody tr:nth-child(even) {
+    background-color: rgba(241, 245, 249, 0.4);
+}
+
+[data-theme="dark"] table.comparison-table tbody tr:nth-child(even),
+[data-theme="dark"] .review-section table tbody tr:nth-child(even),
+[data-theme="dark"] #dynamic-review-body table tbody tr:nth-child(even) {
+    background-color: rgba(30, 41, 59, 0.35);
+}
+
+/* Interactive Hover Feedback */
+table.comparison-table tbody tr:hover,
+.review-section table tbody tr:hover,
+#dynamic-review-body table tbody tr:hover {
+    background-color: rgba(37, 99, 235, 0.06);
+    transition: background-color var(--transition-fast);
+}
+
+[data-theme="dark"] table.comparison-table tbody tr:hover,
+[data-theme="dark"] .review-section table tbody tr:hover,
+[data-theme="dark"] #dynamic-review-body table tbody tr:hover {
+    background-color: rgba(56, 189, 248, 0.08);
+}
+
+/* Responsive Scaling for Mobile Screens */
+@media (max-width: 768px) {
+    .table-responsive {
+        margin: 1.25rem 0;
+        border-radius: 10px;
+    }
+
+    table.comparison-table,
+    .review-section table,
+    #dynamic-review-body table {
+        min-width: 650px;
+        font-size: 0.875rem;
+    }
+
+    table.comparison-table thead th,
+    table.comparison-table tbody th,
+    table.comparison-table tbody td,
+    .review-section table thead th,
+    .review-section table tbody th,
+    .review-section table tbody td,
+    #dynamic-review-body table thead th,
+    #dynamic-review-body table tbody th,
+    #dynamic-review-body table tbody td {
+        padding: 0.875rem 1rem;
+    }
+}
+
 /* Review Sections */
 .review-section {
     margin-bottom: 3rem;

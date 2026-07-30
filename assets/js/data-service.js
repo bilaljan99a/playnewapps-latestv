@@ -1,13 +1,22 @@
 class DataService {
     static async fetchJSON(path) {
-        try {
-            const response = await fetch(path);
-            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-            return await response.json();
-        } catch (error) {
-            console.error('Error fetching data:', error);
-            return null;
+        const candidatePaths = [
+            path,
+            path.startsWith('/') ? path.slice(1) : '/' + path,
+            '.' + (path.startsWith('/') ? path : '/' + path)
+        ];
+
+        for (const p of candidatePaths) {
+            try {
+                const response = await fetch(p);
+                if (response.ok) {
+                    return await response.json();
+                }
+            } catch (err) {
+                // Ignore and try fallback path candidate
+            }
         }
+        return null;
     }
 
     static async getApps() { return await this.fetchJSON('/data/apps.json') || []; }

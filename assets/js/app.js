@@ -34,7 +34,7 @@ class App {
             if (suggestionsBox) {
                 if (results.length > 0) {
                     suggestionsBox.innerHTML = results.map(r => `
-                        <a href="/reviews/${r.id}" class="suggestion-item">
+                        <a href="review.html?id=${r.id}" class="suggestion-item">
                             <img src="${r.icon}" alt="${r.title} icon" width="30" height="30">
                             <span>${r.title}</span>
                         </a>
@@ -542,6 +542,21 @@ class App {
             if (review.contentHtml) {
                 dynamicBody.style.display = 'block';
                 dynamicBody.innerHTML = review.contentHtml;
+                
+                // Enhance comparison tables for responsiveness & accessibility
+                const tables = dynamicBody.querySelectorAll('table');
+                tables.forEach(table => {
+                    table.classList.add('comparison-table');
+                    if (!table.parentElement.classList.contains('table-responsive')) {
+                        const wrapper = document.createElement('div');
+                        wrapper.className = 'table-responsive';
+                        wrapper.setAttribute('tabindex', '0');
+                        wrapper.setAttribute('role', 'region');
+                        wrapper.setAttribute('aria-label', `${review.title || 'App'} Comparison Table`);
+                        table.parentNode.insertBefore(wrapper, table);
+                        wrapper.appendChild(table);
+                    }
+                });
             } else if (review.summary) {
                 dynamicBody.style.display = 'block';
                 dynamicBody.innerHTML = `
