@@ -1593,6 +1593,7 @@ picture, img {
 }
 
 .main-column {
+    max-width: 100%;
     flex: 1;
     min-width: 0;
 }
@@ -1656,6 +1657,8 @@ picture, img {
    Comparison Table Styling (Modern & Fully Responsive)
    ========================================================================== */
 .table-responsive {
+    max-width: 100vw;
+    box-sizing: border-box;
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -1861,6 +1864,8 @@ table.comparison-table tbody tr:hover,
 /* Responsive Scaling for Mobile Screens */
 @media (max-width: 768px) {
     .table-responsive {
+    max-width: 100vw;
+    box-sizing: border-box;
         margin: 1.25rem 0;
         border-radius: 10px;
     }

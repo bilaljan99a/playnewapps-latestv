@@ -420,7 +420,7 @@ class App {
 
         // 1. Update Title & SEO Metadata
         document.title = `${review.title} Review 2026 | PlayNewApps`;
-      const canonicalUrl = `https://playnewapps.store/reviews/${review.id}`;
+      const canonicalUrl = `https://playnewapps.store/review.html?id=${review.id}`;
         
         const updateMeta = (selector, attr, content) => {
             const el = document.querySelector(selector);
@@ -539,9 +539,9 @@ class App {
         // 5. Dynamic Review Content Body
         const dynamicBody = document.getElementById('dynamic-review-body');
         if (dynamicBody) {
-            if (review.contentHtml) {
+            if (review.contentHtml || review.body) {
                 dynamicBody.style.display = 'block';
-                dynamicBody.innerHTML = review.contentHtml;
+                dynamicBody.innerHTML = review.contentHtml || review.body;
                 
                 // Enhance comparison tables for responsiveness & accessibility
                 const tables = dynamicBody.querySelectorAll('table');
@@ -762,6 +762,20 @@ App.initAuthorPage = async function() {
     if (heroTitle) heroTitle.textContent = author ? author.name : 'Author Not Found';
     const heroSub = document.querySelector('.hero-subtitle');
     if (heroSub) heroSub.textContent = author ? author.role : '';
+
+    if (author) {
+        document.title = `${author.name} - PlayNewApps Author`;
+        const canonicalUrl = `https://playnewapps.store/author.html?id=${author.id}`;
+        const updateMeta = (selector, attr, content) => {
+            const el = document.querySelector(selector);
+            if (el) el.setAttribute(attr, content);
+        };
+        updateMeta('meta[name="description"]', 'content', author.bio || '');
+        updateMeta('#canonical-url', 'href', canonicalUrl);
+        updateMeta('meta[property="og:url"]', 'content', canonicalUrl);
+        updateMeta('meta[property="og:title"]', 'content', `${author.name} - PlayNewApps Author`);
+        updateMeta('meta[property="og:description"]', 'content', author.bio || '');
+    }
     
     // Clear sliders and deals
     const slider = document.getElementById('featured');
@@ -818,6 +832,18 @@ App.initStorePage = async function() {
     }
 
     document.title = `${store.name} Promo Codes & Deals | PlayNewApps`;
+    
+    // Update Meta tags
+    const canonicalUrl = `https://playnewapps.store/store.html?id=${store.id}`;
+    const updateMeta = (selector, attr, content) => {
+        const el = document.querySelector(selector);
+        if (el) el.setAttribute(attr, content);
+    };
+    updateMeta('meta[name="description"]', 'content', store.about || '');
+    updateMeta('#canonical-url', 'href', canonicalUrl);
+    updateMeta('meta[property="og:url"]', 'content', canonicalUrl);
+    updateMeta('meta[property="og:title"]', 'content', `${store.name} Promo Codes & Deals`);
+    updateMeta('meta[property="og:description"]', 'content', store.about || '');
     
     // Header Info
     document.getElementById('breadcrumb-store').textContent = store.name;
