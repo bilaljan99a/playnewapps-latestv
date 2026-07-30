@@ -1778,17 +1778,42 @@ picture, img {
     opacity: 0.5;
 }
 
-.play-icon {
+.play-overlay-badge {
     position: absolute;
-    font-size: 5rem;
-    color: #fff;
     z-index: 2;
-    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1.25rem 2rem;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+    transition: transform var(--transition-fast), background var(--transition-fast);
+}
+
+.video-placeholder:hover .play-overlay-badge {
+    transform: scale(1.05);
+    background: rgba(15, 23, 42, 0.88);
+}
+
+.play-icon {
+    font-size: 3.5rem;
+    color: #38bdf8;
+    filter: drop-shadow(0 4px 12px rgba(56, 189, 248, 0.4));
     transition: transform var(--transition-fast);
 }
 
-.video-placeholder:hover .play-icon {
-    transform: scale(1.1);
+.video-play-text {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
 }
 
 .video-container iframe {

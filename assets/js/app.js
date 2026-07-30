@@ -237,9 +237,18 @@ class App {
         // 1. Affiliate Buttons
         const affiliateContainer = document.getElementById('affiliate-buttons-container');
         if (affiliateContainer) {
-            if (review.affiliateLinks && review.affiliateLinks.length > 0) {
+            let links = review.affiliateLinks;
+            if ((!links || links.length === 0) && review.downloads && review.downloads.length > 0) {
+                links = review.downloads.map(d => ({
+                    label: d.storeId === 'apple' ? 'Get on Apple App Store' : (d.storeId === 'google' ? 'Get on Google Play' : 'Official Site'),
+                    url: d.url,
+                    isPrimary: d.storeId === 'apple' || d.storeId === 'google',
+                    icon: d.storeId === 'apple' ? 'apple' : (d.storeId === 'google' ? 'android' : 'open_in_new')
+                }));
+            }
+            if (links && links.length > 0) {
                 affiliateContainer.style.display = 'flex';
-                affiliateContainer.innerHTML = review.affiliateLinks.map(link => `
+                affiliateContainer.innerHTML = links.map(link => `
                     <a href="${link.url}" target="_blank" rel="noopener sponsored" class="btn ${link.isPrimary ? 'btn-primary cta-pulse' : 'btn-outline'} affiliate-btn">
                         ${link.icon ? `<span class="material-icons-round">${link.icon}</span>` : ''} ${link.label}
                     </a>
@@ -387,7 +396,16 @@ class App {
 
         let review = allReviews.find(r => r.id === id);
         if (!review && id) {
-            review = allReviews.find(r => r.id.toLowerCase() === id.toLowerCase());
+            const cleanId = id.toLowerCase().replace(/[^a-z0-9]/g, '');
+            review = allReviews.find(r => {
+                const rCleanId = r.id.toLowerCase().replace(/[^a-z0-9]/g, '');
+                const rCleanTitle = r.title.toLowerCase().replace(/[^a-z0-9]/g, '');
+                return r.id.toLowerCase() === id.toLowerCase() ||
+                       rCleanId === cleanId ||
+                       rCleanTitle === cleanId ||
+                       rCleanId.includes(cleanId) ||
+                       cleanId.includes(rCleanId);
+            });
         }
 
         if (!review) {
@@ -583,19 +601,40 @@ class App {
         // 8. Video Review Section
         const videoSection = document.getElementById('video-section');
         const videoContainer = document.querySelector('.video-container');
-        if (review.video && (review.video.thumbnail || review.video.embedUrl)) {
+        if (review.video && (review.video.thumbnail || review.video.embedUrl || review.video.youtubeId)) {
             if (videoSection) videoSection.style.display = 'block';
             if (videoContainer) {
-                if (review.video.embedUrl) {
-                    videoContainer.innerHTML = `<iframe src="${review.video.embedUrl}" title="${review.title} Video Review" frameborder="0" allowfullscreen></iframe>`;
-                } else {
+                const embedUrl = review.video.embedUrl || (review.video.youtubeId ? `https://www.youtube.com/embed/${review.video.youtubeId}` : '');
+                const thumbUrl = review.video.thumbnail || (review.video.youtubeId ? `https://img.youtube.com/vi/${review.video.youtubeId}/maxresdefault.jpg` : '');
+                
+                if (embedUrl) {
                     videoContainer.innerHTML = `
-                        <div class="video-preview-wrapper card">
-                            <img src="${review.video.thumbnail}" alt="${review.title} Video Preview" class="video-thumbnail">
-                            <div class="video-play-overlay">
+                        <div class="video-placeholder card" tabindex="0" role="button" aria-label="Play ${review.title} Video Review">
+                            <img src="${thumbUrl}" alt="${review.video.title || review.title + ' Official Video Tutorial'}" class="video-thumbnail" loading="lazy">
+                            <div class="play-overlay-badge">
                                 <span class="material-icons-round play-icon">play_circle_filled</span>
-                                <span>Watch Video Review</span>
+                                <span class="video-play-text">${review.video.title || 'Watch Official Video Tutorial'}</span>
                             </div>
+                        </div>`;
+                    
+                    const placeholder = videoContainer.querySelector('.video-placeholder');
+                    if (placeholder) {
+                        const loadIframe = () => {
+                            videoContainer.innerHTML = `<iframe src="${embedUrl}?autoplay=1" title="${review.title} Video Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+                        };
+                        placeholder.addEventListener('click', loadIframe);
+                        placeholder.addEventListener('keydown', (e) => {
+                            if (e.key === 'Enter' || e.key === ' ') {
+                                e.preventDefault();
+                                loadIframe();
+                            }
+                        });
+                    }
+                } else if (thumbUrl) {
+                    videoContainer.innerHTML = `
+                        <div class="video-placeholder card">
+                            <img src="${thumbUrl}" alt="${review.title} Video Preview" class="video-thumbnail" loading="lazy">
+                            <span class="material-icons-round play-icon">play_circle_filled</span>
                         </div>`;
                 }
             }
@@ -662,7 +701,10 @@ class App {
         const skeleton = document.getElementById('review-loading-skeleton');
         const article = document.getElementById('review-article');
         if (skeleton) skeleton.style.display = 'none';
-        if (article) article.style.display = 'block';
+        if (article) {
+            article.style.display = 'block';
+            article.classList.add('active');
+        }
     }
 
     static async renderRelatedContent(currentReview) {
