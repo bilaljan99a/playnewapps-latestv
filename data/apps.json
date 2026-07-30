@@ -50,11 +50,11 @@
             },
             {
                 "storeId": "google",
-                "url": "https://play.google.com/store/apps/details?id=com.lumatouch.lumafusion"
+                "url": "https://play.google.com/store/apps/details?id=com.luma_touch.lumafusion&hl=en"
             },
             {
                 "storeId": "official",
-                "url": "https://lumatouch.com/lumafusion-app/"
+                "url": "https://luma-touch.com/"
             }
         ],
         "screenshots": [
@@ -109,7 +109,7 @@
         "affiliateLinks": [
             {
                 "label": "Official LumaTouch Deal",
-                "url": "https://lumatouch.com/lumafusion-app/",
+                "url": "https://luma-touch.com/",
                 "isPrimary": true,
                 "type": "best-price",
                 "icon": "shopping_cart"
@@ -123,7 +123,7 @@
             },
             {
                 "label": "Get on Google Play",
-                "url": "https://play.google.com/store/apps/details?id=com.lumatouch.lumafusion",
+                "url": "https://play.google.com/store/apps/details?id=com.luma_touch.lumafusion&hl=en",
                 "isPrimary": false,
                 "type": "official",
                 "icon": "language"
@@ -133,7 +133,7 @@
             {
                 "store": "Official Store",
                 "price": "$29.99",
-                "url": "https://lumatouch.com/lumafusion-app/",
+                "url": "https://luma-touch.com/",
                 "isBest": true,
                 "badge": "Standard License"
             },
@@ -147,7 +147,7 @@
             {
                 "store": "Google Play Store",
                 "price": "$29.99",
-                "url": "https://play.google.com/store/apps/details?id=com.lumatouch.lumafusion",
+                "url": "https://play.google.com/store/apps/details?id=com.luma_touch.lumafusion&hl=en",
                 "isBest": false,
                 "badge": ""
             }
