@@ -1,0 +1,24 @@
+[
+    {
+        "id": "genshin-impact",
+        "title": "Genshin Impact",
+        "description": "Massive open-world action RPG featuring elemental combat mechanics, cross-platform play, and regular story expansions.",
+        "icon": "/assets/images/games/genshin-impact.svg",
+        "rating": 4.7,
+        "categoryId": "rpg",
+        "isFeatured": true,
+        "isLatest": true,
+        "tags": ["open world", "anime", "rpg"]
+    },
+    {
+        "id": "cod-mobile",
+        "title": "Call of Duty: Mobile",
+        "description": "Iconic first-person shooter featuring classic multiplayer maps, 100-player Battle Royale mode, and customized loadouts.",
+        "icon": "/assets/images/games/cod-mobile.svg",
+        "rating": 4.5,
+        "categoryId": "action",
+        "isFeatured": false,
+        "isLatest": true,
+        "tags": ["fps", "multiplayer", "action"]
+    }
+]

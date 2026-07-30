@@ -1,0 +1,260 @@
+[
+    {
+        "id": "lumafusion-pro",
+        "title": "LumaFusion Pro",
+        "description": "The ultimate mobile video editor for professionals. Desktop-grade multi-track editing on iPad, iPhone, and Android.",
+        "icon": "/assets/images/apps/lumafusion.svg",
+        "rating": 4.8,
+        "categoryId": "video-editors",
+        "developer": "Luma Touch LLC",
+        "version": "4.1.1",
+        "size": "185 MB",
+        "platforms": [
+            "iOS",
+            "Android",
+            "ChromeOS"
+        ],
+        "license": "One-time Purchase ($29.99)",
+        "updatedAt": "2024-05-15",
+        "badges": [
+            "Verified Review",
+            "Editor's Choice"
+        ],
+        "isFeatured": true,
+        "isTrending": true,
+        "summary": "LumaFusion Pro bridges the gap between mobile flexibility and professional NLE software. With multi-track magnetic timelines, robust 3D color correction, keyframe animation, and speed ramping, it remains the industry standard for content creators.",
+      "contentHtml": "<h2>LumaFusion Pro Review (2026)</h2><p>LumaFusion Pro is one of the most powerful professional video editing applications available for mobile devices. Developed by Luma Touch, it provides desktop-quality editing tools on iPhone, iPad, Android and ChromeOS. Whether you create YouTube videos, TikTok content, Instagram Reels, documentaries or client projects, LumaFusion delivers professional editing without requiring a desktop computer.</p><p>Unlike many mobile video editors that focus mainly on templates and automatic effects, LumaFusion gives creators full manual control over their projects. Editors can work with multiple video and audio tracks, apply professional colour correction, create keyframe animations, edit high-resolution footage and export videos in excellent quality.</p><h2>Why LumaFusion Stands Out</h2><p>LumaFusion has earned a reputation among professional creators because it combines powerful editing tools with an interface designed specifically for touch devices. It is regularly recommended by filmmakers, YouTubers and content creators who need professional results while working on mobile devices.</p><p>The application supports advanced editing workflows that are usually found only in desktop software. This makes it one of the few mobile editors capable of handling serious commercial projects.</p>",
+        "pros": [
+            "Up to 6 video/audio tracks for complex timeline editing",
+            "Intuitive magnetic timeline optimized for touch controls",
+            "Advanced 3D color grading with custom LUT import",
+            "One-time purchase without recurring subscription fees",
+            "Seamless direct export to YouTube, Vimeo, and cloud storage"
+        ],
+        "cons": [
+            "Learning curve for complete video editing novices",
+            "Android version features catch up slightly behind iOS updates",
+            "Stock footage library requires optional Storyblocks add-on"
+        ],
+        "ratingBreakdown": {
+            "easeOfUse": 4.2,
+            "features": 5.0,
+            "design": 4.7,
+            "performance": 4.9,
+            "value": 4.8
+        },
+        "downloads": [
+            {
+                "storeId": "apple",
+                "url": "https://apps.apple.com/app/lumafusion/id1062022008"
+            },
+            {
+                "storeId": "google",
+                "url": "https://play.google.com/store/apps/details?id=com.lumatouch.lumafusion"
+            },
+            {
+                "storeId": "official",
+                "url": "https://lumatouch.com/lumafusion-app/"
+            }
+        ],
+        "screenshots": [
+            {
+                "url": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&auto=format&fit=crop&q=80",
+                "thumbnail": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&auto=format&fit=crop&q=80",
+                "alt": "Multi-track Timeline Editing View"
+            },
+            {
+                "url": "https://images.unsplash.com/photo-1535016120720-40c646be5580?w=800&auto=format&fit=crop&q=80",
+                "thumbnail": "https://images.unsplash.com/photo-1535016120720-40c646be5580?w=800&auto=format&fit=crop&q=80",
+                "alt": "Advanced Color Correction Suite"
+            },
+            {
+                "url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&auto=format&fit=crop&q=80",
+                "thumbnail": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&auto=format&fit=crop&q=80",
+                "alt": "High-Resolution Export Options"
+            }
+        ],
+        "video": {
+            "thumbnail": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1280&auto=format&fit=crop&q=80"
+        },
+        "authorId": "alex-tech",
+        "tags": [
+            "video editing",
+            "pro tools",
+            "content creation"
+        ],
+        "affiliateLinks": [
+            {
+                "label": "Official LumaTouch Deal",
+                "url": "https://lumatouch.com/lumafusion-app/",
+                "isPrimary": true,
+                "type": "best-price",
+                "icon": "shopping_cart"
+            },
+            {
+                "label": "Get on Apple App Store",
+                "url": "https://apps.apple.com/app/lumafusion/id1062022008",
+                "isPrimary": false,
+                "type": "appstore",
+                "icon": "apple"
+            },
+            {
+                "label": "Get on Google Play",
+                "url": "https://play.google.com/store/apps/details?id=com.lumatouch.lumafusion",
+                "isPrimary": false,
+                "type": "official",
+                "icon": "language"
+            }
+        ],
+        "priceComparison": [
+            {
+                "store": "Official Store",
+                "price": "$29.99",
+                "url": "https://lumatouch.com/lumafusion-app/",
+                "isBest": true,
+                "badge": "Standard License"
+            },
+            {
+                "store": "Apple App Store",
+                "price": "$29.99",
+                "url": "https://apps.apple.com/app/lumafusion/id1062022008",
+                "isBest": false,
+                "badge": ""
+            },
+            {
+                "store": "Google Play Store",
+                "price": "$29.99",
+                "url": "https://play.google.com/store/apps/details?id=com.lumatouch.lumafusion",
+                "isBest": false,
+                "badge": ""
+            }
+        ],
+        "trustScore": 98,
+        "communityRating": 4.9,
+        "editorRecommendation": "LumaFusion Pro is the premier mobile video editor available today. If you perform serious video production or mobile filmmaking, it is worth every penny.",
+        "relatedGuides": [
+            {
+                "title": "Best Video Editors for iPad & Android in 2024",
+                "url": "/category.html?id=video-editors"
+            },
+            {
+                "title": "Top Mobile Content Creation Apps",
+                "url": "/category.html?id=video-editors"
+            }
+        ]
+    },
+    {
+        "id": "capcut-pro",
+        "title": "CapCut Pro",
+        "description": "All-in-one video editing solution tailored for TikTok, Shorts, Reels, and rapid viral content creation.",
+        "icon": "/assets/images/apps/capcut.svg",
+        "rating": 4.6,
+        "categoryId": "video-editors",
+        "developer": "Bytedance Pte. Ltd.",
+        "version": "10.4.0",
+        "size": "142 MB",
+        "platforms": [
+            "iOS",
+            "Android",
+            "PC"
+        ],
+        "license": "Freemium ($7.99/mo Pro)",
+        "updatedAt": "2024-06-01",
+        "badges": [
+            "Trending",
+            "Popular"
+        ],
+        "isFeatured": false,
+        "isTrending": true,
+        "summary": "CapCut Pro offers auto-captions, background removal, trending transition presets, and AI enhancement tools that drastically reduce editing time for short-form social video.",
+        "pros": [
+            "Automated AI captions with dynamic styling",
+            "One-click background removal and body effects",
+            "Massive library of royalty-free sound effects and templates"
+        ],
+        "cons": [
+            "Some high-tier features require Pro subscription",
+            "Cloud backup storage limits on free plan"
+        ],
+        "authorId": "alex-tech",
+        "tags": [
+            "social media",
+            "quick edits",
+            "ai tools"
+        ]
+    },
+    {
+        "id": "kinemaster",
+        "title": "KineMaster",
+        "description": "Powerful layer-based video editing software with high precision audio mixing and chromakey tools.",
+        "icon": "/assets/images/apps/kinemaster.svg",
+        "rating": 4.4,
+        "categoryId": "video-editors",
+        "developer": "KineMaster Corporation",
+        "version": "7.2.0",
+        "size": "110 MB",
+        "platforms": [
+            "Android",
+            "iOS"
+        ],
+        "license": "Subscription ($4.99/mo)",
+        "updatedAt": "2024-04-10",
+        "badges": [
+            "Verified"
+        ],
+        "isFeatured": false,
+        "isTrending": false,
+        "summary": "KineMaster delivers accurate frame-by-frame trimming, multi-layer video blending, and instant preview capabilities.",
+        "pros": [
+            "Chroma key green screen support",
+            "Extensive Asset Store for music and stickers",
+            "Frame-by-frame precision editing"
+        ],
+        "cons": [
+            "Watermark present on free version exports"
+        ],
+        "authorId": "alex-tech",
+        "tags": [
+            "layer editing",
+            "chromakey",
+            "mobile tools"
+        ]
+    },
+    {
+        "id": "procreate",
+        "title": "Procreate Pocket",
+        "description": "Professional digital painting and illustration suite optimized specifically for mobile touch screens.",
+        "icon": "/assets/images/apps/procreate.svg",
+        "rating": 4.9,
+        "categoryId": "design",
+        "developer": "Savage Interactive Pty Ltd",
+        "version": "4.0.8",
+        "size": "290 MB",
+        "platforms": [
+            "iOS"
+        ],
+        "license": "One-time Purchase ($5.99)",
+        "updatedAt": "2024-05-20",
+        "badges": [
+            "Editor's Choice",
+            "Top Rated"
+        ],
+        "isFeatured": true,
+        "isTrending": false,
+        "summary": "Procreate Pocket packs desktop power into an intuitive mobile canvas, featuring over 200 custom brushes, Valkyrie graphics engine, and 4K canvas capabilities.",
+        "pros": [
+            "Ultra-responsive 60fps painting engine",
+            "Custom brush studio and pressure sensitivity",
+            "Full time-lapse recording of artwork"
+        ],
+        "cons": [
+            "Exclusive to iOS devices"
+        ],
+        "authorId": "alex-tech",
+        "tags": [
+            "drawing",
+            "digital art",
+            "illustration"
+        ]
+    }
+]

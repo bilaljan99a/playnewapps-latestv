@@ -1,0 +1,102 @@
+[
+    {
+        "id": "nordvpn",
+        "name": "NordVPN",
+        "icon": "vpn_key",
+        "logo": "/assets/images/brands/nordvpn.svg",
+        "about": "NordVPN is a leading security and privacy solution provider trusted by millions worldwide. Offering high-speed double encryption, strict no-logs policy, malware protection, and over 6,000 servers across 110+ countries.",
+        "rating": 4.8,
+        "votes": 1245,
+        "related": ["grammarly", "hostinger", "adobe"],
+        "faqs": [
+            {
+                "question": "Does NordVPN have a free trial?",
+                "answer": "NordVPN offers a risk-free 30-day money-back guarantee, allowing you to test all premium features with complete protection."
+            },
+            {
+                "question": "How many devices can I connect simultaneously?",
+                "answer": "A single NordVPN account supports up to 10 devices connected at the same time across Windows, macOS, Android, iOS, and Linux."
+            }
+        ]
+    },
+    {
+        "id": "grammarly",
+        "name": "Grammarly",
+        "icon": "spellcheck",
+        "logo": "/assets/images/brands/grammarly.svg",
+        "about": "Grammarly is an AI-powered communication assistant that enhances writing clarity, tone, precision, and correctness across web browsers, desktop applications, and mobile devices.",
+        "rating": 4.9,
+        "votes": 3420,
+        "related": ["adobe", "canva", "envato"],
+        "faqs": [
+            {
+                "question": "Is Grammarly Premium worth it?",
+                "answer": "Yes, Premium unlocks tone adjustments, full sentence rewrites, plagiarism detection, and advanced style improvements essential for professional writing."
+            }
+        ]
+    },
+    {
+        "id": "hostinger",
+        "name": "Hostinger",
+        "icon": "dns",
+        "logo": "/assets/images/brands/hostinger.svg",
+        "about": "Hostinger is an industry-leading web hosting and cloud server provider servicing over 29 million creators and businesses globally with NVMe storage, 99.9% uptime, and 24/7 live support.",
+        "rating": 4.7,
+        "votes": 2100,
+        "related": ["nordvpn", "adobe"],
+        "faqs": [
+            {
+                "question": "Does Hostinger offer a free domain?",
+                "answer": "Yes, Hostinger includes a free custom domain name for the first year with Premium, Business, and Cloud hosting packages."
+            }
+        ]
+    },
+    {
+        "id": "adobe",
+        "name": "Adobe",
+        "icon": "brush",
+        "logo": "/assets/images/brands/adobe.svg",
+        "about": "Adobe Creative Cloud is the global benchmark for creative software, offering world-standard creative desktop and mobile apps including Photoshop, Illustrator, Premiere Pro, and After Effects.",
+        "rating": 4.6,
+        "votes": 5300,
+        "related": ["canva", "envato", "grammarly"],
+        "faqs": [
+            {
+                "question": "Can I get Adobe Creative Cloud discounts?",
+                "answer": "Yes, verified students and teachers get up to 60% off standard Creative Cloud plan pricing, and business volume licenses offer significant savings."
+            }
+        ]
+    },
+    {
+        "id": "canva",
+        "name": "Canva",
+        "icon": "palette",
+        "logo": "/assets/images/brands/canva.svg",
+        "about": "Canva is an intuitive online visual design suite enabling team collaboration, graphic design, social media assets, presentations, brand kits, and video editing without requiring prior design experience.",
+        "rating": 4.8,
+        "votes": 4150,
+        "related": ["adobe", "envato", "grammarly"],
+        "faqs": [
+            {
+                "question": "Is Canva Pro free to test?",
+                "answer": "Yes, new users can start a 30-day full feature trial of Canva Pro to test premium brand kits, background removers, and premium stock assets."
+            }
+        ]
+    },
+    {
+        "id": "envato",
+        "name": "Envato",
+        "icon": "storefront",
+        "logo": "/assets/images/brands/envato.svg",
+        "about": "Envato is a digital asset marketplace providing millions of creative templates, stock video clips, web themes, royalty-free music tracks, 3D renders, and graphics for developers and creators.",
+        "rating": 4.5,
+        "votes": 1890,
+        "related": ["adobe", "canva"],
+        "faqs": [
+            {
+                "question": "What does Envato Elements subscription include?",
+                "answer": "Envato Elements offers unlimited commercial-license downloads of over 15 million creative assets under a single monthly or yearly subscription."
+            }
+        ]
+    }
+]

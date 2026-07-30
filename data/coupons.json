@@ -1,0 +1,196 @@
+[
+    {
+        "id": "nordvpn-2yr",
+        "title": "68% Off 2-Year Plan + 3 Months Free",
+        "description": "Get an exclusive 68% discount on the NordVPN 2-year plan and receive 3 extra months completely free.",
+        "store": {
+            "id": "nordvpn",
+            "name": "NordVPN",
+            "logo": "/assets/images/brands/nordvpn.svg"
+        },
+        "discount": "68% OFF",
+        "badges": [
+            "Verified"
+        ],
+        "successRate": "99%",
+        "expiry": "Verified Daily",
+        "code": "PLAYNEW68",
+        "affiliateLink": "https://nordvpn.com/coupon/",
+        "isTop": true,
+        "status": "active",
+        "votesCount": 1245,
+        "successPercentage": 99
+    },
+    {
+        "id": "nordvpn-1yr",
+        "title": "45% Off 1-Year Plan",
+        "description": "Secure your connection for a year with this verified 45% discount on NordVPN.",
+        "store": {
+            "id": "nordvpn",
+            "name": "NordVPN",
+            "logo": "/assets/images/brands/nordvpn.svg"
+        },
+        "discount": "45% OFF",
+        "badges": [
+            "Verified"
+        ],
+        "successRate": "95%",
+        "expiry": "Ongoing Offer",
+        "affiliateLink": "https://nordvpn.com/coupon/",
+        "isTop": false,
+        "status": "active",
+        "votesCount": 230,
+        "successPercentage": 88
+    },
+    {
+        "id": "nordvpn-expired",
+        "title": "75% Off Black Friday Special",
+        "description": "Previous Black Friday savings promotion on all NordVPN plans.",
+        "store": {
+            "id": "nordvpn",
+            "name": "NordVPN",
+            "logo": "/assets/images/brands/nordvpn.svg"
+        },
+        "discount": "75% OFF",
+        "badges": [
+            "Expired"
+        ],
+        "successRate": "0%",
+        "expiry": "Expired",
+        "code": "BLACKFRIDAY",
+        "affiliateLink": "https://nordvpn.com/coupon/",
+        "isTop": false,
+        "status": "expired",
+        "votesCount": 271,
+        "successPercentage": 89
+    },
+    {
+        "id": "grammarly-premium",
+        "title": "20% Off Grammarly Premium",
+        "description": "Upgrade to Premium and get 20% off your annual subscription for AI-powered writing assistance.",
+        "store": {
+            "id": "grammarly",
+            "name": "Grammarly",
+            "logo": "/assets/images/brands/grammarly.svg"
+        },
+        "discount": "20% OFF",
+        "badges": [
+            "Verified"
+        ],
+        "successRate": "100%",
+        "expiry": "Ongoing Offer",
+        "affiliateLink": "https://www.grammarly.com/plans",
+        "isTop": true,
+        "status": "active",
+        "votesCount": 196,
+        "successPercentage": 83
+    },
+    {
+        "id": "grammarly-edu",
+        "title": "50% Off for Students",
+        "description": "Verified students receive 50% off an annual Grammarly Premium subscription.",
+        "store": {
+            "id": "grammarly",
+            "name": "Grammarly",
+            "logo": "/assets/images/brands/grammarly.svg"
+        },
+        "discount": "50% OFF",
+        "badges": [
+            "Verified"
+        ],
+        "successRate": "98%",
+        "expiry": "Verified Student Deal",
+        "code": "EDU50",
+        "affiliateLink": "https://www.grammarly.com/plans",
+        "isTop": false,
+        "status": "active",
+        "votesCount": 517,
+        "successPercentage": 80
+    },
+    {
+        "id": "hostinger-hosting",
+        "title": "Up to 75% Off Web Hosting + Free Domain",
+        "description": "Launch your website with high-performance cloud hosting and a free SSL certificate.",
+        "store": {
+            "id": "hostinger",
+            "name": "Hostinger",
+            "logo": "/assets/images/brands/hostinger.svg"
+        },
+        "discount": "75% OFF",
+        "badges": [
+            "Verified"
+        ],
+        "successRate": "99%",
+        "expiry": "Limited Offer",
+        "code": "PLAYNEWHOST",
+        "affiliateLink": "https://www.hostinger.com/web-hosting",
+        "isTop": true,
+        "status": "active",
+        "votesCount": 451,
+        "successPercentage": 90
+    },
+    {
+        "id": "adobe-cc",
+        "title": "60% Off Creative Cloud for Students & Teachers",
+        "description": "Get all 20+ Adobe creative apps including Photoshop, Premiere, and Illustrator at 60% off.",
+        "store": {
+            "id": "adobe",
+            "name": "Adobe",
+            "logo": "/assets/images/brands/adobe.svg"
+        },
+        "discount": "60% OFF",
+        "badges": [
+            "Verified"
+        ],
+        "successRate": "100%",
+        "expiry": "Ongoing Offer",
+        "affiliateLink": "https://www.adobe.com/creativecloud/plans.html",
+        "isTop": true,
+        "status": "active",
+        "votesCount": 542,
+        "successPercentage": 89
+    },
+    {
+        "id": "canva-pro",
+        "title": "Try Canva Pro Free for 30 Days",
+        "description": "Unlock premium design tools, brand kits, content planner, and millions of stock photos.",
+        "store": {
+            "id": "canva",
+            "name": "Canva",
+            "logo": "/assets/images/brands/canva.svg"
+        },
+        "discount": "FREE TRIAL",
+        "badges": [
+            "Verified"
+        ],
+        "successRate": "100%",
+        "expiry": "Ongoing Offer",
+        "affiliateLink": "https://www.canva.com/pro/",
+        "isTop": true,
+        "status": "active",
+        "votesCount": 72,
+        "successPercentage": 82
+    },
+    {
+        "id": "envato-elements",
+        "title": "70% Off First Month of Envato Elements",
+        "description": "Unlimited downloads of stock videos, royalty-free audio, graphic templates, and 3D assets.",
+        "store": {
+            "id": "envato",
+            "name": "Envato",
+            "logo": "/assets/images/brands/envato.svg"
+        },
+        "discount": "70% OFF",
+        "badges": [
+            "Verified"
+        ],
+        "successRate": "95%",
+        "expiry": "Verified Partner Offer",
+        "code": "SAVE70",
+        "affiliateLink": "https://elements.envato.com/pricing",
+        "isTop": true,
+        "status": "active",
+        "votesCount": 402,
+        "successPercentage": 90
+    }
+]

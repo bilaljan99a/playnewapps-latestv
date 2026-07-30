@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Review... | PlayNewApps</title>
+    <meta name="description" content="Loading review...">
+    
+    <!-- SEO Optimization -->
+    <link rel="canonical" href="" id="canonical-url">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="" id="og-title">
+    <meta property="og:description" content="" id="og-description">
+    <meta property="og:url" content="" id="og-url">
+    <meta property="og:site_name" content="PlayNewApps">
+    <meta property="og:image" content="" id="og-image">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="" id="twitter-title">
+    <meta name="twitter:description" content="" id="twitter-description">
+    <meta name="twitter:image" content="" id="twitter-image">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon-96x96.png">
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+<link rel="manifest" href="/assets/images/site.webmanifest">
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" media="print" onload="this.media='all'">
+    
+    <!-- Core CSS -->
+    <link rel="preload" as="style" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2GJQLCWRKE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2GJQLCWRKE');
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header (Shared) -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="PlayNewApps Home">
+                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
+                <span>PlayNewApps</span>
+            </a>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+                <span class="material-icons-round menu-icon">menu</span>
+            </button>
+
+            <nav id="main-nav" class="nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#apps">Apps</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#coupons">Coupons</a></li>
+                    <li><a href="/category.html?id=all" class="active" aria-current="page">Reviews</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="material-icons-round dark-icon" aria-hidden="true">dark_mode</span>
+                    <span class="material-icons-round light-icon" aria-hidden="true">light_mode</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container page-layout review-page-layout">
+        <!-- Main Article Area -->
+        <main id="main-content" class="main-content">
+            
+            <!-- Breadcrumb Navigation -->
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li><span class="separator">/</span></li>
+                    <li><a href="/category.html?id=all">Reviews</a></li>
+                    <li><span class="separator">/</span></li>
+                    <li aria-current="page" id="breadcrumb-current">Loading...</li>
+                </ol>
+            </nav>
+
+            <!-- Loading Skeleton -->
+            <div id="review-loading-skeleton" class="skeleton-container" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem; width: 100%;">
+                <div class="skeleton" style="width: 120px; height: 120px; border-radius: 20px;"></div>
+                <div class="skeleton" style="width: 60%; height: 40px; margin-top: 1rem;"></div>
+                <div class="skeleton" style="width: 80%; height: 20px;"></div>
+                <div class="skeleton" style="width: 40%; height: 20px;"></div>
+                <div class="skeleton" style="width: 100%; height: 200px; margin-top: 2rem;"></div>
+            </div>
+
+            <!-- Review Article (Hidden until data loads) -->
+            <article class="review-article reveal" id="review-article" style="display: none;">
+
+                <!-- Hero Section -->
+                <header class="review-hero">
+                    <div class="app-icon-wrapper">
+                        <img src="" alt="App Icon" class="app-icon" width="120" height="120">
+                    </div>
+                    <div class="hero-details">
+                        <div class="badges"></div>
+                        <h1 class="review-title"></h1>
+                        <p class="review-subtitle"></p>
+                        
+                        <div class="review-meta-row">
+                            <div class="rating review-rating"></div>
+                            <span class="update-date"></span> 
+                        </div>
+                        <div class="tags-box"></div>
+                    </div>
+                </header>
+
+                <!-- Official Download Buttons & Disclosure -->
+                <div class="affiliate-disclosure">
+                    <p><span class="material-icons-round" aria-hidden="true">info</span> <strong>Affiliate Disclosure:</strong> We may earn a commission if you purchase through our links, at no extra cost to you. This helps support our reviews. <a href="/affiliate.html">Learn more</a>.</p>
+                </div>
+                <div id="affiliate-buttons-container" class="affiliate-buttons-container"></div>
+
+                <div class="two-column-layout">
+                    <!-- Main Column -->
+                    <div class="main-column">
+                        <section id="editor-recommendation-box" class="editor-recommendation-box" style="display: none;"></section>
+                        <section class="review-section" id="dynamic-review-body" style="display: none;"></section>
+                        <section id="related-guides-section" class="related-guides-section" style="display: none;"></section>
+                    </div>
+
+                    <!-- Side Column -->
+                    <div class="side-column">
+                        <div id="trust-score-box" class="trust-score-box card" style="display: none;"></div>
+                        <div id="price-comparison-box" class="price-comparison-box card" style="display: none;"></div>
+                        <div class="quick-info-box card">
+                            <h3>Quick Information</h3>
+                            <table class="quick-info-table"><tbody></tbody></table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Affiliate Recommendation Box -->
+                <div class="affiliate-box card" id="affiliate-box" style="display:none;"></div>
+
+                <!-- Screenshots Gallery -->
+                <section class="review-section" id="screenshots-section" style="display: none;">
+                    <h2>Screenshots</h2>
+                    <div class="gallery-grid"></div>
+                </section>
+
+                <!-- Video Review Section -->
+                <section class="review-section" id="video-section" style="display: none;">
+                    <h2>Video Review</h2>
+                    <div class="video-container"></div>
+                </section>
+
+                <!-- Pros and Cons Cards -->
+                <section class="review-section" id="pros-cons-section">
+                    <div class="pros-cons-grid">
+                        <div class="card pros-card">
+                            <h3><span class="material-icons-round text-success" aria-hidden="true">check_circle</span> Pros</h3>
+                            <ul class="feature-list"></ul>
+                        </div>
+                        <div class="card cons-card">
+                            <h3><span class="material-icons-round text-danger" aria-hidden="true">cancel</span> Cons</h3>
+                            <ul class="feature-list"></ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Rating Breakdown -->
+                <section class="review-section" id="rating-breakdown-section">
+                    <h2>Rating Breakdown</h2>
+                    <div class="card rating-breakdown-box"></div>
+                </section>
+
+                <!-- FAQs Section -->
+                <section class="review-section" id="faq-section" style="display: none;">
+                    <h2>Frequently Asked Questions</h2>
+                    <div id="faq-container" class="faq-container"></div>
+                </section>
+
+                <!-- Related Reviews & Alternatives -->
+                <section class="review-section" id="related-reviews-section">
+                    <h2>Related Reviews & Alternatives</h2>
+                    <div id="related-grid" class="grid similar-apps-grid"></div>
+                </section>
+
+                <!-- Community Reviews & Discussion -->
+                <section class="review-section comments-section" id="comments">
+                    <h2>Community Reviews & Discussion</h2>
+                    
+                    <form class="card comment-form">
+                        <h4>Leave a Review or Comment</h4>
+                        <div class="form-group">
+                            <textarea placeholder="Share your experience with this app..." required rows="4" class="form-control"></textarea>
+                        </div>
+                        <div class="comment-form-footer">
+                            <input type="text" placeholder="Your Name" required class="form-control">
+                            <input type="email" placeholder="Your Email address" required class="form-control">
+                            <button type="submit" class="btn btn-primary">Post Comment</button>
+                        </div>
+                    </form>
+
+                    <div class="comments-list"></div>
+                </section>
+            </article>
+            
+            <!-- Sticky Sidebar -->
+            <aside class="sidebar">
+                <div class="sticky-wrapper">
+                    <!-- Related Articles -->
+                    <div class="widget card">
+                        <h3 class="widget-title">Related Articles</h3>
+                        <ul class="widget-article-list">
+                            <li>
+                                <a href="/category.html?id=video-editors">Top 5 Mobile Video Editors in 2024</a>
+                            </li>
+                            <li>
+                                <a href="/category.html?id=all">Comprehensive App & Software Buying Guides</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Trending Deals -->
+                    <div class="widget card">
+                        <h3 class="widget-title">Top App Deals</h3>
+                        <div class="widget-deal" id="sidebar-top-deal">
+                            <div class="deal-badge">HOT DEAL</div>
+                            <h4>Exclusive Software Offers</h4>
+                            <p>Save up to 65% on premier software today.</p>
+                            <a href="/coupon.html" class="btn btn-primary full-width get-deal-btn">Get Deals</a>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="widget card widget-newsletter">
+                        <h3 class="widget-title">Subscribe</h3>
+                        <p>Get weekly app reviews and exclusive software coupons delivered to your inbox.</p>
+                        <form class="sidebar-newsletter-form">
+                            <input type="email" placeholder="Email address" required class="form-control">
+                            <button type="submit" class="btn btn-primary full-width">Join Now</button>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image Gallery">
+        <button class="lightbox-close" aria-label="Close Gallery"><span class="material-icons-round">close</span></button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Enlarged screenshot">
+        </div>
+    </div>
+
+    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+    <!-- Footer (Shared) -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="margin-bottom: 1rem; color: #fff;">
+                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
+                    <span>PlayNewApps</span>
+                </a>
+                <p style="color: var(--text-secondary);">Your ultimate destination for the latest app reviews, tech news, and exclusive software coupons.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                    <li><a href="/terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://facebook.com/playnewapps" target="_blank" rel="noopener" aria-label="Facebook"><span class="material-icons-round">facebook</span></a>
+                    <a href="https://twitter.com/playnewapps" target="_blank" rel="noopener" aria-label="Twitter"><span class="material-icons-round">flutter_dash</span></a>
+                    <a href="https://youtube.com/playnewapps" target="_blank" rel="noopener" aria-label="YouTube"><span class="material-icons-round">smart_display</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 PlayNewApps. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core JS -->
+    <script src="./assets/js/data-service.js" defer></script>
+    <script src="./assets/js/components.js" defer></script>
+    <script src="./assets/js/app.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- Affiliate Global Elements -->
+    <div id="sticky-mobile-cta" class="sticky-mobile-cta"></div>
+    <div id="floating-deal-notification" class="floating-deal-notification"></div>
+    <div id="exit-intent-banner" class="exit-intent-banner">
+        <div class="exit-intent-content">
+            <button class="close-exit-intent" aria-label="Close banner"><span class="material-icons-round">close</span></button>
+            <h3>Wait! Don't miss out on saving.</h3>
+            <p>Get our exclusive VIP discount code before you leave.</p>
+            <a href="/coupon.html" class="btn btn-primary cta-pulse" id="exit-intent-btn">Claim My Discount</a>
+        </div>
+    </div>
+    <div id="email-subscribe-popup" class="email-subscribe-popup">
+        <div class="email-popup-content">
+            <button class="close-email-popup" aria-label="Close popup"><span class="material-icons-round">close</span></button>
+            <h3>Join our Newsletter</h3>
+            <p>Get the latest app reviews and exclusive software deals delivered to your inbox.</p>
+            <form id="popup-newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
