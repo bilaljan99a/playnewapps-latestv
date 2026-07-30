@@ -470,48 +470,67 @@ document.addEventListener('DOMContentLoaded', () => {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
     const lightboxClose = document.querySelector('.lightbox-close');
-    const triggers = document.querySelectorAll('.lightbox-trigger');
 
-    if (lightbox && lightboxImg && triggers.length > 0) {
-        triggers.forEach(img => {
-            img.addEventListener('click', () => {
-                const src = img.getAttribute('src');
-                lightboxImg.setAttribute('src', src);
-                lightbox.classList.add('active');
-                lightbox.setAttribute('aria-hidden', 'false');
-                document.body.style.overflow = 'hidden'; // Prevent scrolling
-            });
-            // Support keyboard navigation
-            img.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter') {
-                    img.click();
-                }
-            });
-        });
-
+    if (lightbox && lightboxImg) {
         const closeLightbox = () => {
             lightbox.classList.remove('active');
             lightbox.setAttribute('aria-hidden', 'true');
             document.body.style.overflow = '';
-            // Clear src after animation to prevent flashing previous image on next open
             setTimeout(() => {
-                lightboxImg.setAttribute('src', '');
+                if (!lightbox.classList.contains('active')) {
+                    lightboxImg.setAttribute('src', '');
+                }
             }, 300);
         };
 
-        lightboxClose?.addEventListener('click', closeLightbox);
-        
-        // Close on background click
+        const openLightbox = (src, alt) => {
+            if (!src) return;
+            lightboxImg.setAttribute('src', src);
+            lightboxImg.setAttribute('alt', alt || 'Enlarged screenshot');
+            lightbox.classList.add('active');
+            lightbox.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        };
+
+        // Close button event listener
+        if (lightboxClose) {
+            lightboxClose.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                closeLightbox();
+            });
+        }
+
+        // Close on background click (clicking outside the image content)
         lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) {
+            if (e.target === lightbox || e.target.classList.contains('lightbox-close') || e.target.closest('.lightbox-close')) {
                 closeLightbox();
             }
         });
 
         // Close on Escape key
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            if ((e.key === 'Escape' || e.key === 'Esc') && lightbox.classList.contains('active')) {
                 closeLightbox();
+            }
+        });
+
+        // Open lightbox via click delegation on any .lightbox-trigger element (handles dynamic elements)
+        document.addEventListener('click', (e) => {
+            const trigger = e.target.closest('.lightbox-trigger');
+            if (trigger) {
+                const src = trigger.getAttribute('data-full') || trigger.getAttribute('src');
+                const alt = trigger.getAttribute('alt');
+                openLightbox(src, alt);
+            }
+        });
+
+        // Open lightbox via Enter key when focused on a trigger
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && document.activeElement && document.activeElement.classList.contains('lightbox-trigger')) {
+                const src = document.activeElement.getAttribute('data-full') || document.activeElement.getAttribute('src');
+                const alt = document.activeElement.getAttribute('alt');
+                openLightbox(src, alt);
             }
         });
     }

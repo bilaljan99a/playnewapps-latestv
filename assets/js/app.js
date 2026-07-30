@@ -588,26 +588,14 @@ class App {
         if (review.screenshots && review.screenshots.length > 0) {
             if (screenshotsSection) screenshotsSection.style.display = 'block';
             if (galleryGrid) {
-                galleryGrid.innerHTML = review.screenshots.map(s => `
-                    <picture>
-                        <source srcset="${s.thumbnail || s.url}" type="image/webp">
-                        <img src="${s.url}" alt="${s.alt || review.title + ' Screenshot'}" class="gallery-img lightbox-trigger" loading="lazy" width="800" height="600" tabindex="0">
-                    </picture>
-                `).join('');
-                
-                setTimeout(() => {
-                    const lightbox = document.getElementById('lightbox');
-                    const lightboxImg = document.getElementById('lightbox-img');
-                    const triggers = document.querySelectorAll('.lightbox-trigger');
-                    triggers.forEach(img => {
-                        img.addEventListener('click', () => {
-                            lightboxImg.setAttribute('src', img.getAttribute('src'));
-                            lightbox.classList.add('active');
-                            lightbox.setAttribute('aria-hidden', 'false');
-                            document.body.style.overflow = 'hidden';
-                        });
-                    });
-                }, 100);
+                galleryGrid.innerHTML = review.screenshots.map(s => {
+                    const thumbUrl = s.thumbnail || s.url;
+                    const fullUrl = s.url || s.thumbnail;
+                    const altText = s.alt || `${review.title || 'App'} Screenshot`;
+                    return `
+                        <img src="${thumbUrl}" data-full="${fullUrl}" alt="${altText}" class="gallery-img lightbox-trigger" loading="lazy" width="800" height="600" tabindex="0">
+                    `;
+                }).join('');
             }
         } else if (screenshotsSection) {
             screenshotsSection.style.display = 'none';

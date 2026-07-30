@@ -2480,23 +2480,39 @@ table.comparison-table tbody tr:hover,
 
 .lightbox-close {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    background: transparent;
-    border: none;
-    color: #fff;
+    top: 24px;
+    right: 24px;
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #ffffff;
     cursor: pointer;
-    padding: 0.5rem;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-    transition: background-color var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10010;
+    pointer-events: auto;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    transition: background-color var(--transition-fast), transform var(--transition-fast), border-color var(--transition-fast);
 }
 
 .lightbox-close:hover {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(239, 68, 68, 0.9);
+    border-color: rgba(239, 68, 68, 1);
+    transform: scale(1.08);
+}
+
+.lightbox-close:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.5);
 }
 
 .lightbox-close .material-icons-round {
     font-size: 2rem;
+    line-height: 1;
 }
 
 /* Utilities for review page */
