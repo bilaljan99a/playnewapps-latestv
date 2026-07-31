@@ -2789,27 +2789,45 @@ table.comparison-table tbody tr:hover,
     color: var(--text-secondary);
     margin-bottom: var(--space-lg);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: var(--space-sm);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.affiliate-disclosure p {
+    margin: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 .affiliate-disclosure .material-icons-round {
     font-size: 18px;
     color: var(--primary-color);
+    flex-shrink: 0;
+    margin-top: 2px;
 }
 .affiliate-buttons-container {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-md);
     margin-bottom: var(--space-xl);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 .affiliate-btn {
-    flex: 1;
-    min-width: 200px;
+    flex: 1 1 200px;
+    min-width: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: var(--space-sm);
     font-weight: 700;
+    white-space: normal;
+    text-align: center;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 /* Trust Score */
@@ -2946,6 +2964,11 @@ table.comparison-table tbody tr:hover,
     padding: var(--space-lg);
     margin-bottom: var(--space-xl);
     border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 .editor-rec-header {
     display: flex;
@@ -3371,6 +3394,44 @@ img, video, iframe, object, embed {
     .review-meta-row {
         justify-content: center;
         width: 100%;
+    }
+
+    .affiliate-disclosure {
+        padding: 0.75rem 0.875rem;
+        font-size: 0.85rem;
+    }
+
+    .affiliate-buttons-container {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.75rem;
+    }
+
+    .affiliate-btn {
+        width: 100%;
+        min-width: 0;
+        flex: 1 1 100%;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.95rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .editor-recommendation-box {
+        padding: 1rem 0.875rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .store-info-box {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .newsletter-form {
+        min-width: 0;
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
     }
 
     .download-section {
