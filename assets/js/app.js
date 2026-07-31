@@ -301,7 +301,7 @@ class App {
                                 </div>
                                 <div class="price-action">
                                     <span class="price-amount">${p.price}</span>
-                                    <a href="${p.url}" target="_blank" rel="noopener sponsored" class="btn btn-sm ${p.isBest ? 'btn-primary' : 'btn-outline'}">View</a>
+                                    <a href="${p.url}" target="_blank" rel="noopener sponsored" class="btn btn-sm ${p.isBest ? 'btn-primary' : 'btn-outline'}" style="padding: 0.35rem 0.75rem; white-space: nowrap; flex-shrink: 0; min-width: auto; height: auto; line-height: 1.2;">View</a>
                                 </div>
                             </li>
                         `).join('')}
