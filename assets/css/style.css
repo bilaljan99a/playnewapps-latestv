@@ -1479,6 +1479,8 @@ picture, img {
 .main-content {
     flex: 1;
     min-width: 0;
+    width: 100%;
+    max-width: 100%;
 }
 
 .sidebar {
@@ -1676,9 +1678,20 @@ picture, img {
 /* ==========================================================================
    Comparison Table Styling (Modern & Fully Responsive)
    ========================================================================== */
+.review-article,
+.review-section,
+#dynamic-review-body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
 .table-responsive {
+    display: block;
     max-width: 100%;
     width: 100%;
+    min-width: 0;
     box-sizing: border-box;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -1884,9 +1897,13 @@ table.comparison-table tbody tr:hover,
 /* Responsive Scaling for Mobile Screens */
 @media (max-width: 768px) {
     .table-responsive {
+        display: block;
         max-width: 100%;
         width: 100%;
+        min-width: 0;
         box-sizing: border-box;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
         margin: 1.25rem 0;
         border-radius: 10px;
     }
