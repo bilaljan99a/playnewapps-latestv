@@ -59,38 +59,38 @@
         ],
         "screenshots": [
             {
-                "url": "/assets/images/lumafusion_timeline_view_1785385508829.jpg",
-                "thumbnail": "/assets/images/lumafusion_timeline_view_1785385508829.jpg",
+                "url": "/assets/images/lumafusion-timeline-v2.jpg",
+                "thumbnail": "/assets/images/lumafusion-timeline-v2.jpg",
                 "alt": "LumaFusion Pro Main Editing Timeline showing multi-track magnetic clip arrangements and playback preview monitor"
             },
             {
-                "url": "/assets/images/lumafusion_color_grading_1785385530432.jpg",
-                "thumbnail": "/assets/images/lumafusion_color_grading_1785385530432.jpg",
+                "url": "/assets/images/lumafusion-color-v2.jpg",
+                "thumbnail": "/assets/images/lumafusion-color-v2.jpg",
                 "alt": "LumaFusion Pro 3D Color Correction Suite with 5-point color wheels, HSL target controls, and custom LUT importer"
             },
             {
-                "url": "/assets/images/lumafusion_audio_workspace_1785385546579.jpg",
-                "thumbnail": "/assets/images/lumafusion_audio_workspace_1785385546579.jpg",
+                "url": "/assets/images/lumafusion-audio-v2.jpg",
+                "thumbnail": "/assets/images/lumafusion-audio-v2.jpg",
                 "alt": "LumaFusion Pro Audio Editing Workspace featuring multi-track volume faders, VU level meters, auto-ducking, and AUv3 plugin rack"
             },
             {
-                "url": "/assets/images/lumafusion_keyframe_controls_1785385564890.jpg",
-                "thumbnail": "/assets/images/lumafusion_keyframe_controls_1785385564890.jpg",
+                "url": "/assets/images/lumafusion-keyframe-v2.jpg",
+                "thumbnail": "/assets/images/lumafusion-keyframe-v2.jpg",
                 "alt": "LumaFusion Pro Keyframe Animation Controls panel for position, scale, rotation, and motion velocity easing curves"
             },
             {
-                "url": "/assets/images/lumafusion_export_settings_1785385586751.jpg",
-                "thumbnail": "/assets/images/lumafusion_export_settings_1785385586751.jpg",
+                "url": "/assets/images/lumafusion-export-v2.jpg",
+                "thumbnail": "/assets/images/lumafusion-export-v2.jpg",
                 "alt": "LumaFusion Pro High-Resolution Export Settings supporting 4K UHD 60fps rendering, custom bitrates up to 150Mbps, and FCPXML exports"
             },
             {
-                "url": "/assets/images/lumafusion_effects_library_1785385606556.jpg",
-                "thumbnail": "/assets/images/lumafusion_effects_library_1785385606556.jpg",
+                "url": "/assets/images/lumafusion-effects-v2.jpg",
+                "thumbnail": "/assets/images/lumafusion-effects-v2.jpg",
                 "alt": "LumaFusion Pro Visual Effects and Transitions Library displaying blurs, chroma key green screen keying tools, and title generator templates"
             },
             {
-                "url": "/assets/images/lumafusion_project_manager_1785385622816.jpg",
-                "thumbnail": "/assets/images/lumafusion_project_manager_1785385622816.jpg",
+                "url": "/assets/images/lumafusion-project-v2.jpg",
+                "thumbnail": "/assets/images/lumafusion-project-v2.jpg",
                 "alt": "LumaFusion Pro Project Management Screen displaying video project thumbnails, external USB-C SSD storage browser, and cloud sync"
             }
         ],
