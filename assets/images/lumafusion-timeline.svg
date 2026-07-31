@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0d1117;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#21262d"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="clipGrad1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0969da"/>
+      <stop offset="100%" stop-color="#1f6feb"/>
+    </linearGradient>
+    <linearGradient id="clipGrad2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8957e5"/>
+      <stop offset="100%" stop-color="#a371f7"/>
+    </linearGradient>
+    <linearGradient id="audioGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#238636"/>
+      <stop offset="100%" stop-color="#2ea043"/>
+    </linearGradient>
+    <linearGradient id="meterGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#238636"/>
+      <stop offset="70%" stop-color="#d29922"/>
+      <stop offset="100%" stop-color="#f85149"/>
+    </linearGradient>
+    <linearGradient id="accentBtn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1f6feb"/>
+      <stop offset="100%" stop-color="#388bfd"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base App Background -->
+  <rect width="1280" height="720" fill="#0d1117"/>
+
+  <!-- Top Navigation Header -->
+  <rect width="1280" height="48" fill="url(#headerGrad)"/>
+  <line x1="0" y1="48" x2="1280" y2="48" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- Window Controls -->
+  <circle cx="20" cy="24" r="6" fill="#f85149"/>
+  <circle cx="40" cy="24" r="6" fill="#d29922"/>
+  <circle cx="60" cy="24" r="6" fill="#3fb950"/>
+
+  <!-- App Title & Project Info -->
+  <text x="90" y="29" fill="#f0f6fc" font-size="14" font-weight="600">LumaFusion Pro</text>
+  <text x="210" y="29" fill="#8b949e" font-size="13">•  Timeline Editing Workspace</text>
+  <rect x="520" y="12" width="240" height="24" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <text x="640" y="28" fill="#58a6ff" font-size="12" font-weight="600" text-anchor="middle">00:04:18:22 / 00:12:45:00</text>
+
+  <!-- Top Right Action Buttons -->
+  <rect x="1020" y="10" width="110" height="28" rx="6" fill="url(#accentBtn)"/>
+  <text x="1075" y="28" fill="#ffffff" font-size="12" font-weight="600" text-anchor="middle">Export (4K)</text>
+  <rect x="1145" y="10" width="115" height="28" rx="6" fill="#21262d" stroke="#30363d"/>
+  <text x="1202" y="28" fill="#c9d1d9" font-size="12" font-weight="500" text-anchor="middle">Settings ⚙️</text>
+
+  <!-- Screen Specific Content -->
+  
+  <!-- Media Browser (Left Panel) -->
+  <rect x="12" y="60" width="320" height="370" rx="8" fill="#161b22" stroke="#30363d"/>
+  <text x="28" y="85" fill="#8b949e" font-size="12" font-weight="600">MEDIA LIBRARY (PROJECT BINS)</text>
+  <!-- Grid of media clips -->
+  <g fill="#21262d" stroke="#30363d">
+    <rect x="24" y="98" width="90" height="70" rx="4"/>
+    <rect x="126" y="98" width="90" height="70" rx="4"/>
+    <rect x="228" y="98" width="90" height="70" rx="4"/>
+    <rect x="24" y="180" width="90" height="70" rx="4"/>
+    <rect x="126" y="180" width="90" height="70" rx="4"/>
+    <rect x="228" y="180" width="90" height="70" rx="4"/>
+    <rect x="24" y="262" width="90" height="70" rx="4"/>
+    <rect x="126" y="262" width="90" height="70" rx="4"/>
+    <rect x="228" y="262" width="90" height="70" rx="4"/>
+  </g>
+  <path d="M50 120 L80 145 L50 150 Z" fill="#58a6ff"/>
+  <text x="30" y="160" fill="#8b949e" font-size="10">Clip_01.mp4</text>
+  <text x="132" y="160" fill="#8b949e" font-size="10">Drone_4K.mov</text>
+  <text x="234" y="160" fill="#8b949e" font-size="10">Vlog_Broll.mp4</text>
+
+  <!-- Main Video Monitor Preview (Right Panel) -->
+  <rect x="344" y="60" width="924" height="370" rx="8" fill="#010409" stroke="#30363d"/>
+  <!-- Simulated Video Content inside Monitor -->
+  <rect x="420" y="80" width="772" height="310" rx="4" fill="#0d1117"/>
+  <circle cx="806" cy="180" r="60" fill="#d29922" opacity="0.8"/>
+  <polygon points="500,390 700,240 900,390" fill="#238636" opacity="0.7"/>
+  <polygon points="750,390 950,210 1150,390" fill="#1e40af" opacity="0.6"/>
+  <text x="806" y="360" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">CINEMATIC TIMELINE PREVIEW</text>
+  
+  <!-- Transport Overlay -->
+  <rect x="736" y="398" width="140" height="26" rx="13" fill="#21262d" opacity="0.9"/>
+  <text x="806" y="416" fill="#58a6ff" font-size="13" text-anchor="middle">⏮  ◀  ▶  ⏭</text>
+
+  <!-- Multi-Track Magnetic Timeline (Bottom Area) -->
+  <rect x="12" y="442" width="1256" height="266" rx="8" fill="#161b22" stroke="#30363d"/>
+  
+  <!-- Track Control Headers (Left Column) -->
+  <rect x="12" y="442" width="120" height="266" fill="#0d1117" stroke="#30363d"/>
+  <text x="24" y="480" fill="#58a6ff" font-size="12" font-weight="700">V3 Video Overlay</text>
+  <text x="24" y="525" fill="#58a6ff" font-size="12" font-weight="700">V2 Main Track</text>
+  <text x="24" y="570" fill="#3fb950" font-size="12" font-weight="700">A1 Dialogue</text>
+  <text x="24" y="615" fill="#d29922" font-size="12" font-weight="700">A2 SFX / Foley</text>
+  <text x="24" y="660" fill="#a371f7" font-size="12" font-weight="700">A3 Music Bed</text>
+
+  <!-- Timeline Tracks & Clips -->
+  <!-- V3 Overlay Clip -->
+  <rect x="350" y="460" width="220" height="36" rx="4" fill="url(#clipGrad2)" stroke="#a371f7"/>
+  <text x="360" y="482" fill="#ffffff" font-size="11" font-weight="600">Title_LowerThird.png</text>
+  
+  <!-- V2 Main Track Clips -->
+  <rect x="140" y="505" width="280" height="36" rx="4" fill="url(#clipGrad1)" stroke="#58a6ff"/>
+  <text x="150" y="527" fill="#ffffff" font-size="11" font-weight="600">Scene_01_Intro.mov [4K 60fps]</text>
+  <rect x="428" y="505" width="340" height="36" rx="4" fill="url(#clipGrad1)" stroke="#58a6ff"/>
+  <text x="438" y="527" fill="#ffffff" font-size="11" font-weight="600">Scene_02_Action.mov [Color Graded]</text>
+  <rect x="776" y="505" width="460" height="36" rx="4" fill="url(#clipGrad1)" stroke="#58a6ff"/>
+  <text x="786" y="527" fill="#ffffff" font-size="11" font-weight="600">Scene_03_Outro.mov</text>
+
+  <!-- A1 Audio Dialogue -->
+  <rect x="140" y="550" width="628" height="36" rx="4" fill="url(#audioGrad)" stroke="#3fb950"/>
+  <path d="M150 568 Q 200 555, 250 568 T 350 568 T 450 568 T 550 568 T 650 568 T 750 568" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+  <text x="150" y="572" fill="#ffffff" font-size="11" font-weight="600">Voiceover_Master_24bit.wav</text>
+
+  <!-- A2 SFX -->
+  <rect x="300" y="595" width="180" height="36" rx="4" fill="#d29922" opacity="0.9"/>
+  <text x="310" y="617" fill="#0d1117" font-size="11" font-weight="700">Explosion_SFX.wav</text>
+  <rect x="620" y="595" width="220" height="36" rx="4" fill="#d29922" opacity="0.9"/>
+  <text x="630" y="617" fill="#0d1117" font-size="11" font-weight="700">Whoosh_Transition.wav</text>
+
+  <!-- A3 Music -->
+  <rect x="140" y="640" width="1096" height="36" rx="4" fill="url(#clipGrad2)" stroke="#a371f7"/>
+  <text x="150" y="662" fill="#ffffff" font-size="11" font-weight="600">Cinematic_Soundtrack_Background_Loop.flac</text>
+
+  <!-- Timeline Playhead Red Needle -->
+  <line x1="580" y1="442" x2="580" y2="708" stroke="#f85149" stroke-width="2"/>
+  <polygon points="572,442 588,442 580,452" fill="#f85149"/>
+
+</svg>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0d1117;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#21262d"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="clipGrad1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0969da"/>
+      <stop offset="100%" stop-color="#1f6feb"/>
+    </linearGradient>
+    <linearGradient id="clipGrad2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8957e5"/>
+      <stop offset="100%" stop-color="#a371f7"/>
+    </linearGradient>
+    <linearGradient id="audioGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#238636"/>
+      <stop offset="100%" stop-color="#2ea043"/>
+    </linearGradient>
+    <linearGradient id="meterGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#238636"/>
+      <stop offset="70%" stop-color="#d29922"/>
+      <stop offset="100%" stop-color="#f85149"/>
+    </linearGradient>
+    <linearGradient id="accentBtn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1f6feb"/>
+      <stop offset="100%" stop-color="#388bfd"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base App Background -->
+  <rect width="1280" height="720" fill="#0d1117"/>
+
+  <!-- Top Navigation Header -->
+  <rect width="1280" height="48" fill="url(#headerGrad)"/>
+  <line x1="0" y1="48" x2="1280" y2="48" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- Window Controls -->
+  <circle cx="20" cy="24" r="6" fill="#f85149"/>
+  <circle cx="40" cy="24" r="6" fill="#d29922"/>
+  <circle cx="60" cy="24" r="6" fill="#3fb950"/>
+
+  <!-- App Title & Project Info -->
+  <text x="90" y="29" fill="#f0f6fc" font-size="14" font-weight="600">LumaFusion Pro</text>
+  <text x="210" y="29" fill="#8b949e" font-size="13">•  3D Color Correction & Grading Suite</text>
+  <rect x="520" y="12" width="240" height="24" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <text x="640" y="28" fill="#58a6ff" font-size="12" font-weight="600" text-anchor="middle">00:04:18:22 / 00:12:45:00</text>
+
+  <!-- Top Right Action Buttons -->
+  <rect x="1020" y="10" width="110" height="28" rx="6" fill="url(#accentBtn)"/>
+  <text x="1075" y="28" fill="#ffffff" font-size="12" font-weight="600" text-anchor="middle">Export (4K)</text>
+  <rect x="1145" y="10" width="115" height="28" rx="6" fill="#21262d" stroke="#30363d"/>
+  <text x="1202" y="28" fill="#c9d1d9" font-size="12" font-weight="500" text-anchor="middle">Settings ⚙️</text>
+
+  <!-- Screen Specific Content -->
+  
+  <!-- Color Wheels & Histogram Layout -->
+  <!-- Split Monitor (Left Widescreen) -->
+  <rect x="12" y="60" width="700" height="400" rx="8" fill="#161b22" stroke="#30363d"/>
+  <text x="28" y="85" fill="#8b949e" font-size="12" font-weight="600">3D COLOR GRADE SPLIT PREVIEW (BEFORE vs AFTER)</text>
+  
+  <rect x="28" y="98" width="320" height="340" fill="#1a1e24"/>
+  <circle cx="180" cy="220" r="70" fill="#78350f" opacity="0.5"/>
+  <text x="180" y="380" fill="#8b949e" font-size="14" font-weight="700" text-anchor="middle">LOG FLAT (BEFORE)</text>
+
+  <rect x="360" y="98" width="336" height="340" fill="#0f172a"/>
+  <circle cx="528" cy="220" r="70" fill="#0284c7" opacity="0.9"/>
+  <text x="528" y="380" fill="#388bfd" font-size="14" font-weight="700" text-anchor="middle">LUT GRADED (AFTER)</text>
+  <line x1="354" y1="98" x2="354" y2="438" stroke="#d29922" stroke-width="3"/>
+
+  <!-- RGB Parade & Waveform Scope (Right Side) -->
+  <rect x="724" y="60" width="544" height="400" rx="8" fill="#161b22" stroke="#30363d"/>
+  <text x="740" y="85" fill="#8b949e" font-size="12" font-weight="600">RGB VECTORSCOPE & HISTOGRAM SCOPE</text>
+  <rect x="740" y="98" width="512" height="340" fill="#010409" stroke="#21262d"/>
+  
+  <!-- Waveform lines -->
+  <path d="M 750 380 Q 800 200, 850 350 T 950 150 T 1050 300 T 1150 180 T 1230 380" fill="none" stroke="#f85149" stroke-width="2" opacity="0.8"/>
+  <path d="M 750 390 Q 800 220, 850 320 T 950 170 T 1050 280 T 1150 200 T 1230 390" fill="none" stroke="#3fb950" stroke-width="2" opacity="0.8"/>
+  <path d="M 750 370 Q 800 180, 850 370 T 950 130 T 1050 320 T 1150 160 T 1230 370" fill="none" stroke="#58a6ff" stroke-width="2" opacity="0.8"/>
+
+  <!-- Bottom 3D Color Wheels (Lift, Gamma, Gain) -->
+  <rect x="12" y="472" width="1256" height="236" rx="8" fill="#161b22" stroke="#30363d"/>
+
+  <!-- Wheel 1: Lift (Shadows) -->
+  <g transform="translate(180, 580)">
+    <circle cx="0" cy="0" r="65" fill="#0d1117" stroke="#30363d" stroke-width="3"/>
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#58a6ff" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <circle cx="-15" cy="10" r="8" fill="#58a6ff"/>
+    <text x="0" y="85" fill="#c9d1d9" font-size="13" font-weight="700" text-anchor="middle">LIFT (SHADOWS)</text>
+    <text x="0" y="102" fill="#8b949e" font-size="11" text-anchor="middle">RGB: -0.04, +0.02, +0.12</text>
+  </g>
+
+  <!-- Wheel 2: Gamma (Midtones) -->
+  <g transform="translate(640, 580)">
+    <circle cx="0" cy="0" r="65" fill="#0d1117" stroke="#30363d" stroke-width="3"/>
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#d29922" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <circle cx="10" cy="-20" r="8" fill="#d29922"/>
+    <text x="0" y="85" fill="#c9d1d9" font-size="13" font-weight="700" text-anchor="middle">GAMMA (MIDTONES)</text>
+    <text x="0" y="102" fill="#8b949e" font-size="11" text-anchor="middle">RGB: +0.08, +0.15, -0.02</text>
+  </g>
+
+  <!-- Wheel 3: Gain (Highlights) -->
+  <g transform="translate(1100, 580)">
+    <circle cx="0" cy="0" r="65" fill="#0d1117" stroke="#30363d" stroke-width="3"/>
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#f85149" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <circle cx="20" cy="15" r="8" fill="#f85149"/>
+    <text x="0" y="85" fill="#c9d1d9" font-size="13" font-weight="700" text-anchor="middle">GAIN (HIGHLIGHTS)</text>
+    <text x="0" y="102" fill="#8b949e" font-size="11" text-anchor="middle">RGB: +0.22, -0.05, +0.04</text>
+  </g>
+
+</svg>

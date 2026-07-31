@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0d1117;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#21262d"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="clipGrad1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0969da"/>
+      <stop offset="100%" stop-color="#1f6feb"/>
+    </linearGradient>
+    <linearGradient id="clipGrad2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8957e5"/>
+      <stop offset="100%" stop-color="#a371f7"/>
+    </linearGradient>
+    <linearGradient id="audioGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#238636"/>
+      <stop offset="100%" stop-color="#2ea043"/>
+    </linearGradient>
+    <linearGradient id="meterGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#238636"/>
+      <stop offset="70%" stop-color="#d29922"/>
+      <stop offset="100%" stop-color="#f85149"/>
+    </linearGradient>
+    <linearGradient id="accentBtn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1f6feb"/>
+      <stop offset="100%" stop-color="#388bfd"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base App Background -->
+  <rect width="1280" height="720" fill="#0d1117"/>
+
+  <!-- Top Navigation Header -->
+  <rect width="1280" height="48" fill="url(#headerGrad)"/>
+  <line x1="0" y1="48" x2="1280" y2="48" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- Window Controls -->
+  <circle cx="20" cy="24" r="6" fill="#f85149"/>
+  <circle cx="40" cy="24" r="6" fill="#d29922"/>
+  <circle cx="60" cy="24" r="6" fill="#3fb950"/>
+
+  <!-- App Title & Project Info -->
+  <text x="90" y="29" fill="#f0f6fc" font-size="14" font-weight="600">LumaFusion Pro</text>
+  <text x="210" y="29" fill="#8b949e" font-size="13">•  Keyframe Animation & Motion Easing Curve Editor</text>
+  <rect x="520" y="12" width="240" height="24" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <text x="640" y="28" fill="#58a6ff" font-size="12" font-weight="600" text-anchor="middle">00:04:18:22 / 00:12:45:00</text>
+
+  <!-- Top Right Action Buttons -->
+  <rect x="1020" y="10" width="110" height="28" rx="6" fill="url(#accentBtn)"/>
+  <text x="1075" y="28" fill="#ffffff" font-size="12" font-weight="600" text-anchor="middle">Export (4K)</text>
+  <rect x="1145" y="10" width="115" height="28" rx="6" fill="#21262d" stroke="#30363d"/>
+  <text x="1202" y="28" fill="#c9d1d9" font-size="12" font-weight="500" text-anchor="middle">Settings ⚙️</text>
+
+  <!-- Screen Specific Content -->
+  
+  <!-- Keyframe Bézier Curve Editor -->
+  <g>
+    <!-- Left Parameter Controls Panel -->
+    <rect x="12" y="60" width="360" height="648" rx="8" fill="#161b22" stroke="#30363d"/>
+    <text x="28" y="88" fill="#8b949e" font-size="13" font-weight="700">ANIMATION TRANSFORM CONTROLS</text>
+
+    
+      <g transform="translate(24, 110)">
+        <rect width="336" height="82" rx="6" fill="#0d1117" stroke="#30363d"/>
+        <text x="12" y="26" fill="#f0f6fc" font-size="13" font-weight="600">Position X</text>
+        <text x="324" y="26" fill="#58a6ff" font-size="13" font-weight="700" text-anchor="end">1920.0 px</text>
+        
+        <!-- Slider Track -->
+        <rect x="12" y="44" width="312" height="8" rx="4" fill="#21262d"/>
+        <rect x="12" y="44" width="187.20000000000002" height="8" rx="4" fill="#1f6feb"/>
+        <circle cx="199.20000000000002" cy="48" r="8" fill="#58a6ff" stroke="#ffffff"/>
+      </g>
+    
+      <g transform="translate(24, 205)">
+        <rect width="336" height="82" rx="6" fill="#0d1117" stroke="#30363d"/>
+        <text x="12" y="26" fill="#f0f6fc" font-size="13" font-weight="600">Position Y</text>
+        <text x="324" y="26" fill="#58a6ff" font-size="13" font-weight="700" text-anchor="end">1080.0 px</text>
+        
+        <!-- Slider Track -->
+        <rect x="12" y="44" width="312" height="8" rx="4" fill="#21262d"/>
+        <rect x="12" y="44" width="156" height="8" rx="4" fill="#1f6feb"/>
+        <circle cx="168" cy="48" r="8" fill="#58a6ff" stroke="#ffffff"/>
+      </g>
+    
+      <g transform="translate(24, 300)">
+        <rect width="336" height="82" rx="6" fill="#0d1117" stroke="#30363d"/>
+        <text x="12" y="26" fill="#f0f6fc" font-size="13" font-weight="600">Scale (Zoom)</text>
+        <text x="324" y="26" fill="#58a6ff" font-size="13" font-weight="700" text-anchor="end">145 %</text>
+        
+        <!-- Slider Track -->
+        <rect x="12" y="44" width="312" height="8" rx="4" fill="#21262d"/>
+        <rect x="12" y="44" width="234" height="8" rx="4" fill="#1f6feb"/>
+        <circle cx="246" cy="48" r="8" fill="#58a6ff" stroke="#ffffff"/>
+      </g>
+    
+      <g transform="translate(24, 395)">
+        <rect width="336" height="82" rx="6" fill="#0d1117" stroke="#30363d"/>
+        <text x="12" y="26" fill="#f0f6fc" font-size="13" font-weight="600">Rotation</text>
+        <text x="324" y="26" fill="#58a6ff" font-size="13" font-weight="700" text-anchor="end">12.5 deg</text>
+        
+        <!-- Slider Track -->
+        <rect x="12" y="44" width="312" height="8" rx="4" fill="#21262d"/>
+        <rect x="12" y="44" width="109.2" height="8" rx="4" fill="#1f6feb"/>
+        <circle cx="121.2" cy="48" r="8" fill="#58a6ff" stroke="#ffffff"/>
+      </g>
+    
+      <g transform="translate(24, 490)">
+        <rect width="336" height="82" rx="6" fill="#0d1117" stroke="#30363d"/>
+        <text x="12" y="26" fill="#f0f6fc" font-size="13" font-weight="600">Opacity</text>
+        <text x="324" y="26" fill="#58a6ff" font-size="13" font-weight="700" text-anchor="end">100 %</text>
+        
+        <!-- Slider Track -->
+        <rect x="12" y="44" width="312" height="8" rx="4" fill="#21262d"/>
+        <rect x="12" y="44" width="312" height="8" rx="4" fill="#1f6feb"/>
+        <circle cx="324" cy="48" r="8" fill="#58a6ff" stroke="#ffffff"/>
+      </g>
+    
+      <g transform="translate(24, 585)">
+        <rect width="336" height="82" rx="6" fill="#0d1117" stroke="#30363d"/>
+        <text x="12" y="26" fill="#f0f6fc" font-size="13" font-weight="600">Motion Blur Easing</text>
+        <text x="324" y="26" fill="#58a6ff" font-size="13" font-weight="700" text-anchor="end">Cubic Bezier</text>
+        
+        <!-- Slider Track -->
+        <rect x="12" y="44" width="312" height="8" rx="4" fill="#21262d"/>
+        <rect x="12" y="44" width="249.60000000000002" height="8" rx="4" fill="#1f6feb"/>
+        <circle cx="261.6" cy="48" r="8" fill="#58a6ff" stroke="#ffffff"/>
+      </g>
+    
+
+    <!-- Right Curve Canvas -->
+    <rect x="384" y="60" width="884" height="648" rx="8" fill="#010409" stroke="#30363d"/>
+    <text x="404" y="88" fill="#8b949e" font-size="13" font-weight="700">VELOCITY & EASING CURVE EDITOR (BÉZIER GRAPH)</text>
+
+    <!-- Grid background lines -->
+    <g stroke="#21262d" stroke-width="1">
+      <line x1="400" y1="150" x2="1240" y2="150"/>
+      <line x1="400" y1="270" x2="1240" y2="270"/>
+      <line x1="400" y1="390" x2="1240" y2="390"/>
+      <line x1="400" y1="510" x2="1240" y2="510"/>
+      <line x1="400" y1="630" x2="1240" y2="630"/>
+
+      <line x1="560" y1="110" x2="560" y2="660"/>
+      <line x1="720" y1="110" x2="720" y2="660"/>
+      <line x1="880" y1="110" x2="880" y2="660"/>
+      <line x1="1040" y1="110" x2="1040" y2="660"/>
+    </g>
+
+    <!-- Curve Path -->
+    <path d="M 420 580 C 600 580, 680 180, 880 180 C 1040 180, 1120 420, 1220 420" fill="none" stroke="#58a6ff" stroke-width="4"/>
+    
+    <!-- Keyframe Handle Points -->
+    <!-- Point 1 -->
+    <polygon points="420,570 430,580 420,590 410,580" fill="#d29922" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Point 2 -->
+    <polygon points="880,170 890,180 880,190 870,180" fill="#d29922" stroke="#ffffff" stroke-width="2"/>
+    <line x1="880" y1="180" x2="780" y2="180" stroke="#d29922" stroke-width="2" stroke-dasharray="3,3"/>
+    <circle cx="780" cy="180" r="6" fill="#d29922"/>
+
+    <!-- Point 3 -->
+    <polygon points="1220,410 1230,420 1220,430 1210,420" fill="#d29922" stroke="#ffffff" stroke-width="2"/>
+  </g>
+
+</svg>
