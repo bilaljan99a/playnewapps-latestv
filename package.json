@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "express": "^5.2.1",
+    "jpeg-js": "^0.4.4",
     "serve": "^14.2.4"
   },
   "devDependencies": {
