@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0b0f19;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <defs>
+    <linearGradient id="capHeaderGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#181f2e"/>
+      <stop offset="100%" stop-color="#111622"/>
+    </linearGradient>
+    <linearGradient id="capBtnGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <linearGradient id="capPinkGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff0844"/>
+      <stop offset="100%" stop-color="#ffb199"/>
+    </linearGradient>
+    <linearGradient id="capClipGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0061ff"/>
+      <stop offset="100%" stop-color="#60efff"/>
+    </linearGradient>
+    <linearGradient id="capAudioGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#11998e"/>
+      <stop offset="100%" stop-color="#38ef7d"/>
+    </linearGradient>
+    <linearGradient id="capMeter" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#11998e"/>
+      <stop offset="70%" stop-color="#f6d365"/>
+      <stop offset="100%" stop-color="#ff0844"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Background -->
+  <rect width="1280" height="720" fill="#0b0f19"/>
+
+  <!-- Header -->
+  <rect width="1280" height="48" fill="url(#capHeaderGrad)"/>
+  <line x1="0" y1="48" x2="1280" y2="48" stroke="#252f44" stroke-width="1"/>
+
+  <!-- Window Buttons -->
+  <circle cx="20" cy="24" r="6" fill="#ff4b5c"/>
+  <circle cx="40" cy="24" r="6" fill="#fdb813"/>
+  <circle cx="60" cy="24" r="6" fill="#00e676"/>
+
+  <!-- App Title and Mode -->
+  <text x="90" y="29" fill="#ffffff" font-size="14" font-weight="700">CapCut Pro</text>
+  <text x="200" y="29" fill="#8da0c4" font-size="13">•  Smart Export Settings &amp;amp; TikTok Direct Publishing</text>
+  <rect x="520" y="12" width="240" height="24" rx="6" fill="#0b0f19" stroke="#252f44"/>
+  <text x="640" y="28" fill="#4facfe" font-size="12" font-weight="600" text-anchor="middle">00:00:15:10 / 00:00:45:00</text>
+
+  <!-- Top Right Actions -->
+  <rect x="1010" y="10" width="120" height="28" rx="6" fill="url(#capBtnGrad)"/>
+  <text x="1070" y="28" fill="#000000" font-size="12" font-weight="700" text-anchor="middle">Export (4K / 60)</text>
+  <rect x="1140" y="10" width="120" height="28" rx="6" fill="#181f2e" stroke="#252f44"/>
+  <text x="1200" y="28" fill="#c3d2ec" font-size="12" font-weight="600" text-anchor="middle">TikTok Direct</text>
+
+  <!-- Content -->
+  
+  <rect x="0" y="48" width="1280" height="672" fill="#06090e" opacity="0.85"/>
+  <g transform="translate(290, 90)">
+    <rect width="700" height="540" rx="14" fill="#111622" stroke="#252f44" stroke-width="2"/>
+    <rect width="700" height="56" rx="14" fill="#181f2e"/>
+    <text x="24" y="34" fill="#ffffff" font-size="16" font-weight="700">CAPCUT PRO SMART EXPORT &amp; PUBLISH SUITE</text>
+    <text x="660" y="34" fill="#8da0c4" font-size="16" font-weight="700" text-anchor="middle">X</text>
+
+    <text x="24" y="85" fill="#8da0c4" font-size="12" font-weight="700">EXPORT PRESETS</text>
+    <rect x="24" y="98" width="160" height="44" rx="8" fill="url(#capBtnGrad)"/>
+    <text x="104" y="125" fill="#000000" font-size="13" font-weight="700" text-anchor="middle">TikTok Direct 4K</text>
+
+    <rect x="194" y="98" width="160" height="44" rx="8" fill="#0b0f19" stroke="#252f44"/>
+    <text x="274" y="125" fill="#ffffff" font-size="13" font-weight="600" text-anchor="middle">Shorts / Reels 60fps</text>
+
+    <rect x="364" y="98" width="150" height="44" rx="8" fill="#0b0f19" stroke="#252f44"/>
+    <text x="439" y="125" fill="#ffffff" font-size="13" font-weight="600" text-anchor="middle">Custom MP4 / MOV</text>
+
+    <text x="24" y="175" fill="#8da0c4" font-size="12" font-weight="700">RESOLUTION &amp; SMART HDR</text>
+    <rect x="24" y="188" width="315" height="44" rx="6" fill="#0b0f19" stroke="#252f44"/>
+    <text x="40" y="215" fill="#ffffff" font-size="13" font-weight="600">4K UHD (2160 x 3840 Vertical)</text>
+    <rect x="270" y="198" width="55" height="24" rx="4" fill="#ff0844"/>
+    <text x="297" y="214" fill="#ffffff" font-size="10" font-weight="700" text-anchor="middle">HDR</text>
+
+    <rect x="360" y="188" width="315" height="44" rx="6" fill="#0b0f19" stroke="#252f44"/>
+    <text x="376" y="215" fill="#ffffff" font-size="13" font-weight="600">60 fps (High Velocity Smooth)</text>
+
+    <text x="24" y="265" fill="#8da0c4" font-size="12" font-weight="700">SMART CAPTION BURST &amp; AUTO-COVER PHOTO GENERATOR</text>
+    <rect x="24" y="280" width="650" height="10" rx="5" fill="#0b0f19"/>
+    <rect x="24" y="280" width="500" height="10" rx="5" fill="url(#capClipGrad)"/>
+    <circle cx="524" cy="285" r="12" fill="#00f2fe" stroke="#ffffff" stroke-width="2"/>
+    <text x="24" y="312" fill="#4facfe" font-size="13" font-weight="700">Target Bitrate: 65 Mbps (Optimized for Social Compression)</text>
+
+    <rect x="24" y="340" width="652" height="70" rx="8" fill="#0b0f19" stroke="#252f44"/>
+    <text x="40" y="365" fill="#ffffff" font-size="13" font-weight="700">Hardware NVIDIA / Apple Silicon Encode (88% Complete)...</text>
+    <rect x="40" y="380" width="620" height="14" rx="7" fill="#181f2e"/>
+    <rect x="40" y="380" width="545" height="14" rx="7" fill="url(#capMeter)"/>
+
+    <rect x="360" y="460" width="150" height="44" rx="6" fill="#181f2e" stroke="#252f44"/>
+    <text x="435" y="487" fill="#8da0c4" font-size="13" font-weight="600" text-anchor="middle">Cancel</text>
+    <rect x="526" y="460" width="150" height="44" rx="6" fill="url(#capBtnGrad)"/>
+    <text x="601" y="487" fill="#000000" font-size="13" font-weight="800" text-anchor="middle">Publish to TikTok</text>
+  </g>
+
+</svg>

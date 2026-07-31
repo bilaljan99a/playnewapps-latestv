@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0b0f19;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <defs>
+    <linearGradient id="capHeaderGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#181f2e"/>
+      <stop offset="100%" stop-color="#111622"/>
+    </linearGradient>
+    <linearGradient id="capBtnGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <linearGradient id="capPinkGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff0844"/>
+      <stop offset="100%" stop-color="#ffb199"/>
+    </linearGradient>
+    <linearGradient id="capClipGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0061ff"/>
+      <stop offset="100%" stop-color="#60efff"/>
+    </linearGradient>
+    <linearGradient id="capAudioGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#11998e"/>
+      <stop offset="100%" stop-color="#38ef7d"/>
+    </linearGradient>
+    <linearGradient id="capMeter" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#11998e"/>
+      <stop offset="70%" stop-color="#f6d365"/>
+      <stop offset="100%" stop-color="#ff0844"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Background -->
+  <rect width="1280" height="720" fill="#0b0f19"/>
+
+  <!-- Header -->
+  <rect width="1280" height="48" fill="url(#capHeaderGrad)"/>
+  <line x1="0" y1="48" x2="1280" y2="48" stroke="#252f44" stroke-width="1"/>
+
+  <!-- Window Buttons -->
+  <circle cx="20" cy="24" r="6" fill="#ff4b5c"/>
+  <circle cx="40" cy="24" r="6" fill="#fdb813"/>
+  <circle cx="60" cy="24" r="6" fill="#00e676"/>
+
+  <!-- App Title and Mode -->
+  <text x="90" y="29" fill="#ffffff" font-size="14" font-weight="700">CapCut Pro</text>
+  <text x="200" y="29" fill="#8da0c4" font-size="13">•  Multi-track Viral Video Timeline &amp;amp; Vertical Canvas</text>
+  <rect x="520" y="12" width="240" height="24" rx="6" fill="#0b0f19" stroke="#252f44"/>
+  <text x="640" y="28" fill="#4facfe" font-size="12" font-weight="600" text-anchor="middle">00:00:15:10 / 00:00:45:00</text>
+
+  <!-- Top Right Actions -->
+  <rect x="1010" y="10" width="120" height="28" rx="6" fill="url(#capBtnGrad)"/>
+  <text x="1070" y="28" fill="#000000" font-size="12" font-weight="700" text-anchor="middle">Export (4K / 60)</text>
+  <rect x="1140" y="10" width="120" height="28" rx="6" fill="#181f2e" stroke="#252f44"/>
+  <text x="1200" y="28" fill="#c3d2ec" font-size="12" font-weight="600" text-anchor="middle">TikTok Direct</text>
+
+  <!-- Content -->
+  
+  <!-- Left Asset Panel -->
+  <rect x="12" y="60" width="300" height="370" rx="8" fill="#111622" stroke="#252f44"/>
+  <text x="28" y="85" fill="#8da0c4" font-size="12" font-weight="700">MEDIA &amp; SMART TEMPLATES</text>
+  <g fill="#181f2e" stroke="#252f44">
+    <rect x="24" y="100" width="120" height="75" rx="6"/>
+    <rect x="156" y="100" width="120" height="75" rx="6"/>
+    <rect x="24" y="188" width="120" height="75" rx="6"/>
+    <rect x="156" y="188" width="120" height="75" rx="6"/>
+    <rect x="24" y="276" width="120" height="75" rx="6"/>
+    <rect x="156" y="276" width="120" height="75" rx="6"/>
+  </g>
+  <text x="84" y="142" fill="#ffffff" font-size="11" text-anchor="middle">Hook_01.mp4</text>
+  <text x="216" y="142" fill="#ffffff" font-size="11" text-anchor="middle">Broll_4k.mov</text>
+  <text x="84" y="230" fill="#ffffff" font-size="11" text-anchor="middle">TalkingHead.mp4</text>
+  <text x="216" y="230" fill="#ffffff" font-size="11" text-anchor="middle">Reaction.mov</text>
+
+  <!-- Video Monitor Preview (Vertical Shorts / TikTok style inside Widescreen monitor) -->
+  <rect x="324" y="60" width="944" height="370" rx="8" fill="#06090e" stroke="#252f44"/>
+  <!-- 9:16 Vertical Phone Preview -->
+  <rect x="680" y="75" width="180" height="320" rx="16" fill="#181f2e" stroke="#4facfe" stroke-width="2"/>
+  <circle cx="770" cy="180" r="45" fill="url(#capPinkGrad)" opacity="0.85"/>
+  <polygon points="750,260 770,220 790,260" fill="#60efff"/>
+  <text x="770" y="305" fill="#ffffff" font-size="15" font-weight="800" text-anchor="middle">VIRAL HOOK CAPTIONS</text>
+  <rect x="700" y="285" width="140" height="28" rx="6" fill="#ff0844" opacity="0.2"/>
+
+  <!-- Player Controls -->
+  <rect x="700" y="405" width="140" height="20" rx="10" fill="#111622"/>
+  <text x="770" y="419" fill="#4facfe" font-size="11" text-anchor="middle">⏮  ◀  ▶  ⏭</text>
+
+  <!-- Multi-track Magnetic Timeline -->
+  <rect x="12" y="442" width="1256" height="266" rx="8" fill="#111622" stroke="#252f44"/>
+  <rect x="12" y="442" width="140" height="266" fill="#0b0f19" stroke="#252f44"/>
+  <text x="24" y="480" fill="#ffb199" font-size="12" font-weight="700">T1 Auto-Captions</text>
+  <text x="24" y="525" fill="#60efff" font-size="12" font-weight="700">V2 Overlay / Stickers</text>
+  <text x="24" y="570" fill="#00f2fe" font-size="12" font-weight="700">V1 Main Clip Track</text>
+  <text x="24" y="615" fill="#38ef7d" font-size="12" font-weight="700">A1 Dialogue / Mic</text>
+  <text x="24" y="660" fill="#4facfe" font-size="12" font-weight="700">A2 Trending Beat</text>
+
+  <!-- Track Clips -->
+  <rect x="160" y="462" width="480" height="32" rx="4" fill="#ff0844" opacity="0.85"/>
+  <text x="175" y="482" fill="#ffffff" font-size="11" font-weight="700">[DYNAMIC KARAOKE] Why 99% of creators fail...</text>
+
+  <rect x="300" y="507" width="220" height="32" rx="4" fill="url(#capPinkGrad)"/>
+  <text x="315" y="527" fill="#ffffff" font-size="11" font-weight="700">Sticker_Fire_Animation.mov</text>
+
+  <rect x="160" y="552" width="380" height="32" rx="4" fill="url(#capClipGrad)"/>
+  <text x="175" y="572" fill="#ffffff" font-size="11" font-weight="700">Main_TalkingHead_PRO.mp4 [4K Ultra HD]</text>
+  <rect x="550" y="552" width="360" height="32" rx="4" fill="url(#capClipGrad)"/>
+  <text x="565" y="572" fill="#ffffff" font-size="11" font-weight="700">Broll_Cyberpunk_City.mov [AI Enhanced]</text>
+
+  <rect x="160" y="597" width="750" height="32" rx="4" fill="url(#capAudioGrad)"/>
+  <text x="175" y="617" fill="#000000" font-size="11" font-weight="700">Voiceover_Isolated_Clean_24bit.wav</text>
+
+  <rect x="160" y="642" width="1080" height="32" rx="4" fill="#181f2e" stroke="#4facfe"/>
+  <text x="175" y="662" fill="#4facfe" font-size="11" font-weight="700">Phonk_Viral_Background_Beat_BPM130.mp3</text>
+
+  <line x1="620" y1="442" x2="620" y2="708" stroke="#ff0844" stroke-width="2"/>
+  <polygon points="612,442 628,442 620,452" fill="#ff0844"/>
+
+</svg>

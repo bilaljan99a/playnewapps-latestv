@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0b0f19;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <defs>
+    <linearGradient id="capHeaderGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#181f2e"/>
+      <stop offset="100%" stop-color="#111622"/>
+    </linearGradient>
+    <linearGradient id="capBtnGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <linearGradient id="capPinkGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff0844"/>
+      <stop offset="100%" stop-color="#ffb199"/>
+    </linearGradient>
+    <linearGradient id="capClipGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0061ff"/>
+      <stop offset="100%" stop-color="#60efff"/>
+    </linearGradient>
+    <linearGradient id="capAudioGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#11998e"/>
+      <stop offset="100%" stop-color="#38ef7d"/>
+    </linearGradient>
+    <linearGradient id="capMeter" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#11998e"/>
+      <stop offset="70%" stop-color="#f6d365"/>
+      <stop offset="100%" stop-color="#ff0844"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Background -->
+  <rect width="1280" height="720" fill="#0b0f19"/>
+
+  <!-- Header -->
+  <rect width="1280" height="48" fill="url(#capHeaderGrad)"/>
+  <line x1="0" y1="48" x2="1280" y2="48" stroke="#252f44" stroke-width="1"/>
+
+  <!-- Window Buttons -->
+  <circle cx="20" cy="24" r="6" fill="#ff4b5c"/>
+  <circle cx="40" cy="24" r="6" fill="#fdb813"/>
+  <circle cx="60" cy="24" r="6" fill="#00e676"/>
+
+  <!-- App Title and Mode -->
+  <text x="90" y="29" fill="#ffffff" font-size="14" font-weight="700">CapCut Pro</text>
+  <text x="200" y="29" fill="#8da0c4" font-size="13">•  CapCut Pro AI Suite &amp;amp; Smart Automation Tools</text>
+  <rect x="520" y="12" width="240" height="24" rx="6" fill="#0b0f19" stroke="#252f44"/>
+  <text x="640" y="28" fill="#4facfe" font-size="12" font-weight="600" text-anchor="middle">00:00:15:10 / 00:00:45:00</text>
+
+  <!-- Top Right Actions -->
+  <rect x="1010" y="10" width="120" height="28" rx="6" fill="url(#capBtnGrad)"/>
+  <text x="1070" y="28" fill="#000000" font-size="12" font-weight="700" text-anchor="middle">Export (4K / 60)</text>
+  <rect x="1140" y="10" width="120" height="28" rx="6" fill="#181f2e" stroke="#252f44"/>
+  <text x="1200" y="28" fill="#c3d2ec" font-size="12" font-weight="600" text-anchor="middle">TikTok Direct</text>
+
+  <!-- Content -->
+  
+  <text x="28" y="85" fill="#8da0c4" font-size="13" font-weight="700">CAPCUT PRO AI SUITE: SMART GENERATION &amp; ENHANCEMENT LAB</text>
+  
+      <g transform="translate(24, 110)">
+        <rect width="390" height="255" rx="12" fill="#111622" stroke="#252f44" stroke-width="2"/>
+        <rect x="16" y="16" width="358" height="135" rx="8" fill="#0b0f19"/>
+        <circle cx="195" cy="83" r="38" fill="url(#capBtnGrad)" opacity="0.8"/>
+        <text x="195" y="88" fill="#000000" font-size="16" font-weight="800" text-anchor="middle">AI</text>
+        <rect x="290" y="26" width="70" height="24" rx="6" fill="#ff0844"/>
+        <text x="325" y="42" fill="#ffffff" font-size="11" font-weight="800" text-anchor="middle">PRO AI</text>
+
+        <text x="20" y="180" fill="#ffffff" font-size="16" font-weight="700">AI Auto-Cut &amp; Beat Sync</text>
+        <text x="20" y="205" fill="#8da0c4" font-size="13">Automatically cuts dead air and aligns clips to TikTok music beats</text>
+        <rect x="20" y="215" width="110" height="28" rx="6" fill="url(#capClipGrad)"/>
+        <text x="75" y="233" fill="#000000" font-size="12" font-weight="700" text-anchor="middle">Launch Tool</text>
+      </g>
+    
+      <g transform="translate(439, 110)">
+        <rect width="390" height="255" rx="12" fill="#111622" stroke="#252f44" stroke-width="2"/>
+        <rect x="16" y="16" width="358" height="135" rx="8" fill="#0b0f19"/>
+        <circle cx="195" cy="83" r="38" fill="url(#capBtnGrad)" opacity="0.8"/>
+        <text x="195" y="88" fill="#000000" font-size="16" font-weight="800" text-anchor="middle">AI</text>
+        <rect x="290" y="26" width="70" height="24" rx="6" fill="#ff0844"/>
+        <text x="325" y="42" fill="#ffffff" font-size="11" font-weight="800" text-anchor="middle">INSTANT</text>
+
+        <text x="20" y="180" fill="#ffffff" font-size="16" font-weight="700">Smart Background Remove</text>
+        <text x="20" y="205" fill="#8da0c4" font-size="13">Isolates subjects without green screen using segmentation neural nets</text>
+        <rect x="20" y="215" width="110" height="28" rx="6" fill="url(#capClipGrad)"/>
+        <text x="75" y="233" fill="#000000" font-size="12" font-weight="700" text-anchor="middle">Launch Tool</text>
+      </g>
+    
+      <g transform="translate(854, 110)">
+        <rect width="390" height="255" rx="12" fill="#111622" stroke="#252f44" stroke-width="2"/>
+        <rect x="16" y="16" width="358" height="135" rx="8" fill="#0b0f19"/>
+        <circle cx="195" cy="83" r="38" fill="url(#capBtnGrad)" opacity="0.8"/>
+        <text x="195" y="88" fill="#000000" font-size="16" font-weight="800" text-anchor="middle">AI</text>
+        <rect x="290" y="26" width="70" height="24" rx="6" fill="#ff0844"/>
+        <text x="325" y="42" fill="#ffffff" font-size="11" font-weight="800" text-anchor="middle">TRENDING</text>
+
+        <text x="20" y="180" fill="#ffffff" font-size="16" font-weight="700">AI Magic Avatars</text>
+        <text x="20" y="205" fill="#8da0c4" font-size="13">Generate realistic lip-syncing digital avatars for explainer ads</text>
+        <rect x="20" y="215" width="110" height="28" rx="6" fill="url(#capClipGrad)"/>
+        <text x="75" y="233" fill="#000000" font-size="12" font-weight="700" text-anchor="middle">Launch Tool</text>
+      </g>
+    
+      <g transform="translate(24, 390)">
+        <rect width="390" height="255" rx="12" fill="#111622" stroke="#252f44" stroke-width="2"/>
+        <rect x="16" y="16" width="358" height="135" rx="8" fill="#0b0f19"/>
+        <circle cx="195" cy="83" r="38" fill="url(#capBtnGrad)" opacity="0.8"/>
+        <text x="195" y="88" fill="#000000" font-size="16" font-weight="800" text-anchor="middle">AI</text>
+        <rect x="290" y="26" width="70" height="24" rx="6" fill="#ff0844"/>
+        <text x="325" y="42" fill="#ffffff" font-size="11" font-weight="800" text-anchor="middle">AI AGENT</text>
+
+        <text x="20" y="180" fill="#ffffff" font-size="16" font-weight="700">Script to Video AI</text>
+        <text x="20" y="205" fill="#8da0c4" font-size="13">Turns natural language script prompts into full B-roll sequences</text>
+        <rect x="20" y="215" width="110" height="28" rx="6" fill="url(#capClipGrad)"/>
+        <text x="75" y="233" fill="#000000" font-size="12" font-weight="700" text-anchor="middle">Launch Tool</text>
+      </g>
+    
+      <g transform="translate(439, 390)">
+        <rect width="390" height="255" rx="12" fill="#111622" stroke="#252f44" stroke-width="2"/>
+        <rect x="16" y="16" width="358" height="135" rx="8" fill="#0b0f19"/>
+        <circle cx="195" cy="83" r="38" fill="url(#capBtnGrad)" opacity="0.8"/>
+        <text x="195" y="88" fill="#000000" font-size="16" font-weight="800" text-anchor="middle">AI</text>
+        <rect x="290" y="26" width="70" height="24" rx="6" fill="#ff0844"/>
+        <text x="325" y="42" fill="#ffffff" font-size="11" font-weight="800" text-anchor="middle">PRO AUDIO</text>
+
+        <text x="20" y="180" fill="#ffffff" font-size="16" font-weight="700">Vocal Isolation &amp; Denoise</text>
+        <text x="20" y="205" fill="#8da0c4" font-size="13">Removes wind, traffic, and room reverb for studio vocal clarity</text>
+        <rect x="20" y="215" width="110" height="28" rx="6" fill="url(#capClipGrad)"/>
+        <text x="75" y="233" fill="#000000" font-size="12" font-weight="700" text-anchor="middle">Launch Tool</text>
+      </g>
+    
+      <g transform="translate(854, 390)">
+        <rect width="390" height="255" rx="12" fill="#111622" stroke="#252f44" stroke-width="2"/>
+        <rect x="16" y="16" width="358" height="135" rx="8" fill="#0b0f19"/>
+        <circle cx="195" cy="83" r="38" fill="url(#capBtnGrad)" opacity="0.8"/>
+        <text x="195" y="88" fill="#000000" font-size="16" font-weight="800" text-anchor="middle">AI</text>
+        <rect x="290" y="26" width="70" height="24" rx="6" fill="#ff0844"/>
+        <text x="325" y="42" fill="#ffffff" font-size="11" font-weight="800" text-anchor="middle">CINEMATIC</text>
+
+        <text x="20" y="180" fill="#ffffff" font-size="16" font-weight="700">AI Color Grade Match</text>
+        <text x="20" y="205" fill="#8da0c4" font-size="13">Matches lighting and color palettes from reference cinema shots</text>
+        <rect x="20" y="215" width="110" height="28" rx="6" fill="url(#capClipGrad)"/>
+        <text x="75" y="233" fill="#000000" font-size="12" font-weight="700" text-anchor="middle">Launch Tool</text>
+      </g>
+    
+
+</svg>
