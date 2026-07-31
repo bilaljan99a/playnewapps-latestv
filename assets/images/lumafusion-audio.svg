@@ -39,9 +39,9 @@
   <circle cx="40" cy="24" r="6" fill="#d29922"/>
   <circle cx="60" cy="24" r="6" fill="#3fb950"/>
 
-  <!-- App Title & Project Info -->
+  <!-- App Title and Project Info -->
   <text x="90" y="29" fill="#f0f6fc" font-size="14" font-weight="600">LumaFusion Pro</text>
-  <text x="210" y="29" fill="#8b949e" font-size="13">•  Audio Editing & Multi-track Mixer Console</text>
+  <text x="210" y="29" fill="#8b949e" font-size="13">•  Audio Editing &amp;amp; Multi-track Mixer Console</text>
   <rect x="520" y="12" width="240" height="24" rx="6" fill="#0d1117" stroke="#30363d"/>
   <text x="640" y="28" fill="#58a6ff" font-size="12" font-weight="600" text-anchor="middle">00:04:18:22 / 00:12:45:00</text>
 
@@ -49,7 +49,7 @@
   <rect x="1020" y="10" width="110" height="28" rx="6" fill="url(#accentBtn)"/>
   <text x="1075" y="28" fill="#ffffff" font-size="12" font-weight="600" text-anchor="middle">Export (4K)</text>
   <rect x="1145" y="10" width="115" height="28" rx="6" fill="#21262d" stroke="#30363d"/>
-  <text x="1202" y="28" fill="#c9d1d9" font-size="12" font-weight="500" text-anchor="middle">Settings ⚙️</text>
+  <text x="1202" y="28" fill="#c9d1d9" font-size="12" font-weight="500" text-anchor="middle">Settings</text>
 
   <!-- Screen Specific Content -->
   
@@ -70,7 +70,7 @@
         <rect x="20" y="48" width="24" height="420" rx="4" fill="#010409"/>
         <rect x="22" y="106" width="20" height="360" rx="2" fill="url(#meterGrad)"/>
 
-        <!-- Slider Track & Knob -->
+        <!-- Slider Track and Knob -->
         <line x1="85" y1="58" x2="85" y2="460" stroke="#30363d" stroke-width="6" stroke-linecap="round"/>
         <rect x="65" y="100" width="40" height="24" rx="4" fill="#58a6ff" stroke="#ffffff" stroke-width="1.5"/>
         
@@ -95,7 +95,7 @@
         <rect x="20" y="48" width="24" height="420" rx="4" fill="#010409"/>
         <rect x="22" y="156" width="20" height="310" rx="2" fill="url(#meterGrad)"/>
 
-        <!-- Slider Track & Knob -->
+        <!-- Slider Track and Knob -->
         <line x1="85" y1="58" x2="85" y2="460" stroke="#30363d" stroke-width="6" stroke-linecap="round"/>
         <rect x="65" y="150" width="40" height="24" rx="4" fill="#58a6ff" stroke="#ffffff" stroke-width="1.5"/>
         
@@ -120,7 +120,7 @@
         <rect x="20" y="48" width="24" height="420" rx="4" fill="#010409"/>
         <rect x="22" y="226" width="20" height="240" rx="2" fill="url(#meterGrad)"/>
 
-        <!-- Slider Track & Knob -->
+        <!-- Slider Track and Knob -->
         <line x1="85" y1="58" x2="85" y2="460" stroke="#30363d" stroke-width="6" stroke-linecap="round"/>
         <rect x="65" y="220" width="40" height="24" rx="4" fill="#58a6ff" stroke="#ffffff" stroke-width="1.5"/>
         
@@ -145,7 +145,7 @@
         <rect x="20" y="48" width="24" height="420" rx="4" fill="#010409"/>
         <rect x="22" y="226" width="20" height="240" rx="2" fill="url(#meterGrad)"/>
 
-        <!-- Slider Track & Knob -->
+        <!-- Slider Track and Knob -->
         <line x1="85" y1="58" x2="85" y2="460" stroke="#30363d" stroke-width="6" stroke-linecap="round"/>
         <rect x="65" y="220" width="40" height="24" rx="4" fill="#58a6ff" stroke="#ffffff" stroke-width="1.5"/>
         
@@ -170,7 +170,7 @@
         <rect x="20" y="48" width="24" height="420" rx="4" fill="#010409"/>
         <rect x="22" y="286" width="20" height="180" rx="2" fill="url(#meterGrad)"/>
 
-        <!-- Slider Track & Knob -->
+        <!-- Slider Track and Knob -->
         <line x1="85" y1="58" x2="85" y2="460" stroke="#30363d" stroke-width="6" stroke-linecap="round"/>
         <rect x="65" y="280" width="40" height="24" rx="4" fill="#58a6ff" stroke="#ffffff" stroke-width="1.5"/>
         
@@ -195,7 +195,7 @@
         <rect x="20" y="48" width="24" height="420" rx="4" fill="#010409"/>
         <rect x="22" y="186" width="20" height="280" rx="2" fill="url(#meterGrad)"/>
 
-        <!-- Slider Track & Knob -->
+        <!-- Slider Track and Knob -->
         <line x1="85" y1="58" x2="85" y2="460" stroke="#30363d" stroke-width="6" stroke-linecap="round"/>
         <rect x="65" y="180" width="40" height="24" rx="4" fill="#58a6ff" stroke="#ffffff" stroke-width="1.5"/>
         
@@ -220,7 +220,7 @@
         <rect x="20" y="48" width="24" height="420" rx="4" fill="#010409"/>
         <rect x="22" y="256" width="20" height="210" rx="2" fill="url(#meterGrad)"/>
 
-        <!-- Slider Track & Knob -->
+        <!-- Slider Track and Knob -->
         <line x1="85" y1="58" x2="85" y2="460" stroke="#30363d" stroke-width="6" stroke-linecap="round"/>
         <rect x="65" y="250" width="40" height="24" rx="4" fill="#58a6ff" stroke="#ffffff" stroke-width="1.5"/>
         
@@ -245,7 +245,7 @@
         <rect x="20" y="48" width="24" height="420" rx="4" fill="#010409"/>
         <rect x="22" y="76" width="20" height="390" rx="2" fill="url(#meterGrad)"/>
 
-        <!-- Slider Track & Knob -->
+        <!-- Slider Track and Knob -->
         <line x1="85" y1="58" x2="85" y2="460" stroke="#30363d" stroke-width="6" stroke-linecap="round"/>
         <rect x="65" y="70" width="40" height="24" rx="4" fill="#58a6ff" stroke="#ffffff" stroke-width="1.5"/>
         

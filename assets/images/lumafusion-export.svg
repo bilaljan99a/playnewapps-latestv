@@ -39,7 +39,7 @@
   <circle cx="40" cy="24" r="6" fill="#d29922"/>
   <circle cx="60" cy="24" r="6" fill="#3fb950"/>
 
-  <!-- App Title & Project Info -->
+  <!-- App Title and Project Info -->
   <text x="90" y="29" fill="#f0f6fc" font-size="14" font-weight="600">LumaFusion Pro</text>
   <text x="210" y="29" fill="#8b949e" font-size="13">•  4K UHD High-Resolution Export Suite</text>
   <rect x="520" y="12" width="240" height="24" rx="6" fill="#0d1117" stroke="#30363d"/>
@@ -49,7 +49,7 @@
   <rect x="1020" y="10" width="110" height="28" rx="6" fill="url(#accentBtn)"/>
   <text x="1075" y="28" fill="#ffffff" font-size="12" font-weight="600" text-anchor="middle">Export (4K)</text>
   <rect x="1145" y="10" width="115" height="28" rx="6" fill="#21262d" stroke="#30363d"/>
-  <text x="1202" y="28" fill="#c9d1d9" font-size="12" font-weight="500" text-anchor="middle">Settings ⚙️</text>
+  <text x="1202" y="28" fill="#c9d1d9" font-size="12" font-weight="500" text-anchor="middle">Settings</text>
 
   <!-- Screen Specific Content -->
   
@@ -62,24 +62,24 @@
     <!-- Modal Header -->
     <rect width="700" height="56" rx="12" fill="#21262d"/>
     <text x="24" y="34" fill="#f0f6fc" font-size="16" font-weight="700">EXPORT PROJECT SETTINGS</text>
-    <text x="660" y="34" fill="#8b949e" font-size="16" font-weight="700" text-anchor="middle">✕</text>
+    <text x="660" y="34" fill="#8b949e" font-size="16" font-weight="700" text-anchor="middle">X</text>
     
     <!-- Export Format Selection Pills -->
     <text x="24" y="85" fill="#8b949e" font-size="12" font-weight="700">FILE TYPE DESTINATION</text>
     <rect x="24" y="98" width="145" height="42" rx="8" fill="url(#accentBtn)"/>
-    <text x="96" y="124" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">🎬 Movie (MP4)</text>
+    <text x="96" y="124" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">Movie (MP4)</text>
     
     <rect x="184" y="98" width="145" height="42" rx="8" fill="#0d1117" stroke="#30363d"/>
-    <text x="256" y="124" fill="#c9d1d9" font-size="13" font-weight="600" text-anchor="middle">🎵 Audio Only</text>
+    <text x="256" y="124" fill="#c9d1d9" font-size="13" font-weight="600" text-anchor="middle">Audio Only</text>
 
     <rect x="344" y="98" width="155" height="42" rx="8" fill="#0d1117" stroke="#30363d"/>
-    <text x="421" y="124" fill="#c9d1d9" font-size="13" font-weight="600" text-anchor="middle">📁 FCPXML Package</text>
+    <text x="421" y="124" fill="#c9d1d9" font-size="13" font-weight="600" text-anchor="middle">FCPXML Package</text>
 
     <rect x="514" y="98" width="160" height="42" rx="8" fill="#0d1117" stroke="#30363d"/>
-    <text x="594" y="124" fill="#c9d1d9" font-size="13" font-weight="600" text-anchor="middle">☁️ Project Archive</text>
+    <text x="594" y="124" fill="#c9d1d9" font-size="13" font-weight="600" text-anchor="middle">Project Archive</text>
 
-    <!-- Resolution & Framerate Dropdowns -->
-    <text x="24" y="175" fill="#8b949e" font-size="12" font-weight="700">RESOLUTION & FRAMERATE</text>
+    <!-- Resolution and Framerate Dropdowns -->
+    <text x="24" y="175" fill="#8b949e" font-size="12" font-weight="700">RESOLUTION &amp; FRAMERATE</text>
     <rect x="24" y="188" width="315" height="44" rx="6" fill="#0d1117" stroke="#30363d"/>
     <text x="40" y="215" fill="#f0f6fc" font-size="13" font-weight="600">4K Ultra HD (3840 x 2160)</text>
     <rect x="270" y="198" width="55" height="24" rx="4" fill="#238636"/>
@@ -106,7 +106,7 @@
     <text x="435" y="487" fill="#c9d1d9" font-size="13" font-weight="600" text-anchor="middle">Cancel</text>
     
     <rect x="526" y="460" width="150" height="44" rx="6" fill="url(#accentBtn)"/>
-    <text x="601" y="487" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">Start Export 🚀</text>
+    <text x="601" y="487" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">Start Export</text>
   </g>
 
 </svg>

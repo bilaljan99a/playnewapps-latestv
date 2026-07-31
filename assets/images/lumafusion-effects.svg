@@ -39,9 +39,9 @@
   <circle cx="40" cy="24" r="6" fill="#d29922"/>
   <circle cx="60" cy="24" r="6" fill="#3fb950"/>
 
-  <!-- App Title & Project Info -->
+  <!-- App Title and Project Info -->
   <text x="90" y="29" fill="#f0f6fc" font-size="14" font-weight="600">LumaFusion Pro</text>
-  <text x="210" y="29" fill="#8b949e" font-size="13">•  Visual Effects & Keying Library</text>
+  <text x="210" y="29" fill="#8b949e" font-size="13">•  Visual Effects &amp;amp; Keying Library</text>
   <rect x="520" y="12" width="240" height="24" rx="6" fill="#0d1117" stroke="#30363d"/>
   <text x="640" y="28" fill="#58a6ff" font-size="12" font-weight="600" text-anchor="middle">00:04:18:22 / 00:12:45:00</text>
 
@@ -49,14 +49,14 @@
   <rect x="1020" y="10" width="110" height="28" rx="6" fill="url(#accentBtn)"/>
   <text x="1075" y="28" fill="#ffffff" font-size="12" font-weight="600" text-anchor="middle">Export (4K)</text>
   <rect x="1145" y="10" width="115" height="28" rx="6" fill="#21262d" stroke="#30363d"/>
-  <text x="1202" y="28" fill="#c9d1d9" font-size="12" font-weight="500" text-anchor="middle">Settings ⚙️</text>
+  <text x="1202" y="28" fill="#c9d1d9" font-size="12" font-weight="500" text-anchor="middle">Settings</text>
 
   <!-- Screen Specific Content -->
   
   <g>
     <!-- Left FX Library Browser -->
     <rect x="12" y="60" width="420" height="648" rx="8" fill="#161b22" stroke="#30363d"/>
-    <text x="28" y="88" fill="#8b949e" font-size="13" font-weight="700">VISUAL EFFECTS & TRANSITION PRESETS</text>
+    <text x="28" y="88" fill="#8b949e" font-size="13" font-weight="700">VISUAL EFFECTS &amp; TRANSITION PRESETS</text>
 
     <!-- Grid of FX thumbnails -->
     

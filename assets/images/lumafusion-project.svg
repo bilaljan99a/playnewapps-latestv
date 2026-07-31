@@ -39,9 +39,9 @@
   <circle cx="40" cy="24" r="6" fill="#d29922"/>
   <circle cx="60" cy="24" r="6" fill="#3fb950"/>
 
-  <!-- App Title & Project Info -->
+  <!-- App Title and Project Info -->
   <text x="90" y="29" fill="#f0f6fc" font-size="14" font-weight="600">LumaFusion Pro</text>
-  <text x="210" y="29" fill="#8b949e" font-size="13">•  Project Manager & Media Browser Workspace</text>
+  <text x="210" y="29" fill="#8b949e" font-size="13">•  Project Manager &amp;amp; Media Browser Workspace</text>
   <rect x="520" y="12" width="240" height="24" rx="6" fill="#0d1117" stroke="#30363d"/>
   <text x="640" y="28" fill="#58a6ff" font-size="12" font-weight="600" text-anchor="middle">00:04:18:22 / 00:12:45:00</text>
 
@@ -49,13 +49,13 @@
   <rect x="1020" y="10" width="110" height="28" rx="6" fill="url(#accentBtn)"/>
   <text x="1075" y="28" fill="#ffffff" font-size="12" font-weight="600" text-anchor="middle">Export (4K)</text>
   <rect x="1145" y="10" width="115" height="28" rx="6" fill="#21262d" stroke="#30363d"/>
-  <text x="1202" y="28" fill="#c9d1d9" font-size="12" font-weight="500" text-anchor="middle">Settings ⚙️</text>
+  <text x="1202" y="28" fill="#c9d1d9" font-size="12" font-weight="500" text-anchor="middle">Settings</text>
 
   <!-- Screen Specific Content -->
   
   <!-- Project Management Grid -->
   <g>
-    <text x="28" y="85" fill="#8b949e" font-size="13" font-weight="700">RECENT REPOSITORY PROJECTS & RECENT EDITS</text>
+    <text x="28" y="85" fill="#8b949e" font-size="13" font-weight="700">RECENT REPOSITORY PROJECTS &amp; RECENT EDITS</text>
     
     <!-- 6 Project Cards Grid -->
     
@@ -71,10 +71,10 @@
           <rect x="310" y="130" width="60" height="24" rx="4" fill="#010409" opacity="0.9"/>
           <text x="340" y="146" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">08:24</text>
 
-          <!-- Title & Meta -->
+          <!-- Title and Meta -->
           <text x="16" y="186" fill="#f0f6fc" font-size="14" font-weight="700">Commercial_Vlog_Edit.lfx</text>
           <text x="16" y="208" fill="#8b949e" font-size="12">Today, 10:45 AM • 3.2 GB</text>
-          <text x="340" y="208" fill="#58a6ff" font-size="12" font-weight="600">Open ➔</text>
+          <text x="340" y="208" fill="#58a6ff" font-size="12" font-weight="600">Open</text>
         </g>
       
         <g transform="translate(439, 100)">
@@ -89,10 +89,10 @@
           <rect x="310" y="130" width="60" height="24" rx="4" fill="#010409" opacity="0.9"/>
           <text x="340" y="146" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">02:15</text>
 
-          <!-- Title & Meta -->
+          <!-- Title and Meta -->
           <text x="16" y="186" fill="#f0f6fc" font-size="14" font-weight="700">Documentary_Trailer_4K.lfx</text>
           <text x="16" y="208" fill="#8b949e" font-size="12">Yesterday • 1.8 GB</text>
-          <text x="340" y="208" fill="#58a6ff" font-size="12" font-weight="600">Open ➔</text>
+          <text x="340" y="208" fill="#58a6ff" font-size="12" font-weight="600">Open</text>
         </g>
       
         <g transform="translate(854, 100)">
@@ -107,10 +107,10 @@
           <rect x="310" y="130" width="60" height="24" rx="4" fill="#010409" opacity="0.9"/>
           <text x="340" y="146" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">14:50</text>
 
-          <!-- Title & Meta -->
+          <!-- Title and Meta -->
           <text x="16" y="186" fill="#f0f6fc" font-size="14" font-weight="700">YouTube_Tech_Review.lfx</text>
           <text x="16" y="208" fill="#8b949e" font-size="12">Jul 28, 2026 • 5.4 GB</text>
-          <text x="340" y="208" fill="#58a6ff" font-size="12" font-weight="600">Open ➔</text>
+          <text x="340" y="208" fill="#58a6ff" font-size="12" font-weight="600">Open</text>
         </g>
       
         <g transform="translate(24, 365)">
@@ -125,10 +125,10 @@
           <rect x="310" y="130" width="60" height="24" rx="4" fill="#010409" opacity="0.9"/>
           <text x="340" y="146" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">22:10</text>
 
-          <!-- Title & Meta -->
+          <!-- Title and Meta -->
           <text x="16" y="186" fill="#f0f6fc" font-size="14" font-weight="700">Short_Film_Final_Cut.lfx</text>
           <text x="16" y="208" fill="#8b949e" font-size="12">Jul 24, 2026 • 12.1 GB</text>
-          <text x="340" y="208" fill="#58a6ff" font-size="12" font-weight="600">Open ➔</text>
+          <text x="340" y="208" fill="#58a6ff" font-size="12" font-weight="600">Open</text>
         </g>
       
         <g transform="translate(439, 365)">
@@ -143,10 +143,10 @@
           <rect x="310" y="130" width="60" height="24" rx="4" fill="#010409" opacity="0.9"/>
           <text x="340" y="146" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">04:30</text>
 
-          <!-- Title & Meta -->
+          <!-- Title and Meta -->
           <text x="16" y="186" fill="#f0f6fc" font-size="14" font-weight="700">Music_Video_ColorGraded.lfx</text>
           <text x="16" y="208" fill="#8b949e" font-size="12">Jul 20, 2026 • 2.9 GB</text>
-          <text x="340" y="208" fill="#58a6ff" font-size="12" font-weight="600">Open ➔</text>
+          <text x="340" y="208" fill="#58a6ff" font-size="12" font-weight="600">Open</text>
         </g>
       
         <g transform="translate(854, 365)">
@@ -161,10 +161,10 @@
           <rect x="310" y="130" width="60" height="24" rx="4" fill="#010409" opacity="0.9"/>
           <text x="340" y="146" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">45:00</text>
 
-          <!-- Title & Meta -->
+          <!-- Title and Meta -->
           <text x="16" y="186" fill="#f0f6fc" font-size="14" font-weight="700">Podcast_Episode_104.lfx</text>
           <text x="16" y="208" fill="#8b949e" font-size="12">Jul 15, 2026 • 8.7 GB</text>
-          <text x="340" y="208" fill="#58a6ff" font-size="12" font-weight="600">Open ➔</text>
+          <text x="340" y="208" fill="#58a6ff" font-size="12" font-weight="600">Open</text>
         </g>
       
 
