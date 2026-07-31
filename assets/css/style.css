@@ -1624,7 +1624,9 @@ picture, img {
 }
 
 .quick-info-table {
-    width: 100%;
+    width: 100% !important;
+    min-width: 0 !important;
+    table-layout: fixed;
     border-collapse: collapse;
 }
 
@@ -1632,6 +1634,8 @@ picture, img {
     padding: 0.75rem 0;
     border-bottom: 1px solid var(--border-color);
     font-size: 0.95rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .quick-info-table tr:last-child th,
@@ -1644,22 +1648,23 @@ picture, img {
     text-align: left;
     color: var(--text-secondary);
     font-weight: 500;
-    width: 40%;
+    width: 38%;
 }
 
 .quick-info-table td {
     color: var(--text-primary);
     font-weight: 600;
     text-align: right;
+    width: 62%;
 }
 
 /* ==========================================================================
    Comparison Table Styling (Modern & Fully Responsive)
    ========================================================================== */
 .table-responsive {
-    max-width: 100vw;
-    box-sizing: border-box;
+    max-width: 100%;
     width: 100%;
+    box-sizing: border-box;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     margin: 2rem 0;
@@ -1864,16 +1869,17 @@ table.comparison-table tbody tr:hover,
 /* Responsive Scaling for Mobile Screens */
 @media (max-width: 768px) {
     .table-responsive {
-    max-width: 100vw;
-    box-sizing: border-box;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
         margin: 1.25rem 0;
         border-radius: 10px;
     }
 
     table.comparison-table,
-    .review-section table,
-    #dynamic-review-body table {
-        min-width: 650px;
+    .review-section table:not(.quick-info-table),
+    #dynamic-review-body table:not(.quick-info-table) {
+        min-width: 520px;
         font-size: 0.875rem;
     }
 
@@ -1886,7 +1892,28 @@ table.comparison-table tbody tr:hover,
     #dynamic-review-body table thead th,
     #dynamic-review-body table tbody th,
     #dynamic-review-body table tbody td {
-        padding: 0.875rem 1rem;
+        padding: 0.75rem 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    table.comparison-table,
+    .review-section table:not(.quick-info-table),
+    #dynamic-review-body table:not(.quick-info-table) {
+        min-width: 460px;
+        font-size: 0.8125rem;
+    }
+
+    table.comparison-table thead th,
+    table.comparison-table tbody th,
+    table.comparison-table tbody td,
+    .review-section table thead th,
+    .review-section table tbody th,
+    .review-section table tbody td,
+    #dynamic-review-body table thead th,
+    #dynamic-review-body table tbody th,
+    #dynamic-review-body table tbody td {
+        padding: 0.5rem 0.65rem;
     }
 }
 
@@ -2842,10 +2869,11 @@ table.comparison-table tbody tr:hover,
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--space-sm);
+    padding: 0.625rem 0.75rem;
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
     background-color: var(--surface-color);
+    gap: 0.5rem;
 }
 .best-deal-highlight {
     border-color: var(--secondary-color);
@@ -2854,11 +2882,14 @@ table.comparison-table tbody tr:hover,
 .price-store-info {
     display: flex;
     align-items: center;
-    gap: var(--space-sm);
+    gap: 0.35rem;
     flex-wrap: wrap;
+    min-width: 0;
+    flex: 1;
 }
 .store-name {
     font-weight: 600;
+    font-size: 0.875rem;
     color: var(--text-primary);
 }
 .deal-badge {
@@ -2868,6 +2899,7 @@ table.comparison-table tbody tr:hover,
     padding: 2px 6px;
     border-radius: var(--radius-sm);
     font-weight: 700;
+    flex-shrink: 0;
 }
 .best-deal-badge {
     background-color: var(--secondary-color);
@@ -2877,16 +2909,34 @@ table.comparison-table tbody tr:hover,
     border-radius: var(--radius-sm);
     font-weight: 700;
     text-transform: uppercase;
+    flex-shrink: 0;
 }
 .price-action {
     display: flex;
     align-items: center;
-    gap: var(--space-md);
+    gap: 0.625rem;
+    flex-shrink: 0;
+}
+.price-action .btn {
+    width: 64px;
+    min-width: 64px;
+    height: 34px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1;
+    box-sizing: border-box;
 }
 .price-amount {
     font-weight: 700;
-    font-size: var(--text-lg);
+    font-size: var(--text-md);
     color: var(--text-primary);
+    white-space: nowrap;
 }
 
 /* Editor Recommendation */
@@ -3095,9 +3145,26 @@ table.comparison-table tbody tr:hover,
 }
 @media (max-width: 768px) {
     .price-comparison-item {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+    .price-store-info {
+        flex: 1;
+        min-width: 0;
+    }
+    .price-action {
+        width: auto;
+        justify-content: flex-end;
+        flex-shrink: 0;
+    }
+}
+@media (max-width: 360px) {
+    .price-comparison-item {
         flex-direction: column;
         align-items: flex-start;
-        gap: var(--space-md);
+        gap: 0.5rem;
     }
     .price-action {
         width: 100%;
@@ -3158,7 +3225,7 @@ body.modal-open {
 html, body {
     overflow-x: hidden !important;
     width: 100%;
-    max-width: 100vw;
+    max-width: 100%;
     position: relative;
 }
 
