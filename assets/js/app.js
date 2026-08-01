@@ -237,8 +237,8 @@ class App {
         // 1. Affiliate Buttons
         const affiliateContainer = document.getElementById('affiliate-buttons-container');
         if (affiliateContainer) {
-            let links = review.affiliateLinks;
-            if ((!links || links.length === 0) && review.downloads && review.downloads.length > 0) {
+            let links = Array.isArray(review.affiliateLinks) ? review.affiliateLinks : null;
+            if ((!links || links.length === 0) && Array.isArray(review.downloads) && review.downloads.length > 0) {
                 links = review.downloads.map(d => ({
                     label: d.storeId === 'apple' ? 'Get on Apple App Store' : (d.storeId === 'google' ? 'Get on Google Play' : 'Official Site'),
                     url: d.url,
@@ -246,7 +246,7 @@ class App {
                     icon: d.storeId === 'apple' ? 'apple' : (d.storeId === 'google' ? 'android' : 'open_in_new')
                 }));
             }
-            if (links && links.length > 0) {
+            if (Array.isArray(links) && links.length > 0) {
                 affiliateContainer.style.display = 'flex';
                 affiliateContainer.innerHTML = links.map(link => `
                     <a href="${link.url}" target="_blank" rel="noopener sponsored" class="btn ${link.isPrimary ? 'btn-primary cta-pulse' : 'btn-outline'} affiliate-btn">
@@ -604,26 +604,68 @@ class App {
         // 8. Video Review Section
         const videoSection = document.getElementById('video-section');
         const videoContainer = document.querySelector('.video-container');
-        if (review.video && (review.video.thumbnail || review.video.embedUrl || review.video.youtubeId)) {
-            if (videoSection) videoSection.style.display = 'block';
+        let videoObj = null;
+        if (typeof review.video === 'string' && review.video.trim()) {
+            const vId = review.video.trim();
+            videoObj = {
+                youtubeId: vId,
+                embedUrl: `https://www.youtube-nocookie.com/embed/${vId}`,
+                thumbnail: `https://img.youtube.com/vi/${vId}/maxresdefault.jpg`,
+                title: `Watch ${review.id === 'kinemaster' ? 'KineMaster' : review.title} in Action`,
+                description: `Watch the official video tutorial and walkthrough to see ${review.id === 'kinemaster' ? 'KineMaster' : review.title}'s core features, interface, and capabilities in action.`
+            };
+        } else if (review.video && typeof review.video === 'object' && (review.video.thumbnail || review.video.embedUrl || review.video.youtubeId)) {
+            const vId = review.video.youtubeId || '';
+            let rawEmbed = review.video.embedUrl || (vId ? `https://www.youtube-nocookie.com/embed/${vId}` : '');
+            if (rawEmbed) {
+                rawEmbed = rawEmbed.replace('www.youtube.com', 'www.youtube-nocookie.com');
+            }
+            videoObj = {
+                youtubeId: vId,
+                embedUrl: rawEmbed,
+                thumbnail: review.video.thumbnail || (vId ? `https://img.youtube.com/vi/${vId}/maxresdefault.jpg` : ''),
+                title: review.video.title || `Watch ${review.id === 'kinemaster' ? 'KineMaster' : review.title} in Action`,
+                description: review.video.description || `Watch the official video tutorial and walkthrough to see ${review.id === 'kinemaster' ? 'KineMaster' : review.title}'s core features, interface, and capabilities in action.`
+            };
+        }
+
+        if (videoObj && (videoObj.embedUrl || videoObj.thumbnail)) {
+            if (videoSection) {
+                videoSection.style.display = 'block';
+                const headingEl = videoSection.querySelector('h2');
+                if (headingEl) {
+                    headingEl.textContent = review.id === 'kinemaster' ? 'Watch KineMaster in Action' : `Watch ${review.title} in Action`;
+                }
+
+                let introEl = videoSection.querySelector('.video-intro-text');
+                if (!introEl && videoContainer) {
+                    introEl = document.createElement('p');
+                    introEl.className = 'video-intro-text';
+                    introEl.style.cssText = 'color: #94a3b8; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;';
+                    videoContainer.parentNode.insertBefore(introEl, videoContainer);
+                }
+                if (introEl) {
+                    introEl.textContent = videoObj.description;
+                }
+            }
             if (videoContainer) {
-                const embedUrl = review.video.embedUrl || (review.video.youtubeId ? `https://www.youtube.com/embed/${review.video.youtubeId}` : '');
-                const thumbUrl = review.video.thumbnail || (review.video.youtubeId ? `https://img.youtube.com/vi/${review.video.youtubeId}/maxresdefault.jpg` : '');
+                const embedUrl = videoObj.embedUrl;
+                const thumbUrl = videoObj.thumbnail;
                 
                 if (embedUrl) {
                     videoContainer.innerHTML = `
                         <div class="video-placeholder card" tabindex="0" role="button" aria-label="Play ${review.title} Video Review">
-                            <img src="${thumbUrl}" alt="${review.video.title || review.title + ' Official Video Tutorial'}" class="video-thumbnail" loading="lazy">
+                            <img src="${thumbUrl}" alt="${videoObj.title || review.title + ' Official Video Tutorial'}" class="video-thumbnail" loading="lazy">
                             <div class="play-overlay-badge">
                                 <span class="material-icons-round play-icon">play_circle_filled</span>
-                                <span class="video-play-text">${review.video.title || 'Watch Official Video Tutorial'}</span>
+                                <span class="video-play-text">${videoObj.title || 'Watch Official Video Tutorial'}</span>
                             </div>
                         </div>`;
                     
                     const placeholder = videoContainer.querySelector('.video-placeholder');
                     if (placeholder) {
                         const loadIframe = () => {
-                            videoContainer.innerHTML = `<iframe src="${embedUrl}?autoplay=1" title="${review.title} Video Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+                            videoContainer.innerHTML = `<iframe src="${embedUrl}?autoplay=1" title="${review.title} Video Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>`;
                         };
                         placeholder.addEventListener('click', loadIframe);
                         placeholder.addEventListener('keydown', (e) => {

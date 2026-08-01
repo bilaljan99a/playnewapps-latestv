@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0b0f19;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <rect width="1280" height="720" fill="#0c101a"/>
+
+  <g transform="translate(40, 40)">
+    <rect width="1200" height="640" rx="16" fill="#141b29" stroke="#253248" stroke-width="2"/>
+
+    <!-- Left Preview Screen with Green Screen Masking -->
+    <g transform="translate(30, 30)">
+      <rect width="680" height="580" rx="12" fill="#1a2336" stroke="#2c3a54"/>
+      <!-- Background Image -->
+      <rect width="680" height="580" rx="12" fill="#0f172a"/>
+      <circle cx="200" cy="180" r="100" fill="#3b82f6" opacity="0.3"/>
+      <circle cx="500" cy="380" r="140" fill="#8b5cf6" opacity="0.3"/>
+      
+      <!-- Keyed Subject (Simulated Cutout actor with green border eliminated) -->
+      <g transform="translate(240, 120)">
+        <path d="M 100 80 Q 150 20 200 80 T 250 220 L 220 380 L 80 380 L 50 220 Z" fill="#ff4757"/>
+        <circle cx="150" cy="60" r="40" fill="#ffd166"/>
+        <!-- Glow outline showing clean key -->
+        <path d="M 100 80 Q 150 20 200 80 T 250 220 L 220 380 L 80 380 L 50 220 Z" fill="none" stroke="#00e676" stroke-width="2" stroke-dasharray="6 6"/>
+      </g>
+
+      <!-- Active Mask Badge -->
+      <rect x="20" y="20" width="220" height="36" rx="8" fill="#ff4757"/>
+      <text x="130" y="43" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">CHROMA KEY ENABLED ✓</text>
+    </g>
+
+    <!-- Right Inspector Panel: Chroma Key Settings -->
+    <g transform="translate(740, 30)">
+      <rect width="430" height="580" rx="12" fill="#0f1522" stroke="#1e293b"/>
+      <text x="24" y="40" fill="#ffffff" font-size="18" font-weight="bold">Chroma Key Controls</text>
+
+      <!-- Enable Switch -->
+      <g transform="translate(24, 60)">
+        <text x="0" y="20" fill="#e2e8f0" font-size="14" font-weight="600">Enable Chroma Key</text>
+        <rect x="320" y="2" width="56" height="28" rx="14" fill="#ff4757"/>
+        <circle cx="362" cy="16" r="11" fill="#ffffff"/>
+      </g>
+
+      <!-- Key Color Picker -->
+      <g transform="translate(24, 115)">
+        <text x="0" y="20" fill="#cbd5e1" font-size="13">Key Color (Screen Sample)</text>
+        <rect x="240" y="0" width="136" height="32" rx="6" fill="#00e676" stroke="#ffffff" stroke-width="2"/>
+        <text x="308" y="21" fill="#000000" font-size="12" font-weight="bold" text-anchor="middle">#00E676 Green</text>
+      </g>
+
+      <!-- Slider 1: Foreground Opacity Curve -->
+      <g transform="translate(24, 175)">
+        <text x="0" y="0" fill="#cbd5e1" font-size="13">Foreground Threshold: 28%</text>
+        <rect x="0" y="12" width="380" height="10" rx="5" fill="#1e293b"/>
+        <rect x="0" y="12" width="106" height="10" rx="5" fill="#ff4757"/>
+        <circle cx="106" cy="17" r="10" fill="#ffffff"/>
+      </g>
+
+      <!-- Slider 2: Background Transparency Curve -->
+      <g transform="translate(24, 235)">
+        <text x="0" y="0" fill="#cbd5e1" font-size="13">Background Spill Removal: 50%</text>
+        <rect x="0" y="12" width="380" height="10" rx="5" fill="#1e293b"/>
+        <rect x="0" y="12" width="190" height="10" rx="5" fill="#1e90ff"/>
+        <circle cx="190" cy="17" r="10" fill="#ffffff"/>
+      </g>
+
+      <!-- Detail Curve Graph box -->
+      <g transform="translate(24, 295)">
+        <rect width="380" height="150" rx="10" fill="#161f31" stroke="#253248"/>
+        <text x="16" y="25" fill="#94a3b8" font-size="12" font-weight="bold">DETAIL CURVE TUNER</text>
+        <!-- Curve Line -->
+        <path d="M 30 120 C 120 120, 180 40, 350 40" fill="none" stroke="#ff4757" stroke-width="3"/>
+        <circle cx="180" cy="80" r="6" fill="#ffffff" stroke="#ff4757" stroke-width="2"/>
+        <circle cx="280" cy="45" r="6" fill="#ffffff" stroke="#ff4757" stroke-width="2"/>
+      </g>
+
+      <!-- Show Mask Toggle -->
+      <g transform="translate(24, 470)">
+        <rect width="380" height="44" rx="8" fill="#1e293b" stroke="#334155"/>
+        <text x="20" y="27" fill="#ffffff" font-size="13" font-weight="600">Show Black &amp; White Mask</text>
+        <rect x="310" y="10" width="50" height="24" rx="12" fill="#334155"/>
+        <circle cx="322" cy="22" r="9" fill="#94a3b8"/>
+      </g>
+    </g>
+  </g>
+</svg>
