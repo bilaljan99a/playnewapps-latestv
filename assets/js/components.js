@@ -21,6 +21,15 @@ class Components {
         return 'apps';
     }
 
+    static getBannerImage(item) {
+        if (item.banner) return item.banner;
+        if (item.screenshots && item.screenshots.length > 0) {
+            const ss = item.screenshots[0];
+            return ss.thumbnail || ss.url || item.icon;
+        }
+        return item.icon;
+    }
+
     static createAppCard(item) {
         const platform = (item.platforms && item.platforms.length > 0) ? item.platforms[0] : (item.categoryId === 'pc' ? 'PC' : (item.categoryId === 'action' || item.categoryId === 'rpg' ? 'Games' : 'Android'));
         const icon = this.getPlatformIcon(platform);
@@ -32,15 +41,15 @@ class Components {
                     <span class="badge platform-badge"><span class="material-icons-round">${icon}</span> ${platform}</span>
                 </div>
                 <div class="card-content">
-                    <div class="rating" aria-label="Rating ${item.rating} out of 5 stars">
-                        ${this.getRatingStars(item.rating)}
-                        <span class="rating-text">${item.rating}</span>
-                    </div>
                     <h3 class="card-title"><a href="review.html?id=${item.id}">${item.title}</a></h3>
+                    <div class="rating" aria-label="Rating ${item.rating || 5} out of 5 stars">
+                        ${this.getRatingStars(item.rating || 5)}
+                        <span class="rating-text">${item.rating || 5.0}</span>
+                    </div>
                     <p class="card-excerpt">${item.description}</p>
                     <div class="card-footer">
                         <span class="author">By ${item.authorId ? 'PlayNewApps' : 'Reviewer'}</span>
-                        ${item.updatedAt ? `<span class="date"><time datetime="${item.updatedAt}">${new Date(item.updatedAt).toLocaleDateString('en-US', {month: 'short', day: 'numeric', year: 'numeric'})}</time></span>` : ''}
+                        ${item.updatedAt ? `<span class="date"><time datetime="${item.updatedAt}">${new Date(item.updatedAt).toLocaleDateString('en-US', {month: 'short', day: 'numeric', year: 'numeric'})}</time></span>` : '<a href="review.html?id=' + item.id + '" class="read-review-link">Read Review →</a>'}
                     </div>
                 </div>
             </article>
@@ -58,7 +67,15 @@ class Components {
                 </div>
                 <div class="card-content">
                     <h3 class="card-title"><a href="review.html?id=${item.id}">${item.title}</a></h3>
+                    <div class="rating" aria-label="Rating ${item.rating || 5} out of 5 stars">
+                        ${this.getRatingStars(item.rating || 5)}
+                        <span class="rating-text">${item.rating || 5.0}</span>
+                    </div>
                     <p class="card-excerpt">${item.description}</p>
+                    <div class="card-footer">
+                        <span class="author">By ${item.authorId ? 'PlayNewApps' : 'Reviewer'}</span>
+                        <a href="review.html?id=${item.id}" class="btn btn-outline btn-sm slide-review-btn">Read Review</a>
+                    </div>
                 </div>
             </article>
         `;
