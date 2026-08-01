@@ -118,7 +118,7 @@ class Components {
                     </div>
                 </div>
                 <div class="coupon-content">
-                    <h3 class="coupon-title">${item.title}</h3>
+                    <h3 class="coupon-title"><a href="deal.html?id=${item.id}" style="color: inherit; text-decoration: none;">${item.title}</a></h3>
                     <p class="coupon-desc">${item.description}</p>
                     <div class="coupon-meta" style="flex-wrap: wrap;">
                         <span class="success-rate" title="Success Rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> ${successRate} ${votes}</span>

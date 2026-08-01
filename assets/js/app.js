@@ -789,20 +789,225 @@ document.addEventListener('DOMContentLoaded', () => {
 const oldInit = App.init.bind(App);
 App.init = async function() {
     const path = window.location.pathname;
-    if (path.endsWith('author.html')) {
+    if (path.endsWith('author.html') || path.includes('author.html')) {
         await this.initAuthorPage();
-    } else if (path.endsWith('category.html')) {
+    } else if (path.endsWith('category.html') || path.includes('category.html')) {
         await this.initCategoryPage();
-    } else if (path.endsWith('store.html')) {
+    } else if (path.endsWith('store.html') || path.includes('store.html') || path.endsWith('stores.html') || path.includes('stores.html')) {
         await this.initStorePage();
-    } else if (path.endsWith('coupon.html')) {
+    } else if (path.endsWith('coupon.html') || path.includes('coupon.html')) {
         await this.initCouponPage();
+    } else if (path.endsWith('deal.html') || path.includes('deal.html')) {
+        await this.initDealPage();
     } else {
         await oldInit();
-        return; // oldInit handles search
     }
     
+    await this.initHeaderStoresDropdown();
     this.initSearch();
+    this.initScrollReveal();
+};
+
+App.initScrollReveal = function() {
+    const reveals = document.querySelectorAll('.reveal');
+    reveals.forEach(el => el.classList.add('active'));
+};
+
+App.initHeaderStoresDropdown = async function() {
+    const dropdownMenu = document.getElementById('stores-dropdown-menu');
+    if (!dropdownMenu) return;
+
+    try {
+        const stores = await DataService.getStores();
+        if (stores && stores.length > 0) {
+            dropdownMenu.innerHTML = stores.map(store => `
+                <a href="store.html?id=${store.id}" class="dropdown-item">
+                    <img src="${store.logo}" alt="${store.name} logo" width="22" height="22" loading="lazy" style="object-fit: contain; background: #ffffff; border-radius: 4px; padding: 2px; border: 1px solid var(--border-color, #e2e8f0);">
+                    <span>${store.name}</span>
+                </a>
+            `).join('') + `
+                <div class="dropdown-divider"></div>
+                <a href="store.html" class="dropdown-item dropdown-view-all">
+                    <strong>View All Stores &rarr;</strong>
+                </a>
+            `;
+        }
+    } catch (err) {
+        console.error('Error fetching stores for header dropdown:', err);
+    }
+};
+
+App.initDealPage = async function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    let id = urlParams.get('id') || 'wps-office-70pro';
+    
+    const allCoupons = await DataService.getCoupons();
+    const deal = allCoupons ? allCoupons.find(c => c.id === id) : null;
+    
+    if (!deal) {
+        const main = document.querySelector('.main-content');
+        if (main) main.innerHTML = '<div class="container" style="padding: 4rem 1rem; text-align: center;"><h2>Deal not found</h2><p><a href="coupon.html" class="btn btn-primary" style="margin-top:1rem;">Browse All Deals</a></p></div>';
+        return;
+    }
+
+    const stores = await DataService.getStores();
+    const store = stores ? stores.find(s => s.id === deal.store.id) : null;
+
+    // Document Title & Meta Tags
+    document.title = `${deal.title} - ${deal.store.name} | PlayNewApps`;
+    
+    const canonicalUrl = `https://playnewapps.store/deal.html?id=${deal.id}`;
+    const updateMeta = (selector, attr, content) => {
+        const el = document.querySelector(selector);
+        if (el) el.setAttribute(attr, content);
+    };
+    updateMeta('meta[name="description"]', 'content', deal.description || '');
+    updateMeta('#canonical-url', 'href', canonicalUrl);
+    updateMeta('meta[property="og:url"]', 'content', canonicalUrl);
+    updateMeta('meta[property="og:title"]', 'content', `${deal.title} | PlayNewApps`);
+    updateMeta('meta[property="og:description"]', 'content', deal.description || '');
+
+    // JSON-LD Structured Data
+    const schemaData = {
+        "@context": "https://schema.org",
+        "@type": "DiscountOffer",
+        "name": deal.title,
+        "description": deal.description,
+        "discount": deal.discount,
+        "offeredBy": {
+            "@type": "Organization",
+            "name": deal.store.name,
+            "url": store ? store.affiliateLink : deal.affiliateLink
+        },
+        "url": canonicalUrl
+    };
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(schemaData);
+    document.head.appendChild(script);
+
+    // Update Breadcrumbs
+    const storeBreadcrumb = document.getElementById('breadcrumb-store-link');
+    if (storeBreadcrumb && deal.store) {
+        storeBreadcrumb.textContent = deal.store.name;
+        storeBreadcrumb.href = `store.html?id=${deal.store.id}`;
+    }
+    const dealTitleBreadcrumb = document.getElementById('breadcrumb-deal-title');
+    if (dealTitleBreadcrumb) dealTitleBreadcrumb.textContent = deal.title;
+
+    // Store Logo & Link
+    const dealStoreLogo = document.getElementById('deal-store-logo');
+    if (dealStoreLogo) {
+        dealStoreLogo.src = deal.store.logo;
+        dealStoreLogo.alt = `${deal.store.name} Logo`;
+    }
+    const dealStoreLink = document.getElementById('deal-store-link');
+    if (dealStoreLink) dealStoreLink.href = `store.html?id=${deal.store.id}`;
+    const dealStoreName = document.getElementById('deal-store-name');
+    if (dealStoreName) {
+        dealStoreName.textContent = deal.store.name;
+        dealStoreName.href = `store.html?id=${deal.store.id}`;
+    }
+
+    // Discount & Badges
+    const discountPill = document.getElementById('deal-discount-pill');
+    if (discountPill) discountPill.textContent = deal.discount || 'Special Offer';
+
+    // Title & Description
+    const titleEl = document.getElementById('deal-title');
+    if (titleEl) titleEl.textContent = deal.title;
+    const descEl = document.getElementById('deal-description');
+    if (descEl) descEl.textContent = deal.description;
+
+    // Success rate & Expiry
+    const successRateEl = document.getElementById('deal-success-rate');
+    if (successRateEl) successRateEl.textContent = `${deal.successPercentage || deal.successRate || '99%'} Success Rate`;
+    const expiryEl = document.getElementById('deal-expiry');
+    if (expiryEl) expiryEl.textContent = deal.expiry || 'Verified Daily';
+
+    // CTA Setup
+    const ctaBox = document.getElementById('deal-cta-box');
+    const mainCta = document.getElementById('deal-main-cta');
+    const btnText = document.getElementById('deal-btn-text');
+
+    if (mainCta && deal.affiliateLink) {
+        mainCta.href = deal.affiliateLink;
+    }
+
+    if (deal.code) {
+        if (btnText) btnText.textContent = `Get Deal & Copy Code: ${deal.code}`;
+        if (ctaBox) {
+            const codeNotice = document.createElement('div');
+            codeNotice.className = 'card';
+            codeNotice.style.cssText = 'padding: 0.75rem 1.25rem; font-family: monospace; font-weight: bold; font-size: 1.1rem; background: var(--primary-light); color: var(--primary-color); border: 1px dashed var(--primary-color); text-align: center; border-radius: 8px; margin-top: 0.75rem;';
+            codeNotice.innerHTML = `Promo Code: <strong>${deal.code}</strong> (Copied on click)`;
+            ctaBox.after(codeNotice);
+        }
+    } else {
+        if (btnText) btnText.textContent = 'Claim Discount Offer';
+    }
+
+    // About Store section
+    const aboutTitle = document.getElementById('deal-about-store-title');
+    if (aboutTitle) aboutTitle.textContent = `About ${deal.store.name}`;
+    const aboutText = document.getElementById('deal-about-store-text');
+    if (aboutText) {
+        aboutText.textContent = store ? store.about : `${deal.store.name} provides top-tier software and productivity solutions.`;
+    }
+
+    // Sidebar Store Info
+    const sbLogo = document.getElementById('sidebar-store-logo');
+    if (sbLogo) {
+        sbLogo.src = deal.store.logo;
+        sbLogo.alt = deal.store.name;
+    }
+    const sbName = document.getElementById('sidebar-store-name');
+    if (sbName) sbName.textContent = deal.store.name;
+    const sbRating = document.getElementById('sidebar-store-rating');
+    if (sbRating && store) {
+        sbRating.innerHTML = `${Components.getRatingStars(store.rating || 4.9)} <span>${store.rating || 4.9} (${store.votes || 1000} votes)</span>`;
+    }
+    const sbLink = document.getElementById('sidebar-view-store-btn');
+    if (sbLink) sbLink.href = `store.html?id=${deal.store.id}`;
+
+    // FAQs section
+    const faqContainer = document.getElementById('deal-faq-container');
+    const faqSection = document.getElementById('deal-faq-section');
+    if (store && store.faqs && store.faqs.length > 0) {
+        if (faqSection) faqSection.style.display = 'block';
+        if (faqContainer) {
+            faqContainer.innerHTML = store.faqs.map(faq => `
+                <div class="faq-item card" style="padding: 1.25rem; margin-bottom: 0.75rem; background: var(--surface-color); border-radius: var(--radius-md);">
+                    <h4 class="faq-question" style="margin-bottom: 0.5rem; font-size: 1.05rem;">${faq.question}</h4>
+                    <div class="faq-answer"><p style="color: var(--text-secondary); line-height: 1.6;">${faq.answer}</p></div>
+                </div>
+            `).join('');
+        }
+    } else if (faqSection) {
+        faqSection.style.display = 'none';
+    }
+
+    // Related Deals
+    const relatedDeals = allCoupons.filter(c => c.id !== deal.id);
+    const relatedGrid = document.getElementById('related-deals-grid');
+    if (relatedGrid) {
+        relatedGrid.innerHTML = relatedDeals.slice(0, 3).map(c => Components.createCouponCard(c)).join('');
+        this.attachCouponListeners(relatedGrid);
+    }
+
+    // Popular Sidebar list
+    const popularList = document.getElementById('deal-popular-list');
+    if (popularList) {
+        popularList.innerHTML = relatedDeals.slice(0, 4).map(c => `
+            <div class="popular-coupon-item card" style="padding: 0.75rem; display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+                <img src="${c.store.logo}" alt="${c.store.name}" width="36" height="36" style="object-fit: contain; background: #fff; border-radius: 6px; padding: 2px;">
+                <div style="flex: 1; min-width: 0;">
+                    <a href="deal.html?id=${c.id}" style="font-weight: 600; font-size: 0.85rem; color: var(--text-primary); text-decoration: none; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${c.title}</a>
+                    <span style="font-size: 0.75rem; color: var(--secondary-color); font-weight: bold;">${c.discount || 'Deal'}</span>
+                </div>
+            </div>
+        `).join('');
+    }
 };
 
 App.initAuthorPage = async function() {
@@ -874,13 +1079,19 @@ App.initCategoryPage = async function() {
 
 App.initStorePage = async function() {
     const urlParams = new URLSearchParams(window.location.search);
-    let id = urlParams.get('id') || 'nordvpn';
+    let id = urlParams.get('id');
     
+    if (!id) {
+        await this.renderAllStoresPage();
+        return;
+    }
+
     const stores = await DataService.getStores();
     const store = stores ? stores.find(s => s.id === id) : null;
     
     if (!store) {
-        document.querySelector('.main-content').innerHTML = '<h2>Store not found</h2>';
+        const main = document.querySelector('main') || document.querySelector('.main-content');
+        if (main) main.innerHTML = '<div class="container" style="padding: 4rem 1rem; text-align: center;"><h2>Store Not Found</h2><p style="margin-top:1rem;"><a href="store.html" class="btn btn-primary">Browse All Stores</a></p></div>';
         return;
     }
 
@@ -1091,6 +1302,259 @@ App.initStorePage = async function() {
     }
     script.textContent = JSON.stringify(schemaData);
     document.head.appendChild(script);
+    this.initScrollReveal();
+};
+
+App.renderAllStoresPage = async function() {
+    document.title = "All Stores & Promo Codes | PlayNewApps";
+    
+    // Update Meta tags
+    const canonicalUrl = `https://playnewapps.store/store.html`;
+    const updateMeta = (selector, attr, content) => {
+        const el = document.querySelector(selector);
+        if (el) el.setAttribute(attr, content);
+    };
+    updateMeta('meta[name="description"]', 'content', 'Browse exclusive coupon codes, verified software discounts, and promotional offers from all stores on PlayNewApps.');
+    updateMeta('#canonical-url', 'href', canonicalUrl);
+    updateMeta('meta[property="og:url"]', 'content', canonicalUrl);
+    updateMeta('meta[property="og:title"]', 'content', 'All Stores & Promo Codes | PlayNewApps');
+    updateMeta('meta[property="og:description"]', 'content', 'Browse exclusive coupon codes and verified software discounts from all stores.');
+
+    const stores = await DataService.getStores();
+    const coupons = await DataService.getCoupons();
+
+    if (!stores || stores.length === 0) {
+        const main = document.querySelector('main') || document.querySelector('.main-content');
+        if (main) main.innerHTML = '<div class="container" style="padding: 4rem 1rem; text-align: center;"><h2>No stores available</h2></div>';
+        return;
+    }
+
+    // Sort stores alphabetically by name
+    const sortedStores = [...stores].sort((a, b) => a.name.localeCompare(b.name));
+
+    // Compute active deal counts per store
+    const storeDealCounts = {};
+    sortedStores.forEach(s => {
+        const activeCoupons = coupons ? coupons.filter(c => c && c.store && (c.store.id === s.id || (c.store.name && c.store.name.toLowerCase().includes(s.id))) && c.status !== 'expired') : [];
+        const totalStoreCoupons = coupons ? coupons.filter(c => c && c.store && (c.store.id === s.id || (c.store.name && c.store.name.toLowerCase().includes(s.id)))) : [];
+        storeDealCounts[s.id] = activeCoupons.length > 0 ? activeCoupons.length : totalStoreCoupons.length;
+    });
+
+    const main = document.querySelector('main') || document.querySelector('.main-content');
+    if (!main) return;
+
+    main.innerHTML = `
+        <nav class="container breadcrumbs" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li aria-current="page">Stores</li>
+            </ol>
+        </nav>
+
+        <section class="all-stores-hero container reveal active">
+            <div class="all-stores-header-card card">
+                <div class="all-stores-header-top">
+                    <div>
+                        <h1 class="hero-title" style="margin-bottom: 0.25rem;">All Stores</h1>
+                        <p class="all-stores-intro">
+                            Browse exclusive coupon codes, verified software discounts, and promotional offers from leading tech brands.
+                        </p>
+                    </div>
+                    <div class="all-stores-count-badge">
+                        <span class="material-icons-round" aria-hidden="true">storefront</span>
+                        <span id="total-stores-count">${sortedStores.length} Available Stores</span>
+                    </div>
+                </div>
+                
+                <div class="stores-search-box">
+                    <span class="material-icons-round search-icon" aria-hidden="true">search</span>
+                    <input type="text" id="stores-search-input" placeholder="Search stores by name (e.g., Adobe, NordVPN, WPS Office)..." aria-label="Search stores">
+                    <button id="stores-search-clear" class="search-clear-btn" aria-label="Clear search" style="display: none;">
+                        <span class="material-icons-round" aria-hidden="true">close</span>
+                    </button>
+                </div>
+
+                <nav class="alphabet-nav-wrapper" aria-label="Alphabetical Store Navigation">
+                    <div class="alphabet-nav" id="alphabet-nav">
+                        <!-- Filled dynamically -->
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <section class="all-stores-container container reveal active" style="margin-top: 2rem; margin-bottom: 3rem;">
+            <div id="all-stores-list" class="all-stores-list">
+                <!-- Filled dynamically -->
+            </div>
+            <div id="no-stores-found" class="card" style="display: none; padding: 3rem 1.5rem; text-align: center;">
+                <span class="material-icons-round" style="font-size: 3rem; color: var(--text-secondary); margin-bottom: 0.5rem;" aria-hidden="true">search_off</span>
+                <h3 style="margin-bottom: 0.5rem;">No stores found</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">We couldn't find any store matching your search query.</p>
+                <button id="clear-search-btn" class="btn btn-outline">Clear Search</button>
+            </div>
+        </section>
+    `;
+
+    // Function to render Alphabet Nav and Store Groups based on filtered list
+    const renderStores = (filteredStores) => {
+        const totalCountEl = document.getElementById('total-stores-count');
+        if (totalCountEl) {
+            totalCountEl.textContent = `${filteredStores.length} ${filteredStores.length === 1 ? 'Available Store' : 'Available Stores'}`;
+        }
+
+        const noFoundEl = document.getElementById('no-stores-found');
+        const listEl = document.getElementById('all-stores-list');
+
+        if (filteredStores.length === 0) {
+            if (listEl) listEl.style.display = 'none';
+            if (noFoundEl) noFoundEl.style.display = 'block';
+            renderAlphabetNav(new Set());
+            return;
+        } else {
+            if (listEl) listEl.style.display = 'flex';
+            if (noFoundEl) noFoundEl.style.display = 'none';
+        }
+
+        // Group filtered stores by first letter
+        const groups = {};
+        const activeLetters = new Set();
+
+        filteredStores.forEach(s => {
+            const firstChar = s.name.trim().charAt(0).toUpperCase();
+            const letterKey = /[A-Z]/.test(firstChar) ? firstChar : '#';
+            activeLetters.add(letterKey);
+            if (!groups[letterKey]) groups[letterKey] = [];
+            groups[letterKey].push(s);
+        });
+
+        // Render Alphabet Nav (only show letters that have stores in current filter)
+        renderAlphabetNav(activeLetters);
+
+        // Sort keys (# first if present, then A-Z)
+        const sortedKeys = Object.keys(groups).sort((a, b) => {
+            if (a === '#') return -1;
+            if (b === '#') return 1;
+            return a.localeCompare(b);
+        });
+
+        if (listEl) {
+            listEl.innerHTML = sortedKeys.map(letter => {
+                const storeList = groups[letter];
+                return `
+                    <div class="store-letter-group" id="group-${letter}">
+                        <h2 class="letter-heading">${letter}</h2>
+                        <div class="store-cards-grid">
+                            ${storeList.map(s => {
+                                const count = storeDealCounts[s.id] || 0;
+                                const dealText = `${count} ${count === 1 ? 'Deal' : 'Deals'}`;
+                                return `
+                                    <a href="store.html?id=${s.id}" class="store-card-item">
+                                        <div class="store-card-logo-wrap">
+                                            <img src="${s.logo}" alt="${s.name} logo" width="40" height="40" loading="lazy">
+                                        </div>
+                                        <div class="store-card-info">
+                                            <div class="store-card-name">${s.name}</div>
+                                            <span class="store-card-deals-count">${dealText}</span>
+                                        </div>
+                                        <span class="material-icons-round store-card-arrow" aria-hidden="true">chevron_right</span>
+                                    </a>
+                                `;
+                            }).join('')}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+    };
+
+    const renderAlphabetNav = (activeLettersSet) => {
+        const navEl = document.getElementById('alphabet-nav');
+        if (!navEl) return;
+
+        // Generate full A-Z array (+ '#' if present in activeLettersSet)
+        const allLetters = [];
+        if (activeLettersSet.has('#')) allLetters.push('#');
+        for (let i = 65; i <= 90; i++) {
+            allLetters.push(String.fromCharCode(i));
+        }
+
+        // Only display letters that have stores (automatically hide letters with 0 stores)
+        navEl.innerHTML = allLetters.map(letter => {
+            const hasStores = activeLettersSet.has(letter);
+            if (!hasStores) return '';
+            return `
+                <button class="alphabet-pill" data-letter="${letter}" aria-label="Go to section ${letter}">${letter}</button>
+            `;
+        }).join('');
+
+        // Attach click listener for smooth scrolling
+        navEl.querySelectorAll('.alphabet-pill').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const letter = btn.getAttribute('data-letter');
+                const groupEl = document.getElementById(`group-${letter}`);
+                if (groupEl) {
+                    const offset = 100;
+                    const bodyRect = document.body.getBoundingClientRect().top;
+                    const elementRect = groupEl.getBoundingClientRect().top;
+                    const elementPosition = elementRect - bodyRect;
+                    const offsetPosition = elementPosition - offset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+
+                    navEl.querySelectorAll('.alphabet-pill').forEach(p => p.classList.remove('active'));
+                    btn.classList.add('active');
+                }
+            });
+        });
+    };
+
+    // Initial render of all stores
+    renderStores(sortedStores);
+
+    // Setup Search Filter
+    const searchInput = document.getElementById('stores-search-input');
+    const clearBtn = document.getElementById('stores-search-clear');
+    const emptyClearBtn = document.getElementById('clear-search-btn');
+
+    const handleSearch = () => {
+        const query = searchInput ? searchInput.value.trim().toLowerCase() : '';
+        if (clearBtn) clearBtn.style.display = query ? 'flex' : 'none';
+
+        if (!query) {
+            renderStores(sortedStores);
+            return;
+        }
+
+        const filtered = sortedStores.filter(s => {
+            return s.name.toLowerCase().includes(query) || (s.id && s.id.toLowerCase().includes(query));
+        });
+
+        renderStores(filtered);
+    };
+
+    if (searchInput) {
+        searchInput.addEventListener('input', handleSearch);
+    }
+
+    if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+            if (searchInput) searchInput.value = '';
+            handleSearch();
+            if (searchInput) searchInput.focus();
+        });
+    }
+
+    if (emptyClearBtn) {
+        emptyClearBtn.addEventListener('click', () => {
+            if (searchInput) searchInput.value = '';
+            handleSearch();
+            if (searchInput) searchInput.focus();
+        });
+    }
 };
 
 App.initCouponPage = async function() {

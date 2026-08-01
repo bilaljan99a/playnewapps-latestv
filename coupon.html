@@ -95,10 +95,18 @@
             
             <nav class="nav" id="nav" aria-label="Main Navigation">
                 <ul class="nav-list">
-                    <li><a href="#featured" class="nav-link">Featured</a></li>
-                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
-                    <li><a href="#deals" class="nav-link">Deals</a></li>
-                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li class="nav-item dropdown" id="stores-dropdown-wrapper">
+                        <a href="store.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                            Stores <span class="material-icons-round dropdown-icon" aria-hidden="true">expand_more</span>
+                        </a>
+                        <div class="dropdown-menu" id="stores-dropdown-menu" aria-label="Stores Menu">
+                            <div class="dropdown-loading">Loading stores...</div>
+                        </div>
+                    </li>
+                    <li><a href="index.html#featured" class="nav-link">Featured</a></li>
+                    <li><a href="index.html#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="coupon.html" class="nav-link">Deals</a></li>
+                    <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
                 </ul>
             </nav>
 
