@@ -1,12 +1,44 @@
 class App {
     static async init() {
-        const path = window.location.pathname;
-        if (path.includes('review') || document.querySelector('.review-title')) {
-            await this.initReviewPage();
-        } else {
-            await this.initHomePage();
+        try {
+            const rawPath = window.location.pathname.toLowerCase();
+            const path = (rawPath.length > 1 && rawPath.endsWith('/')) ? rawPath.slice(0, -1) : rawPath;
+
+            if (path === '/reviews' || path.endsWith('/reviews.html')) {
+                await this.initReviewsPage();
+            } else if (path === '/category' || path.endsWith('/category.html')) {
+                await this.initCategoryPage();
+            } else if (path === '/stores' || path.endsWith('/stores.html') || path === '/store' || path.endsWith('/store.html')) {
+                await this.initStorePage();
+            } else if (path === '/author' || path.endsWith('/author.html')) {
+                await this.initAuthorPage();
+            } else if (path === '/coupon' || path.endsWith('/coupon.html') || path === '/coupons' || path.endsWith('/coupons.html')) {
+                await this.initCouponPage();
+            } else if (path === '/deal' || path.endsWith('/deal.html') || path === '/deals' || path.endsWith('/deals.html')) {
+                await this.initDealPage();
+            } else if (path === '/review' || path.endsWith('/review.html') || path.startsWith('/review/') || (path.startsWith('/reviews/') && path !== '/reviews') || document.querySelector('.review-title')) {
+                await this.initReviewPage();
+            } else {
+                await this.initHomePage();
+            }
+
+            if (typeof this.initHeaderStoresDropdown === 'function') {
+                await this.initHeaderStoresDropdown();
+            }
+            if (typeof this.initSearch === 'function') {
+                this.initSearch();
+            }
+            if (typeof this.initScrollReveal === 'function') {
+                this.initScrollReveal();
+            }
+        } catch (e) {
+            console.error(e);
+        } finally {
+            const loader = document.getElementById('loader');
+            if (loader) {
+                loader.style.display = 'none';
+            }
         }
-        this.initSearch();
     }
 
     static async initSearch() {
@@ -785,30 +817,7 @@ document.addEventListener('DOMContentLoaded', () => {
     App.init();
 });
 
-// Add support for new pages
-const oldInit = App.init.bind(App);
-App.init = async function() {
-    const path = window.location.pathname;
-    if (path.endsWith('reviews.html') || path.includes('reviews.html')) {
-        await this.initReviewsPage();
-    } else if (path.endsWith('author.html') || path.includes('author.html')) {
-        await this.initAuthorPage();
-    } else if (path.endsWith('category.html') || path.includes('category.html')) {
-        await this.initCategoryPage();
-    } else if (path.endsWith('store.html') || path.includes('store.html') || path.endsWith('stores.html') || path.includes('stores.html')) {
-        await this.initStorePage();
-    } else if (path.endsWith('coupon.html') || path.includes('coupon.html')) {
-        await this.initCouponPage();
-    } else if (path.endsWith('deal.html') || path.includes('deal.html')) {
-        await this.initDealPage();
-    } else {
-        await oldInit();
-    }
-    
-    await this.initHeaderStoresDropdown();
-    this.initSearch();
-    this.initScrollReveal();
-};
+
 
 App.initScrollReveal = function() {
     const reveals = document.querySelectorAll('.reveal');
