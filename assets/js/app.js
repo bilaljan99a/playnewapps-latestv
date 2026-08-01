@@ -789,7 +789,9 @@ document.addEventListener('DOMContentLoaded', () => {
 const oldInit = App.init.bind(App);
 App.init = async function() {
     const path = window.location.pathname;
-    if (path.endsWith('author.html') || path.includes('author.html')) {
+    if (path.endsWith('reviews.html') || path.includes('reviews.html')) {
+        await this.initReviewsPage();
+    } else if (path.endsWith('author.html') || path.includes('author.html')) {
         await this.initAuthorPage();
     } else if (path.endsWith('category.html') || path.includes('category.html')) {
         await this.initCategoryPage();
@@ -1051,30 +1053,357 @@ App.initAuthorPage = async function() {
     if (reviewsGrid) this.renderReviews(authorReviews, reviewsGrid);
 };
 
+App.initReviewsPage = async function() {
+    await this.renderReviewsDirectoryUI({
+        title: 'All App & Software Reviews',
+        subtitle: 'Explore comprehensive, independent reviews of top Android apps, iOS tools, PC software, and trending games.',
+        activeCategory: 'all',
+        isCategoryPage: false
+    });
+};
+
 App.initCategoryPage = async function() {
     const urlParams = new URLSearchParams(window.location.search);
-    let id = urlParams.get('id') || 'video-editors';
-    const categories = await DataService.getCategories();
-    const category = categories.find(c => c.id === id);
+    let id = urlParams.get('id') || 'all';
     
-    const heroTitle = document.querySelector('.hero-title');
-    if (heroTitle) heroTitle.textContent = category ? category.name : 'Category Not Found';
-    const heroSub = document.querySelector('.hero-subtitle');
-    if (heroSub) heroSub.textContent = 'Browse the best apps in this category.';
-    
-    const slider = document.getElementById('featured');
-    if(slider) slider.style.display = 'none';
-    const deals = document.getElementById('deals');
-    if(deals) deals.style.display = 'none';
-    const counters = document.querySelector('.counters-section');
-    if(counters) counters.style.display = 'none';
+    await this.renderReviewsDirectoryUI({
+        activeCategory: id,
+        isCategoryPage: true
+    });
+};
 
-    const sectionTitle = document.querySelector('#reviews .section-title');
-    if (sectionTitle) sectionTitle.textContent = `Apps in ${category ? category.name : 'Category'}`;
+App.renderReviewsDirectoryUI = async function(options = {}) {
+    const urlParams = new URLSearchParams(window.location.search);
+    let catId = options.activeCategory || urlParams.get('id') || urlParams.get('category') || 'all';
+    catId = catId.toLowerCase();
+
     const allReviews = await DataService.getAllReviews();
-    const catReviews = allReviews.filter(r => r.categoryId === id);
-    const reviewsGrid = document.getElementById('reviews-grid');
-    if (reviewsGrid) this.renderReviews(catReviews, reviewsGrid);
+    const categories = await DataService.getCategories();
+
+    const categoryInfoMap = {
+        'all': {
+            name: 'All App & Software Reviews',
+            desc: 'Explore comprehensive, independent reviews of top Android apps, iOS tools, PC software, and trending games.'
+        },
+        'android': {
+            name: 'Android Apps Reviews',
+            desc: 'In-depth reviews, performance benchmarks, and feature breakdowns for top Android applications.'
+        },
+        'ios': {
+            name: 'iOS & iPadOS Apps Reviews',
+            desc: 'Expert reviews, buying guides, and software evaluations for iPhone and iPad applications.'
+        },
+        'pc': {
+            name: 'PC & Desktop Software Reviews',
+            desc: 'Comprehensive software reviews for Windows, macOS, and Linux desktop applications.'
+        },
+        'games': {
+            name: 'Trending Games Reviews',
+            desc: 'In-depth reviews, graphics benchmarks, and ratings for top RPG, action, and mobile/PC games.'
+        }
+    };
+
+    let catInfo = categoryInfoMap[catId];
+    if (!catInfo) {
+        const matchedCategory = categories ? categories.find(c => c.id === catId) : null;
+        if (matchedCategory) {
+            catInfo = {
+                name: `${matchedCategory.name} Reviews`,
+                desc: `Browse tested software and applications in ${matchedCategory.name}.`
+            };
+        } else {
+            catInfo = {
+                name: `${catId.charAt(0).toUpperCase() + catId.slice(1)} Reviews`,
+                desc: 'Explore tested and verified app reviews on PlayNewApps.'
+            };
+        }
+    }
+
+    const title = options.title || catInfo.name;
+    const subtitle = options.subtitle || catInfo.desc;
+
+    document.title = `${title} | PlayNewApps`;
+    const updateMeta = (selector, attr, content) => {
+        const el = document.querySelector(selector);
+        if (el) el.setAttribute(attr, content);
+    };
+    const canonicalUrl = `https://playnewapps.store/${options.isCategoryPage ? 'category.html?id=' + catId : 'reviews.html'}`;
+    updateMeta('#canonical-url', 'href', canonicalUrl);
+    updateMeta('meta[name="description"]', 'content', subtitle);
+    updateMeta('meta[property="og:url"]', 'content', canonicalUrl);
+    updateMeta('meta[property="og:title"]', 'content', `${title} | PlayNewApps`);
+    updateMeta('meta[property="og:description"]', 'content', subtitle);
+
+    const main = document.querySelector('main') || document.querySelector('.main-content');
+    if (!main) return;
+
+    const filterOptions = [
+        { id: 'all', label: 'All Reviews' },
+        { id: 'android', label: 'Android Apps' },
+        { id: 'ios', label: 'iOS Apps' },
+        { id: 'pc', label: 'PC Software' },
+        { id: 'games', label: 'Games' },
+        { id: 'video-editors', label: 'Video Editors' },
+        { id: 'vpn', label: 'VPN Services' },
+        { id: 'productivity', label: 'Productivity' }
+    ];
+
+    main.innerHTML = `
+        <nav class="container breadcrumbs" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                ${options.isCategoryPage ? `<li><a href="reviews.html">Reviews</a></li><li aria-current="page">${catInfo.name.replace(' Reviews', '')}</li>` : `<li aria-current="page">Reviews</li>`}
+            </ol>
+        </nav>
+
+        <section class="section container reveal active" style="padding-top: 1rem; margin-bottom: 3rem;">
+            <div class="card" style="padding: 2rem 1.5rem; margin-bottom: 2rem; background: var(--card-bg, #ffffff); border-radius: 12px; border: 1px solid var(--border-color, #e2e8f0);">
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div>
+                        <h1 class="hero-title" style="margin-bottom: 0.5rem; font-size: 2rem;" id="directory-title">${title}</h1>
+                        <p class="hero-subtitle" style="color: var(--text-secondary); margin: 0; font-size: 1rem;" id="directory-desc">${subtitle}</p>
+                    </div>
+
+                    <div class="search-box-wrapper" style="margin-top: 0.5rem; width: 100%; max-width: 100%;">
+                        <div class="search-box" style="display: flex; align-items: center; gap: 0.5rem; background: var(--bg-primary, #f8fafc); border: 1px solid var(--border-color, #cbd5e1); border-radius: 8px; padding: 0.5rem 1rem;">
+                            <span class="material-icons-round search-icon" aria-hidden="true" style="color: var(--text-secondary);">search</span>
+                            <input type="search" id="directory-search-input" placeholder="Search reviews by app name, topic, or keyword..." aria-label="Search reviews" autocomplete="off" style="border: none; background: transparent; width: 100%; outline: none; color: inherit; font-size: 0.95rem;">
+                            <button id="directory-search-clear" style="display: none; border: none; background: transparent; cursor: pointer; color: var(--text-secondary);" aria-label="Clear search"><span class="material-icons-round">close</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-filters" role="tablist" aria-label="Review Categories" style="margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; justify-content: space-between;">
+                <div class="filter-buttons-wrap" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                    ${filterOptions.map(f => `
+                        <button class="filter-btn ${catId === f.id ? 'active' : ''}" data-cat="${f.id}" role="tab" aria-selected="${catId === f.id}">${f.label}</button>
+                    `).join('')}
+                </div>
+                
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <label for="directory-sort-select" style="font-size: 0.875rem; color: var(--text-secondary); font-weight: 500;">Sort:</label>
+                    <select id="directory-sort-select" class="sort-select" aria-label="Sort Reviews">
+                        <option value="newest">Newest</option>
+                        <option value="rating">Top Rated</option>
+                        <option value="name">A-Z</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="grid" id="reviews-grid" aria-live="polite"></div>
+
+            <div id="no-reviews-found" class="card" style="display: none; padding: 3rem 1.5rem; text-align: center; margin-top: 1.5rem;">
+                <span class="material-icons-round" style="font-size: 3rem; color: var(--text-secondary); margin-bottom: 0.5rem;" aria-hidden="true">search_off</span>
+                <h3 style="margin-bottom: 0.5rem;">No reviews found</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">No matching reviews found for your current filter or search criteria.</p>
+                <button id="directory-reset-btn" class="btn btn-outline">Reset Filters</button>
+            </div>
+
+            <div id="reviews-pagination" class="pagination-container" style="margin-top: 2rem; display: flex; justify-content: center; gap: 0.5rem;"></div>
+        </section>
+    `;
+
+    // State
+    let currentCategory = catId;
+    let currentSearch = '';
+    let currentSort = 'newest';
+    let currentPage = 1;
+    const itemsPerPage = 9;
+
+    const getFilteredReviews = () => {
+        let filtered = [...allReviews];
+
+        // 1. Category Filter
+        if (currentCategory !== 'all') {
+            const cat = currentCategory.toLowerCase();
+            if (cat === 'android') {
+                filtered = filtered.filter(r => 
+                    (r.platforms && r.platforms.some(p => p.toLowerCase().includes('android'))) ||
+                    ['video-editors', 'productivity', 'vpn', 'design'].includes(r.categoryId)
+                );
+            } else if (cat === 'ios') {
+                filtered = filtered.filter(r => 
+                    r.platforms && r.platforms.some(p => p.toLowerCase().includes('ios') || p.toLowerCase().includes('ipad'))
+                );
+            } else if (cat === 'pc') {
+                filtered = filtered.filter(r => 
+                    (r.platforms && r.platforms.some(p => p.toLowerCase().includes('windows') || p.toLowerCase().includes('mac') || p.toLowerCase().includes('linux') || p.toLowerCase().includes('pc'))) ||
+                    r.categoryId === 'vpn'
+                );
+            } else if (cat === 'games') {
+                filtered = filtered.filter(r => 
+                    r.categoryId === 'rpg' || r.categoryId === 'action' || 
+                    (r.platforms && r.platforms.some(p => p.toLowerCase().includes('playstation') || p.toLowerCase().includes('xbox')))
+                );
+            } else {
+                filtered = filtered.filter(r => 
+                    r.categoryId === cat || (r.id && r.id.toLowerCase().includes(cat))
+                );
+            }
+        }
+
+        // 2. Search Query Filter
+        if (currentSearch.trim().length > 0) {
+            const q = currentSearch.trim().toLowerCase();
+            filtered = filtered.filter(r => 
+                (r.title && r.title.toLowerCase().includes(q)) ||
+                (r.description && r.description.toLowerCase().includes(q)) ||
+                (r.developer && r.developer.toLowerCase().includes(q)) ||
+                (r.tags && r.tags.some(t => t.toLowerCase().includes(q)))
+            );
+        }
+
+        // 3. Sort
+        if (currentSort === 'rating') {
+            filtered.sort((a, b) => (b.rating || 0) - (a.rating || 0));
+        } else if (currentSort === 'name') {
+            filtered.sort((a, b) => (a.title || '').localeCompare(b.title || ''));
+        } else {
+            // Newest
+            filtered.sort((a, b) => new Date(b.updatedAt || 0) - new Date(a.updatedAt || 0));
+        }
+
+        return filtered;
+    };
+
+    const renderGrid = () => {
+        const grid = document.getElementById('reviews-grid');
+        const noFound = document.getElementById('no-reviews-found');
+        const pagContainer = document.getElementById('reviews-pagination');
+
+        const filtered = getFilteredReviews();
+
+        if (filtered.length === 0) {
+            if (grid) grid.style.display = 'none';
+            if (noFound) noFound.style.display = 'block';
+            if (pagContainer) pagContainer.innerHTML = '';
+            return;
+        }
+
+        if (grid) grid.style.display = 'grid';
+        if (noFound) noFound.style.display = 'none';
+
+        const totalPages = Math.ceil(filtered.length / itemsPerPage);
+        if (currentPage > totalPages) currentPage = 1;
+
+        const start = (currentPage - 1) * itemsPerPage;
+        const pageItems = filtered.slice(start, start + itemsPerPage);
+
+        if (grid) {
+            grid.innerHTML = pageItems.map(item => Components.createAppCard(item)).join('');
+        }
+
+        if (pagContainer) {
+            if (totalPages <= 1) {
+                pagContainer.innerHTML = '';
+            } else {
+                let pButtons = '';
+                for (let i = 1; i <= totalPages; i++) {
+                    pButtons += `
+                        <button class="btn ${i === currentPage ? 'btn-primary' : 'btn-outline'} page-btn" data-page="${i}" style="min-width: 40px; padding: 0.4rem 0.8rem;">${i}</button>
+                    `;
+                }
+                pagContainer.innerHTML = pButtons;
+
+                pagContainer.querySelectorAll('.page-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        currentPage = parseInt(e.target.getAttribute('data-page'));
+                        renderGrid();
+                        const heroSec = document.getElementById('directory-title');
+                        if (heroSec) heroSec.scrollIntoView({ behavior: 'smooth' });
+                    });
+                });
+            }
+        }
+    };
+
+    renderGrid();
+
+    const searchInput = document.getElementById('directory-search-input');
+    const searchClear = document.getElementById('directory-search-clear');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            currentSearch = e.target.value;
+            currentPage = 1;
+            if (searchClear) searchClear.style.display = currentSearch.length > 0 ? 'block' : 'none';
+            renderGrid();
+        });
+    }
+
+    if (searchClear) {
+        searchClear.addEventListener('click', () => {
+            if (searchInput) searchInput.value = '';
+            currentSearch = '';
+            searchClear.style.display = 'none';
+            currentPage = 1;
+            renderGrid();
+        });
+    }
+
+    const filterBtns = main.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            filterBtns.forEach(b => {
+                b.classList.remove('active');
+                b.setAttribute('aria-selected', 'false');
+            });
+            e.target.classList.add('active');
+            e.target.setAttribute('aria-selected', 'true');
+
+            currentCategory = e.target.getAttribute('data-cat');
+            currentPage = 1;
+
+            const info = categoryInfoMap[currentCategory] || {
+                name: `${currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1)} Reviews`,
+                desc: 'Explore tested and verified app reviews on PlayNewApps.'
+            };
+            const titleEl = document.getElementById('directory-title');
+            const descEl = document.getElementById('directory-desc');
+            if (titleEl) titleEl.textContent = info.name;
+            if (descEl) descEl.textContent = info.desc;
+
+            renderGrid();
+        });
+    });
+
+    const sortSelect = document.getElementById('directory-sort-select');
+    if (sortSelect) {
+        sortSelect.addEventListener('change', (e) => {
+            currentSort = e.target.value;
+            currentPage = 1;
+            renderGrid();
+        });
+    }
+
+    const resetBtn = document.getElementById('directory-reset-btn');
+    if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+            currentCategory = 'all';
+            currentSearch = '';
+            currentSort = 'newest';
+            currentPage = 1;
+            if (searchInput) searchInput.value = '';
+            if (searchClear) searchClear.style.display = 'none';
+            if (sortSelect) sortSelect.value = 'newest';
+
+            filterBtns.forEach(b => {
+                const isAll = b.getAttribute('data-cat') === 'all';
+                b.classList.toggle('active', isAll);
+                b.setAttribute('aria-selected', isAll ? 'true' : 'false');
+            });
+
+            const info = categoryInfoMap['all'];
+            const titleEl = document.getElementById('directory-title');
+            const descEl = document.getElementById('directory-desc');
+            if (titleEl) titleEl.textContent = info.name;
+            if (descEl) descEl.textContent = info.desc;
+
+            renderGrid();
+        });
+    }
+
+    this.initScrollReveal();
 };
 
 App.initStorePage = async function() {
@@ -1447,6 +1776,7 @@ App.renderAllStoresPage = async function() {
                             ${storeList.map(s => {
                                 const count = storeDealCounts[s.id] || 0;
                                 const dealText = `${count} ${count === 1 ? 'Deal' : 'Deals'}`;
+                                const shortDesc = s.about ? (s.about.length > 80 ? s.about.slice(0, 80) + '...' : s.about) : '';
                                 return `
                                     <a href="store.html?id=${s.id}" class="store-card-item">
                                         <div class="store-card-logo-wrap">
@@ -1454,6 +1784,7 @@ App.renderAllStoresPage = async function() {
                                         </div>
                                         <div class="store-card-info">
                                             <div class="store-card-name">${s.name}</div>
+                                            ${shortDesc ? `<p class="store-card-desc" style="font-size: 0.8rem; color: var(--text-secondary); margin: 0.2rem 0 0.35rem 0; line-height: 1.3;">${shortDesc}</p>` : ''}
                                             <span class="store-card-deals-count">${dealText}</span>
                                         </div>
                                         <span class="material-icons-round store-card-arrow" aria-hidden="true">chevron_right</span>
