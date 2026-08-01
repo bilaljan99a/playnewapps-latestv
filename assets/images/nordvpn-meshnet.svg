@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0b0f19;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <defs>
+    <linearGradient id="meshGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#161f33"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Top Header Bar -->
+  <rect x="0" y="0" width="1280" height="80" fill="#0f172a"/>
+  <line x1="0" y1="80" x2="1280" y2="80" stroke="#1e293b" stroke-width="1"/>
+  
+  <g transform="translate(32, 22)">
+    <rect width="36" height="36" rx="8" fill="url(#meshGrad)"/>
+    <text x="18" y="24" font-size="18" font-weight="800" fill="#ffffff" text-anchor="middle">🕸️</text>
+    <text x="48" y="24" font-size="20" font-weight="700" fill="#ffffff">NordVPN Meshnet™</text>
+    <text x="48" y="40" font-size="12" font-weight="500" fill="#38bdf8">Direct encrypted P2P network connecting your smartphones, PCs, and remote servers</text>
+  </g>
+
+  <!-- Left: Connected Meshnet Devices List -->
+  <g transform="translate(40, 110)">
+    <rect width="460" height="570" rx="16" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1"/>
+    <text x="28" y="40" font-size="18" font-weight="700" fill="#ffffff">Linked Devices (4 Active)</text>
+
+    <!-- Device 1: Host PC -->
+    <g transform="translate(28, 64)">
+      <rect width="404" height="100" rx="12" fill="#0f172a" stroke="#0284c7" stroke-width="1.5"/>
+      <circle cx="44" cy="50" r="22" fill="#0284c7" fill-opacity="0.2"/>
+      <text x="44" y="56" font-size="18" font-weight="700" text-anchor="middle">💻</text>
+      <text x="80" y="38" font-size="15" font-weight="700" fill="#ffffff">MacBook Pro M3 (This Device)</text>
+      <text x="80" y="58" font-size="12" fill="#38bdf8">NordVPN IP: 100.92.14.88 • Host Server</text>
+      <text x="80" y="78" font-size="11" fill="#10b981">● Traffic Routing Enabled • File Sharing ON</text>
+    </g>
+
+    <!-- Device 2: iPhone 16 Pro -->
+    <g transform="translate(28, 180)">
+      <rect width="404" height="100" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="44" cy="50" r="22" fill="#1e293b"/>
+      <text x="44" y="56" font-size="18" font-weight="700" text-anchor="middle">📱</text>
+      <text x="80" y="38" font-size="15" font-weight="700" fill="#ffffff">Alex’s iPhone 16 Pro</text>
+      <text x="80" y="58" font-size="12" fill="#94a3b8">NordVPN IP: 100.92.14.89 • Remote</text>
+      <text x="80" y="78" font-size="11" fill="#10b981">● Connected (Cellular 5G) • Ping: 14ms</text>
+    </g>
+
+    <!-- Device 3: Home Media NAS -->
+    <g transform="translate(28, 296)">
+      <rect width="404" height="100" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="44" cy="50" r="22" fill="#1e293b"/>
+      <text x="44" y="56" font-size="18" font-weight="700" text-anchor="middle">🖥️</text>
+      <text x="80" y="38" font-size="15" font-weight="700" fill="#ffffff">Home Synology NAS</text>
+      <text x="80" y="58" font-size="12" fill="#94a3b8">NordVPN IP: 100.92.14.90 • Storage</text>
+      <text x="80" y="78" font-size="11" fill="#10b981">● 8.4 TB Available • P2P Media Server</text>
+    </g>
+
+    <!-- Device 4: Work Workstation -->
+    <g transform="translate(28, 412)">
+      <rect width="404" height="100" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="44" cy="50" r="22" fill="#1e293b"/>
+      <text x="44" y="56" font-size="18" font-weight="700" text-anchor="middle">🖥️</text>
+      <text x="80" y="38" font-size="15" font-weight="700" fill="#ffffff">Office Windows Workstation</text>
+      <text x="80" y="58" font-size="12" fill="#94a3b8">NordVPN IP: 100.92.14.91 • Desktop</text>
+      <text x="80" y="78" font-size="11" fill="#64748b">○ Offline (Last active 2h ago)</text>
+    </g>
+  </g>
+
+  <!-- Right: Meshnet Capability Showcase -->
+  <g transform="translate(530, 110)">
+    <rect width="710" height="570" rx="16" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1"/>
+    <text x="32" y="40" font-size="18" font-weight="700" fill="#ffffff">Meshnet Features &amp; Virtual LAN</text>
+
+    <!-- Use Case 1: Remote Traffic Routing -->
+    <g transform="translate(32, 70)">
+      <rect width="646" height="140" rx="14" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+      <text x="24" y="36" font-size="16" font-weight="700" fill="#38bdf8">1. Route Internet Traffic Through Home IP</text>
+      <text x="24" y="62" font-size="13" fill="#cbd5e1">Browse the web from anywhere abroad as if you were sitting at home. Your mobile device routes all traffic through your home Mac or PC with full AES-256 encryption.</text>
+      <rect x="24" y="90" width="160" height="32" rx="6" fill="#0284c7"/>
+      <text x="104" y="111" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Active Route: 100.92.14.88</text>
+    </g>
+
+    <!-- Use Case 2: Direct File Transfers -->
+    <g transform="translate(32, 230)">
+      <rect width="646" height="140" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="24" y="36" font-size="16" font-weight="700" fill="#ffffff">2. Unlimited Direct File Share (No Cloud Limit)</text>
+      <text x="24" y="62" font-size="13" fill="#cbd5e1">Send massive 50GB+ 4K video files or raw photo archives directly between connected devices over encrypted WireGuard P2P tunnels without uploading to third-party clouds.</text>
+      <rect x="24" y="90" width="180" height="32" rx="6" fill="#10b981" fill-opacity="0.2"/>
+      <text x="114" y="111" font-size="12" font-weight="700" fill="#10b981" text-anchor="middle">Speed: 48 MB/s (Direct P2P)</text>
+    </g>
+
+    <!-- Use Case 3: Virtual LAN Gaming -->
+    <g transform="translate(32, 390)">
+      <rect width="646" height="140" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="24" y="36" font-size="16" font-weight="700" fill="#ffffff">3. Virtual LAN Multiplayer Gaming</text>
+      <text x="24" y="62" font-size="13" fill="#cbd5e1">Play multiplayer games like Minecraft, Call of Duty, or FIFA with friends in a secure private virtual LAN party without complex port forwarding or public servers.</text>
+      <rect x="24" y="90" width="180" height="32" rx="6" fill="#8b5cf6" fill-opacity="0.2"/>
+      <text x="114" y="111" font-size="12" font-weight="700" fill="#c084fc" text-anchor="middle">Virtual LAN Active (6ms)</text>
+    </g>
+  </g>
+</svg>

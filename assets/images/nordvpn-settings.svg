@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0b0f19;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <defs>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#161f33"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Top Header Bar -->
+  <rect x="0" y="0" width="1280" height="80" fill="#0f172a"/>
+  <line x1="0" y1="80" x2="1280" y2="80" stroke="#1e293b" stroke-width="1"/>
+  
+  <g transform="translate(32, 22)">
+    <rect width="36" height="36" rx="8" fill="#1e293b"/>
+    <text x="18" y="24" font-size="18" fill="#ffffff" text-anchor="middle">⚙️</text>
+    <text x="48" y="24" font-size="20" font-weight="700" fill="#ffffff">NordVPN Advanced Security Settings</text>
+    <text x="48" y="40" font-size="12" font-weight="500" fill="#94a3b8">Kill Switch configuration, Split Tunneling rules, Auto-Connect, and Custom DNS</text>
+  </g>
+
+  <!-- Left Side: Kill Switch & Auto-Connect -->
+  <g transform="translate(40, 110)">
+    <rect width="580" height="570" rx="16" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1"/>
+    <text x="32" y="44" font-size="18" font-weight="700" fill="#ffffff">Kill Switch &amp; Connection Rules</text>
+
+    <!-- Setting 1: System Kill Switch -->
+    <g transform="translate(32, 70)">
+      <rect width="516" height="84" rx="12" fill="#0f172a" stroke="#ef4444" stroke-width="1"/>
+      <text x="24" y="32" font-size="15" font-weight="700" fill="#ffffff">System-Wide Internet Kill Switch</text>
+      <text x="24" y="54" font-size="12" fill="#94a3b8">Blocks all internet access if the VPN connection drops unexpectedly</text>
+      <rect x="444" y="28" width="48" height="26" rx="13" fill="#ef4444"/>
+      <circle cx="478" cy="41" r="10" fill="#ffffff"/>
+    </g>
+
+    <!-- Setting 2: App Kill Switch -->
+    <g transform="translate(32, 170)">
+      <rect width="516" height="84" rx="12" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+      <text x="24" y="32" font-size="15" font-weight="700" fill="#ffffff">Application Kill Switch</text>
+      <text x="24" y="54" font-size="12" fill="#94a3b8">Closes selected apps (Bittorrent, Banking) if VPN drops</text>
+      <rect x="444" y="28" width="48" height="26" rx="13" fill="#10b981"/>
+      <circle cx="478" cy="41" r="10" fill="#ffffff"/>
+    </g>
+
+    <!-- Setting 3: Auto-Connect -->
+    <g transform="translate(32, 270)">
+      <rect width="516" height="84" rx="12" fill="#0f172a" stroke="#3b82f6" stroke-width="1"/>
+      <text x="24" y="32" font-size="15" font-weight="700" fill="#ffffff">Auto-Connect on Untrusted Wi-Fi</text>
+      <text x="24" y="54" font-size="12" fill="#94a3b8">Automatically activates VPN when connecting to public airport/cafe Wi-Fi</text>
+      <rect x="444" y="28" width="48" height="26" rx="13" fill="#3b82f6"/>
+      <circle cx="478" cy="41" r="10" fill="#ffffff"/>
+    </g>
+
+    <!-- Setting 4: LAN Obfuscation -->
+    <g transform="translate(32, 370)">
+      <rect width="516" height="84" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="24" y="32" font-size="15" font-weight="700" fill="#ffffff">Invisible on Local Area Network (LAN)</text>
+      <text x="24" y="54" font-size="12" fill="#94a3b8">Hides your computer from printers and other devices on local Wi-Fi</text>
+      <rect x="444" y="28" width="48" height="26" rx="13" fill="#10b981"/>
+      <circle cx="478" cy="41" r="10" fill="#ffffff"/>
+    </g>
+  </g>
+
+  <!-- Right Side: Split Tunneling & DNS -->
+  <g transform="translate(650, 110)">
+    <rect width="590" height="570" rx="16" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1"/>
+    <text x="32" y="44" font-size="18" font-weight="700" fill="#ffffff">Split Tunneling &amp; Custom DNS</text>
+
+    <!-- Split Tunneling Card -->
+    <g transform="translate(32, 70)">
+      <rect width="526" height="210" rx="12" fill="#0f172a" stroke="#3b82f6" stroke-width="1"/>
+      <text x="24" y="32" font-size="15" font-weight="700" fill="#ffffff">Split Tunneling App Selector</text>
+      <text x="24" y="52" font-size="12" fill="#94a3b8">Choose which apps bypass the VPN tunnel and use regular internet</text>
+
+      <!-- App 1: Steam -->
+      <g transform="translate(24, 70)">
+        <rect width="478" height="40" rx="8" fill="#1e293b"/>
+        <text x="16" y="25" font-size="13" font-weight="600" fill="#ffffff">🎮 Steam Game Launcher</text>
+        <text x="460" y="25" font-size="12" font-weight="700" fill="#f87171" text-anchor="end">Bypasses VPN (Direct)</text>
+      </g>
+
+      <!-- App 2: Local Bank -->
+      <g transform="translate(24, 120)">
+        <rect width="478" height="40" rx="8" fill="#1e293b"/>
+        <text x="16" y="25" font-size="13" font-weight="600" fill="#ffffff">🏦 Local Mobile Banking App</text>
+        <text x="460" y="25" font-size="12" font-weight="700" fill="#10b981" text-anchor="end">Routes via VPN</text>
+      </g>
+    </g>
+
+    <!-- Custom DNS Card -->
+    <g transform="translate(32, 305)">
+      <rect width="526" height="230" rx="12" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+      <text x="24" y="32" font-size="15" font-weight="700" fill="#ffffff">Encrypted Private DNS</text>
+      <text x="24" y="52" font-size="12" fill="#94a3b8">Prevents DNS leaks from your ISP. All requests encrypted via NordDNS</text>
+
+      <g transform="translate(24, 70)">
+        <text x="0" y="20" font-size="12" font-weight="600" fill="#10b981">● NordVPN Private SmartDNS Active</text>
+        <text x="0" y="40" font-size="12" fill="#64748b">Primary Server: 103.86.96.100 (Zero Logs)</text>
+        <text x="0" y="60" font-size="12" fill="#64748b">Secondary Server: 103.86.99.100 (Zero Logs)</text>
+      </g>
+
+      <rect x="24" y="150" width="478" height="44" rx="8" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1"/>
+      <text x="263" y="177" font-size="13" font-weight="700" fill="#10b981" text-anchor="middle">✓ Leak Test Verified: 0 DNS Leaks Detected</text>
+    </g>
+  </g>
+</svg>
