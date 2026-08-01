@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0a0c10;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <rect width="1280" height="720" fill="#0c0f17"/>
+  <g transform="translate(60, 40)">
+    <!-- Main Modal -->
+    <rect width="1160" height="640" rx="16" fill="#141924" stroke="#252e40" stroke-width="2"/>
+    
+    <!-- Sidebar Menu -->
+    <rect width="280" height="640" rx="16" fill="#0f131c"/>
+    <text x="24" y="44" fill="#ffffff" font-size="18" font-weight="bold">Brush Studio</text>
+    <text x="24" y="70" fill="#ff007f" font-size="13" font-weight="600">STUDIO BRUSH SET</text>
+    
+    <!-- Items -->
+    <g transform="translate(16, 90)">
+      <rect x="0" y="0" width="248" height="40" rx="8" fill="#ff007f" opacity="0.2"/>
+      <rect x="0" y="0" width="248" height="40" rx="8" fill="none" stroke="#ff007f" stroke-width="1.5"/>
+      <text x="16" y="25" fill="#ffffff" font-size="14" font-weight="600">Stroke Path (StreamLine)</text>
+      
+      <text x="16" y="75" fill="#94a3b8" font-size="14">Taper &amp; Dynamics</text>
+      <text x="16" y="125" fill="#94a3b8" font-size="14">Shape &amp; Grain Texture</text>
+      <text x="16" y="175" fill="#94a3b8" font-size="14">Rendering &amp; Blend Modes</text>
+      <text x="16" y="225" fill="#94a3b8" font-size="14">Wet Mix &amp; Watercolors</text>
+      <text x="16" y="275" fill="#94a3b8" font-size="14">Color Dynamics</text>
+      <text x="16" y="325" fill="#94a3b8" font-size="14">Apple Pencil Pressure</text>
+      <text x="16" y="375" fill="#94a3b8" font-size="14">Properties &amp; Limits</text>
+      <text x="16" y="425" fill="#94a3b8" font-size="14">About this Brush</text>
+    </g>
+    
+    <!-- Center Controls -->
+    <g transform="translate(310, 30)">
+      <text x="0" y="30" fill="#ffffff" font-size="16" font-weight="700">StreamLine Stabilization</text>
+      <!-- Slider 1 -->
+      <text x="0" y="70" fill="#cbd5e1" font-size="13">Amount</text>
+      <rect x="0" y="80" width="400" height="8" rx="4" fill="#1e293b"/>
+      <rect x="0" y="80" width="340" height="8" rx="4" fill="#ff007f"/>
+      <circle cx="340" cy="84" r="10" fill="#ffffff"/>
+      <text x="415" y="88" fill="#ff007f" font-size="13" font-weight="bold">85%</text>
+
+      <!-- Slider 2 -->
+      <text x="0" y="140" fill="#cbd5e1" font-size="13">Motion Filtering</text>
+      <rect x="0" y="150" width="400" height="8" rx="4" fill="#1e293b"/>
+      <rect x="0" y="150" width="260" height="8" rx="4" fill="#00dfd8"/>
+      <circle cx="260" cy="154" r="10" fill="#ffffff"/>
+      <text x="415" y="158" fill="#00dfd8" font-size="13" font-weight="bold">65%</text>
+
+      <!-- Slider 3 -->
+      <text x="0" y="210" fill="#cbd5e1" font-size="13">Jitter &amp; Spacing</text>
+      <rect x="0" y="220" width="400" height="8" rx="4" fill="#1e293b"/>
+      <rect x="0" y="220" width="80" height="8" rx="4" fill="#7928ca"/>
+      <circle cx="80" cy="224" r="10" fill="#ffffff"/>
+      <text x="415" y="228" fill="#7928ca" font-size="13" font-weight="bold">20%</text>
+
+      <!-- Dual Brush Section -->
+      <rect x="0" y="270" width="470" height="150" rx="12" fill="#0f131c" stroke="#1e293b"/>
+      <text x="20" y="300" fill="#ffffff" font-size="14" font-weight="700">Dual Brush Combine</text>
+      <text x="20" y="325" fill="#94a3b8" font-size="12">Combine primary calligraphic brush with secondary watercolor grain.</text>
+      <rect x="20" y="350" width="200" height="50" rx="8" fill="#1e293b"/>
+      <text x="35" y="380" fill="#e2e8f0" font-size="13">Primary: Studio Pen</text>
+      <rect x="235" y="350" width="200" height="50" rx="8" fill="#1e293b"/>
+      <text x="250" y="380" fill="#e2e8f0" font-size="13">Secondary: Wash</text>
+    </g>
+
+    <!-- Right Live Preview Pad -->
+    <g transform="translate(810, 30)">
+      <rect width="320" height="575" rx="12" fill="#1a202c" stroke="#2d3748"/>
+      <text x="20" y="35" fill="#94a3b8" font-size="13" font-weight="600">DRAWING PAD PREVIEW</text>
+      <path d="M 40 450 C 80 150, 160 500, 240 180 C 280 100, 300 300, 280 400" fill="none" stroke="#ff007f" stroke-width="22" stroke-linecap="round"/>
+      <path d="M 50 480 Q 150 200 270 350" fill="none" stroke="#00dfd8" stroke-width="10" stroke-linecap="round"/>
+      <rect x="20" y="520" width="280" height="36" rx="8" fill="#222a3a"/>
+      <text x="160" y="543" fill="#cbd5e1" font-size="12" text-anchor="middle">Reset Drawing Pad</text>
+    </g>
+  </g>
+</svg>

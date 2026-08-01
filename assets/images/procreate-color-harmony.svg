@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0a0c10;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <rect width="1280" height="720" fill="#0b0e14"/>
+  <g transform="translate(140, 40)">
+    <rect width="1000" height="640" rx="16" fill="#131822" stroke="#232c3d" stroke-width="2"/>
+    
+    <!-- Title Bar -->
+    <rect width="1000" height="56" fill="#0f131a" rx="16"/>
+    <text x="30" y="34" fill="#ffffff" font-size="18" font-weight="700">Procreate Color Harmony Suite</text>
+
+    <!-- Left: Color Wheel -->
+    <g transform="translate(250, 360)">
+      <!-- Outer Ring -->
+      <circle cx="0" cy="0" r="190" fill="none" stroke="#ff007f" stroke-width="14" opacity="0.8"/>
+      <circle cx="0" cy="0" r="190" fill="none" stroke="#00dfd8" stroke-width="14" stroke-dasharray="100 200" opacity="0.8"/>
+      <circle cx="0" cy="0" r="190" fill="none" stroke="#7928ca" stroke-width="14" stroke-dasharray="80 300" opacity="0.8"/>
+      <circle cx="0" cy="0" r="160" fill="#0d1118"/>
+
+      <!-- Triadic Nodes -->
+      <line x1="0" y1="-140" x2="120" y2="70" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 4"/>
+      <line x1="120" y1="70" x2="-120" y2="70" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 4"/>
+      <line x1="-120" y1="70" x2="0" y2="-140" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 4"/>
+
+      <circle cx="0" cy="-140" r="16" fill="#ff007f" stroke="#ffffff" stroke-width="3"/>
+      <circle cx="120" cy="70" r="16" fill="#00dfd8" stroke="#ffffff" stroke-width="3"/>
+      <circle cx="-120" cy="70" r="16" fill="#7928ca" stroke="#ffffff" stroke-width="3"/>
+    </g>
+
+    <!-- Right: Color Modes & Swatches -->
+    <g transform="translate(560, 90)">
+      <!-- Tabs -->
+      <rect x="0" y="0" width="400" height="40" rx="8" fill="#1a202c"/>
+      <rect x="4" y="4" width="94" height="32" rx="6" fill="#2d3748"/>
+      <text x="51" y="25" fill="#ffffff" font-size="12" font-weight="bold" text-anchor="middle">Disc</text>
+      <rect x="102" y="4" width="94" height="32" rx="6" fill="#ff007f"/>
+      <text x="149" y="25" fill="#ffffff" font-size="12" font-weight="bold" text-anchor="middle">Harmony</text>
+      <text x="247" y="25" fill="#94a3b8" font-size="12" text-anchor="middle">Value</text>
+      <text x="345" y="25" fill="#94a3b8" font-size="12" text-anchor="middle">Palettes</text>
+
+      <!-- Active Harmony Type -->
+      <text x="0" y="75" fill="#ffffff" font-size="15" font-weight="700">Triadic Harmony Mode</text>
+      <text x="0" y="98" fill="#94a3b8" font-size="12">Primary: #FF007F • Complementary 1: #00DFD8 • Complementary 2: #7928CA</text>
+
+      <!-- Color Swatches Grid -->
+      <g transform="translate(0, 120)">
+        <rect x="0" y="0" width="72" height="72" rx="10" fill="#ff007f"/>
+        <rect x="82" y="0" width="72" height="72" rx="10" fill="#00dfd8"/>
+        <rect x="164" y="0" width="72" height="72" rx="10" fill="#7928ca"/>
+        <rect x="246" y="0" width="72" height="72" rx="10" fill="#ffb199"/>
+        <rect x="328" y="0" width="72" height="72" rx="10" fill="#0061ff"/>
+
+        <rect x="0" y="82" width="72" height="72" rx="10" fill="#22c55e"/>
+        <rect x="82" y="82" width="72" height="72" rx="10" fill="#eab308"/>
+        <rect x="164" y="82" width="72" height="72" rx="10" fill="#ec4899"/>
+        <rect x="246" y="82" width="72" height="72" rx="10" fill="#3b82f6"/>
+        <rect x="328" y="82" width="72" height="72" rx="10" fill="#a855f7"/>
+      </g>
+
+      <!-- Color Sliders -->
+      <g transform="translate(0, 310)">
+        <text x="0" y="0" fill="#cbd5e1" font-size="13">Hue (H): 328°</text>
+        <rect x="0" y="10" width="400" height="10" rx="5" fill="#334155"/>
+        <rect x="0" y="10" width="310" height="10" rx="5" fill="#ff007f"/>
+        <circle cx="310" cy="15" r="9" fill="#ffffff"/>
+
+        <text x="0" y="50" fill="#cbd5e1" font-size="13">Saturation (S): 100%</text>
+        <rect x="0" y="60" width="400" height="10" rx="5" fill="#334155"/>
+        <rect x="0" y="60" width="400" height="10" rx="5" fill="#00dfd8"/>
+        <circle cx="400" cy="65" r="9" fill="#ffffff"/>
+
+        <text x="0" y="100" fill="#cbd5e1" font-size="13">Brightness (B): 95%</text>
+        <rect x="0" y="110" width="400" height="10" rx="5" fill="#334155"/>
+        <rect x="0" y="110" width="370" height="10" rx="5" fill="#ffffff"/>
+        <circle cx="370" cy="115" r="9" fill="#1e293b"/>
+      </g>
+    </g>
+  </g>
+</svg>

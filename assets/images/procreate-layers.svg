@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0a0c10;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <rect width="1280" height="720" fill="#090c12"/>
+  <g transform="translate(100, 40)">
+    <rect width="1080" height="640" rx="16" fill="#131822" stroke="#222b3a" stroke-width="2"/>
+
+    <!-- Left Canvas -->
+    <g transform="translate(30, 30)">
+      <rect width="640" height="580" rx="12" fill="#1a202c"/>
+      <path d="M 100 400 C 200 150, 350 500, 500 200" fill="none" stroke="#ff007f" stroke-width="24" stroke-linecap="round"/>
+      <path d="M 150 450 C 250 200, 400 550, 550 250" fill="none" stroke="#00dfd8" stroke-width="14" stroke-linecap="round"/>
+      <text x="320" y="550" fill="#64748b" font-size="13" text-anchor="middle">Canvas Layer Compositing Preview</text>
+    </g>
+
+    <!-- Right Layers Panel -->
+    <g transform="translate(700, 30)">
+      <rect width="350" height="580" rx="12" fill="#0f131a" stroke="#1e293b"/>
+      <text x="24" y="36" fill="#ffffff" font-size="18" font-weight="bold">Layers (4/250)</text>
+
+      <!-- Layer 4 (Top) -->
+      <g transform="translate(16, 60)">
+        <rect width="318" height="74" rx="10" fill="#1e293b" stroke="#ff007f" stroke-width="1.5"/>
+        <rect x="12" y="12" width="50" height="50" rx="6" fill="#2d3748"/>
+        <circle cx="37" cy="37" r="14" fill="#ff007f"/>
+        <text x="76" y="34" fill="#ffffff" font-size="14" font-weight="700">Lineart &amp; Details</text>
+        <text x="76" y="52" fill="#ff007f" font-size="11">N • 100% Opacity • Alpha Lock</text>
+        <rect x="270" y="24" width="30" height="24" rx="4" fill="#ff007f"/>
+        <text x="285" y="40" fill="#ffffff" font-size="11" text-anchor="middle">✓</text>
+      </g>
+
+      <!-- Layer 3 (Clipping Mask) -->
+      <g transform="translate(32, 146)">
+        <rect width="302" height="74" rx="10" fill="#18202d"/>
+        <rect x="12" y="12" width="50" height="50" rx="6" fill="#2d3748"/>
+        <path d="M 25 45 L 35 25 L 45 45 Z" fill="#00dfd8"/>
+        <text x="76" y="34" fill="#e2e8f0" font-size="14" font-weight="600">↳ Shading &amp; Highlights</text>
+        <text x="76" y="52" fill="#00dfd8" font-size="11">Multiply • 75% • Clipping Mask</text>
+      </g>
+
+      <!-- Layer 2 -->
+      <g transform="translate(16, 232)">
+        <rect width="318" height="74" rx="10" fill="#141a24"/>
+        <rect x="12" y="12" width="50" height="50" rx="6" fill="#2d3748"/>
+        <rect x="22" y="22" width="30" height="30" fill="#7928ca"/>
+        <text x="76" y="34" fill="#e2e8f0" font-size="14" font-weight="600">Base Flat Colors</text>
+        <text x="76" y="52" fill="#94a3b8" font-size="11">N • 100% Opacity</text>
+      </g>
+
+      <!-- Layer 1 (Background) -->
+      <g transform="translate(16, 318)">
+        <rect width="318" height="74" rx="10" fill="#141a24"/>
+        <rect x="12" y="12" width="50" height="50" rx="6" fill="#ffffff"/>
+        <text x="76" y="34" fill="#e2e8f0" font-size="14" font-weight="600">Background Color</text>
+        <text x="76" y="52" fill="#94a3b8" font-size="11">Solid White #FFFFFF</text>
+      </g>
+    </g>
+  </g>
+</svg>
