@@ -108,8 +108,13 @@ class Components {
                         ${item.discount ? `<span class="badge discount-badge">${item.discount}</span>` : ''}
                     </div>
                     <div class="store-info">
-                        <img src="${item.store.logo}" alt="${item.store.name} Logo" class="store-logo" width="50" height="50" loading="lazy">
-                        <div class="store-name">${item.store.name}</div>
+                        ${item.store.id ? `<a href="store.html?id=${item.store.id}" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; color: inherit;">
+                            <img src="${item.store.logo}" alt="${item.store.name} Logo" class="store-logo" width="50" height="50" loading="lazy">
+                            <div class="store-name">${item.store.name}</div>
+                        </a>` : `
+                            <img src="${item.store.logo}" alt="${item.store.name} Logo" class="store-logo" width="50" height="50" loading="lazy">
+                            <div class="store-name">${item.store.name}</div>
+                        `}
                     </div>
                 </div>
                 <div class="coupon-content">
@@ -120,6 +125,33 @@ class Components {
                         <span class="expiry-date"><span class="material-icons-round" aria-hidden="true">timer</span> ${item.expiry}</span>
                     </div>
                     <div class="coupon-action">${actionHtml}</div>
+                </div>
+            </article>
+        `;
+    }
+
+    static createStoreCard(item) {
+        const rating = item.rating || 4.9;
+        const votes = item.votes ? `(${item.votes} votes)` : '';
+        const link = item.affiliateLink || `store.html?id=${item.id}`;
+        return `
+            <article class="card store-card affiliate-card" data-store-id="${item.id}">
+                <div class="coupon-header" style="align-items: center; gap: 1rem;">
+                    <img src="${item.logo}" alt="${item.name} Logo" class="store-logo" width="55" height="55" loading="lazy" style="object-fit: contain; background: #ffffff; border-radius: 10px; padding: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.08);">
+                    <div>
+                        <h3 class="card-title" style="margin-bottom: 0.25rem; font-size: 1.15rem;"><a href="store.html?id=${item.id}">${item.name}</a></h3>
+                        <div class="rating" aria-label="Rating ${rating} out of 5 stars">
+                            ${this.getRatingStars(rating)}
+                            <span class="rating-text">${rating} ${votes}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content" style="display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+                    <p class="card-excerpt" style="font-size: 0.875rem; color: #64748b; margin-bottom: 1rem; line-height: 1.5;">${item.about}</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <a href="${link}" target="_blank" rel="noopener sponsored" class="btn btn-primary cta-pulse" style="flex: 1; text-align: center; justify-content: center;">Official Store</a>
+                        <a href="store.html?id=${item.id}" class="btn btn-outline" style="white-space: nowrap;">View Deals</a>
+                    </div>
                 </div>
             </article>
         `;

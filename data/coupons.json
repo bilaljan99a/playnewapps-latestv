@@ -1,5 +1,47 @@
 [
     {
+        "id": "wps-office-70pro",
+        "title": "70% Off WPS Pro Annual Subscription",
+        "description": "Save up to 70% on the WPS Pro Annual plan. Unlock premium PDF tools, AI-powered productivity features, cloud storage, advanced editing tools, and an ad-free experience.",
+        "store": {
+            "id": "wps-office",
+            "name": "WPS Office",
+            "logo": "/assets/images/brands/wps-office.svg"
+        },
+        "discount": "70% OFF",
+        "badges": [
+            "Verified"
+        ],
+        "successRate": "99%",
+        "expiry": "Verified Daily",
+        "affiliateLink": "https://yynbx.com/g/nv5qc75bd9b68b264a760e10b6b7ca/?ulp=https%3A%2F%2Fwww.wps.com%2Fbuy%2F%3Fsource%3Dpromotion",
+        "isTop": true,
+        "status": "active",
+        "votesCount": 1520,
+        "successPercentage": 99
+    },
+    {
+        "id": "wps-office-free",
+        "title": "AI-Powered Office Suite for Everyone – Free Download",
+        "description": "Download WPS Office for Windows, macOS, Linux, Android and iOS. Includes Writer, Spreadsheet, Presentation, PDF tools and built-in AI features.",
+        "store": {
+            "id": "wps-office",
+            "name": "WPS Office",
+            "logo": "/assets/images/brands/wps-office.svg"
+        },
+        "discount": "FREE",
+        "badges": [
+            "Verified"
+        ],
+        "successRate": "100%",
+        "expiry": "Ongoing Offer",
+        "affiliateLink": "https://yynbx.com/g/nv5qc75bd9b68b264a760e10b6b7ca/",
+        "isTop": true,
+        "status": "active",
+        "votesCount": 2180,
+        "successPercentage": 100
+    },
+    {
         "id": "nordvpn-2yr",
         "title": "68% Off 2-Year Plan + 3 Months Free",
         "description": "Get an exclusive 68% discount on the NordVPN 2-year plan and receive 3 extra months completely free.",

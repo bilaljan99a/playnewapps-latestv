@@ -5,6 +5,17 @@
         "icon": "description",
         "logo": "/assets/images/brands/wps-office.svg",
         "about": "WPS Office is a high-performance, lightweight, AI-powered office productivity suite fully compatible with Microsoft Office formats. It integrates Writer, Spreadsheet, Presentation, PDF editing tools, cloud storage, and advanced AI assistance across Windows, macOS, Linux, Android, and iOS.",
+        "whyShop": [
+            "100% Native compatibility with Microsoft Word (.docx), Excel (.xlsx), and PowerPoint (.pptx) formats.",
+            "Built-in AI Assistant for automated document formatting, content writing, text summarizing, and data analysis.",
+            "Comprehensive PDF Tools: Convert PDF to Word/Excel, edit text & images directly, split/merge pages, and OCR scan.",
+            "Cross-Platform Sync: Smoothly sync all your documents between PC (Windows, macOS, Linux) and Mobile (Android, iOS)."
+        ],
+        "shoppingTips": [
+            "Save 70% on WPS Pro by selecting annual billing instead of monthly subscription payments.",
+            "Use the WPS Office Free Edition for standard editing and PDF reading with zero trial expiration.",
+            "Always activate deals via verified PlayNewApps promo links to guarantee valid promotional pricing at checkout."
+        ],
         "rating": 4.9,
         "votes": 3850,
         "affiliateLink": "https://yynbx.com/g/nv5qc75bd9b68b264a760e10b6b7ca/",
@@ -17,6 +28,14 @@
             {
                 "question": "What is included in WPS Pro?",
                 "answer": "WPS Pro includes full PDF editing, format conversions, OCR text extraction, advanced AI features, 20GB cloud storage, and an ad-free experience."
+            },
+            {
+                "question": "How do I activate the 70% discount on WPS Pro?",
+                "answer": "Click on the 'Get Deal' or 'Claim 70% Discount' button on our page. It will automatically redirect you to the official WPS Office promotion page with the discount applied."
+            },
+            {
+                "question": "Is WPS Office compatible with Microsoft Office files?",
+                "answer": "Yes, WPS Office supports seamless reading, editing, and saving of all Microsoft Office file formats including .docx, .xlsx, .pptx, as well as Google Docs and PDF files."
             }
         ]
     },

@@ -184,6 +184,15 @@ class App {
             couponsGrid.innerHTML = topCoupons.map(c => Components.createCouponCard(c)).join('');
             this.attachCouponListeners(couponsGrid);
         }
+
+        // Populate Featured Partner Stores Grid
+        const storesGrid = document.getElementById('stores-grid');
+        if (storesGrid) {
+            const stores = await DataService.getStores();
+            if (stores && stores.length > 0) {
+                storesGrid.innerHTML = stores.map(s => Components.createStoreCard(s)).join('');
+            }
+        }
     }
 
     static renderReviews(items, container) {
@@ -895,8 +904,14 @@ App.initStorePage = async function() {
     document.getElementById('store-logo').src = store.logo;
     document.getElementById('store-logo').alt = `${store.name} Logo`;
     document.getElementById('store-about').textContent = store.about || `Discover the latest deals for ${store.name}.`;
-    document.getElementById('store-cta').href = '/coupon.html'; // In a real app this would be an affiliate link
-    document.getElementById('store-cta').textContent = `Shop at ${store.name}`;
+    
+    const storeCta = document.getElementById('store-cta');
+    if (storeCta) {
+        storeCta.href = store.affiliateLink || '#';
+        storeCta.textContent = `Shop at ${store.name}`;
+        storeCta.target = '_blank';
+        storeCta.rel = 'noopener sponsored';
+    }
 
     // Rating
     document.getElementById('store-rating-box').innerHTML = `
@@ -931,6 +946,49 @@ App.initStorePage = async function() {
             this.attachCouponListeners(expiredGrid);
         } else {
             expiredSection.style.display = 'none';
+        }
+    }
+
+    // About Brand Section
+    const brandTitle = document.getElementById('store-brand-title');
+    const brandText = document.getElementById('store-brand-about-text');
+    const brandSection = document.getElementById('store-about-brand-section');
+    if (brandTitle && brandText) {
+        brandTitle.textContent = `About ${store.name}`;
+        brandText.textContent = store.about || `${store.name} is a leading software provider offering productivity tools and digital solutions.`;
+    }
+
+    // Why Shop Section
+    const whyTitle = document.getElementById('store-why-title');
+    const whyList = document.getElementById('store-why-list');
+    const whySection = document.getElementById('store-why-shop-section');
+    if (whyTitle && whyList) {
+        whyTitle.textContent = `Why Shop at ${store.name}`;
+        if (store.whyShop && store.whyShop.length > 0) {
+            whyList.innerHTML = store.whyShop.map(item => `<li>${item}</li>`).join('');
+        } else {
+            whyList.innerHTML = `
+                <li>Verified official discounts & promo offers</li>
+                <li>Instant download & multi-device compatibility</li>
+                <li>Premium feature support and regular updates</li>
+            `;
+        }
+    }
+
+    // Shopping & Savings Tips Section
+    const tipsTitle = document.getElementById('store-tips-title');
+    const tipsList = document.getElementById('store-tips-list');
+    const tipsSection = document.getElementById('store-shopping-tips-section');
+    if (tipsTitle && tipsList) {
+        tipsTitle.textContent = `Shopping & Savings Tips for ${store.name}`;
+        if (store.shoppingTips && store.shoppingTips.length > 0) {
+            tipsList.innerHTML = store.shoppingTips.map(tip => `<li>${tip}</li>`).join('');
+        } else {
+            tipsList.innerHTML = `
+                <li>Choose annual billing options to maximize overall subscription savings.</li>
+                <li>Check PlayNewApps regularly for exclusive promotional code updates.</li>
+                <li>Test free plans or trial versions before committing to long-term plans.</li>
+            `;
         }
     }
 
