@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
     const searchSuggestions = document.getElementById('search-suggestions');
     const mockData = [
-        "Best VPNs 2024", "Photo Editors for iOS", "Video Editing Software",
+        "Best VPNs 2026", "Photo Editors for iOS", "Video Editing Software",
         "PC Optimization", "Antivirus Deals", "Trending Android Games"
     ];
 

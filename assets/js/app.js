@@ -433,7 +433,7 @@ class App {
         updateMeta('#og-description', 'content', review.description || '');
         updateMeta('#og-url', 'content', canonicalUrl);
         updateMeta('#og-image', 'content', review.icon ? `https://playnewapps.store${review.icon}` : '');
-        updateMeta('#twitter-title', 'content', `${review.title} Review (2024)`);
+        updateMeta('#twitter-title', 'content', `${review.title} Review (2026)`);
         updateMeta('#twitter-description', 'content', review.description || '');
         updateMeta('#twitter-image', 'content', review.icon ? `https://playnewapps.store${review.icon}` : '');
         

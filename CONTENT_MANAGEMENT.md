@@ -42,7 +42,7 @@ To add a new app, game, or software review, you simply need to add a new JSON ob
     "size": "50 MB",
     "platforms": ["iOS", "Android"],
     "license": "Free with In-App Purchases",
-    "updatedAt": "2024-05-15",
+    "updatedAt": "2026-05-15",
     "badges": ["Editor's Choice"],
     "isFeatured": true,
     "isTrending": false,
