@@ -294,14 +294,16 @@ class App {
                     <ul class="price-comparison-list">
                         ${review.priceComparison.map(p => `
                             <li class="price-comparison-item ${p.isBest ? 'best-deal-highlight' : ''}">
-                                <div class="price-store-info">
+                                <div class="price-item-header">
                                     <span class="store-name">${p.store}</span>
-                                    ${p.badge ? `<span class="deal-badge">${p.badge}</span>` : ''}
-                                    ${p.isBest ? `<span class="best-deal-badge">Best Deal</span>` : ''}
+                                    <div class="price-badges">
+                                        ${p.isBest ? `<span class="best-deal-badge">Best Deal</span>` : ''}
+                                        ${p.badge ? `<span class="deal-badge">${p.badge}</span>` : ''}
+                                    </div>
                                 </div>
-                                <div class="price-action">
+                                <div class="price-item-body">
                                     <span class="price-amount">${p.price}</span>
-                                    <a href="${p.url}" target="_blank" rel="noopener sponsored" class="btn btn-sm ${p.isBest ? 'btn-primary' : 'btn-outline'}" style="padding: 0.35rem 0.75rem; white-space: nowrap; flex-shrink: 0; min-width: auto; height: auto; line-height: 1.2;">View</a>
+                                    <a href="${p.url}" target="_blank" rel="noopener sponsored" class="btn btn-sm ${p.isBest ? 'btn-primary' : 'btn-outline'}">View Deal</a>
                                 </div>
                             </li>
                         `).join('')}
