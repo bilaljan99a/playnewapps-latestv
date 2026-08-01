@@ -1,5 +1,26 @@
 [
     {
+        "id": "wps-office",
+        "name": "WPS Office",
+        "icon": "description",
+        "logo": "/assets/images/brands/wps-office.svg",
+        "about": "WPS Office is a high-performance, lightweight, AI-powered office productivity suite fully compatible with Microsoft Office formats. It integrates Writer, Spreadsheet, Presentation, PDF editing tools, cloud storage, and advanced AI assistance across Windows, macOS, Linux, Android, and iOS.",
+        "rating": 4.9,
+        "votes": 3850,
+        "affiliateLink": "https://yynbx.com/g/nv5qc75bd9b68b264a760e10b6b7ca/",
+        "related": ["grammarly", "adobe", "canva"],
+        "faqs": [
+            {
+                "question": "Is WPS Office free to download?",
+                "answer": "Yes! WPS Office is free to download for Windows, macOS, Linux, Android, and iOS, featuring Writer, Spreadsheet, Presentation, PDF reading, and built-in AI tools."
+            },
+            {
+                "question": "What is included in WPS Pro?",
+                "answer": "WPS Pro includes full PDF editing, format conversions, OCR text extraction, advanced AI features, 20GB cloud storage, and an ad-free experience."
+            }
+        ]
+    },
+    {
         "id": "nordvpn",
         "name": "NordVPN",
         "icon": "vpn_key",
