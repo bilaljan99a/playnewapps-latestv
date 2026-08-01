@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0f172a;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <defs>
+    <linearGradient id="plagGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Top Header Bar -->
+  <rect x="0" y="0" width="1280" height="70" fill="#1e293b"/>
+  <line x1="0" y1="70" x2="1280" y2="70" stroke="#334155" stroke-width="1"/>
+  
+  <g transform="translate(24, 16)">
+    <rect width="36" height="36" rx="8" fill="url(#plagGrad)"/>
+    <text x="18" y="24" font-size="20" font-weight="900" fill="#ffffff" text-anchor="middle">🔍</text>
+    <text x="48" y="22" font-size="18" font-weight="700" fill="#ffffff">Grammarly Plagiarism Checker &amp; Auto-Citation Engine</text>
+    <text x="48" y="38" font-size="12" fill="#38bdf8">Scanning 16+ billion web pages &amp; ProQuest academic databases with instant APA/MLA citations</text>
+  </g>
+
+  <!-- Left: Originality Score Shield & Source Matches -->
+  <g transform="translate(30, 90)">
+    <rect width="600" height="600" rx="12" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+    
+    <!-- Score Header -->
+    <g transform="translate(24, 24)">
+      <rect width="552" height="110" rx="12" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+      <circle cx="60" cy="55" r="36" fill="#10b981" fill-opacity="0.15"/>
+      <text x="60" y="62" font-size="24" font-weight="900" fill="#10b981" text-anchor="middle">97%</text>
+      <text x="116" y="44" font-size="18" font-weight="700" fill="#ffffff">Originality Verified (High Authenticity)</text>
+      <text x="116" y="68" font-size="13" fill="#cbd5e1">Only 3% matching text detected across 16 billion indexed sources.</text>
+      <text x="116" y="90" font-size="11" font-weight="600" fill="#10b981">✓ All quotes correctly attributed or cited.</text>
+    </g>
+
+    <!-- Document Section with Highlighted Match -->
+    <g transform="translate(24, 154)">
+      <rect width="552" height="420" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="20" y="32" font-size="14" font-weight="700" fill="#94a3b8">Scanned Document Text:</text>
+      
+      <text x="20" y="70" font-size="14" fill="#e2e8f0" font-family="Georgia, serif">
+        <tspan x="20" dy="0">According to recent studies in digital communications, "effective workplace</tspan>
+        <tspan x="20" dy="28">collaboration relies fundamentally on transparent feedback loops and structured</tspan>
+        <tspan x="20" dy="28">task allocation frameworks." <tspan fill="#f59e0b" bg="#78350f" font-weight="700">[Match Found: 22 words]</tspan></tspan>
+        <tspan x="20" dy="48">Our internal audit further demonstrates that teams adopting real-time editorial</tspan>
+        <tspan x="20" dy="28">assistance reduce total document revision cycles by nearly half.</tspan>
+      </text>
+
+      <!-- Auto Citation Prompt -->
+      <g transform="translate(20, 240)">
+        <rect width="512" height="150" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+        <text x="16" y="28" font-size="13" font-weight="700" fill="#f59e0b">⚠️ Source Match Found: Harvard Business Review (2025)</text>
+        <text x="16" y="52" font-size="12" fill="#cbd5e1">URL: https://hbr.org/2025/03/digital-collaboration-frameworks</text>
+
+        <!-- Citation Format Selector -->
+        <g transform="translate(16, 75)">
+          <rect width="64" height="26" rx="4" fill="#0284c7"/>
+          <text x="32" y="17" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">APA 7</text>
+
+          <rect x="74" y="0" width="64" height="26" rx="4" fill="#334155"/>
+          <text x="106" y="17" font-size="11" font-weight="600" fill="#cbd5e1" text-anchor="middle">MLA 9</text>
+
+          <rect x="148" y="0" width="70" height="26" rx="4" fill="#334155"/>
+          <text x="183" y="17" font-size="11" font-weight="600" fill="#cbd5e1" text-anchor="middle">Chicago</text>
+        </g>
+
+        <rect x="340" y="98" width="156" height="36" rx="6" fill="#f59e0b"/>
+        <text x="418" y="120" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">+ Insert In-Text Citation</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right: Academic & Database Sources Summary -->
+  <g transform="translate(650, 90)">
+    <rect width="600" height="600" rx="12" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+    
+    <text x="24" y="36" font-size="16" font-weight="700" fill="#ffffff">Web &amp; Database Comparison Indexes</text>
+
+    <!-- Source Item 1 -->
+    <g transform="translate(24, 60)">
+      <rect width="552" height="110" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="16" y="30" font-size="14" font-weight="700" fill="#ffffff">1. Harvard Business Review (hbr.org)</text>
+      <text x="16" y="52" font-size="12" fill="#94a3b8">Matched Text: 22 continuous words • Exact Match</text>
+      <rect x="16" y="68" width="120" height="24" rx="12" fill="#38bdf8" fill-opacity="0.2"/>
+      <text x="76" y="84" font-size="11" font-weight="600" fill="#38bdf8" text-anchor="middle">Academic Journal</text>
+      <text x="460" y="45" font-size="16" font-weight="800" fill="#f59e0b">2.1% Match</text>
+    </g>
+
+    <!-- Source Item 2 -->
+    <g transform="translate(24, 184)">
+      <rect width="552" height="110" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="16" y="30" font-size="14" font-weight="700" fill="#ffffff">2. ProQuest Dissertation Database</text>
+      <text x="16" y="52" font-size="12" fill="#94a3b8">Matched Text: 11 words • Partial Match (Paraphrased)</text>
+      <rect x="16" y="68" width="140" height="24" rx="12" fill="#c084fc" fill-opacity="0.2"/>
+      <text x="86" y="84" font-size="11" font-weight="600" fill="#c084fc" text-anchor="middle">ProQuest Academic</text>
+      <text x="460" y="45" font-size="16" font-weight="800" fill="#10b981">0.9% Match</text>
+    </g>
+
+    <!-- Feature Box -->
+    <g transform="translate(24, 314)">
+      <rect width="552" height="250" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+      <text x="20" y="32" font-size="15" font-weight="700" fill="#38bdf8">Why Grammarly Plagiarism Checker Leads in 2026:</text>
+      
+      <text x="20" y="66" font-size="13" fill="#cbd5e1">
+        <tspan x="20" dy="0">✓ Direct partnership with ProQuest gives access to over 60,000 journals.</tspan>
+        <tspan x="20" dy="28">✓ Generates automatic bibliographies in APA, MLA, Chicago, &amp; IEEE styles.</tspan>
+        <tspan x="20" dy="28">✓ Prevents accidental self-plagiarism and uncited paraphrasing.</tspan>
+        <tspan x="20" dy="28">✓ Protects user privacy: your uploaded documents are NEVER indexed into</tspan>
+        <tspan x="20" dy="24">   public databases or shared with third parties.</tspan>
+      </text>
+
+      <rect x="20" y="185" width="220" height="40" rx="8" fill="#0284c7"/>
+      <text x="130" y="210" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Generate Full Audit Report</text>
+    </g>
+  </g>
+</svg>

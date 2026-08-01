@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0f172a;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <defs>
+    <linearGradient id="aiGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Top Header Bar -->
+  <rect x="0" y="0" width="1280" height="70" fill="#1e293b"/>
+  <line x1="0" y1="70" x2="1280" y2="70" stroke="#334155" stroke-width="1"/>
+  
+  <g transform="translate(24, 16)">
+    <rect width="36" height="36" rx="8" fill="url(#aiGrad)"/>
+    <text x="18" y="24" font-size="20" font-weight="900" fill="#ffffff" text-anchor="middle">✨</text>
+    <text x="48" y="22" font-size="18" font-weight="700" fill="#ffffff">Grammarly Generative AI &amp; Smart Text Rewriter</text>
+    <text x="48" y="38" font-size="12" fill="#5eead4">Contextual drafting, tone transformation, outline generation &amp; prompt shortcuts</text>
+  </g>
+
+  <!-- Main AI Modal Stage -->
+  <g transform="translate(140, 110)">
+    <rect width="1000" height="560" rx="16" fill="url(#cardBg)" stroke="#16a34a" stroke-width="1.5"/>
+
+    <!-- Modal Header -->
+    <g transform="translate(32, 28)">
+      <circle cx="20" cy="20" r="16" fill="#16a34a"/>
+      <text x="20" y="26" font-size="16" fill="#ffffff" text-anchor="middle">✨</text>
+      <text x="48" y="25" font-size="18" font-weight="700" fill="#ffffff">Grammarly AI Assistant — Executive Rewrite Mode</text>
+      <text x="48" y="44" font-size="12" fill="#94a3b8">Selected text: "We need to fix our customer support response times fast or users will leave."</text>
+    </g>
+
+    <!-- Preset Prompt Chips -->
+    <g transform="translate(32, 100)">
+      <text x="0" y="16" font-size="13" font-weight="700" fill="#86efac">Quick One-Click Transformations:</text>
+      <g transform="translate(0, 28)">
+        <rect width="140" height="32" rx="16" fill="#16a34a" fill-opacity="0.2" stroke="#22c55e" stroke-width="1"/>
+        <text x="70" y="20" font-size="12" font-weight="600" fill="#86efac" text-anchor="middle">👔 Make more formal</text>
+
+        <rect x="150" y="0" width="150" height="32" rx="16" fill="#38bdf8" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1"/>
+        <text x="225" y="20" font-size="12" font-weight="600" fill="#38bdf8" text-anchor="middle">🎯 Make more persuasive</text>
+
+        <rect x="310" y="0" width="130" height="32" rx="16" fill="#c084fc" fill-opacity="0.2" stroke="#c084fc" stroke-width="1"/>
+        <text x="375" y="20" font-size="12" font-weight="600" fill="#c084fc" text-anchor="middle">⚡ Make concise</text>
+
+        <rect x="450" y="0" width="160" height="32" rx="16" fill="#f59e0b" fill-opacity="0.2" stroke="#f59e0b" stroke-width="1"/>
+        <text x="530" y="20" font-size="12" font-weight="600" fill="#fcd34d" text-anchor="middle">💡 Expand key points</text>
+
+        <rect x="620" y="0" width="140" height="32" rx="16" fill="#ec4899" fill-opacity="0.2" stroke="#ec4899" stroke-width="1"/>
+        <text x="690" y="20" font-size="12" font-weight="600" fill="#fbcfe8" text-anchor="middle">✉️ Turn into Email</text>
+      </g>
+    </g>
+
+    <!-- Custom Prompt Input Field -->
+    <g transform="translate(32, 180)">
+      <rect width="936" height="52" rx="10" fill="#0f172a" stroke="#22c55e" stroke-width="1.5"/>
+      <text x="20" y="32" font-size="14" fill="#86efac">Prompt: "Rewrite as a 3-bullet action plan for the C-suite with projected metrics..."</text>
+      <rect x="820" y="10" width="104" height="32" rx="6" fill="#22c55e"/>
+      <text x="872" y="31" font-size="12" font-weight="700" fill="#052e16" text-anchor="middle">Generate</text>
+    </g>
+
+    <!-- Generated AI Options Grid -->
+    <g transform="translate(32, 255)">
+      <!-- Option 1 -->
+      <rect width="456" height="240" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <rect x="16" y="16" width="80" height="22" rx="4" fill="#15803d"/>
+      <text x="56" y="31" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">OPTION 1</text>
+      <text x="110" y="32" font-size="13" font-weight="600" fill="#86efac">Executive Action Summary</text>
+
+      <text x="16" y="70" font-size="13" fill="#cbd5e1" font-family="Georgia, serif">
+        <tspan x="16" dy="0">• Expediting customer support SLAs is critical to safeguarding quarterly churn rates.</tspan>
+        <tspan x="16" dy="28">• Implementing AI-assisted ticket routing will decrease initial response times by 40%.</tspan>
+        <tspan x="16" dy="28">• Recommended action: Allocate budget for automated helpdesk infrastructure in Q4.</tspan>
+      </text>
+
+      <rect x="16" y="180" width="110" height="36" rx="6" fill="#22c55e"/>
+      <text x="71" y="202" font-size="12" font-weight="700" fill="#052e16" text-anchor="middle">Insert Text</text>
+    </g>
+
+    <!-- Option 2 -->
+    <g transform="translate(512, 255)">
+      <rect width="456" height="240" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <rect x="16" y="16" width="80" height="22" rx="4" fill="#0284c7"/>
+      <text x="56" y="31" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">OPTION 2</text>
+      <text x="110" y="32" font-size="13" font-weight="600" fill="#38bdf8">Direct Strategic Proposal</text>
+
+      <text x="16" y="70" font-size="13" fill="#cbd5e1" font-family="Georgia, serif">
+        <tspan x="16" dy="0">• Customer support latency currently represents our highest operational retention risk.</tspan>
+        <tspan x="16" dy="28">• Modernizing our support queue workflow will enhance user satisfaction scores (NPS).</tspan>
+        <tspan x="16" dy="28">• Next step: Convene emergency cross-functional meeting with engineering leaders.</tspan>
+      </text>
+
+      <rect x="16" y="180" width="110" height="36" rx="6" fill="#38bdf8"/>
+      <text x="71" y="202" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">Insert Text</text>
+    </g>
+  </g>
+</svg>

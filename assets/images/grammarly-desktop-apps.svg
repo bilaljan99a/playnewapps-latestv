@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0f172a;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <defs>
+    <linearGradient id="intGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Top Header Bar -->
+  <rect x="0" y="0" width="1280" height="70" fill="#1e293b"/>
+  <line x1="0" y1="70" x2="1280" y2="70" stroke="#334155" stroke-width="1"/>
+  
+  <g transform="translate(24, 16)">
+    <rect width="36" height="36" rx="8" fill="url(#intGrad)"/>
+    <text x="18" y="24" font-size="20" font-weight="900" fill="#ffffff" text-anchor="middle">⚡</text>
+    <text x="48" y="22" font-size="18" font-weight="700" fill="#ffffff">Grammarly Everywhere Ecosystem</text>
+    <text x="48" y="38" font-size="12" fill="#38bdf8">Native floating widget supporting 500k+ web apps, desktop tools, and mobile keyboards</text>
+  </g>
+
+  <!-- Main Grid of App Integrations -->
+  <g transform="translate(40, 110)">
+    <!-- App 1: Google Docs -->
+    <g transform="translate(0, 0)">
+      <rect width="370" height="260" rx="14" fill="url(#cardBg)" stroke="#38bdf8" stroke-width="1.5"/>
+      <rect x="20" y="20" width="40" height="40" rx="8" fill="#4285f4"/>
+      <text x="40" y="45" font-size="18" text-anchor="middle">📄</text>
+      <text x="72" y="38" font-size="16" font-weight="700" fill="#ffffff">Google Docs Integration</text>
+      <text x="72" y="54" font-size="11" fill="#94a3b8">Web Extension &amp; Floating Widget</text>
+
+      <g transform="translate(20, 80)">
+        <rect width="330" height="150" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+        <text x="14" y="30" font-size="12" fill="#e2e8f0" font-family="Georgia, serif">
+          <tspan x="14" dy="0">Our Q3 sales pipeline <tspan stroke-dasharray="2 2" text-decoration="underline" fill="#f87171">showed strong growth</tspan></tspan>
+          <tspan x="14" dy="24">across all key regional accounts...</tspan>
+        </text>
+        <circle cx="295" cy="115" r="18" fill="#16a34a"/>
+        <text x="295" y="121" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle">98</text>
+      </g>
+    </g>
+
+    <!-- App 2: Slack -->
+    <g transform="translate(400, 0)">
+      <rect width="370" height="260" rx="14" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+      <rect x="20" y="20" width="40" height="40" rx="8" fill="#611f69"/>
+      <text x="40" y="45" font-size="18" text-anchor="middle">💬</text>
+      <text x="72" y="38" font-size="16" font-weight="700" fill="#ffffff">Slack &amp; Teams Messaging</text>
+      <text x="72" y="54" font-size="11" fill="#94a3b8">Desktop OS Native Floating Pill</text>
+
+      <g transform="translate(20, 80)">
+        <rect width="330" height="150" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+        <text x="14" y="30" font-size="12" fill="#e2e8f0">
+          <tspan x="14" dy="0">Hey team, <tspan fill="#38bdf8" text-decoration="underline">let me know</tspan> if you can review</tspan>
+          <tspan x="14" dy="24">the deployment status before release.</tspan>
+        </text>
+        <circle cx="295" cy="115" r="18" fill="#38bdf8"/>
+        <text x="295" y="121" font-size="11" font-weight="900" fill="#0f172a" text-anchor="middle">Tone</text>
+      </g>
+    </g>
+
+    <!-- App 3: Gmail / Outlook -->
+    <g transform="translate(800, 0)">
+      <rect width="370" height="260" rx="14" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+      <rect x="20" y="20" width="40" height="40" rx="8" fill="#ea4335"/>
+      <text x="40" y="45" font-size="18" text-anchor="middle">✉️</text>
+      <text x="72" y="38" font-size="16" font-weight="700" fill="#ffffff">Gmail &amp; Outlook Web</text>
+      <text x="72" y="54" font-size="11" fill="#94a3b8">Inline Email Auto-Composer</text>
+
+      <g transform="translate(20, 80)">
+        <rect width="330" height="150" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+        <text x="14" y="30" font-size="12" fill="#e2e8f0">
+          <tspan x="14" dy="0">Subject: Partnership Proposal 2026</tspan>
+          <tspan x="14" dy="24">Attached is our updated media deck...</tspan>
+        </text>
+        <rect x="14" y="90" width="160" height="28" rx="14" fill="#16a34a" fill-opacity="0.2"/>
+        <text x="94" y="108" font-size="11" font-weight="600" fill="#86efac" text-anchor="middle">✨ AI Reply Suggested</text>
+      </g>
+    </g>
+
+    <!-- Bottom Platform Feature Matrix -->
+    <g transform="translate(0, 290)">
+      <rect width="1170" height="260" rx="14" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+      <text x="32" y="40" font-size="18" font-weight="700" fill="#ffffff">Supported Operating Systems &amp; Environment Extensions</text>
+
+      <g transform="translate(32, 70)">
+        <!-- Windows & macOS -->
+        <g transform="translate(0, 0)">
+          <rect width="260" height="150" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+          <text x="20" y="36" font-size="15" font-weight="700" fill="#ffffff">💻 Windows &amp; macOS Apps</text>
+          <text x="20" y="62" font-size="12" fill="#cbd5e1">Runs system-wide over Word, Notion, Figma, Apple Notes, and IDEs.</text>
+          <text x="20" y="115" font-size="11" font-weight="600" fill="#38bdf8">✓ Global Floating Widget</text>
+        </g>
+
+        <!-- Chrome, Firefox, Safari -->
+        <g transform="translate(280, 0)">
+          <rect width="260" height="150" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+          <text x="20" y="36" font-size="15" font-weight="700" fill="#ffffff">🌐 Browser Extensions</text>
+          <text x="20" y="62" font-size="12" fill="#cbd5e1">Chrome, Edge, Safari, Firefox. Works across 500,000+ web applications.</text>
+          <text x="20" y="115" font-size="11" font-weight="600" fill="#10b981">✓ Zero-Latency Editing</text>
+        </g>
+
+        <!-- iOS & Android Keyboards -->
+        <g transform="translate(560, 0)">
+          <rect width="260" height="150" rx="10" fill="#0f172a" stroke="#c084fc" stroke-width="1"/>
+          <text x="20" y="36" font-size="15" font-weight="700" fill="#ffffff">📱 Mobile Smart Keyboard</text>
+          <text x="20" y="62" font-size="12" fill="#cbd5e1">Grammarly Keyboard for iOS and Android replaces default typing keys.</text>
+          <text x="20" y="115" font-size="11" font-weight="600" fill="#c084fc">✓ On-the-Go Correction</text>
+        </g>
+
+        <!-- Office Add-In -->
+        <g transform="translate(840, 0)">
+          <rect width="266" height="150" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
+          <text x="20" y="36" font-size="15" font-weight="700" fill="#ffffff">📊 MS Office Suite Add-in</text>
+          <text x="20" y="62" font-size="12" fill="#cbd5e1">Dedicated sidebar panel for Word, Outlook, and PowerPoint.</text>
+          <text x="20" y="115" font-size="11" font-weight="600" fill="#f59e0b">✓ Enterprise Certified</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

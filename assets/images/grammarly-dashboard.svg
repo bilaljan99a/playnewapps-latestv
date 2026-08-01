@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0f172a;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <defs>
+    <linearGradient id="gHeader" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Top App Bar -->
+  <rect x="0" y="0" width="1280" height="70" fill="#1e293b"/>
+  <line x1="0" y1="70" x2="1280" y2="70" stroke="#334155" stroke-width="1"/>
+  
+  <g transform="translate(24, 16)">
+    <circle cx="18" cy="18" r="18" fill="url(#gHeader)"/>
+    <text x="18" y="24" font-size="20" font-weight="900" fill="#ffffff" text-anchor="middle">G</text>
+    <text x="48" y="22" font-size="18" font-weight="700" fill="#ffffff">Grammarly Desktop Editor &amp; AI Writing Assistant</text>
+    <text x="48" y="38" font-size="12" fill="#86efac">Real-Time Grammar, Tone Analysis, Clarity Rewrites &amp; Generative AI</text>
+  </g>
+
+  <!-- Left Side: Editor Document Stage -->
+  <g transform="translate(30, 90)">
+    <rect width="820" height="600" rx="12" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+    
+    <!-- Doc Title Bar -->
+    <rect x="0" y="0" width="820" height="50" rx="12" fill="#1e293b"/>
+    <text x="24" y="31" font-size="15" font-weight="700" fill="#ffffff">📄 Q3_Executive_Project_Proposal_Draft.docx</text>
+    <text x="680" y="31" font-size="12" font-weight="600" fill="#10b981">Auto-Saved to Cloud</text>
+    <line x1="0" y1="50" x2="820" y2="50" stroke="#334155" stroke-width="1"/>
+
+    <!-- Document Text Area -->
+    <g transform="translate(32, 80)">
+      <!-- Paragraph 1 -->
+      <text x="0" y="0" font-size="15" fill="#e2e8f0" font-family="Georgia, serif" line-height="1.8">
+        <tspan x="0" dy="0">Dear Leadership Team,</tspan>
+        <tspan x="0" dy="32">I am writing to propose a comprehensive upgrade to our enterprise workflow infrastructure.</tspan>
+        <tspan x="0" dy="32">In order to optimize team productivity, <tspan fill="#f87171" text-decoration="underline" stroke-dasharray="2 2">we should try to aim for</tspan> reducing manual operational</tspan>
+        <tspan x="0" dy="32">bottlenecks. Currently, <tspan fill="#38bdf8" text-decoration="underline">a significant amount of employees</tspan> express frustration with redundant</tspan>
+        <tspan x="0" dy="32">data entry tasks, which <tspan fill="#c084fc" text-decoration="underline">negatively impacts their overall morale</tspan>.</tspan>
+      </text>
+
+      <!-- AI Prompt Bar Overlay -->
+      <g transform="translate(0, 200)">
+        <rect width="756" height="64" rx="12" fill="#15803d" fill-opacity="0.2" stroke="#22c55e" stroke-width="1.5"/>
+        <text x="20" y="38" font-size="18" text-anchor="middle">✨</text>
+        <text x="48" y="38" font-size="14" font-weight="600" fill="#86efac">Grammarly AI Prompt: "Rephrase this paragraph to sound more authoritative and concise."</text>
+        <rect x="630" y="16" width="108" height="32" rx="6" fill="#22c55e"/>
+        <text x="684" y="37" font-size="12" font-weight="700" fill="#052e16" text-anchor="middle">Apply AI</text>
+      </g>
+
+      <!-- Paragraph 2 -->
+      <text x="0" y="310" font-size="15" fill="#e2e8f0" font-family="Georgia, serif">
+        <tspan x="0" dy="0">By integrating automated AI communication assistants across our desktop environments,</tspan>
+        <tspan x="0" dy="32">we expect a 35% reduction in drafting cycle times. Furthermore, our recent user feedback</tspan>
+        <tspan x="0" dy="32">indicates that error-free external communications foster stronger client trust and retention.</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Right Side: Grammarly Real-Time Suggestions Panel -->
+  <g transform="translate(870, 90)">
+    <rect width="380" height="600" rx="12" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+
+    <!-- Score Widget -->
+    <g transform="translate(24, 20)">
+      <rect width="332" height="90" rx="10" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
+      <circle cx="50" cy="45" r="30" fill="#22c55e" fill-opacity="0.2"/>
+      <text x="50" y="52" font-size="22" font-weight="900" fill="#22c55e" text-anchor="middle">98</text>
+      <text x="96" y="38" font-size="16" font-weight="700" fill="#ffffff">Overall Performance Score</text>
+      <text x="96" y="58" font-size="12" fill="#86efac">Great job! Document is clear and engaging.</text>
+    </g>
+
+    <!-- Suggestion 1: Conciseness (Clarity) -->
+    <g transform="translate(24, 126)">
+      <rect width="332" height="120" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+      <rect x="16" y="14" width="70" height="22" rx="4" fill="#0284c7"/>
+      <text x="51" y="29" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">CLARITY</text>
+      <text x="16" y="55" font-size="13" font-weight="600" fill="#94a3b8">Wordy phrasing detected:</text>
+      <text x="16" y="74" font-size="12" fill="#f87171" text-decoration="line-through">we should try to aim for</text>
+      <text x="16" y="94" font-size="13" font-weight="700" fill="#38bdf8">➔ aim to</text>
+      <rect x="250" y="75" width="66" height="28" rx="6" fill="#38bdf8"/>
+      <text x="283" y="93" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">Accept</text>
+    </g>
+
+    <!-- Suggestion 2: Tone Adjustment (Delivery) -->
+    <g transform="translate(24, 258)">
+      <rect width="332" height="120" rx="10" fill="#1e293b" stroke="#c084fc" stroke-width="1"/>
+      <rect x="16" y="14" width="70" height="22" rx="4" fill="#9333ea"/>
+      <text x="51" y="29" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">DELIVERY</text>
+      <text x="16" y="55" font-size="13" font-weight="600" fill="#94a3b8">Sound more confident:</text>
+      <text x="16" y="74" font-size="12" fill="#f87171" text-decoration="line-through">negatively impacts their morale</text>
+      <text x="16" y="94" font-size="13" font-weight="700" fill="#c084fc">➔ undermines team morale</text>
+      <rect x="250" y="75" width="66" height="28" rx="6" fill="#c084fc"/>
+      <text x="283" y="93" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">Accept</text>
+    </g>
+
+    <!-- Tone Detector Summary -->
+    <g transform="translate(24, 390)">
+      <rect width="332" height="180" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="16" y="30" font-size="14" font-weight="700" fill="#ffffff">Real-Time Tone Detector</text>
+      
+      <g transform="translate(16, 45)">
+        <rect width="100" height="26" rx="13" fill="#22c55e" fill-opacity="0.2"/>
+        <text x="50" y="62" font-size="12" font-weight="600" fill="#86efac" text-anchor="middle">💼 Formal (85%)</text>
+
+        <rect x="110" y="0" width="108" height="26" rx="13" fill="#38bdf8" fill-opacity="0.2"/>
+        <text x="164" y="17" font-size="12" font-weight="600" fill="#38bdf8" text-anchor="middle">🎯 Direct (78%)</text>
+
+        <rect x="0" y="36" width="120" height="26" rx="13" fill="#c084fc" fill-opacity="0.2"/>
+        <text x="60" y="53" font-size="12" font-weight="600" fill="#c084fc" text-anchor="middle">💪 Confident (92%)</text>
+      </g>
+
+      <text x="16" y="145" font-size="11" fill="#94a3b8">Your audience will perceive this document as highly professional, authoritative, and persuasive.</text>
+    </g>
+  </g>
+</svg>

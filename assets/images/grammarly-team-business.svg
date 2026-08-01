@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0f172a;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <defs>
+    <linearGradient id="bizGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Top Header Bar -->
+  <rect x="0" y="0" width="1280" height="70" fill="#1e293b"/>
+  <line x1="0" y1="70" x2="1280" y2="70" stroke="#334155" stroke-width="1"/>
+  
+  <g transform="translate(24, 16)">
+    <rect width="36" height="36" rx="8" fill="url(#bizGrad)"/>
+    <text x="18" y="24" font-size="20" font-weight="900" fill="#ffffff" text-anchor="middle">🏢</text>
+    <text x="48" y="22" font-size="18" font-weight="700" fill="#ffffff">Grammarly Business &amp; Enterprise Governance</text>
+    <text x="48" y="38" font-size="12" fill="#6ee7b7">Brand style guides, team snippet libraries, custom vocabulary rules &amp; SOC2 Type II compliance</text>
+  </g>
+
+  <!-- Left: Team Brand Style Guide Panel -->
+  <g transform="translate(30, 90)">
+    <rect width="600" height="600" rx="12" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+    
+    <text x="24" y="36" font-size="18" font-weight="700" fill="#ffffff">Company Style Guide &amp; Terminology Rules</text>
+
+    <!-- Rule 1: Product Name Standard -->
+    <g transform="translate(24, 60)">
+      <rect width="552" height="96" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+      <text x="16" y="28" font-size="14" font-weight="700" fill="#ffffff">Rule #1: Standardize Product Brand Name</text>
+      <text x="16" y="50" font-size="12" fill="#f87171" text-decoration="line-through">Flagged: "Grammarly App", "Grammarly Tool"</text>
+      <text x="16" y="72" font-size="13" font-weight="700" fill="#10b981">➔ Replacement: "Grammarly Desktop &amp; Web"</text>
+      <rect x="440" y="24" width="96" height="26" rx="4" fill="#10b981"/>
+      <text x="488" y="41" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Enforced</text>
+    </g>
+
+    <!-- Rule 2: Tone Consistency -->
+    <g transform="translate(24, 170)">
+      <rect width="552" height="96" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+      <text x="16" y="28" font-size="14" font-weight="700" fill="#ffffff">Rule #2: Customer Support Tone Policy</text>
+      <text x="16" y="50" font-size="12" fill="#94a3b8">Target Tone: Empathetic &amp; Professional</text>
+      <text x="16" y="72" font-size="13" font-weight="700" fill="#38bdf8">➔ Automatically rewrites passive-aggressive customer replies</text>
+      <rect x="440" y="24" width="96" height="26" rx="4" fill="#0284c7"/>
+      <text x="488" y="41" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Active</text>
+    </g>
+
+    <!-- Team Snippets Library -->
+    <g transform="translate(24, 280)">
+      <rect width="552" height="290" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="20" y="32" font-size="15" font-weight="700" fill="#ffffff">Shared Team Snippet Library (Shortcut Triggering)</text>
+      
+      <!-- Snippet 1 -->
+      <g transform="translate(20, 50)">
+        <rect width="512" height="64" rx="8" fill="#1e293b"/>
+        <text x="16" y="26" font-size="13" font-weight="700" fill="#86efac">Shortcut: ;refund_policy</text>
+        <text x="16" y="46" font-size="11" fill="#cbd5e1">Expands into: "Our standard 30-day money-back guarantee applies to all plans..."</text>
+      </g>
+
+      <!-- Snippet 2 -->
+      <g transform="translate(20, 126)">
+        <rect width="512" height="64" rx="8" fill="#1e293b"/>
+        <text x="16" y="26" font-size="13" font-weight="700" fill="#38bdf8">Shortcut: ;security_cert</text>
+        <text x="16" y="46" font-size="11" fill="#cbd5e1">Expands into: "Grammarly is SOC2 Type II certified, GDPR compliant, and ISO 27001..."</text>
+      </g>
+
+      <!-- Snippet 3 -->
+      <g transform="translate(20, 202)">
+        <rect width="512" height="64" rx="8" fill="#1e293b"/>
+        <text x="16" y="26" font-size="13" font-weight="700" fill="#c084fc">Shortcut: ;demo_link</text>
+        <text x="16" y="46" font-size="11" fill="#cbd5e1">Expands into: "You can schedule a live 1-on-1 product demo at https://grammarly.com/demo"</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right: Admin Analytics & Security Governance -->
+  <g transform="translate(650, 90)">
+    <rect width="600" height="600" rx="12" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+    
+    <text x="24" y="36" font-size="18" font-weight="700" fill="#ffffff">Enterprise Admin Analytics &amp; Security</text>
+
+    <!-- Analytics Dashboard Cards -->
+    <g transform="translate(24, 60)">
+      <rect width="264" height="120" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+      <text x="20" y="32" font-size="13" fill="#94a3b8">Team Time Saved</text>
+      <text x="20" y="68" font-size="28" font-weight="900" fill="#10b981">1,480 hrs</text>
+      <text x="20" y="94" font-size="11" fill="#86efac">▲ 24% vs last quarter</text>
+
+      <g transform="translate(288, 0)">
+        <rect width="264" height="120" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+        <text x="20" y="32" font-size="13" fill="#94a3b8">Tone Consistency Score</text>
+        <text x="20" y="68" font-size="28" font-weight="900" fill="#38bdf8">96.4%</text>
+        <text x="20" y="94" font-size="11" fill="#38bdf8">Across 120 team members</text>
+      </g>
+    </g>
+
+    <!-- Security Certifications Box -->
+    <g transform="translate(24, 200)">
+      <rect width="552" height="370" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="20" y="36" font-size="16" font-weight="700" fill="#ffffff">Enterprise Security &amp; Compliance Standards</text>
+
+      <g transform="translate(20, 60)">
+        <text x="0" y="20" font-size="13" font-weight="700" fill="#10b981">🔒 SOC 2 Type II Certified</text>
+        <text x="0" y="40" font-size="12" fill="#cbd5e1">Annual independent security audits verifying internal controls &amp; encryption safety.</text>
+
+        <text x="0" y="90" font-size="13" font-weight="700" fill="#10b981">🛡️ HIPAA &amp; GDPR Compliant</text>
+        <text x="0" y="110" font-size="12" fill="#cbd5e1">Includes Business Associate Agreements (BAA) for healthcare organizations and EU privacy.</text>
+
+        <text x="0" y="160" font-size="13" font-weight="700" fill="#10b981">🔑 SAML Single Sign-On (SSO)</text>
+        <text x="0" y="180" font-size="12" fill="#cbd5e1">Native integration with Okta, Azure AD, OneLogin, and Google Workspace.</text>
+
+        <text x="0" y="230" font-size="13" font-weight="700" fill="#10b981">🚫 Zero Data Training Guarantee</text>
+        <text x="0" y="250" font-size="12" fill="#cbd5e1">Grammarly NEVER sells user data or uses enterprise text to train public AI models.</text>
+      </g>
+    </g>
+  </g>
+</svg>
