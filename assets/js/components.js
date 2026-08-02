@@ -37,7 +37,7 @@ class Components {
         return `
             <article class="card review-card" data-category="${item.categoryId}">
                 <div class="card-img-wrapper">
-                    <img src="${item.icon}" alt="${item.title}" class="card-img" width="600" height="400" loading="lazy">
+                    <img src="${item.icon}" alt="${item.title}" class="card-img" width="600" height="400" loading="lazy" onerror="if(!this.getAttribute('data-fallback-tried')){this.setAttribute('data-fallback-tried','true');this.src=this.src.endsWith('.svg')?this.src.replace('.svg','.jpg'):this.src.replace('.jpg','.svg');}">
                     <span class="badge platform-badge"><span class="material-icons-round">${icon}</span> ${platform}</span>
                 </div>
                 <div class="card-content">
@@ -62,7 +62,7 @@ class Components {
         return `
             <article class="slide card review-card" role="group" aria-roledescription="slide">
                 <div class="card-img-wrapper">
-                    <img src="${item.icon}" alt="${item.title}" class="card-img" width="600" height="400" loading="lazy">
+                    <img src="${item.icon}" alt="${item.title}" class="card-img" width="600" height="400" loading="lazy" onerror="if(!this.getAttribute('data-fallback-tried')){this.setAttribute('data-fallback-tried','true');this.src=this.src.endsWith('.svg')?this.src.replace('.svg','.jpg'):this.src.replace('.jpg','.svg');}">
                     <span class="badge platform-badge"><span class="material-icons-round">${icon}</span> ${platform}</span>
                 </div>
                 <div class="card-content">

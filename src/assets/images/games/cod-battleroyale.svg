@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+    <rect width="800" height="500" fill="#0c1322"/>
+    <circle cx="400" cy="250" r="180" fill="#0284c7" opacity="0.2" stroke="#38bdf8" stroke-width="3" stroke-dasharray="10 6"/>
+    <text x="400" y="100" font-family="Impact, sans-serif" font-size="28" fill="#f59e0b" text-anchor="middle">100-PLAYER BATTLE ROYALE ISOLATED DROP</text>
+    <g transform="translate(60, 150)">
+      <rect x="0" y="0" width="24" height="200" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+      <rect x="3" y="60" width="18" height="135" rx="4" fill="#38bdf8"/>
+      <text x="35" y="130" font-family="sans-serif" font-size="12" fill="#fff">ALT 1,450m</text>
+    </g>
+    <g transform="translate(620, 30)">
+      <rect x="0" y="0" width="150" height="45" rx="8" fill="#0f172a" stroke="#ef4444" stroke-width="2"/>
+      <text x="75" y="28" font-family="Impact, sans-serif" font-size="20" fill="#fff" text-anchor="middle">ALIVE: <tspan fill="#ef4444">42</tspan> | KILLS: <tspan fill="#f59e0b">8</tspan></text>
+    </g>
+  </svg>

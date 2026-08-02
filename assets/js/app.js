@@ -517,6 +517,16 @@ class App {
             if(el) {
                 el.src = src || '';
                 if (alt) el.alt = alt;
+                el.onerror = function() {
+                    if (!this.getAttribute('data-fallback-tried')) {
+                        this.setAttribute('data-fallback-tried', 'true');
+                        if (this.src.endsWith('.svg')) {
+                            this.src = this.src.replace('.svg', '.jpg');
+                        } else if (this.src.endsWith('.jpg')) {
+                            this.src = this.src.replace('.jpg', '.svg');
+                        }
+                    }
+                };
             }
         };
 
@@ -636,7 +646,7 @@ class App {
                     const fullUrl = s.url || s.thumbnail;
                     const altText = s.alt || `${review.title || 'App'} Screenshot`;
                     return `
-                        <img src="${thumbUrl}" data-full="${fullUrl}" alt="${altText}" class="gallery-img lightbox-trigger" loading="lazy" width="800" height="600" tabindex="0">
+                        <img src="${thumbUrl}" data-full="${fullUrl}" alt="${altText}" class="gallery-img lightbox-trigger" loading="lazy" width="800" height="600" tabindex="0" onerror="if(!this.getAttribute('data-fallback-tried')){this.setAttribute('data-fallback-tried','true');this.src=this.src.endsWith('.svg')?this.src.replace('.svg','.jpg'):this.src.replace('.jpg','.svg');}">
                     `;
                 }).join('');
             }

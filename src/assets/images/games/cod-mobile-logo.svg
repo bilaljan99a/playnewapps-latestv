@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cod-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+    <linearGradient id="cod-gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="cod-silver" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#cod-bg)"/>
+  <rect x="24" y="24" width="464" height="464" rx="96" fill="none" stroke="url(#cod-gold)" stroke-width="4" opacity="0.4"/>
+  <g transform="translate(256, 190)">
+    <path d="M -24, -40 L -110, -75 L -165, -30 L -130, 20 L -175, 45 L -140, 85 L -95, 60 L -40, 90 Z" fill="url(#cod-gold)" opacity="0.3" />
+    <path d="M 24, -40 L 110, -75 L 165, -30 L 130, 20 L 175, 45 L 140, 85 L 95, 60 L 40, 90 Z" fill="url(#cod-gold)" opacity="0.3" />
+    <polygon points="0,-105 85,-65 70,35 0,110 -70,35 -85,-65" fill="#111827" stroke="url(#cod-gold)" stroke-width="4" />
+    <path d="M -45,-40 C -45,-70 45,-70 45,-40 C 45,-10 35,20 25,50 L -25,50 C -35,20 -45,-10 -45,-40 Z" fill="#f8fafc" />
+    <ellipse cx="-20" cy="-35" rx="12" ry="16" fill="#111827" />
+    <ellipse cx="20" cy="-35" rx="12" ry="16" fill="#111827" />
+    <path d="M -15,10 L -15,40 M 0,10 L 0,40 M 15,10 L 15,40" stroke="#111827" stroke-width="4" />
+    <polygon points="0,-60 18,-25 55,-25 25,0 35,35 0,15 -35,35 -25,0 -55,-25 -18,-25" fill="url(#cod-gold)" opacity="0.9" />
+  </g>
+  <g transform="translate(256, 400)">
+    <rect x="-210" y="-45" width="420" height="75" rx="16" fill="#090d16" stroke="url(#cod-gold)" stroke-width="3"/>
+    <text x="0" y="-12" font-family="Impact, Arial Black, sans-serif" font-size="32" font-weight="900" fill="url(#cod-silver)" text-anchor="middle" letter-spacing="2">CALL OF DUTY</text>
+    <polygon points="-110,0 110,0 120,26 -120,26" fill="url(#cod-gold)"/>
+    <text x="0" y="20" font-family="Impact, Arial Black, sans-serif" font-size="20" font-weight="900" fill="#090d16" text-anchor="middle" letter-spacing="6">MOBILE</text>
+  </g>
+</svg>
