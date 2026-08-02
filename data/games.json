@@ -3,7 +3,7 @@
     "id": "genshin-impact",
     "title": "Genshin Impact",
     "description": "Open-world action RPG featuring elemental reaction combat, Teyvat exploration, 60fps mobile performance, and cross-play.",
-    "icon": "/assets/images/games/genshin-impact-logo.jpg",
+    "icon": "/assets/images/games/genshin-impact-logo-v2.jpg",
     "rating": 4.7,
     "categoryId": "rpg",
     "developer": "HoYoverse (Cognosphere Pte. Ltd.)",
@@ -77,33 +77,33 @@
     ],
     "screenshots": [
       {
-        "url": "/assets/images/games/genshin-exploration.jpg",
-        "thumbnail": "/assets/images/games/genshin-exploration.jpg",
+        "url": "/assets/images/games/genshin-exploration-v2.jpg",
+        "thumbnail": "/assets/images/games/genshin-exploration-v2.jpg",
         "alt": "Genshin Impact Open World Exploration Interface showing mini-map, stamina arc wheel, and character party frames in Mondstadt"
       },
       {
-        "url": "/assets/images/games/genshin-combat.jpg",
-        "thumbnail": "/assets/images/games/genshin-combat.jpg",
+        "url": "/assets/images/games/genshin-combat-v2.jpg",
+        "thumbnail": "/assets/images/games/genshin-combat-v2.jpg",
         "alt": "Genshin Impact Elemental Combat HUD displaying Vaporize damage reaction numbers and rotation energy recharge monitor"
       },
       {
-        "url": "/assets/images/games/genshin-character.jpg",
-        "thumbnail": "/assets/images/games/genshin-character.jpg",
+        "url": "/assets/images/games/genshin-character-v2.jpg",
+        "thumbnail": "/assets/images/games/genshin-character-v2.jpg",
         "alt": "Genshin Impact Character Attributes and Emblem of Severed Fate artifact set builder UI"
       },
       {
-        "url": "/assets/images/games/genshin-wish.jpg",
-        "thumbnail": "/assets/images/games/genshin-wish.jpg",
+        "url": "/assets/images/games/genshin-wish-v2.jpg",
+        "thumbnail": "/assets/images/games/genshin-wish-v2.jpg",
         "alt": "Genshin Impact Wish Gacha Banner screen with soft pity tracker and Primogem balance"
       },
       {
-        "url": "/assets/images/games/genshin-coop.jpg",
-        "thumbnail": "/assets/images/games/genshin-coop.jpg",
+        "url": "/assets/images/games/genshin-coop-v2.jpg",
+        "thumbnail": "/assets/images/games/genshin-coop-v2.jpg",
         "alt": "Genshin Impact 4-Player Cross-Platform Co-Op Domain Raid Lobby screen"
       },
       {
-        "url": "/assets/images/games/genshin-graphics.jpg",
-        "thumbnail": "/assets/images/games/genshin-graphics.jpg",
+        "url": "/assets/images/games/genshin-graphics-v2.jpg",
+        "thumbnail": "/assets/images/games/genshin-graphics-v2.jpg",
         "alt": "Genshin Impact 60 FPS Thermal Stability Benchmark and Graphics Settings Inspector"
       }
     ],
@@ -217,7 +217,7 @@
     "id": "cod-mobile",
     "title": "Call of Duty: Mobile",
     "description": "Iconic first-person shooter featuring classic multiplayer maps, 100-player Battle Royale mode, Gunsmith customization, and 120 FPS performance.",
-    "icon": "/assets/images/games/cod-mobile-logo.jpg",
+    "icon": "/assets/images/games/cod-mobile-logo-v2.jpg",
     "rating": 4.8,
     "categoryId": "action",
     "developer": "TiMi Studio Group / Activision",
@@ -314,33 +314,33 @@
     ],
     "screenshots": [
       {
-        "url": "/assets/images/games/cod-multiplayer.jpg",
-        "thumbnail": "/assets/images/games/cod-multiplayer.jpg",
+        "url": "/assets/images/games/cod-multiplayer-v2.jpg",
+        "thumbnail": "/assets/images/games/cod-multiplayer-v2.jpg",
         "alt": "Call of Duty Mobile 5v5 Multiplayer Tactical Combat on Nuketown map with high-fps HUD"
       },
       {
-        "url": "/assets/images/games/cod-battleroyale.jpg",
-        "thumbnail": "/assets/images/games/cod-battleroyale.jpg",
+        "url": "/assets/images/games/cod-battleroyale-v2.jpg",
+        "thumbnail": "/assets/images/games/cod-battleroyale-v2.jpg",
         "alt": "Call of Duty Mobile 100-Player Battle Royale Wingsuit Airborne Drop over Isolated island"
       },
       {
-        "url": "/assets/images/games/cod-gunsmith.jpg",
-        "thumbnail": "/assets/images/games/cod-gunsmith.jpg",
+        "url": "/assets/images/games/cod-gunsmith-v2.jpg",
+        "thumbnail": "/assets/images/games/cod-gunsmith-v2.jpg",
         "alt": "Call of Duty Mobile Gunsmith Weapon Customization Suite displaying 5 attachment slots and stats radar"
       },
       {
-        "url": "/assets/images/games/cod-ranked.jpg",
-        "thumbnail": "/assets/images/games/cod-ranked.jpg",
+        "url": "/assets/images/games/cod-ranked-v2.jpg",
+        "thumbnail": "/assets/images/games/cod-ranked-v2.jpg",
         "alt": "Call of Duty Mobile Legendary Rank Victory Match Summary Screen displaying MVP and K/D stats"
       },
       {
-        "url": "/assets/images/games/cod-zombies.jpg",
-        "thumbnail": "/assets/images/games/cod-zombies.jpg",
+        "url": "/assets/images/games/cod-zombies-v2.jpg",
+        "thumbnail": "/assets/images/games/cod-zombies-v2.jpg",
         "alt": "Call of Duty Mobile Co-Op Zombies Mode Survival Battle with Ray Gun and Perk-a-Cola"
       },
       {
-        "url": "/assets/images/games/cod-graphics.jpg",
-        "thumbnail": "/assets/images/games/cod-graphics.jpg",
+        "url": "/assets/images/games/cod-graphics-v2.jpg",
+        "thumbnail": "/assets/images/games/cod-graphics-v2.jpg",
         "alt": "Call of Duty Mobile 120 FPS Ultra HD Graphics and Audio Customization Menu"
       }
     ],
