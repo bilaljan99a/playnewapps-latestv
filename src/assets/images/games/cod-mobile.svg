@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Tactical Carbon Background Gradient -->
+    <linearGradient id="cod-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1f2937" />
+    </linearGradient>
+
+    <!-- Metallic Gold/Orange Crest Gradient -->
+    <linearGradient id="cod-gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <!-- Metallic Silver/White Text Gradient -->
+    <linearGradient id="cod-silver" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+
+    <!-- Tactical Orange Glow -->
+    <filter id="cod-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Rounded App Icon Background -->
+  <rect width="512" height="512" rx="112" fill="url(#cod-bg)" />
+
+  <!-- Tactical HUD Border Accents -->
+  <path d="M 64,112 L 64,64 L 112,64" stroke="url(#cod-gold)" stroke-width="3" fill="none" opacity="0.5" />
+  <path d="M 448,112 L 448,64 L 400,64" stroke="url(#cod-gold)" stroke-width="3" fill="none" opacity="0.5" />
+  <path d="M 64,400 L 64,448 L 112,448" stroke="url(#cod-gold)" stroke-width="3" fill="none" opacity="0.5" />
+  <path d="M 448,400 L 448,448 L 400,448" stroke="url(#cod-gold)" stroke-width="3" fill="none" opacity="0.5" />
+
+  <!-- Military Shield & Wings Crest Background -->
+  <g transform="translate(256, 195)" opacity="0.9">
+    <!-- Outer Wings -->
+    <!-- Left Wing -->
+    <path d="M -24, -40 L -110, -75 L -165, -30 L -130, 20 L -175, 45 L -140, 85 L -95, 60 L -40, 90 Z" fill="url(#cod-gold)" opacity="0.25" />
+    <!-- Right Wing -->
+    <path d="M 24, -40 L 110, -75 L 165, -30 L 130, 20 L 175, 45 L 140, 85 L 95, 60 L 40, 90 Z" fill="url(#cod-gold)" opacity="0.25" />
+
+    <!-- Center Tactical Shield -->
+    <polygon points="0,-105 85,-65 70,35 0,110 -70,35 -85,-65" fill="#111827" stroke="url(#cod-gold)" stroke-width="4" />
+    <!-- Inner Shield Accent -->
+    <polygon points="0,-85 65,-50 52,25 0,85 -52,25 -65,-50" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.4" />
+
+    <!-- Skull / Tactical Star Emblem in Shield -->
+    <polygon points="0,-60 18,-25 55,-25 25,0 35,35 0,15 -35,35 -25,0 -55,-25 -18,-25" fill="url(#cod-gold)" filter="url(#cod-glow)" opacity="0.9" />
+    <circle cx="0" cy="-8" r="18" fill="#090d16" />
+    <circle cx="0" cy="-8" r="8" fill="url(#cod-gold)" />
+  </g>
+
+  <!-- Title & Branding Area -->
+  <g transform="translate(256, 370)">
+    <!-- Dark Tactical Backdrop Banner -->
+    <rect x="-220" y="-55" width="440" height="115" rx="16" fill="#0b0f19" opacity="0.85" stroke="#334155" stroke-width="2" />
+    
+    <!-- CALL OF DUTY typography -->
+    <text x="0" y="-14" font-family="'Impact', 'Arial Black', 'Trebuchet MS', sans-serif" font-size="46" font-weight="900" fill="url(#cod-silver)" text-anchor="middle" letter-spacing="3" filter="url(#cod-glow)">
+      CALL OF DUTY
+    </text>
+
+    <!-- Golden MOBILE Badge Ribbon -->
+    <g transform="translate(0, 24)">
+      <polygon points="-110,-20 110,-20 125,20 -125,20" fill="url(#cod-gold)" />
+      <polygon points="-106,-17 106,-17 119,17 -119,17" fill="#090d16" />
+      <text x="0" y="8" font-family="'Impact', 'Arial Black', sans-serif" font-size="24" font-weight="900" fill="url(#cod-gold)" text-anchor="middle" letter-spacing="8">
+        MOBILE
+      </text>
+    </g>
+  </g>
+</svg>
