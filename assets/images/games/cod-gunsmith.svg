@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
-  <rect width="1280" height="720" fill="#111622"/>
-  <rect x="100" y="80" width="1080" height="560" rx="20" fill="#182030" stroke="#ff9900" stroke-width="2"/>
-  <text x="640" y="140" text-anchor="middle" fill="#ff9900" font-family="sans-serif" font-weight="900" font-size="32">GUNSMITH 2.0 CUSTOMIZATION SUITE</text>
-  <text x="200" y="240" fill="#ffffff" font-family="sans-serif" font-size="22">Damage: 38</text>
-  <text x="200" y="290" fill="#ffffff" font-family="sans-serif" font-size="22">Fire Rate: 88</text>
-  <text x="200" y="340" fill="#ffffff" font-family="sans-serif" font-size="22">Accuracy: 74</text>
-  <text x="200" y="390" fill="#ffffff" font-family="sans-serif" font-size="22">Range: 65</text>
-</svg>

@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
-  <rect width="1280" height="720" fill="#080c1a"/>
-  <circle cx="640" cy="320" r="160" fill="#ffcc00" opacity="0.15"/>
-  <polygon points="640,160 670,290 800,320 670,350 640,480 610,350 480,320 610,290" fill="#ffd700"/>
-  <text x="640" y="560" text-anchor="middle" fill="#ffe8a3" font-family="sans-serif" font-weight="900" font-size="36">5-STAR WISH GACHA BANNER</text>
-</svg>

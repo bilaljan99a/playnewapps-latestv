@@ -517,16 +517,6 @@ class App {
             if(el) {
                 el.src = src || '';
                 if (alt) el.alt = alt;
-                el.onerror = function() {
-                    if (!this.getAttribute('data-fb')) {
-                        this.setAttribute('data-fb', '1');
-                        if (this.src.endsWith('.jpg')) {
-                            this.src = this.src.replace('.jpg', '.svg');
-                        } else if (this.src.endsWith('.svg')) {
-                            this.src = this.src.replace('.svg', '.jpg');
-                        }
-                    }
-                };
             }
         };
 
@@ -646,7 +636,7 @@ class App {
                     const fullUrl = s.url || s.thumbnail;
                     const altText = s.alt || `${review.title || 'App'} Screenshot`;
                     return `
-                        <img src="${thumbUrl}" data-full="${fullUrl}" alt="${altText}" class="gallery-img lightbox-trigger" loading="lazy" width="800" height="600" tabindex="0" onerror="if(!this.getAttribute('data-fb')){this.setAttribute('data-fb','1');if(this.src.endsWith('.jpg')){this.src=this.src.replace('.jpg','.svg');}else if(this.src.endsWith('.svg')){this.src=this.src.replace('.svg','.jpg');}}">
+                        <img src="${thumbUrl}" data-full="${fullUrl}" alt="${altText}" class="gallery-img lightbox-trigger" loading="lazy" width="800" height="600" tabindex="0">
                     `;
                 }).join('');
             }

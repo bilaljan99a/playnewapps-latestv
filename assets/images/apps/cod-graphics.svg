@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
-  <rect width="1280" height="720" fill="#0e131f"/>
-  <rect x="150" y="100" width="980" height="520" rx="20" fill="#162033" stroke="#00aaff" stroke-width="2"/>
-  <text x="200" y="180" fill="#00ffcc" font-family="sans-serif" font-weight="bold" font-size="26">Graphic Quality: VERY HIGH</text>
-  <text x="200" y="250" fill="#00ffcc" font-family="sans-serif" font-weight="bold" font-size="26">Frame Rate: 120 Ultra FPS</text>
-  <text x="200" y="320" fill="#ffffff" font-family="sans-serif" font-size="24">Field of View (FOV): 90 FOV</text>
-</svg>

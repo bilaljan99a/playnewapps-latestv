@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
-  <rect width="1280" height="720" fill="#0a0a16"/>
-  <circle cx="640" cy="360" r="220" fill="#ff4d4d" opacity="0.2"/>
-  <circle cx="640" cy="360" r="140" fill="#ff9900" opacity="0.3"/>
-  <text x="640" y="340" text-anchor="middle" fill="#ff4d4d" font-family="sans-serif" font-weight="900" font-size="52" style="text-shadow:0 0 20px #ff0000;">VAPORIZE 34,850</text>
-  <text x="640" y="400" text-anchor="middle" fill="#70e0ff" font-family="sans-serif" font-weight="bold" font-size="32">CRITICAL +12,400</text>
-  <text x="640" y="660" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="26">ELEMENTAL REACTION COMBAT HUD</text>
-</svg>
