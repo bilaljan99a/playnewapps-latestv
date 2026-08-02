@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#0d0e14"/>
+  <text x="640" y="260" text-anchor="middle" fill="#00ffcc" font-family="sans-serif" font-weight="900" font-size="64" style="text-shadow:0 0 25px #00ffcc;">VICTORY</text>
+  <text x="640" y="340" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="28">LEGENDARY RANK MATCH SUMMARY</text>
+</svg>

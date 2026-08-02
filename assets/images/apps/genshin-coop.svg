@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#0a1224"/>
+  <rect x="140" y="160" width="220" height="320" rx="15" fill="#142442" stroke="#56bcff" stroke-width="2"/>
+  <rect x="410" y="160" width="220" height="320" rx="15" fill="#142442" stroke="#56bcff" stroke-width="2"/>
+  <rect x="680" y="160" width="220" height="320" rx="15" fill="#142442" stroke="#56bcff" stroke-width="2"/>
+  <rect x="950" y="160" width="220" height="320" rx="15" fill="#142442" stroke="#56bcff" stroke-width="2"/>
+  <text x="640" y="600" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="32">4-PLAYER CO-OP DOMAIN RAID LOBBY</text>
+</svg>

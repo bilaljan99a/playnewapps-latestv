@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#0a0e1a"/>
+  <rect x="150" y="100" width="980" height="520" rx="20" fill="#121a2d" stroke="#25385c" stroke-width="2"/>
+  <text x="200" y="180" fill="#56bcff" font-family="sans-serif" font-weight="bold" font-size="26">Graphics Quality: VERY HIGH</text>
+  <text x="200" y="250" fill="#4de680" font-family="sans-serif" font-weight="bold" font-size="26">Frame Rate: 60 FPS (STABLE)</text>
+  <text x="200" y="320" fill="#ffffff" font-family="sans-serif" font-size="24">Shadow Quality: HIGH</text>
+  <text x="200" y="390" fill="#ffffff" font-family="sans-serif" font-size="24">Visual Effects: HIGH</text>
+  <text x="200" y="460" fill="#ffffff" font-family="sans-serif" font-size="24">Motion Blur: OFF</text>
+</svg>

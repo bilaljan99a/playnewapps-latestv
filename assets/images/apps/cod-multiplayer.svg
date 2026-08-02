@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#12151c"/>
+  <circle cx="640" cy="360" r="40" fill="none" stroke="#ff9900" stroke-width="4"/>
+  <line x1="640" y1="280" x2="640" y2="440" stroke="#ff9900" stroke-width="3"/>
+  <line x1="560" y1="360" x2="720" y2="360" stroke="#ff9900" stroke-width="3"/>
+  <rect x="520" y="40" width="240" height="60" rx="10" fill="#1a202c" stroke="#ff9900" stroke-width="2"/>
+  <text x="640" y="80" text-anchor="middle" fill="#ff9900" font-family="sans-serif" font-weight="900" font-size="32">48 : 45</text>
+  <text x="640" y="660" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="28">5V5 MULTIPLAYER TACTICAL COMBAT (120 FPS)</text>
+</svg>

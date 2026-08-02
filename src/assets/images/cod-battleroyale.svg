@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#0c1322"/>
+  <circle cx="640" cy="360" r="280" fill="#15243b" stroke="#00aaff" stroke-width="4"/>
+  <rect x="1000" y="50" width="220" height="50" rx="10" fill="#ff3333"/>
+  <text x="1110" y="83" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="900" font-size="20">ALIVE: 42 | KILLS: 9</text>
+  <text x="640" y="660" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="28">100-PLAYER BATTLE ROYALE ISOLATED DROP</text>
+</svg>
