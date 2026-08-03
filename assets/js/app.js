@@ -1424,6 +1424,54 @@ App.initStorePage = async function() {
         return;
     }
 
+    // Render skeleton loading placeholders immediately before fetching store data
+    const breadcrumbEl = document.getElementById('breadcrumb-store');
+    if (breadcrumbEl) breadcrumbEl.textContent = 'Loading...';
+
+    const nameEl = document.getElementById('store-name');
+    if (nameEl) nameEl.textContent = 'Loading Store...';
+
+    const logoEl = document.getElementById('store-logo');
+    if (logoEl) {
+        logoEl.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect width='150' height='150' fill='%23f1f5f9' rx='12'/%3E%3C/svg%3E";
+        logoEl.alt = "Loading...";
+    }
+
+    const ratingBoxEl = document.getElementById('store-rating-box');
+    if (ratingBoxEl) {
+        ratingBoxEl.innerHTML = `
+            <div class="rating" aria-label="Loading Rating">
+                <span class="material-icons-round star" style="color:var(--border-color);">star</span>
+                <span class="material-icons-round star" style="color:var(--border-color);">star</span>
+                <span class="material-icons-round star" style="color:var(--border-color);">star</span>
+                <span class="material-icons-round star" style="color:var(--border-color);">star</span>
+                <span class="material-icons-round star" style="color:var(--border-color);">star</span>
+            </div>
+            <span class="votes-count"></span>
+        `;
+    }
+
+    const activeGridInit = document.getElementById('active-coupons-grid');
+    if (activeGridInit) {
+        activeGridInit.innerHTML = '<div class="skeleton-card" style="padding: 2rem; background: var(--surface-color); border-radius: 12px; border: 1px dashed var(--border-color); text-align: center; color: var(--text-secondary);">Loading coupons...</div>';
+    }
+
+    const popularListInit = document.getElementById('popular-coupons-list');
+    if (popularListInit) {
+        popularListInit.innerHTML = '<p style="color: var(--text-secondary);">Loading...</p>';
+    }
+
+    const relatedListInit = document.getElementById('related-stores-list');
+    if (relatedListInit) {
+        relatedListInit.innerHTML = '<p style="color: var(--text-secondary);">Loading...</p>';
+    }
+
+    const aboutElInit = document.getElementById('store-about');
+    if (aboutElInit) aboutElInit.textContent = 'Loading store details...';
+
+    const brandTextElInit = document.getElementById('store-brand-about-text');
+    if (brandTextElInit) brandTextElInit.textContent = 'Loading brand information...';
+
     const stores = await DataService.getStores();
     const store = stores ? stores.find(s => s.id === id) : null;
     
