@@ -203,6 +203,260 @@
     "successPercentage": 100
   },
   {
+    "id": "hacoo-newuser14",
+    "title": "14% Off Your First Order",
+    "description": "Save 14% on your first order at Hacoo with promo code NEWUSER14. Valid for new users on fashion, footwear, accessories, and home goods.",
+    "store": {
+      "id": "hacoo",
+      "name": "Hacoo",
+      "logo": "/assets/images/brands/hacoo.svg"
+    },
+    "discount": "14% OFF",
+    "code": "NEWUSER14",
+    "badges": [
+      "Verified",
+      "Promo Code",
+      "First Order"
+    ],
+    "successRate": "99%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://dorinebeaumont.com/g/84e1j7pvh1b68b264a76f271888eea/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1240,
+    "successPercentage": 99
+  },
+  {
+    "id": "hacoo-top20",
+    "title": "20% Off Selected Products",
+    "description": "Get 20% off selected products across Hacoo fashion, shoes, and lifestyle items using promo code TOP20 at checkout.",
+    "store": {
+      "id": "hacoo",
+      "name": "Hacoo",
+      "logo": "/assets/images/brands/hacoo.svg"
+    },
+    "discount": "20% OFF",
+    "code": "TOP20",
+    "badges": [
+      "Verified",
+      "Promo Code"
+    ],
+    "successRate": "98%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://dorinebeaumont.com/g/84e1j7pvh1b68b264a76f271888eea/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1080,
+    "successPercentage": 98
+  },
+  {
+    "id": "hacoo-ol39",
+    "title": "$2 Off Orders Over $3",
+    "description": "Enjoy $2 off any Hacoo order of $3 or more. Enter promo code OL39 during checkout for instant savings.",
+    "store": {
+      "id": "hacoo",
+      "name": "Hacoo",
+      "logo": "/assets/images/brands/hacoo.svg"
+    },
+    "discount": "$2 OFF",
+    "code": "OL39",
+    "badges": [
+      "Verified",
+      "Promo Code"
+    ],
+    "successRate": "97%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://dorinebeaumont.com/g/84e1j7pvh1b68b264a76f271888eea/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 950,
+    "successPercentage": 97
+  },
+  {
+    "id": "hacoo-sauk11",
+    "title": "5% Off Your Order",
+    "description": "Take 5% off your Hacoo shopping order sitewide with coupon code SAUK11. Applicable across all product categories.",
+    "store": {
+      "id": "hacoo",
+      "name": "Hacoo",
+      "logo": "/assets/images/brands/hacoo.svg"
+    },
+    "discount": "5% OFF",
+    "code": "SAUK11",
+    "badges": [
+      "Verified",
+      "Promo Code"
+    ],
+    "successRate": "96%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://dorinebeaumont.com/g/84e1j7pvh1b68b264a76f271888eea/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 880,
+    "successPercentage": 96
+  },
+  {
+    "id": "hacoo-up-to-80-off",
+    "title": "Up to 80% Off Selected Products",
+    "description": "Save up to 80% on selected fashion apparel, shoes, home decor, and accessories during the Hacoo Flash Sale.",
+    "store": {
+      "id": "hacoo",
+      "name": "Hacoo",
+      "logo": "/assets/images/brands/hacoo.svg"
+    },
+    "discount": "80% OFF",
+    "code": null,
+    "badges": [
+      "Verified",
+      "Flash Sale"
+    ],
+    "successRate": "99%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://dorinebeaumont.com/g/84e1j7pvh1b68b264a76f271888eea/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1560,
+    "successPercentage": 99
+  },
+  {
+    "id": "hacoo-fashion-shoes-accessories",
+    "title": "Fashion, Shoes & Accessories at Huge Discounts",
+    "description": "Explore huge price drops on trending fashion, footwear, bags, and lifestyle accessories on Hacoo Marketplace.",
+    "store": {
+      "id": "hacoo",
+      "name": "Hacoo",
+      "logo": "/assets/images/brands/hacoo.svg"
+    },
+    "discount": "HUGE DISCOUNTS",
+    "code": null,
+    "badges": [
+      "Verified",
+      "Category Deal"
+    ],
+    "successRate": "98%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://dorinebeaumont.com/g/84e1j7pvh1b68b264a76f271888eea/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1420,
+    "successPercentage": 98
+  },
+  {
+    "id": "hacoo-trending-best-sellers",
+    "title": "Trending Best Sellers",
+    "description": "Shop the top trending best-selling items on Hacoo across apparel, home, beauty, and tech accessories.",
+    "store": {
+      "id": "hacoo",
+      "name": "Hacoo",
+      "logo": "/assets/images/brands/hacoo.svg"
+    },
+    "discount": "BEST SELLERS",
+    "code": null,
+    "badges": [
+      "Verified",
+      "Popular"
+    ],
+    "successRate": "97%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://dorinebeaumont.com/g/84e1j7pvh1b68b264a76f271888eea/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1190,
+    "successPercentage": 97
+  },
+  {
+    "id": "hacoo-new-arrivals",
+    "title": "New Arrivals",
+    "description": "Discover the latest new arrivals in seasonal fashion, footwear, and home accessories at low factory-direct prices on Hacoo.",
+    "store": {
+      "id": "hacoo",
+      "name": "Hacoo",
+      "logo": "/assets/images/brands/hacoo.svg"
+    },
+    "discount": "NEW ARRIVALS",
+    "code": null,
+    "badges": [
+      "Verified",
+      "New"
+    ],
+    "successRate": "96%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://dorinebeaumont.com/g/84e1j7pvh1b68b264a76f271888eea/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 890,
+    "successPercentage": 96
+  },
+  {
+    "id": "hacoo-daily-flash-deals",
+    "title": "Daily Flash Deals",
+    "description": "Catch daily flash sales on Hacoo with massive limited-time markdowns on popular clothing, shoes, and home goods.",
+    "store": {
+      "id": "hacoo",
+      "name": "Hacoo",
+      "logo": "/assets/images/brands/hacoo.svg"
+    },
+    "discount": "FLASH DEALS",
+    "code": null,
+    "badges": [
+      "Verified",
+      "Limited Time"
+    ],
+    "successRate": "98%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://dorinebeaumont.com/g/84e1j7pvh1b68b264a76f271888eea/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1120,
+    "successPercentage": 98
+  },
+  {
+    "id": "hacoo-seasonal-clearance-sale",
+    "title": "Seasonal Clearance Sale",
+    "description": "Shop Hacoo's seasonal clearance sale for end-of-season discounts on fashion, boots, jackets, and home essentials.",
+    "store": {
+      "id": "hacoo",
+      "name": "Hacoo",
+      "logo": "/assets/images/brands/hacoo.svg"
+    },
+    "discount": "CLEARANCE",
+    "code": null,
+    "badges": [
+      "Verified",
+      "Clearance"
+    ],
+    "successRate": "99%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://dorinebeaumont.com/g/84e1j7pvh1b68b264a76f271888eea/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1350,
+    "successPercentage": 99
+  },
+  {
+    "id": "hacoo-shipping-from-5",
+    "title": "Shipping From Only $5",
+    "description": "Get reliable international shipping from only $5 on your Hacoo orders with parcel tracking and buyer protection.",
+    "store": {
+      "id": "hacoo",
+      "name": "Hacoo",
+      "logo": "/assets/images/brands/hacoo.svg"
+    },
+    "discount": "$5 SHIPPING",
+    "code": null,
+    "badges": [
+      "Verified",
+      "Shipping Deal"
+    ],
+    "successRate": "99%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://dorinebeaumont.com/g/84e1j7pvh1b68b264a76f271888eea/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1610,
+    "successPercentage": 99
+  },
+  {
     "id": "adobe-student-discount",
     "title": "60% Off Creative Cloud for Students & Teachers",
     "description": "Verified students and teachers receive 60% off the full Creative Cloud All Apps package including 20+ apps.",
