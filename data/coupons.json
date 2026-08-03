@@ -1,7 +1,7 @@
 [
   {
     "id": "aliexpress-afa2",
-    "title": "US$2 Off Orders Over US$15 (Summer Clearance)",
+    "title": "$2 Off Orders Over $15 (Summer Clearance)",
     "description": "Save US$2 on orders over US$15 during the AliExpress Summer Clearance sale. Use promo code AFA2 at checkout.",
     "store": {
       "id": "aliexpress",
@@ -24,7 +24,7 @@
   },
   {
     "id": "aliexpress-afa9",
-    "title": "US$9 Off Orders Over US$65 (Summer Clearance)",
+    "title": "$9 Off Orders Over $65 (Summer Clearance)",
     "description": "Enjoy US$9 off orders of US$65 or more across eligible categories during the AliExpress Summer Clearance event. Use code AFA9.",
     "store": {
       "id": "aliexpress",
@@ -47,7 +47,7 @@
   },
   {
     "id": "aliexpress-afa55",
-    "title": "US$55 Off Orders Over US$449 (Summer Clearance)",
+    "title": "$55 Off Orders Over $449 (Summer Clearance)",
     "description": "Get US$55 off high-value orders over US$449 during the AliExpress Summer Clearance event. Use code AFA55 at checkout.",
     "store": {
       "id": "aliexpress",
