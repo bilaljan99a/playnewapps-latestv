@@ -369,14 +369,16 @@ document.addEventListener('DOMContentLoaded', () => {
         prevBtn.addEventListener('click', () => {
             const slide = track.querySelector('.slide');
             if (!slide) return;
-            const slideWidth = slide.offsetWidth + 32; // gap
+            const gap = parseFloat(window.getComputedStyle(track).gap) || 24;
+            const slideWidth = slide.offsetWidth + gap;
             track.scrollBy({ left: -slideWidth, behavior: 'smooth' });
         });
 
         nextBtn.addEventListener('click', () => {
             const slide = track.querySelector('.slide');
             if (!slide) return;
-            const slideWidth = slide.offsetWidth + 32;
+            const gap = parseFloat(window.getComputedStyle(track).gap) || 24;
+            const slideWidth = slide.offsetWidth + gap;
             track.scrollBy({ left: slideWidth, behavior: 'smooth' });
         });
     }

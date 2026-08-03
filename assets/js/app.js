@@ -115,7 +115,7 @@ class App {
         const sortSelect = document.getElementById('sort-select');
         let currentSort = 'newest';
         let currentPage = 1;
-        const itemsPerPage = 3;
+        const itemsPerPage = 8;
 
         const sortReviews = (reviews, sortStr) => {
             let sorted = [...reviews];
