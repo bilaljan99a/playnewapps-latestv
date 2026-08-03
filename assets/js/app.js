@@ -237,6 +237,8 @@ class App {
 
     static attachCouponListeners(container) {
         if (!container) return;
+        
+        // Code reveal buttons
         const revealWrappers = container.querySelectorAll('.code-reveal-wrapper');
         revealWrappers.forEach(wrapper => {
             const btn = wrapper.querySelector('.show-code-btn');
@@ -264,6 +266,31 @@ class App {
                         btn.textContent = 'Copied';
                         setTimeout(() => { btn.textContent = 'Copy'; }, 3000);
                     } catch (err) {}
+                }
+            });
+        });
+
+        // See Details toggle buttons
+        const detailBtns = container.querySelectorAll('.coupon-details-toggle-btn');
+        detailBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                const card = btn.closest('.coupon-card');
+                if (!card) return;
+                const drawer = card.querySelector('.coupon-details-drawer');
+                const isExpanded = card.classList.contains('details-expanded');
+                
+                if (isExpanded) {
+                    card.classList.remove('details-expanded');
+                    btn.setAttribute('aria-expanded', 'false');
+                    btn.innerHTML = 'See Details <span class="toggle-sign">+</span>';
+                    if (drawer) drawer.setAttribute('aria-hidden', 'true');
+                } else {
+                    card.classList.add('details-expanded');
+                    btn.setAttribute('aria-expanded', 'true');
+                    btn.innerHTML = 'See Details <span class="toggle-sign">-</span>';
+                    if (drawer) drawer.setAttribute('aria-hidden', 'false');
                 }
             });
         });
