@@ -99,8 +99,6 @@ class Components {
         const isExpired = item.status === 'expired';
         const storeName = item.store ? item.store.name : 'Store';
         const expiryText = item.expiry || 'Verified Daily';
-        const termsText = item.terms || 'Discount applied at checkout. Valid for a limited time on qualifying products. Standard merchant terms and conditions apply.';
-        const notesText = item.notes || `Verified active promo offer for ${storeName}. Click Get Deal or Show Code to redeem instant discount directly on the merchant portal.`;
 
         return `
             <article class="card coupon-card affiliate-card ${isExpired ? 'opacity-60' : ''}">
@@ -124,36 +122,11 @@ class Components {
                 <div class="coupon-content">
                     <h3 class="coupon-title"><a href="deal.html?id=${item.id}" style="color: inherit; text-decoration: none;">${item.title}</a></h3>
                     <p class="coupon-desc">${item.description}</p>
-                    <div class="coupon-meta" style="flex-wrap: wrap;">
+                    <div class="coupon-meta">
                         <span class="success-rate" title="Success Rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> ${successRate} ${votes}</span>
                         <span class="expiry-date"><span class="material-icons-round" aria-hidden="true">timer</span> ${expiryText}</span>
                     </div>
                     <div class="coupon-action">${actionHtml}</div>
-                    <div class="coupon-details-bar">
-                        <button type="button" class="coupon-details-toggle-btn" aria-expanded="false">
-                            See Details <span class="toggle-sign">+</span>
-                        </button>
-                    </div>
-                    <div class="coupon-details-drawer" aria-hidden="true">
-                        <div class="coupon-details-inner">
-                            <div class="coupon-detail-group">
-                                <strong>Full Description:</strong>
-                                <p>${item.description}</p>
-                            </div>
-                            <div class="coupon-detail-group">
-                                <strong>Terms & Conditions:</strong>
-                                <p>${termsText}</p>
-                            </div>
-                            <div class="coupon-detail-group">
-                                <strong>Expiry Information:</strong>
-                                <p>${expiryText}</p>
-                            </div>
-                            <div class="coupon-detail-group">
-                                <strong>Store Notes:</strong>
-                                <p>${notesText}</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </article>
         `;

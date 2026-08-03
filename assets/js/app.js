@@ -269,31 +269,6 @@ class App {
                 }
             });
         });
-
-        // See Details toggle buttons
-        const detailBtns = container.querySelectorAll('.coupon-details-toggle-btn');
-        detailBtns.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                const card = btn.closest('.coupon-card');
-                if (!card) return;
-                const drawer = card.querySelector('.coupon-details-drawer');
-                const isExpanded = card.classList.contains('details-expanded');
-                
-                if (isExpanded) {
-                    card.classList.remove('details-expanded');
-                    btn.setAttribute('aria-expanded', 'false');
-                    btn.innerHTML = 'See Details <span class="toggle-sign">+</span>';
-                    if (drawer) drawer.setAttribute('aria-hidden', 'true');
-                } else {
-                    card.classList.add('details-expanded');
-                    btn.setAttribute('aria-expanded', 'true');
-                    btn.innerHTML = 'See Details <span class="toggle-sign">-</span>';
-                    if (drawer) drawer.setAttribute('aria-hidden', 'false');
-                }
-            });
-        });
     }
 
     
@@ -1480,7 +1455,26 @@ App.initStorePage = async function() {
 
     const activeGridInit = document.getElementById('active-coupons-grid');
     if (activeGridInit) {
-        activeGridInit.innerHTML = '<div class="skeleton-card" style="padding: 2rem; background: var(--surface-color); border-radius: 12px; border: 1px dashed var(--border-color); text-align: center; color: var(--text-secondary);">Loading coupons...</div>';
+        activeGridInit.innerHTML = `
+            <article class="card coupon-card affiliate-card skeleton-card-placeholder" style="min-height: 240px; pointer-events: none;">
+                <div class="coupon-header">
+                    <div class="coupon-top-bar">
+                        <div class="skeleton-text short" style="height: 1.2rem; margin: 0;"></div>
+                        <div class="skeleton-text short" style="height: 1.2rem; width: 60px; margin: 0;"></div>
+                    </div>
+                    <div class="store-info">
+                        <div class="skeleton-text" style="width: 48px; height: 48px; border-radius: 50%; margin: 0;"></div>
+                        <div class="skeleton-text medium" style="height: 1.2rem; margin: 0;"></div>
+                    </div>
+                </div>
+                <div class="coupon-content">
+                    <div class="skeleton-text" style="height: 1.4rem; width: 80%;"></div>
+                    <div class="skeleton-text" style="height: 1rem; width: 100%;"></div>
+                    <div class="skeleton-text medium" style="height: 1rem;"></div>
+                    <div class="skeleton-text" style="height: 44px; width: 100%; border-radius: 6px; margin-top: 1rem;"></div>
+                </div>
+            </article>
+        `.repeat(3);
     }
 
     const popularListInit = document.getElementById('popular-coupons-list');
@@ -1568,6 +1562,7 @@ App.initStorePage = async function() {
         if (expiredCoupons.length > 0) {
             expiredGrid.innerHTML = expiredCoupons.map(c => Components.createCouponCard(c)).join('');
             this.attachCouponListeners(expiredGrid);
+            expiredSection.style.display = 'block';
         } else {
             expiredSection.style.display = 'none';
         }
