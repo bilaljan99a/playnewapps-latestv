@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="aliBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5000"/>
+      <stop offset="100%" stop-color="#E62E04"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#aliBg)"/>
+  <!-- Shopping Bag / AliExpress Icon -->
+  <path d="M60 70 C60 53.4 73.4 40 90 40 L110 40 C126.6 40 140 53.4 140 70 V75 H150 C155.5 75 160 79.5 160 85 L152 150 C151.2 156.5 145.7 161.3 139.1 161.3 H60.9 C54.3 161.3 48.8 156.5 48 150 L40 85 C40 79.5 44.5 75 50 75 H60 V70 Z M76 75 H124 V70 C124 62.3 117.7 56 110 56 H90 C82.3 56 76 62.3 76 70 V75 Z" fill="#FFFFFF"/>
+  <!-- Smile Arc -->
+  <path d="M72 110 C82 125 118 125 128 110" stroke="#FF5000" stroke-width="8" stroke-linecap="round" fill="none"/>
+</svg>

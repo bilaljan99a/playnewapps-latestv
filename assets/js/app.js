@@ -1502,7 +1502,11 @@ App.initStorePage = async function() {
         return;
     }
 
-    document.title = `${store.name} Promo Codes & Deals | PlayNewApps`;
+    if (store.seoTitle) {
+        document.title = `${store.seoTitle} | PlayNewApps`;
+    } else {
+        document.title = `${store.name} Promo Codes & Deals | PlayNewApps`;
+    }
     
     // Update Meta tags
     const canonicalUrl = `https://playnewapps.store/store.html?id=${store.id}`;
@@ -1510,11 +1514,12 @@ App.initStorePage = async function() {
         const el = document.querySelector(selector);
         if (el) el.setAttribute(attr, content);
     };
-    updateMeta('meta[name="description"]', 'content', store.about || '');
+    const storeDesc = store.seoDescription || store.about || '';
+    updateMeta('meta[name="description"]', 'content', storeDesc);
     updateMeta('#canonical-url', 'href', canonicalUrl);
     updateMeta('meta[property="og:url"]', 'content', canonicalUrl);
-    updateMeta('meta[property="og:title"]', 'content', `${store.name} Promo Codes & Deals`);
-    updateMeta('meta[property="og:description"]', 'content', store.about || '');
+    updateMeta('meta[property="og:title"]', 'content', store.seoTitle || `${store.name} Promo Codes & Deals`);
+    updateMeta('meta[property="og:description"]', 'content', storeDesc);
     
     // Header Info
     document.getElementById('breadcrumb-store').textContent = store.name;
@@ -1574,7 +1579,22 @@ App.initStorePage = async function() {
     const brandSection = document.getElementById('store-about-brand-section');
     if (brandTitle && brandText) {
         brandTitle.textContent = `About ${store.name}`;
-        brandText.textContent = store.about || `${store.name} is a leading software provider offering productivity tools and digital solutions.`;
+        let brandHtml = `<p style="margin-bottom: 0.75rem;">${store.about || `${store.name} is a leading global marketplace offering quality products and exclusive promotional discounts.`}</p>`;
+
+        if (store.shippingInfo) {
+            brandHtml += `<div style="margin-top: 1rem; padding-top: 0.85rem; border-top: 1px dashed var(--border-color);"><strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem;">Shipping Information</strong><p style="margin: 0; color: var(--text-secondary); line-height: 1.5;">${store.shippingInfo}</p></div>`;
+        }
+        if (store.buyerProtection) {
+            brandHtml += `<div style="margin-top: 1rem; padding-top: 0.85rem; border-top: 1px dashed var(--border-color);"><strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem;">Buyer Protection & Guarantee</strong><p style="margin: 0; color: var(--text-secondary); line-height: 1.5;">${store.buyerProtection}</p></div>`;
+        }
+        if (store.paymentMethods && store.paymentMethods.length > 0) {
+            brandHtml += `<div style="margin-top: 1rem; padding-top: 0.85rem; border-top: 1px dashed var(--border-color);"><strong style="color: var(--text-primary); display: block; margin-bottom: 0.5rem;">Accepted Payment Methods</strong><div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">${store.paymentMethods.map(pm => `<span class="badge" style="background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-color); font-size: 0.825rem; padding: 0.25rem 0.65rem; border-radius: 6px;">${pm}</span>`).join('')}</div></div>`;
+        }
+        if (store.categories && store.categories.length > 0) {
+            brandHtml += `<div style="margin-top: 1rem; padding-top: 0.85rem; border-top: 1px dashed var(--border-color);"><strong style="color: var(--text-primary); display: block; margin-bottom: 0.5rem;">Popular Product Categories</strong><div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">${store.categories.map(cat => `<span class="badge" style="background: rgba(37, 99, 235, 0.08); border: 1px solid var(--border-color); color: var(--primary-color); font-size: 0.825rem; padding: 0.25rem 0.65rem; border-radius: 6px; font-weight: 600;">${cat}</span>`).join('')}</div></div>`;
+        }
+
+        brandText.innerHTML = brandHtml;
     }
 
     // Why Shop Section

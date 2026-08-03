@@ -1,142 +1,258 @@
 [
-    {
-        "id": "wps-office",
-        "name": "WPS Office",
-        "icon": "description",
-        "logo": "/assets/images/brands/wps-office.svg",
-        "about": "WPS Office is a high-performance, lightweight, AI-powered office productivity suite fully compatible with Microsoft Office formats. It integrates Writer, Spreadsheet, Presentation, PDF editing tools, cloud storage, and advanced AI assistance across Windows, macOS, Linux, Android, and iOS.",
-        "whyShop": [
-            "100% Native compatibility with Microsoft Word (.docx), Excel (.xlsx), and PowerPoint (.pptx) formats.",
-            "Built-in AI Assistant for automated document formatting, content writing, text summarizing, and data analysis.",
-            "Comprehensive PDF Tools: Convert PDF to Word/Excel, edit text & images directly, split/merge pages, and OCR scan.",
-            "Cross-Platform Sync: Smoothly sync all your documents between PC (Windows, macOS, Linux) and Mobile (Android, iOS)."
-        ],
-        "shoppingTips": [
-            "Save 70% on WPS Pro by selecting annual billing instead of monthly subscription payments.",
-            "Use the WPS Office Free Edition for standard editing and PDF reading with zero trial expiration.",
-            "Always activate deals via verified PlayNewApps promo links to guarantee valid promotional pricing at checkout."
-        ],
-        "rating": 4.9,
-        "votes": 3850,
-        "affiliateLink": "https://yynbx.com/g/nv5qc75bd9b68b264a760e10b6b7ca/",
-        "related": ["grammarly", "adobe", "canva"],
-        "faqs": [
-            {
-                "question": "Is WPS Office free to download?",
-                "answer": "Yes! WPS Office is free to download for Windows, macOS, Linux, Android, and iOS, featuring Writer, Spreadsheet, Presentation, PDF reading, and built-in AI tools."
-            },
-            {
-                "question": "What is included in WPS Pro?",
-                "answer": "WPS Pro includes full PDF editing, format conversions, OCR text extraction, advanced AI features, 20GB cloud storage, and an ad-free experience."
-            },
-            {
-                "question": "How do I activate the 70% discount on WPS Pro?",
-                "answer": "Click on the 'Get Deal' or 'Claim 70% Discount' button on our page. It will automatically redirect you to the official WPS Office promotion page with the discount applied."
-            },
-            {
-                "question": "Is WPS Office compatible with Microsoft Office files?",
-                "answer": "Yes, WPS Office supports seamless reading, editing, and saving of all Microsoft Office file formats including .docx, .xlsx, .pptx, as well as Google Docs and PDF files."
-            }
-        ]
-    },
-    {
-        "id": "nordvpn",
-        "name": "NordVPN",
-        "icon": "vpn_key",
-        "logo": "/assets/images/brands/nordvpn.svg",
-        "about": "NordVPN is a leading security and privacy solution provider trusted by millions worldwide. Offering high-speed double encryption, strict no-logs policy, malware protection, and over 6,000 servers across 110+ countries.",
-        "rating": 4.8,
-        "votes": 1245,
-        "related": ["grammarly", "hostinger", "adobe"],
-        "faqs": [
-            {
-                "question": "Does NordVPN have a free trial?",
-                "answer": "NordVPN offers a risk-free 30-day money-back guarantee, allowing you to test all premium features with complete protection."
-            },
-            {
-                "question": "How many devices can I connect simultaneously?",
-                "answer": "A single NordVPN account supports up to 10 devices connected at the same time across Windows, macOS, Android, iOS, and Linux."
-            }
-        ]
-    },
-    {
-        "id": "grammarly",
-        "name": "Grammarly",
-        "icon": "spellcheck",
-        "logo": "/assets/images/brands/grammarly.svg",
-        "about": "Grammarly is an AI-powered communication assistant that enhances writing clarity, tone, precision, and correctness across web browsers, desktop applications, and mobile devices.",
-        "rating": 4.9,
-        "votes": 3420,
-        "related": ["adobe", "canva", "envato"],
-        "faqs": [
-            {
-                "question": "Is Grammarly Premium worth it?",
-                "answer": "Yes, Premium unlocks tone adjustments, full sentence rewrites, plagiarism detection, and advanced style improvements essential for professional writing."
-            }
-        ]
-    },
-    {
-        "id": "hostinger",
-        "name": "Hostinger",
-        "icon": "dns",
-        "logo": "/assets/images/brands/hostinger.svg",
-        "about": "Hostinger is an industry-leading web hosting and cloud server provider servicing over 29 million creators and businesses globally with NVMe storage, 99.9% uptime, and 24/7 live support.",
-        "rating": 4.7,
-        "votes": 2100,
-        "related": ["nordvpn", "adobe"],
-        "faqs": [
-            {
-                "question": "Does Hostinger offer a free domain?",
-                "answer": "Yes, Hostinger includes a free custom domain name for the first year with Premium, Business, and Cloud hosting packages."
-            }
-        ]
-    },
-    {
-        "id": "adobe",
-        "name": "Adobe",
-        "icon": "brush",
-        "logo": "/assets/images/brands/adobe.svg",
-        "about": "Adobe Creative Cloud is the global benchmark for creative software, offering world-standard creative desktop and mobile apps including Photoshop, Illustrator, Premiere Pro, and After Effects.",
-        "rating": 4.6,
-        "votes": 5300,
-        "related": ["canva", "envato", "grammarly"],
-        "faqs": [
-            {
-                "question": "Can I get Adobe Creative Cloud discounts?",
-                "answer": "Yes, verified students and teachers get up to 60% off standard Creative Cloud plan pricing, and business volume licenses offer significant savings."
-            }
-        ]
-    },
-    {
-        "id": "canva",
-        "name": "Canva",
-        "icon": "palette",
-        "logo": "/assets/images/brands/canva.svg",
-        "about": "Canva is an intuitive online visual design suite enabling team collaboration, graphic design, social media assets, presentations, brand kits, and video editing without requiring prior design experience.",
-        "rating": 4.8,
-        "votes": 4150,
-        "related": ["adobe", "envato", "grammarly"],
-        "faqs": [
-            {
-                "question": "Is Canva Pro free to test?",
-                "answer": "Yes, new users can start a 30-day full feature trial of Canva Pro to test premium brand kits, background removers, and premium stock assets."
-            }
-        ]
-    },
-    {
-        "id": "envato",
-        "name": "Envato",
-        "icon": "storefront",
-        "logo": "/assets/images/brands/envato.svg",
-        "about": "Envato is a digital asset marketplace providing millions of creative templates, stock video clips, web themes, royalty-free music tracks, 3D renders, and graphics for developers and creators.",
-        "rating": 4.5,
-        "votes": 1890,
-        "related": ["adobe", "canva"],
-        "faqs": [
-            {
-                "question": "What does Envato Elements subscription include?",
-                "answer": "Envato Elements offers unlimited commercial-license downloads of over 15 million creative assets under a single monthly or yearly subscription."
-            }
-        ]
-    }
+  {
+    "id": "aliexpress",
+    "name": "AliExpress",
+    "icon": "shopping_bag",
+    "logo": "/assets/images/brands/aliexpress.svg",
+    "website": "https://www.aliexpress.com",
+    "affiliateLink": "https://rzekl.com/g/1e8d114494b68b264a7616525dc3e8/",
+    "rating": 4.8,
+    "votes": 4210,
+    "seoTitle": "AliExpress Promo Codes & Coupons - Save Up to 85% Off",
+    "seoDescription": "Verified AliExpress promo codes, Choice Day sales, and Summer Clearance coupons. Save up to 85% off electronics, fashion, home, and more with free shipping.",
+    "about": "AliExpress is one of the world's largest online marketplaces offering millions of products including electronics, fashion, home, beauty, automotive, sports, toys, accessories and more. Customers can enjoy daily deals, Choice Day discounts, bundle offers and worldwide shipping.",
+    "shippingInfo": "AliExpress offers worldwide shipping with AliExpress Selection Standard, Choice Free Shipping on qualifying 3+ item bundles, and localized express delivery options with full step-by-step parcel tracking.",
+    "buyerProtection": "Comprehensive AliExpress Buyer Protection includes full refund if your item is not delivered or significantly not as described, 15-day free returns on eligible Choice items, and secure payment processing.",
+    "paymentMethods": [
+      "Credit/Debit Cards (Visa, MasterCard, Amex)",
+      "PayPal",
+      "Klarna / Pay Later",
+      "Apple Pay / Google Pay",
+      "AliPay"
+    ],
+    "categories": [
+      "Electronics",
+      "Fashion & Apparel",
+      "Home & Garden",
+      "Automotive",
+      "Toys & Hobbies",
+      "Beauty & Personal Care"
+    ],
+    "whyShop": [
+      "Millions of items across electronics, fashion, home goods, automotive, and toys at factory-direct wholesale prices.",
+      "Choice Day & Daily Flash Deals offering up to 80% off top-rated items with extra coupon savings.",
+      "Bundle Deals program: Buy 3+ items to unlock extra discount bundles and Free Shipping worldwide.",
+      "Buyer Protection Guarantee: Comprehensive order tracking, full refund on non-delivery, and free returns on eligible items."
+    ],
+    "shoppingTips": [
+      "Stack AliExpress promo codes (like AFA2, AFA9, AFA55) with sitewide Choice Day discounts for maximum savings.",
+      "Use Bundle Deals to add 3 or more eligible items to your cart for free shipping and automatic tier discounts.",
+      "Always activate promo codes and sales via PlayNewApps verified affiliate links to guarantee active promotional pricing at checkout."
+    ],
+    "related": [
+      "wps-office",
+      "nordvpn",
+      "hostinger",
+      "envato",
+      "canva",
+      "adobe"
+    ],
+    "faqs": [
+      {
+        "question": "How do I apply AliExpress promo codes?",
+        "answer": "Copy your desired promo code (such as AFA2, AFA9, or AFA55) from PlayNewApps, click 'Get Code', and paste it into the Promo Code box during checkout on AliExpress to instantly apply your discount."
+      },
+      {
+        "question": "What is the AliExpress Summer Clearance sale?",
+        "answer": "The Summer Clearance is a major promotional event running from August 1 to August 7, 2026, offering sitewide discounts of up to 80% off plus stackable promo code vouchers."
+      },
+      {
+        "question": "How do AliExpress Choice Day discounts work?",
+        "answer": "AliExpress Choice Day offers curated items with up to 60% off, faster shipping, free returns, and guaranteed delivery speed on selected top-rated products."
+      },
+      {
+        "question": "How do I get free shipping on AliExpress?",
+        "answer": "Look for Choice items or Bundle Deals where purchasing 3 or more participating items qualifies your entire order for free worldwide shipping."
+      },
+      {
+        "question": "Are AliExpress coupons stackable with store discounts?",
+        "answer": "Yes! You can combine store seller coupons, Choice Day promotional markdowns, and sitewide promo codes (like AFA2 or AFA55) for maximum total savings."
+      },
+      {
+        "question": "What payment methods does AliExpress accept?",
+        "answer": "AliExpress accepts major credit/debit cards (Visa, MasterCard, American Express), PayPal, Klarna pay later options, Apple Pay, Google Pay, and AliPay."
+      },
+      {
+        "question": "What is AliExpress Buyer Protection?",
+        "answer": "AliExpress Buyer Protection guarantees a full refund if your package does not arrive within the delivery window or if the item received does not match its description."
+      },
+      {
+        "question": "Can I track my AliExpress shipment?",
+        "answer": "Yes, every order includes a unique tracking number accessible in your AliExpress account dashboard and email dispatch notifications."
+      }
+    ]
+  },
+  {
+    "id": "wps-office",
+    "name": "WPS Office",
+    "icon": "description",
+    "logo": "/assets/images/brands/wps-office.svg",
+    "about": "WPS Office is a high-performance, lightweight, AI-powered office productivity suite fully compatible with Microsoft Office formats. It integrates Writer, Spreadsheet, Presentation, PDF editing tools, cloud storage, and advanced AI assistance across Windows, macOS, Linux, Android, and iOS.",
+    "whyShop": [
+      "100% Native compatibility with Microsoft Word (.docx), Excel (.xlsx), and PowerPoint (.pptx) formats.",
+      "Built-in AI Assistant for automated document formatting, content writing, text summarizing, and data analysis.",
+      "Comprehensive PDF Tools: Convert PDF to Word/Excel, edit text & images directly, split/merge pages, and OCR scan.",
+      "Cross-Platform Sync: Smoothly sync all your documents between PC (Windows, macOS, Linux) and Mobile (Android, iOS)."
+    ],
+    "shoppingTips": [
+      "Save 70% on WPS Pro by selecting annual billing instead of monthly subscription payments.",
+      "Use the WPS Office Free Edition for standard editing and PDF reading with zero trial expiration.",
+      "Always activate deals via verified PlayNewApps promo links to guarantee valid promotional pricing at checkout."
+    ],
+    "rating": 4.9,
+    "votes": 3850,
+    "affiliateLink": "https://yynbx.com/g/nv5qc75bd9b68b264a760e10b6b7ca/",
+    "related": [
+      "grammarly",
+      "adobe",
+      "canva",
+      "aliexpress"
+    ],
+    "faqs": [
+      {
+        "question": "Is WPS Office free to download?",
+        "answer": "Yes! WPS Office is free to download for Windows, macOS, Linux, Android, and iOS, featuring Writer, Spreadsheet, Presentation, PDF reading, and built-in AI tools."
+      },
+      {
+        "question": "What is included in WPS Pro?",
+        "answer": "WPS Pro includes full PDF editing, format conversions, OCR text extraction, advanced AI features, 20GB cloud storage, and an ad-free experience."
+      },
+      {
+        "question": "How do I activate the 70% discount on WPS Pro?",
+        "answer": "Click on the 'Get Deal' or 'Claim 70% Discount' button on our page. It will automatically redirect you to the official WPS Office promotion page with the discount applied."
+      },
+      {
+        "question": "Is WPS Office compatible with Microsoft Office files?",
+        "answer": "Yes, WPS Office supports seamless reading, editing, and saving of all Microsoft Office file formats including .docx, .xlsx, .pptx, as well as Google Docs and PDF files."
+      }
+    ]
+  },
+  {
+    "id": "nordvpn",
+    "name": "NordVPN",
+    "icon": "vpn_key",
+    "logo": "/assets/images/brands/nordvpn.svg",
+    "about": "NordVPN is a leading security and privacy solution provider trusted by millions worldwide. Offering high-speed double encryption, strict no-logs policy, malware protection, and over 6,000 servers across 110+ countries.",
+    "rating": 4.8,
+    "votes": 1245,
+    "related": [
+      "grammarly",
+      "hostinger",
+      "adobe",
+      "aliexpress"
+    ],
+    "faqs": [
+      {
+        "question": "Does NordVPN have a free trial?",
+        "answer": "NordVPN offers a risk-free 30-day money-back guarantee, allowing you to test all premium features with complete protection."
+      },
+      {
+        "question": "How many devices can I connect simultaneously?",
+        "answer": "A single NordVPN account supports up to 10 devices connected at the same time across Windows, macOS, Android, iOS, and Linux."
+      }
+    ]
+  },
+  {
+    "id": "grammarly",
+    "name": "Grammarly",
+    "icon": "spellcheck",
+    "logo": "/assets/images/brands/grammarly.svg",
+    "about": "Grammarly is an AI-powered communication assistant that enhances writing clarity, tone, precision, and correctness across web browsers, desktop applications, and mobile devices.",
+    "rating": 4.9,
+    "votes": 3420,
+    "related": [
+      "adobe",
+      "canva",
+      "envato",
+      "aliexpress"
+    ],
+    "faqs": [
+      {
+        "question": "Is Grammarly Premium worth it?",
+        "answer": "Yes, Premium unlocks tone adjustments, full sentence rewrites, plagiarism detection, and advanced style improvements essential for professional writing."
+      }
+    ]
+  },
+  {
+    "id": "hostinger",
+    "name": "Hostinger",
+    "icon": "dns",
+    "logo": "/assets/images/brands/hostinger.svg",
+    "about": "Hostinger is an industry-leading web hosting and cloud server provider servicing over 29 million creators and businesses globally with NVMe storage, 99.9% uptime, and 24/7 live support.",
+    "rating": 4.7,
+    "votes": 2100,
+    "related": [
+      "nordvpn",
+      "adobe",
+      "aliexpress"
+    ],
+    "faqs": [
+      {
+        "question": "Does Hostinger offer a free domain?",
+        "answer": "Yes, Hostinger includes a free custom domain name for the first year with Premium, Business, and Cloud hosting packages."
+      }
+    ]
+  },
+  {
+    "id": "adobe",
+    "name": "Adobe",
+    "icon": "brush",
+    "logo": "/assets/images/brands/adobe.svg",
+    "about": "Adobe Creative Cloud is the global benchmark for creative software, offering world-standard creative desktop and mobile apps including Photoshop, Illustrator, Premiere Pro, and After Effects.",
+    "rating": 4.6,
+    "votes": 5300,
+    "related": [
+      "canva",
+      "envato",
+      "grammarly",
+      "aliexpress"
+    ],
+    "faqs": [
+      {
+        "question": "Can I get Adobe Creative Cloud discounts?",
+        "answer": "Yes, verified students and teachers get up to 60% off standard Creative Cloud plan pricing, and business volume licenses offer significant savings."
+      }
+    ]
+  },
+  {
+    "id": "canva",
+    "name": "Canva",
+    "icon": "palette",
+    "logo": "/assets/images/brands/canva.svg",
+    "about": "Canva is an intuitive online visual design suite enabling team collaboration, graphic design, social media assets, presentations, brand kits, and video editing without requiring prior design experience.",
+    "rating": 4.8,
+    "votes": 4150,
+    "related": [
+      "adobe",
+      "envato",
+      "grammarly",
+      "aliexpress"
+    ],
+    "faqs": [
+      {
+        "question": "Is Canva Pro free to test?",
+        "answer": "Yes, new users can start a 30-day full feature trial of Canva Pro to test premium brand kits, background removers, and premium stock assets."
+      }
+    ]
+  },
+  {
+    "id": "envato",
+    "name": "Envato",
+    "icon": "storefront",
+    "logo": "/assets/images/brands/envato.svg",
+    "about": "Envato is a digital asset marketplace providing millions of creative templates, stock video clips, web themes, royalty-free music tracks, 3D renders, and graphics for developers and creators.",
+    "rating": 4.5,
+    "votes": 1890,
+    "related": [
+      "adobe",
+      "canva",
+      "aliexpress"
+    ],
+    "faqs": [
+      {
+        "question": "What does Envato Elements subscription include?",
+        "answer": "Envato Elements offers unlimited commercial-license downloads of over 15 million creative assets under a single monthly or yearly subscription."
+      }
+    ]
+  }
 ]

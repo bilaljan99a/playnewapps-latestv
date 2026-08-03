@@ -1,238 +1,399 @@
 [
-    {
-        "id": "wps-office-70pro",
-        "title": "70% Off WPS Pro Annual Subscription",
-        "description": "Save up to 70% on the WPS Pro Annual plan. Unlock premium PDF tools, AI-powered productivity features, cloud storage, advanced editing tools, and an ad-free experience.",
-        "store": {
-            "id": "wps-office",
-            "name": "WPS Office",
-            "logo": "/assets/images/brands/wps-office.svg"
-        },
-        "discount": "70% OFF",
-        "badges": [
-            "Verified"
-        ],
-        "successRate": "99%",
-        "expiry": "Verified Daily",
-        "affiliateLink": "https://yynbx.com/g/nv5qc75bd9b68b264a760e10b6b7ca/?ulp=https%3A%2F%2Fwww.wps.com%2Fbuy%2F%3Fsource%3Dpromotion",
-        "isTop": true,
-        "status": "active",
-        "votesCount": 1520,
-        "successPercentage": 99
+  {
+    "id": "aliexpress-afa2",
+    "title": "US$2 Off Orders Over US$15 (Summer Clearance)",
+    "description": "Save US$2 on orders over US$15 during the AliExpress Summer Clearance sale. Use promo code AFA2 at checkout.",
+    "store": {
+      "id": "aliexpress",
+      "name": "AliExpress",
+      "logo": "/assets/images/brands/aliexpress.svg"
     },
-    {
-        "id": "wps-office-free",
-        "title": "AI-Powered Office Suite for Everyone – Free Download",
-        "description": "Download WPS Office for Windows, macOS, Linux, Android and iOS. Includes Writer, Spreadsheet, Presentation, PDF tools and built-in AI features.",
-        "store": {
-            "id": "wps-office",
-            "name": "WPS Office",
-            "logo": "/assets/images/brands/wps-office.svg"
-        },
-        "discount": "FREE",
-        "badges": [
-            "Verified"
-        ],
-        "successRate": "100%",
-        "expiry": "Ongoing Offer",
-        "affiliateLink": "https://yynbx.com/g/nv5qc75bd9b68b264a760e10b6b7ca/",
-        "isTop": true,
-        "status": "active",
-        "votesCount": 2180,
-        "successPercentage": 100
+    "discount": "US$2 OFF",
+    "code": "AFA2",
+    "badges": [
+      "Verified",
+      "Promo Code"
+    ],
+    "successRate": "99%",
+    "expiry": "Aug 7, 2026",
+    "affiliateLink": "https://rzekl.com/g/9y2j6lirzeb68b264a7616525dc3e8/?i=3",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1840,
+    "successPercentage": 99
+  },
+  {
+    "id": "aliexpress-afa9",
+    "title": "US$9 Off Orders Over US$65 (Summer Clearance)",
+    "description": "Enjoy US$9 off orders of US$65 or more across eligible categories during the AliExpress Summer Clearance event. Use code AFA9.",
+    "store": {
+      "id": "aliexpress",
+      "name": "AliExpress",
+      "logo": "/assets/images/brands/aliexpress.svg"
     },
-    {
-        "id": "nordvpn-2yr",
-        "title": "68% Off 2-Year Plan + 3 Months Free",
-        "description": "Get an exclusive 68% discount on the NordVPN 2-year plan and receive 3 extra months completely free.",
-        "store": {
-            "id": "nordvpn",
-            "name": "NordVPN",
-            "logo": "/assets/images/brands/nordvpn.svg"
-        },
-        "discount": "68% OFF",
-        "badges": [
-            "Verified"
-        ],
-        "successRate": "99%",
-        "expiry": "Verified Daily",
-        "code": "PLAYNEW68",
-        "affiliateLink": "https://nordvpn.com/coupon/",
-        "isTop": true,
-        "status": "active",
-        "votesCount": 1245,
-        "successPercentage": 99
+    "discount": "US$9 OFF",
+    "code": "AFA9",
+    "badges": [
+      "Verified",
+      "Promo Code"
+    ],
+    "successRate": "98%",
+    "expiry": "Aug 7, 2026",
+    "affiliateLink": "https://rzekl.com/g/9y2j6lirzeb68b264a7616525dc3e8/?i=3",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 2150,
+    "successPercentage": 98
+  },
+  {
+    "id": "aliexpress-afa55",
+    "title": "US$55 Off Orders Over US$449 (Summer Clearance)",
+    "description": "Get US$55 off high-value orders over US$449 during the AliExpress Summer Clearance event. Use code AFA55 at checkout.",
+    "store": {
+      "id": "aliexpress",
+      "name": "AliExpress",
+      "logo": "/assets/images/brands/aliexpress.svg"
     },
-    {
-        "id": "nordvpn-1yr",
-        "title": "45% Off 1-Year Plan",
-        "description": "Secure your connection for a year with this verified 45% discount on NordVPN.",
-        "store": {
-            "id": "nordvpn",
-            "name": "NordVPN",
-            "logo": "/assets/images/brands/nordvpn.svg"
-        },
-        "discount": "45% OFF",
-        "badges": [
-            "Verified"
-        ],
-        "successRate": "95%",
-        "expiry": "Ongoing Offer",
-        "affiliateLink": "https://nordvpn.com/coupon/",
-        "isTop": false,
-        "status": "active",
-        "votesCount": 230,
-        "successPercentage": 88
+    "discount": "US$55 OFF",
+    "code": "AFA55",
+    "badges": [
+      "Verified",
+      "Promo Code"
+    ],
+    "successRate": "97%",
+    "expiry": "Aug 7, 2026",
+    "affiliateLink": "https://rzekl.com/g/9y2j6lirzeb68b264a7616525dc3e8/?i=3",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1430,
+    "successPercentage": 97
+  },
+  {
+    "id": "aliexpress-sitewide-summer",
+    "title": "AliExpress Summer Clearance - Up to 80% Off",
+    "description": "Save up to 80% off sitewide on tech, fashion, home essentials, and more during the official AliExpress Summer Clearance event.",
+    "store": {
+      "id": "aliexpress",
+      "name": "AliExpress",
+      "logo": "/assets/images/brands/aliexpress.svg"
     },
-    {
-        "id": "nordvpn-expired",
-        "title": "75% Off Black Friday Special",
-        "description": "Previous Black Friday savings promotion on all NordVPN plans.",
-        "store": {
-            "id": "nordvpn",
-            "name": "NordVPN",
-            "logo": "/assets/images/brands/nordvpn.svg"
-        },
-        "discount": "75% OFF",
-        "badges": [
-            "Expired"
-        ],
-        "successRate": "0%",
-        "expiry": "Expired",
-        "code": "BLACKFRIDAY",
-        "affiliateLink": "https://nordvpn.com/coupon/",
-        "isTop": false,
-        "status": "expired",
-        "votesCount": 271,
-        "successPercentage": 89
+    "discount": "80% OFF",
+    "code": null,
+    "badges": [
+      "Verified",
+      "Sitewide Sale"
+    ],
+    "successRate": "99%",
+    "expiry": "Aug 7, 2026",
+    "affiliateLink": "https://rzekl.com/g/1e8d114494b68b264a7616525dc3e8/?ulp=https%3A%2F%2Fwww.aliexpress.com%2Fssr%2F300002660%2FDeals-HomePage%3F",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 3420,
+    "successPercentage": 99
+  },
+  {
+    "id": "aliexpress-choice-day",
+    "title": "Choice Day Sale - Up to 60% Off",
+    "description": "Shop Choice Day Deals with up to 60% off select top-rated items, curated recommendations, and hassle-free returns.",
+    "store": {
+      "id": "aliexpress",
+      "name": "AliExpress",
+      "logo": "/assets/images/brands/aliexpress.svg"
     },
-    {
-        "id": "grammarly-premium",
-        "title": "20% Off Grammarly Premium",
-        "description": "Upgrade to Premium and get 20% off your annual subscription for AI-powered writing assistance.",
-        "store": {
-            "id": "grammarly",
-            "name": "Grammarly",
-            "logo": "/assets/images/brands/grammarly.svg"
-        },
-        "discount": "20% OFF",
-        "badges": [
-            "Verified"
-        ],
-        "successRate": "100%",
-        "expiry": "Ongoing Offer",
-        "affiliateLink": "https://www.grammarly.com/plans",
-        "isTop": true,
-        "status": "active",
-        "votesCount": 196,
-        "successPercentage": 83
+    "discount": "60% OFF",
+    "code": null,
+    "badges": [
+      "Verified",
+      "Choice Day"
+    ],
+    "successRate": "98%",
+    "expiry": "Verified Daily",
+    "affiliateLink": "https://rzekl.com/g/1e8d114494b68b264a7616525dc3e8/?ulp=https%3A%2F%2Fwww.aliexpress.com%2Fssr%2F300000556%2FzQFHEaEPNJ%3F",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 2890,
+    "successPercentage": 98
+  },
+  {
+    "id": "aliexpress-bundle-deals",
+    "title": "Bundle Deals - Buy More, Save More + Free Shipping on 3+ Items",
+    "description": "Combine 3 or more items to unlock exclusive bundle savings, extra discounts, and free shipping on eligible orders.",
+    "store": {
+      "id": "aliexpress",
+      "name": "AliExpress",
+      "logo": "/assets/images/brands/aliexpress.svg"
     },
-    {
-        "id": "grammarly-edu",
-        "title": "50% Off for Students",
-        "description": "Verified students receive 50% off an annual Grammarly Premium subscription.",
-        "store": {
-            "id": "grammarly",
-            "name": "Grammarly",
-            "logo": "/assets/images/brands/grammarly.svg"
-        },
-        "discount": "50% OFF",
-        "badges": [
-            "Verified"
-        ],
-        "successRate": "98%",
-        "expiry": "Verified Student Deal",
-        "code": "EDU50",
-        "affiliateLink": "https://www.grammarly.com/plans",
-        "isTop": false,
-        "status": "active",
-        "votesCount": 517,
-        "successPercentage": 80
+    "discount": "FREE SHIPPING",
+    "code": null,
+    "badges": [
+      "Verified",
+      "Bundle Deal"
+    ],
+    "successRate": "99%",
+    "expiry": "Verified Daily",
+    "affiliateLink": "https://rzekl.com/g/1e8d114494b68b264a7616525dc3e8/?ulp=https%3A%2F%2Fwww.aliexpress.com%2Fssr%2F300000512%2FBundleDeals2%3F",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 3100,
+    "successPercentage": 99
+  },
+  {
+    "id": "aliexpress-favorite-items",
+    "title": "Save Up to 85% Off Your Favorite Items",
+    "description": "Discover hot daily deals, flash discounts, and promotional offers with savings up to 85% on trending global products.",
+    "store": {
+      "id": "aliexpress",
+      "name": "AliExpress",
+      "logo": "/assets/images/brands/aliexpress.svg"
     },
-    {
-        "id": "hostinger-hosting",
-        "title": "Up to 75% Off Web Hosting + Free Domain",
-        "description": "Launch your website with high-performance cloud hosting and a free SSL certificate.",
-        "store": {
-            "id": "hostinger",
-            "name": "Hostinger",
-            "logo": "/assets/images/brands/hostinger.svg"
-        },
-        "discount": "75% OFF",
-        "badges": [
-            "Verified"
-        ],
-        "successRate": "99%",
-        "expiry": "Limited Offer",
-        "code": "PLAYNEWHOST",
-        "affiliateLink": "https://www.hostinger.com/web-hosting",
-        "isTop": true,
-        "status": "active",
-        "votesCount": 451,
-        "successPercentage": 90
+    "discount": "85% OFF",
+    "code": null,
+    "badges": [
+      "Verified",
+      "Flash Deal"
+    ],
+    "successRate": "97%",
+    "expiry": "Verified Daily",
+    "affiliateLink": "https://rzekl.com/g/1e8d114494b68b264a7616525dc3e8/?ulp=https%3A%2F%2Fwww.aliexpress.com%2F",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1950,
+    "successPercentage": 97
+  },
+  {
+    "id": "wps-office-70pro",
+    "title": "70% Off WPS Pro Annual Subscription",
+    "description": "Save up to 70% on the WPS Pro Annual plan. Unlock premium PDF tools, AI-powered productivity features, cloud storage, advanced editing tools, and an ad-free experience.",
+    "store": {
+      "id": "wps-office",
+      "name": "WPS Office",
+      "logo": "/assets/images/brands/wps-office.svg"
     },
-    {
-        "id": "adobe-cc",
-        "title": "60% Off Creative Cloud for Students & Teachers",
-        "description": "Get all 20+ Adobe creative apps including Photoshop, Premiere, and Illustrator at 60% off.",
-        "store": {
-            "id": "adobe",
-            "name": "Adobe",
-            "logo": "/assets/images/brands/adobe.svg"
-        },
-        "discount": "60% OFF",
-        "badges": [
-            "Verified"
-        ],
-        "successRate": "100%",
-        "expiry": "Ongoing Offer",
-        "affiliateLink": "https://www.adobe.com/creativecloud/plans.html",
-        "isTop": true,
-        "status": "active",
-        "votesCount": 542,
-        "successPercentage": 89
+    "discount": "70% OFF",
+    "badges": [
+      "Verified"
+    ],
+    "successRate": "99%",
+    "expiry": "Verified Daily",
+    "affiliateLink": "https://yynbx.com/g/nv5qc75bd9b68b264a760e10b6b7ca/?ulp=https%3A%2F%2Fwww.wps.com%2Fbuy%2F%3Fsource%3Dpromotion",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1520,
+    "successPercentage": 99
+  },
+  {
+    "id": "wps-office-free",
+    "title": "AI-Powered Office Suite for Everyone – Free Download",
+    "description": "Download WPS Office for Windows, macOS, Linux, Android and iOS. Includes Writer, Spreadsheet, Presentation, PDF tools and built-in AI features.",
+    "store": {
+      "id": "wps-office",
+      "name": "WPS Office",
+      "logo": "/assets/images/brands/wps-office.svg"
     },
-    {
-        "id": "canva-pro",
-        "title": "Try Canva Pro Free for 30 Days",
-        "description": "Unlock premium design tools, brand kits, content planner, and millions of stock photos.",
-        "store": {
-            "id": "canva",
-            "name": "Canva",
-            "logo": "/assets/images/brands/canva.svg"
-        },
-        "discount": "FREE TRIAL",
-        "badges": [
-            "Verified"
-        ],
-        "successRate": "100%",
-        "expiry": "Ongoing Offer",
-        "affiliateLink": "https://www.canva.com/pro/",
-        "isTop": true,
-        "status": "active",
-        "votesCount": 72,
-        "successPercentage": 82
+    "discount": "FREE",
+    "badges": [
+      "Verified"
+    ],
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://yynbx.com/g/nv5qc75bd9b68b264a760e10b6b7ca/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 2180,
+    "successPercentage": 100
+  },
+  {
+    "id": "nordvpn-2yr",
+    "title": "68% Off 2-Year Plan + 3 Months Free",
+    "description": "Get an exclusive 68% discount on the NordVPN 2-year plan and receive 3 extra months completely free.",
+    "store": {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "logo": "/assets/images/brands/nordvpn.svg"
     },
-    {
-        "id": "envato-elements",
-        "title": "70% Off First Month of Envato Elements",
-        "description": "Unlimited downloads of stock videos, royalty-free audio, graphic templates, and 3D assets.",
-        "store": {
-            "id": "envato",
-            "name": "Envato",
-            "logo": "/assets/images/brands/envato.svg"
-        },
-        "discount": "70% OFF",
-        "badges": [
-            "Verified"
-        ],
-        "successRate": "95%",
-        "expiry": "Verified Partner Offer",
-        "code": "SAVE70",
-        "affiliateLink": "https://elements.envato.com/pricing",
-        "isTop": true,
-        "status": "active",
-        "votesCount": 402,
-        "successPercentage": 90
-    }
+    "discount": "68% OFF",
+    "badges": [
+      "Verified"
+    ],
+    "successRate": "99%",
+    "expiry": "Verified Daily",
+    "code": "PLAYNEW68",
+    "affiliateLink": "https://nordvpn.com/coupon/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1245,
+    "successPercentage": 99
+  },
+  {
+    "id": "nordvpn-1yr",
+    "title": "45% Off 1-Year Plan",
+    "description": "Secure your connection for a year with this verified 45% discount on NordVPN.",
+    "store": {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "logo": "/assets/images/brands/nordvpn.svg"
+    },
+    "discount": "45% OFF",
+    "badges": [
+      "Verified"
+    ],
+    "successRate": "95%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://nordvpn.com/coupon/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 230,
+    "successPercentage": 88
+  },
+  {
+    "id": "nordvpn-expired",
+    "title": "75% Off Black Friday Special",
+    "description": "Previous Black Friday savings promotion on all NordVPN plans.",
+    "store": {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "logo": "/assets/images/brands/nordvpn.svg"
+    },
+    "discount": "75% OFF",
+    "badges": [
+      "Expired"
+    ],
+    "successRate": "0%",
+    "expiry": "Expired",
+    "code": "BLACKFRIDAY",
+    "affiliateLink": "https://nordvpn.com/coupon/",
+    "isTop": false,
+    "status": "expired",
+    "votesCount": 271,
+    "successPercentage": 89
+  },
+  {
+    "id": "grammarly-premium",
+    "title": "20% Off Grammarly Premium",
+    "description": "Upgrade to Premium and get 20% off your annual subscription for AI-powered writing assistance.",
+    "store": {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "logo": "/assets/images/brands/grammarly.svg"
+    },
+    "discount": "20% OFF",
+    "badges": [
+      "Verified"
+    ],
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.grammarly.com/plans",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 196,
+    "successPercentage": 83
+  },
+  {
+    "id": "grammarly-edu",
+    "title": "50% Off for Students",
+    "description": "Verified students receive 50% off an annual Grammarly Premium subscription.",
+    "store": {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "logo": "/assets/images/brands/grammarly.svg"
+    },
+    "discount": "50% OFF",
+    "badges": [
+      "Verified"
+    ],
+    "successRate": "98%",
+    "expiry": "Verified Student Deal",
+    "code": "EDU50",
+    "affiliateLink": "https://www.grammarly.com/plans",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 517,
+    "successPercentage": 80
+  },
+  {
+    "id": "hostinger-hosting",
+    "title": "Up to 75% Off Web Hosting + Free Domain",
+    "description": "Launch your website with high-performance cloud hosting and a free SSL certificate.",
+    "store": {
+      "id": "hostinger",
+      "name": "Hostinger",
+      "logo": "/assets/images/brands/hostinger.svg"
+    },
+    "discount": "75% OFF",
+    "badges": [
+      "Verified"
+    ],
+    "successRate": "99%",
+    "expiry": "Limited Offer",
+    "code": "PLAYNEWHOST",
+    "affiliateLink": "https://www.hostinger.com/web-hosting",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 451,
+    "successPercentage": 90
+  },
+  {
+    "id": "adobe-cc",
+    "title": "60% Off Creative Cloud for Students & Teachers",
+    "description": "Get all 20+ Adobe creative apps including Photoshop, Premiere, and Illustrator at 60% off.",
+    "store": {
+      "id": "adobe",
+      "name": "Adobe",
+      "logo": "/assets/images/brands/adobe.svg"
+    },
+    "discount": "60% OFF",
+    "badges": [
+      "Verified"
+    ],
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.adobe.com/creativecloud/plans.html",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 542,
+    "successPercentage": 89
+  },
+  {
+    "id": "canva-pro",
+    "title": "Try Canva Pro Free for 30 Days",
+    "description": "Unlock premium design tools, brand kits, content planner, and millions of stock photos.",
+    "store": {
+      "id": "canva",
+      "name": "Canva",
+      "logo": "/assets/images/brands/canva.svg"
+    },
+    "discount": "FREE TRIAL",
+    "badges": [
+      "Verified"
+    ],
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.canva.com/pro/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 72,
+    "successPercentage": 82
+  },
+  {
+    "id": "envato-elements",
+    "title": "70% Off First Month of Envato Elements",
+    "description": "Unlimited downloads of stock videos, royalty-free audio, graphic templates, and 3D assets.",
+    "store": {
+      "id": "envato",
+      "name": "Envato",
+      "logo": "/assets/images/brands/envato.svg"
+    },
+    "discount": "70% OFF",
+    "badges": [
+      "Verified"
+    ],
+    "successRate": "95%",
+    "expiry": "Verified Partner Offer",
+    "code": "SAVE70",
+    "affiliateLink": "https://elements.envato.com/pricing",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 402,
+    "successPercentage": 90
+  }
 ]
