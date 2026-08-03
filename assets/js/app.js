@@ -767,15 +767,48 @@ class App {
         // 10. FAQs Section
         const faqSection = document.getElementById('faq-section');
         const faqContainer = document.getElementById('faq-container');
-        if (review.faqs && review.faqs.length > 0) {
+        
+        let faqsToRender = review.faqs;
+        if ((!faqsToRender || faqsToRender.length === 0) && review.id) {
+            const stores = await DataService.getStores();
+            const matchingStore = stores.find(s => s.id === review.id);
+            if (matchingStore && matchingStore.faqs) {
+                faqsToRender = matchingStore.faqs;
+            }
+        }
+
+        if (faqsToRender && faqsToRender.length > 0) {
             if (faqSection) faqSection.style.display = 'block';
             if (faqContainer) {
-                faqContainer.innerHTML = review.faqs.map(faq => `
+                faqContainer.innerHTML = faqsToRender.map((faq, index) => `
                     <div class="faq-item card">
-                        <h4 class="faq-question">${faq.question}</h4>
-                        <div class="faq-answer"><p>${faq.answer}</p></div>
+                        <button class="faq-question" aria-expanded="false" id="faq-btn-${index}" aria-controls="faq-ans-${index}">
+                            ${faq.question}
+                            <span class="material-icons-round" aria-hidden="true">expand_more</span>
+                        </button>
+                        <div class="faq-answer" id="faq-ans-${index}" aria-hidden="true">
+                            <p>${faq.answer}</p>
+                        </div>
                     </div>
                 `).join('');
+
+                const faqQuestions = faqContainer.querySelectorAll('.faq-question');
+                faqQuestions.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const expanded = btn.getAttribute('aria-expanded') === 'true';
+                        btn.setAttribute('aria-expanded', !expanded);
+                        const answer = btn.nextElementSibling;
+                        if (answer) {
+                            if (!expanded) {
+                                answer.setAttribute('aria-hidden', 'false');
+                                answer.style.maxHeight = answer.scrollHeight + 'px';
+                            } else {
+                                answer.setAttribute('aria-hidden', 'true');
+                                answer.style.maxHeight = null;
+                            }
+                        }
+                    });
+                });
             }
         } else if (faqSection) {
             faqSection.style.display = 'none';
@@ -989,12 +1022,35 @@ App.initDealPage = async function() {
     if (store && store.faqs && store.faqs.length > 0) {
         if (faqSection) faqSection.style.display = 'block';
         if (faqContainer) {
-            faqContainer.innerHTML = store.faqs.map(faq => `
-                <div class="faq-item card" style="padding: 1.25rem; margin-bottom: 0.75rem; background: var(--surface-color); border-radius: var(--radius-md);">
-                    <h4 class="faq-question" style="margin-bottom: 0.5rem; font-size: 1.05rem;">${faq.question}</h4>
-                    <div class="faq-answer"><p style="color: var(--text-secondary); line-height: 1.6;">${faq.answer}</p></div>
+            faqContainer.innerHTML = store.faqs.map((faq, index) => `
+                <div class="faq-item card" style="margin-bottom: 0.75rem;">
+                    <button class="faq-question" aria-expanded="false" id="deal-faq-btn-${index}" aria-controls="deal-faq-ans-${index}">
+                        ${faq.question}
+                        <span class="material-icons-round" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div class="faq-answer" id="deal-faq-ans-${index}" aria-hidden="true">
+                        <p style="color: var(--text-secondary); line-height: 1.6;">${faq.answer}</p>
+                    </div>
                 </div>
             `).join('');
+
+            const faqQuestions = faqContainer.querySelectorAll('.faq-question');
+            faqQuestions.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const expanded = btn.getAttribute('aria-expanded') === 'true';
+                    btn.setAttribute('aria-expanded', !expanded);
+                    const answer = btn.nextElementSibling;
+                    if (answer) {
+                        if (!expanded) {
+                            answer.setAttribute('aria-hidden', 'false');
+                            answer.style.maxHeight = answer.scrollHeight + 'px';
+                        } else {
+                            answer.setAttribute('aria-hidden', 'true');
+                            answer.style.maxHeight = null;
+                        }
+                    }
+                });
+            });
         }
     } else if (faqSection) {
         faqSection.style.display = 'none';
@@ -1670,7 +1726,7 @@ App.initStorePage = async function() {
             `).join('');
             
             // Re-initialize FAQ toggles
-            const faqQuestions = document.querySelectorAll('.faq-question');
+            const faqQuestions = faqContainer.querySelectorAll('.faq-question');
             faqQuestions.forEach(btn => {
                 btn.addEventListener('click', () => {
                     const expanded = btn.getAttribute('aria-expanded') === 'true' || false;

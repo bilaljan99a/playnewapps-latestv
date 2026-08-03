@@ -164,6 +164,28 @@
         "title": "Top Mobile Content Creation Apps",
         "url": "/category.html?id=video-editors"
       }
+    ],
+    "faqs": [
+      {
+        "question": "Is LumaFusion Pro a one-time purchase or a recurring subscription?",
+        "answer": "LumaFusion is primarily a one-time purchase on iOS and Android. Optional premium add-ons, such as Storyblocks stock media access and advanced FCPXML export capabilities, are available via optional subscriptions."
+      },
+      {
+        "question": "How many video and audio tracks does LumaFusion support?",
+        "answer": "LumaFusion supports up to 6 video/audio tracks plus 6 additional audio tracks simultaneously on modern iPad and iPhone hardware, enabling complex multi-layer editing, titles, and compositing."
+      },
+      {
+        "question": "Can I export LumaFusion project files to Final Cut Pro?",
+        "answer": "Yes. LumaFusion offers an optional FCPXML export feature, allowing mobile editors to transfer complete video timelines directly into Apple Final Cut Pro on macOS for final finishing."
+      },
+      {
+        "question": "Does LumaFusion support 4K 60fps and HDR video editing?",
+        "answer": "Yes. LumaFusion natively supports 4K UHD video editing at up to 60 FPS, 10-bit color depth, and HDR color spaces including HLG, HDR10, and Dolby Vision on supported iOS devices."
+      },
+      {
+        "question": "Can I import custom LUTs and color presets into LumaFusion?",
+        "answer": "Yes. LumaFusion features full 5-point color grading tools, keyframable color wheels, and native support for importing custom .cube or .3dl color lookup tables (LUTs)."
+      }
     ]
   },
   {
@@ -337,6 +359,28 @@
         "title": "Top Mobile Content Creation Apps",
         "url": "/category.html?id=video-editors"
       }
+    ],
+    "faqs": [
+      {
+        "question": "What features are included with CapCut Pro?",
+        "answer": "CapCut Pro unlocks AI-powered background removal, auto-captions in multiple languages, 4K 60fps video exports, premium visual effects and transitions, motion tracking, and cloud asset backup."
+      },
+      {
+        "question": "Does CapCut Pro work across mobile and desktop devices?",
+        "answer": "Yes. CapCut Pro subscriptions sync seamlessly across iOS, Android, macOS, Windows, and web browser environments, allowing you to edit projects across devices."
+      },
+      {
+        "question": "How accurate is CapCut Pro's automatic caption generator?",
+        "answer": "CapCut Pro uses speech recognition AI to generate highly accurate captions in over 20 languages, with customizable text styles, animated subtitle templates, and automatic speech-to-text timing."
+      },
+      {
+        "question": "Can I export videos without watermarks using CapCut Pro?",
+        "answer": "Yes. Both CapCut free and CapCut Pro allow watermark-free video exports, with Pro providing higher bitrate options and 4K 60fps export resolution."
+      },
+      {
+        "question": "Are CapCut Pro audio tracks and templates safe for commercial use?",
+        "answer": "Standard CapCut sound effects and templates are designed for social media sharing on TikTok, YouTube, and Instagram. CapCut Pro highlights commercially licensed royalty-free assets specifically for brand promotion."
+      }
     ]
   },
   {
@@ -502,6 +546,24 @@
         "title": "Top Content Creation Tools",
         "url": "/category.html?id=video-editors"
       }
+    ],
+    "faqs": [
+      {
+        "question": "What is the difference between KineMaster Free and KineMaster Premium?",
+        "answer": "KineMaster Free includes a watermark on exported video files and limits asset downloads. KineMaster Premium removes all watermarks, unlocks 4K export settings, and grants unlimited access to the Asset Store."
+      },
+      {
+        "question": "Does KineMaster support Chroma Key green screen editing?",
+        "answer": "Yes. KineMaster includes a professional Chroma Key engine with real-time mask preview and threshold controls for smooth green screen background removal on mobile devices."
+      },
+      {
+        "question": "What video export formats and resolutions does KineMaster support?",
+        "answer": "KineMaster supports video exports up to 4K resolution at 60 FPS in H.264/MP4 formats, as well as GIF animation export modes for social media clip sharing."
+      },
+      {
+        "question": "Can I share editable project files with other KineMaster users?",
+        "answer": "Yes. KineMaster allows creators to export KME project files to backup or share editable timeline projects directly with team members or subscribers."
+      }
     ]
   },
   {
@@ -651,6 +713,24 @@
       {
         "title": "Top Mobile Content Creation Apps",
         "url": "/category.html?id=video-editors"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the main difference between Procreate for iPad and Procreate Pocket?",
+        "answer": "Procreate Pocket is engineered specifically for iPhone touchscreens with a compact UI, while retaining Procreate's Valkyrie graphics engine, 4K canvas rendering, and extensive brush engine."
+      },
+      {
+        "question": "Can I import custom Adobe Photoshop (.abr) brushes into Procreate Pocket?",
+        "answer": "Yes. Procreate Pocket natively imports Adobe Photoshop .abr brush files, allowing digital artists to use their desktop brush collections directly on mobile."
+      },
+      {
+        "question": "Does Procreate Pocket support 3D model texturing and painting?",
+        "answer": "Yes. Procreate Pocket allows artists to import OBJ and USDZ 3D models and paint textures, metallic maps, and surface lighting directly on 3D objects."
+      },
+      {
+        "question": "Does Procreate Pocket record time-lapse drawing videos?",
+        "answer": "Yes. Every artwork created in Procreate Pocket automatically records a full 4K time-lapse video of your drawing workflow that can be exported and shared online."
       }
     ]
   }
