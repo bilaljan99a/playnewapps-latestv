@@ -1608,6 +1608,12 @@ App.initStorePage = async function() {
         if (store.categories && store.categories.length > 0) {
             brandHtml += `<div style="margin-top: 1rem; padding-top: 0.85rem; border-top: 1px dashed var(--border-color);"><strong style="color: var(--text-primary); display: block; margin-bottom: 0.5rem;">Popular Product Categories</strong><div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">${store.categories.map(cat => `<span class="badge" style="background: rgba(37, 99, 235, 0.08); border: 1px solid var(--border-color); color: var(--primary-color); font-size: 0.825rem; padding: 0.25rem 0.65rem; border-radius: 6px; font-weight: 600;">${cat}</span>`).join('')}</div></div>`;
         }
+        if (store.extraSections && store.extraSections.length > 0) {
+            store.extraSections.forEach(sec => {
+                const formattedContent = sec.content.replace(/\n/g, '<br>');
+                brandHtml += `<div style="margin-top: 1rem; padding-top: 0.85rem; border-top: 1px dashed var(--border-color);"><strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem;">${sec.title}</strong><p style="margin: 0; color: var(--text-secondary); line-height: 1.5;">${formattedContent}</p></div>`;
+            });
+        }
 
         brandText.innerHTML = brandHtml;
     }
