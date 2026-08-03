@@ -203,139 +203,9 @@
     "successPercentage": 100
   },
   {
-    "id": "nordvpn-2yr",
-    "title": "68% Off 2-Year Plan + 3 Months Free",
-    "description": "Get an exclusive 68% discount on the NordVPN 2-year plan and receive 3 extra months completely free.",
-    "store": {
-      "id": "nordvpn",
-      "name": "NordVPN",
-      "logo": "/assets/images/brands/nordvpn.svg"
-    },
-    "discount": "68% OFF",
-    "badges": [
-      "Verified"
-    ],
-    "successRate": "99%",
-    "expiry": "Verified Daily",
-    "code": "PLAYNEW68",
-    "affiliateLink": "https://nordvpn.com/coupon/",
-    "isTop": true,
-    "status": "active",
-    "votesCount": 1245,
-    "successPercentage": 99
-  },
-  {
-    "id": "nordvpn-1yr",
-    "title": "45% Off 1-Year Plan",
-    "description": "Secure your connection for a year with this verified 45% discount on NordVPN.",
-    "store": {
-      "id": "nordvpn",
-      "name": "NordVPN",
-      "logo": "/assets/images/brands/nordvpn.svg"
-    },
-    "discount": "45% OFF",
-    "badges": [
-      "Verified"
-    ],
-    "successRate": "95%",
-    "expiry": "Ongoing Offer",
-    "affiliateLink": "https://nordvpn.com/coupon/",
-    "isTop": false,
-    "status": "active",
-    "votesCount": 230,
-    "successPercentage": 88
-  },
-  {
-    "id": "nordvpn-expired",
-    "title": "75% Off Black Friday Special",
-    "description": "Previous Black Friday savings promotion on all NordVPN plans.",
-    "store": {
-      "id": "nordvpn",
-      "name": "NordVPN",
-      "logo": "/assets/images/brands/nordvpn.svg"
-    },
-    "discount": "75% OFF",
-    "badges": [
-      "Expired"
-    ],
-    "successRate": "0%",
-    "expiry": "Expired",
-    "code": "BLACKFRIDAY",
-    "affiliateLink": "https://nordvpn.com/coupon/",
-    "isTop": false,
-    "status": "expired",
-    "votesCount": 271,
-    "successPercentage": 89
-  },
-  {
-    "id": "grammarly-premium",
-    "title": "20% Off Grammarly Premium",
-    "description": "Upgrade to Premium and get 20% off your annual subscription for AI-powered writing assistance.",
-    "store": {
-      "id": "grammarly",
-      "name": "Grammarly",
-      "logo": "/assets/images/brands/grammarly.svg"
-    },
-    "discount": "20% OFF",
-    "badges": [
-      "Verified"
-    ],
-    "successRate": "100%",
-    "expiry": "Ongoing Offer",
-    "affiliateLink": "https://www.grammarly.com/plans",
-    "isTop": true,
-    "status": "active",
-    "votesCount": 196,
-    "successPercentage": 83
-  },
-  {
-    "id": "grammarly-edu",
-    "title": "50% Off for Students",
-    "description": "Verified students receive 50% off an annual Grammarly Premium subscription.",
-    "store": {
-      "id": "grammarly",
-      "name": "Grammarly",
-      "logo": "/assets/images/brands/grammarly.svg"
-    },
-    "discount": "50% OFF",
-    "badges": [
-      "Verified"
-    ],
-    "successRate": "98%",
-    "expiry": "Verified Student Deal",
-    "code": "EDU50",
-    "affiliateLink": "https://www.grammarly.com/plans",
-    "isTop": false,
-    "status": "active",
-    "votesCount": 517,
-    "successPercentage": 80
-  },
-  {
-    "id": "hostinger-hosting",
-    "title": "Up to 75% Off Web Hosting + Free Domain",
-    "description": "Launch your website with high-performance cloud hosting and a free SSL certificate.",
-    "store": {
-      "id": "hostinger",
-      "name": "Hostinger",
-      "logo": "/assets/images/brands/hostinger.svg"
-    },
-    "discount": "75% OFF",
-    "badges": [
-      "Verified"
-    ],
-    "successRate": "99%",
-    "expiry": "Limited Offer",
-    "code": "PLAYNEWHOST",
-    "affiliateLink": "https://www.hostinger.com/web-hosting",
-    "isTop": true,
-    "status": "active",
-    "votesCount": 451,
-    "successPercentage": 90
-  },
-  {
-    "id": "adobe-cc",
+    "id": "adobe-student-discount",
     "title": "60% Off Creative Cloud for Students & Teachers",
-    "description": "Get all 20+ Adobe creative apps including Photoshop, Premiere, and Illustrator at 60% off.",
+    "description": "Verified students and teachers receive 60% off the full Creative Cloud All Apps package including 20+ apps.",
     "store": {
       "id": "adobe",
       "name": "Adobe",
@@ -343,57 +213,683 @@
     },
     "discount": "60% OFF",
     "badges": [
-      "Verified"
+      "Verified",
+      "Student Offer"
     ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.adobe.com/creativecloud/buy/students.html",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 840,
+    "successPercentage": 98
+  },
+  {
+    "id": "adobe-free-trial",
+    "title": "7-Day Free Trial on All Creative Cloud Apps",
+    "description": "Try Photoshop, Premiere Pro, Illustrator or full Creative Cloud free for 7 days with zero commitment.",
+    "store": {
+      "id": "adobe",
+      "name": "Adobe",
+      "logo": "/assets/images/brands/adobe.svg"
+    },
+    "discount": "FREE TRIAL",
+    "badges": [
+      "Verified",
+      "Free Trial"
+    ],
+    "code": null,
     "successRate": "100%",
     "expiry": "Ongoing Offer",
     "affiliateLink": "https://www.adobe.com/creativecloud/plans.html",
-    "isTop": true,
+    "isTop": false,
     "status": "active",
-    "votesCount": 542,
-    "successPercentage": 89
+    "votesCount": 512,
+    "successPercentage": 96
   },
   {
-    "id": "canva-pro",
-    "title": "Try Canva Pro Free for 30 Days",
-    "description": "Unlock premium design tools, brand kits, content planner, and millions of stock photos.",
+    "id": "adobe-photography-plan",
+    "title": "Photoshop & Lightroom Photography Plan for $9.99/mo",
+    "description": "Get both Photoshop and Lightroom desktop & iPad apps plus 20GB cloud storage starting at just $9.99/mo.",
+    "store": {
+      "id": "adobe",
+      "name": "Adobe",
+      "logo": "/assets/images/brands/adobe.svg"
+    },
+    "discount": "FROM $9.99",
+    "badges": [
+      "Verified",
+      "Evergreen Deal"
+    ],
+    "code": null,
+    "successRate": "99%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.adobe.com/creativecloud/plans.html",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 420,
+    "successPercentage": 95
+  },
+  {
+    "id": "adobe-express-free",
+    "title": "Free Adobe Express Starter Plan - No Credit Card Required",
+    "description": "Create social media graphics, flyers, and reels for free with thousands of templates and 25 Firefly AI credits.",
+    "store": {
+      "id": "adobe",
+      "name": "Adobe",
+      "logo": "/assets/images/brands/adobe.svg"
+    },
+    "discount": "100% FREE",
+    "badges": [
+      "Verified",
+      "Free Plan"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.adobe.com/express/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 310,
+    "successPercentage": 100
+  },
+  {
+    "id": "adobe-teams-discount",
+    "title": "Save Up to 25% on Creative Cloud for Teams",
+    "description": "Agencies and corporate teams save up to 25% with central admin management and 1TB cloud storage per user.",
+    "store": {
+      "id": "adobe",
+      "name": "Adobe",
+      "logo": "/assets/images/brands/adobe.svg"
+    },
+    "discount": "UP TO 25%",
+    "badges": [
+      "Verified",
+      "Business Deal"
+    ],
+    "code": null,
+    "successRate": "98%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.adobe.com/creativecloud/business/teams.html",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 215,
+    "successPercentage": 94
+  },
+  {
+    "id": "canva-pro-trial",
+    "title": "Canva Pro 30-Day Free Trial - Unlimited Premium Assets",
+    "description": "Get 30 days of free unrestricted access to 100+ million stock assets, Magic Studio AI, and Brand Kits.",
     "store": {
       "id": "canva",
       "name": "Canva",
       "logo": "/assets/images/brands/canva.svg"
     },
-    "discount": "FREE TRIAL",
+    "discount": "30 DAYS FREE",
     "badges": [
-      "Verified"
+      "Verified",
+      "Free Trial"
     ],
+    "code": null,
     "successRate": "100%",
     "expiry": "Ongoing Offer",
     "affiliateLink": "https://www.canva.com/pro/",
     "isTop": true,
     "status": "active",
-    "votesCount": 72,
-    "successPercentage": 82
+    "votesCount": 920,
+    "successPercentage": 99
   },
   {
-    "id": "envato-elements",
-    "title": "70% Off First Month of Envato Elements",
-    "description": "Unlimited downloads of stock videos, royalty-free audio, graphic templates, and 3D assets.",
+    "id": "canva-annual-savings",
+    "title": "Save 16% on Canva Pro with Yearly Subscription",
+    "description": "Choose annual billing on Canva Pro to automatically save 16% off monthly subscription fees.",
+    "store": {
+      "id": "canva",
+      "name": "Canva",
+      "logo": "/assets/images/brands/canva.svg"
+    },
+    "discount": "16% OFF",
+    "badges": [
+      "Verified",
+      "Annual Deal"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.canva.com/pro/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 610,
+    "successPercentage": 97
+  },
+  {
+    "id": "canva-education-free",
+    "title": "Canva for Education - 100% Free for Teachers & Students",
+    "description": "Verified K-12 primary and secondary teachers and students get 100% free lifetime access to Canva Pro features.",
+    "store": {
+      "id": "canva",
+      "name": "Canva",
+      "logo": "/assets/images/brands/canva.svg"
+    },
+    "discount": "100% FREE",
+    "badges": [
+      "Verified",
+      "Education"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.canva.com/education/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 450,
+    "successPercentage": 100
+  },
+  {
+    "id": "canva-nonprofits-free",
+    "title": "Canva for Nonprofits - Free Premium Access for Eligible Orgs",
+    "description": "Registered non-profit organizations receive free Canva Pro subscriptions for up to 10 team members.",
+    "store": {
+      "id": "canva",
+      "name": "Canva",
+      "logo": "/assets/images/brands/canva.svg"
+    },
+    "discount": "100% FREE",
+    "badges": [
+      "Verified",
+      "Nonprofit"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.canva.com/canva-for-nonprofits/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 280,
+    "successPercentage": 98
+  },
+  {
+    "id": "canva-teams-deal",
+    "title": "Canva for Teams - Collaborative Design from $10/mo per user",
+    "description": "Collaborate across teams with Brand Kit controls, workflow approvals, and shared folders from $10/mo.",
+    "store": {
+      "id": "canva",
+      "name": "Canva",
+      "logo": "/assets/images/brands/canva.svg"
+    },
+    "discount": "FROM $10/MO",
+    "badges": [
+      "Verified",
+      "Teams Deal"
+    ],
+    "code": null,
+    "successRate": "98%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.canva.com/for-teams/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 195,
+    "successPercentage": 96
+  },
+  {
+    "id": "envato-annual-50",
+    "title": "Save 50% on Envato Elements Annual Plan - Unlimited Downloads",
+    "description": "Get unlimited downloads of stock video, audio, graphics, and WordPress themes for 50% off monthly rates.",
     "store": {
       "id": "envato",
       "name": "Envato",
       "logo": "/assets/images/brands/envato.svg"
     },
-    "discount": "70% OFF",
+    "discount": "50% OFF",
     "badges": [
-      "Verified"
+      "Verified",
+      "Best Value"
     ],
-    "successRate": "95%",
-    "expiry": "Verified Partner Offer",
-    "code": "SAVE70",
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
     "affiliateLink": "https://elements.envato.com/pricing",
     "isTop": true,
     "status": "active",
-    "votesCount": 402,
-    "successPercentage": 90
+    "votesCount": 780,
+    "successPercentage": 99
+  },
+  {
+    "id": "envato-student-30",
+    "title": "30% Off Envato Elements for Verified Students",
+    "description": "Students with a valid .edu email address receive an exclusive 30% discount on monthly subscription plans.",
+    "store": {
+      "id": "envato",
+      "name": "Envato",
+      "logo": "/assets/images/brands/envato.svg"
+    },
+    "discount": "30% OFF",
+    "badges": [
+      "Verified",
+      "Student Offer"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://elements.envato.com/subscribe/student",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 410,
+    "successPercentage": 97
+  },
+  {
+    "id": "envato-free-files",
+    "title": "Get 12 Free Digital Assets Every Month with Free Account",
+    "description": "Register a free account to download 12 handpicked WordPress themes, stock video clips, and audio tracks monthly.",
+    "store": {
+      "id": "envato",
+      "name": "Envato",
+      "logo": "/assets/images/brands/envato.svg"
+    },
+    "discount": "100% FREE",
+    "badges": [
+      "Verified",
+      "Free Download"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://elements.envato.com/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 390,
+    "successPercentage": 100
+  },
+  {
+    "id": "envato-teams-pricing",
+    "title": "Envato Elements Team Subscription from $10.75/mo per user",
+    "description": "Scale team creative output with unlimited downloads for 2+ members starting at $10.75 per user per month.",
+    "store": {
+      "id": "envato",
+      "name": "Envato",
+      "logo": "/assets/images/brands/envato.svg"
+    },
+    "discount": "FROM $10.75",
+    "badges": [
+      "Verified",
+      "Teams Deal"
+    ],
+    "code": null,
+    "successRate": "98%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://elements.envato.com/teams",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 220,
+    "successPercentage": 95
+  },
+  {
+    "id": "envato-themeforest-deals",
+    "title": "Up to 50% Off WordPress Themes & Plugins on ThemeForest",
+    "description": "Browse top-rated flagship WordPress themes and CodeCanyon scripts discounted up to 50% during sales.",
+    "store": {
+      "id": "envato",
+      "name": "Envato",
+      "logo": "/assets/images/brands/envato.svg"
+    },
+    "discount": "UP TO 50%",
+    "badges": [
+      "Verified",
+      "ThemeForest"
+    ],
+    "code": null,
+    "successRate": "97%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://themeforest.net/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 310,
+    "successPercentage": 94
+  },
+  {
+    "id": "grammarly-annual-60",
+    "title": "Save 60% on Grammarly Premium with Annual Billing",
+    "description": "Unlock full-sentence clarity rewrites, tone adjustments, and plagiarism scanner at 60% off monthly rates.",
+    "store": {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "logo": "/assets/images/brands/grammarly.svg"
+    },
+    "discount": "60% OFF",
+    "badges": [
+      "Verified",
+      "Best Deal"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.grammarly.com/premium",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 890,
+    "successPercentage": 99
+  },
+  {
+    "id": "grammarly-free-assistant",
+    "title": "Free Grammarly Writing Assistant - No Credit Card Required",
+    "description": "Download the free Grammarly browser extension for real-time spelling, grammar, and punctuation checks.",
+    "store": {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "logo": "/assets/images/brands/grammarly.svg"
+    },
+    "discount": "100% FREE",
+    "badges": [
+      "Verified",
+      "Free Tool"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.grammarly.com/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 640,
+    "successPercentage": 100
+  },
+  {
+    "id": "grammarly-quarterly-33",
+    "title": "Save 33% on Grammarly Premium Quarterly Plan",
+    "description": "Save 33% off monthly subscription fees when billed on a flexible quarterly schedule.",
+    "store": {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "logo": "/assets/images/brands/grammarly.svg"
+    },
+    "discount": "33% OFF",
+    "badges": [
+      "Verified",
+      "Quarterly Plan"
+    ],
+    "code": null,
+    "successRate": "98%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.grammarly.com/premium",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 310,
+    "successPercentage": 96
+  },
+  {
+    "id": "grammarly-business-plan",
+    "title": "Grammarly Business - Advanced Team Security from $15/mo",
+    "description": "Empower corporate teams with style guides, central user billing, SAML SSO, and snippet shortcuts.",
+    "store": {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "logo": "/assets/images/brands/grammarly.svg"
+    },
+    "discount": "FROM $15/MO",
+    "badges": [
+      "Verified",
+      "Business Deal"
+    ],
+    "code": null,
+    "successRate": "99%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.grammarly.com/business",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 205,
+    "successPercentage": 95
+  },
+  {
+    "id": "grammarly-ai-prompts",
+    "title": "Free Generative AI Writing Prompts on Free Plan",
+    "description": "Get 100 free monthly AI writing prompts to draft, rewrite, and adjust formality across all applications.",
+    "store": {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "logo": "/assets/images/brands/grammarly.svg"
+    },
+    "discount": "FREE AI",
+    "badges": [
+      "Verified",
+      "Free Feature"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.grammarly.com/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 280,
+    "successPercentage": 98
+  },
+  {
+    "id": "hostinger-code-save10",
+    "title": "Up to 75% Off Web Hosting + Extra 10% Off with Code SAVE10",
+    "description": "Get up to 75% off NVMe web hosting plus an additional 10% discount when using promo code SAVE10 at checkout.",
+    "store": {
+      "id": "hostinger",
+      "name": "Hostinger",
+      "logo": "/assets/images/brands/hostinger.svg"
+    },
+    "discount": "75% OFF + 10%",
+    "badges": [
+      "Verified",
+      "Promo Code"
+    ],
+    "code": "SAVE10",
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.hostinger.com/web-hosting",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1120,
+    "successPercentage": 99
+  },
+  {
+    "id": "hostinger-free-domain",
+    "title": "Free Domain Name Included for 1 Year on Annual Plans",
+    "description": "Claim a free custom domain name (.com, .net, .org) for 1 year when subscribing to annual hosting plans.",
+    "store": {
+      "id": "hostinger",
+      "name": "Hostinger",
+      "logo": "/assets/images/brands/hostinger.svg"
+    },
+    "discount": "FREE DOMAIN",
+    "badges": [
+      "Verified",
+      "Free Gift"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.hostinger.com/web-hosting",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 750,
+    "successPercentage": 98
+  },
+  {
+    "id": "hostinger-wordpress-70",
+    "title": "Up to 70% Off Managed WordPress Hosting with Free SSL",
+    "description": "Speed up WordPress with LiteSpeed caching, Object Cache, automated daily backups, and free SSL.",
+    "store": {
+      "id": "hostinger",
+      "name": "Hostinger",
+      "logo": "/assets/images/brands/hostinger.svg"
+    },
+    "discount": "70% OFF",
+    "badges": [
+      "Verified",
+      "WordPress Deal"
+    ],
+    "code": null,
+    "successRate": "99%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.hostinger.com/wordpress-hosting",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 540,
+    "successPercentage": 97
+  },
+  {
+    "id": "hostinger-cloud-65",
+    "title": "Up to 65% Off High-Performance Cloud Hosting",
+    "description": "Dedicated server resources, 200GB NVMe SSD, 3GB RAM, and dedicated IP for high-traffic stores.",
+    "store": {
+      "id": "hostinger",
+      "name": "Hostinger",
+      "logo": "/assets/images/brands/hostinger.svg"
+    },
+    "discount": "65% OFF",
+    "badges": [
+      "Verified",
+      "Cloud Deal"
+    ],
+    "code": null,
+    "successRate": "98%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.hostinger.com/cloud-hosting",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 310,
+    "successPercentage": 96
+  },
+  {
+    "id": "hostinger-vps-60",
+    "title": "Up to 60% Off KVM VPS Hosting with Full Root Access",
+    "description": "KVM virtual private servers with NVMe storage, dedicated IPv4 address, and full Linux root access.",
+    "store": {
+      "id": "hostinger",
+      "name": "Hostinger",
+      "logo": "/assets/images/brands/hostinger.svg"
+    },
+    "discount": "60% OFF",
+    "badges": [
+      "Verified",
+      "VPS Deal"
+    ],
+    "code": null,
+    "successRate": "97%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://www.hostinger.com/vps-hosting",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 230,
+    "successPercentage": 95
+  },
+  {
+    "id": "nordvpn-2yr-deal",
+    "title": "Up to 67% Off NordVPN 2-Year Plan + Extra Bonus Months Free",
+    "description": "Get 67% off NordVPN's 2-Year Plan plus 3 extra months free. Protect up to 10 devices simultaneously.",
+    "store": {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "logo": "/assets/images/brands/nordvpn.svg"
+    },
+    "discount": "67% OFF",
+    "badges": [
+      "Verified",
+      "Top Deal"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://nordvpn.com/special-deal/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1420,
+    "successPercentage": 99
+  },
+  {
+    "id": "nordvpn-student-15",
+    "title": "Extra 15% Off NordVPN for Students & Youth (18-26)",
+    "description": "Students and young adults receive an additional 15% discount code via Student Beans verification.",
+    "store": {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "logo": "/assets/images/brands/nordvpn.svg"
+    },
+    "discount": "EXTRA 15%",
+    "badges": [
+      "Verified",
+      "Student Offer"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://nordvpn.com/student-discount/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 680,
+    "successPercentage": 98
+  },
+  {
+    "id": "nordvpn-meshnet-free",
+    "title": "NordVPN Meshnet - 100% Free Encrypted LAN & Remote IP Access",
+    "description": "Connect up to 60 personal devices in a private virtual LAN for free home IP traffic routing and file sharing.",
+    "store": {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "logo": "/assets/images/brands/nordvpn.svg"
+    },
+    "discount": "100% FREE",
+    "badges": [
+      "Verified",
+      "Free Feature"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://meshnet.nordvpn.com/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 490,
+    "successPercentage": 100
+  },
+  {
+    "id": "nordvpn-ultimate-bundle",
+    "title": "Up to 70% Off NordVPN Ultimate Security Bundle",
+    "description": "Bundle NordVPN with NordPass password manager and 1TB encrypted NordLocker cloud storage for 70% off.",
+    "store": {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "logo": "/assets/images/brands/nordvpn.svg"
+    },
+    "discount": "70% OFF",
+    "badges": [
+      "Verified",
+      "Bundle Deal"
+    ],
+    "code": null,
+    "successRate": "99%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://nordvpn.com/pricing/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 520,
+    "successPercentage": 97
+  },
+  {
+    "id": "nordvpn-30day-guarantee",
+    "title": "30-Day Risk-Free Money-Back Guarantee on All Plans",
+    "description": "Try NordVPN completely risk-free across 10 devices backed by a hassle-free 30-day money-back guarantee.",
+    "store": {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "logo": "/assets/images/brands/nordvpn.svg"
+    },
+    "discount": "RISK FREE",
+    "badges": [
+      "Verified",
+      "Guarantee"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://nordvpn.com/special-deal/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 380,
+    "successPercentage": 99
   }
 ]
