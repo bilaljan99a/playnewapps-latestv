@@ -1145,5 +1145,214 @@
     "status": "active",
     "votesCount": 380,
     "successPercentage": 99
+  },
+  {
+    "id": "notta-ai-30off-assistant",
+    "title": "30% Off Notta AI Meeting Assistant",
+    "description": "Claim an instant 30% discount on Notta AI Meeting Assistant subscriptions using verified promo code NOTTA30.",
+    "store": {
+      "id": "notta-ai",
+      "name": "Notta AI",
+      "logo": "/assets/images/brands/notta-ai.svg"
+    },
+    "discount": "30% OFF",
+    "badges": [
+      "Verified",
+      "Promo Code",
+      "Top Offer"
+    ],
+    "code": "NOTTA30",
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://ypetp.com/g/7gbdp8tygub68b264a76f50bb56640/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 940,
+    "successPercentage": 100
+  },
+  {
+    "id": "notta-ai-40off-annual",
+    "title": "Save 40% on Notta Pro & Business Annual Plans",
+    "description": "Upgrade to annual billing on Notta Pro or Business plans and save 40% compared to monthly billing rates.",
+    "store": {
+      "id": "notta-ai",
+      "name": "Notta AI",
+      "logo": "/assets/images/brands/notta-ai.svg"
+    },
+    "discount": "40% OFF",
+    "badges": [
+      "Verified",
+      "Annual Deal",
+      "Best Value"
+    ],
+    "code": "NOTTA40",
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://ypetp.com/g/7gbdp8tygub68b264a76f50bb56640/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 880,
+    "successPercentage": 99
+  },
+  {
+    "id": "notta-ai-meeting-minutes",
+    "title": "Automate Meeting Minutes with Notta AI",
+    "description": "Automatically record meetings, generate summaries, action items, and searchable notes in seconds.",
+    "store": {
+      "id": "notta-ai",
+      "name": "Notta AI",
+      "logo": "/assets/images/brands/notta-ai.svg"
+    },
+    "discount": "AUTO MINUTES",
+    "badges": [
+      "Verified",
+      "Popular Feature"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://ypetp.com/g/7gbdp8tygub68b264a76f50bb56640/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 720,
+    "successPercentage": 98
+  },
+  {
+    "id": "notta-ai-audio-transcription",
+    "title": "Transcribe 1-Hour Audio in Just 5 Minutes",
+    "description": "Convert interviews, lectures, podcasts, webinars, and meetings into highly accurate text using AI.",
+    "store": {
+      "id": "notta-ai",
+      "name": "Notta AI",
+      "logo": "/assets/images/brands/notta-ai.svg"
+    },
+    "discount": "5 MIN SPEED",
+    "badges": [
+      "Verified",
+      "High Speed"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://ypetp.com/g/7gbdp8tygub68b264a76f50bb56640/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 650,
+    "successPercentage": 99
+  },
+  {
+    "id": "notta-ai-auto-join",
+    "title": "Automatically Join Zoom, Google Meet & Microsoft Teams",
+    "description": "Let Notta automatically join meetings, record conversations, generate transcripts, and summarize discussions.",
+    "store": {
+      "id": "notta-ai",
+      "name": "Notta AI",
+      "logo": "/assets/images/brands/notta-ai.svg"
+    },
+    "discount": "AUTO JOIN",
+    "badges": [
+      "Verified",
+      "Bot Integration"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://ypetp.com/g/7gbdp8tygub68b264a76f50bb56640/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 810,
+    "successPercentage": 100
+  },
+  {
+    "id": "notta-ai-free-trial",
+    "title": "Start Free with 200 Monthly Transcription Minutes",
+    "description": "New users receive 200 free transcription minutes supporting more than 58 languages.",
+    "store": {
+      "id": "notta-ai",
+      "name": "Notta AI",
+      "logo": "/assets/images/brands/notta-ai.svg"
+    },
+    "discount": "200 FREE MINS",
+    "badges": [
+      "Verified",
+      "Free Plan"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://ypetp.com/g/7gbdp8tygub68b264a76f50bb56640/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 950,
+    "successPercentage": 100
+  },
+  {
+    "id": "notta-ai-multi-language",
+    "title": "Supports 58+ Languages",
+    "description": "Translate and transcribe meetings, interviews, podcasts, lectures, and voice recordings with multilingual AI.",
+    "store": {
+      "id": "notta-ai",
+      "name": "Notta AI",
+      "logo": "/assets/images/brands/notta-ai.svg"
+    },
+    "discount": "58+ LANGUAGES",
+    "badges": [
+      "Verified",
+      "Multilingual"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://ypetp.com/g/7gbdp8tygub68b264a76f50bb56640/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 590,
+    "successPercentage": 98
+  },
+  {
+    "id": "notta-ai-pro-plan",
+    "title": "Notta Pro from $13.49/month",
+    "description": "Unlock longer transcription limits, AI summaries, cloud syncing, exports, and premium collaboration tools.",
+    "store": {
+      "id": "notta-ai",
+      "name": "Notta AI",
+      "logo": "/assets/images/brands/notta-ai.svg"
+    },
+    "discount": "FROM $13.49",
+    "badges": [
+      "Verified",
+      "Pro Plan"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://ypetp.com/g/7gbdp8tygub68b264a76f50bb56640/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 770,
+    "successPercentage": 99
+  },
+  {
+    "id": "notta-ai-business-plan",
+    "title": "Business Plans from $27.99/month",
+    "description": "Designed for teams with shared workspaces, collaboration, centralized billing, and enterprise productivity.",
+    "store": {
+      "id": "notta-ai",
+      "name": "Notta AI",
+      "logo": "/assets/images/brands/notta-ai.svg"
+    },
+    "discount": "FROM $27.99",
+    "badges": [
+      "Verified",
+      "Business Plan"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://ypetp.com/g/7gbdp8tygub68b264a76f50bb56640/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 610,
+    "successPercentage": 99
   }
 ]
