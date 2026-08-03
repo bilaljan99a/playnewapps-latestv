@@ -1581,6 +1581,21 @@ App.initStorePage = async function() {
         brandTitle.textContent = `About ${store.name}`;
         let brandHtml = `<p style="margin-bottom: 0.75rem;">${store.about || `${store.name} is a leading global marketplace offering quality products and exclusive promotional discounts.`}</p>`;
 
+        if (store.detailedOverview) {
+            brandHtml += `<p style="margin-bottom: 0.75rem; color: var(--text-color); line-height: 1.6;">${store.detailedOverview}</p>`;
+        }
+        if (store.brandHistory) {
+            brandHtml += `<div style="margin-top: 1rem; padding-top: 0.85rem; border-top: 1px dashed var(--border-color);"><strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem;">Brand History & Overview</strong><p style="margin: 0; color: var(--text-secondary); line-height: 1.5;">${store.brandHistory}</p></div>`;
+        }
+        if (store.whoIsItFor) {
+            brandHtml += `<div style="margin-top: 1rem; padding-top: 0.85rem; border-top: 1px dashed var(--border-color);"><strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem;">Who Should Use It</strong><p style="margin: 0; color: var(--text-secondary); line-height: 1.5;">${store.whoIsItFor}</p></div>`;
+        }
+        if (store.keyFeatures) {
+            brandHtml += `<div style="margin-top: 1rem; padding-top: 0.85rem; border-top: 1px dashed var(--border-color);"><strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem;">Key Features & Core Benefits</strong><p style="margin: 0; color: var(--text-secondary); line-height: 1.5;">${store.keyFeatures}</p></div>`;
+        }
+        if (store.buyingGuide) {
+            brandHtml += `<div style="margin-top: 1rem; padding-top: 0.85rem; border-top: 1px dashed var(--border-color);"><strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem;">First-Time Shopping Advice & Savings Tips</strong><p style="margin: 0; color: var(--text-secondary); line-height: 1.5;">${store.buyingGuide}</p></div>`;
+        }
         if (store.shippingInfo) {
             brandHtml += `<div style="margin-top: 1rem; padding-top: 0.85rem; border-top: 1px dashed var(--border-color);"><strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem;">Shipping Information</strong><p style="margin: 0; color: var(--text-secondary); line-height: 1.5;">${store.shippingInfo}</p></div>`;
         }

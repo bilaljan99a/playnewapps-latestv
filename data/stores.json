@@ -80,7 +80,12 @@
         "question": "Can I track my AliExpress shipment?",
         "answer": "Yes, every order includes a unique tracking number accessible in your AliExpress account dashboard and email dispatch notifications."
       }
-    ]
+    ],
+    "detailedOverview": "Launched by Alibaba Group in 2010, AliExpress connects international shoppers directly with wholesale manufacturers and regional distributors worldwide. By streamlining global supply chains and eliminating traditional retail markups, the platform provides direct consumer pricing on millions of factory-fresh goods spanning consumer electronics, fashion, home essentials, and lifestyle accessories.",
+    "brandHistory": "Originally established as a B2B purchasing gateway, AliExpress rapidly expanded into a premier global direct-to-consumer marketplace serving over 200 countries and territories. Over the past decade, the platform pioneered Choice fulfillment logistics, guaranteeing consolidated shipping, faster air transit, localized customs clearance, and transparent end-to-end parcel tracking for international orders.",
+    "whoIsItFor": "AliExpress is engineered for smart shoppers, tech enthusiasts, DIY creators, fashion lovers, and home improvers seeking budget-friendly pricing on hard-to-find components, unbranded gadget accessories, seasonal wardrobe updates, and specialized lifestyle goods.",
+    "keyFeatures": "Highlights include Choice Day sales events, daily flash discounts, interactive coin rewards that unlock extra savings, consolidated order bundling, transparent store seller feedback metrics, and automated buyer protection coverage.",
+    "buyingGuide": "First-time buyers should always filter search results by 'Choice' items to qualify for free consolidated shipping when spending over threshold amounts or buying 3+ items. Combining store-level vendor coupons with sitewide promo vouchers (like AFA2, AFA9, or AFA55) yields maximum total checkout discounts."
   },
   {
     "id": "wps-office",
@@ -125,7 +130,12 @@
         "question": "Is WPS Office compatible with Microsoft Office files?",
         "answer": "Yes, WPS Office supports seamless reading, editing, and saving of all Microsoft Office file formats including .docx, .xlsx, .pptx, as well as Google Docs and PDF files."
       }
-    ]
+    ],
+    "detailedOverview": "WPS Office, developed by Kingsoft Office, is a lightweight, cross-platform productivity suite used by over 500 million monthly active users worldwide. Designed as an efficient alternative to heavy legacy office software, WPS integrates Writer, Spreadsheet, Presentation, and PDF editing within a clean tabbed interface.",
+    "brandHistory": "Originating in 1988 as SuperWPS, the suite has evolved through three decades of continuous innovation. Today, WPS Office features embedded generative AI capabilities, seamless multi-device cloud synchronization, and native 100% file format compatibility with Microsoft Word, Excel, and PowerPoint files.",
+    "whoIsItFor": "WPS Office is built for students, academic researchers, small business operators, remote workers, and enterprise professionals who need fast document creation, editing, and PDF manipulation across Windows, macOS, Linux, Android, and iOS devices.",
+    "keyFeatures": "Key features include built-in AI writing and data analysis assistants, OCR image-to-text conversion, PDF merging and format converting tools, extensive template libraries for resumes and pitch decks, and secure cloud file backup.",
+    "buyingGuide": "Maximize your subscription value by opting for WPS Pro annual plans, which save up to 70% compared to monthly payments. Standard users can take advantage of the generous Free Edition for everyday document reading and editing."
   },
   {
     "id": "nordvpn",
@@ -150,7 +160,12 @@
         "question": "How many devices can I connect simultaneously?",
         "answer": "A single NordVPN account supports up to 10 devices connected at the same time across Windows, macOS, Android, iOS, and Linux."
       }
-    ]
+    ],
+    "detailedOverview": "NordVPN is an industry-leading virtual private network (VPN) provider dedicated to safeguarding online privacy, personal data security, and digital freedom. Utilizing next-generation double encryption standards, NordVPN shields internet traffic against network snooping, public Wi-Fi risks, and ISP bandwidth throttling.",
+    "brandHistory": "Founded in 2012, NordVPN grew from a small privacy initiative into a global cybersecurity powerhouse operating more than 6,000 high-speed servers across 110+ countries. Independent cybersecurity audits consistently verify NordVPN's strict no-logs policy and robust security infrastructure.",
+    "whoIsItFor": "NordVPN is tailored for privacy-conscious web users, remote professionals handling sensitive corporate data, frequent travelers using public airport Wi-Fi, streamers seeking buffer-free global media access, and online gamers demanding low-latency DDoS defense.",
+    "keyFeatures": "Core capabilities include NordLynx ultra-fast protocol technology, Threat Protection Pro for blocking malware and phishing sites, Double VPN routing, Meshnet private device networking, and automatic Kill Switch protection.",
+    "buyingGuide": "Secure the lowest monthly rate by choosing 2-year subscription plans, which offer savings up to 68% off standard prices. Every plan is backed by an unconditional 30-day money-back guarantee for complete peace of mind."
   },
   {
     "id": "grammarly",
@@ -171,7 +186,12 @@
         "question": "Is Grammarly Premium worth it?",
         "answer": "Yes, Premium unlocks tone adjustments, full sentence rewrites, plagiarism detection, and advanced style improvements essential for professional writing."
       }
-    ]
+    ],
+    "detailedOverview": "Grammarly is an AI-powered communication assistant designed to enhance writing accuracy, sentence structure, tone consistency, and vocabulary across emails, documents, browsers, and mobile devices. Processing sentence context in real time, Grammarly provides instant corrections and intelligent rewriting suggestions.",
+    "brandHistory": "Launched in 2009, Grammarly expanded from an online proofreading tool for students into a comprehensive communication platform powered by advanced deep learning models and generative AI technology trusted by millions of users daily.",
+    "whoIsItFor": "Grammarly is built for students writing essays, business executives drafting emails, content marketers, job seekers refining resumes, non-native English speakers, and enterprise teams enforcing brand tone consistency.",
+    "keyFeatures": "Highlights include real-time grammar and spell checking, tone detection, sentence rewrite recommendations, plagiarism detection against billions of online sources, and customizable team style guidelines.",
+    "buyingGuide": "Choosing an annual Grammarly Premium subscription provides over 60% savings compared to monthly billing. Students and educators can check for promotional vouchers or use the free core extension for basic punctuation and spelling fixes."
   },
   {
     "id": "hostinger",
@@ -191,7 +211,12 @@
         "question": "Does Hostinger offer a free domain?",
         "answer": "Yes, Hostinger includes a free custom domain name for the first year with Premium, Business, and Cloud hosting packages."
       }
-    ]
+    ],
+    "detailedOverview": "Hostinger is an employee-owned web hosting company providing fast, secure, and affordable cloud hosting, WordPress solutions, and VPS services to over 3 million web creators worldwide. Equipped with LiteSpeed web servers and SSD storage, Hostinger delivers optimized website loading performance.",
+    "brandHistory": "Established in 2004 as a free hosting project, Hostinger evolved into a top global web host operating data centers across North America, Europe, Asia, and South America with a custom-built hPanel control dashboard.",
+    "whoIsItFor": "Hostinger is ideal for web developers, small business owners, bloggers, e-commerce store managers, and agencies seeking high uptime, simple 1-click WordPress setup, and scalable hosting infrastructure.",
+    "keyFeatures": "Core features include free domain registration with annual plans, free SSL certificates, automated daily/weekly backups, drag-and-drop AI website builders, and 24/7 localized support.",
+    "buyingGuide": "Lock in 48-month hosting plans during seasonal promotional events to get the lowest monthly rate along with a free custom domain name and privacy protection."
   },
   {
     "id": "adobe",
@@ -212,7 +237,12 @@
         "question": "Can I get Adobe Creative Cloud discounts?",
         "answer": "Yes, verified students and teachers get up to 60% off standard Creative Cloud plan pricing, and business volume licenses offer significant savings."
       }
-    ]
+    ],
+    "detailedOverview": "Adobe is the world leader in digital media and creative software applications. Through its flagship Creative Cloud suite, Adobe empowers visual designers, video editors, photographers, and web creators with industry-standard software tools.",
+    "brandHistory": "Founded in 1982, Adobe revolutionized desktop publishing with PostScript and PDF formats. Today, Adobe integrates cutting-edge Generative AI (Adobe Firefly) across flagship applications including Photoshop, Illustrator, Premiere Pro, and After Effects.",
+    "whoIsItFor": "Adobe Creative Cloud is designed for professional graphic designers, video editors, visual animators, marketing agencies, commercial photographers, and creative design students.",
+    "keyFeatures": "Highlights include Firefly generative fill tools, cloud file synchronization, access to Adobe Fonts and Stock media libraries, and seamless multi-app workflow integration.",
+    "buyingGuide": "The Creative Cloud All Apps bundle offers maximum savings for creators using multiple Adobe programs. Accredited students and teachers qualify for exclusive 60%+ discount pricing year-round."
   },
   {
     "id": "canva",
@@ -233,7 +263,12 @@
         "question": "Is Canva Pro free to test?",
         "answer": "Yes, new users can start a 30-day full feature trial of Canva Pro to test premium brand kits, background removers, and premium stock assets."
       }
-    ]
+    ],
+    "detailedOverview": "Canva is an intuitive visual communications platform that empowers anyone to design professional graphics, presentations, social media posts, videos, and printed marketing materials without prior graphic design experience.",
+    "brandHistory": "Launched in 2013, Canva revolutionized visual design by replacing complex software with an easy-to-use drag-and-drop web editor, growing into a global community of over 170 million active monthly users.",
+    "whoIsItFor": "Canva is perfect for social media managers, small business owners, educators, marketers, event planners, and non-designers needing fast, high-quality visual content.",
+    "keyFeatures": "Features include Magic Studio AI design tools, brand kit asset management, background removal, real-time team collaboration, and direct print delivery service.",
+    "buyingGuide": "Canva Pro unlocks millions of premium stock photos, graphics, and AI features with a 30-day free trial. Teams of 5 or more can save further with Canva for Teams pooled licensing."
   },
   {
     "id": "envato",
@@ -253,6 +288,11 @@
         "question": "What does Envato Elements subscription include?",
         "answer": "Envato Elements offers unlimited commercial-license downloads of over 15 million creative assets under a single monthly or yearly subscription."
       }
-    ]
+    ],
+    "detailedOverview": "Envato is a leading digital asset platform providing millions of creative assets for web development, graphic design, video production, and digital marketing projects through Envato Elements, ThemeForest, and GraphicRiver.",
+    "brandHistory": "Founded in 2006, Envato built the world's largest marketplace for website themes, code templates, stock footage, royalty-free audio tracks, and 3D graphics, empowering creators globally.",
+    "whoIsItFor": "Envato is tailored for web developers, video editors, freelance designers, marketing agencies, and digital content creators who require a constant supply of commercial-use design assets.",
+    "keyFeatures": "Envato Elements offers unlimited asset downloads under a single broad commercial license covering WordPress themes, stock video, music tracks, presentation templates, and graphic vectors.",
+    "buyingGuide": "Subscribing to Envato Elements Annual billing reduces monthly costs by 50% compared to monthly plans, providing unlimited asset downloads for unlimited client projects."
   }
 ]
