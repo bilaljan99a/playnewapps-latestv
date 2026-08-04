@@ -1624,5 +1624,106 @@
         "content": "PlayNewApps is your premier destination for verified software discounts, travel deals, and Web3 platform guides. Our team continuously verifies active Flyfi Deals, affiliate links, and promotional hotel rates to ensure guaranteed value for travelers.<br><br>By booking through PlayNewApps, you get direct access to official Flyfi checkouts with verified purchase protection, zero hidden markups, and direct access to exclusive crypto hotel packages worldwide."
       }
     ]
+  },
+  {
+    "id": "alibaba",
+    "name": "Alibaba",
+    "icon": "storefront",
+    "logo": "/assets/images/brands/alibaba.svg",
+    "website": "https://www.alibaba.com/",
+    "affiliateLink": "https://rzekl.com/g/pm1aev55clb68b264a76219aa26f6f/?ulp=https%3A%2F%2Fwww.alibaba.com",
+    "rating": 4.8,
+    "votes": 8920,
+    "seoTitle": "Alibaba Review 2026 – Trusted Global B2B Wholesale Marketplace",
+    "seoDescription": "Read our Alibaba review covering verified suppliers, Trade Assurance, wholesale sourcing, buyer protection, and the best Alibaba deals for businesses worldwide.",
+    "about": "Alibaba is the world's premier B2B wholesale marketplace connecting global businesses with verified manufacturers, suppliers, and exporters.",
+    "category": "B2B Wholesale Marketplace",
+    "founded": "1999",
+    "headquarters": "Hangzhou, China",
+    "parentCompany": "Alibaba Group",
+    "trustScore": "98/100",
+    "verifiedStore": true,
+    "banners": [
+      {
+        "id": "banner-wholesale",
+        "title": "Alibaba Global B2B Wholesale Marketplace",
+        "subtitle": "Source Direct from Verified Manufacturers with Trade Assurance Escrow Protection",
+        "image": "/assets/images/alibaba-wholesale-banner.svg",
+        "link": "https://rzekl.com/g/pm1aev55clb68b264a76219aa26f6f/?ulp=https%3A%2F%2Fwww.alibaba.com",
+        "buttonText": "Claim $20 OFF",
+        "badge": "FEATURED PROMOTION"
+      },
+      {
+        "id": "banner-spotlight",
+        "title": "Alibaba Saving Spotlight Collection",
+        "subtitle": "Save Up To 80% Below Retail Prices on Top Product Categories",
+        "image": "/assets/images/alibaba-saving-spotlight-banner.svg",
+        "link": "https://rzekl.com/g/pm1aev55clb68b264a76219aa26f6f/?ulp=https%3A%2F%2Fwww.alibaba.com",
+        "buttonText": "Shop Spotlight Collection",
+        "badge": "UP TO 80% OFF"
+      }
+    ],
+    "shippingInfo": "Alibaba suppliers offer flexible international freight solutions including Sea Freight (FCL/LCL), Air Freight, Express Courier (DHL, FedEx, UPS), and Alibaba Logistics with end-to-end customs clearance.",
+    "buyerProtection": "Alibaba Trade Assurance provides 100% order protection covering product quality, payment security, and on-time shipment guarantees. Refund protection is active until final delivery and inspection.",
+    "paymentMethods": [
+      "Credit/Debit Cards (Visa, MasterCard)",
+      "Wire Transfer (T/T)",
+      "PayPal",
+      "Apple Pay / Google Pay",
+      "Online Bank Payment",
+      "Alibaba Pay Later / Terms"
+    ],
+    "categories": [
+      "Electronics",
+      "Machinery",
+      "Fashion",
+      "Home & Garden",
+      "Beauty",
+      "Automotive",
+      "Industrial Equipment"
+    ],
+    "whyShop": [
+      "Access to over 200,000+ verified global manufacturers and wholesale suppliers.",
+      "Trade Assurance security protecting every order payment, product specification, and shipping schedule.",
+      "Custom manufacturing (OEM/ODM) with private label branding, custom packaging, and sample orders.",
+      "Direct factory-gate pricing with tier discounts for high-volume bulk orders."
+    ],
+    "shoppingTips": [
+      "Filter for Verified Supplier badges and active Trade Assurance coverage before contacting manufacturers.",
+      "Request product samples to test quality and craftsmanship prior to placing large bulk production runs.",
+      "Utilize Alibaba RFQ (Request for Quotation) to receive competitive bids from multiple vetted factories simultaneously."
+    ],
+    "related": [
+      "aliexpress",
+      "temu",
+      "amazon",
+      "hacoo"
+    ],
+    "faqs": [
+      {
+        "question": "Is Alibaba safe for wholesale sourcing?",
+        "answer": "Yes, Alibaba is highly safe when sourcing from Verified Suppliers covered by Trade Assurance. Trade Assurance protects your payment in escrow and guarantees on-time dispatch and product quality standards."
+      },
+      {
+        "question": "What is Alibaba Trade Assurance and how does it protect buyers?",
+        "answer": "Alibaba Trade Assurance is a free purchase protection service that holds funds in escrow until you confirm order receipt and inspection. If product quality or dispatch dates do not match the contract, Alibaba issues a full refund."
+      },
+      {
+        "question": "What is the difference between Alibaba and AliExpress?",
+        "answer": "Alibaba is a B2B wholesale marketplace designed for bulk orders, OEM manufacturing, and factory customization, whereas AliExpress is a B2C marketplace tailored for single-unit retail purchases with fast consumer shipping."
+      },
+      {
+        "question": "How do Minimum Order Quantities (MOQ) work on Alibaba?",
+        "answer": "MOQ is the minimum unit volume a manufacturer requires to initiate production. Many Alibaba suppliers offer low MOQ sample orders (1 to 10 units) for initial product evaluation."
+      },
+      {
+        "question": "How do I get verified discounts and wholesale deals on Alibaba?",
+        "answer": "You can access verified wholesale deals, March Expo discounts, and Trade Assurance promotions by visiting Alibaba via our official PlayNewApps partner link."
+      },
+      {
+        "question": "What payment methods are accepted on Alibaba?",
+        "answer": "Alibaba supports Credit/Debit cards (Visa, MasterCard), Wire Transfer (T/T), PayPal, Apple Pay, Google Pay, Online Bank Payments, and Alibaba Pay Later terms."
+      }
+    ]
   }
 ]

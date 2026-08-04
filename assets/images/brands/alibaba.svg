@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="500" height="120">
+  <defs>
+    <linearGradient id="alibaba-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6A00"/>
+      <stop offset="100%" stop-color="#FF4500"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Badge / Icon -->
+  <rect x="10" y="10" width="100" height="100" rx="24" fill="url(#alibaba-grad)"/>
+  <!-- Lowercase 'a' face motif of Alibaba -->
+  <path d="M60 30 C43 30 32 42 32 58 C32 75 42 88 60 88 C70 88 78 83 83 75 L83 86 L95 86 L95 32 L83 32 L83 42 C78 35 70 30 60 30 Z M62 41 C72 41 83 49 83 60 C83 71 72 77 62 77 C51 77 43 69 43 60 C43 49 51 41 62 41 Z" fill="#FFFFFF"/>
+  <!-- Typography Alibaba.com -->
+  <text x="130" y="72" font-family="'Roboto', 'Helvetica Neue', Arial, sans-serif" font-size="46" font-weight="900" fill="#FF5000" letter-spacing="-1">Alibaba<tspan fill="#333333" font-weight="500">.com</tspan></text>
+  <text x="132" y="94" font-family="'Roboto', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" fill="#666666" letter-spacing="1.5">GLOBAL B2B WHOLESALE</text>
+</svg>

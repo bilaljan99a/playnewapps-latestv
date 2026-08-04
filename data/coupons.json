@@ -1,5 +1,101 @@
 [
   {
+    "id": "alibaba-20off-hh12",
+    "title": "$20 OFF Your Order",
+    "description": "Use coupon code during checkout to receive $20 OFF on eligible Alibaba orders.",
+    "store": {
+      "id": "alibaba",
+      "name": "Alibaba",
+      "logo": "/assets/images/brands/alibaba.svg"
+    },
+    "discount": "$20 OFF",
+    "badges": [
+      "Verified Code",
+      "$20 OFF",
+      "Exclusive"
+    ],
+    "code": "HH12",
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://rzekl.com/g/pm1aev55clb68b264a76219aa26f6f/?ulp=https%3A%2F%2Fwww.alibaba.com",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 3120,
+    "successPercentage": 100
+  },
+  {
+    "id": "alibaba-saving-spotlight",
+    "title": "Saving Spotlight",
+    "description": "Shop Alibaba's Saving Spotlight collection and save up to 80% below retail prices on selected products.",
+    "store": {
+      "id": "alibaba",
+      "name": "Alibaba",
+      "logo": "/assets/images/brands/alibaba.svg"
+    },
+    "discount": "UP TO 80% OFF",
+    "badges": [
+      "Verified Deal",
+      "Spotlight",
+      "Up to 80% Off"
+    ],
+    "code": null,
+    "successRate": "99%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://rzekl.com/g/pm1aev55clb68b264a76219aa26f6f/?ulp=https%3A%2F%2Fwww.alibaba.com",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 2840,
+    "successPercentage": 99
+  },
+  {
+    "id": "alibaba-trade-assurance-deal",
+    "title": "Up to 50% Off Factory-Direct Wholesale Sourcing & Trade Assurance",
+    "description": "Source direct from verified manufacturers with Trade Assurance 100% purchase protection. Factory-gate pricing on electronics, machinery, fashion, and home goods.",
+    "store": {
+      "id": "alibaba",
+      "name": "Alibaba",
+      "logo": "/assets/images/brands/alibaba.svg"
+    },
+    "discount": "UP TO 50% OFF",
+    "badges": [
+      "Verified",
+      "Trade Assurance",
+      "No Code Required"
+    ],
+    "code": null,
+    "successRate": "99%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://rzekl.com/g/pm1aev55clb68b264a76219aa26f6f/?ulp=https%3A%2F%2Fwww.alibaba.com",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 2340,
+    "successPercentage": 99
+  },
+  {
+    "id": "alibaba-sample-order-discount",
+    "title": "Low MOQ Sample Orders & Free Quotation Requests (RFQ)",
+    "description": "Request free factory quotes (RFQ) and order low MOQ product samples before starting mass production runs on Alibaba.",
+    "store": {
+      "id": "alibaba",
+      "name": "Alibaba",
+      "logo": "/assets/images/brands/alibaba.svg"
+    },
+    "discount": "LOW MOQ SAMPLES",
+    "badges": [
+      "Verified",
+      "Sample Deal",
+      "Exclusive"
+    ],
+    "code": null,
+    "successRate": "98%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://rzekl.com/g/pm1aev55clb68b264a76219aa26f6f/?ulp=https%3A%2F%2Fwww.alibaba.com",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1820,
+    "successPercentage": 98
+  },
+  {
     "id": "wondershare-filmora-student-20off",
     "title": "20% Off Wondershare Filmora 15 Student & Teacher Yearly Plan",
     "description": "Verified student and educator discount: Save 20% on Filmora 15 Annual Student plan ($31.99/year with code FILMORA20).",

@@ -1739,6 +1739,53 @@ App.initStorePage = async function() {
         }
     }
 
+    // Promotional Banners Rendering
+    const bannerSec1 = document.getElementById('store-banner-section-1');
+    const bannerSec2 = document.getElementById('store-banner-section-2');
+
+    if (store.banners && store.banners.length > 0) {
+        if (store.banners[0] && bannerSec1) {
+            const b1 = store.banners[0];
+            bannerSec1.style.display = 'block';
+            bannerSec1.innerHTML = `
+                <div class="card" style="padding: 1.25rem; border-radius: 12px; overflow: hidden; background: var(--card-bg); border: 1px solid var(--border-color); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+                    <a href="${b1.link}" target="_blank" rel="noopener sponsored" style="display: block; text-decoration: none; border-radius: 10px; overflow: hidden; transition: transform 0.2s ease;">
+                        <img src="${b1.image}" alt="${b1.title}" style="width: 100%; height: auto; display: block; border-radius: 10px; border: 1px solid var(--border-color);" loading="lazy">
+                    </a>
+                    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem; padding: 0.25rem 0.25rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-color); font-weight: 700; font-size: 0.925rem;">
+                            <span class="material-icons-round" style="color: #FF6A00;">campaign</span>
+                            <span>${b1.title}</span>
+                        </div>
+                        <a href="${b1.link}" target="_blank" rel="noopener sponsored" class="btn btn-sm" style="background: #FF6A00; color: #fff; font-weight: 800; padding: 0.45rem 1.25rem; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
+                            ${b1.buttonText || 'Claim Offer'} <span class="material-icons-round" style="font-size: 0.9rem;">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            `;
+        }
+        if (store.banners[1] && bannerSec2) {
+            const b2 = store.banners[1];
+            bannerSec2.style.display = 'block';
+            bannerSec2.innerHTML = `
+                <div class="card" style="padding: 1.25rem; border-radius: 12px; overflow: hidden; background: var(--card-bg); border: 1px solid var(--border-color); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+                    <a href="${b2.link}" target="_blank" rel="noopener sponsored" style="display: block; text-decoration: none; border-radius: 10px; overflow: hidden; transition: transform 0.2s ease;">
+                        <img src="${b2.image}" alt="${b2.title}" style="width: 100%; height: auto; display: block; border-radius: 10px; border: 1px solid var(--border-color);" loading="lazy">
+                    </a>
+                    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem; padding: 0.25rem 0.25rem 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-color); font-weight: 700; font-size: 0.925rem;">
+                            <span class="material-icons-round" style="color: #2563EB;">stars</span>
+                            <span>${b2.title}</span>
+                        </div>
+                        <a href="${b2.link}" target="_blank" rel="noopener sponsored" class="btn btn-sm" style="background: #2563EB; color: #fff; font-weight: 800; padding: 0.45rem 1.25rem; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
+                            ${b2.buttonText || 'Shop Collection'} <span class="material-icons-round" style="font-size: 0.9rem;">shopping_bag</span>
+                        </a>
+                    </div>
+                </div>
+            `;
+        }
+    }
+
     // About Brand Section
     const brandTitle = document.getElementById('store-brand-title');
     const brandText = document.getElementById('store-brand-about-text');
