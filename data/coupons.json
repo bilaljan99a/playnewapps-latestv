@@ -1032,121 +1032,6 @@
     "successPercentage": 95
   },
   {
-    "id": "nordvpn-2yr-deal",
-    "title": "Up to 67% Off NordVPN 2-Year Plan + Extra Bonus Months Free",
-    "description": "Get 67% off NordVPN's 2-Year Plan plus 3 extra months free. Protect up to 10 devices simultaneously.",
-    "store": {
-      "id": "nordvpn",
-      "name": "NordVPN",
-      "logo": "/assets/images/brands/nordvpn.svg"
-    },
-    "discount": "67% OFF",
-    "badges": [
-      "Verified",
-      "Top Deal"
-    ],
-    "code": null,
-    "successRate": "100%",
-    "expiry": "Ongoing Offer",
-    "affiliateLink": "https://nordvpn.com/special-deal/",
-    "isTop": true,
-    "status": "active",
-    "votesCount": 1420,
-    "successPercentage": 99
-  },
-  {
-    "id": "nordvpn-student-15",
-    "title": "Extra 15% Off NordVPN for Students & Youth (18-26)",
-    "description": "Students and young adults receive an additional 15% discount code via Student Beans verification.",
-    "store": {
-      "id": "nordvpn",
-      "name": "NordVPN",
-      "logo": "/assets/images/brands/nordvpn.svg"
-    },
-    "discount": "EXTRA 15%",
-    "badges": [
-      "Verified",
-      "Student Offer"
-    ],
-    "code": null,
-    "successRate": "100%",
-    "expiry": "Ongoing Offer",
-    "affiliateLink": "https://nordvpn.com/student-discount/",
-    "isTop": false,
-    "status": "active",
-    "votesCount": 680,
-    "successPercentage": 98
-  },
-  {
-    "id": "nordvpn-meshnet-free",
-    "title": "NordVPN Meshnet - 100% Free Encrypted LAN & Remote IP Access",
-    "description": "Connect up to 60 personal devices in a private virtual LAN for free home IP traffic routing and file sharing.",
-    "store": {
-      "id": "nordvpn",
-      "name": "NordVPN",
-      "logo": "/assets/images/brands/nordvpn.svg"
-    },
-    "discount": "100% FREE",
-    "badges": [
-      "Verified",
-      "Free Feature"
-    ],
-    "code": null,
-    "successRate": "100%",
-    "expiry": "Ongoing Offer",
-    "affiliateLink": "https://meshnet.nordvpn.com/",
-    "isTop": false,
-    "status": "active",
-    "votesCount": 490,
-    "successPercentage": 100
-  },
-  {
-    "id": "nordvpn-ultimate-bundle",
-    "title": "Up to 70% Off NordVPN Ultimate Security Bundle",
-    "description": "Bundle NordVPN with NordPass password manager and 1TB encrypted NordLocker cloud storage for 70% off.",
-    "store": {
-      "id": "nordvpn",
-      "name": "NordVPN",
-      "logo": "/assets/images/brands/nordvpn.svg"
-    },
-    "discount": "70% OFF",
-    "badges": [
-      "Verified",
-      "Bundle Deal"
-    ],
-    "code": null,
-    "successRate": "99%",
-    "expiry": "Ongoing Offer",
-    "affiliateLink": "https://nordvpn.com/pricing/",
-    "isTop": false,
-    "status": "active",
-    "votesCount": 520,
-    "successPercentage": 97
-  },
-  {
-    "id": "nordvpn-30day-guarantee",
-    "title": "30-Day Risk-Free Money-Back Guarantee on All Plans",
-    "description": "Try NordVPN completely risk-free across 10 devices backed by a hassle-free 30-day money-back guarantee.",
-    "store": {
-      "id": "nordvpn",
-      "name": "NordVPN",
-      "logo": "/assets/images/brands/nordvpn.svg"
-    },
-    "discount": "RISK FREE",
-    "badges": [
-      "Verified",
-      "Guarantee"
-    ],
-    "code": null,
-    "successRate": "100%",
-    "expiry": "Ongoing Offer",
-    "affiliateLink": "https://nordvpn.com/special-deal/",
-    "isTop": false,
-    "status": "active",
-    "votesCount": 380,
-    "successPercentage": 99
-  },
-  {
     "id": "notta-ai-30off-assistant",
     "title": "30% Off Notta AI Meeting Assistant",
     "description": "Claim an instant 30% discount on Notta AI Meeting Assistant subscriptions using verified promo code NOTTA30.",
@@ -1354,5 +1239,237 @@
     "status": "active",
     "votesCount": 610,
     "successPercentage": 99
+  },
+  {
+    "id": "nordvpn-75off-deal",
+    "title": "Get 75% Off NordVPN + 3 Extra Months",
+    "description": "Protect all your devices with military-grade encryption, blazing-fast VPN servers, Threat Protection Pro™, Meshnet, Dark Web Monitoring, and a strict no-logs policy. Limited-time offer includes 75% off plus 3 bonus months.",
+    "store": {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "logo": "/assets/images/brands/nordvpn.svg"
+    },
+    "discount": "75% OFF",
+    "badges": [
+      "Verified",
+      "Featured Deal",
+      "Best Value"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://qwpeg.com/g/mai1uhgx16b68b264a76004ed038cb/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1850,
+    "successPercentage": 100
+  },
+  {
+    "id": "nordvpn-complete-72",
+    "title": "Save Up To 72% On NordVPN Complete Plan",
+    "description": "Get maximum cybersecurity with NordVPN, NordPass password manager, and 1TB NordLocker encrypted cloud storage at up to 72% off.",
+    "store": {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "logo": "/assets/images/brands/nordvpn.svg"
+    },
+    "discount": "72% OFF",
+    "badges": [
+      "Verified",
+      "Complete Bundle",
+      "Top Deal"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://qwpeg.com/g/mai1uhgx16b68b264a76004ed038cb/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1420,
+    "successPercentage": 99
+  },
+  {
+    "id": "nordvpn-nordpass-70",
+    "title": "Up To 70% Off NordPass Premium Password Manager",
+    "description": "Store and auto-fill passwords securely across all your devices with end-to-end zero-knowledge encryption and biometric login.",
+    "store": {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "logo": "/assets/images/brands/nordvpn.svg"
+    },
+    "discount": "70% OFF",
+    "badges": [
+      "Verified",
+      "Password Manager"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://qwpeg.com/g/mai1uhgx16b68b264a76004ed038cb/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 980,
+    "successPercentage": 98
+  },
+  {
+    "id": "nordvpn-nordlocker-deal",
+    "title": "Save On NordLocker Secure Cloud Storage",
+    "description": "Protect your confidential files, photos, and backups with 1TB of zero-knowledge encrypted cloud storage and seamless cross-device sync.",
+    "store": {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "logo": "/assets/images/brands/nordvpn.svg"
+    },
+    "discount": "CLOUD STORAGE",
+    "badges": [
+      "Verified",
+      "Encrypted Storage"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://qwpeg.com/g/mai1uhgx16b68b264a76004ed038cb/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 810,
+    "successPercentage": 99
+  },
+  {
+    "id": "nordvpn-business-solutions",
+    "title": "Business VPN Solutions For Teams (NordLayer)",
+    "description": "Secure corporate network access, hybrid workforce remote connections, and sensitive company data with centralized admin controls.",
+    "store": {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "logo": "/assets/images/brands/nordvpn.svg"
+    },
+    "discount": "FOR TEAMS",
+    "badges": [
+      "Verified",
+      "Enterprise Protection"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://qwpeg.com/g/mai1uhgx16b68b264a76004ed038cb/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 750,
+    "successPercentage": 98
+  },
+  {
+    "id": "nordvpn-student-discount",
+    "title": "Exclusive Student & Youth Discounts - Extra 15% Savings",
+    "description": "Students, apprentices, and young adults (18-26) unlock extra savings on long-term NordVPN cybersecurity subscriptions.",
+    "store": {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "logo": "/assets/images/brands/nordvpn.svg"
+    },
+    "discount": "EXTRA 15% OFF",
+    "badges": [
+      "Verified",
+      "Student Deal"
+    ],
+    "code": "STUDENT15",
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://qwpeg.com/g/mai1uhgx16b68b264a76004ed038cb/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1120,
+    "successPercentage": 100
+  },
+  {
+    "id": "nordvpn-2yr-max-savings",
+    "title": "Buy 2-Year Plan & Save The Most",
+    "description": "Lock in the lowest effective monthly price by choosing a 2-Year NordVPN plan with maximum discount and extra bonus months.",
+    "store": {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "logo": "/assets/images/brands/nordvpn.svg"
+    },
+    "discount": "MAX SAVINGS",
+    "badges": [
+      "Verified",
+      "Best Value"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://qwpeg.com/g/mai1uhgx16b68b264a76004ed038cb/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1650,
+    "successPercentage": 99
+  },
+  {
+    "id": "nordvpn-30day-guarantee",
+    "title": "30-Day Money-Back Guarantee on All Subscription Plans",
+    "description": "Try NordVPN completely risk-free for 30 days. If you are not 100% satisfied with speed or privacy, receive a full refund.",
+    "store": {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "logo": "/assets/images/brands/nordvpn.svg"
+    },
+    "discount": "RISK FREE",
+    "badges": [
+      "Verified",
+      "Money-Back Guarantee"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://qwpeg.com/g/mai1uhgx16b68b264a76004ed038cb/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1980,
+    "successPercentage": 100
+  },
+  {
+    "id": "nordvpn-threat-protection-pro",
+    "title": "Threat Protection Pro Included Free with NordVPN",
+    "description": "Block malware file downloads, malicious phishing websites, intrusive web trackers, and pop-up ads automatically at the OS level.",
+    "store": {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "logo": "/assets/images/brands/nordvpn.svg"
+    },
+    "discount": "INCLUDED FREE",
+    "badges": [
+      "Verified",
+      "Anti-Malware Security"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://qwpeg.com/g/mai1uhgx16b68b264a76004ed038cb/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1340,
+    "successPercentage": 99
+  },
+  {
+    "id": "nordvpn-10-devices-support",
+    "title": "Protect Up To 10 Devices Simultaneously",
+    "description": "One NordVPN account protects 10 devices at once—including Mac, Windows, iPhone, Android, Linux, Fire TV, and Wi-Fi routers.",
+    "store": {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "logo": "/assets/images/brands/nordvpn.svg"
+    },
+    "discount": "10 DEVICES",
+    "badges": [
+      "Verified",
+      "Multi-Device Coverage"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://qwpeg.com/g/mai1uhgx16b68b264a76004ed038cb/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1210,
+    "successPercentage": 100
   }
 ]
