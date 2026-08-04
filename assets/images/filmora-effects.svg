@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0f0f1a"/><stop offset="100%" stop-color="#1a1a2e"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bgGrad5)"/>
+  <rect width="1200" height="42" fill="#090d16"/>
+  <text x="20" y="26" fill="#a855f7" font-family="sans-serif" font-size="14" font-weight="800">Filmora 15 - 3D Text Inspector &amp; Color Grading Scopes</text>
+
+  <!-- Left: 3D Title Gizmo Inspector -->
+  <rect x="20" y="60" width="560" height="585" rx="8" fill="#111827" stroke="#1e293b"/>
+  <text x="40" y="95" fill="#38bdf8" font-family="sans-serif" font-size="16" font-weight="800">3D Typography Gizmo &amp; Lighting</text>
+
+  <rect x="40" y="115" width="520" height="300" rx="8" fill="#030712"/>
+  <text x="300" y="250" fill="#a855f7" font-family="sans-serif" font-size="32" font-weight="900" text-anchor="middle">3D TEXT TITLE</text>
+  <!-- 3D Rotation Gizmo Circles -->
+  <ellipse cx="300" cy="240" rx="140" ry="40" fill="none" stroke="#ef4444" stroke-width="2"/>
+  <ellipse cx="300" cy="240" rx="40" ry="140" fill="none" stroke="#22c55e" stroke-width="2"/>
+
+  <text x="40" y="440" fill="#f8fafc" font-family="sans-serif" font-size="13">X-Axis Rotation: 45°</text>
+  <text x="40" y="480" fill="#f8fafc" font-family="sans-serif" font-size="13">Depth Extrusion: 25mm</text>
+  <text x="40" y="520" fill="#f8fafc" font-family="sans-serif" font-size="13">Metallic Reflection: 80%</text>
+
+  <!-- Right: LUT Color Wheels -->
+  <rect x="600" y="60" width="580" height="585" rx="8" fill="#0f172a" stroke="#1e293b"/>
+  <text x="620" y="95" fill="#f59e0b" font-family="sans-serif" font-size="16" font-weight="800">Color Wheels &amp; RGB Parade Scopes</text>
+
+  <!-- Color Wheels -->
+  <circle cx="700" cy="180" r="45" fill="none" stroke="#2563eb" stroke-width="3"/>
+  <text x="700" y="240" fill="#cbd5e1" font-family="sans-serif" font-size="11" text-anchor="middle">LIFT</text>
+
+  <circle cx="890" cy="180" r="45" fill="none" stroke="#10b981" stroke-width="3"/>
+  <text x="890" y="240" fill="#cbd5e1" font-family="sans-serif" font-size="11" text-anchor="middle">GAMMA</text>
+
+  <circle cx="1080" cy="180" r="45" fill="none" stroke="#ef4444" stroke-width="3"/>
+  <text x="1080" y="240" fill="#cbd5e1" font-family="sans-serif" font-size="11" text-anchor="middle">GAIN</text>
+
+  <!-- Preset LUT Grid -->
+  <rect x="620" y="270" width="540" height="350" rx="8" fill="#030712"/>
+  <text x="640" y="300" fill="#38d39f" font-family="sans-serif" font-size="13" font-weight="700">Cinematic LUT Presets</text>
+  <g transform="translate(640, 320)">
+    <rect x="0" y="0" width="150" height="90" rx="6" fill="#1e293b" stroke="#38d39f" stroke-width="2"/>
+    <text x="75" y="50" fill="#ffffff" font-family="sans-serif" font-size="11" text-anchor="middle">Teal &amp; Orange</text>
+
+    <rect x="170" y="0" width="150" height="90" rx="6" fill="#1e293b"/>
+    <text x="245" y="50" fill="#ffffff" font-family="sans-serif" font-size="11" text-anchor="middle">Hollywood Gold</text>
+
+    <rect x="340" y="0" width="150" height="90" rx="6" fill="#1e293b"/>
+    <text x="415" y="50" fill="#ffffff" font-family="sans-serif" font-size="11" text-anchor="middle">Cyber Neon</text>
+
+    <rect x="0" y="110" width="150" height="90" rx="6" fill="#1e293b"/>
+    <text x="75" y="160" fill="#ffffff" font-family="sans-serif" font-size="11" text-anchor="middle">B&amp;W Film Noir</text>
+
+    <rect x="170" y="110" width="150" height="90" rx="6" fill="#1e293b"/>
+    <text x="245" y="160" fill="#ffffff" font-family="sans-serif" font-size="11" text-anchor="middle">Kodak Chrome</text>
+
+    <rect x="340" y="110" width="150" height="90" rx="6" fill="#1e293b"/>
+    <text x="415" y="160" fill="#ffffff" font-family="sans-serif" font-size="11" text-anchor="middle">Fuji Film 35mm</text>
+  </g>
+</svg>

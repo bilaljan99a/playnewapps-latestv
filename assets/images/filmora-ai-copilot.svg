@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#020617"/><stop offset="100%" stop-color="#0f172a"/></linearGradient>
+    <linearGradient id="aiGlow" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#38d39f"/><stop offset="100%" stop-color="#2563eb"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bgGrad4)"/>
+  <rect width="1200" height="42" fill="#090d16"/>
+  <text x="20" y="26" fill="#38d39f" font-family="sans-serif" font-size="14" font-weight="800">Filmora 15 - AI Copilot 2.0 &amp; Smart Rotoscoping Suite</text>
+
+  <!-- Left: AI Copilot Chat Window -->
+  <rect x="20" y="60" width="460" height="585" rx="8" fill="#0f172a" stroke="#1e293b"/>
+  <rect x="20" y="60" width="460" height="50" rx="8" fill="url(#aiGlow)"/>
+  <text x="40" y="92" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="800">✨ AI Copilot 2.0 Assistant</text>
+
+  <!-- Chat Messages -->
+  <g transform="translate(35, 130)">
+    <!-- User Bubble -->
+    <rect x="120" y="0" width="280" height="50" rx="8" fill="#1e293b"/>
+    <text x="135" y="22" fill="#f8fafc" font-family="sans-serif" font-size="11">"Remove background noise &amp; match</text>
+    <text x="135" y="38" fill="#f8fafc" font-family="sans-serif" font-size="11">color grade from Clip A to Clip B."</text>
+
+    <!-- AI Response 1 -->
+    <rect x="0" y="65" width="320" height="65" rx="8" fill="#1e1b4b" stroke="#6366f1"/>
+    <text x="15" y="88" fill="#38d39f" font-family="sans-serif" font-size="11" font-weight="700">AI Copilot:</text>
+    <text x="15" y="106" fill="#cbd5e1" font-family="sans-serif" font-size="11">Applied AI Audio Denoise (-18dB)</text>
+    <text x="15" y="120" fill="#cbd5e1" font-family="sans-serif" font-size="11">&amp; matched Teal-Orange LUT profile.</text>
+
+    <!-- User Bubble 2 -->
+    <rect x="100" y="145" width="300" height="40" rx="8" fill="#1e293b"/>
+    <text x="115" y="170" fill="#f8fafc" font-family="sans-serif" font-size="11">"Auto-generate captions in English."</text>
+
+    <!-- AI Response 2 -->
+    <rect x="0" y="200" width="320" height="50" rx="8" fill="#1e1b4b" stroke="#6366f1"/>
+    <text x="15" y="222" fill="#38d39f" font-family="sans-serif" font-size="11" font-weight="700">AI Copilot:</text>
+    <text x="15" y="238" fill="#cbd5e1" font-family="sans-serif" font-size="11">Generated 142 subtitles on Track V4.</text>
+  </g>
+
+  <!-- Prompt Input Bar -->
+  <rect x="35" y="580" width="430" height="45" rx="8" fill="#1e293b" stroke="#38d39f"/>
+  <text x="50" y="607" fill="#94a3b8" font-family="sans-serif" font-size="12">Type natural language command...</text>
+
+  <!-- Right: AI Smart Cutout Rotoscoping View -->
+  <rect x="500" y="60" width="680" height="585" rx="8" fill="#030712" stroke="#1e293b"/>
+  <text x="520" y="95" fill="#38d39f" font-family="sans-serif" font-size="16" font-weight="800">AI Smart Cutout 2.0 - Subject Rotoscoping</text>
+
+  <!-- Rotoscoping Canvas -->
+  <rect x="520" y="115" width="640" height="400" rx="8" fill="#0f172a"/>
+  <!-- Subject Silhouette with Green Mask -->
+  <circle cx="840" cy="240" r="70" fill="#10b981" opacity="0.4" stroke="#10b981" stroke-width="3"/>
+  <path d="M 770 380 Q 840 280 910 380 Z" fill="#10b981" opacity="0.4" stroke="#10b981" stroke-width="3"/>
+  <text x="840" y="245" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="800" text-anchor="middle">ISOLATED SUBJECT</text>
+  <text x="840" y="270" fill="#38d39f" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">Green Mask Active (No Green Screen Needed)</text>
+
+  <!-- Sliders -->
+  <rect x="520" y="530" width="640" height="100" rx="8" fill="#111827"/>
+  <text x="540" y="555" fill="#cbd5e1" font-family="sans-serif" font-size="12">Edge Feather: 12px</text>
+  <rect x="540" y="565" width="280" height="6" rx="3" fill="#334155"/><rect x="540" y="565" width="160" height="6" rx="3" fill="#38d39f"/>
+  <text x="860" y="555" fill="#cbd5e1" font-family="sans-serif" font-size="12">Hair Isolation: High</text>
+  <rect x="860" y="565" width="280" height="6" rx="3" fill="#334155"/><rect x="860" y="565" width="220" height="6" rx="3" fill="#2563eb"/>
+</svg>

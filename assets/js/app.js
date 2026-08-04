@@ -335,21 +335,26 @@ class App {
                 priceBox.innerHTML = `
                     <h3>Best Prices Today</h3>
                     <ul class="price-comparison-list">
-                        ${review.priceComparison.map(p => `
+                        ${review.priceComparison.map(p => {
+                            const storeName = p.store || p.plan || p.name || 'Official Store';
+                            const planPrice = p.price || '';
+                            const planUrl = p.url || review.downloadUrl || '#';
+                            return `
                             <li class="price-comparison-item ${p.isBest ? 'best-deal-highlight' : ''}">
                                 <div class="price-item-header">
-                                    <span class="store-name">${p.store}</span>
+                                    <span class="store-name">${storeName}</span>
                                     <div class="price-badges">
                                         ${p.isBest ? `<span class="best-deal-badge">Best Deal</span>` : ''}
                                         ${p.badge ? `<span class="deal-badge">${p.badge}</span>` : ''}
                                     </div>
                                 </div>
                                 <div class="price-item-body">
-                                    <span class="price-amount">${p.price}</span>
-                                    <a href="${p.url}" target="_blank" rel="noopener sponsored" class="btn btn-sm ${p.isBest ? 'btn-primary' : 'btn-outline'}">View Deal</a>
+                                    <span class="price-amount">${planPrice}</span>
+                                    <a href="${planUrl}" target="_blank" rel="noopener sponsored" class="btn btn-sm ${p.isBest ? 'btn-primary' : 'btn-outline'}">View Deal</a>
                                 </div>
                             </li>
-                        `).join('')}
+                        `;
+                        }).join('')}
                     </ul>
                 `;
             } else {
@@ -464,8 +469,12 @@ class App {
         }
 
         // 1. Update Title & SEO Metadata
-        document.title = `${review.title} Review 2026 | PlayNewApps`;
-      const canonicalUrl = `https://playnewapps.store/review.html?id=${review.id}`;
+        const baseTitle = (review.title || '').replace(/\s+Review$/i, '');
+        const heroTitle = `${baseTitle} Review`;
+        const pageTitle = review.metaTitle || `${baseTitle} Review (2026): Is It Worth Buying?`;
+        
+        document.title = pageTitle.includes('PlayNewApps') ? pageTitle : `${pageTitle} | PlayNewApps`;
+        const canonicalUrl = `https://playnewapps.store/review.html?id=${review.id}`;
         
         const updateMeta = (selector, attr, content) => {
             const el = document.querySelector(selector);
@@ -474,33 +483,91 @@ class App {
 
         updateMeta('meta[name="description"]', 'content', review.description || '');
         updateMeta('#canonical-url', 'href', canonicalUrl);
-        updateMeta('#og-title', 'content', `${review.title} Review | PlayNewApps`);
+        updateMeta('#og-title', 'content', `${pageTitle} | PlayNewApps`);
         updateMeta('#og-description', 'content', review.description || '');
         updateMeta('#og-url', 'content', canonicalUrl);
         updateMeta('#og-image', 'content', review.icon ? `https://playnewapps.store${review.icon}` : '');
-        updateMeta('#twitter-title', 'content', `${review.title} Review (2026)`);
+        updateMeta('#twitter-title', 'content', pageTitle);
         updateMeta('#twitter-description', 'content', review.description || '');
         updateMeta('#twitter-image', 'content', review.icon ? `https://playnewapps.store${review.icon}` : '');
         
         // 2. Schema JSON-LD Injection
         const schemaReview = {
             "@context": "https://schema.org",
-            "@type": "Review",
-            "itemReviewed": {
-                "@type": "SoftwareApplication",
-                "name": review.title,
-                "applicationCategory": review.categoryId || "MultimediaApplication",
-                "image": review.icon ? `https://playnewapps.store${review.icon}` : ''
-            },
-            "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": (review.rating || 5).toString(),
-                "bestRating": "5"
-            },
-            "author": {
-                "@type": "Person",
-                "name": review.developer || "PlayNewApps Expert"
-            }
+            "@graph": [
+                {
+                    "@type": "Review",
+                    "@id": `${canonicalUrl}#review`,
+                    "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "@id": `${canonicalUrl}#software`,
+                        "name": baseTitle,
+                        "applicationCategory": "MultimediaApplication",
+                        "operatingSystem": (review.platforms || []).join(', ') || "Windows, macOS",
+                        "image": review.icon ? `https://playnewapps.store${review.icon}` : '',
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "49.99",
+                            "priceCurrency": "USD",
+                            "availability": "https://schema.org/InStock",
+                            "url": review.officialUrl || canonicalUrl
+                        }
+                    },
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": (review.rating || 4.8).toString(),
+                        "bestRating": "5",
+                        "worstRating": "1"
+                    },
+                    "author": {
+                        "@type": "Organization",
+                        "name": "PlayNewApps",
+                        "url": "https://playnewapps.store"
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "PlayNewApps",
+                        "url": "https://playnewapps.store"
+                    }
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://playnewapps.store/" },
+                        { "@type": "ListItem", "position": 2, "name": "Reviews", "item": "https://playnewapps.store/category.html?id=all" },
+                        { "@type": "ListItem", "position": 3, "name": heroTitle, "item": canonicalUrl }
+                    ]
+                },
+                {
+                    "@type": "FAQPage",
+                    "mainEntity": [
+                        {
+                            "@type": "Question",
+                            "name": "Is Wondershare Filmora 15 beginner-friendly?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Yes, Filmora is designed with an intuitive magnetic multi-track timeline, visual drag-and-drop effects, and interactive AI Copilot assistance so complete beginners can produce polished 4K videos in minutes."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Can I export 4K videos without a watermark in Filmora free trial?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "The free trial allows full access to all editing features but adds a watermark during export. Upgrading to an Annual Plan or Perpetual License removes all watermarks and enables 4K/8K export rendering."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "What is the difference between Filmora Annual Plan and Perpetual License?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "The Annual Plan ($49.99/yr) includes continuous major release upgrades (Filmora 15, 16, etc.) and monthly AI cloud credits. The Perpetual License ($79.99 one-time) grants lifetime ownership of Filmora 15."
+                            }
+                        }
+                    ]
+                }
+            ]
         };
         const scriptSchema = document.createElement('script');
         scriptSchema.type = 'application/ld+json';
@@ -509,7 +576,7 @@ class App {
         
         // 3. Update Breadcrumb
         const breadcrumbEl = document.getElementById('breadcrumb-current');
-        if (breadcrumbEl) breadcrumbEl.textContent = review.title;
+        if (breadcrumbEl) breadcrumbEl.textContent = heroTitle;
 
         // 4. Hero Section Updates
         const setText = (sel, text) => { const el = document.querySelector(sel); if(el) el.textContent = text; };
@@ -522,7 +589,7 @@ class App {
             }
         };
 
-        setText('.review-title', `${review.title} Review`);
+        setText('.review-title', heroTitle);
         setText('.review-subtitle', review.description || '');
         setSrc('.app-icon', review.icon, `${review.title} Icon`);
         
@@ -650,27 +717,28 @@ class App {
         const videoSection = document.getElementById('video-section');
         const videoContainer = document.querySelector('.video-container');
         let videoObj = null;
+        let vId = '';
         if (typeof review.video === 'string' && review.video.trim()) {
-            const vId = review.video.trim();
-            videoObj = {
-                youtubeId: vId,
-                embedUrl: `https://www.youtube-nocookie.com/embed/${vId}`,
-                thumbnail: `https://img.youtube.com/vi/${vId}/maxresdefault.jpg`,
-                title: `Watch ${review.id === 'kinemaster' ? 'KineMaster' : review.title} in Action`,
-                description: `Watch the official video tutorial and walkthrough to see ${review.id === 'kinemaster' ? 'KineMaster' : review.title}'s core features, interface, and capabilities in action.`
-            };
-        } else if (review.video && typeof review.video === 'object' && (review.video.thumbnail || review.video.embedUrl || review.video.youtubeId)) {
-            const vId = review.video.youtubeId || '';
-            let rawEmbed = review.video.embedUrl || (vId ? `https://www.youtube-nocookie.com/embed/${vId}` : '');
-            if (rawEmbed) {
-                rawEmbed = rawEmbed.replace('www.youtube.com', 'www.youtube-nocookie.com');
+            const raw = review.video.trim();
+            const match = raw.match(/(?:v=|\/embed\/|\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+            vId = match ? match[1] : (raw.length === 11 ? raw : '');
+        } else if (review.video && typeof review.video === 'object') {
+            vId = review.video.youtubeId || '';
+            if (!vId && review.video.embedUrl) {
+                const match = review.video.embedUrl.match(/(?:v=|\/embed\/|\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+                if (match) vId = match[1];
             }
+        }
+
+        if (vId) {
+            const embedUrl = `https://www.youtube-nocookie.com/embed/${vId}`;
+            const thumbUrl = (typeof review.video === 'object' && review.video.thumbnail) ? review.video.thumbnail : `https://img.youtube.com/vi/${vId}/hqdefault.jpg`;
             videoObj = {
                 youtubeId: vId,
-                embedUrl: rawEmbed,
-                thumbnail: review.video.thumbnail || (vId ? `https://img.youtube.com/vi/${vId}/maxresdefault.jpg` : ''),
-                title: review.video.title || `Watch ${review.id === 'kinemaster' ? 'KineMaster' : review.title} in Action`,
-                description: review.video.description || `Watch the official video tutorial and walkthrough to see ${review.id === 'kinemaster' ? 'KineMaster' : review.title}'s core features, interface, and capabilities in action.`
+                embedUrl: embedUrl,
+                thumbnail: thumbUrl,
+                title: (typeof review.video === 'object' && review.video.title) || `Watch ${review.id === 'kinemaster' ? 'KineMaster' : review.title} in Action`,
+                description: (typeof review.video === 'object' && review.video.description) || `Watch the official video tutorial and walkthrough to see ${review.id === 'kinemaster' ? 'KineMaster' : review.title}'s core features, interface, and capabilities in action.`
             };
         }
 

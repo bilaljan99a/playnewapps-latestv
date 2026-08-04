@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgGrad8" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#020617"/><stop offset="100%" stop-color="#0f172a"/></linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#d97706"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bgGrad8)"/>
+  <rect width="1200" height="42" fill="#090d16"/>
+  <text x="20" y="26" fill="#fbbf24" font-family="sans-serif" font-size="14" font-weight="800">PlayNewApps Review Summary - Wondershare Filmora 15</text>
+
+  <!-- Left Side: Gold Seal Award -->
+  <rect x="60" y="80" width="460" height="520" rx="12" fill="#0f172a" stroke="#d97706" stroke-width="2"/>
+  <circle cx="290" cy="240" r="100" fill="url(#goldGrad)"/>
+  <circle cx="290" cy="240" r="85" fill="#0f172a"/>
+  <text x="290" y="220" fill="#fbbf24" font-family="sans-serif" font-size="14" font-weight="900" text-anchor="middle">PLAYNEWAPPS</text>
+  <text x="290" y="250" fill="#ffffff" font-family="sans-serif" font-size="22" font-weight="900" text-anchor="middle">EDITOR'S CHOICE</text>
+  <text x="290" y="275" fill="#fbbf24" font-family="sans-serif" font-size="14" font-weight="800" text-anchor="middle">★ ★ ★ ★ ★ 2026</text>
+
+  <text x="290" y="380" fill="#ffffff" font-family="sans-serif" font-size="42" font-weight="900" text-anchor="middle">4.8 <tspan font-size="20" fill="#94a3b8">/ 5.0</tspan></text>
+  <text x="290" y="420" fill="#10b981" font-family="sans-serif" font-size="16" font-weight="800" text-anchor="middle">OVERALL RATING: EXCELLENT</text>
+
+  <!-- Right Side: Score Bars -->
+  <rect x="560" y="80" width="580" height="520" rx="12" fill="#0f172a" stroke="#1e293b"/>
+  <text x="590" y="125" fill="#f8fafc" font-family="sans-serif" font-size="20" font-weight="800">Performance Breakdown</text>
+
+  <g transform="translate(590, 160)">
+    <text x="0" y="20" fill="#cbd5e1" font-family="sans-serif" font-size="14" font-weight="700">AI Innovation &amp; Copilot 2.0</text>
+    <text x="500" y="20" fill="#38d39f" font-family="sans-serif" font-size="14" font-weight="800">9.8 / 10</text>
+    <rect x="0" y="35" width="500" height="12" rx="6" fill="#1e293b"/><rect x="0" y="35" width="490" height="12" rx="6" fill="#38d39f"/>
+
+    <text x="0" y="90" fill="#cbd5e1" font-family="sans-serif" font-size="14" font-weight="700">4K GPU Render Speed</text>
+    <text x="500" y="90" fill="#2563eb" font-family="sans-serif" font-size="14" font-weight="800">9.6 / 10</text>
+    <rect x="0" y="105" width="500" height="12" rx="6" fill="#1e293b"/><rect x="0" y="105" width="480" height="12" rx="6" fill="#2563eb"/>
+
+    <text x="0" y="160" fill="#cbd5e1" font-family="sans-serif" font-size="14" font-weight="700">Ease of Use &amp; Learning Curve</text>
+    <text x="500" y="160" fill="#10b981" font-family="sans-serif" font-size="14" font-weight="800">9.9 / 10</text>
+    <rect x="0" y="175" width="500" height="12" rx="6" fill="#1e293b"/><rect x="0" y="175" width="495" height="12" rx="6" fill="#10b981"/>
+
+    <text x="0" y="230" fill="#cbd5e1" font-family="sans-serif" font-size="14" font-weight="700">Value for Money &amp; Discounts</text>
+    <text x="500" y="230" fill="#f59e0b" font-family="sans-serif" font-size="14" font-weight="800">9.5 / 10</text>
+    <rect x="0" y="245" width="500" height="12" rx="6" fill="#1e293b"/><rect x="0" y="245" width="475" height="12" rx="6" fill="#f59e0b"/>
+  </g>
+</svg>

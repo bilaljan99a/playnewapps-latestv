@@ -139,56 +139,49 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 3000);
     }
 
-    const revealWrappers = document.querySelectorAll('.code-reveal-wrapper');
-    
-    revealWrappers.forEach(wrapper => {
-        const btn = wrapper.querySelector('.show-code-btn');
+    document.addEventListener('click', async (e) => {
+        const btn = e.target.closest('.show-code-btn');
+        if (!btn) return;
+        const wrapper = btn.closest('.code-reveal-wrapper');
+        if (!wrapper) return;
+
         const mask = wrapper.querySelector('.hidden-code-mask');
         const realCode = wrapper.getAttribute('data-code');
         const affiliateLink = wrapper.getAttribute('data-link');
-        
-        if (!btn || !mask) return;
 
-        btn.addEventListener('click', async () => {
-            if (!wrapper.classList.contains('revealed')) {
-                // 1. Reveal the code
-                wrapper.classList.add('revealed');
-                mask.textContent = realCode;
-                btn.textContent = 'Copied';
-                
-                // 2. Copy to clipboard
-                try {
-                    await navigator.clipboard.writeText(realCode);
-                    // 4. Show toast notification
-                    showToast('Coupon copied! Opening store...');
-                } catch (err) {
-                    console.error('Failed to copy text: ', err);
-                    showToast('Code revealed! Opening store...'); // Fallback message
-                }
+        if (!realCode) return;
 
-                // 3. Open affiliate link in new tab after a brief delay
+        if (!wrapper.classList.contains('revealed')) {
+            wrapper.classList.add('revealed');
+            if (mask) mask.textContent = realCode;
+            btn.textContent = 'Copied!';
+            
+            try {
+                await navigator.clipboard.writeText(realCode);
+                if (typeof showToast === 'function') showToast('Coupon copied! Opening store...');
+            } catch (err) {
+                if (typeof showToast === 'function') showToast('Code revealed! Opening store...');
+            }
+
+            if (affiliateLink) {
                 setTimeout(() => {
                     window.open(affiliateLink, '_blank', 'noopener,sponsored');
                 }, 800);
-                
-                // Reset button text after 3 seconds, but keep revealed state
+            }
+            
+            setTimeout(() => {
+                btn.textContent = 'Copy';
+            }, 3000);
+        } else {
+            try {
+                await navigator.clipboard.writeText(realCode);
+                btn.textContent = 'Copied!';
+                if (typeof showToast === 'function') showToast('Coupon copied!');
                 setTimeout(() => {
                     btn.textContent = 'Copy';
                 }, 3000);
-            } else {
-                // Already revealed, just copy again
-                try {
-                    await navigator.clipboard.writeText(realCode);
-                    btn.textContent = 'Copied';
-                    showToast('Coupon copied!');
-                    setTimeout(() => {
-                        btn.textContent = 'Copy';
-                    }, 3000);
-                } catch (err) {
-                    console.error('Failed to copy text: ', err);
-                }
-            }
-        });
+            } catch (err) {}
+        }
     });
 
     // 6. Smooth Reveal Animations via Intersection Observer
