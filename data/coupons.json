@@ -1,5 +1,237 @@
 [
   {
+    "id": "flyfi-hotels-crypto",
+    "title": "Book Hotels Worldwide with Crypto",
+    "description": "Book hotels worldwide using cryptocurrency with Flyfi. Discover curated destinations, seamless crypto payments, and travel experiences designed for the Web3 generation. No coupon code required.",
+    "store": {
+      "id": "flyfi",
+      "name": "Flyfi",
+      "logo": "/assets/images/brands/flyfi.svg"
+    },
+    "discount": "CRYPTO TRAVEL",
+    "code": null,
+    "badges": [
+      "Verified",
+      "No Code Required",
+      "Exclusive"
+    ],
+    "successRate": "99%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://xcdus.com/g/0xtgjon8aeb68b264a76a2e4f55a9f/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 2150,
+    "successPercentage": 99
+  },
+  {
+    "id": "flyfi-dubai-uae",
+    "title": "UAE & Dubai Hotel Offers: Special Crypto Packages",
+    "description": "Discover luxury beachfront resorts and business hotels in Dubai, Abu Dhabi, and Ras Al Khaimah with direct crypto payment. No coupon code required.",
+    "store": {
+      "id": "flyfi",
+      "name": "Flyfi",
+      "logo": "/assets/images/brands/flyfi.svg"
+    },
+    "discount": "UAE SPECIAL",
+    "code": null,
+    "badges": [
+      "Verified",
+      "No Code Required"
+    ],
+    "successRate": "100%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://xcdus.com/g/0xtgjon8aeb68b264a76a2e4f55a9f/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1890,
+    "successPercentage": 100
+  },
+  {
+    "id": "flyfi-bitcoin-travel",
+    "title": "Travel with Bitcoin: Book 300,000+ Hotels with BTC",
+    "description": "Use Bitcoin (BTC) to book premium hotels globally. Enjoy instant confirmation and non-custodial wallet checkout. No coupon code required.",
+    "store": {
+      "id": "flyfi",
+      "name": "Flyfi",
+      "logo": "/assets/images/brands/flyfi.svg"
+    },
+    "discount": "BITCOIN PAY",
+    "code": null,
+    "badges": [
+      "Verified",
+      "Top Deal",
+      "No Code Required"
+    ],
+    "successRate": "98%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://xcdus.com/g/0xtgjon8aeb68b264a76a2e4f55a9f/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1740,
+    "successPercentage": 98
+  },
+  {
+    "id": "flyfi-ethereum-payments",
+    "title": "Travel with Ethereum: Seamless ETH & Layer-2 Bookings",
+    "description": "Book accommodations using Ethereum (ETH), Arbitrum, Optimism, and popular ERC-20 tokens with minimal gas fees. No coupon code required.",
+    "store": {
+      "id": "flyfi",
+      "name": "Flyfi",
+      "logo": "/assets/images/brands/flyfi.svg"
+    },
+    "discount": "ETHEREUM PAY",
+    "code": null,
+    "badges": [
+      "Verified",
+      "No Code Required"
+    ],
+    "successRate": "97%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://xcdus.com/g/0xtgjon8aeb68b264a76a2e4f55a9f/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1520,
+    "successPercentage": 97
+  },
+  {
+    "id": "flyfi-zero-account",
+    "title": "Privacy-First Travel: Book Hotels with Zero Account Registration",
+    "description": "Experience true travel privacy. Book over 300,000 hotels worldwide without registering an account or undergoing invasive KYC checks. No coupon code required.",
+    "store": {
+      "id": "flyfi",
+      "name": "Flyfi",
+      "logo": "/assets/images/brands/flyfi.svg"
+    },
+    "discount": "NO KYC",
+    "code": null,
+    "badges": [
+      "Verified",
+      "No Code Required"
+    ],
+    "successRate": "99%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://xcdus.com/g/0xtgjon8aeb68b264a76a2e4f55a9f/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1410,
+    "successPercentage": 99
+  },
+  {
+    "id": "flyfi-stablecoin-rates",
+    "title": "Stablecoin Hotel Booking: Pay with USDT & USDC",
+    "description": "Avoid market volatility by paying for your hotel reservations with Tether (USDT) or USD Coin (USDC) on Flyfi. No coupon code required.",
+    "store": {
+      "id": "flyfi",
+      "name": "Flyfi",
+      "logo": "/assets/images/brands/flyfi.svg"
+    },
+    "discount": "STABLECOIN",
+    "code": null,
+    "badges": [
+      "Verified",
+      "No Code Required"
+    ],
+    "successRate": "98%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://xcdus.com/g/0xtgjon8aeb68b264a76a2e4f55a9f/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1330,
+    "successPercentage": 98
+  },
+  {
+    "id": "flyfi-conference-packages",
+    "title": "Web3 & Crypto Conference Hotel Packages",
+    "description": "Exclusive hotel rates and accommodation packages for major crypto summits including Token2049, Devcon, and GITEX Global. No coupon code required.",
+    "store": {
+      "id": "flyfi",
+      "name": "Flyfi",
+      "logo": "/assets/images/brands/flyfi.svg"
+    },
+    "discount": "EVENT PASS",
+    "code": null,
+    "badges": [
+      "Verified",
+      "No Code Required"
+    ],
+    "successRate": "96%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://xcdus.com/g/0xtgjon8aeb68b264a76a2e4f55a9f/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1190,
+    "successPercentage": 96
+  },
+  {
+    "id": "flyfi-luxury-collection",
+    "title": "Curated 5-Star & Boutique Hotel Selection",
+    "description": "Browse curated collections of luxury 5-star hotels, beachfront villas, and urban boutique stays available with crypto checkout. No coupon code required.",
+    "store": {
+      "id": "flyfi",
+      "name": "Flyfi",
+      "logo": "/assets/images/brands/flyfi.svg"
+    },
+    "discount": "LUXURY STAYS",
+    "code": null,
+    "badges": [
+      "Verified",
+      "No Code Required"
+    ],
+    "successRate": "97%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://xcdus.com/g/0xtgjon8aeb68b264a76a2e4f55a9f/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1080,
+    "successPercentage": 97
+  },
+  {
+    "id": "flyfi-best-price",
+    "title": "Competitive Hotel Prices & Zero Booking Fees",
+    "description": "Flyfi aggregates wholesale inventory to offer competitive hotel prices worldwide with no hidden transaction surcharges. No coupon code required.",
+    "store": {
+      "id": "flyfi",
+      "name": "Flyfi",
+      "logo": "/assets/images/brands/flyfi.svg"
+    },
+    "discount": "BEST VALUE",
+    "code": null,
+    "badges": [
+      "Verified",
+      "No Code Required"
+    ],
+    "successRate": "99%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://xcdus.com/g/0xtgjon8aeb68b264a76a2e4f55a9f/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1260,
+    "successPercentage": 99
+  },
+  {
+    "id": "flyfi-instant-voucher",
+    "title": "Instant Digital Voucher & E-Ticket Confirmation",
+    "description": "Receive your verified hotel reservation voucher immediately upon blockchain transaction confirmation. No coupon code required.",
+    "store": {
+      "id": "flyfi",
+      "name": "Flyfi",
+      "logo": "/assets/images/brands/flyfi.svg"
+    },
+    "discount": "INSTANT VOUCHER",
+    "code": null,
+    "badges": [
+      "Verified",
+      "No Code Required"
+    ],
+    "successRate": "100%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://xcdus.com/g/0xtgjon8aeb68b264a76a2e4f55a9f/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1450,
+    "successPercentage": 100
+  },
+  {
     "id": "war-thunder-bonus",
     "title": "New Player Bonus Pack: Get Exclusive New Player Rewards",
     "description": "Start playing War Thunder for free and claim exclusive new player rewards, bonus starter vehicles, Silver Lions, and Premium Account days. No coupon code required.",
