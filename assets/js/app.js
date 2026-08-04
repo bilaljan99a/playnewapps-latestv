@@ -669,6 +669,47 @@ class App {
                         wrapper.appendChild(table);
                     }
                 });
+
+                // Enhance inline FAQ accordions inside dynamicBody for full interactivity & accessibility
+                const inlineFaqQuestions = dynamicBody.querySelectorAll('.faq-question');
+                inlineFaqQuestions.forEach((qEl, idx) => {
+                    let btn = qEl;
+                    if (qEl.tagName !== 'BUTTON') {
+                        const newBtn = document.createElement('button');
+                        newBtn.className = 'faq-question';
+                        newBtn.setAttribute('aria-expanded', 'false');
+                        newBtn.setAttribute('type', 'button');
+                        newBtn.id = `inline-faq-btn-${idx}`;
+                        
+                        let text = qEl.textContent.trim();
+                        newBtn.innerHTML = `<span>${text}</span><span class="material-icons-round" aria-hidden="true">expand_more</span>`;
+                        qEl.parentNode.replaceChild(newBtn, qEl);
+                        btn = newBtn;
+                    } else if (!btn.getAttribute('aria-expanded')) {
+                        btn.setAttribute('aria-expanded', 'false');
+                    }
+                    
+                    const answer = btn.nextElementSibling;
+                    if (answer && answer.classList.contains('faq-answer')) {
+                        answer.setAttribute('id', `inline-faq-ans-${idx}`);
+                        btn.setAttribute('aria-controls', `inline-faq-ans-${idx}`);
+                        answer.setAttribute('aria-hidden', btn.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
+                        
+                        btn.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const expanded = btn.getAttribute('aria-expanded') === 'true';
+                            btn.setAttribute('aria-expanded', !expanded);
+                            answer.setAttribute('aria-hidden', expanded ? 'true' : 'false');
+                            if (!expanded) {
+                                answer.style.maxHeight = (answer.scrollHeight + 100) + 'px';
+                                answer.style.padding = '0 1.5rem 1.5rem 1.5rem';
+                            } else {
+                                answer.style.maxHeight = null;
+                                answer.style.padding = '0 1.5rem';
+                            }
+                        });
+                    }
+                });
             } else if (review.summary) {
                 dynamicBody.style.display = 'block';
                 dynamicBody.innerHTML = `
@@ -845,7 +886,8 @@ class App {
             }
         }
 
-        if (faqsToRender && faqsToRender.length > 0) {
+        const dynamicHasFaq = dynamicBody && dynamicBody.querySelector('.faq-container');
+        if (faqsToRender && faqsToRender.length > 0 && !dynamicHasFaq) {
             if (faqSection) faqSection.style.display = 'block';
             if (faqContainer) {
                 faqContainer.innerHTML = faqsToRender.map((faq, index) => `
