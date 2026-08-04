@@ -1,5 +1,237 @@
 [
   {
+    "id": "war-thunder-bonus",
+    "title": "New Player Bonus Pack: Get Exclusive New Player Rewards",
+    "description": "Start playing War Thunder for free and claim exclusive new player rewards, bonus starter vehicles, Silver Lions, and Premium Account days. No coupon code required.",
+    "store": {
+      "id": "war-thunder",
+      "name": "War Thunder",
+      "logo": "/assets/images/brands/war-thunder.svg"
+    },
+    "discount": "FREE BONUS",
+    "code": null,
+    "badges": [
+      "Verified",
+      "No Code Required",
+      "Exclusive"
+    ],
+    "successRate": "99%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://naiawork.com/g/3oqdtx0q5jb68b264a761715a9e553/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 2450,
+    "successPercentage": 99
+  },
+  {
+    "id": "war-thunder-mmo",
+    "title": "Free-to-Play Military MMO: Download & Play Free",
+    "description": "Download War Thunder for free on PC, PlayStation, or Xbox. Experience combined-arms battles with over 2,000 aircraft, tanks, and warships. No coupon code required.",
+    "store": {
+      "id": "war-thunder",
+      "name": "War Thunder",
+      "logo": "/assets/images/brands/war-thunder.svg"
+    },
+    "discount": "FREE PLAY",
+    "code": null,
+    "badges": [
+      "Verified",
+      "No Code Required"
+    ],
+    "successRate": "100%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://naiawork.com/g/3oqdtx0q5jb68b264a761715a9e553/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1980,
+    "successPercentage": 100
+  },
+  {
+    "id": "war-thunder-premium",
+    "title": "Premium Account: Unlock Faster Progress with Premium Account",
+    "description": "Boost your Research Points (RP) and Silver Lions (SL) earnings by up to 100% per battle with a War Thunder Premium Account. No coupon code required.",
+    "store": {
+      "id": "war-thunder",
+      "name": "War Thunder",
+      "logo": "/assets/images/brands/war-thunder.svg"
+    },
+    "discount": "2X BOOST",
+    "code": null,
+    "badges": [
+      "Verified",
+      "Top Deal",
+      "No Code Required"
+    ],
+    "successRate": "98%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://naiawork.com/g/3oqdtx0q5jb68b264a761715a9e553/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1620,
+    "successPercentage": 98
+  },
+  {
+    "id": "war-thunder-eagles",
+    "title": "Golden Eagles: Purchase Golden Eagles for Premium Vehicles & Upgrades",
+    "description": "Get Golden Eagles bundles to unlock premium aircraft, tanks, helicopters, and tech tree RP conversions directly in the Gaijin Store. No coupon code required.",
+    "store": {
+      "id": "war-thunder",
+      "name": "War Thunder",
+      "logo": "/assets/images/brands/war-thunder.svg"
+    },
+    "discount": "BEST VALUE",
+    "code": null,
+    "badges": [
+      "Verified",
+      "No Code Required"
+    ],
+    "successRate": "97%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://naiawork.com/g/3oqdtx0q5jb68b264a761715a9e553/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1430,
+    "successPercentage": 97
+  },
+  {
+    "id": "war-thunder-vehicle-packs",
+    "title": "Vehicle Packs: Save on Premium Aircraft, Tanks & Naval Packs",
+    "description": "Unlock high-tier premium combat vehicle bundles including modern jet fighters, main battle tanks, and heavy naval warships. No coupon code required.",
+    "store": {
+      "id": "war-thunder",
+      "name": "War Thunder",
+      "logo": "/assets/images/brands/war-thunder.svg"
+    },
+    "discount": "SPECIAL OFFER",
+    "code": null,
+    "badges": [
+      "Verified",
+      "No Code Required"
+    ],
+    "successRate": "96%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://naiawork.com/g/3oqdtx0q5jb68b264a761715a9e553/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1210,
+    "successPercentage": 96
+  },
+  {
+    "id": "war-thunder-starter",
+    "title": "Starter Packs: Starter Bundles for New Players",
+    "description": "Get essential nation starter packs featuring premium starter tanks, aircraft, Golden Eagles, and 7 days of Premium Account time. No coupon code required.",
+    "store": {
+      "id": "war-thunder",
+      "name": "War Thunder",
+      "logo": "/assets/images/brands/war-thunder.svg"
+    },
+    "discount": "STARTER PACK",
+    "code": null,
+    "badges": [
+      "Verified",
+      "No Code Required"
+    ],
+    "successRate": "99%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://naiawork.com/g/3oqdtx0q5jb68b264a761715a9e553/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1150,
+    "successPercentage": 99
+  },
+  {
+    "id": "war-thunder-vehicles",
+    "title": "Premium Vehicles: Unlock Exclusive Premium Military Vehicles",
+    "description": "Command unique historical aircraft, heavy tanks, and naval destroyers with built-in Silver Lion and Research Point multipliers. No coupon code required.",
+    "store": {
+      "id": "war-thunder",
+      "name": "War Thunder",
+      "logo": "/assets/images/brands/war-thunder.svg"
+    },
+    "discount": "PREMIUM ACCESS",
+    "code": null,
+    "badges": [
+      "Verified",
+      "No Code Required"
+    ],
+    "successRate": "98%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://naiawork.com/g/3oqdtx0q5jb68b264a761715a9e553/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 980,
+    "successPercentage": 98
+  },
+  {
+    "id": "war-thunder-events",
+    "title": "Special Event Vehicles: Participate in Seasonal Events to Earn Rare Vehicles",
+    "description": "Join active War Thunder seasonal combat marathons to earn rare, event-exclusive aircraft and main battle tanks for free. No coupon code required.",
+    "store": {
+      "id": "war-thunder",
+      "name": "War Thunder",
+      "logo": "/assets/images/brands/war-thunder.svg"
+    },
+    "discount": "EVENT REWARDS",
+    "code": null,
+    "badges": [
+      "Verified",
+      "No Code Required"
+    ],
+    "successRate": "95%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://naiawork.com/g/3oqdtx0q5jb68b264a761715a9e553/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 890,
+    "successPercentage": 95
+  },
+  {
+    "id": "war-thunder-battle-pass",
+    "title": "Battle Pass: Unlock Exclusive Battle Pass Rewards",
+    "description": "Level up the War Thunder seasonal Battle Pass to earn exclusive premium vehicles, unique camouflage, 3D decorations, and Silver Lions. No coupon code required.",
+    "store": {
+      "id": "war-thunder",
+      "name": "War Thunder",
+      "logo": "/assets/images/brands/war-thunder.svg"
+    },
+    "discount": "BATTLE PASS",
+    "code": null,
+    "badges": [
+      "Verified",
+      "No Code Required"
+    ],
+    "successRate": "97%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://naiawork.com/g/3oqdtx0q5jb68b264a761715a9e553/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1040,
+    "successPercentage": 97
+  },
+  {
+    "id": "war-thunder-gaijin-store",
+    "title": "Gaijin Store Specials: Shop Official War Thunder Packs & Promotions",
+    "description": "Visit the official Gaijin Store to explore current store promotions, vehicle discounts, and merchandise bundles. No coupon code required.",
+    "store": {
+      "id": "war-thunder",
+      "name": "War Thunder",
+      "logo": "/assets/images/brands/war-thunder.svg"
+    },
+    "discount": "OFFICIAL STORE",
+    "code": null,
+    "badges": [
+      "Verified",
+      "No Code Required"
+    ],
+    "successRate": "99%",
+    "expiry": "Dec 31, 2026",
+    "affiliateLink": "https://naiawork.com/g/3oqdtx0q5jb68b264a761715a9e553/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1320,
+    "successPercentage": 99
+  },
+  {
     "id": "aliexpress-afa2",
     "title": "$2 Off Orders Over $15 (Summer Clearance)",
     "description": "Save US$2 on orders over US$15 during the AliExpress Summer Clearance sale. Use promo code AFA2 at checkout.",
