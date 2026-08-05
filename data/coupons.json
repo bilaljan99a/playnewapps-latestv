@@ -2528,5 +2528,120 @@
     "status": "active",
     "votesCount": 1820,
     "successPercentage": 100
+  },
+  {
+    "id": "jetpac-go-10off",
+    "title": "10% OFF Any Jetpac eSIM Purchase",
+    "description": "Save 10% on your Jetpac eSIM purchase. Avoid expensive roaming charges and enjoy reliable global mobile data at a much lower cost. (Valid on plans above $10)",
+    "store": {
+      "id": "jetpac",
+      "name": "Jetpac eSIM",
+      "logo": "/assets/images/brands/jetpac.svg"
+    },
+    "discount": "10% OFF",
+    "badges": [
+      "Verified Code",
+      "Most Popular"
+    ],
+    "code": "JETPACGO",
+    "successRate": "100%",
+    "expiry": "Verified Working 2026",
+    "affiliateLink": "https://wbbsv.com/g/aoxs44cafqb68b264a7635ff050c24/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 3940,
+    "successPercentage": 100
+  },
+  {
+    "id": "jetpac-voyage-10off",
+    "title": "10% OFF International eSIM Plans",
+    "description": "Save 10% on international eSIM plans. Stay connected in more than 200 destinations with fast and reliable mobile internet. (Valid on plans above $10)",
+    "store": {
+      "id": "jetpac",
+      "name": "Jetpac eSIM",
+      "logo": "/assets/images/brands/jetpac.svg"
+    },
+    "discount": "10% OFF",
+    "badges": [
+      "International Pack",
+      "Exclusive"
+    ],
+    "code": "JPVOYAGE",
+    "successRate": "99%",
+    "expiry": "Verified Working 2026",
+    "affiliateLink": "https://wbbsv.com/g/aoxs44cafqb68b264a7635ff050c24/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 2810,
+    "successPercentage": 99
+  },
+  {
+    "id": "jetpac-fly-10off",
+    "title": "10% OFF Worldwide eSIM Connectivity",
+    "description": "Travel with confidence using affordable worldwide eSIM connectivity across Europe, Asia, and the Americas. (Valid on plans above $10)",
+    "store": {
+      "id": "jetpac",
+      "name": "Jetpac eSIM",
+      "logo": "/assets/images/brands/jetpac.svg"
+    },
+    "discount": "10% OFF",
+    "badges": [
+      "Global Deal",
+      "Verified Code"
+    ],
+    "code": "JPFLY",
+    "successRate": "98%",
+    "expiry": "Verified Working 2026",
+    "affiliateLink": "https://wbbsv.com/g/aoxs44cafqb68b264a7635ff050c24/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1950,
+    "successPercentage": 98
+  },
+  {
+    "id": "jetpac-jetfly-10off",
+    "title": "10% OFF Travel Data Packs",
+    "description": "Keep WhatsApp, Maps, Uber and Grab working even after your primary data allowance ends. (Valid on plans above $10)",
+    "store": {
+      "id": "jetpac",
+      "name": "Jetpac eSIM",
+      "logo": "/assets/images/brands/jetpac.svg"
+    },
+    "discount": "10% OFF",
+    "badges": [
+      "Travel Pack",
+      "Verified Code"
+    ],
+    "code": "JETFLY",
+    "successRate": "99%",
+    "expiry": "Verified Working 2026",
+    "affiliateLink": "https://wbbsv.com/g/aoxs44cafqb68b264a7635ff050c24/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1720,
+    "successPercentage": 99
+  },
+  {
+    "id": "jetpac-trip-10off",
+    "title": "10% OFF Multi-Network Coverage & Top-Ups",
+    "description": "Enjoy multi-network coverage, simple top-ups and in-app calling across more than 200 destinations. (Valid on plans above $10)",
+    "store": {
+      "id": "jetpac",
+      "name": "Jetpac eSIM",
+      "logo": "/assets/images/brands/jetpac.svg"
+    },
+    "discount": "10% OFF",
+    "badges": [
+      "Top-Up Discount",
+      "Verified Code"
+    ],
+    "code": "JPTRIP",
+    "successRate": "97%",
+    "expiry": "Verified Working 2026",
+    "affiliateLink": "https://wbbsv.com/g/aoxs44cafqb68b264a7635ff050c24/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1430,
+    "successPercentage": 97
   }
 ]

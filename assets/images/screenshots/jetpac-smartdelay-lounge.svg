@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+    <rect width="800" height="450" rx="12" fill="#0B0F19" stroke="#1E293B" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect x="0" y="0" width="800" height="55" fill="#1E1B4B"/>
+    <text x="30" y="35" font-family="system-ui, sans-serif" font-weight="900" font-size="18" fill="#FFD700">🛋️ SmartDelay™ Complimentary Airport Lounge Pass</text>
+
+    <!-- Pass Ticket Container -->
+    <g transform="translate(60, 80)">
+        <rect x="0" y="0" width="680" height="320" rx="16" fill="linear-gradient(135deg, #1E1B4B 0%, #311B92 100%)" stroke="#FFD700" stroke-width="2"/>
+        
+        <!-- Pass Header -->
+        <rect x="0" y="0" width="680" height="50" rx="16" fill="#FFD700"/>
+        <text x="25" y="32" font-family="system-ui, sans-serif" font-weight="900" font-size="16" fill="#000000">CONFIRMED LOUNGEKEY PASS • FLIGHT DELAY DETECTED (+60 MINS)</text>
+        
+        <!-- Flight & Pass Info -->
+        <text x="30" y="90" font-family="system-ui, sans-serif" font-weight="800" font-size="20" fill="#FFFFFF">Flight: SQ638 (Tokyo Narita NRT → Singapore SIN)</text>
+        <text x="30" y="118" font-family="system-ui, sans-serif" font-size="14" fill="#E2E8F0">Status: Delayed by 75 Minutes • SmartDelay Auto-Triggered</text>
+
+        <!-- Access Details Grid -->
+        <rect x="30" y="140" width="300" height="140" rx="10" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)"/>
+        <text x="50" y="170" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#00F2FE">Lounge Access Voucher</text>
+        <text x="50" y="195" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF">• Eligible Lounge: ANA Executive Lounge NRT</text>
+        <text x="50" y="218" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF">• Included Guests: Primary + Up to 5 Companions</text>
+        <text x="50" y="240" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF">• Perks: Free Hot Meals, Premium Drinks, Wi-Fi</text>
+
+        <!-- QR Voucher Code -->
+        <rect x="360" y="140" width="290" height="140" rx="10" fill="#FFFFFF"/>
+        <text x="380" y="170" font-family="system-ui, sans-serif" font-weight="900" font-size="14" fill="#000000">SHOW BARCODE AT RECEPTION</text>
+        <!-- Barcode Graphic -->
+        <rect x="380" y="185" width="250" height="60" fill="#000000"/>
+        <rect x="390" y="185" width="8" height="60" fill="#FFFFFF"/>
+        <rect x="405" y="185" width="12" height="60" fill="#FFFFFF"/>
+        <rect x="425" y="185" width="6" height="60" fill="#FFFFFF"/>
+        <rect x="440" y="185" width="16" height="60" fill="#FFFFFF"/>
+        <rect x="465" y="185" width="10" height="60" fill="#FFFFFF"/>
+        <rect x="485" y="185" width="14" height="60" fill="#FFFFFF"/>
+        <rect x="510" y="185" width="6" height="60" fill="#FFFFFF"/>
+        <rect x="525" y="185" width="18" height="60" fill="#FFFFFF"/>
+        <text x="505" y="265" font-family="monospace" font-weight="700" font-size="13" fill="#000000" text-anchor="middle">JET-LK-88942-SQ638</text>
+    </g>
+</svg>
