@@ -1725,5 +1725,95 @@
         "answer": "Alibaba supports Credit/Debit cards (Visa, MasterCard), Wire Transfer (T/T), PayPal, Apple Pay, Google Pay, Online Bank Payments, and Alibaba Pay Later terms."
       }
     ]
+  },
+  {
+    "id": "fiverr",
+    "name": "Fiverr",
+    "icon": "/assets/images/brands/fiverr.svg",
+    "logo": "/assets/images/brands/fiverr.svg",
+    "website": "https://www.fiverr.com/",
+    "affiliateLink": "https://twnfz.com/g/oqcmadzidpb68b264a76acbbb3152e/",
+    "rating": "4.9",
+    "votes": "14,850",
+    "seoTitle": "Fiverr Review 2026 – Top Global Freelance Services Marketplace",
+    "seoDescription": "Read our in-depth Fiverr review covering freelance categories, Fiverr Pro verified talent, Fiverr Business teams, AI services, buyer protection, and referral rewards.",
+    "about": "Fiverr is the world's leading freelance marketplace connecting businesses with on-demand digital services across programming, design, marketing, AI services, video editing, and writing.",
+    "parentCompany": "Fiverr International Ltd.",
+    "trustScore": "99/100",
+    "verifiedStore": true,
+    "banners": [
+      {
+        "id": "banner-referral",
+        "title": "Fiverr Referral Program – Invite Friends & Earn Credits",
+        "subtitle": "New users receive 10% OFF their first order. Earn up to $500 in Fiverr Credits!",
+        "image": "/assets/images/fiverr-homepage.svg",
+        "link": "https://twnfz.com/g/oqcmadzidpb68b264a76acbbb3152e/?ulp=https%3A%2F%2Fwww.fiverr.com%2Freferral_program%3Fsource%3Dfooter",
+        "buttonText": "Learn More",
+        "badge": "REFERRAL PROGRAM"
+      },
+      {
+        "id": "banner-pro",
+        "title": "Fiverr Pro – Vetted Top 1% Global Talent",
+        "subtitle": "Hand-picked, vetted professionals for enterprise projects and scaling startups",
+        "image": "/assets/images/fiverr-pro.svg",
+        "link": "https://twnfz.com/g/oqcmadzidpb68b264a76acbbb3152e/",
+        "buttonText": "Explore Fiverr Pro",
+        "badge": "VETTED TALENT"
+      }
+    ],
+    "shippingInfo": "Fiverr services are delivered digitally online via the secure Fiverr message portal, file delivery system, or cloud links with full delivery tracking and revision management.",
+    "buyerProtection": "Fiverr holds payments safely in escrow until you inspect and approve completed project deliverables. 24/7 Resolution Center support and direct revision requests are included.",
+    "paymentMethods": [
+      "Credit / Debit Cards (Visa, MasterCard, Amex, Discover)",
+      "PayPal",
+      "Apple Pay",
+      "Google Pay",
+      "Fiverr Credits / Balance",
+      "Wire Transfer & Net-30 Invoicing (Fiverr Business / Pro)"
+    ],
+    "categories": [
+      "Freelance Marketplace",
+      "Programming & Tech",
+      "Graphics & Design",
+      "AI Services",
+      "Digital Marketing",
+      "Video & Animation",
+      "Writing & Translation"
+    ],
+    "whyShop": [
+      "Upfront flat pricing with clear scope definitions and no unexpected hourly billable inflation.",
+      "Global access to over 600+ digital service categories with millions of active freelancers.",
+      "Fiverr Pro hand-vetted top 1% industry talent for high-stakes enterprise projects.",
+      "Escrow payment protection ensuring funds are only released upon final deliverable approval."
+    ],
+    "shoppingTips": [
+      "Check seller level badges (Top Rated, Level 2, Fiverr Pro) and client reviews before placing an order.",
+      "Utilize Fiverr's built-in messaging to discuss project requirements with freelancers before ordering.",
+      "Invite friends via Fiverr's Referral Program so they get 10% OFF while you earn up to $500 in Fiverr Credits."
+    ],
+    "related": [
+      "canva",
+      "adobe",
+      "hostinger",
+      "alibaba"
+    ],
+    "faqs": [
+      {
+        "question": "What is Fiverr and how does it work?",
+        "answer": "Fiverr is an online marketplace connecting buyers with freelance service providers offering Gigs across programming, graphics design, digital marketing, AI services, copywriting, and video production."
+      },
+      {
+        "question": "What is the difference between standard Fiverr, Fiverr Pro, and Fiverr Business?",
+        "answer": "Standard Fiverr gives access to millions of freelancers starting at $5. Fiverr Pro features hand-vetted, top 1% industry talent. Fiverr Business offers team collaboration tools, shared payment methods, and dedicated account management."
+      },
+      {
+        "question": "How does buyer protection work on Fiverr?",
+        "answer": "Fiverr holds payments safely in escrow. Sellers are only paid after the buyer reviews and approves the delivered work according to project requirements."
+      },
+      {
+        "question": "Does Fiverr offer a discount or referral program?",
+        "answer": "Yes, through Fiverr's Referral Program, invited friends receive 10% OFF their first Fiverr order, while referrers earn Fiverr Credits up to US$500."
+      }
+    ]
   }
 ]

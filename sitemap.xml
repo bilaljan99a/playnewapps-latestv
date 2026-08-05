@@ -132,4 +132,14 @@
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
+  <url>
+    <loc>https://playnewapps.store/store.html?id=fiverr</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://playnewapps.store/fiverr.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
 </urlset>

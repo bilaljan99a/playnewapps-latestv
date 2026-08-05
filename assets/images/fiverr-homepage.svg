@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="800" height="450" rx="12" fill="#0A1118"/>
+  <!-- Top Nav Bar -->
+  <rect width="800" height="60" fill="#101828"/>
+  <rect x="30" y="18" width="100" height="24" rx="4" fill="#1DBF73"/>
+  <text x="80" y="35" font-family="Arial, sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">fiverr.</text>
+  <rect x="150" y="16" width="350" height="28" rx="14" fill="#1D2939" stroke="#344054" stroke-width="1"/>
+  <text x="170" y="34" font-family="Arial, sans-serif" font-size="12" fill="#98A2B3">What service are you looking for today?</text>
+  <rect x="520" y="16" width="70" height="28" rx="14" fill="#1DBF73"/>
+  <text x="555" y="34" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Search</text>
+  
+  <text x="650" y="34" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#1DBF73">Fiverr Pro</text>
+  <text x="730" y="34" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Sign In</text>
+
+  <!-- Hero Section -->
+  <rect x="0" y="60" width="800" height="200" fill="#0B4627"/>
+  <text x="50" y="120" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF">Find the right <tspan fill="#1DBF73">freelance</tspan> service,</text>
+  <text x="50" y="155" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF">right away</text>
+
+  <g transform="translate(50, 180)">
+    <rect width="110" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.15"/>
+    <text x="55" y="20" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Website Development</text>
+
+    <rect x="120" width="100" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.15"/>
+    <text x="170" y="20" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Logo Design</text>
+
+    <rect x="230" width="100" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.15"/>
+    <text x="280" y="20" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">SEO Services</text>
+
+    <rect x="340" width="100" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.15"/>
+    <text x="390" y="20" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">AI Services</text>
+  </g>
+
+  <!-- Popular Services Grid -->
+  <text x="50" y="290" font-family="Arial, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">Popular Professional Services</text>
+  
+  <g transform="translate(50, 310)">
+    <rect x="0" width="160" height="110" rx="8" fill="#1D2939"/>
+    <rect x="0" y="0" width="160" height="70" rx="8" fill="#027A48"/>
+    <text x="15" y="45" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">Website Building</text>
+    <text x="15" y="95" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#98A2B3">Dev &amp; Code</text>
+
+    <rect x="180" width="160" height="110" rx="8" fill="#1D2939"/>
+    <rect x="180" y="0" width="160" height="70" rx="8" fill="#B71C1C"/>
+    <text x="195" y="45" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">Logo &amp; Brand</text>
+    <text x="195" y="95" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#98A2B3">Graphics &amp; Design</text>
+
+    <rect x="360" width="160" height="110" rx="8" fill="#1D2939"/>
+    <rect x="360" y="0" width="160" height="70" rx="8" fill="#1565C0"/>
+    <text x="375" y="45" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">Video Editing</text>
+    <text x="375" y="95" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#98A2B3">Video &amp; Animation</text>
+
+    <rect x="540" width="160" height="110" rx="8" fill="#1D2939"/>
+    <rect x="540" y="0" width="160" height="70" rx="8" fill="#6A1B9A"/>
+    <text x="555" y="45" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">AI Prompting</text>
+    <text x="555" y="95" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#98A2B3">AI Services</text>
+  </g>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="800" height="450" rx="12" fill="#0A1118"/>
+  <!-- Top Nav -->
+  <rect width="800" height="50" fill="#101828"/>
+  <rect x="25" y="14" width="80" height="22" rx="4" fill="#1DBF73"/>
+  <text x="65" y="29" font-family="Arial, sans-serif" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle">fiverr.</text>
+
+  <text x="25" y="85" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#FFFFFF">Order Options &amp; Secure Checkout</text>
+
+  <!-- Left Steps & Payment Methods -->
+  <g transform="translate(25, 110)">
+    <!-- Order Details Box -->
+    <rect width="470" height="130" rx="10" fill="#101828" stroke="#223043" stroke-width="1"/>
+    <circle cx="30" cy="30" r="16" fill="#1DBF73"/>
+    <text x="55" y="32" font-family="Arial, sans-serif" font-size="13" font-weight="800" fill="#FFFFFF">Alex_Dev - Full-Stack React Web App</text>
+    <text x="55" y="48" font-family="Arial, sans-serif" font-size="11" fill="#98A2B3">Basic Package • 3-Day Delivery • 2 Revisions</text>
+
+    <!-- Upgrades / Add-ons -->
+    <rect x="20" y="70" width="430" height="40" rx="6" fill="#151E2B"/>
+    <text x="35" y="94" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">⚡ Extra fast 1-day delivery (+$50)</text>
+    <rect x="390" y="80" width="40" height="20" rx="4" fill="#1DBF73"/>
+    <text x="410" y="94" font-family="Arial, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">ADD</text>
+
+    <!-- Payment Options Box -->
+    <rect y="150" width="470" height="150" rx="10" fill="#101828" stroke="#223043" stroke-width="1"/>
+    <text x="20" y="180" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">Select Payment Method</text>
+    
+    <rect x="20" y="195" width="200" height="40" rx="6" fill="#0B4627" stroke="#1DBF73" stroke-width="1.5"/>
+    <text x="40" y="219" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">💳 Credit / Debit Card</text>
+
+    <rect x="235" y="195" width="200" height="40" rx="6" fill="#151E2B" stroke="#223043" stroke-width="1"/>
+    <text x="255" y="219" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#98A2B3">🅿 PayPal / Apple Pay</text>
+
+    <text x="20" y="265" font-family="Arial, sans-serif" font-size="11" fill="#1DBF73">🔒 Encrypted 256-bit SSL Payment Protection with Fiverr Escrow</text>
+  </g>
+
+  <!-- Right Order Summary Column -->
+  <g transform="translate(520, 110)">
+    <rect width="255" height="290" rx="12" fill="#101828" stroke="#223043" stroke-width="1"/>
+    <text x="20" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="900" fill="#FFFFFF">Summary</text>
+
+    <text x="20" y="70" font-family="Arial, sans-serif" font-size="12" fill="#98A2B3">Subtotal</text>
+    <text x="235" y="70" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">$150.00</text>
+
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="12" fill="#98A2B3">Service Fee</text>
+    <text x="235" y="95" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">$7.50</text>
+
+    <line x1="20" y1="115" x2="235" y2="115" stroke="#223043"/>
+
+    <text x="20" y="145" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">Total Price</text>
+    <text x="235" y="145" font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="#1DBF73" text-anchor="end">$157.50</text>
+
+    <!-- Referral / Promo Banner Callout -->
+    <rect x="20" y="165" width="215" height="40" rx="6" fill="#151E2B" stroke="#1DBF73" stroke-dasharray="3 3"/>
+    <text x="30" y="189" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#1DBF73">🎁 10% OFF Applied via Referral Program</text>
+
+    <!-- Confirm & Pay CTA -->
+    <rect x="20" y="220" width="215" height="46" rx="8" fill="#1DBF73"/>
+    <text x="127" y="248" font-family="Arial, sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">Confirm &amp; Pay $157.50</text>
+  </g>
+</svg>

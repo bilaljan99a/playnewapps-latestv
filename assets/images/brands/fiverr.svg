@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" width="500" height="160">
+  <rect width="500" height="160" rx="20" fill="#1DBF73"/>
+  <path d="M125 108 H104 V66 H88 V51 H104 V43 C104 29 113 22 127 22 C133 22 139 23 143 25 L139 39 C136 38 133 37 129 37 C124 37 121 40 121 46 V51 H143 V66 H121 V108 Z" fill="#FFFFFF"/>
+  <circle cx="152" cy="40" r="8" fill="#101828"/>
+  <rect x="145" y="51" width="14" height="57" fill="#FFFFFF"/>
+  <path d="M164 51 L182 108 H198 L216 51 H200 L190 89 L180 51 H164 Z" fill="#FFFFFF"/>
+  <path d="M245 80 C245 62 232 50 216 50 C199 50 186 63 186 80 C186 97 199 110 217 110 C231 110 242 102 245 89 H229 C227 94 223 97 217 97 C208 97 202 91 202 82 H245 C245 81 245 80 245 80 Z M202 73 C203 66 208 61 216 61 C223 61 228 66 229 73 H202 Z" fill="#FFFFFF"/>
+  <path d="M251 51 H265 V61 C268 54 276 50 285 50 V66 C272 66 266 73 266 85 V108 H251 V51 Z" fill="#FFFFFF"/>
+  <path d="M289 51 H303 V61 C306 54 314 50 323 50 V66 C310 66 304 73 304 85 V108 H289 V51 Z" fill="#FFFFFF"/>
+  <circle cx="330" cy="100" r="8" fill="#101828"/>
+  <!-- Tagline -->
+  <text x="355" y="70" font-family="'Roboto', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="900" fill="#FFFFFF" letter-spacing="1">FREELANCE</text>
+  <text x="355" y="95" font-family="'Roboto', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#101828" letter-spacing="0.5">MARKETPLACE</text>
+</svg>

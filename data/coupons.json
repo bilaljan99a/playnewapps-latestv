@@ -2265,5 +2265,77 @@
     "status": "active",
     "votesCount": 1560,
     "successPercentage": 100
+  },
+  {
+    "id": "fiverr-referral-program",
+    "title": "Invite Friends & Earn Fiverr Credits",
+    "description": "Invite your friends to Fiverr. New users receive 10% OFF their first Fiverr purchase. You can earn Fiverr Credits for successful referrals, up to US$500 total (according to Fiverr Referral Program terms).",
+    "store": {
+      "id": "fiverr",
+      "name": "Fiverr",
+      "logo": "/assets/images/brands/fiverr.svg"
+    },
+    "discount": "10% OFF",
+    "badges": [
+      "Referral Offer",
+      "10% OFF",
+      "Verified"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://twnfz.com/g/oqcmadzidpb68b264a76acbbb3152e/?ulp=https%3A%2F%2Fwww.fiverr.com%2Freferral_program%3Fsource%3Dfooter",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 2450,
+    "successPercentage": 100
+  },
+  {
+    "id": "fiverr-hire-freelancers",
+    "title": "Hire Professional Freelancers",
+    "description": "Browse thousands of verified freelancers across Graphic Design, Programming, Writing, Marketing, Video Editing, AI Services, Business, and more.",
+    "store": {
+      "id": "fiverr",
+      "name": "Fiverr",
+      "logo": "/assets/images/brands/fiverr.svg"
+    },
+    "discount": "FEATURED DEAL",
+    "badges": [
+      "Featured Deal",
+      "Verified",
+      "Digital Services"
+    ],
+    "code": null,
+    "successRate": "99%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://twnfz.com/g/oqcmadzidpb68b264a76acbbb3152e/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 3120,
+    "successPercentage": 99
+  },
+  {
+    "id": "fiverr-pro-talent",
+    "title": "Fiverr Pro",
+    "description": "Work with hand-vetted professional freelancers for high-quality business projects.",
+    "store": {
+      "id": "fiverr",
+      "name": "Fiverr",
+      "logo": "/assets/images/brands/fiverr.svg"
+    },
+    "discount": "PREMIUM TALENT",
+    "badges": [
+      "Premium",
+      "Vetted Top 1%",
+      "Enterprise"
+    ],
+    "code": null,
+    "successRate": "99%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://twnfz.com/g/oqcmadzidpb68b264a76acbbb3152e/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 1890,
+    "successPercentage": 99
   }
 ]

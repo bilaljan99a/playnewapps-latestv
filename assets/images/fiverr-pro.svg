@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="800" height="450" rx="12" fill="#0A1118"/>
+  <!-- Top Nav -->
+  <rect width="800" height="55" fill="#101828"/>
+  <rect x="25" y="16" width="90" height="22" rx="4" fill="#1DBF73"/>
+  <text x="70" y="32" font-family="Arial, sans-serif" font-size="13" font-weight="900" fill="#FFFFFF" text-anchor="middle">fiverr pro.</text>
+  <rect x="680" y="14" width="95" height="28" rx="14" fill="#1DBF73"/>
+  <text x="727" y="32" font-family="Arial, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">Join Pro</text>
+
+  <!-- Hero Banner -->
+  <rect x="0" y="55" width="800" height="180" fill="#092818"/>
+  <text x="40" y="110" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF">fiverr <tspan fill="#1DBF73">pro.</tspan></text>
+  <text x="40" y="140" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#E4E7EC">Vetted, hand-picked talent for enterprise &amp; scaling teams</text>
+  <text x="40" y="165" font-family="Arial, sans-serif" font-size="12" fill="#98A2B3">Top 1% of global talent rigorously evaluated by Fiverr industry experts</text>
+
+  <!-- Feature Grid Cards -->
+  <g transform="translate(40, 255)">
+    <!-- Card 1 -->
+    <rect width="220" height="150" rx="10" fill="#101828" stroke="#1DBF73" stroke-width="1.5"/>
+    <text x="20" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="900" fill="#1DBF73">Top 1% Talent</text>
+    <text x="20" y="65" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Rigorous Verification</text>
+    <text x="20" y="88" font-family="Arial, sans-serif" font-size="11" fill="#98A2B3">Every Pro seller undergoes manual portfolio verification, background checks &amp; technical audits.</text>
+
+    <!-- Card 2 -->
+    <rect x="250" width="220" height="150" rx="10" fill="#101828" stroke="#223043" stroke-width="1"/>
+    <text x="270" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="900" fill="#38BDF8">Dedicated Manager</text>
+    <text x="270" y="65" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Personal Matching</text>
+    <text x="270" y="88" font-family="Arial, sans-serif" font-size="11" fill="#98A2B3">Get paired with a dedicated Account Manager who scopes project milestones and matches freelancers.</text>
+
+    <!-- Card 3 -->
+    <rect x="500" width="220" height="150" rx="10" fill="#101828" stroke="#223043" stroke-width="1"/>
+    <text x="520" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="900" fill="#A855F7">Flexible Billing</text>
+    <text x="520" y="65" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Net-30 Invoicing</text>
+    <text x="520" y="88" font-family="Arial, sans-serif" font-size="11" fill="#98A2B3">Enterprise billing with purchase orders, centralized team credit card, and consolidated monthly invoices.</text>
+  </g>
+</svg>
