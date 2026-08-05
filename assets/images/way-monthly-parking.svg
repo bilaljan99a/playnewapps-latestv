@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#F8FAFC"/>
+  <!-- Top Bar -->
+  <rect width="1280" height="70" fill="#0F172A"/>
+  <text x="40" y="44" font-family="'Roboto', sans-serif" font-size="28" font-weight="900" fill="#FF004B">way</text>
+  <text x="120" y="44" font-family="'Roboto', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Monthly Parking Subscriptions — Downtown Manhattan &amp; Brooklyn</text>
+
+  <!-- Banner -->
+  <rect x="40" y="90" width="1200" height="100" rx="12" fill="#2563EB"/>
+  <text x="70" y="135" font-family="'Roboto', sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">Save Up to 30% OFF Monthly Parking Garage Subscriptions</text>
+  <text x="70" y="165" font-family="'Roboto', sans-serif" font-size="16" fill="#DBEAFE">Guaranteed monthly spots, 24/7 keycard access, in-and-out privileges across 500+ US garages.</text>
+
+  <!-- Monthly Pass Cards Grid -->
+  <rect x="40" y="220" width="370" height="450" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="40" y="220" width="370" height="8" fill="#2563EB"/>
+  <text x="70" y="260" font-family="'Roboto', sans-serif" font-size="20" font-weight="800" fill="#0F172A">Standard Monthly Pass</text>
+  <text x="70" y="285" font-family="'Roboto', sans-serif" font-size="14" fill="#64748B">Commuter Unreserved Garage Spot</text>
+  <text x="70" y="340" font-family="'Roboto', sans-serif" font-size="36" font-weight="900" fill="#0F172A">$189 <tspan font-size="16" font-weight="500" fill="#64748B">/ month</tspan></text>
+  <line x1="70" y1="365" x2="380" y2="365" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="70" y="400" font-family="'Roboto', sans-serif" font-size="14" fill="#0F172A">✓ Mon-Fri Access (6 AM - 8 PM)</text>
+  <text x="70" y="435" font-family="'Roboto', sans-serif" font-size="14" fill="#0F172A">✓ Covered Security Garage</text>
+  <text x="70" y="470" font-family="'Roboto', sans-serif" font-size="14" fill="#0F172A">✓ Automated Keycard Gate Entry</text>
+  <text x="70" y="505" font-family="'Roboto', sans-serif" font-size="14" fill="#0F172A">✓ Mobile App Digital Pass</text>
+  <rect x="70" y="580" width="310" height="48" rx="8" fill="#2563EB"/>
+  <text x="225" y="610" font-family="'Roboto', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">Select Plan (10% OFF)</text>
+
+  <!-- Plan 2 -->
+  <rect x="455" y="220" width="370" height="450" rx="12" fill="#FFFFFF" stroke="#FF004B" stroke-width="2"/>
+  <rect x="455" y="220" width="370" height="36" fill="#FF004B"/>
+  <text x="640" y="244" font-family="'Roboto', sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">MOST POPULAR — 30% OFF</text>
+  <text x="485" y="295" font-family="'Roboto', sans-serif" font-size="20" font-weight="800" fill="#0F172A">Unlimited 24/7 VIP Pass</text>
+  <text x="485" y="320" font-family="'Roboto', sans-serif" font-size="14" fill="#64748B">Full Unlimited In-and-Out Privileges</text>
+  <text x="485" y="375" font-family="'Roboto', sans-serif" font-size="36" font-weight="900" fill="#FF004B">$249 <tspan font-size="16" font-weight="500" fill="#64748B">/ month</tspan></text>
+  <line x1="485" y1="400" x2="795" y2="400" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="485" y="435" font-family="'Roboto', sans-serif" font-size="14" fill="#0F172A">✓ 24/7 Unlimited Access 365 Days</text>
+  <text x="485" y="470" font-family="'Roboto', sans-serif" font-size="14" fill="#0F172A">✓ Designated Reserved Parking Bay</text>
+  <text x="485" y="505" font-family="'Roboto', sans-serif" font-size="14" fill="#0F172A">✓ Unlimited In &amp; Out Re-entry</text>
+  <text x="485" y="540" font-family="'Roboto', sans-serif" font-size="14" fill="#0F172A">✓ Free Monthly Car Wash Coupon</text>
+  <rect x="485" y="580" width="310" height="48" rx="8" fill="#FF004B"/>
+  <text x="640" y="610" font-family="'Roboto', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">Get 30% OFF Deal</text>
+
+  <!-- Plan 3 -->
+  <rect x="870" y="220" width="370" height="450" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="870" y="220" width="370" height="8" fill="#10B981"/>
+  <text x="900" y="260" font-family="'Roboto', sans-serif" font-size="20" font-weight="800" fill="#0F172A">EV Charging Pass</text>
+  <text x="900" y="285" font-family="'Roboto', sans-serif" font-size="14" fill="#64748B">Dedicated EV Spot + Monthly Power</text>
+  <text x="900" y="340" font-family="'Roboto', sans-serif" font-size="36" font-weight="900" fill="#0F172A">$289 <tspan font-size="16" font-weight="500" fill="#64748B">/ month</tspan></text>
+  <line x1="900" y1="365" x2="1210" y2="365" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="900" y="400" font-family="'Roboto', sans-serif" font-size="14" fill="#0F172A">✓ 24/7 Dedicated EV Charging Station</text>
+  <text x="900" y="435" font-family="'Roboto', sans-serif" font-size="14" fill="#0F172A">✓ Level 2 &amp; DC Fast Charger Compatible</text>
+  <text x="900" y="470" font-family="'Roboto', sans-serif" font-size="14" fill="#0F172A">✓ Unlimited Charging Power Included</text>
+  <text x="900" y="505" font-family="'Roboto', sans-serif" font-size="14" fill="#0F172A">✓ VIP Priority Customer Support</text>
+  <rect x="900" y="580" width="310" height="48" rx="8" fill="#10B981"/>
+  <text x="1055" y="610" font-family="'Roboto', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">Subscribe EV Plan</text>
+</svg>

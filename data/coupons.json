@@ -2337,5 +2337,125 @@
     "status": "active",
     "votesCount": 1890,
     "successPercentage": 99
+  },
+  {
+    "id": "way-referral-100",
+    "title": "Refer a Friend & Earn $100",
+    "description": "Invite friends to Way.com and earn up to $100 in Way Bucks rewards when referral requirements are met.",
+    "store": {
+      "id": "way",
+      "name": "Way.com",
+      "logo": "/assets/images/brands/way.svg"
+    },
+    "discount": "$100 REWARD",
+    "badges": [
+      "Referral Reward",
+      "Verified",
+      "Unlimited"
+    ],
+    "code": null,
+    "successRate": "100%",
+    "expiry": "Unlimited",
+    "affiliateLink": "https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 4210,
+    "successPercentage": 100
+  },
+  {
+    "id": "way-airport-12off",
+    "title": "$12 OFF Airport Parking",
+    "description": "Get $12 OFF airport parking across the United States.",
+    "store": {
+      "id": "way",
+      "name": "Way.com",
+      "logo": "/assets/images/brands/way.svg"
+    },
+    "discount": "$12 OFF",
+    "badges": [
+      "Verified Coupon",
+      "Airport Deal",
+      "Save $12"
+    ],
+    "code": "GET12$AIRPORT",
+    "successRate": "100%",
+    "expiry": "Unlimited",
+    "affiliateLink": "https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 3890,
+    "successPercentage": 100
+  },
+  {
+    "id": "way-airport-8off",
+    "title": "8% OFF Airport Parking",
+    "description": "Save 8% on airport parking with a minimum purchase of $50.",
+    "store": {
+      "id": "way",
+      "name": "Way.com",
+      "logo": "/assets/images/brands/way.svg"
+    },
+    "discount": "8% OFF",
+    "badges": [
+      "Verified Coupon",
+      "8% Savings",
+      "Min $50"
+    ],
+    "code": "GET8%AIRPORT",
+    "successRate": "99%",
+    "expiry": "Unlimited",
+    "affiliateLink": "https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 2940,
+    "successPercentage": 99
+  },
+  {
+    "id": "way-monthly-10off",
+    "title": "10% OFF Monthly Parking",
+    "description": "Save 10% on monthly parking subscriptions.",
+    "store": {
+      "id": "way",
+      "name": "Way.com",
+      "logo": "/assets/images/brands/way.svg"
+    },
+    "discount": "10% OFF",
+    "badges": [
+      "Verified Coupon",
+      "Monthly Pass",
+      "10% OFF"
+    ],
+    "code": "MONTHLYWAY10",
+    "successRate": "98%",
+    "expiry": "Unlimited",
+    "affiliateLink": "https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 2480,
+    "successPercentage": 98
+  },
+  {
+    "id": "way-monthly-30off",
+    "title": "30% OFF Monthly Parking",
+    "description": "Get up to 30% OFF monthly parking plans.",
+    "store": {
+      "id": "way",
+      "name": "Way.com",
+      "logo": "/assets/images/brands/way.svg"
+    },
+    "discount": "30% OFF",
+    "badges": [
+      "Best Deal",
+      "Verified Coupon",
+      "Save 30%"
+    ],
+    "code": "MONTHLYWAY30",
+    "successRate": "100%",
+    "expiry": "Unlimited",
+    "affiliateLink": "https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 5120,
+    "successPercentage": 100
   }
 ]

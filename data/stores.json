@@ -1815,5 +1815,106 @@
         "answer": "Yes, through Fiverr's Referral Program, invited friends receive 10% OFF their first Fiverr order, while referrers earn Fiverr Credits up to US$500."
       }
     ]
+  },
+  {
+    "id": "way",
+    "name": "Way.com",
+    "icon": "/assets/images/brands/way.svg",
+    "logo": "/assets/images/brands/way.svg",
+    "website": "https://www.way.com/",
+    "affiliateLink": "https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/",
+    "rating": "4.9",
+    "votes": "18,420",
+    "seoTitle": "Way.com Review 2026 – Best Airport Parking, Monthly Parking & Auto Services Deals",
+    "seoDescription": "Save money on airport parking, monthly parking, auto insurance, roadside assistance, and car wash services with verified Way.com promo codes and discounts.",
+    "about": "Way.com is America's leading car super app and automotive services marketplace, enabling millions of drivers to save on airport parking, monthly parking, auto insurance, roadside assistance, and car washes.",
+    "parentCompany": "Way.com Inc.",
+    "trustScore": "99/100",
+    "verifiedStore": true,
+    "banners": [
+      {
+        "id": "banner-referral",
+        "title": "Way.com Referral Program – Invite Friends & Earn $100 Rewards",
+        "subtitle": "Invite friends to Way.com and earn up to $100 in Way Bucks rewards on eligible referrals!",
+        "image": "/assets/images/way-rewards.svg",
+        "link": "https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/",
+        "buttonText": "Get Offer",
+        "badge": "REFERRAL REWARD"
+      },
+      {
+        "id": "banner-airport",
+        "title": "Save Up to 60% on Guaranteed Airport Parking",
+        "subtitle": "Reserve top-rated airport parking lots near LAX, JFK, ORD, MIA, SFO & 100+ US airports",
+        "image": "/assets/images/way-airport-parking.svg",
+        "link": "https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/",
+        "buttonText": "Search Airport Parking",
+        "badge": "BEST SELLER"
+      }
+    ],
+    "shippingInfo": "All Way.com parking passes, car wash vouchers, roadside dispatches, and insurance policies are issued digitally with instant QR codes delivered directly via email and the Way Mobile App.",
+    "buyerProtection": "Way.com features a 100% Guaranteed Parking Space policy and 24-Hour Free Cancellation on airport and city parking reservations.",
+    "paymentMethods": [
+      "Credit / Debit Cards (Visa, MasterCard, Amex, Discover)",
+      "Apple Pay",
+      "Google Pay",
+      "Way Bucks Rewards Balance"
+    ],
+    "categories": [
+      "Travel",
+      "Airport Parking",
+      "Monthly Parking",
+      "Auto Services"
+    ],
+    "whyShop": [
+      "Save up to 60% compared to official airport terminal drive-up parking rates.",
+      "100% guaranteed parking spot reservation with instant digital QR pass entry.",
+      "Flexible 24-hour free cancellation policy on parking bookings.",
+      "Compare auto insurance quotes from over 200+ top national insurance carriers."
+    ],
+    "shoppingTips": [
+      "Use coupon code GET12$AIRPORT to instantly save $12 OFF airport parking bookings.",
+      "Subscribe to monthly parking passes with code MONTHLYWAY30 to save up to 30% OFF.",
+      "Download the Way Mobile App to access touchless car wash QR codes and instant roadside dispatch."
+    ],
+    "related": [
+      "flyfi",
+      "aliexpress",
+      "fiverr",
+      "alibaba"
+    ],
+    "faqs": [
+      {
+        "question": "What is Way.com and how does it save drivers money?",
+        "answer": "Way.com is an all-in-one automotive services marketplace and car super app. It partners with airport parking lots, downtown garages, car wash chains, and insurance providers to offer exclusive discounted rates up to 60% off standard prices."
+      },
+      {
+        "question": "How does Way.com airport parking work?",
+        "answer": "Drivers enter their travel airport, departure date, and return date on Way.com. The platform displays available off-airport lots, hotel parking garages, rates, ratings, and shuttle schedules. Upon booking, a digital pass with a QR barcode is sent instantly to your email and app."
+      },
+      {
+        "question": "Can I cancel or modify my Way.com parking reservation?",
+        "answer": "Yes, Way.com provides a flexible cancellation policy. Most airport and city parking reservations can be cancelled for a full refund up to 24 hours prior to the scheduled check-in time directly through your account."
+      },
+      {
+        "question": "How do Way.com coupon codes and discounts work?",
+        "answer": "During checkout on Way.com or the Way app, enter verified promo codes like GET12$AIRPORT ($12 OFF airport parking) or MONTHLYWAY30 (up to 30% OFF monthly parking) in the promo field to instantly deduct the savings."
+      },
+      {
+        "question": "What is the Way.com Referral Program?",
+        "answer": "The Way.com Referral Program allows users to share their unique referral link with friends. When a friend signs up and completes a qualifying booking, you earn up to $100 in Way Bucks rewards."
+      },
+      {
+        "question": "Does Way.com offer monthly parking garage passes?",
+        "answer": "Yes! Way.com offers discounted monthly parking subscriptions in major US cities including New York, Los Angeles, Chicago, San Francisco, and Boston with in-and-out privileges and keycard access."
+      },
+      {
+        "question": "How does Way.com Unlimited Car Wash work?",
+        "answer": "The Way Car Wash Pass provides access to over 10,000 participating car wash locations nationwide. Drivers scan a digital QR barcode on their phone at the car wash entrance for touchless service."
+      },
+      {
+        "question": "How does Way.com compare auto insurance quotes?",
+        "answer": "Way.com integrates with over 200 leading insurance carriers (such as Progressive, Geico, and State Farm). By filling out a single 2-minute form, drivers receive real side-by-side quotes and can save an average of $1,050 per year."
+      }
+    ]
   }
 ]

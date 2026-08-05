@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#F8FAFC"/>
+  <!-- Header -->
+  <rect width="1280" height="70" fill="#0F172A"/>
+  <text x="40" y="44" font-family="'Roboto', sans-serif" font-size="28" font-weight="900" fill="#FF004B">way</text>
+  <text x="120" y="44" font-family="'Roboto', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Secure Express Checkout — 256-Bit SSL Encrypted</text>
+
+  <!-- Left Form Box -->
+  <rect x="40" y="100" width="760" height="580" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="70" y="145" font-family="'Roboto', sans-serif" font-size="22" font-weight="800" fill="#0F172A">1. Vehicle &amp; Driver Details</text>
+  
+  <rect x="70" y="170" width="310" height="48" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="85" y="200" font-family="'Roboto', sans-serif" font-size="14" fill="#64748B">First Name: Alex</text>
+
+  <rect x="400" y="170" width="310" height="48" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="415" y="200" font-family="'Roboto', sans-serif" font-size="14" fill="#64748B">Last Name: Morgan</text>
+
+  <rect x="70" y="235" width="640" height="48" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="85" y="265" font-family="'Roboto', sans-serif" font-size="14" fill="#64748B">Vehicle Plate Number: 7XYZ890 (CA)</text>
+
+  <text x="70" y="325" font-family="'Roboto', sans-serif" font-size="22" font-weight="800" fill="#0F172A">2. Promo Code &amp; Discounts</text>
+
+  <!-- Promo Code Box with Applied Coupon GET12$AIRPORT -->
+  <rect x="70" y="350" width="450" height="52" rx="8" fill="#F8FAFC" stroke="#10B981" stroke-width="2"/>
+  <text x="90" y="382" font-family="'Roboto', sans-serif" font-size="16" font-weight="800" fill="#10B981">Coupon Applied: GET12$AIRPORT</text>
+  
+  <rect x="540" y="350" width="170" height="52" rx="8" fill="#10B981"/>
+  <text x="625" y="382" font-family="'Roboto', sans-serif" font-size="15" font-weight="800" fill="#FFFFFF" text-anchor="middle">-$12.00 OFF</text>
+
+  <text x="70" y="445" font-family="'Roboto', sans-serif" font-size="22" font-weight="800" fill="#0F172A">3. Select Payment Method</text>
+  <g transform="translate(70, 465)">
+    <rect x="0" y="0" width="140" height="50" rx="8" fill="#FFFFFF" stroke="#FF004B" stroke-width="2"/>
+    <text x="70" y="30" font-family="'Roboto', sans-serif" font-size="14" font-weight="800" fill="#FF004B" text-anchor="middle">Credit Card</text>
+
+    <rect x="160" y="0" width="140" height="50" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="230" y="30" font-family="'Roboto', sans-serif" font-size="14" font-weight="700" fill="#64748B" text-anchor="middle">Apple Pay</text>
+
+    <rect x="320" y="0" width="140" height="50" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="390" y="30" font-family="'Roboto', sans-serif" font-size="14" font-weight="700" fill="#64748B" text-anchor="middle">Google Pay</text>
+
+    <rect x="480" y="0" width="160" height="50" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="560" y="30" font-family="'Roboto', sans-serif" font-size="14" font-weight="700" fill="#64748B" text-anchor="middle">Way Bucks ($100)</text>
+  </g>
+
+  <rect x="70" y="580" width="640" height="60" rx="10" fill="#FF004B"/>
+  <text x="390" y="618" font-family="'Roboto', sans-serif" font-size="20" font-weight="900" fill="#FFFFFF" text-anchor="middle">CONFIRM &amp; PAY $36.65</text>
+
+  <!-- Right Order Summary Box -->
+  <rect x="830" y="100" width="410" height="580" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="860" y="145" font-family="'Roboto', sans-serif" font-size="22" font-weight="800" fill="#0F172A">Reservation Summary</text>
+  
+  <text x="860" y="190" font-family="'Roboto', sans-serif" font-size="16" font-weight="700" fill="#0F172A">405 Airport Parking (LAX)</text>
+  <text x="860" y="215" font-family="'Roboto', sans-serif" font-size="14" fill="#64748B">Dates: Aug 10, 2026 - Aug 17, 2026 (7 Days)</text>
+
+  <line x1="860" y1="240" x2="1210" y2="240" stroke="#E2E8F0" stroke-width="1"/>
+
+  <text x="860" y="275" font-family="'Roboto', sans-serif" font-size="15" fill="#0F172A">Daily Parking Rate (7 x $6.95)</text>
+  <text x="1170" y="275" font-family="'Roboto', sans-serif" font-size="15" font-weight="700" fill="#0F172A">$48.65</text>
+
+  <text x="860" y="315" font-family="'Roboto', sans-serif" font-size="15" fill="#10B981">Promo Voucher (GET12$AIRPORT)</text>
+  <text x="1170" y="315" font-family="'Roboto', sans-serif" font-size="15" font-weight="800" fill="#10B981">-$12.00</text>
+
+  <text x="860" y="355" font-family="'Roboto', sans-serif" font-size="15" fill="#0F172A">Airport Taxes &amp; Fees</text>
+  <text x="1170" y="355" font-family="'Roboto', sans-serif" font-size="15" font-weight="700" fill="#0F172A">$0.00</text>
+
+  <line x1="860" y1="390" x2="1210" y2="390" stroke="#E2E8F0" stroke-width="2"/>
+
+  <text x="860" y="440" font-family="'Roboto', sans-serif" font-size="20" font-weight="900" fill="#0F172A">Total Amount Due:</text>
+  <text x="1170" y="440" font-family="'Roboto', sans-serif" font-size="24" font-weight="900" fill="#FF004B">$36.65</text>
+
+  <rect x="860" y="480" width="350" height="170" rx="10" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+  <text x="880" y="515" font-family="'Roboto', sans-serif" font-size="15" font-weight="800" fill="#166534">✓ Free Cancellation up to 24 Hours</text>
+  <text x="880" y="545" font-family="'Roboto', sans-serif" font-size="14" fill="#166534">• Guaranteed Space Reservation</text>
+  <text x="880" y="575" font-family="'Roboto', sans-serif" font-size="14" fill="#166534">• Continuous 24/7 Airport Shuttle</text>
+  <text x="880" y="605" font-family="'Roboto', sans-serif" font-size="14" fill="#166534">• Earn 366 Way Bucks Rewards</text>
+</svg>

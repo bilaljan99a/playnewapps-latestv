@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#F8FAFC"/>
+  <!-- Top Bar -->
+  <rect width="1280" height="70" fill="#0F172A"/>
+  <text x="40" y="44" font-family="'Roboto', sans-serif" font-size="28" font-weight="900" fill="#FF004B">way</text>
+  <text x="120" y="44" font-family="'Roboto', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Way Mobile Super App — All-in-One Car Care &amp; Parking</text>
+
+  <!-- Left Info -->
+  <text x="80" y="160" font-family="'Roboto', sans-serif" font-size="36" font-weight="900" fill="#0F172A">The #1 Car Super App in the US</text>
+  <text x="80" y="200" font-family="'Roboto', sans-serif" font-size="18" fill="#64748B">Over 5 Million Downloads • 4.8★ iOS App Store &amp; Google Play</text>
+  <text x="80" y="240" font-family="'Roboto', sans-serif" font-size="16" fill="#0F172A">✓ One-touch contact-free parking gate entry</text>
+  <text x="80" y="275" font-family="'Roboto', sans-serif" font-size="16" fill="#0F172A">✓ Real-time airport shuttle tracker map</text>
+  <text x="80" y="310" font-family="'Roboto', sans-serif" font-size="16" fill="#0F172A">✓ Digital QR pass scanner for car washes</text>
+  <text x="80" y="345" font-family="'Roboto', sans-serif" font-size="16" fill="#0F172A">✓ 24/7 Roadside Assistance dispatch in 15 mins</text>
+
+  <!-- App Store Buttons -->
+  <rect x="80" y="390" width="200" height="60" rx="10" fill="#0F172A"/>
+  <text x="180" y="426" font-family="'Roboto', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">iOS App Store ★4.8</text>
+
+  <rect x="300" y="390" width="200" height="60" rx="10" fill="#FF004B"/>
+  <text x="400" y="426" font-family="'Roboto', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">Google Play ★4.7</text>
+
+  <!-- Right Phone Mockups Container -->
+  <g transform="translate(680, 100)">
+    <!-- Outer Phone 1 Frame -->
+    <rect x="0" y="0" width="260" height="540" rx="36" fill="#0F172A" stroke="#334155" stroke-width="4"/>
+    <rect x="12" y="12" width="236" height="516" rx="28" fill="#FFFFFF"/>
+    <rect x="80" y="20" width="100" height="20" rx="10" fill="#0F172A"/>
+    <!-- App UI 1 -->
+    <rect x="24" y="60" width="212" height="120" rx="12" fill="#FF004B"/>
+    <text x="40" y="95" font-family="'Roboto', sans-serif" font-size="18" font-weight="900" fill="#FFFFFF">Parking QR Pass</text>
+    <text x="40" y="120" font-family="'Roboto', sans-serif" font-size="12" fill="#FFFFFF">LAX 405 Express Lot</text>
+    <rect x="40" y="135" width="180" height="30" rx="6" fill="#FFFFFF"/>
+    <text x="130" y="155" font-family="'Roboto', sans-serif" font-size="12" font-weight="800" fill="#FF004B" text-anchor="middle">Gate Barcode Ready</text>
+    
+    <!-- Quick Actions in App -->
+    <rect x="24" y="200" width="95" height="95" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <text x="71" y="245" font-family="'Roboto', sans-serif" font-size="24" text-anchor="middle">✈️</text>
+    <text x="71" y="275" font-family="'Roboto', sans-serif" font-size="12" font-weight="700" fill="#0F172A" text-anchor="middle">Airport</text>
+
+    <rect x="141" y="200" width="95" height="95" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <text x="188" y="245" font-family="'Roboto', sans-serif" font-size="24" text-anchor="middle">🧼</text>
+    <text x="188" y="275" font-family="'Roboto', sans-serif" font-size="12" font-weight="700" fill="#0F172A" text-anchor="middle">Car Wash</text>
+
+    <rect x="24" y="310" width="95" height="95" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <text x="71" y="355" font-family="'Roboto', sans-serif" font-size="24" text-anchor="middle">🛡️</text>
+    <text x="71" y="385" font-family="'Roboto', sans-serif" font-size="12" font-weight="700" fill="#0F172A" text-anchor="middle">Insurance</text>
+
+    <rect x="141" y="310" width="95" height="95" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <text x="188" y="355" font-family="'Roboto', sans-serif" font-size="24" text-anchor="middle">🛞</text>
+    <text x="188" y="385" font-family="'Roboto', sans-serif" font-size="12" font-weight="700" fill="#0F172A" text-anchor="middle">Roadside</text>
+
+    <!-- Phone 2 Frame Stacked -->
+    <g transform="translate(160, 40)">
+      <rect x="0" y="0" width="240" height="500" rx="32" fill="#0F172A" stroke="#334155" stroke-width="4"/>
+      <rect x="12" y="12" width="216" height="476" rx="24" fill="#F8FAFC"/>
+      <rect x="70" y="20" width="100" height="18" rx="9" fill="#0F172A"/>
+      <text x="120" y="80" font-family="'Roboto', sans-serif" font-size="18" font-weight="800" fill="#0F172A" text-anchor="middle">Live Shuttle Tracker</text>
+      <rect x="24" y="100" width="192" height="360" rx="12" fill="#E2E8F0"/>
+      <circle cx="120" cy="240" r="30" fill="rgba(255,0,75,0.2)"/>
+      <circle cx="120" cy="240" r="12" fill="#FF004B"/>
+      <text x="120" y="310" font-family="'Roboto', sans-serif" font-size="14" font-weight="800" fill="#0F172A" text-anchor="middle">Terminal 4 Shuttle</text>
+      <text x="120" y="330" font-family="'Roboto', sans-serif" font-size="12" fill="#10B981" text-anchor="middle">Arriving in 3 Mins</text>
+    </g>
+  </g>
+</svg>

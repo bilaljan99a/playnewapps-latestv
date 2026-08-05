@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#F8FAFC"/>
+  <!-- Top Bar -->
+  <rect width="1280" height="70" fill="#0F172A"/>
+  <text x="40" y="44" font-family="'Roboto', sans-serif" font-size="28" font-weight="900" fill="#FF004B">way</text>
+  <text x="120" y="44" font-family="'Roboto', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Airport Parking Finder — LAX (Los Angeles International Airport)</text>
+
+  <!-- Filter Bar -->
+  <rect y="70" width="1280" height="60" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="40" y="82" width="160" height="36" rx="6" fill="#F1F5F9"/>
+  <text x="60" y="105" font-family="'Roboto', sans-serif" font-size="14" font-weight="700" fill="#0F172A">Shuttle Included ✓</text>
+
+  <rect x="220" y="82" width="160" height="36" rx="6" fill="#F1F5F9"/>
+  <text x="240" y="105" font-family="'Roboto', sans-serif" font-size="14" font-weight="700" fill="#0F172A">Covered Parking</text>
+
+  <rect x="400" y="82" width="160" height="36" rx="6" fill="#F1F5F9"/>
+  <text x="420" y="105" font-family="'Roboto', sans-serif" font-size="14" font-weight="700" fill="#0F172A">Valet Service</text>
+
+  <text x="1100" y="105" font-family="'Roboto', sans-serif" font-size="14" font-weight="700" fill="#FF004B">24 Results Found</text>
+
+  <!-- Left Listing Cards Column -->
+  <!-- Listing Card 1 -->
+  <rect x="40" y="150" width="760" height="160" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="60" y="170" width="180" height="120" rx="8" fill="#E2E8F0"/>
+  <text x="150" y="235" font-family="'Roboto', sans-serif" font-size="16" font-weight="700" fill="#64748B" text-anchor="middle">Hotel Airport Lot</text>
+  <text x="260" y="195" font-family="'Roboto', sans-serif" font-size="20" font-weight="800" fill="#0F172A">405 Airport Parking (LAX)</text>
+  <text x="260" y="220" font-family="'Roboto', sans-serif" font-size="14" fill="#64748B">📍 1.2 miles from LAX Airport • Free 24/7 Shuttle every 10 mins</text>
+  <text x="260" y="245" font-family="'Roboto', sans-serif" font-size="14" font-weight="700" fill="#10B981">★ 4.8/5 (2,410 Reviews) • Instant Cancellation</text>
+  <text x="660" y="195" font-family="'Roboto', sans-serif" font-size="24" font-weight="900" fill="#FF004B">$6.95 / day</text>
+  <rect x="640" y="230" width="140" height="42" rx="8" fill="#FF004B"/>
+  <text x="710" y="256" font-family="'Roboto', sans-serif" font-size="15" font-weight="800" fill="#FFFFFF" text-anchor="middle">Book Space</text>
+
+  <!-- Listing Card 2 -->
+  <rect x="40" y="330" width="760" height="160" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="60" y="350" width="180" height="120" rx="8" fill="#E2E8F0"/>
+  <text x="150" y="415" font-family="'Roboto', sans-serif" font-size="16" font-weight="700" fill="#64748B" text-anchor="middle">Valet Parking Garage</text>
+  <text x="260" y="375" font-family="'Roboto', sans-serif" font-size="20" font-weight="800" fill="#0F172A">QuikPark LAX Express Garage</text>
+  <text x="260" y="400" font-family="'Roboto', sans-serif" font-size="14" fill="#64748B">📍 0.5 miles from Terminals • Covered Valet Parking</text>
+  <text x="260" y="425" font-family="'Roboto', sans-serif" font-size="14" font-weight="700" fill="#10B981">★ 4.9/5 (4,820 Reviews) • EV Charging Available</text>
+  <text x="660" y="375" font-family="'Roboto', sans-serif" font-size="24" font-weight="900" fill="#FF004B">$9.50 / day</text>
+  <rect x="640" y="410" width="140" height="42" rx="8" fill="#FF004B"/>
+  <text x="710" y="436" font-family="'Roboto', sans-serif" font-size="15" font-weight="800" fill="#FFFFFF" text-anchor="middle">Book Space</text>
+
+  <!-- Listing Card 3 -->
+  <rect x="40" y="510" width="760" height="160" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="60" y="530" width="180" height="120" rx="8" fill="#E2E8F0"/>
+  <text x="150" y="595" font-family="'Roboto', sans-serif" font-size="16" font-weight="700" fill="#64748B" text-anchor="middle">Sheraton LAX Parking</text>
+  <text x="260" y="555" font-family="'Roboto', sans-serif" font-size="20" font-weight="800" fill="#0F172A">Sheraton Gateway Airport Parking</text>
+  <text x="260" y="580" font-family="'Roboto', sans-serif" font-size="14" fill="#64748B">📍 0.8 miles from Terminals • Gated Security &amp; Surveillance</text>
+  <text x="260" y="605" font-family="'Roboto', sans-serif" font-size="14" font-weight="700" fill="#10B981">★ 4.7/5 (1,150 Reviews) • 24/7 Staffed</text>
+  <text x="660" y="555" font-family="'Roboto', sans-serif" font-size="24" font-weight="900" fill="#FF004B">$8.25 / day</text>
+  <rect x="640" y="590" width="140" height="42" rx="8" fill="#FF004B"/>
+  <text x="710" y="616" font-family="'Roboto', sans-serif" font-size="15" font-weight="800" fill="#FFFFFF" text-anchor="middle">Book Space</text>
+
+  <!-- Right Interactive Map View Container -->
+  <rect x="830" y="150" width="410" height="520" rx="12" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="1035" y="380" font-family="'Roboto', sans-serif" font-size="20" font-weight="800" fill="#64748B" text-anchor="middle">Interactive Airport Map View</text>
+  <!-- Pins on map -->
+  <circle cx="950" cy="300" r="18" fill="#FF004B"/>
+  <text x="950" y="305" font-family="'Roboto', sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">$6.95</text>
+
+  <circle cx="1100" cy="240" r="18" fill="#FF004B"/>
+  <text x="1100" y="245" font-family="'Roboto', sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">$9.50</text>
+
+  <circle cx="1020" cy="460" r="18" fill="#FF004B"/>
+  <text x="1020" y="465" font-family="'Roboto', sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">$8.25</text>
+</svg>
