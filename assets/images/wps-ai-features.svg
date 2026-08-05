@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0f172a;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <defs>
+    <linearGradient id="aiHeader" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="50%" stop-color="#c026d3"/>
+      <stop offset="100%" stop-color="#db2777"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title Bar -->
+  <rect x="0" y="0" width="1280" height="50" fill="#1e293b"/>
+  <rect x="16" y="10" width="30" height="30" rx="6" fill="url(#aiHeader)"/>
+  <text x="31" y="31" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">AI</text>
+  <text x="56" y="30" font-size="15" font-weight="800" fill="#ffffff">WPS AI Smart Assistant Hub</text>
+  <text x="260" y="30" font-size="13" fill="#cbd5e1">Generative Writing, Automated Summarization &amp; Data Analysis</text>
+
+  <!-- Left Main Workspace Document -->
+  <g transform="translate(30, 80)">
+    <rect width="780" height="580" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    
+    <g transform="translate(40, 40)">
+      <text x="0" y="20" font-size="22" font-weight="800" fill="#ffffff">📄 Executive Q3 Research Paper Draft</text>
+      <line x1="0" y1="35" x2="700" y2="35" stroke="#334155"/>
+
+      <text x="0" y="70" font-size="14" fill="#cbd5e1" line-height="1.7">
+        [Original Draft Paragraph] Organizational agility in 2026 relies on rapid document processing,
+      </text>
+      <text x="0" y="95" font-size="14" fill="#cbd5e1">
+        automated data consolidation across spreadsheets, and real-time collaboration tools.
+      </text>
+
+      <!-- AI Rewrite Callout Box -->
+      <g transform="translate(0, 130)">
+        <rect width="700" height="180" rx="10" fill="#2e1065" stroke="#a855f7" stroke-width="1.5"/>
+        <text x="20" y="32" font-size="14" font-weight="800" fill="#e9d5ff">✨ WPS AI Assistant Suggestion (Executive Tone Reword):</text>
+        
+        <text x="20" y="65" font-size="14" fill="#ffffff" font-weight="600" line-height="1.6">
+          "Strategic agility in 2026 demands unified, AI-accelerated document management,
+        </text>
+        <text x="20" y="88" font-size="14" fill="#ffffff" font-weight="600">
+          automated cross-tabular financial modeling, and cloud synchronization."
+        </text>
+
+        <rect x="20" y="115" width="140" height="36" rx="6" fill="#a855f7"/>
+        <text x="90" y="138" font-size="13" font-weight="800" fill="#ffffff" text-anchor="middle">Replace Original</text>
+
+        <rect x="175" y="115" width="120" height="36" rx="6" fill="#334155"/>
+        <text x="235" y="138" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Make Longer</text>
+
+        <rect x="310" y="115" width="120" height="36" rx="6" fill="#334155"/>
+        <text x="370" y="138" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Make Shorter</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right AI Chat Floating Side Panel -->
+  <g transform="translate(830, 80)">
+    <rect width="420" height="580" rx="12" fill="#0f172a" stroke="#a855f7" stroke-width="2"/>
+    
+    <!-- AI Panel Header -->
+    <rect width="420" height="60" rx="12" fill="url(#aiHeader)"/>
+    <text x="24" y="36" font-size="18" font-weight="900" fill="#ffffff">✨ WPS AI Chat Copilot</text>
+
+    <!-- Chat Messages -->
+    <g transform="translate(20, 80)">
+      <!-- User Prompt -->
+      <rect width="320" height="50" rx="8" fill="#334155"/>
+      <text x="16" y="30" font-size="13" fill="#ffffff">User: Summarize this 30-page PDF into 3 bullet points.</text>
+
+      <!-- AI Response -->
+      <g transform="translate(0, 70)">
+        <rect width="380" height="200" rx="8" fill="#1e293b" stroke="#334155"/>
+        <text x="16" y="28" font-size="13" font-weight="800" fill="#c026d3">WPS AI Response:</text>
+        
+        <text x="16" y="60" font-size="12" fill="#e2e8f0">• Key Finding 1: WPS Office reduces software spend by 70%.</text>
+        <text x="16" y="90" font-size="12" fill="#e2e8f0">• Key Finding 2: Native PDF editing eliminates Acrobat license costs.</text>
+        <text x="16" y="120" font-size="12" fill="#e2e8f0">• Key Finding 3: AI Copilot accelerates drafting by 3x speed.</text>
+      </g>
+    </g>
+
+    <!-- Prompt Input Box -->
+    <g transform="translate(20, 500)">
+      <rect width="380" height="50" rx="25" fill="#1e293b" stroke="#a855f7" stroke-width="1"/>
+      <text x="20" y="30" font-size="13" fill="#94a3b8">Ask WPS AI to write, analyze or translate...</text>
+    </g>
+  </g>
+
+  <!-- Status Bar -->
+  <rect x="0" y="690" width="1280" height="30" fill="#1e293b"/>
+  <text x="20" y="710" font-size="12" fill="#a78bfa">WPS AI Model: Active (GPT-4o &amp; DeepSeek V3 API Integrated) | Latency: 120ms | Response Quota: Unlimited Pro</text>
+</svg>

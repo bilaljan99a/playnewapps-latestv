@@ -805,37 +805,16 @@ class App {
             if (videoContainer) {
                 const embedUrl = videoObj.embedUrl;
                 const thumbUrl = videoObj.thumbnail;
+                const ytWatchUrl = videoObj.youtubeId ? `https://www.youtube.com/watch?v=${videoObj.youtubeId}` : 'https://www.youtube.com/';
                 
-                if (embedUrl) {
-                    videoContainer.innerHTML = `
-                        <div class="video-placeholder card" tabindex="0" role="button" aria-label="Play ${review.title} Video Review">
-                            <img src="${thumbUrl}" alt="${videoObj.title || review.title + ' Official Video Tutorial'}" class="video-thumbnail" loading="lazy">
-                            <div class="play-overlay-badge">
-                                <span class="material-icons-round play-icon">play_circle_filled</span>
-                                <span class="video-play-text">${videoObj.title || 'Watch Official Video Tutorial'}</span>
-                            </div>
-                        </div>`;
-                    
-                    const placeholder = videoContainer.querySelector('.video-placeholder');
-                    if (placeholder) {
-                        const loadIframe = () => {
-                            videoContainer.innerHTML = `<iframe src="${embedUrl}?autoplay=1" title="${review.title} Video Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>`;
-                        };
-                        placeholder.addEventListener('click', loadIframe);
-                        placeholder.addEventListener('keydown', (e) => {
-                            if (e.key === 'Enter' || e.key === ' ') {
-                                e.preventDefault();
-                                loadIframe();
-                            }
-                        });
-                    }
-                } else if (thumbUrl) {
-                    videoContainer.innerHTML = `
-                        <div class="video-placeholder card">
-                            <img src="${thumbUrl}" alt="${review.title} Video Preview" class="video-thumbnail" loading="lazy">
+                videoContainer.innerHTML = `
+                    <a href="${ytWatchUrl}" target="_blank" rel="noopener noreferrer" class="video-placeholder card" style="display: block; text-decoration: none;" aria-label="Watch ${review.title} Video Review on YouTube">
+                        <img src="${thumbUrl}" alt="${videoObj.title || review.title + ' Official Video Tutorial'}" class="video-thumbnail" loading="lazy">
+                        <div class="play-overlay-badge">
                             <span class="material-icons-round play-icon">play_circle_filled</span>
-                        </div>`;
-                }
+                            <span class="video-play-text">${videoObj.title || 'Watch Official Video Tutorial'} (Opens in New Tab)</span>
+                        </div>
+                    </a>`;
             }
         } else if (videoSection) {
             videoSection.style.display = 'none';

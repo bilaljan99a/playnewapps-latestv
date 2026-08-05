@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0f172a;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <!-- Title Bar -->
+  <rect x="0" y="0" width="1280" height="50" fill="#1e293b"/>
+  <rect x="16" y="10" width="30" height="30" rx="6" fill="#dc2626"/>
+  <text x="31" y="31" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">PDF</text>
+  <text x="56" y="30" font-size="15" font-weight="800" fill="#ffffff">WPS PDF Suite &amp; Converter</text>
+  <text x="250" y="30" font-size="13" fill="#94a3b8">-[WPS_Office_Enterprise_Whitepaper.pdf] - Full Editing Mode</text>
+  
+  <!-- Ribbon Toolbar -->
+  <rect x="0" y="50" width="1280" height="70" fill="#1e293b"/>
+  <line x1="0" y1="50" x2="1280" y2="50" stroke="#334155" stroke-width="1"/>
+  <line x1="0" y1="120" x2="1280" y2="120" stroke="#334155" stroke-width="1"/>
+
+  <g transform="translate(20, 60)">
+    <rect width="130" height="26" rx="4" fill="#dc2626"/>
+    <text x="85" y="18" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle">⚡ Convert PDF to Word</text>
+    <text x="180" y="18" font-size="12" fill="#cbd5e1">PDF to Excel</text>
+    <text x="270" y="18" font-size="12" fill="#cbd5e1">Edit Text &amp; Images</text>
+    <text x="390" y="18" font-size="12" fill="#cbd5e1">OCR Scan</text>
+    <text x="470" y="18" font-size="12" fill="#cbd5e1">Split &amp; Merge Pages</text>
+    <text x="600" y="18" font-size="12" fill="#cbd5e1">Sign &amp; Protect</text>
+  </g>
+
+  <!-- PDF Editor Area -->
+  <g transform="translate(240, 140)">
+    <rect width="800" height="520" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    
+    <g transform="translate(60, 50)" font-family="Arial, sans-serif">
+      <!-- Watermark / Tag -->
+      <rect width="180" height="24" rx="12" fill="#fee2e2"/>
+      <text x="90" y="16" font-size="11" font-weight="800" fill="#dc2626" text-anchor="middle">SECURE PDF DOCUMENT</text>
+
+      <text x="0" y="50" font-size="22" font-weight="800" fill="#0f172a">WPS PDF Pro: Direct Text &amp; Image Manipulation</text>
+      <text x="0" y="75" font-size="13" fill="#64748b">Multi-page Document | OCR Optical Character Recognition Enabled</text>
+      
+      <!-- Bounding Box Edit Marker -->
+      <rect x="-10" y="95" width="680" height="90" rx="6" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4 4"/>
+      <rect x="660" y="90" width="12" height="12" fill="#2563eb"/>
+      
+      <text x="0" y="120" font-size="13" fill="#1e293b" line-height="1.6">
+        WPS PDF Editor empowers professionals to modify existing PDF document text directly without converting
+      </text>
+      <text x="0" y="140" font-size="13" fill="#1e293b">
+        to Word first. Adjust font family, font size, line spacing, image scaling, page rotation, and page ordering.
+      </text>
+
+      <!-- Signature & Stamp Mockup -->
+      <g transform="translate(0, 210)">
+        <rect width="320" height="120" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="16" y="28" font-size="12" font-weight="700" fill="#475569">Digital Signature Verification:</text>
+        <path d="M 20 70 Q 50 30, 90 70 T 160 60 T 220 80" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+        <text x="16" y="105" font-size="11" fill="#16a34a">✓ Verified Cryptographic Signature - Kingsoft RSA-2048</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Left Page Thumbnails -->
+  <rect x="0" y="120" width="220" height="570" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <g transform="translate(20, 140)">
+    <rect width="180" height="130" rx="6" fill="#ffffff"/>
+    <text x="90" y="70" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">Page 1 (Active)</text>
+    <rect x="20" y="290" width="180" height="130" rx="6" fill="#334155"/>
+    <text x="90" y="360" font-size="12" fill="#cbd5e1" text-anchor="middle">Page 2</text>
+  </g>
+
+  <!-- Status Bar -->
+  <rect x="0" y="690" width="1280" height="30" fill="#1e293b"/>
+  <text x="20" y="710" font-size="12" fill="#94a3b8">PDF View 100% | Page 1 of 18 | OCR Engine: Active | Encryption: AES-256 Bit | Password Protected: No</text>
+</svg>
