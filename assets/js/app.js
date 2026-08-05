@@ -976,17 +976,55 @@ App.initHeaderStoresDropdown = async function() {
     try {
         const stores = await DataService.getStores();
         if (stores && stores.length > 0) {
-            dropdownMenu.innerHTML = stores.map(store => `
-                <a href="store.html?id=${store.id}" class="dropdown-item">
-                    <img src="${store.logo}" alt="${store.name} logo" width="22" height="22" loading="lazy" style="object-fit: contain; background: #ffffff; border-radius: 4px; padding: 2px; border: 1px solid var(--border-color, #e2e8f0);">
-                    <span>${store.name}</span>
-                </a>
-            `).join('') + `
+            const POPULAR_KEYS = [
+                'alibaba',
+                'aliexpress',
+                'amazon',
+                'fiverr',
+                'wondershare',
+                'adobe',
+                'canva',
+                'grammarly',
+                'hostinger',
+                'nordvpn'
+            ];
+
+            const popularStores = [];
+            POPULAR_KEYS.forEach(key => {
+                const matched = stores.find(s => 
+                    s.id === key || 
+                    s.name.toLowerCase() === key.toLowerCase() || 
+                    s.id.includes(key)
+                );
+                if (matched && !popularStores.some(ps => ps.id === matched.id)) {
+                    popularStores.push(matched);
+                }
+            });
+
+            let html = `
+                <div class="dropdown-section-header">
+                    <span class="star-icon">⭐</span> Popular Stores
+                </div>
+            `;
+
+            if (popularStores.length > 0) {
+                html += popularStores.map(store => `
+                    <a href="store.html?id=${store.id}" class="dropdown-item">
+                        <img src="${store.logo}" alt="${store.name} logo" width="22" height="22" loading="lazy" style="object-fit: contain; background: #ffffff; border-radius: 4px; padding: 2px; border: 1px solid var(--border-color, #e2e8f0);">
+                        <span>${store.name}</span>
+                    </a>
+                `).join('');
+            }
+
+            html += `
                 <div class="dropdown-divider"></div>
-                <a href="store.html" class="dropdown-item dropdown-view-all">
-                    <strong>View All Stores &rarr;</strong>
+                <a href="stores.html" class="dropdown-item dropdown-view-all">
+                    <span>View All Stores</span>
+                    <span class="view-all-arrow">&rarr;</span>
                 </a>
             `;
+
+            dropdownMenu.innerHTML = html;
         }
     } catch (err) {
         console.error('Error fetching stores for header dropdown:', err);
