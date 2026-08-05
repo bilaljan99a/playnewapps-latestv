@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <rect width="1200" height="700" fill="#121824" />
+  <!-- Top Search Bar -->
+  <rect x="50" y="30" width="1100" height="110" rx="12" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+  <text x="80" y="65" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="20">Adheart Advanced Search Engine</text>
+  <rect x="80" y="80" width="450" height="42" rx="6" fill="#2A344A" />
+  <text x="100" y="106" fill="#FFFFFF" font-family="sans-serif" font-size="14">Keyword: "Wireless Earbuds" | Language: All | GEO: US, CA, UK</text>
+  <rect x="550" y="80" width="180" height="42" rx="6" fill="#2A344A" />
+  <text x="565" y="106" fill="#A0AEC0" font-family="sans-serif" font-size="14">Format: Video / UGC</text>
+  <rect x="740" y="80" width="180" height="42" rx="6" fill="#2A344A" />
+  <text x="755" y="106" fill="#A0AEC0" font-family="sans-serif" font-size="14">Sort: Running Days ↓</text>
+  <rect x="940" y="80" width="180" height="42" rx="6" fill="#FB8500" />
+  <text x="980" y="106" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14">FIND CREATIVES</text>
+
+  <!-- Results Grid -->
+  <g transform="translate(50, 170)">
+    <!-- Ad Card 1 -->
+    <rect width="340" height="480" rx="10" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+    <rect width="340" height="220" rx="10" fill="#2A344A" />
+    <polygon points="150,90 150,130 190,110" fill="#FB8500" />
+    <rect x="15" y="235" width="80" height="22" rx="11" fill="#10B981" />
+    <text x="25" y="250" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="11">ACTIVE 42d</text>
+    <text x="110" y="250" fill="#A0AEC0" font-family="sans-serif" font-size="12">FB &amp; IG • ID: 8940219</text>
+    <text x="15" y="280" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14">"Experience HD Audio Like Never Before! 🎧"</text>
+    <text x="15" y="305" fill="#A0AEC0" font-family="sans-serif" font-size="12">Page: SoundTech Global (184k Likes)</text>
+    <rect x="15" y="325" width="310" height="1" fill="#2A344A" />
+    <text x="15" y="350" fill="#A0AEC0" font-family="sans-serif" font-size="12">Domain: soundtechstore.com</text>
+    <text x="15" y="375" fill="#A0AEC0" font-family="sans-serif" font-size="12">GEO: USA, UK, AU, DE</text>
+    <rect x="15" y="410" width="145" height="40" rx="6" fill="#2A344A" />
+    <text x="35" y="435" fill="#FFFFFF" font-family="sans-serif" font-size="12">📥 Download MP4</text>
+    <rect x="175" y="410" width="150" height="40" rx="6" fill="#FB8500" />
+    <text x="195" y="435" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="12">View Landing Page</text>
+
+    <!-- Ad Card 2 -->
+    <g transform="translate(380, 0)">
+      <rect width="340" height="480" rx="10" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+      <rect width="340" height="220" rx="10" fill="#2A344A" />
+      <polygon points="150,90 150,130 190,110" fill="#FB8500" />
+      <rect x="15" y="235" width="80" height="22" rx="11" fill="#10B981" />
+      <text x="25" y="250" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="11">ACTIVE 88d</text>
+      <text x="110" y="250" fill="#A0AEC0" font-family="sans-serif" font-size="12">TikTok • ID: 4129803</text>
+      <text x="15" y="280" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14">"TikTok Made Me Buy These ANC Earbuds 🔥"</text>
+      <text x="15" y="305" fill="#A0AEC0" font-family="sans-serif" font-size="12">Advertiser: EarbudWave Official</text>
+      <rect x="15" y="325" width="310" height="1" fill="#2A344A" />
+      <text x="15" y="350" fill="#A0AEC0" font-family="sans-serif" font-size="12">Domain: buyearbudwave.com</text>
+      <text x="15" y="375" fill="#A0AEC0" font-family="sans-serif" font-size="12">GEO: Worldwide</text>
+      <rect x="15" y="410" width="145" height="40" rx="6" fill="#2A344A" />
+      <text x="35" y="435" fill="#FFFFFF" font-family="sans-serif" font-size="12">📥 Download MP4</text>
+      <rect x="175" y="410" width="150" height="40" rx="6" fill="#FB8500" />
+      <text x="195" y="435" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="12">View Landing Page</text>
+    </g>
+
+    <!-- Ad Card 3 -->
+    <g transform="translate(760, 0)">
+      <rect width="340" height="480" rx="10" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+      <rect width="340" height="220" rx="10" fill="#2A344A" />
+      <polygon points="150,90 150,130 190,110" fill="#FB8500" />
+      <rect x="15" y="235" width="80" height="22" rx="11" fill="#10B981" />
+      <text x="25" y="250" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="11">ACTIVE 120d</text>
+      <text x="110" y="250" fill="#A0AEC0" font-family="sans-serif" font-size="12">FB &amp; IG • ID: 9012384</text>
+      <text x="15" y="280" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14">"50% OFF Sale - Studio Quality Sound Today"</text>
+      <text x="15" y="305" fill="#A0AEC0" font-family="sans-serif" font-size="12">Page: AudioGear Direct</text>
+      <rect x="15" y="325" width="310" height="1" fill="#2A344A" />
+      <text x="15" y="350" fill="#A0AEC0" font-family="sans-serif" font-size="12">Domain: audiogeardirect.net</text>
+      <text x="15" y="375" fill="#A0AEC0" font-family="sans-serif" font-size="12">GEO: USA, CA</text>
+      <rect x="15" y="410" width="145" height="40" rx="6" fill="#2A344A" />
+      <text x="35" y="435" fill="#FFFFFF" font-family="sans-serif" font-size="12">📥 Download MP4</text>
+      <rect x="175" y="410" width="150" height="40" rx="6" fill="#FB8500" />
+      <text x="195" y="435" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="12">View Landing Page</text>
+    </g>
+  </g>
+</svg>

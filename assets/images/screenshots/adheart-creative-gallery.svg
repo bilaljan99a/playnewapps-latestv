@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <rect width="1200" height="700" fill="#121824" />
+  <rect x="50" y="30" width="1100" height="70" rx="10" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+  <text x="80" y="72" fill="#FB8500" font-family="sans-serif" font-weight="bold" font-size="22">🎨 Adheart Creative Discovery &amp; Video Downloader</text>
+  <text x="680" y="72" fill="#A0AEC0" font-family="sans-serif" font-size="14">Download High-Res MP4 Video Creatives Without Watermarks</text>
+
+  <!-- Gallery Grid -->
+  <g transform="translate(50, 120)">
+    <!-- Item 1 -->
+    <rect width="255" height="250" rx="10" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+    <rect x="10" y="10" width="235" height="150" rx="8" fill="#2A344A" />
+    <polygon points="115,70 115,100 145,85" fill="#FB8500" />
+    <text x="15" y="185" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">UGC Unboxing Video #402</text>
+    <text x="15" y="205" fill="#A0AEC0" font-family="sans-serif" font-size="11">Format: MP4 (1080p) • 14.8 MB</text>
+    <rect x="15" y="215" width="225" height="28" rx="4" fill="#FB8500" />
+    <text x="75" y="234" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="11">⚡ DOWNLOAD MP4</text>
+
+    <!-- Item 2 -->
+    <g transform="translate(280, 0)">
+      <rect width="255" height="250" rx="10" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+      <rect x="10" y="10" width="235" height="150" rx="8" fill="#2A344A" />
+      <polygon points="115,70 115,100 145,85" fill="#FB8500" />
+      <text x="15" y="185" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">Before / After Split Screen</text>
+      <text x="15" y="205" fill="#A0AEC0" font-family="sans-serif" font-size="11">Format: MP4 (1080p) • 22.1 MB</text>
+      <rect x="15" y="215" width="225" height="28" rx="4" fill="#FB8500" />
+      <text x="75" y="234" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="11">⚡ DOWNLOAD MP4</text>
+    </g>
+
+    <!-- Item 3 -->
+    <g transform="translate(560, 0)">
+      <rect width="255" height="250" rx="10" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+      <rect x="10" y="10" width="235" height="150" rx="8" fill="#2A344A" />
+      <polygon points="115,70 115,100 145,85" fill="#FB8500" />
+      <text x="15" y="185" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">3D Product Animation</text>
+      <text x="15" y="205" fill="#A0AEC0" font-family="sans-serif" font-size="11">Format: MP4 (1080p) • 38.4 MB</text>
+      <rect x="15" y="215" width="225" height="28" rx="4" fill="#FB8500" />
+      <text x="75" y="234" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="11">⚡ DOWNLOAD MP4</text>
+    </g>
+
+    <!-- Item 4 -->
+    <g transform="translate(840, 0)">
+      <rect width="255" height="250" rx="10" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+      <rect x="10" y="10" width="235" height="150" rx="8" fill="#2A344A" />
+      <polygon points="115,70 115,100 145,85" fill="#FB8500" />
+      <text x="15" y="185" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">Problem-Solution Hook Ad</text>
+      <text x="15" y="205" fill="#A0AEC0" font-family="sans-serif" font-size="11">Format: MP4 (1080p) • 18.2 MB</text>
+      <rect x="15" y="215" width="225" height="28" rx="4" fill="#FB8500" />
+      <text x="75" y="234" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="11">⚡ DOWNLOAD MP4</text>
+    </g>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(50, 390)">
+    <!-- Item 5 -->
+    <rect width="255" height="250" rx="10" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+    <rect x="10" y="10" width="235" height="150" rx="8" fill="#2A344A" />
+    <polygon points="115,70 115,100 145,85" fill="#FB8500" />
+    <text x="15" y="185" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">Influencer Review Reel</text>
+    <text x="15" y="205" fill="#A0AEC0" font-family="sans-serif" font-size="11">Format: MP4 (1080p) • 12.9 MB</text>
+    <rect x="15" y="215" width="225" height="28" rx="4" fill="#FB8500" />
+    <text x="75" y="234" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="11">⚡ DOWNLOAD MP4</text>
+
+    <!-- Item 6 -->
+    <g transform="translate(280, 0)">
+      <rect width="255" height="250" rx="10" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+      <rect x="10" y="10" width="235" height="150" rx="8" fill="#2A344A" />
+      <polygon points="115,70 115,100 145,85" fill="#FB8500" />
+      <text x="15" y="185" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">Carousel Image Set #12</text>
+      <text x="15" y="205" fill="#A0AEC0" font-family="sans-serif" font-size="11">Format: ZIP (4x JPG) • 8.5 MB</text>
+      <rect x="15" y="215" width="225" height="28" rx="4" fill="#FB8500" />
+      <text x="75" y="234" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="11">⚡ DOWNLOAD ZIP</text>
+    </g>
+
+    <!-- Item 7 -->
+    <g transform="translate(560, 0)">
+      <rect width="255" height="250" rx="10" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+      <rect x="10" y="10" width="235" height="150" rx="8" fill="#2A344A" />
+      <polygon points="115,70 115,100 145,85" fill="#FB8500" />
+      <text x="15" y="185" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">ASMR Satisfying Video</text>
+      <text x="15" y="205" fill="#A0AEC0" font-family="sans-serif" font-size="11">Format: MP4 (1080p) • 29.0 MB</text>
+      <rect x="15" y="215" width="225" height="28" rx="4" fill="#FB8500" />
+      <text x="75" y="234" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="11">⚡ DOWNLOAD MP4</text>
+    </g>
+
+    <!-- Item 8 -->
+    <g transform="translate(840, 0)">
+      <rect width="255" height="250" rx="10" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+      <rect x="10" y="10" width="235" height="150" rx="8" fill="#2A344A" />
+      <polygon points="115,70 115,100 145,85" fill="#FB8500" />
+      <text x="15" y="185" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">Comparison Testimonial</text>
+      <text x="15" y="205" fill="#A0AEC0" font-family="sans-serif" font-size="11">Format: MP4 (1080p) • 16.4 MB</text>
+      <rect x="15" y="215" width="225" height="28" rx="4" fill="#FB8500" />
+      <text x="75" y="234" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="11">⚡ DOWNLOAD MP4</text>
+    </g>
+  </g>
+</svg>

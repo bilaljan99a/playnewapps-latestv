@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <rect width="1200" height="700" fill="#121824" />
+  <rect x="50" y="30" width="1100" height="70" rx="10" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+  <text x="80" y="72" fill="#3B82F6" font-family="sans-serif" font-weight="bold" font-size="22">🌐 Adheart Landing Page &amp; E-commerce Funnel Finder</text>
+  <text x="680" y="72" fill="#A0AEC0" font-family="sans-serif" font-size="14">Inspect High-Converting Shopify, WooCommerce &amp; Custom Funnels</text>
+
+  <!-- Landing Page Cards -->
+  <g transform="translate(50, 120)">
+    <!-- Card 1 -->
+    <rect width="340" height="530" rx="12" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+    <rect width="340" height="200" rx="12" fill="#2A344A" />
+    <text x="120" y="110" fill="#A0AEC0" font-family="sans-serif" font-size="14">[Shopify Store Funnel Preview]</text>
+    <text x="20" y="230" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="15">Lumina Glow Skin Oil Page</text>
+    <text x="20" y="255" fill="#3B82F6" font-family="sans-serif" font-size="13">https://luminaglow.com/products/oil</text>
+    <text x="20" y="285" fill="#A0AEC0" font-family="sans-serif" font-size="12">CMS Platform: Shopify</text>
+    <text x="20" y="310" fill="#A0AEC0" font-family="sans-serif" font-size="12">Apps Detected: Loox Reviews, Klaviyo, PageFly</text>
+    <text x="20" y="335" fill="#A0AEC0" font-family="sans-serif" font-size="12">Linked Active Ads: 38 Creatives</text>
+    <text x="20" y="360" fill="#A0AEC0" font-family="sans-serif" font-size="12">First Detected: 92 days ago</text>
+    <rect x="20" y="390" width="300" height="1" fill="#2A344A" />
+    <rect x="20" y="415" width="300" height="42" rx="6" fill="#FB8500" />
+    <text x="80" y="441" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">⚡ Download Page HTML &amp; Assets</text>
+    <rect x="20" y="468" width="300" height="42" rx="6" fill="#2A344A" />
+    <text x="95" y="494" fill="#FFFFFF" font-family="sans-serif" font-size="13">View Full Screen Snapshot</text>
+
+    <!-- Card 2 -->
+    <g transform="translate(380, 0)">
+      <rect width="340" height="530" rx="12" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+      <rect width="340" height="200" rx="12" fill="#2A344A" />
+      <text x="110" y="110" fill="#A0AEC0" font-family="sans-serif" font-size="14">[WooCommerce Product Page]</text>
+      <text x="20" y="230" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="15">Aura Sound ANC Headphones</text>
+      <text x="20" y="255" fill="#3B82F6" font-family="sans-serif" font-size="13">https://aurasoundgear.com/anc-headphone</text>
+      <text x="20" y="285" fill="#A0AEC0" font-family="sans-serif" font-size="12">CMS Platform: WooCommerce</text>
+      <text x="20" y="310" fill="#A0AEC0" font-family="sans-serif" font-size="12">Apps Detected: Elementor, CartFlows, Stripe</text>
+      <text x="20" y="335" fill="#A0AEC0" font-family="sans-serif" font-size="12">Linked Active Ads: 24 Creatives</text>
+      <text x="20" y="360" fill="#A0AEC0" font-family="sans-serif" font-size="12">First Detected: 140 days ago</text>
+      <rect x="20" y="390" width="300" height="1" fill="#2A344A" />
+      <rect x="20" y="415" width="300" height="42" rx="6" fill="#FB8500" />
+      <text x="80" y="441" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">⚡ Download Page HTML &amp; Assets</text>
+      <rect x="20" y="468" width="300" height="42" rx="6" fill="#2A344A" />
+      <text x="95" y="494" fill="#FFFFFF" font-family="sans-serif" font-size="13">View Full Screen Snapshot</text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(760, 0)">
+      <rect width="340" height="530" rx="12" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+      <rect width="340" height="200" rx="12" fill="#2A344A" />
+      <text x="120" y="110" fill="#A0AEC0" font-family="sans-serif" font-size="14">[ClickFunnels VSL Page]</text>
+      <text x="20" y="230" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="15">Nutra Supplement VSL Funnel</text>
+      <text x="20" y="255" fill="#3B82F6" font-family="sans-serif" font-size="13">https://tryketoextreme.com/vsl-offer</text>
+      <text x="20" y="285" fill="#A0AEC0" font-family="sans-serif" font-size="12">CMS Platform: ClickFunnels</text>
+      <text x="20" y="310" fill="#A0AEC0" font-family="sans-serif" font-size="12">Apps Detected: VSL Player, Sticky Order</text>
+      <text x="20" y="335" fill="#A0AEC0" font-family="sans-serif" font-size="12">Linked Active Ads: 62 Creatives</text>
+      <text x="20" y="360" fill="#A0AEC0" font-family="sans-serif" font-size="12">First Detected: 185 days ago</text>
+      <rect x="20" y="390" width="300" height="1" fill="#2A344A" />
+      <rect x="20" y="415" width="300" height="42" rx="6" fill="#FB8500" />
+      <text x="80" y="441" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">⚡ Download Page HTML &amp; Assets</text>
+      <rect x="20" y="468" width="300" height="42" rx="6" fill="#2A344A" />
+      <text x="95" y="494" fill="#FFFFFF" font-family="sans-serif" font-size="13">View Full Screen Snapshot</text>
+    </g>
+  </g>
+</svg>

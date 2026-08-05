@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <rect width="1200" height="700" fill="#121824" />
+  <rect x="50" y="30" width="1100" height="80" rx="10" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+  <text x="80" y="75" fill="#1877F2" font-family="sans-serif" font-weight="bold" font-size="24">📘 Meta / Facebook Ad Intelligence Database</text>
+  <text x="580" y="75" fill="#A0AEC0" font-family="sans-serif" font-size="14">Total Indexed Facebook Ads: 720,000,000+ | Updated Hourly</text>
+
+  <!-- Filter Pills -->
+  <g transform="translate(50, 130)">
+    <rect width="180" height="36" rx="18" fill="#1877F2" />
+    <text x="25" y="23" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">Facebook Feed Ads</text>
+    <rect x="200" width="160" height="36" rx="18" fill="#2A344A" />
+    <text x="225" y="23" fill="#A0AEC0" font-family="sans-serif" font-size="13">Instagram Stories</text>
+    <rect x="380" width="150" height="36" rx="18" fill="#2A344A" />
+    <text x="405" y="23" fill="#A0AEC0" font-family="sans-serif" font-size="13">Reels Videos</text>
+    <rect x="550" width="160" height="36" rx="18" fill="#2A344A" />
+    <text x="575" y="23" fill="#A0AEC0" font-family="sans-serif" font-size="13">Audience Network</text>
+  </g>
+
+  <!-- Ad Cards Row -->
+  <g transform="translate(50, 190)">
+    <!-- Card 1 -->
+    <rect width="340" height="460" rx="12" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+    <circle cx="35" cy="35" r="20" fill="#1877F2" />
+    <text x="65" y="32" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14">Aura Beauty Brand</text>
+    <text x="65" y="48" fill="#A0AEC0" font-family="sans-serif" font-size="11">Sponsored • 1.2M Reach</text>
+    <rect x="15" y="70" width="310" height="200" rx="8" fill="#2A344A" />
+    <polygon points="150,150 150,190 190,170" fill="#FFFFFF" />
+    <text x="15" y="295" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">"Say Goodbye to Dry Skin This Winter! ✨"</text>
+    <text x="15" y="320" fill="#A0AEC0" font-family="sans-serif" font-size="12">Running for 114 days straight without pause.</text>
+    <rect x="15" y="340" width="310" height="30" rx="6" fill="#10B981" opacity="0.15" />
+    <text x="25" y="360" fill="#10B981" font-family="sans-serif" font-weight="bold" font-size="12">🔥 WINNING CREATIVE SCORE: 98/100</text>
+    <rect x="15" y="390" width="310" height="42" rx="6" fill="#FB8500" />
+    <text x="90" y="416" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">Analyze Ad &amp; Copy Text</text>
+
+    <!-- Card 2 -->
+    <g transform="translate(380, 0)">
+      <rect width="340" height="460" rx="12" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+      <circle cx="35" cy="35" r="20" fill="#1877F2" />
+      <text x="65" y="32" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14">FitFlex Apparel</text>
+      <text x="65" y="48" fill="#A0AEC0" font-family="sans-serif" font-size="11">Sponsored • 840K Reach</text>
+      <rect x="15" y="70" width="310" height="200" rx="8" fill="#2A344A" />
+      <polygon points="150,150 150,190 190,170" fill="#FFFFFF" />
+      <text x="15" y="295" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">"Squat-Proof Leggings Built to Last 🏋️‍♀️"</text>
+      <text x="15" y="320" fill="#A0AEC0" font-family="sans-serif" font-size="12">Running for 76 days. Multi-country targeting.</text>
+      <rect x="15" y="340" width="310" height="30" rx="6" fill="#10B981" opacity="0.15" />
+      <text x="25" y="360" fill="#10B981" font-family="sans-serif" font-weight="bold" font-size="12">🔥 WINNING CREATIVE SCORE: 94/100</text>
+      <rect x="15" y="390" width="310" height="42" rx="6" fill="#FB8500" />
+      <text x="90" y="416" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">Analyze Ad &amp; Copy Text</text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(760, 0)">
+      <rect width="340" height="460" rx="12" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+      <circle cx="35" cy="35" r="20" fill="#1877F2" />
+      <text x="65" y="32" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14">SmartHome Innovations</text>
+      <text x="65" y="48" fill="#A0AEC0" font-family="sans-serif" font-size="11">Sponsored • 2.1M Reach</text>
+      <rect x="15" y="70" width="310" height="200" rx="8" fill="#2A344A" />
+      <polygon points="150,150 150,190 190,170" fill="#FFFFFF" />
+      <text x="15" y="295" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">"Automate Your Home in 5 Minutes 🏠"</text>
+      <text x="15" y="320" fill="#A0AEC0" font-family="sans-serif" font-size="12">Active 160 days. High engagement rate.</text>
+      <rect x="15" y="340" width="310" height="30" rx="6" fill="#10B981" opacity="0.15" />
+      <text x="25" y="360" fill="#10B981" font-family="sans-serif" font-weight="bold" font-size="12">🔥 WINNING CREATIVE SCORE: 99/100</text>
+      <rect x="15" y="390" width="310" height="42" rx="6" fill="#FB8500" />
+      <text x="90" y="416" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">Analyze Ad &amp; Copy Text</text>
+    </g>
+  </g>
+</svg>

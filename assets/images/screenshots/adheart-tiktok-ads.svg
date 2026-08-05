@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <rect width="1200" height="700" fill="#121824" />
+  <rect x="50" y="30" width="1100" height="80" rx="10" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+  <text x="80" y="75" fill="#00F2FE" font-family="sans-serif" font-weight="bold" font-size="24">🎵 TikTok Ad Spy &amp; UGC Creative Finder</text>
+  <text x="620" y="75" fill="#A0AEC0" font-family="sans-serif" font-size="14">Over 220,000,000 TikTok Ad Creatives Indexed</text>
+
+  <!-- TikTok Vertical Cards Row -->
+  <g transform="translate(50, 140)">
+    <!-- Vertical Card 1 -->
+    <rect width="250" height="520" rx="16" fill="#1B2234" stroke="#00F2FE" stroke-width="1.5" />
+    <rect x="10" y="10" width="230" height="360" rx="12" fill="#2A344A" />
+    <circle cx="125" cy="180" r="30" fill="#000000" opacity="0.6" />
+    <polygon points="118,165 118,195 142,180" fill="#00F2FE" />
+    <text x="20" y="390" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">@glowskin_ugc</text>
+    <text x="20" y="410" fill="#A0AEC0" font-family="sans-serif" font-size="11">"Unboxing the viral TikTok LED Mask! OMG #tiktokmademebuyit"</text>
+    <text x="20" y="440" fill="#FE2C55" font-family="sans-serif" font-weight="bold" font-size="12">❤️ 482.5K Likes | 💬 12.8K Comments</text>
+    <rect x="15" y="460" width="220" height="40" rx="6" fill="#FB8500" />
+    <text x="50" y="485" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="12">Download HD Video</text>
+
+    <!-- Vertical Card 2 -->
+    <g transform="translate(280, 0)">
+      <rect width="250" height="520" rx="16" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+      <rect x="10" y="10" width="230" height="360" rx="12" fill="#2A344A" />
+      <circle cx="125" cy="180" r="30" fill="#000000" opacity="0.6" />
+      <polygon points="118,165 118,195 142,180" fill="#00F2FE" />
+      <text x="20" y="390" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">@gadget_hacks</text>
+      <text x="20" y="410" fill="#A0AEC0" font-family="sans-serif" font-size="11">"Stop scrolling! This mini projector replaces your TV 📽️"</text>
+      <text x="20" y="440" fill="#FE2C55" font-family="sans-serif" font-weight="bold" font-size="12">❤️ 910.2K Likes | 💬 28.4K Comments</text>
+      <rect x="15" y="460" width="220" height="40" rx="6" fill="#FB8500" />
+      <text x="50" y="485" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="12">Download HD Video</text>
+    </g>
+
+    <!-- Vertical Card 3 -->
+    <g transform="translate(560, 0)">
+      <rect width="250" height="520" rx="16" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+      <rect x="10" y="10" width="230" height="360" rx="12" fill="#2A344A" />
+      <circle cx="125" cy="180" r="30" fill="#000000" opacity="0.6" />
+      <polygon points="118,165 118,195 142,180" fill="#00F2FE" />
+      <text x="20" y="390" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">@fit_transformation</text>
+      <text x="20" y="410" fill="#A0AEC0" font-family="sans-serif" font-size="11">"Day 30 results with this resistance band set! 💪"</text>
+      <text x="20" y="440" fill="#FE2C55" font-family="sans-serif" font-weight="bold" font-size="12">❤️ 320.1K Likes | 💬 8.1K Comments</text>
+      <rect x="15" y="460" width="220" height="40" rx="6" fill="#FB8500" />
+      <text x="50" y="485" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="12">Download HD Video</text>
+    </g>
+
+    <!-- Vertical Card 4 -->
+    <g transform="translate(840, 0)">
+      <rect width="250" height="520" rx="16" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+      <rect x="10" y="10" width="230" height="360" rx="12" fill="#2A344A" />
+      <circle cx="125" cy="180" r="30" fill="#000000" opacity="0.6" />
+      <polygon points="118,165 118,195 142,180" fill="#00F2FE" />
+      <text x="20" y="390" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">@clean_tok_hacks</text>
+      <text x="20" y="410" fill="#A0AEC0" font-family="sans-serif" font-size="11">"Cleaning my couch with this portable steam brush 🧼"</text>
+      <text x="20" y="440" fill="#FE2C55" font-family="sans-serif" font-weight="bold" font-size="12">❤️ 1.4M Likes | 💬 34.2K Comments</text>
+      <rect x="15" y="460" width="220" height="40" rx="6" fill="#FB8500" />
+      <text x="50" y="485" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="12">Download HD Video</text>
+    </g>
+  </g>
+</svg>

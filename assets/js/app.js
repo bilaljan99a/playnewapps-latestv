@@ -1803,6 +1803,25 @@ App.initStorePage = async function() {
         }
     }
 
+    // Video Demonstration Section Rendering
+    const videoSec = document.getElementById('store-video-section');
+    if (store.video && videoSec) {
+        const v = store.video;
+        videoSec.style.display = 'block';
+        videoSec.innerHTML = `
+            <div class="card" style="padding: 1.5rem; border-radius: 12px; background: var(--card-bg); border: 1px solid var(--border-color); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                    <span class="material-icons-round" style="color: #FF0000; font-size: 1.75rem;">play_circle_filled</span>
+                    <h2 style="font-size: 1.25rem; font-weight: 800; margin: 0; color: var(--text-color);">${v.title || 'Official Product Demonstration Video'}</h2>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.5;">${v.description || ''}</p>
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; border: 1px solid var(--border-color); background: #000;">
+                    <iframe src="${v.embedUrl}?rel=0" title="${v.title || 'Video Player'}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        `;
+    }
+
     // About Brand Section
     const brandTitle = document.getElementById('store-brand-title');
     const brandText = document.getElementById('store-brand-about-text');

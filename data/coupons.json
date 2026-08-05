@@ -2457,5 +2457,76 @@
     "status": "active",
     "votesCount": 5120,
     "successPercentage": 100
+  },
+  {
+    "id": "adheart-annual-pro-25off",
+    "title": "Save 25% on Annual Pro Plan",
+    "description": "Unlock 300 searches/day and unlimited ad video downloads with 25% annual savings.",
+    "store": {
+      "id": "adheart",
+      "name": "Adheart",
+      "logo": "/assets/images/brands/adheart.svg"
+    },
+    "discount": "25% OFF",
+    "badges": [
+      "Best Value",
+      "Verified Offer",
+      "25% OFF"
+    ],
+    "code": "DEAL ACTIVATED",
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://ypetp.com/g/cdd0bc5003b68b264a7635ff050c24/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 3890,
+    "successPercentage": 100
+  },
+  {
+    "id": "adheart-monthly-pro-10off",
+    "title": "Save 10% on Monthly Pro",
+    "description": "Get instant access to Pro search filters and creative downloads with 10% monthly savings.",
+    "store": {
+      "id": "adheart",
+      "name": "Adheart",
+      "logo": "/assets/images/brands/adheart.svg"
+    },
+    "discount": "10% OFF",
+    "badges": [
+      "Popular",
+      "Verified Deal",
+      "10% OFF"
+    ],
+    "code": "DEAL ACTIVATED",
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://ypetp.com/g/cdd0bc5003b68b264a7635ff050c24/",
+    "isTop": true,
+    "status": "active",
+    "votesCount": 2450,
+    "successPercentage": 100
+  },
+  {
+    "id": "adheart-starter-70mo",
+    "title": "Start Plan from $70/month",
+    "description": "Access 100 daily searches across Facebook & TikTok ad libraries.",
+    "store": {
+      "id": "adheart",
+      "name": "Adheart",
+      "logo": "/assets/images/brands/adheart.svg"
+    },
+    "discount": "$70 / MO",
+    "badges": [
+      "Starter Tier",
+      "Verified Deal"
+    ],
+    "code": "DEAL ACTIVATED",
+    "successRate": "100%",
+    "expiry": "Ongoing Offer",
+    "affiliateLink": "https://ypetp.com/g/cdd0bc5003b68b264a7635ff050c24/",
+    "isTop": false,
+    "status": "active",
+    "votesCount": 1820,
+    "successPercentage": 100
   }
 ]

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <rect width="1200" height="700" fill="#121824" />
+  <!-- Header bar -->
+  <rect width="1200" height="60" fill="#1B2234" />
+  <circle cx="35" cy="30" r="14" fill="#FB8500" />
+  <text x="60" y="37" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="20">Adheart.me</text>
+  <rect x="200" y="15" width="400" height="30" rx="6" fill="#2A344A" />
+  <text x="215" y="35" fill="#A0AEC0" font-family="sans-serif" font-size="13">Search ads, keywords, fan pages, or domains...</text>
+  <rect x="1060" y="15" width="110" height="30" rx="6" fill="#FB8500" />
+  <text x="1080" y="35" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="12">PRO PLAN</text>
+
+  <!-- Sidebar -->
+  <rect y="60" width="220" height="640" fill="#1B2234" />
+  <rect x="15" y="80" width="190" height="36" rx="6" fill="#FB8500" opacity="0.15" />
+  <rect x="15" y="80" width="4" height="36" rx="2" fill="#FB8500" />
+  <text x="35" y="103" fill="#FB8500" font-family="sans-serif" font-weight="bold" font-size="14">📊 Dashboard</text>
+  <text x="35" y="145" fill="#A0AEC0" font-family="sans-serif" font-size="14">🔍 Ad Search</text>
+  <text x="35" y="185" fill="#A0AEC0" font-family="sans-serif" font-size="14">📘 Facebook Ads</text>
+  <text x="35" y="225" fill="#A0AEC0" font-family="sans-serif" font-size="14">🎵 TikTok Spy</text>
+  <text x="35" y="265" fill="#A0AEC0" font-family="sans-serif" font-size="14">🏬 Advertisers</text>
+  <text x="35" y="305" fill="#A0AEC0" font-family="sans-serif" font-size="14">🌐 Landing Pages</text>
+  <text x="35" y="345" fill="#A0AEC0" font-family="sans-serif" font-size="14">📈 Ad Analytics</text>
+
+  <!-- Main Content -->
+  <text x="250" y="100" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="24">Adheart Intelligence Overview</text>
+  <text x="250" y="125" fill="#A0AEC0" font-family="sans-serif" font-size="14">Real-time database monitoring over 900+ Million global creatives across Meta &amp; TikTok</text>
+
+  <!-- Metrics Grid -->
+  <g transform="translate(250, 145)">
+    <rect width="210" height="90" rx="10" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+    <text x="20" y="30" fill="#A0AEC0" font-family="sans-serif" font-size="12">TOTAL ADS INDEXED</text>
+    <text x="20" y="62" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="26">942,810,400</text>
+
+    <rect x="230" width="210" height="90" rx="10" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+    <text x="250" y="30" fill="#A0AEC0" font-family="sans-serif" font-size="12">DAILY NEW CREATIVES</text>
+    <text x="250" y="62" fill="#10B981" font-family="sans-serif" font-weight="bold" font-size="26">+1,250,000</text>
+
+    <rect x="460" width="210" height="90" rx="10" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+    <text x="480" y="30" fill="#A0AEC0" font-family="sans-serif" font-size="12">ACTIVE ADVERTISERS</text>
+    <text x="480" y="62" fill="#FB8500" font-family="sans-serif" font-weight="bold" font-size="26">4,890,200</text>
+
+    <rect x="690" width="210" height="90" rx="10" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+    <text x="710" y="30" fill="#A0AEC0" font-family="sans-serif" font-size="12">LANDING PAGES</text>
+    <text x="710" y="62" fill="#3B82F6" font-family="sans-serif" font-weight="bold" font-size="26">18,450,000</text>
+  </g>
+
+  <!-- Chart & Feed -->
+  <g transform="translate(250, 260)">
+    <rect width="580" height="400" rx="12" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+    <text x="20" y="35" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="16">Global Ad Volume &amp; Trend Growth</text>
+    <polyline points="30,340 100,310 180,320 250,240 320,250 400,180 480,140 540,90" fill="none" stroke="#FB8500" stroke-width="4" />
+    <polygon points="30,340 100,310 180,320 250,240 320,250 400,180 480,140 540,90 540,360 30,360" fill="#FB8500" opacity="0.1" />
+    <line x1="30" y1="360" x2="550" y2="360" stroke="#2A344A" />
+  </g>
+
+  <g transform="translate(850, 260)">
+    <rect width="320" height="400" rx="12" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
+    <text x="20" y="35" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="16">Top Trending Niches Today</text>
+    <rect x="20" y="60" width="280" height="48" rx="6" fill="#2A344A" />
+    <text x="35" y="88" fill="#FFFFFF" font-family="sans-serif" font-size="14">🔥 E-commerce / Beauty &amp; Skincare</text>
+    <rect x="20" y="120" width="280" height="48" rx="6" fill="#2A344A" />
+    <text x="35" y="148" fill="#FFFFFF" font-family="sans-serif" font-size="14">⚡ Mobile Gaming &amp; Apps</text>
+    <rect x="20" y="180" width="280" height="48" rx="6" fill="#2A344A" />
+    <text x="35" y="208" fill="#FFFFFF" font-family="sans-serif" font-size="14">💎 Nutra &amp; Supplements</text>
+    <rect x="20" y="240" width="280" height="48" rx="6" fill="#2A344A" />
+    <text x="35" y="268" fill="#FFFFFF" font-family="sans-serif" font-size="14">🚀 SaaS &amp; Digital Utilities</text>
+  </g>
+</svg>
