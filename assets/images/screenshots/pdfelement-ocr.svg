@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <rect width="1200" height="700" fill="#0F172A" />
+  <rect width="1200" height="40" fill="#1E293B" />
+  <circle cx="20" cy="20" r="6" fill="#EF4444" /><circle cx="38" cy="20" r="6" fill="#F59E0B" /><circle cx="56" cy="20" r="6" fill="#10B981" />
+  <text x="600" y="25" fill="#94A3B8" font-family="sans-serif" font-size="13" text-anchor="middle">Wondershare PDFelement 2026 - Optical Character Recognition (OCR) Engine</text>
+
+  <!-- Left: Original Scanned Image Preview -->
+  <rect x="50" y="70" width="520" height="580" rx="8" fill="#1E293B" stroke="#334155" />
+  <text x="70" y="100" fill="#F59E0B" font-family="sans-serif" font-weight="bold" font-size="16">📷 Scanned PDF Image (Non-Editable Raster)</text>
+  <rect x="70" y="120" width="480" height="510" fill="#2D3748" rx="4" />
+  <text x="90" y="160" fill="#A0AEC0" font-family="serif" font-size="14">TAX DEDUCTION CERTIFICATE 2025-2026</text>
+  <text x="90" y="190" fill="#718096" font-family="serif" font-size="12">Organization: Apex Global Holdings LLC</text>
+  <text x="90" y="210" fill="#718096" font-family="serif" font-size="12">Tax ID: 99-84729104 | Date: 12-Jan-2026</text>
+  <!-- Blur effect simulated scanned lines -->
+  <rect x="90" y="240" width="420" height="8" fill="#4A5568" opacity="0.6" />
+  <rect x="90" y="260" width="380" height="8" fill="#4A5568" opacity="0.6" />
+  <rect x="90" y="280" width="440" height="8" fill="#4A5568" opacity="0.6" />
+
+  <!-- Center Arrow Action Badge -->
+  <circle cx="600" cy="360" r="35" fill="#0066FF" />
+  <text x="600" y="367" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="22" text-anchor="middle">⚡</text>
+
+  <!-- Right: OCR Dialog Settings & Editable Result -->
+  <rect x="630" y="70" width="520" height="580" rx="8" fill="#1E293B" stroke="#0066FF" stroke-width="2" />
+  <text x="650" y="100" fill="#10B981" font-family="sans-serif" font-weight="bold" font-size="16">✨ OCR Recognition Output (Searchable &amp; Editable)</text>
+  
+  <!-- Settings Bar -->
+  <rect x="650" y="120" width="480" height="70" rx="6" fill="#0F172A" />
+  <text x="665" y="145" fill="#E2E8F0" font-family="sans-serif" font-size="12">Language: English, German, Spanish (Multi-Detect)</text>
+  <text x="665" y="170" fill="#00C8FF" font-family="sans-serif" font-weight="bold" font-size="12">Recognition Accuracy: 99.84% | Output Mode: Editable Text</text>
+
+  <!-- Extracted Text Area -->
+  <rect x="650" y="200" width="480" height="430" rx="6" fill="#FFFFFF" />
+  <text x="670" y="235" fill="#0F172A" font-family="sans-serif" font-weight="bold" font-size="16">TAX DEDUCTION CERTIFICATE 2025-2026</text>
+  <text x="670" y="265" fill="#1E293B" font-family="sans-serif" font-size="13">Organization: Apex Global Holdings LLC</text>
+  <text x="670" y="290" fill="#1E293B" font-family="sans-serif" font-size="13">Tax ID: 99-84729104 | Date: 12-Jan-2026</text>
+
+  <!-- Highlighted recognized table -->
+  <rect x="670" y="315" width="440" height="110" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1" />
+  <text x="680" y="340" fill="#1E3A8A" font-family="sans-serif" font-weight="bold" font-size="12">Deduction Item</text>
+  <text x="950" y="340" fill="#1E3A8A" font-family="sans-serif" font-weight="bold" font-size="12">Amount ($)</text>
+  <line x1="670" y1="350" x2="1110" y2="350" stroke="#3B82F6" />
+  <text x="680" y="375" fill="#1E293B" font-family="sans-serif" font-size="12">Corporate Equipment Amortization</text>
+  <text x="950" y="375" fill="#1E293B" font-family="sans-serif" font-size="12">$42,850.00</text>
+  <text x="680" y="400" fill="#1E293B" font-family="sans-serif" font-size="12">Research &amp; Development Grant</text>
+  <text x="950" y="400" fill="#1E293B" font-family="sans-serif" font-size="12">$18,400.00</text>
+
+  <rect x="670" y="580" width="140" height="34" rx="6" fill="#10B981" />
+  <text x="740" y="602" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">Export to Word</text>
+</svg>

@@ -742,9 +742,9 @@ class App {
             if (screenshotsSection) screenshotsSection.style.display = 'block';
             if (galleryGrid) {
                 galleryGrid.innerHTML = review.screenshots.map(s => {
-                    const thumbUrl = s.thumbnail || s.url;
-                    const fullUrl = s.url || s.thumbnail;
-                    const altText = s.alt || `${review.title || 'App'} Screenshot`;
+                    const thumbUrl = typeof s === 'string' ? s : (s.thumbnail || s.url);
+                    const fullUrl = typeof s === 'string' ? s : (s.url || s.thumbnail);
+                    const altText = typeof s === 'string' ? `${review.title || 'App'} Screenshot` : (s.alt || `${review.title || 'App'} Screenshot`);
                     return `
                         <img src="${thumbUrl}" data-full="${fullUrl}" alt="${altText}" class="gallery-img lightbox-trigger" loading="lazy" width="800" height="600" tabindex="0">
                     `;

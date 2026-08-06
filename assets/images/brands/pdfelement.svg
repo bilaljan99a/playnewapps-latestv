@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="pdfGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF" />
+      <stop offset="100%" stop-color="#003399" />
+    </linearGradient>
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00C8FF" />
+      <stop offset="100%" stop-color="#0066FF" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#003399" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="512" height="512" rx="100" fill="url(#pdfGrad)" />
+
+  <!-- Document Silhouette -->
+  <path d="M140 100 C140 88, 148 80, 160 80 L300 80 L380 160 L380 410 C380 422, 372 430, 360 430 L160 430 C148 430, 140 422, 140 410 Z" fill="#FFFFFF" opacity="0.95" filter="url(#dropShadow)" />
+
+  <!-- Folded Corner -->
+  <path d="M300 80 L380 160 L315 160 C306 160, 300 154, 300 145 Z" fill="#E2E8F0" />
+
+  <!-- PDF Document Lines -->
+  <rect x="180" y="160" width="100" height="12" rx="6" fill="#0066FF" opacity="0.8" />
+  <rect x="180" y="190" width="160" height="10" rx="5" fill="#94A3B8" opacity="0.6" />
+  <rect x="180" y="215" width="140" height="10" rx="5" fill="#94A3B8" opacity="0.6" />
+  <rect x="180" y="240" width="150" height="10" rx="5" fill="#94A3B8" opacity="0.6" />
+
+  <!-- Dynamic Edit & AI Spark Ring -->
+  <circle cx="280" cy="310" r="60" fill="url(#aiGrad)" opacity="0.15" />
+  <path d="M220 330 L270 280 M270 280 L290 260 C295 255, 305 255, 310 260 L320 270 C325 275, 325 285, 320 290 L300 310 M270 280 L290 300 M220 330 L220 360 L250 360 Z" stroke="#0066FF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+  <!-- AI Sparkles -->
+  <path d="M340 220 L345 235 L360 240 L345 245 L340 260 L335 245 L320 240 L335 235 Z" fill="#00C8FF" />
+  <path d="M170 320 L173 330 L183 333 L173 336 L170 346 L167 336 L157 333 L167 330 Z" fill="#00C8FF" opacity="0.8" />
+
+  <!-- PDF Text Label Badge -->
+  <rect x="180" y="380" width="152" height="32" rx="8" fill="#0066FF" />
+  <text x="256" y="402" fill="#FFFFFF" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-weight="900" font-size="18" text-anchor="middle" letter-spacing="1">PDFELEMENT</text>
+</svg>

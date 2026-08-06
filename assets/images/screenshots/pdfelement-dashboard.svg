@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <rect width="1200" height="700" fill="#0F172A" />
+  <!-- Title Bar -->
+  <rect width="1200" height="40" fill="#1E293B" />
+  <circle cx="20" cy="20" r="6" fill="#EF4444" />
+  <circle cx="38" cy="20" r="6" fill="#F59E0B" />
+  <circle cx="56" cy="20" r="6" fill="#10B981" />
+  <text x="600" y="25" fill="#94A3B8" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" text-anchor="middle">Wondershare PDFelement 2026 Pro - Home Dashboard</text>
+  
+  <!-- Sidebar Navigation -->
+  <rect y="40" width="220" height="660" fill="#1E293B" />
+  <!-- User Profile -->
+  <circle cx="45" cy="80" r="18" fill="#0066FF" />
+  <text x="45" y="85" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">WS</text>
+  <text x="75" y="78" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">Wondershare Pro</text>
+  <text x="75" y="94" fill="#10B981" font-family="sans-serif" font-size="11">● License Active</text>
+
+  <!-- Sidebar Buttons -->
+  <rect x="15" y="120" width="190" height="38" rx="8" fill="#0066FF" />
+  <text x="35" y="144" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">🏠 Home Dashboard</text>
+
+  <text x="35" y="190" fill="#94A3B8" font-family="sans-serif" font-size="13">📁 Recent Documents</text>
+  <text x="35" y="230" fill="#94A3B8" font-family="sans-serif" font-size="13">☁️ Document Cloud</text>
+  <text x="35" y="270" fill="#94A3B8" font-family="sans-serif" font-size="13">⚡ Batch Tools</text>
+  <text x="35" y="310" fill="#94A3B8" font-family="sans-serif" font-size="13">🎨 PDF Templates</text>
+  <text x="35" y="350" fill="#94A3B8" font-family="sans-serif" font-size="13">🤖 AI Tools Hub</text>
+  <text x="35" y="390" fill="#94A3B8" font-family="sans-serif" font-size="13">⚙️ System Settings</text>
+
+  <!-- Main Content Area -->
+  <!-- Welcome Banner -->
+  <rect x="250" y="70" width="910" height="120" rx="12" fill="linear-gradient(90deg, #0066FF, #003399)" opacity="0.9" />
+  <text x="280" y="110" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="24">Welcome to PDFelement 2026</text>
+  <text x="280" y="138" fill="#E2E8F0" font-family="sans-serif" font-size="14">AI-powered PDF editing, lightning OCR, document conversion, and secure cloud workflows.</text>
+  <rect x="280" y="152" width="130" height="28" rx="6" fill="#00C8FF" />
+  <text x="345" y="170" fill="#0F172A" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">Open PDF File</text>
+
+  <!-- Quick Action Grid -->
+  <text x="250" y="225" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="18">Quick Launch Actions</text>
+
+  <g transform="translate(250, 240)">
+    <!-- Action 1 -->
+    <rect width="165" height="110" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <circle cx="35" cy="35" r="18" fill="#0066FF" opacity="0.2" />
+    <text x="35" y="42" fill="#0066FF" font-family="sans-serif" font-size="18" text-anchor="middle">✏️</text>
+    <text x="20" y="75" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14">Edit PDF</text>
+    <text x="20" y="93" fill="#64748B" font-family="sans-serif" font-size="11">Modify text &amp; images</text>
+
+    <!-- Action 2 -->
+    <rect x="185" width="165" height="110" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <circle cx="220" cy="35" r="18" fill="#10B981" opacity="0.2" />
+    <text x="220" y="42" fill="#10B981" font-family="sans-serif" font-size="18" text-anchor="middle">🔄</text>
+    <text x="205" y="75" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14">Convert PDF</text>
+    <text x="205" y="93" fill="#64748B" font-family="sans-serif" font-size="11">To Word, Excel, PPT</text>
+
+    <!-- Action 3 -->
+    <rect x="370" width="165" height="110" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <circle cx="405" cy="35" r="18" fill="#F59E0B" opacity="0.2" />
+    <text x="405" y="42" fill="#F59E0B" font-family="sans-serif" font-size="18" text-anchor="middle">🔍</text>
+    <text x="390" y="75" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14">OCR PDF</text>
+    <text x="390" y="93" fill="#64748B" font-family="sans-serif" font-size="11">Recognize scanned text</text>
+
+    <!-- Action 4 -->
+    <rect x="555" width="165" height="110" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <circle cx="590" cy="35" r="18" fill="#EC4899" opacity="0.2" />
+    <text x="590" y="42" fill="#EC4899" font-family="sans-serif" font-size="18" text-anchor="middle">⚡</text>
+    <text x="575" y="75" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14">Batch PDF</text>
+    <text x="575" y="93" fill="#64748B" font-family="sans-serif" font-size="11">Process 100+ files</text>
+
+    <!-- Action 5 -->
+    <rect x="740" width="165" height="110" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <circle cx="775" cy="35" r="18" fill="#8B5CF6" opacity="0.2" />
+    <text x="775" y="42" fill="#8B5CF6" font-family="sans-serif" font-size="18" text-anchor="middle">🤖</text>
+    <text x="760" y="75" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14">AI Summarize</text>
+    <text x="760" y="93" fill="#64748B" font-family="sans-serif" font-size="11">Lumi AI report recap</text>
+  </g>
+
+  <!-- Recent Documents Table -->
+  <text x="250" y="385" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="18">Recent Files</text>
+  <g transform="translate(250, 400)">
+    <rect width="910" height="260" rx="10" fill="#1E293B" stroke="#334155" />
+    <!-- Table Header -->
+    <rect width="910" height="36" rx="10" fill="#0F172A" />
+    <text x="20" y="23" fill="#64748B" font-family="sans-serif" font-weight="bold" font-size="12">FILE NAME</text>
+    <text x="400" y="23" fill="#64748B" font-family="sans-serif" font-weight="bold" font-size="12">SIZE</text>
+    <text x="520" y="23" fill="#64748B" font-family="sans-serif" font-weight="bold" font-size="12">LAST MODIFIED</text>
+    <text x="700" y="23" fill="#64748B" font-family="sans-serif" font-weight="bold" font-size="12">STATUS</text>
+
+    <!-- Row 1 -->
+    <text x="20" y="70" fill="#FFFFFF" font-family="sans-serif" font-weight="600" font-size="13">📄 Q4_2026_Financial_Audit_Report.pdf</text>
+    <text x="400" y="70" fill="#94A3B8" font-family="sans-serif" font-size="13">4.8 MB</text>
+    <text x="520" y="70" fill="#94A3B8" font-family="sans-serif" font-size="13">10 mins ago</text>
+    <rect x="700" y="55" width="85" height="22" rx="4" fill="#0066FF" opacity="0.2" />
+    <text x="742" y="70" fill="#0066FF" font-family="sans-serif" font-weight="bold" font-size="11" text-anchor="middle">Edited</text>
+
+    <!-- Row 2 -->
+    <text x="20" y="115" fill="#FFFFFF" font-family="sans-serif" font-weight="600" font-size="13">📄 Legal_Master_Services_Agreement_2026.pdf</text>
+    <text x="400" y="115" fill="#94A3B8" font-family="sans-serif" font-size="13">12.3 MB</text>
+    <text x="520" y="115" fill="#94A3B8" font-family="sans-serif" font-size="13">2 hours ago</text>
+    <rect x="700" y="100" width="85" height="22" rx="4" fill="#10B981" opacity="0.2" />
+    <text x="742" y="115" fill="#10B981" font-family="sans-serif" font-weight="bold" font-size="11" text-anchor="middle">e-Signed</text>
+
+    <!-- Row 3 -->
+    <text x="20" y="160" fill="#FFFFFF" font-family="sans-serif" font-weight="600" font-size="13">📄 Scanned_Invoice_Archive_Batch01.pdf</text>
+    <text x="400" y="160" fill="#94A3B8" font-family="sans-serif" font-size="13">38.1 MB</text>
+    <text x="520" y="160" fill="#94A3B8" font-family="sans-serif" font-size="13">Yesterday</text>
+    <rect x="700" y="145" width="85" height="22" rx="4" fill="#F59E0B" opacity="0.2" />
+    <text x="742" y="160" fill="#F59E0B" font-family="sans-serif" font-weight="bold" font-size="11" text-anchor="middle">OCR Done</text>
+
+    <!-- Row 4 -->
+    <text x="20" y="205" fill="#FFFFFF" font-family="sans-serif" font-weight="600" font-size="13">📄 Product_Catalog_2026_HighRes.pdf</text>
+    <text x="400" y="205" fill="#94A3B8" font-family="sans-serif" font-size="13">85.4 MB</text>
+    <text x="520" y="205" fill="#94A3B8" font-family="sans-serif" font-size="13">3 days ago</text>
+    <rect x="700" y="190" width="85" height="22" rx="4" fill="#EC4899" opacity="0.2" />
+    <text x="742" y="205" fill="#EC4899" font-family="sans-serif" font-weight="bold" font-size="11" text-anchor="middle">Compressed</text>
+  </g>
+</svg>

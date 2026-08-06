@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1528" />
+      <stop offset="50%" stop-color="#0F2448" />
+      <stop offset="100%" stop-color="#003399" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0066FF" />
+      <stop offset="50%" stop-color="#00C8FF" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="500" fill="url(#heroBg)" />
+
+  <!-- Subtle Grid Lines -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100" />
+    <line x1="0" y1="200" x2="1200" y2="200" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="400" x2="1200" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="500" />
+    <line x1="400" y1="0" x2="400" y2="500" />
+    <line x1="600" y1="0" x2="600" y2="500" />
+    <line x1="800" y1="0" x2="800" y2="500" />
+    <line x1="1000" y1="0" x2="1000" y2="500" />
+  </g>
+
+  <!-- Decorative AI Glow Circles -->
+  <circle cx="1000" cy="100" r="250" fill="#0066FF" opacity="0.15" filter="blur(60px)" />
+  <circle cx="200" cy="400" r="180" fill="#00C8FF" opacity="0.1" filter="blur(50px)" />
+
+  <!-- Left Content Area -->
+  <g transform="translate(80, 80)">
+    <!-- Brand Badge -->
+    <rect width="210" height="36" rx="18" fill="url(#accentGlow)" opacity="0.2" />
+    <rect x="1" y="1" width="208" height="34" rx="17" fill="none" stroke="#00C8FF" stroke-width="1.5" />
+    <text x="20" y="23" fill="#00C8FF" font-family="'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="13" letter-spacing="1">WONDERSHARE 2026</text>
+
+    <!-- Main Title -->
+    <text x="0" y="95" fill="#FFFFFF" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="44" letter-spacing="-0.5">PDFelement 2026 Review</text>
+    <text x="0" y="140" fill="#00C8FF" font-family="'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="28">All-In-One AI PDF Editor &amp; Productivity Suite</text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="185" fill="#94A3B8" font-family="'Segoe UI', Roboto, sans-serif" font-size="16">Edit • Convert • OCR • Sign • Compress • Summarize PDFs with Lumi AI</text>
+
+    <!-- Feature Pills -->
+    <g transform="translate(0, 225)">
+      <rect x="0" y="0" width="130" height="36" rx="8" fill="#1E293B" stroke="#334155" />
+      <text x="18" y="22" fill="#E2E8F0" font-family="sans-serif" font-weight="600" font-size="13">⚡ 99% OCR</text>
+
+      <rect x="142" y="0" width="150" height="36" rx="8" fill="#1E293B" stroke="#334155" />
+      <text x="160" y="22" fill="#E2E8F0" font-family="sans-serif" font-weight="600" font-size="13">🤖 Lumi AI Agent</text>
+
+      <rect x="304" y="0" width="140" height="36" rx="8" fill="#1E293B" stroke="#334155" />
+      <text x="322" y="22" fill="#E2E8F0" font-family="sans-serif" font-weight="600" font-size="13">🔒 e-Sign Suite</text>
+    </g>
+
+    <!-- Rating & Verification Badge -->
+    <g transform="translate(0, 290)">
+      <text x="0" y="20" fill="#F59E0B" font-family="sans-serif" font-size="20">★★★★★</text>
+      <text x="80" y="18" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="16">4.9 / 5.0</text>
+      <text x="160" y="18" fill="#64748B" font-family="sans-serif" font-size="14">| PlayNewApps Editor's Choice 2026</text>
+    </g>
+  </g>
+
+  <!-- Right App Mockup Display -->
+  <g transform="translate(620, 60)" filter="url(#shadow)">
+    <!-- App Window Outer Frame -->
+    <rect width="500" height="380" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="2" />
+    
+    <!-- Window Header Bar -->
+    <rect width="500" height="36" rx="12" fill="#0F172A" />
+    <circle cx="20" cy="18" r="5" fill="#EF4444" />
+    <circle cx="36" cy="18" r="5" fill="#F59E0B" />
+    <circle cx="52" cy="18" r="5" fill="#10B981" />
+    <text x="250" y="23" fill="#64748B" font-family="sans-serif" font-size="12" text-anchor="middle">Wondershare PDFelement Pro 2026 - Executive_Quarterly_Report.pdf</text>
+
+    <!-- App Ribbon Toolbar -->
+    <rect y="36" width="500" height="42" fill="#1E293B" border-bottom="1px solid #334155" />
+    <rect x="15" y="44" width="60" height="26" rx="4" fill="#0066FF" />
+    <text x="45" y="61" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="11" text-anchor="middle">Edit</text>
+
+    <text x="105" y="61" fill="#94A3B8" font-family="sans-serif" font-size="11">Convert</text>
+    <text x="165" y="61" fill="#94A3B8" font-family="sans-serif" font-size="11">OCR</text>
+    <text x="210" y="61" fill="#94A3B8" font-family="sans-serif" font-size="11">Annotate</text>
+    <text x="275" y="61" fill="#94A3B8" font-family="sans-serif" font-size="11">Forms</text>
+    <text x="325" y="61" fill="#94A3B8" font-family="sans-serif" font-size="11">Protect</text>
+    
+    <rect x="380" y="44" width="105" height="26" rx="13" fill="url(#accentGlow)" />
+    <text x="432" y="61" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="11" text-anchor="middle">🤖 AI Sidebar</text>
+
+    <!-- Main Workspace Preview -->
+    <!-- Left Document Page -->
+    <rect x="15" y="90" width="310" height="275" rx="6" fill="#FFFFFF" />
+    <!-- Document Header -->
+    <rect x="35" y="115" width="180" height="14" rx="3" fill="#0F172A" />
+    <rect x="35" y="138" width="220" height="8" rx="2" fill="#64748B" />
+    <rect x="35" y="152" width="240" height="8" rx="2" fill="#94A3B8" />
+    <rect x="35" y="166" width="200" height="8" rx="2" fill="#94A3B8" />
+
+    <!-- Editable Box Overlay -->
+    <rect x="30" y="188" width="260" height="80" rx="4" fill="none" stroke="#0066FF" stroke-width="1.5" stroke-dasharray="4,4" />
+    <rect x="30" y="188" width="10" height="10" fill="#0066FF" />
+    <rect x="280" y="188" width="10" height="10" fill="#0066FF" />
+    <rect x="30" y="258" width="10" height="10" fill="#0066FF" />
+    <rect x="280" y="258" width="10" height="10" fill="#0066FF" />
+    
+    <!-- Chart Graphic inside Document -->
+    <rect x="45" y="200" width="40" height="50" fill="#3B82F6" opacity="0.8" />
+    <rect x="95" y="215" width="40" height="35" fill="#10B981" opacity="0.8" />
+    <rect x="145" y="190" width="40" height="60" fill="#F59E0B" opacity="0.8" />
+    <rect x="195" y="205" width="40" height="45" fill="#6366F1" opacity="0.8" />
+
+    <rect x="35" y="280" width="230" height="8" rx="2" fill="#94A3B8" />
+    <rect x="35" y="294" width="210" height="8" rx="2" fill="#94A3B8" />
+    <rect x="35" y="308" width="250" height="8" rx="2" fill="#94A3B8" />
+    <rect x="35" y="322" width="180" height="8" rx="2" fill="#94A3B8" />
+
+    <!-- Right AI Assistant Drawer -->
+    <rect x="335" y="90" width="150" height="275" rx="6" fill="#0F172A" stroke="#334155" />
+    <text x="350" y="112" fill="#00C8FF" font-family="sans-serif" font-weight="bold" font-size="12">✨ Lumi AI Sidebar</text>
+    
+    <!-- AI Chat Bubbles -->
+    <rect x="345" y="125" width="130" height="40" rx="6" fill="#1E293B" />
+    <text x="353" y="142" fill="#E2E8F0" font-family="sans-serif" font-size="10">Summarize this 50-page</text>
+    <text x="353" y="155" fill="#E2E8F0" font-family="sans-serif" font-size="10">executive financial report.</text>
+
+    <rect x="345" y="175" width="130" height="80" rx="6" fill="#0066FF" opacity="0.2" border="1px solid #0066FF" />
+    <text x="353" y="192" fill="#00C8FF" font-family="sans-serif" font-weight="bold" font-size="10">Summary Recap:</text>
+    <text x="353" y="208" fill="#FFFFFF" font-family="sans-serif" font-size="9">• Revenue up +24% YoY</text>
+    <text x="353" y="222" fill="#FFFFFF" font-family="sans-serif" font-size="9">• EBITDA margins hit 31%</text>
+    <text x="353" y="236" fill="#FFFFFF" font-family="sans-serif" font-size="9">• Global expansion on track</text>
+
+    <!-- AI Prompt Bar -->
+    <rect x="345" y="325" width="130" height="26" rx="13" fill="#1E293B" stroke="#00C8FF" stroke-width="1" />
+    <text x="355" y="342" fill="#64748B" font-family="sans-serif" font-size="9">Ask Lumi AI anything...</text>
+  </g>
+</svg>

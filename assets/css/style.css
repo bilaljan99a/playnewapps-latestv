@@ -4486,4 +4486,119 @@ img, video, iframe, object, embed {
     overflow: hidden;
 }
 
+/* ==========================================================================
+   Article Body Sections & Screenshots
+   ========================================================================== */
+.article-section {
+    margin-bottom: 2.5rem;
+}
+
+.article-section h2 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.article-section h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.article-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+    margin-bottom: 1.25rem;
+}
+
+.article-section ul, .article-section ol {
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+}
+
+.article-section li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+}
+
+.article-screenshot {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    margin: 1.5rem 0;
+    display: block;
+    object-fit: cover;
+}
+
+.final-verdict-box {
+    background-color: var(--card-bg, #f8fafc);
+    border: 2px solid var(--primary-color, #2563eb);
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.verdict-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin: 0.75rem 0;
+}
+
+.verdict-description {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.verdict-cta-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-alt {
+    background-color: var(--bg-secondary, #f1f5f9);
+}
+
+.radius-lg {
+    border-radius: 16px;
+}
+
+.border-primary {
+    border: 2px solid var(--primary-color, #2563eb);
+}
+
+.p-lg {
+    padding: 2rem;
+}
+
+.my-xl {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.my-md {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.mb-sm {
+    margin-bottom: 0.5rem;
+}
+
 

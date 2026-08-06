@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <rect width="1200" height="700" fill="#0F172A" />
+  <rect width="1200" height="40" fill="#1E293B" />
+  <circle cx="20" cy="20" r="6" fill="#EF4444" /><circle cx="38" cy="20" r="6" fill="#F59E0B" /><circle cx="56" cy="20" r="6" fill="#10B981" />
+  <text x="600" y="25" fill="#94A3B8" font-family="sans-serif" font-size="13" text-anchor="middle">Wondershare PDFelement 2026 - High-Efficiency PDF Compression Engine</text>
+
+  <!-- Compression Dialog Panel -->
+  <rect x="200" y="80" width="800" height="550" rx="12" fill="#1E293B" stroke="#334155" stroke-width="2" />
+  
+  <text x="240" y="125" fill="#EC4899" font-family="sans-serif" font-weight="bold" font-size="22">🗜️ PDF Document Compression</text>
+  <text x="240" y="150" fill="#94A3B8" font-family="sans-serif" font-size="14">Reduce file size for web publishing and email attachments without visual quality loss.</text>
+
+  <!-- File Stats Box -->
+  <rect x="240" y="180" width="720" height="80" rx="8" fill="#0F172A" stroke="#334155" />
+  <text x="260" y="210" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14">Input File: Annual_Corporate_Report_2026_HighRes.pdf</text>
+  <text x="260" y="235" fill="#EF4444" font-family="sans-serif" font-weight="bold" font-size="18">Original Size: 84.6 MB</text>
+
+  <!-- Compression Preset Selection Slider -->
+  <text x="240" y="295" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="16">Select Compression Level Preset</text>
+
+  <g transform="translate(240, 315)">
+    <!-- Low Compression -->
+    <rect width="220" height="110" rx="8" fill="#0F172A" stroke="#334155" />
+    <text x="20" y="30" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14">Low (High Quality)</text>
+    <text x="20" y="55" fill="#94A3B8" font-family="sans-serif" font-size="12">Est. Size: 42.1 MB (-50%)</text>
+    <text x="20" y="80" fill="#64748B" font-family="sans-serif" font-size="11">Best for print production</text>
+
+    <!-- Medium Compression (Selected) -->
+    <rect x="250" width="220" height="110" rx="8" fill="#0F172A" stroke="#EC4899" stroke-width="2" />
+    <rect x="420" y="10" width="40" height="18" rx="4" fill="#EC4899" />
+    <text x="440" y="23" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="9" text-anchor="middle">BEST</text>
+    <text x="270" y="30" fill="#EC4899" font-family="sans-serif" font-weight="bold" font-size="14">Medium (Balanced)</text>
+    <text x="270" y="55" fill="#10B981" font-family="sans-serif" font-weight="bold" font-size="13">Est. Size: 12.8 MB (-85%)</text>
+    <text x="270" y="80" fill="#94A3B8" font-family="sans-serif" font-size="11">Ideal for web &amp; email share</text>
+
+    <!-- High Compression -->
+    <rect x="500" width="220" height="110" rx="8" fill="#0F172A" stroke="#334155" />
+    <text x="520" y="30" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14">High (Max Shrink)</text>
+    <text x="520" y="55" fill="#94A3B8" font-family="sans-serif" font-size="12">Est. Size: 4.2 MB (-95%)</text>
+    <text x="520" y="80" fill="#64748B" font-family="sans-serif" font-size="11">For low-bandwidth access</text>
+  </g>
+
+  <!-- Compression Result Comparison Graphic -->
+  <rect x="240" y="455" width="720" height="80" rx="8" fill="#0F172A" />
+  <text x="260" y="485" fill="#10B981" font-family="sans-serif" font-weight="bold" font-size="18">✨ Optimized Size: 12.8 MB (Saved 84.8% Space)</text>
+  
+  <rect x="260" y="500" width="680" height="14" rx="7" fill="#334155" />
+  <rect x="260" y="500" width="102" height="14" rx="7" fill="#10B981" />
+  <text x="370" y="512" fill="#94A3B8" font-family="sans-serif" font-size="10">84.8% Reduction</text>
+
+  <!-- Execute Button -->
+  <rect x="500" y="560" width="200" height="42" rx="8" fill="#EC4899" />
+  <text x="600" y="586" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">Apply Compression</text>
+</svg>
