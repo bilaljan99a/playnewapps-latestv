@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <rect width="1200" height="700" fill="#0F172A" />
+  <!-- Title Bar -->
+  <rect width="1200" height="40" fill="#1E293B" />
+  <circle cx="20" cy="20" r="6" fill="#EF4444" />
+  <circle cx="38" cy="20" r="6" fill="#F59E0B" />
+  <circle cx="56" cy="20" r="6" fill="#10B981" />
+  <text x="600" y="25" fill="#94A3B8" font-family="sans-serif" font-size="13" text-anchor="middle">Wondershare Recoverit 13 Pro - Deep Scan Mode (Local Disk C:)</text>
+
+  <!-- Top Toolbar -->
+  <rect y="40" width="1200" height="50" fill="#1E293B" stroke="#334155" />
+  <text x="30" y="70" fill="#00FFC8" font-family="sans-serif" font-weight="bold" font-size="14">🔍 Deep Scanning... 89% Complete</text>
+
+  <!-- Progress Bar -->
+  <rect x="260" y="58" width="400" height="14" rx="7" fill="#0F172A" stroke="#334155" />
+  <rect x="262" y="60" width="356" height="10" rx="5" fill="linear-gradient(90deg, #00C8FF, #00FFC8)" />
+  <text x="670" y="70" fill="#94A3B8" font-family="sans-serif" font-size="12">Found: 24,190 Files (148.5 GB)</text>
+
+  <!-- Filter Buttons -->
+  <g transform="translate(880, 52)">
+    <rect width="80" height="26" rx="4" fill="#334155" />
+    <text x="40" y="17" fill="#FFFFFF" font-family="sans-serif" font-size="11" text-anchor="middle">Filter ▾</text>
+
+    <rect x="90" width="90" height="26" rx="4" fill="#00C8FF" />
+    <text x="135" y="17" fill="#0F172A" font-family="sans-serif" font-weight="bold" font-size="11" text-anchor="middle">Pause Scan</text>
+  </g>
+
+  <!-- Left Directory Tree -->
+  <rect y="90" width="280" height="610" fill="#1E293B" stroke="#334155" />
+  <text x="20" y="120" fill="#38BDF8" font-family="sans-serif" font-weight="bold" font-size="13">FILE TREE NAVIGATION</text>
+
+  <g transform="translate(20, 140)">
+    <text x="0" y="20" fill="#00FFC8" font-family="sans-serif" font-size="13">▼ 📁 Existing Path (12,400)</text>
+    <text x="15" y="45" fill="#94A3B8" font-family="sans-serif" font-size="12">▼ 📁 Users / Admin / Documents</text>
+    <text x="30" y="70" fill="#00C8FF" font-family="sans-serif" font-size="12">📄 Financial_Audit_2025.xlsx</text>
+    <text x="30" y="95" fill="#00C8FF" font-family="sans-serif" font-size="12">📄 Q4_Report_Final.pdf</text>
+
+    <text x="0" y="130" fill="#00FFC8" font-family="sans-serif" font-size="13">▼ 📁 Deleted Files (8,230)</text>
+    <text x="15" y="155" fill="#94A3B8" font-family="sans-serif" font-size="12">▶ 📁 Recycle Bin Raw Recovery</text>
+    <text x="15" y="180" fill="#94A3B8" font-family="sans-serif" font-size="12">▶ 📁 Formatted Partition Backup</text>
+
+    <text x="0" y="215" fill="#00FFC8" font-family="sans-serif" font-size="13">▼ 📁 Raw File Types (3,560)</text>
+    <text x="15" y="240" fill="#94A3B8" font-family="sans-serif" font-size="12">📷 Photos (JPG, PNG, RAW, HEIC)</text>
+    <text x="15" y="265" fill="#94A3B8" font-family="sans-serif" font-size="12">🎬 Videos (MP4, MOV, MXF, AVI)</text>
+    <text x="15" y="290" fill="#94A3B8" font-family="sans-serif" font-size="12">📄 Documents (PDF, DOCX, XLSX)</text>
+    <text x="15" y="315" fill="#94A3B8" font-family="sans-serif" font-size="12">🎵 Audio (MP3, WAV, FLAC)</text>
+    <text x="15" y="340" fill="#94A3B8" font-family="sans-serif" font-size="12">📦 Archives (ZIP, RAR, 7Z)</text>
+  </g>
+
+  <!-- Right File Details Grid -->
+  <g transform="translate(300, 100)">
+    <!-- Grid Table Header -->
+    <rect width="880" height="32" rx="4" fill="#1E293B" />
+    <text x="20" y="21" fill="#94A3B8" font-family="sans-serif" font-weight="bold" font-size="12">☐ File Name</text>
+    <text x="320" y="21" fill="#94A3B8" font-family="sans-serif" font-weight="bold" font-size="12">Path / Directory</text>
+    <text x="560" y="21" fill="#94A3B8" font-family="sans-serif" font-weight="bold" font-size="12">Size</text>
+    <text x="660" y="21" fill="#94A3B8" font-family="sans-serif" font-weight="bold" font-size="12">Modified Date</text>
+    <text x="780" y="21" fill="#94A3B8" font-family="sans-serif" font-weight="bold" font-size="12">Quality</text>
+
+    <!-- File Rows -->
+    <g transform="translate(0, 40)">
+      <!-- Row 1 -->
+      <rect width="880" height="42" rx="4" fill="#1E293B" opacity="0.6" />
+      <text x="20" y="26" fill="#00FFC8" font-family="sans-serif" font-size="13">☑ 🎬 Wedding_Highlight_4K_001.MP4</text>
+      <text x="320" y="26" fill="#CBD5E1" font-family="sans-serif" font-size="12">D:/Videos/Raw_Footage/</text>
+      <text x="560" y="26" fill="#CBD5E1" font-family="sans-serif" font-size="12">3.42 GB</text>
+      <text x="660" y="26" fill="#CBD5E1" font-family="sans-serif" font-size="12">2026-07-28</text>
+      <rect x="780" y="10" width="75" height="22" rx="4" fill="#10B981" />
+      <text x="817" y="25" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="11" text-anchor="middle">Excellent</text>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 48)">
+        <rect width="880" height="42" rx="4" fill="#1E293B" opacity="0.8" />
+        <text x="20" y="26" fill="#00FFC8" font-family="sans-serif" font-size="13">☑ 📷 DSC_8921_Sony_A7IV_RAW.ARW</text>
+        <text x="320" y="26" fill="#CBD5E1" font-family="sans-serif" font-size="12">D:/Photos/Client_Shoot/</text>
+        <text x="560" y="26" fill="#CBD5E1" font-family="sans-serif" font-size="12">48.2 MB</text>
+        <text x="660" y="26" fill="#CBD5E1" font-family="sans-serif" font-size="12">2026-08-01</text>
+        <rect x="780" y="10" width="75" height="22" rx="4" fill="#10B981" />
+        <text x="817" y="25" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="11" text-anchor="middle">Excellent</text>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(0, 96)">
+        <rect width="880" height="42" rx="4" fill="#1E293B" opacity="0.6" />
+        <text x="20" y="26" fill="#00FFC8" font-family="sans-serif" font-size="13">☑ 📄 Enterprise_Contract_Signed.PDF</text>
+        <text x="320" y="26" fill="#CBD5E1" font-family="sans-serif" font-size="12">C:/Users/Admin/Contracts/</text>
+        <text x="560" y="26" fill="#CBD5E1" font-family="sans-serif" font-size="12">12.8 MB</text>
+        <text x="660" y="26" fill="#CBD5E1" font-family="sans-serif" font-size="12">2026-08-03</text>
+        <rect x="780" y="10" width="75" height="22" rx="4" fill="#10B981" />
+        <text x="817" y="25" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="11" text-anchor="middle">Excellent</text>
+      </g>
+
+      <!-- Row 4 -->
+      <g transform="translate(0, 144)">
+        <rect width="880" height="42" rx="4" fill="#1E293B" opacity="0.8" />
+        <text x="20" y="26" fill="#F59E0B" font-family="sans-serif" font-size="13">☐ 🎬 Drone_Overhead_4K_088.MOV</text>
+        <text x="320" y="26" fill="#CBD5E1" font-family="sans-serif" font-size="12">E:/DJI_SDCard/DCIM/</text>
+        <text x="560" y="26" fill="#CBD5E1" font-family="sans-serif" font-size="12">1.85 GB</text>
+        <text x="660" y="26" fill="#CBD5E1" font-family="sans-serif" font-size="12">2026-07-15</text>
+        <rect x="780" y="10" width="75" height="22" rx="4" fill="#F59E0B" />
+        <text x="817" y="25" fill="#0F172A" font-family="sans-serif" font-weight="bold" font-size="11" text-anchor="middle">Fragmented</text>
+      </g>
+    </g>
+
+    <!-- Bottom Action Floating Dock -->
+    <g transform="translate(0, 480)">
+      <rect width="880" height="70" rx="12" fill="#1E293B" stroke="#00C8FF" stroke-width="2" />
+      <text x="30" y="40" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="15">3 Files Selected (3.48 GB total)</text>
+
+      <g transform="translate(520, 15)">
+        <rect width="160" height="40" rx="8" fill="#334155" />
+        <text x="80" y="25" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13" text-anchor="middle">👁️ Preview File</text>
+
+        <rect x="180" width="160" height="40" rx="8" fill="linear-gradient(90deg, #00C8FF, #0052CC)" />
+        <text x="260" y="25" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">⚡ Recover Files</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <rect width="1200" height="700" fill="#0F172A" />
+  <!-- Title Bar -->
+  <rect width="1200" height="40" fill="#1E293B" />
+  <circle cx="20" cy="20" r="6" fill="#EF4444" />
+  <circle cx="38" cy="20" r="6" fill="#F59E0B" />
+  <circle cx="56" cy="20" r="6" fill="#10B981" />
+  <text x="600" y="25" fill="#94A3B8" font-family="sans-serif" font-size="13" text-anchor="middle">Wondershare Recoverit 13 Pro - Official 2026 Pricing &amp; Discount Matrix</text>
+
+  <!-- Title banner -->
+  <text x="600" y="80" fill="#FFFFFF" font-family="sans-serif" font-weight="900" font-size="26" text-anchor="middle">Official Wondershare Recoverit Plans &amp; Limited Offers</text>
+  <text x="600" y="105" fill="#00FFC8" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">🎁 Extra 10% Discount Auto-Applied at Checkout + Recover Unlimited Files on 2 PCs</text>
+
+  <!-- 3 Pricing Cards -->
+  <g transform="translate(60, 130)">
+    <!-- Plan 1: Essential Plan -->
+    <rect width="340" height="520" rx="12" fill="#1E293B" stroke="#334155" />
+    <text x="170" y="40" fill="#38BDF8" font-family="sans-serif" font-weight="bold" font-size="20" text-anchor="middle">Essential Plan</text>
+    <text x="170" y="62" fill="#94A3B8" font-family="sans-serif" font-size="12" text-anchor="middle">Standard Data &amp; Document Recovery</text>
+
+    <rect x="100" y="80" width="140" height="26" rx="13" fill="#EF4444" opacity="0.2" />
+    <text x="170" y="97" fill="#EF4444" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">45% OFF MONTHLY</text>
+
+    <text x="170" y="140" fill="#FFFFFF" font-family="sans-serif" font-weight="900" font-size="36" text-anchor="middle">$59.95</text>
+    <text x="170" y="160" fill="#94A3B8" font-family="sans-serif" font-size="12" text-anchor="middle">/ month (or $69.95/yr)</text>
+
+    <!-- Features list -->
+    <g font-family="sans-serif" font-size="13" fill="#CBD5E1" transform="translate(30, 195)">
+      <text x="0" y="20">✓ 1000+ File Formats Supported</text>
+      <text x="0" y="50">✓ HDD, SSD, USB, SD Cards</text>
+      <text x="0" y="80">✓ Deep Scan Engine (99.5%)</text>
+
+      <text x="0" y="110">✓ Unlimited File Recovery</text>
+      <text x="0" y="140">✓ Free Technical Support</text>
+      <text x="0" y="170" fill="#64748B">❌ Crashed Computer Rescue</text>
+
+      <text x="0" y="200" fill="#64748B">❌ Enhanced Video Repair</text>
+      <text x="0" y="230" fill="#64748B">❌ NAS &amp; Linux Recovery</text>
+    </g>
+
+    <rect x="30" y="445" width="280" height="48" rx="8" fill="#334155" />
+    <text x="170" y="474" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">Buy Essential Plan</text>
+
+    <!-- Plan 2: Enhanced Plan (RECOMMENDED) -->
+    <g transform="translate(370, 0)">
+      <rect width="340" height="520" rx="12" fill="#1E293B" stroke="#00C8FF" stroke-width="2.5" />
+      
+      <rect x="70" y="-14" width="200" height="28" rx="14" fill="#00C8FF" />
+      <text x="170" y="4" fill="#0F172A" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">⭐ MOST POPULAR (51% OFF)</text>
+
+      <text x="170" y="40" fill="#00FFC8" font-family="sans-serif" font-weight="bold" font-size="20" text-anchor="middle">Enhanced Plan</text>
+      <text x="170" y="62" fill="#94A3B8" font-family="sans-serif" font-size="12" text-anchor="middle">Includes AI Video &amp; Photo Repair</text>
+
+      <rect x="100" y="80" width="140" height="26" rx="13" fill="#10B981" opacity="0.2" />
+      <text x="170" y="97" fill="#10B981" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">51% OFF ANNUAL</text>
+
+      <text x="170" y="140" fill="#FFFFFF" font-family="sans-serif" font-weight="900" font-size="36" text-anchor="middle">$79.95</text>
+      <text x="170" y="160" fill="#94A3B8" font-family="sans-serif" font-size="12" text-anchor="middle">/ year ($119.95 Perpetual)</text>
+
+      <g font-family="sans-serif" font-size="13" fill="#CBD5E1" transform="translate(30, 195)">
+        <text x="0" y="20">✓ Everything in Essential Plan</text>
+        <text x="0" y="50" font-weight="bold" fill="#00FFC8">✓ AI Enhanced Video Recovery</text>
+        <text x="0" y="80" font-weight="bold" fill="#00FFC8">✓ Corrupted Video Repair (4K/8K)</text>
+
+        <text x="0" y="110" font-weight="bold" fill="#00FFC8">✓ Dual-Shot Fragmented Stitching</text>
+        <text x="0" y="140">✓ Full File HD Preview</text>
+        <text x="0" y="170">✓ Recover on 2 Windows PCs</text>
+
+        <text x="0" y="200" fill="#64748B">❌ Crashed PC Bootable USB</text>
+        <text x="0" y="230" fill="#64748B">❌ NAS &amp; Linux Remote SSH</text>
+      </g>
+
+      <rect x="30" y="445" width="280" height="48" rx="8" fill="linear-gradient(90deg, #00C8FF, #0052CC)" />
+      <text x="170" y="474" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">Get Enhanced Plan Deal</text>
+    </g>
+
+    <!-- Plan 3: Ultimate Plan -->
+    <g transform="translate(740, 0)">
+      <rect width="340" height="520" rx="12" fill="#1E293B" stroke="#A855F7" stroke-width="1.5" />
+      <text x="170" y="40" fill="#A855F7" font-family="sans-serif" font-weight="bold" font-size="20" text-anchor="middle">Ultimate Plan</text>
+      <text x="170" y="62" fill="#94A3B8" font-family="sans-serif" font-size="12" text-anchor="middle">Complete Rescue for All Disasters</text>
+
+      <rect x="100" y="80" width="140" height="26" rx="13" fill="#A855F7" opacity="0.2" />
+      <text x="170" y="97" fill="#A855F7" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">39% OFF PERPETUAL</text>
+
+      <text x="170" y="140" fill="#FFFFFF" font-family="sans-serif" font-weight="900" font-size="36" text-anchor="middle">$99.95</text>
+      <text x="170" y="160" fill="#94A3B8" font-family="sans-serif" font-size="12" text-anchor="middle">/ year ($139.95 Perpetual)</text>
+
+      <g font-family="sans-serif" font-size="13" fill="#CBD5E1" transform="translate(30, 195)">
+        <text x="0" y="20">✓ Everything in Enhanced Plan</text>
+        <text x="0" y="50" font-weight="bold" fill="#A855F7">✓ Crashed Computer Rescue (WinPE)</text>
+        <text x="0" y="80" font-weight="bold" fill="#A855F7">✓ NAS Drive Remote Recovery</text>
+
+        <text x="0" y="110" font-weight="bold" fill="#A855F7">✓ Linux (BTRFS / EXT4) SSH</text>
+        <text x="0" y="140">✓ VIP 24/7 Priority Support</text>
+        <text x="0" y="170">✓ Up to 2 PCs License</text>
+
+        <text x="0" y="200" fill="#10B981">✓ Free Lifetime Upgrades</text>
+        <text x="0" y="230" fill="#10B981">✓ 7-Day Money-Back Guarantee</text>
+      </g>
+
+      <rect x="30" y="445" width="280" height="48" rx="8" fill="#A855F7" />
+      <text x="170" y="474" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">Get Ultimate Plan</text>
+    </g>
+  </g>
+</svg>

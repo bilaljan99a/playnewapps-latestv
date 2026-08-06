@@ -673,6 +673,10 @@ class App {
                 // Enhance inline FAQ accordions inside dynamicBody for full interactivity & accessibility
                 const inlineFaqQuestions = dynamicBody.querySelectorAll('.faq-question');
                 inlineFaqQuestions.forEach((qEl, idx) => {
+                    if (qEl.tagName === 'SUMMARY') {
+                        // Native <details><summary> element - do not mutate DOM
+                        return;
+                    }
                     let btn = qEl;
                     if (qEl.tagName !== 'BUTTON') {
                         const newBtn = document.createElement('button');
@@ -783,7 +787,14 @@ class App {
             };
         }
 
-        if (videoObj && (videoObj.embedUrl || videoObj.thumbnail)) {
+        const dynamicHasVideo = dynamicBody && (
+            dynamicBody.querySelector('#video-walkthrough') || 
+            dynamicBody.querySelector('.video-container') || 
+            dynamicBody.querySelector('iframe[src*="youtube"]') ||
+            dynamicBody.querySelector('iframe[src*="youtu.be"]')
+        );
+
+        if (vId && !dynamicHasVideo) {
             if (videoSection) {
                 videoSection.style.display = 'block';
                 const headingEl = videoSection.querySelector('h2');
@@ -865,7 +876,12 @@ class App {
             }
         }
 
-        const dynamicHasFaq = dynamicBody && dynamicBody.querySelector('.faq-container');
+        const dynamicHasFaq = dynamicBody && (
+            dynamicBody.querySelector('#faqs') || 
+            dynamicBody.querySelector('.faq-container') || 
+            dynamicBody.querySelector('.faq-accordion') || 
+            dynamicBody.querySelector('.faq-item')
+        );
         if (faqsToRender && faqsToRender.length > 0 && !dynamicHasFaq) {
             if (faqSection) faqSection.style.display = 'block';
             if (faqContainer) {

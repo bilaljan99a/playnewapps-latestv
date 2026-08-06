@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <rect width="1200" height="700" fill="#0F172A" />
+  <!-- Title Bar -->
+  <rect width="1200" height="40" fill="#1E293B" />
+  <circle cx="20" cy="20" r="6" fill="#EF4444" />
+  <circle cx="38" cy="20" r="6" fill="#F59E0B" />
+  <circle cx="56" cy="20" r="6" fill="#10B981" />
+  <text x="600" y="25" fill="#94A3B8" font-family="sans-serif" font-size="13" text-anchor="middle">Wondershare Recoverit 13 Pro - Patented Dual-Shot Fragmented Video Stitching Engine</text>
+
+  <!-- Explanation Banner -->
+  <g transform="translate(60, 60)">
+    <rect width="1080" height="90" rx="12" fill="linear-gradient(90deg, #1E293B, #0F2847)" stroke="#00C8FF" stroke-width="1.5" />
+    <text x="30" y="35" fill="#00FFC8" font-family="sans-serif" font-weight="bold" font-size="18">💡 How Enhanced Video Recovery Works</text>
+    <text x="30" y="62" fill="#CBD5E1" font-family="sans-serif" font-size="13">Large 4K/8K camera video files (GoPro, DJI, Sony, Canon) are split into hundreds of fragments across memory cards. Standard recovery tools fail to piece them together, resulting in unplayable videos. Recoverit scans all sectors and stitches matching fragments seamlessly.</text>
+  </g>
+
+  <!-- Fragmented vs Stitched Comparison Graphic -->
+  <g transform="translate(60, 170)">
+    <!-- Left: Standard Recovery Failure -->
+    <rect width="520" height="470" rx="12" fill="#1E293B" stroke="#EF4444" stroke-width="1.5" />
+    <text x="260" y="35" fill="#EF4444" font-family="sans-serif" font-weight="bold" font-size="16" text-anchor="middle">❌ Traditional Recovery Tools (Broken Fragments)</text>
+
+    <g transform="translate(30, 60)">
+      <!-- Fragment blocks scattered -->
+      <rect width="200" height="40" rx="6" fill="#7F1D1D" stroke="#EF4444" />
+      <text x="15" y="25" fill="#FFFFFF" font-family="sans-serif" font-size="12">Fragment #01 (0.8 GB) [GOPRO_001.MP4]</text>
+
+      <rect y="50" x="220" width="240" height="40" rx="6" fill="#7F1D1D" stroke="#EF4444" />
+      <text x="235" y="75" fill="#FFFFFF" font-family="sans-serif" font-size="12">Fragment #03 (1.2 GB) [UNKNOWN]</text>
+
+      <rect y="100" width="280" height="40" rx="6" fill="#7F1D1D" stroke="#EF4444" />
+      <text x="15" y="125" fill="#FFFFFF" font-family="sans-serif" font-size="12">Fragment #02 (1.5 GB) [CORRUPTED]</text>
+
+      <rect y="150" x="180" width="280" height="40" rx="6" fill="#7F1D1D" stroke="#EF4444" />
+      <text x="195" y="175" fill="#FFFFFF" font-family="sans-serif" font-size="12">Fragment #04 (0.9 GB) [HEADER MISSING]</text>
+    </g>
+
+    <rect x="30" y="270" width="460" height="150" rx="8" fill="#090D16" stroke="#EF4444" />
+    <text x="260" y="340" fill="#EF4444" font-family="sans-serif" font-weight="bold" font-size="16" text-anchor="middle">⚠️ Result: Video Black Screen / Freeze at 00:04</text>
+    <text x="260" y="370" fill="#94A3B8" font-family="sans-serif" font-size="12" text-anchor="middle">Missing inter-frame keyframe metadata</text>
+
+    <!-- Right: Recoverit Dual-Shot Stitching Success -->
+    <g transform="translate(560, 0)">
+      <rect width="520" height="470" rx="12" fill="#1E293B" stroke="#10B981" stroke-width="1.5" />
+      <text x="260" y="35" fill="#10B981" font-family="sans-serif" font-weight="bold" font-size="16" text-anchor="middle">✅ Recoverit Dual-Shot Stitching (Full 4K Restored)</text>
+
+      <g transform="translate(30, 60)">
+        <!-- Clean stitched bar -->
+        <rect width="460" height="50" rx="8" fill="linear-gradient(90deg, #00C8FF, #00FFC8)" />
+        <text x="230" y="30" fill="#0F172A" font-family="sans-serif" font-weight="bold" font-size="13" text-anchor="middle">Stitched 4K Video Stream: GOPRO_ACTION_4K_FULL.MP4 (4.4 GB)</text>
+
+        <!-- Timeline markers -->
+        <line x1="115" y1="0" x2="115" y2="50" stroke="#0F172A" stroke-width="2" />
+        <line x1="230" y1="0" x2="230" y2="50" stroke="#0F172A" stroke-width="2" />
+        <line x1="345" y1="0" x2="345" y2="50" stroke="#0F172A" stroke-width="2" />
+      </g>
+
+      <rect x="30" y="130" width="460" height="290" rx="8" fill="#0284C7" stroke="#10B981" stroke-width="2" />
+      <circle cx="260" cy="270" r="30" fill="#FFFFFF" opacity="0.8" />
+      <polygon points="253,255 273,270 253,285" fill="#0284C7" />
+      <text x="260" y="330" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">Seamless Playback: 4K @ 120fps • Dolby Atmos Audio</text>
+      <text x="260" y="355" fill="#E0F2FE" font-family="sans-serif" font-size="12" text-anchor="middle">Camera: GoPro HERO 12 Black • Duration: 18m 42s</text>
+    </g>
+  </g>
+</svg>
