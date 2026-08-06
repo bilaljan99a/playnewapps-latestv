@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#28115A" />
+      <stop offset="100%" stop-color="#140833" />
+    </linearGradient>
+
+    <!-- Orange / Yellow Crescent Gradient -->
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFC837" />
+      <stop offset="50%" stop-color="#FF8000" />
+      <stop offset="100%" stop-color="#FF5500" />
+    </linearGradient>
+
+    <!-- Purple / Blue Play Arrow Gradient -->
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4B22FF" />
+      <stop offset="50%" stop-color="#8028FF" />
+      <stop offset="100%" stop-color="#D042FF" />
+    </linearGradient>
+  </defs>
+
+  <!-- Squircle Container -->
+  <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#bgGrad)" />
+
+  <!-- Play Symbol Group centered -->
+  <g transform="translate(150, 100)">
+    <!-- Main Right Play Arrow (Purple/Blue) -->
+    <path d="M 30 20 
+             C 45 10, 65 15, 80 25
+             L 210 115
+             C 240 135, 240 175, 210 195
+             L 80 285
+             C 65 295, 45 300, 30 290
+             C 10 280, 0 255, 0 230
+             L 0 80
+             C 0 55, 10 30, 30 20 Z" 
+          fill="url(#purpleGrad)" />
+
+    <!-- Left Fold / Crescent (Orange/Yellow) -->
+    <path d="M 30 20
+             C 10 30, 0 55, 0 80
+             L 0 230
+             C 0 255, 10 280, 30 290
+             C 45 298, 60 295, 75 285
+             C 40 250, 20 200, 20 155
+             C 20 100, 45 50, 75 25
+             C 60 15, 45 12, 30 20 Z" 
+          fill="url(#orangeGrad)" />
+  </g>
+</svg>

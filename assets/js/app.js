@@ -1,3 +1,34 @@
+// Safe binding for Components
+const getComponents = () => {
+    if (typeof Components !== "undefined") return Components;
+    if (typeof window !== "undefined" && window.Components) return window.Components;
+    return {
+        getRatingStars: (r) => '<span class="material-icons-round active">star</span>'.repeat(Math.round(r || 5)),
+        getPlatformIcon: () => "apps",
+        createSlideCard: () => "",
+        createCouponCard: () => "",
+        createStoreCard: () => "",
+        createAppCard: () => ""
+    };
+};
+
+// Safe binding for DataService
+const getDataService = () => {
+    if (typeof DataService !== 'undefined') return DataService;
+    if (typeof window !== 'undefined' && window.DataService) return window.DataService;
+    return {
+        getAllReviews: async () => [],
+        getCoupons: async () => [],
+        getStores: async () => [],
+        getCategories: async () => [],
+        getAuthors: async () => [],
+        getApps: async () => [],
+        getGames: async () => [],
+        getSoftware: async () => [],
+        getReviewById: async () => null
+    };
+};
+
 class App {
     static async init() {
         try {
@@ -16,9 +47,9 @@ class App {
                 await this.initCouponPage();
             } else if (path === '/deal' || path.endsWith('/deal.html') || path === '/deals' || path.endsWith('/deals.html')) {
                 await this.initDealPage();
-            } else if (path === '/review' || path.endsWith('/review.html') || path.startsWith('/review/') || (path.startsWith('/reviews/') && path !== '/reviews') || document.querySelector('.review-title')) {
+            } else if (path === '/review' || path.endsWith('/review.html') || path.startsWith('/review/') || (path.startsWith('/reviews/') && path !== '/reviews')) {
                 await this.initReviewPage();
-            } else {
+            } else if (path === '/' || path === '' || path.endsWith('/index.html') || path.endsWith('/')) {
                 await this.initHomePage();
             }
 
@@ -48,7 +79,7 @@ class App {
         
         if (!searchInput || !searchForm) return;
 
-        const allReviews = await DataService.getAllReviews();
+        const allReviews = await getDataService().getAllReviews();
 
         searchInput.addEventListener('input', (e) => {
             const query = e.target.value.toLowerCase();
@@ -97,17 +128,17 @@ class App {
     }
 
     static async initHomePage() {
-        const allReviews = await DataService.getAllReviews();
-        const coupons = await DataService.getCoupons();
+        const allReviews = await getDataService().getAllReviews();
+        const coupons = await getDataService().getCoupons();
 
         // Populate Trending Slider
         const sliderTrack = document.getElementById('slider-track');
-        if (sliderTrack) {
+        if (sliderTrack && allReviews && allReviews.length > 0) {
             const trending = allReviews.filter(r => r.isTrending);
             if (trending.length > 0) {
-                sliderTrack.innerHTML = trending.map(item => Components.createSlideCard(item)).join('');
-            } else {
-                sliderTrack.innerHTML = allReviews.slice(0, 3).map(item => Components.createSlideCard(item)).join('');
+                sliderTrack.innerHTML = trending.map(item => getComponents().createSlideCard(item)).join('');
+            } else if (allReviews.length > 0) {
+                sliderTrack.innerHTML = allReviews.slice(0, 3).map(item => getComponents().createSlideCard(item)).join('');
             }
         }
 
@@ -213,16 +244,16 @@ class App {
         const couponsGrid = document.querySelector('.coupon-grid');
         if (couponsGrid) {
             const topCoupons = coupons.filter(c => c.isTop);
-            couponsGrid.innerHTML = topCoupons.map(c => Components.createCouponCard(c)).join('');
+            couponsGrid.innerHTML = topCoupons.map(c => getComponents().createCouponCard(c)).join('');
             this.attachCouponListeners(couponsGrid);
         }
 
         // Populate Featured Partner Stores Grid
         const storesGrid = document.getElementById('stores-grid');
         if (storesGrid) {
-            const stores = await DataService.getStores();
+            const stores = await getDataService().getStores();
             if (stores && stores.length > 0) {
-                storesGrid.innerHTML = stores.map(s => Components.createStoreCard(s)).join('');
+                storesGrid.innerHTML = stores.map(s => getComponents().createStoreCard(s)).join('');
             }
         }
     }
@@ -232,7 +263,7 @@ class App {
             container.innerHTML = '<p>No items found.</p>';
             return;
         }
-        container.innerHTML = items.map(item => Components.createAppCard(item)).join('');
+        container.innerHTML = items.map(item => getComponents().createAppCard(item)).join('');
     }
 
     static attachCouponListeners(container) {
@@ -317,7 +348,7 @@ class App {
                     <div class="community-rating">
                         <span>Community Rating:</span>
                         <div class="rating">
-                            ${Components.getRatingStars(review.communityRating)}
+                            ${getComponents().getRatingStars(review.communityRating)}
                         </div>
                         <strong>${review.communityRating}</strong>
                     </div>` : ''}
@@ -439,7 +470,7 @@ class App {
             id = parts[parts.length - 1]; 
         }
 
-        const allReviews = await DataService.getAllReviews();
+        const allReviews = await getDataService().getAllReviews();
         if (!id && allReviews.length > 0) {
             id = allReviews[0].id;
         }
@@ -465,6 +496,11 @@ class App {
             if (mainContent) {
                 mainContent.innerHTML = '<div class="card" style="padding: 2rem; text-align: center;"><h2>Review Not Found</h2><p style="margin: 1rem 0;">The requested review could not be found or has been moved.</p><a href="index.html" class="btn btn-primary">Return to Home</a></div>';
             }
+            return;
+        }
+
+        if (review.reviewUrl && review.reviewUrl.endsWith('.html') && !review.reviewUrl.includes('review.html')) {
+            window.location.href = review.reviewUrl;
             return;
         }
 
@@ -610,7 +646,7 @@ class App {
         }
 
         // Rating
-        const ratingHtml = Components.getRatingStars(review.rating || 5) + `<span class="rating-text">${review.rating || 5.0} / 5.0 Overall</span>`;
+        const ratingHtml = getComponents().getRatingStars(review.rating || 5) + `<span class="rating-text">${review.rating || 5.0} / 5.0 Overall</span>`;
         setHtml('.review-rating', ratingHtml);
 
         // Update Date
@@ -869,7 +905,7 @@ class App {
         
         let faqsToRender = review.faqs;
         if ((!faqsToRender || faqsToRender.length === 0) && review.id) {
-            const stores = await DataService.getStores();
+            const stores = await getDataService().getStores();
             const matchingStore = stores.find(s => s.id === review.id);
             if (matchingStore && matchingStore.faqs) {
                 faqsToRender = matchingStore.faqs;
@@ -936,7 +972,7 @@ class App {
     }
 
     static async renderRelatedContent(currentReview) {
-        const allReviews = await DataService.getAllReviews();
+        const allReviews = await getDataService().getAllReviews();
         let related = allReviews.filter(r => r.id !== currentReview.id && (
             r.categoryId === currentReview.categoryId ||
             (r.tags && currentReview.tags && r.tags.some(t => currentReview.tags.includes(t)))
@@ -969,7 +1005,7 @@ App.initHeaderStoresDropdown = async function() {
     if (!dropdownMenu) return;
 
     try {
-        const stores = await DataService.getStores();
+        const stores = await getDataService().getStores();
         if (stores && stores.length > 0) {
             const POPULAR_KEYS = [
                 'alibaba',
@@ -1030,7 +1066,7 @@ App.initDealPage = async function() {
     const urlParams = new URLSearchParams(window.location.search);
     let id = urlParams.get('id') || 'wps-office-70pro';
     
-    const allCoupons = await DataService.getCoupons();
+    const allCoupons = await getDataService().getCoupons();
     const deal = allCoupons ? allCoupons.find(c => c.id === id) : null;
     
     if (!deal) {
@@ -1039,7 +1075,7 @@ App.initDealPage = async function() {
         return;
     }
 
-    const stores = await DataService.getStores();
+    const stores = await getDataService().getStores();
     const store = stores ? stores.find(s => s.id === deal.store.id) : null;
 
     // Document Title & Meta Tags
@@ -1154,7 +1190,7 @@ App.initDealPage = async function() {
     if (sbName) sbName.textContent = deal.store.name;
     const sbRating = document.getElementById('sidebar-store-rating');
     if (sbRating && store) {
-        sbRating.innerHTML = `${Components.getRatingStars(store.rating || 4.9)} <span>${store.rating || 4.9} (${store.votes || 1000} votes)</span>`;
+        sbRating.innerHTML = `${getComponents().getRatingStars(store.rating || 4.9)} <span>${store.rating || 4.9} (${store.votes || 1000} votes)</span>`;
     }
     const sbLink = document.getElementById('sidebar-view-store-btn');
     if (sbLink) sbLink.href = `store.html?id=${deal.store.id}`;
@@ -1203,7 +1239,7 @@ App.initDealPage = async function() {
     const relatedDeals = allCoupons.filter(c => c.id !== deal.id);
     const relatedGrid = document.getElementById('related-deals-grid');
     if (relatedGrid) {
-        relatedGrid.innerHTML = relatedDeals.slice(0, 3).map(c => Components.createCouponCard(c)).join('');
+        relatedGrid.innerHTML = relatedDeals.slice(0, 3).map(c => getComponents().createCouponCard(c)).join('');
         this.attachCouponListeners(relatedGrid);
     }
 
@@ -1225,7 +1261,7 @@ App.initDealPage = async function() {
 App.initAuthorPage = async function() {
     const urlParams = new URLSearchParams(window.location.search);
     let id = urlParams.get('id') || 'alex-tech';
-    const authors = await DataService.getAuthors();
+    const authors = await getDataService().getAuthors();
     const author = authors.find(a => a.id === id);
     
     const heroTitle = document.querySelector('.hero-title');
@@ -1257,7 +1293,7 @@ App.initAuthorPage = async function() {
 
     const sectionTitle = document.querySelector('#reviews .section-title');
     if (sectionTitle) sectionTitle.textContent = `Reviews by ${author ? author.name : 'Author'}`;
-    const allReviews = await DataService.getAllReviews();
+    const allReviews = await getDataService().getAllReviews();
     const authorReviews = allReviews.filter(r => r.authorId === id);
     const reviewsGrid = document.getElementById('reviews-grid');
     if (reviewsGrid) this.renderReviews(authorReviews, reviewsGrid);
@@ -1287,8 +1323,8 @@ App.renderReviewsDirectoryUI = async function(options = {}) {
     let catId = options.activeCategory || urlParams.get('id') || urlParams.get('category') || 'all';
     catId = catId.toLowerCase();
 
-    const allReviews = await DataService.getAllReviews();
-    const categories = await DataService.getCategories();
+    const allReviews = await getDataService().getAllReviews();
+    const categories = await getDataService().getCategories();
 
     const categoryInfoMap = {
         'all': {
@@ -1501,7 +1537,7 @@ App.renderReviewsDirectoryUI = async function(options = {}) {
         const pageItems = filtered.slice(start, start + itemsPerPage);
 
         if (grid) {
-            grid.innerHTML = pageItems.map(item => Components.createAppCard(item)).join('');
+            grid.innerHTML = pageItems.map(item => getComponents().createAppCard(item)).join('');
         }
 
         if (pagContainer) {
@@ -1692,7 +1728,7 @@ App.initStorePage = async function() {
     const brandTextElInit = document.getElementById('store-brand-about-text');
     if (brandTextElInit) brandTextElInit.textContent = 'Loading brand information...';
 
-    const stores = await DataService.getStores();
+    const stores = await getDataService().getStores();
     const store = stores ? stores.find(s => s.id === id) : null;
     
     if (!store) {
@@ -1738,13 +1774,13 @@ App.initStorePage = async function() {
     // Rating
     document.getElementById('store-rating-box').innerHTML = `
         <div class="rating" aria-label="Store Rating ${store.rating}">
-            ${Components.getRatingStars(store.rating)}
+            ${getComponents().getRatingStars(store.rating)}
         </div>
         <span class="votes-count">(${store.votes || 0} votes)</span>
     `;
 
     // Coupons
-    const allCoupons = await DataService.getCoupons();
+    const allCoupons = await getDataService().getCoupons();
     const storeCoupons = allCoupons.filter(c => c.store.id === id || c.store.name.toLowerCase().includes(id));
     
     const activeCoupons = storeCoupons.filter(c => c.status !== 'expired');
@@ -1753,7 +1789,7 @@ App.initStorePage = async function() {
     const activeGrid = document.getElementById('active-coupons-grid');
     if (activeGrid) {
         if (activeCoupons.length > 0) {
-            activeGrid.innerHTML = activeCoupons.map(c => Components.createCouponCard(c)).join('');
+            activeGrid.innerHTML = activeCoupons.map(c => getComponents().createCouponCard(c)).join('');
             this.attachCouponListeners(activeGrid);
         } else {
             activeGrid.innerHTML = '<p>No active coupons found at the moment.</p>';
@@ -1764,7 +1800,7 @@ App.initStorePage = async function() {
     const expiredSection = document.getElementById('expired-coupons');
     if (expiredGrid && expiredSection) {
         if (expiredCoupons.length > 0) {
-            expiredGrid.innerHTML = expiredCoupons.map(c => Components.createCouponCard(c)).join('');
+            expiredGrid.innerHTML = expiredCoupons.map(c => getComponents().createCouponCard(c)).join('');
             this.attachCouponListeners(expiredGrid);
             expiredSection.style.display = 'block';
         } else {
@@ -2034,8 +2070,8 @@ App.renderAllStoresPage = async function() {
     updateMeta('meta[property="og:title"]', 'content', 'All Stores & Promo Codes | PlayNewApps');
     updateMeta('meta[property="og:description"]', 'content', 'Browse exclusive coupon codes and verified software discounts from all stores.');
 
-    const stores = await DataService.getStores();
-    const coupons = await DataService.getCoupons();
+    const stores = await getDataService().getStores();
+    const coupons = await getDataService().getCoupons();
 
     if (!stores || stores.length === 0) {
         const main = document.querySelector('main') || document.querySelector('.main-content');
@@ -2286,10 +2322,10 @@ App.initCouponPage = async function() {
     const reviews = document.getElementById('reviews');
     if(reviews) reviews.style.display = 'none';
 
-    const allCoupons = await DataService.getCoupons();
+    const allCoupons = await getDataService().getCoupons();
     const couponsGrid = document.querySelector('.coupon-grid');
     if (couponsGrid) {
-        couponsGrid.innerHTML = allCoupons.map(c => Components.createCouponCard(c)).join('');
+        couponsGrid.innerHTML = allCoupons.map(c => getComponents().createCouponCard(c)).join('');
         this.attachCouponListeners(couponsGrid);
     }
 };
