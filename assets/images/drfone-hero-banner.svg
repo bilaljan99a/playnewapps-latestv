@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f" />
+      <stop offset="40%" stop-color="#0d254c" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="500" fill="url(#heroBg)" />
+
+  <!-- Grid overlay lines -->
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100" />
+    <line x1="0" y1="200" x2="1200" y2="200" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="400" x2="1200" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="500" />
+    <line x1="400" y1="0" x2="400" y2="500" />
+    <line x1="600" y1="0" x2="600" y2="500" />
+    <line x1="800" y1="0" x2="800" y2="500" />
+    <line x1="1000" y1="0" x2="1000" y2="500" />
+  </g>
+
+  <!-- Left Content Info -->
+  <g transform="translate(80, 100)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="220" height="36" rx="18" fill="#0369a1" fill-opacity="0.6" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="20" y="23" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="13" letter-spacing="1">COMPLETE MOBILE TOOLKIT</text>
+
+    <!-- Main Title -->
+    <text x="0" y="85" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="44" letter-spacing="-0.5">Wondershare Dr.Fone 14</text>
+    <text x="0" y="130" fill="url(#glowGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="28">Complete Mobile Management &amp; Recovery Suite</text>
+
+    <!-- Bullet Specs -->
+    <g transform="translate(0, 170)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" fill="#cbd5e1">
+      <text x="0" y="0">✓ Deep Data Recovery (iOS 18 / Android 15)</text>
+      <text x="0" y="30">✓ Cross-Platform WhatsApp Transfer (iOS ↔ Android)</text>
+      <text x="0" y="60">✓ 1-Click Screen Unlock &amp; System Repair (150+ Errors)</text>
+      <text x="0" y="90">✓ Virtual Location, Data Eraser &amp; Password Manager</text>
+    </g>
+
+    <!-- Rating / Trust Tag -->
+    <g transform="translate(0, 300)">
+      <rect x="0" y="0" width="340" height="44" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="16" y="27" fill="#fbbf24" font-size="18">★★★★★</text>
+      <text x="95" y="27" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="14">4.9 / 5.0 Overall Rating</text>
+      <text x="250" y="27" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">(50M+ Users)</text>
+    </g>
+  </g>
+
+  <!-- Right Visual Mockup (Laptop & Phone Interface) -->
+  <g transform="translate(680, 60)" filter="url(#shadow)">
+    <!-- Monitor / Software Window -->
+    <rect x="0" y="0" width="460" height="340" rx="12" fill="url(#cardBg)" stroke="#38bdf8" stroke-width="2" />
+    <!-- Window Bar -->
+    <rect x="0" y="0" width="460" height="36" rx="12" fill="#0f172a" />
+    <circle cx="20" cy="18" r="5" fill="#ef4444" />
+    <circle cx="36" cy="18" r="5" fill="#f59e0b" />
+    <circle cx="52" cy="18" r="5" fill="#22c55e" />
+    <text x="230" y="23" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle">Wondershare Dr.Fone 14 - Full Mobile Suite</text>
+
+    <!-- Suite Grid Modules inside Window -->
+    <!-- Module 1: Data Recovery -->
+    <rect x="20" y="55" width="126" height="80" rx="8" fill="#0284c7" fill-opacity="0.2" stroke="#0284c7" stroke-width="1" />
+    <text x="83" y="90" fill="#38bdf8" font-family="sans-serif" font-weight="700" font-size="13" text-anchor="middle">Data Recovery</text>
+    <text x="83" y="110" fill="#94a3b8" font-family="sans-serif" font-size="10" text-anchor="middle">iOS &amp; Android</text>
+
+    <!-- Module 2: WhatsApp Transfer -->
+    <rect x="166" y="55" width="126" height="80" rx="8" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-width="1" />
+    <text x="229" y="90" fill="#34d399" font-family="sans-serif" font-weight="700" font-size="13" text-anchor="middle">WhatsApp</text>
+    <text x="229" y="110" fill="#94a3b8" font-family="sans-serif" font-size="10" text-anchor="middle">iOS ↔ Android</text>
+
+    <!-- Module 3: Screen Unlock -->
+    <rect x="312" y="55" width="126" height="80" rx="8" fill="#f59e0b" fill-opacity="0.2" stroke="#f59e0b" stroke-width="1" />
+    <text x="375" y="90" fill="#fbbf24" font-family="sans-serif" font-weight="700" font-size="13" text-anchor="middle">Screen Unlock</text>
+    <text x="375" y="110" fill="#94a3b8" font-family="sans-serif" font-size="10" text-anchor="middle">Passcode / PIN</text>
+
+    <!-- Module 4: System Repair -->
+    <rect x="20" y="150" width="126" height="80" rx="8" fill="#8b5cf6" fill-opacity="0.2" stroke="#8b5cf6" stroke-width="1" />
+    <text x="83" y="185" fill="#a78bfa" font-family="sans-serif" font-weight="700" font-size="13" text-anchor="middle">System Repair</text>
+    <text x="83" y="205" fill="#94a3b8" font-family="sans-serif" font-size="10" text-anchor="middle">Fix Boot Loop</text>
+
+    <!-- Module 5: Phone Transfer -->
+    <rect x="166" y="150" width="126" height="80" rx="8" fill="#ec4899" fill-opacity="0.2" stroke="#ec4899" stroke-width="1" />
+    <text x="229" y="185" fill="#f472b6" font-family="sans-serif" font-weight="700" font-size="13" text-anchor="middle">Phone Transfer</text>
+    <text x="229" y="205" fill="#94a3b8" font-family="sans-serif" font-size="10" text-anchor="middle">Direct Copy</text>
+
+    <!-- Module 6: Virtual Location -->
+    <rect x="312" y="150" width="126" height="80" rx="8" fill="#06b6d4" fill-opacity="0.2" stroke="#06b6d4" stroke-width="1" />
+    <text x="375" y="185" fill="#22d3ee" font-family="sans-serif" font-weight="700" font-size="13" text-anchor="middle">GPS Location</text>
+    <text x="375" y="205" fill="#94a3b8" font-family="sans-serif" font-size="10" text-anchor="middle">1-Click Teleport</text>
+
+    <!-- Bottom Status Bar -->
+    <rect x="20" y="245" width="418" height="75" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="35" y="275" fill="#38bdf8" font-family="sans-serif" font-weight="700" font-size="13">Device Connected: iPhone 16 Pro Max (iOS 18.2)</text>
+    <text x="35" y="298" fill="#22c55e" font-family="sans-serif" font-size="12">✓ Deep Memory Scan Ready • 100% Secure Hardware Bypass</text>
+  </g>
+</svg>

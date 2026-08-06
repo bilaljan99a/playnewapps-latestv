@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <rect width="1000" height="600" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+  <rect width="1000" height="50" fill="#1e293b" />
+  <circle cx="25" cy="25" r="6" fill="#ef4444"/><circle cx="45" cy="25" r="6" fill="#f59e0b"/><circle cx="65" cy="25" r="6" fill="#22c55e"/>
+  <text x="500" y="30" fill="#f8fafc" font-family="-apple-system, sans-serif" font-weight="700" font-size="14" text-anchor="middle">Wondershare Dr.Fone - Deep Mobile Data Recovery Engine</text>
+
+  <!-- Left Category Tree -->
+  <rect y="50" width="240" height="550" fill="#182238" />
+  <g transform="translate(20, 80)" font-family="sans-serif" font-size="13" fill="#cbd5e1">
+    <text x="0" y="0" fill="#38bdf8" font-weight="700" font-size="14">RECOVERABLE DATA (1,482 Items)</text>
+    <text x="10" y="35" fill="#22c55e">✓ Photos &amp; Videos (842)</text>
+    <text x="10" y="65" fill="#22c55e">✓ WhatsApp Messages (310)</text>
+    <text x="10" y="95" fill="#22c55e">✓ SMS &amp; iMessages (124)</text>
+    <text x="10" y="125" fill="#22c55e">✓ Contacts &amp; Call Logs (95)</text>
+    <text x="10" y="155" fill="#22c55e">✓ Voice Memos &amp; Notes (68)</text>
+    <text x="10" y="185" fill="#22c55e">✓ Safari Bookmarks (43)</text>
+    <text x="10" y="215" fill="#94a3b8">☐ App Documents (0)</text>
+  </g>
+
+  <!-- Main Scan View -->
+  <g transform="translate(270, 70)">
+    <text x="0" y="25" fill="#ffffff" font-family="sans-serif" font-weight="800" font-size="20">Deep Scanning iPhone 16 Pro Internal Flash Storage...</text>
+
+    <!-- Progress Bar -->
+    <rect x="0" y="45" width="680" height="12" rx="6" fill="#1e293b" />
+    <rect x="0" y="45" width="578" height="12" rx="6" fill="#0284c7" />
+    <text x="680" y="38" fill="#38bdf8" font-family="sans-serif" font-weight="700" font-size="14" text-anchor="end">85% Completed</text>
+
+    <!-- Scan Results Grid -->
+    <g transform="translate(0, 80)">
+      <!-- Item 1 -->
+      <rect x="0" y="0" width="150" height="150" rx="10" fill="#1e293b" stroke="#0284c7" stroke-width="1" />
+      <rect x="10" y="10" width="130" height="90" rx="6" fill="#0284c7" fill-opacity="0.2" />
+      <text x="75" y="60" fill="#38bdf8" font-size="24" text-anchor="middle">🖼️</text>
+      <text x="15" y="120" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="600">IMG_20260714.RAW</text>
+      <text x="15" y="138" fill="#22c55e" font-family="sans-serif" font-size="10">Recoverable (100%)</text>
+
+      <!-- Item 2 -->
+      <rect x="170" y="0" width="150" height="150" rx="10" fill="#1e293b" stroke="#0284c7" stroke-width="1" />
+      <rect x="180" y="10" width="130" height="90" rx="6" fill="#10b981" fill-opacity="0.2" />
+      <text x="245" y="60" fill="#34d399" font-size="24" text-anchor="middle">💬</text>
+      <text x="185" y="120" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="600">WA_Chat_Client.db</text>
+      <text x="185" y="138" fill="#22c55e" font-family="sans-serif" font-size="10">Recoverable (100%)</text>
+
+      <!-- Item 3 -->
+      <rect x="340" y="0" width="150" height="150" rx="10" fill="#1e293b" stroke="#0284c7" stroke-width="1" />
+      <rect x="350" y="10" width="130" height="90" rx="6" fill="#f59e0b" fill-opacity="0.2" />
+      <text x="415" y="60" fill="#fbbf24" font-size="24" text-anchor="middle">📱</text>
+      <text x="355" y="120" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="600">Contacts_Export.vcf</text>
+      <text x="355" y="138" fill="#22c55e" font-family="sans-serif" font-size="10">Recoverable (98%)</text>
+
+      <!-- Item 4 -->
+      <rect x="510" y="0" width="150" height="150" rx="10" fill="#1e293b" stroke="#0284c7" stroke-width="1" />
+      <rect x="520" y="10" width="130" height="90" rx="6" fill="#ec4899" fill-opacity="0.2" />
+      <text x="585" y="60" fill="#f472b6" font-size="24" text-anchor="middle">🎥</text>
+      <text x="525" y="120" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="600">VID_4K_Family.mp4</text>
+      <text x="525" y="138" fill="#22c55e" font-family="sans-serif" font-size="10">Recoverable (100%)</text>
+    </g>
+
+    <!-- Bottom Actions Bar -->
+    <rect x="0" y="380" width="660" height="80" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="20" y="415" fill="#f8fafc" font-family="sans-serif" font-weight="700" font-size="14">Total Selected: 1,482 files (12.4 GB)</text>
+    <text x="20" y="440" fill="#94a3b8" font-family="sans-serif" font-size="12">Destination: Local PC Hard Drive / Cloud Backup</text>
+    <rect x="480" y="400" width="160" height="40" rx="8" fill="#0284c7" />
+    <text x="560" y="425" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="14" text-anchor="middle">Recover to Computer</text>
+  </g>
+</svg>
