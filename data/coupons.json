@@ -2684,5 +2684,47 @@
     "status": "active",
     "votesCount": 1430,
     "successPercentage": 97
+  },
+  {
+    "id": "box-annual-25",
+    "storeId": "box",
+    "store": "Box Cloud Storage",
+    "code": "ANNUAL25",
+    "title": "Save Up To 25% On Annual Box Business Subscriptions",
+    "description": "Save 25% on Business Starter ($5/user/mo) and up to 25% on annual Business & Business Plus plans.",
+    "discount": "25% OFF",
+    "type": "deal",
+    "affiliateUrl": "https://bjpql.com/g/r9oyizicg3b68b264a7687b97effec/?ulp=https%3A%2F%2Fwww.box.com%2Fen-gb%2Fpricing%3F",
+    "verified": true,
+    "expiryDate": "2026-12-31",
+    "url": "https://bjpql.com/g/r9oyizicg3b68b264a7687b97effec/?ulp=https%3A%2F%2Fwww.box.com%2Fen-gb%2Fpricing%3F"
+  },
+  {
+    "id": "box-pro-20",
+    "storeId": "box",
+    "store": "Box Cloud Storage",
+    "code": "PRO20",
+    "title": "Save 20% On Box Personal Pro Annual Subscription",
+    "description": "Get 100 GB secure cloud storage for $10/mo billed annually (save 20% vs monthly $14/mo).",
+    "discount": "20% OFF",
+    "type": "deal",
+    "affiliateUrl": "https://bjpql.com/g/r9oyizicg3b68b264a7687b97effec/?ulp=https%3A%2F%2Fwww.box.com%2Fen-gb%2Fpricing%3F",
+    "verified": true,
+    "expiryDate": "2026-12-31",
+    "url": "https://bjpql.com/g/r9oyizicg3b68b264a7687b97effec/?ulp=https%3A%2F%2Fwww.box.com%2Fen-gb%2Fpricing%3F"
+  },
+  {
+    "id": "box-free-10gb",
+    "storeId": "box",
+    "store": "Box Cloud Storage",
+    "code": "FREE10GB",
+    "title": "100% Free Individual Plan – 10 GB Cloud Storage & Box Sign",
+    "description": "Get 10 GB secure cloud storage and 5 native Box Sign e-signatures monthly for $0.",
+    "discount": "FREE",
+    "type": "deal",
+    "affiliateUrl": "https://bjpql.com/g/r9oyizicg3b68b264a7687b97effec/?ulp=https%3A%2F%2Fwww.box.com%2Fen-gb%2Fpricing%3F",
+    "verified": true,
+    "expiryDate": "2026-12-31",
+    "url": "https://bjpql.com/g/r9oyizicg3b68b264a7687b97effec/?ulp=https%3A%2F%2Fwww.box.com%2Fen-gb%2Fpricing%3F"
   }
 ]

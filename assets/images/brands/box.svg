@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 90" width="210" height="90">
+  <g fill="#00A0F0">
+    <!-- Letter b: vertical stem + loop -->
+    <rect x="12" y="10" width="20" height="70" rx="10" ry="10" />
+    <path d="M 42,32 C 58,32 70,43 70,57 C 70,71 58,82 42,82 C 33,82 25,77 20,70 L 20,44 C 25,37 33,32 42,32 Z M 42,47 C 36,47 31,51 31,57 C 31,63 36,67 42,67 C 48,67 53,63 53,57 C 53,51 48,47 42,47 Z" />
+    
+    <!-- Letter o: loop -->
+    <path d="M 102,32 C 118,32 130,43 130,57 C 130,71 118,82 102,82 C 86,82 74,71 74,57 C 74,43 86,32 102,32 Z M 102,47 C 96,47 91,51 91,57 C 91,63 96,67 102,67 C 108,67 113,63 113,57 C 113,51 108,47 102,47 Z" />
+    
+    <!-- Letter x: crossing rounded pills centered at x=168, y=57 -->
+    <rect x="158" y="30" width="20" height="54" rx="10" ry="10" transform="rotate(-45 168 57)" />
+    <rect x="158" y="30" width="20" height="54" rx="10" ry="10" transform="rotate(45 168 57)" />
+  </g>
+</svg>

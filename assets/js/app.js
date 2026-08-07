@@ -51,6 +51,10 @@ class App {
                 await this.initReviewPage();
             } else if (path === '/' || path === '' || path.endsWith('/index.html') || path.endsWith('/')) {
                 await this.initHomePage();
+            } else {
+                if (document.getElementById('active-coupons-grid') || document.getElementById('store-name')) {
+                    await this.initStorePage();
+                }
             }
 
             if (typeof this.initHeaderStoresDropdown === 'function') {
@@ -1657,6 +1661,13 @@ App.initStorePage = async function() {
     let id = urlParams.get('id');
     
     if (!id) {
+        const rawFilename = window.location.pathname.split('/').pop().replace(/\.html$/i, '').toLowerCase();
+        if (rawFilename && rawFilename !== 'store' && rawFilename !== 'stores') {
+            id = rawFilename;
+        }
+    }
+
+    if (!id) {
         await this.renderAllStoresPage();
         return;
     }
@@ -1781,7 +1792,13 @@ App.initStorePage = async function() {
 
     // Coupons
     const allCoupons = await getDataService().getCoupons();
-    const storeCoupons = allCoupons.filter(c => c.store.id === id || c.store.name.toLowerCase().includes(id));
+    const storeCoupons = allCoupons.filter(c => {
+        if (!c) return false;
+        const sId = (c.storeId || (typeof c.store === 'object' && c.store ? c.store.id : c.store) || '').toLowerCase();
+        const sName = (typeof c.store === 'object' && c.store ? c.store.name : (c.store || '')).toLowerCase();
+        const targetId = (id || '').toLowerCase();
+        return sId === targetId || (sName && sName.includes(targetId)) || targetId.includes(sId);
+    });
     
     const activeCoupons = storeCoupons.filter(c => c.status !== 'expired');
     const expiredCoupons = storeCoupons.filter(c => c.status === 'expired');
@@ -2085,8 +2102,20 @@ App.renderAllStoresPage = async function() {
     // Compute active deal counts per store
     const storeDealCounts = {};
     sortedStores.forEach(s => {
-        const activeCoupons = coupons ? coupons.filter(c => c && c.store && (c.store.id === s.id || (c.store.name && c.store.name.toLowerCase().includes(s.id))) && c.status !== 'expired') : [];
-        const totalStoreCoupons = coupons ? coupons.filter(c => c && c.store && (c.store.id === s.id || (c.store.name && c.store.name.toLowerCase().includes(s.id)))) : [];
+        const activeCoupons = coupons ? coupons.filter(c => {
+            if (!c) return false;
+            const sId = (c.storeId || (typeof c.store === 'object' && c.store ? c.store.id : c.store) || '').toLowerCase();
+            const sName = (typeof c.store === 'object' && c.store ? c.store.name : (c.store || '')).toLowerCase();
+            const targetId = (s.id || '').toLowerCase();
+            return (sId === targetId || (sName && sName.includes(targetId))) && c.status !== 'expired';
+        }) : [];
+        const totalStoreCoupons = coupons ? coupons.filter(c => {
+            if (!c) return false;
+            const sId = (c.storeId || (typeof c.store === 'object' && c.store ? c.store.id : c.store) || '').toLowerCase();
+            const sName = (typeof c.store === 'object' && c.store ? c.store.name : (c.store || '')).toLowerCase();
+            const targetId = (s.id || '').toLowerCase();
+            return sId === targetId || (sName && sName.includes(targetId));
+        }) : [];
         storeDealCounts[s.id] = activeCoupons.length > 0 ? activeCoupons.length : totalStoreCoupons.length;
     });
 

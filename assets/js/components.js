@@ -91,16 +91,17 @@ class Components {
     }
 
     static createCouponCard(item) {
+        const link = item.affiliateLink || item.affiliateUrl || item.url || (item.store && item.store.affiliateLink) || '#';
         let actionHtml = '';
         if (item.code) {
             const masked = item.code.substring(0, 4) + '••••';
             actionHtml = `
-                <div class="code-reveal-wrapper" data-code="${item.code}" data-link="${item.affiliateLink || '#'}">
+                <div class="code-reveal-wrapper" data-code="${item.code}" data-link="${link}">
                     <span class="hidden-code-mask">${masked}</span>
                     <button class="btn show-code-btn" aria-label="Show Coupon Code and Copy">Show Code</button>
                 </div>`;
         } else {
-            actionHtml = `<a href="${item.affiliateLink || '#'}" target="_blank" rel="noopener sponsored" class="btn btn-primary full-width get-deal-btn ${item.isTop ? 'cta-pulse' : ''}">Get Deal</a>`;
+            actionHtml = `<a href="${link}" target="_blank" rel="noopener sponsored" class="btn btn-primary full-width get-deal-btn ${item.isTop ? 'cta-pulse' : ''}">Get Deal</a>`;
         }
         
         const successRate = item.successPercentage ? `${item.successPercentage}%` : (item.successRate || '99%');
