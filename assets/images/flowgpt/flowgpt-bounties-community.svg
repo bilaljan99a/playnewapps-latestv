@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 450" width="100%" height="100%">
+  <rect width="1000" height="450" rx="16" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+  
+  <g transform="translate(40, 40)">
+    <text x="0" y="30" fill="#F59E0B" font-family="sans-serif" font-weight="900" font-size="24">🏆 FlowGPT Creator Hackathons &amp; Cash Bounty Program</text>
+    <text x="0" y="60" fill="#94A3B8" font-family="sans-serif" font-size="14">Prompt engineers win real cash prizes by building top-ranked prompts, AI agents, and custom characters.</text>
+    
+    <!-- Bounty Cards -->
+    <g transform="translate(0, 90)">
+      <!-- Bounty 1 -->
+      <rect x="0" y="0" width="280" height="260" rx="12" fill="#1E293B" stroke="#F59E0B" stroke-width="2"/>
+      <rect x="16" y="16" width="90" height="24" rx="12" fill="#78350F"/>
+      <text x="61" y="32" text-anchor="middle" fill="#FBBF24" font-family="sans-serif" font-size="11" font-weight="700">ACTIVE BOUNTY</text>
+      <text x="16" y="70" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="18">Best Coding Agent Prompt</text>
+      <text x="16" y="100" fill="#94A3B8" font-family="sans-serif" font-size="13">Build an autonomous code debugging prompt for Claude 3.5.</text>
+      <path d="M16 160 H264" stroke="#334155" stroke-width="1"/>
+      <text x="16" y="190" fill="#CBD5E1" font-family="sans-serif" font-size="13">Prize Pool:</text>
+      <text x="16" y="225" fill="#10B981" font-family="sans-serif" font-weight="900" font-size="28">$2,500 USD</text>
+
+      <!-- Bounty 2 -->
+      <rect x="320" y="0" width="280" height="260" rx="12" fill="#1E293B" stroke="#8B5CF6" stroke-width="2"/>
+      <rect x="336" y="16" width="90" height="24" rx="12" fill="#4C1D95"/>
+      <text x="381" y="32" text-anchor="middle" fill="#A78BFA" font-family="sans-serif" font-size="11" font-weight="700">WEEKLY CONTEST</text>
+      <text x="336" y="70" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="18">Creative Storytelling AI</text>
+      <text x="336" y="100" fill="#94A3B8" font-family="sans-serif" font-size="13">Interactive RPG characters with multi-turn narrative memory.</text>
+      <path d="M336 160 H584" stroke="#334155" stroke-width="1"/>
+      <text x="336" y="190" fill="#CBD5E1" font-family="sans-serif" font-size="13">Prize Pool:</text>
+      <text x="336" y="225" fill="#10B981" font-family="sans-serif" font-weight="900" font-size="28">$1,000 USD</text>
+
+      <!-- Bounty 3 -->
+      <rect x="640" y="0" width="280" height="260" rx="12" fill="#1E293B" stroke="#EC4899" stroke-width="2"/>
+      <rect x="656" y="16" width="90" height="24" rx="12" fill="#831843"/>
+      <text x="701" y="32" text-anchor="middle" fill="#F472B6" font-family="sans-serif" font-size="11" font-weight="700">CREATOR FUND</text>
+      <text x="656" y="70" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="18">Top Usage Royalties</text>
+      <text x="656" y="100" fill="#94A3B8" font-family="sans-serif" font-size="13">Earn monthly payouts based on community usage of your prompts.</text>
+      <path d="M656 160 H904" stroke="#334155" stroke-width="1"/>
+      <text x="656" y="190" fill="#CBD5E1" font-family="sans-serif" font-size="13">Monthly Pool:</text>
+      <text x="656" y="225" fill="#10B981" font-family="sans-serif" font-weight="900" font-size="28">$10,000+ USD</text>
+    </g>
+  </g>
+</svg>

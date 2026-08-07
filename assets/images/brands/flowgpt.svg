@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="flowGptGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+    <linearGradient id="flowGptGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#6366F1" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#flowGptGrad)" />
+  <g transform="translate(64, 64)" filter="url(#shadow)">
+    <!-- Circuit & Flow Lines -->
+    <path d="M 60 192 C 60 110, 110 60, 192 60 C 274 60, 324 110, 324 192 C 324 274, 274 324, 192 324 C 110 324, 60 274, 60 192 Z" fill="none" stroke="#FFFFFF" stroke-width="28" stroke-linecap="round"/>
+    <path d="M 120 192 C 120 152, 152 120, 192 120 C 232 120, 264 152, 264 192 C 264 232, 232 264, 192 264" fill="none" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round" opacity="0.9"/>
+    <!-- AI Sparkle Core -->
+    <path d="M 192 140 L 204 180 L 244 192 L 204 204 L 192 244 L 180 204 L 140 192 L 180 180 Z" fill="#FFFFFF"/>
+    <!-- Flow Dots -->
+    <circle cx="324" cy="192" r="18" fill="#38BDF8"/>
+    <circle cx="192" cy="324" r="18" fill="#F472B6"/>
+    <circle cx="60" cy="192" r="14" fill="#A78BFA"/>
+  </g>
+</svg>

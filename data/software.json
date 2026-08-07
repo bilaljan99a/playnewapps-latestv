@@ -1,5 +1,35 @@
 [
   {
+    "id": "flowgpt-review",
+    "title": "FlowGPT – The Ultimate AI Prompt Library, Character Ecosystem & Marketplace",
+    "description": "FlowGPT is the premier community AI prompt library and marketplace featuring over 100,000+ battle-tested prompts, custom AI characters, prompt testing playgrounds, and creator cash bounties for ChatGPT, Claude, Gemini, and Midjourney.",
+    "icon": "/assets/images/brands/flowgpt.svg",
+    "rating": 4.9,
+    "categoryId": "ai-tools",
+    "developer": "FlowGPT Inc.",
+    "version": "v2026 Ecosystem Edition",
+    "size": "Web App / API Ecosystem",
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "Chrome Extension"
+    ],
+    "license": "Freemium / FlowGPT Pro",
+    "updatedAt": "2026-08-07",
+    "badges": [
+      "#1 AI Prompt Library 2026",
+      "Editor Choice",
+      "Creator Cash Bounties"
+    ],
+    "isFeatured": true,
+    "isTrending": true,
+    "affiliateUrl": "https://flowgpt.com/?utm_source=playnewapps&utm_medium=review",
+    "reviewUrl": "/flowgpt-review.html",
+    "summary": "FlowGPT is the world's largest community-driven AI prompt platform. Featuring over 100,000 prompts, custom AI characters, real-time prompt variable testing, multi-model playgrounds (ChatGPT 4o, Claude 3.5 Sonnet, Gemini 1.5, Midjourney V6), and lucrative creator bounty programs.",
+    "video": "https://www.youtube.com/embed/gP1qq-36J_A"
+  },
+  {
     "id": "box-cloud-storage-review",
     "title": "Box – AI-Powered Intelligent Content Management Platform",
     "description": "AI-powered Intelligent Content Management Platform unifying secure cloud storage, document management, team collaboration, Box AI, Box Drive, Box Sign e-signatures, Box Notes, Box Canvas, and workflow automation.",

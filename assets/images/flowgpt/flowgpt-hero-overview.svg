@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#1E1B4B"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="50%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Subtle Grid Lines -->
+  <g opacity="0.08" stroke="#FFFFFF" stroke-width="1">
+    <path d="M0,100 H1200 M0,200 H1200 M0,300 H1200 M0,400 H1200 M0,500 H1200"/>
+    <path d="M200,0 V630 M400,0 V630 M600,0 V630 M800,0 V630 M1000,0 V630"/>
+  </g>
+
+  <!-- FlowGPT Header / Title Group -->
+  <g transform="translate(80, 80)">
+    <rect x="0" y="0" width="180" height="40" rx="20" fill="url(#accent)"/>
+    <text x="90" y="25" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="14" letter-spacing="1">OFFICIAL REVIEW 2026</text>
+    
+    <text x="0" y="95" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="52" letter-spacing="-1">FlowGPT AI Prompt Platform</text>
+    <text x="0" y="135" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22">The #1 Community AI Prompt Library, Marketplace &amp; Agent Ecosystem</text>
+  </g>
+
+  <!-- Interface Mockup Card -->
+  <g transform="translate(80, 240)">
+    <rect width="1040" height="330" rx="16" fill="url(#cardBg)" stroke="#334155" stroke-width="2"/>
+    
+    <!-- Top Bar of Mockup -->
+    <path d="M0,16 C0,7.16 7.16,0 16,0 H1024 C1032.84,0 1040,7.16 1040,16 V48 H0 Z" fill="#0F172A"/>
+    <circle cx="24" cy="24" r="6" fill="#EF4444"/>
+    <circle cx="44" cy="24" r="6" fill="#F59E0B"/>
+    <circle cx="64" cy="24" r="6" fill="#10B981"/>
+    <rect x="100" y="12" width="500" height="24" rx="12" fill="#1E293B"/>
+    <text x="120" y="28" fill="#64748B" font-family="monospace" font-size="12">https://flowgpt.com/explore?category=coding-and-agents</text>
+
+    <!-- Prompt Cards Grid in Mockup -->
+    <g transform="translate(30, 70)">
+      <!-- Card 1 -->
+      <rect x="0" y="0" width="300" height="220" rx="12" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+      <rect x="16" y="16" width="60" height="22" rx="4" fill="#6366F1"/>
+      <text x="46" y="31" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="10" font-weight="700">ChatGPT 4o</text>
+      <text x="16" y="65" fill="#F8FAFC" font-family="sans-serif" font-size="16" font-weight="700">Full-Stack Code Architect</text>
+      <text x="16" y="90" fill="#94A3B8" font-family="sans-serif" font-size="12">Generates production-ready React, Express &amp; SQL setups.</text>
+      <path d="M16 180 H284" stroke="#334155" stroke-width="1"/>
+      <text x="16" y="200" fill="#CBD5E1" font-family="sans-serif" font-size="12">⭐ 4.9 (142k Uses)</text>
+      <text x="240" y="200" fill="#A855F7" font-family="sans-serif" font-size="12" font-weight="700">FREE</text>
+
+      <!-- Card 2 -->
+      <rect x="340" y="0" width="300" height="220" rx="12" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+      <rect x="356" y="16" width="60" height="22" rx="4" fill="#EC4899"/>
+      <text x="386" y="31" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="10" font-weight="700">Claude 3.5</text>
+      <text x="356" y="65" fill="#F8FAFC" font-family="sans-serif" font-size="16" font-weight="700">SEO Article &amp; Copy Wizard</text>
+      <text x="356" y="90" fill="#94A3B8" font-family="sans-serif" font-size="12">Creates 4000+ word humanized articles with schemas.</text>
+      <path d="M356 180 H624" stroke="#334155" stroke-width="1"/>
+      <text x="356" y="200" fill="#CBD5E1" font-family="sans-serif" font-size="12">⭐ 4.95 (98k Uses)</text>
+      <text x="580" y="200" fill="#A855F7" font-family="sans-serif" font-size="12" font-weight="700">FREE</text>
+
+      <!-- Card 3 -->
+      <rect x="680" y="0" width="300" height="220" rx="12" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+      <rect x="696" y="16" width="60" height="22" rx="4" fill="#10B981"/>
+      <text x="726" y="31" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="10" font-weight="700">Midjourney</text>
+      <text x="696" y="65" fill="#F8FAFC" font-family="sans-serif" font-size="16" font-weight="700">Photorealistic V6 Art Prompt</text>
+      <text x="696" y="90" fill="#94A3B8" font-family="sans-serif" font-size="12">Ultra-detailed camera angles, lighting &amp; textures.</text>
+      <path d="M696 180 H964" stroke="#334155" stroke-width="1"/>
+      <text x="696" y="200" fill="#CBD5E1" font-family="sans-serif" font-size="12">⭐ 4.88 (210k Uses)</text>
+      <text x="920" y="200" fill="#A855F7" font-family="sans-serif" font-size="12" font-weight="700">FREE</text>
+    </g>
+  </g>
+</svg>
