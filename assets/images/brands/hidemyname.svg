@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Clean white rounded box background for store grids -->
+  <rect width="400" height="400" rx="64" fill="#FFFFFF" />
+  <rect width="392" height="392" x="4" y="4" rx="60" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="4"/>
+  
+  <g transform="translate(30, 140)">
+    <!-- Cat Shield Emblem -->
+    <g transform="translate(0, 0)">
+      <!-- Outer Dark Navy Cat-Shield Body -->
+      <path d="M 40,0 C 35,-12 20,-15 15,2 C 10,18 8,28 0,38 C 12,42 22,50 25,65 C 28,82 20,100 40,120 C 60,100 52,82 55,65 C 58,50 68,42 80,38 C 72,28 70,18 65,2 C 60,-15 45,-12 40,0 Z" fill="#0A1C2A"/>
+      <!-- Crisp Ears Inner Contour -->
+      <path d="M 22,5 C 26,-4 32,2 35,12 C 28,15 24,18 22,5 Z" fill="#FFFFFF"/>
+      <path d="M 58,5 C 54,-4 48,2 45,12 C 52,15 56,18 58,5 Z" fill="#FFFFFF"/>
+      <!-- Shield Face Cutout -->
+      <path d="M 40,25 C 56,25 66,38 66,58 C 66,80 54,95 40,108 C 26,95 14,80 14,58 C 14,38 24,25 40,25 Z" fill="#FFFFFF"/>
+      <!-- Inner Dark Navy Shield -->
+      <path d="M 40,36 C 50,36 58,45 58,60 C 58,76 48,88 40,98 C 32,88 22,76 22,60 C 22,45 30,36 40,36 Z" fill="#0A1C2A"/>
+      <!-- Light Blue Inner Shield Highlight -->
+      <path d="M 40,46 C 47,46 52,52 52,63 C 52,74 45,82 40,90 C 35,82 28,74 28,63 C 28,52 33,46 40,46 Z" fill="#0088CC"/>
+    </g>
+
+    <!-- Wordmark text matching exact brand typography -->
+    <g transform="translate(98, 72)">
+      <text font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="46" letter-spacing="-1.5">
+        <tspan fill="#0A1C2A">hide</tspan>
+        <tspan fill="#0088CC">my.</tspan>
+        <tspan fill="#0A1C2A">name</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

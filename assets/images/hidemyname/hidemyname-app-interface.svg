@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Container -->
+  <rect width="1000" height="500" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="2"/>
+
+  <!-- Top App Window Header -->
+  <rect x="0" y="0" width="1000" height="44" fill="#0284C7" fill-opacity="0.2" rx="16"/>
+  <circle cx="24" cy="22" r="6" fill="#EF4444"/>
+  <circle cx="44" cy="22" r="6" fill="#F59E0B"/>
+  <circle cx="64" cy="22" r="6" fill="#10B981"/>
+  <text x="500" y="27" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="14">HideMy.name VPN Client – Connected (AES-256 Bit Encryption)</text>
+
+  <!-- Left Navigation Column -->
+  <rect x="20" y="60" width="220" height="420" rx="12" fill="url(#cardGrad)" stroke="#334155"/>
+  <text x="40" y="95" fill="#00C9A7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="16">HideMy.name</text>
+  
+  <!-- Navigation Items -->
+  <rect x="30" y="120" width="200" height="40" rx="8" fill="#00C9A7" fill-opacity="0.2"/>
+  <text x="50" y="145" fill="#00C9A7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="14">⚡ Quick Connect</text>
+
+  <rect x="30" y="170" width="200" height="40" rx="8" fill="transparent"/>
+  <text x="50" y="195" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="14">🌍 Server List (100+)</text>
+
+  <rect x="30" y="220" width="200" height="40" rx="8" fill="transparent"/>
+  <text x="50" y="245" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="14">🛡️ Chameleon Stealth</text>
+
+  <rect x="30" y="270" width="200" height="40" rx="8" fill="transparent"/>
+  <text x="50" y="295" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="14">🔑 Key &amp; Subscription</text>
+
+  <rect x="30" y="320" width="200" height="40" rx="8" fill="transparent"/>
+  <text x="50" y="345" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="14">⚙️ Advanced Settings</text>
+
+  <!-- Right Main View -->
+  <g transform="translate(260, 60)">
+    <!-- Connection Status Card -->
+    <rect x="0" y="0" width="440" height="420" rx="12" fill="url(#cardGrad)" stroke="#334155"/>
+    <circle cx="220" cy="120" r="60" fill="#00C9A7" fill-opacity="0.15" stroke="#00C9A7" stroke-width="4"/>
+    <circle cx="220" cy="120" r="45" fill="#00C9A7"/>
+    <text x="220" y="127" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="20">ON</text>
+
+    <text x="220" y="210" text-anchor="middle" fill="#10B981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="18">PROTECTED &amp; ANONYMOUS</text>
+    <text x="220" y="235" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="13">Virtual IP: 185.220.101.42 (Frankfurt, Germany)</text>
+
+    <!-- Info Metrics Box -->
+    <rect x="30" y="260" width="380" height="130" rx="10" fill="#0F172A" stroke="#334155"/>
+    <g transform="translate(50, 280)">
+      <text x="0" y="20" fill="#94A3B8" font-weight="600" font-size="12">PROTOCOL</text>
+      <text x="0" y="42" fill="#FFFFFF" font-weight="800" font-size="15">WireGuard (UDP)</text>
+
+      <text x="180" y="20" fill="#94A3B8" font-weight="600" font-size="12">ENCRYPTION</text>
+      <text x="180" y="42" fill="#FFFFFF" font-weight="800" font-size="15">AES-256-GCM</text>
+
+      <text x="0" y="75" fill="#94A3B8" font-weight="600" font-size="12">PING / LATENCY</text>
+      <text x="0" y="97" fill="#10B981" font-weight="800" font-size="15">18 ms</text>
+
+      <text x="180" y="75" fill="#94A3B8" font-weight="600" font-size="12">KILL SWITCH</text>
+      <text x="180" y="97" fill="#10B981" font-weight="800" font-size="15">Active</text>
+    </g>
+
+    <!-- Server List Sidebar Panel -->
+    <rect x="460" y="0" width="260" height="420" rx="12" fill="url(#cardGrad)" stroke="#334155"/>
+    <text x="480" y="35" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="15">Top Recommended Servers</text>
+
+    <!-- Server Rows -->
+    <g transform="translate(480, 55)">
+      <rect width="220" height="50" rx="8" fill="#00C9A7" fill-opacity="0.1" stroke="#00C9A7"/>
+      <text x="15" y="30" fill="#FFFFFF" font-weight="700" font-size="14">🇩🇪 Frankfurt, DE</text>
+      <text x="180" y="30" fill="#10B981" font-weight="700" font-size="12">18ms</text>
+    </g>
+
+    <g transform="translate(480, 115)">
+      <rect width="220" height="50" rx="8" fill="#0F172A" stroke="#334155"/>
+      <text x="15" y="30" fill="#CBD5E1" font-weight="600" font-size="14">🇳🇱 Amsterdam, NL</text>
+      <text x="180" y="30" fill="#10B981" font-weight="700" font-size="12">24ms</text>
+    </g>
+
+    <g transform="translate(480, 175)">
+      <rect width="220" height="50" rx="8" fill="#0F172A" stroke="#334155"/>
+      <text x="15" y="30" fill="#CBD5E1" font-weight="600" font-size="14">🇬🇧 London, UK</text>
+      <text x="180" y="30" fill="#10B981" font-weight="700" font-size="12">32ms</text>
+    </g>
+
+    <g transform="translate(480, 235)">
+      <rect width="220" height="50" rx="8" fill="#0F172A" stroke="#334155"/>
+      <text x="15" y="30" fill="#CBD5E1" font-weight="600" font-size="14">🇺🇸 New York, US</text>
+      <text x="180" y="30" fill="#10B981" font-weight="700" font-size="12">85ms</text>
+    </g>
+
+    <g transform="translate(480, 295)">
+      <rect width="220" height="50" rx="8" fill="#0F172A" stroke="#334155"/>
+      <text x="15" y="30" fill="#CBD5E1" font-weight="600" font-size="14">🇸🇬 Singapore, SG</text>
+      <text x="180" y="30" fill="#F59E0B" font-weight="700" font-size="12">140ms</text>
+    </g>
+  </g>
+</svg>

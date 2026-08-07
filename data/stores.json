@@ -1,5 +1,34 @@
 [
   {
+    "id": "hidemyname",
+    "name": "HideMyname VPN",
+    "icon": "vpn_key",
+    "logo": "/assets/images/brands/hidemyname.svg",
+    "website": "https://hide.mn",
+    "storeUrl": "/hidemyname-vpn-coupons.html",
+    "affiliateLink": "https://codeaven.com/g/d6ig17yj38b68b264a76cfba9fca8a/?ulp=https%3A%2F%2Fhide.mn%2Fen%2Forder%2Fvpn%2F",
+    "rating": 4.9,
+    "votes": 3420,
+    "seoTitle": "HideMyname VPN Discount Code & Promo Coupons (2026): 50% OFF",
+    "seoDescription": "Verified 2026 HideMyname VPN discount codes, 50% off annual plan deals, 38% off 6-month subscriptions, and free trial activation keys.",
+    "about": "HideMy.name VPN is an independent, high-speed virtual private network service featuring 100+ bare-metal servers in 45+ countries, WireGuard protocol support, Chameleon stealth obfuscation, and a strict zero-logs policy.",
+    "categories": [
+      "VPN & Security",
+      "Software & Apps",
+      "Privacy Tools"
+    ],
+    "faqs": [
+      {
+        "question": "What is the best working HideMyname VPN discount code?",
+        "answer": "The best HideMyname VPN discount code applies 50% OFF the Annual VPN plan when subscribing through our verified partner link."
+      },
+      {
+        "question": "Does HideMyname VPN support WireGuard?",
+        "answer": "Yes, HideMy.name natively supports WireGuard for high-speed 4K streaming and low-latency gaming."
+      }
+    ]
+  },
+  {
     "id": "aliexpress",
     "name": "AliExpress",
     "icon": "shopping_bag",

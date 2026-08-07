@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260">
+  <defs>
+    <linearGradient id="hmnB2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <filter id="b2Shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="260" rx="20" fill="url(#hmnB2Grad)"/>
+
+  <g transform="translate(50, 38)">
+    <!-- Badge -->
+    <rect width="220" height="30" rx="15" fill="#38BDF8" fill-opacity="0.25"/>
+    <text x="14" y="20" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="12">⚡ POPULAR MID-TERM PLAN</text>
+
+    <!-- Main Title (Width constrained to 760px) -->
+    <text x="0" y="76" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="28">HideMyname VPN 6-Month Plan – 38% OFF</text>
+    <text x="0" y="108" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="16">Flexible 6-Month Protection for Desktop, Mobile &amp; Routers with Unlimited Traffic.</text>
+
+    <!-- Benefits -->
+    <g transform="translate(0, 138)">
+      <text x="0" y="20" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="15">✓ Instant Key Activation</text>
+      <text x="210" y="20" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="15">✓ 5 Simultaneous Connections</text>
+      <text x="480" y="20" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="15">✓ WireGuard &amp; OpenVPN</text>
+    </g>
+  </g>
+
+  <!-- CTA Button placed safely at x=860, width=290 -->
+  <g transform="translate(860, 98)" filter="url(#b2Shadow)">
+    <rect width="290" height="64" rx="32" fill="#FFFFFF"/>
+    <text x="145" y="39" text-anchor="middle" fill="#0284C7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18">Get 38% OFF Discount 🚀</text>
+  </g>
+</svg>

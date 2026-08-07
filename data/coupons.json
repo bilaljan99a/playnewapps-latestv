@@ -1,5 +1,77 @@
 [
   {
+    "id": "hidemyname-50-off-annual",
+    "storeId": "hidemyname",
+    "title": "50% OFF HideMyname VPN 1-Year Plan ($2.50/mo)",
+    "description": "Get 50% OFF HideMyname VPN 12-Month Plan. Includes WireGuard speed, Chameleon obfuscation, strict zero logs, and 5 simultaneous devices.",
+    "code": "HDM50ANNUAL",
+    "discount": "50% OFF",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://codeaven.com/g/d6ig17yj38b68b264a76cfba9fca8a/?ulp=https%3A%2F%2Fhide.mn%2Fen%2Forder%2Fvpn%2F",
+    "url": "https://codeaven.com/g/d6ig17yj38b68b264a76cfba9fca8a/?ulp=https%3A%2F%2Fhide.mn%2Fen%2Forder%2Fvpn%2F",
+    "isVerified": true
+  },
+  {
+    "id": "hidemyname-38-off-6months",
+    "storeId": "hidemyname",
+    "title": "38% OFF HideMyname VPN 6-Month Plan ($5.00/mo)",
+    "description": "Save 38% on 6 months of HideMyname VPN. Unlimited bandwidth, access to 100+ servers in 45 countries, and 24/7 customer support.",
+    "code": "SAVE38HDM",
+    "discount": "38% OFF",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://codeaven.com/g/d6ig17yj38b68b264a76cfba9fca8a/?ulp=https%3A%2F%2Fhide.mn%2Fen%2Forder%2Fvpn%2F",
+    "url": "https://codeaven.com/g/d6ig17yj38b68b264a76cfba9fca8a/?ulp=https%3A%2F%2Fhide.mn%2Fen%2Forder%2Fvpn%2F",
+    "isVerified": true
+  },
+  {
+    "id": "hidemyname-free-trial",
+    "storeId": "hidemyname",
+    "title": "24-Hour Free Trial Code (No Credit Card Required)",
+    "description": "Test HideMyname VPN completely free for 24 hours. Instant activation code via email with zero payment details needed.",
+    "code": "FREETRIAL24",
+    "discount": "FREE TRIAL",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://codeaven.com/g/d6ig17yj38b68b264a76cfba9fca8a/?ulp=https%3A%2F%2Fhide.mn%2Fen%2Fdemo%2F",
+    "url": "https://codeaven.com/g/d6ig17yj38b68b264a76cfba9fca8a/?ulp=https%3A%2F%2Fhide.mn%2Fen%2Fdemo%2F",
+    "isVerified": true
+  },
+  {
+    "id": "hidemyname-2-year-deal",
+    "storeId": "hidemyname",
+    "title": "Exclusive 65% OFF 2-Year HideMyname VPN Plan",
+    "description": "Special multi-year deal: Get 24 months of HideMyname VPN with ultimate privacy, high-speed streaming, and kill-switch protection.",
+    "code": "HDM65OFF",
+    "discount": "65% OFF",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://codeaven.com/g/d6ig17yj38b68b264a76cfba9fca8a/?ulp=https%3A%2F%2Fhide.mn%2Fen%2Forder%2Fvpn%2F",
+    "url": "https://codeaven.com/g/d6ig17yj38b68b264a76cfba9fca8a/?ulp=https%3A%2F%2Fhide.mn%2Fen%2Forder%2Fvpn%2F",
+    "isVerified": true
+  },
+  {
+    "id": "hidemyname-1month-deal",
+    "storeId": "hidemyname",
+    "title": "Monthly Flex Pass - $11.00/month",
+    "description": "No long-term commitment needed. Full access to all 45+ country locations, dedicated IP add-on support, and WireGuard protocol.",
+    "code": "FLEXMONTH",
+    "discount": "Best Monthly",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://codeaven.com/g/d6ig17yj38b68b264a76cfba9fca8a/?ulp=https%3A%2F%2Fhide.mn%2Fen%2Forder%2Fvpn%2F",
+    "url": "https://codeaven.com/g/d6ig17yj38b68b264a76cfba9fca8a/?ulp=https%3A%2F%2Fhide.mn%2Fen%2Forder%2Fvpn%2F",
+    "isVerified": true
+  },
+  {
+    "id": "hidemyname-crypto-bonus",
+    "storeId": "hidemyname",
+    "title": "Extra 10% OFF with Crypto Payments (Bitcoin, USDT, Monero)",
+    "description": "Pay anonymously using Bitcoin, Monero, Ethereum, or USDT and get an extra 10% discount applied automatically at checkout.",
+    "code": "CRYPTO10",
+    "discount": "10% EXTRA",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://codeaven.com/g/d6ig17yj38b68b264a76cfba9fca8a/?ulp=https%3A%2F%2Fhide.mn%2Fen%2Forder%2Fvpn%2F",
+    "url": "https://codeaven.com/g/d6ig17yj38b68b264a76cfba9fca8a/?ulp=https%3A%2F%2Fhide.mn%2Fen%2Forder%2Fvpn%2F",
+    "isVerified": true
+  },
+  {
     "id": "wondershare-drfone-business",
     "storeId": "wondershare",
     "title": "Wondershare Dr.Fone Business & Technician Plan - $195.93/yr",

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280">
+  <defs>
+    <linearGradient id="hmnB1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#004D7A"/>
+      <stop offset="100%" stop-color="#008793"/>
+    </linearGradient>
+    <linearGradient id="hmnBtn1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00C9A7"/>
+      <stop offset="100%" stop-color="#00E676"/>
+    </linearGradient>
+    <filter id="bShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="280" rx="20" fill="url(#hmnB1Grad)"/>
+  
+  <!-- Background Shield Artwork -->
+  <circle cx="1100" cy="140" r="180" fill="#00C9A7" fill-opacity="0.1" filter="blur(20px)"/>
+  <path d="M1060 40 L1140 70 C1140 180 1060 220 1060 220 C1060 220 980 180 980 70 Z" fill="#FFFFFF" fill-opacity="0.06"/>
+
+  <g transform="translate(50, 40)">
+    <!-- Badge -->
+    <rect width="210" height="32" rx="16" fill="#00C9A7" fill-opacity="0.25" stroke="#00C9A7" stroke-width="1"/>
+    <text x="14" y="21" fill="#00C9A7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="13">🔥 VERIFIED EXCLUSIVE DEAL 2026</text>
+
+    <!-- Headline (Width strictly under 750px) -->
+    <text x="0" y="80" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="32">HideMy.name VPN Annual Plan – Save 50% OFF</text>
+    <text x="0" y="115" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="17">High-Speed Anonymous VPN • 100+ Servers in 45+ Countries • No-Logs Guarantee</text>
+
+    <!-- Pricing Callout -->
+    <g transform="translate(0, 142)">
+      <text x="0" y="28" fill="#00E676" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="28">50% Discount Applied Automatically</text>
+      <text x="440" y="26" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="15">(Includes 30-Day Money-Back Guarantee)</text>
+    </g>
+  </g>
+
+  <!-- CTA Button placed safely at x=860, width=290 -->
+  <g transform="translate(860, 105)" filter="url(#bShadow)">
+    <rect width="290" height="64" rx="32" fill="url(#hmnBtn1)"/>
+    <text x="145" y="39" text-anchor="middle" fill="#00382B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18">Claim 50% OFF Deal ➔</text>
+  </g>
+</svg>
