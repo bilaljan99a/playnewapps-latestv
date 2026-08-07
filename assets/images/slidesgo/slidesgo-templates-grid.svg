@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tgBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="500" rx="20" fill="url(#tgBg)" stroke="#334155" stroke-width="1.5"/>
+  
+  <text x="40" y="50" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="22">Slidesgo Premium Template Categories</text>
+  <text x="40" y="75" fill="#94A3B8" font-family="sans-serif" font-size="14">Browse 15,000+ hand-crafted presentation decks optimized for Google Slides and Microsoft PowerPoint</text>
+
+  <!-- Category Grid 2x3 -->
+  <!-- Box 1: Business -->
+  <g transform="translate(40, 105)">
+    <rect width="280" height="160" rx="14" fill="#1E1B4B" stroke="#4338CA" stroke-width="1"/>
+    <rect x="20" y="20" width="40" height="40" rx="8" fill="#6366F1"/>
+    <text x="32" y="47" fill="#FFFFFF" font-size="20">📊</text>
+    <text x="75" y="45" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="16">Business &amp; Startup</text>
+    <text x="20" y="85" fill="#CBD5E1" font-family="sans-serif" font-size="12">Pitch decks, annual reports, strategy proposals &amp; investor updates.</text>
+    <text x="20" y="135" fill="#A5B4FC" font-family="sans-serif" font-weight="700" font-size="12">3,400+ Templates ➔</text>
+  </g>
+
+  <!-- Box 2: Education -->
+  <g transform="translate(360, 105)">
+    <rect width="280" height="160" rx="14" fill="#2E1065" stroke="#7E22CE" stroke-width="1"/>
+    <rect x="20" y="20" width="40" height="40" rx="8" fill="#A855F7"/>
+    <text x="32" y="47" fill="#FFFFFF" font-size="20">🎓</text>
+    <text x="75" y="45" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="16">Education &amp; School</text>
+    <text x="20" y="85" fill="#CBD5E1" font-family="sans-serif" font-size="12">Lesson plans, school projects, thesis defenses &amp; gamified quizzes.</text>
+    <text x="20" y="135" fill="#E9D5FF" font-family="sans-serif" font-weight="700" font-size="12">4,200+ Templates ➔</text>
+  </g>
+
+  <!-- Box 3: Marketing -->
+  <g transform="translate(680, 105)">
+    <rect width="280" height="160" rx="14" fill="#4C0519" stroke="#BE123C" stroke-width="1"/>
+    <rect x="20" y="20" width="40" height="40" rx="8" fill="#F43F5E"/>
+    <text x="32" y="47" fill="#FFFFFF" font-size="20">🚀</text>
+    <text x="75" y="45" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="16">Marketing &amp; Sales</text>
+    <text x="20" y="85" fill="#CBD5E1" font-family="sans-serif" font-size="12">Campaign launches, social media plans, SEO audit decks &amp; funnels.</text>
+    <text x="20" y="135" fill="#FECDD3" font-family="sans-serif" font-weight="700" font-size="12">2,800+ Templates ➔</text>
+  </g>
+
+  <!-- Box 4: Medical -->
+  <g transform="translate(40, 295)">
+    <rect width="280" height="160" rx="14" fill="#064E3B" stroke="#047857" stroke-width="1"/>
+    <rect x="20" y="20" width="40" height="40" rx="8" fill="#10B981"/>
+    <text x="32" y="47" fill="#FFFFFF" font-size="20">🧬</text>
+    <text x="75" y="45" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="16">Medical &amp; Science</text>
+    <text x="20" y="85" fill="#CBD5E1" font-family="sans-serif" font-size="12">Clinical trial data, health awareness campaigns &amp; lab findings.</text>
+    <text x="20" y="135" fill="#A7F3D0" font-family="sans-serif" font-weight="700" font-size="12">1,900+ Templates ➔</text>
+  </g>
+
+  <!-- Box 5: Infographics -->
+  <g transform="translate(360, 295)">
+    <rect width="280" height="160" rx="14" fill="#451A03" stroke="#B45309" stroke-width="1"/>
+    <rect x="20" y="20" width="40" height="40" rx="8" fill="#F59E0B"/>
+    <text x="32" y="47" fill="#FFFFFF" font-size="20">📐</text>
+    <text x="75" y="45" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="16">Infographic Decks</text>
+    <text x="20" y="85" fill="#CBD5E1" font-family="sans-serif" font-size="12">Timelines, SWOT analysis matrices, funnel charts &amp; mind maps.</text>
+    <text x="20" y="135" fill="#FDE68A" font-family="sans-serif" font-weight="700" font-size="12">2,100+ Templates ➔</text>
+  </g>
+
+  <!-- Box 6: Multi-purpose -->
+  <g transform="translate(680, 295)">
+    <rect width="280" height="160" rx="14" fill="#134E4A" stroke="#0F766E" stroke-width="1"/>
+    <rect x="20" y="20" width="40" height="40" rx="8" fill="#14B8A6"/>
+    <text x="32" y="47" fill="#FFFFFF" font-size="20">🎨</text>
+    <text x="75" y="45" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="16">Creative &amp; Portfolio</text>
+    <text x="20" y="85" fill="#CBD5E1" font-family="sans-serif" font-size="12">Minimalist portfolios, photo lookbooks, agency showcases &amp; resumes.</text>
+    <text x="20" y="135" fill="#99F6E4" font-family="sans-serif" font-weight="700" font-size="12">1,600+ Templates ➔</text>
+  </g>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="infoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="450" rx="20" fill="url(#infoBg)" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="500" y="55" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="22">Slidesgo Built-in Infographic Diagram Library</text>
+  <text x="500" y="80" text-anchor="middle" fill="#94A3B8" font-family="sans-serif" font-size="14">Fully vector-editable maps, timelines, process funnels, and data tables</text>
+
+  <!-- Infographic Diagram Showcase -->
+  <!-- 1. Timeline Chart -->
+  <g transform="translate(60, 120)">
+    <rect width="260" height="280" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="35" fill="#FF4081" font-family="sans-serif" font-weight="700" font-size="16">Roadmap &amp; Timelines</text>
+    
+    <!-- Timeline Line -->
+    <line x1="40" y1="80" x2="40" y2="240" stroke="#7C4DFF" stroke-width="4"/>
+    <circle cx="40" cy="90" r="10" fill="#FF5252"/>
+    <text x="65" y="95" fill="#FFFFFF" font-family="sans-serif" font-weight="600" font-size="13">Phase 1: Discovery</text>
+    
+    <circle cx="40" cy="150" r="10" fill="#7C4DFF"/>
+    <text x="65" y="155" fill="#FFFFFF" font-family="sans-serif" font-weight="600" font-size="13">Phase 2: Prototyping</text>
+
+    <circle cx="40" cy="210" r="10" fill="#10B981"/>
+    <text x="65" y="215" fill="#FFFFFF" font-family="sans-serif" font-weight="600" font-size="13">Phase 3: Launch</text>
+  </g>
+
+  <!-- 2. SWOT Matrix -->
+  <g transform="translate(370, 120)">
+    <rect width="260" height="280" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="35" fill="#7C4DFF" font-family="sans-serif" font-weight="700" font-size="16">SWOT Analysis Matrix</text>
+
+    <rect x="20" y="60" width="105" height="95" rx="8" fill="#10B981" fill-opacity="0.2" stroke="#10B981" stroke-width="1"/>
+    <text x="32" y="85" fill="#10B981" font-family="sans-serif" font-weight="800" font-size="14">Strengths</text>
+
+    <rect x="135" y="60" width="105" height="95" rx="8" fill="#EF4444" fill-opacity="0.2" stroke="#EF4444" stroke-width="1"/>
+    <text x="147" y="85" fill="#EF4444" font-family="sans-serif" font-weight="800" font-size="14">Weakness</text>
+
+    <rect x="20" y="165" width="105" height="95" rx="8" fill="#3B82F6" fill-opacity="0.2" stroke="#3B82F6" stroke-width="1"/>
+    <text x="32" y="190" fill="#3B82F6" font-family="sans-serif" font-weight="800" font-size="14">Oppty</text>
+
+    <rect x="135" y="165" width="105" height="95" rx="8" fill="#F59E0B" fill-opacity="0.2" stroke="#F59E0B" stroke-width="1"/>
+    <text x="147" y="190" fill="#F59E0B" font-family="sans-serif" font-weight="800" font-size="14">Threats</text>
+  </g>
+
+  <!-- 3. Funnel Diagram -->
+  <g transform="translate(680, 120)">
+    <rect width="260" height="280" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="35" fill="#10B981" font-family="sans-serif" font-weight="700" font-size="16">Sales Conversion Funnel</text>
+
+    <polygon points="30,65 230,65 200,115 60,115" fill="#FF5252"/>
+    <text x="130" y="95" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="12">Awareness (100k)</text>
+
+    <polygon points="62,120 198,120 170,170 90,170" fill="#7C4DFF"/>
+    <text x="130" y="150" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="12">Interest (25k)</text>
+
+    <polygon points="92,175 168,175 148,225 112,225" fill="#10B981"/>
+    <text x="130" y="205" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="12">Deals (5k)</text>
+  </g>
+</svg>

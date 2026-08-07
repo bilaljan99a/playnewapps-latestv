@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260">
+  <defs>
+    <linearGradient id="b2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#1E1B4B"/>
+      <stop offset="100%" stop-color="#31103F"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5252"/>
+      <stop offset="100%" stop-color="#FF4081"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="260" rx="20" fill="url(#b2Grad)" stroke="#334155" stroke-width="2"/>
+  <circle cx="1100" cy="130" r="180" fill="#7C4DFF" fill-opacity="0.15" filter="blur(30px)"/>
+
+  <g transform="translate(50, 38)">
+    <!-- Badge -->
+    <rect width="210" height="30" rx="15" fill="#7C4DFF" fill-opacity="0.3"/>
+    <text x="14" y="20" fill="#A78BFA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="12">⚡ AI PRESENTATION MAKER</text>
+
+    <!-- Main Title (Width constrained to 760px) -->
+    <text x="0" y="76" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="28">Create Complete Presentations in 60 Seconds with AI</text>
+    <text x="0" y="108" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="16">Type your topic, pick a style, and let AI generate, write &amp; format your slide deck.</text>
+
+    <!-- Checkmarks -->
+    <g transform="translate(0, 138)">
+      <text x="0" y="20" fill="#34D399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="15">✓ Fully Customizable</text>
+      <text x="200" y="20" fill="#34D399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="15">✓ Google Slides &amp; PPT Export</text>
+      <text x="470" y="20" fill="#34D399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="15">✓ 100% Free Trial</text>
+    </g>
+  </g>
+
+  <!-- CTA Button placed safely at x=860, width=290 -->
+  <g transform="translate(860, 98)">
+    <rect width="290" height="64" rx="32" fill="url(#btnGrad)"/>
+    <text x="145" y="39" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="18">Try Slidesgo AI Free 🚀</text>
+  </g>
+</svg>

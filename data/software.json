@@ -1,5 +1,35 @@
 [
   {
+    "id": "slidesgo-review",
+    "title": "Slidesgo – Best Free Google Slides & PowerPoint Templates with AI Presentation Maker",
+    "description": "Comprehensive 2026 Slidesgo review exploring its library of 15,000+ customizable Google Slides & PowerPoint templates, AI Presentation Maker, education & business slide decks, infographics, pricing, pros & cons.",
+    "icon": "/assets/images/brands/slidesgo.svg",
+    "rating": 4.9,
+    "categoryId": "productivity",
+    "developer": "Freepik Company",
+    "version": "v2026 Enterprise & AI Edition",
+    "size": "Web Application",
+    "platforms": [
+      "Web",
+      "Google Slides",
+      "Microsoft PowerPoint",
+      "Canva Export"
+    ],
+    "license": "Freemium / Slidesgo Premium",
+    "updatedAt": "2026-08-07",
+    "badges": [
+      "#1 Presentation Templates 2026",
+      "AI Slide Generator",
+      "Freepik Ecosystem"
+    ],
+    "isFeatured": true,
+    "isTrending": true,
+    "affiliateUrl": "https://slidesgo.com/?utm_source=playnewapps&utm_medium=review",
+    "reviewUrl": "/slidesgo-review.html",
+    "summary": "Slidesgo is the world's leading platform for free and premium presentation templates compatible with Google Slides and Microsoft PowerPoint. Featuring an AI Presentation Maker, 15,000+ professionally designed slides, infographics, and seamless Freepik asset integration.",
+    "video": "https://www.youtube.com/embed/LiDfe6PmlqY"
+  },
+  {
     "id": "flowgpt-review",
     "title": "FlowGPT – The Ultimate AI Prompt Library, Character Ecosystem & Marketplace",
     "description": "FlowGPT is the premier community AI prompt library and marketplace featuring over 100,000+ battle-tested prompts, custom AI characters, prompt testing playgrounds, and creator cash bounties for ChatGPT, Claude, Gemini, and Midjourney.",

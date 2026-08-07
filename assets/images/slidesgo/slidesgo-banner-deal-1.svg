@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280">
+  <defs>
+    <linearGradient id="b1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5252"/>
+      <stop offset="50%" stop-color="#FF4081"/>
+      <stop offset="100%" stop-color="#7C4DFF"/>
+    </linearGradient>
+    <filter id="b1Shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="280" rx="20" fill="url(#b1Grad)"/>
+  
+  <!-- Background Decorative Accents -->
+  <circle cx="1120" cy="40" r="160" fill="#FFFFFF" fill-opacity="0.08"/>
+  <circle cx="100" cy="260" r="100" fill="#FFFFFF" fill-opacity="0.08"/>
+
+  <g transform="translate(50, 40)">
+    <!-- Badge -->
+    <rect width="180" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.25"/>
+    <text x="14" y="20" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="13">🔥 SPECIAL PROMO 2026</text>
+
+    <!-- Main Title (Strictly constrained to 750px width, leaving 350px for CTA button on right) -->
+    <text x="0" y="78" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="32">Unlock 15,000+ Premium Templates</text>
+    <text x="0" y="112" fill="#FFFFFF" fill-opacity="0.9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="17">Unlimited Downloads • Unlimited AI Slide Generation • Commercial License</text>
+
+    <!-- Pricing Highlight -->
+    <g transform="translate(0, 138)">
+      <text x="0" y="28" fill="#FFE082" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="28">Save Up To 50% OFF Premium</text>
+      <text x="400" y="26" fill="#FFFFFF" fill-opacity="0.85" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="15">(Starts at only $2.50 / month)</text>
+    </g>
+  </g>
+
+  <!-- CTA Button placed safely at x=860, width=290 so it NEVER overlaps text -->
+  <g transform="translate(860, 105)" filter="url(#b1Shadow)">
+    <rect width="290" height="64" rx="32" fill="#FFFFFF"/>
+    <text x="145" y="39" text-anchor="middle" fill="#FF4081" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18">Get Slidesgo Premium ➔</text>
+  </g>
+</svg>
