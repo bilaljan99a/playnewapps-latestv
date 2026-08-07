@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#cBg)"/>
+
+  <text x="80" y="60" font-family="system-ui, sans-serif" font-weight="900" font-size="32" fill="#ffffff">Cloud Storage Comparison: Box vs Dropbox vs Google Drive</text>
+  <text x="80" y="95" font-family="system-ui, sans-serif" font-size="18" fill="#94A3B8">Side-by-side evaluation for business security, AI capabilities, and e-signatures.</text>
+
+  <!-- Comparison Grid -->
+  <g transform="translate(80, 130)">
+    <!-- Header -->
+    <rect width="1040" height="44" rx="8" fill="#334155"/>
+    <text x="24" y="28" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#ffffff">FEATURE / METRIC</text>
+    <text x="320" y="28" font-family="system-ui, sans-serif" font-weight="900" font-size="16" fill="#38BDF8">BOX CONTENT CLOUD</text>
+    <text x="600" y="28" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#CBD5E1">DROPBOX BUSINESS</text>
+    <text x="850" y="28" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#CBD5E1">GOOGLE DRIVE</text>
+
+    <!-- Row 1 -->
+    <g transform="translate(0, 52)">
+      <rect width="1040" height="48" rx="6" fill="#1E293B"/>
+      <text x="24" y="30" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#F8FAFC">Enterprise Security &amp; KeySafe</text>
+      <text x="320" y="30" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#4ADE80">✓ Advanced (KeySafe HSM)</text>
+      <text x="600" y="30" font-family="system-ui, sans-serif" font-size="13" fill="#94A3B8">Basic Key Management</text>
+      <text x="850" y="30" font-family="system-ui, sans-serif" font-size="13" fill="#94A3B8">Google Managed Keys</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0, 106)">
+      <rect width="1040" height="48" rx="6" fill="#0F172A"/>
+      <text x="24" y="30" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#F8FAFC">Built-in E-Signatures</text>
+      <text x="320" y="30" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#4ADE80">✓ Box Sign (Unlimited)</text>
+      <text x="600" y="30" font-family="system-ui, sans-serif" font-size="13" fill="#F8FAFC">HelloSign (Limited)</text>
+      <text x="850" y="30" font-family="system-ui, sans-serif" font-size="13" fill="#F8FAFC">Google eSignature (Beta)</text>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(0, 160)">
+      <rect width="1040" height="48" rx="6" fill="#1E293B"/>
+      <text x="24" y="30" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#F8FAFC">Generative AI Document Q&amp;A</text>
+      <text x="320" y="30" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#4ADE80">✓ Native Box AI (Included)</text>
+      <text x="600" y="30" font-family="system-ui, sans-serif" font-size="13" fill="#F8FAFC">Dropbox Dash (Add-on)</text>
+      <text x="850" y="30" font-family="system-ui, sans-serif" font-size="13" fill="#F8FAFC">Gemini for Workspace</text>
+    </g>
+
+    <!-- Row 4 -->
+    <g transform="translate(0, 214)">
+      <rect width="1040" height="48" rx="6" fill="#0F172A"/>
+      <text x="24" y="30" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#F8FAFC">Business Unlimited Storage</text>
+      <text x="320" y="30" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#4ADE80">✓ Available on Business+</text>
+      <text x="600" y="30" font-family="system-ui, sans-serif" font-size="13" fill="#F8FAFC">Strict Pool Caps</text>
+      <text x="850" y="30" font-family="system-ui, sans-serif" font-size="13" fill="#F8FAFC">5 TB Pool per User</text>
+    </g>
+
+    <!-- Row 5 -->
+    <g transform="translate(0, 268)">
+      <rect width="1040" height="48" rx="6" fill="#1E293B"/>
+      <text x="24" y="30" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#F8FAFC">Third-Party App Integrations</text>
+      <text x="320" y="30" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#4ADE80">1,500+ Deep Connectors</text>
+      <text x="600" y="30" font-family="system-ui, sans-serif" font-size="13" fill="#F8FAFC">500+ Integrations</text>
+      <text x="850" y="30" font-family="system-ui, sans-serif" font-size="13" fill="#F8FAFC">Google Ecosystem Focus</text>
+    </g>
+  </g>
+</svg>

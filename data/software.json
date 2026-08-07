@@ -1,5 +1,36 @@
 [
   {
+    "id": "box-cloud-storage-review",
+    "title": "Box – AI-Powered Intelligent Content Management Platform",
+    "description": "AI-powered Intelligent Content Management Platform unifying secure cloud storage, document management, team collaboration, Box AI, Box Drive, Box Sign e-signatures, Box Notes, Box Canvas, and workflow automation.",
+    "icon": "/assets/images/brands/box.svg",
+    "rating": 4.8,
+    "categoryId": "cloud-storage",
+    "developer": "Box, Inc.",
+    "version": "v2026 Enterprise Edition",
+    "size": "Cloud Web / Desktop Sync",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android",
+      "Web"
+    ],
+    "license": "Free Trial / Business Subscriptions",
+    "updatedAt": "2026-08-07",
+    "badges": [
+      "Best Enterprise Cloud 2026",
+      "Editor Choice",
+      "HIPAA & FINRA Certified"
+    ],
+    "isFeatured": true,
+    "isTrending": true,
+    "affiliateUrl": "https://bjpql.com/g/r9oyizicg3b68b264a7687b97effec/?ulp=https%3A%2F%2Fwww.box.com%2Fen-gb%2Fpricing%3F",
+    "reviewUrl": "/box-cloud-storage-review.html",
+    "summary": "Box is the AI-powered Intelligent Content Management Platform built for businesses, teams, and enterprises. Featuring Box AI, Box Drive desktop streaming, Box Sign native e-signatures, Box Notes, Box Canvas, workflow automation, and 1500+ integrations with enterprise security and regulatory compliance.",
+    "video": "https://players.brightcove.net/6232633676001/bVxoAYQdS_default/index.html?videoId=6338274428112"
+  },
+  {
     "id": "wondershare-drfone-review",
     "title": "Wondershare Dr.Fone 14",
     "description": "All-in-one mobile solution featuring deep data recovery, cross-platform WhatsApp transfer, system repair for 150+ errors, 1-click screen unlock, and GPS virtual location.",

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0061D5"/>
+      <stop offset="100%" stop-color="#002D6B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="480" fill="url(#pGrad)"/>
+
+  <text x="80" y="60" font-family="system-ui, sans-serif" font-weight="900" font-size="32" fill="#ffffff">Exclusive Box Discounts &amp; Pricing 2026</text>
+  <text x="80" y="95" font-family="system-ui, sans-serif" font-size="18" fill="#B3D7FF">Save up to 25% on annual enterprise &amp; business subscriptions.</text>
+
+  <g transform="translate(80, 130)">
+    <!-- Tier 1 -->
+    <rect width="240" height="280" rx="16" fill="#ffffff"/>
+    <text x="24" y="40" font-family="system-ui, sans-serif" font-weight="800" font-size="18" fill="#001C40">Free Individual</text>
+    <text x="24" y="80" font-family="system-ui, sans-serif" font-weight="900" font-size="36" fill="#0061D5">$0</text>
+    <text x="75" y="80" font-family="system-ui, sans-serif" font-size="13" fill="#64748B">/ forever</text>
+    <text x="24" y="120" font-family="system-ui, sans-serif" font-size="13" fill="#334155">• 10 GB Secure Storage</text>
+    <text x="24" y="145" font-family="system-ui, sans-serif" font-size="13" fill="#334155">• 250 MB Upload Limit</text>
+    <text x="24" y="170" font-family="system-ui, sans-serif" font-size="13" fill="#334155">• 5 Box Sign E-Signatures</text>
+    <rect x="24" y="210" width="192" height="44" rx="8" fill="#F1F5F9"/>
+    <text x="64" y="237" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#0061D5">Get Free Tier</text>
+
+    <!-- Tier 2 -->
+    <g transform="translate(260, 0)">
+      <rect width="240" height="280" rx="16" fill="#ffffff"/>
+      <rect width="240" height="28" rx="14" fill="#00A3FF"/>
+      <text x="68" y="19" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#ffffff">20% ANNUAL OFF</text>
+      <text x="24" y="55" font-family="system-ui, sans-serif" font-weight="800" font-size="18" fill="#001C40">Personal Pro</text>
+      <text x="24" y="95" font-family="system-ui, sans-serif" font-weight="900" font-size="36" fill="#0061D5">$10</text>
+      <text x="95" y="95" font-family="system-ui, sans-serif" font-size="13" fill="#64748B">/ mo annually</text>
+      <text x="24" y="130" font-family="system-ui, sans-serif" font-size="13" fill="#334155">• 100 GB Cloud Storage</text>
+      <text x="24" y="155" font-family="system-ui, sans-serif" font-size="13" fill="#334155">• 5 GB Upload Limit</text>
+      <text x="24" y="180" font-family="system-ui, sans-serif" font-size="13" fill="#334155">• 15 Box Sign / month</text>
+      <rect x="24" y="210" width="192" height="44" rx="8" fill="#0061D5"/>
+      <text x="62" y="237" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#ffffff">Claim 20% Off</text>
+    </g>
+
+    <!-- Tier 3 -->
+    <g transform="translate(520, 0)">
+      <rect width="240" height="280" rx="16" fill="#ffffff" stroke="#FFC107" stroke-width="3"/>
+      <rect width="240" height="28" rx="14" fill="#FFC107"/>
+      <text x="60" y="19" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#000000">🔥 25% OFF MOST POPULAR</text>
+      <text x="24" y="55" font-family="system-ui, sans-serif" font-weight="800" font-size="18" fill="#001C40">Business</text>
+      <text x="24" y="95" font-family="system-ui, sans-serif" font-weight="900" font-size="36" fill="#0061D5">$15</text>
+      <text x="95" y="95" font-family="system-ui, sans-serif" font-size="13" fill="#64748B">/ user / mo</text>
+      <text x="24" y="130" font-family="system-ui, sans-serif" font-size="13" fill="#0061D5" font-weight="700">• UNLIMITED Storage</text>
+      <text x="24" y="155" font-family="system-ui, sans-serif" font-size="13" fill="#334155">• 5 GB Max Upload</text>
+      <text x="24" y="180" font-family="system-ui, sans-serif" font-size="13" fill="#334155">• Unlimited Box Sign</text>
+      <rect x="24" y="210" width="192" height="44" rx="8" fill="#0061D5"/>
+      <text x="56" y="237" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#ffffff">Save 25% Now</text>
+    </g>
+
+    <!-- Tier 4 -->
+    <g transform="translate(780, 0)">
+      <rect width="240" height="280" rx="16" fill="#ffffff"/>
+      <rect width="240" height="28" rx="14" fill="#10B981"/>
+      <text x="65" y="19" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#ffffff">25% ANNUAL OFF</text>
+      <text x="24" y="55" font-family="system-ui, sans-serif" font-weight="800" font-size="18" fill="#001C40">Enterprise</text>
+      <text x="24" y="95" font-family="system-ui, sans-serif" font-weight="900" font-size="36" fill="#0061D5">$35</text>
+      <text x="95" y="95" font-family="system-ui, sans-serif" font-size="13" fill="#64748B">/ user / mo</text>
+      <text x="24" y="130" font-family="system-ui, sans-serif" font-size="13" fill="#0061D5" font-weight="700">• UNLIMITED Storage</text>
+      <text x="24" y="155" font-family="system-ui, sans-serif" font-size="13" fill="#334155">• 50 GB Upload Limit</text>
+      <text x="24" y="180" font-family="system-ui, sans-serif" font-size="13" fill="#334155">• Box Shield &amp; KeySafe</text>
+      <rect x="24" y="210" width="192" height="44" rx="8" fill="#0061D5"/>
+      <text x="56" y="237" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#ffffff">Enterprise Deal</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 550" width="100%" height="100%">
+  <defs>
+    <linearGradient id="uiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="550" fill="url(#uiBg)"/>
+  
+  <text x="80" y="50" font-family="system-ui, sans-serif" font-weight="900" font-size="28" fill="#001C40">Modernized Box 2026 Web Interface &amp; Workspace</text>
+  <text x="80" y="80" font-family="system-ui, sans-serif" font-size="16" fill="#64748B">Simplified navigation with Box Collections, breadcrumbs, search filters, and Box AI assistant bar.</text>
+
+  <!-- App Window -->
+  <g transform="translate(80, 105)">
+    <rect width="1040" height="400" rx="12" fill="#ffffff" stroke="#CBD5E1" stroke-width="2"/>
+    <!-- Top Header Bar -->
+    <path d="M0 12 Q0 0 12 0 H1028 Q1040 0 1040 12 V48 H0 Z" fill="#001C40"/>
+    <text x="24" y="30" font-family="system-ui, sans-serif" font-weight="900" font-size="20" fill="#ffffff">box</text>
+    <rect x="100" y="12" width="500" height="28" rx="14" fill="#ffffff" fill-opacity="0.15"/>
+    <text x="120" y="30" font-family="system-ui, sans-serif" font-size="13" fill="#93C5FD">🔍 Search Box Content Cloud, documents, tags...</text>
+    <rect x="900" y="12" width="116" height="28" rx="14" fill="#0061D5"/>
+    <text x="920" y="30" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#ffffff">+ New Upload</text>
+
+    <!-- Sidebar Left -->
+    <rect y="48" width="220" height="352" fill="#F1F5F9" stroke="#E2E8F0"/>
+    <g transform="translate(16, 70)">
+      <text y="0" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#0061D5">📂 All Files</text>
+      <text y="30" font-family="system-ui, sans-serif" font-weight="600" font-size="13" fill="#475569">📁 Recents</text>
+      <text y="60" font-family="system-ui, sans-serif" font-weight="600" font-size="13" fill="#475569">⭐ Favorites</text>
+      <text y="90" font-family="system-ui, sans-serif" font-weight="600" font-size="13" fill="#475569">✍️ Box Sign</text>
+      <text y="120" font-family="system-ui, sans-serif" font-weight="600" font-size="13" fill="#475569">🎨 Box Canvas</text>
+      <text y="150" font-family="system-ui, sans-serif" font-weight="600" font-size="13" fill="#475569">✨ Box AI Hub</text>
+      
+      <text y="200" font-family="system-ui, sans-serif" font-weight="800" font-size="11" fill="#94A3B8">COLLECTIONS</text>
+      <text y="225" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#0284C7">🏷️ Executive Board</text>
+      <text y="250" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#0284C7">🏷️ Q3 Legal Audits</text>
+    </g>
+
+    <!-- Main Content Area -->
+    <g transform="translate(240, 68)">
+      <text font-family="system-ui, sans-serif" font-weight="800" font-size="18" fill="#0F172A">Enterprise Vault / Legal &amp; Compliance /</text>
+      
+      <!-- Table Header -->
+      <g transform="translate(0, 30)">
+        <rect width="780" height="32" rx="6" fill="#F8FAFC"/>
+        <text x="16" y="21" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#64748B">NAME</text>
+        <text x="400" y="21" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#64748B">UPDATED</text>
+        <text x="560" y="21" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#64748B">SIZE</text>
+        <text x="680" y="21" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#64748B">ACCESS</text>
+      </g>
+
+      <!-- Rows -->
+      <g transform="translate(0, 70)">
+        <text x="16" y="20" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#0061D5">📁 2026_HIPAA_Compliance_Records</text>
+        <text x="400" y="20" font-family="system-ui, sans-serif" font-size="12" fill="#475569">Today, 09:14 AM</text>
+        <text x="560" y="20" font-family="system-ui, sans-serif" font-size="12" fill="#475569">1.4 GB</text>
+        <text x="680" y="20" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#16A34A">Editor</text>
+
+        <text x="16" y="60" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#0061D5">📄 Enterprise_Master_Agreement_v4.pdf</text>
+        <text x="400" y="60" font-family="system-ui, sans-serif" font-size="12" fill="#475569">Yesterday</text>
+        <text x="560" y="60" font-family="system-ui, sans-serif" font-size="12" fill="#475569">8.5 MB</text>
+        <text x="680" y="60" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#2563EB">Owner</text>
+
+        <text x="16" y="100" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#0061D5">📊 Box_AI_Data_Pipeline_Architecture.pptx</text>
+        <text x="400" y="100" font-family="system-ui, sans-serif" font-size="12" fill="#475569">Aug 05, 2026</text>
+        <text x="560" y="100" font-family="system-ui, sans-serif" font-size="12" fill="#475569">42.1 MB</text>
+        <text x="680" y="100" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#D97706">Viewer</text>
+      </g>
+
+      <!-- Bottom AI Box Bar -->
+      <g transform="translate(0, 210)">
+        <rect width="780" height="54" rx="10" fill="#EFF6FF" stroke="#2563EB"/>
+        <text x="20" y="32" font-family="system-ui, sans-serif" font-weight="800" font-size="13" fill="#1D4ED8">✨ Ask Box AI:</text>
+        <text x="110" y="32" font-family="system-ui, sans-serif" font-size="13" fill="#1E293B">"Summarize key renewal terms and compliance liabilities in Enterprise Master Agreement..."</text>
+      </g>
+    </g>
+  </g>
+</svg>
