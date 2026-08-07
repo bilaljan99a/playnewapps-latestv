@@ -1459,7 +1459,7 @@ App.renderReviewsDirectoryUI = async function(options = {}) {
     let currentSearch = '';
     let currentSort = 'newest';
     let currentPage = 1;
-    const itemsPerPage = 9;
+    const itemsPerPage = 12;
 
     const getFilteredReviews = () => {
         let filtered = [...allReviews];
