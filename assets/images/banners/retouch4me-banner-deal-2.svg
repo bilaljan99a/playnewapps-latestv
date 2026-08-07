@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" width="1200" height="350">
+  <defs>
+    <linearGradient id="b2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="glowBtn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="350" rx="20" fill="url(#b2Grad)"/>
+
+  <g transform="translate(60, 50)">
+    <rect width="260" height="32" rx="16" fill="#0EA5E9"/>
+    <text x="130" y="21" font-family="sans-serif" font-weight="800" font-size="14" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">
+      ⚡ ANNUAL MEMBERSHIP DEALS
+    </text>
+
+    <text x="0" y="85" font-family="sans-serif" font-weight="900" font-size="40" fill="#FFFFFF">
+      Save Up To <tspan fill="#38BDF8">31% OFF</tspan> Retouch4me Annual Plans
+    </text>
+
+    <text x="0" y="125" font-family="sans-serif" font-weight="500" font-size="17" fill="#E2E8F0">
+      Unlock unlimited AI retouches across Starter ($20/mo), Pro ($35/mo), and Business ($90/mo) memberships.
+    </text>
+
+    <!-- Plan Highlights -->
+    <g transform="translate(0, 150)">
+      <rect x="0" y="0" width="220" height="70" rx="12" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+      <text x="15" y="28" font-family="sans-serif" font-weight="800" font-size="15" fill="#38BDF8">STARTER PLAN</text>
+      <text x="15" y="52" font-family="sans-serif" font-weight="700" font-size="18" fill="#FFFFFF">Save 30% OFF</text>
+
+      <rect x="240" y="0" width="220" height="70" rx="12" fill="#0284C7" stroke="#38BDF8" stroke-width="2"/>
+      <text x="255" y="28" font-family="sans-serif" font-weight="800" font-size="15" fill="#FFFFFF">PRO PLAN ★ BEST VALUE</text>
+      <text x="255" y="52" font-family="sans-serif" font-weight="700" font-size="18" fill="#FFFFFF">Save 31% OFF</text>
+
+      <rect x="480" y="0" width="220" height="70" rx="12" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+      <text x="495" y="28" font-family="sans-serif" font-weight="800" font-size="15" fill="#818CF8">BUSINESS PLAN</text>
+      <text x="495" y="52" font-family="sans-serif" font-weight="700" font-size="18" fill="#FFFFFF">Save 30% OFF</text>
+    </g>
+
+    <g transform="translate(730, 158)">
+      <rect width="280" height="54" rx="12" fill="url(#glowBtn)"/>
+      <text x="140" y="33" font-family="sans-serif" font-weight="800" font-size="17" fill="#FFFFFF" text-anchor="middle">
+        ACTIVATE ANNUAL DISCOUNT →
+      </text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+  <rect width="900" height="500" rx="16" fill="#0F172A" stroke="#334155" stroke-width="4"/>
+  <!-- Top bar -->
+  <rect width="900" height="40" rx="16" fill="#1E293B"/>
+  <circle cx="24" cy="20" r="6" fill="#EF4444"/>
+  <circle cx="44" cy="20" r="6" fill="#F59E0B"/>
+  <circle cx="64" cy="20" r="6" fill="#10B981"/>
+  <text x="450" y="25" font-family="sans-serif" font-weight="700" font-size="14" fill="#94A3B8" text-anchor="middle">
+    Adobe Photoshop 2026 — Retouch4me AI Panel Integration
+  </text>
+
+  <!-- Canvas Left -->
+  <g transform="translate(20, 60)">
+    <rect width="560" height="415" rx="12" fill="#1E293B" stroke="#475569" stroke-width="2"/>
+    <!-- Photo Wireframe -->
+    <rect x="30" y="30" width="500" height="355" rx="8" fill="#334155"/>
+    <circle cx="280" cy="180" r="80" fill="#FCA5A5"/>
+    <path d="M 200 350 C 220 280 340 280 360 350 Z" fill="#475569"/>
+    
+    <!-- Retouching Mesh Overlay -->
+    <circle cx="280" cy="180" r="78" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="250" cy="160" r="10" fill="#EF4444" opacity="0.4"/>
+    <circle cx="310" cy="160" r="10" fill="#EF4444" opacity="0.4"/>
+    <!-- Corrected overlay text -->
+    <rect x="40" y="40" width="160" height="30" rx="6" fill="#0284C7"/>
+    <text x="120" y="60" font-family="sans-serif" font-weight="700" font-size="12" fill="#FFFFFF" text-anchor="middle">
+      AI NEURAL MESH ACTIVE
+    </text>
+  </g>
+
+  <!-- Right Retouch4me Sidebar Panel -->
+  <g transform="translate(600, 60)">
+    <rect width="280" height="415" rx="12" fill="#0284C7" stroke="#38BDF8" stroke-width="2"/>
+    <rect width="280" height="45" rx="12" fill="#0F172A"/>
+    <text x="140" y="28" font-family="sans-serif" font-weight="800" font-size="15" fill="#38BDF8" text-anchor="middle">
+      RETOUCH4ME PLUGINS
+    </text>
+
+    <!-- Plugin Toggles -->
+    <g transform="translate(15, 60)">
+      <rect width="250" height="42" rx="8" fill="#1E293B"/>
+      <text x="15" y="26" font-family="sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">1. Heal (Skin Blemishes)</text>
+      <circle cx="225" cy="21" r="10" fill="#10B981"/>
+
+      <rect y="50" width="250" height="42" rx="8" fill="#1E293B"/>
+      <text x="15" y="76" font-family="sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">2. Dodge &amp; Burn</text>
+      <circle cx="225" cy="71" r="10" fill="#10B981"/>
+
+      <rect y="100" width="250" height="42" rx="8" fill="#1E293B"/>
+      <text x="15" y="126" font-family="sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">3. Eye Vessels Cleaner</text>
+      <circle cx="225" cy="121" r="10" fill="#10B981"/>
+
+      <rect y="150" width="250" height="42" rx="8" fill="#1E293B"/>
+      <text x="15" y="176" font-family="sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">4. Teeth Whiten</text>
+      <circle cx="225" cy="171" r="10" fill="#10B981"/>
+
+      <rect y="200" width="250" height="42" rx="8" fill="#1E293B"/>
+      <text x="15" y="226" font-family="sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">5. Skin Tone Equalizer</text>
+      <circle cx="225" cy="221" r="10" fill="#10B981"/>
+
+      <rect y="250" width="250" height="42" rx="8" fill="#1E293B"/>
+      <text x="15" y="276" font-family="sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">6. Fabric Clean &amp; Backdrop</text>
+      <circle cx="225" cy="271" r="10" fill="#10B981"/>
+
+      <rect y="305" width="250" height="44" rx="10" fill="#10B981"/>
+      <text x="125" y="332" font-family="sans-serif" font-weight="900" font-size="15" fill="#FFFFFF" text-anchor="middle">
+        APPLY ONE-CLICK RETOUCH
+      </text>
+    </g>
+  </g>
+</svg>

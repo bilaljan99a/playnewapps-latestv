@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320">
+  <defs>
+    <linearGradient id="b3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181B"/>
+      <stop offset="50%" stop-color="#27272A"/>
+      <stop offset="100%" stop-color="#3F3F46"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="320" rx="20" fill="url(#b3Grad)"/>
+
+  <g transform="translate(60, 45)">
+    <rect width="250" height="32" rx="16" fill="#A1A1AA"/>
+    <text x="125" y="21" font-family="sans-serif" font-weight="800" font-size="14" fill="#09090B" text-anchor="middle" letter-spacing="1">
+      💳 PAY-AS-YOU-GO PACKS
+    </text>
+
+    <text x="0" y="85" font-family="sans-serif" font-weight="900" font-size="38" fill="#FFFFFF">
+      No Monthly Subscriptions. Pay Per Retouch From <tspan fill="#F59E0B">$0.15/Photo</tspan>
+    </text>
+
+    <g transform="translate(0, 115)">
+      <!-- Starter Pack -->
+      <g transform="translate(0, 0)">
+        <rect width="220" height="110" rx="14" fill="#27272A" stroke="#52525B" stroke-width="2"/>
+        <text x="20" y="32" font-family="sans-serif" font-weight="800" font-size="16" fill="#F4F4F5">Starter Pack</text>
+        <text x="20" y="65" font-family="sans-serif" font-weight="900" font-size="28" fill="#38BDF8">$24</text>
+        <text x="20" y="90" font-family="sans-serif" font-weight="600" font-size="13" fill="#A1A1AA">$0.24 per retouch</text>
+      </g>
+
+      <!-- Advanced Pack -->
+      <g transform="translate(240, 0)">
+        <rect width="220" height="110" rx="14" fill="#27272A" stroke="#38BDF8" stroke-width="2"/>
+        <text x="20" y="32" font-family="sans-serif" font-weight="800" font-size="16" fill="#38BDF8">Advanced Pack</text>
+        <text x="20" y="65" font-family="sans-serif" font-weight="900" font-size="28" fill="#FFFFFF">$59</text>
+        <text x="20" y="90" font-family="sans-serif" font-weight="600" font-size="13" fill="#A1A1AA">$0.20 per retouch</text>
+      </g>
+
+      <!-- Extended Pack -->
+      <g transform="translate(480, 0)">
+        <rect width="220" height="110" rx="14" fill="#0284C7" stroke="#38BDF8" stroke-width="2"/>
+        <text x="20" y="32" font-family="sans-serif" font-weight="800" font-size="16" fill="#FFFFFF">Extended Pack ★ POPULAR</text>
+        <text x="20" y="65" font-family="sans-serif" font-weight="900" font-size="28" fill="#FFFFFF">$179</text>
+        <text x="20" y="90" font-family="sans-serif" font-weight="700" font-size="13" fill="#E0F2FE">$0.15 per retouch</text>
+      </g>
+
+      <!-- CTA -->
+      <g transform="translate(730, 28)">
+        <rect width="280" height="54" rx="12" fill="#F59E0B"/>
+        <text x="140" y="33" font-family="sans-serif" font-weight="800" font-size="16" fill="#000000" text-anchor="middle">
+          BUY PAY-AS-YOU-GO PACK →
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,5 +1,53 @@
 [
   {
+    "id": "retouch4me-20-off-bonus",
+    "storeId": "retouch4me",
+    "title": "🎁 Free Cloud Retouch Bonuses + 20% OFF All Retouch4me AI Plugins",
+    "description": "Get 20% OFF all AI photo retouching plugins plus extra Free Cloud Retouch credits for batch portrait processing.",
+    "code": "R4M20BONUS",
+    "discount": "20% OFF + BONUS",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://plrvq.com/g/gp8po8i1u7b68b264a7645d8e108c6/?ulp=https%3A%2F%2Fretouch4.me%2Fpricing",
+    "url": "https://plrvq.com/g/gp8po8i1u7b68b264a7645d8e108c6/?ulp=https%3A%2F%2Fretouch4.me%2Fpricing",
+    "isVerified": true
+  },
+  {
+    "id": "retouch4me-annual-31-off",
+    "storeId": "retouch4me",
+    "title": "Save Up to 31% OFF Retouch4me Annual Subscription Plans",
+    "description": "Unlock massive savings on Annual Retouch4me plans: Starter ($20/mo, save 30%), Pro ($35/mo, save 31%), and Business ($90/mo, save 30%).",
+    "code": "R4MANNUAL31",
+    "discount": "Up to 31% OFF",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://plrvq.com/g/gp8po8i1u7b68b264a7645d8e108c6/?ulp=https%3A%2F%2Fretouch4.me%2Fpricing",
+    "url": "https://plrvq.com/g/gp8po8i1u7b68b264a7645d8e108c6/?ulp=https%3A%2F%2Fretouch4.me%2Fpricing",
+    "isVerified": true
+  },
+  {
+    "id": "retouch4me-payg-extended",
+    "storeId": "retouch4me",
+    "title": "Retouch4me Pay-As-You-Go Extended Pack ($0.15/retouch)",
+    "description": "Buy 1200 retouches for $179 ($0.15/photo). No recurring subscription fees. Unused credits never expire.",
+    "code": "R4MPAYG179",
+    "discount": "Best PAYG Rate",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://plrvq.com/g/gp8po8i1u7b68b264a7645d8e108c6/?ulp=https%3A%2F%2Fretouch4.me%2Fpricing",
+    "url": "https://plrvq.com/g/gp8po8i1u7b68b264a7645d8e108c6/?ulp=https%3A%2F%2Fretouch4.me%2Fpricing",
+    "isVerified": true
+  },
+  {
+    "id": "retouch4me-monthly-pro",
+    "storeId": "retouch4me",
+    "title": "Retouch4me Pro Monthly Membership ($35/month)",
+    "description": "Full access to Retouch4me Pro suite for high-volume portrait studios, batch processing, and Photoshop & Lightroom integration.",
+    "code": "R4MPRO35",
+    "discount": "PRO DEAL",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://plrvq.com/g/gp8po8i1u7b68b264a7645d8e108c6/?ulp=https%3A%2F%2Fretouch4.me%2Fpricing",
+    "url": "https://plrvq.com/g/gp8po8i1u7b68b264a7645d8e108c6/?ulp=https%3A%2F%2Fretouch4.me%2Fpricing",
+    "isVerified": true
+  },
+  {
     "id": "hidemyname-50-off-annual",
     "storeId": "hidemyname",
     "title": "50% OFF HideMyname VPN 1-Year Plan ($2.50/mo)",
