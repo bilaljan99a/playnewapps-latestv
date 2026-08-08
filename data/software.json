@@ -1191,5 +1191,44 @@
       "macOS",
       "Windows"
     ]
+  },
+  {
+    "id": "applicantally",
+    "name": "ApplicantAlly",
+    "developer": "ApplicantAlly Inc.",
+    "category": "AI Live Interview Assistant",
+    "rating": 4.9,
+    "reviewCount": 2840,
+    "summary": "ApplicantAlly is an AI interview copilot for live interviews that listons to interview questions in real time and provides instant, discreet response suggestions on your screen.",
+    "logo": "/assets/images/brands/applicantally.svg",
+    "heroImage": "/assets/images/brands/applicantally.svg",
+    "reviewUrl": "applicantally-coupons.html",
+    "affiliateUrl": "https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/",
+    "downloadUrl": "https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/",
+    "pricing": {
+      "free": "15-min Free Trial",
+      "subscription": "From $22 (Pay-As-You-Go)"
+    },
+    "pros": [
+      "Real-time live audio speech-to-text response suggestions",
+      "Discreet, non-intrusive desktop window overlay",
+      "Customizable context based on your resume and job description",
+      "Pay-as-you-go time packs with no forced subscription",
+      "Free 15-minute trial to test before buying"
+    ],
+    "cons": [
+      "Requires desktop app installation for best system audio capture"
+    ],
+    "title": "ApplicantAlly Discount Code & Promo Coupons (2026)",
+    "icon": "/assets/images/brands/applicantally-icon.png",
+    "image": "/assets/images/brands/applicantally.svg",
+    "description": "ApplicantAlly AI interview assistant helps candidates handle difficult questions and stay confident during live video calls.",
+    "url": "applicantally-coupons.html",
+    "categoryId": "pc",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Web"
+    ]
   }
 ]
