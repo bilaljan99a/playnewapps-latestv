@@ -826,6 +826,17 @@ h1, h2, h3, h4, h5, h6 {
     aspect-ratio: 16 / 9; /* Guarantees Zero Layout Shift (CLS) */
     background-color: var(--bg-color);
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-wrapper.has-logo-bg {
+    background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
+}
+
+[data-theme="dark"] .card-img-wrapper.has-logo-bg {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
 }
 
 .card-img {
@@ -835,9 +846,49 @@ h1, h2, h3, h4, h5, h6 {
     transition: transform var(--transition-base);
 }
 
+.card-img-logo,
+.card-img[src$=".svg"],
+.card-img[src*="/brands/"],
+.card-img[src*="/apps/"] {
+    object-fit: contain !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: 75% !important;
+    max-height: 70% !important;
+    margin: auto !important;
+    padding: 0.85rem !important;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.06));
+    transition: transform var(--transition-base);
+}
+
+.card-img-logo[src*="elevenlabs"],
+.card-img[src*="elevenlabs"] {
+    max-width: 85% !important;
+    max-height: 50% !important;
+}
+
+[data-theme="dark"] .card-img-logo[src*="elevenlabs"],
+[data-theme="dark"] .card-img[src*="elevenlabs"] {
+    filter: invert(1) brightness(2) drop-shadow(0 2px 8px rgba(255,255,255,0.2)) !important;
+}
+
+.card-img-logo[src*="retouch4me"],
+.card-img[src*="retouch4me"],
+.card-img-logo[src*="uniconverter"],
+.card-img[src*="uniconverter"] {
+    max-width: 65% !important;
+    max-height: 75% !important;
+}
+
 @media (hover: hover) and (pointer: fine) {
     .card:hover .card-img {
         transform: scale(1.04);
+    }
+    .card:hover .card-img-logo,
+    .card:hover .card-img[src$=".svg"],
+    .card:hover .card-img[src*="/brands/"],
+    .card:hover .card-img[src*="/apps/"] {
+        transform: scale(1.08);
     }
 }
 
@@ -1673,7 +1724,7 @@ picture, img {
     max-width: 100%;
     height: auto;
 }
-.card-img {
+.card-img:not(.card-img-logo):not([src$=".svg"]):not([src*="/brands/"]):not([src*="/apps/"]) {
     aspect-ratio: 16 / 9;
     object-fit: cover;
 }

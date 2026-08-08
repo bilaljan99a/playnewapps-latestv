@@ -38,10 +38,13 @@ class Components {
         const link = item.reviewUrl || item.url || (item.id ? (item.id.includes('.html') ? item.id : 'review.html?id=' + item.id) : '#');
         const desc = item.description || item.summary || '';
         
+        const isLogo = img.endsWith('.svg') || img.includes('/brands/') || img.includes('/apps/') || img.includes('logo');
+        const imgClass = isLogo ? "card-img card-img-logo" : "card-img";
+
         return `
             <article class="card review-card" data-category="${item.categoryId || ''}">
-                <div class="card-img-wrapper">
-                    <img src="${img}" alt="${title}" class="card-img" width="600" height="400" loading="lazy">
+                <div class="card-img-wrapper ${isLogo ? 'has-logo-bg' : ''}">
+                    <img src="${img}" alt="${title}" class="${imgClass}" width="600" height="400" loading="lazy">
                     <span class="badge platform-badge"><span class="material-icons-round">${icon}</span> ${platform}</span>
                 </div>
                 <div class="card-content">
@@ -68,10 +71,13 @@ class Components {
         const link = item.reviewUrl || item.url || (item.id ? (item.id.includes('.html') ? item.id : 'review.html?id=' + item.id) : '#');
         const desc = item.description || item.summary || '';
 
+        const isLogo = img.endsWith('.svg') || img.includes('/brands/') || img.includes('/apps/') || img.includes('logo');
+        const imgClass = isLogo ? "card-img card-img-logo" : "card-img";
+
         return `
             <article class="slide card review-card" role="group" aria-roledescription="slide">
-                <div class="card-img-wrapper">
-                    <img src="${img}" alt="${title}" class="card-img" width="600" height="400" loading="lazy">
+                <div class="card-img-wrapper ${isLogo ? 'has-logo-bg' : ''}">
+                    <img src="${img}" alt="${title}" class="${imgClass}" width="600" height="400" loading="lazy">
                     <span class="badge platform-badge"><span class="material-icons-round">${icon}</span> ${platform}</span>
                 </div>
                 <div class="card-content">
