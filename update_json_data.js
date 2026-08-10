@@ -24,9 +24,9 @@ if (fs.existsSync(softwarePath)) {
       item.icon = "/assets/images/brands/applicantally-icon.png";
       item.logo = "/assets/images/brands/applicantally.svg";
       item.image = "/assets/images/brands/applicantally.svg";
-      item.heroImage = "/assets/images/banners/applicantally-banner-deal-1.svg";
-      item.reviewUrl = "applicantally-coupons.html";
-      item.url = "applicantally-coupons.html";
+      item.heroImage = "/assets/images/banners/applicantally-review-hero.svg";
+      item.reviewUrl = "applicantally-review.html";
+      item.url = "applicantally-review.html";
     }
   });
 
@@ -68,25 +68,25 @@ if (fs.existsSync(storesPath)) {
     if (s.id === 'applicantally') {
       s.title = "ApplicantAlly Review (2026): AI Live Interview Assistant & Copilot";
       s.logo = "/assets/images/brands/applicantally.svg";
-      s.storeUrl = "applicantally-coupons.html";
+      s.storeUrl = "applicantally-review.html";
       s.banners = [
         {
-          image: "/assets/images/banners/applicantally-banner-deal-1.svg",
-          title: "Extra 30 Free Minutes Added with Code: ASTART30",
+          image: "/assets/images/banners/applicantally-review-hero.svg",
+          title: "ApplicantAlly AI Live Interview Copilot – In-Depth Review",
           link: "https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/",
-          buttonText: "Redeem Code ASTART30"
+          buttonText: "Read Review & Try Free"
         },
         {
-          image: "/assets/images/banners/applicantally-banner-deal-2.svg",
-          title: "15-Minute Free Trial – Test Real-Time AI Interview Assistance",
-          link: "https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/",
-          buttonText: "Start Free Trial"
-        },
-        {
-          image: "/assets/images/banners/applicantally-banner-deal-3.svg",
+          image: "/assets/images/banners/applicantally-stealth-interface.svg",
           title: "Discreet & 100% Invisible Overlay for Zoom, Teams & Google Meet",
           link: "https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/",
-          buttonText: "Claim Pack Discount"
+          buttonText: "Start 15-Min Free Trial"
+        },
+        {
+          image: "/assets/images/banners/applicantally-pricing-breakdown.svg",
+          title: "Flexible Time Packs & Extra 30 Bonus Minutes (Code ASTART30)",
+          link: "https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/",
+          buttonText: "View Time Packs"
         }
       ];
     }

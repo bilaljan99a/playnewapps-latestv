@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="900" height="450">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B"/>
+      <stop offset="50%" stop-color="#312E81"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="450" rx="20" fill="url(#bg4)"/>
+
+  <!-- Left Content -->
+  <g transform="translate(50, 45)">
+    <rect width="240" height="32" rx="16" fill="#818CF8" opacity="0.25"/>
+    <text x="120" y="21" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="11" fill="#C7D2FE" letter-spacing="1">VISION &amp; OCR CAPABILITIES</text>
+
+    <text x="0" y="85" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="32" fill="#FFFFFF">Screen OCR &amp; Technical</text>
+    <text x="0" y="125" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="32" fill="#818CF8">Code Analysis Review</text>
+
+    <text x="0" y="165" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#C7D2FE">Tested against LeetCode problems, SQL schemas, and architecture diagrams.</text>
+
+    <g transform="translate(0, 195)">
+      <text x="0" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#FFFFFF" font-weight="600">• Alt + S screen capture parses text &amp; images in &lt; 1.5s</text>
+      <text x="0" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#FFFFFF" font-weight="600">• Identifies optimal time complexity O(N) solution &amp; edge cases</text>
+      <text x="0" y="82" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#FFFFFF" font-weight="600">• Provides step-by-step code walkthrough for technical rounds</text>
+    </g>
+  </g>
+
+  <!-- Right Visual: Simulated Screen Capture Window -->
+  <g transform="translate(470, 45)">
+    <rect width="380" height="360" rx="16" fill="#0F172A" stroke="#6366F1" stroke-width="2"/>
+    
+    <rect width="380" height="36" rx="16" fill="#1E1B4B"/>
+    <text x="20" y="23" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="13" fill="#A5B4FC">Screen Capture Test: LeetCode #217 (Contains Duplicate)</text>
+
+    <!-- Code Input Box -->
+    <g transform="translate(20, 52)">
+      <rect width="340" height="120" rx="10" fill="#1E293B"/>
+      <text x="15" y="25" font-family="monospace" font-size="11" fill="#94A3B8">// Screen OCR Input Detected:</text>
+      <text x="15" y="45" font-family="monospace" font-size="11" fill="#F8FAFC">def containsDuplicate(nums: List[int]) -&gt; bool:</text>
+      <text x="15" y="65" font-family="monospace" font-size="11" fill="#F8FAFC">    return len(nums) != len(set(nums))</text>
+      <text x="15" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#10B981">✓ OCR Recognition Accuracy: 100%</text>
+    </g>
+
+    <!-- Copilot Analysis Output Box -->
+    <g transform="translate(20, 185)">
+      <rect width="340" height="150" rx="10" fill="#312E81" stroke="#818CF8" stroke-width="1.5"/>
+      <text x="15" y="25" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12" fill="#FFFFFF">ApplicantAlly Copilot Explanation</text>
+      <text x="15" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#C7D2FE">• Approach: Convert array to HashSet to track unique elements.</text>
+      <text x="15" y="72" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#C7D2FE">• Time Complexity: O(N) single pass time complexity.</text>
+      <text x="15" y="94" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#C7D2FE">• Space Complexity: O(N) worst-case space for HashSet.</text>
+      <text x="15" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#38BDF8">Hotkey: [Alt + F] For Full Verbal Explanation Script</text>
+    </g>
+  </g>
+</svg>

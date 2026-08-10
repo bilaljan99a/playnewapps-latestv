@@ -2183,7 +2183,7 @@
         "icon": "psychology",
         "logo": "/assets/images/brands/applicantally.svg",
         "website": "https://www.applicantally.com",
-        "storeUrl": "applicantally-coupons.html",
+        "storeUrl": "applicantally-review.html",
         "affiliateLink": "https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/",
         "rating": 4.9,
         "votes": 2840,
@@ -2208,22 +2208,22 @@
         "title": "ApplicantAlly Review (2026): AI Live Interview Assistant & Copilot",
         "banners": [
             {
-                "image": "/assets/images/banners/applicantally-banner-deal-1.svg",
-                "title": "Extra 30 Free Minutes Added with Code: ASTART30",
+                "image": "/assets/images/banners/applicantally-review-hero.svg",
+                "title": "ApplicantAlly AI Live Interview Copilot – In-Depth Review",
                 "link": "https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/",
-                "buttonText": "Redeem Code ASTART30"
+                "buttonText": "Read Review & Try Free"
             },
             {
-                "image": "/assets/images/banners/applicantally-banner-deal-2.svg",
-                "title": "15-Minute Free Trial – Test Real-Time AI Interview Assistance",
-                "link": "https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/",
-                "buttonText": "Start Free Trial"
-            },
-            {
-                "image": "/assets/images/banners/applicantally-banner-deal-3.svg",
+                "image": "/assets/images/banners/applicantally-stealth-interface.svg",
                 "title": "Discreet & 100% Invisible Overlay for Zoom, Teams & Google Meet",
                 "link": "https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/",
-                "buttonText": "Claim Pack Discount"
+                "buttonText": "Start 15-Min Free Trial"
+            },
+            {
+                "image": "/assets/images/banners/applicantally-pricing-breakdown.svg",
+                "title": "Flexible Time Packs & Extra 30 Bonus Minutes (Code ASTART30)",
+                "link": "https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/",
+                "buttonText": "View Time Packs"
             }
         ]
     },

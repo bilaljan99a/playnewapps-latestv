@@ -1201,8 +1201,8 @@
         "reviewCount": 2840,
         "summary": "ApplicantAlly is an AI interview copilot for live interviews that listens to questions in real time and provides instant, discreet response suggestions on your screen.",
         "logo": "/assets/images/brands/applicantally.svg",
-        "heroImage": "/assets/images/banners/applicantally-banner-deal-1.svg",
-        "reviewUrl": "applicantally-coupons.html",
+        "heroImage": "/assets/images/banners/applicantally-review-hero.svg",
+        "reviewUrl": "applicantally-review.html",
         "affiliateUrl": "https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/",
         "downloadUrl": "https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/",
         "pricing": {
@@ -1223,7 +1223,7 @@
         "icon": "/assets/images/brands/applicantally-icon.png",
         "image": "/assets/images/brands/applicantally.svg",
         "description": "In-depth expert review of ApplicantAlly AI live interview assistant. Learn how real-time speech-to-text response suggestions work discreetly during video calls.",
-        "url": "applicantally-coupons.html",
+        "url": "applicantally-review.html",
         "categoryId": "pc",
         "platforms": [
             "Windows",

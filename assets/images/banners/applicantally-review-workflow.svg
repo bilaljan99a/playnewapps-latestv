@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="900" height="450">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="450" rx="20" fill="url(#bg3)"/>
+
+  <!-- Header -->
+  <g transform="translate(50, 40)">
+    <text x="0" y="30" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="28" fill="#FFFFFF">ApplicantAlly Live Technical Architecture</text>
+    <text x="0" y="55" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94A3B8">3-Stage real-time speech processing pipeline and contextual resume matching engine.</text>
+  </g>
+
+  <!-- Flowchart Steps -->
+  <g transform="translate(50, 110)">
+    <!-- Stage 1 -->
+    <rect width="240" height="280" rx="14" fill="#1E293B" stroke="#3B82F6" stroke-width="1.5"/>
+    <rect width="240" height="36" rx="14" fill="#2563EB"/>
+    <text x="20" y="23" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="13" fill="#FFFFFF">STAGE 1: NATIVE AUDIO</text>
+    <text x="20" y="70" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#E2E8F0" font-weight="600">● Loopback Speaker Stream</text>
+    <text x="20" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#94A3B8">Hooks into system sound output directly.</text>
+    <text x="20" y="130" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#10B981" font-weight="700">✓ No bot joins meeting room</text>
+    <text x="20" y="155" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#10B981" font-weight="700">✓ Zero audio lag or echo</text>
+    <rect x="20" y="190" width="200" height="60" rx="8" fill="#0F172A"/>
+    <text x="30" y="215" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#38BDF8">Latency: &lt; 150ms</text>
+    <text x="30" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#10B981">Audio Quality: 48kHz HD</text>
+
+    <!-- Arrow 1 -->
+    <text x="252" y="150" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="24" fill="#3B82F6">→</text>
+
+    <!-- Stage 2 -->
+    <g transform="translate(280, 0)">
+      <rect width="240" height="280" rx="14" fill="#1E293B" stroke="#3B82F6" stroke-width="1.5"/>
+      <rect width="240" height="36" rx="14" fill="#2563EB"/>
+      <text x="20" y="23" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="13" fill="#FFFFFF">STAGE 2: RESUME RAG</text>
+      <text x="20" y="70" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#E2E8F0" font-weight="600">● Contextual AI Engine</text>
+      <text x="20" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#94A3B8">Cross-references question against CV &amp; job specs.</text>
+      <text x="20" y="130" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#F59E0B" font-weight="700">★ Personal Metric Matching</text>
+      <text x="20" y="155" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#F59E0B" font-weight="700">★ STAR Behavioral Framing</text>
+      <rect x="20" y="190" width="200" height="60" rx="8" fill="#0F172A"/>
+      <text x="30" y="215" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#F59E0B">Resume Alignment: 98%</text>
+      <text x="30" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#E2E8F0">Target Job Specs Injected</text>
+    </g>
+
+    <!-- Arrow 2 -->
+    <text x="532" y="150" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="24" fill="#3B82F6">→</text>
+
+    <!-- Stage 3 -->
+    <g transform="translate(560, 0)">
+      <rect width="240" height="280" rx="14" fill="#1E293B" stroke="#10B981" stroke-width="2"/>
+      <rect width="240" height="36" rx="14" fill="#10B981"/>
+      <text x="20" y="23" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="13" fill="#0F172A">STAGE 3: STEALTH DISPLAY</text>
+      <text x="20" y="70" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#E2E8F0" font-weight="600">● Glanceable Answers (~1s)</text>
+      <text x="20" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#94A3B8">Rendered in floating window below webcam.</text>
+      <text x="20" y="130" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#10B981" font-weight="700">✓ Invisible on Screen Share</text>
+      <text x="20" y="155" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#10B981" font-weight="700">✓ Hotkey Navigation</text>
+      <rect x="20" y="190" width="200" height="60" rx="8" fill="#0F172A"/>
+      <text x="30" y="215" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#10B981">Total Latency: ~1.0 Sec</text>
+      <text x="30" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#38BDF8">Stealth Status: Verified</text>
+    </g>
+  </g>
+</svg>

@@ -1,45 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="900" height="450">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2E1065"/>
-      <stop offset="100%" stop-color="#4338CA"/>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B"/>
+      <stop offset="50%" stop-color="#312E81"/>
+      <stop offset="100%" stop-color="#0F172A"/>
     </linearGradient>
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.3"/>
-    </filter>
   </defs>
-  <rect width="1200" height="400" rx="24" fill="url(#bg)"/>
-  <path d="M 0 100 L 1200 100 M 0 200 L 1200 200 M 0 300 L 1200 300" stroke="#FFFFFF" stroke-width="1" opacity="0.08"/>
-  <path d="M 300 0 L 300 400 M 600 0 L 600 400 M 900 0 L 900 400" stroke="#FFFFFF" stroke-width="1" opacity="0.08"/>
-  <g transform="translate(60, 60)">
-    <rect width="360" height="38" rx="19" fill="#8B5CF6"/>
-    <text x="180" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="14" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">
-      🔥 PAY-AS-YOU-GO TIME PACKS
-    </text>
-    <text x="0" y="95" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="42" fill="#FFFFFF" letter-spacing="-1">
-      Discreet & 100% Invisible Overlay
-    </text>
-    <text x="0" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="42" fill="#C084FC" letter-spacing="-1">
-      Save Up to 35% on Packs
-    </text>
-    <text x="0" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="18" fill="#E2E8F0">
-      Invisible to Zoom, Microsoft Teams & Google Meet screen sharing during live calls.
-    </text>
-    <g transform="translate(0, 215)" filter="url(#shadow)">
-      <rect width="320" height="56" rx="14" fill="#FFFFFF"/>
-      <text x="160" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="17" fill="#0F172A" text-anchor="middle">
-        CLAIM PACK DISCOUNT →
-      </text>
+
+  <rect width="900" height="450" rx="20" fill="url(#bg3)"/>
+
+  <!-- Left Content -->
+  <g transform="translate(50, 50)">
+    <rect width="210" height="34" rx="17" fill="#818CF8" opacity="0.25"/>
+    <text x="18" y="22" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12" fill="#C7D2FE" letter-spacing="1">DESKTOP STEALTH AI</text>
+
+    <text x="0" y="90" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="36" fill="#FFFFFF">Screen Analysis &amp;</text>
+    <text x="0" y="135" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="36" fill="#818CF8">Global Hotkey Control</text>
+
+    <text x="0" y="180" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#C7D2FE">• Instant Quick Answers (~1 second response time)</text>
+    <text x="0" y="206" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#C7D2FE">• Full STAR behavioral breakdowns &amp; project metrics</text>
+    <text x="0" y="232" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#C7D2FE">• Real-time analysis of code snippets, diagrams &amp; slides</text>
+
+    <g transform="translate(0, 265)">
+      <rect width="260" height="52" rx="12" fill="#4F46E5"/>
+      <text x="35" y="32" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="15" fill="#FFFFFF">GET APPLICANTALLY DEAL →</text>
     </g>
   </g>
-  <g transform="translate(800, 70)" filter="url(#shadow)">
-    <rect width="320" height="260" rx="20" fill="#FFFFFF" opacity="0.12" stroke="#FFFFFF" stroke-width="2"/>
-    <circle cx="160" cy="110" r="50" fill="#FFFFFF" opacity="0.2"/>
-    <text x="160" y="120" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="32" fill="#FFFFFF" text-anchor="middle">
-      PLAY
-    </text>
-    <text x="160" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="20" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">
-      SAVE UP TO 35%
-    </text>
+
+  <!-- Right Visual: Hotkey Shortcuts Box -->
+  <g transform="translate(480, 45)">
+    <rect width="370" height="360" rx="18" fill="#0F172A" stroke="#6366F1" stroke-width="2"/>
+    <text x="24" y="38" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="18" fill="#A5B4FC">Global Hotkey Shortcuts</text>
+    
+    <g transform="translate(24, 60)">
+      <g transform="translate(0, 0)">
+        <rect width="322" height="58" rx="10" fill="#1E293B"/>
+        <rect x="12" y="12" width="90" height="34" rx="8" fill="#312E81" stroke="#6366F1" stroke-width="1"/>
+        <text x="57" y="33" text-anchor="middle" font-family="monospace" font-weight="900" font-size="13" fill="#818CF8">Alt + Q</text>
+        <text x="118" y="28" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">Quick Answer (~1s)</text>
+        <text x="118" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#94A3B8">Sub-second bullet highlights</text>
+      </g>
+
+      <g transform="translate(0, 68)">
+        <rect width="322" height="58" rx="10" fill="#1E293B"/>
+        <rect x="12" y="12" width="90" height="34" rx="8" fill="#312E81" stroke="#6366F1" stroke-width="1"/>
+        <text x="57" y="33" text-anchor="middle" font-family="monospace" font-weight="900" font-size="13" fill="#818CF8">Alt + F</text>
+        <text x="118" y="28" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">Full Answer (STAR)</text>
+        <text x="118" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#94A3B8">Comprehensive behavioral story</text>
+      </g>
+
+      <g transform="translate(0, 136)">
+        <rect width="322" height="58" rx="10" fill="#1E293B"/>
+        <rect x="12" y="12" width="90" height="34" rx="8" fill="#312E81" stroke="#6366F1" stroke-width="1"/>
+        <text x="57" y="33" text-anchor="middle" font-family="monospace" font-weight="900" font-size="13" fill="#818CF8">Alt + S</text>
+        <text x="118" y="28" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">Screen Analysis</text>
+        <text x="118" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#94A3B8">Capture code snippet / chart</text>
+      </g>
+
+      <g transform="translate(0, 204)">
+        <rect width="322" height="58" rx="10" fill="#1E293B"/>
+        <rect x="12" y="12" width="90" height="34" rx="8" fill="#312E81" stroke="#6366F1" stroke-width="1"/>
+        <text x="57" y="33" text-anchor="middle" font-family="monospace" font-weight="900" font-size="13" fill="#818CF8">Alt + H</text>
+        <text x="118" y="28" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">Toggle Stealth Overlay</text>
+        <text x="118" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#94A3B8">Hide or reveal floating window</text>
+      </g>
+    </g>
   </g>
 </svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="900" height="450">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="50%" stop-color="#0369A1"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="450" rx="20" fill="url(#bg2)"/>
+
+  <!-- Left Text -->
+  <g transform="translate(50, 45)">
+    <rect width="240" height="32" rx="16" fill="#FFFFFF" opacity="0.2"/>
+    <text x="120" y="21" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="11" fill="#FFFFFF" letter-spacing="1">INTERFACE &amp; STEALTH ANALYSIS</text>
+
+    <text x="0" y="85" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="32" fill="#FFFFFF">Desktop Stealth Overlay &amp;</text>
+    <text x="0" y="125" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="32" fill="#7DD3FC">Global Hotkey Architecture</text>
+
+    <text x="0" y="165" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#E0F2FE">Evaluated in actual Zoom, Microsoft Teams &amp; Google Meet sessions.</text>
+
+    <!-- Stealth Key Features -->
+    <g transform="translate(0, 195)">
+      <rect width="360" height="42" rx="10" fill="#0F172A" opacity="0.75"/>
+      <text x="16" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#38BDF8" font-weight="700">✓ Inaudible Native Audio (Direct Loopback Hook)</text>
+
+      <rect y="52" width="360" height="42" rx="10" fill="#0F172A" opacity="0.75"/>
+      <text x="16" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#38BDF8" font-weight="700">✓ Screen Share Invisibility (Bypasses Window Capture)</text>
+
+      <rect y="104" width="360" height="42" rx="10" fill="#0F172A" opacity="0.75"/>
+      <text x="16" y="130" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#38BDF8" font-weight="700">✓ Instant Hotkey Triggering (Sub-Second Response)</text>
+    </g>
+  </g>
+
+  <!-- Right Visual: Hotkey Reference Table -->
+  <g transform="translate(470, 45)">
+    <rect width="380" height="360" rx="18" fill="#0F172A" stroke="#0284C7" stroke-width="2"/>
+    <text x="24" y="38" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="16" fill="#38BDF8">ApplicantAlly Global Hotkeys Test</text>
+    
+    <g transform="translate(24, 60)">
+      <!-- Hotkey 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="332" height="58" rx="10" fill="#1E293B"/>
+        <rect x="12" y="12" width="90" height="34" rx="8" fill="#0284C7"/>
+        <text x="57" y="33" text-anchor="middle" font-family="monospace" font-weight="900" font-size="13" fill="#FFFFFF">Alt + Q</text>
+        <text x="118" y="28" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">Quick Answer (~1s)</text>
+        <text x="118" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#94A3B8">Sub-second bullet points for instant glance</text>
+      </g>
+
+      <!-- Hotkey 2 -->
+      <g transform="translate(0, 68)">
+        <rect width="332" height="58" rx="10" fill="#1E293B"/>
+        <rect x="12" y="12" width="90" height="34" rx="8" fill="#0284C7"/>
+        <text x="57" y="33" text-anchor="middle" font-family="monospace" font-weight="900" font-size="13" fill="#FFFFFF">Alt + F</text>
+        <text x="118" y="28" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">Full Answer (STAR)</text>
+        <text x="118" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#94A3B8">Structured Situation, Task, Action, Result</text>
+      </g>
+
+      <!-- Hotkey 3 -->
+      <g transform="translate(0, 136)">
+        <rect width="332" height="58" rx="10" fill="#1E293B"/>
+        <rect x="12" y="12" width="90" height="34" rx="8" fill="#0284C7"/>
+        <text x="57" y="33" text-anchor="middle" font-family="monospace" font-weight="900" font-size="13" fill="#FFFFFF">Alt + S</text>
+        <text x="118" y="28" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">Screen OCR Analysis</text>
+        <text x="118" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#94A3B8">Analyzes live coding questions &amp; diagrams</text>
+      </g>
+
+      <!-- Hotkey 4 -->
+      <g transform="translate(0, 204)">
+        <rect width="332" height="58" rx="10" fill="#1E293B"/>
+        <rect x="12" y="12" width="90" height="34" rx="8" fill="#0284C7"/>
+        <text x="57" y="33" text-anchor="middle" font-family="monospace" font-weight="900" font-size="13" fill="#FFFFFF">Alt + H</text>
+        <text x="118" y="28" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">Toggle Overlay Window</text>
+        <text x="118" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#94A3B8">Instantly hide/unhide overlay control</text>
+      </g>
+    </g>
+  </g>
+</svg>
