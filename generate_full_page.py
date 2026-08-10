@@ -26,7 +26,7 @@ html_content = """<!DOCTYPE html>
     <meta name="twitter:image" content="https://playnewapps.store/assets/images/banners/applicantally-review-hero.svg">
 
     <link rel="canonical" href="https://playnewapps.store/applicantally-review.html">
-    <link rel="icon" type="image/png" href="/assets/images/brands/applicantally-icon.png">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/brands/applicantally-icon.svg">
 
     <!-- Fonts & CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -174,7 +174,7 @@ html_content = """<!DOCTYPE html>
         <section class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm mb-10">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div class="flex items-start sm:items-center gap-5">
-                    <img src="/assets/images/brands/applicantally-icon.png" alt="ApplicantAlly Official Logo" class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl p-2 bg-slate-50 border border-slate-200 object-contain shadow-sm">
+                    <img src="/assets/images/brands/applicantally-icon.svg" alt="ApplicantAlly Official Logo" class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl p-2 bg-slate-50 border border-slate-200 object-contain shadow-sm">
                     <div>
                         <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2">
                             <span class="material-icons-round text-sm">verified</span>

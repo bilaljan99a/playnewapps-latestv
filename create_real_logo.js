@@ -37,7 +37,8 @@ const realIconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 30
 const resvg = new Resvg(realIconSvg);
 const pngBuffer = resvg.render().asPng();
 fs.writeFileSync('assets/images/brands/applicantally-icon.png', pngBuffer);
-console.log('Generated new applicantally-icon.png successfully!');
+fs.writeFileSync('assets/images/brands/applicantally-icon.svg', realIconSvg);
+console.log('Generated new applicantally-icon.png and applicantally-icon.svg successfully!');
 
 // Full Horizontal Brand Logo SVG
 const brandSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="520" height="120">

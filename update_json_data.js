@@ -21,7 +21,7 @@ if (fs.existsSync(softwarePath)) {
       item.title = "ApplicantAlly Review (2026): AI Live Interview Assistant & Copilot";
       item.description = "In-depth expert review of ApplicantAlly AI live interview assistant. Learn how real-time speech-to-text response suggestions work discreetly during video calls.";
       item.summary = "ApplicantAlly is an AI interview copilot for live interviews that listens to questions in real time and provides instant, discreet response suggestions on your screen.";
-      item.icon = "/assets/images/brands/applicantally-icon.png";
+      item.icon = "/assets/images/brands/applicantally-icon.svg";
       item.logo = "/assets/images/brands/applicantally.svg";
       item.image = "/assets/images/brands/applicantally.svg";
       item.heroImage = "/assets/images/banners/applicantally-review-hero.svg";
