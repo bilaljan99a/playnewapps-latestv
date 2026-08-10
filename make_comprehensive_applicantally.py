@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+import os
+
+html_content = """<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
@@ -617,3 +619,9 @@
     <script src="/assets/js/app.js" defer></script>
 </body>
 </html>
+"""
+
+with open("applicantally-coupons.html", "w") as f:
+    f.write(html_content)
+
+print("Generated comprehensive applicantally-coupons.html successfully.")
