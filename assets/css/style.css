@@ -1208,6 +1208,256 @@ h1, h2, h3, h4, h5, h6 {
     transition: background-color var(--transition-fast);
 }
 
+/* ==========================================================================
+   RetailMeNot Style Coupon Cards
+   ========================================================================== */
+.coupon-card.retailmenot-style,
+.deal-card.retailmenot-style,
+.retailmenot-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    background-color: var(--surface-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    transition: all 0.25s ease;
+    margin-bottom: 1.25rem;
+    width: 100%;
+}
+
+.coupon-card.retailmenot-style:hover,
+.deal-card.retailmenot-style:hover,
+.retailmenot-card:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.coupon-header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    background-color: rgba(248, 250, 252, 0.85);
+    border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .coupon-header-bar {
+    background-color: rgba(30, 41, 59, 0.6);
+}
+
+.header-badges {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.type-badge {
+    background-color: #f1f5f9;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+[data-theme="dark"] .type-badge {
+    background-color: #334155;
+    color: #f8fafc;
+    border-color: #475569;
+}
+
+.discount-pill {
+    background-color: #f3e8ff;
+    color: #6b21a8;
+    font-weight: 800;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.65rem;
+    border-radius: 20px;
+}
+
+[data-theme="dark"] .discount-pill {
+    background-color: rgba(147, 51, 234, 0.2);
+    color: #d8b4fe;
+}
+
+.coupon-main-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.25rem;
+    gap: 1.25rem;
+}
+
+@media (max-width: 640px) {
+    .coupon-main-body {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+
+.coupon-discount-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    padding: 0.6rem 0.85rem;
+    background: rgba(124, 58, 237, 0.06);
+    border-radius: 12px;
+    border: 1px solid rgba(124, 58, 237, 0.15);
+    flex-shrink: 0;
+}
+
+.discount-hero {
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: #7c3aed;
+    letter-spacing: -0.02em;
+    text-align: center;
+    line-height: 1.1;
+}
+
+[data-theme="dark"] .discount-hero {
+    color: #a78bfa;
+}
+
+.coupon-info-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    min-width: 0;
+}
+
+.coupon-info-box .coupon-title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1.35;
+    margin: 0;
+}
+
+.coupon-info-box .coupon-title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.coupon-info-box .coupon-title a:hover {
+    color: #7c3aed;
+}
+
+.coupon-social-proof {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.meta-dot {
+    color: #cbd5e1;
+}
+
+.coupon-action-box {
+    flex-shrink: 0;
+    min-width: 150px;
+}
+
+@media (max-width: 640px) {
+    .coupon-action-box {
+        width: 100%;
+    }
+}
+
+/* Collapsible Details Footer (RetailMeNot Style) */
+.coupon-details-footer {
+    border-top: 1px solid var(--border-color);
+    background-color: var(--surface-color);
+}
+
+.coupon-details-content {
+    background-color: #fefce8;
+    border-bottom: 1px solid #fef08a;
+    padding: 0.85rem 1.25rem;
+    transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .coupon-details-content {
+    background-color: rgba(254, 240, 138, 0.08);
+    border-bottom-color: rgba(254, 240, 138, 0.2);
+}
+
+.coupon-details-content.hidden {
+    display: none !important;
+}
+
+.details-inner-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 0.85rem;
+    color: #451a03;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+[data-theme="dark"] .details-inner-box {
+    color: #fef08a;
+}
+
+.details-inner-box .info-icon {
+    font-size: 1.1rem;
+    color: #ca8a04;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.details-toggle-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+    background-color: rgba(248, 250, 252, 0.5);
+}
+
+[data-theme="dark"] .details-toggle-container {
+    background-color: rgba(15, 23, 42, 0.4);
+}
+
+.toggle-details-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background-color: #f1f5f9;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.35rem 0.75rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.toggle-details-btn:hover {
+    background-color: #e2e8f0;
+    color: #0f172a;
+}
+
+.toggle-details-btn.bg-amber-300,
+.toggle-details-btn.active-details {
+    background-color: #facc15 !important;
+    color: #0f172a !important;
+    border-color: #eab308 !important;
+}
+
+.toggle-icon {
+    font-weight: 900;
+    font-size: 0.85rem;
+}
+
+
 .show-code-btn:hover {
     background-color: var(--primary-hover);
 }

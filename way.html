@@ -344,222 +344,234 @@
                         </span>
                     </div>
 
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                    <div class="flex flex-col gap-4" style="display: flex; flex-direction: column; gap: 1rem;">
                         
                         <!-- Offer 1: Refer a Friend & Earn $100 -->
-                        <div class="card coupon-card affiliate-card" style="border: 1px solid var(--border-color); border-top: 4px solid #FF004B; border-radius: 12px; overflow: hidden; background: var(--bg-color); display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <div class="coupon-header" style="background: rgba(255,0,75,0.05); padding: 1rem 1.25rem; border-bottom: 1px dashed var(--border-color); display: flex; justify-content: space-between; align-items: center;">
-                                    <span class="badge verified-badge" style="background: #FF004B; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.65rem; border-radius: 20px; display: inline-flex; align-items: center; gap: 0.25rem;">
-                                        <span class="material-icons-round" style="font-size: 0.9rem;">card_giftcard</span> Referral Reward
-                                    </span>
-                                    <span class="badge discount-badge" style="background: #10B981; color: #fff; font-weight: 800; font-size: 0.85rem; padding: 0.25rem 0.75rem; border-radius: 20px;">
-                                        $100 REWARD
-                                    </span>
+                        <article class="card coupon-card affiliate-card retailmenot-style">
+                            <div class="coupon-header-bar">
+                                <div class="header-badges">
+                                    <span class="badge verified-badge"><span class="material-icons-round" aria-hidden="true">verified</span> Verified</span>
+                                    <span class="badge type-badge">Referral Reward</span>
                                 </div>
-                                
-                                <div style="padding: 1.25rem;">
-                                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
-                                        <img src="/assets/images/brands/way.svg" alt="Way.com Logo" style="width: 42px; height: 42px; border-radius: 8px; border: 1px solid var(--border-color); padding: 4px; background: #fff; object-fit: contain;">
-                                        <div>
-                                            <h3 style="font-size: 1.2rem; font-weight: 800; margin: 0; color: var(--text-color);">Refer a Friend &amp; Earn $100</h3>
-                                            <span style="font-size: 0.8rem; color: var(--text-secondary);">Official Referral Program</span>
-                                        </div>
-                                    </div>
-                                    
-                                    <p style="font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
-                                        Invite friends to Way.com and earn up to $100 in rewards when referral requirements are met.
-                                    </p>
-
-                                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--text-secondary); border-top: 1px dashed var(--border-color); padding-top: 0.85rem; margin-bottom: 1rem;">
-                                        <span style="color: #10B981; font-weight: 600; display: inline-flex; align-items: center; gap: 0.25rem;">
-                                            <span class="material-icons-round" style="font-size: 1rem;">thumb_up</span> 100% Success Rate
-                                        </span>
-                                        <span style="display: inline-flex; align-items: center; gap: 0.25rem;">
-                                            <span class="material-icons-round" style="font-size: 1rem;">event</span> Expiry: Unlimited
-                                        </span>
+                                <span class="badge discount-pill">$100 REWARD</span>
+                            </div>
+                            <div class="coupon-main-body">
+                                <div class="coupon-discount-box">
+                                    <span class="discount-hero">$100</span>
+                                </div>
+                                <div class="coupon-info-box">
+                                    <h3 class="coupon-title">
+                                        <a href="https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/" target="_blank" rel="noopener sponsored">Refer a Friend &amp; Earn Up To $100 Rewards</a>
+                                    </h3>
+                                    <div class="coupon-social-proof">
+                                        <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 100% Success</span>
+                                        <span class="meta-dot">•</span>
+                                        <span class="users-meta">3,120 interested users</span>
                                     </div>
                                 </div>
+                                <div class="coupon-action-box">
+                                    <a href="https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/" target="_blank" rel="noopener sponsored" class="btn btn-primary get-deal-btn" style="width: 100%; justify-content: center; text-align: center;">Get Reward Deal</a>
+                                </div>
                             </div>
-
-                            <div style="padding: 0 1.25rem 1.25rem;">
-                                <a href="https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/" target="_blank" rel="noopener sponsored" class="btn btn-primary" style="background: #FF004B; border-color: #FF004B; font-weight: 800; padding: 0.75rem 1.5rem; font-size: 1rem; border-radius: 8px; width: 100%; text-align: center; justify-content: center; color: #fff; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 4px 12px rgba(255,0,75,0.2);">
-                                    <span class="material-icons-round" style="font-size: 1.1rem;">arrow_forward</span> Get Offer
-                                </a>
+                            <div class="coupon-details-footer">
+                                <div class="coupon-details-content hidden">
+                                    <div class="details-inner-box">
+                                        <span class="material-icons-round info-icon">info</span>
+                                        <p>Invite friends to Way.com and earn up to $100 in rewards when referral requirements are met.</p>
+                                    </div>
+                                </div>
+                                <div class="details-toggle-container">
+                                    <button type="button" class="toggle-details-btn" onclick="toggleCouponDetails(this)">
+                                        <span class="btn-text">Show Details</span>
+                                        <span class="toggle-icon">+</span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
+                        </article>
 
                         <!-- Offer 2: $12 OFF Airport Parking -->
-                        <div class="card coupon-card affiliate-card" style="border: 1px solid var(--border-color); border-top: 4px solid #10B981; border-radius: 12px; overflow: hidden; background: var(--bg-color); display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <div class="coupon-header" style="background: rgba(16,185,129,0.05); padding: 1rem 1.25rem; border-bottom: 1px dashed var(--border-color); display: flex; justify-content: space-between; align-items: center;">
-                                    <span class="badge verified-badge" style="background: #10B981; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.65rem; border-radius: 20px; display: inline-flex; align-items: center; gap: 0.25rem;">
-                                        <span class="material-icons-round" style="font-size: 0.9rem;">verified</span> Verified Coupon
-                                    </span>
-                                    <span class="badge discount-badge" style="background: #10B981; color: #fff; font-weight: 800; font-size: 0.85rem; padding: 0.25rem 0.75rem; border-radius: 20px;">
-                                        $12 OFF
-                                    </span>
+                        <article class="card coupon-card affiliate-card retailmenot-style">
+                            <div class="coupon-header-bar">
+                                <div class="header-badges">
+                                    <span class="badge verified-badge"><span class="material-icons-round" aria-hidden="true">verified</span> Verified</span>
+                                    <span class="badge type-badge">Code</span>
                                 </div>
-                                
-                                <div style="padding: 1.25rem;">
-                                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
-                                        <img src="/assets/images/brands/way.svg" alt="Way.com Logo" style="width: 42px; height: 42px; border-radius: 8px; border: 1px solid var(--border-color); padding: 4px; background: #fff; object-fit: contain;">
-                                        <div>
-                                            <h3 style="font-size: 1.2rem; font-weight: 800; margin: 0; color: var(--text-color);">$12 OFF Airport Parking</h3>
-                                            <span style="font-size: 0.8rem; color: var(--text-secondary);">Promo Code: <strong>GET12$AIRPORT</strong></span>
-                                        </div>
+                                <span class="badge discount-pill">$12 OFF</span>
+                            </div>
+                            <div class="coupon-main-body">
+                                <div class="coupon-discount-box">
+                                    <span class="discount-hero">$12</span>
+                                </div>
+                                <div class="coupon-info-box">
+                                    <h3 class="coupon-title">
+                                        <a href="https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/" target="_blank" rel="noopener sponsored">$12 OFF Airport Parking Nationwide</a>
+                                    </h3>
+                                    <div class="coupon-social-proof">
+                                        <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 100% Success</span>
+                                        <span class="meta-dot">•</span>
+                                        <span class="users-meta">2,850 interested users</span>
                                     </div>
-                                    
-                                    <p style="font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
-                                        Get $12 OFF airport parking across the United States.
-                                    </p>
-
-                                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--text-secondary); border-top: 1px dashed var(--border-color); padding-top: 0.85rem; margin-bottom: 1rem;">
-                                        <span style="color: #10B981; font-weight: 600; display: inline-flex; align-items: center; gap: 0.25rem;">
-                                            <span class="material-icons-round" style="font-size: 1rem;">thumb_up</span> 100% Success Rate
-                                        </span>
-                                        <span style="display: inline-flex; align-items: center; gap: 0.25rem;">
-                                            <span class="material-icons-round" style="font-size: 1rem;">event</span> Expiry: Unlimited
-                                        </span>
+                                </div>
+                                <div class="coupon-action-box">
+                                    <div class="code-reveal-wrapper" data-code="GET12$AIRPORT" data-link="https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/">
+                                        <span class="hidden-code-mask">GET1••••</span>
+                                        <button class="btn show-code-btn" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                 </div>
                             </div>
-
-                            <div style="padding: 0 1.25rem 1.25rem;">
-                                <a href="https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/" target="_blank" rel="noopener sponsored" class="btn btn-primary" style="background: #10B981; border-color: #10B981; font-weight: 800; padding: 0.75rem 1.5rem; font-size: 1rem; border-radius: 8px; width: 100%; text-align: center; justify-content: center; color: #fff; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 4px 12px rgba(16,185,129,0.2);">
-                                    <span class="material-icons-round" style="font-size: 1.1rem;">content_copy</span> Copy GET12$AIRPORT
-                                </a>
+                            <div class="coupon-details-footer">
+                                <div class="coupon-details-content hidden">
+                                    <div class="details-inner-box">
+                                        <span class="material-icons-round info-icon">info</span>
+                                        <p>Use code GET12$AIRPORT to get $12 OFF airport parking across the United States.</p>
+                                    </div>
+                                </div>
+                                <div class="details-toggle-container">
+                                    <button type="button" class="toggle-details-btn" onclick="toggleCouponDetails(this)">
+                                        <span class="btn-text">Show Details</span>
+                                        <span class="toggle-icon">+</span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
+                        </article>
 
                         <!-- Offer 3: 8% OFF Airport Parking -->
-                        <div class="card coupon-card affiliate-card" style="border: 1px solid var(--border-color); border-top: 4px solid #2563EB; border-radius: 12px; overflow: hidden; background: var(--bg-color); display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <div class="coupon-header" style="background: rgba(37,99,235,0.05); padding: 1rem 1.25rem; border-bottom: 1px dashed var(--border-color); display: flex; justify-content: space-between; align-items: center;">
-                                    <span class="badge verified-badge" style="background: #2563EB; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.65rem; border-radius: 20px; display: inline-flex; align-items: center; gap: 0.25rem;">
-                                        <span class="material-icons-round" style="font-size: 0.9rem;">verified</span> Verified Coupon
-                                    </span>
-                                    <span class="badge discount-badge" style="background: #10B981; color: #fff; font-weight: 800; font-size: 0.85rem; padding: 0.25rem 0.75rem; border-radius: 20px;">
-                                        8% OFF
-                                    </span>
+                        <article class="card coupon-card affiliate-card retailmenot-style">
+                            <div class="coupon-header-bar">
+                                <div class="header-badges">
+                                    <span class="badge verified-badge"><span class="material-icons-round" aria-hidden="true">verified</span> Verified</span>
+                                    <span class="badge type-badge">Code</span>
                                 </div>
-                                
-                                <div style="padding: 1.25rem;">
-                                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
-                                        <img src="/assets/images/brands/way.svg" alt="Way.com Logo" style="width: 42px; height: 42px; border-radius: 8px; border: 1px solid var(--border-color); padding: 4px; background: #fff; object-fit: contain;">
-                                        <div>
-                                            <h3 style="font-size: 1.2rem; font-weight: 800; margin: 0; color: var(--text-color);">8% OFF Airport Parking</h3>
-                                            <span style="font-size: 0.8rem; color: var(--text-secondary);">Promo Code: <strong>GET8%AIRPORT</strong></span>
-                                        </div>
+                                <span class="badge discount-pill">8% OFF</span>
+                            </div>
+                            <div class="coupon-main-body">
+                                <div class="coupon-discount-box">
+                                    <span class="discount-hero">8%</span>
+                                </div>
+                                <div class="coupon-info-box">
+                                    <h3 class="coupon-title">
+                                        <a href="https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/" target="_blank" rel="noopener sponsored">8% OFF Airport Parking (Min $50 Order)</a>
+                                    </h3>
+                                    <div class="coupon-social-proof">
+                                        <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
+                                        <span class="meta-dot">•</span>
+                                        <span class="users-meta">1,640 interested users</span>
                                     </div>
-                                    
-                                    <p style="font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
-                                        Save 8% on airport parking with a minimum purchase of $50.
-                                    </p>
-
-                                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--text-secondary); border-top: 1px dashed var(--border-color); padding-top: 0.85rem; margin-bottom: 1rem;">
-                                        <span style="color: #10B981; font-weight: 600; display: inline-flex; align-items: center; gap: 0.25rem;">
-                                            <span class="material-icons-round" style="font-size: 1rem;">thumb_up</span> 99% Success Rate
-                                        </span>
-                                        <span style="display: inline-flex; align-items: center; gap: 0.25rem;">
-                                            <span class="material-icons-round" style="font-size: 1rem;">event</span> Expiry: Unlimited
-                                        </span>
+                                </div>
+                                <div class="coupon-action-box">
+                                    <div class="code-reveal-wrapper" data-code="GET8%AIRPORT" data-link="https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/">
+                                        <span class="hidden-code-mask">GET8••••</span>
+                                        <button class="btn show-code-btn" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                 </div>
                             </div>
-
-                            <div style="padding: 0 1.25rem 1.25rem;">
-                                <a href="https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/" target="_blank" rel="noopener sponsored" class="btn btn-primary" style="background: #2563EB; border-color: #2563EB; font-weight: 800; padding: 0.75rem 1.5rem; font-size: 1rem; border-radius: 8px; width: 100%; text-align: center; justify-content: center; color: #fff; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 4px 12px rgba(37,99,235,0.2);">
-                                    <span class="material-icons-round" style="font-size: 1.1rem;">content_copy</span> Copy GET8%AIRPORT
-                                </a>
+                            <div class="coupon-details-footer">
+                                <div class="coupon-details-content hidden">
+                                    <div class="details-inner-box">
+                                        <span class="material-icons-round info-icon">info</span>
+                                        <p>Save 8% on airport parking with a minimum purchase of $50 using code GET8%AIRPORT.</p>
+                                    </div>
+                                </div>
+                                <div class="details-toggle-container">
+                                    <button type="button" class="toggle-details-btn" onclick="toggleCouponDetails(this)">
+                                        <span class="btn-text">Show Details</span>
+                                        <span class="toggle-icon">+</span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
+                        </article>
 
                         <!-- Offer 4: 10% OFF Monthly Parking -->
-                        <div class="card coupon-card affiliate-card" style="border: 1px solid var(--border-color); border-top: 4px solid #7C3AED; border-radius: 12px; overflow: hidden; background: var(--bg-color); display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <div class="coupon-header" style="background: rgba(124,58,237,0.05); padding: 1rem 1.25rem; border-bottom: 1px dashed var(--border-color); display: flex; justify-content: space-between; align-items: center;">
-                                    <span class="badge verified-badge" style="background: #7C3AED; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.65rem; border-radius: 20px; display: inline-flex; align-items: center; gap: 0.25rem;">
-                                        <span class="material-icons-round" style="font-size: 0.9rem;">verified</span> Verified Coupon
-                                    </span>
-                                    <span class="badge discount-badge" style="background: #10B981; color: #fff; font-weight: 800; font-size: 0.85rem; padding: 0.25rem 0.75rem; border-radius: 20px;">
-                                        10% OFF
-                                    </span>
+                        <article class="card coupon-card affiliate-card retailmenot-style">
+                            <div class="coupon-header-bar">
+                                <div class="header-badges">
+                                    <span class="badge verified-badge"><span class="material-icons-round" aria-hidden="true">verified</span> Verified</span>
+                                    <span class="badge type-badge">Code</span>
                                 </div>
-                                
-                                <div style="padding: 1.25rem;">
-                                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
-                                        <img src="/assets/images/brands/way.svg" alt="Way.com Logo" style="width: 42px; height: 42px; border-radius: 8px; border: 1px solid var(--border-color); padding: 4px; background: #fff; object-fit: contain;">
-                                        <div>
-                                            <h3 style="font-size: 1.2rem; font-weight: 800; margin: 0; color: var(--text-color);">10% OFF Monthly Parking</h3>
-                                            <span style="font-size: 0.8rem; color: var(--text-secondary);">Promo Code: <strong>MONTHLYWAY10</strong></span>
-                                        </div>
+                                <span class="badge discount-pill">10% OFF</span>
+                            </div>
+                            <div class="coupon-main-body">
+                                <div class="coupon-discount-box">
+                                    <span class="discount-hero">10%</span>
+                                </div>
+                                <div class="coupon-info-box">
+                                    <h3 class="coupon-title">
+                                        <a href="https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/" target="_blank" rel="noopener sponsored">10% OFF Monthly Parking Subscriptions</a>
+                                    </h3>
+                                    <div class="coupon-social-proof">
+                                        <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 98% Success</span>
+                                        <span class="meta-dot">•</span>
+                                        <span class="users-meta">1,890 interested users</span>
                                     </div>
-                                    
-                                    <p style="font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
-                                        Save 10% on monthly parking subscriptions.
-                                    </p>
-
-                                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--text-secondary); border-top: 1px dashed var(--border-color); padding-top: 0.85rem; margin-bottom: 1rem;">
-                                        <span style="color: #10B981; font-weight: 600; display: inline-flex; align-items: center; gap: 0.25rem;">
-                                            <span class="material-icons-round" style="font-size: 1rem;">thumb_up</span> 98% Success Rate
-                                        </span>
-                                        <span style="display: inline-flex; align-items: center; gap: 0.25rem;">
-                                            <span class="material-icons-round" style="font-size: 1rem;">event</span> Expiry: Unlimited
-                                        </span>
+                                </div>
+                                <div class="coupon-action-box">
+                                    <div class="code-reveal-wrapper" data-code="MONTHLYWAY10" data-link="https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/">
+                                        <span class="hidden-code-mask">MONT••••</span>
+                                        <button class="btn show-code-btn" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                 </div>
                             </div>
-
-                            <div style="padding: 0 1.25rem 1.25rem;">
-                                <a href="https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/" target="_blank" rel="noopener sponsored" class="btn btn-primary" style="background: #7C3AED; border-color: #7C3AED; font-weight: 800; padding: 0.75rem 1.5rem; font-size: 1rem; border-radius: 8px; width: 100%; text-align: center; justify-content: center; color: #fff; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 4px 12px rgba(124,58,237,0.2);">
-                                    <span class="material-icons-round" style="font-size: 1.1rem;">content_copy</span> Copy MONTHLYWAY10
-                                </a>
+                            <div class="coupon-details-footer">
+                                <div class="coupon-details-content hidden">
+                                    <div class="details-inner-box">
+                                        <span class="material-icons-round info-icon">info</span>
+                                        <p>Save 10% on monthly parking subscriptions using promo code MONTHLYWAY10.</p>
+                                    </div>
+                                </div>
+                                <div class="details-toggle-container">
+                                    <button type="button" class="toggle-details-btn" onclick="toggleCouponDetails(this)">
+                                        <span class="btn-text">Show Details</span>
+                                        <span class="toggle-icon">+</span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
+                        </article>
 
                         <!-- Offer 5: 30% OFF Monthly Parking -->
-                        <div class="card coupon-card affiliate-card" style="border: 1px solid var(--border-color); border-top: 4px solid #F59E0B; border-radius: 12px; overflow: hidden; background: var(--bg-color); display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <div class="coupon-header" style="background: rgba(245,158,11,0.05); padding: 1rem 1.25rem; border-bottom: 1px dashed var(--border-color); display: flex; justify-content: space-between; align-items: center;">
-                                    <span class="badge verified-badge" style="background: #F59E0B; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.65rem; border-radius: 20px; display: inline-flex; align-items: center; gap: 0.25rem;">
-                                        <span class="material-icons-round" style="font-size: 0.9rem;">star</span> Best Deal
-                                    </span>
-                                    <span class="badge discount-badge" style="background: #10B981; color: #fff; font-weight: 800; font-size: 0.85rem; padding: 0.25rem 0.75rem; border-radius: 20px;">
-                                        30% OFF
-                                    </span>
+                        <article class="card coupon-card affiliate-card retailmenot-style">
+                            <div class="coupon-header-bar">
+                                <div class="header-badges">
+                                    <span class="badge verified-badge"><span class="material-icons-round" aria-hidden="true">verified</span> Verified</span>
+                                    <span class="badge type-badge">Best Deal</span>
                                 </div>
-                                
-                                <div style="padding: 1.25rem;">
-                                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
-                                        <img src="/assets/images/brands/way.svg" alt="Way.com Logo" style="width: 42px; height: 42px; border-radius: 8px; border: 1px solid var(--border-color); padding: 4px; background: #fff; object-fit: contain;">
-                                        <div>
-                                            <h3 style="font-size: 1.2rem; font-weight: 800; margin: 0; color: var(--text-color);">30% OFF Monthly Parking</h3>
-                                            <span style="font-size: 0.8rem; color: var(--text-secondary);">Promo Code: <strong>MONTHLYWAY30</strong></span>
-                                        </div>
+                                <span class="badge discount-pill">30% OFF</span>
+                            </div>
+                            <div class="coupon-main-body">
+                                <div class="coupon-discount-box">
+                                    <span class="discount-hero">30%</span>
+                                </div>
+                                <div class="coupon-info-box">
+                                    <h3 class="coupon-title">
+                                        <a href="https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/" target="_blank" rel="noopener sponsored">Up to 30% OFF Monthly Parking Plans</a>
+                                    </h3>
+                                    <div class="coupon-social-proof">
+                                        <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 100% Success</span>
+                                        <span class="meta-dot">•</span>
+                                        <span class="users-meta">2,410 interested users</span>
                                     </div>
-                                    
-                                    <p style="font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
-                                        Get up to 30% OFF monthly parking plans.
-                                    </p>
-
-                                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--text-secondary); border-top: 1px dashed var(--border-color); padding-top: 0.85rem; margin-bottom: 1rem;">
-                                        <span style="color: #10B981; font-weight: 600; display: inline-flex; align-items: center; gap: 0.25rem;">
-                                            <span class="material-icons-round" style="font-size: 1rem;">thumb_up</span> 100% Success Rate
-                                        </span>
-                                        <span style="display: inline-flex; align-items: center; gap: 0.25rem;">
-                                            <span class="material-icons-round" style="font-size: 1rem;">event</span> Expiry: Unlimited
-                                        </span>
+                                </div>
+                                <div class="coupon-action-box">
+                                    <div class="code-reveal-wrapper" data-code="MONTHLYWAY30" data-link="https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/">
+                                        <span class="hidden-code-mask">MONT••••</span>
+                                        <button class="btn show-code-btn" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                 </div>
                             </div>
-
-                            <div style="padding: 0 1.25rem 1.25rem;">
-                                <a href="https://yyczo.com/g/vln7ctwgqjb68b264a7612f7a14e01/" target="_blank" rel="noopener sponsored" class="btn btn-primary" style="background: #F59E0B; border-color: #F59E0B; font-weight: 800; padding: 0.75rem 1.5rem; font-size: 1rem; border-radius: 8px; width: 100%; text-align: center; justify-content: center; color: #fff; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 4px 12px rgba(245,158,11,0.2);">
-                                    <span class="material-icons-round" style="font-size: 1.1rem;">content_copy</span> Copy MONTHLYWAY30
-                                </a>
+                            <div class="coupon-details-footer">
+                                <div class="coupon-details-content hidden">
+                                    <div class="details-inner-box">
+                                        <span class="material-icons-round info-icon">info</span>
+                                        <p>Get up to 30% OFF monthly parking plans using promo code MONTHLYWAY30.</p>
+                                    </div>
+                                </div>
+                                <div class="details-toggle-container">
+                                    <button type="button" class="toggle-details-btn" onclick="toggleCouponDetails(this)">
+                                        <span class="btn-text">Show Details</span>
+                                        <span class="toggle-icon">+</span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
+                        </article>
 
                     </div>
                 </article>

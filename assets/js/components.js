@@ -107,42 +107,61 @@ class Components {
                     <button class="btn show-code-btn" aria-label="Show Coupon Code and Copy">Show Code</button>
                 </div>`;
         } else {
-            actionHtml = `<a href="${link}" target="_blank" rel="noopener sponsored" class="btn btn-primary full-width get-deal-btn ${item.isTop ? 'cta-pulse' : ''}">Get Deal</a>`;
+            actionHtml = `<a href="${link}" target="_blank" rel="noopener sponsored" class="btn btn-primary get-deal-btn ${item.isTop ? 'cta-pulse' : ''}" style="width: 100%; justify-content: center; text-align: center;">Get Deal</a>`;
         }
         
         const successRate = item.successPercentage ? `${item.successPercentage}%` : (item.successRate || '99%');
-        const votes = item.votesCount ? `(${item.votesCount} votes)` : '';
+        const votesText = item.votesCount ? `${item.votesCount} interested users` : (item.votes ? `${item.votes} votes` : 'Verified Offer');
         const isExpired = item.status === 'expired';
-        const storeName = item.store ? item.store.name : 'Store';
-        const expiryText = item.expiry || 'Verified Daily';
+        const discountText = item.discount || (item.code ? 'PROMO' : 'DEAL');
+        const codeType = item.code ? 'Code' : 'Sale';
 
         return `
-            <article class="card coupon-card affiliate-card ${isExpired ? 'opacity-60' : ''}">
-                <div class="coupon-header">
-                    <div class="coupon-top-bar">
+            <article class="card coupon-card affiliate-card retailmenot-style ${isExpired ? 'opacity-60' : ''}">
+                <div class="coupon-header-bar">
+                    <div class="header-badges">
                         <span class="badge ${isExpired ? 'expired-badge' : 'verified-badge'}">
                             <span class="material-icons-round" aria-hidden="true">${isExpired ? 'event_busy' : 'verified'}</span> ${isExpired ? 'Expired' : 'Verified'}
                         </span>
-                        ${item.discount ? `<span class="badge discount-badge">${item.discount}</span>` : ''}
+                        <span class="badge type-badge">${codeType}</span>
                     </div>
-                    <div class="store-info">
-                        ${item.store && item.store.id ? `<a href="store.html?id=${item.store.id}" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; color: inherit;">
-                            <img src="${item.store.logo}" alt="${item.store.name} Logo" class="store-logo" width="50" height="50" loading="lazy">
-                            <div class="store-name">${item.store.name}</div>
-                        </a>` : `
-                            <img src="${item.store ? item.store.logo : ''}" alt="${storeName} Logo" class="store-logo" width="50" height="50" loading="lazy">
-                            <div class="store-name">${storeName}</div>
-                        `}
+                    ${item.discount ? `<span class="badge discount-pill">${item.discount}</span>` : ''}
+                </div>
+
+                <div class="coupon-main-body">
+                    <div class="coupon-discount-box">
+                        <span class="discount-hero">${discountText}</span>
+                    </div>
+
+                    <div class="coupon-info-box">
+                        <h3 class="coupon-title">
+                            <a href="${link}" target="_blank" rel="noopener sponsored">${item.title}</a>
+                        </h3>
+                        <div class="coupon-social-proof">
+                            <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> ${successRate} Success</span>
+                            <span class="meta-dot">•</span>
+                            <span class="users-meta">${votesText}</span>
+                        </div>
+                    </div>
+
+                    <div class="coupon-action-box">
+                        ${actionHtml}
                     </div>
                 </div>
-                <div class="coupon-content">
-                    <h3 class="coupon-title"><a href="deal.html?id=${item.id}" style="color: inherit; text-decoration: none;">${item.title}</a></h3>
-                    <p class="coupon-desc">${item.description}</p>
-                    <div class="coupon-meta">
-                        <span class="success-rate" title="Success Rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> ${successRate} ${votes}</span>
-                        <span class="expiry-date"><span class="material-icons-round" aria-hidden="true">timer</span> ${expiryText}</span>
+
+                <div class="coupon-details-footer">
+                    <div class="coupon-details-content hidden">
+                        <div class="details-inner-box">
+                            <span class="material-icons-round info-icon">info</span>
+                            <p>${item.description || 'Tap offer to copy the coupon code or activate deal. Remember to apply at checkout.'}</p>
+                        </div>
                     </div>
-                    <div class="coupon-action">${actionHtml}</div>
+                    <div class="details-toggle-container">
+                        <button type="button" class="toggle-details-btn" onclick="toggleCouponDetails(this)">
+                            <span class="btn-text">Show Details</span>
+                            <span class="toggle-icon">+</span>
+                        </button>
+                    </div>
                 </div>
             </article>
         `;
