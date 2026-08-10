@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="accentG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <linearGradient id="orangeG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#FB923C"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#heroBg)"/>
+  
+  <!-- Subtle Grid Lines -->
+  <g stroke="#334155" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="200" y1="0" x2="200" y2="450"/>
+    <line x1="400" y1="0" x2="400" y2="450"/>
+    <line x1="600" y1="0" x2="600" y2="450"/>
+  </g>
+
+  <!-- Window Mockup -->
+  <rect x="50" y="40" width="700" height="370" rx="16" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+  <!-- Header Bar -->
+  <path d="M 50 56 C 50 47.16 57.16 40 66 40 L 734 40 C 742.84 40 750 47.16 750 56 L 750 80 L 50 80 Z" fill="#1E293B"/>
+  <circle cx="80" cy="60" r="6" fill="#EF4444"/>
+  <circle cx="100" cy="60" r="6" fill="#F59E0B"/>
+  <circle cx="120" cy="60" r="6" fill="#10B981"/>
+  <text x="400" y="65" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#94A3B8" text-anchor="middle">Movavi Video Suite 2026 — Official Creative Studio</text>
+
+  <!-- Left Sidebar Mockup -->
+  <rect x="70" y="100" width="180" height="290" rx="10" fill="#1E293B"/>
+  <rect x="85" y="120" width="150" height="36" rx="8" fill="url(#accentG)"/>
+  <text x="100" y="143" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#0F172A">🎬 Video Editor</text>
+  <rect x="85" y="170" width="150" height="36" rx="8" fill="#334155"/>
+  <text x="100" y="193" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#E2E8F0">📼 Converter Premium</text>
+  <rect x="85" y="220" width="150" height="36" rx="8" fill="#334155"/>
+  <text x="100" y="243" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#E2E8F0">📹 Screen Recorder</text>
+  <rect x="85" y="270" width="150" height="36" rx="8" fill="#334155"/>
+  <text x="100" y="293" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#E2E8F0">📸 AI Photo Editor</text>
+
+  <!-- Main Canvas / Timeline Mockup -->
+  <rect x="270" y="100" width="460" height="190" rx="10" fill="#0284C7" opacity="0.15" stroke="#0284C7" stroke-width="2"/>
+  <polygon points="480,165 520,190 480,215" fill="url(#orangeG)"/>
+  <text x="500" y="250" font-family="-apple-system, sans-serif" font-size="16" font-weight="800" fill="#F8FAFC" text-anchor="middle">4K Ultra HD AI Timeline Preview</text>
+
+  <!-- Timeline Tracks Below -->
+  <rect x="270" y="305" width="460" height="85" rx="10" fill="#1E293B"/>
+  <rect x="285" y="320" width="200" height="24" rx="6" fill="#38BDF8"/>
+  <rect x="495" y="320" width="220" height="24" rx="6" fill="#818CF8"/>
+  <rect x="285" y="352" width="300" height="22" rx="6" fill="#F97316"/>
+  <rect x="595" y="352" width="120" height="22" rx="6" fill="#10B981"/>
+</svg>

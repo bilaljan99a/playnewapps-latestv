@@ -1,5 +1,125 @@
 [
     {
+        "id": "movavi-suite-30-off",
+        "storeId": "movavi",
+        "title": "Up to 30% OFF Movavi Video Suite 2026 Bundle",
+        "description": "Save 30% on the 3-in-1 video editor, screen recorder, and 180+ format media converter bundle. Includes AI background removal and 4K processing.",
+        "code": "AUTOMATIC30",
+        "discount": "30% OFF",
+        "type": "deal",
+        "verified": true,
+        "isVerified": true,
+        "expiry": "2026-12-31",
+        "expiryDate": "2026-12-31",
+        "affiliateUrl": "https://bednari.com/g/mwr0f878b0b68b264a760c91b13932/?ulp=https://www.movavi.com/suite/",
+        "url": "https://bednari.com/g/mwr0f878b0b68b264a760c91b13932/?ulp=https://www.movavi.com/suite/",
+        "store": {
+            "id": "movavi",
+            "name": "Movavi",
+            "logo": "/assets/images/brands/movavi.svg"
+        }
+    },
+    {
+        "id": "movavi-free-trial",
+        "storeId": "movavi",
+        "title": "Free Trial Downloads for Windows & macOS",
+        "description": "Download and evaluate Movavi Video Editor, Screen Recorder, and Photo Editor with zero upfront credit card or payment commitment.",
+        "code": "NO CODE NEEDED",
+        "discount": "FREE TRIAL",
+        "type": "deal",
+        "verified": true,
+        "isVerified": true,
+        "expiry": "2026-12-31",
+        "expiryDate": "2026-12-31",
+        "affiliateUrl": "https://bednari.com/g/mwr0f878b0b68b264a760c91b13932/?ulp=https://www.movavi.com/video-editor/",
+        "url": "https://bednari.com/g/mwr0f878b0b68b264a760c91b13932/?ulp=https://www.movavi.com/video-editor/",
+        "store": {
+            "id": "movavi",
+            "name": "Movavi",
+            "logo": "/assets/images/brands/movavi.svg"
+        }
+    },
+    {
+        "id": "movavi-unlimited-pass",
+        "storeId": "movavi",
+        "title": "Movavi Unlimited All-In-One Subscription Special",
+        "description": "Get unlimited access to all 10+ Movavi creative apps, plus full access to the Effects Store title packs, LUTs, and transitions.",
+        "code": "UNLIMITEDPASS",
+        "discount": "ALL-ACCESS",
+        "type": "deal",
+        "verified": true,
+        "isVerified": true,
+        "expiry": "2026-12-31",
+        "expiryDate": "2026-12-31",
+        "affiliateUrl": "https://bednari.com/g/mwr0f878b0b68b264a760c91b13932/?ulp=https://www.movavi.com/unlimited.html",
+        "url": "https://bednari.com/g/mwr0f878b0b68b264a760c91b13932/?ulp=https://www.movavi.com/unlimited.html",
+        "store": {
+            "id": "movavi",
+            "name": "Movavi",
+            "logo": "/assets/images/brands/movavi.svg"
+        }
+    },
+    {
+        "id": "movavi-screen-recorder-deal",
+        "storeId": "movavi",
+        "title": "Movavi Screen Recorder 4K Capture Special",
+        "description": "Record online streams, webinars, gameplay, and video calls in crisp 4K or Full HD with dual microphone & system audio recording.",
+        "code": "CAPTURE4K",
+        "discount": "SPECIAL DEAL",
+        "type": "deal",
+        "verified": true,
+        "isVerified": true,
+        "expiry": "2026-12-31",
+        "expiryDate": "2026-12-31",
+        "affiliateUrl": "https://bednari.com/g/mwr0f878b0b68b264a760c91b13932/?ulp=https://www.movavi.com/screen-recorder/",
+        "url": "https://bednari.com/g/mwr0f878b0b68b264a760c91b13932/?ulp=https://www.movavi.com/screen-recorder/",
+        "store": {
+            "id": "movavi",
+            "name": "Movavi",
+            "logo": "/assets/images/brands/movavi.svg"
+        }
+    },
+    {
+        "id": "movavi-photo-editor-deal",
+        "storeId": "movavi",
+        "title": "Movavi Photo Editor AI Enhancement Special",
+        "description": "AI object removal, automatic portrait retouching, color restoration, and background swapping for digital photography.",
+        "code": "PHOTOAI2026",
+        "discount": "AI SPECIAL",
+        "type": "deal",
+        "verified": true,
+        "isVerified": true,
+        "expiry": "2026-12-31",
+        "expiryDate": "2026-12-31",
+        "affiliateUrl": "https://bednari.com/g/mwr0f878b0b68b264a760c91b13932/?ulp=https://www.movavi.com/photo-editor/",
+        "url": "https://bednari.com/g/mwr0f878b0b68b264a760c91b13932/?ulp=https://www.movavi.com/photo-editor/",
+        "store": {
+            "id": "movavi",
+            "name": "Movavi",
+            "logo": "/assets/images/brands/movavi.svg"
+        }
+    },
+    {
+        "id": "movavi-academic-edu",
+        "storeId": "movavi",
+        "title": "Movavi Student & Teacher Academic Discount",
+        "description": "Special promotional pricing for students, educators, and educational institutions on Movavi Video Editor & Academic software.",
+        "code": "MOVEDU2026",
+        "discount": "EDU OFFER",
+        "type": "deal",
+        "verified": true,
+        "isVerified": true,
+        "expiry": "2026-12-31",
+        "expiryDate": "2026-12-31",
+        "affiliateUrl": "https://bednari.com/g/mwr0f878b0b68b264a760c91b13932/?ulp=https://www.movavi.com/store.html",
+        "url": "https://bednari.com/g/mwr0f878b0b68b264a760c91b13932/?ulp=https://www.movavi.com/store.html",
+        "store": {
+            "id": "movavi",
+            "name": "Movavi",
+            "logo": "/assets/images/brands/movavi.svg"
+        }
+    },
+    {
         "id": "lennuabi-claim-check",
         "storeId": "lennuabi",
         "title": "Flight Compensation Claim Eligibility Check",
