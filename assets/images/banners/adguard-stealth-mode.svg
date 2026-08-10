@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360">
+  <defs>
+    <linearGradient id="bgStealth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="shieldGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="360" rx="20" fill="url(#bgStealth)" />
+
+  <text x="400" y="42" font-family="-apple-system, sans-serif" font-weight="800" font-size="20" fill="#F8FAFC" text-anchor="middle">AdGuard Stealth Mode: Anti-Fingerprinting &amp; Privacy Shield</text>
+  <text x="400" y="66" font-family="-apple-system, sans-serif" font-weight="500" font-size="13" fill="#94A3B8" text-anchor="middle">Advanced Identity Protection Features Configurable in AdGuard Desktop &amp; Mobile</text>
+
+  <!-- 4 Feature Cards Grid -->
+  <g transform="translate(40, 95)">
+
+    <!-- Card 1: Tracking Parameter Removal -->
+    <g transform="translate(0, 0)">
+      <rect width="340" height="100" rx="12" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+      <circle cx="40" cy="50" r="22" fill="#0284C7" opacity="0.2" />
+      <text x="40" y="56" font-family="-apple-system, sans-serif" font-weight="800" font-size="18" fill="#38BDF8" text-anchor="middle">link</text>
+      <text x="75" y="38" font-family="-apple-system, sans-serif" font-weight="700" font-size="14" fill="#F8FAFC">UTM &amp; Tracking URL Stripping</text>
+      <text x="75" y="60" font-family="-apple-system, sans-serif" font-weight="400" font-size="12" fill="#94A3B8">Strips fbclid, gclid, utm_source, and affiliate tracking tags automatically from all outgoing page links.</text>
+    </g>
+
+    <!-- Card 2: Canvas & WebGL Masking -->
+    <g transform="translate(380, 0)">
+      <rect width="340" height="100" rx="12" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+      <circle cx="40" cy="50" r="22" fill="#10B981" opacity="0.2" />
+      <text x="40" y="56" font-family="-apple-system, sans-serif" font-weight="800" font-size="18" fill="#34D399" text-anchor="middle">fingerprint</text>
+      <text x="75" y="38" font-family="-apple-system, sans-serif" font-weight="700" font-size="14" fill="#F8FAFC">Canvas Fingerprint Masking</text>
+      <text x="75" y="60" font-family="-apple-system, sans-serif" font-weight="400" font-size="12" fill="#94A3B8">Prevents websites from drawing invisible HTML canvas elements to uniquely identify your computer hardware.</text>
+    </g>
+
+    <!-- Card 3: WebRTC Leak Protection -->
+    <g transform="translate(0, 120)">
+      <rect width="340" height="100" rx="12" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+      <circle cx="40" cy="50" r="22" fill="#F59E0B" opacity="0.2" />
+      <text x="40" y="56" font-family="-apple-system, sans-serif" font-weight="800" font-size="18" fill="#FBBF24" text-anchor="middle">security</text>
+      <text x="75" y="38" font-family="-apple-system, sans-serif" font-weight="700" font-size="14" fill="#F8FAFC">WebRTC Local IP Shield</text>
+      <text x="75" y="60" font-family="-apple-system, sans-serif" font-weight="400" font-size="12" fill="#94A3B8">Blocks WebRTC API vulnerabilities that expose your real internal local IP address through browser sockets.</text>
+    </g>
+
+    <!-- Card 4: Cookie Expiration Control -->
+    <g transform="translate(380, 120)">
+      <rect width="340" height="100" rx="12" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+      <circle cx="40" cy="50" r="22" fill="#EC4899" opacity="0.2" />
+      <text x="40" y="56" font-family="-apple-system, sans-serif" font-weight="800" font-size="18" fill="#F472B6" text-anchor="middle">cookie</text>
+      <text x="75" y="38" font-family="-apple-system, sans-serif" font-weight="700" font-size="14" fill="#F8FAFC">Self-Destructing Tracking Cookies</text>
+      <text x="75" y="60" font-family="-apple-system, sans-serif" font-weight="400" font-size="12" fill="#94A3B8">Sets maximum lifespan limits on third-party tracking cookies, destroying them automatically after 24 hours.</text>
+    </g>
+
+  </g>
+</svg>

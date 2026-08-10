@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Clean white rounded box background for store grids -->
+  <rect width="400" height="400" rx="64" fill="#FFFFFF" />
+  <rect width="392" height="392" x="4" y="4" rx="60" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="4"/>
+  
+  <g transform="translate(35, 125)">
+    <!-- AdGuard Shield Emblem -->
+    <g transform="translate(10, 0)">
+      <!-- Outer Green Shield Body -->
+      <path d="M 60,10 C 85,10 110,2 115,0 C 115,45 110,95 60,140 C 10,95 5,45 5,0 C 10,2 35,10 60,10 Z" fill="#67B279"/>
+      <!-- Inner Shield Shadow Gradient Overlay -->
+      <path d="M 60,16 C 82,16 102,9 107,7 C 107,46 102,89 60,129 C 18,89 13,46 13,7 C 18,9 38,16 60,16 Z" fill="#58A26A"/>
+      <!-- Crisp White Checkmark inside Shield -->
+      <path d="M 38,62 L 53,77 L 85,42 C 88,39 93,39 96,42 L 102,48 C 105,51 105,56 102,59 L 58,103 C 55,106 50,106 47,103 L 27,83 C 24,80 24,75 27,72 L 33,66 C 36,63 41,63 44,66 Z" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Wordmark text matching official AdGuard typography -->
+    <g transform="translate(145, 88)">
+      <text font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="42" letter-spacing="-1">
+        <tspan fill="#2C3A47">Ad</tspan>
+        <tspan fill="#67B279">Guard</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

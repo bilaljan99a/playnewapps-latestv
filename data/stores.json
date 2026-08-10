@@ -1,5 +1,51 @@
 [
     {
+        "id": "adguard",
+        "name": "AdGuard",
+        "icon": "shield",
+        "logo": "/assets/images/brands/adguard.svg",
+        "website": "https://adguard.com",
+        "storeUrl": "/adguard-coupons.html",
+        "affiliateLink": "https://dhwnh.com/g/xc497owldvb68b264a76a9584d7a68/",
+        "rating": 4.9,
+        "votes": 14820,
+        "seoTitle": "AdGuard Coupon Codes, Promo Deals & Privacy Software Offers (2026)",
+        "seoDescription": "Save 30% OFF AdGuard Ad Blocker and 75% OFF AdGuard VPN Annual Subscriptions with verified 2026 promo codes and privacy deals on PlayNewApps.",
+        "about": "AdGuard develops advanced ad blocking, tracking protection, DNS filtering, and VPN privacy solutions for Windows, macOS, Android, iOS, and major web browsers.",
+        "categories": [
+            "Software & Apps",
+            "Security & Privacy",
+            "Ad Blocking",
+            "VPN & DNS"
+        ],
+        "whyShop": [
+            "Official AdGuard software discount deals & verified 2026 promo links",
+            "30% OFF AdGuard Ad Blocker with verified discount code",
+            "75% OFF AdGuard VPN Annual Subscriptions with promo offer",
+            "Cross-platform protection for Windows, Mac, Android, iOS, and Smart TVs"
+        ],
+        "shoppingTips": [
+            "Click 'Get Code' to copy the verified 30% discount code at checkout for AdGuard Ad Blocker software licenses.",
+            "Use our verified VPN promo deal on the AdGuard VPN annual plan to get 75% off standard subscription pricing.",
+            "Choose a Family License (covers up to 9 devices) if you need system-wide protection across multiple phones and computers.",
+            "Configure AdGuard Public DNS on your router for free network-wide ad blocking without installing software."
+        ],
+        "faqs": [
+            {
+                "question": "What is the best working AdGuard discount code?",
+                "answer": "The top verified promo offers for AdGuard include 30% off AdGuard Ad Blocker and 75% off AdGuard VPN Annual Subscriptions. Click 'Show Code' to reveal and copy."
+            },
+            {
+                "question": "How do I use the 30% AdGuard coupon code?",
+                "answer": "Click 'Show Code' on PlayNewApps to copy the promo code, navigate to the official AdGuard checkout portal via our partner link, and paste the code into the promo box before finalizing payment."
+            },
+            {
+                "question": "How do I apply the discount for AdGuard VPN?",
+                "answer": "Click 'Get 75% Off' to copy the promo code, select the AdGuard VPN annual subscription plan at checkout, enter the code into the promo box, and instantly receive 75% off standard annual pricing."
+            }
+        ]
+    },
+    {
         "id": "movavi",
         "name": "Movavi",
         "icon": "video_library",

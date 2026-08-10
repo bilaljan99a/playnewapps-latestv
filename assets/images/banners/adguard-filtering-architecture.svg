@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bgArch" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="greenNode" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="400" rx="20" fill="url(#bgArch)" />
+
+  <!-- Diagram Header -->
+  <text x="400" y="45" font-family="-apple-system, sans-serif" font-weight="800" font-size="20" fill="#F8FAFC" text-anchor="middle">How AdGuard System-Wide Traffic Filtering Works</text>
+  <text x="400" y="70" font-family="-apple-system, sans-serif" font-weight="500" font-size="13" fill="#94A3B8" text-anchor="middle">Local Network Driver Inspection Engine &amp; Threat Suppression Flow</text>
+
+  <!-- Flow Step 1: Raw Web Request -->
+  <g transform="translate(40, 110)" filter="url(#shadow)">
+    <rect width="180" height="220" rx="14" fill="#1E293B" stroke="#334155" stroke-width="2" />
+    <rect x="0" y="0" width="180" height="38" rx="14" fill="#334155" />
+    <text x="90" y="24" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#F1F5F9" text-anchor="middle">1. Web Traffic</text>
+
+    <g transform="translate(20, 55)">
+      <rect x="0" y="0" width="140" height="32" rx="6" fill="#EF4444" opacity="0.2" stroke="#EF4444" stroke-width="1" />
+      <text x="70" y="20" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#FCA5A5" text-anchor="middle">Banner &amp; Video Ads</text>
+
+      <rect x="0" y="42" width="140" height="32" rx="6" fill="#F59E0B" opacity="0.2" stroke="#F59E0B" stroke-width="1" />
+      <text x="70" y="62" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#FDE68A" text-anchor="middle">Tracking Beacons</text>
+
+      <rect x="0" y="84" width="140" height="32" rx="6" fill="#EF4444" opacity="0.2" stroke="#EF4444" stroke-width="1" />
+      <text x="70" y="104" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#FCA5A5" text-anchor="middle">Malware &amp; Phishing</text>
+
+      <rect x="0" y="126" width="140" height="32" rx="6" fill="#3B82F6" opacity="0.2" stroke="#3B82F6" stroke-width="1" />
+      <text x="70" y="146" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#93C5FD" text-anchor="middle">Clean Web Content</text>
+    </g>
+  </g>
+
+  <!-- Arrow 1 to 2 -->
+  <path d="M 230 220 L 285 220" stroke="#64748B" stroke-width="3" stroke-dasharray="6 4" />
+  <polygon points="285,215 295,220 285,225" fill="#64748B" />
+
+  <!-- Flow Step 2: AdGuard Local Core Engine -->
+  <g transform="translate(300, 100)" filter="url(#shadow)">
+    <rect width="200" height="240" rx="16" fill="#064E3B" stroke="#10B981" stroke-width="2.5" />
+    <rect x="0" y="0" width="200" height="44" rx="16" fill="url(#greenNode)" />
+    <text x="100" y="27" font-family="-apple-system, sans-serif" font-weight="800" font-size="14" fill="#FFFFFF" text-anchor="middle">2. AdGuard Core Engine</text>
+
+    <g transform="translate(15, 58)">
+      <rect x="0" y="0" width="170" height="32" rx="6" fill="#022C22" stroke="#059669" stroke-width="1" />
+      <text x="85" y="20" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#A7F3D0" text-anchor="middle">Local WFP / Network Driver</text>
+
+      <rect x="0" y="42" width="170" height="32" rx="6" fill="#022C22" stroke="#059669" stroke-width="1" />
+      <text x="85" y="62" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#A7F3D0" text-anchor="middle">HTTPS SSL Inspection</text>
+
+      <rect x="0" y="84" width="170" height="32" rx="6" fill="#022C22" stroke="#059669" stroke-width="1" />
+      <text x="85" y="104" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#A7F3D0" text-anchor="middle">Stealth Mode Fingerprint</text>
+
+      <rect x="0" y="126" width="170" height="32" rx="6" fill="#022C22" stroke="#059669" stroke-width="1" />
+      <text x="85" y="146" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#A7F3D0" text-anchor="middle">Cosmetic DOM Sanitization</text>
+    </g>
+  </g>
+
+  <!-- Arrow 2 to 3 -->
+  <path d="M 510 220 L 565 220" stroke="#10B981" stroke-width="3" />
+  <polygon points="565,215 575,220 565,225" fill="#10B981" />
+
+  <!-- Flow Step 3: Clean & Fast Web Result -->
+  <g transform="translate(580, 110)" filter="url(#shadow)">
+    <rect width="180" height="220" rx="14" fill="#1E293B" stroke="#10B981" stroke-width="2" />
+    <rect x="0" y="0" width="180" height="38" rx="14" fill="#065F46" />
+    <text x="90" y="24" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#ECFDF5" text-anchor="middle">3. Clean Web Render</text>
+
+    <g transform="translate(20, 55)">
+      <rect x="0" y="0" width="140" height="36" rx="6" fill="#064E3B" border="1" stroke="#10B981" />
+      <text x="70" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#A7F3D0" text-anchor="middle">✓ Zero Advertisements</text>
+
+      <rect x="0" y="46" width="140" height="36" rx="6" fill="#064E3B" stroke="#10B981" />
+      <text x="70" y="68" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#A7F3D0" text-anchor="middle">✓ Trackers Stripped</text>
+
+      <rect x="0" y="92" width="140" height="36" rx="6" fill="#064E3B" stroke="#10B981" />
+      <text x="70" y="114" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#A7F3D0" text-anchor="middle">✓ 2.5x Faster Load</text>
+
+      <rect x="0" y="138" width="140" height="28" rx="6" fill="#0284C7" />
+      <text x="70" y="156" font-family="-apple-system, sans-serif" font-weight="800" font-size="10" fill="#FFFFFF" text-anchor="middle">60% Data Conserved</text>
+    </g>
+  </g>
+</svg>
