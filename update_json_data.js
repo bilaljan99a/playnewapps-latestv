@@ -14,8 +14,8 @@ if (fs.existsSync(softwarePath)) {
       item.logo = "/assets/images/brands/italki.svg";
       item.image = "/assets/images/brands/italki.svg";
       item.heroImage = "/assets/images/banners/italki-banner-deal-1.svg";
-      item.reviewUrl = "italki-coupons.html";
-      item.url = "italki-coupons.html";
+      item.reviewUrl = "italki-review.html";
+      item.url = "italki-review.html";
     }
     if (item.id === 'applicantally') {
       item.title = "ApplicantAlly Review (2026): AI Live Interview Assistant & Copilot";
