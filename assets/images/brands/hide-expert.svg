@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="100%" height="100%">
+  <!-- Raccoon Icon Group -->
+  <g transform="translate(15, 10)">
+    <!-- Left Half: Light Gray Outline -->
+    <path d="M 45 12 C 38 2 25 2 18 10 C 12 18 18 30 22 36 C 10 45 8 62 14 78 C 20 92 34 96 45 96 Z" fill="none" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Left Eye Mask Outer Contour -->
+    <path d="M 45 42 C 35 38 22 45 20 58 C 18 70 30 78 45 72 Z" fill="none" stroke="#cbd5e1" stroke-width="3"/>
+    <!-- Left Eye (Closed Arc) -->
+    <path d="M 28 56 C 31 52 36 52 39 56" fill="none" stroke="#0f172a" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Right Half: Dark Navy Filled -->
+    <path d="M 45 12 C 52 2 65 2 72 10 C 78 18 72 30 68 36 C 80 45 82 62 76 78 C 70 92 56 96 45 96 Z" fill="#0f172a"/>
+    <!-- Right Eye Mask Outer Contour -->
+    <path d="M 45 42 C 55 38 68 45 70 58 C 72 70 60 78 45 72 Z" fill="#ffffff"/>
+    <!-- Right Eye (Closed Arc) -->
+    <path d="M 62 56 C 59 52 54 52 51 56" fill="none" stroke="#0f172a" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Snout & Nose Center -->
+    <ellipse cx="45" cy="78" rx="6" ry="4" fill="#0f172a"/>
+  </g>
+
+  <!-- Brand Typography -->
+  <!-- "Hide" in Bright Mint Green -->
+  <text x="115" y="48" font-family="'Roboto Mono', 'Courier New', monospace, sans-serif" font-weight="700" font-size="40" fill="#34d399" letter-spacing="0.5">Hide</text>
+  <!-- "expert" in Dark Navy -->
+  <text x="115" y="84" font-family="'Roboto Mono', 'Courier New', monospace, sans-serif" font-weight="700" font-size="36" fill="#0f172a" letter-spacing="0.5">expert</text>
+</svg>

@@ -3080,5 +3080,41 @@
         "affiliateUrl": "https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/",
         "url": "https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/",
         "isVerified": true
+    },
+    {
+        "id": "hide-expert-12-month",
+        "storeId": "hide-expert-vpn",
+        "title": "Hide Expert VPN 12-Month Subscription ($4.00/mo)",
+        "description": "Annual 12-month subscription tier at $47.99 total ($4.00/mo effective price). Includes 3-day money-back guarantee, wireguard support, and all platforms.",
+        "code": "DIRECT PLAN",
+        "discount": "49% OFF",
+        "expiryDate": "2026-12-31",
+        "affiliateUrl": "https://naiawork.com/g/mqr3z6v616b68b264a76d41095e078/",
+        "url": "https://naiawork.com/g/mqr3z6v616b68b264a76d41095e078/",
+        "isVerified": true
+    },
+    {
+        "id": "hide-expert-6-month",
+        "storeId": "hide-expert-vpn",
+        "title": "Hide Expert VPN 6-Month Subscription ($5.00/mo)",
+        "description": "6-month subscription plan at $29.99 total ($5.00/mo effective price). Save 37% vs monthly plan rate with full cross-platform privacy.",
+        "code": "DIRECT PLAN",
+        "discount": "37% OFF",
+        "expiryDate": "2026-12-31",
+        "affiliateUrl": "https://naiawork.com/g/mqr3z6v616b68b264a76d41095e078/",
+        "url": "https://naiawork.com/g/mqr3z6v616b68b264a76d41095e078/",
+        "isVerified": true
+    },
+    {
+        "id": "hide-expert-1-month",
+        "storeId": "hide-expert-vpn",
+        "title": "Hide Expert VPN 1-Month Subscription ($7.99/mo)",
+        "description": "Flexible 1-month plan at $7.99/mo with no long-term commitment. Includes instant access to all VPN protocols and zero-logging privacy.",
+        "code": "DIRECT PLAN",
+        "discount": "$7.99 / MO",
+        "expiryDate": "2026-12-31",
+        "affiliateUrl": "https://naiawork.com/g/mqr3z6v616b68b264a76d41095e078/",
+        "url": "https://naiawork.com/g/mqr3z6v616b68b264a76d41095e078/",
+        "isVerified": true
     }
 ]
