@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="900" height="450">
+  <defs>
+    <linearGradient id="bgG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="450" rx="20" fill="url(#bgG)" stroke="#CBD5E1" stroke-width="1.5" />
+
+  <!-- Header -->
+  <text x="450" y="50" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="28" fill="#061838" text-anchor="middle">EU 261/2004 Flight Compensation Tiers</text>
+  <text x="450" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="16" fill="#64748B" text-anchor="middle">Legally mandated compensation payouts based on flight distance and delay length</text>
+
+  <!-- 3 Columns -->
+  <!-- Tier 1 -->
+  <g transform="translate(40, 110)">
+    <rect width="250" height="290" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+    <rect x="0" y="0" width="250" height="70" rx="16" fill="#3B82F6" />
+    <text x="125" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="32" fill="#FFFFFF" text-anchor="middle">€250</text>
+    
+    <text x="125" y="105" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="16" fill="#0F172A" text-anchor="middle">Short-Haul Flights</text>
+    <text x="125" y="130" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="14" fill="#64748B" text-anchor="middle">Up to 1,500 km</text>
+
+    <line x1="20" y1="150" x2="230" y2="150" stroke="#F1F5F9" stroke-width="2" />
+
+    <text x="25" y="180" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="13" fill="#334155">• Delay: 3+ hours</text>
+    <text x="25" y="205" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="13" fill="#334155">• Cancellation &lt; 14 days</text>
+    <text x="25" y="230" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="13" fill="#334155">• Denied boarding</text>
+
+    <rect x="20" y="250" width="210" height="28" rx="6" fill="#EFF6FF" />
+    <text x="125" y="269" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#1D4ED8" text-anchor="middle">e.g. London → Paris</text>
+  </g>
+
+  <!-- Tier 2 -->
+  <g transform="translate(325, 110)">
+    <rect width="250" height="290" rx="16" fill="#FFFFFF" stroke="#3B82F6" stroke-width="2" />
+    <rect x="0" y="0" width="250" height="70" rx="16" fill="#2563EB" />
+    <text x="125" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="32" fill="#FFFFFF" text-anchor="middle">€400</text>
+    
+    <text x="125" y="105" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="16" fill="#0F172A" text-anchor="middle">Medium-Haul Flights</text>
+    <text x="125" y="130" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="14" fill="#64748B" text-anchor="middle">1,500 km – 3,500 km</text>
+
+    <line x1="20" y1="150" x2="230" y2="150" stroke="#F1F5F9" stroke-width="2" />
+
+    <text x="25" y="180" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="13" fill="#334155">• Delay: 3+ hours</text>
+    <text x="25" y="205" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="13" fill="#334155">• All intra-EU > 1500km</text>
+    <text x="25" y="230" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="13" fill="#334155">• Missed connections</text>
+
+    <rect x="20" y="250" width="210" height="28" rx="6" fill="#EFF6FF" />
+    <text x="125" y="269" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#1D4ED8" text-anchor="middle">e.g. Berlin → Canary Islands</text>
+  </g>
+
+  <!-- Tier 3 -->
+  <g transform="translate(610, 110)">
+    <rect width="250" height="290" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+    <rect x="0" y="0" width="250" height="70" rx="16" fill="#061838" />
+    <text x="125" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="32" fill="#FFC800" text-anchor="middle">€600</text>
+    
+    <text x="125" y="105" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="16" fill="#0F172A" text-anchor="middle">Long-Haul Flights</text>
+    <text x="125" y="130" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="14" fill="#64748B" text-anchor="middle">Over 3,500 km</text>
+
+    <line x1="20" y1="150" x2="230" y2="150" stroke="#F1F5F9" stroke-width="2" />
+
+    <text x="25" y="180" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="13" fill="#334155">• Delay: 4+ hours</text>
+    <text x="25" y="205" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="13" fill="#334155">• Extra-EU flights</text>
+    <text x="25" y="230" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="13" fill="#334155">• Major cancellations</text>
+
+    <rect x="20" y="250" width="210" height="28" rx="6" fill="#FEF3C7" />
+    <text x="125" y="269" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#D97706" text-anchor="middle">e.g. Frankfurt → New York</text>
+  </g>
+</svg>

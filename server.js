@@ -27,8 +27,17 @@ app.use((req, res, next) => {
   next();
 });
 
-// Serve static files
-app.use(express.static(__dirname));
+// Specific routes for clean URLs
+app.get('/lennuabi-coupons', (req, res) => {
+  res.sendFile(path.join(__dirname, 'lennuabi-coupons.html'));
+});
+
+app.get('/lennuabi-review', (req, res) => {
+  res.sendFile(path.join(__dirname, 'lennuabi-review.html'));
+});
+
+// Serve static files with html extension fallback
+app.use(express.static(__dirname, { extensions: ['html'] }));
 
 // Custom 404 for any other missing routes
 app.use((req, res) => {

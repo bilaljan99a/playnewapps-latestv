@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="800" height="240">
+  <defs>
+    <linearGradient id="refGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="240" rx="16" fill="url(#refGrad)" stroke="#FFC800" stroke-width="1.5" />
+
+  <g transform="translate(40, 40)">
+    <rect width="120" height="30" rx="15" fill="#FFC800" fill-opacity="0.2" stroke="#FFC800" />
+    <text x="15" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#FFC800">REFERRAL BONUS</text>
+
+    <text x="0" y="70" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="30" fill="#FFFFFF">Earn Up To <tspan fill="#FFC800">€75 Per Friend</tspan></text>
+    <text x="0" y="100" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="15" fill="#94A3B8">Share your Lennuabi referral link with friends who experienced flight delays.</text>
+    <text x="0" y="122" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="15" fill="#94A3B8">Receive a cash reward as soon as their claim is approved and settled!</text>
+  </g>
+
+  <g transform="translate(560, 45)">
+    <rect width="180" height="150" rx="16" fill="#061838" stroke="#10B981" stroke-width="1.5" />
+    <text x="90" y="45" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="36" fill="#34D399" text-anchor="middle">€75</text>
+    <text x="90" y="75" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#FFFFFF" text-anchor="middle">Cash Bonus</text>
+    <rect x="25" y="100" width="130" height="30" rx="6" fill="#10B981" />
+    <text x="90" y="120" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#FFFFFF" text-anchor="middle">INVITE FRIENDS</text>
+  </g>
+</svg>

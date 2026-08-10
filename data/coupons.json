@@ -1,5 +1,17 @@
 [
     {
+        "id": "lennuabi-claim-check",
+        "storeId": "lennuabi",
+        "title": "Flight Compensation Claim Eligibility Check",
+        "description": "No verified Lennuabi coupon code is currently available. Check your EU EC 261/2004 flight delay or cancellation compensation eligibility online.",
+        "type": "deal",
+        "discount": "FREE CHECK",
+        "verified": true,
+        "affiliateUrl": "https://cafxq.com/g/913bhutj0zb68b264a76a8b9cbb737/",
+        "affiliateLink": "https://cafxq.com/g/913bhutj0zb68b264a76a8b9cbb737/",
+        "expiry": "2026-12-31"
+    },
+    {
         "id": "italki-trial-50",
         "storeId": "italki",
         "title": "Up to 50% Off Trial Lessons",

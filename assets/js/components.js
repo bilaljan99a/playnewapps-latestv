@@ -152,12 +152,13 @@ class Components {
         const rating = item.rating || 4.9;
         const votes = item.votes ? `(${item.votes} votes)` : '';
         const link = item.affiliateLink || `store.html?id=${item.id}`;
+        const viewLink = item.storeUrl || `store.html?id=${item.id}`;
         return `
             <article class="card store-card affiliate-card" data-store-id="${item.id}">
                 <div class="coupon-header" style="align-items: center; gap: 1rem;">
                     <img src="${item.logo}" alt="${item.name} Logo" class="store-logo" width="55" height="55" loading="lazy" style="object-fit: contain; background: #ffffff; border-radius: 10px; padding: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.08);">
                     <div>
-                        <h3 class="card-title" style="margin-bottom: 0.25rem; font-size: 1.15rem;"><a href="store.html?id=${item.id}">${item.name}</a></h3>
+                        <h3 class="card-title" style="margin-bottom: 0.25rem; font-size: 1.15rem;"><a href="${viewLink}">${item.name}</a></h3>
                         <div class="rating" aria-label="Rating ${rating} out of 5 stars">
                             ${this.getRatingStars(rating)}
                             <span class="rating-text">${rating} ${votes}</span>
@@ -168,7 +169,7 @@ class Components {
                     <p class="card-excerpt" style="font-size: 0.875rem; color: #64748b; margin-bottom: 1rem; line-height: 1.5;">${item.about}</p>
                     <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
                         <a href="${link}" target="_blank" rel="noopener sponsored" class="btn btn-primary cta-pulse" style="flex: 1; text-align: center; justify-content: center;">Official Store</a>
-                        <a href="store.html?id=${item.id}" class="btn btn-outline" style="white-space: nowrap;">View Deals</a>
+                        <a href="${viewLink}" class="btn btn-outline" style="white-space: nowrap;">View Deals</a>
                     </div>
                 </div>
             </article>

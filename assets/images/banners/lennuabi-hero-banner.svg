@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061838" />
+      <stop offset="50%" stop-color="#0B2545" />
+      <stop offset="100%" stop-color="#134074" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFC800" />
+      <stop offset="100%" stop-color="#FF9900" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#skyGrad)" />
+  
+  <!-- Subtle Flight Path Lines -->
+  <path d="M -100 500 Q 400 200 1300 100" stroke="#FFC800" stroke-opacity="0.15" stroke-width="3" fill="none" stroke-dasharray="12,12" />
+  <path d="M -100 550 Q 500 250 1300 150" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2" fill="none" />
+
+  <!-- Left Side: Text & Value Proposition -->
+  <g transform="translate(80, 100)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="280" height="38" rx="19" fill="#FFC800" fill-opacity="0.2" stroke="#FFC800" stroke-width="1.5" />
+    <text x="20" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#FFC800" letter-spacing="1">EU REGULATION EC 261/2004</text>
+
+    <!-- Main Heading -->
+    <text x="0" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="46" fill="#FFFFFF">Get Up To <tspan fill="#FFC800">€600</tspan> Flight</text>
+    <text x="0" y="145" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="46" fill="#FFFFFF">Compensation With Lennuabi</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="200" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="20" fill="#94A3B8">Delayed, Canceled, or Overbooked Flight? Claim Your</text>
+    <text x="0" y="230" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="20" fill="#94A3B8">Legal Passenger Rights Money with Zero Upfront Risk.</text>
+
+    <!-- Features Pill List -->
+    <g transform="translate(0, 270)">
+      <!-- Item 1 -->
+      <circle cx="12" cy="12" r="10" fill="#10B981" />
+      <path d="M8 12 L11 15 L16 9" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="32" y="17" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="16" fill="#F8FAFC">100% No Win, No Fee Guarantee</text>
+
+      <!-- Item 2 -->
+      <circle cx="12" cy="48" r="10" fill="#10B981" />
+      <path d="M8 48 L11 51 L16 45" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="32" y="53" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="16" fill="#F8FAFC">Free Instant Eligibility Flight Checker</text>
+
+      <!-- Item 3 -->
+      <circle cx="12" cy="84" r="10" fill="#10B981" />
+      <path d="M8 84 L11 87 L16 81" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="32" y="89" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="16" fill="#F8FAFC">Earn Up To €75 Referral Rewards</text>
+    </g>
+
+    <!-- CTA Button Graphic -->
+    <g transform="translate(0, 395)" filter="url(#shadow)">
+      <rect x="0" y="0" width="310" height="58" rx="14" fill="url(#goldGrad)" />
+      <text x="35" y="35" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="18" fill="#061838">CHECK FLIGHT COMPENSATION</text>
+      <path d="M 265 29 L 275 29 M 271 24 L 276 29 L 271 34" stroke="#061838" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  </g>
+
+  <!-- Right Side: Flight Board & Compensation Calculator Graphic -->
+  <g transform="translate(680, 90)" filter="url(#shadow)">
+    <!-- Main Card Container -->
+    <rect x="0" y="0" width="440" height="450" rx="24" fill="url(#cardGrad)" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1.5" />
+
+    <!-- Flight Board Header -->
+    <rect x="0" y="0" width="440" height="70" rx="24" fill="#0F284D" />
+    <text x="30" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="18" fill="#FFFFFF">Flight Disruption Status Board</text>
+    <rect x="330" y="22" width="80" height="26" rx="13" fill="#EF4444" fill-opacity="0.2" stroke="#EF4444" stroke-width="1" />
+    <text x="345" y="39" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#F87171">DELAYED</text>
+
+    <!-- Flight Details Row 1 -->
+    <g transform="translate(30, 95)">
+      <text x="0" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="16" fill="#F8FAFC">Flight LH 1422 (Frankfurt → Tallinn)</text>
+      <text x="0" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="14" fill="#94A3B8">Delay Duration: 4 Hours 15 Mins</text>
+      <rect x="270" y="5" width="110" height="36" rx="8" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-width="1" />
+      <text x="282" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="15" fill="#34D399">Eligible: €400</text>
+    </g>
+
+    <line x1="30" y1="165" x2="410" y2="165" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1" />
+
+    <!-- Flight Details Row 2 -->
+    <g transform="translate(30, 185)">
+      <text x="0" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="16" fill="#F8FAFC">Flight AY 1008 (Helsinki → London)</text>
+      <text x="0" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="14" fill="#94A3B8">Cancelled (Notified 2 days prior)</text>
+      <rect x="270" y="5" width="110" height="36" rx="8" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-width="1" />
+      <text x="282" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="15" fill="#34D399">Eligible: €600</text>
+    </g>
+
+    <line x1="30" y1="255" x2="410" y2="255" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1" />
+
+    <!-- Summary Box inside Card -->
+    <g transform="translate(30, 280)">
+      <rect x="0" y="0" width="380" height="135" rx="16" fill="#061838" stroke="#FFC800" stroke-opacity="0.3" stroke-width="1.5" />
+      <text x="20" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="15" fill="#FFC800">Lennuabi Claim Guarantee</text>
+      <text x="20" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="13" fill="#CBD5E1">• EC261/2004 Legal Enforcement</text>
+      <text x="20" y="82" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="13" fill="#CBD5E1">• No Legal Risk / Zero Out-of-Pocket Cost</text>
+      <text x="20" y="104" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="13" fill="#CBD5E1">• Fast Direct Payout to Bank Account</text>
+    </g>
+  </g>
+</svg>

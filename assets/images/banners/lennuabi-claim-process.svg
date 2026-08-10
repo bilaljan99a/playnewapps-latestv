@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="1000" height="320">
+  <rect width="1000" height="320" rx="18" fill="#061838" />
+
+  <text x="500" y="45" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="24" fill="#FFFFFF" text-anchor="middle">How Lennuabi Handles Your Flight Claim</text>
+  <text x="500" y="70" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="14" fill="#94A3B8" text-anchor="middle">5 Simple Steps from Flight Delay to Bank Payout</text>
+
+  <!-- 5 Connected Nodes -->
+  <!-- Step 1 -->
+  <g transform="translate(50, 110)">
+    <rect width="150" height="160" rx="14" fill="#0B2545" stroke="#FFC800" stroke-width="1.5" />
+    <circle cx="75" cy="35" r="20" fill="#FFC800" />
+    <text x="75" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="18" fill="#061838" text-anchor="middle">1</text>
+    <text x="75" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#FFFFFF" text-anchor="middle">Check Flight</text>
+    <text x="75" y="105" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="12" fill="#94A3B8" text-anchor="middle">Enter flight no. &amp; date</text>
+    <text x="75" y="122" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="12" fill="#94A3B8" text-anchor="middle">Instant estimate</text>
+  </g>
+
+  <!-- Step 2 -->
+  <g transform="translate(235, 110)">
+    <rect width="150" height="160" rx="14" fill="#0B2545" stroke="#38BDF8" stroke-width="1.5" />
+    <circle cx="75" cy="35" r="20" fill="#38BDF8" />
+    <text x="75" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="18" fill="#061838" text-anchor="middle">2</text>
+    <text x="75" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#FFFFFF" text-anchor="middle">Submit Docs</text>
+    <text x="75" y="105" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="12" fill="#94A3B8" text-anchor="middle">Upload boarding pass</text>
+    <text x="75" y="122" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="12" fill="#94A3B8" text-anchor="middle">&amp; ID details</text>
+  </g>
+
+  <!-- Step 3 -->
+  <g transform="translate(420, 110)">
+    <rect width="150" height="160" rx="14" fill="#0B2545" stroke="#38BDF8" stroke-width="1.5" />
+    <circle cx="75" cy="35" r="20" fill="#38BDF8" />
+    <text x="75" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="18" fill="#061838" text-anchor="middle">3</text>
+    <text x="75" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#FFFFFF" text-anchor="middle">Legal Review</text>
+    <text x="75" y="105" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="12" fill="#94A3B8" text-anchor="middle">Lennuabi verifies</text>
+    <text x="75" y="122" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="12" fill="#94A3B8" text-anchor="middle">weather &amp; radar</text>
+  </g>
+
+  <!-- Step 4 -->
+  <g transform="translate(605, 110)">
+    <rect width="150" height="160" rx="14" fill="#0B2545" stroke="#38BDF8" stroke-width="1.5" />
+    <circle cx="75" cy="35" r="20" fill="#38BDF8" />
+    <text x="75" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="18" fill="#061838" text-anchor="middle">4</text>
+    <text x="75" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#FFFFFF" text-anchor="middle">Negotiation</text>
+    <text x="75" y="105" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="12" fill="#94A3B8" text-anchor="middle">Lennuabi enforces</text>
+    <text x="75" y="122" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="12" fill="#94A3B8" text-anchor="middle">airline payout</text>
+  </g>
+
+  <!-- Step 5 -->
+  <g transform="translate(790, 110)">
+    <rect width="150" height="160" rx="14" fill="#0B2545" stroke="#10B981" stroke-width="2" />
+    <circle cx="75" cy="35" r="20" fill="#10B981" />
+    <text x="75" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="18" fill="#FFFFFF" text-anchor="middle">5</text>
+    <text x="75" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#34D399" text-anchor="middle">Receive Cash</text>
+    <text x="75" y="105" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="12" fill="#94A3B8" text-anchor="middle">Money transferred</text>
+    <text x="75" y="122" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="12" fill="#94A3B8" text-anchor="middle">direct to bank</text>
+  </g>
+</svg>

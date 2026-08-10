@@ -1748,6 +1748,11 @@ App.initStorePage = async function() {
         return;
     }
 
+    if (store.storeUrl && store.storeUrl.startsWith('/') && !window.location.pathname.endsWith(store.storeUrl)) {
+        window.location.replace(store.storeUrl);
+        return;
+    }
+
     if (store.seoTitle) {
         document.title = `${store.seoTitle} | PlayNewApps`;
     } else {
@@ -1897,7 +1902,7 @@ App.initStorePage = async function() {
     const brandSection = document.getElementById('store-about-brand-section');
     if (brandTitle && brandText) {
         brandTitle.textContent = `About ${store.name}`;
-        let brandHtml = `<p style="margin-bottom: 0.75rem;">${store.about || `${store.name} is a leading global marketplace offering quality products and exclusive promotional discounts.`}</p>`;
+        let brandHtml = '';
 
         if (store.detailedOverview) {
             brandHtml += `<p style="margin-bottom: 0.75rem; color: var(--text-color); line-height: 1.6;">${store.detailedOverview}</p>`;
