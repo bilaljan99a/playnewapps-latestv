@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="connectedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main Background Container -->
+  <rect width="1000" height="520" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="2"/>
+
+  <!-- Top Window Header Bar -->
+  <path d="M 0 16 A 16 16 0 0 1 16 0 L 984 0 A 16 16 0 0 1 1000 16 L 1000 44 L 0 44 Z" fill="#1E293B" />
+  <line x1="0" y1="44" x2="1000" y2="44" stroke="#334155" stroke-width="1"/>
+  <circle cx="24" cy="22" r="6" fill="#EF4444"/>
+  <circle cx="44" cy="22" r="6" fill="#F59E0B"/>
+  <circle cx="64" cy="22" r="6" fill="#10B981"/>
+  <text x="500" y="27" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="13">Hide Expert VPN Desktop Client v4.2 – Connected (WireGuard ChaCha20-Poly1305)</text>
+
+  <!-- Left Sidebar Panel -->
+  <g transform="translate(20, 60)">
+    <rect x="0" y="0" width="230" height="440" rx="12" fill="url(#cardGrad)" stroke="#334155"/>
+    
+    <!-- Brand Title -->
+    <g transform="translate(20, 25)">
+      <rect x="0" y="0" width="32" height="32" rx="8" fill="url(#accentGrad)"/>
+      <path d="M16 8 L22 13 L22 20 C22 24 16 27 16 27 C16 27 10 24 10 20 L10 13 Z" fill="#FFFFFF"/>
+      <text x="42" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="16">Hide Expert</text>
+    </g>
+
+    <!-- Navigation Menu -->
+    <g transform="translate(15, 80)">
+      <!-- Active Item -->
+      <rect x="0" y="0" width="200" height="42" rx="8" fill="#2563EB" fill-opacity="0.25" stroke="#3B82F6" stroke-width="1"/>
+      <text x="35" y="26" fill="#60A5FA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="13">⚡ Quick Connect</text>
+      <circle cx="20" cy="21" r="4" fill="#3B82F6"/>
+
+      <rect x="0" y="50" width="200" height="42" rx="8" fill="transparent"/>
+      <text x="35" y="76" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13">🌐 Server Locations (65+)</text>
+
+      <rect x="0" y="100" width="200" height="42" rx="8" fill="transparent"/>
+      <text x="35" y="126" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13">🛡️ Stealth VLESS Protocol</text>
+
+      <rect x="0" y="150" width="200" height="42" rx="8" fill="transparent"/>
+      <text x="35" y="176" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13">🔒 Kill Switch Settings</text>
+
+      <rect x="0" y="200" width="200" height="42" rx="8" fill="transparent"/>
+      <text x="35" y="226" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13">📊 Network Telemetry</text>
+
+      <rect x="0" y="250" width="200" height="42" rx="8" fill="transparent"/>
+      <text x="35" y="276" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13">⚙️ App Preferences</text>
+    </g>
+
+    <!-- Subscription Status Badge -->
+    <g transform="translate(15, 380)">
+      <rect x="0" y="0" width="200" height="44" rx="8" fill="#0F172A" stroke="#334155"/>
+      <text x="12" y="20" fill="#10B981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="11">● PREMIUM ANNUAL PLAN</text>
+      <text x="12" y="34" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="10">Active until Dec 2026 (Unlimited)</text>
+    </g>
+  </g>
+
+  <!-- Middle Main Connection Area -->
+  <g transform="translate(265, 60)">
+    <rect x="0" y="0" width="440" height="440" rx="12" fill="url(#cardGrad)" stroke="#334155"/>
+
+    <!-- Large Connect Ring Button -->
+    <g transform="translate(220, 130)">
+      <circle cx="0" cy="0" r="65" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-width="4"/>
+      <circle cx="0" cy="0" r="50" fill="url(#connectedGrad)"/>
+      <!-- Shield Power Icon -->
+      <path d="M-10 -12 L10 -12 L10 -2 C10 12 0 20 0 20 C0 20 -10 12 -10 -2 Z" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Connection Info Text -->
+    <text x="220" y="225" text-anchor="middle" fill="#10B981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="18">PROTECTED &amp; ENCRYPTED</text>
+    <text x="220" y="248" text-anchor="middle" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="14">Virtual IP: 185.192.68.14</text>
+    <text x="220" y="268" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="12">Location: Frankfurt am Main, Germany (Server #04)</text>
+
+    <!-- Details Box Grid -->
+    <g transform="translate(20, 290)">
+      <rect x="0" y="0" width="400" height="130" rx="10" fill="#0F172A" stroke="#334155"/>
+
+      <!-- Grid Item 1 -->
+      <g transform="translate(20, 20)">
+        <text x="0" y="12" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="10" letter-spacing="0.5">PROTOCOL</text>
+        <text x="0" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="13">WireGuard (UDP)</text>
+      </g>
+
+      <!-- Grid Item 2 -->
+      <g transform="translate(220, 20)">
+        <text x="0" y="12" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="10" letter-spacing="0.5">ENCRYPTION</text>
+        <text x="0" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="13">ChaCha20-Poly1305</text>
+      </g>
+
+      <!-- Grid Item 3 -->
+      <g transform="translate(20, 75)">
+        <text x="0" y="12" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="10" letter-spacing="0.5">DOWNLOAD SPEED</text>
+        <text x="0" y="32" fill="#10B981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="14">482.4 Mbps ↓</text>
+      </g>
+
+      <!-- Grid Item 4 -->
+      <g transform="translate(220, 75)">
+        <text x="0" y="12" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="10" letter-spacing="0.5">PING LATENCY</text>
+        <text x="0" y="32" fill="#3B82F6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="14">14 ms (Ultra Low)</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Sidebar - Features & Server List Quick Select -->
+  <g transform="translate(720, 60)">
+    <rect x="0" y="0" width="260" height="440" rx="12" fill="url(#cardGrad)" stroke="#334155"/>
+    <text x="15" y="28" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="13">Active Security Features</text>
+
+    <!-- Feature Toggles -->
+    <g transform="translate(15, 45)">
+      <!-- Item 1 -->
+      <rect x="0" y="0" width="230" height="50" rx="8" fill="#0F172A" stroke="#334155"/>
+      <text x="12" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="12">System Kill Switch</text>
+      <text x="12" y="38" fill="#10B981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="10">Active – Leak Proof</text>
+      <rect x="180" y="15" width="38" height="20" rx="10" fill="#10B981"/>
+      <circle cx="208" cy="25" r="7" fill="#FFFFFF"/>
+
+      <!-- Item 2 -->
+      <rect x="0" y="60" width="230" height="50" rx="8" fill="#0F172A" stroke="#334155"/>
+      <text x="12" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="12">DNS Leak Protection</text>
+      <text x="12" y="38" fill="#10B981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="10">Active – Secure Resolvers</text>
+      <rect x="180" y="75" width="38" height="20" rx="10" fill="#10B981"/>
+      <circle cx="208" cy="85" r="7" fill="#FFFFFF"/>
+
+      <!-- Item 3 -->
+      <rect x="0" y="120" width="230" height="50" rx="8" fill="#0F172A" stroke="#334155"/>
+      <text x="12" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="12">IPv6 Filtering</text>
+      <text x="12" y="38" fill="#10B981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="10">Active – Dual Stack Guard</text>
+      <rect x="180" y="135" width="38" height="20" rx="10" fill="#10B981"/>
+      <circle cx="208" cy="145" r="7" fill="#FFFFFF"/>
+
+      <!-- Item 4 -->
+      <rect x="0" y="180" width="230" height="50" rx="8" fill="#0F172A" stroke="#334155"/>
+      <text x="12" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="12">Auto-Connect Wi-Fi</text>
+      <text x="12" y="38" fill="#10B981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="10">Enabled on Untrusted Nets</text>
+      <rect x="180" y="195" width="38" height="20" rx="10" fill="#10B981"/>
+      <circle cx="208" cy="205" r="7" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Popular Servers -->
+    <text x="15" y="300" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="12">Recommended Nodes</text>
+    <g transform="translate(15, 312)">
+      <rect x="0" y="0" width="230" height="34" rx="6" fill="#1E293B" stroke="#2563EB" stroke-width="1"/>
+      <text x="10" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11">🇩🇪 Frankfurt #04 (Connected)</text>
+
+      <rect x="0" y="40" width="230" height="34" rx="6" fill="#0F172A"/>
+      <text x="10" y="61" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11">🇳🇱 Amsterdam #02 (18 ms)</text>
+
+      <rect x="0" y="80" width="230" height="34" rx="6" fill="#0F172A"/>
+      <text x="10" y="101" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11">🇺🇸 New York #01 (78 ms)</text>
+    </g>
+  </g>
+</svg>

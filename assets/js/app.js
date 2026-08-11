@@ -1748,9 +1748,13 @@ App.initStorePage = async function() {
         return;
     }
 
-    if (store.storeUrl && store.storeUrl.startsWith('/') && !window.location.pathname.endsWith(store.storeUrl)) {
-        window.location.replace(store.storeUrl);
-        return;
+    if (store.storeUrl) {
+        const targetUrl = store.storeUrl.startsWith('/') ? store.storeUrl : '/' + store.storeUrl;
+        const currentPath = window.location.pathname;
+        if (!currentPath.endsWith(targetUrl) && !currentPath.endsWith(targetUrl.replace(/^\//, ''))) {
+            window.location.replace(targetUrl);
+            return;
+        }
     }
 
     if (store.seoTitle) {

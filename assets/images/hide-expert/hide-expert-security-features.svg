@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="1000" height="480">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="tunnelGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="50%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Container -->
+  <rect width="1000" height="480" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="2"/>
+
+  <!-- Title -->
+  <text x="500" y="45" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="20">Hide Expert VPN – 3-Stage Security &amp; Encryption Pipeline</text>
+  <text x="500" y="70" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="13">End-to-End Cryptographic Isolation, RAM-Only Server Infrastructure &amp; Zero-Log Architecture</text>
+
+  <!-- Stage 1 Box: User Device -->
+  <g transform="translate(40, 110)">
+    <rect x="0" y="0" width="230" height="280" rx="12" fill="url(#boxGrad)" stroke="#3B82F6" stroke-width="2"/>
+    
+    <rect x="15" y="15" width="200" height="36" rx="6" fill="#2563EB" fill-opacity="0.2"/>
+    <text x="115" y="38" text-anchor="middle" fill="#60A5FA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="14">STAGE 1: USER DEVICE</text>
+
+    <!-- Icon Graphic -->
+    <circle cx="115" cy="95" r="30" fill="#2563EB" fill-opacity="0.2" stroke="#3B82F6" stroke-width="2"/>
+    <text x="115" y="102" text-anchor="middle" font-size="24">💻</text>
+
+    <text x="115" y="150" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="13">Local Operating System</text>
+    <text x="115" y="168" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="11">Android • iOS • macOS</text>
+
+    <line x1="20" y1="185" x2="210" y2="185" stroke="#334155" stroke-dasharray="4"/>
+
+    <text x="25" y="210" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11">✓ Driver-Level Interception</text>
+    <text x="25" y="230" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11">✓ ChaCha20 / AES-256 Cipher</text>
+    <text x="25" y="250" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11">✓ PFS Ephemeral KeyGen</text>
+  </g>
+
+  <!-- Connecting Tunnel Arrow 1 -->
+  <g transform="translate(280, 210)">
+    <rect x="0" y="0" width="130" height="30" rx="15" fill="url(#tunnelGrad)"/>
+    <text x="65" y="20" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="11">ENCRYPTED SOCKET</text>
+    <path d="M 135 15 L 148 15 L 142 8 M 148 15 L 142 22" stroke="#10B981" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Stage 2 Box: Encrypted Tunnel -->
+  <g transform="translate(440, 110)">
+    <rect x="0" y="0" width="240" height="280" rx="12" fill="url(#boxGrad)" stroke="#10B981" stroke-width="2"/>
+    
+    <rect x="15" y="15" width="210" height="36" rx="6" fill="#10B981" fill-opacity="0.2"/>
+    <text x="120" y="38" text-anchor="middle" fill="#34D399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="14">STAGE 2: PROTOCOL GATE</text>
+
+    <!-- Icon Graphic -->
+    <circle cx="120" cy="95" r="30" fill="#10B981" fill-opacity="0.2" stroke="#10B981" stroke-width="2"/>
+    <text x="120" y="102" text-anchor="middle" font-size="24">🔒</text>
+
+    <text x="120" y="150" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="13">Multi-Protocol Engine</text>
+    <text x="120" y="168" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="11">WireGuard • VLESS • OpenVPN</text>
+
+    <line x1="20" y1="185" x2="220" y2="185" stroke="#334155" stroke-dasharray="4"/>
+
+    <text x="25" y="210" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11">✓ Zero Packet Header Leaks</text>
+    <text x="25" y="230" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11">✓ Automatic Protocol Fallback</text>
+    <text x="25" y="250" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11">✓ Stealth Firewall Traversal</text>
+  </g>
+
+  <!-- Connecting Tunnel Arrow 2 -->
+  <g transform="translate(690, 210)">
+    <rect x="0" y="0" width="100" height="30" rx="15" fill="url(#tunnelGrad)"/>
+    <text x="50" y="20" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="11">RAM NODE</text>
+    <path d="M 105 15 L 118 15 L 112 8 M 118 15 L 112 22" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Stage 3 Box: Exit Gateway -->
+  <g transform="translate(800, 110)">
+    <rect x="0" y="0" width="160" height="280" rx="12" fill="url(#boxGrad)" stroke="#6366F1" stroke-width="2"/>
+    
+    <rect x="10" y="15" width="140" height="36" rx="6" fill="#6366F1" fill-opacity="0.2"/>
+    <text x="80" y="38" text-anchor="middle" fill="#A5B4FC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="12">STAGE 3: TARGET</text>
+
+    <!-- Icon Graphic -->
+    <circle cx="80" cy="95" r="30" fill="#6366F1" fill-opacity="0.2" stroke="#6366F1" stroke-width="2"/>
+    <text x="80" y="102" text-anchor="middle" font-size="24">🌐</text>
+
+    <text x="80" y="150" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="12">Global Web Services</text>
+    <text x="80" y="168" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="10">Shared IP Address</text>
+
+    <line x1="15" y1="185" x2="145" y2="185" stroke="#334155" stroke-dasharray="4"/>
+
+    <text x="15" y="210" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="10">✓ Masked Real IP</text>
+    <text x="15" y="230" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="10">✓ No Disk Logs</text>
+    <text x="15" y="250" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="10">✓ DNS Shielded</text>
+  </g>
+
+  <!-- Bottom Security Callout Bar -->
+  <g transform="translate(40, 410)">
+    <rect x="0" y="0" width="920" height="45" rx="8" fill="#0F172A" stroke="#334155"/>
+    <text x="20" y="27" fill="#10B981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="12">🛡️ SECURITY GUARANTEE:</text>
+    <text x="180" y="27" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="12">Volatile memory (RAM) operational nodes wipe all active connection tables automatically upon server reboot.</text>
+  </g>
+</svg>

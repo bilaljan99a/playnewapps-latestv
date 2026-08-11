@@ -2368,7 +2368,7 @@
         "icon": "psychology",
         "logo": "/assets/images/brands/applicantally.svg",
         "website": "https://www.applicantally.com",
-        "storeUrl": "applicantally-review.html",
+        "storeUrl": "/applicantally-review.html",
         "affiliateLink": "https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/",
         "rating": 4.9,
         "votes": 2840,
@@ -2542,7 +2542,7 @@
             }
         ],
         "title": "italki Review (2026): 1-on-1 Online Language Lessons & Tutors",
-        "storeUrl": "italki-coupons.html"
+        "storeUrl": "/italki-coupons.html"
     },
     {
         "id": "hide-expert-vpn",
@@ -2588,7 +2588,6 @@
                 "answer": "Yes, Hide Expert VPN provides a 3-day money-back guarantee on paid subscriptions."
             }
         ],
-        "title": "Hide Expert VPN Deals, Pricing & VPN Offers (2026)",
-        "storeUrl": "hide-expert-vpn-coupons.html"
+        "title": "Hide Expert VPN Deals, Pricing & VPN Offers (2026)"
     }
 ]

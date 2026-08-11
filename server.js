@@ -28,6 +28,14 @@ app.use((req, res, next) => {
 });
 
 // Specific routes for clean URLs
+app.get('/hide-expert-vpn', (req, res) => {
+  res.sendFile(path.join(__dirname, 'hide-expert-vpn-coupons.html'));
+});
+
+app.get('/hide-expert-vpn-coupons', (req, res) => {
+  res.sendFile(path.join(__dirname, 'hide-expert-vpn-coupons.html'));
+});
+
 app.get('/lennuabi-coupons', (req, res) => {
   res.sendFile(path.join(__dirname, 'lennuabi-coupons.html'));
 });

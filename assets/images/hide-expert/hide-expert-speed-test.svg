@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="1000" height="480">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="wireguardGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <linearGradient id="ikev2Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+    <linearGradient id="openvpnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+    <linearGradient id="vlessGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#FBBF24"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main Background Container -->
+  <rect width="1000" height="480" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="2"/>
+
+  <!-- Chart Header -->
+  <text x="500" y="45" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="20">Hide Expert VPN – Protocol Throughput &amp; Speed Retention Benchmark</text>
+  <text x="500" y="70" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="13">Tested on 500 Mbps Fiber Line (Frankfurt Endpoint) • Average Speed Retention % &amp; Latency</text>
+
+  <!-- Protocol Speed Bar Chart Section -->
+  <g transform="translate(40, 100)">
+    <rect x="0" y="0" width="560" height="340" rx="12" fill="url(#cardGrad)" stroke="#334155"/>
+    <text x="20" y="30" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="14">Bandwidth Throughput Retention (%)</text>
+
+    <!-- Bar 1: WireGuard -->
+    <g transform="translate(20, 55)">
+      <text x="0" y="16" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="12">WireGuard (UDP)</text>
+      <rect x="140" y="0" width="380" height="22" rx="6" fill="#0F172A"/>
+      <rect x="140" y="0" width="365" height="22" rx="6" fill="url(#wireguardGrad)"/>
+      <text x="495" y="15" fill="#10B981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="12">98.4% (492 Mbps)</text>
+    </g>
+
+    <!-- Bar 2: IKEv2 -->
+    <g transform="translate(20, 115)">
+      <text x="0" y="16" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="12">IKEv2 (IPsec)</text>
+      <rect x="140" y="0" width="380" height="22" rx="6" fill="#0F172A"/>
+      <rect x="140" y="0" width="342" height="22" rx="6" fill="url(#ikev2Grad)"/>
+      <text x="495" y="15" fill="#60A5FA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="12">92.1% (460 Mbps)</text>
+    </g>
+
+    <!-- Bar 3: OpenVPN UDP -->
+    <g transform="translate(20, 175)">
+      <text x="0" y="16" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="12">OpenVPN (UDP)</text>
+      <rect x="140" y="0" width="380" height="22" rx="6" fill="#0F172A"/>
+      <rect x="140" y="0" width="315" height="22" rx="6" fill="url(#openvpnGrad)"/>
+      <text x="495" y="15" fill="#A78BFA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="12">84.5% (422 Mbps)</text>
+    </g>
+
+    <!-- Bar 4: VLESS Stealth -->
+    <g transform="translate(20, 235)">
+      <text x="0" y="16" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="12">VLESS (Stealth TLS)</text>
+      <rect x="140" y="0" width="380" height="22" rx="6" fill="#0F172A"/>
+      <rect x="140" y="0" width="300" height="22" rx="6" fill="url(#vlessGrad)"/>
+      <text x="495" y="15" fill="#FBBF24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="12">81.2% (406 Mbps)</text>
+    </g>
+
+    <line x1="20" y1="285" x2="540" y2="285" stroke="#334155" stroke-dasharray="4"/>
+    <text x="20" y="312" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="11">● WireGuard delivers near-native speed retention with 0% CPU overhead throttling.</text>
+  </g>
+
+  <!-- Latency & Connection Specs Box -->
+  <g transform="translate(620, 100)">
+    <rect x="0" y="0" width="340" height="340" rx="12" fill="url(#cardGrad)" stroke="#334155"/>
+    <text x="20" y="30" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="14">Key Protocol Characteristics</text>
+
+    <!-- Card 1 -->
+    <g transform="translate(20, 50)">
+      <rect x="0" y="0" width="300" height="60" rx="8" fill="#0F172A" stroke="#10B981" stroke-width="1"/>
+      <text x="15" y="24" fill="#10B981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="13">WIREGUARD (Recommended)</text>
+      <text x="15" y="44" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="11">0.3s Handshake • 12ms Ping • Low Battery</text>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(20, 120)">
+      <rect x="0" y="0" width="300" height="60" rx="8" fill="#0F172A" stroke="#2563EB" stroke-width="1"/>
+      <text x="15" y="24" fill="#60A5FA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="13">IKEv2 (Mobile Roaming)</text>
+      <text x="15" y="44" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="11">0.5s Reconnect • 16ms Ping • Auto-Switch</text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(20, 190)">
+      <rect x="0" y="0" width="300" height="60" rx="8" fill="#0F172A" stroke="#8B5CF6" stroke-width="1"/>
+      <text x="15" y="24" fill="#A78BFA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="13">OPENVPN (Battle Tested)</text>
+      <text x="15" y="44" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="11">1.2s Handshake • 28ms Ping • Port 443</text>
+    </g>
+
+    <!-- Card 4 -->
+    <g transform="translate(20, 260)">
+      <rect x="0" y="0" width="300" height="60" rx="8" fill="#0F172A" stroke="#F59E0B" stroke-width="1"/>
+      <text x="15" y="24" fill="#FBBF24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="13">VLESS (Firewall Bypass)</text>
+      <text x="15" y="44" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="11">1.5s Handshake • 34ms Ping • Obfuscated</text>
+    </g>
+  </g>
+</svg>
