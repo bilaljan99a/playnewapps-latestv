@@ -1859,25 +1859,24 @@ App.initStorePage = async function() {
                 </div>
             `;
         }
-        if (store.banners[1] && bannerSec2) {
-            const b2 = store.banners[1];
+        if (store.banners.length > 1 && bannerSec2) {
             bannerSec2.style.display = 'block';
-            bannerSec2.innerHTML = `
-                <div class="card" style="padding: 1.25rem; border-radius: 12px; overflow: hidden; background: var(--card-bg); border: 1px solid var(--border-color); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
-                    <a href="${b2.link}" target="_blank" rel="noopener sponsored" style="display: block; text-decoration: none; border-radius: 10px; overflow: hidden; transition: transform 0.2s ease;">
-                        <img src="${b2.image}" alt="${b2.title}" style="width: 100%; height: auto; display: block; border-radius: 10px; border: 1px solid var(--border-color);" loading="lazy">
+            bannerSec2.innerHTML = store.banners.slice(1).map(b => `
+                <div class="card" style="padding: 1.25rem; border-radius: 12px; overflow: hidden; background: var(--card-bg); border: 1px solid var(--border-color); box-shadow: 0 4px 20px rgba(0,0,0,0.03); margin-bottom: 1.25rem;">
+                    <a href="${b.link}" target="_blank" rel="noopener sponsored" style="display: block; text-decoration: none; border-radius: 10px; overflow: hidden; transition: transform 0.2s ease;">
+                        <img src="${b.image}" alt="${b.title}" style="width: 100%; height: auto; display: block; border-radius: 10px; border: 1px solid var(--border-color);" loading="lazy">
                     </a>
                     <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem; padding: 0.25rem 0.25rem 0;">
                         <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-color); font-weight: 700; font-size: 0.925rem;">
                             <span class="material-icons-round" style="color: #2563EB;">stars</span>
-                            <span>${b2.title}</span>
+                            <span>${b.title}</span>
                         </div>
-                        <a href="${b2.link}" target="_blank" rel="noopener sponsored" class="btn btn-sm" style="background: #2563EB; color: #fff; font-weight: 800; padding: 0.45rem 1.25rem; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
-                            ${b2.buttonText || 'Shop Collection'} <span class="material-icons-round" style="font-size: 0.9rem;">shopping_bag</span>
+                        <a href="${b.link}" target="_blank" rel="noopener sponsored" class="btn btn-sm" style="background: #2563EB; color: #fff; font-weight: 800; padding: 0.45rem 1.25rem; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
+                            ${b.buttonText || 'Shop Collection'} <span class="material-icons-round" style="font-size: 0.9rem;">shopping_bag</span>
                         </a>
                     </div>
                 </div>
-            `;
+            `).join('');
         }
     }
 
@@ -2233,20 +2232,14 @@ App.renderAllStoresPage = async function() {
                         <h2 class="letter-heading">${letter}</h2>
                         <div class="store-cards-grid">
                             ${storeList.map(s => {
-                                const count = storeDealCounts[s.id] || 0;
-                                const dealText = `${count} ${count === 1 ? 'Deal' : 'Deals'}`;
-                                const shortDesc = s.about ? (s.about.length > 80 ? s.about.slice(0, 80) + '...' : s.about) : '';
                                 return `
                                     <a href="store.html?id=${s.id}" class="store-card-item">
                                         <div class="store-card-logo-wrap">
-                                            <img src="${s.logo}" alt="${s.name} logo" width="40" height="40" loading="lazy">
+                                            <img src="${s.logo}" alt="${s.name} logo" width="80" height="80" loading="lazy">
                                         </div>
                                         <div class="store-card-info">
                                             <div class="store-card-name">${s.name}</div>
-                                            ${shortDesc ? `<p class="store-card-desc" style="font-size: 0.8rem; color: var(--text-secondary); margin: 0.2rem 0 0.35rem 0; line-height: 1.3;">${shortDesc}</p>` : ''}
-                                            <span class="store-card-deals-count">${dealText}</span>
                                         </div>
-                                        <span class="material-icons-round store-card-arrow" aria-hidden="true">chevron_right</span>
                                     </a>
                                 `;
                             }).join('')}

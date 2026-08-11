@@ -36,7 +36,7 @@
     <text x="1070" y="93" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">Scan Now</text>
   </g>
 
-  <!-- Monitored Accounts & Protection Advice -->
+  <!-- Monitored Accounts &amp; Protection Advice -->
   <g transform="translate(40, 310)">
     <!-- Left: Monitored Email Addresses -->
     <rect width="680" height="370" rx="16" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1"/>

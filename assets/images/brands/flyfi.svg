@@ -11,7 +11,7 @@
   <!-- Clean Container Background -->
   <rect width="200" height="200" rx="44" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
 
-  <!-- Logo Emblem & Wordmark Group (Centered in 200x200 canvas) -->
+  <!-- Logo Emblem &amp; Wordmark Group (Centered in 200x200 canvas) -->
   <g id="flyfi-brand-logo" transform="translate(6, 0)">
     <!-- Circle Emblem (cx=48, cy=100, r=36) -->
     <circle cx="48" cy="100" r="36" fill="url(#flyfiBrandGrad)"/>

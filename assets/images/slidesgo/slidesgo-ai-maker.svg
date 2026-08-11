@@ -19,7 +19,7 @@
   <circle cx="100" cy="60" r="6" fill="#10B981"/>
   <text x="500" y="65" text-anchor="middle" fill="#94A3B8" font-family="sans-serif" font-weight="600" font-size="14">Slidesgo AI Presentation Maker Engine</text>
 
-  <!-- Left Sidebar: Settings & Controls -->
+  <!-- Left Sidebar: Settings &amp; Controls -->
   <rect x="50" y="90" width="280" height="410" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1"/>
   <text x="70" y="125" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="16">✨ AI Generator Prompt</text>
   

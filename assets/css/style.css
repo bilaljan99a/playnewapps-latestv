@@ -3469,18 +3469,18 @@ table.comparison-table tbody tr:hover,
 
 .store-cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 1.25rem;
 }
 
 .store-card-item {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem 1.25rem;
+    gap: 1.15rem;
+    padding: 1.1rem 1.25rem;
     background-color: var(--surface-color);
     border: 1px solid var(--border-color);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-lg);
     text-decoration: none;
     color: var(--text-primary);
     transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
@@ -3488,22 +3488,23 @@ table.comparison-table tbody tr:hover,
 }
 
 .store-card-item:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
     border-color: var(--primary-color);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.12);
 }
 
 .store-card-logo-wrap {
-    width: 52px;
-    height: 52px;
-    border-radius: var(--radius-md);
-    padding: 6px;
+    width: 72px;
+    height: 72px;
+    border-radius: 12px;
+    padding: 8px;
     background-color: #ffffff;
     border: 1px solid var(--border-color);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .store-card-logo-wrap img {
@@ -3518,13 +3519,11 @@ table.comparison-table tbody tr:hover,
 }
 
 .store-card-name {
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: 0.2rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    line-height: 1.35;
+    word-break: break-word;
 }
 
 .store-card-deals-count {
@@ -4972,5 +4971,231 @@ img, video, iframe, object, embed {
 .mb-sm {
     margin-bottom: 0.5rem;
 }
+
+/* ==========================================================================
+   Coupon Modal Popup & Alibaba Mobile Responsive Styles
+   ========================================================================== */
+.coupon-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(6px);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.coupon-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.coupon-modal-card {
+    background: var(--surface-color, #ffffff);
+    color: var(--text-primary, #0f172a);
+    border: 1px solid var(--border-color, #e2e8f0);
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 440px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transform: scale(0.9);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.coupon-modal-overlay.active .coupon-modal-card {
+    transform: scale(1);
+}
+
+.coupon-modal-close {
+    position: absolute;
+    top: 0.85rem;
+    right: 1.15rem;
+    background: none;
+    border: none;
+    font-size: 1.75rem;
+    color: var(--text-secondary, #64748b);
+    cursor: pointer;
+    line-height: 1;
+    padding: 0.25rem;
+}
+
+.coupon-modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 1.25rem;
+}
+
+.modal-check-icon {
+    font-size: 3rem !important;
+    color: #10b981;
+}
+
+.coupon-modal-header h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.coupon-modal-header p {
+    font-size: 0.875rem;
+    color: var(--text-secondary, #64748b);
+    margin: 0;
+}
+
+.coupon-modal-code-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(16, 185, 129, 0.08);
+    border: 2px dashed #10b981;
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.modal-code-text {
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #059669;
+    letter-spacing: 2px;
+}
+
+.modal-copy-btn {
+    background: #10b981;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    transition: background 0.2s ease;
+}
+
+.modal-copy-btn:hover {
+    background: #059669;
+}
+
+.coupon-modal-actions .modal-go-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    background: #ff6a00;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1rem;
+    padding: 0.85rem;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(255, 106, 0, 0.25);
+    transition: background 0.2s ease;
+}
+
+.coupon-modal-actions .modal-go-btn:hover {
+    background: #e05d00;
+}
+
+.modal-note {
+    font-size: 0.8rem;
+    color: var(--text-secondary, #64748b);
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+/* Alibaba Responsive Layout Styles */
+.alibaba-main-grid {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 2.5rem;
+}
+
+@media (max-width: 992px) {
+    .alibaba-main-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+}
+
+.alibaba-hero-card {
+    background: var(--card-bg, var(--surface-color, #ffffff));
+    border: 1px solid var(--border-color, #e2e8f0);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 640px) {
+    .alibaba-hero-card {
+        grid-template-columns: 1fr !important;
+        justify-items: center;
+        text-align: center;
+        padding: 1.25rem !important;
+        gap: 1.25rem !important;
+    }
+    .alibaba-hero-card .store-hero-details h1 {
+        font-size: 1.4rem !important;
+    }
+    .alibaba-hero-card .store-hero-details p {
+        font-size: 0.95rem !important;
+    }
+    .alibaba-hero-card .store-hero-details div {
+        justify-content: center !important;
+    }
+}
+
+.alibaba-info-grid {
+    background: var(--card-bg, var(--surface-color, #ffffff));
+    border: 1px solid var(--border-color, #e2e8f0);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.25rem;
+}
+
+@media (max-width: 480px) {
+    .alibaba-info-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        padding: 1rem !important;
+        gap: 0.75rem !important;
+    }
+}
+
+@media (max-width: 640px) {
+    #coupons-section {
+        padding: 1.25rem 1rem !important;
+    }
+    #about-alibaba, #sales-calendar, #quality-control, #faq-section {
+        padding: 1.25rem 1rem !important;
+    }
+    #coupons-section h2, #about-alibaba h2, #sales-calendar h2, #quality-control h2, #faq-section h2 {
+        font-size: 1.35rem !important;
+    }
+}
+
 
 

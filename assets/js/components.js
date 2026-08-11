@@ -168,29 +168,19 @@ class Components {
     }
 
     static createStoreCard(item) {
-        const rating = item.rating || 4.9;
-        const votes = item.votes ? `(${item.votes} votes)` : '';
         const link = item.affiliateLink || `store.html?id=${item.id}`;
         const viewLink = item.storeUrl || `store.html?id=${item.id}`;
         return `
-            <article class="card store-card affiliate-card" data-store-id="${item.id}">
-                <div class="coupon-header" style="align-items: center; gap: 1rem;">
-                    <img src="${item.logo}" alt="${item.name} Logo" class="store-logo" width="55" height="55" loading="lazy" style="object-fit: contain; background: #ffffff; border-radius: 10px; padding: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.08);">
-                    <div>
-                        <h3 class="card-title" style="margin-bottom: 0.25rem; font-size: 1.15rem;"><a href="${viewLink}">${item.name}</a></h3>
-                        <div class="rating" aria-label="Rating ${rating} out of 5 stars">
-                            ${this.getRatingStars(rating)}
-                            <span class="rating-text">${rating} ${votes}</span>
-                        </div>
+            <article class="card store-card affiliate-card" data-store-id="${item.id}" style="padding: 1.25rem;">
+                <a href="${viewLink}" style="display: flex; align-items: center; gap: 1.25rem; text-decoration: none; color: inherit;">
+                    <div style="width: 72px; height: 72px; border-radius: 12px; background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); padding: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+                        <img src="${item.logo}" alt="${item.name} Logo" class="store-logo" width="72" height="72" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
                     </div>
-                </div>
-                <div class="card-content" style="display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
-                    <p class="card-excerpt" style="font-size: 0.875rem; color: #64748b; margin-bottom: 1rem; line-height: 1.5;">${item.about}</p>
-                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                        <a href="${link}" target="_blank" rel="noopener sponsored" class="btn btn-primary cta-pulse" style="flex: 1; text-align: center; justify-content: center;">Official Store</a>
-                        <a href="${viewLink}" class="btn btn-outline" style="white-space: nowrap;">View Deals</a>
+                    <div style="flex: 1; min-width: 0;">
+                        <h3 class="card-title" style="margin: 0; font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">${item.name}</h3>
+                        <span style="display: inline-block; margin-top: 0.35rem; font-size: 0.85rem; color: var(--primary-color); font-weight: 600;">View Store Deals &rarr;</span>
                     </div>
-                </div>
+                </a>
             </article>
         `;
     }

@@ -39,7 +39,7 @@
     <text x="848" y="120" font-size="12" font-weight="600" fill="#10b981">0 Threat Infections Detected</text>
   </g>
 
-  <!-- Protection Controls & Activity Feed -->
+  <!-- Protection Controls &amp; Activity Feed -->
   <g transform="translate(40, 290)">
     <!-- Security Controls Box -->
     <rect width="570" height="390" rx="16" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1"/>

@@ -64,7 +64,7 @@
           <circle cx="30" cy="30" r="14" fill="#059669" opacity="0.2"/>
           <text x="30" y="34" font-size="12" font-weight="700" fill="#059669" text-anchor="middle">04</text>
           <text x="60" y="26" font-size="14" font-weight="700" fill="#F8FAFC">1,500+ App Integrations</text>
-          <text x="60" y="44" font-size="12" fill="#94A3B8">Seamless integration with Microsoft 365, Google Workspace, Slack & Zoom.</text>
+          <text x="60" y="44" font-size="12" fill="#94A3B8">Seamless integration with Microsoft 365, Google Workspace, Slack &amp; Zoom.</text>
           <rect x="580" y="18" width="80" height="24" rx="12" fill="#059669" opacity="0.15"/>
           <text x="620" y="34" font-size="10" font-weight="700" fill="#059669" text-anchor="middle">Integrated</text>
         </g>

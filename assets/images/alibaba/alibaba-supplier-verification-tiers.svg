@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="900" height="450">
+  <defs>
+    <linearGradient id="tierBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EAB308"/>
+      <stop offset="100%" stop-color="#CA8A04"/>
+    </linearGradient>
+    <linearGradient id="verifiedGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="proGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="450" rx="16" fill="url(#tierBg)" stroke="#334155" stroke-width="2"/>
+
+  <!-- Header -->
+  <g transform="translate(45, 30)">
+    <rect x="0" y="0" width="200" height="26" rx="13" fill="#3B82F6" fill-opacity="0.2" stroke="#3B82F6" stroke-width="1"/>
+    <text x="100" y="17" text-anchor="middle" fill="#60A5FA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="11" letter-spacing="0.5">SUPPLIER AUDIT FRAMEWORK</text>
+
+    <text x="0" y="60" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="24">Alibaba Supplier Verification Tiers</text>
+    <text x="0" y="82" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="14">Compare business license verification, on-site factory audits, and third-party inspection capabilities</text>
+  </g>
+
+  <!-- 3 Columns -->
+  <!-- Column 1: Gold Supplier -->
+  <g transform="translate(45, 130)">
+    <rect width="250" height="280" rx="12" fill="url(#cardBg)" stroke="#EAB308" stroke-width="1.5"/>
+    <path d="M 0 0 L 250 0 L 250 12 C 250 12 250 12 250 12 L 0 12 Z" fill="url(#goldGrad)" clip-path="inset(0 0 0 0 round 12px 12px 0 0)"/>
+    
+    <g transform="translate(20, 30)">
+      <rect width="110" height="24" rx="12" fill="#EAB308" fill-opacity="0.2"/>
+      <text x="55" y="16" text-anchor="middle" fill="#FACC15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="11">TIER 1 ENTRY</text>
+
+      <text x="0" y="48" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18">Gold Supplier</text>
+      <text x="0" y="68" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="12">Basic Business Verification</text>
+
+      <line x1="0" y1="82" x2="210" y2="82" stroke="#334155" stroke-width="1"/>
+
+      <text x="0" y="105" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">✓ Verified Corporate License</text>
+      <text x="0" y="128" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">✓ Physical Premises Address</text>
+      <text x="0" y="151" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">✓ Paid Membership Status</text>
+      <text x="0" y="174" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">✗ No Third-Party On-Site Audit</text>
+
+      <rect x="0" y="195" width="210" height="32" rx="6" fill="#FEF08A" fill-opacity="0.1" stroke="#EAB308" stroke-width="1"/>
+      <text x="105" y="215" text-anchor="middle" fill="#FACC15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="11">Best for Sample Purchases</text>
+    </g>
+  </g>
+
+  <!-- Column 2: Verified Supplier -->
+  <g transform="translate(325, 130)">
+    <rect width="250" height="280" rx="12" fill="url(#cardBg)" stroke="#10B981" stroke-width="2"/>
+    <path d="M 0 0 L 250 0 L 250 12 C 250 12 250 12 250 12 L 0 12 Z" fill="url(#verifiedGrad)"/>
+
+    <g transform="translate(20, 30)">
+      <rect width="130" height="24" rx="12" fill="#10B981" fill-opacity="0.2"/>
+      <text x="65" y="16" text-anchor="middle" fill="#34D399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="11">TIER 2 RECOMMENDED</text>
+
+      <text x="0" y="48" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18">Verified Supplier</text>
+      <text x="0" y="68" fill="#34D399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="12">Audited by SGS / TÜV Rheinland</text>
+
+      <line x1="0" y1="82" x2="210" y2="82" stroke="#334155" stroke-width="1"/>
+
+      <text x="0" y="105" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">✓ On-Site Factory Inspection</text>
+      <text x="0" y="128" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">✓ Production Line &amp; Capacity</text>
+      <text x="0" y="151" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">✓ Verified ISO/CE Certificates</text>
+      <text x="0" y="174" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">✓ 360° VR Factory Video Tour</text>
+
+      <rect x="0" y="195" width="210" height="32" rx="6" fill="#10B981" fill-opacity="0.2" stroke="#10B981" stroke-width="1"/>
+      <text x="105" y="215" text-anchor="middle" fill="#34D399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="11">Best for Wholesale &amp; OEM</text>
+    </g>
+  </g>
+
+  <!-- Column 3: Verified Pro Tier -->
+  <g transform="translate(605, 130)">
+    <rect width="250" height="280" rx="12" fill="url(#cardBg)" stroke="#3B82F6" stroke-width="2"/>
+    <path d="M 0 0 L 250 0 L 250 12 C 250 12 250 12 250 12 L 0 12 Z" fill="url(#proGrad)"/>
+
+    <g transform="translate(20, 30)">
+      <rect width="130" height="24" rx="12" fill="#3B82F6" fill-opacity="0.2"/>
+      <text x="65" y="16" text-anchor="middle" fill="#60A5FA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="11">TIER 3 ENTERPRISE</text>
+
+      <text x="0" y="48" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18">Verified Pro Custom</text>
+      <text x="0" y="68" fill="#60A5FA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="12">Custom Engineering &amp; R&amp;D</text>
+
+      <line x1="0" y1="82" x2="210" y2="82" stroke="#334155" stroke-width="1"/>
+
+      <text x="0" y="105" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">✓ In-House R&amp;D Testing Lab</text>
+      <text x="0" y="128" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">✓ Mold Design &amp; Patent Protection</text>
+      <text x="0" y="151" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">✓ Pre-Shipment QC Inspection</text>
+      <text x="0" y="174" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">✓ Fortune 500 OEM Experience</text>
+
+      <rect x="0" y="195" width="210" height="32" rx="6" fill="#3B82F6" fill-opacity="0.2" stroke="#3B82F6" stroke-width="1"/>
+      <text x="105" y="215" text-anchor="middle" fill="#60A5FA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="11">Best for Large Volume Brands</text>
+    </g>
+  </g>
+</svg>

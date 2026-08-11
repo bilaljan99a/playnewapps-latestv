@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <linearGradient id="bgG2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" rx="24" fill="url(#bgG2)" stroke="#CBD5E1" stroke-width="1"/>
+  
+  <text x="600" y="60" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui" font-weight="800" font-size="28" fill="#0F172A">Doctronic Care Journey: From AI Consultation to Physician Care</text>
+  <text x="600" y="90" text-anchor="middle" font-family="system-ui" font-size="16" fill="#64748B">Structured 4-Step Patient Experience for Fast, Reliable Healthcare Access</text>
+
+  <!-- Step 1 -->
+  <g transform="translate(60, 140)">
+    <rect width="240" height="280" rx="20" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="2"/>
+    <circle cx="120" cy="50" r="28" fill="#E0F2FE"/>
+    <text x="120" y="58" text-anchor="middle" font-family="system-ui" font-weight="800" font-size="20" fill="#0284C7">1</text>
+    <text x="120" y="110" text-anchor="middle" font-family="system-ui" font-weight="800" font-size="18" fill="#0F172A">Free AI Consult</text>
+    <text x="120" y="135" text-anchor="middle" font-family="system-ui" font-size="13" fill="#0284C7">Available 24/7</text>
+    <text x="20" y="175" font-family="system-ui" font-size="13" fill="#475569">Describe symptoms to AI.</text>
+    <text x="20" y="195" font-family="system-ui" font-size="13" fill="#475569">Multi-agent system conducts</text>
+    <text x="20" y="215" font-family="system-ui" font-size="13" fill="#475569">internal clinical debate.</text>
+    <text x="20" y="245" font-family="system-ui" font-weight="700" font-size="12" fill="#10B981">✓ 100% Free &amp; Private</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M 315, 280 L 345, 280" stroke="#0284C7" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <!-- Step 2 -->
+  <g transform="translate(360, 140)">
+    <rect width="240" height="280" rx="20" fill="#FFFFFF" stroke="#3B82F6" stroke-width="2"/>
+    <circle cx="120" cy="50" r="28" fill="#DBEAFE"/>
+    <text x="120" y="58" text-anchor="middle" font-family="system-ui" font-weight="800" font-size="20" fill="#1D4ED8">2</text>
+    <text x="120" y="110" text-anchor="middle" font-family="system-ui" font-weight="800" font-size="18" fill="#0F172A">Summary &amp; Guidance</text>
+    <text x="120" y="135" text-anchor="middle" font-family="system-ui" font-size="13" fill="#1D4ED8">Personalized Insights</text>
+    <text x="20" y="175" font-family="system-ui" font-size="13" fill="#475569">Receive a clear clinical</text>
+    <text x="20" y="195" font-family="system-ui" font-size="13" fill="#475569">summary of possible causes</text>
+    <text x="20" y="215" font-family="system-ui" font-size="13" fill="#475569">and care recommendations.</text>
+    <text x="20" y="245" font-family="system-ui" font-weight="700" font-size="12" fill="#10B981">✓ Physician-Trained AI</text>
+  </g>
+
+  <!-- Step 3 -->
+  <g transform="translate(660, 140)">
+    <rect width="240" height="280" rx="20" fill="#FFFFFF" stroke="#10B981" stroke-width="2"/>
+    <circle cx="120" cy="50" r="28" fill="#D1FAE5"/>
+    <text x="120" y="58" text-anchor="middle" font-family="system-ui" font-weight="800" font-size="20" fill="#047857">3</text>
+    <text x="120" y="110" text-anchor="middle" font-family="system-ui" font-weight="800" font-size="18" fill="#0F172A">Connect with Doctor</text>
+    <text x="120" y="135" text-anchor="middle" font-family="system-ui" font-size="13" fill="#047857">$39 or Insurance</text>
+    <text x="20" y="175" font-family="system-ui" font-size="13" fill="#475569">Schedule or start video</text>
+    <text x="20" y="195" font-family="system-ui" font-size="13" fill="#475569">telehealth visit with licensed</text>
+    <text x="20" y="215" font-family="system-ui" font-size="13" fill="#475569">U.S. doctor in all 50 states.</text>
+    <text x="20" y="245" font-family="system-ui" font-weight="700" font-size="12" fill="#10B981">✓ Licensed U.S. Physicians</text>
+  </g>
+
+  <!-- Step 4 -->
+  <g transform="translate(960, 140)">
+    <rect width="180" height="280" rx="20" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="2"/>
+    <circle cx="90" cy="50" r="28" fill="#EDE9FE"/>
+    <text x="90" y="58" text-anchor="middle" font-family="system-ui" font-weight="800" font-size="20" fill="#6D28D9">4</text>
+    <text x="90" y="110" text-anchor="middle" font-family="system-ui" font-weight="800" font-size="16" fill="#0F172A">Prescription/Plan</text>
+    <text x="90" y="135" text-anchor="middle" font-family="system-ui" font-size="12" fill="#6D28D9">Care Plan &amp; Rx</text>
+    <text x="15" y="175" font-family="system-ui" font-size="12" fill="#475569">Get Rx sent to local</text>
+    <text x="15" y="195" font-family="system-ui" font-size="12" fill="#475569">pharmacy, doctor's notes</text>
+    <text x="15" y="215" font-family="system-ui" font-size="12" fill="#475569">&amp; treatment plans.</text>
+    <text x="15" y="245" font-family="system-ui" font-weight="700" font-size="11" fill="#10B981">✓ Sent to Local Pharmacy</text>
+  </g>
+</svg>

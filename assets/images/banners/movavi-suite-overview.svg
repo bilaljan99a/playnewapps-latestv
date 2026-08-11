@@ -17,7 +17,7 @@
   <rect width="800" height="310" rx="16" fill="url(#suiteBg)"/>
   <rect x="12" y="12" width="776" height="286" rx="12" fill="none" stroke="#E2E8F0" stroke-width="1.5"/>
 
-  <!-- Main Banner Title & Subtitle -->
+  <!-- Main Banner Title &amp; Subtitle -->
   <text x="400" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#0F172A" text-anchor="middle">Movavi Video Suite 2026 Core Capabilities</text>
   <text x="400" y="62" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748B" text-anchor="middle">Everything needed to edit, convert, record, and enhance media in one package</text>
 
@@ -69,7 +69,7 @@
       <text x="85" y="173" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">Screen Capture Pro</text>
     </g>
 
-    <!-- CARD 4: EFFECTS & CREATIVE TOOLS -->
+    <!-- CARD 4: EFFECTS &amp; CREATIVE TOOLS -->
     <g transform="translate(570, 0)">
       <rect x="0" y="0" width="170" height="198" rx="12" fill="url(#cardGrad)" stroke="#CBD5E1" stroke-width="1.5" filter="url(#shadow)"/>
       <circle cx="85" cy="38" r="22" fill="#9333EA"/>

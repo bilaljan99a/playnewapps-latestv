@@ -70,7 +70,7 @@
     </g>
   </g>
 
-  <!-- Left Sidebar Sliders (Size & Opacity) -->
+  <!-- Left Sidebar Sliders (Size &amp; Opacity) -->
   <g transform="translate(60, 180)">
     <rect x="0" y="0" width="48" height="360" rx="24" fill="#111622" stroke="#1e293b" stroke-width="1.5"/>
     <!-- Size Slider -->

@@ -23,7 +23,7 @@
       Start Speaking A New Language Today
     </text>
     <text x="0" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="18" fill="#E2E8F0">
-      Connect with 30,000+ native speakers & certified tutors across 150+ languages.
+      Connect with 30,000+ native speakers &amp; certified tutors across 150+ languages.
     </text>
     <g transform="translate(0, 215)" filter="url(#shadow)">
       <rect width="320" height="56" rx="14" fill="#FFFFFF"/>

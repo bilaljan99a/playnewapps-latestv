@@ -69,7 +69,7 @@
     <text x="145" y="329" fill="#CBD5E1" font-family="sans-serif" font-size="12">Google Slides &amp; PPT</text>
   </g>
 
-  <!-- Card 2: Business & AI -->
+  <!-- Card 2: Business &amp; AI -->
   <g transform="translate(435, 220)" filter="url(#shadowGlow)">
     <rect width="330" height="390" rx="20" fill="#1E293B" stroke="#334155" stroke-width="1"/>
     <path d="M 0 20 Q 0 0 20 0 L 310 0 Q 330 0 330 20 L 330 220 L 0 220 Z" fill="url(#cardGrad2)"/>
@@ -88,7 +88,7 @@
     <text x="120" y="329" fill="#CBD5E1" font-family="sans-serif" font-size="12">AI Auto-Generator Ready</text>
   </g>
 
-  <!-- Card 3: Medical & Science -->
+  <!-- Card 3: Medical &amp; Science -->
   <g transform="translate(810, 220)" filter="url(#shadowGlow)">
     <rect width="330" height="390" rx="20" fill="#1E293B" stroke="#334155" stroke-width="1"/>
     <path d="M 0 20 Q 0 0 20 0 L 310 0 Q 330 0 330 20 L 330 220 L 0 220 Z" fill="url(#cardGrad3)"/>

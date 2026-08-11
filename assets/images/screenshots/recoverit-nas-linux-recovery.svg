@@ -44,7 +44,7 @@
     </g>
   </g>
 
-  <!-- Right Side: Detected Volumes & Scanning Progress -->
+  <!-- Right Side: Detected Volumes &amp; Scanning Progress -->
   <g transform="translate(510, 70)">
     <rect width="630" height="580" rx="12" fill="#1E293B" stroke="#334155" />
     <text x="30" y="40" fill="#00FFC8" font-family="sans-serif" font-weight="bold" font-size="18">🖥️ Connected Server: Synology DiskStation (BTRFS Storage Pool 1)</text>

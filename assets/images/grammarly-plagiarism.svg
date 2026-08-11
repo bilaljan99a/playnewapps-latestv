@@ -21,7 +21,7 @@
     <text x="48" y="38" font-size="12" fill="#38bdf8">Scanning 16+ billion web pages &amp; ProQuest academic databases with instant APA/MLA citations</text>
   </g>
 
-  <!-- Left: Originality Score Shield & Source Matches -->
+  <!-- Left: Originality Score Shield &amp; Source Matches -->
   <g transform="translate(30, 90)">
     <rect width="600" height="600" rx="12" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
     
@@ -72,7 +72,7 @@
     </g>
   </g>
 
-  <!-- Right: Academic & Database Sources Summary -->
+  <!-- Right: Academic &amp; Database Sources Summary -->
   <g transform="translate(650, 90)">
     <rect width="600" height="600" rx="12" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
     

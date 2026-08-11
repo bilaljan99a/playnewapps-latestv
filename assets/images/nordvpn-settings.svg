@@ -17,7 +17,7 @@
     <text x="48" y="40" font-size="12" font-weight="500" fill="#94a3b8">Kill Switch configuration, Split Tunneling rules, Auto-Connect, and Custom DNS</text>
   </g>
 
-  <!-- Left Side: Kill Switch & Auto-Connect -->
+  <!-- Left Side: Kill Switch &amp; Auto-Connect -->
   <g transform="translate(40, 110)">
     <rect width="580" height="570" rx="16" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1"/>
     <text x="32" y="44" font-size="18" font-weight="700" fill="#ffffff">Kill Switch &amp; Connection Rules</text>
@@ -59,7 +59,7 @@
     </g>
   </g>
 
-  <!-- Right Side: Split Tunneling & DNS -->
+  <!-- Right Side: Split Tunneling &amp; DNS -->
   <g transform="translate(650, 110)">
     <rect width="590" height="570" rx="16" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1"/>
     <text x="32" y="44" font-size="18" font-weight="700" fill="#ffffff">Split Tunneling &amp; Custom DNS</text>

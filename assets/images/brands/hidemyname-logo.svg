@@ -2,7 +2,7 @@
   <g transform="translate(10, 10)">
     <!-- Cat Shield Emblem -->
     <g transform="translate(0, 0) scale(0.6)">
-      <!-- Base Shield & Cat silhouette -->
+      <!-- Base Shield &amp; Cat silhouette -->
       <path d="M 58,12 C 54,4 42,0 36,12 C 30,22 28,32 20,38 C 12,44 4,46 2,58 C 0,70 6,84 14,96 C 26,114 42,128 58,138 C 74,128 90,114 102,96 C 110,84 116,70 114,58 C 112,46 104,44 96,38 C 88,32 86,22 80,12 C 74,0 62,4 58,12 Z" fill="#0B1B2B"/>
       <!-- Inner White Cutout -->
       <path d="M 58,34 C 74,34 88,48 88,68 C 88,90 74,106 58,118 C 42,106 28,90 28,68 C 28,48 42,34 58,34 Z" fill="#FFFFFF"/>

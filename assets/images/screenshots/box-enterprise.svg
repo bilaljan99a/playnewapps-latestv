@@ -20,10 +20,10 @@
     <circle cx="36" cy="20" r="5" fill="#F59E0B"/>
     <circle cx="52" cy="20" r="5" fill="#10B981"/>
     
-    <text x="370" y="25" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="middle">Box Platform — Box AI & Enterprise Solutions</text>
+    <text x="370" y="25" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="middle">Box Platform — Box AI &amp; Enterprise Solutions</text>
     
     <g transform="translate(30, 65)">
-      <text x="0" y="25" font-size="22" font-weight="800" fill="#FFFFFF">🤖 Box AI & Enterprise Solutions</text>
+      <text x="0" y="25" font-size="22" font-weight="800" fill="#FFFFFF">🤖 Box AI &amp; Enterprise Solutions</text>
       <text x="0" y="48" font-size="13" fill="#94A3B8">Intelligent Content Management with Box AI Agents and custom workflows</text>
     </g>
     
@@ -33,7 +33,7 @@
           <rect width="680" height="60" rx="8" fill="#1E293B" stroke="#D97706" stroke-width="1.5"/>
           <circle cx="30" cy="30" r="14" fill="#D97706" opacity="0.2"/>
           <text x="30" y="34" font-size="12" font-weight="700" fill="#D97706" text-anchor="middle">01</text>
-          <text x="60" y="26" font-size="14" font-weight="700" fill="#F8FAFC">Box AI Content Insights & Summaries</text>
+          <text x="60" y="26" font-size="14" font-weight="700" fill="#F8FAFC">Box AI Content Insights &amp; Summaries</text>
           <text x="60" y="44" font-size="12" fill="#94A3B8">Extract key clauses, generate summaries, and query complex documents.</text>
           <rect x="580" y="18" width="80" height="24" rx="12" fill="#D97706" opacity="0.15"/>
           <text x="620" y="34" font-size="10" font-weight="700" fill="#D97706" text-anchor="middle">Box AI</text>
@@ -63,7 +63,7 @@
           <rect width="680" height="60" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
           <circle cx="30" cy="30" r="14" fill="#D97706" opacity="0.2"/>
           <text x="30" y="34" font-size="12" font-weight="700" fill="#D97706" text-anchor="middle">04</text>
-          <text x="60" y="26" font-size="14" font-weight="700" fill="#F8FAFC">Admin Governance & Compliance Console</text>
+          <text x="60" y="26" font-size="14" font-weight="700" fill="#F8FAFC">Admin Governance &amp; Compliance Console</text>
           <text x="60" y="44" font-size="12" fill="#94A3B8">Manage custom retention policies, legal holds, and security logs.</text>
           <rect x="580" y="18" width="80" height="24" rx="12" fill="#D97706" opacity="0.15"/>
           <text x="620" y="34" font-size="10" font-weight="700" fill="#D97706" text-anchor="middle">Governance</text>

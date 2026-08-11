@@ -23,7 +23,7 @@
   <rect x="0" y="0" width="1280" height="60" fill="#1e293b"/>
   <line x1="0" y1="60" x2="1280" y2="60" stroke="#334155" stroke-width="1"/>
 
-  <!-- Logo & Title -->
+  <!-- Logo &amp; Title -->
   <g transform="translate(24, 14)">
     <rect width="32" height="32" rx="8" fill="url(#wpsRed)"/>
     <text x="16" y="22" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">W</text>

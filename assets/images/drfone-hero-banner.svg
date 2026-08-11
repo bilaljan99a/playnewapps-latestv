@@ -64,7 +64,7 @@
     </g>
   </g>
 
-  <!-- Right Visual Mockup (Laptop & Phone Interface) -->
+  <!-- Right Visual Mockup (Laptop &amp; Phone Interface) -->
   <g transform="translate(680, 60)" filter="url(#shadow)">
     <!-- Monitor / Software Window -->
     <rect x="0" y="0" width="460" height="340" rx="12" fill="url(#cardBg)" stroke="#38bdf8" stroke-width="2" />

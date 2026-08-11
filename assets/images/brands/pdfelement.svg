@@ -28,7 +28,7 @@
   <rect x="180" y="215" width="140" height="10" rx="5" fill="#94A3B8" opacity="0.6" />
   <rect x="180" y="240" width="150" height="10" rx="5" fill="#94A3B8" opacity="0.6" />
 
-  <!-- Dynamic Edit & AI Spark Ring -->
+  <!-- Dynamic Edit &amp; AI Spark Ring -->
   <circle cx="280" cy="310" r="60" fill="url(#aiGrad)" opacity="0.15" />
   <path d="M220 330 L270 280 M270 280 L290 260 C295 255, 305 255, 310 260 L320 270 C325 275, 325 285, 320 290 L300 310 M270 280 L290 300 M220 330 L220 360 L250 360 Z" stroke="#0066FF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none" />
 

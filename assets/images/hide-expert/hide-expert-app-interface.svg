@@ -118,7 +118,7 @@
     </g>
   </g>
 
-  <!-- Right Sidebar - Features & Server List Quick Select -->
+  <!-- Right Sidebar - Features &amp; Server List Quick Select -->
   <g transform="translate(720, 60)">
     <rect x="0" y="0" width="260" height="440" rx="12" fill="url(#cardGrad)" stroke="#334155"/>
     <text x="15" y="28" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="13">Active Security Features</text>

@@ -27,7 +27,7 @@
     </g>
   </g>
 
-  <!-- Main Cloud Files & Active Editors Area -->
+  <!-- Main Cloud Files &amp; Active Editors Area -->
   <g transform="translate(300, 70)">
     <!-- Active Collaboration Banner -->
     <rect width="950" height="100" rx="12" fill="#0369a1" stroke="#38bdf8" stroke-width="1"/>

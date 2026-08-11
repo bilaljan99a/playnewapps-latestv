@@ -23,7 +23,7 @@
   <text x="150" y="345" fill="#94A3B8" font-family="sans-serif" font-size="13">🔒 Batch Encrypt</text>
   <text x="150" y="385" fill="#94A3B8" font-family="sans-serif" font-size="13">📑 Batch Numbering</text>
 
-  <!-- Right: Queue Table & Controls -->
+  <!-- Right: Queue Table &amp; Controls -->
   <rect x="360" y="140" width="720" height="380" rx="8" fill="#0F172A" />
   <!-- Table Header -->
   <rect x="360" y="140" width="720" height="36" rx="8" fill="#1E293B" />

@@ -44,6 +44,14 @@ app.get('/lennuabi-review', (req, res) => {
   res.sendFile(path.join(__dirname, 'lennuabi-review.html'));
 });
 
+app.get('/alibaba', (req, res) => {
+  res.sendFile(path.join(__dirname, 'alibaba.html'));
+});
+
+app.get('/alibaba-review', (req, res) => {
+  res.sendFile(path.join(__dirname, 'alibaba.html'));
+});
+
 // Serve static files with html extension fallback
 app.use(express.static(__dirname, { extensions: ['html'] }));
 

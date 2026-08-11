@@ -22,7 +22,7 @@
   <path d="M0 90 H900 M0 180 H900 M0 270 H900 M0 360 H900" stroke="#334155" stroke-width="1" stroke-dasharray="4 4" opacity="0.3"/>
   <path d="M180 0 V450 M360 0 V450 M540 0 V450 M720 0 V450" stroke="#334155" stroke-width="1" stroke-dasharray="4 4" opacity="0.3"/>
 
-  <!-- Left Side: Review Meta & Rating -->
+  <!-- Left Side: Review Meta &amp; Rating -->
   <g transform="translate(50, 45)">
     <!-- Category Badge -->
     <rect width="260" height="32" rx="16" fill="url(#badgeGrad)"/>

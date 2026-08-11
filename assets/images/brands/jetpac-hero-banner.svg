@@ -75,7 +75,7 @@
         <text x="396" y="26" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#10B981">⚡ 5G Multi-Carrier</text>
     </g>
 
-    <!-- Right Side Graphic: Smartphone Mockup & Jet Icon -->
+    <!-- Right Side Graphic: Smartphone Mockup &amp; Jet Icon -->
     <g transform="translate(780, 50)" filter="url(#dropShadow)">
         <!-- Globe Circle Background -->
         <circle cx="170" cy="200" r="160" fill="rgba(123, 63, 242, 0.25)" stroke="url(#accentGrad)" stroke-width="2"/>

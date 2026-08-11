@@ -75,7 +75,7 @@
     </g>
   </g>
 
-  <!-- Right: Admin Analytics & Security Governance -->
+  <!-- Right: Admin Analytics &amp; Security Governance -->
   <g transform="translate(650, 90)">
     <rect width="600" height="600" rx="12" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
     

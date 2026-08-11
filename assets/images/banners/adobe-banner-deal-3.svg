@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="1000" height="320">
+  <defs>
+    <linearGradient id="fireflyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#211500"/>
+      <stop offset="50%" stop-color="#0F0C02"/>
+      <stop offset="100%" stop-color="#1A1100"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFAB00"/>
+      <stop offset="100%" stop-color="#FFD54F"/>
+    </linearGradient>
+    <linearGradient id="fireflyCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#261E08"/>
+      <stop offset="100%" stop-color="#140F03"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="320" rx="16" fill="url(#fireflyBg)" stroke="#593D00" stroke-width="2"/>
+
+  <path d="M 0 0 L 12 0 L 12 320 L 0 320 Z" fill="url(#goldGrad)"/>
+
+  <g transform="translate(45, 35)">
+    <rect x="0" y="0" width="230" height="28" rx="14" fill="#FFAB00" fill-opacity="0.2" stroke="#FFAB00" stroke-width="1"/>
+    <text x="115" y="18" text-anchor="middle" fill="#FFC107" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="12" letter-spacing="0.5">COMMERCIALLY SAFE GENERATIVE AI</text>
+
+    <text x="0" y="72" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="30">Adobe Firefly AI Suite</text>
+    <text x="0" y="105" fill="#FFC107" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="20">Generative Fill, Expand &amp; Vector Recolor</text>
+
+    <text x="0" y="145" fill="#E0E0E0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13">✓ Integrated into Photoshop, Illustrator &amp; Adobe Express</text>
+    <text x="0" y="170" fill="#E0E0E0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13">✓ Trained strictly on licensed stock &amp; public domain assets</text>
+    <text x="0" y="195" fill="#E0E0E0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13">✓ 100% commercially safe for client work and corporate branding</text>
+
+    <g transform="translate(0, 215)">
+      <rect x="0" y="0" width="220" height="46" rx="8" fill="url(#goldGrad)"/>
+      <text x="110" y="28" text-anchor="middle" fill="#000000" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="15">Try Firefly AI Free →</text>
+    </g>
+  </g>
+
+  <g transform="translate(610, 35)">
+    <rect x="0" y="0" width="350" height="250" rx="14" fill="url(#fireflyCard)" stroke="#593D00" stroke-width="1.5"/>
+
+    <g transform="translate(145, 30)">
+      <rect x="0" y="0" width="60" height="60" rx="12" fill="#2A1B00" stroke="#FFAB00" stroke-width="2"/>
+      <text x="30" y="40" text-anchor="middle" fill="#FFAB00" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="24">Ff</text>
+    </g>
+
+    <text x="175" y="115" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="16">Text to Image &amp; Generative Fill</text>
+
+    <rect x="30" y="135" width="290" height="40" rx="8" fill="#140F03" stroke="#3D2B00"/>
+    <text x="45" y="160" fill="#FFE082" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-style="italic" font-size="12">"Golden sunset over futuristic cityscape..."</text>
+
+    <rect x="30" y="190" width="290" height="35" rx="6" fill="#FFAB00" fill-opacity="0.15" stroke="#FFAB00" stroke-width="1"/>
+    <text x="175" y="212" text-anchor="middle" fill="#FFD54F" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="12">✨ Generated in 2.4 seconds with layers</text>
+  </g>
+</svg>

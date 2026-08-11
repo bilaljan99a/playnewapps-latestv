@@ -5,7 +5,7 @@
     <rect width="1000" height="620" rx="16" fill="#131a28" stroke="#222d42" stroke-width="2"/>
     <text x="40" y="50" fill="#ffffff" font-size="22" font-weight="bold">Save &amp; Export Project</text>
 
-    <!-- Left Settings: Resolution & FPS -->
+    <!-- Left Settings: Resolution &amp; FPS -->
     <g transform="translate(40, 80)">
       <text x="0" y="25" fill="#ff4757" font-size="14" font-weight="bold">RESOLUTION</text>
 

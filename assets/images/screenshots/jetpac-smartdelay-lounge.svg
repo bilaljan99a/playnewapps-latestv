@@ -13,7 +13,7 @@
         <rect x="0" y="0" width="680" height="50" rx="16" fill="#FFD700"/>
         <text x="25" y="32" font-family="system-ui, sans-serif" font-weight="900" font-size="16" fill="#000000">CONFIRMED LOUNGEKEY PASS • FLIGHT DELAY DETECTED (+60 MINS)</text>
         
-        <!-- Flight & Pass Info -->
+        <!-- Flight &amp; Pass Info -->
         <text x="30" y="90" font-family="system-ui, sans-serif" font-weight="800" font-size="20" fill="#FFFFFF">Flight: SQ638 (Tokyo Narita NRT → Singapore SIN)</text>
         <text x="30" y="118" font-family="system-ui, sans-serif" font-size="14" fill="#E2E8F0">Status: Delayed by 75 Minutes • SmartDelay Auto-Triggered</text>
 

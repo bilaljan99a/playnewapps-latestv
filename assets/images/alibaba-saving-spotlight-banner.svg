@@ -28,7 +28,7 @@
     <!-- Glow Filter -->
     <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="20" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      <feBlend in="SourceGraphic" in2="blur" mode="normal" />
     </filter>
   </defs>
 

@@ -44,7 +44,7 @@
     <text x="710" y="62" fill="#3B82F6" font-family="sans-serif" font-weight="bold" font-size="26">18,450,000</text>
   </g>
 
-  <!-- Chart & Feed -->
+  <!-- Chart &amp; Feed -->
   <g transform="translate(250, 260)">
     <rect width="580" height="400" rx="12" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
     <text x="20" y="35" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="16">Global Ad Volume &amp; Trend Growth</text>

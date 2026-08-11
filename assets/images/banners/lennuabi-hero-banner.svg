@@ -25,7 +25,7 @@
   <path d="M -100 500 Q 400 200 1300 100" stroke="#FFC800" stroke-opacity="0.15" stroke-width="3" fill="none" stroke-dasharray="12,12" />
   <path d="M -100 550 Q 500 250 1300 150" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2" fill="none" />
 
-  <!-- Left Side: Text & Value Proposition -->
+  <!-- Left Side: Text &amp; Value Proposition -->
   <g transform="translate(80, 100)">
     <!-- Badge -->
     <rect x="0" y="0" width="280" height="38" rx="19" fill="#FFC800" fill-opacity="0.2" stroke="#FFC800" stroke-width="1.5" />
@@ -65,7 +65,7 @@
     </g>
   </g>
 
-  <!-- Right Side: Flight Board & Compensation Calculator Graphic -->
+  <!-- Right Side: Flight Board &amp; Compensation Calculator Graphic -->
   <g transform="translate(680, 90)" filter="url(#shadow)">
     <!-- Main Card Container -->
     <rect x="0" y="0" width="440" height="450" rx="24" fill="url(#cardGrad)" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1.5" />

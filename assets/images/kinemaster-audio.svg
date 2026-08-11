@@ -4,7 +4,7 @@
   <g transform="translate(60, 40)">
     <rect width="1160" height="640" rx="16" fill="#131a28" stroke="#222d42" stroke-width="2"/>
 
-    <!-- Left Master VU Faders & Mixer -->
+    <!-- Left Master VU Faders &amp; Mixer -->
     <g transform="translate(30, 30)">
       <rect width="500" height="580" rx="12" fill="#0f1522" stroke="#1e293b"/>
       <text x="24" y="40" fill="#ffffff" font-size="18" font-weight="bold">Multi-Channel Audio Mixer</text>
@@ -52,7 +52,7 @@
       </g>
     </g>
 
-    <!-- Right Voice Changer & EQ Suite -->
+    <!-- Right Voice Changer &amp; EQ Suite -->
     <g transform="translate(560, 30)">
       <rect width="570" height="580" rx="12" fill="#0f1522" stroke="#1e293b"/>
       <text x="24" y="40" fill="#ffffff" font-size="18" font-weight="bold">Voice Modulation &amp; EQ Presets</text>

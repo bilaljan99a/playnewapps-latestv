@@ -31,7 +31,7 @@
       </g>
     </g>
 
-    <!-- Quality & Image Resolution Settings -->
+    <!-- Quality &amp; Image Resolution Settings -->
     <g transform="translate(30, 180)">
       <text x="0" y="20" font-size="15" font-weight="800" fill="#ffffff">Export Quality &amp; Compression:</text>
       
@@ -43,7 +43,7 @@
       </g>
     </g>
 
-    <!-- Security & Password Encryption -->
+    <!-- Security &amp; Password Encryption -->
     <g transform="translate(30, 320)">
       <text x="0" y="20" font-size="15" font-weight="800" fill="#ffffff">Document Security &amp; Permissions:</text>
       

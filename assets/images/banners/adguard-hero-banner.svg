@@ -40,7 +40,7 @@
     <path d="M 38,62 L 53,77 L 85,42 C 88,39 93,39 96,42 L 102,48 C 105,51 105,56 102,59 L 58,103 C 55,106 50,106 47,103 L 27,83 C 24,80 24,75 27,72 L 33,66 C 36,63 41,63 44,66 Z" fill="#FFFFFF" />
   </g>
 
-  <!-- Protection Status Badges & Metrics -->
+  <!-- Protection Status Badges &amp; Metrics -->
   <g transform="translate(260, 110)">
     <!-- Status Indicator -->
     <rect x="0" y="0" width="230" height="42" rx="8" fill="#064E3B" stroke="#10B981" stroke-width="1.5" />

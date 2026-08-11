@@ -29,6 +29,6 @@
   <!-- Center Diagnostic Pulse / Medical Stethoscope Heartbeat -->
   <path d="M 198 256 L 222 256 L 232 232 L 246 280 L 258 244 L 268 264 L 278 256 L 314 256" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
 
-  <!-- Speaker & Home Indicator -->
+  <!-- Speaker &amp; Home Indicator -->
   <rect x="226" y="106" width="60" height="6" rx="3" ry="3" fill="#D0E2FF" />
 </svg>

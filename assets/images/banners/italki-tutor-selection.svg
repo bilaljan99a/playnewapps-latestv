@@ -10,7 +10,7 @@
   
   <!-- Header Bar -->
   <rect x="0" y="0" width="1000" height="60" fill="#0F172A" rx="20"/>
-  <text x="30" y="36" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800">italki Tutor Search Engine & Smart Filter Benchmarking</text>
+  <text x="30" y="36" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800">italki Tutor Search Engine &amp; Smart Filter Benchmarking</text>
 
   <!-- Filter Bar Mockup -->
   <g transform="translate(30, 80)">
@@ -41,7 +41,7 @@
     <text x="105" y="60" fill="#38BDF8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600">Professional Teacher</text>
     <text x="20" y="105" fill="#F59E0B" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">★ 4.9 (420 lessons)</text>
     <text x="20" y="130" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">Speaks: Spanish (Native), English (C2)</text>
-    <text x="20" y="150" fill="#CBD5E1" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">"DELE Certified & Conversational Specialist"</text>
+    <text x="20" y="150" fill="#CBD5E1" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">"DELE Certified &amp; Conversational Specialist"</text>
     <rect x="20" y="180" width="250" height="35" rx="8" fill="#1E293B"/>
     <text x="35" y="202" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800">$12 / hr</text>
     <text x="180" y="202" fill="#10B981" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">Trial: $6</text>
@@ -57,7 +57,7 @@
       <text x="105" y="60" fill="#10B981" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600">Community Tutor</text>
       <text x="20" y="105" fill="#F59E0B" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">★ 5.0 (850 lessons)</text>
       <text x="20" y="130" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">Speaks: Japanese (Native), English (B2)</text>
-      <text x="20" y="150" fill="#CBD5E1" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">"Casual Tokyo Japanese & Business Manners"</text>
+      <text x="20" y="150" fill="#CBD5E1" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">"Casual Tokyo Japanese &amp; Business Manners"</text>
       <rect x="20" y="180" width="250" height="35" rx="8" fill="#1E293B"/>
       <text x="35" y="202" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800">$9 / hr</text>
       <text x="180" y="202" fill="#10B981" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">Trial: $4.50</text>
@@ -74,7 +74,7 @@
       <text x="105" y="60" fill="#38BDF8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600">Professional Teacher</text>
       <text x="20" y="105" fill="#F59E0B" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">★ 4.9 (1,120 lessons)</text>
       <text x="20" y="130" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">Speaks: French (Native), Spanish (C1)</text>
-      <text x="20" y="150" fill="#CBD5E1" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">"DELF Preparation & Parisian Pronunciation"</text>
+      <text x="20" y="150" fill="#CBD5E1" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">"DELF Preparation &amp; Parisian Pronunciation"</text>
       <rect x="20" y="180" width="250" height="35" rx="8" fill="#1E293B"/>
       <text x="35" y="202" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800">$16 / hr</text>
       <text x="180" y="202" fill="#10B981" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">Trial: $8</text>

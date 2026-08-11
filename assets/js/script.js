@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const mask = wrapper.querySelector('.hidden-code-mask');
         const realCode = wrapper.getAttribute('data-code');
-        const affiliateLink = wrapper.getAttribute('data-link');
+        const affiliateLink = wrapper.getAttribute('data-link') || 'https://rzekl.com/g/pm1aev55clb68b264a76219aa26f6f/?ulp=https%3A%2F%2Fwww.alibaba.com';
 
         if (!realCode) return;
 
@@ -163,10 +163,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (typeof showToast === 'function') showToast('Code revealed! Opening store...');
             }
 
+            if (typeof window.showCouponModal === 'function') {
+                window.showCouponModal(realCode, affiliateLink);
+            }
+
             if (affiliateLink) {
-                setTimeout(() => {
-                    window.open(affiliateLink, '_blank', 'noopener,sponsored');
-                }, 800);
+                window.open(affiliateLink, '_blank', 'noopener,sponsored');
             }
             
             setTimeout(() => {
@@ -177,6 +179,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 await navigator.clipboard.writeText(realCode);
                 btn.textContent = 'Copied!';
                 if (typeof showToast === 'function') showToast('Coupon copied!');
+                if (typeof window.showCouponModal === 'function') {
+                    window.showCouponModal(realCode, affiliateLink);
+                }
                 setTimeout(() => {
                     btn.textContent = 'Copy';
                 }, 3000);
@@ -532,7 +537,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Global RetailMeNot Style Coupon Details Toggle
-window.toggleCouponDetails = function(btn) {
+function toggleCouponDetails(btn) {
     if (!btn) return;
     
     // Prevent double execution from inline onclick + event listener bubbling
@@ -542,7 +547,8 @@ window.toggleCouponDetails = function(btn) {
     }
     btn._lastToggle = now;
 
-    const card = btn.closest('.coupon-card, .deal-card, .card, article, .retailmenot-style, .retailmenot-card') || btn.parentElement.parentElement;
+    const card = btn.closest('.coupon-card, .deal-card, .card, article, .retailmenot-style, .retailmenot-card') || 
+                 (btn.closest('.coupon-details-footer') ? btn.closest('.coupon-details-footer').parentElement : btn.parentElement.parentElement);
     if (!card) return;
     const detailsBox = card.querySelector('.coupon-details-content, .details-content, .coupon-details');
     if (!detailsBox) return;
@@ -572,14 +578,77 @@ window.toggleCouponDetails = function(btn) {
         btn.style.color = '#334155';
         btn.style.borderColor = '#cbd5e1';
     }
+}
+window.toggleCouponDetails = toggleCouponDetails;
+
+// Global Coupon Modal Popup Function
+window.showCouponModal = function(code, link) {
+    let modal = document.getElementById('coupon-modal-popup');
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'coupon-modal-popup';
+        modal.className = 'coupon-modal-overlay';
+        document.body.appendChild(modal);
+    }
+
+    const targetUrl = link || 'https://www.alibaba.com';
+
+    modal.innerHTML = `
+        <div class="coupon-modal-card">
+            <button class="coupon-modal-close" aria-label="Close modal">&times;</button>
+            <div class="coupon-modal-header">
+                <span class="material-icons-round modal-check-icon">verified</span>
+                <h3>Promo Code Copied!</h3>
+                <p>Paste this verified code at checkout to apply your savings.</p>
+            </div>
+            <div class="coupon-modal-code-box">
+                <span class="modal-code-text">${code}</span>
+                <button class="modal-copy-btn" id="modal-copy-trigger">
+                    <span class="material-icons-round">content_copy</span> Copy
+                </button>
+            </div>
+            <div class="coupon-modal-actions">
+                <a href="${targetUrl}" target="_blank" rel="noopener sponsored" class="modal-go-btn">
+                    <span>Go to Store</span>
+                    <span class="material-icons-round">open_in_new</span>
+                </a>
+            </div>
+            <p class="modal-note">Opening store in a new tab...</p>
+        </div>
+    `;
+
+    modal.classList.add('active');
+
+    // Attach modal close events
+    const closeBtn = modal.querySelector('.coupon-modal-close');
+    if (closeBtn) {
+        closeBtn.onclick = () => modal.classList.remove('active');
+    }
+    modal.onclick = (e) => {
+        if (e.target === modal) modal.classList.remove('active');
+    };
+
+    // Attach modal copy button event
+    const copyBtn = modal.querySelector('#modal-copy-trigger');
+    if (copyBtn) {
+        copyBtn.onclick = async () => {
+            try {
+                await navigator.clipboard.writeText(code);
+                copyBtn.innerHTML = `<span class="material-icons-round">check</span> Copied!`;
+                setTimeout(() => {
+                    copyBtn.innerHTML = `<span class="material-icons-round">content_copy</span> Copy`;
+                }, 2500);
+            } catch(e){}
+        };
+    }
 };
 
 document.addEventListener('click', function(e) {
     const btn = e.target.closest('.toggle-details-btn');
     if (btn) {
-        // If button has inline onclick, let inline handle or let toggleCouponDetails debounce handle
         e.preventDefault();
         window.toggleCouponDetails(btn);
     }
 });
+
 

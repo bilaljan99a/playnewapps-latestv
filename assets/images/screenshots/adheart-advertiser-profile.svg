@@ -24,7 +24,7 @@
     <text x="860" y="58" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="24">214 Days</text>
   </g>
 
-  <!-- History Chart & Active Ad List -->
+  <!-- History Chart &amp; Active Ad List -->
   <g transform="translate(50, 270)">
     <rect width="1100" height="390" rx="12" fill="#1B2234" stroke="#2A344A" stroke-width="1" />
     <text x="25" y="35" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="16">Ad Launch Frequency Timeline (Last 12 Months)</text>
