@@ -1211,6 +1211,14 @@ h1, h2, h3, h4, h5, h6 {
 /* ==========================================================================
    RetailMeNot Style Coupon Cards
    ========================================================================== */
+.coupon-grid,
+.store-coupons-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+    width: 100% !important;
+}
+
 .coupon-card.retailmenot-style,
 .deal-card.retailmenot-style,
 .retailmenot-card {
@@ -1222,7 +1230,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     overflow: hidden;
     transition: all 0.25s ease;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.5rem;
     width: 100%;
 }
 
@@ -1300,21 +1308,24 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 100px;
-    padding: 0.6rem 0.85rem;
+    min-width: 120px;
+    padding: 0.65rem 1rem;
     background: rgba(124, 58, 237, 0.06);
     border-radius: 12px;
     border: 1px solid rgba(124, 58, 237, 0.15);
     flex-shrink: 0;
+    text-align: center;
 }
 
 .discount-hero {
-    font-size: 1.75rem;
+    font-size: 1.35rem;
     font-weight: 900;
     color: #7c3aed;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
     text-align: center;
-    line-height: 1.1;
+    line-height: 1.2;
+    word-break: normal;
+    overflow-wrap: break-word;
 }
 
 [data-theme="dark"] .discount-hero {
@@ -1335,6 +1346,8 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-primary);
     line-height: 1.35;
     margin: 0;
+    word-break: normal;
+    overflow-wrap: break-word;
 }
 
 .coupon-info-box .coupon-title a {
