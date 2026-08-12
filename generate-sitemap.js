@@ -146,7 +146,7 @@ function generateSitemapXML() {
     'index.html', 'coupon.html', 'stores.html', 'reviews.html',
     'about.html', 'contact.html', 'privacy.html', 'terms.html',
     'affiliate.html', 'category.html', 'author.html', 'store.html',
-    'review.html', 'deal.html'
+    'review.html', 'deal.html', '404.html', '410.html'
   ]);
 
   try {

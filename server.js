@@ -80,7 +80,9 @@ const cleanRoutes = [
   { route: '/lennuabi-coupons', file: 'lennuabi-coupons.html' },
   { route: '/lennuabi-review', file: 'lennuabi-review.html' },
   { route: '/alibaba', file: 'alibaba.html' },
-  { route: '/alibaba-review', file: 'alibaba.html' }
+  { route: '/alibaba-review', file: 'alibaba.html' },
+  { route: '/3dlabprint', file: '3dlabprint-coupons.html' },
+  { route: '/3dlabprint-coupons', file: '3dlabprint-coupons.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {

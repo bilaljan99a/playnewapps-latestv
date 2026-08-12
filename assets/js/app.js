@@ -2289,7 +2289,7 @@ App.renderAllStoresPage = async function() {
 
         filteredStores.forEach(s => {
             const firstChar = s.name.trim().charAt(0).toUpperCase();
-            const letterKey = /[A-Z]/.test(firstChar) ? firstChar : '#';
+            const letterKey = /[A-Z]/.test(firstChar) ? firstChar : '0–9';
             activeLetters.add(letterKey);
             if (!groups[letterKey]) groups[letterKey] = [];
             groups[letterKey].push(s);
@@ -2298,10 +2298,10 @@ App.renderAllStoresPage = async function() {
         // Render Alphabet Nav (only show letters that have stores in current filter)
         renderAlphabetNav(activeLetters);
 
-        // Sort keys (# first if present, then A-Z)
+        // Sort keys (0–9 first if present, then A-Z)
         const sortedKeys = Object.keys(groups).sort((a, b) => {
-            if (a === '#') return -1;
-            if (b === '#') return 1;
+            if (a === '0–9' || a === '0-9' || a === '#') return -1;
+            if (b === '0–9' || b === '0-9' || b === '#') return 1;
             return a.localeCompare(b);
         });
 
@@ -2335,9 +2335,11 @@ App.renderAllStoresPage = async function() {
         const navEl = document.getElementById('alphabet-nav');
         if (!navEl) return;
 
-        // Generate full A-Z array (+ '#' if present in activeLettersSet)
+        // Generate full A-Z array (+ '0–9' if present in activeLettersSet)
         const allLetters = [];
-        if (activeLettersSet.has('#')) allLetters.push('#');
+        if (activeLettersSet.has('0–9')) allLetters.push('0–9');
+        else if (activeLettersSet.has('0-9')) allLetters.push('0-9');
+        else if (activeLettersSet.has('#')) allLetters.push('#');
         for (let i = 65; i <= 90; i++) {
             allLetters.push(String.fromCharCode(i));
         }

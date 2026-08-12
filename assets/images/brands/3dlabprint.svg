@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Clean white rounded box background for store grids -->
+  <rect width="400" height="400" rx="64" fill="#FFFFFF" />
+  <rect width="392" height="392" x="4" y="4" rx="60" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="4"/>
+  
+  <g transform="translate(40, 110)">
+    <!-- 3D Plane Icon Graphic -->
+    <g transform="translate(10, 10)">
+      <!-- Orange/Blue 3D Printed Plane Silhouette -->
+      <path d="M 50,0 L 70,50 L 100,50 L 60,70 L 75,120 L 50,90 L 25,120 L 40,70 L 0,50 L 30,50 Z" fill="#FF6A00" />
+      <!-- Layer lines effect representing 3D printing -->
+      <line x1="20" y1="55" x2="80" y2="55" stroke="#FFFFFF" stroke-width="3" />
+      <line x1="25" y1="65" x2="75" y2="65" stroke="#FFFFFF" stroke-width="3" />
+      <line x1="30" y1="75" x2="70" y2="75" stroke="#FFFFFF" stroke-width="3" />
+    </g>
+
+    <!-- Wordmark typography -->
+    <g transform="translate(125, 95)">
+      <text font-family="-apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-weight="900" font-size="38" letter-spacing="-1">
+        <tspan fill="#0F172A">3D</tspan>
+        <tspan fill="#FF6A00">Lab</tspan>
+        <tspan fill="#2563EB">Print</tspan>
+      </text>
+      <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-weight="600" font-size="14" fill="#64748B" letter-spacing="1">
+        3D PRINTABLE RC AIRCRAFT
+      </text>
+    </g>
+  </g>
+</svg>
