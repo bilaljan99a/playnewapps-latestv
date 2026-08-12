@@ -3240,7 +3240,7 @@
   {
     "id": "3dlabprint-hawker-tempest-value-pack",
     "storeId": "3dlabprint",
-    "title": "Hawker Tempest Mk II Value Pack — Up to 31% OFF",
+    "title": "Hawker Tempest Mk II Value Pack \u2014 Up to 31% OFF",
     "description": "Get the complete Hawker Tempest Mk II Value Pack STL files package for high-performance 3D-printed scale RC flight.",
     "code": "NO CODE NEEDED",
     "discount": "31% OFF",
@@ -3324,7 +3324,7 @@
   {
     "id": "3dlabprint-shop-directory",
     "storeId": "3dlabprint",
-    "title": "3DLabPrint Shop Directory — All Printable RC Models",
+    "title": "3DLabPrint Shop Directory \u2014 All Printable RC Models",
     "description": "Browse the complete 3DLabPrint shop directory for 3D-printable RC planes, warbirds, jets, trainer models, and spare parts.",
     "code": "NO CODE NEEDED",
     "discount": "SHOP ALL MODELS",
@@ -3361,6 +3361,69 @@
       "id": "3dlabprint",
       "name": "3DLabPrint",
       "logo": "/assets/images/brands/3dlabprint.svg"
+    }
+  },
+  {
+    "id": "presenti-ai-60-pro-plan",
+    "storeId": "presenti-ai",
+    "title": "60% Off Pro Plan \u2014 Presenti.ai Coupon",
+    "description": "Get 60% off the Presenti.ai Pro Plan to unlock unlimited AI presentation generation, premium slide templates, and high-resolution PPTX exports.",
+    "code": "NO CODE NEEDED",
+    "discount": "60% OFF",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "isTop": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://rcpsj.com/g/2a9jab3pxrb68b264a76d2e5b365aa/",
+    "url": "https://rcpsj.com/g/2a9jab3pxrb68b264a76d2e5b365aa/",
+    "store": {
+      "id": "presenti-ai",
+      "name": "Presenti.ai",
+      "logo": "/assets/images/brands/presenti-ai.svg"
+    }
+  },
+  {
+    "id": "presenti-ai-40-yearly-plans",
+    "storeId": "presenti-ai",
+    "title": "Up to 40% Off Yearly Plans",
+    "description": "Save up to 40% when subscribing to annual or yearly plans on Presenti.ai for AI slide creation and team presentation decks.",
+    "code": "NO CODE NEEDED",
+    "discount": "UP TO 40% OFF",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "isTop": false,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://rcpsj.com/g/2a9jab3pxrb68b264a76d2e5b365aa/",
+    "url": "https://rcpsj.com/g/2a9jab3pxrb68b264a76d2e5b365aa/",
+    "store": {
+      "id": "presenti-ai",
+      "name": "Presenti.ai",
+      "logo": "/assets/images/brands/presenti-ai.svg"
+    }
+  },
+  {
+    "id": "presenti-ai-free-trial",
+    "storeId": "presenti-ai",
+    "title": "Try Presenti.ai Free \u2014 AI Slide Creator",
+    "description": "Test Presenti.ai for free to turn text prompts into structured presentation slides with smart layouts and AI formatting.",
+    "code": "NO CODE NEEDED",
+    "discount": "FREE TRIAL",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "isTop": false,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://rcpsj.com/g/2a9jab3pxrb68b264a76d2e5b365aa/",
+    "url": "https://rcpsj.com/g/2a9jab3pxrb68b264a76d2e5b365aa/",
+    "store": {
+      "id": "presenti-ai",
+      "name": "Presenti.ai",
+      "logo": "/assets/images/brands/presenti-ai.svg"
     }
   }
 ]

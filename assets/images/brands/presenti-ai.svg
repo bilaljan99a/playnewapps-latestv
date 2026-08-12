@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 120" width="380" height="120">
+  <defs>
+    <!-- Red-Orange Gradient for Presenti 'P' Icon -->
+    <linearGradient id="pRedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4D2D" />
+      <stop offset="40%" stop-color="#FF3322" />
+      <stop offset="100%" stop-color="#E61A00" />
+    </linearGradient>
+
+    <!-- Diagonal Stripe Hatch Pattern -->
+    <pattern id="stripePattern" width="8" height="8" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#FFFFFF" stroke-width="2" opacity="0.35" />
+    </pattern>
+  </defs>
+
+  <g transform="translate(10, 15)">
+    <!-- Red 'P' Mark -->
+    <g>
+      <!-- Base Red Body Path -->
+      <path d="M 28 12 
+               C 28 5, 36 0, 48 0 
+               L 72 0 
+               C 88 0, 102 12, 102 28 
+               C 102 44, 88 56, 72 56 
+               L 52 56 
+               L 32 82 
+               C 28 87, 20 87, 16 82 
+               L 10 74 
+               C 6 69, 7 62, 12 57 
+               L 28 36 
+               Z
+               M 46 16 
+               L 68 16 
+               C 74 16, 80 21, 80 28 
+               C 80 35, 74 40, 68 40 
+               L 46 40 
+               Z" 
+            fill="url(#pRedGrad)" 
+            fill-rule="evenodd" />
+
+      <!-- Stripe Overlay -->
+      <path d="M 28 12 
+               C 28 5, 36 0, 48 0 
+               L 72 0 
+               C 88 0, 102 12, 102 28 
+               C 102 44, 88 56, 72 56 
+               L 52 56 
+               L 32 82 
+               C 28 87, 20 87, 16 82 
+               L 10 74 
+               C 6 69, 7 62, 12 57 
+               L 28 36 
+               Z
+               M 46 16 
+               L 68 16 
+               C 74 16, 80 21, 80 28 
+               C 80 35, 74 40, 68 40 
+               L 46 40 
+               Z" 
+            fill="url(#stripePattern)" 
+            fill-rule="evenodd" />
+    </g>
+
+    <!-- Wordmark "Presenti" -->
+    <text x="120" y="64" 
+          font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', 'Montserrat', 'Segoe UI', sans-serif" 
+          font-weight="900" 
+          font-size="64" 
+          fill="#000000" 
+          letter-spacing="-1.5">Presenti</text>
+  </g>
+</svg>

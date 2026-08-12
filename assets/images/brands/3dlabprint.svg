@@ -1,65 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 220" width="500" height="220">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 110" width="420" height="110">
   <defs>
-    <linearGradient id="cyanFacet" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00C3FF" />
-      <stop offset="100%" stop-color="#008BE3" />
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D2FF" />
+      <stop offset="100%" stop-color="#00AEEF" />
     </linearGradient>
-    <linearGradient id="lightCyanFacet" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#33D6FF" />
-      <stop offset="100%" stop-color="#00B2FE" />
-    </linearGradient>
-    <linearGradient id="darkFacet" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#006DAE" />
-      <stop offset="100%" stop-color="#00497B" />
+    <linearGradient id="darkCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0077B6" />
+      <stop offset="100%" stop-color="#005885" />
     </linearGradient>
   </defs>
 
-  <!-- Background White Container -->
-  <rect width="500" height="220" rx="24" fill="#FFFFFF"/>
-
-  <!-- Logo Group -->
-  <g transform="translate(25, 20)">
-    <!-- 3D Geometric Crystal Box with Propeller Icon -->
-    <g id="crystal-icon">
-      <!-- Dark Navy Base Outer Shadow / Frame -->
-      <path d="M 95,28 L 158,62 L 140,165 L 52,175 L 20,118 L 38,48 Z" fill="#002B49" />
-
-      <!-- Crystal Facets -->
-      <!-- Top Face Left -->
-      <polygon points="95,35 60,55 92,90 120,68" fill="url(#lightCyanFacet)" stroke="#002B49" stroke-width="4" stroke-linejoin="round" />
-      <!-- Top Face Right -->
-      <polygon points="95,35 120,68 150,65 125,45" fill="url(#cyanFacet)" stroke="#002B49" stroke-width="4" stroke-linejoin="round" />
-      <!-- Main Front Left Facet -->
-      <polygon points="60,55 28,112 85,135 92,90" fill="url(#cyanFacet)" stroke="#002B49" stroke-width="4" stroke-linejoin="round" />
-      <!-- Main Front Center Facet -->
-      <polygon points="92,90 85,135 132,122 120,68" fill="url(#lightCyanFacet)" stroke="#002B49" stroke-width="4" stroke-linejoin="round" />
-      <!-- Bottom Left Facet -->
-      <polygon points="28,112 56,168 85,135" fill="url(#darkFacet)" stroke="#002B49" stroke-width="4" stroke-linejoin="round" />
-      <!-- Bottom Right Facet -->
-      <polygon points="85,135 56,168 135,158 132,122" fill="url(#cyanFacet)" stroke="#002B49" stroke-width="4" stroke-linejoin="round" />
-      <!-- Side Right Facet -->
-      <polygon points="120,68 132,122 152,108 150,65" fill="url(#darkFacet)" stroke="#002B49" stroke-width="4" stroke-linejoin="round" />
-
-      <!-- Propeller Rotor Mount & Shaft -->
-      <line x1="95" y1="35" x2="102" y2="2" stroke="#002B49" stroke-width="7" stroke-linecap="round" />
-
-      <!-- Propeller Blades (Dark Navy Blue) -->
-      <g transform="translate(102, 2) rotate(-25)">
-        <ellipse cx="0" cy="0" rx="7" ry="7" fill="#002B49" />
-        <!-- Top Left Blade -->
-        <path d="M -3,-3 C -25,-30 -60,-35 -58,-15 C -55,0 -20,-5 -3,-3 Z" fill="#002B49" />
-        <!-- Bottom Right Blade -->
-        <path d="M 3,3 C 25,30 60,35 58,15 C 55,0 20,5 3,3 Z" fill="#002B49" />
+  <g transform="translate(10, 10)">
+    <!-- Icon: 3D Airplane Crystal Facet Box -->
+    <g transform="translate(5, 5)">
+      <!-- Propeller -->
+      <g transform="translate(42, 2)">
+        <ellipse cx="0" cy="0" rx="4" ry="4" fill="#002B49" />
+        <path d="M -2,-2 C -18,-20 -40,-22 -38,-10 C -36,0 -12,-3 -2,-2 Z" fill="#002B49" />
+        <path d="M 2,2 C 18,20 40,22 38,10 C 36,0 12,3 2,2 Z" fill="#002B49" />
+        <line x1="0" y1="0" x2="0" y2="12" stroke="#002B49" stroke-width="4" stroke-linecap="round" />
       </g>
+
+      <!-- Poly Facet Cube -->
+      <polygon points="42,16 12,32 42,50 72,32" fill="url(#cyanGrad)" stroke="#002B49" stroke-width="3" stroke-linejoin="round" />
+      <polygon points="12,32 12,68 42,86 42,50" fill="url(#darkCyan)" stroke="#002B49" stroke-width="3" stroke-linejoin="round" />
+      <polygon points="42,50 42,86 72,68 72,32" fill="url(#cyanGrad)" stroke="#002B49" stroke-width="3" stroke-linejoin="round" />
     </g>
 
-    <!-- Typography Text "3D LabPrint" -->
-    <g transform="translate(185, 30)">
-      <!-- "3D" in Dark Navy Blue -->
-      <text x="0" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="64" fill="#002B49" letter-spacing="-1">3D</text>
-      
-      <!-- "LabPrint" in Cyan Blue -->
-      <text x="0" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="56" fill="#00AEEF" letter-spacing="-0.5">LabPrint</text>
+    <!-- Wordmark "3DLABPRINT" in one clean horizontal block -->
+    <g transform="translate(95, 20)">
+      <text x="0" y="52" 
+            font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', 'Segoe UI', Roboto, sans-serif" 
+            font-weight="900" 
+            font-size="46" 
+            fill="#002B49" 
+            letter-spacing="-1">3D<tspan fill="#00AEEF">LABPRINT</tspan></text>
     </g>
   </g>
 </svg>

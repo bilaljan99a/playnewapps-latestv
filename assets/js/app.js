@@ -1821,7 +1821,7 @@ App.initStorePage = async function() {
     if (brandTextElInit) brandTextElInit.textContent = 'Loading brand information...';
 
     const stores = await getDataService().getStores();
-    const store = stores ? stores.find(s => s.id === id) : null;
+    const store = stores ? stores.find(s => s.id === id || s.id === id.replace(/-coupons$/, '').replace(/-review$/, '')) : null;
     
     if (!store) {
         const main = document.querySelector('main') || document.querySelector('.main-content');
@@ -1858,11 +1858,20 @@ App.initStorePage = async function() {
     updateMeta('meta[property="og:description"]', 'content', storeDesc);
     
     // Header Info
-    document.getElementById('breadcrumb-store').textContent = store.name;
-    document.getElementById('store-name').textContent = `${store.name} Coupons & Promo Codes`;
-    document.getElementById('store-logo').src = store.logo;
-    document.getElementById('store-logo').alt = `${store.name} Logo`;
-    document.getElementById('store-about').textContent = store.about || `Discover the latest deals for ${store.name}.`;
+    const breadcrumbElTarget = document.getElementById('breadcrumb-store');
+    if (breadcrumbElTarget) breadcrumbElTarget.textContent = store.name;
+
+    const storeNameEl = document.getElementById('store-name');
+    if (storeNameEl) storeNameEl.textContent = `${store.name} Coupons & Promo Codes`;
+
+    const storeLogoEl = document.getElementById('store-logo');
+    if (storeLogoEl) {
+        storeLogoEl.src = store.logo;
+        storeLogoEl.alt = `${store.name} Logo`;
+    }
+
+    const storeAboutEl = document.getElementById('store-about');
+    if (storeAboutEl) storeAboutEl.textContent = store.about || `Discover the latest deals for ${store.name}.`;
     
     const storeCta = document.getElementById('store-cta');
     if (storeCta) {
@@ -1873,12 +1882,15 @@ App.initStorePage = async function() {
     }
 
     // Rating
-    document.getElementById('store-rating-box').innerHTML = `
-        <div class="rating" aria-label="Store Rating ${store.rating}">
-            ${getComponents().getRatingStars(store.rating)}
-        </div>
-        <span class="votes-count">(${store.votes || 0} votes)</span>
-    `;
+    const storeRatingBox = document.getElementById('store-rating-box');
+    if (storeRatingBox) {
+        storeRatingBox.innerHTML = `
+            <div class="rating" aria-label="Store Rating ${store.rating}">
+                ${getComponents().getRatingStars(store.rating)}
+            </div>
+            <span class="votes-count">(${store.votes || 0} votes)</span>
+        `;
+    }
 
     // Coupons
     const allCoupons = await getDataService().getCoupons();

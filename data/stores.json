@@ -2727,5 +2727,74 @@
       "wps-office",
       "aliexpress"
     ]
+  },
+  {
+    "id": "presenti-ai",
+    "name": "Presenti.ai",
+    "icon": "slideshow",
+    "logo": "/assets/images/brands/presenti-ai.svg",
+    "website": "https://presenti.ai/",
+    "storeUrl": "/presenti-ai-coupons.html",
+    "affiliateLink": "https://rcpsj.com/g/2a9jab3pxrb68b264a76d2e5b365aa/",
+    "rating": 4.9,
+    "votes": 3120,
+    "seoTitle": "Presenti.ai Deals & Discounts \u2013 Up to 60% Off",
+    "seoDescription": "Find the latest Presenti.ai deals and discounts, including 60% off the Pro Plan and up to 40% savings on yearly plans.",
+    "about": "Presenti.ai is an advanced AI-powered presentation maker that converts text prompts, outlines, and document notes into professional slide decks and interactive presentations in seconds with smart auto-formatting.",
+    "categories": [
+      "Software & Apps",
+      "AI Tools",
+      "Presentation & Slides",
+      "Productivity"
+    ],
+    "whyShop": [
+      "Official Presenti.ai verified discount deals & 2026 promotional links",
+      "60% OFF Presenti.ai Pro Plan for full access to AI slide generation",
+      "Up to 40% OFF Yearly Plans for annual subscribers",
+      "Smart layout formatting, custom branding, and instant PPTX/PDF export options"
+    ],
+    "shoppingTips": [
+      "Select the Pro Plan to instantly receive 60% off full AI slide generation capabilities.",
+      "Choose annual billing on yearly plans to save up to 40% on recurring subscription fees.",
+      "Input raw notes, outlines, or text prompts into Presenti.ai to automatically generate structured slide decks.",
+      "Export completed decks directly to Microsoft PowerPoint (.pptx) or share via web-interactive links."
+    ],
+    "faqs": [
+      {
+        "question": "What is the best active Presenti.ai deal?",
+        "answer": "The top verified Presenti.ai deal offers 60% off the Pro Plan and up to 40% savings on yearly plans through our exclusive affiliate link."
+      },
+      {
+        "question": "Do I need a coupon code for Presenti.ai?",
+        "answer": "No promo code is needed! Simply click 'Get Deal' on PlayNewApps to automatically apply the 60% Pro Plan discount or up to 40% annual savings at checkout."
+      },
+      {
+        "question": "Can I try Presenti.ai for free?",
+        "answer": "Yes, Presenti.ai offers a free trial tier allowing you to test AI slide creation and smart layout design before upgrading to a paid plan."
+      },
+      {
+        "question": "What formats can I export my Presenti.ai presentations to?",
+        "answer": "Presenti.ai supports exporting AI-generated presentations to standard PowerPoint (.pptx) formats, high-resolution PDF documents, and web-interactive presentation links."
+      }
+    ],
+    "detailedOverview": "Presenti.ai is a cutting-edge artificial intelligence presentation platform designed to revolutionize slide creation for professionals, educators, startup founders, and students. By leveraging generative AI algorithms, Presenti.ai transforms raw text prompts, outlines, and documents into fully structured, visually appealing presentation decks in seconds.",
+    "brandHistory": "Presenti.ai was developed to address the time-consuming process of manually designing slides and formatting presentation layouts. Since its launch, Presenti.ai has quickly grown into a favorite AI productivity tool worldwide.",
+    "whoIsItFor": "Presenti.ai is built for business executives, sales representatives, educators, students, pitch deck creators, and marketers who need professional slide decks fast.",
+    "keyFeatures": "Key features include instant AI presentation generation, automated layout formatting, custom color palette themes, chart and graphic auto-generation, team collaboration, and seamless export to PowerPoint (.pptx) and PDF.",
+    "buyingGuide": "When subscribing to Presenti.ai, selecting the Pro Plan yields an instant 60% discount. For long-term usage, annual billing provides up to 40% additional savings across all plan tiers.",
+    "shippingInfo": "Presenti.ai is a 100% cloud-based SaaS platform. All plan activations, slide exports, and feature unlocks are delivered instantly online upon checkout.",
+    "buyerProtection": "All subscriptions purchased via Presenti.ai's official portal include secure SSL payment processing, account access protection, and dedicated customer support.",
+    "paymentMethods": [
+      "Credit/Debit Cards (Visa, MasterCard, Amex, Discover)",
+      "PayPal",
+      "Google Pay",
+      "Apple Pay"
+    ],
+    "related": [
+      "notta-ai",
+      "canva",
+      "adobe",
+      "wps-office"
+    ]
   }
 ]
