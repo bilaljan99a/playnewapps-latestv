@@ -244,10 +244,38 @@ class App {
             });
         }
 
-        // Populate Coupons Grid
+        // Populate Coupons Grid (Max 1 featured deal per store, top 15 for homepage UX/SEO)
         const couponsGrid = document.querySelector('.coupon-grid');
         if (couponsGrid) {
-            const topCoupons = coupons.filter(c => c.isTop);
+            const getStoreId = (c) => {
+                const s = c.storeId || c.store_id || c.store;
+                if (typeof s === 'object' && s !== null) return s.id;
+                return s || '';
+            };
+
+            const seenStores = new Set();
+            const featuredStoreDeals = [];
+
+            // Pass 1: Select isTop coupons (1 per store)
+            coupons.forEach(c => {
+                const sid = getStoreId(c);
+                if (sid && c.isTop && !seenStores.has(sid)) {
+                    seenStores.add(sid);
+                    featuredStoreDeals.push(c);
+                }
+            });
+
+            // Pass 2: Select first available coupon for remaining stores
+            coupons.forEach(c => {
+                const sid = getStoreId(c);
+                if (sid && !seenStores.has(sid)) {
+                    seenStores.add(sid);
+                    featuredStoreDeals.push(c);
+                }
+            });
+
+            // Limit to top 15 featured store deals for homepage performance & SEO
+            const topCoupons = featuredStoreDeals.slice(0, 15);
             couponsGrid.innerHTML = topCoupons.map(c => getComponents().createCouponCard(c)).join('');
             this.attachCouponListeners(couponsGrid);
         }
