@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 450" width="1000" height="450">
+  <defs>
+    <linearGradient id="bgSlicer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181B" />
+      <stop offset="100%" stop-color="#27272A" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="450" rx="20" fill="url(#bgSlicer)" stroke="#3F3F46" stroke-width="2"/>
+
+  <!-- Header -->
+  <g transform="translate(50, 40)">
+    <text x="0" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="28" fill="#FFFFFF">3DLabPrint Thin-Wall Slicer Optimization Blueprint</text>
+    <text x="0" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" fill="#A1A1AA">Cura / PrusaSlicer / Simplify3D standard setup for single-perimeter extrusion</text>
+  </g>
+
+  <!-- 3 Comparison Columns -->
+  <g transform="translate(50, 120)">
+    <!-- Card 1: Perimeter Settings -->
+    <rect x="0" y="0" width="280" height="280" rx="14" fill="#27272A" stroke="#52525B" stroke-width="1.5"/>
+    <rect x="15" y="15" width="250" height="36" rx="8" fill="rgba(37,99,235,0.2)" stroke="#2563EB" stroke-width="1"/>
+    <text x="140" y="38" font-family="sans-serif" font-weight="800" font-size="14" fill="#60A5FA" text-anchor="middle">1. SINGLE PERIMETER</text>
+
+    <text x="25" y="80" font-family="sans-serif" font-size="14" fill="#D4D4D8">• Nozzle Diameter: <tspan fill="#38BDF8" font-weight="700">0.40 mm</tspan></text>
+    <text x="25" y="115" font-family="sans-serif" font-size="14" fill="#D4D4D8">• Line Width: <tspan fill="#38BDF8" font-weight="700">0.40 mm</tspan></text>
+    <text x="25" y="150" font-family="sans-serif" font-size="14" fill="#D4D4D8">• Wall Perimeters: <tspan fill="#38BDF8" font-weight="700">1 Wall (0.4mm)</tspan></text>
+    <text x="25" y="185" font-family="sans-serif" font-size="14" fill="#D4D4D8">• Infill Percentage: <tspan fill="#38BDF8" font-weight="700">0% (Infill-Free)</tspan></text>
+    <text x="25" y="220" font-family="sans-serif" font-size="14" fill="#D4D4D8">• Layer Height: <tspan fill="#38BDF8" font-weight="700">0.25 mm</tspan></text>
+    <text x="25" y="255" font-family="sans-serif" font-size="13" fill="#A1A1AA">Pre-modeled STL ribs handle structural load</text>
+
+    <!-- Card 2: Material Parameters -->
+    <rect x="310" y="0" width="280" height="280" rx="14" fill="#27272A" stroke="#52525B" stroke-width="1.5"/>
+    <rect x="325" y="15" width="250" height="36" rx="8" fill="rgba(16,185,129,0.2)" stroke="#10B981" stroke-width="1"/>
+    <text x="450" y="38" font-family="sans-serif" font-weight="800" font-size="14" fill="#34D399" text-anchor="middle">2. LW-PLA vs PLA PLA+</text>
+
+    <text x="335" y="80" font-family="sans-serif" font-size="14" fill="#D4D4D8">• LW-PLA Flow: <tspan fill="#34D399" font-weight="700">50% - 55%</tspan></text>
+    <text x="335" y="115" font-family="sans-serif" font-size="14" fill="#D4D4D8">• Hotend Temp: <tspan fill="#34D399" font-weight="700">235°C - 245°C</tspan></text>
+    <text x="335" y="150" font-family="sans-serif" font-size="14" fill="#D4D4D8">• Weight Reduction: <tspan fill="#34D399" font-weight="700">Up to 50%</tspan></text>
+    <text x="335" y="185" font-family="sans-serif" font-size="14" fill="#D4D4D8">• PLA Print Temp: <tspan fill="#34D399" font-weight="700">215°C - 225°C</tspan></text>
+    <text x="335" y="220" font-family="sans-serif" font-size="14" fill="#D4D4D8">• Cooling Fan: <tspan fill="#34D399" font-weight="700">0% - 20% max</tspan></text>
+    <text x="335" y="255" font-family="sans-serif" font-size="13" fill="#A1A1AA">Zero fan cooling preserves thermal fusion</text>
+
+    <!-- Card 3: Printer Compatibility -->
+    <rect x="620" y="0" width="280" height="280" rx="14" fill="#27272A" stroke="#52525B" stroke-width="1.5"/>
+    <rect x="635" y="15" width="250" height="36" rx="8" fill="rgba(245,158,11,0.2)" stroke="#F59E0B" stroke-width="1"/>
+    <text x="760" y="38" font-family="sans-serif" font-weight="800" font-size="14" fill="#FBBF24" text-anchor="middle">3. BED & BUILD VOLUME</text>
+
+    <text x="645" y="80" font-family="sans-serif" font-size="14" fill="#D4D4D8">• Min Volume: <tspan fill="#FBBF24" font-weight="700">200x200x200 mm</tspan></text>
+    <text x="645" y="115" font-family="sans-serif" font-size="14" fill="#D4D4D8">• Print Speed: <tspan fill="#FBBF24" font-weight="700">40 - 50 mm/s</tspan></text>
+    <text x="645" y="150" font-family="sans-serif" font-size="14" fill="#D4D4D8">• Bed Temp: <tspan fill="#FBBF24" font-weight="700">55°C - 60°C</tspan></text>
+    <text x="645" y="185" font-family="sans-serif" font-size="14" fill="#D4D4D8">• Surface Prep: <tspan fill="#FBBF24" font-weight="700">PEI / Glue Stick</tspan></text>
+    <text x="645" y="220" font-family="sans-serif" font-size="14" fill="#D4D4D8">• Travel Speed: <tspan fill="#FBBF24" font-weight="700">150+ mm/s</tspan></text>
+    <text x="645" y="255" font-family="sans-serif" font-size="13" fill="#A1A1AA">Compatible with Ender 3, Prusa, Bambu, etc.</text>
+  </g>
+</svg>

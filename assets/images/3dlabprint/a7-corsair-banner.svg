@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 450" width="1000" height="450">
+  <defs>
+    <linearGradient id="bgJet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#091E3A" />
+      <stop offset="100%" stop-color="#2F80ED" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="450" rx="20" fill="url(#bgJet)" />
+
+  <g transform="translate(60, 60)">
+    <rect x="0" y="0" width="160" height="32" rx="16" fill="rgba(255,255,255,0.15)" stroke="#FFFFFF" stroke-width="1"/>
+    <text x="80" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="12" fill="#FFFFFF" text-anchor="middle">EDF JET SERIES</text>
+
+    <text x="0" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="38" fill="#FFFFFF">A-7 Corsair II Jet</text>
+    <text x="0" y="120" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="26" fill="#00F2FE">3D Printable Scale EDF Jet Model</text>
+
+    <text x="0" y="165" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="#E0E7FF">
+      • Optimized for 64mm / 70mm EDF Ducted Fan Units
+    </text>
+    <text x="0" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="#E0E7FF">
+      • Swept-Wing High Speed Aerodynamics (> 90 MPH)
+    </text>
+    <text x="0" y="225" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="#E0E7FF">
+      • Internal Thrust Ducting &amp; Hand-Launch Grips
+    </text>
+    <text x="0" y="255" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="#E0E7FF">
+      • Printable Canopy Hatch for 6S/4S Battery Access
+    </text>
+
+    <g transform="translate(0, 290)">
+      <rect x="0" y="0" width="200" height="44" rx="12" fill="#FF6B00" />
+      <text x="100" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="15" fill="#FFFFFF" text-anchor="middle">GET JET STL FILES</text>
+    </g>
+  </g>
+
+  <!-- Right Jet Illustration -->
+  <g transform="translate(520, 80)">
+    <!-- Jet Silhouette -->
+    <path d="M 20 220 C 100 190 200 180 320 200 L 400 120 L 420 130 L 370 210 L 440 215 L 450 180 L 460 180 L 455 220 L 460 260 L 450 260 L 440 225 L 370 230 L 420 310 L 400 320 L 320 240 C 200 260 100 250 20 220 Z" fill="rgba(255,255,255,0.15)" stroke="#FFFFFF" stroke-width="2.5" />
+    <ellipse cx="230" cy="220" rx="35" ry="35" fill="none" stroke="#00F2FE" stroke-width="3" stroke-dasharray="6 4" />
+    <text x="230" y="225" font-family="sans-serif" font-weight="800" font-size="12" fill="#00F2FE" text-anchor="middle">70mm EDF</text>
+  </g>
+</svg>
