@@ -35,6 +35,34 @@ class App {
             const rawPath = window.location.pathname.toLowerCase();
             const path = (rawPath.length > 1 && rawPath.endsWith('/')) ? rawPath.slice(0, -1) : rawPath;
 
+            // Check if this is a legacy Blogger route or old APK path
+            const isBloggerDate = /^\/(19|20)\d{2}(\/|$)/.test(rawPath);
+            const isBloggerSystem = /^\/(search|category|feeds|label|b|p|archive)(\/|\?|$)/i.test(rawPath);
+            const isOldApk = rawPath.includes('-apk') || rawPath.includes('hotspot-shield') || rawPath.includes('netflix') || rawPath.includes('ludo-star') || rawPath.includes('usa-network') || rawPath.includes('runes-of-magic') || rawPath.includes('bloons') || (rawPath.endsWith('.apk') && !rawPath.startsWith('/assets/'));
+
+            if (isBloggerDate || isBloggerSystem || isOldApk) {
+                // Ensure search engines do not index this if served via static SPA fallback
+                let metaRobots = document.querySelector('meta[name="robots"]');
+                if (!metaRobots) {
+                    metaRobots = document.createElement('meta');
+                    metaRobots.name = 'robots';
+                    document.head.appendChild(metaRobots);
+                }
+                metaRobots.content = 'noindex, nofollow';
+
+                document.title = '410 Gone - Page Removed | PlayNewApps';
+                document.body.innerHTML = `
+                    <div style="font-family: system-ui, -apple-system, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background: #0f172a; color: #f8fafc; text-align: center;">
+                        <div style="max-width: 500px; padding: 2.5rem; background: #1e293b; border-radius: 12px; border: 1px solid #334155;">
+                            <h1 style="font-size: 3rem; margin: 0 0 0.5rem; color: #ef4444;">410 Gone</h1>
+                            <p style="color: #94a3b8; font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem;">This legacy page has been permanently removed and is no longer available on PlayNewApps.</p>
+                            <a href="/" style="display: inline-block; padding: 0.75rem 1.5rem; background: #2563eb; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600;">Go to Homepage</a>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
             if (path === '/reviews' || path.endsWith('/reviews.html')) {
                 await this.initReviewsPage();
             } else if (path === '/category' || path.endsWith('/category.html')) {
@@ -49,11 +77,36 @@ class App {
                 await this.initDealPage();
             } else if (path === '/review' || path.endsWith('/review.html') || path.startsWith('/review/') || (path.startsWith('/reviews/') && path !== '/reviews')) {
                 await this.initReviewPage();
-            } else if (path === '/' || path === '' || path.endsWith('/index.html') || path.endsWith('/')) {
+            } else if (path === '/' || path === '' || path.endsWith('/index.html')) {
                 await this.initHomePage();
             } else {
-                if (document.getElementById('active-coupons-grid') || document.getElementById('store-name')) {
-                    await this.initStorePage();
+                // Check if this is a known HTML page file (e.g. /contact, /about, /privacy, /wps-office-review.html, etc.)
+                const isKnownHtmlPage = document.querySelector('main') !== null && !path.startsWith('/20');
+                if (isKnownHtmlPage) {
+                    if (document.getElementById('active-coupons-grid') || document.getElementById('store-name')) {
+                        await this.initStorePage();
+                    }
+                } else {
+                    // Unknown route served via index.html fallback -> Render 404
+                    let metaRobots = document.querySelector('meta[name="robots"]');
+                    if (!metaRobots) {
+                        metaRobots = document.createElement('meta');
+                        metaRobots.name = 'robots';
+                        document.head.appendChild(metaRobots);
+                    }
+                    metaRobots.content = 'noindex, nofollow';
+
+                    document.title = '404 Not Found | PlayNewApps';
+                    document.body.innerHTML = `
+                        <div style="font-family: system-ui, -apple-system, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background: #0f172a; color: #f8fafc; text-align: center;">
+                            <div style="max-width: 500px; padding: 2.5rem; background: #1e293b; border-radius: 12px; border: 1px solid #334155;">
+                                <h1 style="font-size: 3rem; margin: 0 0 0.5rem; color: #f59e0b;">404 Not Found</h1>
+                                <p style="color: #94a3b8; font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem;">The page you are looking for does not exist on PlayNewApps.</p>
+                                <a href="/" style="display: inline-block; padding: 0.75rem 1.5rem; background: #2563eb; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600;">Go to Homepage</a>
+                            </div>
+                        </div>
+                    `;
+                    return;
                 }
             }
 

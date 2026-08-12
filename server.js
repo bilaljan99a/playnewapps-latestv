@@ -14,14 +14,15 @@ app.get('/sitemap.xml', (req, res) => {
   res.send(xml);
 });
 
-// Middleware 1: Legacy Blogger & Old APK Removal Detection (Returns HTTP 410 Gone)
+// CRITICAL MIDDLEWARE 1: Legacy Blogger & Old APK Route Removal Detection
+// MUST execute BEFORE any static file serving or homepage fallback!
 app.use((req, res, next) => {
-  const urlObj = new URL(req.url, 'http://localhost');
-  const pathname = urlObj.pathname;
+  const rawUrl = req.url || '';
+  const pathname = rawUrl.split('?')[0];
   const lowerPath = pathname.toLowerCase();
 
-  // 1. Match old Blogger date-based archive structures: /2018/..., /2020/..., /1999/..., etc.
-  const isBloggerDatePath = /^\/(19|20)\d{2}(\/|$)/.test(pathname);
+  // 1. Match old Blogger date-based archive structures: /2018/..., /2021/..., /1999/..., etc.
+  const isBloggerDatePath = /^\/(19|20)\d{2}(\/|$)/.test(pathname) || /^\/(19|20)\d{2}\/\d{2}/.test(pathname);
 
   // 2. Match standard Blogger system directories
   const isBloggerSystemPath = /^\/(search|category|feeds|label|b|p|archive)(\/|\?|$)/i.test(pathname);
@@ -33,16 +34,41 @@ app.use((req, res, next) => {
                        lowerPath.includes('ludo-star') ||
                        lowerPath.includes('usa-network') ||
                        lowerPath.includes('runes-of-magic') ||
+                       lowerPath.includes('bloons') ||
                        (lowerPath.endsWith('.apk') && !lowerPath.startsWith('/assets/'));
 
   if (isBloggerDatePath || isBloggerSystemPath || isOldApkPath) {
-    return res.status(410).send('410 Gone - This legacy page has been permanently removed.');
+    res.status(410);
+    res.setHeader('Content-Type', 'text/html; charset=utf-8');
+    return res.send(`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>410 Gone - Page Removed</title>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background: #0f172a; color: #f8fafc; text-align: center; }
+        .card { max-width: 500px; padding: 2.5rem; background: #1e293b; border-radius: 12px; border: 1px solid #334155; }
+        h1 { font-size: 3rem; margin: 0 0 0.5rem; color: #ef4444; }
+        p { color: #94a3b8; font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem; }
+        a { display: inline-block; padding: 0.75rem 1.5rem; background: #2563eb; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>410 Gone</h1>
+        <p>This legacy page has been permanently removed and is no longer available on PlayNewApps.</p>
+        <a href="/">Go to Homepage</a>
+    </div>
+</body>
+</html>`);
   }
 
   next();
 });
 
-// Middleware 2: Handle legacy Blogger mobile parameter (?m=0, ?m=1) on legitimate new URLs
+// Middleware 2: Handle legacy Blogger mobile parameter (?m=0, ?m=1) on clean pages
 app.use((req, res, next) => {
   const urlObj = new URL(req.url, 'http://localhost');
   if (urlObj.searchParams.has('m')) {
@@ -86,9 +112,33 @@ cleanRoutes.forEach(({ route, file }) => {
 // Serve static files with html extension fallback
 app.use(express.static(__dirname, { extensions: ['html'] }));
 
-// Custom 404 for any other missing routes
+// Custom 404 for any other missing routes (Return 404 Not Found, NEVER homepage!)
 app.use((req, res) => {
-  res.status(404).send('404 Not Found - The requested page does not exist.');
+  res.status(404);
+  res.setHeader('Content-Type', 'text/html; charset=utf-8');
+  res.send(`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>404 Not Found</title>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background: #0f172a; color: #f8fafc; text-align: center; }
+        .card { max-width: 500px; padding: 2.5rem; background: #1e293b; border-radius: 12px; border: 1px solid #334155; }
+        h1 { font-size: 3rem; margin: 0 0 0.5rem; color: #f59e0b; }
+        p { color: #94a3b8; font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem; }
+        a { display: inline-block; padding: 0.75rem 1.5rem; background: #2563eb; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>404 Not Found</h1>
+        <p>The page you are looking for does not exist on PlayNewApps.</p>
+        <a href="/">Go to Homepage</a>
+    </div>
+</body>
+</html>`);
 });
 
 app.listen(PORT, '0.0.0.0', () => {
