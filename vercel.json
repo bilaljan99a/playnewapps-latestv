@@ -1,0 +1,30 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/2018/(.*)", "destination": "/410.html", "statusCode": 410 },
+    { "source": "/2019/(.*)", "destination": "/410.html", "statusCode": 410 },
+    { "source": "/2020/(.*)", "destination": "/410.html", "statusCode": 410 },
+    { "source": "/2021/(.*)", "destination": "/410.html", "statusCode": 410 },
+    { "source": "/2022/(.*)", "destination": "/410.html", "statusCode": 410 },
+    { "source": "/2023/(.*)", "destination": "/410.html", "statusCode": 410 },
+    { "source": "/2024/(.*)", "destination": "/410.html", "statusCode": 410 },
+    { "source": "/2025/(.*)", "destination": "/410.html", "statusCode": 410 },
+    { "source": "/2026/(.*)", "destination": "/410.html", "statusCode": 410 },
+    { "source": "/search", "destination": "/410.html", "statusCode": 410 },
+    { "source": "/search/(.*)", "destination": "/410.html", "statusCode": 410 },
+    { "source": "/feeds/(.*)", "destination": "/410.html", "statusCode": 410 },
+    { "source": "/label/(.*)", "destination": "/410.html", "statusCode": 410 },
+    { "source": "/archive/(.*)", "destination": "/410.html", "statusCode": 410 },
+    { "source": "/p/(.*)", "destination": "/410.html", "statusCode": 410 },
+    { "source": "/b/(.*)", "destination": "/410.html", "statusCode": 410 }
+  ],
+  "headers": [
+    {
+      "source": "/20(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400" },
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+      ]
+    }
+  ]
+}

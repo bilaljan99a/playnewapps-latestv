@@ -4,3 +4,59 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Content-Security-Policy: default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:;
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+/410.html
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/404.html
+  Cache-Control: no-cache
+  X-Robots-Tag: noindex, nofollow
+
+/2018/*
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/2019/*
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/2020/*
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/2021/*
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/2022/*
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/2023/*
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/2024/*
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/2025/*
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/2026/*
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/search
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/search/*
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/feeds/*
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
