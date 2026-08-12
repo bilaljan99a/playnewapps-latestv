@@ -103,92 +103,45 @@ html_content = f'''<!DOCTYPE html>
         </nav>
 
         <!-- STORE COMPACT HERO HEADER -->
-        <section class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-xs relative overflow-hidden space-y-6">
-            <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-100 pb-4">
-                <div class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-900 border border-emerald-200 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
-                    <span class="material-icons-round text-emerald-600 text-base">verified</span>
+        <section class="bg-white rounded-2xl border border-slate-200 p-4 sm:p-5 shadow-xs space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+                <div class="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-900 border border-emerald-200 text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                    <span class="material-icons-round text-emerald-600 text-sm">verified</span>
                     <span>Verified Telehealth Platform • 24/7 Virtual Access</span>
                 </div>
-                <div class="flex items-center gap-3 text-xs sm:text-sm font-semibold text-slate-600">
+                <div class="flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-600">
                     <div class="flex items-center text-amber-400">
-                        <span class="material-icons-round text-lg">star</span>
-                        <span class="material-icons-round text-lg">star</span>
-                        <span class="material-icons-round text-lg">star</span>
-                        <span class="material-icons-round text-lg">star</span>
-                        <span class="material-icons-round text-lg">star</span>
+                        <span class="material-icons-round text-base">star</span>
+                        <span class="material-icons-round text-base">star</span>
+                        <span class="material-icons-round text-base">star</span>
+                        <span class="material-icons-round text-base">star</span>
+                        <span class="material-icons-round text-base">star</span>
                     </div>
                     <span class="font-bold text-slate-900">4.9 / 5</span>
-                    <span class="text-slate-400">(3,850+ Patient Reviews)</span>
+                    <span class="text-slate-400">(3,850+ Reviews)</span>
                 </div>
             </div>
 
-            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-                <div class="flex items-start sm:items-center gap-5">
-                    <img src="/assets/images/brands/doctronic.svg" alt="Doctronic Store Logo" class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl p-2.5 bg-slate-50 border border-slate-200 object-contain shadow-xs shrink-0">
-                    <div>
-                        <h1 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                            Doctronic Coupons, Offers & Telehealth Guide (2026)
-                        </h1>
-                        <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-3xl">
-                            Free AI health consultations available 24/7, with instant access to licensed U.S. doctors for online video visits starting at $39 or through major health insurance plans.
-                        </p>
-                    </div>
-                </div>
-                <div class="shrink-0">
-                    <a href="{affiliate_url}" target="_blank" rel="noopener sponsored" class="bg-blue-600 hover:bg-blue-700 text-white font-extrabold px-6 py-3.5 rounded-xl shadow-xs transition flex items-center justify-center gap-2 text-sm sm:text-base">
-                        <span>Shop at Doctronic</span>
-                        <span class="material-icons-round text-lg">open_in_new</span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- KEY STATS ROW -->
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-xs border-t border-slate-100">
-                <div class="bg-slate-50/80 p-3 rounded-xl border border-slate-200/60">
-                    <span class="text-slate-400 block">Verified Offers</span>
-                    <span class="font-bold text-slate-900 text-sm">6 Active Deals</span>
-                </div>
-                <div class="bg-slate-50/80 p-3 rounded-xl border border-slate-200/60">
-                    <span class="text-slate-400 block">AI Consult</span>
-                    <span class="font-bold text-emerald-600 text-sm">100% Free 24/7</span>
-                </div>
-                <div class="bg-slate-50/80 p-3 rounded-xl border border-slate-200/60">
-                    <span class="text-slate-400 block">Cash Doctor Visit</span>
-                    <span class="font-bold text-sky-600 text-sm">$39 Flat Rate</span>
-                </div>
-                <div class="bg-slate-50/80 p-3 rounded-xl border border-slate-200/60">
-                    <span class="text-slate-400 block">Insurance</span>
-                    <span class="font-bold text-slate-800 text-sm">Major Plans Accepted</span>
+            <div class="flex items-center gap-3 sm:gap-4">
+                <img src="/assets/images/brands/doctronic.svg" alt="Doctronic Store Logo" class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl p-1.5 bg-slate-50 border border-slate-200 object-contain shadow-xs shrink-0">
+                <div>
+                    <h1 class="text-lg sm:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
+                        Doctronic Coupons, Offers & Promo Codes (2026)
+                    </h1>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 0: ACTIVE COUPONS & DEALS (RETAILMENOT / ALIEXPRESS HORIZONTAL STACK) -->
-        <section id="active-coupons" class="space-y-6">
-            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b-2 border-slate-200 pb-3">
-                <div>
-                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
-                        <span class="material-icons-round text-blue-600">local_offer</span>
-                        Active Coupons & Deals
-                    </h2>
-                    <p class="text-slate-600 text-sm mt-1">
-                        Verified Doctronic telehealth offers, free AI health consultations, and $39 doctor video visit options.
-                    </p>
-                </div>
-                <div class="text-xs font-semibold text-slate-500 bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-2xs self-start sm:self-auto">
+        <!-- SECTION 0: ACTIVE COUPONS & DEALS (DIRECTLY AT TOP) -->
+        <section id="active-coupons" class="space-y-3">
+            <div class="flex items-center justify-between gap-3 border-b-2 border-slate-200 pb-2.5">
+                <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+                    <span class="material-icons-round text-blue-600">local_offer</span>
+                    Active Coupons & Deals
+                </h2>
+                <div class="text-xs font-semibold text-slate-500 bg-white px-2.5 py-1 rounded-lg border border-slate-200 shadow-2xs">
                     Updated Daily • 100% Verified
                 </div>
-            </div>
-
-            <!-- TRANSPARENCY NOTICE -->
-            <div class="p-4 bg-slate-100 rounded-xl border border-slate-200/80 text-xs text-slate-600 space-y-1">
-                <p class="font-bold text-slate-800 flex items-center gap-1">
-                    <span class="material-icons-round text-blue-600 text-sm">info</span>
-                    Transparency Disclosure Regarding Doctronic Promo Codes:
-                </p>
-                <p>
-                    Doctronic does not currently issue traditional alphanumeric promo codes or discount coupon vouchers. Instead of artificial marketing discounts, Doctronic operates on a zero-friction model offering a <strong>100% free 24/7 AI health consultation</strong> and transparent cash-pay doctor visits starting at <strong>$39</strong> (or covered via major health insurance plans). The cards below represent verified service benefits and direct access links.
-                </p>
             </div>
 
             <!-- STACKED HORIZONTAL COUPON CARDS -->
@@ -456,6 +409,40 @@ html_content = f'''<!DOCTYPE html>
                         </div>
                     </div>
                 </article>
+            </div>
+
+            <!-- KEY STATS & TRANSPARENCY DISCLOSURE (MOVED BELOW COUPONS) -->
+            <div class="space-y-4 pt-2">
+                <!-- KEY STATS ROW -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+                    <div class="bg-white p-3.5 rounded-xl border border-slate-200/80 shadow-2xs">
+                        <span class="text-slate-400 block">Verified Offers</span>
+                        <span class="font-bold text-slate-900 text-sm">6 Active Deals</span>
+                    </div>
+                    <div class="bg-white p-3.5 rounded-xl border border-slate-200/80 shadow-2xs">
+                        <span class="text-slate-400 block">AI Consult</span>
+                        <span class="font-bold text-emerald-600 text-sm">100% Free 24/7</span>
+                    </div>
+                    <div class="bg-white p-3.5 rounded-xl border border-slate-200/80 shadow-2xs">
+                        <span class="text-slate-400 block">Cash Doctor Visit</span>
+                        <span class="font-bold text-sky-600 text-sm">$39 Flat Rate</span>
+                    </div>
+                    <div class="bg-white p-3.5 rounded-xl border border-slate-200/80 shadow-2xs">
+                        <span class="text-slate-400 block">Insurance</span>
+                        <span class="font-bold text-slate-800 text-sm">Major Plans Accepted</span>
+                    </div>
+                </div>
+
+                <!-- TRANSPARENCY NOTICE -->
+                <div class="p-4 bg-slate-100/90 rounded-xl border border-slate-200/80 text-xs text-slate-600 space-y-1">
+                    <p class="font-bold text-slate-800 flex items-center gap-1">
+                        <span class="material-icons-round text-blue-600 text-sm">info</span>
+                        Transparency Disclosure Regarding Doctronic Promo Codes:
+                    </p>
+                    <p>
+                        Doctronic does not currently issue traditional alphanumeric promo codes or discount coupon vouchers. Instead of artificial marketing discounts, Doctronic operates on a zero-friction model offering a <strong>100% free 24/7 AI health consultation</strong> and transparent cash-pay doctor visits starting at <strong>$39</strong> (or covered via major health insurance plans). The cards above represent verified service benefits and direct access links.
+                    </p>
+                </div>
             </div>
         </section>
 

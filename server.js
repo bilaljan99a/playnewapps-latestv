@@ -1,7 +1,18 @@
 const express = require('express');
 const path = require('path');
+const { generateSitemapXML, writeSitemapFile } = require('./generate-sitemap');
 const app = express();
 const PORT = 3000;
+
+// Automatically write/update sitemap.xml file on server startup
+writeSitemapFile();
+
+// Dynamic route to serve live sitemap.xml
+app.get('/sitemap.xml', (req, res) => {
+  const { xml } = generateSitemapXML();
+  res.header('Content-Type', 'application/xml; charset=utf-8');
+  res.send(xml);
+});
 
 // Catch legacy Blogger and old APK routes and return 410 Gone
 app.use((req, res, next) => {
