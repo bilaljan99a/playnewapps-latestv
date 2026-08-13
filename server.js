@@ -82,7 +82,12 @@ const cleanRoutes = [
   { route: '/alibaba', file: 'alibaba.html' },
   { route: '/alibaba-review', file: 'alibaba.html' },
   { route: '/3dlabprint', file: '3dlabprint-coupons.html' },
-  { route: '/3dlabprint-coupons', file: '3dlabprint-coupons.html' }
+  { route: '/3dlabprint-coupons', file: '3dlabprint-coupons.html' },
+  { route: '/crossout', file: 'crossout-coupons.html' },
+  { route: '/crossout-coupons', file: 'crossout-coupons.html' },
+  { route: '/crossout-review', file: 'crossout-review.html' },
+  { route: '/vectorstock', file: 'vectorstock-coupons.html' },
+  { route: '/vectorstock-coupons', file: 'vectorstock-coupons.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {

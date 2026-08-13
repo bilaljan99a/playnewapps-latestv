@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+  <defs>
+    <linearGradient id="ecoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06121e"/>
+      <stop offset="100%" stop-color="#0f2942"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="500" rx="12" fill="url(#ecoBg)" stroke="#1e3a8a" stroke-width="2"/>
+
+  <!-- Title Header -->
+  <rect x="20" y="20" width="860" height="45" rx="6" fill="#0f172a" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="40" y="48" font-family="sans-serif" font-weight="900" font-size="18" fill="#ffffff">CROSSOUT FREE-TO-PLAY ECONOMY &amp; CRAFTING FLOWCHART</text>
+
+  <!-- Flow Steps -->
+  <!-- Step 1: Battles & Resources -->
+  <g transform="translate(40, 100)">
+    <rect x="0" y="0" width="170" height="250" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
+    <rect x="10" y="10" width="150" height="28" rx="4" fill="#059669"/>
+    <text x="85" y="29" font-family="sans-serif" font-weight="800" font-size="11" fill="#ffffff" text-anchor="middle">1. RESOURCE HARVEST</text>
+
+    <text x="15" y="65" font-family="sans-serif" font-weight="800" font-size="12" fill="#34d399">PvP Battles:</text>
+    <text x="15" y="85" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Scrap Metal</text>
+    <text x="15" y="103" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Wires &amp; Batteries</text>
+
+    <text x="15" y="135" font-family="sans-serif" font-weight="800" font-size="12" fill="#34d399">PvE Raids:</text>
+    <text x="15" y="155" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Copper Ore</text>
+    <text x="15" y="173" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Plastic &amp; Electronics</text>
+
+    <rect x="15" y="200" width="140" height="36" rx="6" fill="#1e293b"/>
+    <text x="85" y="222" font-family="sans-serif" font-weight="700" font-size="11" fill="#a7f3d0" text-anchor="middle">⚡ Daily Fuel Allowance</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M 220 225 L 260 225" stroke="#f59e0b" stroke-width="4" marker-end="url(#arrow)" fill="none"/>
+  <polygon points="260,220 270,225 260,230" fill="#f59e0b"/>
+
+  <!-- Step 2: Workbench Crafting -->
+  <g transform="translate(280, 100)">
+    <rect x="0" y="0" width="170" height="250" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="10" y="10" width="150" height="28" rx="4" fill="#0284c7"/>
+    <text x="85" y="29" font-family="sans-serif" font-weight="800" font-size="11" fill="#ffffff" text-anchor="middle">2. WORKBENCH CRAFT</text>
+
+    <text x="15" y="65" font-family="sans-serif" font-weight="800" font-size="12" fill="#38bdf8">Faction Benches:</text>
+    <text x="15" y="85" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Rare (Blue) Parts</text>
+    <text x="15" y="103" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Special (Teal) Parts</text>
+    <text x="15" y="121" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Epic (Purple) Parts</text>
+    <text x="15" y="139" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Legendary Weapons</text>
+
+    <rect x="15" y="170" width="140" height="60" rx="6" fill="#1e293b" stroke="#0284c7" stroke-width="1"/>
+    <text x="85" y="192" font-family="sans-serif" font-weight="700" font-size="10" fill="#bae6fd" text-anchor="middle">Combining 3-4 Lower</text>
+    <text x="85" y="208" font-family="sans-serif" font-weight="700" font-size="10" fill="#bae6fd" text-anchor="middle">Tier Parts + Resources</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <polygon points="500,220 510,225 500,230" fill="#f59e0b"/>
+
+  <!-- Step 3: Player Auction House Market -->
+  <g transform="translate(520, 100)">
+    <rect x="0" y="0" width="170" height="250" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="10" y="10" width="150" height="28" rx="4" fill="#d97706"/>
+    <text x="85" y="29" font-family="sans-serif" font-weight="800" font-size="11" fill="#ffffff" text-anchor="middle">3. AUCTION MARKET</text>
+
+    <text x="15" y="65" font-family="sans-serif" font-weight="800" font-size="12" fill="#f59e0b">Trade Options:</text>
+    <text x="15" y="85" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Sell Raw Scrap/Copper</text>
+    <text x="15" y="103" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Sell Crafted Weapons</text>
+    <text x="15" y="121" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Flip Market Margins</text>
+
+    <rect x="15" y="160" width="140" height="70" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+    <text x="85" y="182" font-family="sans-serif" font-weight="800" font-size="11" fill="#fde047" text-anchor="middle">10% Market Tax</text>
+    <text x="85" y="200" font-family="sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">100% Player Driven Supply &amp; Demand</text>
+  </g>
+
+  <!-- Step 4: Earn Coins -->
+  <g transform="translate(710, 150)">
+    <circle cx="80" cy="80" r="65" fill="#f59e0b" stroke="#fde047" stroke-width="4"/>
+    <text x="80" y="72" font-family="sans-serif" font-weight="900" font-size="18" fill="#0f172a" text-anchor="middle">CROSSOUT</text>
+    <text x="80" y="96" font-family="sans-serif" font-weight="900" font-size="22" fill="#0f172a" text-anchor="middle">COINS</text>
+  </g>
+
+  <!-- Bottom Tip -->
+  <rect x="20" y="390" width="860" height="80" rx="8" fill="#0f172a" stroke="#334155"/>
+  <text x="40" y="418" font-family="sans-serif" font-weight="900" font-size="13" fill="#10b981">💡 F2P ECONOMY VERDICT:</text>
+  <text x="220" y="418" font-family="sans-serif" font-size="12" fill="#f8fafc">You NEVER need to buy in-game currency with real money to unlock epic weapons.</text>
+  <text x="40" y="445" font-family="sans-serif" font-size="11" fill="#94a3b8">By playing daily PvP fuel missions and crafting in-demand purple parts during battle pass events, dedicated free-to-play players earn thousands of Crossout Coins monthly.</text>
+</svg>

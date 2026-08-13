@@ -1,5 +1,50 @@
 [
   {
+    "id": "crossout",
+    "title": "Crossout: 2026 In-Depth Game Review",
+    "description": "Post-apocalyptic vehicular combat MMO featuring custom vehicle crafting from hundreds of modular parts, real-time positional destruction, 8v8 PvP, and market economy.",
+    "icon": "/assets/images/brands/crossout.svg",
+    "banner": "/assets/images/brands/crossout-anatomy-diagram.svg",
+    "rating": 4.9,
+    "categoryId": "action",
+    "developer": "Targem Games / Gaijin Entertainment",
+    "version": "2026 Edition",
+    "size": "15 GB (PC) / 20 GB (Consoles)",
+    "platforms": [
+      "PC",
+      "PlayStation 5",
+      "PlayStation 4",
+      "Xbox Series X/S",
+      "Xbox One"
+    ],
+    "license": "Free-to-Play",
+    "updatedAt": "2026-08-13",
+    "badges": [
+      "Editor's Choice",
+      "Verified Review",
+      "Trending Game"
+    ],
+    "isFeatured": true,
+    "isTrending": true,
+    "reviewUrl": "/crossout-review.html",
+    "couponUrl": "/crossout-coupons.html",
+    "summary": "Comprehensive 3,400+ word expert review evaluating Crossout's vehicle crafting editor, positional destruction physics, faction progression, market economy, and free-to-play balance.",
+    "authorId": "alex-tech",
+    "tags": [
+      "crossout",
+      "vehicle combat",
+      "mmo",
+      "crafting",
+      "pvp",
+      "gaijin",
+      "targem games",
+      "action",
+      "post-apocalyptic"
+    ],
+    "reviewsCount": "15.8K",
+    "downloadsCount": "10M+"
+  },
+  {
     "id": "genshin-impact",
     "title": "Genshin Impact",
     "description": "Open-world action RPG featuring elemental reaction combat, Teyvat exploration, 60fps mobile performance, and cross-play.",

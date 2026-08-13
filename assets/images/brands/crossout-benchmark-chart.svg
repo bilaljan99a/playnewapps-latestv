@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="900" height="480">
+  <defs>
+    <linearGradient id="benchBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="480" rx="12" fill="url(#benchBg)" stroke="#334155" stroke-width="2"/>
+
+  <!-- Title Header -->
+  <rect x="20" y="20" width="860" height="45" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="40" y="48" font-family="sans-serif" font-weight="900" font-size="18" fill="#ffffff">CROSSOUT DAGOR ENGINE 6.5 — FPS PERFORMANCE BENCHMARKS (2026)</text>
+
+  <!-- Y-Axis Scale Lines -->
+  <g opacity="0.2" stroke="#cbd5e1" stroke-width="1">
+    <line x1="180" y1="100" x2="850" y2="100"/>
+    <line x1="180" y1="170" x2="850" y2="170"/>
+    <line x1="180" y1="240" x2="850" y2="240"/>
+    <line x1="180" y1="310" x2="850" y2="310"/>
+    <line x1="180" y1="380" x2="850" y2="380"/>
+  </g>
+
+  <!-- Y-Axis FPS Values -->
+  <text x="160" y="105" font-family="sans-serif" font-weight="700" font-size="11" fill="#94a3b8" text-anchor="end">200 FPS</text>
+  <text x="160" y="175" font-family="sans-serif" font-weight="700" font-size="11" fill="#94a3b8" text-anchor="end">150 FPS</text>
+  <text x="160" y="245" font-family="sans-serif" font-weight="700" font-size="11" fill="#94a3b8" text-anchor="end">100 FPS</text>
+  <text x="160" y="315" font-family="sans-serif" font-weight="700" font-size="11" fill="#94a3b8" text-anchor="end">60 FPS</text>
+  <text x="160" y="385" font-family="sans-serif" font-weight="700" font-size="11" fill="#94a3b8" text-anchor="end">0 FPS</text>
+
+  <!-- Bar 1: Budget GPU GTX 1650 / RX 6400 (1080p Ultra) -->
+  <text x="30" y="130" font-family="sans-serif" font-weight="800" font-size="12" fill="#38bdf8">Budget Specs</text>
+  <text x="30" y="148" font-family="sans-serif" font-size="10" fill="#94a3b8">GTX 1650 / i3-12100</text>
+  <rect x="180" y="120" width="310" height="28" rx="4" fill="#0284c7"/>
+  <text x="500" y="139" font-family="sans-serif" font-weight="800" font-size="12" fill="#38bdf8">92 FPS (1080p High)</text>
+
+  <!-- Bar 2: Mid-Range GPU RTX 3060 / RX 6700 (1440p Ultra) -->
+  <text x="30" y="200" font-family="sans-serif" font-weight="800" font-size="12" fill="#f59e0b">Mid-Range</text>
+  <text x="30" y="218" font-family="sans-serif" font-size="10" fill="#94a3b8">RTX 3060 / Ryzen 5600</text>
+  <rect x="180" y="190" width="510" height="28" rx="4" fill="#d97706"/>
+  <text x="700" y="209" font-family="sans-serif" font-weight="800" font-size="12" fill="#f59e0b">158 FPS (1440p Max)</text>
+
+  <!-- Bar 3: High-End GPU RTX 4070 / RX 7800 XT (4K Ultra Ray Traced) -->
+  <text x="30" y="270" font-family="sans-serif" font-weight="800" font-size="12" fill="#22c55e">High-End Rig</text>
+  <text x="30" y="288" font-family="sans-serif" font-size="10" fill="#94a3b8">RTX 4070 / i7-13700K</text>
+  <rect x="180" y="260" width="610" height="28" rx="4" fill="#16a34a"/>
+  <text x="800" y="279" font-family="sans-serif" font-weight="800" font-size="12" fill="#22c55e">185 FPS (4K Max + RT)</text>
+
+  <!-- Bar 4: Integrated GPU Iris Xe / Vega 8 (1080p Low/Medium) -->
+  <text x="30" y="340" font-family="sans-serif" font-weight="800" font-size="12" fill="#a855f7">Laptop iGPU</text>
+  <text x="30" y="358" font-family="sans-serif" font-size="10" fill="#94a3b8">Radeon 680M / Iris Xe</text>
+  <rect x="180" y="330" width="210" height="28" rx="4" fill="#9333ea"/>
+  <text x="400" y="349" font-family="sans-serif" font-weight="800" font-size="12" fill="#c084fc">64 FPS (1080p Med)</text>
+
+  <!-- Bottom Legend -->
+  <rect x="20" y="410" width="860" height="50" rx="8" fill="#0f172a" stroke="#334155"/>
+  <text x="40" y="440" font-family="sans-serif" font-weight="800" font-size="12" fill="#22c55e">🚀 OPTIMIZATION SUMMARY:</text>
+  <text x="210" y="440" font-family="sans-serif" font-size="12" fill="#f8fafc">Crossout is exceptionally well-optimized on Dagor Engine 6.5. It delivers smooth 60+ FPS even on older GPUs and budget gaming laptops.</text>
+</svg>

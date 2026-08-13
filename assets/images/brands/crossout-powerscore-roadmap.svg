@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+  <defs>
+    <linearGradient id="psBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="500" rx="12" fill="url(#psBg)" stroke="#334155" stroke-width="2"/>
+
+  <!-- Title Header -->
+  <rect x="20" y="20" width="860" height="45" rx="6" fill="#1e293b" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="40" y="48" font-family="sans-serif" font-weight="900" font-size="18" fill="#ffffff">CROSSOUT POWER SCORE (PS) MATCHMAKING &amp; PROGRESSION ROADMAP</text>
+
+  <!-- Connecting Path Line -->
+  <path d="M 80 250 Q 250 180 450 250 T 820 250" stroke="#6366f1" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- Stage 1: Starter Tier -->
+  <g transform="translate(50, 160)">
+    <rect x="0" y="0" width="160" height="180" rx="10" fill="#0f172a" stroke="#22c55e" stroke-width="2"/>
+    <rect x="10" y="10" width="140" height="26" rx="4" fill="#15803d"/>
+    <text x="80" y="27" font-family="sans-serif" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle">&lt; 2,400 PS</text>
+
+    <text x="15" y="58" font-family="sans-serif" font-weight="800" font-size="13" fill="#22c55e">STARTER TIER</text>
+    <text x="15" y="78" font-family="sans-serif" font-size="11" fill="#cbd5e1">• White Common Parts</text>
+    <text x="15" y="96" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Machine Guns (Chord)</text>
+    <text x="15" y="114" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Huntsman Cabin</text>
+
+    <rect x="15" y="135" width="130" height="30" rx="4" fill="#1e293b"/>
+    <text x="80" y="154" font-family="sans-serif" font-weight="700" font-size="10" fill="#86efac" text-anchor="middle">FACTION: Engineers</text>
+  </g>
+
+  <!-- Stage 2: Low-Mid PS -->
+  <g transform="translate(250, 120)">
+    <rect x="0" y="0" width="160" height="180" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="10" y="10" width="140" height="26" rx="4" fill="#0284c7"/>
+    <text x="80" y="27" font-family="sans-serif" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle">2,400 – 5,000 PS</text>
+
+    <text x="15" y="58" font-family="sans-serif" font-weight="800" font-size="13" fill="#38bdf8">LOW-MID TIER</text>
+    <text x="15" y="78" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Blue Rare Weapons</text>
+    <text x="15" y="96" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Vector, Rapier, Little Boy</text>
+    <text x="15" y="114" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Growl &amp; Wyvern Cabins</text>
+
+    <rect x="15" y="135" width="130" height="30" rx="4" fill="#1e293b"/>
+    <text x="80" y="154" font-family="sans-serif" font-weight="700" font-size="10" fill="#7dd3fc" text-anchor="middle">Lunatics &amp; Nomads</text>
+  </g>
+
+  <!-- Stage 3: High PS Competitor -->
+  <g transform="translate(450, 160)">
+    <rect x="0" y="0" width="160" height="180" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="10" y="10" width="140" height="26" rx="4" fill="#d97706"/>
+    <text x="80" y="27" font-family="sans-serif" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle">5,000 – 9,000 PS</text>
+
+    <text x="15" y="58" font-family="sans-serif" font-weight="800" font-size="13" fill="#f59e0b">EPIC BRAWLER</text>
+    <text x="15" y="78" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Purple Epic Guns &amp; Cabins</text>
+    <text x="15" y="96" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Executioner, Equalizer</text>
+    <text x="15" y="114" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Gasgen &amp; Armored Tracks</text>
+
+    <rect x="15" y="135" width="130" height="30" rx="4" fill="#1e293b"/>
+    <text x="80" y="154" font-family="sans-serif" font-weight="700" font-size="10" fill="#fde047" text-anchor="middle">Steppenwolfs &amp; Fire</text>
+  </g>
+
+  <!-- Stage 4: End Game Clan Wars -->
+  <g transform="translate(650, 120)">
+    <rect x="0" y="0" width="180" height="180" rx="10" fill="#0f172a" stroke="#ec4899" stroke-width="2"/>
+    <rect x="10" y="10" width="160" height="26" rx="4" fill="#be185d"/>
+    <text x="90" y="27" font-family="sans-serif" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle">9,000 – 14,000+ PS</text>
+
+    <text x="15" y="58" font-family="sans-serif" font-weight="800" font-size="13" fill="#ec4899">CLAN WARS LEGEND</text>
+    <text x="15" y="78" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Yellow Legendary &amp; Relics</text>
+    <text x="15" y="96" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Scorpion, Typhoon, Hovers</text>
+    <text x="15" y="114" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Apollo IV Generator</text>
+
+    <rect x="15" y="135" width="150" height="30" rx="4" fill="#1e293b"/>
+    <text x="90" y="154" font-family="sans-serif" font-weight="700" font-size="10" fill="#fbcfe8" text-anchor="middle">Competitive Clan Wars</text>
+  </g>
+
+  <!-- Key Takeaway Box -->
+  <rect x="20" y="420" width="860" height="60" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="40" y="445" font-family="sans-serif" font-weight="800" font-size="12" fill="#818cf8">🎯 MATCHMAKING TRUTH:</text>
+  <text x="210" y="445" font-family="sans-serif" font-size="12" fill="#f8fafc">Crossout matches players based strictly on vehicle Power Score (PS), NOT player level.</text>
+  <text x="40" y="468" font-family="sans-serif" font-size="11" fill="#94a3b8">You can enjoy fair, highly competitive battles at 4,000 PS for months without ever needing expensive Relic items.</text>
+</svg>

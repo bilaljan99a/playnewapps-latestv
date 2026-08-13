@@ -5210,5 +5210,83 @@ img, video, iframe, object, embed {
     }
 }
 
+/* ==========================================================================
+   Permanent Global Mobile Header & Navigation Layout Fixes
+   ========================================================================== */
+.logo span, .nav-link, .header-actions {
+    white-space: nowrap !important;
+}
+
+@media (max-width: 768px) {
+    .mobile-only {
+        display: inline-flex !important;
+    }
+
+    .header-container {
+        position: relative;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--surface-color, #ffffff);
+        border-bottom: 2px solid var(--border-color, #e2e8f0);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        padding: 1rem 1.25rem;
+        display: none !important;
+        flex-direction: column;
+        gap: 0.75rem;
+        z-index: 1100;
+    }
+
+    .nav.active {
+        display: flex !important;
+    }
+
+    .nav-list {
+        flex-direction: column !alignment: flex-start;
+        align-items: flex-start;
+        gap: 0.85rem;
+        width: 100%;
+    }
+
+    .nav-list li {
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        width: 100%;
+        padding: 0.5rem 0.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        white-space: nowrap;
+    }
+
+    .diagram-caption {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.4rem !important;
+    }
+
+    .scorecard-header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    .overall-score-badge {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+}
+
+
 
 

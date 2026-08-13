@@ -154,7 +154,7 @@ class App {
             if (suggestionsBox) {
                 if (results.length > 0) {
                     suggestionsBox.innerHTML = results.map(r => `
-                        <a href="review.html?id=${r.id}" class="suggestion-item">
+                        <a href="${r.reviewUrl || ('review.html?id=' + r.id)}" class="suggestion-item">
                             <img src="${r.icon}" alt="${r.title} icon" width="30" height="30">
                             <span>${r.title}</span>
                         </a>
