@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180C04"/>
+      <stop offset="40%" stop-color="#2D1508"/>
+      <stop offset="100%" stop-color="#0F0804"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6B00"/>
+      <stop offset="100%" stop-color="#FF9E00"/>
+    </linearGradient>
+    <radialGradient id="fireGlow" cx="70%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF5500" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bgGrad)"/>
+  <rect width="1200" height="400" fill="url(#fireGlow)"/>
+
+  <!-- Dust / Ember particles overlay simulation -->
+  <circle cx="850" cy="120" r="3" fill="#FF8800" opacity="0.8"/>
+  <circle cx="920" cy="220" r="2" fill="#FFAA00" opacity="0.9"/>
+  <circle cx="780" cy="290" r="4" fill="#FF5500" opacity="0.7"/>
+  <circle cx="1050" cy="180" r="3" fill="#FFCC00" opacity="0.6"/>
+  <circle cx="680" cy="80" r="2" fill="#FF7700" opacity="0.8"/>
+
+  <!-- Post-Apocalyptic Armored Vehicle Silhouette / Illustration -->
+  <g transform="translate(620, 80)">
+    <!-- Tank / Buggy Base Chassis -->
+    <path d="M 50 200 L 120 120 L 320 110 L 440 180 L 480 230 L 440 260 L 50 260 Z" fill="#1A120C" stroke="#FF6B00" stroke-width="3"/>
+    
+    <!-- Massive Caterpillar Treads / Giant Spiked Wheels -->
+    <circle cx="110" cy="250" r="45" fill="#0D0704" stroke="#D97706" stroke-width="5"/>
+    <circle cx="230" cy="250" r="45" fill="#0D0704" stroke="#D97706" stroke-width="5"/>
+    <circle cx="350" cy="250" r="45" fill="#0D0704" stroke="#D97706" stroke-width="5"/>
+    <circle cx="430" cy="250" r="40" fill="#0D0704" stroke="#D97706" stroke-width="5"/>
+
+    <!-- Wheel Rim Accents -->
+    <circle cx="110" cy="250" r="20" fill="#FF6B00"/>
+    <circle cx="230" cy="250" r="20" fill="#FF6B00"/>
+    <circle cx="350" cy="250" r="20" fill="#FF6B00"/>
+    <circle cx="430" cy="250" r="18" fill="#FF6B00"/>
+
+    <!-- Mounted Autocannon Rocket Turret -->
+    <rect x="220" y="60" width="120" height="50" rx="8" fill="#261A10" stroke="#FF8800" stroke-width="2"/>
+    <rect x="320" y="70" width="140" height="16" fill="#0A0A0A" stroke="#FF6B00" stroke-width="2"/>
+    <path d="M 460 65 L 480 78 L 460 91 Z" fill="#FF9E00"/>
+
+    <!-- Muzzle Flash Fire Flare -->
+    <path d="M 460 78 Q 510 50 560 78 Q 510 106 460 78 Z" fill="#FF3300" opacity="0.95"/>
+    <path d="M 460 78 Q 490 65 520 78 Q 490 91 460 78 Z" fill="#FFCC00"/>
+
+    <!-- Armor Plates & Spikes -->
+    <path d="M 80 160 L 140 140 L 180 180 Z" fill="#B45309"/>
+    <path d="M 280 130 L 360 120 L 390 170 Z" fill="#78350F"/>
+  </g>
+
+  <!-- Left Content Overlay -->
+  <g transform="translate(70, 80)">
+    <!-- Badge -->
+    <rect width="210" height="36" rx="18" fill="#FF6B00"/>
+    <text x="105" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" fill="#FFFFFF" text-anchor="middle">🔥 VERIFIED OFFICIAL OFFER</text>
+
+    <!-- Main Headline -->
+    <text x="0" y="95" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="52" fill="#FFFFFF" letter-spacing="-1">CROSSOUT: F.O.A.D.</text>
+    <text x="0" y="145" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="34" fill="#FF9E00">Play Post-Apocalyptic Vehicle Combat for FREE!</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="190" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="18" fill="#CBD5E1">Craft your custom armored machine • Fast-paced 8v8 PvP &amp; Co-op Raids</text>
+
+    <!-- CTA Button Graphic -->
+    <g transform="translate(0, 220)">
+      <rect width="280" height="56" rx="14" fill="url(#orangeGrad)"/>
+      <text x="140" y="35" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="18" fill="#FFFFFF" text-anchor="middle">CLAIM FREE ACCESS NOW →</text>
+    </g>
+  </g>
+</svg>

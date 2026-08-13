@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 140" width="380" height="140">
+  <!-- Stencil Rectangle Frame with Distressed Cuts -->
+  <g fill="none" stroke="#0A0A0A" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Top border segment -->
+    <path d="M 20 20 L 140 20 M 155 20 L 260 20 M 285 20 L 360 20" />
+    <!-- Right border segment -->
+    <path d="M 360 20 L 360 65 M 360 80 L 360 120" />
+    <!-- Bottom border segment -->
+    <path d="M 360 120 L 240 120 M 210 120 L 110 120 M 90 120 L 20 120" />
+    <!-- Left border segment -->
+    <path d="M 20 120 L 20 75 M 20 50 L 20 20" />
+  </g>
+
+  <!-- Distressed Edge Accents -->
+  <path d="M 18 18 L 26 28 M 355 18 L 348 26 M 358 118 L 345 110 M 22 118 L 30 110" stroke="#0A0A0A" stroke-width="2" />
+
+  <!-- "CROSSOUT" Stencil Heavy Typography -->
+  <g fill="#0A0A0A">
+    <!-- C -->
+    <path d="M 52 42 C 42 42 36 48 36 62 C 36 76 42 82 52 82 C 60 82 65 77 67 72 L 78 72 C 75 84 66 92 52 92 C 30 92 22 79 22 62 C 22 45 30 32 52 32 C 66 32 75 40 78 52 L 67 52 C 65 47 60 42 52 42 Z" />
+    <!-- R -->
+    <path d="M 84 34 L 106 34 C 115 34 121 39 121 47 C 121 54 116 58 108 60 L 123 90 L 110 90 L 97 62 L 96 62 L 96 90 L 84 90 Z M 96 43 L 96 53 L 105 53 C 109 53 111 51 111 48 C 111 45 109 43 105 43 Z" />
+    <!-- O (with stencil cutout) -->
+    <path d="M 143 32 C 127 32 121 43 121 62 C 121 81 127 92 143 92 C 159 92 165 81 165 62 C 165 43 159 32 143 32 Z M 143 42 C 150 42 153 49 153 62 C 153 75 150 82 143 82 C 136 82 133 75 133 62 C 133 49 136 42 143 42 Z" />
+    <!-- S -->
+    <path d="M 191 42 C 183 42 180 45 180 49 C 180 54 184 56 191 58 C 200 61 206 65 206 74 C 206 85 197 92 184 92 C 171 92 165 83 164 72 L 175 72 C 176 78 180 82 184 82 C 189 82 193 79 193 74 C 193 69 189 67 182 65 C 173 62 168 58 168 49 C 168 39 176 32 189 32 C 200 32 206 39 207 50 L 196 50 C 195 45 193 42 191 42 Z" />
+    <!-- S -->
+    <path d="M 233 42 C 225 42 222 45 222 49 C 222 54 226 56 233 58 C 242 61 248 65 248 74 C 248 85 239 92 226 92 C 213 92 207 83 206 72 L 217 72 C 218 78 222 82 226 82 C 231 82 235 79 235 74 C 235 69 231 67 224 65 C 215 62 210 58 210 49 C 210 39 218 32 231 32 C 242 32 248 39 249 50 L 238 50 C 237 45 235 42 233 42 Z" />
+    <!-- O -->
+    <path d="M 271 32 C 255 32 249 43 249 62 C 249 81 255 92 271 92 C 287 92 293 81 293 62 C 293 43 287 32 271 32 Z M 271 42 C 278 42 281 49 281 62 C 281 75 278 82 271 82 C 264 82 261 75 261 62 C 261 49 264 42 271 42 Z" />
+    <!-- U -->
+    <path d="M 299 34 L 311 34 L 311 74 C 311 80 314 82 318 82 C 322 82 325 80 325 74 L 325 34 L 337 34 L 337 74 C 337 87 329 92 318 92 C 307 92 299 87 299 74 Z" />
+    <!-- T -->
+    <path d="M 342 34 L 372 34 L 372 44 L 363 44 L 363 90 L 351 90 L 351 44 L 342 44 Z" />
+  </g>
+
+  <!-- Tagline: CRAFT • RIDE • DESTROY -->
+  <text x="190" y="109" 
+        font-family="'Plus Jakarta Sans', 'Segoe UI', Impact, Arial-Black, sans-serif" 
+        font-weight="900" 
+        font-size="12" 
+        fill="#0A0A0A" 
+        letter-spacing="3.5" 
+        text-anchor="middle">CRAFT • RIDE • DESTROY</text>
+</svg>

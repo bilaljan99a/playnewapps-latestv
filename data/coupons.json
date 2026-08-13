@@ -1,5 +1,105 @@
 [
   {
+    "id": "crossout-play-free",
+    "storeId": "crossout",
+    "title": "Play Crossout for FREE! — Official Free Registration Deal",
+    "description": "Register a free account on Crossout to instantly build custom armored war machines and engage in 8v8 vehicular combat and co-op raids.",
+    "code": "NO CODE NEEDED",
+    "discount": "PLAY FREE",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bywiola.com/g/kx0oz4uidyb68b264a76e03277ede5/",
+    "url": "https://bywiola.com/g/kx0oz4uidyb68b264a76e03277ede5/",
+    "store": {
+      "id": "crossout",
+      "name": "Crossout",
+      "logo": "/assets/images/brands/crossout.svg"
+    }
+  },
+  {
+    "id": "crossout-starter-vehicle-pack",
+    "storeId": "crossout",
+    "title": "Free Armored Vehicle Starter Pack — New Player Welcome Bonus",
+    "description": "Unlock a free starter combat vehicle, autocannons, cabin parts, and structural armor plates upon completing free registration.",
+    "code": "NO CODE NEEDED",
+    "discount": "FREE STARTER PACK",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bywiola.com/g/kx0oz4uidyb68b264a76e03277ede5/",
+    "url": "https://bywiola.com/g/kx0oz4uidyb68b264a76e03277ede5/",
+    "store": {
+      "id": "crossout",
+      "name": "Crossout",
+      "logo": "/assets/images/brands/crossout.svg"
+    }
+  },
+  {
+    "id": "crossout-free-coins-market-bonus",
+    "storeId": "crossout",
+    "title": "Free In-Game Market & Trading Access — Earn Free Coins",
+    "description": "Access the player-driven market to trade crafted vehicle components, decor, and weapons for free Crossout Coins.",
+    "code": "NO CODE NEEDED",
+    "discount": "FREE MARKET ACCESS",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bywiola.com/g/kx0oz4uidyb68b264a76e03277ede5/",
+    "url": "https://bywiola.com/g/kx0oz4uidyb68b264a76e03277ede5/",
+    "store": {
+      "id": "crossout",
+      "name": "Crossout",
+      "logo": "/assets/images/brands/crossout.svg"
+    }
+  },
+  {
+    "id": "crossout-coop-raids-unlocked",
+    "storeId": "crossout",
+    "title": "Co-op Story Campaign & PvE Raids — Unlocked Free",
+    "description": "Join friends or fight solo in cooperative story missions and raids to defeat AI bosses and scavenge rare crafting materials.",
+    "code": "NO CODE NEEDED",
+    "discount": "FREE PVE RAIDS",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bywiola.com/g/kx0oz4uidyb68b264a76e03277ede5/",
+    "url": "https://bywiola.com/g/kx0oz4uidyb68b264a76e03277ede5/",
+    "store": {
+      "id": "crossout",
+      "name": "Crossout",
+      "logo": "/assets/images/brands/crossout.svg"
+    }
+  },
+  {
+    "id": "crossout-battle-pass-bonus",
+    "storeId": "crossout",
+    "title": "Exclusive Season Battle Pass Perks & Vehicle Paints",
+    "description": "Get special discounts and exclusive progression bonus packs during official Crossout seasonal battle pass events.",
+    "code": "NO CODE NEEDED",
+    "discount": "SEASONAL BONUSES",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bywiola.com/g/kx0oz4uidyb68b264a76e03277ede5/",
+    "url": "https://bywiola.com/g/kx0oz4uidyb68b264a76e03277ede5/",
+    "store": {
+      "id": "crossout",
+      "name": "Crossout",
+      "logo": "/assets/images/brands/crossout.svg"
+    }
+  },
+  {
     "id": "doctronic-free-ai-consult",
     "storeId": "doctronic-us",
     "title": "Free AI Health Consult \u2014 Available 24/7",

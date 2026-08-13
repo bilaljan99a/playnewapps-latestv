@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1F2937"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" rx="16" fill="url(#bgGrad2)"/>
+
+  <!-- In-game UI Frame -->
+  <rect x="20" y="20" width="760" height="410" rx="12" fill="#030712" stroke="#374151" stroke-width="2"/>
+
+  <!-- Top Game HUD Bar -->
+  <rect x="20" y="20" width="760" height="48" fill="#111827" stroke="#1F2937"/>
+  <text x="40" y="49" font-family="sans-serif" font-weight="900" font-size="16" fill="#F97316">CROSSOUT GARAGE &amp; VEHICLE BUILDER</text>
+  <rect x="580" y="30" width="180" height="28" rx="6" fill="#059669"/>
+  <text x="670" y="49" font-family="sans-serif" font-weight="800" font-size="12" fill="#FFFFFF" text-anchor="middle">⚡ POWER: 10,450 PS</text>
+
+  <!-- Left Parts Selection Panel -->
+  <rect x="35" y="80" width="180" height="330" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="50" y="105" font-family="sans-serif" font-size="12" font-weight="800" fill="#9CA3AF">CABINS &amp; WEAPONS</text>
+  
+  <!-- Part 1 -->
+  <rect x="45" y="115" width="160" height="50" rx="6" fill="#1F2937" stroke="#F97316"/>
+  <text x="55" y="135" font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Heavy Bear Cabin</text>
+  <text x="55" y="152" font-family="sans-serif" font-size="10" fill="#10B981">+12 Energy Points</text>
+
+  <!-- Part 2 -->
+  <rect x="45" y="175" width="160" height="50" rx="6" fill="#1F2937" stroke="#374151"/>
+  <text x="55" y="195" font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">88mm Cannon "Executioner"</text>
+  <text x="55" y="212" font-family="sans-serif" font-size="10" fill="#F59E0B">Epic Armor Piercer</text>
+
+  <!-- Part 3 -->
+  <rect x="45" y="235" width="160" height="50" rx="6" fill="#1F2937" stroke="#374151"/>
+  <text x="55" y="255" font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Armored Tracks (x4)</text>
+  <text x="55" y="272" font-family="sans-serif" font-size="10" fill="#60A5FA">Mass Limit: +4500kg</text>
+
+  <!-- Part 4 -->
+  <rect x="45" y="295" width="160" height="50" rx="6" fill="#1F2937" stroke="#374151"/>
+  <text x="55" y="315" font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Rocket Launcher "Pyre"</text>
+
+  <!-- Main Vehicle Crafting Workspace -->
+  <rect x="230" y="80" width="530" height="330" rx="8" fill="#0B0F19" stroke="#1E293B"/>
+
+  <!-- Vehicle Illustration in 3D Grid -->
+  <g transform="translate(260, 100)">
+    <!-- Grid Floor Lines -->
+    <line x1="20" y1="240" x2="450" y2="240" stroke="#1E293B" stroke-width="2"/>
+    <line x1="20" y1="260" x2="450" y2="260" stroke="#1E293B" stroke-width="1"/>
+
+    <!-- Vehicle Main Body -->
+    <path d="M 100 180 L 160 120 L 320 120 L 380 180 L 360 220 L 80 220 Z" fill="#374151" stroke="#F97316" stroke-width="2"/>
+    <rect x="180" y="80" width="120" height="40" rx="6" fill="#1F2937" stroke="#EAB308" stroke-width="2"/>
+    <rect x="220" y="40" width="16" height="50" fill="#D97706"/>
+
+    <!-- Track Wheels -->
+    <rect x="90" y="210" width="80" height="30" rx="6" fill="#111827" stroke="#F97316" stroke-width="2"/>
+    <rect x="300" y="210" width="80" height="30" rx="6" fill="#111827" stroke="#F97316" stroke-width="2"/>
+  </g>
+
+  <!-- HUD Crafting Specs Banner -->
+  <rect x="245" y="350" width="500" height="45" rx="8" fill="#111827" stroke="#374151"/>
+  <text x="260" y="377" font-family="sans-serif" font-size="13" font-weight="800" fill="#F97316">CRAFT STATS:</text>
+  <text x="360" y="377" font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Durability: 2,480 HP</text>
+  <text x="510" y="377" font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Speed: 75 km/h</text>
+  <text x="640" y="377" font-family="sans-serif" font-size="12" font-weight="700" fill="#10B981">Parts: 78 / 80</text>
+</svg>
