@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="combatBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180c04"/>
+      <stop offset="50%" stop-color="#2d1508"/>
+      <stop offset="100%" stop-color="#0f0804"/>
+    </linearGradient>
+    <radialGradient id="explosion" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffff00" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#ff6600" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#cc0000" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sandDust" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#d97706" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Desert Wasteland -->
+  <rect width="800" height="450" rx="16" fill="url(#combatBg)"/>
+  <rect x="0" y="250" width="800" height="200" fill="url(#sandDust)"/>
+
+  <!-- Wasteland Mountains Background -->
+  <path d="M 0 300 L 120 220 L 250 270 L 400 190 L 580 280 L 720 210 L 800 270 L 800 450 L 0 450 Z" fill="#1c110a" opacity="0.8"/>
+
+  <!-- Explosion Blast Center -->
+  <circle cx="480" cy="220" r="110" fill="url(#explosion)"/>
+  <path d="M 420 220 L 380 180 M 520 180 L 560 140 M 480 140 L 480 90 M 550 250 L 610 280" stroke="#f59e0b" stroke-width="4" stroke-dasharray="8,8"/>
+
+  <!-- Attacking Vehicle (Armored Buggy) -->
+  <g transform="translate(100, 210)">
+    <!-- Dust Trail -->
+    <ellipse cx="-40" cy="80" rx="70" ry="25" fill="#f59e0b" opacity="0.3"/>
+
+    <!-- Wheels -->
+    <circle cx="40" cy="80" r="30" fill="#0f172a" stroke="#d97706" stroke-width="4"/>
+    <circle cx="160" cy="80" r="30" fill="#0f172a" stroke="#d97706" stroke-width="4"/>
+    <circle cx="40" cy="80" r="12" fill="#f59e0b"/>
+    <circle cx="160" cy="80" r="12" fill="#f59e0b"/>
+
+    <!-- Chassis Body -->
+    <path d="M 10 70 L 40 20 L 140 10 L 200 50 L 190 75 L 10 75 Z" fill="#2d1508" stroke="#f97316" stroke-width="3"/>
+    <rect x="60" y="0" width="80" height="30" rx="4" fill="#180c04" stroke="#eab308" stroke-width="2"/>
+
+    <!-- Cannon Barrel & Fire -->
+    <rect x="130" y="8" width="110" height="12" fill="#090d16" stroke="#f97316" stroke-width="2"/>
+    <!-- Muzzle Blast -->
+    <path d="M 240 14 L 280 0 L 260 14 L 290 28 Z" fill="#f59e0b"/>
+  </g>
+
+  <!-- Target Enemy Vehicle (Treaded Tank taking damage) -->
+  <g transform="translate(480, 210)">
+    <!-- Heavy Treads -->
+    <rect x="20" y="60" width="180" height="40" rx="10" fill="#090d16" stroke="#ef4444" stroke-width="3"/>
+    <circle cx="50" cy="80" r="15" fill="#334155"/>
+    <circle cx="110" cy="80" r="15" fill="#334155"/>
+    <circle cx="170" cy="80" r="15" fill="#334155"/>
+
+    <!-- Armored Cabin -->
+    <path d="M 30 60 L 60 15 L 150 15 L 170 60 Z" fill="#1f2937" stroke="#dc2626" stroke-width="2"/>
+
+    <!-- Flying Armor Debris -->
+    <rect x="-30" y="-20" width="20" height="15" fill="#f59e0b" transform="rotate(25)"/>
+    <rect x="10" y="-40" width="15" height="10" fill="#ef4444" transform="rotate(-15)"/>
+  </g>
+
+  <!-- HUD Combat Overlay Frame -->
+  <rect x="15" y="15" width="770" height="420" rx="12" fill="none" stroke="#334155" stroke-width="2"/>
+
+  <!-- Top PvP HUD Header -->
+  <rect x="240" y="15" width="320" height="36" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="400" y="38" font-family="sans-serif" font-weight="900" font-size="14" fill="#ffffff" text-anchor="middle">⚔️ 8v8 WASTELAND COMBAT — PvP MATCH</text>
+
+  <!-- Team Score Tracker -->
+  <rect x="30" y="25" width="120" height="26" rx="6" fill="#1e293b"/>
+  <text x="90" y="42" font-family="sans-serif" font-weight="800" font-size="12" fill="#22c55e" text-anchor="middle">ALLIES: 6 alive</text>
+
+  <rect x="650" y="25" width="120" height="26" rx="6" fill="#1e293b"/>
+  <text x="710" y="42" font-family="sans-serif" font-weight="800" font-size="12" fill="#ef4444" text-anchor="middle">ENEMIES: 4 alive</text>
+
+  <!-- Bottom Combat Stats Badge -->
+  <rect x="30" y="390" width="740" height="35" rx="6" fill="#0f172a" opacity="0.9" stroke="#334155"/>
+  <text x="45" y="412" font-family="sans-serif" font-weight="800" font-size="12" fill="#f59e0b">TARGET LOCKED:</text>
+  <text x="160" y="412" font-family="sans-serif" font-weight="700" font-size="12" fill="#ffffff">Heavy Armored Scavenger Tank</text>
+  <text x="500" y="412" font-family="sans-serif" font-weight="700" font-size="12" fill="#ef4444">DAMAGE DEAL: +1,250 HP</text>
+  <text x="680" y="412" font-family="sans-serif" font-weight="800" font-size="12" fill="#22c55e">CRITICAL HIT!</text>
+</svg>

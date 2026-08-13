@@ -1,5 +1,105 @@
 [
   {
+    "id": "vectorstock-unlimited-subscription",
+    "storeId": "vectorstock",
+    "title": "Unlimited Downloads for Commercial Use — Save $60.00/Year",
+    "description": "Get unlimited vector downloads for commercial use starting at $14.99/mo with annual billing that saves you $60.00 per year.",
+    "code": "NO CODE NEEDED",
+    "discount": "SAVE $60/YEAR",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://grfpr.com/g/e8s706m24bb68b264a7669ba13f9ec/?ulp=https%3A%2F%2Fwww.vectorstock.com%2Fpricing",
+    "url": "https://grfpr.com/g/e8s706m24bb68b264a7669ba13f9ec/?ulp=https%3A%2F%2Fwww.vectorstock.com%2Fpricing",
+    "store": {
+      "id": "vectorstock",
+      "name": "VectorStock",
+      "logo": "/assets/images/brands/vectorstock.svg"
+    }
+  },
+  {
+    "id": "vectorstock-flexible-credits",
+    "storeId": "vectorstock",
+    "title": "Flexible Credit Packs — 50 Credits for $50 ($1/Credit)",
+    "description": "Download commercial-use vectors pay-as-you-go with credit packs: 50 credits for $50, 100 credits for $100, or 150 credits for $150.",
+    "code": "NO CODE NEEDED",
+    "discount": "50 CREDITS $50",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://grfpr.com/g/e8s706m24bb68b264a7669ba13f9ec/?ulp=https%3A%2F%2Fwww.vectorstock.com%2Fpricing",
+    "url": "https://grfpr.com/g/e8s706m24bb68b264a7669ba13f9ec/?ulp=https%3A%2F%2Fwww.vectorstock.com%2Fpricing",
+    "store": {
+      "id": "vectorstock",
+      "name": "VectorStock",
+      "logo": "/assets/images/brands/vectorstock.svg"
+    }
+  },
+  {
+    "id": "vectorstock-pay-per-image",
+    "storeId": "vectorstock",
+    "title": "Pay-Per-Image Single Downloads — Starting at $14.99",
+    "description": "Download single high-res vector files in EPS, AI, PDF, or PNG format with standard commercial licensing on-demand.",
+    "code": "NO CODE NEEDED",
+    "discount": "SINGLE DOWNLOAD",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://grfpr.com/g/e8s706m24bb68b264a7669ba13f9ec/",
+    "url": "https://grfpr.com/g/e8s706m24bb68b264a7669ba13f9ec/",
+    "store": {
+      "id": "vectorstock",
+      "name": "VectorStock",
+      "logo": "/assets/images/brands/vectorstock.svg"
+    }
+  },
+  {
+    "id": "vectorstock-free-vectors",
+    "storeId": "vectorstock",
+    "title": "300,000+ Free Royalty-Free Vector Images & Illustrations",
+    "description": "Browse and download over 300,000 free vectors, icons, logo templates, and background patterns with attribution.",
+    "code": "NO CODE NEEDED",
+    "discount": "FREE VECTORS",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://grfpr.com/g/e8s706m24bb68b264a7669ba13f9ec/",
+    "url": "https://grfpr.com/g/e8s706m24bb68b264a7669ba13f9ec/",
+    "store": {
+      "id": "vectorstock",
+      "name": "VectorStock",
+      "logo": "/assets/images/brands/vectorstock.svg"
+    }
+  },
+  {
+    "id": "vectorstock-expanded-license",
+    "storeId": "vectorstock",
+    "title": "Expanded Commercial License — Merchandise & Resale Rights",
+    "description": "Unlock expanded commercial rights for print-on-demand products, retail T-shirts, mugs, poster prints, and digital resale.",
+    "code": "NO CODE NEEDED",
+    "discount": "COMMERCIAL RESALE",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://grfpr.com/g/e8s706m24bb68b264a7669ba13f9ec/?ulp=https%3A%2F%2Fwww.vectorstock.com%2Fpricing",
+    "url": "https://grfpr.com/g/e8s706m24bb68b264a7669ba13f9ec/?ulp=https%3A%2F%2Fwww.vectorstock.com%2Fpricing",
+    "store": {
+      "id": "vectorstock",
+      "name": "VectorStock",
+      "logo": "/assets/images/brands/vectorstock.svg"
+    }
+  },
+  {
     "id": "crossout-play-free",
     "storeId": "crossout",
     "title": "Play Crossout for FREE! — Official Free Registration Deal",

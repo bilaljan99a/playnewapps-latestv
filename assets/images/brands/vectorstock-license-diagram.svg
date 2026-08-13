@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" width="1200" height="350">
+  <rect width="1200" height="350" fill="#f8fafc" rx="16" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="600" y="45" font-family="sans-serif" font-weight="800" font-size="22" fill="#0f172a" text-anchor="middle">VectorStock Licensing &amp; Usage Comparison</text>
+  
+  <!-- Column 1: Standard License -->
+  <g transform="translate(60, 80)">
+    <rect width="330" height="230" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="12"/>
+    <rect width="330" height="40" fill="#3b82f6" rx="12"/>
+    <rect y="28" width="330" height="12" fill="#3b82f6"/>
+    <text x="165" y="26" font-family="sans-serif" font-weight="800" font-size="15" fill="#ffffff" text-anchor="middle">STANDARD LICENSE</text>
+    <text x="165" y="75" font-family="sans-serif" font-weight="900" font-size="24" fill="#0f172a" text-anchor="middle">Pay-Per-Image / Credits</text>
+    <text x="20" y="115" font-family="sans-serif" font-size="13" fill="#475569">• Digital websites, blogs &amp; social media</text>
+    <text x="20" y="140" font-family="sans-serif" font-size="13" fill="#475569">• eBooks, marketing flyers &amp; posters</text>
+    <text x="20" y="165" font-family="sans-serif" font-size="13" fill="#475569">• Client design projects &amp; presentations</text>
+    <text x="20" y="190" font-family="sans-serif" font-size="13" fill="#475569">• Up to 500,000 printed copies</text>
+  </g>
+
+  <!-- Column 2: Unlimited Commercial Subscription -->
+  <g transform="translate(435, 80)">
+    <rect width="330" height="230" fill="#ffffff" stroke="#10b981" stroke-width="3" rx="12"/>
+    <rect width="330" height="40" fill="#10b981" rx="12"/>
+    <rect y="28" width="330" height="12" fill="#10b981"/>
+    <text x="165" y="26" font-family="sans-serif" font-weight="800" font-size="15" fill="#ffffff" text-anchor="middle">UNLIMITED SUBSCRIPTION</text>
+    <text x="165" y="75" font-family="sans-serif" font-weight="900" font-size="24" fill="#0f172a" text-anchor="middle">$14.99 / month</text>
+    <text x="20" y="115" font-family="sans-serif" font-size="13" fill="#475569">• Unlimited vector &amp; illustration downloads</text>
+    <text x="20" y="140" font-family="sans-serif" font-size="13" fill="#475569">• Full commercial use rights for all downloads</text>
+    <text x="20" y="165" font-family="sans-serif" font-size="13" fill="#475569">• Annual plan saves $60.00/year</text>
+    <text x="20" y="190" font-family="sans-serif" font-size="13" fill="#10b981" font-weight="700">• Best Value for Designers &amp; Agencies</text>
+  </g>
+
+  <!-- Column 3: Expanded License -->
+  <g transform="translate(810, 80)">
+    <rect width="330" height="230" fill="#ffffff" stroke="#f59e0b" stroke-width="2" rx="12"/>
+    <rect width="330" height="40" fill="#f59e0b" rx="12"/>
+    <rect y="28" width="330" height="12" fill="#f59e0b"/>
+    <text x="165" y="26" font-family="sans-serif" font-weight="800" font-size="15" fill="#ffffff" text-anchor="middle">EXPANDED LICENSE</text>
+    <text x="165" y="75" font-family="sans-serif" font-weight="900" font-size="24" fill="#0f172a" text-anchor="middle">Merchandise &amp; Resale</text>
+    <text x="20" y="115" font-family="sans-serif" font-size="13" fill="#475569">• T-shirts, mugs, posters for retail sale</text>
+    <text x="20" y="140" font-family="sans-serif" font-size="13" fill="#475569">• Print-on-demand (POD) platforms</text>
+    <text x="20" y="165" font-family="sans-serif" font-size="13" fill="#475569">• Unlimited print runs &amp; digital distribution</text>
+    <text x="20" y="190" font-family="sans-serif" font-size="13" fill="#475569">• Commercial resale product creation</text>
+  </g>
+</svg>

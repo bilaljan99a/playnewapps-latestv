@@ -1,5 +1,55 @@
 [
   {
+    "id": "vectorstock",
+    "name": "VectorStock",
+    "icon": "draw",
+    "logo": "/assets/images/brands/vectorstock.svg",
+    "website": "https://www.vectorstock.com",
+    "storeUrl": "/vectorstock-coupons.html",
+    "affiliateLink": "https://grfpr.com/g/e8s706m24bb68b264a7669ba13f9ec/",
+    "rating": 4.9,
+    "votes": 18920,
+    "seoTitle": "VectorStock Coupon Code, Discount Offers & Pricing Guide (2026)",
+    "seoDescription": "Verified VectorStock coupon codes, promo offers, $14.99/mo unlimited subscription deal (save $60/yr), pay-per-image credit packs (50 for $50), and 300,000+ free vector downloads.",
+    "about": "VectorStock is the world's leading standalone vector graphics marketplace featuring over 35 million royalty-free vector images, EPS/AI illustrations, logo templates, icons, and background patterns for designers, agencies, and businesses.",
+    "categories": [
+      "Design & Graphics",
+      "Vector Illustrations",
+      "Stock Photography & Assets",
+      "Creative Tools"
+    ],
+    "whyShop": [
+      "Unlimited Downloads for Commercial Use — Monthly Unlimited for $14.99 ($60/year savings)",
+      "Flexible Credit Packs: 50 credits for $50, 100 credits for $100, 150 credits for $150 ($1/credit)",
+      "300,000+ 100% Free Royalty-Free Vector Images for personal and commercial use",
+      "Expanded Licenses for Print-on-Demand (POD), merchandise, and commercial resale"
+    ],
+    "shoppingTips": [
+      "Subscribe to the Unlimited Subscription ($14.99/mo) if you download more than 15 vectors per month to save up to $60/year.",
+      "Purchase Flexible Credit Packs (50 for $50) for pay-as-you-go downloading if you only need vectors occasionally.",
+      "Browse the VectorStock Free Vectors category featuring over 300,000 high-quality royalty-free graphics with zero cost.",
+      "Always activate deals via verified PlayNewApps affiliate promo links to guarantee valid promotional pricing at checkout."
+    ],
+    "faqs": [
+      {
+        "question": "Does VectorStock offer a discount or promo code?",
+        "answer": "Yes! You can get Unlimited Downloads for commercial use at $14.99/mo (saving $60/year on annual subscriptions) or buy flexible credit packs (50 credits for $50). Activate offers directly through our verified affiliate links."
+      },
+      {
+        "question": "How much does VectorStock Unlimited subscription cost?",
+        "answer": "VectorStock Unlimited costs $14.99 per month with annual billing options that save $60.00/year. It gives you unlimited commercial downloads across the entire vector library."
+      },
+      {
+        "question": "What are VectorStock Credit Packs and how do they work?",
+        "answer": "VectorStock Credit Packs let you buy vector download credits at $1 per credit: 50 credits for $50, 100 credits for $100, and 150 credits for $150. Credits never expire and can be used anytime for standard license downloads."
+      },
+      {
+        "question": "Are there free vectors available on VectorStock?",
+        "answer": "Yes! VectorStock hosts over 300,000 free vector graphics, logos, icons, and background patterns that can be downloaded with a free attribution license."
+      }
+    ]
+  },
+  {
     "id": "crossout",
     "name": "Crossout",
     "icon": "sports_esports",
