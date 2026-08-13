@@ -87,7 +87,10 @@ const cleanRoutes = [
   { route: '/crossout-coupons', file: 'crossout-coupons.html' },
   { route: '/crossout-review', file: 'crossout-review.html' },
   { route: '/vectorstock', file: 'vectorstock-coupons.html' },
-  { route: '/vectorstock-coupons', file: 'vectorstock-coupons.html' }
+  { route: '/vectorstock-coupons', file: 'vectorstock-coupons.html' },
+  { route: '/purevpn', file: 'purevpn-coupons.html' },
+  { route: '/purevpn-coupons', file: 'purevpn-coupons.html' },
+  { route: '/purevpn-review', file: 'purevpn-coupons.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {

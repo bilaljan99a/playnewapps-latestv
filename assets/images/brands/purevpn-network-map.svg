@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520">
+  <rect width="1000" height="520" rx="20" fill="#0F172A"/>
+  <rect x="2" y="2" width="996" height="516" rx="18" fill="none" stroke="#1E293B" stroke-width="3"/>
+  
+  <!-- Header Title -->
+  <text x="40" y="52" fill="#FFFFFF" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="22" font-weight="800">PureVPN Global Server Architecture &amp; Quantum-Resistant Encryption</text>
+  <text x="40" y="80" fill="#94A3B8" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="14" font-weight="600">6,500+ High-Speed 20Gbps Bare-Metal Servers Across 80+ Countries &amp; 180+ Locations</text>
+
+  <!-- World Grid Nodes -->
+  <g opacity="0.15" stroke="#00E676" stroke-width="1" stroke-dasharray="4,8">
+    <line x1="40" y1="120" x2="960" y2="120"/>
+    <line x1="40" y1="200" x2="960" y2="200"/>
+    <line x1="40" y1="280" x2="960" y2="280"/>
+    <line x1="40" y1="360" x2="960" y2="360"/>
+  </g>
+
+  <!-- Server Clusters -->
+  <!-- North America -->
+  <g transform="translate(40, 130)">
+    <rect width="280" height="170" rx="16" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+    <circle cx="36" cy="36" r="16" fill="#00C853" opacity="0.2"/>
+    <circle cx="36" cy="36" r="8" fill="#00C853"/>
+    <text x="64" y="42" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-size="16" font-weight="800">North America Nodes</text>
+    <text x="24" y="80" fill="#94A3B8" font-family="Plus Jakarta Sans, sans-serif" font-size="13">3,100+ Bare-Metal Servers</text>
+    <text x="24" y="104" fill="#00E676" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="700">US East/West, Canada, Mexico</text>
+    <text x="24" y="138" fill="#CBD5E1" font-family="Plus Jakarta Sans, sans-serif" font-size="12">⚡ WireGuard Latency: ~12ms</text>
+  </g>
+
+  <!-- Europe -->
+  <g transform="translate(360, 130)">
+    <rect width="280" height="170" rx="16" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+    <circle cx="36" cy="36" r="16" fill="#00C853" opacity="0.2"/>
+    <circle cx="36" cy="36" r="8" fill="#00C853"/>
+    <text x="64" y="42" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-size="16" font-weight="800">Europe &amp; UK Network</text>
+    <text x="24" y="80" fill="#94A3B8" font-family="Plus Jakarta Sans, sans-serif" font-size="13">2,200+ Bare-Metal Servers</text>
+    <text x="24" y="104" fill="#00E676" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="700">UK, Germany, France, NL</text>
+    <text x="24" y="138" fill="#CBD5E1" font-family="Plus Jakarta Sans, sans-serif" font-size="12">📺 4K UHD Unblocking: 100%</text>
+  </g>
+
+  <!-- Asia Pacific -->
+  <g transform="translate(680, 130)">
+    <rect width="280" height="170" rx="16" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+    <circle cx="36" cy="36" r="16" fill="#00C853" opacity="0.2"/>
+    <circle cx="36" cy="36" r="8" fill="#00C853"/>
+    <text x="64" y="42" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-size="16" font-weight="800">Asia-Pacific Hubs</text>
+    <text x="24" y="80" fill="#94A3B8" font-family="Plus Jakarta Sans, sans-serif" font-size="13">1,200+ Ultra-Fast Servers</text>
+    <text x="24" y="104" fill="#00E676" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="700">Japan, Singapore, Australia</text>
+    <text x="24" y="138" fill="#CBD5E1" font-family="Plus Jakarta Sans, sans-serif" font-size="12">🔒 Always-On Audited</text>
+  </g>
+
+  <!-- Bottom Feature Badges with Clean Vector Paths -->
+  <g transform="translate(40, 330)">
+    <rect width="920" height="140" rx="16" fill="#161F36" stroke="#00C853" stroke-width="1.5" stroke-dasharray="6,6"/>
+    
+    <!-- Shield Icon Vector -->
+    <g transform="translate(50, 30)">
+      <circle cx="40" cy="40" r="32" fill="#00C853" opacity="0.15"/>
+      <path d="M40 22 L56 28 V44 C56 55 49 64 40 68 C31 64 24 55 24 44 V28 L40 22 Z" fill="#00E676"/>
+      <path d="M36 44 L30 38 L33 35 L36 38 L47 27 L50 30 L36 44 Z" fill="#0F172A"/>
+      <text x="90" y="36" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-size="16" font-weight="800">Always-On Zero-Logs Security Audit</text>
+      <text x="90" y="58" fill="#94A3B8" font-family="Plus Jakarta Sans, sans-serif" font-size="13">Independently audited by KPMG &amp; Altius IT to ensure zero user traffic logs.</text>
+    </g>
+
+    <!-- Key Quantum Icon Vector -->
+    <g transform="translate(510, 30)">
+      <circle cx="40" cy="40" r="32" fill="#00C853" opacity="0.15"/>
+      <path d="M48 24 C40 24 34 30 34 38 C34 41 35 44 37 46 L22 61 V66 H27 V61 H32 V56 H37 L41 52 C43 53 46 54 48 54 C56 54 62 48 62 40 C62 31 56 24 48 24 Z M48 34 C50 34 52 36 52 38 C52 40 50 42 48 42 C46 42 44 40 44 38 C44 36 46 34 48 34 Z" fill="#00E676"/>
+      <text x="90" y="36" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-size="16" font-weight="800">Quantum-Resistant Key Architecture</text>
+      <text x="90" y="58" fill="#94A3B8" font-family="Plus Jakarta Sans, sans-serif" font-size="13">Future-proof Kyber &amp; Dilithium quantum-safe encryption protocols.</text>
+    </g>
+  </g>
+</svg>

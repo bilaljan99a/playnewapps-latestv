@@ -1,5 +1,56 @@
 [
   {
+    "id": "purevpn",
+    "name": "PureVPN",
+    "icon": "vpn_key",
+    "logo": "/assets/images/brands/purevpn.svg",
+    "website": "https://www.purevpn.com",
+    "storeUrl": "/purevpn-coupons.html",
+    "affiliateLink": "https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/",
+    "rating": 4.9,
+    "votes": 18420,
+    "seoTitle": "PureVPN Coupon Codes, Up to 85% OFF + 20% Discount Code (2026)",
+    "seoDescription": "Claim verified 2026 PureVPN coupon codes: 20% OFF on all plans with code admitad20, up to 85% off 2-year plans + 3 months free, and 30-day risk-free trial.",
+    "about": "PureVPN is an industry-leading, independently audited zero-logs virtual private network provider featuring 6,500+ bare-metal 20Gbps servers in 80+ countries. Supports WireGuard, Quantum-Resistant Encryption, Dedicated IP, Port Forwarding, and 10 simultaneous connections.",
+    "categories": [
+      "VPN & Security",
+      "Software & Apps",
+      "Privacy Tools",
+      "Online Security"
+    ],
+    "whyShop": [
+      "20% OFF on all subscription plans using exclusive promo code admitad20",
+      "Up to 85% OFF 2-Year Max, Plus & Standard plans plus 3 extra months free",
+      "Always-On Zero-Logs audited independently by KPMG and Altius IT",
+      "6,500+ High-Speed 20Gbps bare-metal servers in 80+ countries and 180+ locations",
+      "Risk-free 30-day money-back guarantee with 24/7 customer support"
+    ],
+    "shoppingTips": [
+      "Use promo code admitad20 at checkout to apply an extra 20% discount on top of active 2-year and 1-year plans.",
+      "Select the 2-Year Max or Plus Plan to unlock up to 85% off standard monthly rates plus receive 3 extra months free.",
+      "Add Dedicated IP or Port Forwarding add-ons if you host servers, manage remote access, or engage in active P2P torrenting.",
+      "Always activate deals through PlayNewApps verified partner links to guarantee promotional discount pricing."
+    ],
+    "faqs": [
+      {
+        "question": "What is the best active PureVPN coupon code?",
+        "answer": "The best active promo code for PureVPN is admitad20, which gives an extra 20% OFF on all subscription plans (2-Year, 1-Year, and Monthly)."
+      },
+      {
+        "question": "How much discount can I get on PureVPN?",
+        "answer": "You can get up to 85% OFF on PureVPN 2-Year plans plus 3 extra months free, and an additional 20% discount when using coupon code admitad20."
+      },
+      {
+        "question": "Does PureVPN offer a 30-day money-back guarantee?",
+        "answer": "Yes! PureVPN provides a 100% risk-free 30-day money-back guarantee on all plans, allowing you to test all premium features with zero financial risk."
+      },
+      {
+        "question": "How many devices can I connect to PureVPN simultaneously?",
+        "answer": "A single PureVPN subscription protects up to 10 simultaneous device connections across Windows, macOS, Android, iOS, Linux, Firestick, and routers."
+      }
+    ]
+  },
+  {
     "id": "vectorstock",
     "name": "VectorStock",
     "icon": "draw",
