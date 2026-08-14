@@ -1,8 +1,148 @@
 [
   {
+    "id": "godlike-40-off-12gb",
+    "storeId": "godlike-host",
+    "title": "40% OFF First Order from 12 GB RAM \u2014 Game Servers & VPS",
+    "description": "Get an exclusive 40% discount on your first order with 12 GB RAM or higher for Minecraft, Palworld, Rust, Enshrouded, and VPS servers.",
+    "code": "affiliate40",
+    "discount": "40% OFF",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://yjfca.com/g/n4h0en61qnb68b264a7652f0388f55/",
+    "url": "https://yjfca.com/g/n4h0en61qnb68b264a7652f0388f55/",
+    "store": {
+      "id": "godlike-host",
+      "name": "GODLIKE.Host",
+      "logo": "/assets/images/brands/godlike-host.svg"
+    }
+  },
+  {
+    "id": "godlike-30-off-first-order",
+    "storeId": "godlike-host",
+    "title": "30% OFF First Order on Any Game Server or VPS Plan",
+    "description": "Save 30% on your first month of game server hosting (Minecraft, Palworld, Rust, Terraria, GTA V) or high-speed NVMe VPS plans.",
+    "code": "affiliate30",
+    "discount": "30% OFF",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://yjfca.com/g/n4h0en61qnb68b264a7652f0388f55/",
+    "url": "https://yjfca.com/g/n4h0en61qnb68b264a7652f0388f55/",
+    "store": {
+      "id": "godlike-host",
+      "name": "GODLIKE.Host",
+      "logo": "/assets/images/brands/godlike-host.svg"
+    }
+  },
+  {
+    "id": "godlike-50-off-ram-upgrade",
+    "storeId": "godlike-host",
+    "title": "Upgrade to Double Server RAM with 50% OFF",
+    "description": "Double your game server RAM capacity at half the standard pricing rate on GODLIKE.Host Minecraft and dedicated game nodes.",
+    "code": "NO CODE NEEDED",
+    "discount": "50% OFF UPGRADE",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://yjfca.com/g/n4h0en61qnb68b264a7652f0388f55/",
+    "url": "https://yjfca.com/g/n4h0en61qnb68b264a7652f0388f55/",
+    "store": {
+      "id": "godlike-host",
+      "name": "GODLIKE.Host",
+      "logo": "/assets/images/brands/godlike-host.svg"
+    }
+  },
+  {
+    "id": "godlike-14-day-free-trial",
+    "storeId": "godlike-host",
+    "title": "14-Day Free Trial \u2014 24/7 Minecraft & Game Server Hosting",
+    "description": "Test GODLIKE.Host 100% free for 14 days with 24/7 uptime, instant server deployment, and web control panel access.",
+    "code": "NO CODE NEEDED",
+    "discount": "14 DAYS FREE",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://yjfca.com/g/n4h0en61qnb68b264a7652f0388f55/",
+    "url": "https://yjfca.com/g/n4h0en61qnb68b264a7652f0388f55/",
+    "store": {
+      "id": "godlike-host",
+      "name": "GODLIKE.Host",
+      "logo": "/assets/images/brands/godlike-host.svg"
+    }
+  },
+  {
+    "id": "godlike-15-annual-discount",
+    "storeId": "godlike-host",
+    "title": "Save Up to 15% Additional on Semi-Annual & Annual Plans",
+    "description": "Select quarterly, semi-annual, or annual billing cycles to automatically lock in up to 15% recurring savings on all server hosting.",
+    "code": "NO CODE NEEDED",
+    "discount": "15% OFF ANNUAL",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://yjfca.com/g/n4h0en61qnb68b264a7652f0388f55/",
+    "url": "https://yjfca.com/g/n4h0en61qnb68b264a7652f0388f55/",
+    "store": {
+      "id": "godlike-host",
+      "name": "GODLIKE.Host",
+      "logo": "/assets/images/brands/godlike-host.svg"
+    }
+  },
+  {
+    "id": "godlike-vps-from-1-dollar",
+    "storeId": "godlike-host",
+    "title": "Gaming VPS Server Hosting from .00 /  per GB RAM",
+    "description": "High-performance Linux & Windows KVM VPS nodes powered by AMD Ryzen 9, NVMe PCIe 4.0 storage, and dedicated IPv4 address.",
+    "code": "NO CODE NEEDED",
+    "discount": "FROM /MO",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://yjfca.com/g/n4h0en61qnb68b264a7652f0388f55/",
+    "url": "https://yjfca.com/g/n4h0en61qnb68b264a7652f0388f55/",
+    "store": {
+      "id": "godlike-host",
+      "name": "GODLIKE.Host",
+      "logo": "/assets/images/brands/godlike-host.svg"
+    }
+  },
+  {
+    "id": "godlike-3-day-money-back",
+    "storeId": "godlike-host",
+    "title": "Risk-Free 3-Day Full Money-Back Guarantee on All Plans",
+    "description": "Enjoy total peace of mind with a 100% refund guarantee if you are not completely satisfied within the first 72 hours.",
+    "code": "NO CODE NEEDED",
+    "discount": "3 DAYS REFUND",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://yjfca.com/g/n4h0en61qnb68b264a7652f0388f55/",
+    "url": "https://yjfca.com/g/n4h0en61qnb68b264a7652f0388f55/",
+    "store": {
+      "id": "godlike-host",
+      "name": "GODLIKE.Host",
+      "logo": "/assets/images/brands/godlike-host.svg"
+    }
+  },
+  {
     "id": "vectorstock-unlimited-subscription",
     "storeId": "vectorstock",
-    "title": "Unlimited Downloads for Commercial Use — Save $60.00/Year",
+    "title": "Unlimited Downloads for Commercial Use \u2014 Save $60.00/Year",
     "description": "Get unlimited vector downloads for commercial use starting at $14.99/mo with annual billing that saves you $60.00 per year.",
     "code": "NO CODE NEEDED",
     "discount": "SAVE $60/YEAR",
@@ -22,7 +162,7 @@
   {
     "id": "vectorstock-flexible-credits",
     "storeId": "vectorstock",
-    "title": "Flexible Credit Packs — 50 Credits for $50 ($1/Credit)",
+    "title": "Flexible Credit Packs \u2014 50 Credits for $50 ($1/Credit)",
     "description": "Download commercial-use vectors pay-as-you-go with credit packs: 50 credits for $50, 100 credits for $100, or 150 credits for $150.",
     "code": "NO CODE NEEDED",
     "discount": "50 CREDITS $50",
@@ -42,7 +182,7 @@
   {
     "id": "vectorstock-pay-per-image",
     "storeId": "vectorstock",
-    "title": "Pay-Per-Image Single Downloads — Starting at $14.99",
+    "title": "Pay-Per-Image Single Downloads \u2014 Starting at $14.99",
     "description": "Download single high-res vector files in EPS, AI, PDF, or PNG format with standard commercial licensing on-demand.",
     "code": "NO CODE NEEDED",
     "discount": "SINGLE DOWNLOAD",
@@ -82,7 +222,7 @@
   {
     "id": "vectorstock-expanded-license",
     "storeId": "vectorstock",
-    "title": "Expanded Commercial License — Merchandise & Resale Rights",
+    "title": "Expanded Commercial License \u2014 Merchandise & Resale Rights",
     "description": "Unlock expanded commercial rights for print-on-demand products, retail T-shirts, mugs, poster prints, and digital resale.",
     "code": "NO CODE NEEDED",
     "discount": "COMMERCIAL RESALE",
@@ -102,7 +242,7 @@
   {
     "id": "enlisted-play-free",
     "storeId": "enlisted",
-    "title": "Play Enlisted for FREE! — Official Free Registration Deal",
+    "title": "Play Enlisted for FREE! \u2014 Official Free Registration Deal",
     "description": "Register a free account on Enlisted to command infantry squads, armor, and warplanes across WWII battle theaters.",
     "code": "NO CODE NEEDED",
     "discount": "PLAY FREE",
@@ -122,7 +262,7 @@
   {
     "id": "enlisted-starter-squad-pack",
     "storeId": "enlisted",
-    "title": "Free Starter Squads & Infantry Pack — New Player Welcome Bonus",
+    "title": "Free Starter Squads & Infantry Pack \u2014 New Player Welcome Bonus",
     "description": "Unlock multiple infantry squads, basic firearms, tactical grenades, and soldier upgrade progression on free sign up.",
     "code": "NO CODE NEEDED",
     "discount": "FREE STARTER SQUADS",
@@ -142,7 +282,7 @@
   {
     "id": "enlisted-combined-arms-access",
     "storeId": "enlisted",
-    "title": "WWII Tanks & Aircraft Combat — Free Combined Arms Access",
+    "title": "WWII Tanks & Aircraft Combat \u2014 Free Combined Arms Access",
     "description": "Command iconic tanks and pilot fighter/bomber warplanes in the same live matches without paying a dime.",
     "code": "NO CODE NEEDED",
     "discount": "FREE COMBINED ARMS",
@@ -162,7 +302,7 @@
   {
     "id": "enlisted-battle-pass-events",
     "storeId": "enlisted",
-    "title": "Seasonal Battle Pass & Special Events — Free & Elite Rewards",
+    "title": "Seasonal Battle Pass & Special Events \u2014 Free & Elite Rewards",
     "description": "Complete daily combat tasks and seasonal battle pass tiers to earn free booster orders, rare historical weaponry, and camos.",
     "code": "NO CODE NEEDED",
     "discount": "SEASONAL REWARDS",
@@ -182,7 +322,7 @@
   {
     "id": "crossout-play-free",
     "storeId": "crossout",
-    "title": "Play Crossout for FREE! — Official Free Registration Deal",
+    "title": "Play Crossout for FREE! \u2014 Official Free Registration Deal",
     "description": "Register a free account on Crossout to instantly build custom armored war machines and engage in 8v8 vehicular combat and co-op raids.",
     "code": "NO CODE NEEDED",
     "discount": "PLAY FREE",
@@ -202,7 +342,7 @@
   {
     "id": "crossout-starter-vehicle-pack",
     "storeId": "crossout",
-    "title": "Free Armored Vehicle Starter Pack — New Player Welcome Bonus",
+    "title": "Free Armored Vehicle Starter Pack \u2014 New Player Welcome Bonus",
     "description": "Unlock a free starter combat vehicle, autocannons, cabin parts, and structural armor plates upon completing free registration.",
     "code": "NO CODE NEEDED",
     "discount": "FREE STARTER PACK",
@@ -222,7 +362,7 @@
   {
     "id": "crossout-free-coins-market-bonus",
     "storeId": "crossout",
-    "title": "Free In-Game Market & Trading Access — Earn Free Coins",
+    "title": "Free In-Game Market & Trading Access \u2014 Earn Free Coins",
     "description": "Access the player-driven market to trade crafted vehicle components, decor, and weapons for free Crossout Coins.",
     "code": "NO CODE NEEDED",
     "discount": "FREE MARKET ACCESS",
@@ -242,7 +382,7 @@
   {
     "id": "crossout-coop-raids-unlocked",
     "storeId": "crossout",
-    "title": "Co-op Story Campaign & PvE Raids — Unlocked Free",
+    "title": "Co-op Story Campaign & PvE Raids \u2014 Unlocked Free",
     "description": "Join friends or fight solo in cooperative story missions and raids to defeat AI bosses and scavenge rare crafting materials.",
     "code": "NO CODE NEEDED",
     "discount": "FREE PVE RAIDS",
