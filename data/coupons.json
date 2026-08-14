@@ -3863,7 +3863,7 @@
     "store": {
       "id": "star-conflict",
       "name": "Star Conflict",
-      "logo": "/assets/images/brands/star-conflict.png"
+      "logo": "/assets/images/brands/star-conflict.svg"
     }
   },
   {
@@ -3883,7 +3883,7 @@
     "store": {
       "id": "star-conflict",
       "name": "Star Conflict",
-      "logo": "/assets/images/brands/star-conflict.png"
+      "logo": "/assets/images/brands/star-conflict.svg"
     }
   },
   {
@@ -3903,7 +3903,7 @@
     "store": {
       "id": "star-conflict",
       "name": "Star Conflict",
-      "logo": "/assets/images/brands/star-conflict.png"
+      "logo": "/assets/images/brands/star-conflict.svg"
     }
   },
   {
@@ -3923,7 +3923,7 @@
     "store": {
       "id": "star-conflict",
       "name": "Star Conflict",
-      "logo": "/assets/images/brands/star-conflict.png"
+      "logo": "/assets/images/brands/star-conflict.svg"
     }
   }
 ]
