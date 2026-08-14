@@ -98,7 +98,13 @@ const cleanRoutes = [
   { route: '/store/enlisted', file: 'enlisted-coupons.html' },
   { route: '/star-conflict', file: 'star-conflict-coupons.html' },
   { route: '/star-conflict-coupons', file: 'star-conflict-coupons.html' },
-  { route: '/store/star-conflict', file: 'star-conflict-coupons.html' }
+  { route: '/store/star-conflict', file: 'star-conflict-coupons.html' },
+  { route: '/forcedrop', file: 'forcedrop-coupons.html' },
+  { route: '/forcedrop-coupons', file: 'forcedrop-coupons.html' },
+  { route: '/store/forcedrop', file: 'forcedrop-coupons.html' },
+  { route: '/lenovo', file: 'lenovo-coupons.html' },
+  { route: '/lenovo-coupons', file: 'lenovo-coupons.html' },
+  { route: '/store/lenovo', file: 'lenovo-coupons.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {

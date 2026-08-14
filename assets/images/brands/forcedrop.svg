@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 140" width="320" height="140">
+  <defs>
+    <linearGradient id="textGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#EDE9FE"/>
+      <stop offset="100%" stop-color="#DDD6FE"/>
+    </linearGradient>
+    
+    <linearGradient id="fireGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF4500" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#FF6B00"/>
+      <stop offset="70%" stop-color="#FFA800"/>
+      <stop offset="100%" stop-color="#FFDD00"/>
+    </linearGradient>
+    
+    <linearGradient id="fistGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFC000"/>
+      <stop offset="50%" stop-color="#FF7700"/>
+      <stop offset="100%" stop-color="#E63900"/>
+    </linearGradient>
+    
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Fist with Fire Effect at Top Right -->
+  <g transform="translate(180, 8)" filter="url(#shadow)">
+    <!-- Fire trail behind fist -->
+    <path d="M-90,26 C-60,18 -30,22 10,24 C5,20 -15,16 -40,14 C-10,12 15,18 25,22 C-5,10 -35,16 -70,22 Z" fill="url(#fireGrad)" opacity="0.9"/>
+    <circle cx="-50" cy="18" r="1.5" fill="#FFA500"/>
+    <circle cx="-25" cy="12" r="2" fill="#FFD700"/>
+    <circle cx="-10" cy="8" r="1.5" fill="#FF4500"/>
+    <circle cx="5" cy="6" r="1.2" fill="#FFA500"/>
+    <circle cx="45" cy="4" r="1.5" fill="#FFCC00"/>
+
+    <!-- Clenched Punching Fist Icon -->
+    <g transform="translate(15, -4)">
+      <!-- Outer Fist Line & Knuckles -->
+      <path d="M12,28 C4,28 0,22 0,16 C0,12 4,8 10,8 C14,8 18,10 22,7 C26,4 32,5 36,9 C40,5 48,6 54,12 C58,16 62,22 60,30 C56,40 46,42 36,42 C28,42 22,38 18,34 L12,28 Z" fill="none" stroke="#FF7700" stroke-width="3.5" stroke-linejoin="round"/>
+      <path d="M14,26 C8,26 4,20 4,16 C4,13 7,10 11,10 C15,10 19,12 23,9 C27,6 32,7 35,11 C39,7 46,8 51,13 C55,17 58,22 56,29 C52,38 43,40 35,40 C28,40 23,36 19,32 Z" fill="url(#fistGrad)" opacity="0.25"/>
+      <!-- Knuckle details -->
+      <path d="M22,10 C24,16 25,24 23,32 M35,11 C37,18 38,26 36,34 M48,15 C49,21 49,28 46,36" fill="none" stroke="#FF5500" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Thumb -->
+      <path d="M12,26 C16,24 24,25 28,30" fill="none" stroke="#FF8800" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- ForceDrop 3D Text Structure -->
+  <!-- Layer 1: Dark Purple 3D Shadow Base -->
+  <g transform="translate(14, 88) skewX(-10)" filter="url(#shadow)">
+    <!-- 3D Depth Block (Repeated offset) -->
+    <text x="0" y="6" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-style="italic" font-size="52" fill="#1e1035" letter-spacing="-1">ForceDrop</text>
+    <text x="0" y="4" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-style="italic" font-size="52" fill="#2d154d" letter-spacing="-1">ForceDrop</text>
+    <text x="0" y="2" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-style="italic" font-size="52" fill="#4c1d95" stroke="#311068" stroke-width="8" stroke-linejoin="round" letter-spacing="-1">ForceDrop</text>
+    
+    <!-- Inner Purple Stroke -->
+    <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-style="italic" font-size="52" fill="#6d28d9" stroke="#4c1d95" stroke-width="4" stroke-linejoin="round" letter-spacing="-1">ForceDrop</text>
+    
+    <!-- White / Ice-Violet Face -->
+    <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-style="italic" font-size="52" fill="url(#textGrad)" letter-spacing="-1">ForceDrop</text>
+  </g>
+
+  <!-- Fiery Underline with Sparks -->
+  <g transform="translate(45, 114)">
+    <path d="M0,0 C60,-4 140,-4 210,0 C150,2 70,2 0,0 Z" fill="url(#fireGrad)"/>
+    <path d="M20,-1 C70,-3 130,-3 180,-1" stroke="#FFCC00" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="80" cy="4" r="1.5" fill="#FF8800"/>
+    <circle cx="120" cy="5" r="1" fill="#FFDD00"/>
+    <circle cx="160" cy="3" r="1.2" fill="#FF4400"/>
+  </g>
+</svg>

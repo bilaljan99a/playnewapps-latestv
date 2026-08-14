@@ -1,8 +1,708 @@
 [
   {
+    "id": "lenovo-legion20-discount",
+    "storeId": "lenovo",
+    "title": "CLP $20,000 Off Legion Gaming Computers & Laptops",
+    "description": "Save CLP $20,000 on high-performance Lenovo Legion gaming laptops and desktop rigs with verified coupon.",
+    "code": "LEGION20",
+    "discount": "CLP $20,000 OFF",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-legiongo5-discount",
+    "storeId": "lenovo",
+    "title": "CLP $5,000 Off Lenovo Legion Go Handheld Gaming Console",
+    "description": "Get CLP $5,000 off the Legion Go handheld PC gaming console featuring 8.8-inch QHD+ display and detachable controllers.",
+    "code": "LEGIONGO5",
+    "discount": "CLP $5,000 OFF",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-tier-300-off",
+    "storeId": "lenovo",
+    "title": "$300 Off Orders Above $2,000 on Lenovo.com",
+    "description": "Unlock a massive $300 instant discount on high-end ThinkPad, Legion, and Yoga orders exceeding $2,000.",
+    "code": "LENOVO",
+    "discount": "$300 OFF",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-tier-200-off",
+    "storeId": "lenovo",
+    "title": "$200 Off Orders Above $1,500 on Lenovo.com",
+    "description": "Save $200 on premium laptops, workstations, and desktop setups when cart total reaches $1,500 or more.",
+    "code": "LENOVO",
+    "discount": "$200 OFF",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-tier-100-off",
+    "storeId": "lenovo",
+    "title": "$100 Off Orders Above $1,000 on Lenovo.com",
+    "description": "Receive $100 off qualifying orders of $1,000 or more across all eligible Lenovo tech categories.",
+    "code": "LENOVO",
+    "discount": "$100 OFF",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-lnvcarrito-10",
+    "storeId": "lenovo",
+    "title": "Up to 10% Off Sitewide on Selected Hardware & Laptops",
+    "description": "Enjoy up to 10% additional cart savings on select Lenovo PCs, laptops, and peripheral hardware.",
+    "code": "LNVCARRITO",
+    "discount": "UP TO 10% OFF",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-lnvcarrito-40k",
+    "storeId": "lenovo",
+    "title": "Up to CLP $40,000 Off Lenovo Cart Orders",
+    "description": "Apply verified coupon code in cart to save up to CLP $40,000 on qualifying tech purchases.",
+    "code": "LNVCARRITO",
+    "discount": "UP TO CLP $40K OFF",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-lnvcarrito-5",
+    "storeId": "lenovo",
+    "title": "Extra 5% Off Lenovo Computing Hardware & Electronics",
+    "description": "Redeem verified coupon code at checkout for an extra 5% reduction on eligible Lenovo computers and displays.",
+    "code": "LNVCARRITO",
+    "discount": "EXTRA 5% OFF",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-lnvcarrito-3",
+    "storeId": "lenovo",
+    "title": "3% Instant Cart Discount on Lenovo.com",
+    "description": "Take an instant 3% off your entire cart total when checking out on official Lenovo online stores.",
+    "code": "LNVCARRITO",
+    "discount": "3% OFF",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-thinkbook-14x-student-usd",
+    "storeId": "lenovo",
+    "title": "Exclusive Student Pricing on ThinkBook 14x — Starting from $799",
+    "description": "Verified students and faculty get exclusive reduced pricing on the ThinkBook 14x premium business laptop starting from $799.",
+    "code": "NO CODE NEEDED",
+    "discount": "FROM $799",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-thinkbook-14x-student-uk",
+    "storeId": "lenovo",
+    "title": "Exclusive Student & Academic Pricing on ThinkBook 14x Series",
+    "description": "Unlock student-special rates on ultra-sleek ThinkBook 14x productivity laptops with high-resolution displays.",
+    "code": "NO CODE NEEDED",
+    "discount": "SPECIAL PRICE",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-yoga-slim-7x-oled",
+    "storeId": "lenovo",
+    "title": "Up to $850 Off Yoga Slim 7x Copilot+ PC OLED Laptops",
+    "description": "Save up to $850 on the ultra-thin Yoga Slim 7x featuring Snapdragon X Elite, 32GB RAM, and 3K PureSight OLED screen.",
+    "code": "EXTRASAVEAFF",
+    "discount": "SAVE $850",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-thinkpad-e16-gen3",
+    "storeId": "lenovo",
+    "title": "Up to $830 Off ThinkPad E16 Gen 3 Enterprise Laptops",
+    "description": "High-powered 16-inch ThinkPad workstation with numeric keypad, robust security features, and military-grade durability.",
+    "code": "NO CODE NEEDED",
+    "discount": "SAVE $830",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-thinkpad-p14s-workstation",
+    "storeId": "lenovo",
+    "title": "Up to $1,120 Off ThinkPad P14s Mobile Workstations",
+    "description": "ISV-certified professional laptop engineered for AutoCAD, SolidWorks, 3D modeling, and demanding engineering workloads.",
+    "code": "NO CODE NEEDED",
+    "discount": "SAVE $1,120",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-legion-7-oled-gaming",
+    "storeId": "lenovo",
+    "title": "Up to $615 Off Legion 7i & 7a 2.5K 240Hz OLED Gaming Laptops",
+    "description": "Premium CNC aluminum gaming laptop powered by AMD Ryzen AI / Intel Core Ultra and NVIDIA GeForce RTX 40-series GPUs.",
+    "code": "NO CODE NEEDED",
+    "discount": "SAVE $615",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-ideapad-slim-discount",
+    "storeId": "lenovo",
+    "title": "Up to 31% Off IdeaPad Slim 3 & Slim 5 Everyday Laptops",
+    "description": "Thin, lightweight laptops with vivid FHD displays, fast charging, and all-day battery life for students and home users.",
+    "code": "NO CODE NEEDED",
+    "discount": "UP TO 31% OFF",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-student-idme-discount",
+    "storeId": "lenovo",
+    "title": "Extra 10% Student & Teacher Discount via ID.me Verification",
+    "description": "Verified students, educators, and university faculty save an extra 10% on laptops, desktops, and tech gear.",
+    "code": "NO CODE NEEDED",
+    "discount": "EXTRA 10% OFF",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-accessories-50-off",
+    "storeId": "lenovo",
+    "title": "Up to 50% Off Lenovo Accessories, Audio, Bags & Peripherals",
+    "description": "Stock up on Lenovo wireless mice, mechanical gaming keyboards, active pens, laptop backpacks, and USB-C adapters.",
+    "code": "NO CODE NEEDED",
+    "discount": "UP TO 50% OFF",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-monitors-45-off",
+    "storeId": "lenovo",
+    "title": "Up to 45% Off ThinkVision & Legion Curved Gaming Monitors",
+    "description": "Upgrade your desk setup with color-accurate 4K ThinkVision professional displays and ultra-fast 240Hz Legion gaming monitors.",
+    "code": "NO CODE NEEDED",
+    "discount": "UP TO 45% OFF",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-loq-gaming-laptop",
+    "storeId": "lenovo",
+    "title": "Up to $400 Off Lenovo LOQ 15 Entry Gaming Laptops",
+    "description": "Accessible yet powerful gaming with Intel 14th Gen / AMD Ryzen chips, RTX 4050/4060 graphics, and Nahimic 3D audio.",
+    "code": "NO CODE NEEDED",
+    "discount": "SAVE $400",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-tab-android-tablets",
+    "storeId": "lenovo",
+    "title": "Up to $250 Off Lenovo Tab P12 Pro & Tab M11 Android Tablets",
+    "description": "Crisp 3K displays with quad JBL speakers, Lenovo Tab Pen Plus stylus support, and reading mode for study and entertainment.",
+    "code": "NO CODE NEEDED",
+    "discount": "SAVE $250",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-thinkcentre-tiny-desktops",
+    "storeId": "lenovo",
+    "title": "Up to 40% Off ThinkCentre M-Series Tiny & SFF Desktops",
+    "description": "Ultra-compact commercial desktop PCs that fit behind monitors while delivering enterprise performance and vPro security.",
+    "code": "NO CODE NEEDED",
+    "discount": "UP TO 40% OFF",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-legion-tower-desktops",
+    "storeId": "lenovo",
+    "title": "Up to 35% Off Legion Tower 5i & 7i Liquid-Cooled Gaming Desktops",
+    "description": "Battle-ready gaming towers featuring ARGB lighting, Legion Coldfront 4.0 cooling, and up to RTX 4080 graphics.",
+    "code": "NO CODE NEEDED",
+    "discount": "UP TO 35% OFF",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-thunderbolt-docks",
+    "storeId": "lenovo",
+    "title": "Up to 40% Off ThinkPad Thunderbolt 4 & USB-C Docks",
+    "description": "Single-cable connectivity powering multi-monitor 4K displays, gigabit ethernet, and rapid 100W laptop charging.",
+    "code": "NO CODE NEEDED",
+    "discount": "UP TO 40% OFF",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-clearance-outlet-deals",
+    "storeId": "lenovo",
+    "title": "Up to 60% Off Lenovo Official Factory Clearance & Outlet",
+    "description": "Deeply discounted overstock and refurbished ThinkPad, Yoga, and Legion PCs backed by official Lenovo warranty.",
+    "code": "NO CODE NEEDED",
+    "discount": "UP TO 60% OFF",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-yoga-9i-convertible",
+    "storeId": "lenovo",
+    "title": "Up to $350 Off Yoga 9i & Yoga Book 9i Dual OLED Convertibles",
+    "description": "Revolutionary 360-degree convertible laptops featuring Bowers & Wilkins rotating soundbars and precision stylus input.",
+    "code": "NO CODE NEEDED",
+    "discount": "SAVE $350",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-free-shipping",
+    "storeId": "lenovo",
+    "title": "Free Standard Shipping on All Orders Sitewide",
+    "description": "Enjoy free standard ground shipping with zero minimum purchase required on all laptops, desktops, and accessories.",
+    "code": "NO CODE NEEDED",
+    "discount": "FREE SHIPPING",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-rewards-cashback",
+    "storeId": "lenovo",
+    "title": "Earn 3% to 9% Back in My Lenovo Rewards Points",
+    "description": "Join the free My Lenovo Rewards loyalty club to earn reward points on every purchase, redeemable toward future tech.",
+    "code": "NO CODE NEEDED",
+    "discount": "UP TO 9% REWARDS",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-trade-in-credit",
+    "storeId": "lenovo",
+    "title": "Lenovo Trade-In Program: Get Up to $500 Credit on Old Tech",
+    "description": "Trade in your old laptop, desktop, tablet, or smartphone for direct credit or prepaid visa cards toward a new Lenovo PC.",
+    "code": "NO CODE NEEDED",
+    "discount": "UP TO $500 CREDIT",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "lenovo-hero-discount",
+    "storeId": "lenovo",
+    "title": "Extra 5% Discount for Military, Veterans, Healthcare & First Responders",
+    "description": "Special community appreciation savings verified via ID.me stackable on most online laptop and desktop deals.",
+    "code": "NO CODE NEEDED",
+    "discount": "EXTRA 5% OFF",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "url": "https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/",
+    "store": {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "logo": "/assets/images/brands/lenovo.svg"
+    }
+  },
+  {
+    "id": "forcedrop-40-deposit-bonus",
+    "storeId": "forcedrop",
+    "title": "40% Bonus on Deposit Top-Up & Replenishment",
+    "description": "Receive an extra 40% balance bonus when replenishing your ForceDrop account to open CS2 custom and premium cases.",
+    "code": "GET40",
+    "discount": "+40% BONUS",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://hvjjg.com/g/wnb50tmumwb68b264a766897aa2720/",
+    "url": "https://hvjjg.com/g/wnb50tmumwb68b264a766897aa2720/",
+    "store": {
+      "id": "forcedrop",
+      "name": "ForceDrop",
+      "logo": "/assets/images/brands/forcedrop.svg"
+    }
+  },
+  {
+    "id": "forcedrop-30-bonus-wheel",
+    "storeId": "forcedrop",
+    "title": "30% Deposit Bonus + Daily Free Wheel Spin",
+    "description": "Unlock a 30% balance boost on account top-ups plus free spin access on the ForceDrop rewards wheel.",
+    "code": "TRUST",
+    "discount": "+30% BONUS",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://hvjjg.com/g/wnb50tmumwb68b264a766897aa2720/",
+    "url": "https://hvjjg.com/g/wnb50tmumwb68b264a766897aa2720/",
+    "store": {
+      "id": "forcedrop",
+      "name": "ForceDrop",
+      "logo": "/assets/images/brands/forcedrop.svg"
+    }
+  },
+  {
+    "id": "forcedrop-daily-free-case",
+    "storeId": "forcedrop",
+    "title": "Daily Free Cases & Account Reward Cards",
+    "description": "Claim free daily loot boxes and bonus progression cards with no extra fee for active registered accounts.",
+    "code": "NO CODE NEEDED",
+    "discount": "FREE DAILY",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://hvjjg.com/g/wnb50tmumwb68b264a766897aa2720/",
+    "url": "https://hvjjg.com/g/wnb50tmumwb68b264a766897aa2720/",
+    "store": {
+      "id": "forcedrop",
+      "name": "ForceDrop",
+      "logo": "/assets/images/brands/forcedrop.svg"
+    }
+  },
+  {
+    "id": "forcedrop-skin-upgrade-contract",
+    "storeId": "forcedrop",
+    "title": "Contract & Skin Upgrade Multiplier — Up to 10x Value",
+    "description": "Trade in low-tier CS2 skins for high-value Covert knives and gloves using ForceDrop transparent upgrade odds.",
+    "code": "NO CODE NEEDED",
+    "discount": "UP TO 10X",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://hvjjg.com/g/wnb50tmumwb68b264a766897aa2720/",
+    "url": "https://hvjjg.com/g/wnb50tmumwb68b264a766897aa2720/",
+    "store": {
+      "id": "forcedrop",
+      "name": "ForceDrop",
+      "logo": "/assets/images/brands/forcedrop.svg"
+    }
+  },
+  {
+    "id": "forcedrop-instant-steam-withdrawal",
+    "storeId": "forcedrop",
+    "title": "Instant Steam Skin Withdrawal — Direct P2P & Bot Delivery",
+    "description": "Withdraw all won skins directly into your Steam trade inventory within seconds via instant automated trade offers.",
+    "code": "NO CODE NEEDED",
+    "discount": "INSTANT DELIVERY",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://hvjjg.com/g/wnb50tmumwb68b264a766897aa2720/",
+    "url": "https://hvjjg.com/g/wnb50tmumwb68b264a766897aa2720/",
+    "store": {
+      "id": "forcedrop",
+      "name": "ForceDrop",
+      "logo": "/assets/images/brands/forcedrop.svg"
+    }
+  },
+  {
     "id": "godlike-40-off-12gb",
     "storeId": "godlike-host",
-    "title": "40% OFF First Order from 12 GB RAM \u2014 Game Servers & VPS",
+    "title": "40% OFF First Order from 12 GB RAM — Game Servers & VPS",
     "description": "Get an exclusive 40% discount on your first order with 12 GB RAM or higher for Minecraft, Palworld, Rust, Enshrouded, and VPS servers.",
     "code": "affiliate40",
     "discount": "40% OFF",
@@ -62,7 +762,7 @@
   {
     "id": "godlike-14-day-free-trial",
     "storeId": "godlike-host",
-    "title": "14-Day Free Trial \u2014 24/7 Minecraft & Game Server Hosting",
+    "title": "14-Day Free Trial — 24/7 Minecraft & Game Server Hosting",
     "description": "Test GODLIKE.Host 100% free for 14 days with 24/7 uptime, instant server deployment, and web control panel access.",
     "code": "NO CODE NEEDED",
     "discount": "14 DAYS FREE",
@@ -142,7 +842,7 @@
   {
     "id": "vectorstock-unlimited-subscription",
     "storeId": "vectorstock",
-    "title": "Unlimited Downloads for Commercial Use \u2014 Save $60.00/Year",
+    "title": "Unlimited Downloads for Commercial Use — Save $60.00/Year",
     "description": "Get unlimited vector downloads for commercial use starting at $14.99/mo with annual billing that saves you $60.00 per year.",
     "code": "NO CODE NEEDED",
     "discount": "SAVE $60/YEAR",
@@ -162,7 +862,7 @@
   {
     "id": "vectorstock-flexible-credits",
     "storeId": "vectorstock",
-    "title": "Flexible Credit Packs \u2014 50 Credits for $50 ($1/Credit)",
+    "title": "Flexible Credit Packs — 50 Credits for $50 ($1/Credit)",
     "description": "Download commercial-use vectors pay-as-you-go with credit packs: 50 credits for $50, 100 credits for $100, or 150 credits for $150.",
     "code": "NO CODE NEEDED",
     "discount": "50 CREDITS $50",
@@ -182,7 +882,7 @@
   {
     "id": "vectorstock-pay-per-image",
     "storeId": "vectorstock",
-    "title": "Pay-Per-Image Single Downloads \u2014 Starting at $14.99",
+    "title": "Pay-Per-Image Single Downloads — Starting at $14.99",
     "description": "Download single high-res vector files in EPS, AI, PDF, or PNG format with standard commercial licensing on-demand.",
     "code": "NO CODE NEEDED",
     "discount": "SINGLE DOWNLOAD",
@@ -222,7 +922,7 @@
   {
     "id": "vectorstock-expanded-license",
     "storeId": "vectorstock",
-    "title": "Expanded Commercial License \u2014 Merchandise & Resale Rights",
+    "title": "Expanded Commercial License — Merchandise & Resale Rights",
     "description": "Unlock expanded commercial rights for print-on-demand products, retail T-shirts, mugs, poster prints, and digital resale.",
     "code": "NO CODE NEEDED",
     "discount": "COMMERCIAL RESALE",
@@ -242,7 +942,7 @@
   {
     "id": "enlisted-play-free",
     "storeId": "enlisted",
-    "title": "Play Enlisted for FREE! \u2014 Official Free Registration Deal",
+    "title": "Play Enlisted for FREE! — Official Free Registration Deal",
     "description": "Register a free account on Enlisted to command infantry squads, armor, and warplanes across WWII battle theaters.",
     "code": "NO CODE NEEDED",
     "discount": "PLAY FREE",
@@ -262,7 +962,7 @@
   {
     "id": "enlisted-starter-squad-pack",
     "storeId": "enlisted",
-    "title": "Free Starter Squads & Infantry Pack \u2014 New Player Welcome Bonus",
+    "title": "Free Starter Squads & Infantry Pack — New Player Welcome Bonus",
     "description": "Unlock multiple infantry squads, basic firearms, tactical grenades, and soldier upgrade progression on free sign up.",
     "code": "NO CODE NEEDED",
     "discount": "FREE STARTER SQUADS",
@@ -282,7 +982,7 @@
   {
     "id": "enlisted-combined-arms-access",
     "storeId": "enlisted",
-    "title": "WWII Tanks & Aircraft Combat \u2014 Free Combined Arms Access",
+    "title": "WWII Tanks & Aircraft Combat — Free Combined Arms Access",
     "description": "Command iconic tanks and pilot fighter/bomber warplanes in the same live matches without paying a dime.",
     "code": "NO CODE NEEDED",
     "discount": "FREE COMBINED ARMS",
@@ -302,7 +1002,7 @@
   {
     "id": "enlisted-battle-pass-events",
     "storeId": "enlisted",
-    "title": "Seasonal Battle Pass & Special Events \u2014 Free & Elite Rewards",
+    "title": "Seasonal Battle Pass & Special Events — Free & Elite Rewards",
     "description": "Complete daily combat tasks and seasonal battle pass tiers to earn free booster orders, rare historical weaponry, and camos.",
     "code": "NO CODE NEEDED",
     "discount": "SEASONAL REWARDS",
@@ -322,7 +1022,7 @@
   {
     "id": "crossout-play-free",
     "storeId": "crossout",
-    "title": "Play Crossout for FREE! \u2014 Official Free Registration Deal",
+    "title": "Play Crossout for FREE! — Official Free Registration Deal",
     "description": "Register a free account on Crossout to instantly build custom armored war machines and engage in 8v8 vehicular combat and co-op raids.",
     "code": "NO CODE NEEDED",
     "discount": "PLAY FREE",
@@ -342,7 +1042,7 @@
   {
     "id": "crossout-starter-vehicle-pack",
     "storeId": "crossout",
-    "title": "Free Armored Vehicle Starter Pack \u2014 New Player Welcome Bonus",
+    "title": "Free Armored Vehicle Starter Pack — New Player Welcome Bonus",
     "description": "Unlock a free starter combat vehicle, autocannons, cabin parts, and structural armor plates upon completing free registration.",
     "code": "NO CODE NEEDED",
     "discount": "FREE STARTER PACK",
@@ -362,7 +1062,7 @@
   {
     "id": "crossout-free-coins-market-bonus",
     "storeId": "crossout",
-    "title": "Free In-Game Market & Trading Access \u2014 Earn Free Coins",
+    "title": "Free In-Game Market & Trading Access — Earn Free Coins",
     "description": "Access the player-driven market to trade crafted vehicle components, decor, and weapons for free Crossout Coins.",
     "code": "NO CODE NEEDED",
     "discount": "FREE MARKET ACCESS",
@@ -382,7 +1082,7 @@
   {
     "id": "crossout-coop-raids-unlocked",
     "storeId": "crossout",
-    "title": "Co-op Story Campaign & PvE Raids \u2014 Unlocked Free",
+    "title": "Co-op Story Campaign & PvE Raids — Unlocked Free",
     "description": "Join friends or fight solo in cooperative story missions and raids to defeat AI bosses and scavenge rare crafting materials.",
     "code": "NO CODE NEEDED",
     "discount": "FREE PVE RAIDS",
@@ -422,7 +1122,7 @@
   {
     "id": "doctronic-free-ai-consult",
     "storeId": "doctronic-us",
-    "title": "Free AI Health Consult \u2014 Available 24/7",
+    "title": "Free AI Health Consult — Available 24/7",
     "description": "Start with Doctronic's AI health consultation at no charge and get personalized health guidance before deciding whether you need a human doctor.",
     "code": "NO CODE NEEDED",
     "discount": "FREE CONSULT",
@@ -442,7 +1142,7 @@
   {
     "id": "doctronic-39-doctor-visit",
     "storeId": "doctronic-us",
-    "title": "Licensed Doctor Telehealth Visit \u2014 $39",
+    "title": "Licensed Doctor Telehealth Visit — $39",
     "description": "When appropriate, connect with a licensed U.S. doctor online. Doctronic's official website currently lists $39 cash-pay video visits, with insurance also accepted.",
     "code": "NO CODE NEEDED",
     "discount": "$39 TELEHEALTH",
@@ -716,7 +1416,7 @@
   {
     "id": "retouch4me-20-off-bonus",
     "storeId": "retouch4me",
-    "title": "\ud83c\udf81 Free Cloud Retouch Bonuses + 20% OFF All Retouch4me AI Plugins",
+    "title": "🎁 Free Cloud Retouch Bonuses + 20% OFF All Retouch4me AI Plugins",
     "description": "Get 20% OFF all AI photo retouching plugins plus extra Free Cloud Retouch credits for batch portrait processing.",
     "code": "R4M20BONUS",
     "discount": "20% OFF + BONUS",
@@ -1640,7 +2340,7 @@
   },
   {
     "id": "wps-office-free",
-    "title": "AI-Powered Office Suite for Everyone \u2013 Free Download",
+    "title": "AI-Powered Office Suite for Everyone – Free Download",
     "description": "Download WPS Office for Windows, macOS, Linux, Android and iOS. Includes Writer, Spreadsheet, Presentation, PDF tools and built-in AI features.",
     "store": {
       "id": "wps-office",
@@ -2700,7 +3400,7 @@
   {
     "id": "nordvpn-75off-deal",
     "title": "Get 75% Off NordVPN + 3 Extra Months",
-    "description": "Protect all your devices with military-grade encryption, blazing-fast VPN servers, Threat Protection Pro\u2122, Meshnet, Dark Web Monitoring, and a strict no-logs policy. Limited-time offer includes 75% off plus 3 bonus months.",
+    "description": "Protect all your devices with military-grade encryption, blazing-fast VPN servers, Threat Protection Pro™, Meshnet, Dark Web Monitoring, and a strict no-logs policy. Limited-time offer includes 75% off plus 3 bonus months.",
     "store": {
       "id": "nordvpn",
       "name": "NordVPN",
@@ -2909,7 +3609,7 @@
   {
     "id": "nordvpn-10-devices-support",
     "title": "Protect Up To 10 Devices Simultaneously",
-    "description": "One NordVPN account protects 10 devices at once\u2014including Mac, Windows, iPhone, Android, Linux, Fire TV, and Wi-Fi routers.",
+    "description": "One NordVPN account protects 10 devices at once—including Mac, Windows, iPhone, Android, Linux, Fire TV, and Wi-Fi routers.",
     "store": {
       "id": "nordvpn",
       "name": "NordVPN",
@@ -3552,7 +4252,7 @@
     "storeId": "box",
     "store": "Box Cloud Storage",
     "code": "FREE10GB",
-    "title": "100% Free Individual Plan \u2013 10 GB Cloud Storage & Box Sign",
+    "title": "100% Free Individual Plan – 10 GB Cloud Storage & Box Sign",
     "description": "Get 10 GB secure cloud storage and 5 native Box Sign e-signatures monthly for $0.",
     "discount": "FREE",
     "type": "deal",
@@ -3564,7 +4264,7 @@
   {
     "id": "applicantally-astart30",
     "storeId": "applicantally",
-    "title": "\ud83c\udf81 Extra 30 Free Minutes for Any Order (Verified Coupon)",
+    "title": "🎁 Extra 30 Free Minutes for Any Order (Verified Coupon)",
     "description": "Get an extra 30 minutes of AI interview assistance added to any order or time pack.",
     "code": "ASTART30",
     "discount": "EXTRA 30 MINS FREE",
@@ -3576,7 +4276,7 @@
   {
     "id": "applicantally-free-15-min-trial",
     "storeId": "applicantally",
-    "title": "\u26a1 Free 15-Minute Trial (No Credit Card Required)",
+    "title": "⚡ Free 15-Minute Trial (No Credit Card Required)",
     "description": "Sign up on ApplicantAlly to unlock a free 15-minute live interview trial instantly.",
     "code": "NO CODE NEEDED",
     "discount": "100% FREE TRIAL",
@@ -3588,7 +4288,7 @@
   {
     "id": "applicantally-4-hours-pack",
     "storeId": "applicantally",
-    "title": "\ud83d\udcbc ApplicantAlly 4 Hours Interview Pack - $22",
+    "title": "💼 ApplicantAlly 4 Hours Interview Pack - $22",
     "description": "Pay-as-you-go 4-hour live interview pack. Ideal for single interview rounds and initial screens.",
     "code": "DEAL ACTIVATED",
     "discount": "4 HOURS PACK",
@@ -3600,7 +4300,7 @@
   {
     "id": "applicantally-8-hours-pack",
     "storeId": "applicantally",
-    "title": "\u2b50 ApplicantAlly 8 Hours Interview Pack - $44 (Popular Choice)",
+    "title": "⭐ ApplicantAlly 8 Hours Interview Pack - $44 (Popular Choice)",
     "description": "Best choice for active interview loops, technical screens, and follow-up hiring manager calls.",
     "code": "BEST VALUE",
     "discount": "8 HOURS PACK",
@@ -3612,7 +4312,7 @@
   {
     "id": "applicantally-12-hours-pack",
     "storeId": "applicantally",
-    "title": "\ud83d\ude80 ApplicantAlly 12 Hours Interview Pack - $58 (Lowest Hourly Rate)",
+    "title": "🚀 ApplicantAlly 12 Hours Interview Pack - $58 (Lowest Hourly Rate)",
     "description": "Maximum value pack for multi-stage interview loops across multiple prospective employers.",
     "code": "MAX SAVINGS",
     "discount": "12 HOURS PACK",
@@ -3660,7 +4360,7 @@
   {
     "id": "3dlabprint-hawker-tempest-value-pack",
     "storeId": "3dlabprint",
-    "title": "Hawker Tempest Mk II Value Pack \u2014 Up to 31% OFF",
+    "title": "Hawker Tempest Mk II Value Pack — Up to 31% OFF",
     "description": "Get the complete Hawker Tempest Mk II Value Pack STL files package for high-performance 3D-printed scale RC flight.",
     "code": "NO CODE NEEDED",
     "discount": "31% OFF",
@@ -3744,7 +4444,7 @@
   {
     "id": "3dlabprint-shop-directory",
     "storeId": "3dlabprint",
-    "title": "3DLabPrint Shop Directory \u2014 All Printable RC Models",
+    "title": "3DLabPrint Shop Directory — All Printable RC Models",
     "description": "Browse the complete 3DLabPrint shop directory for 3D-printable RC planes, warbirds, jets, trainer models, and spare parts.",
     "code": "NO CODE NEEDED",
     "discount": "SHOP ALL MODELS",
@@ -3786,7 +4486,7 @@
   {
     "id": "presenti-ai-60-pro-plan",
     "storeId": "presenti-ai",
-    "title": "60% Off Pro Plan \u2014 Presenti.ai Coupon",
+    "title": "60% Off Pro Plan — Presenti.ai Coupon",
     "description": "Get 60% off the Presenti.ai Pro Plan to unlock unlimited AI presentation generation, premium slide templates, and high-resolution PPTX exports.",
     "code": "NO CODE NEEDED",
     "discount": "60% OFF",
@@ -3828,7 +4528,7 @@
   {
     "id": "presenti-ai-free-trial",
     "storeId": "presenti-ai",
-    "title": "Try Presenti.ai Free \u2014 AI Slide Creator",
+    "title": "Try Presenti.ai Free — AI Slide Creator",
     "description": "Test Presenti.ai for free to turn text prompts into structured presentation slides with smart layouts and AI formatting.",
     "code": "NO CODE NEEDED",
     "discount": "FREE TRIAL",
@@ -3849,7 +4549,7 @@
   {
     "id": "star-conflict-play-free",
     "storeId": "star-conflict",
-    "title": "Play in Star Conflict for FREE! \u2014 Official Free Game Access",
+    "title": "Play in Star Conflict for FREE! — Official Free Game Access",
     "description": "Direct free access to tactical 3D space battles and fleet dogfights across Empire, Federation, and Jericho factions.",
     "code": "NO CODE NEEDED",
     "discount": "PLAY FREE",
@@ -3869,7 +4569,7 @@
   {
     "id": "star-conflict-free-monetization",
     "storeId": "star-conflict",
-    "title": "100% Unmonetized Full Access \u2014 In-Game Purchases Disabled",
+    "title": "100% Unmonetized Full Access — In-Game Purchases Disabled",
     "description": "Enjoy all available starship classes and game sectors with microtransactions completely removed ahead of server sunset.",
     "code": "NO CODE NEEDED",
     "discount": "100% UNMONETIZED",
@@ -3889,7 +4589,7 @@
   {
     "id": "star-conflict-open-space",
     "storeId": "star-conflict",
-    "title": "Open Space Sector Wars & Dreadnought Battles \u2014 Free Galaxy Access",
+    "title": "Open Space Sector Wars & Dreadnought Battles — Free Galaxy Access",
     "description": "Explore deep space star systems, defend asteroid belts from alien incursions, and fight for sector supremacy with no paywalls.",
     "code": "NO CODE NEEDED",
     "discount": "SECTOR WARS",
