@@ -378,30 +378,106 @@ class App {
 
             if (searchEmptyState) searchEmptyState.style.display = 'none';
 
-            let itemsToRender = [];
+            const storeCards = matchedStores.map(s => getComponents().createStoreCard(s));
+            const reviewCards = matchedReviews.map(r => getComponents().createAppCard(r));
+            const dealCards = matchedDeals.map(d => getComponents().createCouponCard(d));
+
+            let outputHtml = '';
 
             if (filter === 'all') {
-                const storeCards = matchedStores.map(s => getComponents().createStoreCard(s));
-                const reviewCards = matchedReviews.map(r => getComponents().createAppCard(r));
-                const dealCards = matchedDeals.map(d => getComponents().createCouponCard(d));
-                itemsToRender = [...storeCards, ...reviewCards, ...dealCards];
+                let sectionsHtml = '';
+
+                // 1. Partner Stores Section
+                if (matchedStores.length > 0) {
+                    sectionsHtml += `
+                        <div class="search-category-section">
+                            <div class="search-category-header">
+                                <h3 class="search-category-title">
+                                    <span class="material-icons-round" aria-hidden="true">storefront</span>
+                                    <span>Partner Stores &amp; Brands</span>
+                                    <span class="category-count-badge">${matchedStores.length}</span>
+                                </h3>
+                                ${matchedStores.length > 3 ? `<button type="button" class="btn-filter-jump" data-target-filter="stores">View all stores &rarr;</button>` : ''}
+                            </div>
+                            <div class="store-cards-grid">
+                                ${storeCards.join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+
+                // 2. Apps & Software Reviews Section
+                if (matchedReviews.length > 0) {
+                    sectionsHtml += `
+                        <div class="search-category-section">
+                            <div class="search-category-header">
+                                <h3 class="search-category-title">
+                                    <span class="material-icons-round" aria-hidden="true">apps</span>
+                                    <span>Apps &amp; Software Reviews</span>
+                                    <span class="category-count-badge">${matchedReviews.length}</span>
+                                </h3>
+                                ${matchedReviews.length > 6 ? `<button type="button" class="btn-filter-jump" data-target-filter="reviews">View all software &rarr;</button>` : ''}
+                            </div>
+                            <div class="grid review-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
+                                ${reviewCards.join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+
+                // 3. Verified Deals & Coupons Section
+                if (matchedDeals.length > 0) {
+                    sectionsHtml += `
+                        <div class="search-category-section">
+                            <div class="search-category-header">
+                                <h3 class="search-category-title">
+                                    <span class="material-icons-round" aria-hidden="true">local_offer</span>
+                                    <span>Verified Deals &amp; Promo Codes</span>
+                                    <span class="category-count-badge">${matchedDeals.length}</span>
+                                </h3>
+                                ${matchedDeals.length > 5 ? `<button type="button" class="btn-filter-jump" data-target-filter="deals">View all deals &rarr;</button>` : ''}
+                            </div>
+                            <div class="store-coupons-grid">
+                                ${dealCards.join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+
+                outputHtml = sectionsHtml;
+
             } else if (filter === 'stores') {
-                itemsToRender = matchedStores.map(s => getComponents().createStoreCard(s));
+                if (matchedStores.length === 0) {
+                    outputHtml = `<div class="search-no-filter-match"><p>No partner store matches found for "<strong>${escapeHtml(query)}</strong>".</p></div>`;
+                } else {
+                    outputHtml = `<div class="store-cards-grid">${storeCards.join('')}</div>`;
+                }
             } else if (filter === 'reviews') {
-                itemsToRender = matchedReviews.map(r => getComponents().createAppCard(r));
+                if (matchedReviews.length === 0) {
+                    outputHtml = `<div class="search-no-filter-match"><p>No app or software review matches found for "<strong>${escapeHtml(query)}</strong>".</p></div>`;
+                } else {
+                    outputHtml = `<div class="grid review-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">${reviewCards.join('')}</div>`;
+                }
             } else if (filter === 'deals') {
-                itemsToRender = matchedDeals.map(d => getComponents().createCouponCard(d));
+                if (matchedDeals.length === 0) {
+                    outputHtml = `<div class="search-no-filter-match"><p>No discount deals or coupons found for "<strong>${escapeHtml(query)}</strong>".</p></div>`;
+                } else {
+                    outputHtml = `<div class="store-coupons-grid">${dealCards.join('')}</div>`;
+                }
             }
 
-            if (itemsToRender.length === 0) {
-                searchResultsGrid.innerHTML = `
-                    <div style="grid-column: 1 / -1; text-align: center; padding: 2.5rem 1rem; color: var(--text-secondary); background: var(--surface-color); border-radius: 12px; border: 1px dashed var(--border-color);">
-                        <p style="margin: 0; font-size: 1.05rem;">No ${filter} matches found for "<strong>${escapeHtml(query)}</strong>". Try switching to the <strong>All</strong> filter.</p>
-                    </div>
-                `;
-            } else {
-                searchResultsGrid.innerHTML = itemsToRender.join('');
-            }
+            searchResultsGrid.innerHTML = outputHtml;
+
+            // Attach jump filter buttons
+            const jumpBtns = searchResultsGrid.querySelectorAll('.btn-filter-jump');
+            jumpBtns.forEach(jBtn => {
+                jBtn.addEventListener('click', () => {
+                    const targetFilter = jBtn.getAttribute('data-target-filter');
+                    if (targetFilter) {
+                        renderSearchResultsView(query, targetFilter);
+                    }
+                });
+            });
         };
 
         const executeSearchResultsView = (query) => {

@@ -887,9 +887,87 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .search-results-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 1.75rem;
+    display: block;
+    width: 100%;
+}
+
+.search-category-section {
+    margin-bottom: 3rem;
+}
+
+.search-category-section:last-child {
+    margin-bottom: 0;
+}
+
+.search-category-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.85rem;
+    border-bottom: 2px solid var(--border-color);
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.search-category-title {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+.search-category-title .material-icons-round {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.category-count-badge {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.15rem 0.6rem;
+    border-radius: 20px;
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .category-count-badge {
+    background: rgba(37, 99, 235, 0.25);
+    color: #93c5fd;
+}
+
+.btn-filter-jump {
+    background: none;
+    border: none;
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 8px;
+    transition: all var(--transition-fast);
+}
+
+.btn-filter-jump:hover {
+    background: rgba(37, 99, 235, 0.1);
+    transform: translateX(2px);
+}
+
+.search-no-filter-match {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    color: var(--text-secondary);
+    background: var(--surface-color);
+    border-radius: 12px;
+    border: 1px dashed var(--border-color);
+    font-size: 1.05rem;
 }
 
 /* Empty State */
@@ -1658,7 +1736,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1.25rem;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .coupon-main-body {
         flex-direction: column;
         align-items: flex-start;
@@ -1740,7 +1818,7 @@ h1, h2, h3, h4, h5, h6 {
     min-width: 150px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .coupon-action-box {
         width: 100%;
     }
@@ -3848,7 +3926,7 @@ table.comparison-table tbody tr:hover,
 
 .store-cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.25rem;
 }
 
@@ -3864,6 +3942,7 @@ table.comparison-table tbody tr:hover,
     color: var(--text-primary);
     transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
     box-shadow: var(--shadow-sm);
+    min-width: 0;
 }
 
 .store-card-item:hover {
@@ -3873,8 +3952,8 @@ table.comparison-table tbody tr:hover,
 }
 
 .store-card-logo-wrap {
-    width: 72px;
-    height: 72px;
+    width: 68px;
+    height: 68px;
     border-radius: 12px;
     padding: 8px;
     background-color: #ffffff;
@@ -3895,6 +3974,9 @@ table.comparison-table tbody tr:hover,
 .store-card-info {
     flex: 1;
     min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .store-card-name {
@@ -3902,7 +3984,17 @@ table.comparison-table tbody tr:hover,
     font-weight: 700;
     color: var(--text-primary);
     line-height: 1.35;
-    word-break: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.store-card-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.35rem;
+    white-space: nowrap;
 }
 
 .store-card-deals-count {
@@ -3910,9 +4002,20 @@ table.comparison-table tbody tr:hover,
     font-weight: 600;
     color: var(--primary-color);
     background-color: var(--primary-light);
-    padding: 0.15rem 0.6rem;
+    padding: 0.18rem 0.65rem;
     border-radius: var(--radius-full);
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.store-card-rating {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #eab308;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
 }
 
 .store-card-arrow {

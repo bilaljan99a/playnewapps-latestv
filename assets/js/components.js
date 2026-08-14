@@ -168,20 +168,22 @@ class Components {
     }
 
     static createStoreCard(item) {
-        const link = item.affiliateLink || `store.html?id=${item.id}`;
         const viewLink = item.storeUrl || `store.html?id=${item.id}`;
+        const rating = item.rating ? `★ ${item.rating}` : '★ 4.9';
         return `
-            <article class="card store-card affiliate-card" data-store-id="${item.id}" style="padding: 1.25rem;">
-                <a href="${viewLink}" style="display: flex; align-items: center; gap: 1.25rem; text-decoration: none; color: inherit;">
-                    <div style="width: 72px; height: 72px; border-radius: 12px; background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); padding: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
-                        <img src="${item.logo}" alt="${item.name} Logo" class="store-logo" width="72" height="72" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+            <a href="${viewLink}" class="store-card-item" data-store-id="${item.id}">
+                <div class="store-card-logo-wrap">
+                    <img src="${item.logo}" alt="${item.name} Logo" width="68" height="68" loading="lazy" onerror="this.src='/assets/images/brands/default-store.svg'">
+                </div>
+                <div class="store-card-info">
+                    <h3 class="store-card-name" title="${item.name}">${item.name}</h3>
+                    <div class="store-card-meta">
+                        <span class="store-card-deals-count">View Deals</span>
+                        <span class="store-card-rating">${rating}</span>
                     </div>
-                    <div style="flex: 1; min-width: 0;">
-                        <h3 class="card-title" style="margin: 0; font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">${item.name}</h3>
-                        <span style="display: inline-block; margin-top: 0.35rem; font-size: 0.85rem; color: var(--primary-color); font-weight: 600;">View Store Deals &rarr;</span>
-                    </div>
-                </a>
-            </article>
+                </div>
+                <span class="material-icons-round store-card-arrow" aria-hidden="true">arrow_forward</span>
+            </a>
         `;
     }
 }
