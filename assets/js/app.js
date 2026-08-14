@@ -37,7 +37,7 @@ class App {
 
             // Check if this is a legacy Blogger route or old APK path
             const isBloggerDate = /^\/(19|20)\d{2}(\/|$)/.test(rawPath);
-            const isBloggerSystem = /^\/(search|category|feeds|label|b|p|archive)(\/|\?|$)/i.test(rawPath);
+            const isBloggerSystem = /^\/(search|feeds|label|b|p|archive)(\/|\?|$)/i.test(rawPath);
             const isOldApk = rawPath.includes('-apk') || rawPath.includes('hotspot-shield') || rawPath.includes('netflix') || rawPath.includes('ludo-star') || rawPath.includes('usa-network') || rawPath.includes('runes-of-magic') || rawPath.includes('bloons') || (rawPath.endsWith('.apk') && !rawPath.startsWith('/assets/'));
 
             if (isBloggerDate || isBloggerSystem || isOldApk) {
@@ -1428,6 +1428,10 @@ App.renderReviewsDirectoryUI = async function(options = {}) {
             name: 'PC & Desktop Software Reviews',
             desc: 'Comprehensive software reviews for Windows, macOS, and Linux desktop applications.'
         },
+        'software': {
+            name: 'PC & Desktop Software Reviews',
+            desc: 'Comprehensive software reviews for Windows, macOS, and Linux desktop applications.'
+        },
         'games': {
             name: 'Trending Games Reviews',
             desc: 'In-depth reviews, graphics benchmarks, and ratings for top RPG, action, and mobile/PC games.'
@@ -1557,10 +1561,10 @@ App.renderReviewsDirectoryUI = async function(options = {}) {
                 filtered = filtered.filter(r => 
                     r.platforms && r.platforms.some(p => p.toLowerCase().includes('ios') || p.toLowerCase().includes('ipad'))
                 );
-            } else if (cat === 'pc') {
+            } else if (cat === 'pc' || cat === 'software') {
                 filtered = filtered.filter(r => 
                     (r.platforms && r.platforms.some(p => p.toLowerCase().includes('windows') || p.toLowerCase().includes('mac') || p.toLowerCase().includes('linux') || p.toLowerCase().includes('pc'))) ||
-                    r.categoryId === 'vpn'
+                    ['vpn', 'productivity', 'video-editors', 'design'].includes(r.categoryId)
                 );
             } else if (cat === 'games') {
                 filtered = filtered.filter(r => 
