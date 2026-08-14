@@ -100,6 +100,86 @@
     }
   },
   {
+    "id": "enlisted-play-free",
+    "storeId": "enlisted",
+    "title": "Play Enlisted for FREE! — Official Free Registration Deal",
+    "description": "Register a free account on Enlisted to command infantry squads, armor, and warplanes across WWII battle theaters.",
+    "code": "NO CODE NEEDED",
+    "discount": "PLAY FREE",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://plrvq.com/g/83kvjymdy6b68b264a76ae9a5214fd/",
+    "url": "https://plrvq.com/g/83kvjymdy6b68b264a76ae9a5214fd/",
+    "store": {
+      "id": "enlisted",
+      "name": "Enlisted",
+      "logo": "/assets/images/brands/enlisted.svg"
+    }
+  },
+  {
+    "id": "enlisted-starter-squad-pack",
+    "storeId": "enlisted",
+    "title": "Free Starter Squads & Infantry Pack — New Player Welcome Bonus",
+    "description": "Unlock multiple infantry squads, basic firearms, tactical grenades, and soldier upgrade progression on free sign up.",
+    "code": "NO CODE NEEDED",
+    "discount": "FREE STARTER SQUADS",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://plrvq.com/g/83kvjymdy6b68b264a76ae9a5214fd/",
+    "url": "https://plrvq.com/g/83kvjymdy6b68b264a76ae9a5214fd/",
+    "store": {
+      "id": "enlisted",
+      "name": "Enlisted",
+      "logo": "/assets/images/brands/enlisted.svg"
+    }
+  },
+  {
+    "id": "enlisted-combined-arms-access",
+    "storeId": "enlisted",
+    "title": "WWII Tanks & Aircraft Combat — Free Combined Arms Access",
+    "description": "Command iconic tanks and pilot fighter/bomber warplanes in the same live matches without paying a dime.",
+    "code": "NO CODE NEEDED",
+    "discount": "FREE COMBINED ARMS",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://plrvq.com/g/83kvjymdy6b68b264a76ae9a5214fd/",
+    "url": "https://plrvq.com/g/83kvjymdy6b68b264a76ae9a5214fd/",
+    "store": {
+      "id": "enlisted",
+      "name": "Enlisted",
+      "logo": "/assets/images/brands/enlisted.svg"
+    }
+  },
+  {
+    "id": "enlisted-battle-pass-events",
+    "storeId": "enlisted",
+    "title": "Seasonal Battle Pass & Special Events — Free & Elite Rewards",
+    "description": "Complete daily combat tasks and seasonal battle pass tiers to earn free booster orders, rare historical weaponry, and camos.",
+    "code": "NO CODE NEEDED",
+    "discount": "SEASONAL REWARDS",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://plrvq.com/g/83kvjymdy6b68b264a76ae9a5214fd/",
+    "url": "https://plrvq.com/g/83kvjymdy6b68b264a76ae9a5214fd/",
+    "store": {
+      "id": "enlisted",
+      "name": "Enlisted",
+      "logo": "/assets/images/brands/enlisted.svg"
+    }
+  },
+  {
     "id": "crossout-play-free",
     "storeId": "crossout",
     "title": "Play Crossout for FREE! — Official Free Registration Deal",

@@ -101,6 +101,52 @@
     ]
   },
   {
+    "id": "enlisted",
+    "name": "Enlisted",
+    "icon": "military_tech",
+    "logo": "/assets/images/brands/enlisted.svg",
+    "website": "https://enlisted.net",
+    "storeUrl": "/enlisted-coupons.html",
+    "affiliateLink": "https://plrvq.com/g/83kvjymdy6b68b264a76ae9a5214fd/",
+    "rating": 4.9,
+    "votes": 16420,
+    "seoTitle": "Enlisted Deals & Offers – Play WWII Shooter Free (2026)",
+    "seoDescription": "Claim verified Enlisted free play registration bonus links, starter infantry squads, combined arms tanks and aircraft access on PlayNewApps.",
+    "about": "Enlisted is a free-to-play squad-based MMO World War II first-person shooter combining infantry combat, tanks, and aircraft across iconic historical battles.",
+    "categories": [
+      "Gaming",
+      "Free-to-Play Games",
+      "Action & Combat",
+      "PC & Console Games"
+    ],
+    "whyShop": [
+      "100% Free-to-Play squad shooter across PC, PS5, PS4, and Xbox Series X|S",
+      "Command entire AI-assisted military squads with instant soldier switching",
+      "Authentic combined arms warfare with tanks, warplanes, and artillery",
+      "Combat Engineer fortification mechanics to construct rally spawn beacons and ammo depots"
+    ],
+    "shoppingTips": [
+      "Register via our official affiliate link to unlock your new player squad bonuses instantly.",
+      "Build forward rally spawn points with your Engineer soldiers to maintain continuous frontline pressure.",
+      "Complete daily battle tasks to level up your free seasonal Battle Pass and unlock veteran weapons.",
+      "Customize each soldier's perks and weapon loadout in the squad management hangar."
+    ],
+    "faqs": [
+      {
+        "question": "Is Enlisted completely free to play?",
+        "answer": "Yes! Enlisted is 100% free to play on PC, PlayStation 5, PlayStation 4, Xbox Series X|S, and Xbox One."
+      },
+      {
+        "question": "How do I claim the Enlisted free registration offer?",
+        "answer": "Click any of our verified 'Play Enlisted Free' or 'Get Offer' buttons to open the official registration portal and create your free account."
+      },
+      {
+        "question": "Are there any promo codes required for Enlisted?",
+        "answer": "No promo code is needed. The game is free-to-play, and all new player registration bonuses are applied automatically via verified official links."
+      }
+    ]
+  },
+  {
     "id": "crossout",
     "name": "Crossout",
     "icon": "sports_esports",

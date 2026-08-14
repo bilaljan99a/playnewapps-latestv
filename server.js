@@ -92,7 +92,10 @@ const cleanRoutes = [
   { route: '/purevpn-coupons', file: 'purevpn-coupons.html' },
   { route: '/purevpn-review', file: 'purevpn-coupons.html' },
   { route: '/canva', file: 'canva-review.html' },
-  { route: '/canva-review', file: 'canva-review.html' }
+  { route: '/canva-review', file: 'canva-review.html' },
+  { route: '/enlisted', file: 'enlisted-coupons.html' },
+  { route: '/enlisted-coupons', file: 'enlisted-coupons.html' },
+  { route: '/store/enlisted', file: 'enlisted-coupons.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {
