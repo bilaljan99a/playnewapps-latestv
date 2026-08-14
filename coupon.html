@@ -130,7 +130,10 @@
                 <div class="search-box-wrapper animate-fade-in-up delay-2">
                     <form class="search-box" action="#" role="search" id="search-form">
                         <span class="material-icons-round search-icon" aria-hidden="true">search</span>
-                        <input type="search" id="search-input" placeholder="Search for apps, software, or games..." aria-label="Search apps and software" autocomplete="off">
+                        <input type="search" id="search-input" placeholder="Search for apps, software, games, or partner stores..." aria-label="Search apps, software, and stores" autocomplete="off">
+                        <button type="button" id="search-clear-btn" class="search-clear-btn" aria-label="Clear Search Input" style="display: none;">
+                            <span class="material-icons-round" aria-hidden="true">close</span>
+                        </button>
                         <button type="submit" class="btn btn-primary" aria-label="Submit Search">Search</button>
                     </form>
                     <div class="search-suggestions" id="search-suggestions" aria-live="polite"></div>

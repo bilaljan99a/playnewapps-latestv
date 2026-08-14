@@ -133,55 +133,444 @@ class App {
         const searchInput = document.getElementById('search-input');
         const searchForm = document.getElementById('search-form');
         const suggestionsBox = document.getElementById('search-suggestions');
-        
+        const clearBtn = document.getElementById('search-clear-btn');
+        const searchResultsSection = document.getElementById('search-results-section');
+        const searchResultsGrid = document.getElementById('search-results-grid');
+        const searchCountDisplay = document.getElementById('search-count-display');
+        const searchQueryDisplay = document.getElementById('search-query-display');
+        const searchEmptyState = document.getElementById('search-empty-state');
+        const emptyQueryText = document.getElementById('empty-query-text');
+        const sectionClearBtn = document.getElementById('clear-search-btn');
+
         if (!searchInput || !searchForm) return;
 
-        const allReviews = await getDataService().getAllReviews();
+        // Fetch data sources concurrently with caching
+        let allReviews = [];
+        let stores = [];
+        let coupons = [];
 
-        searchInput.addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            if (query.length < 2) {
-                if (suggestionsBox) suggestionsBox.innerHTML = '';
+        try {
+            const [rData, sData, cData] = await Promise.all([
+                getDataService().getAllReviews(),
+                getDataService().getStores(),
+                getDataService().getCoupons()
+            ]);
+            allReviews = rData || [];
+            stores = sData || [];
+            coupons = cData || [];
+        } catch (err) {
+            console.error('[SEARCH] Failed to preload search data:', err);
+        }
+
+        const escapeHtml = (str) => {
+            if (!str) return '';
+            return String(str).replace(/[&<>"']/g, m => ({
+                '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+            })[m]);
+        };
+
+        const highlightMatch = (text, query) => {
+            if (!text || !query) return escapeHtml(text || '');
+            const str = String(text);
+            const cleanQuery = query.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            if (!cleanQuery) return escapeHtml(str);
+            const reg = new RegExp(`(${cleanQuery})`, 'gi');
+            return escapeHtml(str).replace(reg, '<mark class="search-hl">$1</mark>');
+        };
+
+        const performSearch = (rawQuery) => {
+            const query = (rawQuery || '').toLowerCase().trim();
+            if (!query) return { stores: [], reviews: [], deals: [], total: 0 };
+
+            const matchedStores = (stores || []).filter(s => {
+                const name = (s.name || '').toLowerCase();
+                const about = (s.about || '').toLowerCase();
+                const cats = (s.categories || []).map(c => c.toLowerCase()).join(' ');
+                const seo = ((s.seoTitle || '') + ' ' + (s.seoDescription || '')).toLowerCase();
+                const id = (s.id || '').toLowerCase();
+                return name.includes(query) || about.includes(query) || cats.includes(query) || seo.includes(query) || id.includes(query);
+            });
+
+            const matchedReviews = (allReviews || []).filter(r => {
+                const title = (r.title || r.name || '').toLowerCase();
+                const desc = (r.description || r.summary || '').toLowerCase();
+                const cat = (r.categoryId || '').toLowerCase();
+                const tags = (r.tags || []).map(t => t.toLowerCase()).join(' ');
+                const platforms = (r.platforms || [r.platform || '']).map(p => p.toLowerCase()).join(' ');
+                return title.includes(query) || desc.includes(query) || cat.includes(query) || tags.includes(query) || platforms.includes(query);
+            });
+
+            const matchedDeals = (coupons || []).filter(c => {
+                const title = (c.title || '').toLowerCase();
+                const desc = (c.description || '').toLowerCase();
+                const discount = (c.discount || '').toLowerCase();
+                const code = (c.code || '').toLowerCase();
+                const storeName = (c.store && c.store.name ? c.store.name : (c.storeId || '')).toLowerCase();
+                return title.includes(query) || desc.includes(query) || discount.includes(query) || code.includes(query) || storeName.includes(query);
+            });
+
+            return {
+                stores: matchedStores,
+                reviews: matchedReviews,
+                deals: matchedDeals,
+                total: matchedStores.length + matchedReviews.length + matchedDeals.length
+            };
+        };
+
+        let activeSuggestionIndex = -1;
+
+        const renderSuggestions = (query) => {
+            if (!suggestionsBox) return;
+            activeSuggestionIndex = -1;
+
+            if (!query || query.trim().length === 0) {
+                suggestionsBox.innerHTML = '';
+                suggestionsBox.classList.remove('active');
                 return;
             }
 
-            const results = allReviews.filter(r => 
-                r.title.toLowerCase().includes(query) || 
-                r.description.toLowerCase().includes(query) ||
-                (r.tags && r.tags.some(t => t.toLowerCase().includes(query)))
-            ).slice(0, 5);
+            const { stores: matchedStores, reviews: matchedReviews, deals: matchedDeals, total } = performSearch(query);
+
+            if (total === 0) {
+                suggestionsBox.innerHTML = `
+                    <div style="padding: 1.25rem; text-align: center; color: var(--text-secondary);">
+                        <span class="material-icons-round" style="font-size: 1.75rem; vertical-align: middle; margin-bottom: 0.25rem; color: #94a3b8;" aria-hidden="true">search_off</span>
+                        <p style="margin: 0.25rem 0 0 0; font-size: 0.95rem; font-weight: 500;">No instant matches for "<strong>${escapeHtml(query)}</strong>"</p>
+                        <p style="margin: 0.25rem 0 0 0; font-size: 0.8rem;">Press Enter to search all software, stores, and coupons</p>
+                    </div>
+                `;
+                suggestionsBox.classList.add('active');
+                return;
+            }
+
+            let html = '';
+
+            // 1. Partner Stores & Brands (up to 3)
+            if (matchedStores.length > 0) {
+                html += `<div class="suggestion-group-title"><span class="material-icons-round" style="font-size: 1rem;" aria-hidden="true">storefront</span> Partner Stores (${matchedStores.length})</div>`;
+                matchedStores.slice(0, 3).forEach(s => {
+                    const storeLink = s.storeUrl || `store.html?id=${s.id}`;
+                    html += `
+                        <a href="${storeLink}" class="suggestion-item">
+                            <img src="${s.logo}" alt="${s.name}" class="suggestion-thumb" onerror="this.src='/assets/images/brands/default-store.svg'">
+                            <div class="suggestion-info">
+                                <div class="suggestion-title">${highlightMatch(s.name, query)}</div>
+                                <div class="suggestion-meta">
+                                    <span class="suggestion-badge store">Store</span>
+                                    <span>${s.rating ? '★ ' + s.rating : 'Verified Store'}</span>
+                                    <span>• Deals & Coupons</span>
+                                </div>
+                            </div>
+                            <span class="material-icons-round suggestion-arrow" aria-hidden="true">arrow_forward</span>
+                        </a>
+                    `;
+                });
+            }
+
+            // 2. Apps & Software Reviews (up to 4)
+            if (matchedReviews.length > 0) {
+                html += `<div class="suggestion-group-title"><span class="material-icons-round" style="font-size: 1rem;" aria-hidden="true">apps</span> Apps & Software (${matchedReviews.length})</div>`;
+                matchedReviews.slice(0, 4).forEach(r => {
+                    const reviewLink = r.reviewUrl || (`review.html?id=${r.id}`);
+                    const platform = (r.platforms && r.platforms.length > 0) ? r.platforms[0] : (r.platform || 'Software');
+                    html += `
+                        <a href="${reviewLink}" class="suggestion-item">
+                            <img src="${r.icon || '/assets/images/brands/default-store.svg'}" alt="${r.title}" class="suggestion-thumb" onerror="this.src='/assets/images/brands/default-store.svg'">
+                            <div class="suggestion-info">
+                                <div class="suggestion-title">${highlightMatch(r.title, query)}</div>
+                                <div class="suggestion-meta">
+                                    <span class="suggestion-badge">${platform}</span>
+                                    <span>★ ${r.rating || 5.0}</span>
+                                    <span>• ${r.categoryId ? r.categoryId.toUpperCase() : 'Review'}</span>
+                                </div>
+                            </div>
+                            <span class="material-icons-round suggestion-arrow" aria-hidden="true">arrow_forward</span>
+                        </a>
+                    `;
+                });
+            }
+
+            // 3. Coupons & Deals (up to 3)
+            if (matchedDeals.length > 0) {
+                html += `<div class="suggestion-group-title"><span class="material-icons-round" style="font-size: 1rem;" aria-hidden="true">local_offer</span> Verified Deals & Coupons (${matchedDeals.length})</div>`;
+                matchedDeals.slice(0, 3).forEach(c => {
+                    const dealLink = c.affiliateLink || c.affiliateUrl || c.url || (c.store && c.store.affiliateLink) || '#';
+                    const storeName = (c.store && c.store.name) ? c.store.name : (c.storeId || 'Verified Offer');
+                    const storeLogo = (c.store && c.store.logo) ? c.store.logo : '/assets/images/brands/default-store.svg';
+                    html += `
+                        <a href="${dealLink}" target="_blank" rel="noopener sponsored" class="suggestion-item">
+                            <img src="${storeLogo}" alt="${storeName}" class="suggestion-thumb" onerror="this.src='/assets/images/brands/default-store.svg'">
+                            <div class="suggestion-info">
+                                <div class="suggestion-title">${highlightMatch(c.title, query)}</div>
+                                <div class="suggestion-meta">
+                                    <span class="suggestion-badge deal">${c.discount || 'DEAL'}</span>
+                                    <span>${storeName}</span>
+                                </div>
+                            </div>
+                            <span class="material-icons-round suggestion-arrow" aria-hidden="true">open_in_new</span>
+                        </a>
+                    `;
+                });
+            }
+
+            // Bottom View All row
+            html += `
+                <div class="suggestion-view-all" id="suggestion-view-all-btn" role="button" tabindex="0">
+                    <span class="material-icons-round" style="font-size: 1.15rem;" aria-hidden="true">search</span>
+                    <span>View all ${total} results for "${escapeHtml(query)}"</span>
+                    <span class="material-icons-round" style="font-size: 1rem;" aria-hidden="true">keyboard_return</span>
+                </div>
+            `;
+
+            suggestionsBox.innerHTML = html;
+            suggestionsBox.classList.add('active');
+
+            const viewAllBtn = document.getElementById('suggestion-view-all-btn');
+            if (viewAllBtn) {
+                viewAllBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    executeSearchResultsView(query);
+                });
+            }
+        };
+
+        const renderSearchResultsView = (query, filter = 'all') => {
+            if (!searchResultsSection || !searchResultsGrid) return;
+
+            const { stores: matchedStores, reviews: matchedReviews, deals: matchedDeals, total } = performSearch(query);
+
+            if (searchQueryDisplay) searchQueryDisplay.textContent = `"${query}"`;
+            if (searchCountDisplay) searchCountDisplay.textContent = total;
+
+            const countAll = document.getElementById('count-all');
+            const countStores = document.getElementById('count-stores');
+            const countReviews = document.getElementById('count-reviews');
+            const countDeals = document.getElementById('count-deals');
+
+            if (countAll) countAll.textContent = total;
+            if (countStores) countStores.textContent = matchedStores.length;
+            if (countReviews) countReviews.textContent = matchedReviews.length;
+            if (countDeals) countDeals.textContent = matchedDeals.length;
+
+            // Update Tab Active states
+            const tabBtns = searchResultsSection.querySelectorAll('.search-tab-btn');
+            tabBtns.forEach(btn => {
+                const f = btn.getAttribute('data-search-filter');
+                if (f === filter) {
+                    btn.classList.add('active');
+                    btn.setAttribute('aria-selected', 'true');
+                } else {
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-selected', 'false');
+                }
+            });
+
+            searchResultsSection.style.display = 'block';
+
+            if (total === 0) {
+                searchResultsGrid.innerHTML = '';
+                if (searchEmptyState) {
+                    searchEmptyState.style.display = 'block';
+                    if (emptyQueryText) emptyQueryText.textContent = query;
+                }
+                return;
+            }
+
+            if (searchEmptyState) searchEmptyState.style.display = 'none';
+
+            let itemsToRender = [];
+
+            if (filter === 'all') {
+                const storeCards = matchedStores.map(s => getComponents().createStoreCard(s));
+                const reviewCards = matchedReviews.map(r => getComponents().createAppCard(r));
+                const dealCards = matchedDeals.map(d => getComponents().createCouponCard(d));
+                itemsToRender = [...storeCards, ...reviewCards, ...dealCards];
+            } else if (filter === 'stores') {
+                itemsToRender = matchedStores.map(s => getComponents().createStoreCard(s));
+            } else if (filter === 'reviews') {
+                itemsToRender = matchedReviews.map(r => getComponents().createAppCard(r));
+            } else if (filter === 'deals') {
+                itemsToRender = matchedDeals.map(d => getComponents().createCouponCard(d));
+            }
+
+            if (itemsToRender.length === 0) {
+                searchResultsGrid.innerHTML = `
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 2.5rem 1rem; color: var(--text-secondary); background: var(--surface-color); border-radius: 12px; border: 1px dashed var(--border-color);">
+                        <p style="margin: 0; font-size: 1.05rem;">No ${filter} matches found for "<strong>${escapeHtml(query)}</strong>". Try switching to the <strong>All</strong> filter.</p>
+                    </div>
+                `;
+            } else {
+                searchResultsGrid.innerHTML = itemsToRender.join('');
+            }
+        };
+
+        const executeSearchResultsView = (query) => {
+            const trimmed = (query || '').trim();
+            if (!trimmed) return;
 
             if (suggestionsBox) {
-                if (results.length > 0) {
-                    suggestionsBox.innerHTML = results.map(r => `
-                        <a href="${r.reviewUrl || ('review.html?id=' + r.id)}" class="suggestion-item">
-                            <img src="${r.icon}" alt="${r.title} icon" width="30" height="30">
-                            <span>${r.title}</span>
-                        </a>
-                    `).join('');
-                } else {
-                    suggestionsBox.innerHTML = '<div class="suggestion-item">No results found</div>';
+                suggestionsBox.classList.remove('active');
+            }
+
+            const rawPath = window.location.pathname.toLowerCase();
+            const isHomePage = rawPath === '/' || rawPath === '' || rawPath.endsWith('/index.html');
+
+            if (!isHomePage && !searchResultsSection) {
+                window.location.href = `/?q=${encodeURIComponent(trimmed)}`;
+                return;
+            }
+
+            renderSearchResultsView(trimmed, 'all');
+
+            try {
+                const url = new URL(window.location);
+                url.searchParams.set('q', trimmed);
+                window.history.replaceState({}, '', url);
+            } catch (err) {}
+
+            if (searchResultsSection) {
+                searchResultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        };
+
+        const resetSearch = () => {
+            searchInput.value = '';
+            if (clearBtn) clearBtn.style.display = 'none';
+            if (suggestionsBox) {
+                suggestionsBox.innerHTML = '';
+                suggestionsBox.classList.remove('active');
+            }
+            if (searchResultsSection) searchResultsSection.style.display = 'none';
+
+            try {
+                const url = new URL(window.location);
+                url.searchParams.delete('q');
+                url.searchParams.delete('search');
+                url.searchParams.delete('s');
+                window.history.replaceState({}, '', url);
+            } catch (err) {}
+        };
+
+        // Event: Input with debounce
+        let debounceTimer;
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value;
+            if (clearBtn) {
+                clearBtn.style.display = query.length > 0 ? 'flex' : 'none';
+            }
+
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(() => {
+                renderSuggestions(query);
+            }, 120);
+        });
+
+        // Event: Focus shows suggestions if query exists
+        searchInput.addEventListener('focus', () => {
+            if (searchInput.value.trim().length > 0) {
+                renderSuggestions(searchInput.value);
+            }
+        });
+
+        // Event: Clear Button
+        if (clearBtn) {
+            clearBtn.addEventListener('click', () => {
+                resetSearch();
+                searchInput.focus();
+            });
+        }
+
+        if (sectionClearBtn) {
+            sectionClearBtn.addEventListener('click', () => {
+                resetSearch();
+            });
+        }
+
+        // Event: Form Submit
+        searchForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            executeSearchResultsView(searchInput.value);
+        });
+
+        // Event: Filter Tabs Click
+        if (searchResultsSection) {
+            const filterTabsContainer = searchResultsSection.querySelector('.search-filter-tabs');
+            if (filterTabsContainer) {
+                filterTabsContainer.addEventListener('click', (e) => {
+                    const btn = e.target.closest('.search-tab-btn');
+                    if (!btn) return;
+                    const filter = btn.getAttribute('data-search-filter');
+                    renderSearchResultsView(searchInput.value || searchQueryDisplay?.textContent?.replace(/"/g, '') || '', filter);
+                });
+            }
+        }
+
+        // Event: Popular Quick Tags Click
+        document.addEventListener('click', (e) => {
+            const quickTag = e.target.closest('.search-quick-tag');
+            if (quickTag) {
+                const tagText = quickTag.textContent.trim();
+                searchInput.value = tagText;
+                if (clearBtn) clearBtn.style.display = 'flex';
+                executeSearchResultsView(tagText);
+            }
+        });
+
+        // Keyboard Navigation for Suggestions
+        searchInput.addEventListener('keydown', (e) => {
+            if (!suggestionsBox || !suggestionsBox.classList.contains('active')) return;
+            const items = suggestionsBox.querySelectorAll('.suggestion-item, .suggestion-view-all');
+            if (items.length === 0) return;
+
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                activeSuggestionIndex = (activeSuggestionIndex + 1) % items.length;
+                items.forEach((item, idx) => {
+                    if (idx === activeSuggestionIndex) {
+                        item.classList.add('selected');
+                        item.scrollIntoView({ block: 'nearest' });
+                    } else {
+                        item.classList.remove('selected');
+                    }
+                });
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                activeSuggestionIndex = (activeSuggestionIndex - 1 + items.length) % items.length;
+                items.forEach((item, idx) => {
+                    if (idx === activeSuggestionIndex) {
+                        item.classList.add('selected');
+                        item.scrollIntoView({ block: 'nearest' });
+                    } else {
+                        item.classList.remove('selected');
+                    }
+                });
+            } else if (e.key === 'Escape') {
+                suggestionsBox.classList.remove('active');
+            } else if (e.key === 'Enter') {
+                if (activeSuggestionIndex >= 0 && items[activeSuggestionIndex]) {
+                    e.preventDefault();
+                    items[activeSuggestionIndex].click();
                 }
             }
         });
 
-        searchForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const query = searchInput.value.toLowerCase();
-            const reviewsGrid = document.getElementById('reviews-grid');
-            if (reviewsGrid) {
-                const results = allReviews.filter(r => 
-                    r.title.toLowerCase().includes(query) || 
-                    r.description.toLowerCase().includes(query) ||
-                    (r.tags && r.tags.some(t => t.toLowerCase().includes(query)))
-                );
-                document.getElementById('reviews').scrollIntoView({ behavior: 'smooth' });
-                this.renderReviews(results, reviewsGrid);
-                // hide pagination on search
-                const paginationContainer = document.getElementById('pagination-container');
-                if (paginationContainer) paginationContainer.innerHTML = '';
+        // Click outside closes suggestions
+        document.addEventListener('click', (e) => {
+            if (!searchInput.contains(e.target) && !suggestionsBox.contains(e.target)) {
+                suggestionsBox.classList.remove('active');
             }
         });
+
+        // Auto-run if URL contains ?q= or ?search= or ?s=
+        try {
+            const urlParams = new URLSearchParams(window.location.search);
+            const queryParam = urlParams.get('q') || urlParams.get('search') || urlParams.get('s');
+            if (queryParam && queryParam.trim().length > 0) {
+                searchInput.value = queryParam.trim();
+                if (clearBtn) clearBtn.style.display = 'flex';
+                executeSearchResultsView(queryParam.trim());
+            }
+        } catch (err) {}
     }
 
     static async initHomePage() {

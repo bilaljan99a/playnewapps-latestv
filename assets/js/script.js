@@ -248,50 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, stepTime);
     }
 
-    // 8. Search Suggestions (Mock functionality)
-    const searchInput = document.getElementById('search-input');
-    const searchSuggestions = document.getElementById('search-suggestions');
-    const mockData = [
-        "Best VPNs 2026", "Photo Editors for iOS", "Video Editing Software",
-        "PC Optimization", "Antivirus Deals", "Trending Android Games"
-    ];
-
-    if (searchInput && searchSuggestions) {
-        searchInput.addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase().trim();
-            searchSuggestions.innerHTML = '';
-            
-            if (query.length > 1) {
-                const filtered = mockData.filter(item => item.toLowerCase().includes(query));
-                
-                if (filtered.length > 0) {
-                    filtered.forEach(match => {
-                        const div = document.createElement('div');
-                        div.className = 'suggestion-item';
-                        div.innerHTML = `<span class="material-icons-round">search</span> ${match}`;
-                        div.addEventListener('click', () => {
-                            searchInput.value = match;
-                            searchSuggestions.classList.remove('active');
-                            // Trigger search form submit here if needed
-                        });
-                        searchSuggestions.appendChild(div);
-                    });
-                    searchSuggestions.classList.add('active');
-                } else {
-                    searchSuggestions.classList.remove('active');
-                }
-            } else {
-                searchSuggestions.classList.remove('active');
-            }
-        });
-
-        // Hide suggestions on outside click
-        document.addEventListener('click', (e) => {
-            if (!searchInput.contains(e.target) && !searchSuggestions.contains(e.target)) {
-                searchSuggestions.classList.remove('active');
-            }
-        });
-    }
+    // 8. Search Suggestions - Delegated to App.initSearch() in app.js for real data integration
 
     // 9. Skeleton Loading & Review Injection
     const reviewsGrid = document.getElementById('reviews-grid');

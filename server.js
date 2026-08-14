@@ -95,7 +95,10 @@ const cleanRoutes = [
   { route: '/canva-review', file: 'canva-review.html' },
   { route: '/enlisted', file: 'enlisted-coupons.html' },
   { route: '/enlisted-coupons', file: 'enlisted-coupons.html' },
-  { route: '/store/enlisted', file: 'enlisted-coupons.html' }
+  { route: '/store/enlisted', file: 'enlisted-coupons.html' },
+  { route: '/star-conflict', file: 'star-conflict-coupons.html' },
+  { route: '/star-conflict-coupons', file: 'star-conflict-coupons.html' },
+  { route: '/store/star-conflict', file: 'star-conflict-coupons.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {
