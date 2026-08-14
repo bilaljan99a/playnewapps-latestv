@@ -1286,5 +1286,48 @@
         ],
         "icon": "/assets/images/brands/italki.svg",
         "image": "/assets/images/brands/italki.svg"
+    },
+    {
+        "id": "canva",
+        "name": "Canva",
+        "developer": "Canva Pty Ltd",
+        "category": "Graphic Design & Visual AI",
+        "rating": 4.9,
+        "reviewCount": 184500,
+        "summary": "The all-in-one graphic design, video editing, presentation, and generative AI suite empowering 170M+ monthly creators with 100M+ templates and Magic Studio.",
+        "logo": "/assets/images/brands/canva.svg",
+        "heroImage": "/assets/images/canva/canva-hero-overview.svg",
+        "reviewUrl": "canva-review.html",
+        "affiliateUrl": "https://www.canva.com",
+        "downloadUrl": "https://www.canva.com",
+        "pricing": {
+            "free": "$0/forever",
+            "subscription": "From $14.99/month (or $119.99/year)"
+        },
+        "pros": [
+            "100M+ premium stock photos, graphics, videos, audio, and ready templates",
+            "Magic Studio AI: 1-click background removal, Magic Grab, Magic Switch & Magic Media",
+            "Zero learning curve drag-and-drop editor on Web, Desktop, iOS & Android",
+            "Centralized Brand Kit management with custom fonts, palettes, and design locks",
+            "100% Free forever for verified K-12 educators and registered non-profits"
+        ],
+        "cons": [
+            "Advanced vector Bezier node pen controls not available for custom typography",
+            "AI credits capped at 500 generation queries per month on Pro plans",
+            "Requires active internet connectivity for cloud assets and AI features"
+        ],
+        "title": "Canva Review 2026: Visual Suite & Magic Studio AI",
+        "icon": "/assets/images/brands/canva.svg",
+        "image": "/assets/images/canva/canva-hero-overview.svg",
+        "description": "Comprehensive expert review of Canva in 2026. Evaluating 100M+ templates, Magic Studio AI tools, Brand Kits, video editing, pricing, pros & cons.",
+        "url": "canva-review.html",
+        "categoryId": "pc",
+        "platforms": [
+            "Web",
+            "Windows",
+            "macOS",
+            "iOS",
+            "Android"
+        ]
     }
 ]

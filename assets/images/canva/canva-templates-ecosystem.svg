@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500">
+  <defs>
+    <linearGradient id="bgTemplates" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="tGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+    <linearGradient id="tGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="tGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="500" rx="16" fill="url(#bgTemplates)" stroke="#334155" stroke-width="1"/>
+
+  <!-- Title Section -->
+  <g transform="translate(50, 40)">
+    <text x="0" y="30" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">
+      The Canva Template &amp; Asset Ecosystem
+    </text>
+    <text x="0" y="58" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15">
+      Thousands of pre-configured dimensions and 100M+ royalty-free stock media elements
+    </text>
+  </g>
+
+  <!-- 4 Pillars of Templates -->
+  <g transform="translate(50, 130)">
+    
+    <!-- Pillar 1: Social Media -->
+    <g transform="translate(0, 0)">
+      <rect width="210" height="310" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect width="210" height="70" rx="12" fill="url(#tGrad1)"/>
+      <rect y="50" width="210" height="20" fill="url(#tGrad1)"/>
+      <text x="105" y="42" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">Social Media</text>
+      <g transform="translate(15, 90)" fill="#cbd5e1" font-family="sans-serif" font-size="13">
+        <text x="0" y="20">• Instagram Reels &amp; Posts</text>
+        <text x="0" y="50">• TikTok Video Formats</text>
+        <text x="0" y="80">• YouTube Thumbnails</text>
+        <text x="0" y="110">• Facebook &amp; LinkedIn Ads</text>
+        <text x="0" y="140">• Pinterest Long Pins</text>
+        <text x="0" y="170">• Twitter / X Headers</text>
+      </g>
+      <rect x="15" y="270" width="180" height="24" rx="6" fill="#f43f5e" fill-opacity="0.2"/>
+      <text x="105" y="286" fill="#fda4af" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">Auto-Resizing &amp; Planner</text>
+    </g>
+
+    <!-- Pillar 2: Visual Suite & Docs -->
+    <g transform="translate(230, 0)">
+      <rect width="210" height="310" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect width="210" height="70" rx="12" fill="url(#tGrad2)"/>
+      <rect y="50" width="210" height="20" fill="url(#tGrad2)"/>
+      <text x="105" y="42" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">Business &amp; Docs</text>
+      <g transform="translate(15, 90)" fill="#cbd5e1" font-family="sans-serif" font-size="13">
+        <text x="0" y="20">• Canva Docs with Magic AI</text>
+        <text x="0" y="50">• Pitch Decks (16:9 4K)</text>
+        <text x="0" y="80">• Resumes &amp; CVs</text>
+        <text x="0" y="110">• Whiteboards &amp; Mindmaps</text>
+        <text x="0" y="140">• Invoices &amp; Proposals</text>
+        <text x="0" y="170">• Editable PDF Reports</text>
+      </g>
+      <rect x="15" y="270" width="180" height="24" rx="6" fill="#3b82f6" fill-opacity="0.2"/>
+      <text x="105" y="286" fill="#93c5fd" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">Interactive &amp; Printable</text>
+    </g>
+
+    <!-- Pillar 3: Video & Motion -->
+    <g transform="translate(460, 0)">
+      <rect width="210" height="310" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect width="210" height="70" rx="12" fill="url(#tGrad3)"/>
+      <rect y="50" width="210" height="20" fill="url(#tGrad3)"/>
+      <text x="105" y="42" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">Video &amp; Animation</text>
+      <g transform="translate(15, 90)" fill="#cbd5e1" font-family="sans-serif" font-size="13">
+        <text x="0" y="20">• Multi-Track Timeline</text>
+        <text x="0" y="50">• Beat Sync with Audio</text>
+        <text x="0" y="80">• Video Background Cutout</text>
+        <text x="0" y="110">• Animated Stickers &amp; Text</text>
+        <text x="0" y="140">• Intro &amp; Outro Sequences</text>
+        <text x="0" y="170">• 4K UHD 60fps Export</text>
+      </g>
+      <rect x="15" y="270" width="180" height="24" rx="6" fill="#8b5cf6" fill-opacity="0.2"/>
+      <text x="105" y="286" fill="#c4b5fd" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">No Watermark HD Output</text>
+    </g>
+
+    <!-- Pillar 4: Marketing & Print -->
+    <g transform="translate(690, 0)">
+      <rect width="210" height="310" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect width="210" height="70" rx="12" fill="url(#tGrad4)"/>
+      <rect y="50" width="210" height="20" fill="url(#tGrad4)"/>
+      <text x="105" y="42" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">Marketing &amp; Print</text>
+      <g transform="translate(15, 90)" fill="#cbd5e1" font-family="sans-serif" font-size="13">
+        <text x="0" y="20">• Business Cards &amp; Menus</text>
+        <text x="0" y="50">• Custom T-Shirts &amp; Mugs</text>
+        <text x="0" y="80">• Large Format Banners</text>
+        <text x="0" y="110">• Flyers &amp; Brochures</text>
+        <text x="0" y="140">• Website Landing Pages</text>
+        <text x="0" y="170">• Free Standard Delivery</text>
+      </g>
+      <rect x="15" y="270" width="180" height="24" rx="6" fill="#10b981" fill-opacity="0.2"/>
+      <text x="105" y="286" fill="#6ee7b7" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">Canva Print Direct Order</text>
+    </g>
+
+  </g>
+</svg>

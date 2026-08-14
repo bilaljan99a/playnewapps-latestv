@@ -25,7 +25,7 @@ app.use((req, res, next) => {
   const isBloggerDatePath = /^\/(19|20)\d{2}(\/|$)/.test(pathname) || /^\/(19|20)\d{2}\/\d{2}/.test(pathname);
 
   // 2. Match standard Blogger system directories
-  const isBloggerSystemPath = /^\/(search|category|feeds|label|b|p|archive)(\/|\?|$)/i.test(pathname);
+  const isBloggerSystemPath = /^\/(search|feeds|label|b|p|archive)(\/|\?|$)/i.test(pathname);
 
   // 3. Match legacy APK article paths from old site
   const isOldApkPath = lowerPath.includes('-apk') ||
@@ -90,7 +90,9 @@ const cleanRoutes = [
   { route: '/vectorstock-coupons', file: 'vectorstock-coupons.html' },
   { route: '/purevpn', file: 'purevpn-coupons.html' },
   { route: '/purevpn-coupons', file: 'purevpn-coupons.html' },
-  { route: '/purevpn-review', file: 'purevpn-coupons.html' }
+  { route: '/purevpn-review', file: 'purevpn-coupons.html' },
+  { route: '/canva', file: 'canva-review.html' },
+  { route: '/canva-review', file: 'canva-review.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {

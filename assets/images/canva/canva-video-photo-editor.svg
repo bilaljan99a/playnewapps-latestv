@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="1000" height="480">
+  <defs>
+    <linearGradient id="bgEditor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="canvaBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00c4cc"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="480" rx="16" fill="url(#bgEditor)" stroke="#334155" stroke-width="1"/>
+
+  <!-- Title -->
+  <g transform="translate(60, 40)">
+    <text x="0" y="30" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">
+      Canva Photo &amp; Video Editing vs Traditional Software
+    </text>
+    <text x="0" y="58" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15">
+      Streamlined drag-and-drop web editing designed for high-speed social &amp; business content
+    </text>
+  </g>
+
+  <!-- 3 Comparison Boxes -->
+  <g transform="translate(60, 120)">
+    
+    <!-- Box 1: Ease of Use & Speed -->
+    <g transform="translate(0, 0)">
+      <rect width="275" height="310" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect width="275" height="55" rx="12" fill="#0369a1"/>
+      <rect y="35" width="275" height="20" fill="#0369a1"/>
+      <text x="137" y="35" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">Ease of Use &amp; Learning</text>
+      
+      <g transform="translate(18, 75)" fill="#cbd5e1" font-family="sans-serif" font-size="13">
+        <text x="0" y="20" fill="#38bdf8" font-weight="bold">Canva Advantage:</text>
+        <text x="0" y="42">• Zero learning curve</text>
+        <text x="0" y="66">• Ready in 5 minutes</text>
+        <text x="0" y="90">• Cloud auto-save on all devices</text>
+        
+        <path d="M 0 115 L 240 115" stroke="#334155" stroke-width="1"/>
+
+        <text x="0" y="140" fill="#f87171" font-weight="bold">Photoshop / Premiere:</text>
+        <text x="0" y="162">• Weeks of steep training</text>
+        <text x="0" y="186">• Heavy GPU hardware needed</text>
+        <text x="0" y="210">• Complex manual keyframing</text>
+      </g>
+    </g>
+
+    <!-- Box 2: Integrated Stock & Audio -->
+    <g transform="translate(305, 0)">
+      <rect width="275" height="310" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect width="275" height="55" rx="12" fill="#6d28d9"/>
+      <rect y="35" width="275" height="20" fill="#6d28d9"/>
+      <text x="137" y="35" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">Stock Media &amp; Audio</text>
+      
+      <g transform="translate(18, 75)" fill="#cbd5e1" font-family="sans-serif" font-size="13">
+        <text x="0" y="20" fill="#c084fc" font-weight="bold">Canva Advantage:</text>
+        <text x="0" y="42">• 100M+ royalty-free photos</text>
+        <text x="0" y="66">• 500k+ audio tracks &amp; SFX</text>
+        <text x="0" y="90">• Direct search inside editor</text>
+        
+        <path d="M 0 115 L 240 115" stroke="#334155" stroke-width="1"/>
+
+        <text x="0" y="140" fill="#f87171" font-weight="bold">Traditional Suites:</text>
+        <text x="0" y="162">• Separate stock subscriptions</text>
+        <text x="0" y="186">• Manual licensing paperwork</text>
+        <text x="0" y="210">• External file download/import</text>
+      </g>
+    </g>
+
+    <!-- Box 3: Complex Vector & VFX Limits -->
+    <g transform="translate(610, 0)">
+      <rect width="275" height="310" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect width="275" height="55" rx="12" fill="#0f766e"/>
+      <rect y="35" width="275" height="20" fill="#0f766e"/>
+      <text x="137" y="35" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">Where Pros Need More</text>
+      
+      <g transform="translate(18, 75)" fill="#cbd5e1" font-family="sans-serif" font-size="13">
+        <text x="0" y="20" fill="#2dd4bf" font-weight="bold">Canva Limits:</text>
+        <text x="0" y="42">• No custom pen Bezier nodes</text>
+        <text x="0" y="66">• No 3D motion camera tracking</text>
+        <text x="0" y="90">• No multi-channel audio mix</text>
+        
+        <path d="M 0 115 L 240 115" stroke="#334155" stroke-width="1"/>
+
+        <text x="0" y="140" fill="#34d399" font-weight="bold">When to Use Pro Tools:</text>
+        <text x="0" y="162">• Illustrator: Custom logos</text>
+        <text x="0" y="186">• Photoshop: Deep retouching</text>
+        <text x="0" y="210">• Premiere/DaVinci: Cinema film</text>
+      </g>
+    </g>
+
+  </g>
+</svg>

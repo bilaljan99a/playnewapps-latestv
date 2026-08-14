@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520">
+  <defs>
+    <linearGradient id="bgCollab" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00c4cc"/>
+      <stop offset="100%" stop-color="#7d2ae8"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="520" rx="16" fill="url(#bgCollab)" stroke="#334155" stroke-width="1"/>
+
+  <!-- Title -->
+  <g transform="translate(60, 45)">
+    <text x="0" y="30" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">
+      Canva Brand Kit &amp; Team Collaboration Architecture
+    </text>
+    <text x="0" y="58" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15">
+      Keep marketing collateral consistent across multi-department teams with centralized brand controls
+    </text>
+  </g>
+
+  <!-- 2 Big Functional Columns -->
+  <g transform="translate(60, 130)">
+    
+    <!-- Left Column: Brand Kit Features -->
+    <g transform="translate(0, 0)">
+      <rect width="425" height="340" rx="14" fill="url(#cardBg)" stroke="#334155" stroke-width="1.2"/>
+      <rect width="425" height="60" rx="14" fill="#1e1b4b"/>
+      <rect y="40" width="425" height="20" fill="#1e1b4b"/>
+      
+      <!-- Brand Icon & Title -->
+      <circle cx="35" cy="30" r="16" fill="url(#brandGrad)"/>
+      <text x="65" y="36" fill="#ffffff" font-family="sans-serif" font-size="17" font-weight="700">Centralized Brand Kit</text>
+      
+      <g transform="translate(25, 85)" fill="#e2e8f0" font-family="sans-serif" font-size="14">
+        <!-- Item 1: Logos -->
+        <g transform="translate(0, 0)">
+          <rect width="375" height="42" rx="8" fill="#0f172a" stroke="#334155" stroke-width="0.8"/>
+          <text x="15" y="26" fill="#38bdf8" font-weight="bold">Logos &amp; Icons:</text>
+          <text x="125" y="26" fill="#94a3b8">SVG, PNG transparent master variations</text>
+        </g>
+
+        <!-- Item 2: Color Palettes -->
+        <g transform="translate(0, 52)">
+          <rect width="375" height="42" rx="8" fill="#0f172a" stroke="#334155" stroke-width="0.8"/>
+          <text x="15" y="26" fill="#ec4899" font-weight="bold">Color Palettes:</text>
+          <text x="130" y="26" fill="#94a3b8">HEX, CMYK locked corporate color codes</text>
+        </g>
+
+        <!-- Item 3: Typography -->
+        <g transform="translate(0, 104)">
+          <rect width="375" height="42" rx="8" fill="#0f172a" stroke="#334155" stroke-width="0.8"/>
+          <text x="15" y="26" fill="#a855f7" font-weight="bold">Brand Fonts:</text>
+          <text x="110" y="26" fill="#94a3b8">Custom OTF/TTF font file uploads &amp; hierarchy</text>
+        </g>
+
+        <!-- Item 4: Brand Voice Guidelines -->
+        <g transform="translate(0, 156)">
+          <rect width="375" height="42" rx="8" fill="#0f172a" stroke="#334155" stroke-width="0.8"/>
+          <text x="15" y="26" fill="#10b981" font-weight="bold">Brand Voice:</text>
+          <text x="110" y="26" fill="#94a3b8">AI Magic Write calibrated to your tone</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Right Column: Collaboration & Governance -->
+    <g transform="translate(455, 0)">
+      <rect width="425" height="340" rx="14" fill="url(#cardBg)" stroke="#334155" stroke-width="1.2"/>
+      <rect width="425" height="60" rx="14" fill="#0f291e"/>
+      <rect y="40" width="425" height="20" fill="#0f291e"/>
+      
+      <!-- Team Icon & Title -->
+      <circle cx="35" cy="30" r="16" fill="#10b981"/>
+      <text x="65" y="36" fill="#ffffff" font-family="sans-serif" font-size="17" font-weight="700">Team Governance &amp; Sharing</text>
+      
+      <g transform="translate(25, 85)" fill="#e2e8f0" font-family="sans-serif" font-size="14">
+        <!-- Item 1: Real-Time Multiplayer -->
+        <g transform="translate(0, 0)">
+          <rect width="375" height="42" rx="8" fill="#0f172a" stroke="#334155" stroke-width="0.8"/>
+          <text x="15" y="26" fill="#34d399" font-weight="bold">Live Co-Editing:</text>
+          <text x="135" y="26" fill="#94a3b8">Simultaneous cursors &amp; @mentions</text>
+        </g>
+
+        <!-- Item 2: Design Approval -->
+        <g transform="translate(0, 52)">
+          <rect width="375" height="42" rx="8" fill="#0f172a" stroke="#334155" stroke-width="0.8"/>
+          <text x="15" y="26" fill="#fbbf24" font-weight="bold">Approval Rules:</text>
+          <text x="135" y="26" fill="#94a3b8">Required admin signoff before export</text>
+        </g>
+
+        <!-- Item 3: Element Locking -->
+        <g transform="translate(0, 104)">
+          <rect width="375" height="42" rx="8" fill="#0f172a" stroke="#334155" stroke-width="0.8"/>
+          <text x="15" y="26" fill="#f87171" font-weight="bold">Template Locks:</text>
+          <text x="135" y="26" fill="#94a3b8">Prevent accidental moving of headers</text>
+        </g>
+
+        <!-- Item 4: Cloud Storage -->
+        <g transform="translate(0, 156)">
+          <rect width="375" height="42" rx="8" fill="#0f172a" stroke="#334155" stroke-width="0.8"/>
+          <text x="15" y="26" fill="#818cf8" font-weight="bold">1TB Cloud Space:</text>
+          <text x="145" y="26" fill="#94a3b8">Shared nested team folders &amp; roles</text>
+        </g>
+      </g>
+    </g>
+
+  </g>
+</svg>
