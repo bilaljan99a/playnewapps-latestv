@@ -3845,5 +3845,85 @@
       "name": "Presenti.ai",
       "logo": "/assets/images/brands/presenti-ai.svg"
     }
+  },
+  {
+    "id": "star-conflict-play-free",
+    "storeId": "star-conflict",
+    "title": "Play in Star Conflict for FREE! \u2014 Official Free Game Access",
+    "description": "Direct free access to tactical 3D space battles and fleet dogfights across Empire, Federation, and Jericho factions.",
+    "code": "NO CODE NEEDED",
+    "discount": "PLAY FREE",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-10-10",
+    "expiryDate": "2026-10-10",
+    "affiliateUrl": "https://rthsu.com/g/w4pa0evvi2b68b264a7664d8a2254a/",
+    "url": "https://rthsu.com/g/w4pa0evvi2b68b264a7664d8a2254a/",
+    "store": {
+      "id": "star-conflict",
+      "name": "Star Conflict",
+      "logo": "/assets/images/brands/star-conflict.png"
+    }
+  },
+  {
+    "id": "star-conflict-free-monetization",
+    "storeId": "star-conflict",
+    "title": "100% Unmonetized Full Access \u2014 In-Game Purchases Disabled",
+    "description": "Enjoy all available starship classes and game sectors with microtransactions completely removed ahead of server sunset.",
+    "code": "NO CODE NEEDED",
+    "discount": "100% UNMONETIZED",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-10-10",
+    "expiryDate": "2026-10-10",
+    "affiliateUrl": "https://rthsu.com/g/w4pa0evvi2b68b264a7664d8a2254a/",
+    "url": "https://rthsu.com/g/w4pa0evvi2b68b264a7664d8a2254a/",
+    "store": {
+      "id": "star-conflict",
+      "name": "Star Conflict",
+      "logo": "/assets/images/brands/star-conflict.png"
+    }
+  },
+  {
+    "id": "star-conflict-open-space",
+    "storeId": "star-conflict",
+    "title": "Open Space Sector Wars & Dreadnought Battles \u2014 Free Galaxy Access",
+    "description": "Explore deep space star systems, defend asteroid belts from alien incursions, and fight for sector supremacy with no paywalls.",
+    "code": "NO CODE NEEDED",
+    "discount": "SECTOR WARS",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-10-10",
+    "expiryDate": "2026-10-10",
+    "affiliateUrl": "https://rthsu.com/g/w4pa0evvi2b68b264a7664d8a2254a/",
+    "url": "https://rthsu.com/g/w4pa0evvi2b68b264a7664d8a2254a/",
+    "store": {
+      "id": "star-conflict",
+      "name": "Star Conflict",
+      "logo": "/assets/images/brands/star-conflict.png"
+    }
+  },
+  {
+    "id": "star-conflict-farewell-events",
+    "storeId": "star-conflict",
+    "title": "Farewell In-Game Community Events & Summer Celebrations",
+    "description": "Participate in official developer-hosted community activities and special mission rewards leading up to the October 10, 2026 server sunset.",
+    "code": "NO CODE NEEDED",
+    "discount": "SUMMER EVENTS",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-10-10",
+    "expiryDate": "2026-10-10",
+    "affiliateUrl": "https://rthsu.com/g/w4pa0evvi2b68b264a7664d8a2254a/",
+    "url": "https://rthsu.com/g/w4pa0evvi2b68b264a7664d8a2254a/",
+    "store": {
+      "id": "star-conflict",
+      "name": "Star Conflict",
+      "logo": "/assets/images/brands/star-conflict.png"
+    }
   }
 ]
