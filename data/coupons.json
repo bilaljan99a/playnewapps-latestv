@@ -1,5 +1,165 @@
 [
   {
+    "id": "placeit-15-first-payment",
+    "storeId": "placeit",
+    "title": "15% OFF First Payment on Monthly or Annual Subscription",
+    "description": "Claim 15% off your first billing cycle for any Placeit Unlimited subscription. Access 100,000+ photorealistic mockups, logo generators, and video templates with full commercial rights.",
+    "code": "",
+    "discount": "15% OFF",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://ogsib.com/g/5lgod8xrl5b68b264a76edcd6b5910/",
+    "url": "https://ogsib.com/g/5lgod8xrl5b68b264a76edcd6b5910/",
+    "store": {
+      "id": "placeit",
+      "name": "Placeit by Envato",
+      "logo": "/assets/images/brands/placeit.svg"
+    }
+  },
+  {
+    "id": "placeit-annual-50-off",
+    "storeId": "placeit",
+    "title": "Save 50% with Placeit Unlimited Annual Subscription ($7.47/Month)",
+    "description": "Switch from month-to-month billing ($14.95/mo) to the Annual plan to slash your creative costs in half. Get unlimited downloads for all design and mockup needs.",
+    "code": "",
+    "discount": "50% OFF",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://ogsib.com/g/5lgod8xrl5b68b264a76edcd6b5910/",
+    "url": "https://ogsib.com/g/5lgod8xrl5b68b264a76edcd6b5910/",
+    "store": {
+      "id": "placeit",
+      "name": "Placeit by Envato",
+      "logo": "/assets/images/brands/placeit.svg"
+    }
+  },
+  {
+    "id": "placeit-free-assets",
+    "storeId": "placeit",
+    "title": "Access 100% Free Placeit Mockups, Design Templates & Logos",
+    "description": "Explore Placeit's official freebie section featuring apparel mockups, YouTube banners, Instagram stories, and logo templates completely free to edit and download.",
+    "code": "",
+    "discount": "FREE ASSETS",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://ogsib.com/g/5lgod8xrl5b68b264a76edcd6b5910/",
+    "url": "https://ogsib.com/g/5lgod8xrl5b68b264a76edcd6b5910/",
+    "store": {
+      "id": "placeit",
+      "name": "Placeit by Envato",
+      "logo": "/assets/images/brands/placeit.svg"
+    }
+  },
+  {
+    "id": "placeit-monthly-plan",
+    "storeId": "placeit",
+    "title": "Placeit Unlimited Monthly Plan for $14.95 / Month",
+    "description": "Download as many mockups, social graphics, and video teasers as you need with zero commitment. Perfect for short-term design projects or seasonal launches.",
+    "code": "",
+    "discount": "$14.95/MO",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://ogsib.com/g/5lgod8xrl5b68b264a76edcd6b5910/",
+    "url": "https://ogsib.com/g/5lgod8xrl5b68b264a76edcd6b5910/",
+    "store": {
+      "id": "placeit",
+      "name": "Placeit by Envato",
+      "logo": "/assets/images/brands/placeit.svg"
+    }
+  },
+  {
+    "id": "placeit-pod-mockups",
+    "storeId": "placeit",
+    "title": "Unlimited Print-on-Demand (POD) Apparel Mockup Generator",
+    "description": "Generate realistic Bella+Canvas, Gildan, and Next Level apparel mockups with automated fabric wrinkle tracking, realistic shadow displacement, and custom hex color pickers.",
+    "code": "",
+    "discount": "POD READY",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://ogsib.com/g/5lgod8xrl5b68b264a76edcd6b5910/",
+    "url": "https://ogsib.com/g/5lgod8xrl5b68b264a76edcd6b5910/",
+    "store": {
+      "id": "placeit",
+      "name": "Placeit by Envato",
+      "logo": "/assets/images/brands/placeit.svg"
+    }
+  },
+  {
+    "id": "placeit-gaming-streamer",
+    "storeId": "placeit",
+    "title": "Twitch & YouTube Gaming Streamer Overlays, Intros & Mascot Logos",
+    "description": "Equip your stream with animated webcam borders, starting soon screens, offline banners, custom subscriber badges, emotes, and esports mascot team logos.",
+    "code": "",
+    "discount": "STREAM READY",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://ogsib.com/g/5lgod8xrl5b68b264a76edcd6b5910/",
+    "url": "https://ogsib.com/g/5lgod8xrl5b68b264a76edcd6b5910/",
+    "store": {
+      "id": "placeit",
+      "name": "Placeit by Envato",
+      "logo": "/assets/images/brands/placeit.svg"
+    }
+  },
+  {
+    "id": "placeit-single-purchase",
+    "storeId": "placeit",
+    "title": "Single Asset On-Demand Downloads Starting from $2.95",
+    "description": "Only need one single mockup, book cover, or business logo? Buy individual watermark-free, high-resolution graphic assets without signing up for a monthly subscription.",
+    "code": "",
+    "discount": "FROM $2.95",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://ogsib.com/g/5lgod8xrl5b68b264a76edcd6b5910/",
+    "url": "https://ogsib.com/g/5lgod8xrl5b68b264a76edcd6b5910/",
+    "store": {
+      "id": "placeit",
+      "name": "Placeit by Envato",
+      "logo": "/assets/images/brands/placeit.svg"
+    }
+  },
+  {
+    "id": "placeit-commercial-license",
+    "storeId": "placeit",
+    "title": "Perpetual Commercial Usage Rights on All Placeit Downloads",
+    "description": "Keep full commercial rights on every exported mockup, logo, and video forever. Sell items on POD stores and deliver designs to paying clients even if you cancel later.",
+    "code": "",
+    "discount": "COMMERCIAL",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://ogsib.com/g/5lgod8xrl5b68b264a76edcd6b5910/",
+    "url": "https://ogsib.com/g/5lgod8xrl5b68b264a76edcd6b5910/",
+    "store": {
+      "id": "placeit",
+      "name": "Placeit by Envato",
+      "logo": "/assets/images/brands/placeit.svg"
+    }
+  },
+  {
     "id": "f-secure-total-50-off",
     "storeId": "f-secure",
     "title": "Up to 50% OFF F-Secure Total Multi-Device Annual Subscription",
