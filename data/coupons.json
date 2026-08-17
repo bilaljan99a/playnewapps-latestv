@@ -1,5 +1,165 @@
 [
   {
+    "id": "crsed-free-to-play",
+    "storeId": "crsed",
+    "title": "Play in Cuisine Royale for FREE! — Full Game Client (PC & Consoles)",
+    "description": "Download and play the full CRSED: F.O.A.D. battle royale client at zero cost. Get unlimited access to massive tactical maps, weapon arsenals, and multiplayer matchmaking.",
+    "code": "",
+    "discount": "100% FREE",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/299iwf3zmob68b264a769f65fd09f9/",
+    "url": "https://bednari.com/g/299iwf3zmob68b264a769f65fd09f9/",
+    "store": {
+      "id": "crsed",
+      "name": "CRSED: F.O.A.D.",
+      "logo": "/assets/images/brands/crsed.svg"
+    }
+  },
+  {
+    "id": "crsed-starter-champions",
+    "storeId": "crsed",
+    "title": "Free Starter Champions & Supernatural Ability Unlocks",
+    "description": "Unlock iconic starter champions including Clyde 'Dozen' Kelly (Beast Rage) and Annie 'Pin-up' Fox (Bullet Time) immediately upon registering your account.",
+    "code": "",
+    "discount": "FREE HEROES",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/299iwf3zmob68b264a769f65fd09f9/",
+    "url": "https://bednari.com/g/299iwf3zmob68b264a769f65fd09f9/",
+    "store": {
+      "id": "crsed",
+      "name": "CRSED: F.O.A.D.",
+      "logo": "/assets/images/brands/crsed.svg"
+    }
+  },
+  {
+    "id": "crsed-battle-pass-rewards",
+    "storeId": "crsed",
+    "title": "CRSED Battle Pass — Earn Golden Crowns, Outfits & Mystic Rituals",
+    "description": "Complete daily and weekly combat challenges to earn Sinister Souls, unlock ritual signs, exotic underwear outfits, masks, and tombstones.",
+    "code": "",
+    "discount": "SEASON REWARDS",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/299iwf3zmob68b264a769f65fd09f9/",
+    "url": "https://bednari.com/g/299iwf3zmob68b264a769f65fd09f9/",
+    "store": {
+      "id": "crsed",
+      "name": "CRSED: F.O.A.D.",
+      "logo": "/assets/images/brands/crsed.svg"
+    }
+  },
+  {
+    "id": "crsed-twitch-drops",
+    "storeId": "crsed",
+    "title": "Twitch Drops & Community Events — Free Custom Tombstones & Hex Bags",
+    "description": "Link your Gaijin.net account to Twitch and tune into authorized CRSED livestreams to earn free mystery crates, cosmetic hex scrolls, and weapon skins.",
+    "code": "",
+    "discount": "FREE DROPS",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/299iwf3zmob68b264a769f65fd09f9/",
+    "url": "https://bednari.com/g/299iwf3zmob68b264a769f65fd09f9/",
+    "store": {
+      "id": "crsed",
+      "name": "CRSED: F.O.A.D.",
+      "logo": "/assets/images/brands/crsed.svg"
+    }
+  },
+  {
+    "id": "crsed-store-bundles",
+    "storeId": "crsed",
+    "title": "Gaijin Store Champion & Weapon Packs — Exclusive Character Bundles",
+    "description": "Accelerate your roster with specialty packs for Bokor (Zombie Horde), Valentine (Flickering Step), and Katrina (Bastion Shield) with bonus Golden Crowns.",
+    "code": "",
+    "discount": "STORE BUNDLES",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/299iwf3zmob68b264a769f65fd09f9/",
+    "url": "https://bednari.com/g/299iwf3zmob68b264a769f65fd09f9/",
+    "store": {
+      "id": "crsed",
+      "name": "CRSED: F.O.A.D.",
+      "logo": "/assets/images/brands/crsed.svg"
+    }
+  },
+  {
+    "id": "crsed-crossplay-matchmaking",
+    "storeId": "crsed",
+    "title": "Full Crossplay Matchmaking on PC, PS5, Xbox Series X/S & Switch",
+    "description": "Squad up with friends across all supported platforms. Fast queuing, unified Gaijin accounts, and cross-progression support.",
+    "code": "",
+    "discount": "CROSSPLAY",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/299iwf3zmob68b264a769f65fd09f9/",
+    "url": "https://bednari.com/g/299iwf3zmob68b264a769f65fd09f9/",
+    "store": {
+      "id": "crsed",
+      "name": "CRSED: F.O.A.D.",
+      "logo": "/assets/images/brands/crsed.svg"
+    }
+  },
+  {
+    "id": "crsed-dagor-rtx",
+    "storeId": "crsed",
+    "title": "Dagor Engine RTX & DLSS Upgrade — Ultra-Realistic Lighting & Physics",
+    "description": "Experience realistic ray-traced global illumination, advanced particle physics, realistic water rendering, and NVIDIA DLSS / AMD FSR performance boosts.",
+    "code": "",
+    "discount": "ENGINE TECH",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/299iwf3zmob68b264a769f65fd09f9/",
+    "url": "https://bednari.com/g/299iwf3zmob68b264a769f65fd09f9/",
+    "store": {
+      "id": "crsed",
+      "name": "CRSED: F.O.A.D.",
+      "logo": "/assets/images/brands/crsed.svg"
+    }
+  },
+  {
+    "id": "crsed-2fa-bonus",
+    "storeId": "crsed",
+    "title": "Gaijin Pass 2FA Account Security Bonus — Free In-Game Decal & Protection",
+    "description": "Activate two-factor authentication via Gaijin Pass on iOS or Android to protect your inventory, battle pass progression, and claim free bonus cosmetic items.",
+    "code": "",
+    "discount": "2FA BONUS",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://bednari.com/g/299iwf3zmob68b264a769f65fd09f9/",
+    "url": "https://bednari.com/g/299iwf3zmob68b264a769f65fd09f9/",
+    "store": {
+      "id": "crsed",
+      "name": "CRSED: F.O.A.D.",
+      "logo": "/assets/images/brands/crsed.svg"
+    }
+  },
+  {
     "id": "placeit-15-first-payment",
     "storeId": "placeit",
     "title": "15% OFF First Payment on Monthly or Annual Subscription",
