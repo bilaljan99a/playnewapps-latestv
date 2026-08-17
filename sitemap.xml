@@ -228,6 +228,12 @@
     <priority>0.95</priority>
   </url>
   <url>
+    <loc>https://www.playnewapps.store/qustodio-coupons.html</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://www.playnewapps.store/retouch4me-coupons.html</loc>
     <lastmod>2026-08-17</lastmod>
     <changefreq>daily</changefreq>
@@ -533,12 +539,22 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.playnewapps.store/store.html?id=qustodio</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.playnewapps.store/store.html?id=retouch4me</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.playnewapps.store/store.html?id=star-conflict</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.playnewapps.store/store.html?id=top-of-the-results</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -580,6 +596,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.playnewapps.store/top-of-the-results-coupons.html</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://www.playnewapps.store/vectorstock-coupons.html</loc>
     <lastmod>2026-08-17</lastmod>
     <changefreq>daily</changefreq>
@@ -596,12 +618,6 @@
     <lastmod>2026-08-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.playnewapps.store/top-of-the-results-coupons.html</loc>
-    <lastmod>2026-08-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.95</priority>
   </url>
   <url>
     <loc>https://www.playnewapps.store/wondershare-filmora-coupons.html</loc>

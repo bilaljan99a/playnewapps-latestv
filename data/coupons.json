@@ -4905,5 +4905,165 @@
       "name": "Top of the Results US",
       "logo": "/assets/images/brands/topoftheresults.svg"
     }
+  },
+  {
+    "id": "qustodio-12-off-annual",
+    "storeId": "qustodio",
+    "title": "12% OFF Qustodio Annual Premium Plans",
+    "description": "Save an additional 12% on any annual Qustodio Basic or Complete subscription plan at checkout.",
+    "code": "QUSTODIOCNL",
+    "discount": "12% OFF",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://zejcl.com/g/zgsaevrb3ab68b264a762411861ed1/?ulp=https%3A%2F%2Fwww.qustodio.com%2Fen%2Fpremium%2F",
+    "url": "https://zejcl.com/g/zgsaevrb3ab68b264a762411861ed1/?ulp=https%3A%2F%2Fwww.qustodio.com%2Fen%2Fpremium%2F",
+    "store": {
+      "id": "qustodio",
+      "name": "Qustodio",
+      "logo": "/assets/images/brands/qustodio.svg"
+    }
+  },
+  {
+    "id": "qustodio-10-off-sitewide",
+    "storeId": "qustodio",
+    "title": "10% OFF Sitewide on Any Premium Plan",
+    "description": "Enjoy 10% instant discount across all Qustodio digital safety and parental control packages.",
+    "code": "QUST10",
+    "discount": "10% OFF",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://zejcl.com/g/zgsaevrb3ab68b264a762411861ed1/?ulp=https%3A%2F%2Fwww.qustodio.com%2Fen%2Fpremium%2F",
+    "url": "https://zejcl.com/g/zgsaevrb3ab68b264a762411861ed1/?ulp=https%3A%2F%2Fwww.qustodio.com%2Fen%2Fpremium%2F",
+    "store": {
+      "id": "qustodio",
+      "name": "Qustodio",
+      "logo": "/assets/images/brands/qustodio.svg"
+    }
+  },
+  {
+    "id": "qustodio-complete-plan",
+    "storeId": "qustodio",
+    "title": "Qustodio Complete Plan — Unlimited Devices ($99.95/yr)",
+    "description": "Protect every family device with unlimited coverage, AI alerts, YouTube monitoring, and Care Plus support.",
+    "code": "",
+    "discount": "FLAGSHIP PLAN",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://zejcl.com/g/zgsaevrb3ab68b264a762411861ed1/?ulp=https%3A%2F%2Fwww.qustodio.com%2Fen%2Fpremium%2F",
+    "url": "https://zejcl.com/g/zgsaevrb3ab68b264a762411861ed1/?ulp=https%3A%2F%2Fwww.qustodio.com%2Fen%2Fpremium%2F",
+    "store": {
+      "id": "qustodio",
+      "name": "Qustodio",
+      "logo": "/assets/images/brands/qustodio.svg"
+    }
+  },
+  {
+    "id": "qustodio-basic-plan",
+    "storeId": "qustodio",
+    "title": "Qustodio Basic Plan — 5 Devices ($59.95/yr)",
+    "description": "Essential digital protection for small families covering up to 5 phones, tablets, or computers.",
+    "code": "",
+    "discount": "STARTER VALUE",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://zejcl.com/g/zgsaevrb3ab68b264a762411861ed1/?ulp=https%3A%2F%2Fwww.qustodio.com%2Fen%2Fpremium%2F",
+    "url": "https://zejcl.com/g/zgsaevrb3ab68b264a762411861ed1/?ulp=https%3A%2F%2Fwww.qustodio.com%2Fen%2Fpremium%2F",
+    "store": {
+      "id": "qustodio",
+      "name": "Qustodio",
+      "logo": "/assets/images/brands/qustodio.svg"
+    }
+  },
+  {
+    "id": "qustodio-30-day-money-back",
+    "storeId": "qustodio",
+    "title": "30-Day Money-Back Guarantee & Free Trial",
+    "description": "Test every feature with zero risk. If not satisfied, request a 100% full refund within 30 days.",
+    "code": "",
+    "discount": "RISK-FREE",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://zejcl.com/g/zgsaevrb3ab68b264a762411861ed1/?ulp=https%3A%2F%2Fwww.qustodio.com%2Fen%2Fpremium%2F",
+    "url": "https://zejcl.com/g/zgsaevrb3ab68b264a762411861ed1/?ulp=https%3A%2F%2Fwww.qustodio.com%2Fen%2Fpremium%2F",
+    "store": {
+      "id": "qustodio",
+      "name": "Qustodio",
+      "logo": "/assets/images/brands/qustodio.svg"
+    }
+  },
+  {
+    "id": "qustodio-gps-tracking",
+    "storeId": "qustodio",
+    "title": "Live Family GPS Locator & Geofenced Place Alerts",
+    "description": "Get automatic check-in alerts when children arrive at or leave school, home, or extracurricular activities.",
+    "code": "",
+    "discount": "SAFETY FEATURE",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://zejcl.com/g/zgsaevrb3ab68b264a762411861ed1/?ulp=https%3A%2F%2Fwww.qustodio.com%2Fen%2Fpremium%2F",
+    "url": "https://zejcl.com/g/zgsaevrb3ab68b264a762411861ed1/?ulp=https%3A%2F%2Fwww.qustodio.com%2Fen%2Fpremium%2F",
+    "store": {
+      "id": "qustodio",
+      "name": "Qustodio",
+      "logo": "/assets/images/brands/qustodio.svg"
+    }
+  },
+  {
+    "id": "qustodio-ai-alerts",
+    "storeId": "qustodio",
+    "title": "AI-Powered Risk Alerts & Behavioral Monitoring",
+    "description": "Receive proactive notifications when signs of cyberbullying or distressing search queries are detected.",
+    "code": "",
+    "discount": "AI INSIGHTS",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://zejcl.com/g/zgsaevrb3ab68b264a762411861ed1/?ulp=https%3A%2F%2Fwww.qustodio.com%2Fen%2Fpremium%2F",
+    "url": "https://zejcl.com/g/zgsaevrb3ab68b264a762411861ed1/?ulp=https%3A%2F%2Fwww.qustodio.com%2Fen%2Fpremium%2F",
+    "store": {
+      "id": "qustodio",
+      "name": "Qustodio",
+      "logo": "/assets/images/brands/qustodio.svg"
+    }
+  },
+  {
+    "id": "qustodio-youtube-monitoring",
+    "storeId": "qustodio",
+    "title": "YouTube Search & Video Watch History Monitoring",
+    "description": "View what videos children watch and search for across YouTube web and native YouTube apps.",
+    "code": "",
+    "discount": "APP MANAGEMENT",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://zejcl.com/g/zgsaevrb3ab68b264a762411861ed1/?ulp=https%3A%2F%2Fwww.qustodio.com%2Fen%2Fpremium%2F",
+    "url": "https://zejcl.com/g/zgsaevrb3ab68b264a762411861ed1/?ulp=https%3A%2F%2Fwww.qustodio.com%2Fen%2Fpremium%2F",
+    "store": {
+      "id": "qustodio",
+      "name": "Qustodio",
+      "logo": "/assets/images/brands/qustodio.svg"
+    }
   }
 ]
