@@ -4625,5 +4625,145 @@
       "name": "Star Conflict",
       "logo": "/assets/images/brands/star-conflict.svg"
     }
+  },
+  {
+    "id": "aomei-lifetime-25-off",
+    "storeId": "aomei",
+    "title": "25% OFF Coupon for Lifetime License — Backupper & Partition Assistant",
+    "description": "Get 25% OFF any AOMEI Lifetime License with free upgrades for life. Valid on AOMEI Backupper Pro, Partition Assistant Pro, and FoneTool.",
+    "code": "SS250OFF",
+    "discount": "25% OFF",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://kpwfp.com/g/rly3vo6o1sb68b264a76fec4620825/",
+    "url": "https://kpwfp.com/g/rly3vo6o1sb68b264a76fec4620825/",
+    "store": {
+      "id": "aomei",
+      "name": "AOMEI",
+      "logo": "/assets/images/brands/aomei.svg"
+    }
+  },
+  {
+    "id": "aomei-yearly-10-off",
+    "storeId": "aomei",
+    "title": "10% OFF Coupon for Yearly License — Flagship Software Plans",
+    "description": "Save 10% on any 1-Year subscription license for AOMEI Backupper Pro, Partition Assistant Pro, Cyber Backup, and MyRecover.",
+    "code": "SS100OFF",
+    "discount": "10% OFF",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://kpwfp.com/g/rly3vo6o1sb68b264a76fec4620825/",
+    "url": "https://kpwfp.com/g/rly3vo6o1sb68b264a76fec4620825/",
+    "store": {
+      "id": "aomei",
+      "name": "AOMEI",
+      "logo": "/assets/images/brands/aomei.svg"
+    }
+  },
+  {
+    "id": "aomei-bundles-80-off",
+    "storeId": "aomei",
+    "title": "Save More with Bundles Today — Up to 80% OFF",
+    "description": "Get up to 80% discount on AOMEI All-in-One Multi-Product bundles combining Backupper Pro, Partition Assistant Pro, and MyRecover with multi-PC licenses.",
+    "code": "",
+    "discount": "80% OFF",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://kpwfp.com/g/rly3vo6o1sb68b264a76fec4620825/",
+    "url": "https://kpwfp.com/g/rly3vo6o1sb68b264a76fec4620825/",
+    "store": {
+      "id": "aomei",
+      "name": "AOMEI",
+      "logo": "/assets/images/brands/aomei.svg"
+    }
+  },
+  {
+    "id": "aomei-backupper-pro-deal",
+    "storeId": "aomei",
+    "title": "AOMEI Backupper Pro Lifetime Upgrades — System & Disk Clone Deal",
+    "description": "Backup system, clone OS to high-speed NVMe SSD, real-time file sync, and dissimilar hardware restore with lifetime free upgrades.",
+    "code": "",
+    "discount": "60% OFF",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://kpwfp.com/g/rly3vo6o1sb68b264a76fec4620825/",
+    "url": "https://kpwfp.com/g/rly3vo6o1sb68b264a76fec4620825/",
+    "store": {
+      "id": "aomei",
+      "name": "AOMEI",
+      "logo": "/assets/images/brands/aomei.svg"
+    }
+  },
+  {
+    "id": "aomei-partition-pro-deal",
+    "storeId": "aomei",
+    "title": "AOMEI Partition Assistant Pro — MBR to GPT & Windows 11 Disk Manager",
+    "description": "Easily resize, merge, split partitions, convert MBR to GPT without data loss, migrate OS to SSD, and move installed applications.",
+    "code": "",
+    "discount": "50% OFF",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://kpwfp.com/g/rly3vo6o1sb68b264a76fec4620825/",
+    "url": "https://kpwfp.com/g/rly3vo6o1sb68b264a76fec4620825/",
+    "store": {
+      "id": "aomei",
+      "name": "AOMEI",
+      "logo": "/assets/images/brands/aomei.svg"
+    }
+  },
+  {
+    "id": "aomei-cyber-backup-deal",
+    "storeId": "aomei",
+    "title": "AOMEI Cyber Backup — Centralized Enterprise VM & SQL Backup Plan",
+    "description": "Enterprise-grade agentless backup for VMware vSphere, ESXi, Hyper-V virtual machines, and Microsoft SQL Server databases.",
+    "code": "",
+    "discount": "SPECIAL OFFER",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://kpwfp.com/g/rly3vo6o1sb68b264a76fec4620825/",
+    "url": "https://kpwfp.com/g/rly3vo6o1sb68b264a76fec4620825/",
+    "store": {
+      "id": "aomei",
+      "name": "AOMEI",
+      "logo": "/assets/images/brands/aomei.svg"
+    }
+  },
+  {
+    "id": "aomei-free-standard-editions",
+    "storeId": "aomei",
+    "title": "AOMEI Free Editions — Backupper & Partition Assistant Standard",
+    "description": "Download official freeware versions of AOMEI Backupper Standard and Partition Assistant Standard for essential Windows data protection and disk management.",
+    "code": "",
+    "discount": "100% FREE",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://kpwfp.com/g/rly3vo6o1sb68b264a76fec4620825/",
+    "url": "https://kpwfp.com/g/rly3vo6o1sb68b264a76fec4620825/",
+    "store": {
+      "id": "aomei",
+      "name": "AOMEI",
+      "logo": "/assets/images/brands/aomei.svg"
+    }
   }
 ]
