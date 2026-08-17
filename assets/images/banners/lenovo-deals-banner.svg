@@ -39,12 +39,10 @@
       Official Lenovo AI PC Deals &amp; Discounts
     </text>
 
-    <!-- Code Pill -->
+    <!-- Official CTA Button (No code exposed) -->
     <g transform="translate(0, 56)">
-      <rect width="360" height="44" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1.5" />
-      <text x="16" y="27" font-family="monospace" font-weight="900" font-size="15" fill="#10B981">CODE: LENOVO</text>
-      <rect x="260" y="7" width="88" height="30" rx="6" fill="#E2231A" />
-      <text x="304" y="26" font-family="system-ui, sans-serif" font-weight="900" font-size="12" fill="#FFFFFF" text-anchor="middle">SHOP</text>
+      <rect width="360" height="44" rx="8" fill="#E2231A" />
+      <text x="180" y="27" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#FFFFFF" text-anchor="middle">SHOP OFFICIAL LENOVO STORE →</text>
     </g>
   </g>
 </svg>
