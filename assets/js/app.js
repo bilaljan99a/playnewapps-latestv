@@ -1948,6 +1948,22 @@ App.renderReviewsDirectoryUI = async function(options = {}) {
         { id: 'productivity', label: 'Productivity' }
     ];
 
+    const storeCategoryMap = {
+        'gaming': 'Gaming',
+        'games': 'Gaming',
+        'rpg': 'Gaming',
+        'action': 'Gaming',
+        'android': 'Apps',
+        'ios': 'Apps',
+        'pc': 'Software',
+        'software': 'Software',
+        'productivity': 'Productivity',
+        'vpn': 'Security & VPN',
+        'video-editors': 'Digital Services',
+        'design': 'Digital Services'
+    };
+    const relatedStoreCategory = storeCategoryMap[catId.toLowerCase()] || (catId !== 'all' ? catId : null);
+
     main.innerHTML = `
         <nav class="container breadcrumbs" aria-label="Breadcrumb">
             <ol>
@@ -1973,6 +1989,22 @@ App.renderReviewsDirectoryUI = async function(options = {}) {
                     </div>
                 </div>
             </div>
+
+            ${relatedStoreCategory ? `
+            <div class="category-crosslink-banner">
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                    <span class="material-icons-round" style="color: var(--primary-color); font-size: 1.75rem;" aria-hidden="true">local_offer</span>
+                    <div>
+                        <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Looking for verified discount coupons &amp; promo codes?</div>
+                        <div style="color: var(--text-secondary); font-size: 0.85rem;">Browse verified partner store deals and coupon codes in ${relatedStoreCategory}.</div>
+                    </div>
+                </div>
+                <a href="stores.html?category=${encodeURIComponent(relatedStoreCategory)}" class="btn btn-sm btn-primary" style="white-space: nowrap; display: inline-flex; align-items: center; gap: 0.35rem;">
+                    <span>View ${relatedStoreCategory} Stores</span>
+                    <span class="material-icons-round" style="font-size: 1rem;">arrow_forward</span>
+                </a>
+            </div>
+            ` : ''}
 
             <div class="category-filters" role="tablist" aria-label="Review Categories" style="margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; justify-content: space-between;">
                 <div class="filter-buttons-wrap" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
@@ -2361,6 +2393,17 @@ App.initStorePage = async function() {
         `;
     }
 
+    // Category Badges
+    const catBadgesEl = document.getElementById('store-category-badges');
+    if (catBadgesEl && store.categories && store.categories.length > 0) {
+        catBadgesEl.innerHTML = store.categories.map(cat => `
+            <a href="stores.html?category=${encodeURIComponent(cat)}" class="store-category-chip" aria-label="Browse ${cat} Stores">
+                <span class="material-icons-round" style="font-size: 0.95rem;">label</span>
+                <span>${cat}</span>
+            </a>
+        `).join('');
+    }
+
     // Coupons
     const allCoupons = await getDataService().getCoupons();
     const storeCoupons = allCoupons.filter(c => {
@@ -2646,7 +2689,7 @@ App.renderAllStoresPage = async function() {
     document.title = "All Stores & Promo Codes | PlayNewApps";
     
     // Update Meta tags
-    const canonicalUrl = `https://www.playnewapps.store/store.html`;
+    const canonicalUrl = `https://www.playnewapps.store/stores.html`;
     const updateMeta = (selector, attr, content) => {
         const el = document.querySelector(selector);
         if (el) el.setAttribute(attr, content);
@@ -2669,105 +2712,152 @@ App.renderAllStoresPage = async function() {
     // Sort stores alphabetically by name
     const sortedStores = [...stores].sort((a, b) => a.name.localeCompare(b.name));
 
-    // Compute active deal counts per store
-    const storeDealCounts = {};
-    sortedStores.forEach(s => {
-        const activeCoupons = coupons ? coupons.filter(c => {
-            if (!c) return false;
-            const sId = (c.storeId || (typeof c.store === 'object' && c.store ? c.store.id : c.store) || '').toLowerCase();
-            const sName = (typeof c.store === 'object' && c.store ? c.store.name : (c.store || '')).toLowerCase();
-            const targetId = (s.id || '').toLowerCase();
-            return (sId === targetId || (sName && sName.includes(targetId))) && c.status !== 'expired';
-        }) : [];
-        const totalStoreCoupons = coupons ? coupons.filter(c => {
-            if (!c) return false;
-            const sId = (c.storeId || (typeof c.store === 'object' && c.store ? c.store.id : c.store) || '').toLowerCase();
-            const sName = (typeof c.store === 'object' && c.store ? c.store.name : (c.store || '')).toLowerCase();
-            const targetId = (s.id || '').toLowerCase();
-            return sId === targetId || (sName && sName.includes(targetId));
-        }) : [];
-        storeDealCounts[s.id] = activeCoupons.length > 0 ? activeCoupons.length : totalStoreCoupons.length;
-    });
+    // Popular categories definition
+    const POPULAR_CATEGORIES = [
+        { name: "Software", icon: "terminal" },
+        { name: "Gaming", icon: "sports_esports" },
+        { name: "Apps", icon: "apps" },
+        { name: "AI Tools", icon: "auto_awesome" },
+        { name: "Productivity", icon: "check_circle" },
+        { name: "PC Tools", icon: "build" },
+        { name: "Security & VPN", icon: "shield" },
+        { name: "Home & Garden", icon: "home" },
+        { name: "Fashion & Apparel", icon: "checkroom" },
+        { name: "Health & Beauty", icon: "spa" },
+        { name: "Electronics", icon: "devices" },
+        { name: "Computers & Technology", icon: "laptop" },
+        { name: "Mobile & Accessories", icon: "smartphone" },
+        { name: "Office & Business", icon: "business_center" },
+        { name: "Education & Online Learning", icon: "school" },
+        { name: "Travel", icon: "flight" },
+        { name: "Food & Grocery", icon: "restaurant" },
+        { name: "Sports & Fitness", icon: "fitness_center" },
+        { name: "Automotive", icon: "directions_car" },
+        { name: "Pets", icon: "pets" },
+        { name: "Kids & Family", icon: "family_restroom" },
+        { name: "Shopping", icon: "shopping_bag" },
+        { name: "Entertainment", icon: "movie" },
+        { name: "Web Hosting & Domains", icon: "dns" },
+        { name: "Digital Services", icon: "cloud_sync" },
+        { name: "Finance & Shopping Tools", icon: "savings" }
+    ];
 
     const main = document.querySelector('main') || document.querySelector('.main-content');
     if (!main) return;
 
-    const urlParams = new URLSearchParams(window.location.search);
-    const initialCategory = urlParams.get('category') || '';
-
-    // Function to filter stores by category name
+    // Filter helper
     const filterStoresByCategory = (list, cat) => {
-        if (!cat) return list;
+        if (!cat || cat === 'all' || cat === 'All Stores') return list;
         const target = cat.trim().toLowerCase();
+        
+        const aliases = {
+            'pc': ['pc tools', 'pc & desktop', 'computers & technology', 'pc software'],
+            'vpn': ['security & vpn', 'vpn & security', 'vpn services', 'privacy tools'],
+            'games': ['gaming', 'free-to-play games', 'entertainment'],
+            'android': ['apps', 'software & apps', 'mobile & accessories'],
+            'ios': ['apps', 'software & apps', 'mobile & accessories'],
+            'hosting': ['web hosting & domains', 'server hosting', 'vps & cloud'],
+            'ai': ['ai tools', 'generative ai', 'ai writing assistants'],
+            'design': ['digital services', 'graphic design', 'creative tools']
+        };
+
         return list.filter(s => {
             if (!s.categories || !Array.isArray(s.categories)) return false;
             return s.categories.some(c => {
                 const normalized = c.trim().toLowerCase();
-                return normalized === target || normalized.includes(target) || target.includes(normalized);
+                if (normalized === target || normalized.includes(target) || target.includes(normalized)) {
+                    return true;
+                }
+                if (aliases[target] && aliases[target].some(alias => normalized.includes(alias) || alias.includes(normalized))) {
+                    return true;
+                }
+                return false;
             });
         });
     };
 
-    const initialFilteredStores = initialCategory ? filterStoresByCategory(sortedStores, initialCategory) : sortedStores;
+    let activeCategory = new URLSearchParams(window.location.search).get('category') || '';
 
-    const pageTitle = initialCategory ? `${initialCategory} Stores & Deals` : `All Stores`;
-    const pageIntro = initialCategory 
-        ? `Browse exclusive coupon codes, verified software discounts, and promotional offers for ${initialCategory}.`
-        : `Browse exclusive coupon codes, verified software discounts, and promotional offers from leading tech brands.`;
+    const renderLayout = () => {
+        const isFiltered = Boolean(activeCategory && activeCategory !== 'all');
+        const currentFiltered = isFiltered ? filterStoresByCategory(sortedStores, activeCategory) : sortedStores;
+        const pageTitle = isFiltered ? `${activeCategory} Stores & Promo Codes` : `All Stores & Verified Promo Codes`;
+        const pageIntro = isFiltered 
+            ? `Browse verified discount coupons, exclusive software promo codes, and special offers in ${activeCategory}.`
+            : `Browse exclusive coupon codes, verified software discounts, and promotional offers from leading global tech brands.`;
 
-    main.innerHTML = `
-        <nav class="container breadcrumbs" aria-label="Breadcrumb">
-            <ol>
-                <li><a href="index.html">Home</a></li>
-                ${initialCategory ? `<li><a href="stores.html">Stores</a></li><li aria-current="page">${initialCategory}</li>` : `<li aria-current="page">Stores</li>`}
-            </ol>
-        </nav>
+        main.innerHTML = `
+            <nav class="container breadcrumbs" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    ${isFiltered ? `<li><a href="stores.html" id="breadcrumb-stores-link">Stores</a></li><li aria-current="page">${activeCategory}</li>` : `<li aria-current="page">Stores</li>`}
+                </ol>
+            </nav>
 
-        <section class="all-stores-hero container reveal active">
-            <div class="all-stores-header-card card">
-                <div class="all-stores-header-top">
-                    <div>
-                        <h1 class="hero-title" style="margin-bottom: 0.25rem;">${pageTitle}</h1>
-                        <p class="all-stores-intro">
-                            ${pageIntro}
-                        </p>
+            <section class="all-stores-hero container reveal active">
+                <div class="all-stores-header-card card">
+                    <div class="all-stores-header-top">
+                        <div>
+                            <h1 class="hero-title" style="margin-bottom: 0.25rem;" id="stores-page-title">${pageTitle}</h1>
+                            <p class="all-stores-intro" id="stores-page-intro">
+                                ${pageIntro}
+                            </p>
+                        </div>
+                        <div class="all-stores-count-badge">
+                            <span class="material-icons-round" aria-hidden="true">storefront</span>
+                            <span id="total-stores-count">${currentFiltered.length} Available Stores</span>
+                        </div>
                     </div>
-                    <div class="all-stores-count-badge">
-                        <span class="material-icons-round" aria-hidden="true">storefront</span>
-                        <span id="total-stores-count">${initialFilteredStores.length} Available Stores</span>
+                    
+                    <div class="stores-search-box">
+                        <span class="material-icons-round search-icon" aria-hidden="true">search</span>
+                        <input type="text" id="stores-search-input" placeholder="Search stores by name (e.g., Lenovo, Adobe, NordVPN, WPS Office)..." aria-label="Search stores">
+                        <button id="stores-search-clear" class="search-clear-btn" aria-label="Clear search" style="display: none;">
+                            <span class="material-icons-round" aria-hidden="true">close</span>
+                        </button>
                     </div>
+
+                    <!-- Interactive Popular Categories Filter Bar -->
+                    <div class="stores-category-bar-wrapper" aria-label="Filter stores by popular category">
+                        <div class="stores-category-bar" id="stores-category-bar">
+                            <button class="stores-category-chip ${!isFiltered ? 'active' : ''}" data-cat="" aria-label="All Stores">
+                                <span class="material-icons-round chip-icon" aria-hidden="true">apps</span>
+                                <span>All Stores</span>
+                            </button>
+                            ${POPULAR_CATEGORIES.map(cat => `
+                                <button class="stores-category-chip ${activeCategory.toLowerCase() === cat.name.toLowerCase() ? 'active' : ''}" data-cat="${cat.name}" aria-label="${cat.name} Category">
+                                    <span class="material-icons-round chip-icon" aria-hidden="true">${cat.icon}</span>
+                                    <span>${cat.name}</span>
+                                </button>
+                            `).join('')}
+                        </div>
+                    </div>
+
+                    <nav class="alphabet-nav-wrapper" aria-label="Alphabetical Store Navigation">
+                        <div class="alphabet-nav" id="alphabet-nav">
+                            <!-- Filled dynamically -->
+                        </div>
+                    </nav>
                 </div>
-                
-                <div class="stores-search-box">
-                    <span class="material-icons-round search-icon" aria-hidden="true">search</span>
-                    <input type="text" id="stores-search-input" placeholder="Search stores by name (e.g., Adobe, NordVPN, WPS Office)..." aria-label="Search stores">
-                    <button id="stores-search-clear" class="search-clear-btn" aria-label="Clear search" style="display: none;">
-                        <span class="material-icons-round" aria-hidden="true">close</span>
-                    </button>
+            </section>
+
+            <section class="all-stores-container container reveal active" style="margin-top: 2rem; margin-bottom: 3rem;">
+                <div id="all-stores-list" class="all-stores-list">
+                    <!-- Filled dynamically -->
                 </div>
+                <div id="no-stores-found" class="card" style="display: none; padding: 3rem 1.5rem; text-align: center;">
+                    <span class="material-icons-round" style="font-size: 3rem; color: var(--text-secondary); margin-bottom: 0.5rem;" aria-hidden="true">search_off</span>
+                    <h3 style="margin-bottom: 0.5rem;">No stores found</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">We couldn't find any store matching your filter or search query.</p>
+                    <button id="clear-search-btn" class="btn btn-outline">Reset Category &amp; Search</button>
+                </div>
+            </section>
+        `;
 
-                <nav class="alphabet-nav-wrapper" aria-label="Alphabetical Store Navigation">
-                    <div class="alphabet-nav" id="alphabet-nav">
-                        <!-- Filled dynamically -->
-                    </div>
-                </nav>
-            </div>
-        </section>
+        bindEvents();
+        renderStores(currentFiltered);
+    };
 
-        <section class="all-stores-container container reveal active" style="margin-top: 2rem; margin-bottom: 3rem;">
-            <div id="all-stores-list" class="all-stores-list">
-                <!-- Filled dynamically -->
-            </div>
-            <div id="no-stores-found" class="card" style="display: none; padding: 3rem 1.5rem; text-align: center;">
-                <span class="material-icons-round" style="font-size: 3rem; color: var(--text-secondary); margin-bottom: 0.5rem;" aria-hidden="true">search_off</span>
-                <h3 style="margin-bottom: 0.5rem;">No stores found</h3>
-                <p style="color: var(--text-secondary); margin-bottom: 1rem;">We couldn't find any store matching your search query.</p>
-                <button id="clear-search-btn" class="btn btn-outline">Clear Search</button>
-            </div>
-        </section>
-    `;
-
-    // Function to render Alphabet Nav and Store Groups based on filtered list
     const renderStores = (filteredStores) => {
         const totalCountEl = document.getElementById('total-stores-count');
         if (totalCountEl) {
@@ -2818,13 +2908,18 @@ App.renderAllStoresPage = async function() {
                         <div class="store-cards-grid">
                             ${storeList.map(s => {
                                 return `
-                                    <a href="store.html?id=${s.id}" class="store-card-item">
+                                    <a href="store.html?id=${s.id}" class="store-card-item" aria-label="${s.name} promo codes and deals">
                                         <div class="store-card-logo-wrap">
                                             <img src="${s.logo}" alt="${s.name} logo" width="80" height="80" loading="lazy">
                                         </div>
                                         <div class="store-card-info">
                                             <div class="store-card-name">${s.name}</div>
+                                            <div class="store-card-meta">
+                                                <span class="store-card-rating">★ ${s.rating || '4.8'}</span>
+                                                ${s.categories && s.categories[0] ? `<span class="store-card-deals-count">${s.categories[0]}</span>` : ''}
+                                            </div>
                                         </div>
+                                        <span class="material-icons-round store-card-arrow" aria-hidden="true">arrow_forward</span>
                                     </a>
                                 `;
                             }).join('')}
@@ -2839,7 +2934,6 @@ App.renderAllStoresPage = async function() {
         const navEl = document.getElementById('alphabet-nav');
         if (!navEl) return;
 
-        // Generate full A-Z array (+ '0–9' if present in activeLettersSet)
         const allLetters = [];
         if (activeLettersSet.has('0–9')) allLetters.push('0–9');
         else if (activeLettersSet.has('0-9')) allLetters.push('0-9');
@@ -2848,7 +2942,6 @@ App.renderAllStoresPage = async function() {
             allLetters.push(String.fromCharCode(i));
         }
 
-        // Only display letters that have stores (automatically hide letters with 0 stores)
         navEl.innerHTML = allLetters.map(letter => {
             const hasStores = activeLettersSet.has(letter);
             if (!hasStores) return '';
@@ -2857,7 +2950,6 @@ App.renderAllStoresPage = async function() {
             `;
         }).join('');
 
-        // Attach click listener for smooth scrolling
         navEl.querySelectorAll('.alphabet-pill').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -2882,51 +2974,100 @@ App.renderAllStoresPage = async function() {
         });
     };
 
-    // Initial render of stores (filtered by category if URL param present)
-    renderStores(initialFilteredStores);
+    const bindEvents = () => {
+        const searchInput = document.getElementById('stores-search-input');
+        const clearBtn = document.getElementById('stores-search-clear');
+        const emptyClearBtn = document.getElementById('clear-search-btn');
+        const categoryBar = document.getElementById('stores-category-bar');
+        const breadcrumbStoresLink = document.getElementById('breadcrumb-stores-link');
 
-    // Setup Search Filter
-    const searchInput = document.getElementById('stores-search-input');
-    const clearBtn = document.getElementById('stores-search-clear');
-    const emptyClearBtn = document.getElementById('clear-search-btn');
+        const applyFilterAndSearch = () => {
+            const query = searchInput ? searchInput.value.trim().toLowerCase() : '';
+            if (clearBtn) clearBtn.style.display = query ? 'flex' : 'none';
 
-    const handleSearch = () => {
-        const query = searchInput ? searchInput.value.trim().toLowerCase() : '';
-        if (clearBtn) clearBtn.style.display = query ? 'flex' : 'none';
+            let baseList = activeCategory ? filterStoresByCategory(sortedStores, activeCategory) : sortedStores;
 
-        let baseList = initialCategory ? filterStoresByCategory(sortedStores, initialCategory) : sortedStores;
+            if (!query) {
+                renderStores(baseList);
+                return;
+            }
 
-        if (!query) {
-            renderStores(baseList);
-            return;
+            const filtered = baseList.filter(s => {
+                const nameMatch = s.name.toLowerCase().includes(query) || (s.id && s.id.toLowerCase().includes(query));
+                const catMatch = s.categories && s.categories.some(c => c.toLowerCase().includes(query));
+                return nameMatch || catMatch;
+            });
+
+            renderStores(filtered);
+        };
+
+        if (searchInput) {
+            searchInput.addEventListener('input', applyFilterAndSearch);
         }
 
-        const filtered = baseList.filter(s => {
-            return s.name.toLowerCase().includes(query) || (s.id && s.id.toLowerCase().includes(query));
-        });
+        if (clearBtn) {
+            clearBtn.addEventListener('click', () => {
+                if (searchInput) searchInput.value = '';
+                applyFilterAndSearch();
+                if (searchInput) searchInput.focus();
+            });
+        }
 
-        renderStores(filtered);
+        if (emptyClearBtn) {
+            emptyClearBtn.addEventListener('click', () => {
+                activeCategory = '';
+                if (searchInput) searchInput.value = '';
+                window.history.pushState(null, '', 'stores.html');
+                renderLayout();
+            });
+        }
+
+        if (breadcrumbStoresLink) {
+            breadcrumbStoresLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                activeCategory = '';
+                window.history.pushState(null, '', 'stores.html');
+                renderLayout();
+            });
+        }
+
+        if (categoryBar) {
+            categoryBar.querySelectorAll('.stores-category-chip').forEach(chip => {
+                chip.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const chosenCat = chip.getAttribute('data-cat') || '';
+                    if (activeCategory === chosenCat) return;
+
+                    activeCategory = chosenCat;
+                    const newUrl = chosenCat ? `stores.html?category=${encodeURIComponent(chosenCat)}` : `stores.html`;
+                    window.history.pushState({ category: chosenCat }, '', newUrl);
+                    
+                    // Update document title
+                    document.title = chosenCat ? `${chosenCat} Stores & Promo Codes | PlayNewApps` : `All Stores & Promo Codes | PlayNewApps`;
+
+                    renderLayout();
+
+                    // Scroll category chip into view smoothly on mobile if needed
+                    const chipEl = document.querySelector(`.stores-category-chip[data-cat="${chosenCat}"]`);
+                    if (chipEl) {
+                        chipEl.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                    }
+                });
+            });
+        }
     };
 
-    if (searchInput) {
-        searchInput.addEventListener('input', handleSearch);
-    }
+    // Handle browser forward/back buttons seamlessly
+    window.addEventListener('popstate', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const cat = urlParams.get('category') || '';
+        if (cat !== activeCategory) {
+            activeCategory = cat;
+            renderLayout();
+        }
+    });
 
-    if (clearBtn) {
-        clearBtn.addEventListener('click', () => {
-            if (searchInput) searchInput.value = '';
-            handleSearch();
-            if (searchInput) searchInput.focus();
-        });
-    }
-
-    if (emptyClearBtn) {
-        emptyClearBtn.addEventListener('click', () => {
-            if (searchInput) searchInput.value = '';
-            handleSearch();
-            if (searchInput) searchInput.focus();
-        });
-    }
+    renderLayout();
 };
 
 App.initCouponPage = async function() {

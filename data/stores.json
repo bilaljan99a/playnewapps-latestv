@@ -16,8 +16,14 @@
       "Computers & Technology",
       "Laptops & Computers",
       "Gaming Deals",
+      "Gaming",
       "Electronics",
-      "Business & Productivity"
+      "Business & Productivity",
+      "Office & Business",
+      "PC Tools",
+      "Productivity",
+      "Education & Online Learning",
+      "Software"
     ],
     "whyShop": [
       "Direct manufacturer warranty, custom build-your-own configurations, and official support",
@@ -68,7 +74,8 @@
       "Gaming Deals",
       "CS2 Skins & Cases",
       "Gaming",
-      "Entertainment"
+      "Entertainment",
+      "Digital Services"
     ],
     "whyShop": [
       "Up to +40% extra deposit top-up bonus with verified partner promo code",
@@ -117,9 +124,13 @@
     "about": "PureVPN is an industry-leading, independently audited zero-logs virtual private network provider featuring 6,500+ bare-metal 20Gbps servers in 80+ countries. Supports WireGuard, Quantum-Resistant Encryption, Dedicated IP, Port Forwarding, and 10 simultaneous connections.",
     "categories": [
       "VPN & Security",
+      "Security & VPN",
       "Software & Apps",
+      "Software",
       "Privacy Tools",
-      "Online Security"
+      "Online Security",
+      "PC Tools",
+      "Apps"
     ],
     "whyShop": [
       "20% OFF on all subscription plans using exclusive promo code admitad20",
@@ -170,7 +181,10 @@
       "Design & Graphics",
       "Vector Illustrations",
       "Stock Photography & Assets",
-      "Creative Tools"
+      "Creative Tools",
+      "Digital Services",
+      "Shopping",
+      "PC Tools"
     ],
     "whyShop": [
       "Unlimited Downloads for Commercial Use — Monthly Unlimited for $14.99 ($60/year savings)",
@@ -220,7 +234,8 @@
       "Gaming",
       "Free-to-Play Games",
       "Action & Combat",
-      "PC & Console Games"
+      "PC & Console Games",
+      "Entertainment"
     ],
     "whyShop": [
       "100% Free-to-Play squad shooter across PC, PS5, PS4, and Xbox Series X|S",
@@ -266,7 +281,8 @@
       "Gaming",
       "Free-to-Play Games",
       "Action & Combat",
-      "PC & Console Games"
+      "PC & Console Games",
+      "Entertainment"
     ],
     "whyShop": [
       "100% Free-to-Play game registration with immediate combat access",
@@ -316,7 +332,8 @@
       "Healthcare & Medical",
       "Telehealth",
       "AI Health",
-      "Virtual Care"
+      "Virtual Care",
+      "Health & Beauty"
     ],
     "whyShop": [
       "Free AI health consultation available 24/7 with zero subscription fees",
@@ -364,9 +381,13 @@
     "about": "AdGuard develops advanced ad blocking, tracking protection, DNS filtering, and VPN privacy solutions for Windows, macOS, Android, iOS, and major web browsers.",
     "categories": [
       "Software & Apps",
+      "Software",
       "Security & Privacy",
+      "Security & VPN",
       "Ad Blocking",
-      "VPN & DNS"
+      "VPN & DNS",
+      "PC Tools",
+      "Apps"
     ],
     "whyShop": [
       "Official AdGuard software discount deals & verified 2026 promo links",
@@ -410,9 +431,14 @@
     "about": "Movavi develops intuitive, high-performance multimedia software including Movavi Video Suite, Video Editor, Screen Recorder, and Photo Editor for Windows and macOS. Features AI background removal, noise suppression, 4K screen capture, and 180+ format conversion.",
     "categories": [
       "Software & Apps",
+      "Software",
       "Video Editing",
       "Photo & Design",
-      "AI Tools"
+      "AI Tools",
+      "PC Tools",
+      "Creative Tools",
+      "Entertainment",
+      "Apps"
     ],
     "whyShop": [
       "Official Movavi software discount deals & verified 2026 promo links",
@@ -465,7 +491,10 @@
     "categories": [
       "Travel & Flight Deals",
       "Passenger Rights",
-      "Flight Compensation"
+      "Flight Compensation",
+      "Travel",
+      "Digital Services",
+      "Finance & Shopping Tools"
     ],
     "whyShop": [
       "Official European air passenger rights legal enforcement support",
@@ -549,8 +578,12 @@
     "about": "Retouch4me is an AI-powered photo retouching software suite for photographers, portrait studios, and photo editors. Features 15+ standalone neural network plugins for Photoshop, Lightroom, Capture One, and batch photo editing.",
     "categories": [
       "Software & Apps",
+      "Software",
       "Photo & Design",
-      "AI Tools"
+      "AI Tools",
+      "PC Tools",
+      "Creative Tools",
+      "Apps"
     ],
     "faqs": [
       {
@@ -578,8 +611,12 @@
     "about": "HideMy.name VPN is an independent, high-speed virtual private network service featuring 100+ bare-metal servers in 45+ countries, WireGuard protocol support, Chameleon stealth obfuscation, and a strict zero-logs policy.",
     "categories": [
       "VPN & Security",
+      "Security & VPN",
       "Software & Apps",
-      "Privacy Tools"
+      "Software",
+      "Privacy Tools",
+      "PC Tools",
+      "Apps"
     ],
     "faqs": [
       {
@@ -619,7 +656,16 @@
       "Home & Garden",
       "Automotive",
       "Toys & Hobbies",
-      "Beauty & Personal Care"
+      "Beauty & Personal Care",
+      "Health & Beauty",
+      "Shopping",
+      "Mobile & Accessories",
+      "Sports & Fitness",
+      "Kids & Family",
+      "Pets",
+      "Food & Grocery",
+      "Finance & Shopping Tools",
+      "Apps"
     ],
     "whyShop": [
       "Millions of items across electronics, fashion, home goods, automotive, and toys at factory-direct wholesale prices.",
@@ -713,6 +759,17 @@
     "icon": "description",
     "logo": "/assets/images/brands/wps-office.svg",
     "about": "WPS Office is a high-performance, lightweight, AI-powered office productivity suite fully compatible with Microsoft Office formats. It integrates Writer, Spreadsheet, Presentation, PDF editing tools, cloud storage, and advanced AI assistance across Windows, macOS, Linux, Android, and iOS.",
+    "categories": [
+      "Office & Business",
+      "Software & Apps",
+      "Software",
+      "Productivity",
+      "PC Tools",
+      "AI Tools",
+      "Computers & Technology",
+      "Education & Online Learning",
+      "Apps"
+    ],
     "whyShop": [
       "100% Native compatibility with Microsoft Word (.docx), Excel (.xlsx), and PowerPoint (.pptx) formats.",
       "Built-in AI Assistant for automated document formatting, content writing, text summarizing, and data analysis.",
@@ -788,7 +845,11 @@
       "VPN Services",
       "Cybersecurity",
       "Online Privacy",
-      "Software & Security"
+      "Software & Security",
+      "Security & VPN",
+      "Software",
+      "PC Tools",
+      "Apps"
     ],
     "whyShop": [
       "Verified Official NordVPN Discounts: Every promo code and special deal is regularly audited and verified by PlayNewApps to ensure active savings at checkout.",
@@ -918,7 +979,13 @@
       "Grammar & Spell Checkers",
       "Plagiarism Checking Software",
       "Proofreading Tools",
-      "Productivity & Team Communications"
+      "Productivity & Team Communications",
+      "AI Tools",
+      "Education & Online Learning",
+      "Office & Business",
+      "Productivity",
+      "Software",
+      "Apps"
     ],
     "whyShop": [
       "Real-Time Smart Corrections: Fix typos, grammar errors, punctuation mistakes, and dangling modifiers instantly as you type across any app.",
@@ -1045,7 +1112,13 @@
       "Cloud Hosting & High Performance",
       "VPS Hosting & Root Access",
       "Domain Name Registration",
-      "AI Website Builders"
+      "AI Website Builders",
+      "Web Hosting & Domains",
+      "Digital Services",
+      "Computers & Technology",
+      "Office & Business",
+      "AI Tools",
+      "Software"
     ],
     "whyShop": [
       "Ultra-Fast LiteSpeed Performance: LiteSpeed Web Servers and built-in LSCWP caching deliver lightning-fast page loading speeds up to 5x faster than competitors.",
@@ -1171,7 +1244,17 @@
       "Photography & Digital Imaging",
       "PDF & Document Management",
       "UI/UX & Web Design",
-      "Generative AI & 3D Modeling"
+      "Generative AI & 3D Modeling",
+      "Software & Apps",
+      "Software",
+      "AI Tools",
+      "Creative Tools",
+      "PC Tools",
+      "Digital Services",
+      "Productivity",
+      "Education & Online Learning",
+      "Office & Business",
+      "Apps"
     ],
     "whyShop": [
       "Industry-Standard Applications: Recognized worldwide as the professional standard for graphic design, video editing, photography, and digital publishing.",
@@ -1314,7 +1397,16 @@
       "AI Graphic Tools",
       "Video Editing & Reels",
       "Presentation Software",
-      "Print Merchandise"
+      "Print Merchandise",
+      "Software & Apps",
+      "Software",
+      "AI Tools",
+      "Digital Services",
+      "Productivity",
+      "Education & Online Learning",
+      "Office & Business",
+      "Entertainment",
+      "Apps"
     ],
     "whyShop": [
       "Intuitive Drag-and-Drop Editor: Effortlessly create stunning graphics, videos, presentations, and documents without any prior design experience.",
@@ -1435,7 +1527,11 @@
       "Royalty-Free Audio & Music",
       "Graphic Templates & Vector Art",
       "3D Models & Assets",
-      "Fonts & Presentation Decks"
+      "Fonts & Presentation Decks",
+      "Digital Services",
+      "Creative Tools",
+      "Shopping",
+      "Productivity"
     ],
     "whyShop": [
       "Unlimited Downloads: Download millions of stock video clips, graphics, WordPress themes, music tracks, and 3D assets without download caps.",
@@ -1559,7 +1655,13 @@
       "Clothing",
       "Shoes",
       "Accessories",
-      "Home"
+      "Home & Garden",
+      "Fashion & Apparel",
+      "Finance & Shopping Tools",
+      "Mobile & Accessories",
+      "Health & Beauty",
+      "Kids & Family",
+      "Apps"
     ],
     "whyShop": [
       "Unbeatable Direct Sourcing Prices: Shop millions of fashion items, shoes, home goods, and lifestyle products straight from international manufacturers without middleman markups.",
@@ -1674,7 +1776,12 @@
       "AI Productivity",
       "Speech to Text",
       "Meeting Transcription",
-      "Voice Notes"
+      "Voice Notes",
+      "Productivity",
+      "Office & Business",
+      "Software & Apps",
+      "Software",
+      "Apps"
     ],
     "whyShop": [
       "Verified Official Promo Codes: Every Notta AI coupon code and discount deal is routinely verified by PlayNewApps to guarantee functional savings at checkout.",
@@ -1805,7 +1912,16 @@
       "Video Editing",
       "PDF Tools",
       "Data Recovery",
-      "Mobile Utilities"
+      "Mobile Utilities",
+      "Software & Apps",
+      "Software",
+      "PC Tools",
+      "Mobile & Accessories",
+      "AI Tools",
+      "Productivity",
+      "Security & VPN",
+      "Computers & Technology",
+      "Apps"
     ],
     "whyShop": [
       "Verified Official Wondershare Promo Codes: Every Wondershare coupon code, discount deal, and seasonal sale offer is continuously tested by PlayNewApps to guarantee active savings.",
@@ -1953,7 +2069,9 @@
       "Military Games",
       "Free-to-Play Games",
       "PC Games",
-      "MMO"
+      "MMO",
+      "Action & Combat",
+      "Entertainment"
     ],
     "whyShop": [
       "Official free-to-play military MMO download with exclusive new player bonus rewards",
@@ -2107,7 +2225,11 @@
       "Travel",
       "Crypto Travel",
       "Hotel Booking",
-      "Travel Platform"
+      "Travel Platform",
+      "Travel Tools",
+      "Finance & Shopping Tools",
+      "Mobile & Accessories",
+      "Apps"
     ],
     "whyShop": [
       "Book over 300,000 premium hotels and luxury resorts worldwide using 30+ cryptocurrencies",
@@ -2294,7 +2416,16 @@
       "Home & Garden",
       "Beauty",
       "Automotive",
-      "Industrial Equipment"
+      "Industrial Equipment",
+      "Shopping",
+      "Health & Beauty",
+      "Fashion & Apparel",
+      "Mobile & Accessories",
+      "Sports & Fitness",
+      "Kids & Family",
+      "Pets",
+      "Food & Grocery",
+      "Finance & Shopping Tools"
     ],
     "whyShop": [
       "Access to over 200,000+ verified global manufacturers and wholesale suppliers.",
@@ -2392,7 +2523,12 @@
       "AI Services",
       "Digital Marketing",
       "Video & Animation",
-      "Writing & Translation"
+      "Writing & Translation",
+      "Digital Services",
+      "Office & Business",
+      "AI Tools",
+      "Shopping",
+      "Apps"
     ],
     "whyShop": [
       "Upfront flat pricing with clear scope definitions and no unexpected hourly billable inflation.",
@@ -2477,7 +2613,11 @@
       "Travel",
       "Airport Parking",
       "Monthly Parking",
-      "Auto Services"
+      "Auto Services",
+      "Automotive",
+      "Travel Tools",
+      "Sports & Fitness",
+      "Apps"
     ],
     "whyShop": [
       "Save up to 60% compared to official airport terminal drive-up parking rates.",
@@ -2555,7 +2695,9 @@
       "Marketing Tools",
       "Ad Intelligence Platform",
       "Digital Advertising",
-      "E-commerce Research"
+      "E-commerce Research",
+      "Digital Services",
+      "Finance & Shopping Tools"
     ],
     "whyShop": [
       "Search over 900+ million active and historical ad creatives across Facebook, Instagram, and TikTok.",
@@ -2646,7 +2788,11 @@
       "Travel Tools",
       "eSIM & Mobile Data",
       "International Roaming",
-      "Global Connectivity"
+      "Global Connectivity",
+      "Travel",
+      "Mobile & Accessories",
+      "Electronics",
+      "Apps"
     ],
     "whyShop": [
       "Instant 5G/4G LTE mobile data across 200+ destinations worldwide.",
@@ -2720,7 +2866,13 @@
       "Cloud Storage",
       "Software",
       "Business Tools",
-      "E-Signatures"
+      "E-Signatures",
+      "Office & Business",
+      "Productivity",
+      "Software & Apps",
+      "Security & VPN",
+      "Computers & Technology",
+      "Apps"
     ],
     "faqs": [
       {
@@ -2749,7 +2901,13 @@
     "categories": [
       "AI Software",
       "Career & Education",
-      "Interview Assistance"
+      "Interview Assistance",
+      "Education & Online Learning",
+      "AI Tools",
+      "Productivity",
+      "Office & Business",
+      "Software",
+      "Apps"
     ],
     "faqs": [
       {
@@ -2796,7 +2954,10 @@
     "about": "italki is a revolutionary global language-learning platform connecting learners with dedicated native teachers and tutors for personalized 1-on-1 online lessons.",
     "categories": [
       "Education",
-      "Language Learning"
+      "Language Learning",
+      "Education & Online Learning",
+      "Digital Services",
+      "Apps"
     ],
     "whyShop": [
       "Learn from certified Professional Teachers and native-speaking Community Tutors.",
@@ -2929,8 +3090,12 @@
     "about": "Hide Expert VPN provides encrypted, anonymous internet connections with IP masking, cross-platform app support for Android, iOS, and macOS, multiple VPN protocol options (IKEv2, OpenVPN, WireGuard, VLESS), and zero activity logs.",
     "categories": [
       "Software & Apps",
+      "Software",
       "Security & Privacy",
-      "VPN & DNS"
+      "VPN & DNS",
+      "Security & VPN",
+      "PC Tools",
+      "Apps"
     ],
     "whyShop": [
       "Official Hide Expert VPN subscription plans & verified partner link",
@@ -2977,7 +3142,13 @@
       "3D Printing & STL Files",
       "RC Aircraft & Hobbies",
       "Scale Model Planes",
-      "Printable Hardware"
+      "Printable Hardware",
+      "Digital Services",
+      "Entertainment",
+      "Sports & Fitness",
+      "Gaming",
+      "Home & Garden",
+      "Electronics"
     ],
     "whyShop": [
       "Official 3DLabPrint affiliate deals and verified 2026 promotional links",
@@ -3043,9 +3214,12 @@
     "about": "Presenti.ai is an advanced AI-powered presentation maker that converts text prompts, outlines, and document notes into professional slide decks and interactive presentations in seconds with smart auto-formatting.",
     "categories": [
       "Software & Apps",
+      "Software",
       "AI Tools",
       "Presentation & Slides",
-      "Productivity"
+      "Productivity",
+      "Office & Business",
+      "Apps"
     ],
     "whyShop": [
       "Official Presenti.ai verified discount deals & 2026 promotional links",
@@ -3115,7 +3289,12 @@
       "Gaming & Esports",
       "Server Hosting",
       "VPS & Cloud",
-      "Software & Apps"
+      "Software & Apps",
+      "Gaming",
+      "Computers & Technology",
+      "Security & VPN",
+      "Software",
+      "Apps"
     ],
     "whyShop": [
       "40% OFF first order on 12 GB+ RAM servers with exclusive promo code",
@@ -3168,7 +3347,8 @@
       "Free-to-Play Games",
       "Space & Sci-Fi",
       "Action & Combat",
-      "PC Games"
+      "PC Games",
+      "Entertainment"
     ],
     "whyShop": [
       "100% Free-to-Play dynamic space combat simulation on PC and Linux",
