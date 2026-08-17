@@ -4765,5 +4765,145 @@
       "name": "AOMEI",
       "logo": "/assets/images/brands/aomei.svg"
     }
+  },
+  {
+    "id": "totr-first-month-20-off",
+    "storeId": "top-of-the-results",
+    "title": "20% OFF First Month Subscription — Sitewide SEO & CTR Plans",
+    "description": "Get an exclusive 20% discount on your first month across all Top of the Results CTR optimization plans for Google Search, GMB, and YouTube.",
+    "code": "FirstMonth20",
+    "discount": "20% OFF",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://grfpr.com/g/zehsdnxunvb68b264a76245c490fd8/",
+    "url": "https://grfpr.com/g/zehsdnxunvb68b264a76245c490fd8/",
+    "store": {
+      "id": "top-of-the-results",
+      "name": "Top of the Results US",
+      "logo": "/assets/images/brands/topoftheresults.svg"
+    }
+  },
+  {
+    "id": "totr-free-trial-tier",
+    "storeId": "top-of-the-results",
+    "title": "Free Tier / Demo Plan — Test Organic CTR Signals Risk-Free",
+    "description": "Access the free starter tier to test automated search queries, residential IP routing, and Google Analytics tracking verification with zero risk.",
+    "code": "",
+    "discount": "100% FREE",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://grfpr.com/g/zehsdnxunvb68b264a76245c490fd8/",
+    "url": "https://grfpr.com/g/zehsdnxunvb68b264a76245c490fd8/",
+    "store": {
+      "id": "top-of-the-results",
+      "name": "Top of the Results US",
+      "logo": "/assets/images/brands/topoftheresults.svg"
+    }
+  },
+  {
+    "id": "totr-annual-25-off",
+    "storeId": "top-of-the-results",
+    "title": "Up to 25% OFF Annual Subscription Plans — Long-Term Savings",
+    "description": "Save up to 25% on your total billing when selecting annual or quarterly subscription commitments for continuous ranking momentum.",
+    "code": "",
+    "discount": "25% OFF",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://grfpr.com/g/zehsdnxunvb68b264a76245c490fd8/",
+    "url": "https://grfpr.com/g/zehsdnxunvb68b264a76245c490fd8/",
+    "store": {
+      "id": "top-of-the-results",
+      "name": "Top of the Results US",
+      "logo": "/assets/images/brands/topoftheresults.svg"
+    }
+  },
+  {
+    "id": "totr-gmb-local-booster",
+    "storeId": "top-of-the-results",
+    "title": "Google Business Profile (GMB) Booster — Local Map 3-Pack Deal",
+    "description": "Drive high-converting geo-targeted search signals and map interactions to boost local business ranking in the Google Local Pack.",
+    "code": "",
+    "discount": "SPECIAL OFFER",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://grfpr.com/g/zehsdnxunvb68b264a76245c490fd8/",
+    "url": "https://grfpr.com/g/zehsdnxunvb68b264a76245c490fd8/",
+    "store": {
+      "id": "top-of-the-results",
+      "name": "Top of the Results US",
+      "logo": "/assets/images/brands/topoftheresults.svg"
+    }
+  },
+  {
+    "id": "totr-youtube-ranker-plan",
+    "storeId": "top-of-the-results",
+    "title": "YouTube Video Search & Dwell Time Booster Package",
+    "description": "Boost video search positions, watch time retention, and suggested video recommendations with automated keyword searches and natural playback.",
+    "code": "",
+    "discount": "SPECIAL OFFER",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://grfpr.com/g/zehsdnxunvb68b264a76245c490fd8/",
+    "url": "https://grfpr.com/g/zehsdnxunvb68b264a76245c490fd8/",
+    "store": {
+      "id": "top-of-the-results",
+      "name": "Top of the Results US",
+      "logo": "/assets/images/brands/topoftheresults.svg"
+    }
+  },
+  {
+    "id": "totr-agency-volume-pack",
+    "storeId": "top-of-the-results",
+    "title": "Agency & Multi-Client Volume Package — Up to 40% OFF",
+    "description": "Custom agency packages for SEO agencies, affiliates, and digital marketing firms managing dozens of client websites and local profiles.",
+    "code": "",
+    "discount": "40% OFF",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://grfpr.com/g/zehsdnxunvb68b264a76245c490fd8/",
+    "url": "https://grfpr.com/g/zehsdnxunvb68b264a76245c490fd8/",
+    "store": {
+      "id": "top-of-the-results",
+      "name": "Top of the Results US",
+      "logo": "/assets/images/brands/topoftheresults.svg"
+    }
+  },
+  {
+    "id": "totr-etsy-ecommerce-booster",
+    "storeId": "top-of-the-results",
+    "title": "Etsy & E-Commerce Listing Search Placement Deal",
+    "description": "Improve organic keyword discovery and search placement for Etsy stores and direct product listings with simulated organic shopper visits.",
+    "code": "",
+    "discount": "SPECIAL OFFER",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://grfpr.com/g/zehsdnxunvb68b264a76245c490fd8/",
+    "url": "https://grfpr.com/g/zehsdnxunvb68b264a76245c490fd8/",
+    "store": {
+      "id": "top-of-the-results",
+      "name": "Top of the Results US",
+      "logo": "/assets/images/brands/topoftheresults.svg"
+    }
   }
 ]

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 60" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&amp;family=Rajdhani:wght@700&amp;display=swap');
+      .brand-red { fill: #D32F2F; }
+      .brand-blue { fill: #172B68; }
+      .brand-text { font-family: 'Rajdhani', 'Plus Jakarta Sans', 'Segoe UI', sans-serif; font-size: 30px; font-weight: 700; letter-spacing: 2.5px; fill: #172B68; }
+    </style>
+  </defs>
+
+  <!-- Left Icon Stack -->
+  <g transform="translate(10, 10)">
+    <!-- Red Top Roof Bar -->
+    <rect x="0" y="2" width="38" height="4.5" rx="2.25" class="brand-red" />
+    
+    <!-- Red 1st Stack Bar -->
+    <rect x="6" y="10.5" width="26" height="4.5" rx="2.25" class="brand-red" />
+    
+    <!-- Navy Blue 2nd Stack Bar -->
+    <rect x="6" y="18" width="26" height="4.5" rx="2.25" class="brand-blue" />
+    
+    <!-- Navy Blue 3rd Stack Bar -->
+    <rect x="6" y="25.5" width="26" height="4.5" rx="2.25" class="brand-blue" />
+    
+    <!-- Navy Blue 4th Stack Bar -->
+    <rect x="6" y="33" width="26" height="4.5" rx="2.25" class="brand-blue" />
+    
+    <!-- Navy Blue 5th Stack Bar -->
+    <rect x="6" y="40.5" width="26" height="4.5" rx="2.25" class="brand-blue" />
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="64" y="39" class="brand-text">TOP OF THE RESULTS</text>
+</svg>

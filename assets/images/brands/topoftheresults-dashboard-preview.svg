@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 580" width="1100" height="580">
+  <defs>
+    <linearGradient id="bgDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="primaryBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="emeraldBadge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="boxShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="580" fill="url(#bgDark)" rx="16"/>
+
+  <!-- Subtle Blueprint Grid -->
+  <g opacity="0.04" stroke="#FFFFFF" stroke-width="1">
+    <path d="M0,60 H1100 M0,120 H1100 M0,180 H1100 M0,240 H1100 M0,300 H1100 M0,360 H1100 M0,420 H1100 M0,480 H1100 M0,540 H1100"/>
+    <path d="M70,0 V580 M140,0 V580 M210,0 V580 M280,0 V580 M350,0 V580 M420,0 V580 M490,0 V580 M560,0 V580 M630,0 V580 M700,0 V580 M770,0 V580 M840,0 V580 M910,0 V580 M980,0 V580 M1050,0 V580"/>
+  </g>
+
+  <!-- Header App Bar -->
+  <g transform="translate(0, 0)">
+    <rect width="1100" height="64" fill="#090E17" stroke="#1E293B" stroke-width="1"/>
+    
+    <!-- Logo Icon -->
+    <g transform="translate(30, 16)">
+      <rect width="32" height="32" rx="8" fill="#2563EB"/>
+      <rect x="8" y="18" width="3.5" height="8" rx="1" fill="#FFFFFF" opacity="0.8"/>
+      <rect x="14" y="13" width="3.5" height="13" rx="1" fill="#FFFFFF" opacity="0.9"/>
+      <rect x="20" y="8" width="3.5" height="18" rx="1" fill="#FFFFFF"/>
+      <polygon points="21.75,3.5 22.8,6 25.5,6 23.3,7.7 24.1,10.3 21.75,8.7 19.4,10.3 20.2,7.7 18,6 20.7,6" fill="#FBBF24"/>
+    </g>
+    <text x="72" y="37" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="900" fill="#FFFFFF">Top of the Results</text>
+    <text x="215" y="37" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#38BDF8">| CAMPAIGN ORCHESTRATION ENGINE</text>
+
+    <!-- Header Navigation Tabs -->
+    <g transform="translate(560, 18)">
+      <rect width="90" height="28" rx="6" fill="#1E293B"/>
+      <text x="45" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#38BDF8" text-anchor="middle">Campaigns</text>
+
+      <text x="140" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#94A3B8">Proxies (5G/Res)</text>
+      <text x="260" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#94A3B8">Telemetry (GA4)</text>
+      <text x="380" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#94A3B8">API &amp; White-label</text>
+    </g>
+
+    <!-- Live System Health Badge -->
+    <g transform="translate(970, 20)">
+      <rect width="100" height="24" rx="12" fill="#064E3B" stroke="#10B981" stroke-width="0.8"/>
+      <circle cx="14" cy="12" r="3.5" fill="#10B981"/>
+      <text x="24" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800" fill="#34D399">ALL NODES OK</text>
+    </g>
+  </g>
+
+  <!-- Main Workstation Layout (Left: Config Panel, Right: Live Execution Stream) -->
+  <g transform="translate(30, 85)">
+    
+    <!-- LEFT PANEL: CAMPAIGN CONFIGURATION (520px wide) -->
+    <g transform="translate(0, 0)" filter="url(#boxShadow)">
+      <rect width="500" height="460" rx="12" fill="#131C2E" stroke="#334155" stroke-width="1.2"/>
+      
+      <!-- Panel Header -->
+      <g transform="translate(20, 20)">
+        <text x="0" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">1. Behavioral Campaign Setup</text>
+        <text x="0" y="34" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="500" fill="#94A3B8">Target Search Engine Parameters &amp; Device Pacing</text>
+      </g>
+
+      <!-- Form Fields -->
+      <!-- Field 1: Target Keyword & Platform -->
+      <g transform="translate(20, 70)">
+        <text x="0" y="12" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#CBD5E1">TARGET KEYWORD &amp; CHANNEL</text>
+        <rect y="18" width="460" height="38" rx="8" fill="#0B1120" stroke="#334155" stroke-width="1"/>
+        <text x="14" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">emergency plumber dallas tx</text>
+        <rect x="340" y="23" width="110" height="28" rx="6" fill="#1E293B"/>
+        <text x="395" y="41" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800" fill="#60A5FA" text-anchor="middle">Google Maps + SERP</text>
+      </g>
+
+      <!-- Field 2: Destination URL -->
+      <g transform="translate(20, 135)">
+        <text x="0" y="12" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#CBD5E1">DESTINATION DOMAIN (NATURAL CLICK-THROUGH)</text>
+        <rect y="18" width="460" height="38" rx="8" fill="#0B1120" stroke="#334155" stroke-width="1"/>
+        <text x="14" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" fill="#34D399">https://exampleplumbingdallas.com</text>
+        <circle cx="445" cy="37" r="5" fill="#10B981"/>
+      </g>
+
+      <!-- Field 3: Granular Sliders / Settings -->
+      <g transform="translate(20, 200)">
+        <!-- Dwell Time Setting -->
+        <g transform="translate(0, 0)">
+          <text x="0" y="12" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#94A3B8">PAGE DWELL DURATION</text>
+          <rect y="18" width="220" height="36" rx="8" fill="#0B1120" stroke="#334155" stroke-width="1"/>
+          <text x="14" y="41" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#FBBF24">180s - 240s (Multi-Page)</text>
+        </g>
+
+        <!-- Device Split Setting -->
+        <g transform="translate(240, 0)">
+          <text x="0" y="12" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#94A3B8">DEVICE ROTATION</text>
+          <rect y="18" width="220" height="36" rx="8" fill="#0B1120" stroke="#334155" stroke-width="1"/>
+          <text x="14" y="41" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#38BDF8">75% Mobile 5G / 25% Desktop</text>
+        </g>
+      </g>
+
+      <!-- Field 4: GPS Radius Targeting -->
+      <g transform="translate(20, 275)">
+        <text x="0" y="12" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#94A3B8">GEO-LOCATION &amp; PROXY SEEDING</text>
+        <rect y="18" width="460" height="36" rx="8" fill="#0B1120" stroke="#334155" stroke-width="1"/>
+        <circle cx="16" cy="36" r="4" fill="#3B82F6"/>
+        <text x="28" y="41" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">Dallas-Fort Worth Metroplex, Texas, US (50-mile GPS Radius)</text>
+      </g>
+
+      <!-- Safety Checklist Box -->
+      <g transform="translate(20, 345)">
+        <rect width="460" height="85" rx="8" fill="#0B1120" stroke="#1E293B" stroke-width="1"/>
+        <g transform="translate(14, 14)">
+          <circle cx="8" cy="8" r="7" fill="#10B981"/>
+          <path d="M5 8 L7 10 L11 6" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <text x="22" y="12" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#F1F5F9">AdSense/PPC Auto-Bypass Active</text>
+          <text x="22" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#64748B">Zero clicks on sponsored Google Ads or AdSense blocks</text>
+
+          <circle cx="8" cy="42" r="7" fill="#10B981"/>
+          <path d="M5 42 L7 44 L11 40" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <text x="22" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#F1F5F9">Natural Diurnal Night/Day Pacing</text>
+          <text x="22" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#64748B">Traffic scales naturally during local daytime business hours</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- RIGHT PANEL: REAL-TIME TELEMETRY & LIVE RANKING GAINS (520px wide) -->
+    <g transform="translate(530, 0)" filter="url(#boxShadow)">
+      <rect width="510" height="460" rx="12" fill="#131C2E" stroke="#334155" stroke-width="1.2"/>
+      
+      <!-- Panel Header -->
+      <g transform="translate(20, 20)">
+        <text x="0" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">2. Live Telemetry &amp; Google Navboost Response</text>
+        <text x="0" y="34" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="500" fill="#94A3B8">Direct Analytics Feedback &amp; SERP Movement Proof</text>
+      </g>
+
+      <!-- Live Metric Badges (3 cols) -->
+      <g transform="translate(20, 65)">
+        <!-- Metric 1 -->
+        <rect width="145" height="62" rx="8" fill="#0B1120" stroke="#1E293B" stroke-width="1"/>
+        <text x="12" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#94A3B8">MAPS 3-PACK</text>
+        <text x="12" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="900" fill="#34D399">#1 Rank <tspan font-size="11" font-weight="700" fill="#10B981">(+8)</tspan></text>
+
+        <!-- Metric 2 -->
+        <g transform="translate(157, 0)">
+          <rect width="145" height="62" rx="8" fill="#0B1120" stroke="#1E293B" stroke-width="1"/>
+          <text x="12" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#94A3B8">ORGANIC CTR</text>
+          <text x="12" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="900" fill="#38BDF8">28.4%</text>
+        </g>
+
+        <!-- Metric 3 -->
+        <g transform="translate(314, 0)">
+          <rect width="145" height="62" rx="8" fill="#0B1120" stroke="#1E293B" stroke-width="1"/>
+          <text x="12" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#94A3B8">AVG. DWELL</text>
+          <text x="12" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="900" fill="#FBBF24">3m 12s</text>
+        </g>
+      </g>
+
+      <!-- Live Execution Activity Log -->
+      <g transform="translate(20, 140)">
+        <text x="0" y="14" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#CBD5E1">LIVE SEARCH JOURNEY EXECUTION LOG</text>
+        <rect y="22" width="470" height="268" rx="8" fill="#070C15" stroke="#1E293B" stroke-width="1"/>
+        
+        <!-- Log Item 1 -->
+        <g transform="translate(16, 42)">
+          <circle cx="4" cy="6" r="4" fill="#10B981"/>
+          <text x="16" y="9" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">Residential AT&amp;T Node (Dallas, TX) initiated Google Search</text>
+          <text x="16" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#64748B">Query: "emergency plumber dallas tx" • Scrolled to Pos #4 • Natural Click</text>
+        </g>
+        <line x1="16" y1="78" x2="454" y2="78" stroke="#1E293B" stroke-width="0.8"/>
+
+        <!-- Log Item 2 -->
+        <g transform="translate(16, 92)">
+          <circle cx="4" cy="6" r="4" fill="#3B82F6"/>
+          <text x="16" y="9" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">Deep Session Interaction &amp; Multi-Page Browsing</text>
+          <text x="16" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#64748B">Landing dwell: 98s • Scrolled 78% of page • Clicked "/services/drain-repair"</text>
+        </g>
+        <line x1="16" y1="128" x2="454" y2="128" stroke="#1E293B" stroke-width="0.8"/>
+
+        <!-- Log Item 3 -->
+        <g transform="translate(16, 142)">
+          <circle cx="4" cy="6" r="4" fill="#F59E0B"/>
+          <text x="16" y="9" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">Google Maps Pin Interaction &amp; Phone Reveal Trigger</text>
+          <text x="16" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#64748B">Simulated local mobile route check &amp; dwell time on GMB profile card</text>
+        </g>
+        <line x1="16" y1="178" x2="454" y2="178" stroke="#1E293B" stroke-width="0.8"/>
+
+        <!-- Log Item 4 -->
+        <g transform="translate(16, 192)">
+          <circle cx="4" cy="6" r="4" fill="#8B5CF6"/>
+          <text x="16" y="9" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">Verified In Google Search Console &amp; GA4 Dashboard</text>
+          <text x="16" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#64748B">Navboost signal confirmed: Position improved from #12 to #1 over 18 days</text>
+        </g>
+      </g>
+
+    </g>
+
+  </g>
+</svg>
