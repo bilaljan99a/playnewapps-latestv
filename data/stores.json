@@ -1,5 +1,49 @@
 [
   {
+    "id": "f-secure",
+    "name": "F-Secure",
+    "icon": "shield",
+    "logo": "/assets/images/brands/f-secure.svg",
+    "website": "https://www.f-secure.com",
+    "storeUrl": "/f-secure-coupons.html",
+    "affiliateLink": "https://thevospad.com/g/kzooqy4r6ib68b264a7661840cf25b/",
+    "rating": 4.9,
+    "votes": 28450,
+    "seoTitle": "F-Secure Promo Code, Verified Coupons & Total Antivirus Deals (2026)",
+    "seoDescription": "Get verified 2026 F-Secure promo codes, discount vouchers & deals: Save up to 50% OFF F-Secure Total, fast unlimited VPN, advanced banking protection, password vault & 30-day money-back guarantee.",
+    "about": "F-Secure is a renowned Finnish cybersecurity leader providing complete digital protection with F-Secure Total, featuring award-winning DeepGuard antivirus, fast no-logs VPN, banking protection sandbox, password vault, and 24/7 dark web breach alerts across Windows, Mac, Android, and iOS.",
+    "categories": [
+      "Security & Antivirus",
+      "Software",
+      "VPN & Privacy",
+      "Cybersecurity",
+      "Productivity",
+      "PC Tools"
+    ],
+    "whyShop": [
+      "Finnish cybersecurity heritage with strict European Union GDPR and privacy laws",
+      "AV-TEST Best Usability and 100% Malware Protection certified engine",
+      "All-in-one suite combining Antivirus, Unlimited VPN, Banking Sandbox, Password Vault, and Dark Web Monitor",
+      "Ultra-low system impact suitable for laptops, workstations, and gaming machines",
+      "30-day free trial (no credit card) and 30-day 100% money-back guarantee"
+    ],
+    "shoppingTips": [
+      "Click Show Code or Get Deal on PlayNewApps to claim up to 50% OFF annual subscriptions.",
+      "Opt for multi-device 5-to-10 license bundles to protect all family phones, tablets, and computers at the lowest per-device rate.",
+      "Take advantage of the 30-day free trial to test DeepGuard protection and VPN speeds risk-free."
+    ],
+    "faqs": [
+      {
+        "question": "What is F-Secure Total?",
+        "answer": "F-Secure Total is a unified cybersecurity suite integrating DeepGuard antivirus, unlimited no-logs VPN, banking session protection, password management, and 24/7 dark web breach surveillance."
+      },
+      {
+        "question": "How do I redeem an F-Secure coupon code?",
+        "answer": "Click Show Code on PlayNewApps to copy the coupon, visit the official F-Secure portal, and paste the code during checkout to apply your discount."
+      }
+    ]
+  },
+  {
     "id": "lenovo",
     "name": "Lenovo",
     "icon": "laptop",

@@ -1,5 +1,65 @@
 [
   {
+    "id": "f-secure-total-50-off",
+    "storeId": "f-secure",
+    "title": "Up to 50% OFF F-Secure Total Multi-Device Annual Subscription",
+    "description": "Complete all-in-one digital security suite including award-winning antivirus, unlimited fast VPN, banking protection sandbox, password vault, and dark web monitoring.",
+    "code": "",
+    "discount": "UP TO 50% OFF",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://thevospad.com/g/kzooqy4r6ib68b264a7661840cf25b/",
+    "url": "https://thevospad.com/g/kzooqy4r6ib68b264a7661840cf25b/",
+    "store": {
+      "id": "f-secure",
+      "name": "F-Secure",
+      "logo": "/assets/images/brands/f-secure.svg"
+    }
+  },
+  {
+    "id": "f-secure-20-code",
+    "storeId": "f-secure",
+    "title": "Extra 20% OFF F-Secure Security & Privacy Plans",
+    "description": "Redeem this verified promotional coupon code at checkout to take an additional 20% discount off eligible cybersecurity subscriptions.",
+    "code": "FSECURE20",
+    "discount": "20% OFF",
+    "type": "code",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://thevospad.com/g/kzooqy4r6ib68b264a7661840cf25b/",
+    "url": "https://thevospad.com/g/kzooqy4r6ib68b264a7661840cf25b/",
+    "store": {
+      "id": "f-secure",
+      "name": "F-Secure",
+      "logo": "/assets/images/brands/f-secure.svg"
+    }
+  },
+  {
+    "id": "f-secure-free-trial",
+    "storeId": "f-secure",
+    "title": "30-Day Free Trial of F-Secure Total (No Credit Card Required)",
+    "description": "Test the full suite of antivirus, fast unlimited VPN, password vault, and banking protection completely free for 30 days without entering payment details.",
+    "code": "",
+    "discount": "FREE TRIAL",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://thevospad.com/g/kzooqy4r6ib68b264a7661840cf25b/",
+    "url": "https://thevospad.com/g/kzooqy4r6ib68b264a7661840cf25b/",
+    "store": {
+      "id": "f-secure",
+      "name": "F-Secure",
+      "logo": "/assets/images/brands/f-secure.svg"
+    }
+  },
+  {
     "id": "lenovo-legion20-discount",
     "storeId": "lenovo",
     "title": "CLP $20,000 Off Legion Gaming Computers & Laptops",

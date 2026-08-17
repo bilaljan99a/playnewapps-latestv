@@ -6062,6 +6062,75 @@ img, video, iframe, object, embed {
     margin-bottom: 1.5rem;
 }
 
+/* ==========================================================================
+   Responsive Tables & Data Matrices (Permanent Universal Fix for Mobile Views)
+   ========================================================================== */
+.table-responsive,
+.overflow-x-auto,
+article .overflow-x-auto,
+.article-content .overflow-x-auto {
+    width: 100%;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+}
+
+/* Prevent tables from shrinking and squishing text into vertical syllables */
+article table,
+.article-content table,
+.comparison-table,
+.table-responsive > table,
+.overflow-x-auto > table {
+    min-width: 620px !important;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+article th,
+.article-content th,
+.comparison-table th,
+.table-responsive th,
+.overflow-x-auto th {
+    white-space: nowrap !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+}
+
+article td,
+.article-content td,
+.comparison-table td,
+.table-responsive td,
+.overflow-x-auto td {
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+}
+
+/* Smooth horizontal scrollbar styling */
+.overflow-x-auto::-webkit-scrollbar,
+.table-responsive::-webkit-scrollbar {
+    height: 6px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track,
+.table-responsive::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb,
+.table-responsive::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover,
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+
 
 
 
