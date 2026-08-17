@@ -5775,19 +5775,93 @@ img, video, iframe, object, embed {
 @media (min-width: 1200px) {
     .popular-categories-grid {
         grid-template-columns: repeat(6, 1fr);
+        gap: 0.65rem;
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1024px) and (max-width: 1199px) {
     .popular-categories-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0.6rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .popular-categories-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.55rem;
+    }
+}
+
+@media (min-width: 520px) and (max-width: 768px) {
+    .popular-categories-grid {
+        grid-template-columns: repeat(3, 1fr);
         gap: 0.5rem;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 519px) {
+    .popular-categories-section {
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+    .popular-categories-section .section-header {
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        margin-bottom: 0.75rem !important;
+    }
+    .popular-categories-section .section-title {
+        font-size: 1.2rem !important;
+        padding-bottom: 0.2rem !important;
+    }
+    .popular-categories-section .view-all {
+        font-size: 0.78rem !important;
+        white-space: nowrap !important;
+    }
     .popular-categories-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 0.35rem !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    .category-pill-card {
+        padding: 0.35rem 0.45rem !important;
+        min-height: 34px !important;
+        border-radius: 7px !important;
+        gap: 0.3rem !important;
+        min-width: 0 !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    .category-pill-icon {
+        font-size: 0.95rem !important;
+        flex-shrink: 0 !important;
+        line-height: 1 !important;
+    }
+    .category-pill-text {
+        font-size: 0.72rem !important;
+        font-weight: 600 !important;
+        min-width: 0 !important;
+        letter-spacing: -0.015em !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .popular-categories-grid {
+        gap: 0.3rem !important;
+    }
+    .category-pill-card {
+        padding: 0.3rem 0.35rem !important;
+        gap: 0.25rem !important;
+        min-height: 32px !important;
+    }
+    .category-pill-icon {
+        font-size: 0.88rem !important;
+    }
+    .category-pill-text {
+        font-size: 0.67rem !important;
+        letter-spacing: -0.02em !important;
     }
 }
 
@@ -5805,6 +5879,9 @@ img, video, iframe, object, embed {
     transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), color var(--transition-fast);
     text-decoration: none;
     min-height: 42px;
+    min-width: 0;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .category-pill-card:hover {
