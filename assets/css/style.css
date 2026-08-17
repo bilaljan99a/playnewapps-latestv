@@ -5758,6 +5758,124 @@ img, video, iframe, object, embed {
     }
 }
 
+/* ==========================================================================
+   Popular Categories & Brand Banners Sections
+   ========================================================================== */
+.popular-categories-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.popular-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+    gap: 0.65rem;
+}
+
+@media (min-width: 1200px) {
+    .popular-categories-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .popular-categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .popular-categories-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.category-pill-card {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.55rem 0.85rem;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), color var(--transition-fast);
+    text-decoration: none;
+    min-height: 42px;
+}
+
+.category-pill-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-sm);
+    color: var(--primary-color);
+}
+
+.category-pill-icon {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-pill-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.2;
+}
+
+/* Brand Banners Section (Side-by-Side in 1 row on Desktop, Stacked on Mobile) */
+.brand-banners-section {
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+}
+
+.brand-banners-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    align-items: stretch;
+}
+
+@media (max-width: 992px) {
+    .brand-banners-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+.brand-banner-card {
+    display: block;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+    border: 1px solid var(--border-color);
+    aspect-ratio: 2 / 1;
+    background: var(--surface-color);
+    position: relative;
+}
+
+.brand-banner-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.brand-banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
 
 
 

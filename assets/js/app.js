@@ -2692,11 +2692,34 @@ App.renderAllStoresPage = async function() {
     const main = document.querySelector('main') || document.querySelector('.main-content');
     if (!main) return;
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialCategory = urlParams.get('category') || '';
+
+    // Function to filter stores by category name
+    const filterStoresByCategory = (list, cat) => {
+        if (!cat) return list;
+        const target = cat.trim().toLowerCase();
+        return list.filter(s => {
+            if (!s.categories || !Array.isArray(s.categories)) return false;
+            return s.categories.some(c => {
+                const normalized = c.trim().toLowerCase();
+                return normalized === target || normalized.includes(target) || target.includes(normalized);
+            });
+        });
+    };
+
+    const initialFilteredStores = initialCategory ? filterStoresByCategory(sortedStores, initialCategory) : sortedStores;
+
+    const pageTitle = initialCategory ? `${initialCategory} Stores & Deals` : `All Stores`;
+    const pageIntro = initialCategory 
+        ? `Browse exclusive coupon codes, verified software discounts, and promotional offers for ${initialCategory}.`
+        : `Browse exclusive coupon codes, verified software discounts, and promotional offers from leading tech brands.`;
+
     main.innerHTML = `
         <nav class="container breadcrumbs" aria-label="Breadcrumb">
             <ol>
                 <li><a href="index.html">Home</a></li>
-                <li aria-current="page">Stores</li>
+                ${initialCategory ? `<li><a href="stores.html">Stores</a></li><li aria-current="page">${initialCategory}</li>` : `<li aria-current="page">Stores</li>`}
             </ol>
         </nav>
 
@@ -2704,14 +2727,14 @@ App.renderAllStoresPage = async function() {
             <div class="all-stores-header-card card">
                 <div class="all-stores-header-top">
                     <div>
-                        <h1 class="hero-title" style="margin-bottom: 0.25rem;">All Stores</h1>
+                        <h1 class="hero-title" style="margin-bottom: 0.25rem;">${pageTitle}</h1>
                         <p class="all-stores-intro">
-                            Browse exclusive coupon codes, verified software discounts, and promotional offers from leading tech brands.
+                            ${pageIntro}
                         </p>
                     </div>
                     <div class="all-stores-count-badge">
                         <span class="material-icons-round" aria-hidden="true">storefront</span>
-                        <span id="total-stores-count">${sortedStores.length} Available Stores</span>
+                        <span id="total-stores-count">${initialFilteredStores.length} Available Stores</span>
                     </div>
                 </div>
                 
@@ -2859,8 +2882,8 @@ App.renderAllStoresPage = async function() {
         });
     };
 
-    // Initial render of all stores
-    renderStores(sortedStores);
+    // Initial render of stores (filtered by category if URL param present)
+    renderStores(initialFilteredStores);
 
     // Setup Search Filter
     const searchInput = document.getElementById('stores-search-input');
@@ -2871,12 +2894,14 @@ App.renderAllStoresPage = async function() {
         const query = searchInput ? searchInput.value.trim().toLowerCase() : '';
         if (clearBtn) clearBtn.style.display = query ? 'flex' : 'none';
 
+        let baseList = initialCategory ? filterStoresByCategory(sortedStores, initialCategory) : sortedStores;
+
         if (!query) {
-            renderStores(sortedStores);
+            renderStores(baseList);
             return;
         }
 
-        const filtered = sortedStores.filter(s => {
+        const filtered = baseList.filter(s => {
             return s.name.toLowerCase().includes(query) || (s.id && s.id.toLowerCase().includes(query));
         });
 

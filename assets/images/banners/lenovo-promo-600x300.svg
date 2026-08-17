@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <defs>
+    <linearGradient id="lenovoBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="55%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#050B14"/>
+    </linearGradient>
+    <linearGradient id="lenovoRedGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2231A"/>
+      <stop offset="100%" stop-color="#FF3B30"/>
+    </linearGradient>
+    <filter id="lenovoDropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="600" height="300" rx="16" fill="url(#lenovoBgGrad)"/>
+
+  <!-- Decorative Red Accent Corner Stripe -->
+  <path d="M520 0 L600 0 L600 80 Z" fill="#E2231A"/>
+  <circle cx="530" cy="80" r="140" fill="#E2231A" opacity="0.08"/>
+  <circle cx="60" cy="270" r="90" fill="#E2231A" opacity="0.05"/>
+  <line x1="32" y1="88" x2="568" y2="88" stroke="#334155" stroke-width="1" opacity="0.4"/>
+
+  <!-- Official Lenovo Red Logo Block -->
+  <g transform="translate(32, 28)" filter="url(#lenovoDropShadow)">
+    <rect width="112" height="42" rx="6" fill="#E2231A"/>
+    <!-- Lenovo Wordmark -->
+    <text x="56" y="27" font-family="'Roboto', -apple-system, Arial, sans-serif" font-size="19" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">Lenovo</text>
+  </g>
+
+  <!-- Official Store Badge -->
+  <rect x="156" y="37" width="130" height="24" rx="6" fill="#E2231A" fill-opacity="0.18" stroke="#E2231A" stroke-width="1"/>
+  <text x="221" y="53" font-family="'Roboto', -apple-system, Arial, sans-serif" font-size="11" font-weight="900" fill="#FF5252" text-anchor="middle" letter-spacing="0.5">OFFICIAL STORE</text>
+
+  <!-- Right Badge / Gaming & Business Tags -->
+  <g transform="translate(450, 26)" filter="url(#lenovoDropShadow)">
+    <rect width="118" height="46" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <text x="59" y="20" font-family="'Roboto', -apple-system, Arial, sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" text-anchor="middle">LEGION | ThinkPad</text>
+    <text x="59" y="36" font-family="'Roboto', -apple-system, Arial, sans-serif" font-size="9" font-weight="700" fill="#10B981" text-anchor="middle">⚡ FREE DELIVERY</text>
+  </g>
+
+  <!-- Main Value Proposition Heading -->
+  <text x="32" y="122" font-family="'Roboto', -apple-system, Arial, sans-serif" font-size="27" font-weight="900" fill="#FFFFFF" letter-spacing="-0.5">SAVE UP TO 60% OFF</text>
+  <text x="32" y="150" font-family="'Roboto', -apple-system, Arial, sans-serif" font-size="15" font-weight="700" fill="#94A3B8">ThinkPad Laptops, Legion Gaming &amp; Yoga 2-in-1s</text>
+
+  <!-- Feature Tags -->
+  <g transform="translate(32, 170)">
+    <rect width="168" height="28" rx="6" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+    <text x="84" y="18" font-family="'Roboto', -apple-system, Arial, sans-serif" font-size="11" font-weight="700" fill="#E2E8F0" text-anchor="middle">💻 ThinkPad X1 Series</text>
+
+    <rect x="178" y="0" width="176" height="28" rx="6" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+    <text x="266" y="18" font-family="'Roboto', -apple-system, Arial, sans-serif" font-size="11" font-weight="700" fill="#E2E8F0" text-anchor="middle">🎮 Legion Pro AI Gaming</text>
+
+    <rect x="364" y="0" width="186" height="28" rx="6" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+    <text x="457" y="18" font-family="'Roboto', -apple-system, Arial, sans-serif" font-size="11" font-weight="700" fill="#E2E8F0" text-anchor="middle">🎓 Extra 10% Student Deals</text>
+  </g>
+
+  <!-- Footer Banner Row & CTA Button -->
+  <g transform="translate(32, 226)">
+    <text x="0" y="28" font-family="'Roboto', -apple-system, Arial, sans-serif" font-size="12" font-weight="500" fill="#94A3B8">Official Direct Warranty • ID.me Student Verified</text>
+
+    <!-- Prominent CTA Button -->
+    <g transform="translate(370, 4)" filter="url(#lenovoDropShadow)">
+      <rect width="166" height="40" rx="8" fill="url(#lenovoRedGrad)"/>
+      <text x="83" y="25" font-family="'Roboto', -apple-system, Arial, sans-serif" font-size="13" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">EXPLORE DEALS →</text>
+    </g>
+  </g>
+</svg>
