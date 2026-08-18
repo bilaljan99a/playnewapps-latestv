@@ -1108,6 +1108,151 @@ const fullHtml = `<!DOCTYPE html>
                     </div>
                 </section>
 
+                <!-- SECTION: OFFICIAL MEDIA, VIDEO CREATIVES & FLEET BANNERS -->
+                <section id="official-media" class="bg-white rounded-xl border border-slate-200 p-6 sm:p-8 shadow-xs space-y-6">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-200 pb-4">
+                        <div>
+                            <div class="flex items-center gap-2 text-xs font-black text-[#7F1A4E] uppercase tracking-wider mb-1">
+                                <span class="material-icons-round text-base">play_circle_filled</span>
+                                <span>Official Video &amp; Campaign Media</span>
+                            </div>
+                            <h2 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">Eurowings In-Flight &amp; Fleet Showcase</h2>
+                        </div>
+                        <a href="${affiliateUrl}" target="_blank" rel="noopener noreferrer nofollow" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#7F1A4E] hover:bg-[#68143f] text-white font-bold text-xs shadow-xs transition-colors self-start sm:self-auto cursor-pointer">
+                            <span class="material-icons-round text-sm">flight</span>
+                            <span>Book Flight Deals</span>
+                        </a>
+                    </div>
+
+                    <!-- Video Interactive Player & Selector -->
+                    <div class="space-y-4">
+                        <div class="relative w-full rounded-xl overflow-hidden shadow-md border border-slate-200 bg-slate-950 aspect-video">
+                            <iframe 
+                                id="eurowings-video-iframe" 
+                                class="absolute top-0 left-0 w-full h-full border-0" 
+                                src="https://www.youtube-nocookie.com/embed/SQDWPoFi8_o?rel=0&amp;modestbranding=1" 
+                                title="Eurowings Official Fleet Feature: Our New Airbus A321neo" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+
+                        <!-- Video Selection Tabs -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+                            <button type="button" onclick="changeEurowingsVideo('SQDWPoFi8_o', 'Eurowings Official Fleet Feature: Our New Airbus A321neo', this)" class="ew-video-btn active flex items-center gap-3 p-3 rounded-xl border border-[#7F1A4E] bg-rose-50/50 text-left transition-all cursor-pointer">
+                                <span class="material-icons-round text-[#7F1A4E] text-xl shrink-0">flight_class</span>
+                                <div class="min-w-0">
+                                    <span class="block text-xs font-bold text-slate-900 truncate">New A321neo Fleet</span>
+                                    <span class="block text-[11px] text-slate-500 truncate">Official Eurowings Channel</span>
+                                </div>
+                            </button>
+                            <button type="button" onclick="changeEurowingsVideo('XvvFhLCl_nI', 'A Day in the Life of a Eurowings Co-Pilot', this)" class="ew-video-btn flex items-center gap-3 p-3 rounded-xl border border-slate-200 hover:border-slate-300 bg-slate-50 text-left transition-all cursor-pointer">
+                                <span class="material-icons-round text-slate-600 text-xl shrink-0">flight_takeoff</span>
+                                <div class="min-w-0">
+                                    <span class="block text-xs font-bold text-slate-900 truncate">Flight Ops &amp; Cockpit</span>
+                                    <span class="block text-[11px] text-slate-500 truncate">Pilot Feature Video</span>
+                                </div>
+                            </button>
+                            <button type="button" onclick="changeEurowingsVideo('3lhiohcrdVQ', 'In the Making: First Airbus A320neo for Eurowings', this)" class="ew-video-btn flex items-center gap-3 p-3 rounded-xl border border-slate-200 hover:border-slate-300 bg-slate-50 text-left transition-all cursor-pointer">
+                                <span class="material-icons-round text-slate-600 text-xl shrink-0">engineering</span>
+                                <div class="min-w-0">
+                                    <span class="block text-xs font-bold text-slate-900 truncate">A320neo Production</span>
+                                    <span class="block text-[11px] text-slate-500 truncate">Airbus Factory Feature</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Official Campaign Banners Grid -->
+                    <div class="pt-4 border-t border-slate-200 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-base font-extrabold text-slate-900 flex items-center gap-2">
+                                <span class="material-icons-round text-[#00A3C4] text-lg">photo_library</span>
+                                <span>Official Campaign Banners &amp; Aircraft Fleet</span>
+                            </h3>
+                            <span class="text-xs text-slate-500 font-medium hidden sm:inline">Click banners to access promotional fares</span>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <!-- Banner Card 1: A320neo Fleet -->
+                            <a href="${affiliateUrl}" target="_blank" rel="noopener noreferrer nofollow" class="group block bg-slate-900 rounded-xl overflow-hidden border border-slate-200 shadow-2xs hover:shadow-md transition-all">
+                                <div class="relative overflow-hidden aspect-video">
+                                    <picture>
+                                        <source srcset="./assets/images/banners/eurowings-a320neo-official.webp" type="image/webp">
+                                        <img src="./assets/images/banners/eurowings-a320neo-official-1200.jpg" alt="Eurowings Airbus A320neo Modern Fleet" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" width="600" height="338">
+                                    </picture>
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-4 text-white">
+                                        <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-[#7F1A4E] text-white w-fit mb-1">OFFICIAL FLEET</span>
+                                        <h4 class="font-bold text-sm leading-tight text-white group-hover:text-rose-200 transition-colors">Eurowings Next-Gen Airbus A320neo</h4>
+                                        <p class="text-[11px] text-slate-300 mt-0.5">50% lower noise &amp; 20% less CO2 emissions connecting 140+ European destinations.</p>
+                                    </div>
+                                </div>
+                                <div class="p-3 bg-white flex items-center justify-between text-xs font-bold text-slate-800">
+                                    <span class="text-[#7F1A4E] flex items-center gap-1">
+                                        <span class="material-icons-round text-sm">local_offer</span>
+                                        <span>Fares from &lt; €35</span>
+                                    </span>
+                                    <span class="text-slate-500 group-hover:text-[#7F1A4E] flex items-center gap-0.5">
+                                        <span>View Flights</span>
+                                        <span class="material-icons-round text-sm">chevron_right</span>
+                                    </span>
+                                </div>
+                            </a>
+
+                            <!-- Banner Card 2: Takeoff & Route Network -->
+                            <a href="${affiliateUrl}" target="_blank" rel="noopener noreferrer nofollow" class="group block bg-slate-900 rounded-xl overflow-hidden border border-slate-200 shadow-2xs hover:shadow-md transition-all">
+                                <div class="relative overflow-hidden aspect-video">
+                                    <picture>
+                                        <source srcset="./assets/images/banners/eurowings-flight-takeoff.webp" type="image/webp">
+                                        <img src="./assets/images/banners/eurowings-flight-takeoff-1000.jpg" alt="Eurowings Flight Route Network &amp; Takeoff" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" width="600" height="338">
+                                    </picture>
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-4 text-white">
+                                        <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-[#00A3C4] text-slate-950 w-fit mb-1">ROUTE NETWORK</span>
+                                        <h4 class="font-bold text-sm leading-tight text-white group-hover:text-cyan-200 transition-colors">Direct European Flight Network</h4>
+                                        <p class="text-[11px] text-slate-300 mt-0.5">Nonstop point-to-point routes across Germany, Mallorca, Spain, Italy &amp; Scandinavia.</p>
+                                    </div>
+                                </div>
+                                <div class="p-3 bg-white flex items-center justify-between text-xs font-bold text-slate-800">
+                                    <span class="text-[#00A3C4] flex items-center gap-1">
+                                        <span class="material-icons-round text-sm">savings</span>
+                                        <span>Savings Calendar</span>
+                                    </span>
+                                    <span class="text-slate-500 group-hover:text-[#00A3C4] flex items-center gap-0.5">
+                                        <span>Check Dates</span>
+                                        <span class="material-icons-round text-sm">chevron_right</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Full-Width Horizontal Campaign Banner -->
+                        <div class="mt-4">
+                            <a href="${affiliateUrl}" target="_blank" rel="noopener noreferrer nofollow" class="group block rounded-xl overflow-hidden border border-slate-200 bg-slate-900 relative shadow-2xs hover:shadow-md transition-all">
+                                <picture>
+                                    <source srcset="./assets/images/banners/eurowings-europe-fleet.webp" type="image/webp">
+                                    <img src="./assets/images/banners/eurowings-europe-fleet-1000.jpg" alt="Eurowings European Bases and Holiday Hotspots" class="w-full h-44 sm:h-56 object-cover group-hover:scale-102 transition-transform duration-300" loading="lazy" width="1000" height="400">
+                                </picture>
+                                <div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/60 to-transparent flex items-center p-6 sm:p-8">
+                                    <div class="max-w-md text-white space-y-2">
+                                        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#7F1A4E] text-white text-[11px] font-extrabold uppercase tracking-wide">
+                                            <span>Lufthansa Group Quality</span>
+                                        </div>
+                                        <h4 class="text-lg sm:text-2xl font-black text-white leading-tight">Fly Your Way Across Europe</h4>
+                                        <p class="text-xs text-slate-300 leading-relaxed hidden sm:block">Collect Miles &amp; More award miles and status points while enjoying direct flights to over 140 top destinations.</p>
+                                        <div class="pt-1">
+                                            <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white text-[#7F1A4E] group-hover:bg-[#7F1A4E] group-hover:text-white font-extrabold text-xs transition-colors shadow-xs">
+                                                <span>Search Eurowings Flights</span>
+                                                <span class="material-icons-round text-sm">arrow_forward</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- EDITORIAL GUIDE: 3000+ WORDS COMPREHENSIVE FLIGHT GUIDE -->
                 <article class="bg-white rounded-xl border border-slate-200 p-6 sm:p-8 shadow-xs prose max-w-none text-slate-700 space-y-8">
 ${editorialContent}
@@ -1202,6 +1347,7 @@ ${editorialContent}
                         <li><a href="#cabin-comfort" class="toc-link block transition-all font-medium">8. Cabin Comfort &amp; Seats</a></li>
                         <li><a href="#wings-bistro" class="toc-link block transition-all font-medium">9. Wings Bistro &amp; Wi-Fi</a></li>
                         <li><a href="#miles-and-more" class="toc-link block transition-all font-medium">10. Miles &amp; More Loyalty</a></li>
+                        <li><a href="#official-media" class="toc-link block transition-all font-medium text-[#7F1A4E]">★ Official Media &amp; Videos</a></li>
                         <li><a href="#blind-booking" class="toc-link block transition-all font-medium">11. Eurowings Blind Booking</a></li>
                         <li><a href="#savings-tips" class="toc-link block transition-all font-medium">12. 7 Insider Savings Hacks</a></li>
                         <li><a href="#family-and-pets" class="toc-link block transition-all font-medium">13. Children &amp; Pets</a></li>
@@ -1251,6 +1397,32 @@ ${editorialContent}
                     el.classList.add('active');
                     btn.setAttribute('aria-expanded', 'true');
                     textSpan.textContent = 'Hide Details -';
+                }
+            }
+        }
+
+        function changeEurowingsVideo(videoId, title, btnEl) {
+            const iframe = document.getElementById('eurowings-video-iframe');
+            if (iframe) {
+                iframe.src = 'https://www.youtube-nocookie.com/embed/' + videoId + '?autoplay=1&rel=0&modestbranding=1';
+                iframe.title = title;
+            }
+            document.querySelectorAll('.ew-video-btn').forEach(btn => {
+                btn.classList.remove('active', 'border-[#7F1A4E]', 'bg-rose-50/50');
+                btn.classList.add('border-slate-200', 'bg-slate-50');
+                const icon = btn.querySelector('.material-icons-round');
+                if (icon) {
+                    icon.classList.remove('text-[#7F1A4E]');
+                    icon.classList.add('text-slate-600');
+                }
+            });
+            if (btnEl) {
+                btnEl.classList.add('active', 'border-[#7F1A4E]', 'bg-rose-50/50');
+                btnEl.classList.remove('border-slate-200', 'bg-slate-50');
+                const icon = btnEl.querySelector('.material-icons-round');
+                if (icon) {
+                    icon.classList.add('text-[#7F1A4E]');
+                    icon.classList.remove('text-slate-600');
                 }
             }
         }
