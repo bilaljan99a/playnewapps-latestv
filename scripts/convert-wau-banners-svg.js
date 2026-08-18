@@ -1,0 +1,131 @@
+const fs = require('fs');
+
+const wauHeroSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" fill="none">
+  <defs>
+    <linearGradient id="wau-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F0715"/>
+      <stop offset="40%" stop-color="#1E0B28"/>
+      <stop offset="80%" stop-color="#2D0F38"/>
+      <stop offset="100%" stop-color="#08020D"/>
+    </linearGradient>
+    <linearGradient id="pink-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EC4899"/>
+      <stop offset="50%" stop-color="#F43F5E"/>
+      <stop offset="100%" stop-color="#FB7185"/>
+    </linearGradient>
+    <linearGradient id="amber-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#FCD34D"/>
+    </linearGradient>
+    <pattern id="dot-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1.5" fill="rgba(236, 72, 153, 0.08)"/>
+    </pattern>
+    <radialGradient id="glow-light" cx="85%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="520" fill="url(#wau-bg)"/>
+  <rect width="1200" height="520" fill="url(#dot-grid)"/>
+  <rect width="1200" height="520" fill="url(#glow-light)"/>
+
+  <!-- Right Visual: LED Mask & Microcurrent Graphic Showcase -->
+  <g transform="translate(840, 260)">
+    <!-- Aura Rings -->
+    <circle cx="0" cy="0" r="160" stroke="url(#pink-grad)" stroke-width="1.5" opacity="0.35" stroke-dasharray="6,8"/>
+    <circle cx="0" cy="0" r="125" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+    <!-- Geometric LED Face Silhouette -->
+    <g transform="scale(1.3) translate(-40, -50)">
+      <path d="M 40 10 C 65 10 80 30 80 55 C 80 75 68 95 40 105 C 12 95 0 75 0 55 C 0 30 15 10 40 10 Z" fill="rgba(236, 72, 153, 0.15)" stroke="#EC4899" stroke-width="2"/>
+      <!-- Phototherapy Wavelength Dots -->
+      <circle cx="25" cy="40" r="4" fill="#EF4444"/>
+      <circle cx="55" cy="40" r="4" fill="#EF4444"/>
+      <circle cx="40" cy="30" r="3.5" fill="#3B82F6"/>
+      <circle cx="30" cy="65" r="3.5" fill="#8B5CF6"/>
+      <circle cx="50" cy="65" r="3.5" fill="#8B5CF6"/>
+      <circle cx="40" cy="80" r="4" fill="#10B981"/>
+      <circle cx="20" cy="55" r="3" fill="#F59E0B"/>
+      <circle cx="60" cy="55" r="3" fill="#F59E0B"/>
+    </g>
+
+    <!-- Badges -->
+    <g transform="translate(-160, 110)">
+      <rect width="140" height="34" rx="17" fill="rgba(20, 8, 30, 0.9)" stroke="#EC4899" stroke-width="1.5"/>
+      <text x="70" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#EC4899" text-anchor="middle">7 WAVELENGTHS</text>
+    </g>
+    <g transform="translate(45, 110)">
+      <rect width="135" height="34" rx="17" fill="rgba(20, 8, 30, 0.9)" stroke="#8B5CF6" stroke-width="1.5"/>
+      <text x="67" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#C4B5FD" text-anchor="middle">EMS LIFTING</text>
+    </g>
+    <g transform="translate(-65, -135)">
+      <rect width="145" height="34" rx="17" fill="rgba(20, 8, 30, 0.9)" stroke="#F59E0B" stroke-width="1.5"/>
+      <text x="72" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#FCD34D" text-anchor="middle">CLINIC CERTIFIED</text>
+    </g>
+  </g>
+
+  <!-- Left Content Column -->
+  <g transform="translate(80, 80)">
+    <g>
+      <rect width="300" height="36" rx="18" fill="rgba(236, 72, 153, 0.12)" stroke="#EC4899" stroke-width="1.5"/>
+      <circle cx="20" cy="18" r="6" fill="#10B981"/>
+      <text x="36" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="800" fill="#FCE7F3" letter-spacing="0.5px">OFFICIAL STORE • VERIFIED DEALS</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="110" font-family="'Plus Jakarta Sans', sans-serif" font-size="60" font-weight="900" fill="#FFFFFF" letter-spacing="-2px">
+      WAU BEAUTY TECH
+    </text>
+
+    <!-- Tagline -->
+    <text x="0" y="165" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="url(#pink-grad)" letter-spacing="-0.5px">
+      Clinic-Grade Smart Skincare &amp; Phototherapy
+    </text>
+
+    <!-- Description -->
+    <text x="0" y="215" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="500" fill="#94A3B8">
+      Transform your daily aesthetic routine with certified 7-wavelength LED phototherapy,
+    </text>
+    <text x="0" y="240" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="500" fill="#94A3B8">
+      smart EMS microcurrent toning, ionic styling multistylers, and cordless dental irrigators.
+    </text>
+
+    <!-- Feature Pills -->
+    <g transform="translate(0, 280)">
+      <g transform="translate(0, 0)">
+        <rect width="140" height="34" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+        <text x="70" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">LED Masks</text>
+      </g>
+      <g transform="translate(150, 0)">
+        <rect width="150" height="34" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+        <text x="75" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Microcurrent EMS</text>
+      </g>
+      <g transform="translate(310, 0)">
+        <rect width="140" height="34" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+        <text x="70" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Hair Multistylers</text>
+      </g>
+      <g transform="translate(460, 0)">
+        <rect width="130" height="34" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+        <text x="65" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Oral Care</text>
+      </g>
+    </g>
+
+    <!-- Callout -->
+    <g transform="translate(0, 335)">
+      <text x="0" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" fill="#FCD34D">
+        ★ Up to 30% OFF Bundles • 1-Year Official Warranty • Free Express Shipping Over $100
+      </text>
+    </g>
+  </g>
+</svg>`;
+
+fs.writeFileSync('assets/images/banners/wau-hero-official.svg', wauHeroSvg, 'utf8');
+
+let wauHtml = fs.readFileSync('wau-coupons.html', 'utf8');
+wauHtml = wauHtml.replace(/wau-hero-official\.webp/g, 'wau-hero-official.svg');
+fs.writeFileSync('wau-coupons.html', wauHtml, 'utf8');
+
+console.log('Successfully written wau-hero-official.svg and updated wau-coupons.html!');
