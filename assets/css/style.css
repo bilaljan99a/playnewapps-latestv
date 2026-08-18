@@ -6130,6 +6130,49 @@ article td,
     background: #94a3b8;
 }
 
+/* ==========================================================================
+   PERMANENT ACCESSIBILITY & CONTRAST SAFEGUARDS FOR DARK CONTAINERS
+   ========================================================================== */
+/* Ensures that any text, paragraph, list, or span nested inside dark backgrounds
+   (e.g., bg-slate-900, bg-slate-950, bg-slate-800, bg-black, bg-gray-900, dark-card)
+   is ALWAYS high-contrast white / light slate and never renders as low-contrast gray. */
+
+.bg-slate-900, .bg-slate-950, .bg-slate-800, .bg-black, .bg-gray-900, .bg-gray-950, .bg-zinc-900, .bg-zinc-950, .dark-card {
+    color: #F8FAFC;
+}
+
+.bg-slate-900 p, .bg-slate-950 p, .bg-slate-800 p, .bg-black p, .bg-gray-900 p, .bg-gray-950 p, .bg-zinc-900 p, .bg-zinc-950 p,
+.prose-editorial .bg-slate-900 p, .prose-editorial .bg-slate-950 p, .prose-editorial .bg-slate-800 p, .prose-editorial .bg-black p,
+.prose-editorial [class*="bg-slate-9"] p, .prose-editorial [class*="bg-slate-8"] p, .prose-editorial [class*="bg-gray-9"] p, .prose-editorial [class*="bg-zinc-9"] p {
+    color: #E2E8F0 !important;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.bg-slate-900 strong, .bg-slate-950 strong, .bg-slate-800 strong, .bg-black strong,
+.prose-editorial .bg-slate-900 strong, .prose-editorial .bg-slate-950 strong, .prose-editorial .bg-slate-800 strong {
+    color: #FFFFFF !important;
+}
+
+.bg-slate-900 li, .bg-slate-950 li, .bg-slate-800 li, .bg-black li,
+.prose-editorial .bg-slate-900 li, .prose-editorial .bg-slate-950 li, .prose-editorial .bg-slate-800 li {
+    color: #E2E8F0 !important;
+}
+
+/* Explicit Utility Overrides for Editorial Containers */
+.prose-editorial .text-white { color: #FFFFFF !important; }
+.prose-editorial .text-slate-100 { color: #F1F5F9 !important; }
+.prose-editorial .text-slate-200 { color: #E2E8F0 !important; }
+.prose-editorial .text-slate-300 { color: #CBD5E1 !important; }
+.prose-editorial .text-cyan-400 { color: #22D3EE !important; }
+.prose-editorial .text-cyan-300 { color: #67E8F9 !important; }
+.prose-editorial .text-amber-400 { color: #FBBF24 !important; }
+.prose-editorial .text-amber-300 { color: #FCD34D !important; }
+.prose-editorial .text-emerald-400 { color: #34D399 !important; }
+.prose-editorial .text-emerald-300 { color: #6EE7B7 !important; }
+.prose-editorial .text-purple-300 { color: #D8B4FE !important; }
+
+
 
 
 

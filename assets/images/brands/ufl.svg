@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120" fill="none">
+  <defs>
+    <linearGradient id="uflGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#55FFFF" />
+      <stop offset="100%" stop-color="#00E5FF" />
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00E5FF" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- U Glyph -->
+  <path d="M 24 20 H 46 V 78 L 62 94 H 74 L 90 78 V 20 H 112 V 84 L 80 116 H 56 L 24 84 Z" fill="url(#uflGrad)" filter="url(#glow)" />
+
+  <!-- F Glyph -->
+  <path d="M 126 20 H 202 V 42 H 148 V 56 H 188 V 78 H 148 V 116 H 126 Z M 148 20 L 126 42 V 20 Z" fill="url(#uflGrad)" filter="url(#glow)" />
+
+  <!-- L Glyph -->
+  <path d="M 216 20 H 238 V 94 H 294 V 116 H 216 Z" fill="url(#uflGrad)" filter="url(#glow)" />
+
+  <!-- TM Trademark -->
+  <text x="298" y="32" fill="#00E5FF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="14" letter-spacing="0.5">TM</text>
+</svg>
