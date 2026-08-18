@@ -1,5 +1,59 @@
 [
   {
+    "id": "discovercars",
+    "name": "DiscoverCars",
+    "icon": "directions_car",
+    "logo": "/assets/images/brands/discovercars.svg",
+    "website": "https://www.discovercars.com/",
+    "storeUrl": "/discovercars-coupons.html",
+    "affiliateLink": "https://naiawork.com/g/wqjhitsyjqb68b264a765ea594bb46/",
+    "rating": 4.6,
+    "votes": 165400,
+    "seoTitle": "DiscoverCars Promo Codes, Car Rental Deals & Discounts (2026)",
+    "seoDescription": "Save up to 70% on worldwide car rentals with verified DiscoverCars deals. Compare 500+ suppliers across 145+ countries with full coverage and free cancellation.",
+    "about": "DiscoverCars is an award-winning international car rental comparison platform comparing 500+ local and multinational suppliers across 10,000+ destinations in 145+ countries, offering price match guarantees and full coverage protection.",
+    "categories": [
+      "Travel",
+      "Car Rentals",
+      "Road Trips",
+      "Vacation Deals",
+      "Airport Transportation"
+    ],
+    "whyShop": [
+      "Compare 500+ international & local car rental suppliers in 10,000+ locations",
+      "Save up to 70% compared to airport walk-up counter rates",
+      "DiscoverCars Full Coverage excess protection from just $6.50/day",
+      "100% Free cancellation up to 48 hours before scheduled vehicle pickup",
+      "All-inclusive transparent pricing with mandatory taxes and airport fees included",
+      "Winner of World Travel Tech Awards & Magellan Gold Award with 4.6/5 Trustpilot score"
+    ],
+    "shoppingTips": [
+      "Reserve 2 to 8 weeks in advance for popular summer destinations (Spain, Italy, Greece, Portugal) to secure low early-bird fleet rates.",
+      "Filter search results by 'Full-to-Full' fuel policy to avoid costly counter refueling surcharges.",
+      "Add DiscoverCars Full Coverage online to save up to 60% compared to airport desk 'Super CDW' packages.",
+      "Check weekly rental rates; renting for 7 days can sometimes cost equal to or less than a 5-day rental.",
+      "Re-check rates 3 to 4 days prior to departure; if prices drop, rebook and cancel the original reservation for free."
+    ],
+    "faqs": [
+      {
+        "question": "How does DiscoverCars compare car rental rates?",
+        "answer": "DiscoverCars searches real-time fleet availability across 500+ multinational and local car rental providers simultaneously, negotiating wholesale volume rates that save travelers up to 70%."
+      },
+      {
+        "question": "How does DiscoverCars Full Coverage protection work?",
+        "answer": "DiscoverCars Full Coverage is an excess reimbursement policy that protects your rental vehicle deductible up to approximately $3,300 (€3,000). It covers bodywork, windshield, tires, wheels, mirrors, roof, undercarriage, towing, lockout fees, key replacement, and administrative charges."
+      },
+      {
+        "question": "Can I cancel my DiscoverCars booking for free?",
+        "answer": "Yes. DiscoverCars offers 100% free cancellation on all eligible bookings cancelled up to 48 hours prior to your scheduled vehicle pickup time."
+      },
+      {
+        "question": "Do I need a credit card for the security deposit?",
+        "answer": "While online reservations can be paid with debit or credit cards, most local suppliers require a physical credit card in the primary driver's name for the counter security deposit. DiscoverCars also has a filter for suppliers accepting debit cards for deposits."
+      }
+    ]
+  },
+  {
     "id": "crsed",
     "name": "CRSED: F.O.A.D.",
     "icon": "sports_esports",
