@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 72" width="320" height="72">
+  <g id="eurowings-logo">
+    <!-- Wordmark Eurowings -->
+    <text x="10" y="52" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="-1.5px" fill="#7F1A4E">Eurowings</text>
+    
+    <!-- Wing Stripes in Top Right -->
+    <g transform="translate(242, 12)">
+      <!-- Top Cyan Stripe -->
+      <path d="M12 0 L32 0 L20 10 L0 10 Z" fill="#00A3C4" />
+      <!-- Middle Burgundy Stripe -->
+      <path d="M18 12 L38 12 L26 22 L6 22 Z" fill="#7F1A4E" />
+      <!-- Bottom Burgundy Stripe -->
+      <path d="M24 24 L44 24 L32 34 L12 34 Z" fill="#7F1A4E" />
+    </g>
+  </g>
+</svg>

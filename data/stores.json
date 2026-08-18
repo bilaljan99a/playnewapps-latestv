@@ -1,5 +1,61 @@
 [
   {
+    "id": "eurowings",
+    "name": "Eurowings",
+    "icon": "flight",
+    "logo": "/assets/images/brands/eurowings.svg",
+    "website": "https://www.eurowings.com/",
+    "storeUrl": "/eurowings-coupons.html",
+    "affiliateLink": "https://codeaven.com/g/zrwntqeht4b68b264a763cffcf918a/",
+    "rating": 4.5,
+    "votes": 94200,
+    "seoTitle": "Eurowings Promo Codes, Flight Deals & Discounts (2026)",
+    "seoDescription": "Save on European flights below €35 with verified Eurowings deals. Explore 140+ destinations across Germany, Spain, Italy, and Scandinavia with Miles & More loyalty perks.",
+    "about": "Eurowings is the value carrier of the Lufthansa Group, offering nonstop point-to-point flights connecting more than 140 destinations across Europe, North Africa, and the Mediterranean with modern Airbus aircraft.",
+    "categories": [
+      "Travel",
+      "Airlines",
+      "Flight Deals",
+      "European Travel",
+      "Vacation Packages"
+    ],
+    "whyShop": [
+      "Point-to-point direct flights to 140+ European destinations without transit stops",
+      "Verified promotional European flights below €35 across popular leisure routes",
+      "Part of Lufthansa Group with high German safety and maintenance standards",
+      "Earn Miles & More award miles and status points on all fare types",
+      "Free mobile and web check-in available 72 hours before flight departure",
+      "Dedicated BIZclass cabin with guaranteed empty middle seats and airport lounge access"
+    ],
+    "shoppingTips": [
+      "Use the monthly Savings Calendar to locate sub-€35 ticket prices on mid-week departures (Tuesdays and Wednesdays).",
+      "Select the SMART fare bundle if traveling with luggage to save up to 50% vs adding baggage a la carte.",
+      "Always check in on the Eurowings mobile app between 72h and 3h before takeoff to avoid the €15 airport desk check-in fee on BASIC fares.",
+      "Try Eurowings Blind Booking from German hubs (DUS, CGN, HAM, STR, BER) for surprise return flights from €33 per leg.",
+      "Add Flex Light for €7 to secure 1 free flight date change up to 40 minutes before scheduled departure."
+    ],
+    "faqs": [
+      {
+        "question": "How do I find Eurowings flights below €35?",
+        "answer": "Use the Savings Calendar on the official Eurowings booking portal to compare daily prices across the entire month. Mid-week departures (Tuesdays and Wednesdays) consistently have the highest availability of flights priced between €29.99 and €34.99."
+      },
+      {
+        "question": "What is included in the Eurowings SMART fare?",
+        "answer": "The SMART fare includes 1 small personal under-seat item (40x30x25cm), 1 large overhead cabin trolley (55x40x23cm, max 8kg), 1 piece of checked luggage up to 23kg, free standard seat selection, and free check-in at the airport counter."
+      },
+      {
+        "question": "Is airport check-in free on Eurowings?",
+        "answer": "Mobile and online check-in is 100% free for all passengers. On BASIC tickets, checking in at the physical airport desk incurs a €15 fee unless pre-booked online for €2.50. Airport check-in is completely free on SMART and BIZclass fares."
+      },
+      {
+        "question": "Can I earn Miles & More points on Eurowings?",
+        "answer": "Yes. Passengers earn Miles & More award miles and Points/Qualifying Points toward Frequent Traveller and Senator status on all published Eurowings fares."
+      }
+    ],
+    "isPopular": true,
+    "featured": true
+  },
+  {
     "id": "discovercars",
     "name": "DiscoverCars",
     "icon": "directions_car",
