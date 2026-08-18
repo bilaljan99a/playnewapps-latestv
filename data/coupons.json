@@ -1,5 +1,105 @@
 [
   {
+    "id": "keycense-autodesk-bts20",
+    "storeId": "keycense",
+    "title": "20% Off AutoDesk",
+    "description": "Save 20% on eligible AutoDesk products with code BTS20.",
+    "code": "BTS20",
+    "discount": "20% Off",
+    "type": "coupon",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/",
+    "url": "https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/",
+    "store": {
+      "id": "keycense",
+      "name": "Keycense",
+      "logo": "/assets/images/brands/keycense.svg"
+    }
+  },
+  {
+    "id": "keycense-office2021-bts15",
+    "storeId": "keycense",
+    "title": "15% Off Office 2021 Professional Plus",
+    "description": "Get 15% off Office 2021 Professional Plus with code BTS15.",
+    "code": "BTS15",
+    "discount": "15% Off",
+    "type": "coupon",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/",
+    "url": "https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/",
+    "store": {
+      "id": "keycense",
+      "name": "Keycense",
+      "logo": "/assets/images/brands/keycense.svg"
+    }
+  },
+  {
+    "id": "keycense-anyviewer-bts10",
+    "storeId": "keycense",
+    "title": "10% Off AnyViewer Pro",
+    "description": "Save 10% on AnyViewer Pro with code BTS10.",
+    "code": "BTS10",
+    "discount": "10% Off",
+    "type": "coupon",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/",
+    "url": "https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/",
+    "store": {
+      "id": "keycense",
+      "name": "Keycense",
+      "logo": "/assets/images/brands/keycense.svg"
+    }
+  },
+  {
+    "id": "keycense-giftcards-25",
+    "storeId": "keycense",
+    "title": "Up to 25% Off Keycense Gift Cards",
+    "description": "Save up to 25% on selected Keycense gift cards and gaming top-ups.",
+    "code": "",
+    "discount": "Up to 25% Off",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/",
+    "url": "https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/",
+    "store": {
+      "id": "keycense",
+      "name": "Keycense",
+      "logo": "/assets/images/brands/keycense.svg"
+    }
+  },
+  {
+    "id": "keycense-win11-pro-deal",
+    "storeId": "keycense",
+    "title": "Up to 80% Off Windows 11 Professional Lifetime License",
+    "description": "Get genuine Windows 11 Pro ESD retail licenses with instant delivery and lifetime Microsoft updates.",
+    "code": "",
+    "discount": "Up to 80% Off",
+    "type": "deal",
+    "verified": true,
+    "isVerified": true,
+    "expiry": "2026-12-31",
+    "expiryDate": "2026-12-31",
+    "affiliateUrl": "https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/",
+    "url": "https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/",
+    "store": {
+      "id": "keycense",
+      "name": "Keycense",
+      "logo": "/assets/images/brands/keycense.svg"
+    }
+  },
+  {
     "id": "crsed-free-to-play",
     "storeId": "crsed",
     "title": "Play in Cuisine Royale for FREE! — Full Game Client (PC & Consoles)",
