@@ -2908,9 +2908,9 @@ App.renderAllStoresPage = async function() {
                         <div class="store-cards-grid">
                             ${storeList.map(s => {
                                 return `
-                                    <a href="store.html?id=${s.id}" class="store-card-item" aria-label="${s.name} promo codes and deals">
+                                    <a href="${s.storeUrl || 'store.html?id=' + s.id}" class="store-card-item" aria-label="${s.name} promo codes and deals">
                                         <div class="store-card-logo-wrap">
-                                            <img src="${s.logo}" alt="${s.name} logo" width="80" height="80" loading="lazy">
+                                            <img src="${s.logo}" alt="${s.name} logo" width="80" height="80" loading="lazy" onerror="this.src='/assets/images/brands/default-store.svg'">
                                         </div>
                                         <div class="store-card-info">
                                             <div class="store-card-name">${s.name}</div>
