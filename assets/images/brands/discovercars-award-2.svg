@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" width="100%" height="100%">
+  <rect width="400" height="160" rx="16" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <circle cx="60" cy="80" r="36" fill="#f59e0b" opacity="0.2"/>
+  <text x="60" y="90" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="32" text-anchor="middle">★</text>
+  <text x="120" y="65" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="800">World Travel Tech Awards</text>
+  <text x="120" y="92" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Leading Car Rental App</text>
+  <text x="120" y="115" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Winner 2020 – 2026</text>
+</svg>
