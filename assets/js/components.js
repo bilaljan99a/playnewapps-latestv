@@ -96,11 +96,43 @@ class Components {
         `;
     }
 
+    static sanitizeText(text, code) {
+        if (!text) return '';
+        let res = String(text);
+        // Normalize currency formatting: remove redundant USD / US prefix when $ is present
+        res = res
+            .replace(/US\s*\$/gi, '$')
+            .replace(/USD\s*\$/gi, '$')
+            .replace(/US\s*(\$\d+)/gi, '$1')
+            .replace(/\bUSD\s+(\d+)/gi, '$$$1')
+            .replace(/(\$\d+)\s*USD\b/gi, '$1');
+
+        // Strictly sanitize any raw promo code from text so code is ONLY revealed behind Show Code
+        if (code && typeof code === 'string' && code.trim().length > 1) {
+            const trimmedCode = code.trim();
+            const escaped = trimmedCode.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const pattern1 = new RegExp(`(?:use\\s+)?(?:promo\\s+|coupon\\s+)?code\\s*[:=-]?\\s*${escaped}\\s*(?:at\\s+checkout)?`, 'gi');
+            const pattern2 = new RegExp(`with\\s+(?:promo\\s+|coupon\\s+)?code\\s*[:=-]?\\s*${escaped}`, 'gi');
+            const pattern3 = new RegExp(`\\b${escaped}\\b`, 'g');
+
+            res = res.replace(pattern1, 'with verified promo code');
+            res = res.replace(pattern2, 'with verified promo code');
+            res = res.replace(pattern3, 'promo code');
+            res = res.replace(/\s{2,}/g, ' ').trim();
+        }
+        return res;
+    }
+
     static createCouponCard(item) {
         const link = item.affiliateLink || item.affiliateUrl || item.url || (item.store && item.store.affiliateLink) || '#';
+        const cleanTitle = this.sanitizeText(item.title, item.code);
+        const cleanDesc = this.sanitizeText(item.description, item.code);
+        const cleanDiscount = this.sanitizeText(item.discount || (item.code ? 'PROMO' : 'DEAL'), item.code);
+
         let actionHtml = '';
         if (item.code) {
-            const masked = item.code.substring(0, 4) + '••••';
+            // Mask is fully obfuscated with dots so code is never revealed before clicking Show Code
+            const masked = '••••••••';
             actionHtml = `
                 <div class="code-reveal-wrapper" data-code="${item.code}" data-link="${link}">
                     <span class="hidden-code-mask">${masked}</span>
@@ -113,7 +145,7 @@ class Components {
         const successRate = item.successPercentage ? `${item.successPercentage}%` : (item.successRate || '99%');
         const votesText = item.votesCount ? `${item.votesCount} interested users` : (item.votes ? `${item.votes} votes` : 'Verified Offer');
         const isExpired = item.status === 'expired';
-        const discountText = item.discount || (item.code ? 'PROMO' : 'DEAL');
+        const discountText = cleanDiscount;
         const codeType = item.code ? 'Code' : 'Sale';
 
         return `
@@ -125,7 +157,7 @@ class Components {
                         </span>
                         <span class="badge type-badge">${codeType}</span>
                     </div>
-                    ${item.discount ? `<span class="badge discount-pill">${item.discount}</span>` : ''}
+                    ${discountText ? `<span class="badge discount-pill">${discountText}</span>` : ''}
                 </div>
 
                 <div class="coupon-main-body">
@@ -135,7 +167,7 @@ class Components {
 
                     <div class="coupon-info-box">
                         <h3 class="coupon-title">
-                            <a href="${link}" target="_blank" rel="noopener sponsored">${item.title}</a>
+                            <a href="${link}" target="_blank" rel="noopener sponsored">${cleanTitle}</a>
                         </h3>
                         <div class="coupon-social-proof">
                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> ${successRate} Success</span>
@@ -153,7 +185,7 @@ class Components {
                     <div class="coupon-details-content hidden">
                         <div class="details-inner-box">
                             <span class="material-icons-round info-icon">info</span>
-                            <p>${item.description || 'Tap offer to copy the coupon code or activate deal. Remember to apply at checkout.'}</p>
+                            <p>${cleanDesc || 'Tap offer to copy the verified promo code or activate deal. Remember to apply at checkout.'}</p>
                         </div>
                     </div>
                     <div class="details-toggle-container">

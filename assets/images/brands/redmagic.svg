@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF1A23"/>
+      <stop offset="100%" stop-color="#C5000C"/>
+    </linearGradient>
+    <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#23262F"/>
+      <stop offset="100%" stop-color="#0F1115"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Clean Background -->
+  <rect width="200" height="200" rx="32" fill="#FFFFFF"/>
+  
+  <!-- REDMAGIC Official Emblem Crest -->
+  <g transform="translate(100, 78) scale(0.95)">
+    <!-- Outer Cybernetic Red Wings -->
+    <path d="M 0 -58 L 38 -20 L 32 18 L 18 36 L 0 52 L -18 36 L -32 18 L -38 -20 Z" fill="url(#redGrad)"/>
+    
+    <!-- Dark Inner Facet Shield -->
+    <path d="M 0 -44 L 28 -14 L 22 14 L 12 28 L 0 40 L -12 28 L -22 14 L -28 -14 Z" fill="url(#darkGrad)"/>
+    
+    <!-- Cyber Geometric Core (Official REDMAGIC Emblem Polygon Geometry) -->
+    <path d="M 0 -32 L 18 -10 L 14 10 L 0 24 L -14 10 L -18 -10 Z" fill="url(#redGrad)"/>
+    <path d="M 0 -18 L 9 -4 L 0 10 L -9 -4 Z" fill="#FFFFFF"/>
+    <circle cx="0" cy="-4" r="2.5" fill="#C5000C"/>
+    
+    <!-- Side Accent Cutouts -->
+    <polygon points="-46,-12 -38,-18 -32,2 -42,6" fill="url(#redGrad)"/>
+    <polygon points="46,-12 38,-18 32,2 42,6" fill="url(#redGrad)"/>
+  </g>
+  
+  <!-- REDMAGIC Official Wordmark Typography -->
+  <text x="100" y="160" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Arial Black', sans-serif" font-weight="900" font-size="20" letter-spacing="2" fill="#0F172A">RED<tspan fill="#FF1A23">MAGIC</tspan></text>
+  <text x="100" y="176" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="7.5" letter-spacing="2" fill="#64748B">ESPORTS HARDWARE</text>
+</svg>

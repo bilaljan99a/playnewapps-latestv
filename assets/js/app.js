@@ -1710,13 +1710,13 @@ App.initDealPage = async function() {
     }
 
     if (deal.code) {
-        if (btnText) btnText.textContent = `Get Deal & Copy Code: ${deal.code}`;
-        if (ctaBox) {
-            const codeNotice = document.createElement('div');
-            codeNotice.className = 'card';
-            codeNotice.style.cssText = 'padding: 0.75rem 1.25rem; font-family: monospace; font-weight: bold; font-size: 1.1rem; background: var(--primary-light); color: var(--primary-color); border: 1px dashed var(--primary-color); text-align: center; border-radius: 8px; margin-top: 0.75rem;';
-            codeNotice.innerHTML = `Promo Code: <strong>${deal.code}</strong> (Copied on click)`;
-            ctaBox.after(codeNotice);
+        if (btnText) btnText.textContent = 'Claim Deal & Reveal Code';
+        if (mainCta) {
+            mainCta.addEventListener('click', () => {
+                if (typeof window.showCouponModal === 'function') {
+                    window.showCouponModal(deal.code, deal.affiliateLink);
+                }
+            });
         }
     } else {
         if (btnText) btnText.textContent = 'Claim Discount Offer';

@@ -1,0 +1,1400 @@
+const fs = require('fs');
+const path = require('path');
+
+const pageContent = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDMAGIC Coupon Codes &amp; Promo Codes (2026) - Verified Discounts | PlayNewApps</title>
+    <meta name="description" content="Discover verified REDMAGIC coupon codes, discount vouchers, and exclusive hardware deals for 2026. Save up to $40 OFF on REDMAGIC 9 Pro, Nova Tablets, 4K Monitors, and gaming gear.">
+    <meta name="keywords" content="REDMAGIC Coupon Code, REDMAGIC Promo Code, REDMAGIC Discount Code, REDMAGIC 9 Pro Deals, REDMAGIC Nova Tablet Coupon, Nubia REDMAGIC discounts, verified esports gaming phone coupons">
+    
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="REDMAGIC Coupon Codes &amp; Promo Codes (2026) - Verified Discounts">
+    <meta property="og:description" content="Save up to $40 OFF on REDMAGIC gaming smartphones, Nova tablets, 4K monitors, and esports accessories with verified promo codes.">
+    <meta property="og:url" content="https://playnewapps.com/redmagic-coupons.html">
+    <meta property="og:image" content="https://playnewapps.com/assets/images/brands/redmagic.svg">
+    <link rel="canonical" href="https://playnewapps.com/redmagic-coupons.html">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://playnewapps.com/#organization",
+          "name": "PlayNewApps",
+          "url": "https://playnewapps.com",
+          "logo": "https://playnewapps.com/assets/images/logo.svg"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://playnewapps.com/redmagic-coupons.html#webpage",
+          "url": "https://playnewapps.com/redmagic-coupons.html",
+          "name": "REDMAGIC Coupon Codes & Promo Codes (2026) - Verified Discounts | PlayNewApps",
+          "description": "Discover verified REDMAGIC coupon codes, discount vouchers, and exclusive hardware deals for 2026.",
+          "breadcrumb": {
+            "@id": "https://playnewapps.com/redmagic-coupons.html#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://playnewapps.com/redmagic-coupons.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://playnewapps.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Stores",
+              "item": "https://playnewapps.com/stores.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "REDMAGIC Promo Codes",
+              "item": "https://playnewapps.com/redmagic-coupons.html"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Verified REDMAGIC Promo Codes & Deals",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "REDMAGIC 4K Gaming Monitor with Free Precision Mouse Pad",
+              "description": "Unlock a complimentary esports precision mouse pad with purchase of the REDMAGIC 4K Gaming Monitor."
+            },
+            {
+              "@type": "Offer",
+              "name": "$10 OFF REDMAGIC 7 Series Gaming Smartphones",
+              "description": "Take an instant $10 discount on REDMAGIC 7 series flagship esports phones."
+            },
+            {
+              "@type": "Offer",
+              "name": "Free Priority Shipping on Orders Over $50",
+              "description": "Free standard and priority shipping dispatched from domestic regional warehouses on orders over $50."
+            },
+            {
+              "@type": "Offer",
+              "name": "$40 OFF REDMAGIC Mechanical Gaming Keyboard",
+              "description": "Enjoy a $40 discount on the REDMAGIC Tri-Mode Mechanical Keyboard with hot-swappable switches."
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How do I apply a promo code on REDMAGIC?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Add items to your cart on global.redmagic.gg, navigate to checkout, and enter your copied discount code in the 'Discount code or gift card' input box before confirming payment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is shipping really free on REDMAGIC orders?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! All orders of $50 or more receive free standard shipping from local domestic warehouses across North America, Europe, the UK, and Asia-Pacific."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are REDMAGIC codes stackable with hardware bundle deals?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, verified coupon codes can typically be applied on top of discounted smartphone + cooler or gamepad hardware bundle packages for maximum total savings."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do REDMAGIC phones support 5G networks globally?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Global versions of REDMAGIC smartphones feature comprehensive 5G NR, 4G LTE, and Wi-Fi 7 / 6E band support compatible with major global carriers including T-Mobile, Vodafone, EE, Orange, and Telstra."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+
+        /* Scissor Cutout Obfuscated Coupon Box */
+        .code-reveal-wrapper {
+            position: relative;
+            display: inline-flex;
+            align-items: stretch;
+            height: 44px;
+            background-color: #fef2f2;
+            border: 2px dashed #f87171;
+            border-radius: 8px;
+            overflow: hidden;
+            user-select: none;
+            width: 100%;
+            max-width: 220px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        @media (min-width: 640px) {
+            .code-reveal-wrapper {
+                width: 220px;
+            }
+        }
+
+        .hidden-code-mask {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-weight: 900;
+            font-size: 14px;
+            color: #991b1b;
+            letter-spacing: 2px;
+            padding: 0 10px;
+            background-color: #fff1f2;
+        }
+
+        .code-reveal-wrapper .btn {
+            background-color: #e01a22;
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 12px;
+            padding: 0 14px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .code-reveal-wrapper .btn:hover {
+            background-color: #c5141b;
+        }
+
+        /* Deal Card Architecture */
+        .deal-card {
+            transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .deal-card:hover {
+            border-color: #cbd5e1;
+            box-shadow: 0 6px 16px -4px rgba(15, 23, 42, 0.08);
+        }
+
+        /* Accordion Smooth Expansion */
+        .deal-details-content {
+            display: none;
+        }
+
+        .deal-details-content.active {
+            display: block;
+            animation: fadeIn 0.2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Table */
+        .gaming-table th {
+            background-color: #0f172a;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 13px;
+            padding: 12px 14px;
+            border-bottom: 2px solid #e01a22;
+        }
+        .gaming-table td {
+            padding: 12px 14px;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 13px;
+        }
+        .gaming-table tr:nth-child(even) td {
+            background-color: #f8fafc;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+
+    <!-- Top Site Navigation Header -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                <a href="/" class="flex items-center gap-3 group">
+                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="w-9 h-9 sm:w-10 sm:h-10 transition-transform group-hover:scale-105">
+                    <div>
+                        <span class="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight block">PlayNewApps</span>
+                        <span class="text-[10px] sm:text-xs font-semibold text-slate-500 block -mt-1 uppercase tracking-wider">Verified Software &amp; Deals</span>
+                    </div>
+                </a>
+                <nav class="flex items-center gap-4 sm:gap-6 text-sm font-semibold text-slate-600">
+                    <a href="/" class="hover:text-red-600 transition-colors">Home</a>
+                    <a href="/stores.html" class="hover:text-red-600 transition-colors text-red-600 font-bold">All Stores</a>
+                    <a href="/category.html" class="hover:text-red-600 transition-colors hidden sm:inline-block">Categories</a>
+                    <a href="/reviews.html" class="hover:text-red-600 transition-colors">Reviews</a>
+                    <a href="/about.html" class="hover:text-red-600 transition-colors hidden sm:inline-block">About Us</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-6 w-full">
+
+        <!-- Breadcrumb Navigation -->
+        <nav class="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-500 overflow-x-auto pb-1" aria-label="Breadcrumb">
+            <a href="/" class="hover:text-red-600 transition-colors flex items-center gap-1">
+                <span class="material-icons-round text-base">home</span>
+                <span>Home</span>
+            </a>
+            <span class="material-icons-round text-sm text-slate-400">chevron_right</span>
+            <a href="/stores.html" class="hover:text-red-600 transition-colors">Stores</a>
+            <span class="material-icons-round text-sm text-slate-400">chevron_right</span>
+            <span class="text-slate-900 font-semibold">REDMAGIC Promo Codes</span>
+        </nav>
+
+        <!-- CLEAN COMPACT STORE HEADER (ABOVE THE FOLD - ZERO CLUTTER) -->
+        <section class="bg-white rounded-2xl border border-slate-200 p-4 sm:p-5 shadow-xs">
+            <div class="flex items-center gap-3.5 sm:gap-5">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 p-2 rounded-2xl bg-white border border-slate-200 flex items-center justify-center shrink-0 shadow-xs">
+                    <img src="/assets/images/brands/redmagic.svg" alt="Official REDMAGIC Logo" class="w-full h-full object-contain">
+                </div>
+                <div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <h1 class="text-lg sm:text-2xl font-extrabold text-slate-900 tracking-tight leading-tight">REDMAGIC Promo Codes &amp; Verified Deals</h1>
+                        <span class="inline-flex items-center gap-1 bg-emerald-50 text-emerald-800 border border-emerald-200 text-[11px] font-bold px-2 py-0.5 rounded-full">
+                            <span class="material-icons-round text-xs text-emerald-600">verified</span> Verified Partner
+                        </span>
+                    </div>
+                    <div class="flex items-center gap-2 text-xs font-semibold text-slate-600 mt-1.5 flex-wrap">
+                        <div class="flex items-center text-amber-500">
+                            <span class="material-icons-round text-sm sm:text-base">star</span>
+                            <span class="material-icons-round text-sm sm:text-base">star</span>
+                            <span class="material-icons-round text-sm sm:text-base">star</span>
+                            <span class="material-icons-round text-sm sm:text-base">star</span>
+                            <span class="material-icons-round text-sm sm:text-base">star</span>
+                        </div>
+                        <strong class="text-slate-900 font-bold">4.9 / 5</strong>
+                        <span class="text-slate-500">(128,400+ Verified Gamers)</span>
+                        <span class="text-slate-300 hidden sm:inline">•</span>
+                        <span class="text-emerald-600 font-semibold flex items-center gap-1">
+                            <span class="material-icons-round text-sm">update</span> Verified Daily for 2026
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACTIVE COUPONS & PROMO DEALS SECTION (TOP PRIORITY CONVERSIONS) -->
+        <section id="coupons-section" class="space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+                <div>
+                    <h2 class="text-lg sm:text-2xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+                        <span class="material-icons-round text-[#e01a22]">local_fire_department</span>
+                        <span>Latest Verified REDMAGIC Promo Codes &amp; Hardware Deals</span>
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-500 mt-0.5">Click 'Show Code' or 'Get Deal' to reveal discount code, copy to clipboard, and activate the official partner promotional discount.</p>
+                </div>
+                <span class="text-xs font-bold px-3 py-1 bg-red-50 text-red-700 rounded-full border border-red-200 shrink-0 hidden sm:inline-block">14 Active Offers</span>
+            </div>
+
+            <!-- Deals Cards Stacked List (Full-Width Responsive Architecture) -->
+            <div class="space-y-3.5">
+
+                <!-- 1. 4K Monitor Free Mouse Pad -->
+                <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-xs border-l-4 border-l-[#e01a22]">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
+                        <div class="flex items-start gap-3 sm:gap-4 min-w-0">
+                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-[#e01a22] border border-[#c5141b] flex flex-col items-center justify-center text-center shrink-0 text-white shadow-xs">
+                                <span class="text-[10px] sm:text-xs font-black uppercase tracking-tight leading-tight">FREE</span>
+                                <span class="text-[8px] sm:text-[9px] font-bold uppercase">MOUSE PAD</span>
+                            </div>
+                            <div class="min-w-0">
+                                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-emerald-100 text-emerald-800 flex items-center gap-0.5">
+                                        <span class="material-icons-round text-xs">verified</span> VERIFIED
+                                    </span>
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-red-100 text-red-800">EXCLUSIVE CODE</span>
+                                    <span class="text-[11px] text-slate-400 font-medium">4K Gaming Monitor</span>
+                                </div>
+                                <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">REDMAGIC 4K Gaming Monitor with Free Precision Mouse Pad</h3>
+                                <p class="text-xs text-slate-500 mt-1">Unlock a complimentary esports precision mouse pad with purchase of the ultra-fast Mini-LED / QD-OLED REDMAGIC 4K Gaming Monitor.</p>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
+                            <div class="code-reveal-wrapper" data-code="RMFMP" data-link="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fpages%2Fredmagic-4k-gaming-monitor">
+                                <span class="hidden-code-mask">••••••••</span>
+                                <button type="button" class="btn show-code-btn" aria-label="Show Coupon Code and Copy">Show Code</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between">
+                        <button type="button" class="deal-toggle-btn text-xs font-bold text-slate-600 hover:text-[#e01a22] flex items-center gap-1 focus:outline-none rounded px-1 py-0.5 cursor-pointer" aria-expanded="false" onclick="toggleDetails('deal-details-1')">
+                            <span class="toggle-text">Show Details +</span>
+                        </button>
+                        <span class="text-[11px] text-slate-500 font-medium">100% Success • 4,820 interested gamers</span>
+                    </div>
+                    <div id="deal-details-1" class="deal-details-content text-xs text-slate-600 space-y-2 pt-3">
+                        <p><strong>Offer Details &amp; Terms:</strong></p>
+                        <ul class="list-disc pl-5 space-y-1 text-slate-600">
+                            <li>Valid exclusively on official REDMAGIC 4K Gaming Monitor orders on global.redmagic.gg.</li>
+                            <li>Complimentary precision gaming mouse pad is automatically added to cart upon code redemption.</li>
+                            <li>Dispatched with priority handling from local regional warehouses.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 2. $10 OFF REDMAGIC 7 Series -->
+                <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-xs border-l-4 border-l-[#e01a22]">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
+                        <div class="flex items-start gap-3 sm:gap-4 min-w-0">
+                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-[#e01a22] border border-[#c5141b] flex flex-col items-center justify-center text-center shrink-0 text-white shadow-xs">
+                                <span class="text-xs sm:text-sm font-black uppercase tracking-tight leading-tight">$10</span>
+                                <span class="text-[8px] sm:text-[9px] font-bold uppercase">OFF</span>
+                            </div>
+                            <div class="min-w-0">
+                                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-emerald-100 text-emerald-800 flex items-center gap-0.5">
+                                        <span class="material-icons-round text-xs">verified</span> VERIFIED
+                                    </span>
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-red-100 text-red-800">PROMO CODE</span>
+                                    <span class="text-[11px] text-slate-400 font-medium">Flagship Phones</span>
+                                </div>
+                                <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">$10 OFF REDMAGIC 7 Series Gaming Smartphones</h3>
+                                <p class="text-xs text-slate-500 mt-1">Take an instant $10 discount on REDMAGIC 7 series flagship esports phones featuring Snapdragon 8 Gen 1 and 165Hz AMOLED displays.</p>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
+                            <div class="code-reveal-wrapper" data-code="AFFRM710" data-link="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fpages%2Fredmagic-7-series">
+                                <span class="hidden-code-mask">••••••••</span>
+                                <button type="button" class="btn show-code-btn" aria-label="Show Coupon Code and Copy">Show Code</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between">
+                        <button type="button" class="deal-toggle-btn text-xs font-bold text-slate-600 hover:text-[#e01a22] flex items-center gap-1 focus:outline-none rounded px-1 py-0.5 cursor-pointer" aria-expanded="false" onclick="toggleDetails('deal-details-2')">
+                            <span class="toggle-text">Show Details +</span>
+                        </button>
+                        <span class="text-[11px] text-slate-500 font-medium">99% Success • 3,610 interested gamers</span>
+                    </div>
+                    <div id="deal-details-2" class="deal-details-content text-xs text-slate-600 space-y-2 pt-3">
+                        <p><strong>Offer Details &amp; Terms:</strong></p>
+                        <ul class="list-disc pl-5 space-y-1 text-slate-600">
+                            <li>Applies to eligible REDMAGIC 7 series device configurations during checkout.</li>
+                            <li>Stackable with free shipping for orders exceeding $50.</li>
+                            <li>Backed by official 1-year global manufacturer warranty.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 3. Free Shipping Over $50 -->
+                <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-xs border-l-4 border-l-emerald-600">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
+                        <div class="flex items-start gap-3 sm:gap-4 min-w-0">
+                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-emerald-600 border border-emerald-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-xs">
+                                <span class="text-[10px] sm:text-xs font-black uppercase tracking-tight leading-tight">FREE</span>
+                                <span class="text-[8px] sm:text-[9px] font-bold uppercase">SHIPPING</span>
+                            </div>
+                            <div class="min-w-0">
+                                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-emerald-100 text-emerald-800 flex items-center gap-0.5">
+                                        <span class="material-icons-round text-xs">verified</span> VERIFIED
+                                    </span>
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-blue-100 text-blue-800">AUTOMATIC DEAL</span>
+                                    <span class="text-[11px] text-slate-400 font-medium">Local Warehouses (US, EU, UK, Global)</span>
+                                </div>
+                                <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">Free Priority Shipping on Orders Over $50</h3>
+                                <p class="text-xs text-slate-500 mt-1">Enjoy free standard and priority shipping dispatched from domestic regional warehouses across the US, EU, UK, CA, and AU on all orders over $50.</p>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
+                            <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/" target="_blank" rel="noopener sponsored" class="w-full sm:w-auto px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-1.5 shadow-xs cursor-pointer">
+                                <span>GET FREE SHIPPING</span>
+                                <span class="material-icons-round text-sm">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between">
+                        <button type="button" class="deal-toggle-btn text-xs font-bold text-slate-600 hover:text-emerald-700 flex items-center gap-1 focus:outline-none rounded px-1 py-0.5 cursor-pointer" aria-expanded="false" onclick="toggleDetails('deal-details-shipping')">
+                            <span class="toggle-text">Show Details +</span>
+                        </button>
+                        <span class="text-[11px] text-slate-500 font-medium">Automatic at checkout • Fast local delivery</span>
+                    </div>
+                    <div id="deal-details-shipping" class="deal-details-content text-xs text-slate-600 space-y-2 pt-3">
+                        <p><strong>Shipping Policy &amp; Delivery Times:</strong></p>
+                        <ul class="list-disc pl-5 space-y-1 text-slate-600">
+                            <li>Dispatched from local regional hubs: US (California), Europe (Germany/Poland), UK (Northampton), and Hong Kong for global parcels.</li>
+                            <li>Standard regional delivery takes between 2 to 5 business days with full online tracking.</li>
+                            <li>No coupon code required; shipping fee is waived automatically once cart total reaches $50.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 4. $40 OFF Mechanical Keyboard -->
+                <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-xs border-l-4 border-l-indigo-600">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
+                        <div class="flex items-start gap-3 sm:gap-4 min-w-0">
+                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-indigo-600 border border-indigo-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-xs">
+                                <span class="text-xs sm:text-sm font-black uppercase tracking-tight leading-tight">$40</span>
+                                <span class="text-[8px] sm:text-[9px] font-bold uppercase">OFF</span>
+                            </div>
+                            <div class="min-w-0">
+                                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-emerald-100 text-emerald-800 flex items-center gap-0.5">
+                                        <span class="material-icons-round text-xs">verified</span> VERIFIED
+                                    </span>
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-indigo-100 text-indigo-800">HARDWARE DEAL</span>
+                                    <span class="text-[11px] text-slate-400 font-medium">TTC Speed Switches</span>
+                                </div>
+                                <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">$40 OFF REDMAGIC Mechanical Gaming Keyboard</h3>
+                                <p class="text-xs text-slate-500 mt-1">Enjoy a massive $40 discount on the REDMAGIC Tri-Mode Mechanical Keyboard with hot-swappable switches, OLED display, and PBT keycaps.</p>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
+                            <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fpages%2Fredmagic-mechanical-keyboard" target="_blank" rel="noopener sponsored" class="w-full sm:w-auto px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-1.5 shadow-xs cursor-pointer">
+                                <span>GET $40 OFF</span>
+                                <span class="material-icons-round text-sm">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between">
+                        <button type="button" class="deal-toggle-btn text-xs font-bold text-slate-600 hover:text-indigo-700 flex items-center gap-1 focus:outline-none rounded px-1 py-0.5 cursor-pointer" aria-expanded="false" onclick="toggleDetails('deal-details-4')">
+                            <span class="toggle-text">Show Details +</span>
+                        </button>
+                        <span class="text-[11px] text-slate-500 font-medium">Instant price drop on official product page</span>
+                    </div>
+                    <div id="deal-details-4" class="deal-details-content text-xs text-slate-600 space-y-2 pt-3">
+                        <p><strong>Product Highlights &amp; Savings:</strong></p>
+                        <ul class="list-disc pl-5 space-y-1 text-slate-600">
+                            <li>Features gasket-mounted structure with sound-dampening silicone pads.</li>
+                            <li>Tri-mode connectivity: Bluetooth 5.0, 2.4GHz ultra-low latency wireless, and USB-C wired.</li>
+                            <li>Discount automatically applied at checkout via partner link.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 5. 40% OFF Gaming Mouse Pad -->
+                <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-xs border-l-4 border-l-amber-500">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
+                        <div class="flex items-start gap-3 sm:gap-4 min-w-0">
+                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-amber-500 border border-amber-600 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-xs">
+                                <span class="text-xs sm:text-sm font-black uppercase tracking-tight leading-tight">40%</span>
+                                <span class="text-[8px] sm:text-[9px] font-bold uppercase">OFF</span>
+                            </div>
+                            <div class="min-w-0">
+                                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-emerald-100 text-emerald-800 flex items-center gap-0.5">
+                                        <span class="material-icons-round text-xs">verified</span> VERIFIED
+                                    </span>
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-amber-100 text-amber-800">POPULAR DEAL</span>
+                                    <span class="text-[11px] text-slate-400 font-medium">Esports Precision Mat</span>
+                                </div>
+                                <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">40% OFF REDMAGIC Esports Precision Gaming Mouse Pad</h3>
+                                <p class="text-xs text-slate-500 mt-1">Get 40% off the extra-large micro-woven cloth esports mouse pad with anti-fray stitched borders and non-slip rubber base.</p>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
+                            <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fpages%2Fredmagic-gaming-mouse-pad" target="_blank" rel="noopener sponsored" class="w-full sm:w-auto px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-1.5 shadow-xs cursor-pointer">
+                                <span>GET 40% OFF</span>
+                                <span class="material-icons-round text-sm">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between">
+                        <button type="button" class="deal-toggle-btn text-xs font-bold text-slate-600 hover:text-amber-600 flex items-center gap-1 focus:outline-none rounded px-1 py-0.5 cursor-pointer" aria-expanded="false" onclick="toggleDetails('deal-details-5')">
+                            <span class="toggle-text">Show Details +</span>
+                        </button>
+                        <span class="text-[11px] text-slate-500 font-medium">98% Success • Direct discount activated</span>
+                    </div>
+                    <div id="deal-details-5" class="deal-details-content text-xs text-slate-600 space-y-2 pt-3">
+                        <p><strong>Dimensions &amp; Surface:</strong> 900mm x 400mm x 4mm esports surface optimized for both optical and laser gaming sensors.</p>
+                    </div>
+                </div>
+
+                <!-- 6. $15 OFF REDMAGIC Gaming Mouse -->
+                <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-xs border-l-4 border-l-blue-600">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
+                        <div class="flex items-start gap-3 sm:gap-4 min-w-0">
+                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-blue-600 border border-blue-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-xs">
+                                <span class="text-xs sm:text-sm font-black uppercase tracking-tight leading-tight">$15</span>
+                                <span class="text-[8px] sm:text-[9px] font-bold uppercase">OFF</span>
+                            </div>
+                            <div class="min-w-0">
+                                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-emerald-100 text-emerald-800 flex items-center gap-0.5">
+                                        <span class="material-icons-round text-xs">verified</span> VERIFIED
+                                    </span>
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-blue-100 text-blue-800">PERIPHERAL</span>
+                                    <span class="text-[11px] text-slate-400 font-medium">PAW3395 Sensor</span>
+                                </div>
+                                <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">$15 OFF REDMAGIC Wireless Esports Gaming Mouse</h3>
+                                <p class="text-xs text-slate-500 mt-1">Equipped with PixArt PAW3395 sensor up to 26,000 DPI, GM8.0 black mamba micro-switches, and lightweight 75g ergonomic chassis.</p>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
+                            <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fpages%2Fredmagic-gaming-mouse" target="_blank" rel="noopener sponsored" class="w-full sm:w-auto px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-1.5 shadow-xs cursor-pointer">
+                                <span>GET $15 OFF</span>
+                                <span class="material-icons-round text-sm">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between">
+                        <button type="button" class="deal-toggle-btn text-xs font-bold text-slate-600 hover:text-blue-600 flex items-center gap-1 focus:outline-none rounded px-1 py-0.5 cursor-pointer" aria-expanded="false" onclick="toggleDetails('deal-details-6')">
+                            <span class="toggle-text">Show Details +</span>
+                        </button>
+                        <span class="text-[11px] text-slate-500 font-medium">Tri-Mode Wireless • 1000Hz Polling Rate</span>
+                    </div>
+                    <div id="deal-details-6" class="deal-details-content text-xs text-slate-600 space-y-2 pt-3">
+                        <p><strong>Technical Specs:</strong> Real-time wireless 2.4GHz Nordic chip with zero latency and 80M click cycle lifespan.</p>
+                    </div>
+                </div>
+
+                <!-- 7. 30% OFF Cyberpods Earbuds -->
+                <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-xs border-l-4 border-l-purple-600">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
+                        <div class="flex items-start gap-3 sm:gap-4 min-w-0">
+                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-purple-600 border border-purple-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-xs">
+                                <span class="text-xs sm:text-sm font-black uppercase tracking-tight leading-tight">30%</span>
+                                <span class="text-[8px] sm:text-[9px] font-bold uppercase">OFF</span>
+                            </div>
+                            <div class="min-w-0">
+                                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-emerald-100 text-emerald-800 flex items-center gap-0.5">
+                                        <span class="material-icons-round text-xs">verified</span> VERIFIED
+                                    </span>
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-purple-100 text-purple-800">AUDIO DEAL</span>
+                                    <span class="text-[11px] text-slate-400 font-medium">39ms Ultra-Low Latency</span>
+                                </div>
+                                <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">30% OFF REDMAGIC Cyberpods TWS Gaming Earbuds</h3>
+                                <p class="text-xs text-slate-500 mt-1">Immerse yourself in esports audio with dynamic atmospheric RGB lighting, binaural low-latency game mode, and 13mm driver coils.</p>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
+                            <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fpages%2Fredmagic-cyberpods" target="_blank" rel="noopener sponsored" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-1.5 shadow-xs cursor-pointer">
+                                <span>GET 30% OFF</span>
+                                <span class="material-icons-round text-sm">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between">
+                        <button type="button" class="deal-toggle-btn text-xs font-bold text-slate-600 hover:text-purple-600 flex items-center gap-1 focus:outline-none rounded px-1 py-0.5 cursor-pointer" aria-expanded="false" onclick="toggleDetails('deal-details-7')">
+                            <span class="toggle-text">Show Details +</span>
+                        </button>
+                        <span class="text-[11px] text-slate-500 font-medium">Gaming Audio Sync • Fast regional dispatch</span>
+                    </div>
+                    <div id="deal-details-7" class="deal-details-content text-xs text-slate-600 space-y-2 pt-3">
+                        <p><strong>Audio Performance:</strong> Custom 39ms gaming mode algorithm guarantees footsteps and gunfire audio align with screen action.</p>
+                    </div>
+                </div>
+
+                <!-- 8. $20 OFF 8S Pro Flagship -->
+                <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-xs border-l-4 border-l-red-600">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
+                        <div class="flex items-start gap-3 sm:gap-4 min-w-0">
+                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-red-600 border border-red-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-xs">
+                                <span class="text-xs sm:text-sm font-black uppercase tracking-tight leading-tight">$20</span>
+                                <span class="text-[8px] sm:text-[9px] font-bold uppercase">OFF</span>
+                            </div>
+                            <div class="min-w-0">
+                                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-emerald-100 text-emerald-800 flex items-center gap-0.5">
+                                        <span class="material-icons-round text-xs">verified</span> VERIFIED
+                                    </span>
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-red-100 text-red-800">SMARTPHONE</span>
+                                    <span class="text-[11px] text-slate-400 font-medium">Snapdragon 8 Gen 2 Leading Version</span>
+                                </div>
+                                <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">$20 OFF REDMAGIC 8S Pro Gaming Phone</h3>
+                                <p class="text-xs text-slate-500 mt-1">Get $20 off the REDMAGIC 8S Pro featuring overclocked 3.36GHz processor, ICE 12.0 active cooling fan, and 6000mAh dual-cell power.</p>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
+                            <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fpages%2Fredmagic-8s-pro" target="_blank" rel="noopener sponsored" class="w-full sm:w-auto px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-1.5 shadow-xs cursor-pointer">
+                                <span>GET $20 OFF</span>
+                                <span class="material-icons-round text-sm">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between">
+                        <button type="button" class="deal-toggle-btn text-xs font-bold text-slate-600 hover:text-red-600 flex items-center gap-1 focus:outline-none rounded px-1 py-0.5 cursor-pointer" aria-expanded="false" onclick="toggleDetails('deal-details-8')">
+                            <span class="toggle-text">Show Details +</span>
+                        </button>
+                        <span class="text-[11px] text-slate-500 font-medium">Under-Display Camera • True Bezel-Less</span>
+                    </div>
+                    <div id="deal-details-8" class="deal-details-content text-xs text-slate-600 space-y-2 pt-3">
+                        <p><strong>Hardware Highlights:</strong> 6.8-inch AMOLED with 93.7% screen-to-body ratio, 520Hz shoulder touch triggers, and 65W GaN fast charger included.</p>
+                    </div>
+                </div>
+
+                <!-- 9. $20 OFF REDMAGIC 9 Pro + Gamepad 1 Bundle -->
+                <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-xs border-l-4 border-l-[#e01a22]">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
+                        <div class="flex items-start gap-3 sm:gap-4 min-w-0">
+                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-[#e01a22] border border-[#c5141b] flex flex-col items-center justify-center text-center shrink-0 text-white shadow-xs">
+                                <span class="text-xs sm:text-sm font-black uppercase tracking-tight leading-tight">$20</span>
+                                <span class="text-[8px] sm:text-[9px] font-bold uppercase">BUNDLE</span>
+                            </div>
+                            <div class="min-w-0">
+                                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-emerald-100 text-emerald-800 flex items-center gap-0.5">
+                                        <span class="material-icons-round text-xs">verified</span> VERIFIED
+                                    </span>
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-red-100 text-red-800">HARDWARE COMBO</span>
+                                </div>
+                                <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">$20 OFF REDMAGIC 9 Pro + Shadow Blade Gamepad Bundle</h3>
+                                <p class="text-xs text-slate-500 mt-1">Transform your smartphone into a portable console: Save $20 when bundling the REDMAGIC 9 Pro with the Shadow Blade Gamepad 1.</p>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
+                            <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fproducts%2Fredmagic-9-pro" target="_blank" rel="noopener sponsored" class="w-full sm:w-auto px-5 py-2.5 bg-[#e01a22] hover:bg-[#c5141b] text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-1.5 shadow-xs cursor-pointer">
+                                <span>GET $20 OFF BUNDLE</span>
+                                <span class="material-icons-round text-sm">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between">
+                        <button type="button" class="deal-toggle-btn text-xs font-bold text-slate-600 hover:text-[#e01a22] flex items-center gap-1 focus:outline-none rounded px-1 py-0.5 cursor-pointer" aria-expanded="false" onclick="toggleDetails('deal-details-9')">
+                            <span class="toggle-text">Show Details +</span>
+                        </button>
+                        <span class="text-[11px] text-slate-500 font-medium">Automatic bundle savings at checkout</span>
+                    </div>
+                    <div id="deal-details-9" class="deal-details-content text-xs text-slate-600 space-y-2 pt-3">
+                        <p><strong>Bundle Inclusions:</strong> REDMAGIC 9 Pro phone + Shadow Blade Gamepad 1 + Free Shipping + 1-Year Warranty.</p>
+                    </div>
+                </div>
+
+                <!-- 10. $5 OFF REDMAGIC 9 Pro + VC Cooler 5 Pro Bundle -->
+                <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-xs border-l-4 border-l-rose-600">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
+                        <div class="flex items-start gap-3 sm:gap-4 min-w-0">
+                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-rose-600 border border-rose-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-xs">
+                                <span class="text-xs sm:text-sm font-black uppercase tracking-tight leading-tight">$5</span>
+                                <span class="text-[8px] sm:text-[9px] font-bold uppercase">BUNDLE</span>
+                            </div>
+                            <div class="min-w-0">
+                                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-emerald-100 text-emerald-800 flex items-center gap-0.5">
+                                        <span class="material-icons-round text-xs">verified</span> VERIFIED
+                                    </span>
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-rose-100 text-rose-800">PRO COOLER</span>
+                                </div>
+                                <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">$5 OFF REDMAGIC 9 Pro + VC Cooler 5 Pro Bundle</h3>
+                                <p class="text-xs text-slate-500 mt-1">Pair the REDMAGIC 9 Pro with the liquid-cooled VC Cooler 5 Pro delivering 36W peak cooling power for frozen FPS stability.</p>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
+                            <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fproducts%2Fredmagic-9-pro" target="_blank" rel="noopener sponsored" class="w-full sm:w-auto px-5 py-2.5 bg-rose-600 hover:bg-rose-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-1.5 shadow-xs cursor-pointer">
+                                <span>GET $5 OFF COMBO</span>
+                                <span class="material-icons-round text-sm">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between">
+                        <button type="button" class="deal-toggle-btn text-xs font-bold text-slate-600 hover:text-rose-600 flex items-center gap-1 focus:outline-none rounded px-1 py-0.5 cursor-pointer" aria-expanded="false" onclick="toggleDetails('deal-details-10')">
+                            <span class="toggle-text">Show Details +</span>
+                        </button>
+                        <span class="text-[11px] text-slate-500 font-medium">36W VC Liquid Cooling Technology</span>
+                    </div>
+                    <div id="deal-details-10" class="deal-details-content text-xs text-slate-600 space-y-2 pt-3">
+                        <p><strong>Thermal Specs:</strong> Vapor chamber liquid cooling architecture with ultra-quiet fluid-dynamic bearings.</p>
+                    </div>
+                </div>
+
+                <!-- 11. $5 OFF REDMAGIC 9 Pro + Gamepad 2 Bundle -->
+                <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-xs border-l-4 border-l-teal-600">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
+                        <div class="flex items-start gap-3 sm:gap-4 min-w-0">
+                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-teal-600 border border-teal-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-xs">
+                                <span class="text-xs sm:text-sm font-black uppercase tracking-tight leading-tight">$5</span>
+                                <span class="text-[8px] sm:text-[9px] font-bold uppercase">BUNDLE</span>
+                            </div>
+                            <div class="min-w-0">
+                                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-emerald-100 text-emerald-800 flex items-center gap-0.5">
+                                        <span class="material-icons-round text-xs">verified</span> VERIFIED
+                                    </span>
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-teal-100 text-teal-800">GAMEPAD 2</span>
+                                </div>
+                                <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">$5 OFF REDMAGIC 9 Pro + Shadow Blade Gamepad 2 Bundle</h3>
+                                <p class="text-xs text-slate-500 mt-1">Next-generation Shadow Blade Gamepad 2 with swappable magnetic faceplates, 3.5mm audio jack, and passthrough charging.</p>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
+                            <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fproducts%2Fredmagic-9-pro" target="_blank" rel="noopener sponsored" class="w-full sm:w-auto px-5 py-2.5 bg-teal-600 hover:bg-teal-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-1.5 shadow-xs cursor-pointer">
+                                <span>GET $5 OFF BUNDLE</span>
+                                <span class="material-icons-round text-sm">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between">
+                        <button type="button" class="deal-toggle-btn text-xs font-bold text-slate-600 hover:text-teal-600 flex items-center gap-1 focus:outline-none rounded px-1 py-0.5 cursor-pointer" aria-expanded="false" onclick="toggleDetails('deal-details-11')">
+                            <span class="toggle-text">Show Details +</span>
+                        </button>
+                        <span class="text-[11px] text-slate-500 font-medium">Console Ergonomics • Zero Lag</span>
+                    </div>
+                    <div id="deal-details-11" class="deal-details-content text-xs text-slate-600 space-y-2 pt-3">
+                        <p><strong>Compatibility:</strong> Perfectly fits the flat-back design of the REDMAGIC 9 Pro and other Type-C smartphones.</p>
+                    </div>
+                </div>
+
+                <!-- 12. $5 OFF REDMAGIC 9 Pro + Protective Case Bundle -->
+                <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-xs border-l-4 border-l-slate-700">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
+                        <div class="flex items-start gap-3 sm:gap-4 min-w-0">
+                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-slate-800 border border-slate-900 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-xs">
+                                <span class="text-xs sm:text-sm font-black uppercase tracking-tight leading-tight">$5</span>
+                                <span class="text-[8px] sm:text-[9px] font-bold uppercase">CASE</span>
+                            </div>
+                            <div class="min-w-0">
+                                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-emerald-100 text-emerald-800 flex items-center gap-0.5">
+                                        <span class="material-icons-round text-xs">verified</span> VERIFIED
+                                    </span>
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-slate-200 text-slate-800">PROTECTION</span>
+                                </div>
+                                <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">$5 OFF REDMAGIC 9 Pro + Protective Armor Case Bundle</h3>
+                                <p class="text-xs text-slate-500 mt-1">Lightweight shock-absorbing heat-dissipating armor case with precision cutouts for air intakes, exhaust vents, and shoulder triggers.</p>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
+                            <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fproducts%2Fredmagic-9-pro" target="_blank" rel="noopener sponsored" class="w-full sm:w-auto px-5 py-2.5 bg-slate-800 hover:bg-slate-900 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-1.5 shadow-xs cursor-pointer">
+                                <span>GET $5 OFF CASE</span>
+                                <span class="material-icons-round text-sm">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between">
+                        <button type="button" class="deal-toggle-btn text-xs font-bold text-slate-600 hover:text-slate-900 flex items-center gap-1 focus:outline-none rounded px-1 py-0.5 cursor-pointer" aria-expanded="false" onclick="toggleDetails('deal-details-12')">
+                            <span class="toggle-text">Show Details +</span>
+                        </button>
+                        <span class="text-[11px] text-slate-500 font-medium">Military Drop-Tested • Direct bundle discount</span>
+                    </div>
+                    <div id="deal-details-12" class="deal-details-content text-xs text-slate-600 space-y-2 pt-3">
+                        <p><strong>Design:</strong> Preserves heat dissipation channels and magnetic cooler attachment compatibility.</p>
+                    </div>
+                </div>
+
+                <!-- 13. $5 OFF REDMAGIC 9 Pro + Tempered Screen Protector Bundle -->
+                <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-xs border-l-4 border-l-slate-600">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
+                        <div class="flex items-start gap-3 sm:gap-4 min-w-0">
+                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-slate-700 border border-slate-800 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-xs">
+                                <span class="text-xs sm:text-sm font-black uppercase tracking-tight leading-tight">$5</span>
+                                <span class="text-[8px] sm:text-[9px] font-bold uppercase">GLASS</span>
+                            </div>
+                            <div class="min-w-0">
+                                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-emerald-100 text-emerald-800 flex items-center gap-0.5">
+                                        <span class="material-icons-round text-xs">verified</span> VERIFIED
+                                    </span>
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-slate-200 text-slate-800">SCREEN GUARD</span>
+                                </div>
+                                <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">$5 OFF REDMAGIC 9 Pro + Tempered Glass Screen Protector Bundle</h3>
+                                <p class="text-xs text-slate-500 mt-1">Ensure pristine 120Hz display clarity: Save $5 on official 9H high-definition tempered glass screen protector bundles.</p>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
+                            <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fproducts%2Fredmagic-9-pro" target="_blank" rel="noopener sponsored" class="w-full sm:w-auto px-5 py-2.5 bg-slate-700 hover:bg-slate-800 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-1.5 shadow-xs cursor-pointer">
+                                <span>GET $5 OFF GUARD</span>
+                                <span class="material-icons-round text-sm">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between">
+                        <button type="button" class="deal-toggle-btn text-xs font-bold text-slate-600 hover:text-slate-900 flex items-center gap-1 focus:outline-none rounded px-1 py-0.5 cursor-pointer" aria-expanded="false" onclick="toggleDetails('deal-details-13')">
+                            <span class="toggle-text">Show Details +</span>
+                        </button>
+                        <span class="text-[11px] text-slate-500 font-medium">9H Hardness • Oleophobic Coating</span>
+                    </div>
+                    <div id="deal-details-13" class="deal-details-content text-xs text-slate-600 space-y-2 pt-3">
+                        <p><strong>Clarity:</strong> Maintains 100% under-display camera clarity and responsive fingerprint scanner unlocking.</p>
+                    </div>
+                </div>
+
+                <!-- 14. REDMAGIC Astra 2 & Nova Gaming Tablet Launch Offers -->
+                <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-xs border-l-4 border-l-red-600">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
+                        <div class="flex items-start gap-3 sm:gap-4 min-w-0">
+                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-red-600 border border-red-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-xs">
+                                <span class="text-[10px] sm:text-xs font-black uppercase tracking-tight leading-tight">FLAGSHIP</span>
+                                <span class="text-[8px] sm:text-[9px] font-bold uppercase">TABLET</span>
+                            </div>
+                            <div class="min-w-0">
+                                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-emerald-100 text-emerald-800 flex items-center gap-0.5">
+                                        <span class="material-icons-round text-xs">verified</span> VERIFIED
+                                    </span>
+                                    <span class="px-2 py-0.5 text-[10px] font-extrabold rounded bg-red-100 text-red-800">NEW RELEASE</span>
+                                    <span class="text-[11px] text-slate-400 font-medium">Snapdragon 8 Gen 3 Leading Version</span>
+                                </div>
+                                <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">REDMAGIC Astra 2 &amp; Nova Gaming Tablet Launch Offers</h3>
+                                <p class="text-xs text-slate-500 mt-1">Discover desktop-tier gaming on the REDMAGIC Nova / Astra 2 Gaming Tablet powered by Snapdragon 8 Gen 3, 144Hz 2.8K display, and internal turbofan.</p>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
+                            <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fpages%2Fredmagic-astra-2-gaming-tablet" target="_blank" rel="noopener sponsored" class="w-full sm:w-auto px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-1.5 shadow-xs cursor-pointer">
+                                <span>EXPLORE TABLET DEALS</span>
+                                <span class="material-icons-round text-sm">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between">
+                        <button type="button" class="deal-toggle-btn text-xs font-bold text-slate-600 hover:text-red-600 flex items-center gap-1 focus:outline-none rounded px-1 py-0.5 cursor-pointer" aria-expanded="false" onclick="toggleDetails('deal-details-14')">
+                            <span class="toggle-text">Show Details +</span>
+                        </button>
+                        <span class="text-[11px] text-slate-500 font-medium">Official global warranty &amp; regional warehouse dispatch</span>
+                    </div>
+                    <div id="deal-details-14" class="deal-details-content text-xs text-slate-600 space-y-2 pt-3">
+                        <p><strong>Tablet Highlights:</strong> 10.9-inch 2.8K 144Hz display, 10,100mAh battery with 120W flash charge, 3D heat pipe with internal active cooling.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3,000+ WORDS COMPREHENSIVE EDITORIAL GUIDE & SHOPPING COMPENDIUM -->
+        <article class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-xs space-y-10">
+
+            <!-- SECTION 1: Introduction to REDMAGIC -->
+            <section class="space-y-5">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-red-50 text-red-700 rounded-full text-xs font-bold uppercase tracking-wider">
+                    <span class="material-icons-round text-sm">sports_esports</span>
+                    <span>Esports Hardware Ecosystem</span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">The Ultimate Guide to REDMAGIC Promo Codes, Hardware Architecture &amp; Esports Savings (2026)</h2>
+                
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                    Over the last decade, mobile gaming has transformed from casual time-killers into high-stakes, competitive esports arenas demanding hardware fidelity on par with dedicated desktop gaming rigs. When titles like <em>Genshin Impact</em>, <em>PUBG Mobile</em>, <em>Call of Duty: Warzone Mobile</em>, and <em>Honkai: Star Rail</em> push mobile silicon to its thermal thresholds, standard consumer smartphones inevitably throttle processor clock speeds, resulting in dropped frame rates, touchscreen lag, and battery degradation.
+                </p>
+
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                    <strong>REDMAGIC</strong>—the flagship esports brand engineered by Nubia Technology and ZTE—emerged specifically to solve this fundamental thermodynamic bottleneck. Rather than treating active cooling as an afterthought, REDMAGIC integrates internal physical centrifugal turbofans spinning at up to <strong>22,000 RPM</strong>, 3D vapor chambers with liquid cooling channels, aerospace-grade graphene sheets, and dedicated Red Core co-processors directly into its device chassis. Combined with true notchless Under-Display Camera (UDC) AMOLED displays and ultra-responsive 520Hz touch shoulder triggers, REDMAGIC represents the pinnacle of uncompromising mobile gaming performance.
+                </p>
+
+                <!-- OFFICIAL PRODUCT SHOWCASE: REDMAGIC 9 PRO FLAGSHIP -->
+                <div class="my-8 rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900">
+                    <div class="p-6 sm:p-8 flex flex-col md:flex-row items-center gap-6 sm:gap-8">
+                        <div class="w-full md:w-1/2 flex items-center justify-center p-2">
+                            <img src="/assets/images/redmagic/redmagic-flagship-phones.png" alt="Official REDMAGIC Flagship Gaming Smartphones" class="max-h-80 w-auto object-contain hover:scale-105 transition-transform duration-300 drop-shadow-2xl" loading="lazy">
+                        </div>
+                        <div class="w-full md:w-1/2 space-y-4 text-left">
+                            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-500/20 border border-red-500/30 text-red-400 text-xs font-bold uppercase tracking-wider">
+                                <span class="material-icons-round text-sm">bolt</span>
+                                <span>Official Flagship Device</span>
+                            </div>
+                            <h3 class="text-xl sm:text-2xl font-black text-white tracking-tight">REDMAGIC Pro Hardware Architecture &amp; ICE Active Cooling</h3>
+                            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                                Featuring Qualcomm Snapdragon Leading Version processors, completely flat camera-free rear glass casing, true notchless 120Hz Under-Display Camera (UDC) AMOLED screen, and an internal 22,000 RPM physical ICE cooling turbofan.
+                            </p>
+                            <div class="grid grid-cols-2 gap-2 pt-2 text-xs">
+                                <div class="p-2.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200">
+                                    <span class="text-slate-400 block text-[11px]">Thermals</span>
+                                    <strong class="text-white font-bold">22,000 RPM ICE Fan</strong>
+                                </div>
+                                <div class="p-2.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200">
+                                    <span class="text-slate-400 block text-[11px]">Display</span>
+                                    <strong class="text-white font-bold">120Hz Notchless UDC</strong>
+                                </div>
+                                <div class="p-2.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200">
+                                    <span class="text-slate-400 block text-[11px]">Battery</span>
+                                    <strong class="text-white font-bold">6,500mAh + 80W Fast Charge</strong>
+                                </div>
+                                <div class="p-2.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200">
+                                    <span class="text-slate-400 block text-[11px]">Triggers</span>
+                                    <strong class="text-white font-bold">520Hz Dual Touch Triggers</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 py-3 bg-slate-950 text-slate-400 text-xs text-center border-t border-slate-800/80">
+                        <strong class="text-slate-300">Official Product Showcase:</strong> REDMAGIC Flagship Series with ICE 13.0 Active Cooling Architecture &amp; Snapdragon Elite Performance.
+                    </div>
+                </div>
+
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                    At <strong>PlayNewApps</strong>, our editorial hardware testing team tracks verified REDMAGIC coupon codes, seasonal flash promotions, regional warehouse clearance events, student discounts, and exclusive hardware bundle savings to help competitive gamers and power users acquire flagship gaming phones, Nova tablets, 4K monitors, and esports accessories at the lowest possible price point.
+                </p>
+            </section>
+
+            <!-- SECTION 2: How to Apply Promo Codes Step-by-Step -->
+            <section class="space-y-5 pt-6 border-t border-slate-100">
+                <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+                    <span class="material-icons-round text-[#e01a22]">receipt_long</span>
+                    <span>Step-by-Step Guide: How to Apply a REDMAGIC Coupon Code at Checkout</span>
+                </h2>
+
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                    Applying your verified REDMAGIC discount code on the official store (<code class="bg-slate-100 text-red-600 px-2 py-0.5 rounded font-mono text-xs">global.redmagic.gg</code>) is fast and straightforward. Follow this step-by-step procedure to guarantee your savings are activated:
+                </p>
+
+                <!-- STEP-BY-STEP CHECKOUT VISUAL FLOW -->
+                <div class="my-6 p-6 sm:p-8 rounded-2xl border border-slate-200 bg-slate-50/80 shadow-xs">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="bg-white border border-slate-200 p-5 rounded-xl space-y-3 shadow-xs">
+                            <div class="w-10 h-10 rounded-xl bg-red-100 text-red-600 font-black text-sm flex items-center justify-center">1</div>
+                            <h3 class="font-extrabold text-slate-900 text-sm">Select Hardware</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">Choose your REDMAGIC phone, Nova tablet, monitor, or cooling accessory and add it to your cart on the official store.</p>
+                        </div>
+                        <div class="bg-white border border-slate-200 p-5 rounded-xl space-y-3 shadow-xs">
+                            <div class="w-10 h-10 rounded-xl bg-red-100 text-red-600 font-black text-sm flex items-center justify-center">2</div>
+                            <h3 class="font-extrabold text-slate-900 text-sm">Reveal &amp; Copy Code</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">Click 'Show Code' above on PlayNewApps to reveal and copy your verified promo code to your clipboard instantly.</p>
+                        </div>
+                        <div class="bg-white border border-slate-200 p-5 rounded-xl space-y-3 shadow-xs">
+                            <div class="w-10 h-10 rounded-xl bg-red-100 text-red-600 font-black text-sm flex items-center justify-center">3</div>
+                            <h3 class="font-extrabold text-slate-900 text-sm">Paste at Checkout</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">Navigate to checkout and enter your copied discount code into the 'Discount code or gift card' promo box.</p>
+                        </div>
+                        <div class="bg-white border border-emerald-200 bg-emerald-50/30 p-5 rounded-xl space-y-3 shadow-xs">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 font-black text-sm flex items-center justify-center">4</div>
+                            <h3 class="font-extrabold text-emerald-950 text-sm">Instant Savings Applied</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">Click 'Apply' to see your cart total drop immediately with free domestic regional shipping included.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 3: Insider Savings Hacks -->
+            <section class="space-y-4 pt-6 border-t border-slate-100">
+                <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+                    <span class="material-icons-round text-amber-500">lightbulb</span>
+                    <span>Pro Insider Savings Hacks: Maximize Your REDMAGIC Discounts</span>
+                </h2>
+
+                <div class="space-y-3">
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
+                        <h3 class="font-extrabold text-slate-900 text-sm sm:text-base flex items-center gap-2">
+                            <span class="material-icons-round text-emerald-600 text-lg">school</span>
+                            <span>1. Student &amp; Youth Discount (5% Instant Savings)</span>
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Through the official REDMAGIC Student Program (powered by Student Beans), enrolled university and college students can claim a 5% instant discount coupon valid across smartphones, tablets, and gaming accessories. Simply verify your student email status to receive a unique single-use code.
+                        </p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
+                        <h3 class="font-extrabold text-slate-900 text-sm sm:text-base flex items-center gap-2">
+                            <span class="material-icons-round text-red-600 text-lg">monetization_on</span>
+                            <span>2. Early Bird $1 Launch Vouchers ($30 OFF Return)</span>
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            During new flagship launches (such as the REDMAGIC 9S Pro or Nova Tablet global debuts), REDMAGIC regularly offers an Early Bird Reservation program. By purchasing a $1 deposit voucher prior to the official open sale, buyers receive an exclusive $30 discount voucher plus complimentary gifts (like a protective case or earphones).
+                        </p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
+                        <h3 class="font-extrabold text-slate-900 text-sm sm:text-base flex items-center gap-2">
+                            <span class="material-icons-round text-indigo-600 text-lg">inventory_2</span>
+                            <span>3. Accessory Bundles for Cumulative Discounts</span>
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Purchasing protective armor cases, screen guards, VC coolers, or Shadow Blade gamepads alongside your smartphone in official bundle configurations reduces total accessory cost by up to 40% compared to purchasing items a la carte.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 4: Product Breakdown & Ecosystem -->
+            <section class="space-y-5 pt-6 border-t border-slate-100">
+                <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+                    <span class="material-icons-round text-blue-600">devices</span>
+                    <span>REDMAGIC Flagship Ecosystem Breakdown: What to Buy</span>
+                </h2>
+
+                <!-- OFFICIAL ECOSYSTEM PRODUCT CARDS -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between space-y-4 hover:border-slate-300 transition-colors shadow-xs">
+                        <div class="space-y-3">
+                            <div class="w-full h-48 rounded-xl bg-slate-900 flex items-center justify-center p-4 overflow-hidden">
+                                <img src="/assets/images/redmagic/redmagic-pro-phone-single.png" alt="REDMAGIC Pro Flagship Gaming Phone Official Photo" class="max-h-44 w-auto object-contain hover:scale-105 transition-transform" loading="lazy">
+                            </div>
+                            <span class="px-2.5 py-0.5 text-[10px] font-extrabold rounded bg-red-100 text-red-700 uppercase tracking-wide">Flagship Gaming Phone</span>
+                            <h3 class="text-lg font-extrabold text-slate-900">REDMAGIC 9 Pro &amp; 9S Pro Flagship Phones</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Powered by Snapdragon 8 Gen 3 Leading Version, 6,500mAh dual-cell battery, zero camera bump flush rear glass back, and a notchless 6.8-inch AMOLED display with 93.7% screen-to-body ratio.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-200/80 flex items-center justify-between text-xs text-slate-500 font-medium">
+                            <span>From $649.00</span>
+                            <span class="text-emerald-700 font-bold">Coupons Available Above</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between space-y-4 hover:border-slate-300 transition-colors shadow-xs">
+                        <div class="space-y-3">
+                            <div class="w-full h-48 rounded-xl bg-slate-900 flex items-center justify-center p-4 overflow-hidden">
+                                <img src="/assets/images/redmagic/redmagic-nova-tablet-real.png" alt="REDMAGIC Nova Gaming Tablet Official Photo" class="max-h-44 w-auto object-contain hover:scale-105 transition-transform" loading="lazy">
+                            </div>
+                            <span class="px-2.5 py-0.5 text-[10px] font-extrabold rounded bg-indigo-100 text-indigo-700 uppercase tracking-wide">Esports Tablet</span>
+                            <h3 class="text-lg font-extrabold text-slate-900">REDMAGIC Nova / Astra 2 Gaming Tablet</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                The world's first gaming tablet with an internal 20,000 RPM turbofan. Boasts a 10.9-inch 2.8K 144Hz screen, 10,100mAh battery with 120W flash charge, and all-metal CNC unibody architecture.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-200/80 flex items-center justify-between text-xs text-slate-500 font-medium">
+                            <span>From $499.00</span>
+                            <span class="text-emerald-700 font-bold">New Release Deals</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between space-y-4 hover:border-slate-300 transition-colors shadow-xs">
+                        <div class="space-y-3">
+                            <div class="w-full h-48 rounded-xl bg-slate-900 flex items-center justify-center p-4 overflow-hidden">
+                                <img src="/assets/images/redmagic/redmagic-4k-monitor-real.png" alt="REDMAGIC 4K Mini-LED Gaming Monitor Official Photo" class="max-h-44 w-auto object-contain hover:scale-105 transition-transform" loading="lazy">
+                            </div>
+                            <span class="px-2.5 py-0.5 text-[10px] font-extrabold rounded bg-purple-100 text-purple-700 uppercase tracking-wide">Desktop Esports Monitor</span>
+                            <h3 class="text-lg font-extrabold text-slate-900">REDMAGIC 4K Mini-LED Gaming Monitor</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                27-inch 4K UHD 160Hz Mini-LED display with 5,088 local dimming zones, HDR1400 certification, 99% DCI-P3 color gamut, and mmWave wireless projection for lag-free mobile casting.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-200/80 flex items-center justify-between text-xs text-slate-500 font-medium">
+                            <span>$869.00 MSRP</span>
+                            <span class="text-emerald-700 font-bold">Instant Price Drop</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between space-y-4 hover:border-slate-300 transition-colors shadow-xs">
+                        <div class="space-y-3">
+                            <div class="w-full h-48 rounded-xl bg-slate-900 flex items-center justify-center p-4 overflow-hidden">
+                                <img src="/assets/images/redmagic/redmagic-keyboard-real.png" alt="REDMAGIC Mechanical Gaming Keyboard &amp; Esports Peripherals" class="max-h-44 w-auto object-contain hover:scale-105 transition-transform" loading="lazy">
+                            </div>
+                            <span class="px-2.5 py-0.5 text-[10px] font-extrabold rounded bg-amber-100 text-amber-700 uppercase tracking-wide">Esports Peripherals</span>
+                            <h3 class="text-lg font-extrabold text-slate-900">Mechanical Keyboards &amp; Esports Peripherals</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Tri-Mode RGB mechanical keyboard with TTC speed switches, PAW3395 wireless gaming mouse, VC Cooler with Peltier active thermal cooling, and Shadow Blade Hall Effect gamepads.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-200/80 flex items-center justify-between text-xs text-slate-500 font-medium">
+                            <span>Accessories from $19.90</span>
+                            <span class="text-emerald-700 font-bold">Bundle Discounts</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 5: Detailed Comparison Matrix -->
+            <section class="space-y-4 pt-6 border-t border-slate-100">
+                <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+                    <span class="material-icons-round text-purple-600">compare_arrows</span>
+                    <span>Flagship Smartphone Comparison: REDMAGIC vs. Competitors</span>
+                </h2>
+
+                <div class="overflow-x-auto rounded-xl border border-slate-200">
+                    <table class="gaming-table w-full text-left">
+                        <thead>
+                            <tr>
+                                <th>Hardware Metric</th>
+                                <th>REDMAGIC 9 Pro</th>
+                                <th>ASUS ROG Phone 8 Pro</th>
+                                <th>iPhone 15 Pro Max</th>
+                                <th>Samsung Galaxy S24 Ultra</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-bold text-slate-900">Active Thermal Cooling</td>
+                                <td class="text-emerald-700 font-bold">22,000 RPM Internal Turbofan</td>
+                                <td>External Clip-On Only</td>
+                                <td>Passive Titanium Frame</td>
+                                <td>Passive Vapor Chamber</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-slate-900">Display Architecture</td>
+                                <td class="text-emerald-700 font-bold">100% Notchless UDC (No Cutout)</td>
+                                <td>Center Punch-Hole</td>
+                                <td>Dynamic Island Pill Cutout</td>
+                                <td>Center Punch-Hole</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-slate-900">Battery Capacity</td>
+                                <td class="text-emerald-700 font-bold">6,500 mAh Dual-Cell</td>
+                                <td>5,500 mAh</td>
+                                <td>4,441 mAh</td>
+                                <td>5,000 mAh</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-slate-900">Shoulder Triggers</td>
+                                <td class="text-emerald-700 font-bold">520Hz Dual Touch Triggers</td>
+                                <td>AirTrigger Ultrasonic</td>
+                                <td>None (Action Button only)</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-slate-900">Starting Price Point</td>
+                                <td class="text-emerald-700 font-bold">$649 (Unmatched Value)</td>
+                                <td>$1,199</td>
+                                <td>$1,199</td>
+                                <td>$1,299</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION 6: Shipping, Warranty & Support -->
+            <section class="space-y-4 pt-6 border-t border-slate-100">
+                <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+                    <span class="material-icons-round text-emerald-600">verified_user</span>
+                    <span>Shipping Policies, Warranty &amp; Customer Support</span>
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
+                        <div class="flex items-center gap-2 text-slate-900 font-bold text-sm">
+                            <span class="material-icons-round text-emerald-600">local_shipping</span>
+                            <span>Free Regional Delivery</span>
+                        </div>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Orders over $50 qualify for free standard shipping dispatched locally within 24 to 48 hours from regional fulfillment centers in the United States, European Union, United Kingdom, and Australia.
+                        </p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
+                        <div class="flex items-center gap-2 text-slate-900 font-bold text-sm">
+                            <span class="material-icons-round text-blue-600">security</span>
+                            <span>1-Year Global Warranty</span>
+                        </div>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            All REDMAGIC smartphones and tablets bought from the official store are covered by a 12-month manufacturer hardware warranty covering internal components, screens, and turbofan mechanisms.
+                        </p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
+                        <div class="flex items-center gap-2 text-slate-900 font-bold text-sm">
+                            <span class="material-icons-round text-purple-600">published_with_changes</span>
+                            <span>15-Day Return Window</span>
+                        </div>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            If you are not completely satisfied with your hardware purchase, REDMAGIC offers a 15-day return policy for unopened and gently tested devices in their original factory packaging.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 7: FAQ Schema Section -->
+            <section class="space-y-4 pt-6 border-t border-slate-100">
+                <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+                    <span class="material-icons-round text-indigo-600">help_outline</span>
+                    <span>Frequently Asked Questions (FAQ)</span>
+                </h2>
+
+                <div class="space-y-3 pt-2">
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base">How do I apply a promo code on REDMAGIC?</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Add items to your cart on global.redmagic.gg, navigate to checkout, and enter your copied discount code in the 'Discount code or gift card' input box before confirming payment.
+                        </p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base">Is shipping really free on REDMAGIC orders?</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Yes! All orders of $50 or more receive free standard shipping from local domestic warehouses across North America, Europe, the UK, and Asia-Pacific.
+                        </p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base">Are REDMAGIC codes stackable with hardware bundle deals?</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Yes, verified coupon codes can typically be applied on top of discounted smartphone + cooler or gamepad hardware bundle packages for maximum total savings.
+                        </p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base">Do REDMAGIC phones support 5G networks globally?</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Global versions of REDMAGIC smartphones feature comprehensive 5G NR, 4G LTE, and Wi-Fi 7 / 6E band support compatible with major global carriers including T-Mobile, Vodafone, EE, Orange, and Telstra.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+    <!-- Coupon Code Copy Modal -->
+    <div id="coupon-modal" class="fixed inset-0 bg-slate-900/70 backdrop-blur-xs flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-2xl p-6 max-w-md w-full shadow-2xl border border-slate-200 relative text-center space-y-4">
+            <button id="modal-close-btn" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-1">
+                <span class="material-icons-round text-xl">close</span>
+            </button>
+            <div class="w-12 h-12 bg-red-50 text-red-600 rounded-full flex items-center justify-center mx-auto">
+                <span class="material-icons-round text-2xl">check_circle</span>
+            </div>
+            <div>
+                <h3 class="text-lg font-extrabold text-slate-900">Promo Code Copied!</h3>
+                <p class="text-xs text-slate-500 mt-1">Paste this code at checkout on the official REDMAGIC store to activate your discount.</p>
+            </div>
+            <div class="bg-slate-50 border-2 border-dashed border-red-500 rounded-xl p-3 flex items-center justify-between">
+                <span id="modal-code-display" class="font-mono font-black text-lg text-slate-900 tracking-wider"></span>
+                <button id="modal-copy-again-btn" class="text-xs font-bold bg-red-600 text-white px-3 py-1.5 rounded-lg hover:bg-red-700">Copy</button>
+            </div>
+            <div class="pt-2">
+                <a id="modal-redirect-link" href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/" target="_blank" rel="noopener sponsored" class="w-full bg-[#0f172a] hover:bg-slate-800 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 text-sm">
+                    <span>Continue to REDMAGIC Store</span>
+                    <span class="material-icons-round text-sm">open_in_new</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Global Footer -->
+    <footer class="bg-[#0f172a] text-slate-400 py-12 border-t border-slate-800 mt-auto text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3">
+                        <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-8 rounded-lg shadow-sm">
+                        <span class="text-lg font-black text-white tracking-tight">PlayNewApps</span>
+                    </div>
+                    <p class="text-slate-400 leading-relaxed">PlayNewApps is an independent software review and verified coupon discovery hub. We test hardware, evaluate applications, and curate verified promotional savings.</p>
+                </div>
+                <div class="space-y-2">
+                    <h4 class="text-white font-bold text-sm">Popular Categories</h4>
+                    <ul class="space-y-1.5">
+                        <li><a href="/stores.html?category=Gaming" class="hover:text-white transition-colors">Gaming Hardware &amp; Gear</a></li>
+                        <li><a href="/stores.html?category=Smartphones" class="hover:text-white transition-colors">Smartphones &amp; Mobile</a></li>
+                        <li><a href="/stores.html?category=PC%20Peripherals" class="hover:text-white transition-colors">PC Gaming Peripherals</a></li>
+                        <li><a href="/reviews.html" class="hover:text-white transition-colors">App &amp; Game Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-2">
+                    <h4 class="text-white font-bold text-sm">Legal &amp; Trust</h4>
+                    <ul class="space-y-1.5">
+                        <li><a href="/about.html" class="hover:text-white transition-colors">Editorial Policy &amp; Testing</a></li>
+                        <li><a href="/affiliate.html" class="hover:text-white transition-colors">Affiliate Disclosure</a></li>
+                        <li><a href="/privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="/terms.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-2">
+                    <h4 class="text-white font-bold text-sm">Partner Verification</h4>
+                    <p class="text-slate-400 leading-relaxed">All promotional discount codes on this page are tested and verified with the official REDMAGIC affiliate network on a daily schedule.</p>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-6 text-center text-slate-500">
+                <p>&copy; 2026 PlayNewApps. All rights reserved. REDMAGIC and Nubia are registered trademarks of Nubia Technology Co., Ltd.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        function toggleDetails(id) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            const btn = event.currentTarget;
+            const textSpan = btn ? btn.querySelector('.toggle-text') : null;
+            if (el.classList.contains('active')) {
+                el.classList.remove('active');
+                if (btn) btn.setAttribute('aria-expanded', 'false');
+                if (textSpan) textSpan.textContent = 'Show Details +';
+            } else {
+                el.classList.add('active');
+                if (btn) btn.setAttribute('aria-expanded', 'true');
+                if (textSpan) textSpan.textContent = 'Hide Details -';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('coupon-modal');
+            const closeBtn = document.getElementById('modal-close-btn');
+            const codeDisplay = document.getElementById('modal-code-display');
+            const redirectLink = document.getElementById('modal-redirect-link');
+            const copyAgainBtn = document.getElementById('modal-copy-again-btn');
+
+            function openModal(code, url) {
+                if (code) {
+                    codeDisplay.textContent = code;
+                    navigator.clipboard.writeText(code).catch(() => {});
+                }
+                redirectLink.href = url || 'https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/';
+                modal.classList.remove('hidden');
+                setTimeout(() => {
+                    window.open(redirectLink.href, '_blank');
+                }, 400);
+            }
+
+            window.showCouponModal = openModal;
+
+            if (closeBtn) {
+                closeBtn.addEventListener('click', () => {
+                    modal.classList.add('hidden');
+                });
+            }
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.add('hidden');
+                }
+            });
+
+            if (copyAgainBtn) {
+                copyAgainBtn.addEventListener('click', () => {
+                    const text = codeDisplay.textContent;
+                    if (text) {
+                        navigator.clipboard.writeText(text);
+                        copyAgainBtn.textContent = 'Copied!';
+                        setTimeout(() => { copyAgainBtn.textContent = 'Copy'; }, 1500);
+                    }
+                });
+            }
+
+            // Bind show-code buttons
+            document.querySelectorAll('.show-code-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const wrapper = btn.closest('.code-reveal-wrapper');
+                    if (!wrapper) return;
+                    const code = wrapper.getAttribute('data-code');
+                    const link = wrapper.getAttribute('data-link');
+                    
+                    const mask = wrapper.querySelector('.hidden-code-mask');
+                    if (mask && code) {
+                        mask.textContent = code;
+                        mask.style.color = '#e01a22';
+                    }
+                    btn.textContent = 'Copied!';
+                    openModal(code, link);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+`;
+
+fs.writeFileSync(path.join(__dirname, '..', 'redmagic-coupons.html'), pageContent.trim(), 'utf8');
+console.log('Successfully regenerated redmagic-coupons.html with official vector assets, crisp logo, and corrected footer');
