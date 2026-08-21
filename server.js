@@ -104,7 +104,15 @@ const cleanRoutes = [
   { route: '/store/forcedrop', file: 'forcedrop-coupons.html' },
   { route: '/lenovo', file: 'lenovo-coupons.html' },
   { route: '/lenovo-coupons', file: 'lenovo-coupons.html' },
-  { route: '/store/lenovo', file: 'lenovo-coupons.html' }
+  { route: '/store/lenovo', file: 'lenovo-coupons.html' },
+  { route: '/applicantally', file: 'applicantally-coupons.html' },
+  { route: '/applicantally-coupons', file: 'applicantally-coupons.html' },
+  { route: '/applicantally-review', file: 'applicantally-review.html' },
+  { route: '/store/applicantally', file: 'applicantally-coupons.html' },
+  { route: '/italki', file: 'italki-coupons.html' },
+  { route: '/italki-coupons', file: 'italki-coupons.html' },
+  { route: '/italki-review', file: 'italki-review.html' },
+  { route: '/store/italki', file: 'italki-coupons.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {
