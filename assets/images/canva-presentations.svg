@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0f172a;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <linearGradient id="presGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00C4CC"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Top App Navigation -->
+  <rect width="1280" height="64" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <g transform="translate(30, 16)">
+    <rect width="36" height="32" rx="8" fill="url(#presGrad)"/>
+    <text x="18" y="22" font-size="18" font-weight="900" fill="#ffffff" text-anchor="middle">📊</text>
+    <text x="48" y="23" font-size="20" font-weight="800" fill="#ffffff">Canva Presentations &amp; Docs-to-Decks</text>
+    <text x="440" y="23" font-size="13" fill="#94a3b8">| Interactive Live Polling, Smooth Morphs &amp; Presenter View</text>
+  </g>
+
+  <!-- Action Buttons -->
+  <g transform="translate(970, 14)">
+    <rect x="0" y="0" width="140" height="36" rx="18" fill="#334155"/>
+    <text x="70" y="23" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">👁 Presenter View</text>
+
+    <rect x="150" y="0" width="130" height="36" rx="18" fill="#4F46E5"/>
+    <text x="215" y="23" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">▶ Present Live</text>
+  </g>
+
+  <!-- Left: Slide Deck Canvas Stage (Large Interactive Slide) -->
+  <g transform="translate(40, 90)">
+    <rect width="840" height="470" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    
+    <!-- Slide Inner Content -->
+    <g transform="translate(50, 45)">
+      <!-- Slide Category -->
+      <rect width="130" height="26" rx="13" fill="#EEF2FF"/>
+      <text x="65" y="17" font-size="11" font-weight="700" fill="#4F46E5" text-anchor="middle">QUARTERLY REPORT</text>
+
+      <text x="0" y="70" font-size="32" font-weight="900" fill="#0f172a">Global Revenue &amp; User Retention</text>
+      <text x="0" y="100" font-size="15" fill="#64748b">Live data dynamically synced from Google Sheets database</text>
+
+      <!-- Live Synced Interactive Bar Chart Component -->
+      <g transform="translate(0, 130)">
+        <rect width="460" height="220" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        
+        <!-- Bars -->
+        <g transform="translate(40, 30)">
+          <!-- Bar 1 -->
+          <rect x="0" y="90" width="50" height="80" rx="4" fill="url(#chartGrad)"/>
+          <text x="25" y="80" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">$1.2M</text>
+          <text x="25" y="190" font-size="11" fill="#64748b" text-anchor="middle">Q1</text>
+
+          <!-- Bar 2 -->
+          <rect x="80" y="60" width="50" height="110" rx="4" fill="url(#chartGrad)"/>
+          <text x="105" y="50" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">$2.4M</text>
+          <text x="105" y="190" font-size="11" fill="#64748b" text-anchor="middle">Q2</text>
+
+          <!-- Bar 3 -->
+          <rect x="160" y="30" width="50" height="140" rx="4" fill="url(#chartGrad)"/>
+          <text x="185" y="20" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">$3.9M</text>
+          <text x="185" y="190" font-size="11" fill="#64748b" text-anchor="middle">Q3</text>
+
+          <!-- Bar 4 (Projected) -->
+          <rect x="240" y="0" width="50" height="170" rx="4" fill="#7C3AED"/>
+          <text x="265" y="-10" font-size="12" font-weight="800" fill="#7C3AED" text-anchor="middle">$5.8M ✨</text>
+          <text x="265" y="190" font-size="11" font-weight="700" fill="#7C3AED" text-anchor="middle">Q4 (EST)</text>
+        </g>
+      </g>
+
+      <!-- Key Insights Box (Right of Chart inside Slide) -->
+      <g transform="translate(480, 130)">
+        <rect width="250" height="220" rx="8" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+        <g transform="translate(20, 20)">
+          <text x="0" y="16" font-size="14" font-weight="800" fill="#0f172a">Executive Summary:</text>
+          <text x="0" y="45" font-size="12" fill="#334155">• +148% YoY Expansion</text>
+          <text x="0" y="70" font-size="12" fill="#334155">• 94.2% Net Retention</text>
+          <text x="0" y="95" font-size="12" fill="#334155">• 12 New Enterprise Hubs</text>
+          
+          <rect x="0" y="125" width="210" height="36" rx="6" fill="#4F46E5"/>
+          <text x="105" y="148" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Live Q&amp;A Code: #CANVA26</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right: Presenter Notes & Docs-to-Decks Panel -->
+  <g transform="translate(900, 90)">
+    <rect width="340" height="470" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <g transform="translate(20, 25)">
+      <text x="0" y="16" font-size="16" font-weight="800" fill="#ffffff">Presenter Notes (Private)</text>
+      
+      <rect x="0" y="32" width="300" height="150" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <g transform="translate(15, 52)" font-size="12" fill="#cbd5e1">
+        <text x="0" y="0" font-weight="700" fill="#38bdf8">Talking Points for Slide 4:</text>
+        <text x="0" y="24">1. Emphasize Q3 acceleration driven</text>
+        <text x="0" y="42">   by Canva Magic Studio rollout.</text>
+        <text x="0" y="66">2. Prompt audience to submit questions</text>
+        <text x="0" y="84">   using the interactive poll link.</text>
+      </g>
+
+      <!-- Docs-to-Decks AI Feature Callout -->
+      <g transform="translate(0, 200)">
+        <rect width="300" height="180" rx="8" fill="rgba(79, 70, 229, 0.15)" stroke="#6366f1" stroke-width="1"/>
+        <g transform="translate(15, 25)">
+          <text x="0" y="14" font-size="14" font-weight="800" fill="#a5b4fc">📄 Docs to Decks Engine</text>
+          <text x="0" y="40" font-size="11" fill="#cbd5e1">Write any markdown plan or document in Canva Docs and transform it into 12 formatted slides in 1 click.</text>
+          
+          <rect x="0" y="85" width="270" height="34" rx="6" fill="#4F46E5"/>
+          <text x="135" y="107" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Generate Matching Deck ✨</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom: Slide Deck Timeline (Slide Thumbnails) -->
+  <g transform="translate(40, 580)">
+    <rect width="1200" height="110" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    
+    <!-- Thumbnail 1 -->
+    <g transform="translate(20, 15)">
+      <rect width="120" height="68" rx="6" fill="#334155"/>
+      <text x="60" y="40" font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">1. Title Deck</text>
+      <text x="60" y="90" font-size="10" fill="#64748b" text-anchor="middle">Slide 1</text>
+    </g>
+
+    <!-- Thumbnail 2 -->
+    <g transform="translate(160, 15)">
+      <rect width="120" height="68" rx="6" fill="#334155"/>
+      <text x="60" y="40" font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">2. Executive Team</text>
+      <text x="60" y="90" font-size="10" fill="#64748b" text-anchor="middle">Slide 2</text>
+    </g>
+
+    <!-- Thumbnail 3 -->
+    <g transform="translate(300, 15)">
+      <rect width="120" height="68" rx="6" fill="#334155"/>
+      <text x="60" y="40" font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">3. Product Metrics</text>
+      <text x="60" y="90" font-size="10" fill="#64748b" text-anchor="middle">Slide 3</text>
+    </g>
+
+    <!-- Thumbnail 4 (Active Slide) -->
+    <g transform="translate(440, 15)">
+      <rect width="120" height="68" rx="6" fill="#4F46E5" stroke="#00C4CC" stroke-width="2"/>
+      <text x="60" y="40" font-size="11" font-weight="800" fill="#ffffff" text-anchor="middle">4. Revenue Chart</text>
+      <text x="60" y="90" font-size="10" font-weight="700" fill="#00C4CC" text-anchor="middle">Active (Slide 4)</text>
+    </g>
+
+    <!-- Thumbnail 5 -->
+    <g transform="translate(580, 15)">
+      <rect width="120" height="68" rx="6" fill="#334155"/>
+      <text x="60" y="40" font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">5. Global Growth</text>
+      <text x="60" y="90" font-size="10" fill="#64748b" text-anchor="middle">Slide 5</text>
+    </g>
+
+    <!-- Add Slide Button -->
+    <g transform="translate(720, 15)">
+      <rect width="80" height="68" rx="6" fill="#0f172a" stroke="#475569" stroke-width="1" stroke-dasharray="4,4"/>
+      <text x="40" y="42" font-size="20" fill="#94a3b8" text-anchor="middle">+</text>
+      <text x="40" y="90" font-size="10" fill="#64748b" text-anchor="middle">Add Slide</text>
+    </g>
+  </g>
+</svg>

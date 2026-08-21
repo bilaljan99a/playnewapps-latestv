@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0f172a;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00C4CC"/>
+      <stop offset="100%" stop-color="#7D2AE8"/>
+    </linearGradient>
+    <linearGradient id="cardG1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="cardG2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="cardG3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="cardG4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Top Title Header -->
+  <rect width="1280" height="80" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <g transform="translate(40, 24)">
+    <rect width="36" height="36" rx="8" fill="url(#headerGrad)"/>
+    <text x="18" y="24" font-size="18" font-weight="900" fill="#ffffff" text-anchor="middle">📑</text>
+    <text x="50" y="25" font-size="22" font-weight="800" fill="#ffffff">Canva 100M+ Asset &amp; Template Hub</text>
+    <text x="440" y="25" font-size="14" fill="#94a3b8">| Curated Commercial Graphic Architecture</text>
+  </g>
+
+  <!-- Category Selection Ribbon -->
+  <g transform="translate(40, 100)" font-size="13" font-weight="700">
+    <rect x="0" y="0" width="130" height="38" rx="19" fill="url(#headerGrad)"/>
+    <text x="65" y="24" fill="#ffffff" text-anchor="middle">🔥 All Formats</text>
+
+    <rect x="145" y="0" width="150" height="38" rx="19" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="220" y="24" fill="#cbd5e1" text-anchor="middle">📱 Social Media (9:16)</text>
+
+    <rect x="310" y="0" width="160" height="38" rx="19" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="390" y="24" fill="#cbd5e1" text-anchor="middle">📊 Pitch Decks (16:9)</text>
+
+    <rect x="485" y="0" width="150" height="38" rx="19" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="560" y="24" fill="#cbd5e1" text-anchor="middle">🎬 Video Reels &amp; TikTok</text>
+
+    <rect x="650" y="0" width="150" height="38" rx="19" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="725" y="24" fill="#cbd5e1" text-anchor="middle">📄 Print &amp; Merch Kit</text>
+
+    <rect x="815" y="0" width="140" height="38" rx="19" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="885" y="24" fill="#cbd5e1" text-anchor="middle">🌐 Web &amp; Banners</text>
+  </g>
+
+  <!-- 4 Main Template Category Showcases -->
+  <g transform="translate(40, 160)">
+    
+    <!-- Category Card 1: Social Media -->
+    <g transform="translate(0, 0)">
+      <rect width="280" height="520" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect width="280" height="180" rx="12" fill="url(#cardG1)"/>
+      <g transform="translate(20, 205)">
+        <text x="0" y="0" font-size="17" font-weight="800" fill="#ffffff">Social Media Suite</text>
+        <text x="0" y="20" font-size="12" fill="#94a3b8">Instagram Reels, TikTok, YouTube Shorts</text>
+        
+        <!-- Badges & Features -->
+        <g transform="translate(0, 45)" font-size="11" fill="#e2e8f0">
+          <rect x="0" y="0" width="100" height="24" rx="4" fill="#334155"/>
+          <text x="10" y="16" fill="#38bdf8">1080 × 1920 px</text>
+          
+          <rect x="110" y="0" width="120" height="24" rx="4" fill="#334155"/>
+          <text x="120" y="16" fill="#f472b6">Safe-Zone Guides</text>
+
+          <text x="0" y="55" font-size="12" fill="#cbd5e1">• 2,500,000+ Verified Presets</text>
+          <text x="0" y="80" font-size="12" fill="#cbd5e1">• Automatic Audio Beat-Sync</text>
+          <text x="0" y="105" font-size="12" fill="#cbd5e1">• Kinetic Subtitles Engine</text>
+          <text x="0" y="130" font-size="12" fill="#cbd5e1">• Multi-Channel Direct Publishing</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Category Card 2: Presentations -->
+    <g transform="translate(305, 0)">
+      <rect width="280" height="520" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect width="280" height="180" rx="12" fill="url(#cardG2)"/>
+      <g transform="translate(20, 205)">
+        <text x="0" y="0" font-size="17" font-weight="800" fill="#ffffff">Business Presentations</text>
+        <text x="0" y="20" font-size="12" fill="#94a3b8">Pitch Decks, Keynotes, Reports</text>
+        
+        <g transform="translate(0, 45)" font-size="11" fill="#e2e8f0">
+          <rect x="0" y="0" width="100" height="24" rx="4" fill="#334155"/>
+          <text x="10" y="16" fill="#38bdf8">1920 × 1080 px</text>
+          
+          <rect x="110" y="0" width="120" height="24" rx="4" fill="#334155"/>
+          <text x="120" y="16" fill="#4ade80">Interactive Data</text>
+
+          <text x="0" y="55" font-size="12" fill="#cbd5e1">• 850,000+ Complete Decks</text>
+          <text x="0" y="80" font-size="12" fill="#cbd5e1">• Google Sheets Live Link</text>
+          <text x="0" y="105" font-size="12" fill="#cbd5e1">• Presenter View &amp; Remote Sync</text>
+          <text x="0" y="130" font-size="12" fill="#cbd5e1">• Magic Morph Slide Transitions</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Category Card 3: Marketing & Ads -->
+    <g transform="translate(610, 0)">
+      <rect width="280" height="520" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect width="280" height="180" rx="12" fill="url(#cardG3)"/>
+      <g transform="translate(20, 205)">
+        <text x="0" y="0" font-size="17" font-weight="800" fill="#ffffff">Marketing &amp; Display Ads</text>
+        <text x="0" y="20" font-size="12" fill="#94a3b8">Google Ads, Meta Ads, Banners</text>
+        
+        <g transform="translate(0, 45)" font-size="11" fill="#e2e8f0">
+          <rect x="0" y="0" width="100" height="24" rx="4" fill="#334155"/>
+          <text x="10" y="16" fill="#38bdf8">IAB Standards</text>
+          
+          <rect x="110" y="0" width="120" height="24" rx="4" fill="#334155"/>
+          <text x="120" y="16" fill="#f59e0b">Batch Export</text>
+
+          <text x="0" y="55" font-size="12" fill="#cbd5e1">• 1,200,000+ Ad Creative Presets</text>
+          <text x="0" y="80" font-size="12" fill="#cbd5e1">• One-Click Multi-Size Resize</text>
+          <text x="0" y="105" font-size="12" fill="#cbd5e1">• High-CTR Copy Variations</text>
+          <text x="0" y="130" font-size="12" fill="#cbd5e1">• Animated HTML5 / MP4 Output</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Category Card 4: Print & Merchandise -->
+    <g transform="translate(915, 0)">
+      <rect width="280" height="520" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect width="280" height="180" rx="12" fill="url(#cardG4)"/>
+      <g transform="translate(20, 205)">
+        <text x="0" y="0" font-size="17" font-weight="800" fill="#ffffff">Print &amp; Merchandise</text>
+        <text x="0" y="20" font-size="12" fill="#94a3b8">Business Cards, Apparel, Menus</text>
+        
+        <g transform="translate(0, 45)" font-size="11" fill="#e2e8f0">
+          <rect x="0" y="0" width="100" height="24" rx="4" fill="#334155"/>
+          <text x="10" y="16" fill="#38bdf8">300 DPI CMYK</text>
+          
+          <rect x="110" y="0" width="120" height="24" rx="4" fill="#334155"/>
+          <text x="120" y="16" fill="#10b981">Bleed Marks</text>
+
+          <text x="0" y="55" font-size="12" fill="#cbd5e1">• 500,000+ Vector Print Templates</text>
+          <text x="0" y="80" font-size="12" fill="#cbd5e1">• PDF Print with Crop Marks</text>
+          <text x="0" y="105" font-size="12" fill="#cbd5e1">• Global Delivery to Your Door</text>
+          <text x="0" y="130" font-size="12" fill="#cbd5e1">• Sustainable Paper Certified</text>
+        </g>
+      </g>
+    </g>
+
+  </g>
+</svg>

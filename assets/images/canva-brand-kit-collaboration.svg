@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0b0f19;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="canvaLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00C4CC"/>
+      <stop offset="100%" stop-color="#7D2AE8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Top App Navigation -->
+  <rect width="1280" height="70" fill="#131b2e" stroke="#1e293b" stroke-width="1"/>
+  <g transform="translate(30, 18)">
+    <rect width="36" height="34" rx="8" fill="url(#brandGrad)"/>
+    <text x="18" y="24" font-size="18" font-weight="900" fill="#ffffff" text-anchor="middle">🛡️</text>
+    <text x="48" y="24" font-size="20" font-weight="800" fill="#ffffff">Canva Brand Hub™ &amp; Team Governance</text>
+    <text x="470" y="24" font-size="13" fill="#94a3b8">| Centralized Asset Management &amp; Strict Brand Locking Controls</text>
+  </g>
+
+  <g transform="translate(1030, 18)">
+    <rect width="220" height="36" rx="18" fill="url(#brandGrad)"/>
+    <text x="110" y="23" font-size="13" font-weight="800" fill="#ffffff" text-anchor="middle">👑 Enterprise Brand Kit (Active)</text>
+  </g>
+
+  <!-- 3 Major Governance Columns -->
+  <g transform="translate(40, 95)">
+    
+    <!-- Column 1: Brand Assets & Colors -->
+    <g transform="translate(0, 0)">
+      <rect width="380" height="580" rx="12" fill="#131b2e" stroke="#334155" stroke-width="1.5"/>
+      <g transform="translate(25, 25)">
+        <text x="0" y="16" font-size="17" font-weight="800" fill="#ffffff">1. Brand Identity &amp; Colors</text>
+        <text x="0" y="38" font-size="12" fill="#94a3b8">Locked vector logos and official HEX swatches</text>
+
+        <!-- Official Logos -->
+        <text x="0" y="70" font-size="13" font-weight="700" fill="#cbd5e1">Approved Brand Logos:</text>
+        <g transform="translate(0, 85)">
+          <rect x="0" y="0" width="160" height="60" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+          <rect x="15" y="15" width="130" height="30" rx="4" fill="url(#canvaLogoGrad)"/>
+          <text x="80" y="35" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">Primary Logo</text>
+
+          <rect x="170" y="0" width="160" height="60" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+          <text x="250" y="35" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">Dark Monochrome</text>
+        </g>
+
+        <!-- Color Palette -->
+        <text x="0" y="180" font-size="13" font-weight="700" fill="#cbd5e1">Official Corporate Palette (Locked):</text>
+        <g transform="translate(0, 195)">
+          <!-- Swatch 1 -->
+          <rect x="0" y="0" width="75" height="75" rx="8" fill="#00C4CC"/>
+          <text x="37" y="95" font-size="10" font-weight="700" fill="#cbd5e1" text-anchor="middle">#00C4CC</text>
+          
+          <!-- Swatch 2 -->
+          <rect x="85" y="0" width="75" height="75" rx="8" fill="#7D2AE8"/>
+          <text x="122" y="95" font-size="10" font-weight="700" fill="#cbd5e1" text-anchor="middle">#7D2AE8</text>
+
+          <!-- Swatch 3 -->
+          <rect x="170" y="0" width="75" height="75" rx="8" fill="#0F172A"/>
+          <text x="207" y="95" font-size="10" font-weight="700" fill="#cbd5e1" text-anchor="middle">#0F172A</text>
+
+          <!-- Swatch 4 -->
+          <rect x="255" y="0" width="75" height="75" rx="8" fill="#10B981"/>
+          <text x="292" y="95" font-size="10" font-weight="700" fill="#cbd5e1" text-anchor="middle">#10B981</text>
+        </g>
+
+        <!-- Typography Standards -->
+        <text x="0" y="325" font-size="13" font-weight="700" fill="#cbd5e1">Approved Brand Typography Hierarchy:</text>
+        <g transform="translate(0, 345)" font-size="12">
+          <rect width="330" height="42" rx="6" fill="#1e293b"/>
+          <text x="15" y="26" font-weight="900" fill="#ffffff">Title Font: Canva Sans ExtraBold (42pt)</text>
+          
+          <rect y="50" width="330" height="42" rx="6" fill="#1e293b"/>
+          <text x="15" y="76" font-weight="700" fill="#cbd5e1">Subtitle Font: Canva Sans SemiBold (20pt)</text>
+
+          <rect y="100" width="330" height="42" rx="6" fill="#1e293b"/>
+          <text x="15" y="126" font-weight="400" fill="#94a3b8">Body Copy: Inter Regular (15pt / 1.6 Line Height)</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Column 2: Template Controls & Locking -->
+    <g transform="translate(410, 0)">
+      <rect width="380" height="580" rx="12" fill="#131b2e" stroke="#334155" stroke-width="1.5"/>
+      <g transform="translate(25, 25)">
+        <text x="0" y="16" font-size="17" font-weight="800" fill="#ffffff">2. Brand Controls &amp; Template Locking</text>
+        <text x="0" y="38" font-size="12" fill="#94a3b8">Prevent non-designers from breaking layouts</text>
+
+        <g transform="translate(0, 60)" font-size="12">
+          <!-- Control 1 -->
+          <rect width="330" height="75" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+          <g transform="translate(15, 22)">
+            <text x="0" y="0" font-weight="800" fill="#38bdf8">🔒 Color &amp; Font Enforce Lock</text>
+            <text x="0" y="20" font-size="11" fill="#94a3b8">Team members are restricted strictly to</text>
+            <text x="0" y="36" font-size="11" fill="#94a3b8">approved Brand Kit swatches and fonts.</text>
+          </g>
+
+          <!-- Control 2 -->
+          <rect y="90" width="330" height="75" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+          <g transform="translate(15, 112)">
+            <text x="0" y="0" font-weight="800" fill="#4ade80">📐 Header &amp; Legal Footer Position Lock</text>
+            <text x="0" y="20" font-size="11" fill="#94a3b8">Disclaimers, logos, and headers cannot</text>
+            <text x="0" y="36" font-size="11" fill="#94a3b8">be moved or resized by contributors.</text>
+          </g>
+
+          <!-- Control 3 -->
+          <rect y="180" width="330" height="75" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+          <g transform="translate(15, 202)">
+            <text x="0" y="0" font-weight="800" fill="#f472b6">🖼 Image Frame Restrictions</text>
+            <text x="0" y="20" font-size="11" fill="#94a3b8">Allows drag-and-drop photo swaps inside</text>
+            <text x="0" y="36" font-size="11" fill="#94a3b8">calibrated aspect ratio windows only.</text>
+          </g>
+
+          <!-- Control 4 -->
+          <rect y="270" width="330" height="75" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+          <g transform="translate(15, 292)">
+            <text x="0" y="0" font-weight="800" fill="#fbbf24">🎯 Brand Voice AI Guidance</text>
+            <text x="0" y="20" font-size="11" fill="#94a3b8">Magic Write automatically detects and</text>
+            <text x="0" y="36" font-size="11" fill="#94a3b8">flags copy that violates brand personality.</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- Column 3: Team Approvals & Roles -->
+    <g transform="translate(820, 0)">
+      <rect width="380" height="580" rx="12" fill="#131b2e" stroke="#334155" stroke-width="1.5"/>
+      <g transform="translate(25, 25)">
+        <text x="0" y="16" font-size="17" font-weight="800" fill="#ffffff">3. Workflow Approvals &amp; Roles</text>
+        <text x="0" y="38" font-size="12" fill="#94a3b8">Multi-tiered signoff and publishing rules</text>
+
+        <!-- Active Approval Flow -->
+        <g transform="translate(0, 60)">
+          <rect width="330" height="200" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <g transform="translate(15, 22)">
+            <text x="0" y="0" font-size="13" font-weight="800" fill="#ffffff">Active Signoff Pipeline:</text>
+            
+            <!-- Step 1 -->
+            <g transform="translate(0, 20)">
+              <circle cx="12" cy="12" r="12" fill="#10B981"/>
+              <text x="12" y="16" font-size="11" font-weight="800" fill="#ffffff" text-anchor="middle">✓</text>
+              <text x="35" y="16" font-size="12" font-weight="700" fill="#ffffff">1. Designer Draft Created</text>
+            </g>
+
+            <!-- Step 2 -->
+            <g transform="translate(0, 60)">
+              <circle cx="12" cy="12" r="12" fill="#3B82F6"/>
+              <text x="12" y="16" font-size="11" font-weight="800" fill="#ffffff" text-anchor="middle">2</text>
+              <text x="35" y="16" font-size="12" font-weight="700" fill="#ffffff">2. Brand Manager Review</text>
+              <text x="35" y="32" font-size="10" fill="#94a3b8">Pending signoff by Sarah M.</text>
+            </g>
+
+            <!-- Step 3 -->
+            <g transform="translate(0, 105)">
+              <circle cx="12" cy="12" r="12" fill="#334155"/>
+              <text x="12" y="16" font-size="11" font-weight="800" fill="#94a3b8" text-anchor="middle">3</text>
+              <text x="35" y="16" font-size="12" font-weight="700" fill="#94a3b8">3. Export &amp; Live Publishing</text>
+            </g>
+          </g>
+        </g>
+
+        <!-- Role Badges -->
+        <text x="0" y="290" font-size="13" font-weight="700" fill="#cbd5e1">Role Permissions Breakdown:</text>
+        <g transform="translate(0, 310)" font-size="11" fill="#cbd5e1">
+          <rect width="330" height="36" rx="6" fill="#1e293b"/>
+          <text x="15" y="22"><tspan font-weight="700" fill="#ef4444">👑 Brand Admin:</tspan> Full kit edit &amp; global locks</text>
+
+          <rect y="44" width="330" height="36" rx="6" fill="#1e293b"/>
+          <text x="15" y="66"><tspan font-weight="700" fill="#38bdf8">🎨 Template Designer:</tspan> Create &amp; publish templates</text>
+
+          <rect y="88" width="330" height="36" rx="6" fill="#1e293b"/>
+          <text x="15" y="110"><tspan font-weight="700" fill="#10b981">✍️ Contributor Member:</tspan> Edit locked templates only</text>
+        </g>
+      </g>
+    </g>
+
+  </g>
+</svg>

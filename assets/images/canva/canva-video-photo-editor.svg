@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#090d16;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <linearGradient id="timelineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00C4CC"/>
+      <stop offset="50%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="audioGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Header Bar -->
+  <rect width="1280" height="60" fill="#131b2e" stroke="#1e293b" stroke-width="1"/>
+  <g transform="translate(30, 16)">
+    <rect width="36" height="28" rx="6" fill="#00C4CC"/>
+    <text x="18" y="20" font-size="16" font-weight="900" fill="#0f172a" text-anchor="middle">🎬</text>
+    <text x="48" y="20" font-size="18" font-weight="800" fill="#ffffff">Canva Video &amp; Photo Studio</text>
+    <text x="310" y="20" font-size="13" fill="#94a3b8">| Multi-Track Timeline &amp; 4K UHD Export Engine</text>
+  </g>
+
+  <!-- Top Action Controls -->
+  <g transform="translate(980, 14)">
+    <rect x="0" y="0" width="120" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="60" y="21" font-size="12" font-weight="700" fill="#38bdf8" text-anchor="middle">🎵 Beat Sync: ON</text>
+    
+    <rect x="130" y="0" width="140" height="32" rx="16" fill="#00C4CC"/>
+    <text x="200" y="21" font-size="12" font-weight="800" fill="#0f172a" text-anchor="middle">⬇ Export MP4 (4K)</text>
+  </g>
+
+  <!-- Workspace: Left Preview Stage (Video Canvas) & Right Photo Effects Panel -->
+  <g transform="translate(30, 80)">
+    
+    <!-- Video Canvas Preview -->
+    <rect width="780" height="380" rx="10" fill="#131b2e" stroke="#334155" stroke-width="1.5"/>
+    <g transform="translate(20, 20)">
+      <rect width="740" height="340" rx="6" fill="#0b0f19"/>
+      <circle cx="370" cy="170" r="90" fill="url(#timelineGrad)" opacity="0.4"/>
+      <text x="370" y="150" font-size="28" font-weight="900" fill="#ffffff" text-anchor="middle">Summer Product Commercial</text>
+      <text x="370" y="180" font-size="14" fill="#38bdf8" text-anchor="middle">00:14.2 / 00:30.0 • 60 FPS UHD</text>
+      
+      <!-- Video Playback Overlay Controls -->
+      <g transform="translate(320, 260)">
+        <circle cx="50" cy="20" r="24" fill="#00C4CC"/>
+        <polygon points="46,12 58,20 46,28" fill="#0f172a"/>
+      </g>
+    </g>
+
+    <!-- Right Column: Photo & Video Intelligence Tools -->
+    <g transform="translate(805, 0)">
+      <rect width="415" height="380" rx="10" fill="#131b2e" stroke="#334155" stroke-width="1.5"/>
+      <g transform="translate(20, 20)">
+        <text x="0" y="16" font-size="16" font-weight="800" fill="#ffffff">One-Click Neural Editing Tools</text>
+        
+        <!-- Tool 1 -->
+        <g transform="translate(0, 35)">
+          <rect width="375" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+          <text x="16" y="30" font-size="13" font-weight="700" fill="#ffffff">✨ Background Remover (Video &amp; Photo)</text>
+          <rect x="300" y="13" width="60" height="24" rx="12" fill="#00C4CC"/>
+          <text x="330" y="29" font-size="10" font-weight="800" fill="#0f172a" text-anchor="middle">ACTIVE</text>
+        </g>
+
+        <!-- Tool 2 -->
+        <g transform="translate(0, 95)">
+          <rect width="375" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+          <text x="16" y="30" font-size="13" font-weight="700" fill="#ffffff">🔊 AI Voice Clean &amp; Noise Cancellation</text>
+          <rect x="300" y="13" width="60" height="24" rx="12" fill="#22c55e"/>
+          <text x="330" y="29" font-size="10" font-weight="800" fill="#ffffff" text-anchor="middle">ENABLED</text>
+        </g>
+
+        <!-- Tool 3 -->
+        <g transform="translate(0, 155)">
+          <rect width="375" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+          <text x="16" y="30" font-size="13" font-weight="700" fill="#ffffff">🎭 Auto Subtitles &amp; Closed Captions</text>
+          <rect x="300" y="13" width="60" height="24" rx="12" fill="#a855f7"/>
+          <text x="330" y="29" font-size="10" font-weight="800" fill="#ffffff" text-anchor="middle">98.9% ACC</text>
+        </g>
+
+        <!-- Tool 4 -->
+        <g transform="translate(0, 215)">
+          <rect width="375" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+          <text x="16" y="30" font-size="13" font-weight="700" fill="#ffffff">🎨 Cinematic LUTs &amp; Color Grading</text>
+          <rect x="300" y="13" width="60" height="24" rx="12" fill="#38bdf8"/>
+          <text x="330" y="29" font-size="10" font-weight="800" fill="#0f172a" text-anchor="middle">24 PRESETS</text>
+        </g>
+
+        <!-- Tool 5 -->
+        <g transform="translate(0, 275)">
+          <rect width="375" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+          <text x="16" y="30" font-size="13" font-weight="700" fill="#ffffff">📱 Smart Mockup 3D Generator</text>
+          <rect x="300" y="13" width="60" height="24" rx="12" fill="#e2e8f0"/>
+          <text x="330" y="29" font-size="10" font-weight="800" fill="#0f172a" text-anchor="middle">1-CLICK</text>
+        </g>
+      </g>
+    </g>
+
+  </g>
+
+  <!-- Bottom: Multi-Track Timeline -->
+  <g transform="translate(30, 480)">
+    <rect width="1220" height="215" rx="10" fill="#131b2e" stroke="#334155" stroke-width="1.5"/>
+    
+    <!-- Timeline Ruler -->
+    <g transform="translate(20, 15)" font-size="11" fill="#64748b">
+      <text x="0" y="12">00:00</text>
+      <text x="150" y="12">00:05</text>
+      <text x="300" y="12">00:10</text>
+      <text x="450" y="12">00:15 (Playhead)</text>
+      <text x="600" y="12">00:20</text>
+      <text x="750" y="12">00:25</text>
+      <text x="900" y="12">00:30</text>
+      <line x1="0" y1="20" x2="1180" y2="20" stroke="#334155" stroke-width="1"/>
+    </g>
+
+    <!-- Playhead Needle -->
+    <line x1="470" y1="20" x2="470" y2="195" stroke="#ef4444" stroke-width="2"/>
+    <polygon points="464,15 476,15 470,25" fill="#ef4444"/>
+
+    <!-- Track 1: Video & Visuals -->
+    <g transform="translate(20, 50)">
+      <text x="0" y="28" font-size="11" font-weight="700" fill="#cbd5e1">Video 1</text>
+      
+      <!-- Clip 1 -->
+      <rect x="70" y="5" width="220" height="40" rx="6" fill="url(#timelineGrad)"/>
+      <text x="85" y="30" font-size="12" font-weight="700" fill="#ffffff">Intro Hook Clip (0-5s)</text>
+      
+      <!-- Clip 2 -->
+      <rect x="300" y="5" width="350" height="40" rx="6" fill="url(#timelineGrad)"/>
+      <text x="315" y="30" font-size="12" font-weight="700" fill="#ffffff">Feature Demonstration (5-15s)</text>
+
+      <!-- Clip 3 -->
+      <rect x="660" y="5" width="450" height="40" rx="6" fill="url(#timelineGrad)"/>
+      <text x="675" y="30" font-size="12" font-weight="700" fill="#ffffff">Call to Action &amp; Outro (15-30s)</text>
+    </g>
+
+    <!-- Track 2: Animated Text Overlay -->
+    <g transform="translate(20, 100)">
+      <text x="0" y="24" font-size="11" font-weight="700" fill="#cbd5e1">Overlay</text>
+      <rect x="70" y="5" width="180" height="30" rx="4" fill="#a855f7"/>
+      <text x="85" y="24" font-size="11" font-weight="700" fill="#ffffff">Kinetic Headline #1</text>
+      
+      <rect x="350" y="5" width="240" height="30" rx="4" fill="#a855f7"/>
+      <text x="365" y="24" font-size="11" font-weight="700" fill="#ffffff">Subtitles (Auto-Synced)</text>
+    </g>
+
+    <!-- Track 3: Audio Soundtrack & Beat Markers -->
+    <g transform="translate(20, 145)">
+      <text x="0" y="24" font-size="11" font-weight="700" fill="#cbd5e1">Audio</text>
+      <rect x="70" y="5" width="1040" height="32" rx="6" fill="url(#audioGrad)"/>
+      <text x="85" y="25" font-size="11" font-weight="700" fill="#ffffff">♫ Upbeat Tech Corporate Synth (Beat Sync Markers Active ••••••••••)</text>
+    </g>
+
+  </g>
+</svg>

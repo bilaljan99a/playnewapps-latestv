@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#090d16;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <linearGradient id="magicBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#3b0764"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="purplePink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="50%" stop-color="#d946ef"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="glowG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00C4CC"/>
+      <stop offset="100%" stop-color="#7D2AE8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Layer with Deep AI Aesthetic -->
+  <rect width="1280" height="720" fill="url(#magicBg)"/>
+  
+  <!-- Header Bar -->
+  <rect x="0" y="0" width="1280" height="70" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+  <g transform="translate(30, 20)">
+    <rect width="40" height="32" rx="8" fill="url(#purplePink)"/>
+    <text x="20" y="22" font-size="18" font-weight="900" fill="#ffffff" text-anchor="middle">✨</text>
+    <text x="52" y="22" font-size="20" font-weight="800" fill="#ffffff">Canva Magic Studio™</text>
+    <text x="280" y="22" font-size="14" fill="#94a3b8">| Autonomous Generative AI Suite for High-Velocity Teams</text>
+  </g>
+  
+  <g transform="translate(1080, 18)">
+    <rect width="170" height="34" rx="17" fill="url(#purplePink)"/>
+    <text x="85" y="22" font-size="13" font-weight="800" fill="#ffffff" text-anchor="middle">500 Monthly AI Credits</text>
+  </g>
+
+  <!-- Prompt Input Command Center Bar (Top Center) -->
+  <g transform="translate(160, 95)">
+    <rect width="960" height="60" rx="30" fill="#1e293b" stroke="url(#purplePink)" stroke-width="2"/>
+    <text x="30" y="36" font-size="16" fill="#e2e8f0">✨ Prompt: "Create a modern 3D product launch poster with glowing neon elements and studio lighting"</text>
+    <rect x="830" y="10" width="115" height="40" rx="20" fill="url(#glowG)"/>
+    <text x="887" y="35" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">Generate ✨</text>
+  </g>
+
+  <!-- 4 Core AI Pillars Grid -->
+  <g transform="translate(50, 180)">
+    
+    <!-- Pillar 1: Magic Media -->
+    <g transform="translate(0, 0)">
+      <rect width="275" height="490" rx="14" fill="#131b2e" stroke="#334155" stroke-width="1.5"/>
+      <rect x="0" y="0" width="275" height="6" rx="3" fill="#8b5cf6"/>
+      <g transform="translate(20, 25)">
+        <circle cx="18" cy="18" r="18" fill="rgba(139, 92, 246, 0.2)"/>
+        <text x="18" y="24" font-size="16" text-anchor="middle">🎨</text>
+        <text x="46" y="22" font-size="16" font-weight="800" fill="#ffffff">Magic Media</text>
+        <text x="0" y="55" font-size="12" fill="#94a3b8">Text-to-Image &amp; 4K Text-to-Video</text>
+        
+        <!-- Preview Box -->
+        <rect x="0" y="70" width="235" height="230" rx="10" fill="#0b0f19" stroke="#1e293b" stroke-width="1"/>
+        <circle cx="117" cy="170" r="70" fill="url(#glowG)" opacity="0.6"/>
+        <rect x="25" y="130" width="185" height="120" rx="8" fill="#1e293b" opacity="0.9"/>
+        <text x="117" y="195" font-size="12" font-weight="700" fill="#38bdf8" text-anchor="middle">Generated in 2.8s</text>
+        
+        <!-- Features List -->
+        <g transform="translate(0, 320)" font-size="11" fill="#cbd5e1">
+          <text x="0" y="16">✓ Photorealistic 3D Renders</text>
+          <text x="0" y="36">✓ Anime, Watercolor, Cyberpunk</text>
+          <text x="0" y="56">✓ Runway Gen-2 Video Engine</text>
+          <text x="0" y="76">✓ Aspect Ratio Conversion</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Pillar 2: Magic Switch -->
+    <g transform="translate(300, 0)">
+      <rect width="275" height="490" rx="14" fill="#131b2e" stroke="#334155" stroke-width="1.5"/>
+      <rect x="0" y="0" width="275" height="6" rx="3" fill="#06b6d4"/>
+      <g transform="translate(20, 25)">
+        <circle cx="18" cy="18" r="18" fill="rgba(6, 182, 212, 0.2)"/>
+        <text x="18" y="24" font-size="16" text-anchor="middle">🔄</text>
+        <text x="46" y="22" font-size="16" font-weight="800" fill="#ffffff">Magic Switch</text>
+        <text x="0" y="55" font-size="12" fill="#94a3b8">Instant Document &amp; Language Morph</text>
+        
+        <!-- Preview Box -->
+        <rect x="0" y="70" width="235" height="230" rx="10" fill="#0b0f19" stroke="#1e293b" stroke-width="1"/>
+        <g transform="translate(20, 95)" font-size="11" font-weight="700">
+          <rect x="0" y="0" width="195" height="34" rx="6" fill="#1e293b"/>
+          <text x="12" y="22" fill="#38bdf8">📊 15-Slide Presentation</text>
+          <text x="97" y="52" font-size="16" fill="#94a3b8" text-anchor="middle">↓ (1-Click Convert)</text>
+          <rect x="0" y="65" width="195" height="34" rx="6" fill="#1e293b"/>
+          <text x="12" y="87" fill="#4ade80">📄 Executive Summary Doc</text>
+          <rect x="0" y="110" width="195" height="34" rx="6" fill="#1e293b"/>
+          <text x="12" y="132" fill="#f472b6">🌐 100+ Global Languages</text>
+        </g>
+
+        <!-- Features List -->
+        <g transform="translate(0, 320)" font-size="11" fill="#cbd5e1">
+          <text x="0" y="16">✓ Deck to Blog / Email Outline</text>
+          <text x="0" y="36">✓ Multi-Channel Auto Reformat</text>
+          <text x="0" y="56">✓ Layout-Preserving Translation</text>
+          <text x="0" y="76">✓ Smart Content Summarizer</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Pillar 3: Magic Grab & Edit -->
+    <g transform="translate(600, 0)">
+      <rect width="275" height="490" rx="14" fill="#131b2e" stroke="#334155" stroke-width="1.5"/>
+      <rect x="0" y="0" width="275" height="6" rx="3" fill="#ec4899"/>
+      <g transform="translate(20, 25)">
+        <circle cx="18" cy="18" r="18" fill="rgba(236, 72, 153, 0.2)"/>
+        <text x="18" y="24" font-size="16" text-anchor="middle">✂️</text>
+        <text x="46" y="22" font-size="16" font-weight="800" fill="#ffffff">Magic Grab &amp; Edit</text>
+        <text x="0" y="55" font-size="12" fill="#94a3b8">Layer Separation &amp; Generative Fill</text>
+        
+        <!-- Preview Box -->
+        <rect x="0" y="70" width="235" height="230" rx="10" fill="#0b0f19" stroke="#1e293b" stroke-width="1"/>
+        <g transform="translate(15, 85)">
+          <rect x="0" y="0" width="95" height="105" rx="6" fill="#1e293b"/>
+          <text x="47" y="55" font-size="10" fill="#94a3b8" text-anchor="middle">Original Photo</text>
+          <text x="105" y="55" font-size="14" fill="#ec4899">→</text>
+          <rect x="115" y="0" width="95" height="105" rx="6" fill="#1e293b" stroke="#ec4899" stroke-width="1"/>
+          <text x="162" y="50" font-size="10" font-weight="700" fill="#ec4899" text-anchor="middle">Object Extracted</text>
+          <text x="162" y="70" font-size="9" fill="#94a3b8" text-anchor="middle">As Movable Layer</text>
+        </g>
+        <rect x="15" y="210" width="205" height="30" rx="6" fill="rgba(236, 72, 153, 0.15)"/>
+        <text x="117" y="230" font-size="10" font-weight="700" fill="#f472b6" text-anchor="middle">Magic Expand Outpainting Active</text>
+
+        <!-- Features List -->
+        <g transform="translate(0, 320)" font-size="11" fill="#cbd5e1">
+          <text x="0" y="16">✓ Extract Subjects from Flat JPGs</text>
+          <text x="0" y="36">✓ Brush to Replace Objects</text>
+          <text x="0" y="56">✓ Magic Expand Canvas Edges</text>
+          <text x="0" y="76">✓ 1-Click Background Removal</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Pillar 4: Magic Write -->
+    <g transform="translate(900, 0)">
+      <rect width="275" height="490" rx="14" fill="#131b2e" stroke="#334155" stroke-width="1.5"/>
+      <rect x="0" y="0" width="275" height="6" rx="3" fill="#22c55e"/>
+      <g transform="translate(20, 25)">
+        <circle cx="18" cy="18" r="18" fill="rgba(34, 197, 94, 0.2)"/>
+        <text x="18" y="24" font-size="16" text-anchor="middle">✍️</text>
+        <text x="46" y="22" font-size="16" font-weight="800" fill="#ffffff">Magic Write</text>
+        <text x="0" y="55" font-size="12" fill="#94a3b8">On-Canvas Copilot &amp; Brand Voice</text>
+        
+        <!-- Preview Box -->
+        <rect x="0" y="70" width="235" height="230" rx="10" fill="#0b0f19" stroke="#1e293b" stroke-width="1"/>
+        <g transform="translate(15, 85)" font-size="11">
+          <rect x="0" y="0" width="205" height="42" rx="6" fill="#1e293b"/>
+          <text x="10" y="18" fill="#a0aec0">Prompt:</text>
+          <text x="10" y="32" font-weight="700" fill="#4ade80">"Make headline punchier"</text>
+          <rect x="0" y="52" width="205" height="80" rx="6" fill="rgba(34, 197, 94, 0.1)" stroke="#22c55e" stroke-width="1"/>
+          <text x="10" y="72" font-size="10" font-weight="700" fill="#ffffff">Result (Aligned to Brand):</text>
+          <text x="10" y="90" font-size="12" font-weight="800" fill="#4ade80">"Design Faster. Scale Higher."</text>
+          <text x="10" y="112" font-size="9" fill="#94a3b8">Confidence: 99.4% • Tone: Bold</text>
+        </g>
+
+        <!-- Features List -->
+        <g transform="translate(0, 320)" font-size="11" fill="#cbd5e1">
+          <text x="0" y="16">✓ Copywriting Across All Formats</text>
+          <text x="0" y="36">✓ Tone Adjustment &amp; Summaries</text>
+          <text x="0" y="56">✓ Brand Voice Consistency</text>
+          <text x="0" y="76">✓ Real-Time Grammar Polishing</text>
+        </g>
+      </g>
+    </g>
+
+  </g>
+</svg>
