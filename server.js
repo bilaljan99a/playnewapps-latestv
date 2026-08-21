@@ -112,7 +112,10 @@ const cleanRoutes = [
   { route: '/italki', file: 'italki-coupons.html' },
   { route: '/italki-coupons', file: 'italki-coupons.html' },
   { route: '/italki-review', file: 'italki-review.html' },
-  { route: '/store/italki', file: 'italki-coupons.html' }
+  { route: '/store/italki', file: 'italki-coupons.html' },
+  { route: '/uniconverter', file: 'wondershare-uniconverter-review.html' },
+  { route: '/uniconverter-review', file: 'wondershare-uniconverter-review.html' },
+  { route: '/wondershare-uniconverter-review', file: 'wondershare-uniconverter-review.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {

@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+import os
+
+html_content = '''<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
@@ -984,7 +986,7 @@
                             <div class="flex items-center gap-3">
                                 <div class="text-right">
                                     <div class="text-3xl font-black text-amber-400">4.9 / 5.0</div>
-                                    <div class="text-[11px] font-bold text-slate-400 uppercase">Editor's Choice 2026</div>
+                                    <div class="text-[11px] font-bold text-slate-400 uppercase">Editor\'s Choice 2026</div>
                                 </div>
                                 <div class="w-12 h-12 rounded-2xl bg-amber-400 text-slate-950 flex items-center justify-center font-black text-xl">
                                     A+
@@ -1063,3 +1065,9 @@
 
 </body>
 </html>
+'''
+
+with open('wondershare-uniconverter-review.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print("Updated wondershare-uniconverter-review.html with clean layout and official images!")
