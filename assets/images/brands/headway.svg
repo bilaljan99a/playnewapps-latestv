@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" width="420" height="100" fill="none">
+  <!-- Headway Official App Icon: Electric Blue Squircle + White Ladder -->
+  <g transform="translate(10, 10)">
+    <!-- Squircle container -->
+    <rect width="80" height="80" rx="20" fill="#0066FF" />
+    
+    <!-- White 3-rung Ladder Icon with signature bevel steps -->
+    <g transform="translate(18, 14)" fill="#FFFFFF">
+      <!-- Left Vertical Stile with rounded ends -->
+      <rect x="0" y="0" width="9" height="52" rx="4.5" />
+      
+      <!-- Right Vertical Stile with rounded ends -->
+      <rect x="35" y="0" width="9" height="52" rx="4.5" />
+      
+      <!-- Rung 1 (Top) -->
+      <path d="M 9 10 L 14 6 H 35 V 13 H 9 Z" />
+      <rect x="9" y="8" width="26" height="5" />
+      
+      <!-- Rung 2 (Middle) -->
+      <path d="M 9 24 L 14 20 H 35 V 27 H 9 Z" />
+      <rect x="9" y="22" width="26" height="5" />
+      
+      <!-- Rung 3 (Bottom) -->
+      <path d="M 9 38 L 14 34 H 35 V 41 H 9 Z" />
+      <rect x="9" y="36" width="26" height="5" />
+    </g>
+  </g>
+
+  <!-- Headway Wordmark Typography -->
+  <g transform="translate(106, 68)">
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="52" fill="#0F172A" letter-spacing="-1.5">
+      Headway
+    </text>
+  </g>
+</svg>
