@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 110" width="500" height="110" fill="none">
+  <!-- Medical Cross Icon with 3 White Waves -->
+  <g transform="translate(12, 10)">
+    <defs>
+      <clipPath id="crossClip">
+        <!-- Exact Medical Cross: 80x80 box, arm thickness 28, arm length 26 -->
+        <path d="M 26 0 H 54 V 26 H 80 V 54 H 54 V 80 H 26 V 54 H 0 V 26 H 26 Z" />
+      </clipPath>
+    </defs>
+
+    <g clip-path="url(#crossClip)">
+      <!-- Green Upper/Left Section -->
+      <rect x="0" y="0" width="80" height="80" fill="#28B62C" />
+      
+      <!-- Cyan/Sky Blue Lower/Right Section -->
+      <path d="M 0 80 L 80 0 L 80 80 Z" fill="#00A3FF" />
+      <rect x="26" y="54" width="28" height="26" fill="#00A3FF" />
+      <rect x="54" y="26" width="26" height="54" fill="#00A3FF" />
+
+      <!-- Re-apply Green for Top and Left arms cleanly -->
+      <path d="M 26 0 H 54 V 38 L 18 74 H 0 V 26 H 26 Z" fill="#28B62C" />
+      <path d="M 26 0 H 54 V 26 H 80 V 38 L 42 76 L 26 60 Z" fill="#28B62C" opacity="0.15" />
+
+      <!-- 3 Dynamic Curved White Hydro Waves -->
+      <!-- Wave 1 (Upper Wave) -->
+      <path d="M 14 74 C 24 50 40 32 64 16 C 70 12 76 9 82 7 C 76 12 66 20 54 34 C 40 50 28 66 18 78 Z" fill="#ffffff" />
+      <!-- Wave 2 (Middle Wave) -->
+      <path d="M 22 82 C 32 60 48 42 70 28 C 76 24 82 20 86 18 C 80 24 72 32 58 48 C 44 64 34 76 28 84 Z" fill="#ffffff" />
+      <!-- Wave 3 (Lower Wave) -->
+      <path d="M 32 86 C 42 72 56 56 78 42 C 84 38 88 35 90 33 C 86 38 78 46 66 58 C 54 72 44 82 40 88 Z" fill="#ffffff" />
+    </g>
+  </g>
+
+  <!-- Typography matching exact official Sanatoriums.com logo -->
+  <g transform="translate(108, 12)">
+    <!-- sanatoriums.com main text -->
+    <text x="0" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="47" letter-spacing="-1">
+      <tspan fill="#28B62C">sanatoriums.</tspan><tspan fill="#00A3FF">com</tspan>
+    </text>
+
+    <!-- ® Registered Trademark Symbol in Sky Blue -->
+    <g transform="translate(372, 18)">
+      <circle cx="8" cy="8" r="7.5" stroke="#00A3FF" stroke-width="1.5" fill="none" />
+      <text x="8" y="11.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="9.5" fill="#00A3FF" text-anchor="middle">R</text>
+    </g>
+
+    <!-- ONLINE BOOKING Subtitle -->
+    <text x="180" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="15" letter-spacing="4">
+      <tspan fill="#28B62C">ONLINE </tspan><tspan fill="#00A3FF">BOOKING</tspan>
+    </text>
+  </g>
+</svg>

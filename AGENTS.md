@@ -11,7 +11,7 @@ When adding or generating a new Store / Coupon page (e.g. `[brand]-coupons.html`
 ### A. Layout & Hierarchy
 - **Top Header Section (Clean & Minimalist):**
   - Brand Logo box (`w-40 sm:w-52 h-16 sm:h-20` clean rounded border container) + Store H1 Title (e.g. `[Brand Name] Coupon Codes & Discount Offers (2026)`).
-  - **No distracting badge clutter or arbitrary rating pills:** Do NOT add redundant promotional badges (e.g. "VERIFIED OFFICIAL PARTNER", "30-DAY MONEY BACK", "20% EXTRA PROMO CODE") or star rating blocks inside the top header card. Keep it ultra-clean, minimal, and focused on the brand logo and title.
+  - **STRICT RULE - No extra text, badges, rating pills, or subtitle paragraphs:** Do NOT add description paragraphs, subtitles, promotional badges (e.g. "VERIFIED OFFICIAL PARTNER", "30-DAY MONEY BACK"), or star rating blocks inside the top header card. The top card MUST contain ONLY the brand logo box and the H1 title.
   - **Top Coupons & Offers (Immediate Above-The-Fold Visibility):**
     - `[X] Verified Offers Available Today` + `Updated Today` live status bar.
     - All verified coupon cards and promo deals must appear immediately right below the header card before any editorial body content.

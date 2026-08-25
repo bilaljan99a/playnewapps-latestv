@@ -1,5 +1,64 @@
 [
   {
+    "id": "sanatoriums",
+    "name": "Sanatoriums",
+    "icon": "spa",
+    "logo": "/assets/images/brands/sanatoriums.svg",
+    "website": "https://www.sanatoriums.com/",
+    "storeUrl": "/sanatoriums-coupons.html",
+    "affiliateUrl": "https://kjuzv.com/g/82hm46o8g4b68b264a76790b103c92/",
+    "affiliateLink": "https://kjuzv.com/g/82hm46o8g4b68b264a76790b103c92/",
+    "rating": 4.9,
+    "votes": 18920,
+    "seoTitle": "Sanatoriums Promo Code, Spa & Medical Resort Deals (2026)",
+    "seoDescription": "Save up to 40% OFF with verified Sanatoriums promo codes & special offers. Book mineral spa hotels & medical rehabilitation sanatoriums in Karlovy Vary, Marianske Lazne, Heviz, Rogaska Slatina, and Piestany with free doctor consultation and no prepayment.",
+    "about": "Sanatoriums.com is the world's leading booking platform dedicated exclusively to thermal mineral spas, medical wellness hotels, and rehabilitation sanatoriums across Europe. Featuring free consultation with a spa physician, 0% booking fees, flexible cancellation, and direct partnerships with legendary healing resorts.",
+    "categories": [
+      "Travel",
+      "Spa & Wellness",
+      "Health & Medical",
+      "Resorts & Hotels",
+      "Thermal Baths",
+      "Rehabilitation"
+    ],
+    "whyShop": [
+      "Save up to 40% OFF with verified seasonal deals and early booking promo discounts",
+      "Complimentary medical consultation with certified spa physician Dr. Elena Khorosheva",
+      "Book with 0% advance prepayment and pay directly upon arrival at the spa hotel",
+      "Free cancellation policy available on the vast majority of European sanatoriums",
+      "Comprehensive treatment programs including mineral baths, drinking cures, and mud therapy",
+      "Direct resort partnerships ensuring lowest price guarantee and exclusive room allotments"
+    ],
+    "shoppingTips": [
+      "Book a standard 14 to 21-night medical spa program to secure maximum package discounts and optimal clinical results.",
+      "Filter by 'Special Offers' on Sanatoriums.com to find resorts offering complimentary airport transfers and bonus wellness treatments.",
+      "Schedule a free chat or phone consultation with the in-house spa doctor to select the exact thermal spring mineral profile for your condition.",
+      "Check seasonal promotions in spring and autumn when premier resorts in Karlovy Vary and Marianske Lazne offer up to 40% off regular rates."
+    ],
+    "faqs": [
+      {
+        "question": "What is the best active Sanatoriums promo code today?",
+        "answer": "The top verified Sanatoriums promotion gives up to 40% OFF special offer packages, early booking rates, and long-stay medical cure programs across top European spa destinations with no prepayment required."
+      },
+      {
+        "question": "How do I apply a discount or promo code on Sanatoriums.com?",
+        "answer": "Select your desired destination, spa resort, and treatment package on Sanatoriums.com. During the booking checkout step, enter your promotional voucher code in the designated promo code field to apply instant savings to your reservation."
+      },
+      {
+        "question": "Do I have to pay upfront when booking a sanatorium?",
+        "answer": "No. In most cases on Sanatoriums.com, you can book your medical spa hotel without any advance prepayment and pay directly at the hotel reception upon your arrival."
+      },
+      {
+        "question": "Are medical consultations really free on Sanatoriums.com?",
+        "answer": "Yes, Sanatoriums.com provides 100% free professional consultations with certified spa physician Dr. Elena Khorosheva via phone, WhatsApp, Telegram, or email to assist you in selecting the ideal resort based on your medical diagnosis."
+      },
+      {
+        "question": "What happens if I need to cancel my spa booking?",
+        "answer": "Most sanatoriums booked through Sanatoriums.com offer free cancellation up to 7 to 14 days prior to your scheduled check-in date without any cancellation penalty or fee."
+      }
+    ]
+  },
+  {
     "id": "cheapvuelos",
     "name": "Cheapvuelos",
     "icon": "flight_takeoff",
