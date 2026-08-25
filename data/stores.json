@@ -1,5 +1,64 @@
 [
   {
+    "id": "klook",
+    "name": "Klook",
+    "icon": "explore",
+    "logo": "/assets/images/brands/klook.svg",
+    "website": "https://www.klook.com/",
+    "storeUrl": "/klook-coupons.html",
+    "affiliateUrl": "https://bjpql.com/g/uk7qqjwme4b68b264a766ca26c9222/",
+    "affiliateLink": "https://bjpql.com/g/uk7qqjwme4b68b264a766ca26c9222/",
+    "rating": 4.9,
+    "votes": 88420,
+    "seoTitle": "Klook Promo Codes, Travel Discounts & Verified Coupons (2026)",
+    "seoDescription": "Save up to 85% OFF with verified Klook promo codes and discount vouchers. Book Japan Rail Passes, Tokyo Disney & Universal Studios tickets, local tours, luxury hotels, and global eSIMs.",
+    "about": "Klook is a world-leading travel experiences and booking platform offering over 500,000 activities, theme park tickets, railway passes (including Japan JR Pass and European Eurail), private airport transfers, curated day tours, hotel staycations, and seamless travel connectivity in 3,400+ destinations worldwide.",
+    "categories": [
+      "Travel",
+      "Attractions & Tours",
+      "Theme Parks",
+      "Transportation",
+      "Hotels & Stays",
+      "eSIM & Connectivity"
+    ],
+    "whyShop": [
+      "Save up to 85% OFF with verified Klook promotional codes and seasonal Flash Sales",
+      "Instant e-voucher confirmation and direct QR code turnstile entry at top global theme parks",
+      "Official ticketing partner for Tokyo Disney Resort, Universal Studios Japan, Disneyland Paris, and Singapore Zoo",
+      "Comprehensive transport booking: JR Passes, Shinkansen bullet trains, Swiss Travel Pass, and airport express",
+      "Free 500MB global eSIM trial and discounted pocket WiFi connectivity in 180+ countries",
+      "Earn Klook Credits on every completed activity and review to redeem instant cash rebates on future trips"
+    ],
+    "shoppingTips": [
+      "Download the Klook mobile app to unlock an extra 10% off your initial booking using dedicated first-app-order coupons.",
+      "Join the Klook Rewards loyalty tier program (Gold & Platinum) to receive exclusive quarterly coupon bundles and member hotel rates.",
+      "Stack Klook Credits earned from past reviews with active promo codes during checkout to maximize total savings.",
+      "Check out seasonal mega-sale events (Klook Birthday Extravaganza, 11.11 Mega Travel Festival, and Choice Day) for 1-for-1 attraction passes."
+    ],
+    "faqs": [
+      {
+        "question": "What is the best active Klook promo code available right now?",
+        "answer": "The highest value verified Klook discount offers up to 85% OFF on select global tours, hotel packages, and seasonal Flash Sale passes, alongside first-order app promo codes giving 10% off with no minimum spend."
+      },
+      {
+        "question": "How do I apply a promo code on Klook?",
+        "answer": "Select your desired attraction, tour, or rail pass and proceed to the Checkout screen. Scroll down to the 'Discounts' section, enter your verified promo code into the 'Promo Code' box, and click 'Redeem' before finalizing payment."
+      },
+      {
+        "question": "Can I use Klook vouchers on my phone without printing?",
+        "answer": "Yes! The vast majority of Klook attractions, theme parks, and transport passes feature instant mobile e-vouchers with digital QR barcodes that can be scanned directly from the Klook app at venue turnstiles."
+      },
+      {
+        "question": "Is Klook an official authorized seller for Japan Rail Pass and Disney tickets?",
+        "answer": "Yes, Klook is an officially authorized global distributor and partner for Japan Railways (JR Group), Tokyo Disney Resort, Universal Studios Japan, Hong Kong Disneyland, and hundreds of official tourism boards."
+      },
+      {
+        "question": "How do Klook Credits work?",
+        "answer": "Every time you complete a booking and leave a photo review on Klook, you earn Klook Credits (typically 10-80 credits per review). Every 10 credits equals approximately $0.10, which can be applied directly at checkout to offset your total bill."
+      }
+    ]
+  },
+  {
     "id": "headway",
     "name": "Headway",
     "icon": "auto_stories",
