@@ -9,10 +9,18 @@ This file persists mandatory guidelines for adding new stores, coupon pages, rev
 When adding or generating a new Store / Coupon page (e.g. `[brand]-coupons.html` or within `store.html`):
 
 ### A. Layout & Hierarchy
-- **Top Section (Above the Fold):**
-  - Store header, rating badge, verified tag, and key store stats.
-  - **Latest Verified Coupons & Exclusive Promo Offers** must appear immediately at the top without extra distractions or unnecessary filler.
-  - Interactive coupon cards with copy-code modal, direct discount buttons, and expiration/verification badges.
+- **Top Header Section (Clean & Minimalist):**
+  - Brand Logo box (`w-40 sm:w-52 h-16 sm:h-20` clean rounded border container) + Store H1 Title (e.g. `[Brand Name] Coupon Codes & Discount Offers (2026)`).
+  - **No distracting badge clutter or arbitrary rating pills:** Do NOT add redundant promotional badges (e.g. "VERIFIED OFFICIAL PARTNER", "30-DAY MONEY BACK", "20% EXTRA PROMO CODE") or star rating blocks inside the top header card. Keep it ultra-clean, minimal, and focused on the brand logo and title.
+  - **Top Coupons & Offers (Immediate Above-The-Fold Visibility):**
+    - `[X] Verified Offers Available Today` + `Updated Today` live status bar.
+    - All verified coupon cards and promo deals must appear immediately right below the header card before any editorial body content.
+  - **Standardized RetailMeNot Coupon Card Components:**
+    - Top header bar: `Verified` pill + `CODE` / `SALE` type badge + `[X]% OFF` discount pill.
+    - Left side: Big bold purple discount hero badge (e.g. `20% OFF`, `85% OFF`, `+3 MO FREE`).
+    - Center info box: Clean hyperlinked deal title with official affiliate URL + Social proof line (`thumb_up [X]% Success • [X] interested users`).
+    - Action box: Fully hidden code mask (`••••••••`) with purple `Show Code` copy button OR direct blue `Get Deal` affiliate button.
+    - Footer accordion: `Show Details (+)` expandable toggle with info icon and clear offer description. Hidden by default.
 - **Main Body (Below Coupons):**
   - **3,000+ Words of Comprehensive Content:** Deep, authoritative, human-crafted guide matching the standard of flagship pages (like AliExpress, Lenovo, AdGuard, Crossout).
   - **Zero AI-Slop / Boilerplate:** Authentic, natural, conversational yet expert tone. Real insights, practical shopping advice, step-by-step instructions.
