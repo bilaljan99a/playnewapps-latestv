@@ -1,5 +1,45 @@
 [
     {
+        "id": "avast-antivirus",
+        "name": "Avast Antivirus",
+        "developer": "Avast (Gen Digital)",
+        "category": "Antivirus & Cybersecurity",
+        "rating": 4.8,
+        "reviewCount": 18450,
+        "summary": "Industry-leading multi-layer cybersecurity featuring AI zero-day threat detection, ransomware shielding, network vulnerability inspection, isolated Sandbox, and integrated SecureLine VPN.",
+        "logo": "/assets/images/brands/avast-logo.svg",
+        "heroImage": "/assets/images/avast/avast-official-pc-ui.png",
+        "reviewUrl": "avast-antivirus-review.html",
+        "affiliateUrl": "https://www.avast.com",
+        "downloadUrl": "https://www.avast.com",
+        "pricing": {
+            "free": "$0/forever (Core Shields)",
+            "subscription": "From $39.99/yr (10 Devices)"
+        },
+        "pros": [
+            "Flawless 100% zero-day threat detection in AV-TEST trials",
+            "Exceptional free tier with real-time ransomware shield",
+            "Ultra-lightweight RAM footprint under 70 MB on idle",
+            "Isolated virtual Sandbox and Wi-Fi Network Inspector"
+        ],
+        "cons": [
+            "Occasional upgrade prompts in the free edition",
+            "Unlimited SecureLine VPN requires Avast One subscription"
+        ],
+        "title": "Avast Antivirus Review 2026",
+        "icon": "/assets/images/brands/avast-logo.svg",
+        "image": "/assets/images/avast/avast-official-pc-ui.png",
+        "description": "Avast Antivirus delivers next-generation multi-layer cybersecurity featuring AI-driven zero-day threat detection, ransomware shielding, and network inspection.",
+        "url": "avast-antivirus-review.html",
+        "categoryId": "security",
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Android",
+            "iOS"
+        ]
+    },
+    {
         "id": "elevenlabs",
         "name": "ElevenLabs",
         "developer": "ElevenLabs",
