@@ -241,325 +241,231 @@
         <section id="verified-coupons" class="space-y-6">
             <!-- COUPONS GRID / STACKED LIST -->
             <div class="space-y-4">
-
-                <!-- COUPON 1: EXCLUSIVE PROMO CODE (MASKED & HIDDEN) -->
-                <article class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-xs coupon-card relative overflow-hidden">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
-                        <div class="flex items-start gap-4">
-                            <div class="w-16 h-16 sm:w-20 sm:h-20 bg-sky-50 border border-sky-200 rounded-2xl flex flex-col items-center justify-center text-center shrink-0 p-2">
-                                <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">CODE</span>
-                                <span class="text-lg sm:text-xl font-extrabold text-sky-700 leading-none mt-1">+30</span>
-                                <span class="text-[10px] text-sky-600 font-semibold">MINS</span>
-                            </div>
-                            <div class="space-y-1.5">
-                                <div class="flex flex-wrap items-center gap-2">
-                                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-md inline-flex items-center gap-1">
-                                        <span class="material-icons-round text-xs">check_circle</span> Verified
-                                    </span>
-                                    <span class="bg-sky-100 text-sky-800 text-xs font-bold px-2.5 py-0.5 rounded-md">Exclusive Code</span>
-                                    <span class="text-xs text-slate-400 font-medium">• 2,840 Uses Today</span>
+<article class="card coupon-card affiliate-card retailmenot-style">
+                                <div class="coupon-header-bar">
+                                    <div class="header-badges">
+                                        <span class="badge verified-badge"><span class="material-icons-round" aria-hidden="true">verified</span> Verified</span>
+                                        <span class="badge type-badge">CODE</span>
+                                    </div>
+                                    <span class="badge discount-pill">EXTRA 30 MINS FREE</span>
                                 </div>
-                                <h3 class="text-lg sm:text-xl font-extrabold text-slate-900">
-                                    30 Bonus Free Minutes on Any Time Pack Purchase
-                                </h3>
-                                <p class="text-slate-600 text-sm leading-relaxed">
-                                    Apply verified promo code during checkout to receive 30 extra live interview minutes added instantly to your balance.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- ACTION BOX WITH CODE REVEAL WRAPPER -->
-                        <div class="shrink-0 flex flex-col items-stretch md:items-end gap-2 w-full md:w-auto">
-                            <div class="code-reveal-wrapper w-full md:w-64" data-code="ASTART30" data-link="https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/">
-                                <span class="hidden-code-mask text-slate-700">ASTA••••</span>
-                                <button onclick="handleCodeReveal(this)" class="btn show-code-btn bg-sky-600 hover:bg-sky-700 text-white font-extrabold px-5 py-2.5 text-sm flex items-center justify-center gap-1.5 shadow-xs transition">
-                                    <span class="material-icons-round text-base">vpn_key</span>
-                                    <span class="btn-text">Show Code</span>
-                                </button>
-                            </div>
-                            <span class="text-[11px] text-emerald-600 font-medium flex items-center justify-end gap-1">
-                                <span class="material-icons-round text-xs">thumb_up</span> 100% Success Rate
-                            </span>
-                        </div>
-                    </div>
-
-                    <!-- SHOW DETAILS COLLAPSIBLE SECTION -->
-                    <div class="mt-4 pt-3 border-t border-slate-100">
-                        <button onclick="toggleCouponDetails(this)" class="inline-flex items-center gap-1 text-xs font-semibold text-slate-500 hover:text-sky-600 transition focus:outline-none">
-                            <span class="material-icons-round text-base transition-transform">expand_more</span>
-                            <span>Show Details +</span>
-                        </button>
-                        <div class="coupon-details-content hidden mt-3 p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-600 space-y-1.5">
-                            <p class="font-bold text-slate-900">Offer Instructions &amp; Conditions:</p>
-                            <ul class="list-disc pl-4 space-y-1 text-slate-600">
-                                <li>Click <strong>Show Code</strong> above to copy the coupon code to your clipboard and automatically open the official ApplicantAlly store.</li>
-                                <li>Paste the code into the promo code box during checkout.</li>
-                                <li>Grants +30 bonus minutes on any time pack order (1-Hour, 3-Hour, 6-Hour, or 9-Hour). Unused minutes never expire.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- COUPON 2: 15 FREE TRIAL MINUTES -->
-                <article class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-xs coupon-card relative overflow-hidden">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
-                        <div class="flex items-start gap-4">
-                            <div class="w-16 h-16 sm:w-20 sm:h-20 bg-emerald-50 border border-emerald-200 rounded-2xl flex flex-col items-center justify-center text-center shrink-0 p-2">
-                                <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">FREE</span>
-                                <span class="text-lg sm:text-xl font-extrabold text-emerald-700 leading-none mt-1">15</span>
-                                <span class="text-[10px] text-emerald-600 font-semibold">MINS</span>
-                            </div>
-                            <div class="space-y-1.5">
-                                <div class="flex flex-wrap items-center gap-2">
-                                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-md inline-flex items-center gap-1">
-                                        <span class="material-icons-round text-xs">check_circle</span> Verified
-                                    </span>
-                                    <span class="bg-purple-100 text-purple-800 text-xs font-bold px-2.5 py-0.5 rounded-md">Free Trial</span>
-                                    <span class="text-xs text-slate-400 font-medium">• No Credit Card Required</span>
+                                <div class="coupon-main-body">
+                                    <div class="coupon-discount-box">
+                                        <span class="discount-hero">EXTRA 30 MINS FREE</span>
+                                    </div>
+                                    <div class="coupon-info-box">
+                                        <h3 class="coupon-title">
+                                            <a href="#" target="_blank" rel="noopener sponsored">🎁 Extra 30 Free Minutes for Any Order (Verified Coupon)</a>
+                                        </h3>
+                                        <div class="coupon-social-proof">
+                                            <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
+                                            <span class="meta-dot">•</span>
+                                            <span class="users-meta">1840 interested users</span>
+                                        </div>
+                                    </div>
+                                    <div class="coupon-action-box">
+                                        <div class="code-reveal-wrapper" data-code="ASTART30" data-link="#">
+                                        <span class="hidden-code-mask">••••••••</span>
+                                        <button class="btn show-code-btn" aria-label="Show Coupon Code and Copy">Show Code</button>
+                                    </div>
+                                    </div>
                                 </div>
-                                <h3 class="text-lg sm:text-xl font-extrabold text-slate-900">
-                                    15 Free Live Interview Minutes upon Registration
-                                </h3>
-                                <p class="text-slate-600 text-sm leading-relaxed">
-                                    Create a free ApplicantAlly account to test the stealth desktop copilot, system audio loopback, and STAR resume framing on 15 free live interview minutes.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- ACTION BOX -->
-                        <div class="shrink-0 flex flex-col items-stretch md:items-end gap-2 w-full md:w-auto">
-                            <a href="https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/" target="_blank" rel="noopener sponsored" class="bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-6 py-3 rounded-xl text-sm transition flex items-center justify-center gap-2 shadow-xs text-center">
-                                <span>Claim 15 Free Mins</span>
-                                <span class="material-icons-round text-base">open_in_new</span>
-                            </a>
-                            <span class="text-[11px] text-slate-500 font-medium text-right">Automatic Credit on Signup</span>
-                        </div>
-                    </div>
-
-                    <!-- SHOW DETAILS COLLAPSIBLE SECTION -->
-                    <div class="mt-4 pt-3 border-t border-slate-100">
-                        <button onclick="toggleCouponDetails(this)" class="inline-flex items-center gap-1 text-xs font-semibold text-slate-500 hover:text-sky-600 transition focus:outline-none">
-                            <span class="material-icons-round text-base transition-transform">expand_more</span>
-                            <span>Show Details +</span>
-                        </button>
-                        <div class="coupon-details-content hidden mt-3 p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-600 space-y-1.5">
-                            <p class="font-bold text-slate-900">Free Trial Details:</p>
-                            <ul class="list-disc pl-4 space-y-1 text-slate-600">
-                                <li>No credit card or payment authorization required.</li>
-                                <li>15 free live interview tracking minutes credited immediately upon account email verification.</li>
-                                <li>Unlocks full stealth window overlay, audio loopback, and resume upload RAG capabilities.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- COUPON 3: 35% OFF 9-HOUR VALUE PACK -->
-                <article class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-xs coupon-card relative overflow-hidden">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
-                        <div class="flex items-start gap-4">
-                            <div class="w-16 h-16 sm:w-20 sm:h-20 bg-indigo-50 border border-indigo-200 rounded-2xl flex flex-col items-center justify-center text-center shrink-0 p-2">
-                                <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">SAVE</span>
-                                <span class="text-lg sm:text-xl font-extrabold text-indigo-700 leading-none mt-1">35%</span>
-                                <span class="text-[10px] text-indigo-600 font-semibold">OFF</span>
-                            </div>
-                            <div class="space-y-1.5">
-                                <div class="flex flex-wrap items-center gap-2">
-                                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-md inline-flex items-center gap-1">
-                                        <span class="material-icons-round text-xs">check_circle</span> Verified
-                                    </span>
-                                    <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-0.5 rounded-md">Best Value Deal</span>
+                                <div class="coupon-details-footer">
+                                    <div class="coupon-details-content hidden">
+                                        <div class="details-inner-box">
+                                            <span class="material-icons-round info-icon">info</span>
+                                            <p>Get an extra 30 minutes of AI interview assistance added to any order or time pack.</p>
+                                        </div>
+                                    </div>
+                                    <div class="details-toggle-container">
+                                        <button type="button" class="toggle-details-btn" onclick="toggleCouponDetails(this)">
+                                            <span class="btn-text">Show Details</span>
+                                            <span class="toggle-icon">+</span>
+                                        </button>
+                                    </div>
                                 </div>
-                                <h3 class="text-lg sm:text-xl font-extrabold text-slate-900">
-                                    $25 OFF 9-Hour Value Pack ($58.00 — Lowest $6.44/Hour Rate)
-                                </h3>
-                                <p class="text-slate-600 text-sm leading-relaxed">
-                                    Get 540 total live interview minutes for $58.00 instead of $83.00. Features unlimited stealth overlay, Screen OCR, and permanent minute rollover with no expiration.
-                                </p>
-                            </div>
-                        </div>
+                            </article>
 
-                        <!-- ACTION BOX -->
-                        <div class="shrink-0 flex flex-col items-stretch md:items-end gap-2 w-full md:w-auto">
-                            <a href="https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/" target="_blank" rel="noopener sponsored" class="bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold px-6 py-3 rounded-xl text-sm transition flex items-center justify-center gap-2 shadow-xs text-center">
-                                <span>Get 35% OFF Deal</span>
-                                <span class="material-icons-round text-base">open_in_new</span>
-                            </a>
-                            <span class="text-[11px] text-emerald-600 font-medium text-right">Combine with Bonus Minutes at Checkout</span>
-                        </div>
-                    </div>
-
-                    <!-- SHOW DETAILS COLLAPSIBLE SECTION -->
-                    <div class="mt-4 pt-3 border-t border-slate-100">
-                        <button onclick="toggleCouponDetails(this)" class="inline-flex items-center gap-1 text-xs font-semibold text-slate-500 hover:text-sky-600 transition focus:outline-none">
-                            <span class="material-icons-round text-base transition-transform">expand_more</span>
-                            <span>Show Details +</span>
-                        </button>
-                        <div class="coupon-details-content hidden mt-3 p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-600 space-y-1.5">
-                            <p class="font-bold text-slate-900">9-Hour Value Pack Highlights:</p>
-                            <ul class="list-disc pl-4 space-y-1 text-slate-600">
-                                <li>Lowest hourly cost ($6.44/hr vs $12.50/hr standard rate).</li>
-                                <li>Includes 540 minutes of active live interview tracking time.</li>
-                                <li>Unused minutes never expire and carry over indefinitely.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- COUPON 4: SAVE $15 ON 6-HOUR PACK -->
-                <article class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-xs coupon-card relative overflow-hidden">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
-                        <div class="flex items-start gap-4">
-                            <div class="w-16 h-16 sm:w-20 sm:h-20 bg-blue-50 border border-blue-200 rounded-2xl flex flex-col items-center justify-center text-center shrink-0 p-2">
-                                <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">DEAL</span>
-                                <span class="text-lg sm:text-xl font-extrabold text-blue-700 leading-none mt-1">$44</span>
-                                <span class="text-[10px] text-blue-600 font-semibold">6 HOURS</span>
-                            </div>
-                            <div class="space-y-1.5">
-                                <div class="flex flex-wrap items-center gap-2">
-                                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-md inline-flex items-center gap-1">
-                                        <span class="material-icons-round text-xs">check_circle</span> Verified
-                                    </span>
-                                    <span class="bg-slate-100 text-slate-800 text-xs font-bold px-2.5 py-0.5 rounded-md">Time Pack Special</span>
+<article class="card coupon-card affiliate-card retailmenot-style">
+                                <div class="coupon-header-bar">
+                                    <div class="header-badges">
+                                        <span class="badge verified-badge"><span class="material-icons-round" aria-hidden="true">verified</span> Verified</span>
+                                        <span class="badge type-badge">CODE</span>
+                                    </div>
+                                    <span class="badge discount-pill">100% FREE TRIAL</span>
                                 </div>
-                                <h3 class="text-lg sm:text-xl font-extrabold text-slate-900">
-                                    6-Hour Time Pack Deal for $44.00 (Save $15 vs Hourly Rate)
-                                </h3>
-                                <p class="text-slate-600 text-sm leading-relaxed">
-                                    Ideal for candidates preparing for multi-stage technical or panel interviews. Includes 360 live interview tracking minutes at just $7.33/hour.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- ACTION BOX -->
-                        <div class="shrink-0 flex flex-col items-stretch md:items-end gap-2 w-full md:w-auto">
-                            <a href="https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/" target="_blank" rel="noopener sponsored" class="bg-slate-900 hover:bg-slate-800 text-white font-extrabold px-6 py-3 rounded-xl text-sm transition flex items-center justify-center gap-2 shadow-xs text-center">
-                                <span>Get 6-Hour Deal</span>
-                                <span class="material-icons-round text-base">open_in_new</span>
-                            </a>
-                            <span class="text-[11px] text-slate-500 font-medium text-right">Unused Minutes Never Expire</span>
-                        </div>
-                    </div>
-
-                    <!-- SHOW DETAILS COLLAPSIBLE SECTION -->
-                    <div class="mt-4 pt-3 border-t border-slate-100">
-                        <button onclick="toggleCouponDetails(this)" class="inline-flex items-center gap-1 text-xs font-semibold text-slate-500 hover:text-sky-600 transition focus:outline-none">
-                            <span class="material-icons-round text-base transition-transform">expand_more</span>
-                            <span>Show Details +</span>
-                        </button>
-                        <div class="coupon-details-content hidden mt-3 p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-600 space-y-1.5">
-                            <p class="font-bold text-slate-900">6-Hour Time Pack Details:</p>
-                            <ul class="list-disc pl-4 space-y-1 text-slate-600">
-                                <li>Provides 360 active interview tracking minutes.</li>
-                                <li>Saves $15 compared to single-hour refills.</li>
-                                <li>Full access to desktop stealth mode, audio loopback, and resume RAG.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- COUPON 5: STARTER PACK OFFER FOR $7.50 -->
-                <article class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-xs coupon-card relative overflow-hidden">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
-                        <div class="flex items-start gap-4">
-                            <div class="w-16 h-16 sm:w-20 sm:h-20 bg-amber-50 border border-amber-200 rounded-2xl flex flex-col items-center justify-center text-center shrink-0 p-2">
-                                <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">PACK</span>
-                                <span class="text-lg sm:text-xl font-extrabold text-amber-700 leading-none mt-1">$7.5</span>
-                                <span class="text-[10px] text-amber-600 font-semibold">1 HOUR</span>
-                            </div>
-                            <div class="space-y-1.5">
-                                <div class="flex flex-wrap items-center gap-2">
-                                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-md inline-flex items-center gap-1">
-                                        <span class="material-icons-round text-xs">check_circle</span> Verified
-                                    </span>
-                                    <span class="bg-slate-100 text-slate-800 text-xs font-bold px-2.5 py-0.5 rounded-md">Starter Offer</span>
+                                <div class="coupon-main-body">
+                                    <div class="coupon-discount-box">
+                                        <span class="discount-hero">100% FREE TRIAL</span>
+                                    </div>
+                                    <div class="coupon-info-box">
+                                        <h3 class="coupon-title">
+                                            <a href="#" target="_blank" rel="noopener sponsored">⚡ Free 15-Minute Trial (No Credit Card Required)</a>
+                                        </h3>
+                                        <div class="coupon-social-proof">
+                                            <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
+                                            <span class="meta-dot">•</span>
+                                            <span class="users-meta">1840 interested users</span>
+                                        </div>
+                                    </div>
+                                    <div class="coupon-action-box">
+                                        <div class="code-reveal-wrapper" data-code="NO CODE NEEDED" data-link="#">
+                                        <span class="hidden-code-mask">••••••••</span>
+                                        <button class="btn show-code-btn" aria-label="Show Coupon Code and Copy">Show Code</button>
+                                    </div>
+                                    </div>
                                 </div>
-                                <h3 class="text-lg sm:text-xl font-extrabold text-slate-900">
-                                    1-Hour Starter Time Pack for $7.50
-                                </h3>
-                                <p class="text-slate-600 text-sm leading-relaxed">
-                                    Perfect for single high-stakes technical or behavioral screening calls. Unlocks full stealth overlay, resume RAG, and Screen OCR capabilities.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- ACTION BOX -->
-                        <div class="shrink-0 flex flex-col items-stretch md:items-end gap-2 w-full md:w-auto">
-                            <a href="https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/" target="_blank" rel="noopener sponsored" class="bg-sky-600 hover:bg-sky-700 text-white font-extrabold px-6 py-3 rounded-xl text-sm transition flex items-center justify-center gap-2 shadow-xs text-center">
-                                <span>Get Starter Pack</span>
-                                <span class="material-icons-round text-base">open_in_new</span>
-                            </a>
-                            <span class="text-[11px] text-slate-500 font-medium text-right">Instant Minutes Activation</span>
-                        </div>
-                    </div>
-
-                    <!-- SHOW DETAILS COLLAPSIBLE SECTION -->
-                    <div class="mt-4 pt-3 border-t border-slate-100">
-                        <button onclick="toggleCouponDetails(this)" class="inline-flex items-center gap-1 text-xs font-semibold text-slate-500 hover:text-sky-600 transition focus:outline-none">
-                            <span class="material-icons-round text-base transition-transform">expand_more</span>
-                            <span>Show Details +</span>
-                        </button>
-                        <div class="coupon-details-content hidden mt-3 p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-600 space-y-1.5">
-                            <p class="font-bold text-slate-900">1-Hour Starter Pack Conditions:</p>
-                            <ul class="list-disc pl-4 space-y-1 text-slate-600">
-                                <li>Great low-cost entry option for a single 45-60 minute interview.</li>
-                                <li>Pausing during call pauses minute deduction.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- COUPON 6: FREE SCREEN OCR TRIAL -->
-                <article class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-xs coupon-card relative overflow-hidden">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
-                        <div class="flex items-start gap-4">
-                            <div class="w-16 h-16 sm:w-20 sm:h-20 bg-purple-50 border border-purple-200 rounded-2xl flex flex-col items-center justify-center text-center shrink-0 p-2">
-                                <span class="text-xs font-bold text-purple-600 uppercase tracking-wider">VISION</span>
-                                <span class="text-lg sm:text-xl font-extrabold text-purple-700 leading-none mt-1">OCR</span>
-                                <span class="text-[10px] text-purple-600 font-semibold">FREE</span>
-                            </div>
-                            <div class="space-y-1.5">
-                                <div class="flex flex-wrap items-center gap-2">
-                                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-md inline-flex items-center gap-1">
-                                        <span class="material-icons-round text-xs">check_circle</span> Verified
-                                    </span>
-                                    <span class="bg-purple-100 text-purple-800 text-xs font-bold px-2.5 py-0.5 rounded-md">Feature Offer</span>
+                                <div class="coupon-details-footer">
+                                    <div class="coupon-details-content hidden">
+                                        <div class="details-inner-box">
+                                            <span class="material-icons-round info-icon">info</span>
+                                            <p>Sign up on ApplicantAlly to unlock a free 15-minute live interview trial instantly.</p>
+                                        </div>
+                                    </div>
+                                    <div class="details-toggle-container">
+                                        <button type="button" class="toggle-details-btn" onclick="toggleCouponDetails(this)">
+                                            <span class="btn-text">Show Details</span>
+                                            <span class="toggle-icon">+</span>
+                                        </button>
+                                    </div>
                                 </div>
-                                <h3 class="text-lg sm:text-xl font-extrabold text-slate-900">
-                                    Free Screen OCR Vision Capture for Coding &amp; Whiteboard Rounds
-                                </h3>
-                                <p class="text-slate-600 text-sm leading-relaxed">
-                                    Test the instant screen capture vision engine (Alt + S) on LeetCode algorithmic prompts, system architecture diagrams, and financial slides during your free trial.
-                                </p>
-                            </div>
-                        </div>
+                            </article>
 
-                        <!-- ACTION BOX -->
-                        <div class="shrink-0 flex flex-col items-stretch md:items-end gap-2 w-full md:w-auto">
-                            <a href="https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/" target="_blank" rel="noopener sponsored" class="bg-purple-600 hover:bg-purple-700 text-white font-extrabold px-6 py-3 rounded-xl text-sm transition flex items-center justify-center gap-2 shadow-xs text-center">
-                                <span>Try Screen OCR Free</span>
-                                <span class="material-icons-round text-base">open_in_new</span>
-                            </a>
-                            <span class="text-[11px] text-slate-500 font-medium text-right">Alt + S Hotkey Ready</span>
-                        </div>
+<article class="card coupon-card affiliate-card retailmenot-style">
+                                <div class="coupon-header-bar">
+                                    <div class="header-badges">
+                                        <span class="badge verified-badge"><span class="material-icons-round" aria-hidden="true">verified</span> Verified</span>
+                                        <span class="badge type-badge">CODE</span>
+                                    </div>
+                                    <span class="badge discount-pill">4 HOURS PACK</span>
+                                </div>
+                                <div class="coupon-main-body">
+                                    <div class="coupon-discount-box">
+                                        <span class="discount-hero">4 HOURS PACK</span>
+                                    </div>
+                                    <div class="coupon-info-box">
+                                        <h3 class="coupon-title">
+                                            <a href="#" target="_blank" rel="noopener sponsored">💼 ApplicantAlly 4 Hours Interview Pack - $22</a>
+                                        </h3>
+                                        <div class="coupon-social-proof">
+                                            <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
+                                            <span class="meta-dot">•</span>
+                                            <span class="users-meta">1840 interested users</span>
+                                        </div>
+                                    </div>
+                                    <div class="coupon-action-box">
+                                        <div class="code-reveal-wrapper" data-code="DEAL ACTIVATED" data-link="#">
+                                        <span class="hidden-code-mask">••••••••</span>
+                                        <button class="btn show-code-btn" aria-label="Show Coupon Code and Copy">Show Code</button>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="coupon-details-footer">
+                                    <div class="coupon-details-content hidden">
+                                        <div class="details-inner-box">
+                                            <span class="material-icons-round info-icon">info</span>
+                                            <p>Pay-as-you-go 4-hour live interview pack. Ideal for single interview rounds and initial screens.</p>
+                                        </div>
+                                    </div>
+                                    <div class="details-toggle-container">
+                                        <button type="button" class="toggle-details-btn" onclick="toggleCouponDetails(this)">
+                                            <span class="btn-text">Show Details</span>
+                                            <span class="toggle-icon">+</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </article>
+
+<article class="card coupon-card affiliate-card retailmenot-style">
+                                <div class="coupon-header-bar">
+                                    <div class="header-badges">
+                                        <span class="badge verified-badge"><span class="material-icons-round" aria-hidden="true">verified</span> Verified</span>
+                                        <span class="badge type-badge">CODE</span>
+                                    </div>
+                                    <span class="badge discount-pill">8 HOURS PACK</span>
+                                </div>
+                                <div class="coupon-main-body">
+                                    <div class="coupon-discount-box">
+                                        <span class="discount-hero">8 HOURS PACK</span>
+                                    </div>
+                                    <div class="coupon-info-box">
+                                        <h3 class="coupon-title">
+                                            <a href="#" target="_blank" rel="noopener sponsored">⭐ ApplicantAlly 8 Hours Interview Pack - $44 (Popular Choice)</a>
+                                        </h3>
+                                        <div class="coupon-social-proof">
+                                            <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
+                                            <span class="meta-dot">•</span>
+                                            <span class="users-meta">1840 interested users</span>
+                                        </div>
+                                    </div>
+                                    <div class="coupon-action-box">
+                                        <div class="code-reveal-wrapper" data-code="BEST VALUE" data-link="#">
+                                        <span class="hidden-code-mask">••••••••</span>
+                                        <button class="btn show-code-btn" aria-label="Show Coupon Code and Copy">Show Code</button>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="coupon-details-footer">
+                                    <div class="coupon-details-content hidden">
+                                        <div class="details-inner-box">
+                                            <span class="material-icons-round info-icon">info</span>
+                                            <p>Best choice for active interview loops, technical screens, and follow-up hiring manager calls.</p>
+                                        </div>
+                                    </div>
+                                    <div class="details-toggle-container">
+                                        <button type="button" class="toggle-details-btn" onclick="toggleCouponDetails(this)">
+                                            <span class="btn-text">Show Details</span>
+                                            <span class="toggle-icon">+</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </article>
+
+<article class="card coupon-card affiliate-card retailmenot-style">
+                                <div class="coupon-header-bar">
+                                    <div class="header-badges">
+                                        <span class="badge verified-badge"><span class="material-icons-round" aria-hidden="true">verified</span> Verified</span>
+                                        <span class="badge type-badge">CODE</span>
+                                    </div>
+                                    <span class="badge discount-pill">12 HOURS PACK</span>
+                                </div>
+                                <div class="coupon-main-body">
+                                    <div class="coupon-discount-box">
+                                        <span class="discount-hero">12 HOURS PACK</span>
+                                    </div>
+                                    <div class="coupon-info-box">
+                                        <h3 class="coupon-title">
+                                            <a href="#" target="_blank" rel="noopener sponsored">🚀 ApplicantAlly 12 Hours Interview Pack - $58 (Lowest Hourly Rate)</a>
+                                        </h3>
+                                        <div class="coupon-social-proof">
+                                            <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
+                                            <span class="meta-dot">•</span>
+                                            <span class="users-meta">1840 interested users</span>
+                                        </div>
+                                    </div>
+                                    <div class="coupon-action-box">
+                                        <div class="code-reveal-wrapper" data-code="MAX SAVINGS" data-link="#">
+                                        <span class="hidden-code-mask">••••••••</span>
+                                        <button class="btn show-code-btn" aria-label="Show Coupon Code and Copy">Show Code</button>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="coupon-details-footer">
+                                    <div class="coupon-details-content hidden">
+                                        <div class="details-inner-box">
+                                            <span class="material-icons-round info-icon">info</span>
+                                            <p>Maximum value pack for multi-stage interview loops across multiple prospective employers.</p>
+                                        </div>
+                                    </div>
+                                    <div class="details-toggle-container">
+                                        <button type="button" class="toggle-details-btn" onclick="toggleCouponDetails(this)">
+                                            <span class="btn-text">Show Details</span>
+                                            <span class="toggle-icon">+</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </article>
                     </div>
-
-                    <!-- SHOW DETAILS COLLAPSIBLE SECTION -->
-                    <div class="mt-4 pt-3 border-t border-slate-100">
-                        <button onclick="toggleCouponDetails(this)" class="inline-flex items-center gap-1 text-xs font-semibold text-slate-500 hover:text-sky-600 transition focus:outline-none">
-                            <span class="material-icons-round text-base transition-transform">expand_more</span>
-                            <span>Show Details +</span>
-                        </button>
-                        <div class="coupon-details-content hidden mt-3 p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-600 space-y-1.5">
-                            <p class="font-bold text-slate-900">Screen OCR Features:</p>
-                            <ul class="list-disc pl-4 space-y-1 text-slate-600">
-                                <li>Capture code snippets, technical questions, or diagrams using global shortcut Alt + S.</li>
-                                <li>Generates optimized solutions and explanation hints in sub-1.5 seconds.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
         </section>
 
         <!-- TWO-COLUMN MAIN CONTENT & SIDEBAR SECTION -->
@@ -956,5 +862,6 @@
             }
         }
     </script>
+    <script src="./assets/js/script.js" defer></script>
 </body>
 </html>

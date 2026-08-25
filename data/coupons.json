@@ -394,10 +394,10 @@
   {
     "id": "ew-flights-35",
     "storeId": "eurowings",
-    "title": "European Flights Below €35",
-    "description": "Book one-way and return flights starting from €29.99 / €34.99 across major German and European holiday routes.",
+    "title": "European Flights Below \u20ac35",
+    "description": "Book one-way and return flights starting from \u20ac29.99 / \u20ac34.99 across major German and European holiday routes.",
     "code": "",
-    "discount": "< €35",
+    "discount": "< \u20ac35",
     "type": "deal",
     "category": "Travel",
     "verified": true,
@@ -474,10 +474,10 @@
   {
     "id": "ew-blind-booking",
     "storeId": "eurowings",
-    "title": "Eurowings Blind Booking: Mystery Getaways from €33",
-    "description": "Select your preferred travel theme (Culture, Beach, Shopping, Party) and unlock surprise flights from just €33 per leg.",
+    "title": "Eurowings Blind Booking: Mystery Getaways from \u20ac33",
+    "description": "Select your preferred travel theme (Culture, Beach, Shopping, Party) and unlock surprise flights from just \u20ac33 per leg.",
     "code": "",
-    "discount": "From €33",
+    "discount": "From \u20ac33",
     "type": "deal",
     "category": "Travel",
     "verified": true,
@@ -491,7 +491,7 @@
     "id": "ew-mobile-checkin",
     "storeId": "eurowings",
     "title": "Free Mobile & Web Check-In (72h to 3h Before Flight)",
-    "description": "Get your digital boarding pass on iOS & Android to skip airport check-in lines and avoid the €15 desk check-in fee.",
+    "description": "Get your digital boarding pass on iOS & Android to skip airport check-in lines and avoid the \u20ac15 desk check-in fee.",
     "code": "",
     "discount": "Free Check-In",
     "type": "deal",
@@ -506,7 +506,7 @@
   {
     "id": "ew-flex-light",
     "storeId": "eurowings",
-    "title": "Eurowings Flex Light: 0€ Rebooking Fee Add-on",
+    "title": "Eurowings Flex Light: 0\u20ac Rebooking Fee Add-on",
     "description": "Enjoy maximum travel flexibility to change your flight date or time up to 40 minutes before flight departure.",
     "code": "",
     "discount": "Free Rebook",
@@ -706,7 +706,7 @@
   {
     "id": "crsed-free-to-play",
     "storeId": "crsed",
-    "title": "Play in Cuisine Royale for FREE! — Full Game Client (PC & Consoles)",
+    "title": "Play in Cuisine Royale for FREE! \u2014 Full Game Client (PC & Consoles)",
     "description": "Download and play the full CRSED: F.O.A.D. battle royale client at zero cost. Get unlimited access to massive tactical maps, weapon arsenals, and multiplayer matchmaking.",
     "code": "",
     "discount": "100% FREE",
@@ -746,7 +746,7 @@
   {
     "id": "crsed-battle-pass-rewards",
     "storeId": "crsed",
-    "title": "CRSED Battle Pass — Earn Golden Crowns, Outfits & Mystic Rituals",
+    "title": "CRSED Battle Pass \u2014 Earn Golden Crowns, Outfits & Mystic Rituals",
     "description": "Complete daily and weekly combat challenges to earn Sinister Souls, unlock ritual signs, exotic underwear outfits, masks, and tombstones.",
     "code": "",
     "discount": "SEASON REWARDS",
@@ -766,7 +766,7 @@
   {
     "id": "crsed-twitch-drops",
     "storeId": "crsed",
-    "title": "Twitch Drops & Community Events — Free Custom Tombstones & Hex Bags",
+    "title": "Twitch Drops & Community Events \u2014 Free Custom Tombstones & Hex Bags",
     "description": "Link your Gaijin.net account to Twitch and tune into authorized CRSED livestreams to earn free mystery crates, cosmetic hex scrolls, and weapon skins.",
     "code": "",
     "discount": "FREE DROPS",
@@ -786,7 +786,7 @@
   {
     "id": "crsed-store-bundles",
     "storeId": "crsed",
-    "title": "Gaijin Store Champion & Weapon Packs — Exclusive Character Bundles",
+    "title": "Gaijin Store Champion & Weapon Packs \u2014 Exclusive Character Bundles",
     "description": "Accelerate your roster with specialty packs for Bokor (Zombie Horde), Valentine (Flickering Step), and Katrina (Bastion Shield) with bonus Golden Crowns.",
     "code": "",
     "discount": "STORE BUNDLES",
@@ -826,7 +826,7 @@
   {
     "id": "crsed-dagor-rtx",
     "storeId": "crsed",
-    "title": "Dagor Engine RTX & DLSS Upgrade — Ultra-Realistic Lighting & Physics",
+    "title": "Dagor Engine RTX & DLSS Upgrade \u2014 Ultra-Realistic Lighting & Physics",
     "description": "Experience realistic ray-traced global illumination, advanced particle physics, realistic water rendering, and NVIDIA DLSS / AMD FSR performance boosts.",
     "code": "",
     "discount": "ENGINE TECH",
@@ -846,7 +846,7 @@
   {
     "id": "crsed-2fa-bonus",
     "storeId": "crsed",
-    "title": "Gaijin Pass 2FA Account Security Bonus — Free In-Game Decal & Protection",
+    "title": "Gaijin Pass 2FA Account Security Bonus \u2014 Free In-Game Decal & Protection",
     "description": "Activate two-factor authentication via Gaijin Pass on iOS or Android to protect your inventory, battle pass progression, and claim free bonus cosmetic items.",
     "code": "",
     "discount": "2FA BONUS",
@@ -1266,7 +1266,7 @@
   {
     "id": "lenovo-thinkbook-14x-student-usd",
     "storeId": "lenovo",
-    "title": "Exclusive Student Pricing on ThinkBook 14x — Starting from $799",
+    "title": "Exclusive Student Pricing on ThinkBook 14x \u2014 Starting from $799",
     "description": "Verified students and faculty get exclusive reduced pricing on the ThinkBook 14x premium business laptop starting from $799.",
     "code": "NO CODE NEEDED",
     "discount": "FROM $799",
@@ -1746,7 +1746,7 @@
   {
     "id": "forcedrop-skin-upgrade-contract",
     "storeId": "forcedrop",
-    "title": "Contract & Skin Upgrade Multiplier — Up to 10x Value",
+    "title": "Contract & Skin Upgrade Multiplier \u2014 Up to 10x Value",
     "description": "Trade in low-tier CS2 skins for high-value Covert knives and gloves using ForceDrop transparent upgrade odds.",
     "code": "NO CODE NEEDED",
     "discount": "UP TO 10X",
@@ -1766,7 +1766,7 @@
   {
     "id": "forcedrop-instant-steam-withdrawal",
     "storeId": "forcedrop",
-    "title": "Instant Steam Skin Withdrawal — Direct P2P & Bot Delivery",
+    "title": "Instant Steam Skin Withdrawal \u2014 Direct P2P & Bot Delivery",
     "description": "Withdraw all won skins directly into your Steam trade inventory within seconds via instant automated trade offers.",
     "code": "NO CODE NEEDED",
     "discount": "INSTANT DELIVERY",
@@ -1786,7 +1786,7 @@
   {
     "id": "godlike-40-off-12gb",
     "storeId": "godlike-host",
-    "title": "40% OFF First Order from 12 GB RAM — Game Servers & VPS",
+    "title": "40% OFF First Order from 12 GB RAM \u2014 Game Servers & VPS",
     "description": "Get an exclusive 40% discount on your first order with 12 GB RAM or higher for Minecraft, Palworld, Rust, Enshrouded, and VPS servers.",
     "code": "affiliate40",
     "discount": "40% OFF",
@@ -1846,7 +1846,7 @@
   {
     "id": "godlike-14-day-free-trial",
     "storeId": "godlike-host",
-    "title": "14-Day Free Trial — 24/7 Minecraft & Game Server Hosting",
+    "title": "14-Day Free Trial \u2014 24/7 Minecraft & Game Server Hosting",
     "description": "Test GODLIKE.Host 100% free for 14 days with 24/7 uptime, instant server deployment, and web control panel access.",
     "code": "NO CODE NEEDED",
     "discount": "14 DAYS FREE",
@@ -1926,7 +1926,7 @@
   {
     "id": "vectorstock-unlimited-subscription",
     "storeId": "vectorstock",
-    "title": "Unlimited Downloads for Commercial Use — Save $60.00/Year",
+    "title": "Unlimited Downloads for Commercial Use \u2014 Save $60.00/Year",
     "description": "Get unlimited vector downloads for commercial use starting at $14.99/mo with annual billing that saves you $60.00 per year.",
     "code": "NO CODE NEEDED",
     "discount": "SAVE $60/YEAR",
@@ -1946,7 +1946,7 @@
   {
     "id": "vectorstock-flexible-credits",
     "storeId": "vectorstock",
-    "title": "Flexible Credit Packs — 50 Credits for $50 ($1/Credit)",
+    "title": "Flexible Credit Packs \u2014 50 Credits for $50 ($1/Credit)",
     "description": "Download commercial-use vectors pay-as-you-go with credit packs: 50 credits for $50, 100 credits for $100, or 150 credits for $150.",
     "code": "NO CODE NEEDED",
     "discount": "50 CREDITS $50",
@@ -1966,7 +1966,7 @@
   {
     "id": "vectorstock-pay-per-image",
     "storeId": "vectorstock",
-    "title": "Pay-Per-Image Single Downloads — Starting at $14.99",
+    "title": "Pay-Per-Image Single Downloads \u2014 Starting at $14.99",
     "description": "Download single high-res vector files in EPS, AI, PDF, or PNG format with standard commercial licensing on-demand.",
     "code": "NO CODE NEEDED",
     "discount": "SINGLE DOWNLOAD",
@@ -2006,7 +2006,7 @@
   {
     "id": "vectorstock-expanded-license",
     "storeId": "vectorstock",
-    "title": "Expanded Commercial License — Merchandise & Resale Rights",
+    "title": "Expanded Commercial License \u2014 Merchandise & Resale Rights",
     "description": "Unlock expanded commercial rights for print-on-demand products, retail T-shirts, mugs, poster prints, and digital resale.",
     "code": "NO CODE NEEDED",
     "discount": "COMMERCIAL RESALE",
@@ -2026,7 +2026,7 @@
   {
     "id": "enlisted-play-free",
     "storeId": "enlisted",
-    "title": "Play Enlisted for FREE! — Official Free Registration Deal",
+    "title": "Play Enlisted for FREE! \u2014 Official Free Registration Deal",
     "description": "Register a free account on Enlisted to command infantry squads, armor, and warplanes across WWII battle theaters.",
     "code": "NO CODE NEEDED",
     "discount": "PLAY FREE",
@@ -2046,7 +2046,7 @@
   {
     "id": "enlisted-starter-squad-pack",
     "storeId": "enlisted",
-    "title": "Free Starter Squads & Infantry Pack — New Player Welcome Bonus",
+    "title": "Free Starter Squads & Infantry Pack \u2014 New Player Welcome Bonus",
     "description": "Unlock multiple infantry squads, basic firearms, tactical grenades, and soldier upgrade progression on free sign up.",
     "code": "NO CODE NEEDED",
     "discount": "FREE STARTER SQUADS",
@@ -2066,7 +2066,7 @@
   {
     "id": "enlisted-combined-arms-access",
     "storeId": "enlisted",
-    "title": "WWII Tanks & Aircraft Combat — Free Combined Arms Access",
+    "title": "WWII Tanks & Aircraft Combat \u2014 Free Combined Arms Access",
     "description": "Command iconic tanks and pilot fighter/bomber warplanes in the same live matches without paying a dime.",
     "code": "NO CODE NEEDED",
     "discount": "FREE COMBINED ARMS",
@@ -2086,7 +2086,7 @@
   {
     "id": "enlisted-battle-pass-events",
     "storeId": "enlisted",
-    "title": "Seasonal Battle Pass & Special Events — Free & Elite Rewards",
+    "title": "Seasonal Battle Pass & Special Events \u2014 Free & Elite Rewards",
     "description": "Complete daily combat tasks and seasonal battle pass tiers to earn free booster orders, rare historical weaponry, and camos.",
     "code": "NO CODE NEEDED",
     "discount": "SEASONAL REWARDS",
@@ -2106,7 +2106,7 @@
   {
     "id": "crossout-play-free",
     "storeId": "crossout",
-    "title": "Play Crossout for FREE! — Official Free Registration Deal",
+    "title": "Play Crossout for FREE! \u2014 Official Free Registration Deal",
     "description": "Register a free account on Crossout to instantly build custom armored war machines and engage in 8v8 vehicular combat and co-op raids.",
     "code": "NO CODE NEEDED",
     "discount": "PLAY FREE",
@@ -2126,7 +2126,7 @@
   {
     "id": "crossout-starter-vehicle-pack",
     "storeId": "crossout",
-    "title": "Free Armored Vehicle Starter Pack — New Player Welcome Bonus",
+    "title": "Free Armored Vehicle Starter Pack \u2014 New Player Welcome Bonus",
     "description": "Unlock a free starter combat vehicle, autocannons, cabin parts, and structural armor plates upon completing free registration.",
     "code": "NO CODE NEEDED",
     "discount": "FREE STARTER PACK",
@@ -2146,7 +2146,7 @@
   {
     "id": "crossout-free-coins-market-bonus",
     "storeId": "crossout",
-    "title": "Free In-Game Market & Trading Access — Earn Free Coins",
+    "title": "Free In-Game Market & Trading Access \u2014 Earn Free Coins",
     "description": "Access the player-driven market to trade crafted vehicle components, decor, and weapons for free Crossout Coins.",
     "code": "NO CODE NEEDED",
     "discount": "FREE MARKET ACCESS",
@@ -2166,7 +2166,7 @@
   {
     "id": "crossout-coop-raids-unlocked",
     "storeId": "crossout",
-    "title": "Co-op Story Campaign & PvE Raids — Unlocked Free",
+    "title": "Co-op Story Campaign & PvE Raids \u2014 Unlocked Free",
     "description": "Join friends or fight solo in cooperative story missions and raids to defeat AI bosses and scavenge rare crafting materials.",
     "code": "NO CODE NEEDED",
     "discount": "FREE PVE RAIDS",
@@ -2206,7 +2206,7 @@
   {
     "id": "doctronic-free-ai-consult",
     "storeId": "doctronic-us",
-    "title": "Free AI Health Consult — Available 24/7",
+    "title": "Free AI Health Consult \u2014 Available 24/7",
     "description": "Start with Doctronic's AI health consultation at no charge and get personalized health guidance before deciding whether you need a human doctor.",
     "code": "NO CODE NEEDED",
     "discount": "FREE CONSULT",
@@ -2226,7 +2226,7 @@
   {
     "id": "doctronic-39-doctor-visit",
     "storeId": "doctronic-us",
-    "title": "Licensed Doctor Telehealth Visit — $39",
+    "title": "Licensed Doctor Telehealth Visit \u2014 $39",
     "description": "When appropriate, connect with a licensed U.S. doctor online. Doctronic's official website currently lists $39 cash-pay video visits, with insurance also accepted.",
     "code": "NO CODE NEEDED",
     "discount": "$39 TELEHEALTH",
@@ -2500,7 +2500,7 @@
   {
     "id": "retouch4me-20-off-bonus",
     "storeId": "retouch4me",
-    "title": "🎁 Free Cloud Retouch Bonuses + 20% OFF All Retouch4me AI Plugins",
+    "title": "\ud83c\udf81 Free Cloud Retouch Bonuses + 20% OFF All Retouch4me AI Plugins",
     "description": "Get 20% OFF all AI photo retouching plugins plus extra Free Cloud Retouch credits for batch portrait processing.",
     "code": "R4M20BONUS",
     "discount": "20% OFF + BONUS",
@@ -3424,7 +3424,7 @@
   },
   {
     "id": "wps-office-free",
-    "title": "AI-Powered Office Suite for Everyone – Free Download",
+    "title": "AI-Powered Office Suite for Everyone \u2013 Free Download",
     "description": "Download WPS Office for Windows, macOS, Linux, Android and iOS. Includes Writer, Spreadsheet, Presentation, PDF tools and built-in AI features.",
     "store": {
       "id": "wps-office",
@@ -4484,7 +4484,7 @@
   {
     "id": "nordvpn-75off-deal",
     "title": "Get 75% Off NordVPN + 3 Extra Months",
-    "description": "Protect all your devices with military-grade encryption, blazing-fast VPN servers, Threat Protection Pro™, Meshnet, Dark Web Monitoring, and a strict no-logs policy. Limited-time offer includes 75% off plus 3 bonus months.",
+    "description": "Protect all your devices with military-grade encryption, blazing-fast VPN servers, Threat Protection Pro\u2122, Meshnet, Dark Web Monitoring, and a strict no-logs policy. Limited-time offer includes 75% off plus 3 bonus months.",
     "store": {
       "id": "nordvpn",
       "name": "NordVPN",
@@ -4693,7 +4693,7 @@
   {
     "id": "nordvpn-10-devices-support",
     "title": "Protect Up To 10 Devices Simultaneously",
-    "description": "One NordVPN account protects 10 devices at once—including Mac, Windows, iPhone, Android, Linux, Fire TV, and Wi-Fi routers.",
+    "description": "One NordVPN account protects 10 devices at once\u2014including Mac, Windows, iPhone, Android, Linux, Fire TV, and Wi-Fi routers.",
     "store": {
       "id": "nordvpn",
       "name": "NordVPN",
@@ -5336,7 +5336,7 @@
     "storeId": "box",
     "store": "Box Cloud Storage",
     "code": "FREE10GB",
-    "title": "100% Free Individual Plan – 10 GB Cloud Storage & Box Sign",
+    "title": "100% Free Individual Plan \u2013 10 GB Cloud Storage & Box Sign",
     "description": "Get 10 GB secure cloud storage and 5 native Box Sign e-signatures monthly for $0.",
     "discount": "FREE",
     "type": "deal",
@@ -5348,7 +5348,7 @@
   {
     "id": "applicantally-astart30",
     "storeId": "applicantally",
-    "title": "🎁 Extra 30 Free Minutes for Any Order (Verified Coupon)",
+    "title": "\ud83c\udf81 Extra 30 Free Minutes for Any Order (Verified Coupon)",
     "description": "Get an extra 30 minutes of AI interview assistance added to any order or time pack.",
     "code": "ASTART30",
     "discount": "EXTRA 30 MINS FREE",
@@ -5360,7 +5360,7 @@
   {
     "id": "applicantally-free-15-min-trial",
     "storeId": "applicantally",
-    "title": "⚡ Free 15-Minute Trial (No Credit Card Required)",
+    "title": "\u26a1 Free 15-Minute Trial (No Credit Card Required)",
     "description": "Sign up on ApplicantAlly to unlock a free 15-minute live interview trial instantly.",
     "code": "NO CODE NEEDED",
     "discount": "100% FREE TRIAL",
@@ -5372,7 +5372,7 @@
   {
     "id": "applicantally-4-hours-pack",
     "storeId": "applicantally",
-    "title": "💼 ApplicantAlly 4 Hours Interview Pack - $22",
+    "title": "\ud83d\udcbc ApplicantAlly 4 Hours Interview Pack - $22",
     "description": "Pay-as-you-go 4-hour live interview pack. Ideal for single interview rounds and initial screens.",
     "code": "DEAL ACTIVATED",
     "discount": "4 HOURS PACK",
@@ -5384,7 +5384,7 @@
   {
     "id": "applicantally-8-hours-pack",
     "storeId": "applicantally",
-    "title": "⭐ ApplicantAlly 8 Hours Interview Pack - $44 (Popular Choice)",
+    "title": "\u2b50 ApplicantAlly 8 Hours Interview Pack - $44 (Popular Choice)",
     "description": "Best choice for active interview loops, technical screens, and follow-up hiring manager calls.",
     "code": "BEST VALUE",
     "discount": "8 HOURS PACK",
@@ -5396,7 +5396,7 @@
   {
     "id": "applicantally-12-hours-pack",
     "storeId": "applicantally",
-    "title": "🚀 ApplicantAlly 12 Hours Interview Pack - $58 (Lowest Hourly Rate)",
+    "title": "\ud83d\ude80 ApplicantAlly 12 Hours Interview Pack - $58 (Lowest Hourly Rate)",
     "description": "Maximum value pack for multi-stage interview loops across multiple prospective employers.",
     "code": "MAX SAVINGS",
     "discount": "12 HOURS PACK",
@@ -5444,7 +5444,7 @@
   {
     "id": "3dlabprint-hawker-tempest-value-pack",
     "storeId": "3dlabprint",
-    "title": "Hawker Tempest Mk II Value Pack — Up to 31% OFF",
+    "title": "Hawker Tempest Mk II Value Pack \u2014 Up to 31% OFF",
     "description": "Get the complete Hawker Tempest Mk II Value Pack STL files package for high-performance 3D-printed scale RC flight.",
     "code": "NO CODE NEEDED",
     "discount": "31% OFF",
@@ -5528,7 +5528,7 @@
   {
     "id": "3dlabprint-shop-directory",
     "storeId": "3dlabprint",
-    "title": "3DLabPrint Shop Directory — All Printable RC Models",
+    "title": "3DLabPrint Shop Directory \u2014 All Printable RC Models",
     "description": "Browse the complete 3DLabPrint shop directory for 3D-printable RC planes, warbirds, jets, trainer models, and spare parts.",
     "code": "NO CODE NEEDED",
     "discount": "SHOP ALL MODELS",
@@ -5570,7 +5570,7 @@
   {
     "id": "presenti-ai-60-pro-plan",
     "storeId": "presenti-ai",
-    "title": "60% Off Pro Plan — Presenti.ai Coupon",
+    "title": "60% Off Pro Plan \u2014 Presenti.ai Coupon",
     "description": "Get 60% off the Presenti.ai Pro Plan to unlock unlimited AI presentation generation, premium slide templates, and high-resolution PPTX exports.",
     "code": "NO CODE NEEDED",
     "discount": "60% OFF",
@@ -5612,7 +5612,7 @@
   {
     "id": "presenti-ai-free-trial",
     "storeId": "presenti-ai",
-    "title": "Try Presenti.ai Free — AI Slide Creator",
+    "title": "Try Presenti.ai Free \u2014 AI Slide Creator",
     "description": "Test Presenti.ai for free to turn text prompts into structured presentation slides with smart layouts and AI formatting.",
     "code": "NO CODE NEEDED",
     "discount": "FREE TRIAL",
@@ -5633,7 +5633,7 @@
   {
     "id": "star-conflict-play-free",
     "storeId": "star-conflict",
-    "title": "Play in Star Conflict for FREE! — Official Free Game Access",
+    "title": "Play in Star Conflict for FREE! \u2014 Official Free Game Access",
     "description": "Direct free access to tactical 3D space battles and fleet dogfights across Empire, Federation, and Jericho factions.",
     "code": "NO CODE NEEDED",
     "discount": "PLAY FREE",
@@ -5653,7 +5653,7 @@
   {
     "id": "star-conflict-free-monetization",
     "storeId": "star-conflict",
-    "title": "100% Unmonetized Full Access — In-Game Purchases Disabled",
+    "title": "100% Unmonetized Full Access \u2014 In-Game Purchases Disabled",
     "description": "Enjoy all available starship classes and game sectors with microtransactions completely removed ahead of server sunset.",
     "code": "NO CODE NEEDED",
     "discount": "100% UNMONETIZED",
@@ -5673,7 +5673,7 @@
   {
     "id": "star-conflict-open-space",
     "storeId": "star-conflict",
-    "title": "Open Space Sector Wars & Dreadnought Battles — Free Galaxy Access",
+    "title": "Open Space Sector Wars & Dreadnought Battles \u2014 Free Galaxy Access",
     "description": "Explore deep space star systems, defend asteroid belts from alien incursions, and fight for sector supremacy with no paywalls.",
     "code": "NO CODE NEEDED",
     "discount": "SECTOR WARS",
@@ -5713,7 +5713,7 @@
   {
     "id": "aomei-lifetime-25-off",
     "storeId": "aomei",
-    "title": "25% OFF Coupon for Lifetime License — Backupper & Partition Assistant",
+    "title": "25% OFF Coupon for Lifetime License \u2014 Backupper & Partition Assistant",
     "description": "Get 25% OFF any AOMEI Lifetime License with free upgrades for life. Valid on AOMEI Backupper Pro, Partition Assistant Pro, and FoneTool.",
     "code": "SS250OFF",
     "discount": "25% OFF",
@@ -5733,7 +5733,7 @@
   {
     "id": "aomei-yearly-10-off",
     "storeId": "aomei",
-    "title": "10% OFF Coupon for Yearly License — Flagship Software Plans",
+    "title": "10% OFF Coupon for Yearly License \u2014 Flagship Software Plans",
     "description": "Save 10% on any 1-Year subscription license for AOMEI Backupper Pro, Partition Assistant Pro, Cyber Backup, and MyRecover.",
     "code": "SS100OFF",
     "discount": "10% OFF",
@@ -5753,7 +5753,7 @@
   {
     "id": "aomei-bundles-80-off",
     "storeId": "aomei",
-    "title": "Save More with Bundles Today — Up to 80% OFF",
+    "title": "Save More with Bundles Today \u2014 Up to 80% OFF",
     "description": "Get up to 80% discount on AOMEI All-in-One Multi-Product bundles combining Backupper Pro, Partition Assistant Pro, and MyRecover with multi-PC licenses.",
     "code": "",
     "discount": "80% OFF",
@@ -5773,7 +5773,7 @@
   {
     "id": "aomei-backupper-pro-deal",
     "storeId": "aomei",
-    "title": "AOMEI Backupper Pro Lifetime Upgrades — System & Disk Clone Deal",
+    "title": "AOMEI Backupper Pro Lifetime Upgrades \u2014 System & Disk Clone Deal",
     "description": "Backup system, clone OS to high-speed NVMe SSD, real-time file sync, and dissimilar hardware restore with lifetime free upgrades.",
     "code": "",
     "discount": "60% OFF",
@@ -5793,7 +5793,7 @@
   {
     "id": "aomei-partition-pro-deal",
     "storeId": "aomei",
-    "title": "AOMEI Partition Assistant Pro — MBR to GPT & Windows 11 Disk Manager",
+    "title": "AOMEI Partition Assistant Pro \u2014 MBR to GPT & Windows 11 Disk Manager",
     "description": "Easily resize, merge, split partitions, convert MBR to GPT without data loss, migrate OS to SSD, and move installed applications.",
     "code": "",
     "discount": "50% OFF",
@@ -5813,7 +5813,7 @@
   {
     "id": "aomei-cyber-backup-deal",
     "storeId": "aomei",
-    "title": "AOMEI Cyber Backup — Centralized Enterprise VM & SQL Backup Plan",
+    "title": "AOMEI Cyber Backup \u2014 Centralized Enterprise VM & SQL Backup Plan",
     "description": "Enterprise-grade agentless backup for VMware vSphere, ESXi, Hyper-V virtual machines, and Microsoft SQL Server databases.",
     "code": "",
     "discount": "SPECIAL OFFER",
@@ -5833,7 +5833,7 @@
   {
     "id": "aomei-free-standard-editions",
     "storeId": "aomei",
-    "title": "AOMEI Free Editions — Backupper & Partition Assistant Standard",
+    "title": "AOMEI Free Editions \u2014 Backupper & Partition Assistant Standard",
     "description": "Download official freeware versions of AOMEI Backupper Standard and Partition Assistant Standard for essential Windows data protection and disk management.",
     "code": "",
     "discount": "100% FREE",
@@ -5853,7 +5853,7 @@
   {
     "id": "totr-first-month-20-off",
     "storeId": "top-of-the-results",
-    "title": "20% OFF First Month Subscription — Sitewide SEO & CTR Plans",
+    "title": "20% OFF First Month Subscription \u2014 Sitewide SEO & CTR Plans",
     "description": "Get an exclusive 20% discount on your first month across all Top of the Results CTR optimization plans for Google Search, GMB, and YouTube.",
     "code": "FirstMonth20",
     "discount": "20% OFF",
@@ -5873,7 +5873,7 @@
   {
     "id": "totr-free-trial-tier",
     "storeId": "top-of-the-results",
-    "title": "Free Tier / Demo Plan — Test Organic CTR Signals Risk-Free",
+    "title": "Free Tier / Demo Plan \u2014 Test Organic CTR Signals Risk-Free",
     "description": "Access the free starter tier to test automated search queries, residential IP routing, and Google Analytics tracking verification with zero risk.",
     "code": "",
     "discount": "100% FREE",
@@ -5893,7 +5893,7 @@
   {
     "id": "totr-annual-25-off",
     "storeId": "top-of-the-results",
-    "title": "Up to 25% OFF Annual Subscription Plans — Long-Term Savings",
+    "title": "Up to 25% OFF Annual Subscription Plans \u2014 Long-Term Savings",
     "description": "Save up to 25% on your total billing when selecting annual or quarterly subscription commitments for continuous ranking momentum.",
     "code": "",
     "discount": "25% OFF",
@@ -5913,7 +5913,7 @@
   {
     "id": "totr-gmb-local-booster",
     "storeId": "top-of-the-results",
-    "title": "Google Business Profile (GMB) Booster — Local Map 3-Pack Deal",
+    "title": "Google Business Profile (GMB) Booster \u2014 Local Map 3-Pack Deal",
     "description": "Drive high-converting geo-targeted search signals and map interactions to boost local business ranking in the Google Local Pack.",
     "code": "",
     "discount": "SPECIAL OFFER",
@@ -5953,7 +5953,7 @@
   {
     "id": "totr-agency-volume-pack",
     "storeId": "top-of-the-results",
-    "title": "Agency & Multi-Client Volume Package — Up to 40% OFF",
+    "title": "Agency & Multi-Client Volume Package \u2014 Up to 40% OFF",
     "description": "Custom agency packages for SEO agencies, affiliates, and digital marketing firms managing dozens of client websites and local profiles.",
     "code": "",
     "discount": "40% OFF",
@@ -6033,7 +6033,7 @@
   {
     "id": "qustodio-complete-plan",
     "storeId": "qustodio",
-    "title": "Qustodio Complete Plan — Unlimited Devices ($99.95/yr)",
+    "title": "Qustodio Complete Plan \u2014 Unlimited Devices ($99.95/yr)",
     "description": "Protect every family device with unlimited coverage, AI alerts, YouTube monitoring, and Care Plus support.",
     "code": "",
     "discount": "FLAGSHIP PLAN",
@@ -6053,7 +6053,7 @@
   {
     "id": "qustodio-basic-plan",
     "storeId": "qustodio",
-    "title": "Qustodio Basic Plan — 5 Devices ($59.95/yr)",
+    "title": "Qustodio Basic Plan \u2014 5 Devices ($59.95/yr)",
     "description": "Essential digital protection for small families covering up to 5 phones, tablets, or computers.",
     "code": "",
     "discount": "STARTER VALUE",
@@ -6405,5 +6405,89 @@
     "successPercentage": 97,
     "votesCount": 140,
     "terms": "Valid while promotional inventory lasts."
+  },
+  {
+    "id": "purevpn-deal-1",
+    "storeId": "purevpn",
+    "store": "PureVPN",
+    "title": "20% OFF On All PureVPN Subscription Plans",
+    "description": "Get an extra 20% discount on 2-Year, 1-Year, and Monthly PureVPN plans (Standard, Plus, and Max tiers). Auto-revealed on click.",
+    "discount": "20% OFF",
+    "code": "admitad20",
+    "link": "https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/",
+    "votes": 3420,
+    "successRate": "100%"
+  },
+  {
+    "id": "purevpn-deal-2",
+    "storeId": "purevpn",
+    "store": "PureVPN",
+    "title": "Up to 85% OFF PureVPN Multi-Year Plans \u2014 Sitewide Special",
+    "description": "Unlock maximum sitewide savings on PureVPN 2-Year subscriptions starting at just .11/mo with zero setup fees.",
+    "discount": "85% OFF",
+    "code": "",
+    "link": "https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/",
+    "votes": 2840,
+    "successRate": "99%"
+  },
+  {
+    "id": "purevpn-deal-3",
+    "storeId": "purevpn",
+    "store": "PureVPN",
+    "title": "PureVPN 2-Year Plan + 3 Extra Free Months",
+    "description": "Get 27 full months of premium VPN protection, 10 simultaneous connections, and 20Gbps WireGuard servers at up to 85% discount.",
+    "discount": "+3 MO FREE",
+    "code": "",
+    "link": "https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/",
+    "votes": 2150,
+    "successRate": "100%"
+  },
+  {
+    "id": "purevpn-deal-4",
+    "storeId": "purevpn",
+    "store": "PureVPN",
+    "title": "65% OFF PureVPN 1-Year Plan \u2014 Annual Special",
+    "description": "Save 65% on standard monthly billing with the 12-month PureVPN subscription with full device suite access.",
+    "discount": "65% OFF",
+    "code": "",
+    "link": "https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/",
+    "votes": 1780,
+    "successRate": "98%"
+  },
+  {
+    "id": "purevpn-deal-5",
+    "storeId": "purevpn",
+    "store": "PureVPN",
+    "title": "PureVPN Dedicated IP Add-On Special Offer",
+    "description": "Add a dedicated static IP address to your VPN account for clean banking, remote database access, and whitelisted IP security.",
+    "discount": "DEDICATED IP",
+    "code": "",
+    "link": "https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/",
+    "votes": 1240,
+    "successRate": "100%"
+  },
+  {
+    "id": "purevpn-deal-6",
+    "storeId": "purevpn",
+    "store": "PureVPN",
+    "title": "PureVPN Port Forwarding Add-On \u2014 Fast Torrenting",
+    "description": "Enable port forwarding for optimized P2P seeding, uninterrupted remote desktop access, and direct gaming server hosting.",
+    "discount": "PORT FORWARD",
+    "code": "",
+    "link": "https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/",
+    "votes": 980,
+    "successRate": "99%"
+  },
+  {
+    "id": "purevpn-deal-7",
+    "storeId": "purevpn",
+    "store": "PureVPN",
+    "title": "PureVPN 30-Day Money-Back Guarantee",
+    "description": "Try PureVPN completely risk-free for 30 full days with 100% unconditional refund coverage and 24/7 live chat support.",
+    "discount": "30-DAY RISK-FREE",
+    "code": "",
+    "link": "https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/",
+    "votes": 3120,
+    "successRate": "100%"
   }
 ]
