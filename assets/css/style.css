@@ -5762,7 +5762,7 @@ img, video, iframe, object, embed {
    Popular Categories & Brand Banners Sections
    ========================================================================== */
 .popular-categories-section {
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 2rem;
 }
 
@@ -5907,10 +5907,10 @@ img, video, iframe, object, embed {
     line-height: 1.2;
 }
 
-/* Brand Banners Section (Side-by-Side in 1 row on Desktop, Stacked on Mobile) */
+/* Brand Banners Section (Real Product Photography Showcase) */
 .brand-banners-section {
-    padding-top: 1rem;
-    padding-bottom: 2.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1.75rem;
 }
 
 .brand-banners-grid {
@@ -5923,33 +5923,192 @@ img, video, iframe, object, embed {
 @media (max-width: 992px) {
     .brand-banners-grid {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 1.25rem;
     }
 }
 
 .brand-banner-card {
     display: block;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: var(--shadow-md);
-    transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
-    border: 1px solid var(--border-color);
-    aspect-ratio: 2 / 1;
-    background: var(--surface-color);
     position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.12), 0 2px 6px -1px rgba(15, 23, 42, 0.08);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    aspect-ratio: 16 / 9;
+    min-height: 220px;
+    background: #0f172a;
+    text-decoration: none;
 }
 
 .brand-banner-card:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--primary-color);
+    box-shadow: 0 16px 32px -4px rgba(15, 23, 42, 0.2), 0 6px 12px -2px rgba(15, 23, 42, 0.12);
+    border-color: rgba(99, 102, 241, 0.5);
 }
 
-.brand-banner-img {
+.brand-banner-bg {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
+    object-position: center;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.brand-banner-card:hover .brand-banner-bg {
+    transform: scale(1.06);
+}
+
+.brand-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.25) 0%, rgba(15, 23, 42, 0.6) 45%, rgba(15, 23, 42, 0.95) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.15rem;
+    z-index: 2;
+}
+
+.brand-banner-top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.brand-banner-logo-pill {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    padding: 0.35rem 0.75rem;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.brand-banner-logo-pill img {
+    height: 18px;
+    width: auto;
+    max-width: 80px;
+    object-fit: contain;
+}
+
+.brand-banner-tag {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.25rem 0.65rem;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.brand-banner-tag.deal-flash {
+    background: #ef4444;
+    color: #ffffff;
+    border-color: #f87171;
+}
+
+.brand-banner-tag.deal-verified {
+    background: #10b981;
+    color: #ffffff;
+    border-color: #34d399;
+}
+
+.brand-banner-tag.deal-official {
+    background: #3b82f6;
+    color: #ffffff;
+    border-color: #60a5fa;
+}
+
+.brand-banner-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.brand-banner-headline {
+    font-size: 1.35rem;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 1200px) {
+    .brand-banner-headline {
+        font-size: 1.45rem;
+    }
+}
+
+.brand-banner-sub {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.3;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.brand-banner-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.brand-banner-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: #ffffff;
+    color: #0f172a;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.45rem 0.9rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease;
+}
+
+.brand-banner-card:hover .brand-banner-cta-btn {
+    background: #6366f1;
+    color: #ffffff;
+    transform: translateX(2px);
+}
+
+.brand-banner-card:hover .brand-banner-cta-btn.cta-aliexpress {
+    background: #ff4747;
+    color: #ffffff;
+}
+
+.brand-banner-card:hover .brand-banner-cta-btn.cta-lenovo {
+    background: #e11d48;
+    color: #ffffff;
+}
+
+.brand-banner-card:hover .brand-banner-cta-btn.cta-wondershare {
+    background: #0ea5e9;
+    color: #ffffff;
+}
+
+.brand-banner-cta-btn .material-icons-round {
+    font-size: 0.95rem;
+    transition: transform 0.2s ease;
+}
+
+.brand-banner-card:hover .brand-banner-cta-btn .material-icons-round {
+    transform: translateX(3px);
 }
 
 /* ==========================================================================
