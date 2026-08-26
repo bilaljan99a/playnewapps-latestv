@@ -37,14 +37,6 @@
 
     <link rel="preload" as="style" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="preload" as="image" href="/assets/images/banners/aliexpress-real-promo.svg" type="image/svg+xml" fetchpriority="high">
-
-    <script>
-        // window.dataLayer = window.dataLayer || [];
-        // function gtag(){dataLayer.push(arguments);}
-        // gtag('js', new Date());
-        // gtag('config', 'G-XXXXXXXXXX');
-    </script>
 
     <script type="application/ld+json">
     {
@@ -66,14 +58,18 @@
       }
     }
     </script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2GJQLCWRKE"></script>
+    <!-- Google tag (gtag.js) - Non-blocking Performance Optimized -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);} 
       gtag('js', new Date());
-
       gtag('config', 'G-2GJQLCWRKE');
+      window.addEventListener('load', function() {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2GJQLCWRKE';
+        document.head.appendChild(s);
+      });
     </script>
 </head>
 <body>
@@ -214,7 +210,7 @@
             <div class="brand-banners-grid">
                 <!-- 1. AliExpress Real Product Banner -->
                 <a href="store.html?id=aliexpress" class="brand-banner-card" aria-label="AliExpress Choice Day & Super Deals - Up to 80% Off Smart Tech & Audio">
-                    <img src="/assets/images/banners/aliexpress-real-promo.svg" alt="AliExpress Choice Day Deals - Real Tech Gadgets and Audio" width="600" height="338" loading="eager" fetchpriority="high" class="brand-banner-bg">
+                    <img src="/assets/images/banners/aliexpress-real-promo.svg" alt="AliExpress Choice Day Deals - Real Tech Gadgets and Audio" width="600" height="338" loading="lazy" decoding="async" class="brand-banner-bg">
                     <div class="brand-banner-overlay">
                         <div class="brand-banner-top-bar">
                             <div class="brand-banner-logo-pill">
