@@ -2006,8 +2006,8 @@ App.renderReviewsDirectoryUI = async function(options = {}) {
             </div>
             ` : ''}
 
-            <div class="category-filters" role="tablist" aria-label="Review Categories" style="margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; justify-content: space-between;">
-                <div class="filter-buttons-wrap" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <div class="category-filters" aria-label="Review Categories" style="margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; justify-content: space-between;">
+                <div class="filter-buttons-wrap" role="tablist" aria-label="Filter Reviews By Category" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
                     ${filterOptions.map(f => `
                         <button class="filter-btn ${catId === f.id ? 'active' : ''}" data-cat="${f.id}" role="tab" aria-selected="${catId === f.id}">${f.label}</button>
                     `).join('')}

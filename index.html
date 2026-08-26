@@ -213,7 +213,7 @@
             <div class="brand-banners-grid">
                 <!-- 1. AliExpress Real Product Banner -->
                 <a href="store.html?id=aliexpress" class="brand-banner-card" aria-label="AliExpress Choice Day & Super Deals - Up to 80% Off Smart Tech & Audio">
-                    <img src="/assets/images/banners/aliexpress-real-promo.svg" alt="AliExpress Choice Day Deals - Real Tech Gadgets and Audio" width="600" height="338" loading="lazy" class="brand-banner-bg">
+                    <img src="/assets/images/banners/aliexpress-real-promo.svg" alt="AliExpress Choice Day Deals - Real Tech Gadgets and Audio" width="600" height="338" loading="eager" fetchpriority="high" class="brand-banner-bg">
                     <div class="brand-banner-overlay">
                         <div class="brand-banner-top-bar">
                             <div class="brand-banner-logo-pill">
@@ -397,7 +397,7 @@
             <div class="section-header">
                 <h2 class="section-title">Trending Apps</h2>
             </div>
-            <div class="slider-container" aria-roledescription="carousel">
+            <div class="slider-container" aria-label="Trending Apps Carousel">
                 <button class="slider-btn prev-btn" aria-label="Previous Slide"><span class="material-icons-round">chevron_left</span></button>
                 <div class="slider-track" id="slider-track">
                     <!-- Loaded dynamically via app.js -->
@@ -412,11 +412,13 @@
                 <a href="reviews.html" class="view-all" aria-label="View All Reviews">View All <span class="material-icons-round" aria-hidden="true">arrow_forward</span></a>
             </div>
             
-            <div class="category-filters" role="tablist" aria-label="Review Categories">
-                <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
-                <button class="filter-btn" data-filter="android" role="tab" aria-selected="false">Android</button>
-                <button class="filter-btn" data-filter="ios" role="tab" aria-selected="false">iOS</button>
-                <button class="filter-btn" data-filter="pc" role="tab" aria-selected="false">PC Software</button>
+            <div class="category-filters" aria-label="Review Categories">
+                <div class="filter-tabs-group" role="tablist" aria-label="Filter Reviews By Platform">
+                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+                    <button class="filter-btn" data-filter="android" role="tab" aria-selected="false">Android</button>
+                    <button class="filter-btn" data-filter="ios" role="tab" aria-selected="false">iOS</button>
+                    <button class="filter-btn" data-filter="pc" role="tab" aria-selected="false">PC Software</button>
+                </div>
                 
                 <select id="sort-select" class="sort-select" aria-label="Sort Reviews">
                     <option value="newest">Newest</option>

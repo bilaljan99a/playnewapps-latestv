@@ -75,7 +75,7 @@ class Components {
         const imgClass = isLogo ? "card-img card-img-logo" : "card-img";
 
         return `
-            <article class="slide card review-card" role="group" aria-roledescription="slide">
+            <article class="slide card review-card">
                 <div class="card-img-wrapper ${isLogo ? 'has-logo-bg' : ''}">
                     <img src="${img}" alt="${title}" class="${imgClass}" width="600" height="400" loading="lazy">
                     <span class="badge platform-badge"><span class="material-icons-round">${icon}</span> ${platform}</span>

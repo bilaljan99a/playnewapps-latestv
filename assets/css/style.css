@@ -1499,8 +1499,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .verified-badge {
-    background-color: var(--secondary-color);
-    color: #fff;
+    background-color: #047857;
+    color: #ffffff;
     box-shadow: var(--shadow-sm);
 }
 
@@ -4770,7 +4770,7 @@ table.comparison-table tbody tr:hover,
     color: white;
 }
 .verified-badge {
-    background-color: var(--secondary-color);
+    background-color: #047857;
     color: white;
 }
 
@@ -6034,21 +6034,21 @@ img, video, iframe, object, embed {
 }
 
 .brand-banner-tag.deal-flash {
-    background: #ef4444;
+    background: #b91c1c;
     color: #ffffff;
-    border-color: #f87171;
+    border-color: #ef4444;
 }
 
 .brand-banner-tag.deal-verified {
-    background: #10b981;
+    background: #047857;
     color: #ffffff;
-    border-color: #34d399;
+    border-color: #10b981;
 }
 
 .brand-banner-tag.deal-official {
-    background: #3b82f6;
+    background: #1d4ed8;
     color: #ffffff;
-    border-color: #60a5fa;
+    border-color: #3b82f6;
 }
 
 .brand-banner-body {
