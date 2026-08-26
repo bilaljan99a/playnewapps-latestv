@@ -115,7 +115,11 @@ const cleanRoutes = [
   { route: '/store/italki', file: 'italki-coupons.html' },
   { route: '/uniconverter', file: 'wondershare-uniconverter-review.html' },
   { route: '/uniconverter-review', file: 'wondershare-uniconverter-review.html' },
-  { route: '/wondershare-uniconverter-review', file: 'wondershare-uniconverter-review.html' }
+  { route: '/wondershare-uniconverter-review', file: 'wondershare-uniconverter-review.html' },
+  { route: '/avast', file: 'avast-antivirus-review.html' },
+  { route: '/avast-antivirus', file: 'avast-antivirus-review.html' },
+  { route: '/avast-review', file: 'avast-antivirus-review.html' },
+  { route: '/avast-antivirus-review', file: 'avast-antivirus-review.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {
