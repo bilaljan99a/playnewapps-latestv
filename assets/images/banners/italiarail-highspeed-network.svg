@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500">
+  <defs>
+    <linearGradient id="netBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="500" rx="16" fill="url(#netBg)"/>
+  
+  <text x="50" y="55" fill="#FFFFFF" font-family="Playfair Display, serif" font-weight="800" font-size="24">ItaliaRail High-Speed Route Matrix (Frecciarossa 300 km/h)</text>
+  <text x="50" y="85" fill="#94A3B8" font-family="Plus Jakarta Sans, sans-serif" font-weight="500" font-size="14">Direct city-center to city-center connections with group savings up to 30%</text>
+
+  <!-- Route Line High-Speed Backbone -->
+  <path d="M 200 160 L 380 200 L 520 250 L 680 320 L 820 400" stroke="#FF0164" stroke-width="6" stroke-dasharray="10 5" fill="none"/>
+  <path d="M 380 200 L 560 170" stroke="#10B19F" stroke-width="4" stroke-dasharray="6 4" fill="none"/>
+  <path d="M 680 320 L 760 270" stroke="#10B19F" stroke-width="4" stroke-dasharray="6 4" fill="none"/>
+
+  <!-- Station Hubs -->
+  <!-- Milan -->
+  <g transform="translate(200, 160)">
+    <circle r="14" fill="#FF0164"/>
+    <circle r="6" fill="#FFFFFF"/>
+    <text x="-35" y="-20" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="15">MILAN</text>
+    <text x="-45" y="32" fill="#38BDF8" font-family="Plus Jakarta Sans, sans-serif" font-weight="600" font-size="12">Centrale / Rogoredo</text>
+  </g>
+
+  <!-- Venice -->
+  <g transform="translate(560, 170)">
+    <circle r="12" fill="#10B19F"/>
+    <circle r="5" fill="#FFFFFF"/>
+    <text x="18" y="5" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="14">VENICE (Santa Lucia)</text>
+    <text x="18" y="24" fill="#94A3B8" font-family="Plus Jakarta Sans, sans-serif" font-weight="500" font-size="12">2h 05m from Florence</text>
+  </g>
+
+  <!-- Bologna -->
+  <g transform="translate(380, 200)">
+    <circle r="12" fill="#FF0164"/>
+    <circle r="5" fill="#FFFFFF"/>
+    <text x="-25" y="-18" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="14">BOLOGNA</text>
+    <text x="-35" y="30" fill="#94A3B8" font-family="Plus Jakarta Sans, sans-serif" font-weight="500" font-size="12">1h 00m from Milan</text>
+  </g>
+
+  <!-- Florence -->
+  <g transform="translate(520, 250)">
+    <circle r="14" fill="#FF0164"/>
+    <circle r="6" fill="#FFFFFF"/>
+    <text x="-30" y="-20" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="15">FLORENCE</text>
+    <text x="-40" y="32" fill="#38BDF8" font-family="Plus Jakarta Sans, sans-serif" font-weight="600" font-size="12">Santa Maria Novella</text>
+  </g>
+
+  <!-- Rome -->
+  <g transform="translate(680, 320)">
+    <circle r="18" fill="#FF0164"/>
+    <circle r="8" fill="#FFFFFF"/>
+    <text x="-25" y="-25" fill="#FCD34D" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="17">★ ROME (Termini / Tiburtina)</text>
+    <text x="-25" y="38" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-weight="600" font-size="13">1h 32m to Florence • ItaliaPass VIP Lounge</text>
+  </g>
+
+  <!-- Naples -->
+  <g transform="translate(820, 400)">
+    <circle r="14" fill="#FF0164"/>
+    <circle r="6" fill="#FFFFFF"/>
+    <text x="20" y="5" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="15">NAPLES (Centrale)</text>
+    <text x="20" y="26" fill="#94A3B8" font-family="Plus Jakarta Sans, sans-serif" font-weight="500" font-size="12">1h 10m from Rome • Gateway to Amalfi</text>
+  </g>
+</svg>

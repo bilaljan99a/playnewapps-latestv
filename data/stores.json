@@ -1,5 +1,64 @@
 [
   {
+    "id": "italiarail",
+    "name": "ItaliaRail",
+    "icon": "train",
+    "logo": "/assets/images/brands/italiarail.svg",
+    "website": "https://www.italiarail.com/",
+    "storeUrl": "/italiarail-coupons.html",
+    "affiliateUrl": "https://ujhjj.com/g/ca326rdm5vb68b264a76ef1cea9751/",
+    "affiliateLink": "https://ujhjj.com/g/ca326rdm5vb68b264a76ef1cea9751/",
+    "rating": 4.8,
+    "votes": 34920,
+    "seoTitle": "ItaliaRail Coupon Codes, Promo Codes & Group Train Deals (2026)",
+    "seoDescription": "Save up to 30% on Italian high-speed train tickets with verified ItaliaRail promo codes. Book Frecciarossa, Italo, group travel discounts, and VIP lounge perks.",
+    "about": "ItaliaRail is the official premier international booking platform for Trenitalia, the national railway of Italy. In operation for over two decades, ItaliaRail provides seamless English-language booking, direct seat selection, 24/7 dedicated customer support, and exclusive group discounts of up to 30% for family, religious, corporate, educational, and wedding travelers exploring Rome, Florence, Venice, Milan, and beyond.",
+    "categories": [
+      "Travel",
+      "Train & Rail Tickets",
+      "Group Travel",
+      "Europe Transportation",
+      "Tours & Activities"
+    ],
+    "whyShop": [
+      "Official Trenitalia Premier Partner: Direct live ticketing on Frecciarossa, Frecciargento, and Intercity trains",
+      "Group Travel Discounts: Save up to 30% on bookings of 10+ passengers for family, religious, business, and school trips",
+      "24/7 English Customer Care: Dedicated multilingual travel specialists reachable by phone, email, and live chat",
+      "Exclusive ItaliaPass VIP Club: Unlock $50 instant cashback, free Rome Termini lounge access, and free luggage storage",
+      "Direct E-Tickets with QR Codes: Instant seat reservation with zero station validation stamps required",
+      "Multi-Carrier Flexibility: Seamlessly compare and combine Trenitalia high-speed and regional rail connections"
+    ],
+    "shoppingTips": [
+      "Book 30 to 90 days in advance to secure Frecciarossa Super Economy fares with savings up to 60% off standard base rates.",
+      "Traveling with 10 or more people? Request a customized Group Travel quote to unlock up to 30% off rail fares, transfers, and hotels.",
+      "Join ItaliaPass to receive an automatic $50 cash refund on your first ItaliaRail booking plus free Colosseum and Vatican museum entry.",
+      "Take advantage of Bimbi Gratis: Children under 15 travel 100% free when accompanied by paying adult family members on Freccia trains.",
+      "Opt for mid-week departures (Tuesday to Thursday) to catch FrecciaDays special promo fares with 50% discounts."
+    ],
+    "faqs": [
+      {
+        "question": "What is ItaliaRail and how is it related to Trenitalia?",
+        "answer": "ItaliaRail is the official authorized international booking partner for Trenitalia, Italy's state-owned railway network. ItaliaRail provides a streamlined English-language booking platform, transparent pricing in USD, CAD, GBP, and EUR, 24/7 customer service, and dedicated seat selection."
+      },
+      {
+        "question": "How do ItaliaRail Group Travel discounts work?",
+        "answer": "Groups of 10 or more passengers qualify for specialized discounts of up to 30% on Italian rail tickets, private transfers, guided excursions, and partner hotels. Dedicated group specialists coordinate seat groupings together in the same carriage and manage complex multi-city itineraries."
+      },
+      {
+        "question": "How do I apply an ItaliaRail promo code at checkout?",
+        "answer": "Select your journey and passenger details on ItaliaRail via our partner link, proceed to the checkout screen, enter your promo code into the 'Promo Code / Voucher' field, and click 'Apply' to see your instant discount before paying."
+      },
+      {
+        "question": "Do I need to print my train tickets or validate them at the station?",
+        "answer": "No. When you book high-speed Frecciarossa or Intercity trains through ItaliaRail, you receive an electronic e-ticket with a scannable PNR QR code. You can simply show the PDF or mobile screen to the train conductor on board with no validation machine required."
+      },
+      {
+        "question": "What benefits are included with an ItaliaPass membership?",
+        "answer": "ItaliaPass members receive an instant $50 refund on their first train booking, access to the private ItaliaPass VIP Lounge at Rome Termini station, complimentary luggage storage, free admission tickets to iconic Italian museums, and 24/7 concierge assistance."
+      }
+    ]
+  },
+  {
     "id": "naga",
     "name": "NAGA",
     "icon": "trending_up",

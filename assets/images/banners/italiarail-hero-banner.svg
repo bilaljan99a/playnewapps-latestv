@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#002244"/>
+      <stop offset="50%" stop-color="#003366"/>
+      <stop offset="100%" stop-color="#001830"/>
+    </linearGradient>
+    <linearGradient id="redAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF0164"/>
+      <stop offset="100%" stop-color="#D80032"/>
+    </linearGradient>
+    <linearGradient id="greenAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B19F"/>
+      <stop offset="100%" stop-color="#008C45"/>
+    </linearGradient>
+    <linearGradient id="trainBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="50%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky & Italian Landscape Backdrop -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Lines & Speed Rails -->
+  <g opacity="0.12" stroke="#FFFFFF" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+  </g>
+
+  <!-- Tuscan Hills Silhouettes -->
+  <path d="M0 480 Q 250 420 500 450 T 1000 420 Q 1100 435 1200 460 L 1200 630 L 0 630 Z" fill="#0A2540" opacity="0.7"/>
+  <path d="M0 510 Q 300 470 650 500 T 1200 490 L 1200 630 L 0 630 Z" fill="#061A2D"/>
+
+  <!-- High Speed Railway Tracks -->
+  <line x1="0" y1="560" x2="1200" y2="560" stroke="#475569" stroke-width="6"/>
+  <line x1="0" y1="575" x2="1200" y2="575" stroke="#334155" stroke-width="8"/>
+  <line x1="0" y1="550" x2="1200" y2="550" stroke="#FF0164" stroke-width="2" opacity="0.6"/>
+
+  <!-- Sleek Frecciarossa High Speed Bullet Train Vector -->
+  <g transform="translate(180, 360)">
+    <!-- Aerodynamic Nose & Train Carriage -->
+    <path d="M 0 180 L 180 180 Q 260 180 340 160 L 750 160 Q 820 160 880 140 L 920 100 Q 940 80 910 60 L 820 40 Q 760 30 680 30 L 0 30 Z" fill="url(#trainBody)"/>
+    <!-- Red Freccia Signature Racing Stripe -->
+    <path d="M 0 110 L 720 110 Q 800 110 870 90 L 910 65 L 890 60 Q 820 85 740 85 L 0 85 Z" fill="url(#redAccent)"/>
+    <!-- Teal Accent Stripe -->
+    <path d="M 0 120 L 700 120 Q 770 120 840 105 L 870 92 L 860 88 Q 790 102 720 102 L 0 102 Z" fill="url(#greenAccent)"/>
+    <!-- Tinted Panoramic Windows -->
+    <rect x="50" y="45" width="90" height="30" rx="4" fill="#0F172A"/>
+    <rect x="160" y="45" width="90" height="30" rx="4" fill="#0F172A"/>
+    <rect x="270" y="45" width="90" height="30" rx="4" fill="#0F172A"/>
+    <rect x="380" y="45" width="90" height="30" rx="4" fill="#0F172A"/>
+    <rect x="490" y="45" width="90" height="30" rx="4" fill="#0F172A"/>
+    <rect x="600" y="45" width="90" height="30" rx="4" fill="#0F172A"/>
+    <!-- Driver Cockpit Window -->
+    <path d="M 720 45 L 800 45 Q 850 55 880 75 L 750 75 Z" fill="#0284C7" opacity="0.9"/>
+  </g>
+
+  <!-- Header Branding Overlay -->
+  <g transform="translate(80, 80)">
+    <!-- Top Pill Badge -->
+    <rect width="360" height="36" rx="18" fill="#FFFFFF" fill-opacity="0.1" stroke="#FFFFFF" stroke-opacity="0.2"/>
+    <text x="20" y="23" fill="#10B19F" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="13" letter-spacing="1">OFFICIAL TRENITALIA PARTNER</text>
+    <circle cx="340" cy="18" r="4" fill="#FF0164"/>
+
+    <!-- Main Title -->
+    <text x="0" y="85" fill="#FFFFFF" font-family="Playfair Display, serif" font-weight="800" font-size="44">ItaliaRail Train Booking &amp; Deals</text>
+    <text x="0" y="125" fill="#94A3B8" font-family="Plus Jakarta Sans, sans-serif" font-weight="600" font-size="18">High-Speed Italian Rail: Frecciarossa • Group Discounts • 24/7 English Support</text>
+  </g>
+
+  <!-- Trust Badges Right -->
+  <g transform="translate(820, 80)">
+    <rect width="300" height="110" rx="16" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.15"/>
+    <text x="25" y="38" fill="#F8FAFC" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="16">★ 4.8/5 Customer Rating</text>
+    <text x="25" y="65" fill="#CBD5E1" font-family="Plus Jakarta Sans, sans-serif" font-weight="500" font-size="13">Over 2.5 Million Tickets Issued</text>
+    <text x="25" y="90" fill="#10B19F" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="13">✓ Direct Trenitalia Live System API</text>
+  </g>
+</svg>

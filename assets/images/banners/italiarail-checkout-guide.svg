@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380">
+  <defs>
+    <linearGradient id="gBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="380" rx="16" fill="url(#gBg)" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <text x="40" y="45" fill="#0F172A" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="20">How to Apply Promo Codes on ItaliaRail</text>
+  <text x="40" y="70" fill="#64748B" font-family="Plus Jakarta Sans, sans-serif" font-weight="500" font-size="13">Follow these 4 simple steps to redeem promo codes, group rates, or ItaliaPass discounts.</text>
+
+  <!-- 4 Step Boxes -->
+  <g transform="translate(40, 100)">
+    <!-- Step 1 -->
+    <rect width="190" height="230" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <circle cx="35" cy="35" r="16" fill="#EFF6FF"/>
+    <text x="30" y="41" fill="#2563EB" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="16">1</text>
+    <text x="20" y="80" fill="#0F172A" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="14">Select Train Journey</text>
+    <text x="20" y="110" fill="#64748B" font-family="Plus Jakarta Sans, sans-serif" font-weight="400" font-size="12">Search departure &amp; arrival stations, travel dates, passenger counts, and preferred class.</text>
+  </g>
+
+  <g transform="translate(250, 100)">
+    <!-- Step 2 -->
+    <rect width="190" height="230" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <circle cx="35" cy="35" r="16" fill="#EFF6FF"/>
+    <text x="28" y="41" fill="#2563EB" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="16">2</text>
+    <text x="20" y="80" fill="#0F172A" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="14">Copy Promo Code</text>
+    <text x="20" y="110" fill="#64748B" font-family="Plus Jakarta Sans, sans-serif" font-weight="400" font-size="12">Click "Show Code" or "Get Deal" on PlayNewApps to copy your verified coupon to clipboard.</text>
+  </g>
+
+  <g transform="translate(460, 100)">
+    <!-- Step 3 -->
+    <rect width="190" height="230" rx="12" fill="#FFFFFF" stroke="#FF0164" stroke-width="2"/>
+    <circle cx="35" cy="35" r="16" fill="#FFE4E6"/>
+    <text x="28" y="41" fill="#E11D48" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="16">3</text>
+    <text x="20" y="80" fill="#0F172A" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="14">Enter Code in Box</text>
+    <text x="20" y="110" fill="#64748B" font-family="Plus Jakarta Sans, sans-serif" font-weight="400" font-size="12">Paste your code into the "Promo Code / Voucher" box on the Passenger Details &amp; Payment page.</text>
+  </g>
+
+  <g transform="translate(670, 100)">
+    <!-- Step 4 -->
+    <rect width="190" height="230" rx="12" fill="#FFFFFF" stroke="#10B19F" stroke-width="2"/>
+    <circle cx="35" cy="35" r="16" fill="#CCFBF1"/>
+    <text x="28" y="41" fill="#0D9488" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="16">4</text>
+    <text x="20" y="80" fill="#0F172A" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="14">Instant Price Drop</text>
+    <text x="20" y="110" fill="#64748B" font-family="Plus Jakarta Sans, sans-serif" font-weight="400" font-size="12">Click "Apply" to see the total discount deducted instantly before checkout.</text>
+  </g>
+</svg>
