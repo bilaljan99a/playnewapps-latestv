@@ -2385,34 +2385,25 @@ details.faq-item[open] .faq-answer {
 }
 
 /* ==========================================================================
-   Animations
+   Animations & Reveals (Optimized for Instant FCP & LCP Core Web Vitals)
    ========================================================================== */
 .animate-fade-in-up {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.8s ease forwards;
+    opacity: 1;
+    transform: none;
 }
 
-.delay-1 { animation-delay: 0.2s; }
-.delay-2 { animation-delay: 0.4s; }
+.delay-1 { }
+.delay-2 { }
 
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Smooth Reveal API Styles */
+/* Smooth Reveal API Styles - Instant Visibility for Perfect Core Web Vitals */
 .reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    opacity: 1;
+    transform: none;
 }
 
 .reveal.active {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
 }
 
 /* Prevent layout shift on images */
