@@ -1,8 +1,12 @@
 const express = require('express');
+const compression = require('compression');
 const path = require('path');
 const { generateSitemapXML, writeSitemapFile } = require('./generate-sitemap');
 const app = express();
 const PORT = 3000;
+
+// Enable gzip/deflate compression for fast asset delivery and high Google PageSpeed score
+app.use(compression());
 
 // Automatically write/update sitemap.xml file on server startup
 writeSitemapFile();
@@ -128,8 +132,28 @@ cleanRoutes.forEach(({ route, file }) => {
   });
 });
 
+// Serve static assets with smart caching headers
+app.use('/assets', express.static(path.join(__dirname, 'assets'), {
+  maxAge: '7d',
+  immutable: true,
+  setHeaders: (res, path) => {
+    if (path.endsWith('.css') || path.endsWith('.js')) {
+      res.setHeader('Cache-Control', 'public, max-age=86400, stale-while-revalidate=604800');
+    } else if (path.match(/\.(png|jpg|jpeg|gif|ico|svg|webp|woff2|woff)$/i)) {
+      res.setHeader('Cache-Control', 'public, max-age=2592000, immutable');
+    }
+  }
+}));
+
 // Serve static files with html extension fallback
-app.use(express.static(__dirname, { extensions: ['html'] }));
+app.use(express.static(__dirname, { 
+  extensions: ['html'],
+  setHeaders: (res, path) => {
+    if (path.endsWith('.html')) {
+      res.setHeader('Cache-Control', 'public, max-age=3600, stale-while-revalidate=86400');
+    }
+  }
+}));
 
 // Custom 404 for any other missing routes (Return 404 Not Found, NEVER homepage!)
 app.use((req, res) => {

@@ -1598,8 +1598,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .success-rate {
-    color: var(--secondary-color);
-    font-weight: 500;
+    color: #047857;
+    font-weight: 600;
+}
+
+[data-theme="dark"] .success-rate {
+    color: #34d399;
 }
 
 .coupon-action {
@@ -4012,10 +4016,14 @@ table.comparison-table tbody tr:hover,
 .store-card-rating {
     font-size: 0.8rem;
     font-weight: 700;
-    color: #eab308;
+    color: #b45309;
     display: inline-flex;
     align-items: center;
     white-space: nowrap;
+}
+
+[data-theme="dark"] .store-card-rating {
+    color: #fbbf24;
 }
 
 .store-card-arrow {
