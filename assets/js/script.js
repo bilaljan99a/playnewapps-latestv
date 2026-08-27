@@ -398,29 +398,50 @@ document.addEventListener('DOMContentLoaded', () => {
         emailInput.focus();
     }
 
-    // 14. Cookie Consent Banner
+    // 14. Cookie Consent Banner (Deferred for Perfect Core Web Vitals & Non-blocking FCP/LCP)
     const cookieBanner = document.getElementById('cookie-banner');
     const acceptBtn = document.getElementById('cookie-accept');
     const declineBtn = document.getElementById('cookie-decline');
 
     if (cookieBanner) {
-        // Show after short delay if not already accepted/declined
-        if (!localStorage.getItem('cookieConsent')) {
-            setTimeout(() => {
+        let bannerTriggered = false;
+        const triggerCookieBanner = () => {
+            if (bannerTriggered) return;
+            bannerTriggered = true;
+            cleanupCookieListeners();
+            if (!localStorage.getItem('cookieConsent')) {
                 cookieBanner.classList.add('show');
-            }, 2000);
+            }
+        };
+
+        const cleanupCookieListeners = () => {
+            window.removeEventListener('scroll', triggerCookieBanner);
+            window.removeEventListener('touchstart', triggerCookieBanner);
+            window.removeEventListener('click', triggerCookieBanner);
+            window.removeEventListener('keydown', triggerCookieBanner);
+        };
+
+        if (!localStorage.getItem('cookieConsent')) {
+            window.addEventListener('scroll', triggerCookieBanner, { passive: true, once: true });
+            window.addEventListener('touchstart', triggerCookieBanner, { passive: true, once: true });
+            window.addEventListener('click', triggerCookieBanner, { passive: true, once: true });
+            window.addEventListener('keydown', triggerCookieBanner, { passive: true, once: true });
+            setTimeout(triggerCookieBanner, 6000);
         }
 
-        acceptBtn.addEventListener('click', () => {
-            localStorage.setItem('cookieConsent', 'accepted');
-            cookieBanner.classList.remove('show');
-            // Init GA/GTM here dynamically if needed
-        });
+        if (acceptBtn) {
+            acceptBtn.addEventListener('click', () => {
+                localStorage.setItem('cookieConsent', 'accepted');
+                cookieBanner.classList.remove('show');
+            });
+        }
 
-        declineBtn.addEventListener('click', () => {
-            localStorage.setItem('cookieConsent', 'declined');
-            cookieBanner.classList.remove('show');
-        });
+        if (declineBtn) {
+            declineBtn.addEventListener('click', () => {
+                localStorage.setItem('cookieConsent', 'declined');
+                cookieBanner.classList.remove('show');
+            });
+        }
     }
 
     // 15. Lightbox for Review Page
