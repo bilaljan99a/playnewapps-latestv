@@ -8,6 +8,15 @@ const PORT = 3000;
 // Enable gzip/deflate compression for fast asset delivery and high Google PageSpeed score
 app.use(compression());
 
+// Disable all HTTP caching in development so preview always gets latest files
+app.use((req, res, next) => {
+  res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0');
+  res.setHeader('Pragma', 'no-cache');
+  res.setHeader('Expires', '0');
+  res.setHeader('Surrogate-Control', 'no-store');
+  next();
+});
+
 // Automatically write/update sitemap.xml file on server startup
 writeSitemapFile();
 
@@ -109,6 +118,9 @@ const cleanRoutes = [
   { route: '/lenovo', file: 'lenovo-coupons.html' },
   { route: '/lenovo-coupons', file: 'lenovo-coupons.html' },
   { route: '/store/lenovo', file: 'lenovo-coupons.html' },
+  { route: '/vevor', file: 'vevor-coupons.html' },
+  { route: '/vevor-coupons', file: 'vevor-coupons.html' },
+  { route: '/store/vevor', file: 'vevor-coupons.html' },
   { route: '/applicantally', file: 'applicantally-coupons.html' },
   { route: '/applicantally-coupons', file: 'applicantally-coupons.html' },
   { route: '/applicantally-review', file: 'applicantally-review.html' },
@@ -132,26 +144,20 @@ cleanRoutes.forEach(({ route, file }) => {
   });
 });
 
-// Serve static assets with smart caching headers
+// Serve static assets without stale caching in development
 app.use('/assets', express.static(path.join(__dirname, 'assets'), {
-  maxAge: '7d',
-  immutable: true,
   setHeaders: (res, path) => {
-    if (path.endsWith('.css') || path.endsWith('.js')) {
-      res.setHeader('Cache-Control', 'public, max-age=86400, stale-while-revalidate=604800');
-    } else if (path.match(/\.(png|jpg|jpeg|gif|ico|svg|webp|woff2|woff)$/i)) {
-      res.setHeader('Cache-Control', 'public, max-age=2592000, immutable');
-    }
+    res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
   }
 }));
 
-// Serve static files with html extension fallback
+// Serve static files with html extension fallback and fresh headers
 app.use(express.static(__dirname, { 
   extensions: ['html'],
   setHeaders: (res, path) => {
-    if (path.endsWith('.html')) {
-      res.setHeader('Cache-Control', 'public, max-age=3600, stale-while-revalidate=86400');
-    }
+    res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+    res.setHeader('Pragma', 'no-cache');
+    res.setHeader('Expires', '0');
   }
 }));
 

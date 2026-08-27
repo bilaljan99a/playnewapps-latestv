@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="100%" height="100%">
+    <defs>
+        <linearGradient id="vevorDarkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0F172A"/>
+            <stop offset="45%" stop-color="#1E293B"/>
+            <stop offset="100%" stop-color="#0F172A"/>
+        </linearGradient>
+        <linearGradient id="vevorOrangeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#FF6D00"/>
+            <stop offset="50%" stop-color="#FF5722"/>
+            <stop offset="100%" stop-color="#E64A19"/>
+        </linearGradient>
+        <linearGradient id="accentOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FF8A65"/>
+            <stop offset="100%" stop-color="#FF5722"/>
+        </linearGradient>
+        <radialGradient id="vevorGlow" cx="80%" cy="25%" r="60%">
+            <stop offset="0%" stop-color="#FF5722" stop-opacity="0.35"/>
+            <stop offset="100%" stop-color="#0F172A" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+            <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.5"/>
+        </filter>
+    </defs>
+
+    <!-- Canvas Background -->
+    <rect width="1200" height="500" fill="url(#vevorDarkGrad)"/>
+    <rect width="1200" height="500" fill="url(#vevorGlow)"/>
+
+    <!-- Grid lines / Industrial pattern -->
+    <g opacity="0.07" stroke="#FFFFFF" stroke-width="1">
+        <line x1="0" y1="100" x2="1200" y2="100"/>
+        <line x1="0" y1="200" x2="1200" y2="200"/>
+        <line x1="0" y1="300" x2="1200" y2="300"/>
+        <line x1="0" y1="400" x2="1200" y2="400"/>
+        <line x1="150" y1="0" x2="150" y2="500"/>
+        <line x1="300" y1="0" x2="300" y2="500"/>
+        <line x1="450" y1="0" x2="450" y2="500"/>
+        <line x1="600" y1="0" x2="600" y2="500"/>
+        <line x1="750" y1="0" x2="750" y2="500"/>
+        <line x1="900" y1="0" x2="900" y2="500"/>
+        <line x1="1050" y1="0" x2="1050" y2="500"/>
+    </g>
+
+    <!-- Left Content Column -->
+    <!-- Pill Badge -->
+    <g transform="translate(80, 50)">
+        <rect x="0" y="0" width="260" height="38" rx="19" fill="rgba(255,87,34,0.15)" stroke="#FF5722" stroke-width="1.5"/>
+        <circle cx="20" cy="19" r="6" fill="#FF5722"/>
+        <text x="36" y="24" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="13" fill="#FF8A65" letter-spacing="1.5">OFFICIAL GLOBAL STORE</text>
+    </g>
+
+    <!-- Brand H1 Display -->
+    <g transform="translate(80, 115)">
+        <!-- VEVOR Logo in Vector -->
+        <g transform="scale(0.85)">
+            <path fill="url(#vevorOrangeGrad)" d="M0 0 L20 60 L40 0 L64 0 L33 76 L7 76 L-24 0 Z"/>
+            <path fill="url(#vevorOrangeGrad)" d="M74 0 L124 0 L124 16 L96 16 L96 30 L120 30 L120 45 L96 45 L96 60 L126 60 L126 76 L74 76 Z"/>
+            <path fill="url(#vevorOrangeGrad)" d="M142 0 L162 60 L182 0 L206 0 L175 76 L149 76 L118 0 Z"/>
+            <path fill="url(#vevorOrangeGrad)" d="M246 -2 C273 -2 292 15 292 38 C292 61 273 78 246 78 C219 78 200 61 200 38 C200 15 219 -2 246 -2 Z M246 15 C230 15 221 25 221 38 C221 51 230 61 246 61 C262 61 271 51 271 38 C271 25 262 15 246 15 Z"/>
+            <path fill="url(#vevorOrangeGrad)" d="M302 0 L336 0 C353 0 363 9 363 23 C363 34 355 42 343 44 L364 76 L340 76 L322 47 L322 47 L322 76 L302 76 Z M322 15 L322 32 L334 32 C340 32 344 29 344 24 C344 18 340 15 334 15 Z"/>
+        </g>
+    </g>
+
+    <!-- Subtitle Heading -->
+    <text x="80" y="240" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="34" fill="#FFFFFF">TOUGH TOOLS, HALF PRICE</text>
+    
+    <!-- Descriptive text -->
+    <text x="80" y="285" font-family="system-ui, sans-serif" font-size="17" fill="#94A3B8">
+        <tspan x="80" dy="0">Commercial machinery, automotive lifts, welding gear &amp; restaurant equipment.</tspan>
+        <tspan x="80" dy="26">Factory-direct pricing backed by domestic US warehousing and 12-month warranty.</tspan>
+    </text>
+
+    <!-- Key Feature Badges (Horizontal Row) -->
+    <g transform="translate(80, 360)">
+        <!-- Badge 1: Free Shipping -->
+        <g transform="translate(0, 0)">
+            <rect width="165" height="60" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+            <text x="18" y="27" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#FF5722">FREE SHIPPING</text>
+            <text x="18" y="46" font-family="system-ui, sans-serif" font-size="12" fill="#CBD5E1">48 US States (2-5 Days)</text>
+        </g>
+
+        <!-- Badge 2: 30-Day Returns -->
+        <g transform="translate(180, 0)">
+            <rect width="165" height="60" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+            <text x="18" y="27" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#10B981">30-DAY RETURNS</text>
+            <text x="18" y="46" font-family="system-ui, sans-serif" font-size="12" fill="#CBD5E1">Hassle-Free Guarantee</text>
+        </g>
+
+        <!-- Badge 3: 12-Mo Warranty -->
+        <g transform="translate(360, 0)">
+            <rect width="165" height="60" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+            <text x="18" y="27" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#3B82F6">12-MO WARRANTY</text>
+            <text x="18" y="46" font-family="system-ui, sans-serif" font-size="12" fill="#CBD5E1">Full Parts &amp; Support</text>
+        </g>
+    </g>
+
+    <!-- Right Graphic Column / Industrial Showcase Card -->
+    <g transform="translate(680, 60)" filter="url(#shadow)">
+        <!-- Backdrop Card -->
+        <rect width="440" height="380" rx="16" fill="#1E293B" stroke="#475569" stroke-width="1.5"/>
+        
+        <!-- Card Header -->
+        <path d="M 0 16 C 0 7 7 0 16 0 L 424 0 C 433 0 440 7 440 16 L 440 60 L 0 60 Z" fill="#0F172A"/>
+        <text x="24" y="38" font-family="system-ui, sans-serif" font-weight="800" font-size="16" fill="#FFFFFF" letter-spacing="0.5">POPULAR COMMERCIAL CATEGORIES</text>
+        <circle cx="410" cy="30" r="4" fill="#FF5722"/>
+
+        <!-- Category Items Row 1 -->
+        <g transform="translate(24, 80)">
+            <!-- Item 1 -->
+            <rect width="185" height="64" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+            <text x="14" y="26" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#F8FAFC">Welding &amp; Cutters</text>
+            <text x="14" y="46" font-family="system-ui, sans-serif" font-size="12" fill="#FF8A65">MIG, TIG, Plasma</text>
+            <text x="145" y="36" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#10B981">-30%</text>
+
+            <!-- Item 2 -->
+            <g transform="translate(205, 0)">
+                <rect width="185" height="64" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+                <text x="14" y="26" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#F8FAFC">Automotive &amp; Garage</text>
+                <text x="14" y="46" font-family="system-ui, sans-serif" font-size="12" fill="#FF8A65">Lifts, Jacks, Heaters</text>
+                <text x="145" y="36" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#10B981">-35%</text>
+            </g>
+        </g>
+
+        <!-- Category Items Row 2 -->
+        <g transform="translate(24, 158)">
+            <!-- Item 3 -->
+            <rect width="185" height="64" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+            <text x="14" y="26" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#F8FAFC">Restaurant &amp; Kitchen</text>
+            <text x="14" y="46" font-family="system-ui, sans-serif" font-size="12" fill="#FF8A65">Ice Makers, Ovens</text>
+            <text x="145" y="36" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#10B981">-40%</text>
+
+            <!-- Item 4 -->
+            <g transform="translate(205, 0)">
+                <rect width="185" height="64" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+                <text x="14" y="26" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#F8FAFC">Machinery &amp; Lathes</text>
+                <text x="14" y="46" font-family="system-ui, sans-serif" font-size="12" fill="#FF8A65">Metal, Wood Lathes</text>
+                <text x="145" y="36" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#10B981">-18%</text>
+            </g>
+        </g>
+
+        <!-- Category Items Row 3 -->
+        <g transform="translate(24, 236)">
+            <!-- Item 5 -->
+            <rect width="185" height="64" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+            <text x="14" y="26" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#F8FAFC">Material Handling</text>
+            <text x="14" y="46" font-family="system-ui, sans-serif" font-size="12" fill="#FF8A65">Electric Hoists, Carts</text>
+            <text x="145" y="36" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#10B981">-25%</text>
+
+            <!-- Item 6 -->
+            <g transform="translate(205, 0)">
+                <rect width="185" height="64" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+                <text x="14" y="26" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#F8FAFC">Lawn &amp; Outdoor</text>
+                <text x="14" y="46" font-family="system-ui, sans-serif" font-size="12" fill="#FF8A65">Post Hole Diggers</text>
+                <text x="145" y="36" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#10B981">-30%</text>
+            </g>
+        </g>
+
+        <!-- Social Proof Stats in Bottom of Card -->
+        <g transform="translate(24, 315)">
+            <rect width="390" height="46" rx="8" fill="rgba(255,87,34,0.12)" stroke="#FF5722" stroke-width="1"/>
+            <text x="195" y="28" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#FF8A65" text-anchor="middle">★ 4.8 / 5 Rating • 10,000,000+ Satisfied Customers</text>
+        </g>
+    </g>
+</svg>

@@ -717,6 +717,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.playnewapps.store/store.html?id=vevor</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.playnewapps.store/store.html?id=war-thunder</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -767,6 +772,12 @@
   </url>
   <url>
     <loc>https://www.playnewapps.store/vectorstock-coupons.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.playnewapps.store/vevor-coupons.html</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>

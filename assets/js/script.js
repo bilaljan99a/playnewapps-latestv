@@ -518,43 +518,28 @@ document.addEventListener('DOMContentLoaded', () => {
 function toggleCouponDetails(btn) {
     if (!btn) return;
     
-    // Prevent double execution from inline onclick + event listener bubbling
-    const now = Date.now();
-    if (btn._lastToggle && (now - btn._lastToggle < 200)) {
-        return;
-    }
-    btn._lastToggle = now;
-
-    const card = btn.closest('.coupon-card, .deal-card, .card, article, .retailmenot-style, .retailmenot-card') || 
-                 (btn.closest('.coupon-details-footer') ? btn.closest('.coupon-details-footer').parentElement : btn.parentElement.parentElement);
+    const card = btn.closest('.coupon-card, .deal-card, .card, article, .retailmenot-style, .retailmenot-card, .coupon-details-footer') || 
+                 btn.parentElement.parentElement;
     if (!card) return;
     const detailsBox = card.querySelector('.coupon-details-content, .details-content, .coupon-details');
     if (!detailsBox) return;
 
-    const isHidden = detailsBox.classList.contains('hidden') || window.getComputedStyle(detailsBox).display === 'none';
+    const isHidden = detailsBox.classList.contains('hidden') || detailsBox.style.display === 'none';
     const textSpan = btn.querySelector('.btn-text') || btn.querySelector('span:not(.toggle-icon)');
     const iconSpan = btn.querySelector('.toggle-icon');
 
     if (isHidden) {
         detailsBox.classList.remove('hidden');
         detailsBox.style.display = 'block';
-        if (textSpan) textSpan.textContent = 'Hide Details ';
+        if (textSpan) textSpan.textContent = 'Hide Details';
         if (iconSpan) iconSpan.textContent = '-';
-        btn.classList.add('bg-amber-300', 'text-slate-950', 'border-amber-400', 'active-details');
-        btn.classList.remove('bg-slate-100', 'text-slate-700', 'border-slate-300');
-        btn.style.backgroundColor = '#facc15';
-        btn.style.color = '#0f172a';
-        btn.style.borderColor = '#eab308';
+        btn.classList.add('active-details');
     } else {
         detailsBox.classList.add('hidden');
         detailsBox.style.display = 'none';
-        if (textSpan) textSpan.textContent = 'Show Details ';
+        if (textSpan) textSpan.textContent = 'Show Details';
         if (iconSpan) iconSpan.textContent = '+';
-        btn.classList.remove('bg-amber-300', 'text-slate-950', 'border-amber-400', 'active-details');
-        btn.classList.add('bg-slate-100', 'text-slate-700', 'border-slate-300');
-        btn.style.backgroundColor = '#f1f5f9';
-        btn.style.color = '#334155';
-        btn.style.borderColor = '#cbd5e1';
+        btn.classList.remove('active-details');
     }
 }
 window.toggleCouponDetails = toggleCouponDetails;
@@ -623,7 +608,7 @@ window.showCouponModal = function(code, link) {
 
 document.addEventListener('click', function(e) {
     const btn = e.target.closest('.toggle-details-btn');
-    if (btn) {
+    if (btn && !btn.getAttribute('onclick')) {
         e.preventDefault();
         window.toggleCouponDetails(btn);
     }
