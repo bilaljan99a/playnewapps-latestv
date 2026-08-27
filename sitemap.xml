@@ -747,6 +747,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.playnewapps.store/store.html?id=xp-pen</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.playnewapps.store/stores.html</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>daily</changefreq>
@@ -841,5 +846,11 @@
     <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.playnewapps.store/xp-pen-coupons.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
   </url>
 </urlset>
