@@ -27,13 +27,19 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round&display=swap" rel="stylesheet">
+    </noscript>
 
     <!-- High Priority Preloads for Above-The-Fold Banners (Zero CLS & Instant LCP) -->
     <link rel="preload" as="image" href="/assets/images/banners/aliexpress-real-promo.svg" type="image/svg+xml" fetchpriority="high">
-    <link rel="preload" as="image" href="/assets/images/banners/wondershare-real-promo.svg" type="image/svg+xml">
-    <link rel="preload" as="image" href="/assets/images/banners/lenovo-real-promo.svg" type="image/svg+xml">
+    <link rel="preload" as="image" href="/assets/images/banners/wondershare-real-promo.svg" type="image/svg+xml" media="(min-width: 993px)">
+    <link rel="preload" as="image" href="/assets/images/banners/lenovo-real-promo.svg" type="image/svg+xml" media="(min-width: 993px)">
 
     <!-- Primary Stylesheet (Zero Layout Shift) -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -64,11 +70,21 @@
       function gtag(){dataLayer.push(arguments);} 
       gtag('js', new Date());
       gtag('config', 'G-2GJQLCWRKE');
-      window.addEventListener('load', function() {
+      function initGTM() {
+        if (window.__gtmLoaded) return;
+        window.__gtmLoaded = true;
         var s = document.createElement('script');
         s.async = true;
         s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2GJQLCWRKE';
         document.head.appendChild(s);
+      }
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(function() { setTimeout(initGTM, 2500); });
+      } else {
+        setTimeout(initGTM, 3500);
+      }
+      ['scroll', 'touchstart', 'mousemove', 'click'].forEach(function(evt) {
+        window.addEventListener(evt, initGTM, { passive: true, once: true });
       });
     </script>
 </head>
