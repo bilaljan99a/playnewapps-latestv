@@ -64,6 +64,17 @@ function generateSitemapXML() {
     if (url.includes('dhwnh.com') || url.includes('rcpsj.com') || url.includes('bednari.com')) return;
     if (/\.(png|jpg|jpeg|gif|css|js|json|ico|svg|zip)$/i.test(url)) return;
 
+    // Standardize to clean, extensionless canonical URLs (remove .html to prevent 308 redirect in sitemap)
+    try {
+      const parsed = new URL(url);
+      if (parsed.pathname.endsWith('.html')) {
+        parsed.pathname = parsed.pathname.slice(0, -5);
+      }
+      url = parsed.toString();
+    } catch (e) {
+      // ignore
+    }
+
     const key = url;
     const existing = urlsMap.get(key);
 
@@ -85,21 +96,20 @@ function generateSitemapXML() {
 
   // 1. Static Core Pages
   const staticPages = [
-    { path: '/', cf: 'daily', pr: '1.0' },
-    { path: '/coupon.html', cf: 'daily', pr: '0.9' },
-    { path: '/stores.html', cf: 'daily', pr: '0.9' },
-    { path: '/reviews.html', cf: 'daily', pr: '0.9' },
-    { path: '/about.html', cf: 'monthly', pr: '0.7' },
-    { path: '/contact.html', cf: 'monthly', pr: '0.7' },
-    { path: '/privacy.html', cf: 'monthly', pr: '0.6' },
-    { path: '/terms.html', cf: 'monthly', pr: '0.6' },
-    { path: '/affiliate.html', cf: 'monthly', pr: '0.6' },
-    { path: '/category.html', cf: 'weekly', pr: '0.7' }
+    { path: '/', file: 'index.html', cf: 'daily', pr: '1.0' },
+    { path: '/coupon', file: 'coupon.html', cf: 'daily', pr: '0.9' },
+    { path: '/stores', file: 'stores.html', cf: 'daily', pr: '0.9' },
+    { path: '/reviews', file: 'reviews.html', cf: 'daily', pr: '0.9' },
+    { path: '/about', file: 'about.html', cf: 'monthly', pr: '0.7' },
+    { path: '/contact', file: 'contact.html', cf: 'monthly', pr: '0.7' },
+    { path: '/privacy', file: 'privacy.html', cf: 'monthly', pr: '0.6' },
+    { path: '/terms', file: 'terms.html', cf: 'monthly', pr: '0.6' },
+    { path: '/affiliate', file: 'affiliate.html', cf: 'monthly', pr: '0.6' },
+    { path: '/category', file: 'category.html', cf: 'weekly', pr: '0.7' }
   ];
 
   for (const page of staticPages) {
-    const filePath = page.path === '/' ? 'index.html' : page.path.replace(/^\//, '');
-    const mtime = getFileLastmod(filePath);
+    const mtime = getFileLastmod(page.file);
     addURL(page.path, mtime, page.cf, page.pr);
   }
 
@@ -107,7 +117,7 @@ function generateSitemapXML() {
   const stores = loadJSON('data/stores.json');
   for (const s of stores) {
     if (s && s.id) {
-      addURL(`/store.html?id=${encodeURIComponent(s.id)}`, null, 'daily', '0.9');
+      addURL(`/store?id=${encodeURIComponent(s.id)}`, null, 'daily', '0.9');
     }
   }
 
@@ -115,7 +125,7 @@ function generateSitemapXML() {
   const authors = loadJSON('data/authors.json');
   for (const a of authors) {
     if (a && a.id) {
-      addURL(`/author.html?id=${encodeURIComponent(a.id)}`, null, 'monthly', '0.6');
+      addURL(`/author?id=${encodeURIComponent(a.id)}`, null, 'monthly', '0.6');
     }
   }
 
@@ -123,21 +133,21 @@ function generateSitemapXML() {
   const software = loadJSON('data/software.json');
   for (const item of software) {
     if (item && item.id) {
-      addURL(`/review.html?id=${encodeURIComponent(item.id)}`, null, 'weekly', '0.8');
+      addURL(`/review?id=${encodeURIComponent(item.id)}`, null, 'weekly', '0.8');
     }
   }
 
   const apps = loadJSON('data/apps.json');
   for (const item of apps) {
     if (item && item.id) {
-      addURL(`/review.html?id=${encodeURIComponent(item.id)}`, null, 'weekly', '0.8');
+      addURL(`/review?id=${encodeURIComponent(item.id)}`, null, 'weekly', '0.8');
     }
   }
 
   const games = loadJSON('data/games.json');
   for (const item of games) {
     if (item && item.id) {
-      addURL(`/review.html?id=${encodeURIComponent(item.id)}`, null, 'weekly', '0.8');
+      addURL(`/review?id=${encodeURIComponent(item.id)}`, null, 'weekly', '0.8');
     }
   }
 
@@ -162,12 +172,13 @@ function generateSitemapXML() {
           if (/cookie check/i.test(content) && content.length < 15000) continue;
 
           const mtime = getFileLastmod(file);
+          const cleanSlug = file.replace(/\.html$/, '');
           if (file.endsWith('-coupons.html')) {
-            addURL(`/${file}`, mtime, 'daily', '0.95');
+            addURL(`/${cleanSlug}`, mtime, 'daily', '0.95');
           } else if (file.endsWith('-review.html') || file.endsWith('-pricing.html')) {
-            addURL(`/${file}`, mtime, 'weekly', '0.9');
+            addURL(`/${cleanSlug}`, mtime, 'weekly', '0.9');
           } else {
-            addURL(`/${file}`, mtime, 'daily', '0.95');
+            addURL(`/${cleanSlug}`, mtime, 'daily', '0.95');
           }
         } catch (err) {
           // ignore unreadable file
