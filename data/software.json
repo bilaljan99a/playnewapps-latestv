@@ -9,7 +9,7 @@
         "summary": "Industry-leading multi-layer cybersecurity featuring AI zero-day threat detection, ransomware shielding, network vulnerability inspection, isolated Sandbox, and integrated SecureLine VPN.",
         "logo": "/assets/images/brands/avast-logo.svg",
         "heroImage": "/assets/images/avast/avast-official-pc-ui.svg",
-        "reviewUrl": "avast-antivirus-review.html",
+        "reviewUrl": "/avast-antivirus-review",
         "affiliateUrl": "https://www.avast.com",
         "downloadUrl": "https://www.avast.com",
         "pricing": {
@@ -49,7 +49,7 @@
         "summary": "The ultimate AI voice generator featuring hyper-realistic text-to-speech, instant voice cloning, and real-time AI dubbing across 29 languages.",
         "logo": "/assets/images/brands/elevenlabs-logo.svg",
         "heroImage": "https://eleven-public-cdn.elevenlabs.io/payloadcms/klynektbpi-BlogCover7.jpg",
-        "reviewUrl": "elevenlabs-review.html",
+        "reviewUrl": "/elevenlabs-review",
         "affiliateUrl": "https://elevenlabs.io",
         "downloadUrl": "https://elevenlabs.io",
         "pricing": {
@@ -87,7 +87,7 @@
         "summary": "Professional AI-powered portrait retouching plugins for Photoshop and Lightroom, featuring Dodge & Burn, Skin Healing, and automated background cleanup.",
         "logo": "/assets/images/brands/retouch4me-logo.svg",
         "heroImage": "/assets/images/banners/retouch4me-hero-banner.svg",
-        "reviewUrl": "retouch4me-review.html",
+        "reviewUrl": "/retouch4me-review",
         "affiliateUrl": "https://plrvq.com/g/gp8po8i1u7b68b264a7645d8e108c6/",
         "downloadUrl": "https://plrvq.com/g/gp8po8i1u7b68b264a7645d8e108c6/",
         "pricing": {
@@ -142,7 +142,7 @@
         "isFeatured": true,
         "isTrending": true,
         "affiliateUrl": "https://slidesgo.com/?utm_source=playnewapps&utm_medium=review",
-        "reviewUrl": "/slidesgo-review.html",
+        "reviewUrl": "/slidesgo-review",
         "summary": "Slidesgo is the world's leading platform for free and premium presentation templates compatible with Google Slides and Microsoft PowerPoint. Featuring an AI Presentation Maker, 15,000+ professionally designed slides, infographics, and seamless Freepik asset integration.",
         "video": "https://www.youtube.com/embed/LiDfe6PmlqY"
     },
@@ -172,7 +172,7 @@
         "isFeatured": true,
         "isTrending": true,
         "affiliateUrl": "https://flowgpt.com/?utm_source=playnewapps&utm_medium=review",
-        "reviewUrl": "/flowgpt-review.html",
+        "reviewUrl": "/flowgpt-review",
         "summary": "FlowGPT is the world's largest community-driven AI prompt platform. Featuring over 100,000 prompts, custom AI characters, real-time prompt variable testing, multi-model playgrounds (ChatGPT 4o, Claude 3.5 Sonnet, Gemini 1.5, Midjourney V6), and lucrative creator bounty programs.",
         "video": "https://www.youtube.com/embed/gP1qq-36J_A"
     },
@@ -203,7 +203,7 @@
         "isFeatured": true,
         "isTrending": true,
         "affiliateUrl": "https://bjpql.com/g/r9oyizicg3b68b264a7687b97effec/?ulp=https%3A%2F%2Fwww.box.com%2Fen-gb%2Fpricing%3F",
-        "reviewUrl": "/box-cloud-storage-review.html",
+        "reviewUrl": "/box-cloud-storage-review",
         "summary": "Box is the AI-powered Intelligent Content Management Platform built for businesses, teams, and enterprises. Featuring Box AI, Box Drive desktop streaming, Box Sign native e-signatures, Box Notes, Box Canvas, workflow automation, and 1500+ integrations with enterprise security and regulatory compliance.",
         "video": "https://players.brightcove.net/6232633676001/bVxoAYQdS_default/index.html?videoId=6338274428112"
     },
@@ -233,7 +233,7 @@
         "isFeatured": true,
         "isTrending": true,
         "affiliateUrl": "https://kjuzv.com/g/8u3trxihmwb68b264a76ef655e4ac9/?ulp=https%3A%2F%2Fdrfone.wondershare.com%2Fstore%2Findex-lb.html%3Ffrom%3Dhomepage",
-        "reviewUrl": "/wondershare-drfone-review.html",
+        "reviewUrl": "/wondershare-drfone-review",
         "summary": "Wondershare Dr.Fone 14 is the industry-standard mobile data management and repair toolkit. Designed for iOS 18 and Android 15, Dr.Fone seamlessly solves phone problems including accidental data deletion, WhatsApp migration between iOS and Android, frozen Apple/Android logos, boot loops, locked passcodes, and GPS location spoofing.",
         "video": "https://www.youtube.com/embed/FTRIFc94xdU"
     },
@@ -774,7 +774,7 @@
         "name": "Wondershare Filmora 15",
         "logo": "/assets/images/brands/filmora.svg",
         "image": "/assets/images/brands/filmora.svg",
-        "reviewUrl": "wondershare-filmora-review.html",
+        "reviewUrl": "/wondershare-filmora-review",
         "url": "wondershare-filmora-review.html",
         "reviewCount": 15400
     },
@@ -872,7 +872,7 @@
         "name": "WPS Office 2026",
         "logo": "/assets/images/brands/wps-office.svg",
         "image": "/assets/images/brands/wps-office.svg",
-        "reviewUrl": "wps-office-review.html",
+        "reviewUrl": "/wps-office-review",
         "url": "wps-office-review.html",
         "reviewCount": 15400
     },
@@ -904,7 +904,7 @@
         "isFeatured": true,
         "isTrending": true,
         "summary": "All-in-one PDF editor and Lumi AI Reading Assistant. Edit PDF text inline, run high-speed OCR on scanned invoices, execute batch conversion, and sign contracts with legal security.",
-        "reviewUrl": "wondershare-pdfelement-review.html",
+        "reviewUrl": "/wondershare-pdfelement-review",
         "video": {
             "youtubeId": "0OnDNyXW0_s",
             "embedUrl": "https://www.youtube.com/embed/0OnDNyXW0_s",
@@ -1171,7 +1171,7 @@
         "name": "Wondershare Recoverit 13 Pro",
         "logo": "/assets/images/brands/recoverit.svg",
         "image": "/assets/images/brands/recoverit.svg",
-        "reviewUrl": "wondershare-recoverit-review.html",
+        "reviewUrl": "/wondershare-recoverit-review",
         "url": "wondershare-recoverit-review.html",
         "reviewCount": 15400
     },
@@ -1185,7 +1185,7 @@
         "summary": "All-in-one AI video converter, compressor, 4K screen recorder, editor, DVD burner, and subtitle studio supporting 1,000+ formats with 120x GPU acceleration.",
         "logo": "/assets/images/brands/uniconverter.svg",
         "heroImage": "/assets/images/uniconverter-hero-banner.jpg",
-        "reviewUrl": "wondershare-uniconverter-review.html",
+        "reviewUrl": "/wondershare-uniconverter-review",
         "affiliateUrl": "https://kjuzv.com/g/8u3trxihmwb68b264a76ef655e4ac9/?ulp=https%3A%2F%2Fvideoconverter.wondershare.com%2Fstore%2Fbundles.html%3Fsysparam%3Dwin",
         "downloadUrl": "https://kjuzv.com/g/8u3trxihmwb68b264a76ef655e4ac9/?ulp=https%3A%2F%2Fvideoconverter.wondershare.com%2Fstore%2Fbundles.html%3Fsysparam%3Dwin",
         "pricing": {
@@ -1242,7 +1242,7 @@
         "summary": "ApplicantAlly is an AI interview copilot for live interviews that listens to questions in real time and provides instant, discreet response suggestions on your screen.",
         "logo": "/assets/images/brands/applicantally.svg",
         "heroImage": "/assets/images/banners/applicantally-review-hero.svg",
-        "reviewUrl": "applicantally-review.html",
+        "reviewUrl": "/applicantally-review",
         "affiliateUrl": "https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/",
         "downloadUrl": "https://xqjeo.com/g/p8sdxttwkob68b264a7630360631df/",
         "pricing": {
@@ -1313,7 +1313,7 @@
         "rating": 4.8,
         "reviewCount": 15000,
         "summary": "Master any language with 1-on-1 online lessons from 30,000+ native speakers worldwide. Flexible pay-per-lesson model with no subscription commitment.",
-        "reviewUrl": "italki-review.html",
+        "reviewUrl": "/italki-review",
         "affiliateUrl": "https://www.italki.com",
         "downloadUrl": "https://www.italki.com",
         "title": "italki Review (2026): 1-on-1 Online Language Lessons & Tutors",
@@ -1337,7 +1337,7 @@
         "summary": "The all-in-one graphic design, video editing, presentation, and generative AI suite empowering 170M+ monthly creators with 100M+ templates and Magic Studio.",
         "logo": "/assets/images/brands/canva.svg",
         "heroImage": "/assets/images/canva/canva-hero-overview.svg",
-        "reviewUrl": "canva-review.html",
+        "reviewUrl": "/canva-review",
         "affiliateUrl": "https://www.canva.com",
         "downloadUrl": "https://www.canva.com",
         "pricing": {
