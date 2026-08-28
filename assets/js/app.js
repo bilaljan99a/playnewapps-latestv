@@ -2379,9 +2379,9 @@ App.initStorePage = async function() {
     }
 
     if (store.seoTitle) {
-        document.title = `${store.seoTitle} | PlayNewApps`;
+        document.title = store.seoTitle;
     } else {
-        document.title = `${store.name} Promo Codes & Deals | PlayNewApps`;
+        document.title = `${store.name} Promo Codes & Deals (2026)`;
     }
     
     // Update Meta tags

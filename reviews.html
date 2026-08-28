@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All App & Software Reviews | PlayNewApps</title>
-    <link rel="canonical" href="https://www.playnewapps.store/reviews" id="canonical-url">
+    <title>App & Software Reviews (2026) | PlayNewApps</title>
+    <link rel="canonical" href="/reviews" id="canonical-url">
     <meta name="description" content="Browse all verified reviews for Android apps, iOS tools, PC software, and trending games on PlayNewApps.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="All App & Software Reviews | PlayNewApps">
+    <meta property="og:title" content="App & Software Reviews (2026) | PlayNewApps">
     <meta property="og:description" content="Browse all verified reviews for Android apps, iOS tools, PC software, and trending games.">
     <meta property="og:url" content="https://www.playnewapps.store/reviews">
     <meta property="og:site_name" content="PlayNewApps">
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="All App & Software Reviews | PlayNewApps">
+    <meta name="twitter:title" content="App & Software Reviews (2026) | PlayNewApps">
     <meta name="twitter:description" content="Browse all verified reviews for Android apps, iOS tools, PC software, and trending games.">
     <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon-96x96.png">
@@ -61,7 +61,7 @@
 
     <header class="header" id="header">
         <div class="container header-container">
-            <a href="index.html" class="logo" aria-label="PlayNewApps Home">
+            <a href="/" class="logo" aria-label="PlayNewApps Home">
                 <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
                 <span>PlayNewApps</span>
             </a>
@@ -69,17 +69,17 @@
             <nav class="nav" id="nav" aria-label="Main Navigation">
                 <ul class="nav-list">
                     <li class="nav-item dropdown" id="stores-dropdown-wrapper">
-                        <a href="stores.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        <a href="/stores" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
                             Stores <span class="material-icons-round dropdown-icon" aria-hidden="true">expand_more</span>
                         </a>
                         <div class="dropdown-menu" id="stores-dropdown-menu" aria-label="Stores Menu">
                             <div class="dropdown-loading">Loading stores...</div>
                         </div>
                     </li>
-                    <li><a href="index.html#featured" class="nav-link">Featured</a></li>
-                    <li><a href="reviews.html" class="nav-link active">Reviews</a></li>
-                    <li><a href="coupon.html" class="nav-link">Deals</a></li>
-                    <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="/#featured" class="nav-link">Featured</a></li>
+                    <li><a href="/reviews" class="nav-link active">Reviews</a></li>
+                    <li><a href="/coupon" class="nav-link">Deals</a></li>
+                    <li><a href="/#faq" class="nav-link">FAQ</a></li>
                 </ul>
             </nav>
 
@@ -95,14 +95,537 @@
     </header>
 
     <main class="main-content" id="main-content">
-        <h1 class="sr-only">All App & Software Reviews</h1>
-        <!-- Loaded dynamically via App.initReviewsPage() -->
+        <nav class="container breadcrumbs" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="/">Home</a></li>
+                <li aria-current="page">Reviews</li>
+            </ol>
+        </nav>
+
+        <section class="section container reveal active" style="padding-top: 1rem; margin-bottom: 3rem;">
+            <div class="card" style="padding: 2rem 1.5rem; margin-bottom: 2rem; background: var(--card-bg, #ffffff); border-radius: 12px; border: 1px solid var(--border-color, #e2e8f0);">
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div>
+                        <h1 class="hero-title" style="margin-bottom: 0.5rem; font-size: 2rem;" id="directory-title">All App &amp; Software Reviews</h1>
+                        <p class="hero-subtitle" style="color: var(--text-secondary); margin: 0; font-size: 1rem;" id="directory-desc">Explore comprehensive, independent reviews of top Android apps, iOS tools, PC software, and trending games.</p>
+                    </div>
+
+                    <div class="search-box-wrapper" style="margin-top: 0.5rem; width: 100%; max-width: 100%;">
+                        <div class="search-box" style="display: flex; align-items: center; gap: 0.5rem; background: var(--bg-primary, #f8fafc); border: 1px solid var(--border-color, #cbd5e1); border-radius: 8px; padding: 0.5rem 1rem;">
+                            <span class="material-icons-round search-icon" aria-hidden="true" style="color: var(--text-secondary);">search</span>
+                            <input type="search" id="directory-search-input" placeholder="Search reviews by app name, topic, or keyword..." aria-label="Search reviews" autocomplete="off" style="border: none; background: transparent; width: 100%; outline: none; color: inherit; font-size: 0.95rem;">
+                            <button id="directory-search-clear" style="display: none; border: none; background: transparent; cursor: pointer; color: var(--text-secondary);" aria-label="Clear search"><span class="material-icons-round">close</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-filters" aria-label="Review Categories" style="margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; justify-content: space-between;">
+                <div class="filter-buttons-wrap" role="tablist" aria-label="Filter Reviews By Category" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                    
+                        <button class="filter-btn active" data-cat="all" role="tab" aria-selected="true">All Reviews</button>
+                    
+                        <button class="filter-btn " data-cat="android" role="tab" aria-selected="false">Android Apps</button>
+                    
+                        <button class="filter-btn " data-cat="ios" role="tab" aria-selected="false">iOS Apps</button>
+                    
+                        <button class="filter-btn " data-cat="pc" role="tab" aria-selected="false">PC Software</button>
+                    
+                        <button class="filter-btn " data-cat="games" role="tab" aria-selected="false">Games</button>
+                    
+                        <button class="filter-btn " data-cat="video-editors" role="tab" aria-selected="false">Video Editors</button>
+                    
+                        <button class="filter-btn " data-cat="vpn" role="tab" aria-selected="false">VPN Services</button>
+                    
+                        <button class="filter-btn " data-cat="productivity" role="tab" aria-selected="false">Productivity</button>
+                    
+                </div>
+                
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <label for="directory-sort-select" style="font-size: 0.875rem; color: var(--text-secondary); font-weight: 500;">Sort:</label>
+                    <select id="directory-sort-select" class="sort-select" aria-label="Sort Reviews">
+                        <option value="newest">Newest</option>
+                        <option value="rating">Top Rated</option>
+                        <option value="name">A-Z</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="grid" id="reviews-grid" aria-live="polite">
+                
+        <article class="card review-card" data-category="video-editors">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/apps/lumafusion.svg" alt="LumaFusion Pro" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">apple</span> iOS</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/review?id=lumafusion-pro">LumaFusion Pro</a></h3>
+                <div class="rating" aria-label="Rating 4.8 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.8</span>
+                </div>
+                <p class="card-excerpt">The ultimate mobile video editor for professionals. Desktop-grade multi-track editing on iPad, iPhone, and Android.</p>
+                <div class="card-footer">
+                    <span class="author">By PlayNewApps</span>
+                    <a href="/review?id=lumafusion-pro" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="video-editors">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/apps/capcut.svg" alt="CapCut Pro" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">apple</span> iOS</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/review?id=capcut-pro">CapCut Pro</a></h3>
+                <div class="rating" aria-label="Rating 4.8 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.8</span>
+                </div>
+                <p class="card-excerpt">All-in-one AI-powered video editing powerhouse engineered for TikTok, Shorts, Reels, and rapid viral content creation across mobile and desktop.</p>
+                <div class="card-footer">
+                    <span class="author">By PlayNewApps</span>
+                    <a href="/review?id=capcut-pro" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="video-editors">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/apps/kinemaster.svg" alt="KineMaster" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">android</span> Android</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/review?id=kinemaster">KineMaster</a></h3>
+                <div class="rating" aria-label="Rating 4.7 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.7</span>
+                </div>
+                <p class="card-excerpt">Full-featured video editor with multi-layer timeline editing, Chroma Key green screen, AI tools, and 4K 60fps export.</p>
+                <div class="card-footer">
+                    <span class="author">By PlayNewApps</span>
+                    <a href="/review?id=kinemaster" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="design">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/apps/procreate.svg" alt="Procreate Pocket" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">apple</span> iOS</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/review?id=procreate">Procreate Pocket</a></h3>
+                <div class="rating" aria-label="Rating 4.9 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.9</span>
+                </div>
+                <p class="card-excerpt">Professional digital painting and illustration suite optimized specifically for mobile touch screens.</p>
+                <div class="card-footer">
+                    <span class="author">By PlayNewApps</span>
+                    <a href="/review?id=procreate" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="action">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/brands/crossout.svg" alt="Crossout: 2026 In-Depth Game Review" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">computer</span> PC</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/crossout-review">Crossout: 2026 In-Depth Game Review</a></h3>
+                <div class="rating" aria-label="Rating 4.9 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.9</span>
+                </div>
+                <p class="card-excerpt">Post-apocalyptic vehicular combat MMO featuring custom vehicle crafting from hundreds of modular parts, real-time positional destruction, 8v8 PvP, and market economy.</p>
+                <div class="card-footer">
+                    <span class="author">By PlayNewApps</span>
+                    <a href="/crossout-review" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="rpg">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/games/genshin-impact-logo.svg" alt="Genshin Impact" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">android</span> Android</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/review?id=genshin-impact">Genshin Impact</a></h3>
+                <div class="rating" aria-label="Rating 4.7 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.7</span>
+                </div>
+                <p class="card-excerpt">Open-world action RPG featuring elemental reaction combat, Teyvat exploration, 60fps mobile performance, and cross-play.</p>
+                <div class="card-footer">
+                    <span class="author">By PlayNewApps</span>
+                    <a href="/review?id=genshin-impact" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="action">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/games/cod-mobile-logo.svg" alt="Call of Duty: Mobile" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">android</span> Android</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/review?id=cod-mobile">Call of Duty: Mobile</a></h3>
+                <div class="rating" aria-label="Rating 4.8 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.8</span>
+                </div>
+                <p class="card-excerpt">Iconic first-person shooter featuring classic multiplayer maps, 100-player Battle Royale mode, Gunsmith customization, and 120 FPS performance.</p>
+                <div class="card-footer">
+                    <span class="author">By PlayNewApps</span>
+                    <a href="/review?id=cod-mobile" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="security">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/brands/avast-logo.svg" alt="Avast Antivirus Review 2026" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">computer</span> Windows</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/avast-antivirus-review">Avast Antivirus Review 2026</a></h3>
+                <div class="rating" aria-label="Rating 4.8 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.8</span>
+                </div>
+                <p class="card-excerpt">Avast Antivirus delivers next-generation multi-layer cybersecurity featuring AI-driven zero-day threat detection, ransomware shielding, and network inspection.</p>
+                <div class="card-footer">
+                    <span class="author">By Reviewer</span>
+                    <a href="/avast-antivirus-review" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="pc">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/brands/elevenlabs-logo.svg" alt="ElevenLabs Review 2026" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">apps</span> Web</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/elevenlabs-review">ElevenLabs Review 2026</a></h3>
+                <div class="rating" aria-label="Rating 4.9 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.9</span>
+                </div>
+                <p class="card-excerpt">ElevenLabs is a cutting-edge voice AI company offering text-to-speech, voice cloning, and AI dubbing tools with unprecedented realism.</p>
+                <div class="card-footer">
+                    <span class="author">By Reviewer</span>
+                    <a href="/elevenlabs-review" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="pc">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/brands/retouch4me-logo.svg" alt="Retouch4me Review 2026" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">computer</span> PC</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/retouch4me-review">Retouch4me Review 2026</a></h3>
+                <div class="rating" aria-label="Rating 4.9 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.9</span>
+                </div>
+                <p class="card-excerpt">Retouch4me is a professional suite of AI-powered post-processing plugins for Photoshop and Lightroom.</p>
+                <div class="card-footer">
+                    <span class="author">By Reviewer</span>
+                    <a href="/retouch4me-review" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="productivity">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/brands/slidesgo.svg" alt="Slidesgo – Best Free Google Slides & PowerPoint Templates with AI Presentation Maker" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">apps</span> Web</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/slidesgo-review">Slidesgo – Best Free Google Slides & PowerPoint Templates with AI Presentation Maker</a></h3>
+                <div class="rating" aria-label="Rating 4.9 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.9</span>
+                </div>
+                <p class="card-excerpt">Comprehensive 2026 Slidesgo review exploring its library of 15,000+ customizable Google Slides & PowerPoint templates, AI Presentation Maker, education & business slide decks, infographics, pricing, pros & cons.</p>
+                <div class="card-footer">
+                    <span class="author">By Reviewer</span>
+                    <a href="/slidesgo-review" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="ai-tools">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/brands/flowgpt.svg" alt="FlowGPT – The Ultimate AI Prompt Library, Character Ecosystem & Marketplace" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">apps</span> Web</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/flowgpt-review">FlowGPT – The Ultimate AI Prompt Library, Character Ecosystem & Marketplace</a></h3>
+                <div class="rating" aria-label="Rating 4.9 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.9</span>
+                </div>
+                <p class="card-excerpt">FlowGPT is the premier community AI prompt library and marketplace featuring over 100,000+ battle-tested prompts, custom AI characters, prompt testing playgrounds, and creator cash bounties for ChatGPT, Claude, Gemini, and Midjourney.</p>
+                <div class="card-footer">
+                    <span class="author">By Reviewer</span>
+                    <a href="/flowgpt-review" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="cloud-storage">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/brands/box.svg" alt="Box – AI-Powered Intelligent Content Management Platform" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">computer</span> Windows</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/box-cloud-storage-review">Box – AI-Powered Intelligent Content Management Platform</a></h3>
+                <div class="rating" aria-label="Rating 4.8 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.8</span>
+                </div>
+                <p class="card-excerpt">AI-powered Intelligent Content Management Platform unifying secure cloud storage, document management, team collaboration, Box AI, Box Drive, Box Sign e-signatures, Box Notes, Box Canvas, and workflow automation.</p>
+                <div class="card-footer">
+                    <span class="author">By Reviewer</span>
+                    <a href="/box-cloud-storage-review" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="utilities">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/brands/drfone.svg" alt="Wondershare Dr.Fone 14" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">computer</span> Windows</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/wondershare-drfone-review">Wondershare Dr.Fone 14</a></h3>
+                <div class="rating" aria-label="Rating 4.9 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.9</span>
+                </div>
+                <p class="card-excerpt">All-in-one mobile solution featuring deep data recovery, cross-platform WhatsApp transfer, system repair for 150+ errors, 1-click screen unlock, and GPS virtual location.</p>
+                <div class="card-footer">
+                    <span class="author">By Reviewer</span>
+                    <a href="/wondershare-drfone-review" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="vpn">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/brands/nordvpn.svg" alt="NordVPN Premium" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">computer</span> Windows</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/review?id=nordvpn">NordVPN Premium</a></h3>
+                <div class="rating" aria-label="Rating 4.9 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.9</span>
+                </div>
+                <p class="card-excerpt">Industry-leading VPN featuring NordLynx protocol, Double VPN encryption, Threat Protection Pro, Meshnet, and 6,400+ ultra-fast global servers.</p>
+                <div class="card-footer">
+                    <span class="author">By PlayNewApps</span>
+                    <a href="/review?id=nordvpn" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="office">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/brands/grammarly.svg" alt="Grammarly Desktop & Web" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">computer</span> Windows</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/review?id=grammarly">Grammarly Desktop & Web</a></h3>
+                <div class="rating" aria-label="Rating 4.8 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.8</span>
+                </div>
+                <p class="card-excerpt">All-in-one AI writing assistant offering real-time grammar checking, tone detection, full clarity rewrites, plagiarism scanning, and generative AI prompting.</p>
+                <div class="card-footer">
+                    <span class="author">By PlayNewApps</span>
+                    <a href="/review?id=grammarly" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="pc">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/brands/filmora.svg" alt="Wondershare Filmora 15" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">computer</span> Windows</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/wondershare-filmora-review">Wondershare Filmora 15</a></h3>
+                <div class="rating" aria-label="Rating 4.8 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.8</span>
+                </div>
+                <p class="card-excerpt">Comprehensive hands-on review of Wondershare Filmora 15 video editor. Explore AI Copilot 2.0, Multi-Camera editing, 4K render benchmarks, pricing plans, 20% student discount, coupon codes, and official affiliate discount links.</p>
+                <div class="card-footer">
+                    <span class="author">By Reviewer</span>
+                    <a href="/wondershare-filmora-review" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="software">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/brands/wps-office.svg" alt="WPS Office 2026" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">computer</span> Windows</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/wps-office-review">WPS Office 2026</a></h3>
+                <div class="rating" aria-label="Rating 4.8 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.8</span>
+                </div>
+                <p class="card-excerpt">All-in-one AI-powered office suite featuring Writer, Spreadsheet, Presentation, PDF Editor, WPS AI, and multi-device cloud collaboration.</p>
+                <div class="card-footer">
+                    <span class="author">By Reviewer</span>
+                    <a href="/wps-office-review" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="productivity">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/brands/pdfelement.svg" alt="Wondershare PDFelement 2026" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">computer</span> Windows</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/wondershare-pdfelement-review">Wondershare PDFelement 2026</a></h3>
+                <div class="rating" aria-label="Rating 4.9 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.9</span>
+                </div>
+                <p class="card-excerpt">In-depth 2026 review of Wondershare PDFelement. Complete testing of Lumi AI Assistant, OCR, PDF editing, batch conversion, forms, e-Sign, benchmarks, pricing, and Adobe Acrobat comparison.</p>
+                <div class="card-footer">
+                    <span class="author">By Reviewer</span>
+                    <a href="/wondershare-pdfelement-review" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="utilities">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/brands/recoverit.svg" alt="Wondershare Recoverit 13 Pro" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">computer</span> Windows</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/wondershare-recoverit-review">Wondershare Recoverit 13 Pro</a></h3>
+                <div class="rating" aria-label="Rating 4.9 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.9</span>
+                </div>
+                <p class="card-excerpt">Comprehensive AI-powered data recovery and video repair suite supporting 1000+ file formats, deep disk scanning, BTRFS/EXT4 NAS recovery, and crashed PC bootable media creation.</p>
+                <div class="card-footer">
+                    <span class="author">By Reviewer</span>
+                    <a href="/wondershare-recoverit-review" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="pc">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/brands/uniconverter.svg" alt="Wondershare UniConverter 16 Pro" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">computer</span> PC</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/wondershare-uniconverter-review">Wondershare UniConverter 16 Pro</a></h3>
+                <div class="rating" aria-label="Rating 4.9 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.9</span>
+                </div>
+                <p class="card-excerpt">All-in-one AI video converter, compressor, 4K screen recorder, editor, DVD burner, and subtitle studio supporting 1,000+ formats with 120x GPU acceleration.</p>
+                <div class="card-footer">
+                    <span class="author">By Reviewer</span>
+                    <a href="/wondershare-uniconverter-review" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="pc">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/brands/applicantally-icon.svg" alt="ApplicantAlly Review (2026): AI Live Interview Assistant & Copilot" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">computer</span> Windows</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/applicantally-review">ApplicantAlly Review (2026): AI Live Interview Assistant & Copilot</a></h3>
+                <div class="rating" aria-label="Rating 4.9 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.9</span>
+                </div>
+                <p class="card-excerpt">In-depth expert review of ApplicantAlly AI live interview assistant. Learn how real-time speech-to-text response suggestions work discreetly during video calls.</p>
+                <div class="card-footer">
+                    <span class="author">By Reviewer</span>
+                    <a href="/applicantally-review" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="pc">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/brands/italki.svg" alt="italki Review (2026): 1-on-1 Online Language Lessons & Tutors" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">apps</span> Web</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/italki-review">italki Review (2026): 1-on-1 Online Language Lessons & Tutors</a></h3>
+                <div class="rating" aria-label="Rating 4.8 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.8</span>
+                </div>
+                <p class="card-excerpt">Comprehensive expert review of italki language learning app. Discover how to learn 150+ languages with 30,000+ native tutors, trial pricing, and verified promo deals.</p>
+                <div class="card-footer">
+                    <span class="author">By Reviewer</span>
+                    <a href="/italki-review" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+        <article class="card review-card" data-category="pc">
+            <div class="card-img-wrapper has-logo-bg">
+                <img src="/assets/images/brands/canva.svg" alt="Canva Review 2026: Visual Suite & Magic Studio AI" class="card-img card-img-logo" width="600" height="400" loading="lazy">
+                <span class="badge platform-badge"><span class="material-icons-round">apps</span> Web</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"><a href="/canva-review">Canva Review 2026: Visual Suite & Magic Studio AI</a></h3>
+                <div class="rating" aria-label="Rating 4.9 out of 5 stars">
+                    <span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star active" aria-hidden="true">star</span><span class="material-icons-round star half" aria-hidden="true">star_half</span>
+                    <span class="rating-text">4.9</span>
+                </div>
+                <p class="card-excerpt">Comprehensive expert review of Canva in 2026. Evaluating 100M+ templates, Magic Studio AI tools, Brand Kits, video editing, pricing, pros & cons.</p>
+                <div class="card-footer">
+                    <span class="author">By Reviewer</span>
+                    <a href="/canva-review" class="read-review-link">Read Review →</a>
+                </div>
+            </div>
+        </article>
+    
+            </div>
+
+            <div id="no-reviews-found" class="card" style="display: none; padding: 3rem 1.5rem; text-align: center; margin-top: 1.5rem;">
+                <span class="material-icons-round" style="font-size: 3rem; color: var(--text-secondary); margin-bottom: 0.5rem;" aria-hidden="true">search_off</span>
+                <h3 style="margin-bottom: 0.5rem;">No reviews found</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">No matching reviews found for your current filter or search criteria.</p>
+                <button id="directory-reset-btn" class="btn btn-outline">Reset Filters</button>
+            </div>
+
+            <div id="reviews-pagination" class="pagination-container" style="margin-top: 2rem; display: flex; justify-content: center; gap: 0.5rem;"></div>
+        </section>
     </main>
 
     <footer class="footer reveal active">
         <div class="container footer-grid">
             <div class="footer-col brand-col">
-                <a href="index.html" class="logo footer-logo" aria-label="PlayNewApps Home">
+                <a href="/" class="logo footer-logo" aria-label="PlayNewApps Home">
                     <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
                     <span>PlayNewApps</span>
                 </a>
@@ -117,20 +640,20 @@
             <nav class="footer-col" aria-label="Categories">
                 <h3 class="footer-heading">Categories</h3>
                 <ul class="footer-links">
-                    <li><a href="category.html?id=android">Android Apps</a></li>
-                    <li><a href="category.html?id=ios">iOS Apps</a></li>
-                    <li><a href="category.html?id=pc">PC Software</a></li>
-                    <li><a href="category.html?id=games">Games</a></li>
+                    <li><a href="/category?id=android">Android Apps</a></li>
+                    <li><a href="/category?id=ios">iOS Apps</a></li>
+                    <li><a href="/category?id=pc">PC Software</a></li>
+                    <li><a href="/category?id=games">Games</a></li>
                 </ul>
             </nav>
 
             <nav class="footer-col" aria-label="Quick Links">
                 <h3 class="footer-heading">Quick Links</h3>
                 <ul class="footer-links">
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="affiliate.html">Affiliate Disclosure</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/affiliate">Affiliate Disclosure</a></li>
                 </ul>
             </nav>
         </div>
