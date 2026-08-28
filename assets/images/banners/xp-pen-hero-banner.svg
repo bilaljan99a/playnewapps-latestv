@@ -1,119 +1,240 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
   <defs>
-    <linearGradient id="xpBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#070A10" />
-      <stop offset="50%" stop-color="#0F172A" />
-      <stop offset="100%" stop-color="#1E1B4B" />
-    </linearGradient>
-    <linearGradient id="redAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#E50914" />
-      <stop offset="100%" stop-color="#FF3366" />
-    </linearGradient>
-    <linearGradient id="cyanAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#06B6D4" />
-      <stop offset="100%" stop-color="#3B82F6" />
-    </linearGradient>
-    <linearGradient id="tabletScreen" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Studio Lighting Background -->
+    <radialGradient id="studioLighting" cx="65%" cy="45%" r="70%">
       <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="40%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+
+    <!-- Metallic Aluminum Bezel Gradient -->
+    <linearGradient id="metalBezel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="25%" stop-color="#1E293B" />
+      <stop offset="75%" stop-color="#334155" />
       <stop offset="100%" stop-color="#0F172A" />
     </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="30" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+
+    <!-- Anti-Glare AG Etched Glass Screen -->
+    <linearGradient id="screenGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+
+    <!-- Stylus Grip Texture -->
+    <linearGradient id="stylusBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#27272A" />
+      <stop offset="50%" stop-color="#3F3F46" />
+      <stop offset="100%" stop-color="#18181B" />
+    </linearGradient>
+
+    <!-- Key Accent Gradients -->
+    <linearGradient id="xpRedGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E50914" />
+      <stop offset="100%" stop-color="#FF3838" />
+    </linearGradient>
+
+    <linearGradient id="badgeGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+
+    <filter id="screenGlow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#0284C7" flood-opacity="0.3" />
     </filter>
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="630" fill="url(#xpBg)" />
+  <rect width="1200" height="630" fill="url(#studioLighting)" />
 
-  <!-- Abstract Digital Art Waves & Grid -->
-  <g opacity="0.15">
-    <path d="M 0 100 Q 300 250 600 120 T 1200 200" fill="none" stroke="#E50914" stroke-width="2" />
-    <path d="M 0 200 Q 300 350 600 220 T 1200 300" fill="none" stroke="#3B82F6" stroke-width="2" />
-    <path d="M 0 350 Q 300 500 600 370 T 1200 450" fill="none" stroke="#8B5CF6" stroke-width="2" />
-    <line x1="100" y1="0" x2="100" y2="630" stroke="#334155" stroke-dasharray="6 6" />
-    <line x1="300" y1="0" x2="300" y2="630" stroke="#334155" stroke-dasharray="6 6" />
-    <line x1="500" y1="0" x2="500" y2="630" stroke="#334155" stroke-dasharray="6 6" />
-    <line x1="700" y1="0" x2="700" y2="630" stroke="#334155" stroke-dasharray="6 6" />
-    <line x1="900" y1="0" x2="900" y2="630" stroke="#334155" stroke-dasharray="6 6" />
-    <line x1="1100" y1="0" x2="1100" y2="630" stroke="#334155" stroke-dasharray="6 6" />
-  </g>
+  <!-- Studio Floor Line / Perspective Grid -->
+  <line x1="0" y1="520" x2="1200" y2="520" stroke="#1E293B" stroke-width="1" opacity="0.6" />
+  <ellipse cx="780" cy="530" rx="340" ry="40" fill="#000000" opacity="0.7" />
 
-  <!-- Glowing Orbs -->
-  <circle cx="950" cy="280" r="180" fill="#E50914" opacity="0.18" filter="url(#glow)" />
-  <circle cx="750" cy="420" r="140" fill="#3B82F6" opacity="0.15" filter="url(#glow)" />
+  <!-- ================= LEFT COLUMN: OFFICIAL EDITORIAL & PRODUCT SPECS ================= -->
+  <g transform="translate(60, 60)">
+    <!-- XPPen Brand Logo Block -->
+    <g transform="translate(0, 0)">
+      <rect width="120" height="42" rx="8" fill="#FFFFFF" />
+      <!-- Embedded Mini XPPen Brand Mark -->
+      <g transform="translate(25, 4)" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+        <!-- XP -->
+        <line x1="6" y1="4" x2="13" y2="11" stroke-width="2.2" />
+        <line x1="16" y1="14" x2="23" y2="21" stroke-width="2.2" />
+        <line x1="23" y1="4" x2="16" y2="11" stroke-width="2.2" />
+        <line x1="13" y1="14" x2="6" y2="21" stroke-width="2.2" />
+        <line x1="29" y1="4" x2="29" y2="21" stroke-width="2.2" />
+        <path d="M 29 4 L 38 4 C 43 4 46 7 46 12 C 46 17 43 20 38 20 L 29 20" stroke-width="2.2" />
+        <!-- pen -->
+        <line x1="49" y1="9" x2="49" y2="21" stroke-width="1.8" />
+        <path d="M 49 12 C 51 9 55 9 57 12 C 59 15 57 18 55 20 C 52 20 49 18 49 16" stroke-width="1.8" />
+        <path d="M 61 15 L 69 15 C 69 11 66 9 63 9 C 60 9 58 12 58 16 C 58 19 61 21 65 21" stroke-width="1.8" />
+        <line x1="72" y1="9" x2="72" y2="21" stroke-width="1.8" />
+        <path d="M 72 12 C 74 9 78 9 80 12 L 80 21" stroke-width="1.8" />
+      </g>
+    </g>
 
-  <!-- Left Side: Copy & Branding -->
-  <g transform="translate(80, 100)">
-    <!-- Official Badge -->
-    <rect width="210" height="34" rx="17" fill="rgba(229, 9, 20, 0.15)" stroke="rgba(229, 9, 20, 0.4)" stroke-width="1.5" />
-    <text x="18" y="22" fill="#FF4D4D" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="13" letter-spacing="2">OFFICIAL STORE OFFERS</text>
+    <!-- Verified Badge -->
+    <g transform="translate(132, 5)">
+      <rect width="180" height="32" rx="16" fill="rgba(16, 185, 129, 0.15)" stroke="#10B981" stroke-width="1.2" />
+      <circle cx="20" cy="16" r="6" fill="#10B981" />
+      <path d="M 17 16 L 19 18 L 23 14" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" fill="none" />
+      <text x="34" y="21" fill="#10B981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="12" letter-spacing="1">OFFICIAL STORE DEALS</text>
+    </g>
 
     <!-- Main Headline -->
-    <text x="0" y="90" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="46" letter-spacing="-0.5">XPPen Drawing Tablets</text>
-    <text x="0" y="145" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="46" letter-spacing="-0.5">&amp; Pen Displays 2026</text>
+    <text x="0" y="95" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="42" letter-spacing="-0.5">XPPen Artist Pro</text>
+    <text x="0" y="145" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="42" letter-spacing="-0.5">&amp; Deco Graphic Tablets</text>
 
     <!-- Subtitle -->
-    <text x="0" y="195" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="19">16K Pressure Levels • X3 Pro Smart Chip Stylus • Artist &amp; Deco Pro Series</text>
+    <text x="0" y="190" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="16">World-First 16K Pressure Levels • X3 Pro Smart Chip Stylus • 4K 165Hz</text>
 
-    <!-- Feature Pills -->
-    <g transform="translate(0, 240)">
-      <!-- Pill 1 -->
-      <rect width="165" height="42" rx="10" fill="#1E293B" stroke="#334155" />
-      <text x="16" y="26" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="14">⚡ 16,384 Levels</text>
+    <!-- Product Highlights Table / Metric Grid -->
+    <g transform="translate(0, 220)">
+      <!-- Metric 1 -->
+      <rect width="145" height="68" rx="10" fill="#0F172A" stroke="#334155" stroke-width="1" />
+      <text x="14" y="28" fill="#E50914" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="20">16,384</text>
+      <text x="14" y="50" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11">PRESSURE LEVELS</text>
 
-      <!-- Pill 2 -->
-      <rect x="180" width="170" height="42" rx="10" fill="#1E293B" stroke="#334155" />
-      <text x="196" y="26" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="14">🎨 4K Ultra HD Display</text>
+      <!-- Metric 2 -->
+      <rect x="155" width="145" height="68" rx="10" fill="#0F172A" stroke="#334155" stroke-width="1" />
+      <text x="169" y="28" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="20">4K 165Hz</text>
+      <text x="169" y="50" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11">ULTRA HD DISPLAY</text>
 
-      <!-- Pill 3 -->
-      <rect x="365" width="165" height="42" rx="10" fill="#1E293B" stroke="#334155" />
-      <text x="381" y="26" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="14">🚚 Free US Shipping</text>
+      <!-- Metric 3 -->
+      <rect x="310" width="145" height="68" rx="10" fill="#0F172A" stroke="#334155" stroke-width="1" />
+      <text x="324" y="28" fill="#10B981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="20">99% Adobe</text>
+      <text x="324" y="50" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11">COLOR ACCURACY</text>
     </g>
 
-    <!-- CTA Box -->
+    <!-- Key Product Series Bullets -->
     <g transform="translate(0, 315)">
-      <rect width="240" height="52" rx="26" fill="url(#redAccent)" />
-      <text x="36" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="16" letter-spacing="1">EXPLORE OFFERS →</text>
+      <circle cx="6" cy="10" r="4" fill="#E50914" />
+      <text x="20" y="14" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="14">Artist Pro 24 (Gen 2) 4K &amp; Artist Pro 19</text>
+
+      <circle cx="6" cy="38" r="4" fill="#E50914" />
+      <text x="20" y="42" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="14">Deco Pro (Gen 2) Wireless Bluetooth Tablets</text>
+
+      <circle cx="6" cy="66" r="4" fill="#E50914" />
+      <text x="20" y="70" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="14">Magic Drawing Pad (12.2" Standalone Sketchpad)</text>
+    </g>
+
+    <!-- CTA Button -->
+    <g transform="translate(0, 420)">
+      <rect width="260" height="48" rx="8" fill="url(#xpRedGrad)" />
+      <text x="42" y="30" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="14" letter-spacing="1">SAVE UP TO 45% OFF →</text>
     </g>
   </g>
 
-  <!-- Right Side: Graphic Representation of Artist Pro Pen Display & Stylus -->
-  <g transform="translate(680, 110)">
-    <!-- Pen Display Outer Frame -->
-    <rect width="440" height="320" rx="22" fill="#18181B" stroke="#3F3F46" stroke-width="4" />
-    <rect x="15" y="15" width="410" height="290" rx="12" fill="url(#tabletScreen)" />
+  <!-- ================= RIGHT COLUMN: REALISTIC PRODUCT PHOTOGRAPHY MOCKUP ================= -->
+  <g transform="translate(560, 45)">
+    <!-- 1. Flagship Pen Display: Artist Pro 24 (Gen 2) -->
+    <g filter="url(#softShadow)">
+      <!-- Metal Stand Leg -->
+      <polygon points="260,380 340,380 320,470 280,470" fill="#1E293B" stroke="#334155" stroke-width="2" />
+      <rect x="230" y="465" width="140" height="10" rx="4" fill="#0F172A" stroke="#334155" stroke-width="1" />
 
-    <!-- Digital Artwork on Screen -->
-    <path d="M 30 240 C 90 140 180 270 260 170 C 320 100 370 200 410 130" fill="none" stroke="url(#redAccent)" stroke-width="5" stroke-linecap="round" />
-    <path d="M 40 260 C 120 180 200 290 300 200 C 360 150 390 230 410 180" fill="none" stroke="url(#cyanAccent)" stroke-width="3" stroke-linecap="round" opacity="0.8" />
-    
-    <!-- UI Elements on Tablet Screen -->
-    <circle cx="50" cy="45" r="6" fill="#E50914" />
-    <circle cx="70" cy="45" r="6" fill="#F59E0B" />
-    <circle cx="90" cy="45" r="6" fill="#10B981" />
-    <rect x="330" y="35" width="80" height="20" rx="6" fill="rgba(255,255,255,0.1)" />
-    <text x="345" y="49" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700">16K CHIP</text>
+      <!-- Display Bezel / Enclosure -->
+      <rect x="40" y="30" width="520" height="340" rx="16" fill="url(#metalBezel)" stroke="#64748B" stroke-width="1.5" />
 
-    <!-- X3 Pro Smart Chip Stylus (Angled) -->
-    <g transform="translate(240, 60) rotate(-35)">
-      <!-- Pen Body -->
-      <rect x="0" y="0" width="18" height="240" rx="9" fill="#27272A" stroke="#52525B" stroke-width="2" />
-      <rect x="0" y="160" width="18" height="50" fill="#3F3F46" />
-      <!-- Red Accent Ring -->
-      <rect x="0" y="70" width="18" height="4" fill="#E50914" />
-      <!-- Shortcut Buttons -->
-      <rect x="6" y="170" width="6" height="14" rx="2" fill="#18181B" />
-      <rect x="6" y="190" width="6" height="14" rx="2" fill="#18181B" />
-      <!-- Pen Nib -->
-      <polygon points="9,260 3,240 15,240" fill="#FAFAFA" />
+      <!-- Inner AG Etched Screen Area -->
+      <rect x="58" y="48" width="484" height="304" rx="8" fill="url(#screenGlass)" filter="url(#screenGlow)" />
+
+      <!-- Authentic Creative Studio UI Interface on Screen -->
+      <!-- Top Studio Toolbar -->
+      <rect x="58" y="48" width="484" height="24" fill="#111827" />
+      <circle cx="72" cy="60" r="4" fill="#EF4444" />
+      <circle cx="84" cy="60" r="4" fill="#F59E0B" />
+      <circle cx="96" cy="60" r="4" fill="#10B981" />
+      <text x="114" y="64" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600">Clip Studio Paint Pro - Concept_Art_V3.clip (4K 165Hz)</text>
+
+      <!-- Left Tool Palette -->
+      <rect x="58" y="72" width="28" height="280" fill="#18181B" opacity="0.9" />
+      <rect x="64" y="80" width="16" height="16" rx="3" fill="#3B82F6" />
+      <rect x="64" y="102" width="16" height="16" rx="3" fill="#27272A" />
+      <rect x="64" y="124" width="16" height="16" rx="3" fill="#27272A" />
+      <rect x="64" y="146" width="16" height="16" rx="3" fill="#27272A" />
+
+      <!-- Canvas Real Artwork: Stylized Cyberpunk Portrait / Landscape Digital Art -->
+      <g transform="translate(86, 72)">
+        <!-- Digital Canvas Background -->
+        <rect width="364" height="280" fill="#0A0E17" />
+        
+        <!-- Canvas Art Strokes -->
+        <path d="M 40 240 Q 140 80 240 180 T 360 90" fill="none" stroke="#E50914" stroke-width="4" stroke-linecap="round" />
+        <path d="M 20 200 Q 120 120 220 220 T 340 140" fill="none" stroke="#0284C7" stroke-width="3" stroke-linecap="round" opacity="0.8" />
+        <path d="M 60 160 Q 180 40 300 120" fill="none" stroke="#A855F7" stroke-width="2.5" stroke-linecap="round" opacity="0.9" />
+        
+        <!-- Detailed Linework & Brush Dynamic Tapering -->
+        <path d="M 120 220 C 140 150 180 130 200 80" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" />
+        <circle cx="200" cy="80" r="3" fill="#FFFFFF" />
+
+        <!-- Floating UI Color Wheel / Swatch HUD -->
+        <g transform="translate(245, 15)">
+          <rect width="105" height="110" rx="8" fill="#18181B" stroke="#27272A" opacity="0.92" />
+          <circle cx="52" cy="50" r="34" fill="none" stroke="url(#xpRedGrad)" stroke-width="6" />
+          <rect x="15" y="90" width="75" height="10" rx="3" fill="#334155" />
+          <rect x="15" y="90" width="45" height="10" rx="3" fill="#E50914" />
+        </g>
+      </g>
+
+      <!-- Right Studio Layers Panel -->
+      <rect x="450" y="72" width="92" height="280" fill="#18181B" opacity="0.9" />
+      <text x="460" y="90" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700">LAYERS (16K)</text>
+      <rect x="456" y="98" width="80" height="20" rx="4" fill="#27272A" />
+      <text x="462" y="112" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">✦ Lineart_Final</text>
+      <rect x="456" y="122" width="80" height="20" rx="4" fill="#1E293B" />
+      <text x="462" y="136" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">✦ Color_Wash</text>
+      <rect x="456" y="146" width="80" height="20" rx="4" fill="#1E293B" />
+      <text x="462" y="160" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">✦ Background</text>
     </g>
 
-    <!-- Shortcut Dial / Wireless Keypad Floating Badge -->
-    <g transform="translate(290, 240)">
-      <rect width="130" height="60" rx="14" fill="#0F172A" stroke="#E50914" stroke-width="2" />
-      <text x="14" y="24" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="800">ACK05 REMOTE</text>
-      <text x="14" y="44" fill="#E50914" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="900">INCLUDED DEAL</text>
+    <!-- 2. Foreground Real Product: ACK05 Wireless Remote Shortcut Keypad -->
+    <g transform="translate(30, 310)" filter="url(#softShadow)">
+      <rect width="130" height="190" rx="14" fill="#18181B" stroke="#3F3F46" stroke-width="2" />
+      <!-- Physical Dial Wheel -->
+      <circle cx="65" cy="55" r="30" fill="#27272A" stroke="#52525B" stroke-width="2" />
+      <circle cx="65" cy="55" r="14" fill="#09090B" />
+      <circle cx="65" cy="33" r="3" fill="#E50914" />
+      <!-- Express Keys Grid -->
+      <g transform="translate(18, 98)">
+        <rect x="0" y="0" width="42" height="18" rx="4" fill="#27272A" stroke="#3F3F46" />
+        <rect x="52" y="0" width="42" height="18" rx="4" fill="#27272A" stroke="#3F3F46" />
+        <rect x="0" y="24" width="42" height="18" rx="4" fill="#27272A" stroke="#3F3F46" />
+        <rect x="52" y="24" width="42" height="18" rx="4" fill="#27272A" stroke="#3F3F46" />
+        <rect x="0" y="48" width="42" height="18" rx="4" fill="#27272A" stroke="#3F3F46" />
+        <rect x="52" y="48" width="42" height="18" rx="4" fill="#27272A" stroke="#3F3F46" />
+      </g>
+      <text x="35" y="180" fill="#71717A" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="700">ACK05 WIRELESS</text>
+    </g>
+
+    <!-- 3. Foreground Real Product: X3 Pro Smart Chip Stylus (In-Use Perspective) -->
+    <g transform="translate(160, 220) rotate(-28)" filter="url(#softShadow)">
+      <!-- Pen Shadow -->
+      <ellipse cx="140" cy="20" rx="130" ry="8" fill="#000000" opacity="0.4" />
+
+      <!-- Pen Body -->
+      <path d="M 0 0 L 260 0 C 275 0 280 4 280 8 C 280 12 275 16 260 16 L 0 16 Z" fill="url(#stylusBody)" />
+      
+      <!-- Ergonomic Cone Tip Section -->
+      <polygon points="0,0 -30,6 -30,10 0,16" fill="#18181B" />
+      
+      <!-- Fine Felt Nib -->
+      <polygon points="-30,7 -42,8 -30,9" fill="#F8FAFC" />
+
+      <!-- X3 Pro Dual Shortcut Switch on Barrel -->
+      <rect x="35" y="4" width="40" height="8" rx="2" fill="#09090B" stroke="#52525B" stroke-width="0.8" />
+      <line x1="55" y1="4" x2="55" y2="12" stroke="#52525B" stroke-width="0.8" />
+
+      <!-- Red Accent Ring -->
+      <rect x="85" y="0" width="3" height="16" fill="#E50914" />
+
+      <!-- X3 Pro Smart Chip Emblem -->
+      <text x="110" y="11" fill="#A1A1AA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7" font-weight="700" letter-spacing="1">X3 PRO 16K</text>
     </g>
   </g>
 </svg>
