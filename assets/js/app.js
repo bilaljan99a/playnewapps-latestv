@@ -1060,7 +1060,7 @@ class App {
         const pageTitle = review.metaTitle || `${baseTitle} Review (2026): Is It Worth Buying?`;
         
         document.title = pageTitle.includes('PlayNewApps') ? pageTitle : `${pageTitle} | PlayNewApps`;
-        const canonicalUrl = `https://www.playnewapps.store/review.html?id=${review.id}`;
+        const canonicalUrl = `https://www.playnewapps.store/review?id=${review.id}`;
         
         const updateMeta = (selector, attr, content) => {
             const el = document.querySelector(selector);
@@ -1631,7 +1631,7 @@ App.initDealPage = async function() {
     // Document Title & Meta Tags
     document.title = `${deal.title} - ${deal.store.name} | PlayNewApps`;
     
-    const canonicalUrl = `https://www.playnewapps.store/deal.html?id=${deal.id}`;
+    const canonicalUrl = `https://www.playnewapps.store/deal?id=${deal.id}`;
     const updateMeta = (selector, attr, content) => {
         const el = document.querySelector(selector);
         if (el) el.setAttribute(attr, content);
@@ -1821,7 +1821,7 @@ App.initAuthorPage = async function() {
 
     if (author) {
         document.title = `${author.name} - PlayNewApps Author`;
-        const canonicalUrl = `https://www.playnewapps.store/author.html?id=${author.id}`;
+        const canonicalUrl = `https://www.playnewapps.store/author?id=${author.id}`;
         const updateMeta = (selector, attr, content) => {
             const el = document.querySelector(selector);
             if (el) el.setAttribute(attr, content);
@@ -1927,7 +1927,7 @@ App.renderReviewsDirectoryUI = async function(options = {}) {
         const el = document.querySelector(selector);
         if (el) el.setAttribute(attr, content);
     };
-    const canonicalUrl = `https://www.playnewapps.store/${options.isCategoryPage ? 'category.html?id=' + catId : 'reviews.html'}`;
+    const canonicalUrl = `https://www.playnewapps.store/${options.isCategoryPage ? 'category?id=' + catId : 'reviews'}`;
     updateMeta('#canonical-url', 'href', canonicalUrl);
     updateMeta('meta[name="description"]', 'content', subtitle);
     updateMeta('meta[property="og:url"]', 'content', canonicalUrl);
@@ -2346,7 +2346,7 @@ App.initStorePage = async function() {
     }
     
     // Update Meta tags
-    const canonicalUrl = `https://www.playnewapps.store/store.html?id=${store.id}`;
+    const canonicalUrl = `https://www.playnewapps.store/store?id=${store.id}`;
     const updateMeta = (selector, attr, content) => {
         const el = document.querySelector(selector);
         if (el) el.setAttribute(attr, content);
@@ -2689,7 +2689,7 @@ App.renderAllStoresPage = async function() {
     document.title = "All Stores & Promo Codes | PlayNewApps";
     
     // Update Meta tags
-    const canonicalUrl = `https://www.playnewapps.store/stores.html`;
+    const canonicalUrl = `https://www.playnewapps.store/stores`;
     const updateMeta = (selector, attr, content) => {
         const el = document.querySelector(selector);
         if (el) el.setAttribute(attr, content);
