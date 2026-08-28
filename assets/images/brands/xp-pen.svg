@@ -1,40 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" width="240" height="160">
-  <!-- Clean White Canvas -->
-  <rect width="240" height="160" fill="#FFFFFF"/>
-  
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 130" width="200" height="130">
+  <!-- Clean Transparent Canvas -->
   <g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
     <!-- === TOP ROW: XP === -->
-    <!-- Stylized 'X' with 4 distinct radiating arms and central open gap -->
-    <!-- Top-left branch -->
-    <line x1="52" y1="30" x2="69" y2="48" stroke-width="7.8" />
-    <!-- Bottom-right branch -->
-    <line x1="77" y1="56" x2="94" y2="74" stroke-width="7.8" />
-    <!-- Top-right branch -->
-    <line x1="94" y1="30" x2="77" y2="48" stroke-width="7.8" />
-    <!-- Bottom-left branch -->
-    <line x1="69" y1="56" x2="52" y2="74" stroke-width="7.8" />
+    <!-- Stylized 'X': 4 symmetric angular radiating strokes around a central aperture -->
+    <line x1="38" y1="20" x2="55" y2="37" stroke-width="7.5" />
+    <line x1="65" y1="47" x2="82" y2="64" stroke-width="7.5" />
+    <line x1="82" y1="20" x2="65" y2="37" stroke-width="7.5" />
+    <line x1="55" y1="47" x2="38" y2="64" stroke-width="7.5" />
 
     <!-- Uppercase 'P' -->
-    <!-- Vertical stem -->
-    <line x1="116" y1="28" x2="116" y2="76" stroke-width="7.8" />
-    <!-- Semicircular loop -->
-    <path d="M 116 28 L 138 28 C 153 28 164 36 164 49 C 164 62 153 70 138 70 L 116 70" stroke-width="7.8" />
+    <line x1="102" y1="18" x2="102" y2="66" stroke-width="7.5" />
+    <path d="M 102 18 L 126 18 C 141 18 152 26 152 40 C 152 54 141 62 126 62 L 102 62" stroke-width="7.5" />
 
     <!-- === BOTTOM ROW: pen === -->
     <!-- Lowercase 'p' -->
-    <!-- Descender stem -->
-    <line x1="52" y1="92" x2="52" y2="138" stroke-width="7.2" />
-    <!-- Circular bowl -->
-    <path d="M 52 99 C 58 91 69 88 78 88 C 93 88 103 98 103 111 C 103 124 93 134 78 134 C 69 134 58 131 52 123" stroke-width="7.2" />
+    <line x1="39" y1="78" x2="39" y2="124" stroke-width="6.8" />
+    <path d="M 39 88 C 45 79 56 76 67 76 C 82 76 93 86 93 100 C 93 114 82 124 67 124 C 56 124 45 121 39 112" stroke-width="6.8" />
 
     <!-- Lowercase 'e' -->
-    <!-- Horizontal middle bar and round loop -->
-    <path d="M 117 112 L 153 112 C 153 98 144 88 133 88 C 121 88 112 98 112 111 C 112 124 121 134 135 134 C 145 134 151 129 153 123" stroke-width="7.2" />
+    <path d="M 104 102 L 138 102 C 138 88 130 76 119 76 C 107 76 99 87 99 100 C 99 113 108 124 121 124 C 131 124 137 118 139 111" stroke-width="6.8" />
 
     <!-- Lowercase 'n' -->
-    <!-- Left stem -->
-    <line x1="168" y1="90" x2="168" y2="134" stroke-width="7.2" />
-    <!-- Shoulder arch -->
-    <path d="M 168 102 C 174 92 184 88 194 88 C 205 88 212 95 212 107 L 212 134" stroke-width="7.2" />
+    <line x1="152" y1="78" x2="152" y2="124" stroke-width="6.8" />
+    <path d="M 152 90 C 158 80 168 76 179 76 C 190 76 198 84 198 97 L 198 124" stroke-width="6.8" />
   </g>
 </svg>
