@@ -110,8 +110,15 @@ class App {
                 }
             }
 
+            // Hide loader immediately once page route content finishes rendering
+            const loader = document.getElementById('loader');
+            if (loader) {
+                loader.style.display = 'none';
+            }
+
+            // Secondary non-blocking UI initializations in background
             if (typeof this.initHeaderStoresDropdown === 'function') {
-                await this.initHeaderStoresDropdown();
+                this.initHeaderStoresDropdown();
             }
             if (typeof this.initSearch === 'function') {
                 this.initSearch();
@@ -144,22 +151,43 @@ class App {
 
         if (!searchInput || !searchForm) return;
 
-        // Fetch data sources concurrently with caching
+        // Lazy-loaded search data
         let allReviews = [];
         let stores = [];
         let coupons = [];
+        let searchDataLoaded = false;
+        let searchDataPromise = null;
 
-        try {
-            const [rData, sData, cData] = await Promise.all([
-                getDataService().getAllReviews(),
-                getDataService().getStores(),
-                getDataService().getCoupons()
-            ]);
-            allReviews = rData || [];
-            stores = sData || [];
-            coupons = cData || [];
-        } catch (err) {
-            console.error('[SEARCH] Failed to preload search data:', err);
+        const ensureSearchData = async () => {
+            if (searchDataLoaded) return;
+            if (searchDataPromise) return await searchDataPromise;
+
+            searchDataPromise = (async () => {
+                try {
+                    const [rData, sData, cData] = await Promise.all([
+                        getDataService().getAllReviews(),
+                        getDataService().getStores(),
+                        getDataService().getCoupons()
+                    ]);
+                    allReviews = rData || [];
+                    stores = sData || [];
+                    coupons = cData || [];
+                    searchDataLoaded = true;
+                } catch (err) {
+                    console.error('[SEARCH] Failed to load search data:', err);
+                } finally {
+                    searchDataPromise = null;
+                }
+            })();
+
+            await searchDataPromise;
+        };
+
+        // Prefetch search data during idle time (non-blocking)
+        if ('requestIdleCallback' in window) {
+            window.requestIdleCallback(() => ensureSearchData(), { timeout: 3000 });
+        } else {
+            setTimeout(ensureSearchData, 1000);
         }
 
         const escapeHtml = (str) => {
@@ -219,7 +247,7 @@ class App {
 
         let activeSuggestionIndex = -1;
 
-        const renderSuggestions = (query) => {
+        const renderSuggestions = async (query) => {
             if (!suggestionsBox) return;
             activeSuggestionIndex = -1;
 
@@ -229,6 +257,7 @@ class App {
                 return;
             }
 
+            await ensureSearchData();
             const { stores: matchedStores, reviews: matchedReviews, deals: matchedDeals, total } = performSearch(query);
 
             if (total === 0) {
@@ -334,9 +363,10 @@ class App {
             }
         };
 
-        const renderSearchResultsView = (query, filter = 'all') => {
+        const renderSearchResultsView = async (query, filter = 'all') => {
             if (!searchResultsSection || !searchResultsGrid) return;
 
+            await ensureSearchData();
             const { stores: matchedStores, reviews: matchedReviews, deals: matchedDeals, total } = performSearch(query);
 
             if (searchQueryDisplay) searchQueryDisplay.textContent = `"${query}"`;
@@ -650,8 +680,10 @@ class App {
     }
 
     static async initHomePage() {
-        const allReviews = await getDataService().getAllReviews();
-        const coupons = await getDataService().getCoupons();
+        const [allReviews, coupons] = await Promise.all([
+            getDataService().getAllReviews(),
+            getDataService().getCoupons()
+        ]);
 
         // Populate Trending Slider
         const sliderTrack = document.getElementById('slider-track');
@@ -1616,7 +1648,10 @@ App.initDealPage = async function() {
     const urlParams = new URLSearchParams(window.location.search);
     let id = urlParams.get('id') || 'wps-office-70pro';
     
-    const allCoupons = await getDataService().getCoupons();
+    const [allCoupons, stores] = await Promise.all([
+        getDataService().getCoupons(),
+        getDataService().getStores()
+    ]);
     const deal = allCoupons ? allCoupons.find(c => c.id === id) : null;
     
     if (!deal) {
@@ -1625,7 +1660,6 @@ App.initDealPage = async function() {
         return;
     }
 
-    const stores = await getDataService().getStores();
     const store = stores ? stores.find(s => s.id === deal.store.id) : null;
 
     // Document Title & Meta Tags
@@ -1873,8 +1907,10 @@ App.renderReviewsDirectoryUI = async function(options = {}) {
     let catId = options.activeCategory || urlParams.get('id') || urlParams.get('category') || 'all';
     catId = catId.toLowerCase();
 
-    const allReviews = await getDataService().getAllReviews();
-    const categories = await getDataService().getCategories();
+    const [allReviews, categories] = await Promise.all([
+        getDataService().getAllReviews(),
+        getDataService().getCategories()
+    ]);
 
     const categoryInfoMap = {
         'all': {
@@ -2321,7 +2357,10 @@ App.initStorePage = async function() {
     const brandTextElInit = document.getElementById('store-brand-about-text');
     if (brandTextElInit) brandTextElInit.textContent = 'Loading brand information...';
 
-    const stores = await getDataService().getStores();
+    const [stores, allCoupons] = await Promise.all([
+        getDataService().getStores(),
+        getDataService().getCoupons()
+    ]);
     const store = stores ? stores.find(s => s.id === id || s.id === id.replace(/-coupons$/, '').replace(/-review$/, '')) : null;
     
     if (!store) {
@@ -2404,9 +2443,8 @@ App.initStorePage = async function() {
         `).join('');
     }
 
-    // Coupons
-    const allCoupons = await getDataService().getCoupons();
-    const storeCoupons = allCoupons.filter(c => {
+    // Filter coupons for this store
+    const storeCoupons = (allCoupons || []).filter(c => {
         if (!c) return false;
         const sId = (c.storeId || (typeof c.store === 'object' && c.store ? c.store.id : c.store) || '').toLowerCase();
         const sName = (typeof c.store === 'object' && c.store ? c.store.name : (c.store || '')).toLowerCase();
@@ -2701,7 +2739,6 @@ App.renderAllStoresPage = async function() {
     updateMeta('meta[property="og:description"]', 'content', 'Browse exclusive coupon codes and verified software discounts from all stores.');
 
     const stores = await getDataService().getStores();
-    const coupons = await getDataService().getCoupons();
 
     if (!stores || stores.length === 0) {
         const main = document.querySelector('main') || document.querySelector('.main-content');

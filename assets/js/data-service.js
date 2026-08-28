@@ -1,27 +1,66 @@
 class DataService {
-    static async fetchJSON(path) {
-        const candidatePaths = [
-            path,
-            path.startsWith('/') ? path.slice(1) : '/' + path,
-            '.' + (path.startsWith('/') ? path : '/' + path)
-        ];
+    static _cache = new Map();
+    static _inFlight = new Map();
 
-        for (const p of candidatePaths) {
-            try {
-                const response = await fetch(p);
-                if (response.ok) {
-                    return await response.json();
-                }
-            } catch (err) {
-                // Ignore and try fallback path candidate
-            }
+    static async fetchJSON(path) {
+        // Check in-memory cache first
+        if (this._cache.has(path)) {
+            return this._cache.get(path);
         }
-        return null;
+
+        // Check if request is already in flight (deduplicate simultaneous requests)
+        if (this._inFlight.has(path)) {
+            return await this._inFlight.get(path);
+        }
+
+        // Check sessionStorage cache for fast inter-page navigation
+        try {
+            const sessionData = sessionStorage.getItem('pna_cache_' + path);
+            if (sessionData) {
+                const parsed = JSON.parse(sessionData);
+                this._cache.set(path, parsed);
+                return parsed;
+            }
+        } catch (e) {}
+
+        const fetchPromise = (async () => {
+            const candidatePaths = [
+                path.startsWith('/') ? path : '/' + path,
+                path.startsWith('/') ? path.slice(1) : path,
+                '.' + (path.startsWith('/') ? path : '/' + path)
+            ];
+
+            for (const p of candidatePaths) {
+                try {
+                    const response = await fetch(p);
+                    if (response.ok) {
+                        const data = await response.json();
+                        this._cache.set(path, data);
+                        try {
+                            sessionStorage.setItem('pna_cache_' + path, JSON.stringify(data));
+                        } catch (err) {}
+                        return data;
+                    }
+                } catch (err) {
+                    // Try next fallback path
+                }
+            }
+            return null;
+        })();
+
+        this._inFlight.set(path, fetchPromise);
+        try {
+            const result = await fetchPromise;
+            return result;
+        } finally {
+            this._inFlight.delete(path);
+        }
     }
 
-    static async getApps() { return await this.fetchJSON('/data/apps.json') || []; }
-    static async getGames() { return await this.fetchJSON('/data/games.json') || []; }
-    static async getSoftware() { return await this.fetchJSON('/data/software.json') || []; }
+    static async getApps() { return (await this.fetchJSON('/data/apps.json')) || []; }
+    static async getGames() { return (await this.fetchJSON('/data/games.json')) || []; }
+    static async getSoftware() { return (await this.fetchJSON('/data/software.json')) || []; }
+    
     static async getCoupons() {
         const [coupons, stores] = await Promise.all([
             this.fetchJSON('/data/coupons.json'),
@@ -55,14 +94,17 @@ class DataService {
             };
         });
     }
-    static async getStores() { return await this.fetchJSON("/data/stores.json") || []; }
-    static async getCategories() { return await this.fetchJSON('/data/categories.json') || []; }
-    static async getAuthors() { return await this.fetchJSON('/data/authors.json') || []; }
+
+    static async getStores() { return (await this.fetchJSON('/data/stores.json')) || []; }
+    static async getCategories() { return (await this.fetchJSON('/data/categories.json')) || []; }
+    static async getAuthors() { return (await this.fetchJSON('/data/authors.json')) || []; }
     
     static async getAllReviews() {
-        const apps = await this.getApps();
-        const games = await this.getGames();
-        const software = await this.getSoftware();
+        const [apps, games, software] = await Promise.all([
+            this.getApps(),
+            this.getGames(),
+            this.getSoftware()
+        ]);
         return [...apps, ...games, ...software];
     }
 
