@@ -143,7 +143,10 @@ const cleanRoutes = [
   { route: '/avast-antivirus-review', file: 'avast-antivirus-review.html' },
   { route: '/walmart', file: 'walmart-coupons.html' },
   { route: '/walmart-coupons', file: 'walmart-coupons.html' },
-  { route: '/store/walmart', file: 'walmart-coupons.html' }
+  { route: '/store/walmart', file: 'walmart-coupons.html' },
+  { route: '/keeper-security', file: 'keeper-security-coupons.html' },
+  { route: '/keeper-security-coupons', file: 'keeper-security-coupons.html' },
+  { route: '/store/keeper-security', file: 'keeper-security-coupons.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {

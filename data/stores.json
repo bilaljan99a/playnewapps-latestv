@@ -1,5 +1,65 @@
 [
     {
+        "id": "keeper-security",
+        "name": "Keeper Security",
+        "icon": "shield",
+        "logo": "/assets/images/brands/keeper-security.svg",
+        "website": "https://www.keepersecurity.com/",
+        "storeUrl": "/keeper-security-coupons",
+        "affiliateUrl": "https://ziejy.com/g/d31t1s35szb68b264a76eb9db1a7c5/",
+        "affiliateLink": "https://ziejy.com/g/d31t1s35szb68b264a76eb9db1a7c5/",
+        "rating": 4.9,
+        "votes": 34180,
+        "seoTitle": "Keeper Security Coupon Codes & Promo Offers (2026)",
+        "seoDescription": "Save up to 50% on Keeper Security with verified 2026 promo codes. 30-Day B2C Free Trial, 50% Off Unlimited & Family plans, 50% Student discount, and 30% Military & Medical discount.",
+        "about": "Keeper Security is a world-renowned cybersecurity pioneer and creator of the leading zero-knowledge, zero-trust password management and cybersecurity platform. Serving millions of consumers, families, businesses, educational institutions, and government agencies worldwide, Keeper safeguards credentials, confidential files, passkeys, credit card data, and privileged infrastructure secrets using client-side 256-bit AES encryption with PBKDF2 key derivation.",
+        "categories": [
+            "Cybersecurity",
+            "Password Managers",
+            "Privacy & Security",
+            "Software & Apps",
+            "Business & Enterprise",
+            "Developer Tools"
+        ],
+        "whyShop": [
+            "Zero-Knowledge & Zero-Trust Architecture: 256-bit AES client-side encryption ensures only you hold the decryption keys—never Keeper servers",
+            "30-Day B2C Free Trial: Test Keeper Unlimited or Keeper Family risk-free across all desktop and mobile devices with zero obligation",
+            "50% Off Annual Subscriptions: Save up to 50% off standard pricing on Keeper Unlimited and Keeper Family plans with verified promo deals",
+            "Exclusive 50% Student & 30% Hero Discounts: Dedicated savings for verified students, military personnel, veterans, nurses, doctors, and first responders",
+            "Highest Industry Compliance Certifications: FedRAMP Authorized, StateRAMP Authorized, SOC 2 Type II certified, ISO 27001, and FIPS 140-3 validated encryption",
+            "Comprehensive Family Protection: Keeper Family plan includes 5 private, isolated zero-knowledge vaults plus 10GB encrypted cloud file storage"
+        ],
+        "shoppingTips": [
+            "Start with the 30-Day Free Trial to experience unlimited password storage, biometric logins, and multi-device cloud synchronization before committing to a paid plan.",
+            "Choose annual billing over month-to-month plans to immediately save up to 50% on Keeper Unlimited and Keeper Family subscriptions.",
+            "If you are a student or university faculty member, verify your academic email (.edu) or Student Beans account to unlock an automatic 50% educational discount.",
+            "Active military service members, veterans, healthcare workers, and first responders can activate a 30% discount through Keeper's community verification program.",
+            "Protect your entire household with Keeper Family: it delivers 5 fully independent zero-knowledge vaults for less than the cost of two individual subscriptions."
+        ],
+        "faqs": [
+            {
+                "question": "How do I redeem a Keeper Security promo code?",
+                "answer": "Click 'Show Code' or 'Get Deal' on PlayNewApps to copy your verified coupon code and navigate directly to Keeper Security's official pricing page. Select your desired plan (Unlimited, Family, or Business), enter your billing details, paste your promo code into the checkout promotion box, and click 'Apply' to see your instant discount."
+            },
+            {
+                "question": "What is included in the Keeper Security 30-Day Free Trial?",
+                "answer": "The Keeper 30-Day B2C Free Trial gives you complete, unrestricted access to Keeper Unlimited or Keeper Family features, including unlimited password and passkey storage, KeeperFill browser autofill, cross-device synchronization, biometric authentication, and secure password sharing without requiring upfront credit card payment."
+            },
+            {
+                "question": "Does Keeper Security offer a discount for students and military personnel?",
+                "answer": "Yes. Keeper Security provides an exclusive 50% discount for college and university students with a valid .edu email address or Student Beans verification. Additionally, active duty military, veterans, healthcare workers, and first responders qualify for a 30% discount on annual subscriptions."
+            },
+            {
+                "question": "How does Keeper's zero-knowledge encryption protect my data?",
+                "answer": "Keeper utilizes client-side 256-bit AES encryption. All encryption and decryption occurs locally on your personal device using keys derived from your Master Password. Your plaintext password, decryption keys, and private vault records are never transmitted to or stored on Keeper's servers, ensuring absolute privacy."
+            },
+            {
+                "question": "What is the difference between Keeper Unlimited and Keeper Family?",
+                "answer": "Keeper Unlimited provides a single user with unlimited password records, passkeys, payment cards, and synchronized devices. Keeper Family includes 5 completely separate, private zero-knowledge vaults for up to five family members, shared folder capabilities, and 10GB of encrypted cloud file storage at a substantial package savings."
+            }
+        ]
+    },
+    {
         "id": "walmart",
         "name": "Walmart",
         "icon": "shopping_cart",
