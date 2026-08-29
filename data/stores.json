@@ -1,5 +1,66 @@
 [
     {
+        "id": "walmart",
+        "name": "Walmart",
+        "icon": "shopping_cart",
+        "logo": "/assets/images/brands/walmart.svg",
+        "website": "https://www.walmart.com/",
+        "storeUrl": "/walmart-coupons",
+        "affiliateUrl": "https://bednari.com/g/4jg2ecwjgpb68b264a76bef27d4341/",
+        "affiliateLink": "https://bednari.com/g/4jg2ecwjgpb68b264a76bef27d4341/",
+        "rating": 4.9,
+        "votes": 48920,
+        "seoTitle": "Walmart Promo Codes & Deals (2026)",
+        "seoDescription": "Save big at Walmart with verified 2026 promo codes, Rollback deals, online grocery coupons, Walmart+ free delivery offers, and clearance discounts.",
+        "about": "Walmart is the world's largest omnichannel retail corporation, offering millions of everyday items at unbeatable Low Everyday Prices. From fresh groceries and organic produce to state-of-the-art 4K OLED TVs, laptops, kitchen appliances, home furniture, apparel, toys, automotive tires, and prescription pharmacy care, Walmart serves millions of households weekly through over 10,500 stores and a massive digital marketplace with rapid local delivery and curbside pickup.",
+        "categories": [
+            "Department Store",
+            "Groceries & Household",
+            "Electronics & Tech",
+            "Home & Kitchen",
+            "Fashion & Apparel",
+            "Automotive & Tires",
+            "Toys & Video Games"
+        ],
+        "whyShop": [
+            "Everyday Low Prices (EDLP): Industry-leading price guarantees across groceries, tech, home goods, and automotive parts",
+            "Free Curbside Pickup & Next-Day Delivery: Order online and pick up fresh groceries within 2 hours or get free 2-day delivery on $35+ orders",
+            "Walmart+ Membership Perks: Unlimited free home grocery delivery ($35 min), free shipping with zero order minimum, up to 10¢/gal fuel savings, and free Paramount+ Essential streaming",
+            "Legendary Rollback Discounts: Deep seasonal price cuts on flagship 4K Smart TVs, Apple iPads, Ninja air fryers, Dyson vacuums, and LEGO sets",
+            "Hassle-Free 90-Day Returns: Convenient return policy with free return pickups from home, store drop-offs, and mobile barcode scanning",
+            "Certified Restored Tech: Save up to 60% on professionally inspected, tested, and certified refurbished electronics with 90-day to 1-year warranties"
+        ],
+        "shoppingTips": [
+            "Sign up for the Walmart+ 30-Day Free Trial to unlock free home grocery delivery, member-only fuel discounts, and exclusive early access to Black Friday and Holiday Rollback events.",
+            "Apply our verified first-time grocery promo code to save $20 off your first three online grocery orders of $75 or more.",
+            "Look for Yellow Price Tags on in-store and online items; Walmart ends final clearance markdowns in '0' or '1' (e.g., $19.00 or $9.01) signaling the lowest clearance tier.",
+            "Leverage the Walmart App's barcode scanner in-store to check nationwide online Rollback prices that may be significantly lower than in-store shelf tags.",
+            "Pay with the Walmart Rewards Card to earn an unlimited 5% cash back on all Walmart.com purchases, grocery delivery, and in-store pickup orders."
+        ],
+        "faqs": [
+            {
+                "question": "How do I redeem a promo code or coupon on Walmart.com?",
+                "answer": "Click the 'Show Code' button on PlayNewApps to copy your promo code and navigate directly to Walmart.com. Add your eligible items to your cart, proceed to checkout, expand the 'Promo Code / Discount' box on the payment summary screen, paste your code, and click 'Apply' before finalizing payment."
+            },
+            {
+                "question": "What is the difference between a Walmart Rollback and standard clearance?",
+                "answer": "A Rollback is a temporary price cut subsidized directly by Walmart or brand manufacturers, often lasting several weeks or months on popular current-season items. Clearance markdowns are permanent price reductions designed to liquidate remaining inventory and discontinued styles."
+            },
+            {
+                "question": "Does Walmart offer free shipping without a Walmart+ subscription?",
+                "answer": "Yes. All customers receive free standard 2-day or 3-day shipping on millions of eligible items shipped directly by Walmart on orders totaling $35 or more. Orders under $35 incur a flat $6.99 shipping fee."
+            },
+            {
+                "question": "What is the return policy for purchases made on Walmart.com?",
+                "answer": "Most standard items purchased on Walmart.com can be returned within 90 days of delivery with receipt for a full refund. Certain consumer electronics (laptops, TVs, smartphones) have a 30-day return window. Walmart+ members enjoy complimentary curbside return pickup from their doorstep."
+            },
+            {
+                "question": "Can I use multiple promo codes on a single Walmart order?",
+                "answer": "Walmart generally permits one promotional coupon code per transaction. However, coupon codes can stack on top of existing Rollback prices, Special Buy markdowns, and manufacturer instant rebates for maximum savings."
+            }
+        ]
+    },
+    {
         "id": "italiarail",
         "name": "ItaliaRail",
         "icon": "train",

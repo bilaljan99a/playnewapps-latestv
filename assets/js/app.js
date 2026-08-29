@@ -1590,6 +1590,7 @@ App.initHeaderStoresDropdown = async function() {
         const stores = await getDataService().getStores();
         if (stores && stores.length > 0) {
             const POPULAR_KEYS = [
+                'walmart',
                 'alibaba',
                 'aliexpress',
                 'amazon',

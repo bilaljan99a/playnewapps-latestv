@@ -14,8 +14,9 @@ class DataService {
         }
 
         // Check sessionStorage cache for fast inter-page navigation
+        const CACHE_KEY = 'pna_cache_v3_' + path;
         try {
-            const sessionData = sessionStorage.getItem('pna_cache_' + path);
+            const sessionData = sessionStorage.getItem(CACHE_KEY);
             if (sessionData) {
                 const parsed = JSON.parse(sessionData);
                 this._cache.set(path, parsed);
@@ -37,7 +38,7 @@ class DataService {
                         const data = await response.json();
                         this._cache.set(path, data);
                         try {
-                            sessionStorage.setItem('pna_cache_' + path, JSON.stringify(data));
+                            sessionStorage.setItem(CACHE_KEY, JSON.stringify(data));
                         } catch (err) {}
                         return data;
                     }
