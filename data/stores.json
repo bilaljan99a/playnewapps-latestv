@@ -1,5 +1,65 @@
 [
     {
+        "id": "gomlab",
+        "name": "Gomlab",
+        "icon": "movie",
+        "logo": "/assets/images/brands/gomlab.svg",
+        "website": "https://www.gomlab.com/en/",
+        "storeUrl": "/gomlab-coupons",
+        "affiliateUrl": "https://yjfca.com/g/zaetcj1zjpb68b264a764561c716ec/?ulp=https%3A%2F%2Fwww.gomlab.com%2Fen%2F",
+        "affiliateLink": "https://yjfca.com/g/zaetcj1zjpb68b264a764561c716ec/?ulp=https%3A%2F%2Fwww.gomlab.com%2Fen%2F",
+        "rating": 4.9,
+        "votes": 28450,
+        "seoTitle": "Gomlab Coupon Codes & Discount Offers (2026)",
+        "seoDescription": "Save up to 65% on GOM Lab multimedia software with verified 2026 promo codes. GOM Package lifetime bundle, GOM Mix AI video editor, GOM Player+ 4K UHD, and GOM Cam screen recorder.",
+        "about": "GOM Lab (developed by GOM & Company) is an internationally acclaimed software provider powering multimedia playback, video creation, and screen recording for over 100 million global users. Its industry-leading product ecosystem includes GOM Player+ (ad-free 4K UHD media player with automatic subtitle sync and damaged file decoding), GOM Mix (AI-powered video editor with automatic speech-to-text subtitles and text-to-speech voice generators), GOM Cam (4K 60FPS screen and gameplay recorder), GOM Voice, and GOM Easy Pass.",
+        "categories": [
+            "Video Editing",
+            "Media Players",
+            "Screen Recording",
+            "Multimedia Software",
+            "Creator Tools",
+            "Audio & Video"
+        ],
+        "whyShop": [
+            "All-In-One GOM Package: Save up to 65% by bundling GOM Player+, GOM Mix, GOM Cam, and GOM Voice into a single lifetime suite",
+            "Ad-Free 4K UHD & 360° VR Playback: GOM Player+ delivers seamless high-bitrate video decoding, automatic subtitle synchronization, and damaged AVI repair",
+            "AI-Powered Video Creation: GOM Mix 2024 features one-click AI subtitle transcription, natural text-to-speech voices, chroma key, and multi-track 4K rendering",
+            "High-Performance 4K 60FPS Screen Recording: GOM Cam captures lag-free gameplay, webcam overlays, live drawing annotations, and direct GIF exports",
+            "100% Risk-Free Free Versions Available: Download and test basic versions of GOM Player, GOM Mix, and GOM Cam with zero upfront credit card requirement",
+            "Lifetime License Option: Buy once and enjoy permanent access to premium creator tools with free minor updates"
+        ],
+        "shoppingTips": [
+            "Purchase the GOM Package all-in-one bundle to save up to 65% compared to purchasing standalone licenses individually.",
+            "Choose a Lifetime License if you plan to use GOM Player+ or GOM Mix long-term, eliminating recurring subscription fees completely.",
+            "Take advantage of GOM Lab's free trial editions to verify hardware acceleration and codec compatibility on your Windows or Mac PC before purchasing.",
+            "Apply verified promo codes like GOMMIX55 and GOMPLAYER50 at checkout to unlock instant discounts on annual and lifetime plans.",
+            "Bundle GOM Cam with GOM Mix for a complete YouTube and streaming tutorial production workflow at a discounted package rate."
+        ],
+        "faqs": [
+            {
+                "question": "How do I redeem a Gomlab promo code?",
+                "answer": "Click 'Show Code' or 'Get Deal' on PlayNewApps to copy your verified discount code and open GOM Lab's official store. Select your desired product (such as GOM Package, GOM Mix, or GOM Player+), proceed to the checkout page, paste your promo code into the coupon field, and click 'Apply' to see your cart total update immediately."
+            },
+            {
+                "question": "What is the difference between GOM Player and GOM Player+?",
+                "answer": "GOM Player+ is the premium, 64-bit ad-free edition of GOM Player. It offers zero banner advertisements, faster 4K UHD/60fps video playback with hardware acceleration, priority customer support, enhanced 360-degree VR playback, and advanced subtitle synchronization tools."
+            },
+            {
+                "question": "Does Gomlab offer a lifetime license?",
+                "answer": "Yes. GOM Lab offers permanent Lifetime Licenses for GOM Player+, GOM Mix, GOM Cam, and the bundled GOM Package. A lifetime license provides permanent software access without annual recurring subscription charges."
+            },
+            {
+                "question": "Can I try Gomlab software for free before buying?",
+                "answer": "Yes. GOM Lab provides free basic versions of GOM Player, GOM Mix, and GOM Cam that you can download and use without entering any credit card information."
+            },
+            {
+                "question": "What AI features are included in GOM Mix?",
+                "answer": "GOM Mix includes powerful AI features such as AI Speech-to-Text auto-subtitles (transcribing spoken dialogue into synced subtitle tracks automatically), AI Text-to-Speech voiceovers in multiple languages, automatic background noise removal, and intelligent object tracking."
+            }
+        ]
+    },
+    {
         "id": "keeper-security",
         "name": "Keeper Security",
         "icon": "shield",

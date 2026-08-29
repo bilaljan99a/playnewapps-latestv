@@ -14,7 +14,7 @@ class DataService {
         }
 
         // Check sessionStorage cache for fast inter-page navigation
-        const CACHE_KEY = 'pna_cache_v4_' + path;
+        const CACHE_KEY = 'pna_cache_v5_' + path;
         try {
             const sessionData = sessionStorage.getItem(CACHE_KEY);
             if (sessionData) {
