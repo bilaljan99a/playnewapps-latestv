@@ -1,8 +1,26 @@
 class DataService {
     static _cache = new Map();
     static _inFlight = new Map();
+    static _VERSION = 'pna_cache_v10_';
+
+    static _cleanLegacyCaches() {
+        try {
+            if (typeof sessionStorage !== 'undefined') {
+                const keysToRemove = [];
+                for (let i = 0; i < sessionStorage.length; i++) {
+                    const k = sessionStorage.key(i);
+                    if (k && k.startsWith('pna_cache_') && !k.startsWith(this._VERSION)) {
+                        keysToRemove.push(k);
+                    }
+                }
+                keysToRemove.forEach(k => sessionStorage.removeItem(k));
+            }
+        } catch (e) {}
+    }
 
     static async fetchJSON(path) {
+        this._cleanLegacyCaches();
+
         // Check in-memory cache first
         if (this._cache.has(path)) {
             return this._cache.get(path);
@@ -14,7 +32,7 @@ class DataService {
         }
 
         // Check sessionStorage cache for fast inter-page navigation
-        const CACHE_KEY = 'pna_cache_v5_' + path;
+        const CACHE_KEY = this._VERSION + path;
         try {
             const sessionData = sessionStorage.getItem(CACHE_KEY);
             if (sessionData) {
@@ -33,7 +51,9 @@ class DataService {
 
             for (const p of candidatePaths) {
                 try {
-                    const response = await fetch(p);
+                    // Add version query to ensure fresh fetch
+                    const fetchUrl = p.includes('?') ? `${p}&_v=20260829` : `${p}?_v=20260829`;
+                    const response = await fetch(fetchUrl);
                     if (response.ok) {
                         const data = await response.json();
                         this._cache.set(path, data);

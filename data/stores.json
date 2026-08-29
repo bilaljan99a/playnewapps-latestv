@@ -1,5 +1,61 @@
 [
     {
+        "id": "kissandfly",
+        "name": "KissAndFly",
+        "icon": "flight",
+        "logo": "/assets/images/brands/kissandfly.svg",
+        "website": "https://kissandfly.com",
+        "storeUrl": "/kissandfly-coupons",
+        "affiliateUrl": "https://bywiola.com/g/7y6um3kqrzb68b264a76d6ace40d19/?ulp=https%3A%2F%2Fkissandfly.com",
+        "affiliateLink": "https://bywiola.com/g/7y6um3kqrzb68b264a76d6ace40d19/?ulp=https%3A%2F%2Fkissandfly.com",
+        "rating": 4.8,
+        "votes": 34210,
+        "seoTitle": "KissAndFly Promo Codes & Discount Offers (2026)",
+        "seoDescription": "Save on airline tickets, hotel reservations, and travel bookings with verified KissAndFly promo codes. 3% off flight discount codes and exclusive flight deals.",
+        "about": "KissAndFly (part of Tickets Travel Network / TTN Holding) is an international online travel agency operating in over 30 countries and certified by IATA (International Air Transport Association). KissAndFly aggregates real-time flight fares, schedules, and seat availability from more than 750 scheduled, charter, and low-cost airlines worldwide. The platform offers multi-currency booking, interline flight connections, hotel reservations, flexible ticket guarantees, baggage insurance, and 24/7 multilingual customer support.",
+        "categories": [
+            "Travel",
+            "Flights",
+            "Airlines",
+            "Hotel Booking",
+            "Vacation Packages",
+            "Online Travel Agency"
+        ],
+        "whyShop": [
+            "Access 750+ Airlines Worldwide: Search, compare, and book flights across major legacy carriers (Emirates, Delta, Lufthansa, Qatar Airways) and low-cost airlines in one search",
+            "Exclusive Promo Code Savings: Apply verified promo code at checkout for an instant 3% discount on worldwide flight itineraries",
+            "IATA Certified Online Agency: Fully accredited by the International Air Transport Association for secure e-ticketing and strict consumer standards",
+            "Interline Route Optimization: Smart booking engine combines flights from different airlines to create the cheapest and fastest multi-city connections",
+            "Flexible Booking Protection: Add flexible ticket options to change dates or reroute flights with minimal fees",
+            "24/7 Multilingual Support: Dedicated customer service assistance available via live chat, email, and phone around the clock"
+        ],
+        "shoppingTips": [
+            "Apply verified promo code at checkout to instantly save 3% on domestic and international flights.",
+            "Use the +/- 3 days flexible date search feature to compare fare fluctuations across different departure dates.",
+            "Book flights on Tuesdays and Wednesdays when airlines typically release promotional fare classes and off-peak seat allocations.",
+            "Check both one-way combinations and round-trip tickets; sometimes booking separate one-way legs on different carriers via KissAndFly is cheaper than a standard round trip.",
+            "Add checked baggage and seat selection during the initial booking process on KissAndFly to avoid higher airport counter fees."
+        ],
+        "faqs": [
+            {
+                "question": "How do I use a KissAndFly promo code?",
+                "answer": "Select your flight route and travel dates on KissAndFly, choose your preferred flight option, and proceed to the passenger information page. On the payment review screen, locate the promo code input box, enter your verified discount code revealed on our page, and click apply to receive an instant discount before completing your payment."
+            },
+            {
+                "question": "Is KissAndFly an accredited and legitimate travel agency?",
+                "answer": "Yes. KissAndFly is operated by TTN (Tickets Travel Network) Holding, one of Europe's largest online travel groups, and is officially accredited by IATA (International Air Transport Association), ensuring PCI DSS compliant payment processing and official e-ticket issuance directly with airlines."
+            },
+            {
+                "question": "Can I earn airline frequent flyer miles when booking through KissAndFly?",
+                "answer": "Yes. During the booking process on KissAndFly, you can enter your frequent flyer membership number (e.g. Delta SkyMiles, Emirates Skywards, Miles & More, Flying Blue) in the passenger details section to earn miles and loyalty tier points on eligible airline fares."
+            },
+            {
+                "question": "What payment methods does KissAndFly accept?",
+                "answer": "KissAndFly accepts all major credit and debit cards including Visa, Mastercard, American Express, Maestro, as well as digital payment methods such as Revolut, Google Pay, and localized bank transfer systems."
+            }
+        ]
+    },
+    {
         "id": "gomlab",
         "name": "Gomlab",
         "icon": "movie",

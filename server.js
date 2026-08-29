@@ -149,7 +149,10 @@ const cleanRoutes = [
   { route: '/store/keeper-security', file: 'keeper-security-coupons.html' },
   { route: '/gomlab', file: 'gomlab-coupons.html' },
   { route: '/gomlab-coupons', file: 'gomlab-coupons.html' },
-  { route: '/store/gomlab', file: 'gomlab-coupons.html' }
+  { route: '/store/gomlab', file: 'gomlab-coupons.html' },
+  { route: '/kissandfly', file: 'kissandfly-coupons.html' },
+  { route: '/kissandfly-coupons', file: 'kissandfly-coupons.html' },
+  { route: '/store/kissandfly', file: 'kissandfly-coupons.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {
