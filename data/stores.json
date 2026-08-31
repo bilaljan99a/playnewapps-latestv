@@ -1,5 +1,60 @@
 [
   {
+    "id": "expressvpn",
+    "name": "ExpressVPN",
+    "icon": "security",
+    "logo": "/assets/images/brands/expressvpn.svg",
+    "website": "https://www.expressvpn.com/",
+    "storeUrl": "/expressvpn-coupons",
+    "affiliateUrl": "https://www.expressvpn.com/",
+    "affiliateLink": "https://www.expressvpn.com/",
+    "rating": 4.92,
+    "votes": 56840,
+    "seoTitle": "ExpressVPN Coupon Codes & Verified Promo Deals (2026) – Up to 49% Off + 3 Months Free",
+    "seoDescription": "Save up to 49% on ExpressVPN with verified 2026 promo codes + 3 bonus months free. Proprietary Lightway protocol, 100% RAM-only TrustedServer technology, Threat Manager, and 30-day money-back guarantee across 105 countries.",
+    "about": "ExpressVPN is an industry-leading Virtual Private Network founded in 2009 and headquartered in the privacy-friendly British Virgin Islands. ExpressVPN delivers ultra-fast 10Gbps connections powered by its proprietary open-source Lightway protocol, 100% volatile RAM-only TrustedServer architecture across 105 countries, Threat Manager automated tracker and malware DNS blocking, built-in ExpressVPN Keys zero-knowledge password vault, and native Aircove Wi-Fi 6 router hardware.",
+    "categories": [
+      "VPN & Security",
+      "Cybersecurity",
+      "Privacy Software",
+      "Streaming & P2P",
+      "Internet Tools"
+    ],
+    "whyShop": [
+      "Proprietary Lightway Protocol: Sub-second connection times, minimal battery drain, and wolfSSL encryption",
+      "100% RAM-Only TrustedServer: All servers run in volatile memory with zero hard drive data persistence",
+      "British Virgin Islands Jurisdiction: Free from mandatory data retention laws and 14-Eyes surveillance alliances",
+      "Audited No-Logs Policy: Independently tested and verified across 18+ public audits by PwC, KPMG, and Cure53",
+      "Global Edge Network: 10Gbps high-speed gateways spanning 105 countries with unthrottled 4K UHD streaming",
+      "Integrated Security Suite: Includes Threat Manager DNS filter and ExpressVPN Keys password vault for free"
+    ],
+    "shoppingTips": [
+      "Select the 12-Month Plan to lock in the 49% discount plus 3 complimentary bonus months (.67/mo effective rate).",
+      "Download and activate the ExpressVPN Keys password manager app included 100% free with your subscription.",
+      "Install ExpressVPN on your home Wi-Fi router (or use an Aircove router) to protect unlimited smart home devices on 1 connection.",
+      "Refer friends and colleagues from your account dashboard to earn 30 days of free service for every completed referral.",
+      "Take full advantage of the unconditional 30-day money-back guarantee to test Lightway streaming speeds risk-free."
+    ],
+    "faqs": [
+      {
+        "question": "How do I apply an ExpressVPN coupon code?",
+        "answer": "Select your preferred subscription tier on ExpressVPN. The 49% discount plus 3 extra months promotion will be automatically applied at checkout. Enter your payment details to finalize your discounted order."
+      },
+      {
+        "question": "What is the highest discount available for ExpressVPN in 2026?",
+        "answer": "The best verified offer is the 12-Month plan with 3 bonus months free, giving you 15 months of service for .67 per month (a 49% discount compared to monthly billing)."
+      },
+      {
+        "question": "What makes ExpressVPN Lightway protocol different from standard OpenVPN?",
+        "answer": "Lightway is written in lightweight C code with under 2,000 lines of code, enabling sub-second connection handshakes, superior mobile battery efficiency, and seamless transitions between Wi-Fi and mobile networks."
+      },
+      {
+        "question": "How does ExpressVPN TrustedServer technology protect my privacy?",
+        "answer": "TrustedServer ensures that servers run entirely in volatile RAM memory without ever writing data to physical hard drives. Every server is cryptographically reloaded from a clean OS image upon every reboot."
+      }
+    ]
+  },
+  {
     "id": "protonvpn",
     "name": "Proton VPN",
     "icon": "shield",
