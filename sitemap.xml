@@ -61,6 +61,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.playnewapps.store/asaptickets-coupons</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://www.playnewapps.store/author?id=alex-tech</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -516,6 +522,11 @@
   </url>
   <url>
     <loc>https://www.playnewapps.store/store?id=applicantally</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.playnewapps.store/store?id=asaptickets</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>

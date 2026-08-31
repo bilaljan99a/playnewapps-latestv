@@ -1,7 +1,6 @@
 class DataService {
     static _cache = new Map();
     static _inFlight = new Map();
-    static _VERSION = 'pna_cache_v10_';
 
     static _cleanLegacyCaches() {
         try {
@@ -9,7 +8,7 @@ class DataService {
                 const keysToRemove = [];
                 for (let i = 0; i < sessionStorage.length; i++) {
                     const k = sessionStorage.key(i);
-                    if (k && k.startsWith('pna_cache_') && !k.startsWith(this._VERSION)) {
+                    if (k && (k.startsWith('pna_cache_') || k.includes('/data/'))) {
                         keysToRemove.push(k);
                     }
                 }
@@ -21,7 +20,7 @@ class DataService {
     static async fetchJSON(path) {
         this._cleanLegacyCaches();
 
-        // Check in-memory cache first
+        // Check in-memory cache for the current page execution
         if (this._cache.has(path)) {
             return this._cache.get(path);
         }
@@ -31,17 +30,6 @@ class DataService {
             return await this._inFlight.get(path);
         }
 
-        // Check sessionStorage cache for fast inter-page navigation
-        const CACHE_KEY = this._VERSION + path;
-        try {
-            const sessionData = sessionStorage.getItem(CACHE_KEY);
-            if (sessionData) {
-                const parsed = JSON.parse(sessionData);
-                this._cache.set(path, parsed);
-                return parsed;
-            }
-        } catch (e) {}
-
         const fetchPromise = (async () => {
             const candidatePaths = [
                 path.startsWith('/') ? path : '/' + path,
@@ -49,17 +37,14 @@ class DataService {
                 '.' + (path.startsWith('/') ? path : '/' + path)
             ];
 
+            const cacheBuster = `_t=${Date.now()}`;
             for (const p of candidatePaths) {
                 try {
-                    // Add version query to ensure fresh fetch
-                    const fetchUrl = p.includes('?') ? `${p}&_v=20260829` : `${p}?_v=20260829`;
-                    const response = await fetch(fetchUrl);
+                    const fetchUrl = p.includes('?') ? `${p}&${cacheBuster}` : `${p}?${cacheBuster}`;
+                    const response = await fetch(fetchUrl, { cache: 'no-store' });
                     if (response.ok) {
                         const data = await response.json();
                         this._cache.set(path, data);
-                        try {
-                            sessionStorage.setItem(CACHE_KEY, JSON.stringify(data));
-                        } catch (err) {}
                         return data;
                     }
                 } catch (err) {

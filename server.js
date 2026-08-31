@@ -152,13 +152,58 @@ const cleanRoutes = [
   { route: '/store/gomlab', file: 'gomlab-coupons.html' },
   { route: '/kissandfly', file: 'kissandfly-coupons.html' },
   { route: '/kissandfly-coupons', file: 'kissandfly-coupons.html' },
-  { route: '/store/kissandfly', file: 'kissandfly-coupons.html' }
+  { route: '/store/kissandfly', file: 'kissandfly-coupons.html' },
+  { route: '/asaptickets', file: 'asaptickets-coupons.html' },
+  { route: '/asaptickets-coupons', file: 'asaptickets-coupons.html' },
+  { route: '/store/asaptickets', file: 'asaptickets-coupons.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {
   app.get(route, (req, res) => {
     res.sendFile(path.join(__dirname, file));
   });
+});
+
+const fs = require('fs');
+
+// Automatic Dynamic Route Resolver for all existing & future stores/pages
+app.use((req, res, next) => {
+  const reqPath = req.path.replace(/^\/+|\/+$/g, '');
+  if (!reqPath) return next();
+
+  // If path starts with store/
+  if (reqPath.startsWith('store/')) {
+    const storeSlug = reqPath.replace(/^store\//, '');
+    const possibleFiles = [
+      `${storeSlug}-coupons.html`,
+      `${storeSlug}.html`,
+      `${storeSlug}-review.html`
+    ];
+    for (const f of possibleFiles) {
+      const fullPath = path.join(__dirname, f);
+      if (fs.existsSync(fullPath) && fs.statSync(fullPath).isFile()) {
+        return res.sendFile(fullPath);
+      }
+    }
+    const storeFallback = path.join(__dirname, 'store.html');
+    if (fs.existsSync(storeFallback)) {
+      return res.sendFile(storeFallback);
+    }
+  }
+
+  // If path is an extensionless page or store slug
+  const possibleFiles = [
+    `${reqPath}.html`,
+    `${reqPath}-coupons.html`,
+    `${reqPath}-review.html`
+  ];
+  for (const f of possibleFiles) {
+    const fullPath = path.join(__dirname, f);
+    if (fs.existsSync(fullPath) && fs.statSync(fullPath).isFile()) {
+      return res.sendFile(fullPath);
+    }
+  }
+  next();
 });
 
 // Serve static assets without stale caching in development

@@ -1,5 +1,61 @@
 [
     {
+        "id": "asaptickets",
+        "name": "ASAP Tickets",
+        "icon": "flight",
+        "logo": "/assets/images/brands/asaptickets.svg",
+        "website": "https://asaptickets.com",
+        "storeUrl": "/asaptickets-coupons",
+        "affiliateUrl": "https://yknhc.com/g/lv8vbf9a4eb68b264a76f5f67e30af/",
+        "affiliateLink": "https://yknhc.com/g/lv8vbf9a4eb68b264a76f5f67e30af/",
+        "rating": 4.9,
+        "votes": 48920,
+        "seoTitle": "ASAP Tickets Promo Codes & Discount Offers (2026)",
+        "seoDescription": "Save on international flights, business class tickets, and travel bookings with verified ASAP Tickets promo codes. Get $40 off flight discount codes and unpublished consolidator fares.",
+        "about": "ASAP Tickets (part of International Travel Network / ITN) is a premier international airline consolidator and travel agency with over 20 years of trusted industry service. Operating with a team of over 2,100 live, dedicated travel advisors, ASAP Tickets specializes in securing wholesale, unpublished, and consolidator airfares across 200+ global partner airlines (including Qatar Airways, Emirates, Lufthansa, United, Delta, Turkish Airlines, and Philippine Airlines). Unlike standard aggregators, ASAP Tickets pairs proprietary booking software with personalized human concierge support, offering tailored multi-city routings, flexible date changes, wholesale business class upgrades, and 24/7 multilingual travel assistance.",
+        "categories": [
+            "Travel",
+            "Flights",
+            "Airlines",
+            "Cheap Tickets",
+            "Online Travel Agency",
+            "Vacation Packages"
+        ],
+        "whyShop": [
+            "Unpublished Consolidator Airfares: Access exclusive wholesale airline contract rates not listed on standard online booking aggregators",
+            "2,100+ Live Travel Agents: Connect with a dedicated personal travel advisor who custom-builds complex flight itineraries for maximum savings",
+            "200+ Global Partner Airlines: Strong airline partnerships with top IATA carriers across Europe, Asia, Africa, South Pacific, and the Americas",
+            "Verified Promo Code Discounts: Save an extra $40 instantly with verified discount codes applied at booking or via your live agent",
+            "BBB A+ Accredited Travel Agency: Fully accredited by the Better Business Bureau and IATA with 20+ years of proven passenger satisfaction",
+            "24/7 Concierge Support: Continuous multilingual customer assistance for schedule changes, re-bookings, seat assignments, and baggage management"
+        ],
+        "shoppingTips": [
+            "Apply your verified promo code at checkout or mention it to your assigned travel agent to instantly save $40 on your flight itinerary.",
+            "Call or request a free quote online: phone-assisted agents frequently have access to unpublished consolidator ticket allocations up to $150 cheaper than online search engines.",
+            "Be flexible with departure and return dates by ±1–3 days to let your travel advisor identify off-peak carrier combinations.",
+            "Combine different partner airlines on outbound and return legs for transcontinental routes to unlock lower split-ticket pricing.",
+            "Ask your travel advisor about companion fares and business class upgrades; consolidator business class tickets often cost significantly less than standard retail fares."
+        ],
+        "faqs": [
+            {
+                "question": "How do I redeem an ASAP Tickets promo code?",
+                "answer": "Request a flight quote online or connect with a dedicated ASAP Tickets travel agent. On the booking checkout page or during your itinerary confirmation with your agent, provide the verified promo code revealed on our page to instantly deduct $40 from your total flight ticket cost before finalizing payment."
+            },
+            {
+                "question": "What is ASAP Tickets and how does it offer cheaper flights?",
+                "answer": "ASAP Tickets is an IATA and BBB A+ accredited travel company (part of International Travel Network). It negotiates proprietary wholesale consolidator agreements with over 200 international airlines, allowing live agents to pass unpublished volume discounts directly to travelers."
+            },
+            {
+                "question": "Can I earn frequent flyer miles with ASAP Tickets flight bookings?",
+                "answer": "Yes. Most consolidator and published airline tickets booked through ASAP Tickets are eligible for frequent flyer mileage accrual. Provide your airline loyalty program number (e.g. AAdvantage, SkyMiles, MileagePlus, KrisFlyer) to your agent or enter it during booking."
+            },
+            {
+                "question": "What payment methods are supported on ASAP Tickets?",
+                "answer": "ASAP Tickets accepts all major credit and debit cards including Visa, Mastercard, American Express, and Discover, with bank-grade SSL and PCI DSS encryption for secure transaction processing."
+            }
+        ]
+    },
+    {
         "id": "kissandfly",
         "name": "KissAndFly",
         "icon": "flight",

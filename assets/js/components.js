@@ -131,8 +131,8 @@ class Components {
 
         let actionHtml = '';
         if (item.code) {
-            // Mask is fully obfuscated with dots so code is never revealed before clicking Show Code
-            const masked = '••••••••';
+            // Mask is cleanly obfuscated with 4 dots so code is never revealed before clicking Show Code and stays on one line
+            const masked = '••••';
             actionHtml = `
                 <div class="code-reveal-wrapper" data-code="${item.code}" data-link="${link}">
                     <span class="hidden-code-mask">${masked}</span>
@@ -143,7 +143,6 @@ class Components {
         }
         
         const successRate = item.successPercentage ? `${item.successPercentage}%` : (item.successRate || '99%');
-        const votesText = item.votesCount ? `${item.votesCount} interested users` : (item.votes ? `${item.votes} votes` : 'Verified Offer');
         const isExpired = item.status === 'expired';
         const discountText = cleanDiscount;
         const codeType = item.code ? 'Code' : 'Sale';
@@ -171,8 +170,6 @@ class Components {
                         </h3>
                         <div class="coupon-social-proof">
                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> ${successRate} Success</span>
-                            <span class="meta-dot">•</span>
-                            <span class="users-meta">${votesText}</span>
                         </div>
                     </div>
 
