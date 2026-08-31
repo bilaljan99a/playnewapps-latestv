@@ -5006,5 +5006,61 @@
         "answer": "Openhagen offers a 30-day risk-free in-home trial. If you are not completely satisfied with the aesthetic or build quality of your wall mount or stand, you can return it within 30 days of delivery for a full refund."
       }
     ]
+  },
+  {
+    "id": "surfshark",
+    "name": "Surfshark",
+    "icon": "vpn_lock",
+    "logo": "/assets/images/brands/surfshark.svg",
+    "website": "https://surfshark.com",
+    "storeUrl": "/surfshark-coupons",
+    "affiliateUrl": "https://surfshark.com",
+    "affiliateLink": "https://surfshark.com",
+    "rating": 4.9,
+    "votes": 48920,
+    "seoTitle": "Surfshark Coupon Codes & Discount Offers (2026)",
+    "seoDescription": "Save up to 86% off on Surfshark VPN + 3 months free with verified 2026 coupon codes. Unlimited simultaneous devices, CleanWeb ad blocking, Alternative ID, and 30-day money-back guarantee.",
+    "about": "Surfshark is a premier global cybersecurity suite and award-winning VPN provider trusted by millions of users worldwide. Built upon a certified RAM-only server network across 100+ countries, Surfshark delivers military-grade AES-256 and ChaCha20 encryption with high-speed WireGuard protocol performance. Key security features include CleanWeb ad and malware blocking, Dynamic MultiHop double VPN routing, Bypasser split tunneling, Camouflage obfuscation mode, and Alternative ID for masking personal credentials. With support for unlimited simultaneous device connections on a single subscription, Surfshark protects entire households across Windows, macOS, Linux, iOS, Android, Apple TV, and web browsers.",
+    "categories": [
+      "VPN",
+      "Cybersecurity",
+      "Privacy & Security",
+      "Software",
+      "Internet Security",
+      "Antivirus"
+    ],
+    "whyShop": [
+      "Unlimited Simultaneous Connections: Connect and protect all your personal, family, and smart devices under one single subscription",
+      "Global High-Speed Server Network: 3,200+ ultra-fast 10Gbps RAM-only servers distributed across 100+ countries",
+      "Independently Audited No-Logs Policy: Complete user anonymity certified by leading security audit firms Deloitte and Cure53",
+      "All-In-One Security Suite: Access CleanWeb ad blocking, Surfshark Antivirus, Alert breach monitoring, and Alternative ID burner personas",
+      "Exclusive 2-Year Discounts: Save up to 86% off + 3 extra bonus months free compared to standard monthly billing",
+      "Risk-Free 30-Day Money-Back Guarantee: Try all premium features with complete peace of mind and 24/7 live chat support"
+    ],
+    "shoppingTips": [
+      "Select the 2-Year Surfshark Starter or Surfshark One plan to lock in the maximum 86% discount plus 3 bonus months free.",
+      "Apply verified promo code SHARKSPECIAL at checkout for instant coupon savings on multi-year cybersecurity bundles.",
+      "Verify your student or graduate status via Student Beans to claim an exclusive 15% extra educational discount.",
+      "Take advantage of the 30-day money-back guarantee to thoroughly benchmark VPN speeds and server streaming performance risk-free.",
+      "Protect unlimited laptops, phones, gaming consoles, and smart TVs without paying extra per-device licensing fees."
+    ],
+    "faqs": [
+      {
+        "question": "How do I apply a Surfshark promo code?",
+        "answer": "Select your preferred Surfshark plan (Starter, One, or One+), click \"Get Deal\" or \"Show Code\" on PlayNewApps to copy your verified code, and proceed to the Surfshark checkout page. Click \"Enter coupon code\" beneath the order summary, paste your code, and click \"Apply\" to see your updated total."
+      },
+      {
+        "question": "How many devices can I connect to one Surfshark account?",
+        "answer": "Surfshark offers unlimited simultaneous connections on a single account. You can connect all your family computers, smartphones, tablets, smart TVs, routers, and streaming sticks simultaneously without hitting device caps."
+      },
+      {
+        "question": "Does Surfshark have a money-back guarantee?",
+        "answer": "Yes. Every Surfshark subscription plan includes a 100% risk-free 30-day money-back guarantee. If you are not completely satisfied, you can contact 24/7 live customer support within 30 days for a prompt full refund."
+      },
+      {
+        "question": "What is the difference between Surfshark Starter, One, and One+?",
+        "answer": "Surfshark Starter includes the high-speed VPN, Alternative ID, and CleanWeb ad blocker. Surfshark One adds real-time Antivirus, Dark Web Alert monitoring, and Surfshark Search. Surfshark One+ includes all previous features plus automated data broker removal powered by Incogni."
+      }
+    ]
   }
 ]

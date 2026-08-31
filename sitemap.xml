@@ -779,6 +779,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.playnewapps.store/store?id=surfshark</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.playnewapps.store/store?id=tiqets</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -843,6 +848,12 @@
     <lastmod>2026-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.playnewapps.store/surfshark-coupons</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
   </url>
   <url>
     <loc>https://www.playnewapps.store/terms</loc>

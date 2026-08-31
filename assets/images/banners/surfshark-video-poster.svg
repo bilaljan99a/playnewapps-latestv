@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <defs>
+    <linearGradient id="vidGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1C2A" />
+      <stop offset="60%" stop-color="#06121C" />
+      <stop offset="100%" stop-color="#02080D" />
+    </linearGradient>
+
+    <linearGradient id="playBtnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#168F9F" />
+      <stop offset="100%" stop-color="#00D18F" />
+    </linearGradient>
+
+    <filter id="playGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#00D18F" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="540" fill="url(#vidGrad)" />
+
+  <!-- Background Grid Subtle -->
+  <g opacity="0.08" stroke="#168F9F" stroke-width="1">
+    <line x1="0" y1="100" x2="960" y2="100" />
+    <line x1="0" y1="200" x2="960" y2="200" />
+    <line x1="0" y1="300" x2="960" y2="300" />
+    <line x1="0" y1="400" x2="960" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="540" />
+    <line x1="400" y1="0" x2="400" y2="540" />
+    <line x1="600" y1="0" x2="600" y2="540" />
+    <line x1="800" y1="0" x2="800" y2="540" />
+  </g>
+
+  <!-- Top Badges -->
+  <g transform="translate(40, 40)">
+    <rect width="180" height="34" rx="8" fill="#132737" stroke="#1E3E56" stroke-width="1" />
+    <circle cx="16" cy="17" r="5" fill="#EF4444" />
+    <text x="28" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="12" fill="#FFFFFF">SURFSHARK ACADEMY</text>
+  </g>
+
+  <g transform="translate(800, 40)">
+    <rect width="120" height="34" rx="8" fill="#032D23" stroke="#00D18F" stroke-width="1" />
+    <text x="60" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="12" fill="#00D18F" text-anchor="middle">OFFICIAL GUIDE</text>
+  </g>
+
+  <!-- Center Content & Play Button -->
+  <g transform="translate(480, 240)">
+    <!-- Outer Pulsing Ring -->
+    <circle cx="0" cy="0" r="56" fill="none" stroke="#00D18F" stroke-width="2" opacity="0.4" />
+    <circle cx="0" cy="0" r="46" fill="url(#playBtnGrad)" filter="url(#playGlow)" />
+    <!-- Play Triangle -->
+    <polygon points="-8,-16 16,0 -8,16" fill="#05131F" />
+  </g>
+
+  <!-- Title & Subtitle Below Play Button -->
+  <text x="480" y="345" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="28" fill="#FFFFFF" text-anchor="middle">
+    How to Set Up &amp; Optimize Surfshark VPN (2026 Walkthrough)
+  </text>
+  <text x="480" y="380" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="15" fill="#8EADC2" text-anchor="middle">
+    Step-by-step masterclass: WireGuard® protocol, CleanWeb 2.0 ad blocking, MultiHop routing &amp; Alternative ID setup
+  </text>
+
+  <!-- Bottom Timeline Bar -->
+  <g transform="translate(40, 470)">
+    <!-- Progress Track -->
+    <rect width="880" height="6" rx="3" fill="#1B3347" />
+    <rect width="320" height="6" rx="3" fill="url(#playBtnGrad)" />
+    <circle cx="320" cy="3" r="6" fill="#00D18F" />
+
+    <!-- Chapter markers -->
+    <text x="0" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#6EE7B7">0:00 Installation</text>
+    <text x="220" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#6EE7B7">1:15 10Gbps Nexus Servers</text>
+    <text x="480" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#7597AF">2:40 CleanWeb 2.0 &amp; KillSwitch</text>
+    <text x="760" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#7597AF">4:10 MultiHop &amp; Alternative ID</text>
+  </g>
+</svg>
