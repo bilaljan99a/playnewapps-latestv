@@ -1,5 +1,62 @@
 [
     {
+        "id": "tiqets",
+        "name": "Tiqets",
+        "icon": "confirmation_number",
+        "logo": "/assets/images/brands/tiqets.svg",
+        "website": "https://www.tiqets.com",
+        "storeUrl": "/tiqets-coupons",
+        "affiliateUrl": "https://ad.admitad.com/g/rq0x895xiob68b264a760a1126e84f/",
+        "affiliateLink": "https://ad.admitad.com/g/rq0x895xiob68b264a760a1126e84f/",
+        "rating": 4.9,
+        "votes": 52840,
+        "seoTitle": "Tiqets Promo Codes & Discount Offers (2026)",
+        "seoDescription": "Save on museum tickets, top tourist attractions, theme parks, and city tours with verified Tiqets promo codes. Get 10% off discount codes, instant mobile passes, and skip-the-line vouchers.",
+        "about": "Tiqets is an award-winning international digital ticketing platform that connects millions of travelers worldwide to top cultural attractions, renowned museums, theme parks, architectural landmarks, and guided city experiences across over 60 countries. Founded in Amsterdam, Tiqets works directly with world-class cultural institutions—including the Louvre Museum in Paris, Sagrada Família in Barcelona, the Colosseum and Vatican Museums in Rome, the Van Gogh Museum, Rijksmuseum, London Eye, and the Empire State Building in New York. The platform specializes in instant paperless mobile ticketing, skip-the-line fast track admission, bundled city combination passes, flexible 24-hour cancellation, and multi-language customer support available 24/7.",
+        "categories": [
+            "Travel",
+            "Attractions",
+            "Museums",
+            "Sightseeing",
+            "Tours & Activities",
+            "Theme Parks",
+            "City Passes"
+        ],
+        "whyShop": [
+            "Instant Mobile Ticketing: Receive scannable digital tickets directly to your smartphone with no printing required",
+            "Direct Venue Partnerships: Official ticketing partner for 4,000+ top museums and cultural monuments across 60+ countries",
+            "Skip-The-Line Fast Track Access: Bypass hours-long ticket counter queues at busy tourist hotspots like the Louvre, Colosseum, and Sagrada Família",
+            "Exclusive Verified Promo Codes: Save up to 10%–15% extra on attraction tickets and city combination bundles with tested coupon codes",
+            "Flexible Cancellation: Most tickets include hassle-free cancellation and full refunds up to 24 hours before your scheduled entry time",
+            "24/7 Multilingual Support: Dedicated customer assistance available via live chat, email, and phone in 14 languages"
+        ],
+        "shoppingTips": [
+            "Apply our verified Tiqets promo code during the checkout step to instantly save 10% on your total museum and attraction bookings.",
+            "Choose Tiqets Combo Passes (e.g. Rome Tourist Card, Barcelona Pass, Paris Museum Bundle) to save up to 20% compared to buying single attraction tickets individually.",
+            "Book through the Tiqets mobile app for exclusive in-app promotional discount codes and offline ticket storage.",
+            "Look for tickets with free cancellation up to 23:59 the day before your visit to keep your vacation itinerary flexible.",
+            "Select off-peak morning or late afternoon entry time slots for a less crowded sightseeing experience and maximum photo opportunities."
+        ],
+        "faqs": [
+            {
+                "question": "How do I redeem a Tiqets promo code?",
+                "answer": "Select your desired attraction, choose your entry date and time slot, and proceed to the customer details page. Click the 'Have a promo code?' link below the order summary, paste your verified coupon code, and click 'Apply' to see your instant discount before completing payment."
+            },
+            {
+                "question": "Do I need to print my Tiqets tickets?",
+                "answer": "No. Tiqets provides 100% paperless smartphone tickets. Simply show the digital barcode or QR code on your mobile phone or the Tiqets app at the venue entrance scanner for instant admission."
+            },
+            {
+                "question": "Can I cancel or reschedule my Tiqets booking?",
+                "answer": "Yes. Most attraction tickets on Tiqets feature free cancellation up to 24 hours before your booked entry time. You can cancel or request a date reschedule directly from your confirmation email or through the Tiqets app under 'My Tickets'."
+            },
+            {
+                "question": "What payment methods does Tiqets accept?",
+                "answer": "Tiqets accepts all major credit and debit cards (Visa, Mastercard, American Express, Maestro), Apple Pay, Google Pay, PayPal, iDEAL, Bancontact, Sofort, and Alipay with 256-bit bank-level encryption."
+            }
+        ]
+    },
+    {
         "id": "asaptickets",
         "name": "ASAP Tickets",
         "icon": "flight",
