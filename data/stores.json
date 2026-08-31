@@ -1,5 +1,60 @@
 [
   {
+    "id": "protonvpn",
+    "name": "Proton VPN",
+    "icon": "shield",
+    "logo": "/assets/images/brands/protonvpn.svg",
+    "website": "https://protonvpn.com/",
+    "storeUrl": "/protonvpn-coupons",
+    "affiliateUrl": "https://ntzgd.com/g/px9exodsjkb68b264a7608612d8f27/",
+    "affiliateLink": "https://ntzgd.com/g/px9exodsjkb68b264a7608612d8f27/",
+    "rating": 4.95,
+    "votes": 48920,
+    "seoTitle": "Proton VPN Coupon Codes & Verified Promo Deals (2026) – Up to 70% Off + 6 Months Free",
+    "seoDescription": "Save up to 70% on Proton VPN Plus with verified 2026 promo deals + 6 bonus months free. Swiss privacy jurisdiction, 10Gbps server speeds, NetShield adblocker, and 100% open-source audited security.",
+    "about": "Proton VPN is a world-leading security and privacy-first Virtual Private Network developed by CERN scientists and the creators of Proton Mail in Geneva, Switzerland. Headquartered under strict Swiss privacy laws, Proton VPN provides audited no-logs protection, 10Gbps high-speed server infrastructure across 110+ countries, NetShield malware and ad-blocking, Secure Core double-encryption routing, Stealth protocol anti-censorship technology, and 100% open-source apps verified by independent security audits.",
+    "categories": [
+      "VPN & Security",
+      "Privacy Software",
+      "Cybersecurity",
+      "Streaming & P2P",
+      "Internet Tools"
+    ],
+    "whyShop": [
+      "Strict Swiss Privacy Jurisdiction: Immune to US and EU 14-Eyes surveillance alliances",
+      "100% Open Source & Audited: Every desktop and mobile app is publicly verifiable and independently tested",
+      "Secure Core Architecture: Routes traffic through hardened underground servers in Switzerland, Iceland, and Sweden",
+      "10Gbps High-Speed Infrastructure: Powered by proprietary VPN Accelerator technology for up to 400% speed boosts",
+      "NetShield Ad & Tracker Blocker: DNS filtering blocks intrusive ads, cross-site trackers, and malicious phishing domains",
+      "Full Streaming & P2P Support: Seamless 4K UHD streaming on Netflix, Disney+, BBC iPlayer, and Prime Video with fast torrenting"
+    ],
+    "shoppingTips": [
+      "Select the 2-year Proton VPN Plus plan to secure the maximum 70% discount plus 6 complimentary bonus months.",
+      "Bundle with Proton Unlimited to receive VPN Plus, 500GB encrypted cloud storage, Proton Mail, and Proton Pass at 50% off.",
+      "Utilize the 100% Free Forever plan with unlimited data and zero ads to test basic Swiss privacy protection.",
+      "Students and educators with active .edu email addresses can claim an additional 50% discount on annual subscriptions.",
+      "Take full advantage of the 30-day money-back guarantee to test streaming, gaming, and Secure Core servers risk-free."
+    ],
+    "faqs": [
+      {
+        "question": "How do I apply a Proton VPN coupon code?",
+        "answer": "Choose your preferred Proton VPN subscription plan (1-month, 1-year, or 2-year Plus). On the checkout page, locate the promo code field under the order summary, paste your verified code, and click Apply to see your instant discounted total before completing payment."
+      },
+      {
+        "question": "What is the biggest discount available for Proton VPN in 2026?",
+        "answer": "The highest verified savings offer is the 2-Year Proton VPN Plus plan, which provides 70% off standard monthly pricing plus 6 bonus months free, backed by a 30-day money-back guarantee."
+      },
+      {
+        "question": "Is Proton VPN truly free with unlimited data?",
+        "answer": "Yes. Unlike most free VPN services that impose strict bandwidth caps (like 500MB/day), Proton VPN Free provides unlimited data and bandwidth with zero ads, funded entirely by paid premium subscribers."
+      },
+      {
+        "question": "Where is Proton VPN headquartered and why does it matter?",
+        "answer": "Proton VPN is headquartered in Geneva, Switzerland. Swiss data privacy laws (FADP) are among the strongest in the world, ensuring user data is completely immune to EU and US 14-Eyes surveillance directives."
+      }
+    ]
+  },
+  {
     "id": "sitpack",
     "name": "Sitpack",
     "icon": "chair",
