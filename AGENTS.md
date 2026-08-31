@@ -71,12 +71,16 @@ When creating dedicated in-depth software, app, or game review pages (e.g. `[bra
 - The discount code must **only** be revealed when the user explicitly clicks the **"Show Code"** button (which copies the code to clipboard and launches the official store).
 - The code mask placeholder before clicking must always be completely obfuscated (e.g. `••••••••`) so users cannot read the code beforehand.
 
-### B. Clean Currency Notation (No Redundant "US$" or "USD")
+### B. Clean Currency Notation & Accurate Dollar Values (Zero-Tolerance)
 - When the dollar symbol (`$`) is used, **never** write `US$` or `USD$` (e.g., write `$2 OFF`, `$15`, `$55 OFF`, never `US$2 OFF` or `US$15`).
 - Keep currency symbols standard and clean: `$`, `€`, `£`, etc.
+- **Accurate Figures & No Truncated Values:** Always verify that every monetary amount includes its full digits and proper currency symbol (e.g., `$20 OFF`, `$50 OFF`, `Orders Over $75`, `$100+`, `from $49`).
+- **Strict Prohibition of Zero-Value / Broken Numbers:** Never output `0 OFF`, `Over 00`, `FROM 9` (without `$`), `Over 5`, or empty strings like `Starting from `. All offers must be authentic, verified, and complete.
 
-### C. Official Logos & Assets
+### C. Official Logos & Transparent Backgrounds
 - All brand and store logos must be sourced directly from official websites / verified official vector resources (SVG/PNG).
+- **Transparent / Clean White Backgrounds Mandatory:** Logos must have transparent or clean white backgrounds that blend seamlessly with the store cards grid on `/stores`, `/categories`, and coupon pages. Never use solid black or dark box backgrounds for logos on light cards.
+- **Prefer SVG Vectors:** Always prefer `.svg` for store and brand logos for crisp rendering on high-DPI displays.
 - Never use broken, placeholder, or unofficial low-quality imagery.
 
 ---
