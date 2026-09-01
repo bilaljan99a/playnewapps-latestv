@@ -1,5 +1,60 @@
 [
   {
+    "id": "1password",
+    "name": "1Password",
+    "icon": "lock",
+    "logo": "/assets/images/brands/1password.svg",
+    "website": "https://1password.com/",
+    "storeUrl": "/1password-coupons",
+    "affiliateUrl": "https://1password.com/",
+    "affiliateLink": "https://1password.com/",
+    "rating": 4.94,
+    "votes": 62180,
+    "seoTitle": "1Password Coupon Codes & Verified Promo Deals (2026) – Up to 50% Off",
+    "seoDescription": "Save up to 50% on 1Password with verified 2026 discount codes. Industry-standard zero-knowledge architecture, 128-bit Secret Key, Watchtower breach detection, Passkeys support, and 14-day free trial.",
+    "about": "1Password is the world-renowned password manager and digital security platform trusted by over 150,000 businesses and millions of individuals worldwide. Featuring patented dual-key encryption combining a Master Password with a 128-bit client-side Secret Key, 1Password protects credentials, credit cards, software licenses, SSH keys, and passkeys across Windows, macOS, iOS, Android, Linux, and command-line environments.",
+    "categories": [
+      "Password Managers",
+      "Cybersecurity",
+      "Developer Tools",
+      "Identity & Privacy",
+      "Software & SaaS"
+    ],
+    "whyShop": [
+      "Dual-Key Secret Key Architecture: Combines your Master Password with a 128-bit device key for uncrackable zero-knowledge security",
+      "Watchtower Automated Breach Intelligence: Real-time alerts for compromised logins, weak passwords, and two-factor authentication opportunities",
+      "Full Passkeys & Biometrics Support: Create, store, and seamlessly sync biometric passkeys across all operating systems",
+      "Families & Teams Sharing: Granular vault permissions, item history, and free 1Password Families account for every Business user",
+      "Developer-First Ecosystem: Native SSH agent, CLI integration, secrets automation, and VS Code extensions",
+      "Travel Mode: Remove sensitive personal and work vaults from devices when crossing international borders with one toggle"
+    ],
+    "shoppingTips": [
+      "Opt for the Annual Subscription to instantly save 25% to 33% compared to month-to-month billing across all plans.",
+      "Choose the 1Password Families plan (.99/mo) to cover up to 5 family members with individual private vaults under one discounted bill.",
+      "Enroll in 1Password Business to grant all team members a complimentary 1Password Families membership (0/year value per employee).",
+      "Take advantage of the 14-Day Free Trial on personal, family, and business tiers with no upfront credit card required.",
+      "Students and accredited educators can contact 1Password educational support with their .edu email for exclusive seasonal discounts."
+    ],
+    "faqs": [
+      {
+        "question": "How do I apply a 1Password coupon code?",
+        "answer": "Select your preferred 1Password plan (Individual, Families, or Business). If a promo code is required, enter it into the Promo Code or Gift Card box during checkout. For annual discount promotions, the 25% savings are applied automatically."
+      },
+      {
+        "question": "What is the highest discount available for 1Password in 2026?",
+        "answer": "The best verified offer is the 1Password Families annual subscription, offering 5 individual premium accounts for just .99/month total (equivalent to under .00 per person per month)."
+      },
+      {
+        "question": "What makes 1Password Secret Key different from standard password managers?",
+        "answer": "Unlike standard password managers that rely solely on a master password, 1Password combines your master password with a unique 128-bit Secret Key stored exclusively on your devices. This ensures that even if 1Password servers were breached, your vault remains mathematically impossible to decrypt."
+      },
+      {
+        "question": "Does 1Password offer a free trial?",
+        "answer": "Yes, 1Password provides an unrestricted 14-day free trial on all Individual, Families, Teams, and Business plans with full access to Watchtower, passkeys, and multi-device synchronization."
+      }
+    ]
+  },
+  {
     "id": "expressvpn",
     "name": "ExpressVPN",
     "icon": "security",
