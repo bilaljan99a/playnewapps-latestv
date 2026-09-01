@@ -2,7 +2,7 @@
   {
     "id": "1password-individual-annual-25-off",
     "storeId": "1password",
-    "title": "1Password Individual Plan — Save 25% with Annual Billing (.99/mo)",
+    "title": "1Password Individual Plan \u2014 Save 25% with Annual Billing (.99/mo)",
     "description": "Protect unlimited passwords, credit cards, passkeys, and documents across all devices. Includes 128-bit Secret Key security, Watchtower vulnerability scanner, 1GB encrypted document storage, and 24/7 support.",
     "code": "SAVE25ANNUAL",
     "discount": "25% OFF",
@@ -29,7 +29,7 @@
   {
     "id": "1password-families-plan-savings",
     "storeId": "1password",
-    "title": "1Password Families Plan — 5 Accounts for .99/mo (Save Over 65%)",
+    "title": "1Password Families Plan \u2014 5 Accounts for .99/mo (Save Over 65%)",
     "description": "Cover up to 5 family members with individual private vaults plus shared family vaults. Includes account recovery assistance, family sharing controls, and passkey support for under  per person monthly.",
     "code": "FAMILIES2026",
     "discount": "65% OFF",
@@ -56,7 +56,7 @@
   {
     "id": "1password-14day-free-trial-all-plans",
     "storeId": "1password",
-    "title": "1Password 14-Day Free Trial — Full Unrestricted Access on All Plans",
+    "title": "1Password 14-Day Free Trial \u2014 Full Unrestricted Access on All Plans",
     "description": "Experience zero-knowledge dual-key encryption, unlimited vault items, cross-device auto-fill, and Watchtower breach reports risk-free for 14 full days. No upfront credit card required.",
     "code": "",
     "discount": "14-DAY TRIAL",
@@ -83,7 +83,7 @@
   {
     "id": "1password-business-free-family-accounts",
     "storeId": "1password",
-    "title": "1Password Business — Free 1Password Families for Every Employee (0/yr Value)",
+    "title": "1Password Business \u2014 Free 1Password Families for Every Employee (0/yr Value)",
     "description": "Enterprise-grade password management with SSO integration, custom role-based access, automated audit logs, and a complimentary 1Password Families account for every worker.",
     "code": "",
     "discount": "FREE FAMILY PERK",
@@ -110,7 +110,7 @@
   {
     "id": "1password-teams-starter-pack",
     "storeId": "1password",
-    "title": "1Password Teams Starter Pack — Flat 9.95/mo for up to 10 Team Members",
+    "title": "1Password Teams Starter Pack \u2014 Flat 9.95/mo for up to 10 Team Members",
     "description": "Affordable security designed for small startups and boutique agencies. Unlimited shared vaults, admin controls, 5 guest accounts, and 1GB encrypted document storage per user.",
     "code": "",
     "discount": "FLAT RATE DEAL",
@@ -137,7 +137,7 @@
   {
     "id": "1password-developer-tools-free",
     "storeId": "1password",
-    "title": "1Password Developer Tools — Free SSH Key Agent & CLI Integration",
+    "title": "1Password Developer Tools \u2014 Free SSH Key Agent & CLI Integration",
     "description": "Manage API tokens, infrastructure secrets, and SSH keys securely. Biometric git commit signing, shell environment injection, and VS Code integration included free with all accounts.",
     "code": "",
     "discount": "100% FREE DEV TOOLS",
@@ -164,7 +164,7 @@
   {
     "id": "1password-watchtower-passkeys-free",
     "storeId": "1password",
-    "title": "Watchtower Vulnerability Scanner & Passkeys Suite — Included with All Plans",
+    "title": "Watchtower Vulnerability Scanner & Passkeys Suite \u2014 Included with All Plans",
     "description": "Real-time database monitoring for pwned passwords, vulnerable websites, 2FA opportunities, and native passwordless passkey synchronization across all browsers.",
     "code": "",
     "discount": "FREE SECURITY SUITE",
@@ -218,7 +218,7 @@
   {
     "id": "expressvpn-12month-discount-3mo-free",
     "storeId": "expressvpn",
-    "title": "ExpressVPN 12-Month Plan — 49% OFF + 3 Extra Months Free (.67/mo)",
+    "title": "ExpressVPN 12-Month Plan \u2014 49% OFF + 3 Extra Months Free (.67/mo)",
     "description": "Lock in 15 months of ExpressVPN for the price of 12 at just .67/mo (billed 9.95 for first 15 months). Includes Lightway protocol, RAM-only servers in 105 countries, Keys password vault, and Threat Manager.",
     "code": "EXPRESS15MO",
     "discount": "49% OFF + 3 MO FREE",
@@ -245,7 +245,7 @@
   {
     "id": "expressvpn-multiyear-bundle-deal",
     "storeId": "expressvpn",
-    "title": "Exclusive Multi-Year Security Bundle — Save up to 82% on ExpressVPN",
+    "title": "Exclusive Multi-Year Security Bundle \u2014 Save up to 82% on ExpressVPN",
     "description": "Save up to 82% on multi-year subscription plans. Unlimited 10Gbps bandwidth, automatic Wi-Fi shield, zero-knowledge DNS, and 8 simultaneous device connections.",
     "code": "SAVE82EXP",
     "discount": "82% OFF",
@@ -272,7 +272,7 @@
   {
     "id": "expressvpn-6month-plan-savings",
     "storeId": "expressvpn",
-    "title": "ExpressVPN 6-Month Plan — Save 20% Compared to Standard Monthly Rate",
+    "title": "ExpressVPN 6-Month Plan \u2014 Save 20% Compared to Standard Monthly Rate",
     "description": "Billed 9.95 every 6 months (.99/mo). Full access to 105 countries, Lightway speeds, Threat Manager, and 24/7 customer support.",
     "code": "",
     "discount": "20% OFF",
@@ -299,7 +299,7 @@
   {
     "id": "expressvpn-keys-password-vault-free",
     "storeId": "expressvpn",
-    "title": "ExpressVPN Keys Password Manager — 100% Free Included with All Plans",
+    "title": "ExpressVPN Keys Password Manager \u2014 100% Free Included with All Plans",
     "description": "Unlimited zero-knowledge password and 2FA vault included free with every active ExpressVPN subscription. Syncs securely across iOS, Android, and desktop browsers.",
     "code": "",
     "discount": "100% FREE VAULT",
@@ -326,7 +326,7 @@
   {
     "id": "expressvpn-threat-manager-dns-protection",
     "storeId": "expressvpn",
-    "title": "Threat Manager DNS Protection — Automatically Block Trackers & Malware",
+    "title": "Threat Manager DNS Protection \u2014 Automatically Block Trackers & Malware",
     "description": "Block malicious tracker domains, phishing websites, and adult content at the DNS level. Enabled with one click inside all ExpressVPN desktop and mobile apps.",
     "code": "",
     "discount": "FREE INCLUDED",
@@ -353,7 +353,7 @@
   {
     "id": "expressvpn-aircove-router-hardware-deals",
     "storeId": "expressvpn",
-    "title": "ExpressVPN Aircove & Aircove Go Wi-Fi 6 Routers — Built-In VPN OS Protection",
+    "title": "ExpressVPN Aircove & Aircove Go Wi-Fi 6 Routers \u2014 Built-In VPN OS Protection",
     "description": "Protect unlimited smart TVs, gaming consoles (PS5, Xbox), IoT devices, and smartphones simultaneously with hardware-level VPN routing and 5 device groups.",
     "code": "",
     "discount": "HARDWARE DEALS",
@@ -434,7 +434,7 @@
   {
     "id": "protonvpn-2year-plus-discount",
     "storeId": "protonvpn",
-    "title": "Proton VPN Plus 2-Year Plan — Up to 70% OFF + 6 Extra Months Free",
+    "title": "Proton VPN Plus 2-Year Plan \u2014 Up to 70% OFF + 6 Extra Months Free",
     "description": "Lock in the ultimate Swiss privacy defense with 70% savings on the 2-Year Plus plan. Includes 10Gbps servers, NetShield adblocker, Secure Core routing, and 10 simultaneous device connections.",
     "code": "PROTONPLUS70",
     "discount": "70% OFF + 6 MO FREE",
@@ -461,7 +461,7 @@
   {
     "id": "protonvpn-free-forever-unlimited",
     "storeId": "protonvpn",
-    "title": "100% Free Forever Proton VPN Plan — Unlimited Bandwidth & Zero Logs",
+    "title": "100% Free Forever Proton VPN Plan \u2014 Unlimited Bandwidth & Zero Logs",
     "description": "Protect your everyday browsing with completely free, unlimited bandwidth Swiss VPN servers. No speed limits, no surveillance tracking, and zero advertising.",
     "code": "",
     "discount": "100% FREE FOREVER",
@@ -488,7 +488,7 @@
   {
     "id": "protonvpn-1year-plus-savings",
     "storeId": "protonvpn",
-    "title": "Proton VPN Plus 1-Year Plan — Save 60% with Worldwide Streaming Support",
+    "title": "Proton VPN Plus 1-Year Plan \u2014 Save 60% with Worldwide Streaming Support",
     "description": "Enjoy high-speed buffer-free 4K UHD streaming on Netflix, BBC iPlayer, Disney+, and Prime Video with optimized streaming servers across 110+ countries.",
     "code": "",
     "discount": "60% OFF 1-YEAR",
@@ -515,7 +515,7 @@
   {
     "id": "protonvpn-unlimited-bundle-50off",
     "storeId": "protonvpn",
-    "title": "Proton Unlimited All-In-One Privacy Suite — 50% OFF VPN, Mail, Drive & Pass",
+    "title": "Proton Unlimited All-In-One Privacy Suite \u2014 50% OFF VPN, Mail, Drive & Pass",
     "description": "Get total encrypted digital freedom. Bundle Proton VPN Plus, Proton Mail with custom domain support, 500 GB Proton Drive encrypted cloud storage, and Proton Pass password manager.",
     "code": "",
     "discount": "50% OFF UNLIMITED",
@@ -542,7 +542,7 @@
   {
     "id": "protonvpn-student-discount-50off",
     "storeId": "protonvpn",
-    "title": "Verified Student & Educator Academic Discount — 50% OFF Proton VPN Plus",
+    "title": "Verified Student & Educator Academic Discount \u2014 50% OFF Proton VPN Plus",
     "description": "Students, faculty members, and academic researchers can secure 50% off Proton VPN Plus annual subscriptions with simple student email verification.",
     "code": "PROTONSTUDENT50",
     "discount": "50% OFF STUDENT",
@@ -569,7 +569,7 @@
   {
     "id": "protonvpn-stealth-protocol-free",
     "storeId": "protonvpn",
-    "title": "Proton Stealth Protocol — Bypass DPI & Severe Government Censorship",
+    "title": "Proton Stealth Protocol \u2014 Bypass DPI & Severe Government Censorship",
     "description": "Disguise encrypted VPN traffic as regular HTTPS web traffic to effortlessly bypass advanced Deep Packet Inspection (DPI) in heavily censored regions.",
     "code": "",
     "discount": "FREE STEALTH TECH",
@@ -596,7 +596,7 @@
   {
     "id": "protonvpn-business-teams-discount",
     "storeId": "protonvpn",
-    "title": "Proton VPN for Business & Organizations — Save up to 33% per Seat",
+    "title": "Proton VPN for Business & Organizations \u2014 Save up to 33% per Seat",
     "description": "Deploy enterprise-grade Swiss encryption for your remote workforce with dedicated company IPs, single sign-on (SSO/SAML), and granular access control.",
     "code": "",
     "discount": "SAVE 33% BUSINESS",
@@ -1785,7 +1785,7 @@
     "id": "tiqets-skip-the-line-fast-track",
     "storeId": "tiqets",
     "title": "Skip-The-Line Fast Track Museum & Monument Passes",
-    "description": "Avoid lengthy ticket counter queues with instant fast-track entry at the Louvre, Colosseum, Sagrada Família, and Van Gogh Museum.",
+    "description": "Avoid lengthy ticket counter queues with instant fast-track entry at the Louvre, Colosseum, Sagrada Fam\u00edlia, and Van Gogh Museum.",
     "code": "",
     "discount": "FAST TRACK",
     "type": "deal",
@@ -2568,7 +2568,7 @@
     "id": "walmart-plus-free-trial",
     "storeId": "walmart",
     "title": "30-Day Free Trial of Walmart+ with Unlimited Free Delivery",
-    "description": "Unlock 30 days of free unlimited home grocery delivery ($35 min), free standard shipping with zero order minimum, 10¢/gal gas savings at 14,000+ stations, and free Paramount+ Essential.",
+    "description": "Unlock 30 days of free unlimited home grocery delivery ($35 min), free standard shipping with zero order minimum, 10\u00a2/gal gas savings at 14,000+ stations, and free Paramount+ Essential.",
     "code": "WMTPLUSFREE",
     "discount": "30 DAYS FREE",
     "type": "deal",
@@ -3026,7 +3026,7 @@
   {
     "id": "italiarail-italiatours-activities-combo",
     "storeId": "italiarail",
-    "title": "ItaliaTours & Colosseum / Vatican Excursions — $15 Off Guided Day Trips",
+    "title": "ItaliaTours & Colosseum / Vatican Excursions \u2014 $15 Off Guided Day Trips",
     "description": "Combine your rail journey with skip-the-line VIP guided tours to the Roman Colosseum, Vatican Museums, Florence Uffizi Gallery, or Pompeii and save $15 per booking.",
     "code": "TOURS15",
     "discount": "$15 OFF TOURS",
@@ -3053,7 +3053,7 @@
   {
     "id": "naga-deposit-bonus-match",
     "storeId": "naga",
-    "title": "Exclusive Live Trading Welcome Bonus — Up to $1,000 Deposit Match",
+    "title": "Exclusive Live Trading Welcome Bonus \u2014 Up to $1,000 Deposit Match",
     "description": "Boost your starting trading equity with an exclusive matched welcome deposit bonus on qualified live trading accounts across 4,000+ global assets.",
     "code": "NAGABONUS",
     "discount": "UP TO $1,000 BONUS",
@@ -3107,7 +3107,7 @@
   {
     "id": "naga-autocopy-social-trading",
     "storeId": "naga",
-    "title": "100% Free Social Auto-Copy Trading — Mirror Top 100+ Master Traders",
+    "title": "100% Free Social Auto-Copy Trading \u2014 Mirror Top 100+ Master Traders",
     "description": "Automatically replicate the trades of top-performing vetted trading leaders in real time with zero platform surcharge fees or copy management overhead.",
     "code": "",
     "discount": "100% FREE FEATURE",
@@ -3134,7 +3134,7 @@
   {
     "id": "naga-vip-spread-discount",
     "storeId": "naga",
-    "title": "NAGA VIP Trader Discount — Up to 50% Lower Spreads & Priority Payouts",
+    "title": "NAGA VIP Trader Discount \u2014 Up to 50% Lower Spreads & Priority Payouts",
     "description": "Elevate to NAGA VIP Tier status (Silver, Gold, Diamond, Crystal) to receive up to 50% discount on CFD trading spreads, 1-on-1 coaching, and free signals.",
     "code": "NAGAVIP50",
     "discount": "UP TO 50% OFF SPREADS",
@@ -3242,7 +3242,7 @@
   {
     "id": "naga-refer-friend-bonus",
     "storeId": "naga",
-    "title": "NAGA Refer-a-Friend Program — Earn $25 Cash Bonus per Active Trader",
+    "title": "NAGA Refer-a-Friend Program \u2014 Earn $25 Cash Bonus per Active Trader",
     "description": "Share your unique invite link and receive a direct $25 withdrawable cash bonus for every friend who signs up, completes identity verification, and places their first trade.",
     "code": "",
     "discount": "$25 CASH REWARD",
@@ -3269,7 +3269,7 @@
   {
     "id": "cheapvuelos-student-senior-specials",
     "storeId": "cheapvuelos",
-    "title": "Student & Senior Airline Ticket Specials — Up to $30 OFF",
+    "title": "Student & Senior Airline Ticket Specials \u2014 Up to $30 OFF",
     "description": "Unlock student, youth, and senior citizen flight fare reductions on major domestic and international airlines through verified partner deals.",
     "code": "",
     "discount": "$30 OFF",
@@ -3296,7 +3296,7 @@
   {
     "id": "cheapvuelos-group-travel-deal",
     "storeId": "cheapvuelos",
-    "title": "Group Travel Airfare Savings (3+ Passengers) — Flat $15/Pax OFF",
+    "title": "Group Travel Airfare Savings (3+ Passengers) \u2014 Flat $15/Pax OFF",
     "description": "Traveling with family or friends? Receive an automatic flat $15 discount per passenger on group flight bookings across 500+ partner carriers.",
     "code": "",
     "discount": "$15/PAX OFF",
@@ -3323,7 +3323,7 @@
   {
     "id": "cheapvuelos-last-minute-sale",
     "storeId": "cheapvuelos",
-    "title": "Last-Minute Flight Deals & Unsold Seat Discounts — Up to 40% OFF",
+    "title": "Last-Minute Flight Deals & Unsold Seat Discounts \u2014 Up to 40% OFF",
     "description": "Compare last-minute standby and unsold airline tickets across 500+ airlines for spontaneous getaways with up to 40% discount off standard rates.",
     "code": "",
     "discount": "40% OFF",
@@ -3350,7 +3350,7 @@
   {
     "id": "cheapvuelos-tampa-50",
     "storeId": "cheapvuelos",
-    "title": "Cheap Flights to Tampa (TPA) — $50 OFF",
+    "title": "Cheap Flights to Tampa (TPA) \u2014 $50 OFF",
     "description": "Unlock up to $50 off (Flat $15 per passenger) on flights to Tampa and Florida Gulf Coast beaches. Enter verified promo code during checkout.",
     "code": "TAMPA50",
     "discount": "$50 OFF",
@@ -3377,7 +3377,7 @@
   {
     "id": "cheapvuelos-seattle-50",
     "storeId": "cheapvuelos",
-    "title": "Cheap Flights to Seattle (SEA) — $50 OFF",
+    "title": "Cheap Flights to Seattle (SEA) \u2014 $50 OFF",
     "description": "Fly to the Pacific Northwest with up to $50 off (Flat $15 per passenger) on Seattle-Tacoma flights across partner airlines with promo code.",
     "code": "SEATTLE50",
     "discount": "$50 OFF",
@@ -3404,7 +3404,7 @@
   {
     "id": "cheapvuelos-san-diego-50",
     "storeId": "cheapvuelos",
-    "title": "Cheap Flights to San Diego (SAN) — $50 OFF",
+    "title": "Cheap Flights to San Diego (SAN) \u2014 $50 OFF",
     "description": "Enjoy sunny California with up to $50 off (Flat $15 per passenger) on San Diego flights from any departure city using verified coupon code.",
     "code": "SANDIEGO50",
     "discount": "$50 OFF",
@@ -3431,7 +3431,7 @@
   {
     "id": "cheapvuelos-chicago-50",
     "storeId": "cheapvuelos",
-    "title": "Cheap Flights to Chicago (ORD, MDW) — $50 OFF",
+    "title": "Cheap Flights to Chicago (ORD, MDW) \u2014 $50 OFF",
     "description": "Save up to $50 off (Flat $15 per passenger) on one-way and roundtrip flights to Chicago O'Hare and Midway airports with verified coupon.",
     "code": "CHICAGO50",
     "discount": "$50 OFF",
@@ -3458,7 +3458,7 @@
   {
     "id": "cheapvuelos-los-angeles-50",
     "storeId": "cheapvuelos",
-    "title": "Cheap Flights to Los Angeles (LAX, BUR) — $50 OFF",
+    "title": "Cheap Flights to Los Angeles (LAX, BUR) \u2014 $50 OFF",
     "description": "Fly to Los Angeles with instant savings of up to $50 off (Flat $15 per passenger) across major airlines. Use verified promo code at checkout.",
     "code": "LOSANGELES50",
     "discount": "$50 OFF",
@@ -3485,7 +3485,7 @@
   {
     "id": "cheapvuelos-new-york-50",
     "storeId": "cheapvuelos",
-    "title": "Cheap Flights to New York City (JFK, LGA, EWR) — $50 OFF",
+    "title": "Cheap Flights to New York City (JFK, LGA, EWR) \u2014 $50 OFF",
     "description": "Book cheap flights to New York and save up to $50 off (Flat $15 per passenger) with verified promo code. Valid on direct and connecting flights.",
     "code": "NEWYORK50",
     "discount": "$50 OFF",
@@ -3512,7 +3512,7 @@
   {
     "id": "cheapvuelos-roundtrip-50",
     "storeId": "cheapvuelos",
-    "title": "Cheap Roundtrip Flights Under $500 — Additional $50 OFF",
+    "title": "Cheap Roundtrip Flights Under $500 \u2014 Additional $50 OFF",
     "description": "Get an extra $50 discount (Flat $15 per passenger) on budget-friendly roundtrip flights under $500 to top domestic and international destinations.",
     "code": "ROUNDTRIP50",
     "discount": "$50 OFF",
@@ -3539,7 +3539,7 @@
   {
     "id": "cheapvuelos-worldwide-50",
     "storeId": "cheapvuelos",
-    "title": "Cheap Flights Worldwide Lowest Price Guarantee — Save Up to $50 OFF",
+    "title": "Cheap Flights Worldwide Lowest Price Guarantee \u2014 Save Up to $50 OFF",
     "description": "Unlock up to $50 off (Flat $15 per passenger for up to 3 travelers) on worldwide airline tickets with the Cheapvuelos lowest price guarantee. Redeem verified code.",
     "code": "CHEAPFLIGHTS50",
     "discount": "$50 OFF",
@@ -3566,7 +3566,7 @@
   {
     "id": "cheapvuelos-summer-50",
     "storeId": "cheapvuelos",
-    "title": "Cheap Summer Flights on 500+ Airlines — Instant $50 OFF",
+    "title": "Cheap Summer Flights on 500+ Airlines \u2014 Instant $50 OFF",
     "description": "Save instant $50 off (Flat $15 per passenger for up to 3 passengers) on all summer vacation flights across 500+ global airlines. Apply verified promo code at checkout.",
     "code": "SUMMER50",
     "discount": "$50 OFF",
@@ -3985,10 +3985,10 @@
   {
     "id": "ew-flights-35",
     "storeId": "eurowings",
-    "title": "European Flights Below €35",
-    "description": "Book one-way and return flights starting from €29.99 / €34.99 across major German and European holiday routes.",
+    "title": "European Flights Below \u20ac35",
+    "description": "Book one-way and return flights starting from \u20ac29.99 / \u20ac34.99 across major German and European holiday routes.",
     "code": "",
-    "discount": "< €35",
+    "discount": "< \u20ac35",
     "type": "deal",
     "category": "Travel",
     "verified": true,
@@ -4065,10 +4065,10 @@
   {
     "id": "ew-blind-booking",
     "storeId": "eurowings",
-    "title": "Eurowings Blind Booking: Mystery Getaways from €33",
-    "description": "Select your preferred travel theme (Culture, Beach, Shopping, Party) and unlock surprise flights from just €33 per leg.",
+    "title": "Eurowings Blind Booking: Mystery Getaways from \u20ac33",
+    "description": "Select your preferred travel theme (Culture, Beach, Shopping, Party) and unlock surprise flights from just \u20ac33 per leg.",
     "code": "",
-    "discount": "From €33",
+    "discount": "From \u20ac33",
     "type": "deal",
     "category": "Travel",
     "verified": true,
@@ -4082,7 +4082,7 @@
     "id": "ew-mobile-checkin",
     "storeId": "eurowings",
     "title": "Free Mobile & Web Check-In (72h to 3h Before Flight)",
-    "description": "Get your digital boarding pass on iOS & Android to skip airport check-in lines and avoid the €15 desk check-in fee.",
+    "description": "Get your digital boarding pass on iOS & Android to skip airport check-in lines and avoid the \u20ac15 desk check-in fee.",
     "code": "",
     "discount": "Free Check-In",
     "type": "deal",
@@ -4097,7 +4097,7 @@
   {
     "id": "ew-flex-light",
     "storeId": "eurowings",
-    "title": "Eurowings Flex Light: 0€ Rebooking Fee Add-on",
+    "title": "Eurowings Flex Light: 0\u20ac Rebooking Fee Add-on",
     "description": "Enjoy maximum travel flexibility to change your flight date or time up to 40 minutes before flight departure.",
     "code": "",
     "discount": "Free Rebook",
@@ -4297,7 +4297,7 @@
   {
     "id": "crsed-free-to-play",
     "storeId": "crsed",
-    "title": "Play in Cuisine Royale for FREE! — Full Game Client (PC & Consoles)",
+    "title": "Play in Cuisine Royale for FREE! \u2014 Full Game Client (PC & Consoles)",
     "description": "Download and play the full CRSED: F.O.A.D. battle royale client at zero cost. Get unlimited access to massive tactical maps, weapon arsenals, and multiplayer matchmaking.",
     "code": "",
     "discount": "100% FREE",
@@ -4337,7 +4337,7 @@
   {
     "id": "crsed-battle-pass-rewards",
     "storeId": "crsed",
-    "title": "CRSED Battle Pass — Earn Golden Crowns, Outfits & Mystic Rituals",
+    "title": "CRSED Battle Pass \u2014 Earn Golden Crowns, Outfits & Mystic Rituals",
     "description": "Complete daily and weekly combat challenges to earn Sinister Souls, unlock ritual signs, exotic underwear outfits, masks, and tombstones.",
     "code": "",
     "discount": "SEASON REWARDS",
@@ -4357,7 +4357,7 @@
   {
     "id": "crsed-twitch-drops",
     "storeId": "crsed",
-    "title": "Twitch Drops & Community Events — Free Custom Tombstones & Hex Bags",
+    "title": "Twitch Drops & Community Events \u2014 Free Custom Tombstones & Hex Bags",
     "description": "Link your Gaijin.net account to Twitch and tune into authorized CRSED livestreams to earn free mystery crates, cosmetic hex scrolls, and weapon skins.",
     "code": "",
     "discount": "FREE DROPS",
@@ -4377,7 +4377,7 @@
   {
     "id": "crsed-store-bundles",
     "storeId": "crsed",
-    "title": "Gaijin Store Champion & Weapon Packs — Exclusive Character Bundles",
+    "title": "Gaijin Store Champion & Weapon Packs \u2014 Exclusive Character Bundles",
     "description": "Accelerate your roster with specialty packs for Bokor (Zombie Horde), Valentine (Flickering Step), and Katrina (Bastion Shield) with bonus Golden Crowns.",
     "code": "",
     "discount": "STORE BUNDLES",
@@ -4417,7 +4417,7 @@
   {
     "id": "crsed-dagor-rtx",
     "storeId": "crsed",
-    "title": "Dagor Engine RTX & DLSS Upgrade — Ultra-Realistic Lighting & Physics",
+    "title": "Dagor Engine RTX & DLSS Upgrade \u2014 Ultra-Realistic Lighting & Physics",
     "description": "Experience realistic ray-traced global illumination, advanced particle physics, realistic water rendering, and NVIDIA DLSS / AMD FSR performance boosts.",
     "code": "",
     "discount": "ENGINE TECH",
@@ -4437,7 +4437,7 @@
   {
     "id": "crsed-2fa-bonus",
     "storeId": "crsed",
-    "title": "Gaijin Pass 2FA Account Security Bonus — Free In-Game Decal & Protection",
+    "title": "Gaijin Pass 2FA Account Security Bonus \u2014 Free In-Game Decal & Protection",
     "description": "Activate two-factor authentication via Gaijin Pass on iOS or Android to protect your inventory, battle pass progression, and claim free bonus cosmetic items.",
     "code": "",
     "discount": "2FA BONUS",
@@ -4857,7 +4857,7 @@
   {
     "id": "lenovo-thinkbook-14x-student-usd",
     "storeId": "lenovo",
-    "title": "Exclusive Student Pricing on ThinkBook 14x — Starting from $799",
+    "title": "Exclusive Student Pricing on ThinkBook 14x \u2014 Starting from $799",
     "description": "Verified students and faculty get exclusive reduced pricing on the ThinkBook 14x premium business laptop starting from $799.",
     "code": "NO CODE NEEDED",
     "discount": "FROM $799",
@@ -5337,7 +5337,7 @@
   {
     "id": "forcedrop-skin-upgrade-contract",
     "storeId": "forcedrop",
-    "title": "Contract & Skin Upgrade Multiplier — Up to 10x Value",
+    "title": "Contract & Skin Upgrade Multiplier \u2014 Up to 10x Value",
     "description": "Trade in low-tier CS2 skins for high-value Covert knives and gloves using ForceDrop transparent upgrade odds.",
     "code": "NO CODE NEEDED",
     "discount": "UP TO 10X",
@@ -5357,7 +5357,7 @@
   {
     "id": "forcedrop-instant-steam-withdrawal",
     "storeId": "forcedrop",
-    "title": "Instant Steam Skin Withdrawal — Direct P2P & Bot Delivery",
+    "title": "Instant Steam Skin Withdrawal \u2014 Direct P2P & Bot Delivery",
     "description": "Withdraw all won skins directly into your Steam trade inventory within seconds via instant automated trade offers.",
     "code": "NO CODE NEEDED",
     "discount": "INSTANT DELIVERY",
@@ -5377,7 +5377,7 @@
   {
     "id": "godlike-40-off-12gb",
     "storeId": "godlike-host",
-    "title": "40% OFF First Order from 12 GB RAM — Game Servers & VPS",
+    "title": "40% OFF First Order from 12 GB RAM \u2014 Game Servers & VPS",
     "description": "Get an exclusive 40% discount on your first order with 12 GB RAM or higher for Minecraft, Palworld, Rust, Enshrouded, and VPS servers.",
     "code": "affiliate40",
     "discount": "40% OFF",
@@ -5437,7 +5437,7 @@
   {
     "id": "godlike-14-day-free-trial",
     "storeId": "godlike-host",
-    "title": "14-Day Free Trial — 24/7 Minecraft & Game Server Hosting",
+    "title": "14-Day Free Trial \u2014 24/7 Minecraft & Game Server Hosting",
     "description": "Test GODLIKE.Host 100% free for 14 days with 24/7 uptime, instant server deployment, and web control panel access.",
     "code": "NO CODE NEEDED",
     "discount": "14 DAYS FREE",
@@ -5517,7 +5517,7 @@
   {
     "id": "vectorstock-unlimited-subscription",
     "storeId": "vectorstock",
-    "title": "Unlimited Downloads for Commercial Use — Save $60.00/Year",
+    "title": "Unlimited Downloads for Commercial Use \u2014 Save $60.00/Year",
     "description": "Get unlimited vector downloads for commercial use starting at $14.99/mo with annual billing that saves you $60.00 per year.",
     "code": "NO CODE NEEDED",
     "discount": "SAVE $60/YEAR",
@@ -5537,7 +5537,7 @@
   {
     "id": "vectorstock-flexible-credits",
     "storeId": "vectorstock",
-    "title": "Flexible Credit Packs — 50 Credits for $50 ($1/Credit)",
+    "title": "Flexible Credit Packs \u2014 50 Credits for $50 ($1/Credit)",
     "description": "Download commercial-use vectors pay-as-you-go with credit packs: 50 credits for $50, 100 credits for $100, or 150 credits for $150.",
     "code": "NO CODE NEEDED",
     "discount": "50 CREDITS $50",
@@ -5557,7 +5557,7 @@
   {
     "id": "vectorstock-pay-per-image",
     "storeId": "vectorstock",
-    "title": "Pay-Per-Image Single Downloads — Starting at $14.99",
+    "title": "Pay-Per-Image Single Downloads \u2014 Starting at $14.99",
     "description": "Download single high-res vector files in EPS, AI, PDF, or PNG format with standard commercial licensing on-demand.",
     "code": "NO CODE NEEDED",
     "discount": "SINGLE DOWNLOAD",
@@ -5597,7 +5597,7 @@
   {
     "id": "vectorstock-expanded-license",
     "storeId": "vectorstock",
-    "title": "Expanded Commercial License — Merchandise & Resale Rights",
+    "title": "Expanded Commercial License \u2014 Merchandise & Resale Rights",
     "description": "Unlock expanded commercial rights for print-on-demand products, retail T-shirts, mugs, poster prints, and digital resale.",
     "code": "NO CODE NEEDED",
     "discount": "COMMERCIAL RESALE",
@@ -5617,7 +5617,7 @@
   {
     "id": "enlisted-play-free",
     "storeId": "enlisted",
-    "title": "Play Enlisted for FREE! — Official Free Registration Deal",
+    "title": "Play Enlisted for FREE! \u2014 Official Free Registration Deal",
     "description": "Register a free account on Enlisted to command infantry squads, armor, and warplanes across WWII battle theaters.",
     "code": "NO CODE NEEDED",
     "discount": "PLAY FREE",
@@ -5637,7 +5637,7 @@
   {
     "id": "enlisted-starter-squad-pack",
     "storeId": "enlisted",
-    "title": "Free Starter Squads & Infantry Pack — New Player Welcome Bonus",
+    "title": "Free Starter Squads & Infantry Pack \u2014 New Player Welcome Bonus",
     "description": "Unlock multiple infantry squads, basic firearms, tactical grenades, and soldier upgrade progression on free sign up.",
     "code": "NO CODE NEEDED",
     "discount": "FREE STARTER SQUADS",
@@ -5657,7 +5657,7 @@
   {
     "id": "enlisted-combined-arms-access",
     "storeId": "enlisted",
-    "title": "WWII Tanks & Aircraft Combat — Free Combined Arms Access",
+    "title": "WWII Tanks & Aircraft Combat \u2014 Free Combined Arms Access",
     "description": "Command iconic tanks and pilot fighter/bomber warplanes in the same live matches without paying a dime.",
     "code": "NO CODE NEEDED",
     "discount": "FREE COMBINED ARMS",
@@ -5677,7 +5677,7 @@
   {
     "id": "enlisted-battle-pass-events",
     "storeId": "enlisted",
-    "title": "Seasonal Battle Pass & Special Events — Free & Elite Rewards",
+    "title": "Seasonal Battle Pass & Special Events \u2014 Free & Elite Rewards",
     "description": "Complete daily combat tasks and seasonal battle pass tiers to earn free booster orders, rare historical weaponry, and camos.",
     "code": "NO CODE NEEDED",
     "discount": "SEASONAL REWARDS",
@@ -5697,7 +5697,7 @@
   {
     "id": "crossout-play-free",
     "storeId": "crossout",
-    "title": "Play Crossout for FREE! — Official Free Registration Deal",
+    "title": "Play Crossout for FREE! \u2014 Official Free Registration Deal",
     "description": "Register a free account on Crossout to instantly build custom armored war machines and engage in 8v8 vehicular combat and co-op raids.",
     "code": "NO CODE NEEDED",
     "discount": "PLAY FREE",
@@ -5717,7 +5717,7 @@
   {
     "id": "crossout-starter-vehicle-pack",
     "storeId": "crossout",
-    "title": "Free Armored Vehicle Starter Pack — New Player Welcome Bonus",
+    "title": "Free Armored Vehicle Starter Pack \u2014 New Player Welcome Bonus",
     "description": "Unlock a free starter combat vehicle, autocannons, cabin parts, and structural armor plates upon completing free registration.",
     "code": "NO CODE NEEDED",
     "discount": "FREE STARTER PACK",
@@ -5737,7 +5737,7 @@
   {
     "id": "crossout-free-coins-market-bonus",
     "storeId": "crossout",
-    "title": "Free In-Game Market & Trading Access — Earn Free Coins",
+    "title": "Free In-Game Market & Trading Access \u2014 Earn Free Coins",
     "description": "Access the player-driven market to trade crafted vehicle components, decor, and weapons for free Crossout Coins.",
     "code": "NO CODE NEEDED",
     "discount": "FREE MARKET ACCESS",
@@ -5757,7 +5757,7 @@
   {
     "id": "crossout-coop-raids-unlocked",
     "storeId": "crossout",
-    "title": "Co-op Story Campaign & PvE Raids — Unlocked Free",
+    "title": "Co-op Story Campaign & PvE Raids \u2014 Unlocked Free",
     "description": "Join friends or fight solo in cooperative story missions and raids to defeat AI bosses and scavenge rare crafting materials.",
     "code": "NO CODE NEEDED",
     "discount": "FREE PVE RAIDS",
@@ -5797,7 +5797,7 @@
   {
     "id": "doctronic-free-ai-consult",
     "storeId": "doctronic-us",
-    "title": "Free AI Health Consult — Available 24/7",
+    "title": "Free AI Health Consult \u2014 Available 24/7",
     "description": "Start with Doctronic's AI health consultation at no charge and get personalized health guidance before deciding whether you need a human doctor.",
     "code": "NO CODE NEEDED",
     "discount": "FREE CONSULT",
@@ -5817,7 +5817,7 @@
   {
     "id": "doctronic-39-doctor-visit",
     "storeId": "doctronic-us",
-    "title": "Licensed Doctor Telehealth Visit — $39",
+    "title": "Licensed Doctor Telehealth Visit \u2014 $39",
     "description": "When appropriate, connect with a licensed U.S. doctor online. Doctronic's official website currently lists $39 cash-pay video visits, with insurance also accepted.",
     "code": "NO CODE NEEDED",
     "discount": "$39 TELEHEALTH",
@@ -6091,7 +6091,7 @@
   {
     "id": "retouch4me-20-off-bonus",
     "storeId": "retouch4me",
-    "title": "🎁 Free Cloud Retouch Bonuses + 20% OFF All Retouch4me AI Plugins",
+    "title": "\ud83c\udf81 Free Cloud Retouch Bonuses + 20% OFF All Retouch4me AI Plugins",
     "description": "Get 20% OFF all AI photo retouching plugins plus extra Free Cloud Retouch credits for batch portrait processing.",
     "code": "R4M20BONUS",
     "discount": "20% OFF + BONUS",
@@ -7015,7 +7015,7 @@
   },
   {
     "id": "wps-office-free",
-    "title": "AI-Powered Office Suite for Everyone – Free Download",
+    "title": "AI-Powered Office Suite for Everyone \u2013 Free Download",
     "description": "Download WPS Office for Windows, macOS, Linux, Android and iOS. Includes Writer, Spreadsheet, Presentation, PDF tools and built-in AI features.",
     "store": {
       "id": "wps-office",
@@ -8075,7 +8075,7 @@
   {
     "id": "nordvpn-75off-deal",
     "title": "Get 75% Off NordVPN + 3 Extra Months",
-    "description": "Protect all your devices with military-grade encryption, blazing-fast VPN servers, Threat Protection Pro™, Meshnet, Dark Web Monitoring, and a strict no-logs policy. Limited-time offer includes 75% off plus 3 bonus months.",
+    "description": "Protect all your devices with military-grade encryption, blazing-fast VPN servers, Threat Protection Pro\u2122, Meshnet, Dark Web Monitoring, and a strict no-logs policy. Limited-time offer includes 75% off plus 3 bonus months.",
     "store": {
       "id": "nordvpn",
       "name": "NordVPN",
@@ -8284,7 +8284,7 @@
   {
     "id": "nordvpn-10-devices-support",
     "title": "Protect Up To 10 Devices Simultaneously",
-    "description": "One NordVPN account protects 10 devices at once—including Mac, Windows, iPhone, Android, Linux, Fire TV, and Wi-Fi routers.",
+    "description": "One NordVPN account protects 10 devices at once\u2014including Mac, Windows, iPhone, Android, Linux, Fire TV, and Wi-Fi routers.",
     "store": {
       "id": "nordvpn",
       "name": "NordVPN",
@@ -8927,7 +8927,7 @@
     "storeId": "box",
     "store": "Box Cloud Storage",
     "code": "FREE10GB",
-    "title": "100% Free Individual Plan – 10 GB Cloud Storage & Box Sign",
+    "title": "100% Free Individual Plan \u2013 10 GB Cloud Storage & Box Sign",
     "description": "Get 10 GB secure cloud storage and 5 native Box Sign e-signatures monthly for $0.",
     "discount": "FREE",
     "type": "deal",
@@ -8939,7 +8939,7 @@
   {
     "id": "applicantally-astart30",
     "storeId": "applicantally",
-    "title": "🎁 Extra 30 Free Minutes for Any Order (Verified Coupon)",
+    "title": "\ud83c\udf81 Extra 30 Free Minutes for Any Order (Verified Coupon)",
     "description": "Get an extra 30 minutes of AI interview assistance added to any order or time pack.",
     "code": "ASTART30",
     "discount": "EXTRA 30 MINS FREE",
@@ -8951,7 +8951,7 @@
   {
     "id": "applicantally-free-15-min-trial",
     "storeId": "applicantally",
-    "title": "⚡ Free 15-Minute Trial (No Credit Card Required)",
+    "title": "\u26a1 Free 15-Minute Trial (No Credit Card Required)",
     "description": "Sign up on ApplicantAlly to unlock a free 15-minute live interview trial instantly.",
     "code": "NO CODE NEEDED",
     "discount": "100% FREE TRIAL",
@@ -8963,7 +8963,7 @@
   {
     "id": "applicantally-4-hours-pack",
     "storeId": "applicantally",
-    "title": "💼 ApplicantAlly 4 Hours Interview Pack - $22",
+    "title": "\ud83d\udcbc ApplicantAlly 4 Hours Interview Pack - $22",
     "description": "Pay-as-you-go 4-hour live interview pack. Ideal for single interview rounds and initial screens.",
     "code": "DEAL ACTIVATED",
     "discount": "4 HOURS PACK",
@@ -8975,7 +8975,7 @@
   {
     "id": "applicantally-8-hours-pack",
     "storeId": "applicantally",
-    "title": "⭐ ApplicantAlly 8 Hours Interview Pack - $44 (Popular Choice)",
+    "title": "\u2b50 ApplicantAlly 8 Hours Interview Pack - $44 (Popular Choice)",
     "description": "Best choice for active interview loops, technical screens, and follow-up hiring manager calls.",
     "code": "BEST VALUE",
     "discount": "8 HOURS PACK",
@@ -8987,7 +8987,7 @@
   {
     "id": "applicantally-12-hours-pack",
     "storeId": "applicantally",
-    "title": "🚀 ApplicantAlly 12 Hours Interview Pack - $58 (Lowest Hourly Rate)",
+    "title": "\ud83d\ude80 ApplicantAlly 12 Hours Interview Pack - $58 (Lowest Hourly Rate)",
     "description": "Maximum value pack for multi-stage interview loops across multiple prospective employers.",
     "code": "MAX SAVINGS",
     "discount": "12 HOURS PACK",
@@ -9035,7 +9035,7 @@
   {
     "id": "3dlabprint-hawker-tempest-value-pack",
     "storeId": "3dlabprint",
-    "title": "Hawker Tempest Mk II Value Pack — Up to 31% OFF",
+    "title": "Hawker Tempest Mk II Value Pack \u2014 Up to 31% OFF",
     "description": "Get the complete Hawker Tempest Mk II Value Pack STL files package for high-performance 3D-printed scale RC flight.",
     "code": "NO CODE NEEDED",
     "discount": "31% OFF",
@@ -9119,7 +9119,7 @@
   {
     "id": "3dlabprint-shop-directory",
     "storeId": "3dlabprint",
-    "title": "3DLabPrint Shop Directory — All Printable RC Models",
+    "title": "3DLabPrint Shop Directory \u2014 All Printable RC Models",
     "description": "Browse the complete 3DLabPrint shop directory for 3D-printable RC planes, warbirds, jets, trainer models, and spare parts.",
     "code": "NO CODE NEEDED",
     "discount": "SHOP ALL MODELS",
@@ -9161,7 +9161,7 @@
   {
     "id": "presenti-ai-60-pro-plan",
     "storeId": "presenti-ai",
-    "title": "60% Off Pro Plan — Presenti.ai Coupon",
+    "title": "60% Off Pro Plan \u2014 Presenti.ai Coupon",
     "description": "Get 60% off the Presenti.ai Pro Plan to unlock unlimited AI presentation generation, premium slide templates, and high-resolution PPTX exports.",
     "code": "NO CODE NEEDED",
     "discount": "60% OFF",
@@ -9203,7 +9203,7 @@
   {
     "id": "presenti-ai-free-trial",
     "storeId": "presenti-ai",
-    "title": "Try Presenti.ai Free — AI Slide Creator",
+    "title": "Try Presenti.ai Free \u2014 AI Slide Creator",
     "description": "Test Presenti.ai for free to turn text prompts into structured presentation slides with smart layouts and AI formatting.",
     "code": "NO CODE NEEDED",
     "discount": "FREE TRIAL",
@@ -9224,7 +9224,7 @@
   {
     "id": "star-conflict-play-free",
     "storeId": "star-conflict",
-    "title": "Play in Star Conflict for FREE! — Official Free Game Access",
+    "title": "Play in Star Conflict for FREE! \u2014 Official Free Game Access",
     "description": "Direct free access to tactical 3D space battles and fleet dogfights across Empire, Federation, and Jericho factions.",
     "code": "NO CODE NEEDED",
     "discount": "PLAY FREE",
@@ -9244,7 +9244,7 @@
   {
     "id": "star-conflict-free-monetization",
     "storeId": "star-conflict",
-    "title": "100% Unmonetized Full Access — In-Game Purchases Disabled",
+    "title": "100% Unmonetized Full Access \u2014 In-Game Purchases Disabled",
     "description": "Enjoy all available starship classes and game sectors with microtransactions completely removed ahead of server sunset.",
     "code": "NO CODE NEEDED",
     "discount": "100% UNMONETIZED",
@@ -9264,7 +9264,7 @@
   {
     "id": "star-conflict-open-space",
     "storeId": "star-conflict",
-    "title": "Open Space Sector Wars & Dreadnought Battles — Free Galaxy Access",
+    "title": "Open Space Sector Wars & Dreadnought Battles \u2014 Free Galaxy Access",
     "description": "Explore deep space star systems, defend asteroid belts from alien incursions, and fight for sector supremacy with no paywalls.",
     "code": "NO CODE NEEDED",
     "discount": "SECTOR WARS",
@@ -9304,7 +9304,7 @@
   {
     "id": "aomei-lifetime-25-off",
     "storeId": "aomei",
-    "title": "25% OFF Coupon for Lifetime License — Backupper & Partition Assistant",
+    "title": "25% OFF Coupon for Lifetime License \u2014 Backupper & Partition Assistant",
     "description": "Get 25% OFF any AOMEI Lifetime License with free upgrades for life. Valid on AOMEI Backupper Pro, Partition Assistant Pro, and FoneTool.",
     "code": "SS250OFF",
     "discount": "25% OFF",
@@ -9324,7 +9324,7 @@
   {
     "id": "aomei-yearly-10-off",
     "storeId": "aomei",
-    "title": "10% OFF Coupon for Yearly License — Flagship Software Plans",
+    "title": "10% OFF Coupon for Yearly License \u2014 Flagship Software Plans",
     "description": "Save 10% on any 1-Year subscription license for AOMEI Backupper Pro, Partition Assistant Pro, Cyber Backup, and MyRecover.",
     "code": "SS100OFF",
     "discount": "10% OFF",
@@ -9344,7 +9344,7 @@
   {
     "id": "aomei-bundles-80-off",
     "storeId": "aomei",
-    "title": "Save More with Bundles Today — Up to 80% OFF",
+    "title": "Save More with Bundles Today \u2014 Up to 80% OFF",
     "description": "Get up to 80% discount on AOMEI All-in-One Multi-Product bundles combining Backupper Pro, Partition Assistant Pro, and MyRecover with multi-PC licenses.",
     "code": "",
     "discount": "80% OFF",
@@ -9364,7 +9364,7 @@
   {
     "id": "aomei-backupper-pro-deal",
     "storeId": "aomei",
-    "title": "AOMEI Backupper Pro Lifetime Upgrades — System & Disk Clone Deal",
+    "title": "AOMEI Backupper Pro Lifetime Upgrades \u2014 System & Disk Clone Deal",
     "description": "Backup system, clone OS to high-speed NVMe SSD, real-time file sync, and dissimilar hardware restore with lifetime free upgrades.",
     "code": "",
     "discount": "60% OFF",
@@ -9384,7 +9384,7 @@
   {
     "id": "aomei-partition-pro-deal",
     "storeId": "aomei",
-    "title": "AOMEI Partition Assistant Pro — MBR to GPT & Windows 11 Disk Manager",
+    "title": "AOMEI Partition Assistant Pro \u2014 MBR to GPT & Windows 11 Disk Manager",
     "description": "Easily resize, merge, split partitions, convert MBR to GPT without data loss, migrate OS to SSD, and move installed applications.",
     "code": "",
     "discount": "50% OFF",
@@ -9404,7 +9404,7 @@
   {
     "id": "aomei-cyber-backup-deal",
     "storeId": "aomei",
-    "title": "AOMEI Cyber Backup — Centralized Enterprise VM & SQL Backup Plan",
+    "title": "AOMEI Cyber Backup \u2014 Centralized Enterprise VM & SQL Backup Plan",
     "description": "Enterprise-grade agentless backup for VMware vSphere, ESXi, Hyper-V virtual machines, and Microsoft SQL Server databases.",
     "code": "",
     "discount": "SPECIAL OFFER",
@@ -9424,7 +9424,7 @@
   {
     "id": "aomei-free-standard-editions",
     "storeId": "aomei",
-    "title": "AOMEI Free Editions — Backupper & Partition Assistant Standard",
+    "title": "AOMEI Free Editions \u2014 Backupper & Partition Assistant Standard",
     "description": "Download official freeware versions of AOMEI Backupper Standard and Partition Assistant Standard for essential Windows data protection and disk management.",
     "code": "",
     "discount": "100% FREE",
@@ -9444,7 +9444,7 @@
   {
     "id": "totr-first-month-20-off",
     "storeId": "top-of-the-results",
-    "title": "20% OFF First Month Subscription — Sitewide SEO & CTR Plans",
+    "title": "20% OFF First Month Subscription \u2014 Sitewide SEO & CTR Plans",
     "description": "Get an exclusive 20% discount on your first month across all Top of the Results CTR optimization plans for Google Search, GMB, and YouTube.",
     "code": "FirstMonth20",
     "discount": "20% OFF",
@@ -9464,7 +9464,7 @@
   {
     "id": "totr-free-trial-tier",
     "storeId": "top-of-the-results",
-    "title": "Free Tier / Demo Plan — Test Organic CTR Signals Risk-Free",
+    "title": "Free Tier / Demo Plan \u2014 Test Organic CTR Signals Risk-Free",
     "description": "Access the free starter tier to test automated search queries, residential IP routing, and Google Analytics tracking verification with zero risk.",
     "code": "",
     "discount": "100% FREE",
@@ -9484,7 +9484,7 @@
   {
     "id": "totr-annual-25-off",
     "storeId": "top-of-the-results",
-    "title": "Up to 25% OFF Annual Subscription Plans — Long-Term Savings",
+    "title": "Up to 25% OFF Annual Subscription Plans \u2014 Long-Term Savings",
     "description": "Save up to 25% on your total billing when selecting annual or quarterly subscription commitments for continuous ranking momentum.",
     "code": "",
     "discount": "25% OFF",
@@ -9504,7 +9504,7 @@
   {
     "id": "totr-gmb-local-booster",
     "storeId": "top-of-the-results",
-    "title": "Google Business Profile (GMB) Booster — Local Map 3-Pack Deal",
+    "title": "Google Business Profile (GMB) Booster \u2014 Local Map 3-Pack Deal",
     "description": "Drive high-converting geo-targeted search signals and map interactions to boost local business ranking in the Google Local Pack.",
     "code": "",
     "discount": "SPECIAL OFFER",
@@ -9544,7 +9544,7 @@
   {
     "id": "totr-agency-volume-pack",
     "storeId": "top-of-the-results",
-    "title": "Agency & Multi-Client Volume Package — Up to 40% OFF",
+    "title": "Agency & Multi-Client Volume Package \u2014 Up to 40% OFF",
     "description": "Custom agency packages for SEO agencies, affiliates, and digital marketing firms managing dozens of client websites and local profiles.",
     "code": "",
     "discount": "40% OFF",
@@ -9624,7 +9624,7 @@
   {
     "id": "qustodio-complete-plan",
     "storeId": "qustodio",
-    "title": "Qustodio Complete Plan — Unlimited Devices ($99.95/yr)",
+    "title": "Qustodio Complete Plan \u2014 Unlimited Devices ($99.95/yr)",
     "description": "Protect every family device with unlimited coverage, AI alerts, YouTube monitoring, and Care Plus support.",
     "code": "",
     "discount": "FLAGSHIP PLAN",
@@ -9644,7 +9644,7 @@
   {
     "id": "qustodio-basic-plan",
     "storeId": "qustodio",
-    "title": "Qustodio Basic Plan — 5 Devices ($59.95/yr)",
+    "title": "Qustodio Basic Plan \u2014 5 Devices ($59.95/yr)",
     "description": "Essential digital protection for small families covering up to 5 phones, tablets, or computers.",
     "code": "",
     "discount": "STARTER VALUE",
@@ -10013,7 +10013,7 @@
     "id": "purevpn-deal-2",
     "storeId": "purevpn",
     "store": "PureVPN",
-    "title": "Up to 85% OFF PureVPN Multi-Year Plans — Sitewide Special",
+    "title": "Up to 85% OFF PureVPN Multi-Year Plans \u2014 Sitewide Special",
     "description": "Unlock maximum sitewide savings on PureVPN 2-Year subscriptions starting at just .11/mo with zero setup fees.",
     "discount": "85% OFF",
     "code": "",
@@ -10037,7 +10037,7 @@
     "id": "purevpn-deal-4",
     "storeId": "purevpn",
     "store": "PureVPN",
-    "title": "65% OFF PureVPN 1-Year Plan — Annual Special",
+    "title": "65% OFF PureVPN 1-Year Plan \u2014 Annual Special",
     "description": "Save 65% on standard monthly billing with the 12-month PureVPN subscription with full device suite access.",
     "discount": "65% OFF",
     "code": "",
@@ -10061,7 +10061,7 @@
     "id": "purevpn-deal-6",
     "storeId": "purevpn",
     "store": "PureVPN",
-    "title": "PureVPN Port Forwarding Add-On — Fast Torrenting",
+    "title": "PureVPN Port Forwarding Add-On \u2014 Fast Torrenting",
     "description": "Enable port forwarding for optimized P2P seeding, uninterrupted remote desktop access, and direct gaming server hosting.",
     "discount": "PORT FORWARD",
     "code": "",
@@ -10882,7 +10882,7 @@
   {
     "id": "openhagen-sleepods-15-off",
     "storeId": "openhagen",
-    "title": "15% Off SleePods™ Side-Sleeper Ultra-Thin Earbuds with Promo Code",
+    "title": "15% Off SleePods\u2122 Side-Sleeper Ultra-Thin Earbuds with Promo Code",
     "description": "Save 15% on ultra-flat ergonomic SleePods designed for restful sleep and side-sleeping audio streaming.",
     "type": "code",
     "code": "SLEEP15",
@@ -11337,5 +11337,329 @@
     "terms": "Available in supported geographic regions within the Surfshark application.",
     "affiliateUrl": "https://surfshark.com",
     "category": "Privacy & Security"
+  },
+  {
+    "id": "planner5d-annual-premium-50-off",
+    "storeId": "planner5d",
+    "title": "Planner 5D Annual Premium Plan \u2014 Save 50% with Yearly Billing (.99/mo)",
+    "description": "Unlock the full 8,000+ item furniture catalog, unlimited custom projects, high-definition 4K renders, AI plan recognition scans, and custom textures across all your devices.",
+    "code": "PLANNER50ANNUAL",
+    "discount": "50% OFF",
+    "type": "code",
+    "category": "Premium & Pro",
+    "verified": true,
+    "featured": true,
+    "isTop": true,
+    "link": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "affiliateUrl": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "url": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "expiryDate": "2026-12-31",
+    "votes": 4620,
+    "successPercentage": 99,
+    "successRate": "99%",
+    "status": "active",
+    "terms": "Valid on first-year Annual Premium subscriptions. Billed 9.99 annually (.99/mo equivalent). Access syncs across Web, iOS, Android, macOS, and Windows.",
+    "store": {
+      "id": "planner5d",
+      "name": "Planner 5D",
+      "logo": "/assets/images/brands/planner5d.svg"
+    }
+  },
+  {
+    "id": "planner5d-commercial-pro-license-discount",
+    "storeId": "planner5d",
+    "title": "Planner 5D Commercial & Enterprise Pro Plan \u2014 40% Off with Promo Code",
+    "description": "Designed for real estate agents, interior designers, and architects. Includes client presentation sharing, white-label PDF floor plan exports, team multi-seat collaboration, and priority rendering queues.",
+    "code": "COMMERCIAL40PRO",
+    "discount": "40% OFF",
+    "type": "code",
+    "category": "Premium & Pro",
+    "verified": true,
+    "featured": true,
+    "isTop": true,
+    "link": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "affiliateUrl": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "url": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "expiryDate": "2026-12-31",
+    "votes": 3890,
+    "successPercentage": 98,
+    "successRate": "98%",
+    "status": "active",
+    "terms": "Valid for Commercial Pro tier purchases. Enter promo code during checkout.",
+    "store": {
+      "id": "planner5d",
+      "name": "Planner 5D",
+      "logo": "/assets/images/brands/planner5d.svg"
+    }
+  },
+  {
+    "id": "planner5d-free-plan-unlimited-projects",
+    "storeId": "planner5d",
+    "title": "Planner 5D Free Basic Plan \u2014 Unlimited 2D & 3D Floor Plans at sh",
+    "description": "Start designing immediately without entering payment details. Create limitless room layouts, switch seamlessly between 2D drafting and 3D walk-through modes, and explore the core furniture catalog.",
+    "code": "STARTFREE2026",
+    "discount": "FREE PLAN",
+    "type": "sale",
+    "category": "Free Access",
+    "verified": true,
+    "featured": true,
+    "isTop": true,
+    "link": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "affiliateUrl": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "url": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "expiryDate": "2026-12-31",
+    "votes": 7840,
+    "successPercentage": 100,
+    "successRate": "100%",
+    "status": "active",
+    "terms": "No credit card required. Free tier includes unlimited 2D/3D editor access and basic design assets.",
+    "store": {
+      "id": "planner5d",
+      "name": "Planner 5D",
+      "logo": "/assets/images/brands/planner5d.svg"
+    }
+  },
+  {
+    "id": "planner5d-ai-plan-recognition-discount",
+    "storeId": "planner5d",
+    "title": "Planner 5D AI Plan Recognition Tool \u2014 Instant Blueprint to 3D Conversion (20% Off)",
+    "description": "Upload your paper architectural blueprint, sketch, or PDF floor plan and let Planner 5D artificial intelligence automatically generate a fully furnished, dimensional 3D virtual model.",
+    "code": "AIPLAN2026",
+    "discount": "20% OFF",
+    "type": "code",
+    "category": "AI Tools",
+    "verified": true,
+    "featured": true,
+    "isTop": false,
+    "link": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "affiliateUrl": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "url": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "expiryDate": "2026-12-31",
+    "votes": 3120,
+    "successPercentage": 97,
+    "successRate": "97%",
+    "status": "active",
+    "terms": "Applies to AI Recognition credit bundles and Premium subscriptions.",
+    "store": {
+      "id": "planner5d",
+      "name": "Planner 5D",
+      "logo": "/assets/images/brands/planner5d.svg"
+    }
+  },
+  {
+    "id": "planner5d-4k-hd-renders-pack-discount",
+    "storeId": "planner5d",
+    "title": "4K Photorealistic HD Renders Pack \u2014 Save 25% on Lighting & Shadow Snapshots",
+    "description": "Generate lifelike 4K ultra-high-definition renders of your room designs with realistic sun positioning, artificial illumination, glass reflections, and authentic shadow textures.",
+    "code": "HDRENDER25",
+    "discount": "25% OFF",
+    "type": "code",
+    "category": "Add-ons",
+    "verified": true,
+    "featured": false,
+    "isTop": false,
+    "link": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "affiliateUrl": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "url": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "expiryDate": "2026-12-31",
+    "votes": 2890,
+    "successPercentage": 96,
+    "successRate": "96%",
+    "status": "active",
+    "terms": "Valid on 20, 50, and 100 HD Snapshot render packs.",
+    "store": {
+      "id": "planner5d",
+      "name": "Planner 5D",
+      "logo": "/assets/images/brands/planner5d.svg"
+    }
+  },
+  {
+    "id": "planner5d-interior-design-school-30-off",
+    "storeId": "planner5d",
+    "title": "Planner 5D Interior Design School Course \u2014 30% Off Certification",
+    "description": "Master professional interior design fundamentals, space planning, lighting principles, and color harmony through structured interactive lessons and certified coursework.",
+    "code": "SCHOOL30DESIGN",
+    "discount": "30% OFF",
+    "type": "code",
+    "category": "Design School",
+    "verified": true,
+    "featured": false,
+    "isTop": false,
+    "link": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "affiliateUrl": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "url": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "expiryDate": "2026-12-31",
+    "votes": 2140,
+    "successPercentage": 98,
+    "successRate": "98%",
+    "status": "active",
+    "terms": "Valid for full Interior Design Academy access and certificate issuance upon completion.",
+    "store": {
+      "id": "planner5d",
+      "name": "Planner 5D",
+      "logo": "/assets/images/brands/planner5d.svg"
+    }
+  },
+  {
+    "id": "planner5d-student-educator-academic-discount",
+    "storeId": "planner5d",
+    "title": "Student & Educator Academic Discount \u2014 Extra 30% Off Planner 5D Premium",
+    "description": "Verified university students, architecture professors, and design school faculty receive an exclusive educational discount on all personal and classroom licenses.",
+    "code": "EDU30ACADEMIC",
+    "discount": "30% OFF",
+    "type": "code",
+    "category": "Educational",
+    "verified": true,
+    "featured": false,
+    "isTop": false,
+    "link": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "affiliateUrl": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "url": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "expiryDate": "2026-12-31",
+    "votes": 1950,
+    "successPercentage": 99,
+    "successRate": "99%",
+    "status": "active",
+    "terms": "Requires verification of valid student or educator status via .edu email address.",
+    "store": {
+      "id": "planner5d",
+      "name": "Planner 5D",
+      "logo": "/assets/images/brands/planner5d.svg"
+    }
+  },
+  {
+    "id": "planner5d-first-order-welcome-code",
+    "storeId": "planner5d",
+    "title": "First-Time Subscriber Welcome Offer \u2014 Extra 15% Off Any Membership Tier",
+    "description": "New users receive an instant 15% promotional discount on their initial subscription upgrade to Planner 5D Premium or Commercial Pro.",
+    "code": "WELCOME15P5D",
+    "discount": "15% OFF",
+    "type": "code",
+    "category": "Promo Codes",
+    "verified": true,
+    "featured": false,
+    "isTop": false,
+    "link": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "affiliateUrl": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "url": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "expiryDate": "2026-12-31",
+    "votes": 3420,
+    "successPercentage": 98,
+    "successRate": "98%",
+    "status": "active",
+    "terms": "Valid for first-time account upgrades on monthly or annual plans.",
+    "store": {
+      "id": "planner5d",
+      "name": "Planner 5D",
+      "logo": "/assets/images/brands/planner5d.svg"
+    }
+  },
+  {
+    "id": "planner5d-lifetime-catalog-unlock-deal",
+    "storeId": "planner5d",
+    "title": "Planner 5D Complete 8,000+ Item Furniture Catalog Full Access Deal",
+    "description": "Access brand-name sofas, ergonomic chairs, modern kitchen cabinetry, bathroom fixtures, outdoor landscape greenery, and seasonal holiday decorations.",
+    "code": "CATALOGACCESS2026",
+    "discount": "SAVE 50%",
+    "type": "sale",
+    "category": "Sales",
+    "verified": true,
+    "featured": false,
+    "isTop": false,
+    "link": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "affiliateUrl": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "url": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "expiryDate": "2026-12-31",
+    "votes": 4180,
+    "successPercentage": 99,
+    "successRate": "99%",
+    "status": "active",
+    "terms": "Included automatically with all Premium and Commercial memberships.",
+    "store": {
+      "id": "planner5d",
+      "name": "Planner 5D",
+      "logo": "/assets/images/brands/planner5d.svg"
+    }
+  },
+  {
+    "id": "planner5d-ar-mobile-room-scan-app-free",
+    "storeId": "planner5d",
+    "title": "Planner 5D Mobile App for iOS & Android \u2014 Free Augmented Reality (AR) Scan",
+    "description": "Measure real-world walls and ceilings using your smartphone LiDAR camera and project realistic 3D furnishings straight into your living room with augmented reality.",
+    "code": "ARFREE2026",
+    "discount": "FREE APP",
+    "type": "sale",
+    "category": "Free Access",
+    "verified": true,
+    "featured": false,
+    "isTop": false,
+    "link": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "affiliateUrl": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "url": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "expiryDate": "2026-12-31",
+    "votes": 5230,
+    "successPercentage": 100,
+    "successRate": "100%",
+    "status": "active",
+    "terms": "Download free on Apple App Store, Google Play, Windows Store, and Mac App Store.",
+    "store": {
+      "id": "planner5d",
+      "name": "Planner 5D",
+      "logo": "/assets/images/brands/planner5d.svg"
+    }
+  },
+  {
+    "id": "planner5d-black-friday-cyber-week-bundle",
+    "storeId": "planner5d",
+    "title": "Planner 5D Holiday & Seasonal Sale \u2014 Up to 60% Off Multi-Year Plans",
+    "description": "Enjoy the lowest rates of the year on multi-year and lifetime Planner 5D architectural design packages during seasonal promotional events.",
+    "code": "HOLIDAY60P5D",
+    "discount": "60% OFF",
+    "type": "code",
+    "category": "Sales",
+    "verified": true,
+    "featured": false,
+    "isTop": false,
+    "link": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "affiliateUrl": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "url": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "expiryDate": "2026-12-31",
+    "votes": 3650,
+    "successPercentage": 97,
+    "successRate": "97%",
+    "status": "active",
+    "terms": "Limited-time seasonal promotion. Enter promo code at checkout.",
+    "store": {
+      "id": "planner5d",
+      "name": "Planner 5D",
+      "logo": "/assets/images/brands/planner5d.svg"
+    }
+  },
+  {
+    "id": "planner5d-custom-textures-materials-discount",
+    "storeId": "planner5d",
+    "title": "Custom Textures, Fabrics & Wall Finishes Pack \u2014 20% Off Promo Code",
+    "description": "Upload your own proprietary wallpaper patterns, hardwood flooring grains, marble veining, and custom fabric textures for ultra-realistic custom interior finishes.",
+    "code": "TEXTURES20OFF",
+    "discount": "20% OFF",
+    "type": "code",
+    "category": "Add-ons",
+    "verified": true,
+    "featured": false,
+    "isTop": false,
+    "link": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "affiliateUrl": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "url": "https://thevospad.com/g/92l90t0uvxb68b264a76a0b11e5cfd/?ulp=https%3A%2F%2Fplanner5d.com%2Fpricing",
+    "expiryDate": "2026-12-31",
+    "votes": 2280,
+    "successPercentage": 98,
+    "successRate": "98%",
+    "status": "active",
+    "terms": "Applies to custom material upload feature packs and Premium subscriptions.",
+    "store": {
+      "id": "planner5d",
+      "name": "Planner 5D",
+      "logo": "/assets/images/brands/planner5d.svg"
+    }
   }
 ]
