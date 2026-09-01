@@ -219,7 +219,10 @@ const cleanRoutes = [
   { route: '/store/1password', file: '1password-coupons.html' },
   { route: '/planner5d', file: 'planner5d-coupons.html' },
   { route: '/planner5d-coupons', file: 'planner5d-coupons.html' },
-  { route: '/store/planner5d', file: 'planner5d-coupons.html' }
+  { route: '/store/planner5d', file: 'planner5d-coupons.html' },
+  { route: '/elevenlabs', file: 'elevenlabs-coupons.html' },
+  { route: '/elevenlabs-coupons', file: 'elevenlabs-coupons.html' },
+  { route: '/store/elevenlabs', file: 'elevenlabs-coupons.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {
