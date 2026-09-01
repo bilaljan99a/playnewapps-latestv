@@ -794,7 +794,7 @@ class App {
             });
         }
 
-        // Populate Coupons Grid (Max 1 featured deal per store, top 15 for homepage UX/SEO)
+        // Populate Featured Deals Grid (Limit to curated top stores for clean visual UX & high conversion)
         const couponsGrid = document.querySelector('.coupon-grid');
         if (couponsGrid) {
             const getStoreId = (c) => {
@@ -803,39 +803,54 @@ class App {
                 return s || '';
             };
 
+            const priorityStores = [
+                '1password', 'expressvpn', 'protonvpn', 'sitpack', 'tiqets',
+                'lenovo', 'asaptickets', 'chicme', 'headway', 'keeper-security',
+                'redmagic', 'openhagen', 'aomei', 'gomlab', 'klook', 'walmart',
+                'f-secure', 'italiarail', 'purevpn', 'discovercars'
+            ];
+
             const seenStores = new Set();
             const featuredStoreDeals = [];
 
-            // Pass 1: Select isTop coupons (1 per store)
-            coupons.forEach(c => {
-                const sid = getStoreId(c);
-                if (sid && c.isTop && !seenStores.has(sid)) {
-                    seenStores.add(sid);
-                    featuredStoreDeals.push(c);
-                }
-            });
+            // Select best deal per priority store
+            for (const pStore of priorityStores) {
+                const deal = coupons.find(c => {
+                    const sid = String(getStoreId(c)).toLowerCase();
+                    return sid === pStore && (c.code || c.isTop);
+                }) || coupons.find(c => String(getStoreId(c)).toLowerCase() === pStore);
 
-            // Pass 2: Select first available coupon for remaining stores
-            coupons.forEach(c => {
-                const sid = getStoreId(c);
-                if (sid && !seenStores.has(sid)) {
-                    seenStores.add(sid);
-                    featuredStoreDeals.push(c);
+                if (deal && !seenStores.has(pStore)) {
+                    seenStores.add(pStore);
+                    featuredStoreDeals.push(deal);
                 }
-            });
+            }
 
-            // Limit to top 15 featured store deals for homepage performance & SEO
+            // Fill up to 15 if any remaining
+            if (featuredStoreDeals.length < 15) {
+                for (const c of coupons) {
+                    const sid = String(getStoreId(c)).toLowerCase();
+                    if (sid && !seenStores.has(sid)) {
+                        seenStores.add(sid);
+                        featuredStoreDeals.push(c);
+                        if (featuredStoreDeals.length >= 15) break;
+                    }
+                }
+            }
+
             const topCoupons = featuredStoreDeals.slice(0, 15);
-            couponsGrid.innerHTML = topCoupons.map(c => getComponents().createCouponCard(c)).join('');
+            couponsGrid.classList.add('home-deals-grid');
+            couponsGrid.innerHTML = topCoupons.map(c => getComponents().createHomeDealCard(c)).join('');
             this.attachCouponListeners(couponsGrid);
         }
 
-        // Populate Featured Partner Stores Grid
+        // Populate Featured Partner Stores Grid (Limit strictly to Top 20 featured stores)
         const storesGrid = document.getElementById('stores-grid');
         if (storesGrid) {
             const stores = await getDataService().getStores();
             if (stores && stores.length > 0) {
-                storesGrid.innerHTML = stores.map(s => getComponents().createStoreCard(s)).join('');
+                const featuredStores = stores.slice(0, 20);
+                storesGrid.innerHTML = featuredStores.map(s => getComponents().createStoreCard(s)).join('');
             }
         }
     }

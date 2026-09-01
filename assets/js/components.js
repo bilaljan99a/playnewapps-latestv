@@ -215,5 +215,52 @@ class Components {
             </a>
         `;
     }
+
+    static createHomeDealCard(item) {
+        const link = item.affiliateLink || item.affiliateUrl || item.url || (item.store && item.store.affiliateLink) || '#';
+        const cleanTitle = this.sanitizeText(item.title, item.code);
+        const cleanDiscount = this.sanitizeText(item.discount || (item.code ? 'PROMO' : 'DEAL'), item.code);
+        const storeObj = (typeof item.store === 'object' && item.store !== null) ? item.store : {};
+        const storeName = storeObj.name || item.storeName || item.storeId || item.store || 'Store';
+        const storeLogo = storeObj.logo || item.logo || item.storeLogo || '/assets/images/brands/default-store.svg';
+        const isExpired = item.status === 'expired';
+        const expiryText = item.expiryDate || 'Dec 31, 2026';
+
+        let actionHtml = '';
+        if (item.code) {
+            const masked = '••••';
+            actionHtml = `
+                <div class="code-reveal-wrapper home-reveal-wrapper" data-code="${item.code}" data-link="${link}">
+                    <span class="hidden-code-mask">${masked}</span>
+                    <button class="btn show-code-btn home-deal-btn" aria-label="Show Coupon Code and Copy">Get Code</button>
+                </div>`;
+        } else {
+            actionHtml = `<a href="${link}" target="_blank" rel="noopener sponsored" class="btn btn-primary home-deal-btn">Get Deal</a>`;
+        }
+
+        return `
+            <article class="home-deal-card ${isExpired ? 'opacity-60' : ''}">
+                <div class="home-deal-logo-box">
+                    <img src="${storeLogo}" alt="${storeName} Logo" width="140" height="48" loading="lazy" class="home-deal-logo-img" onerror="this.src='/assets/images/brands/default-store.svg'">
+                </div>
+                <div class="home-deal-body">
+                    <div class="home-deal-badge-row">
+                        <span class="home-deal-discount-tag">${cleanDiscount}</span>
+                        <span class="home-deal-verified-tag"><span class="material-icons-round" aria-hidden="true" style="font-size: 13px;">verified</span> Verified</span>
+                    </div>
+                    <h3 class="home-deal-title" title="${cleanTitle}">
+                        <a href="${link}" target="_blank" rel="noopener sponsored">${cleanTitle}</a>
+                    </h3>
+                    <div class="home-deal-expiry">
+                        <span class="material-icons-round" aria-hidden="true" style="font-size: 13px;">schedule</span>
+                        <span>Exp: ${expiryText}</span>
+                    </div>
+                    <div class="home-deal-action">
+                        ${actionHtml}
+                    </div>
+                </div>
+            </article>
+        `;
+    }
 }
 window.Components = Components;
