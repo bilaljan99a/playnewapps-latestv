@@ -44,53 +44,54 @@
 
     <!-- Schema Markup -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "Product",
+      "@id": "https://www.playnewapps.store/italki-coupons#product",
+      "name": "italki",
+      "image": "https://playnewapps.store/assets/images/brands/italki.svg",
+      "description": "italki is a global online language learning platform offering 1-on-1 lessons with 30,000+ native tutors across 150+ languages.",
+      "brand": {
+        "@type": "Brand",
+        "name": "italki"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "url": "https://flcoz.com/g/9ks8krpbbqb68b264a769911c0dd7a/",
+        "priceCurrency": "USD",
+        "lowPrice": "5.00",
+        "highPrice": "40.00",
+        "price": "0"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
         {
-          "@type": "Product",
-          "@id": "https://www.playnewapps.store/italki-coupons#product",
-          "name": "italki",
-          "image": "https://playnewapps.store/assets/images/brands/italki.svg",
-          "description": "italki is a global online language learning platform offering 1-on-1 lessons with 30,000+ native tutors across 150+ languages.",
-          "brand": {
-            "@type": "Brand",
-            "name": "italki"
-          },
-          "offers": {
-            "@type": "AggregateOffer",
-            "url": "https://flcoz.com/g/9ks8krpbbqb68b264a769911c0dd7a/",
-            "priceCurrency": "USD",
-            "lowPrice": "5.00",
-            "highPrice": "40.00"
-          }
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://playnewapps.store/"
         },
         {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://playnewapps.store/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Coupons",
-              "item": "https://playnewapps.store/coupon.html"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "italki Coupons",
-              "item": "https://www.playnewapps.store/italki-coupons"
-            }
-          ]
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Coupons",
+          "item": "https://playnewapps.store/coupon.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "italki Coupons",
+          "item": "https://www.playnewapps.store/italki-coupons"
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
