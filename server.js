@@ -222,7 +222,12 @@ const cleanRoutes = [
   { route: '/store/planner5d', file: 'planner5d-coupons.html' },
   { route: '/elevenlabs', file: 'elevenlabs-coupons.html' },
   { route: '/elevenlabs-coupons', file: 'elevenlabs-coupons.html' },
-  { route: '/store/elevenlabs', file: 'elevenlabs-coupons.html' }
+  { route: '/store/elevenlabs', file: 'elevenlabs-coupons.html' },
+  { route: '/steam-deck-review', file: 'steam-deck-review.html' },
+  { route: '/xbox-series-x-review', file: 'xbox-series-x-review.html' },
+  { route: '/windows-11-review', file: 'windows-11-review.html' },
+  { route: '/ps5-review', file: 'ps5-review.html' },
+  { route: '/oculus-quest-2-review', file: 'oculus-quest-2-review.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" width="1000" height="580" fill="none">
+    <rect width="1000" height="580" fill="#020817"/>
+    <circle cx="850" cy="120" r="300" fill="#0070D1" fill-opacity="0.1"/>
+    <rect x="50" y="35" width="220" height="30" rx="15" fill="#0070D1" fill-opacity="0.15" stroke="#0070D1" stroke-width="1"/>
+    <text x="70" y="55" font-family="-apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="12" font-weight="700" fill="#0070D1" letter-spacing="1">SONY PLAYSTATION LAB REVIEW</text>
+    <text x="50" y="105" font-family="-apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF">PS5 Slim Architecture &amp; DualSense Haptics</text>
+    <text x="50" y="130" font-family="-apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="14" fill="#94A3B8">Custom 5.5 GB/s PCIe 4.0 SSD • Tempest 3D AudioTech • DualSense Adaptive Triggers</text>
+
+    <!-- PS5 Slim & DualSense Illustration -->
+    <g transform="translate(100, 160)">
+      <!-- PS5 Slim Chassis -->
+      <g transform="translate(40, 10)">
+        <!-- Outer White Curved Plates -->
+        <path d="M30 0 C60 0 100 20 120 40 L120 310 C100 330 60 340 30 340 L10 320 L10 20 Z" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+        <path d="M0 20 L0 320 L20 340 C-10 340 -30 330 -40 310 L-40 40 C-30 20 -10 0 0 0 Z" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="2"/>
+        <!-- Inner Black Core -->
+        <rect x="5" y="15" width="105" height="310" rx="6" fill="#090D16" stroke="#0070D1" stroke-width="1.5"/>
+        <!-- Blue LED Accent strip -->
+        <path d="M15 25 L15 315" stroke="#0070D1" stroke-width="3" stroke-linecap="round"/>
+        <!-- Disc Drive Bump -->
+        <path d="M110 180 C135 180 145 200 145 250 C145 290 135 310 110 310 Z" fill="#F8FAFC" stroke="#E2E8F0"/>
+        <rect x="125" y="210" width="4" height="70" rx="2" fill="#090D16"/>
+      </g>
+
+      <!-- DualSense Controller Illustration -->
+      <g transform="translate(260, 40)">
+        <rect x="0" y="0" width="500" height="280" rx="20" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
+        <text x="30" y="40" font-family="Roboto, sans-serif" font-size="16" font-weight="900" fill="#FFFFFF">DualSense Wireless Controller Anatomy</text>
+        
+        <!-- Feature 1: Adaptive Triggers -->
+        <g transform="translate(30, 65)">
+          <rect x="0" y="0" width="205" height="90" rx="8" fill="#1E293B" stroke="#0070D1"/>
+          <text x="15" y="25" font-size="12" font-weight="800" fill="#38BDF8">ADAPTIVE TRIGGERS (L2/R2)</text>
+          <text x="15" y="45" font-size="11" fill="#94A3B8">Dynamic gear motor feedback</text>
+          <text x="15" y="65" font-size="11" font-weight="700" fill="#10B981">Simulates bow tension &amp; gun kick</text>
+        </g>
+
+        <!-- Feature 2: Haptic Actuators -->
+        <g transform="translate(260, 65)">
+          <rect x="0" y="0" width="205" height="90" rx="8" fill="#1E293B" stroke="#8B5CF6"/>
+          <text x="15" y="25" font-size="12" font-weight="800" fill="#C084FC">DUAL HAPTIC ACTUATORS</text>
+          <text x="15" y="45" font-size="11" fill="#94A3B8">Voice-coil precision vibration</text>
+          <text x="15" y="65" font-size="11" font-weight="700" fill="#10B981">Rumble mirrors rain &amp; gravel</text>
+        </g>
+
+        <!-- Feature 3: Custom SSD Throughput -->
+        <g transform="translate(30, 170)">
+          <rect x="0" y="0" width="435" height="85" rx="8" fill="#1E293B" stroke="#334155"/>
+          <text x="15" y="25" font-size="12" font-weight="800" fill="#F59E0B">CUSTOM 5.5 GB/s RAW (8-9 GB/s COMPRESSED) SSD</text>
+          <text x="15" y="48" font-size="12" fill="#E2E8F0">Fast-travel loads in Spider-Man 2: <tspan font-weight="900" fill="#10B981">1.2 Seconds</tspan> (Zero loading screens)</text>
+          <text x="15" y="70" font-size="11" fill="#94A3B8">M.2 NVMe SSD Expansion Slot supports up to 8TB PCIe 4.0 drives</text>
+        </g>
+      </g>
+    </g>
+  </svg>

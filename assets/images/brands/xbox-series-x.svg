@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" fill="none">
+    <rect width="240" height="60" rx="10" fill="#0F141C"/>
+    <circle cx="36" cy="30" r="18" fill="#107C10"/>
+    <path d="M26 21 C29 27 34 35 36 39 C38 35 43 27 46 21 C41 18 31 18 26 21 Z" fill="#0F141C"/>
+    <path d="M22 25 C20 31 22 38 27 42 C29 39 33 33 34 31 C29 28 25 26 22 25 Z" fill="#0F141C"/>
+    <path d="M50 25 C52 31 50 38 45 42 C43 39 39 33 38 31 C43 28 47 26 50 25 Z" fill="#0F141C"/>
+    <text x="68" y="37" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="900" fill="#FFFFFF" letter-spacing="-0.5">XBOX <tspan fill="#107C10">SERIES X</tspan></text>
+  </svg>

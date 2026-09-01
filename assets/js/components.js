@@ -17,7 +17,9 @@ class Components {
         const p = platform ? platform.toLowerCase() : '';
         if (p.includes('ios') || p.includes('apple')) return 'apple';
         if (p.includes('android')) return 'android';
-        if (p.includes('pc') || p.includes('windows')) return 'computer';
+        if (p.includes('pc') || p.includes('windows') || p.includes('desktop')) return 'computer';
+        if (p.includes('game') || p.includes('playstation') || p.includes('ps5') || p.includes('xbox') || p.includes('console') || p.includes('handheld') || p.includes('steamos')) return 'sports_esports';
+        if (p.includes('vr') || p.includes('quest') || p.includes('meta')) return 'view_in_ar';
         return 'apps';
     }
 

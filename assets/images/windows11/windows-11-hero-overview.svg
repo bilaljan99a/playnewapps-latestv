@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" width="1000" height="580" fill="none">
+    <rect width="1000" height="580" fill="#061224"/>
+    <rect x="50" y="35" width="220" height="30" rx="15" fill="#0078D4" fill-opacity="0.15" stroke="#0078D4" stroke-width="1"/>
+    <text x="70" y="55" font-family="-apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="12" font-weight="700" fill="#38BDF8" letter-spacing="1">MICROSOFT OS EVALUATION LAB</text>
+    <text x="50" y="105" font-family="-apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF">Windows 11 (24H2) Desktop &amp; AI Ecosystem</text>
+    <text x="50" y="130" font-family="-apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="14" fill="#94A3B8">Fluent Design 2.0 • DirectX 12 Ultimate • Microsoft Copilot • DirectStorage API</text>
+
+    <!-- Desktop Screen Simulation -->
+    <g transform="translate(100, 160)">
+      <rect x="0" y="0" width="800" height="350" rx="14" fill="#0B1729" stroke="#1E293B" stroke-width="2"/>
+      
+      <!-- Top Window Header -->
+      <rect x="0" y="0" width="800" height="36" rx="14" fill="#101F38"/>
+      <circle cx="20" cy="18" r="5" fill="#EF4444"/>
+      <circle cx="36" cy="18" r="5" fill="#F59E0B"/>
+      <circle cx="52" cy="18" r="5" fill="#10B981"/>
+      <text x="400" y="23" font-family="Roboto, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" text-anchor="middle">Windows 11 Pro — Version 24H2 Build 26100</text>
+
+      <!-- Center Snap Layout Visual -->
+      <g transform="translate(30, 55)">
+        <!-- Window 1: File Explorer with Tabs -->
+        <rect x="0" y="0" width="350" height="230" rx="10" fill="#0F172A" stroke="#0284C7" stroke-width="1.5"/>
+        <rect x="0" y="0" width="350" height="28" rx="10" fill="#1E293B"/>
+        <rect x="10" y="6" width="100" height="18" rx="4" fill="#0284C7"/>
+        <text x="20" y="19" font-size="10" font-weight="700" fill="#FFFFFF">📁 File Explorer</text>
+        <rect x="120" y="6" width="80" height="18" rx="4" fill="#334155"/>
+        <text x="130" y="19" font-size="10" font-weight="600" fill="#94A3B8">Games NVMe</text>
+
+        <!-- Quick Access items -->
+        <rect x="15" y="45" width="140" height="25" rx="4" fill="#1E293B"/>
+        <text x="25" y="62" font-size="11" fill="#E2E8F0">🖥️ Desktop</text>
+        <rect x="15" y="78" width="140" height="25" rx="4" fill="#1E293B"/>
+        <text x="25" y="95" font-size="11" fill="#E2E8F0">⚡ DirectStorage Drive</text>
+        <rect x="15" y="111" width="140" height="25" rx="4" fill="#1E293B"/>
+        <text x="25" y="128" font-size="11" fill="#E2E8F0">☁️ OneDrive 1TB</text>
+
+        <rect x="170" y="45" width="165" height="165" rx="8" fill="#13233D" stroke="#1E293B"/>
+        <text x="180" y="70" font-size="12" font-weight="800" fill="#38BDF8">DirectStorage 1.2</text>
+        <text x="180" y="90" font-size="10" fill="#94A3B8">GPU Asset Decompression</text>
+        <text x="180" y="120" font-size="20" font-weight="900" fill="#10B981">14.2 GB/s</text>
+        <text x="180" y="140" font-size="10" fill="#64748B">Load time: 0.8s (vs 6.2s)</text>
+      </g>
+
+      <!-- Window 2: Copilot AI Sidebar -->
+      <g transform="translate(410, 55)">
+        <rect x="0" y="0" width="350" height="230" rx="10" fill="#0F172A" stroke="#8B5CF6" stroke-width="1.5"/>
+        <rect x="0" y="0" width="350" height="28" rx="10" fill="#1E293B"/>
+        <text x="20" y="19" font-size="11" font-weight="800" fill="#C084FC">✨ Windows Copilot AI</text>
+        
+        <rect x="15" y="45" width="320" height="60" rx="8" fill="#1E1B4B" stroke="#4C1D95"/>
+        <text x="25" y="68" font-size="11" font-weight="700" fill="#E9D5FF">System Optimization Prompt:</text>
+        <text x="25" y="88" font-size="10" fill="#A78BFA">"Turn on Game Mode, HDR 1000 &amp; clean temporary cache"</text>
+
+        <rect x="15" y="120" width="320" height="90" rx="8" fill="#1E293B"/>
+        <text x="25" y="145" font-size="11" font-weight="700" fill="#38BDF8">Auto HDR &amp; Variable Refresh Rate</text>
+        <text x="25" y="165" font-size="10" fill="#94A3B8">Upgrades SDR games automatically to high-dynamic range</text>
+        <text x="25" y="190" font-size="11" font-weight="800" fill="#10B981">✓ Active on 240Hz OLED Display</text>
+      </g>
+
+      <!-- Centered Taskbar -->
+      <g transform="translate(0, 305)">
+        <rect x="0" y="0" width="800" height="45" rx="0" fill="#08101E" stroke="#1E293B" stroke-width="1"/>
+        <!-- Centered Icons -->
+        <g transform="translate(340, 8)">
+          <!-- Start Button -->
+          <rect x="0" y="0" width="28" height="28" rx="6" fill="#0078D4"/>
+          <path d="M6 6 H12 V12 H6 Z M16 6 H22 V12 H16 Z M6 16 H12 V22 H6 Z M16 16 H22 V22 H16 Z" fill="#FFFFFF"/>
+          <!-- Search -->
+          <rect x="36" y="0" width="28" height="28" rx="6" fill="#1E293B"/>
+          <text x="44" y="19" font-size="13" fill="#94A3B8">🔍</text>
+          <!-- Task View -->
+          <rect x="72" y="0" width="28" height="28" rx="6" fill="#1E293B"/>
+          <text x="80" y="19" font-size="13" fill="#94A3B8">🗂️</text>
+          <!-- Explorer -->
+          <rect x="108" y="0" width="28" height="28" rx="6" fill="#F59E0B" fill-opacity="0.2"/>
+          <text x="116" y="19" font-size="13" fill="#FBBF24">📁</text>
+        </g>
+      </g>
+    </g>
+  </svg>

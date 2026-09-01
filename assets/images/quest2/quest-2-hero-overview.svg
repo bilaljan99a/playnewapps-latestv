@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" width="1000" height="580" fill="none">
+    <rect width="1000" height="580" fill="#0A0E1A"/>
+    <circle cx="850" cy="120" r="300" fill="#1877F2" fill-opacity="0.08"/>
+    <rect x="50" y="35" width="240" height="30" rx="15" fill="#1877F2" fill-opacity="0.15" stroke="#1877F2" stroke-width="1"/>
+    <text x="70" y="55" font-family="-apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="12" font-weight="700" fill="#38BDF8" letter-spacing="1">VR HARDWARE TESTING LAB</text>
+    <text x="50" y="105" font-family="-apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF">Oculus / Meta Quest 2 Standalone VR Review</text>
+    <text x="50" y="130" font-family="-apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="14" fill="#94A3B8">Qualcomm Snapdragon XR2 • 1832x1920 Per Eye @ 120Hz • Inside-Out 6DOF Tracking</text>
+
+    <!-- Headset & Touch Controller Diagram -->
+    <g transform="translate(100, 160)">
+      <!-- Headset Illustration -->
+      <g transform="translate(30, 20)">
+        <rect x="0" y="0" width="300" height="180" rx="40" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+        <!-- Visor Front Curve -->
+        <path d="M30 30 C100 20 200 20 270 30 C285 60 285 120 270 150 C200 160 100 160 30 150 C15 120 15 60 30 30 Z" fill="#E2E8F0"/>
+        
+        <!-- 4 Wide-Angle Tracking Cameras -->
+        <circle cx="45" cy="45" r="8" fill="#0F172A" stroke="#64748B"/>
+        <circle cx="255" cy="45" r="8" fill="#0F172A" stroke="#64748B"/>
+        <circle cx="45" cy="135" r="8" fill="#0F172A" stroke="#64748B"/>
+        <circle cx="255" cy="135" r="8" fill="#0F172A" stroke="#64748B"/>
+
+        <!-- Soft Fabric Headstrap -->
+        <path d="M0 80 C-40 80 -60 70 -80 60" stroke="#94A3B8" stroke-width="20" stroke-linecap="round"/>
+        <path d="M300 80 C340 80 360 70 380 60" stroke="#94A3B8" stroke-width="20" stroke-linecap="round"/>
+        
+        <text x="150" y="100" font-family="Roboto, sans-serif" font-size="14" font-weight="900" fill="#0F172A" text-anchor="middle">Oculus Quest 2</text>
+        <text x="150" y="118" font-family="Roboto, sans-serif" font-size="10" font-weight="600" fill="#64748B" text-anchor="middle">503g Ultra-Lightweight VR</text>
+      </g>
+
+      <!-- Key Specs Panel -->
+      <g transform="translate(420, 10)">
+        <rect x="0" y="0" width="440" height="310" rx="16" fill="#111827" stroke="#1E293B" stroke-width="1.5"/>
+        <text x="25" y="35" font-family="Roboto, sans-serif" font-size="16" font-weight="900" fill="#FFFFFF">Optical &amp; Tracking Performance</text>
+
+        <!-- Spec 1 -->
+        <g transform="translate(25, 55)">
+          <rect x="0" y="0" width="390" height="50" rx="8" fill="#1E293B" stroke="#334155"/>
+          <text x="15" y="22" font-size="11" font-weight="700" fill="#38BDF8">FAST-SWITCH LCD DISPLAY</text>
+          <text x="15" y="40" font-size="13" font-weight="900" fill="#FFFFFF">1832 x 1920 pixels per eye @ up to 120Hz</text>
+        </g>
+
+        <!-- Spec 2 -->
+        <g transform="translate(25, 115)">
+          <rect x="0" y="0" width="390" height="50" rx="8" fill="#1E293B" stroke="#334155"/>
+          <text x="15" y="22" font-size="11" font-weight="700" fill="#10B981">6DOF INSIDE-OUT TRACKING</text>
+          <text x="15" y="40" font-size="13" font-weight="900" fill="#FFFFFF">Oculus Insight • Zero external sensor base stations</text>
+        </g>
+
+        <!-- Spec 3 -->
+        <g transform="translate(25, 175)">
+          <rect x="0" y="0" width="390" height="50" rx="8" fill="#1E293B" stroke="#334155"/>
+          <text x="15" y="22" font-size="11" font-weight="700" fill="#8B5CF6">PC VR CONNECTIVITY</text>
+          <text x="15" y="40" font-size="13" font-weight="900" fill="#FFFFFF">Oculus Link (USB 3.0 Type-C) &amp; Air Link (Wi-Fi 6)</text>
+        </g>
+
+        <!-- Spec 4 -->
+        <g transform="translate(25, 235)">
+          <rect x="0" y="0" width="390" height="55" rx="8" fill="#1E293B" stroke="#334155"/>
+          <text x="15" y="20" font-size="11" font-weight="700" fill="#F59E0B">BATTERY LIFE &amp; CHARGING</text>
+          <text x="15" y="38" font-size="13" font-weight="900" fill="#FFFFFF">2.0 – 2.5 hours gameplay • 10W USB-C fast charge</text>
+        </g>
+      </g>
+    </g>
+  </svg>

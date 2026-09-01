@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" width="1000" height="580" fill="none">
+    <rect width="1000" height="580" fill="#0A0E17"/>
+    <!-- Background Accents -->
+    <circle cx="850" cy="120" r="300" fill="#107C10" fill-opacity="0.08"/>
+    <rect x="50" y="35" width="220" height="30" rx="15" fill="#107C10" fill-opacity="0.15" stroke="#107C10" stroke-width="1"/>
+    <text x="70" y="55" font-family="-apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="12" font-weight="700" fill="#107C10" letter-spacing="1">MICROSOFT XBOX TESTING LAB</text>
+    <text x="50" y="105" font-family="-apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF">Xbox Series X Architecture &amp; Cooling</text>
+    <text x="50" y="130" font-family="-apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="14" fill="#94A3B8">12.15 TFLOPS AMD RDNA 2 GPU • 16GB GDDR6 • Xbox Velocity 1TB NVMe SSD</text>
+
+    <!-- Isometric Monolith Tower -->
+    <g transform="translate(150, 160)">
+      <!-- Main Monolith Box -->
+      <rect x="0" y="0" width="200" height="340" rx="8" fill="#121824" stroke="#1E293B" stroke-width="2"/>
+      
+      <!-- Top Convex Mesh & Green Glow -->
+      <rect x="10" y="10" width="180" height="40" rx="6" fill="#0B131E" stroke="#107C10" stroke-width="1.5"/>
+      <circle cx="30" cy="30" r="4" fill="#107C10"/>
+      <circle cx="50" cy="30" r="4" fill="#107C10"/>
+      <circle cx="70" cy="30" r="5" fill="#22C55E"/>
+      <circle cx="90" cy="30" r="6" fill="#4ADE80"/>
+      <circle cx="110" cy="30" r="6" fill="#4ADE80"/>
+      <circle cx="130" cy="30" r="5" fill="#22C55E"/>
+      <circle cx="150" cy="30" r="4" fill="#107C10"/>
+      <circle cx="170" cy="30" r="4" fill="#107C10"/>
+
+      <!-- Power Button -->
+      <circle cx="35" cy="80" r="10" fill="#0B131E" stroke="#107C10" stroke-width="1.5"/>
+      <path d="M30 76 L40 84 M40 76 L30 84" stroke="#22C55E" stroke-width="1.5"/>
+
+      <!-- 4K UHD Blu-ray Slot -->
+      <rect x="25" y="120" width="6" height="140" rx="3" fill="#020617" stroke="#334155" stroke-width="1"/>
+      <circle cx="28" cy="275" r="4" fill="#334155"/>
+
+      <!-- USB Port -->
+      <rect x="155" y="280" width="16" height="8" rx="2" fill="#020617" stroke="#334155"/>
+      <circle cx="163" cy="260" r="4" fill="#107C10"/>
+    </g>
+
+    <!-- Technical Specs & Performance Panel -->
+    <g transform="translate(420, 160)">
+      <rect x="0" y="0" width="480" height="340" rx="16" fill="#111827" stroke="#1E293B" stroke-width="1.5"/>
+      
+      <text x="30" y="40" font-family="Roboto, sans-serif" font-size="16" font-weight="900" fill="#FFFFFF">Velocity Architecture &amp; Next-Gen Metrics</text>
+      
+      <!-- Metric 1 -->
+      <g transform="translate(30, 65)">
+        <rect x="0" y="0" width="420" height="50" rx="8" fill="#1E293B" stroke="#334155"/>
+        <text x="15" y="22" font-size="12" font-weight="700" fill="#22C55E">GPU COMPUTE POWER</text>
+        <text x="15" y="40" font-size="14" font-weight="900" fill="#FFFFFF">12.15 TFLOPS, 52 CUs @ 1.825 GHz RDNA 2</text>
+        <text x="360" y="32" font-size="16" font-weight="900" fill="#22C55E">4K 120Hz</text>
+      </g>
+      
+      <!-- Metric 2 -->
+      <g transform="translate(30, 125)">
+        <rect x="0" y="0" width="420" height="50" rx="8" fill="#1E293B" stroke="#334155"/>
+        <text x="15" y="22" font-size="12" font-weight="700" fill="#38BDF8">QUICK RESUME ARCHITECTURE</text>
+        <text x="15" y="40" font-size="14" font-weight="900" fill="#FFFFFF">Instant Suspend/Resume 5-8 Games in 4-6s</text>
+        <text x="360" y="32" font-size="16" font-weight="900" fill="#38BDF8">&lt; 5 sec</text>
+      </g>
+
+      <!-- Metric 3 -->
+      <g transform="translate(30, 185)">
+        <rect x="0" y="0" width="420" height="50" rx="8" fill="#1E293B" stroke="#334155"/>
+        <text x="15" y="22" font-size="12" font-weight="700" fill="#F59E0B">MEMORY BANDWIDTH</text>
+        <text x="15" y="40" font-size="14" font-weight="900" fill="#FFFFFF">10GB @ 560 GB/s + 6GB @ 336 GB/s GDDR6</text>
+        <text x="340" y="32" font-size="16" font-weight="900" fill="#F59E0B">560 GB/s</text>
+      </g>
+
+      <!-- Metric 4 -->
+      <g transform="translate(30, 245)">
+        <rect x="0" y="0" width="420" height="50" rx="8" fill="#1E293B" stroke="#334155"/>
+        <text x="15" y="22" font-size="12" font-weight="700" fill="#EC4899">ACOUSTIC &amp; THERMAL PROFILE</text>
+        <text x="15" y="40" font-size="14" font-weight="900" fill="#FFFFFF">Vapor Chamber + 130mm Axial Fan Under Full Load</text>
+        <text x="355" y="32" font-size="16" font-weight="900" fill="#EC4899">24.2 dB</text>
+      </g>
+    </g>
+    
+    <!-- Footer Note -->
+    <text x="500" y="540" font-family="Roboto, sans-serif" font-size="13" font-weight="600" fill="#94A3B8" text-anchor="middle">Tested with Xbox Game Pass Ultimate, Dolby Vision HDR &amp; Dolby Atmos 3D Spatial Audio</text>
+  </svg>

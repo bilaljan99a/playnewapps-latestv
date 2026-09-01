@@ -2117,8 +2117,8 @@ App.renderReviewsDirectoryUI = async function(options = {}) {
                 );
             } else if (cat === 'games') {
                 filtered = filtered.filter(r => 
-                    r.categoryId === 'rpg' || r.categoryId === 'action' || 
-                    (r.platforms && r.platforms.some(p => p.toLowerCase().includes('playstation') || p.toLowerCase().includes('xbox')))
+                    r.categoryId === 'games' || r.categoryId === 'rpg' || r.categoryId === 'action' || 
+                    (r.platforms && r.platforms.some(p => p.toLowerCase().includes('playstation') || p.toLowerCase().includes('ps5') || p.toLowerCase().includes('xbox') || p.toLowerCase().includes('vr') || p.toLowerCase().includes('quest') || p.toLowerCase().includes('handheld') || p.toLowerCase().includes('steamos') || p.toLowerCase().includes('console')))
                 );
             } else {
                 filtered = filtered.filter(r => 

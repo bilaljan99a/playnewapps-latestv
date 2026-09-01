@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" fill="none">
+    <rect width="240" height="60" rx="10" fill="#0A0E1A"/>
+    <g transform="translate(18, 16)">
+      <rect x="0" y="0" width="28" height="28" rx="8" fill="#1877F2"/>
+      <ellipse cx="14" cy="14" rx="9" ry="6" fill="#0A0E1A"/>
+    </g>
+    <text x="58" y="37" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">Quest 2 <tspan fill="#1877F2">VR</tspan></text>
+  </svg>

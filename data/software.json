@@ -1,5 +1,59 @@
 [
     {
+        "id": "windows-11",
+        "title": "Windows 11 Review (2026): 24H2 Architecture, DirectStorage & Copilot AI",
+        "name": "Microsoft Windows 11",
+        "developer": "Microsoft Corporation",
+        "category": "Operating System & Productivity",
+        "rating": 4.7,
+        "reviewCount": 24800,
+        "summary": "Comprehensive review of Windows 11 version 24H2 evaluating DirectStorage 1.2 GPU asset decompression, hybrid CPU Thread Director optimizations, Snap Layouts, and Copilot AI integration.",
+        "logo": "/assets/images/brands/windows-11.svg",
+        "icon": "/assets/images/brands/windows-11.svg",
+        "heroImage": "/assets/images/windows-11/windows-11-diagram.svg",
+        "image": "/assets/images/windows-11/windows-11-diagram.svg",
+        "reviewUrl": "/windows-11-review",
+        "url": "/windows-11-review",
+        "affiliateUrl": "https://www.microsoft.com/windows",
+        "downloadUrl": "https://www.microsoft.com/software-download/windows11",
+        "pricing": {
+            "free": "Free Upgrade for Windows 10",
+            "license": "$139.99 (Home) / $199.99 (Pro)"
+        },
+        "pros": [
+            "DirectStorage 1.2 enables 14.2 GB/s near-instant game loading",
+            "Refined Intel Thread Director and AMD 3D V-Cache scheduling",
+            "Tabbed File Explorer and intuitive Snap Layouts multitasking",
+            "Deep Copilot AI integration and Rust kernel memory safety"
+        ],
+        "cons": [
+            "Strict TPM 2.0 and Secure Boot CPU hardware requirements",
+            "Some legacy Control Panel settings still scattered"
+        ],
+        "description": "Exhaustive benchmarks of Windows 11 version 24H2, DirectX 12 DirectStorage 1.2 GPU decompression, Intel/AMD hybrid CPU Thread Director, Snap Layouts, and Copilot AI integration.",
+        "categoryId": "pc",
+        "platforms": [
+            "Windows",
+            "PC",
+            "Desktop"
+        ],
+        "updatedAt": "2026-09-01",
+        "isFeatured": true,
+        "isTrending": true,
+        "badges": [
+            "Editor's Choice",
+            "Verified OS Benchmark"
+        ],
+        "tags": [
+            "windows 11",
+            "microsoft",
+            "operating system",
+            "directstorage",
+            "copilot ai",
+            "pc"
+        ]
+    },
+    {
         "id": "avast-antivirus",
         "name": "Avast Antivirus",
         "developer": "Avast (Gen Digital)",

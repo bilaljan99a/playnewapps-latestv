@@ -1,5 +1,160 @@
 [
     {
+        "id": "steam-deck",
+        "title": "Steam Deck Review (2026): Handheld PC Gaming & OLED Benchmark",
+        "name": "Valve Steam Deck",
+        "description": "Comprehensive review of Valve's Steam Deck & OLED. In-depth benchmarks of AMD Zen 2/RDNA 2 APU, SteamOS 3.5 Proton compatibility, battery optimization, and 15,000+ verified PC games.",
+        "summary": "Valve's Steam Deck delivers transformative portable PC gaming power with custom AMD Aerith Zen 2/RDNA 2 silicon, SteamOS 3.5 Proton compatibility, and vibrant 90Hz OLED visuals.",
+        "icon": "/assets/images/brands/steam-deck.svg",
+        "banner": "/assets/images/steam-deck/steam-deck-diagram.svg",
+        "rating": 4.9,
+        "categoryId": "games",
+        "developer": "Valve Corporation",
+        "version": "OLED & LCD Edition (2026)",
+        "size": "64GB / 256GB / 512GB / 1TB",
+        "platforms": [
+            "Handheld",
+            "SteamOS",
+            "PC"
+        ],
+        "license": "Hardware / SteamOS",
+        "updatedAt": "2026-09-01",
+        "badges": [
+            "Editor's Choice",
+            "Verified Benchmark"
+        ],
+        "isFeatured": true,
+        "isTrending": true,
+        "reviewUrl": "/steam-deck-review",
+        "authorId": "alex-tech",
+        "tags": [
+            "steam deck",
+            "valve",
+            "handheld gaming",
+            "pc gaming",
+            "steamos",
+            "oled"
+        ],
+        "reviewsCount": "32.5K",
+        "downloadsCount": "5M+ Units"
+    },
+    {
+        "id": "xbox-series-x",
+        "title": "Xbox Series X Review (2026): 4K 120Hz, Quick Resume & Game Pass",
+        "name": "Xbox Series X",
+        "description": "In-depth analysis of 12.15 TFLOPS RDNA 2 GPU, Quick Resume instant game switching, Xbox Velocity SSD, whisper-quiet vapor chamber cooling, and Game Pass Ultimate value.",
+        "summary": "Microsoft's flagship Xbox Series X delivers raw 12.15 TFLOPS 4K 60/120Hz power, instant Quick Resume multi-game switching, and exceptional Game Pass Ultimate backward compatibility value.",
+        "icon": "/assets/images/brands/xbox-series-x.svg",
+        "banner": "/assets/images/xbox-series-x/xbox-series-x-diagram.svg",
+        "rating": 4.8,
+        "categoryId": "games",
+        "developer": "Microsoft Gaming",
+        "version": "1TB / 2TB Edition (2026)",
+        "size": "1TB / 2TB NVMe SSD",
+        "platforms": [
+            "Console",
+            "Xbox Series X",
+            "4K Gaming"
+        ],
+        "license": "Hardware / Console",
+        "updatedAt": "2026-09-01",
+        "badges": [
+            "Flagship Console",
+            "Verified Benchmark"
+        ],
+        "isFeatured": true,
+        "isTrending": true,
+        "reviewUrl": "/xbox-series-x-review",
+        "authorId": "alex-tech",
+        "tags": [
+            "xbox series x",
+            "microsoft",
+            "console gaming",
+            "4k 120hz",
+            "game pass",
+            "quick resume"
+        ],
+        "reviewsCount": "48.2K",
+        "downloadsCount": "30M+ Units"
+    },
+    {
+        "id": "ps5",
+        "title": "PS5 Review (2026): DualSense Haptics, 5.5GB/s SSD & 4K Exclusives",
+        "name": "Sony PlayStation 5",
+        "description": "Comprehensive review of Sony PS5 & PS5 Slim. DualSense voice-coil haptics, adaptive triggers, 5.5 GB/s ultra-fast SSD, Tempest 3D Audio, and the industry-defining first-party exclusive games.",
+        "summary": "Sony's PlayStation 5 redefines next-gen console immersion with revolutionary DualSense haptic feedback, instantaneous 5.5 GB/s SSD loading, and industry-leading exclusive titles.",
+        "icon": "/assets/images/brands/ps5.svg",
+        "banner": "/assets/images/ps5/ps5-diagram.svg",
+        "rating": 4.9,
+        "categoryId": "games",
+        "developer": "Sony Interactive Entertainment",
+        "version": "PS5 Slim / Standard (2026)",
+        "size": "1TB Custom PCIe 4.0 SSD",
+        "platforms": [
+            "Console",
+            "PlayStation 5",
+            "4K Gaming"
+        ],
+        "license": "Hardware / Console",
+        "updatedAt": "2026-09-01",
+        "badges": [
+            "Editor's Choice",
+            "Next-Gen Console"
+        ],
+        "isFeatured": true,
+        "isTrending": true,
+        "reviewUrl": "/ps5-review",
+        "authorId": "alex-tech",
+        "tags": [
+            "ps5",
+            "playstation 5",
+            "sony",
+            "dualsense",
+            "console",
+            "4k gaming"
+        ],
+        "reviewsCount": "65.4K",
+        "downloadsCount": "60M+ Units"
+    },
+    {
+        "id": "oculus-quest-2",
+        "title": "Oculus Quest 2 Review (2026): Standalone VR & Wireless PC VR Tested",
+        "name": "Meta Oculus Quest 2",
+        "description": "In-depth testing of Snapdragon XR2 standalone performance, 1832x1920 120Hz display, 6DOF inside-out tracking, wireless PC VR streaming over Air Link, and 2026 budget value.",
+        "summary": "Meta's Oculus Quest 2 remains the premier budget gateway into virtual reality with wireless standalone 6DOF tracking, 120Hz display clarity, and seamless PC VR Air Link tethering.",
+        "icon": "/assets/images/brands/oculus-quest-2.svg",
+        "banner": "/assets/images/oculus-quest-2/oculus-quest-2-diagram.svg",
+        "rating": 4.7,
+        "categoryId": "games",
+        "developer": "Meta Reality Labs",
+        "version": "128GB / 256GB Edition",
+        "size": "128GB / 256GB Flash",
+        "platforms": [
+            "VR Headset",
+            "Standalone VR",
+            "PC VR"
+        ],
+        "license": "Hardware / Meta Horizon OS",
+        "updatedAt": "2026-09-01",
+        "badges": [
+            "Best Value VR",
+            "Verified Review"
+        ],
+        "isFeatured": true,
+        "isTrending": false,
+        "reviewUrl": "/oculus-quest-2-review",
+        "authorId": "alex-tech",
+        "tags": [
+            "oculus quest 2",
+            "meta quest",
+            "vr headset",
+            "virtual reality",
+            "air link"
+        ],
+        "reviewsCount": "85.1K",
+        "downloadsCount": "20M+ Units"
+    },
+    {
         "id": "crossout",
         "title": "Crossout: 2026 In-Depth Game Review",
         "description": "Post-apocalyptic vehicular combat MMO featuring custom vehicle crafting from hundreds of modular parts, real-time positional destruction, 8v8 PvP, and market economy.",
