@@ -1,0 +1,26 @@
+{
+  "name": "PlayNewApps - Verified Promo Codes, Deals & Software Discounts",
+  "short_name": "PlayNewApps",
+  "description": "Discover verified coupons, software promo codes, and discount deals for top global brands.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#7c3aed",
+  "icons": [
+    {
+      "src": "/assets/images/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

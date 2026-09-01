@@ -73,6 +73,59 @@ app.use((req, res, next) => {
   next();
 });
 
+// Explicit 301 Permanent Redirects for Legacy, Alternative & Crawler URLs
+const legacyRedirects = {
+  '/categories.html': '/category',
+  '/categories': '/category',
+  '/coupons.html': '/stores',
+  '/coupons': '/stores',
+  '/blog.html': '/reviews',
+  '/blog': '/reviews',
+  '/trending.html': '/deal',
+  '/trending': '/deal',
+  '/deals': '/deal',
+  '/privacy-policy': '/privacy',
+  '/terms-of-service': '/terms',
+  '/disclosure': '/affiliate',
+  '/movavi-video-suite-coupons.html': '/movavi-coupons',
+  '/movavi-video-suite-coupons': '/movavi-coupons',
+  '/filmora-14-coupons.html': '/wondershare-filmora-coupons',
+  '/filmora-14': '/wondershare-filmora-coupons',
+  '/drfone-coupons.html': '/wondershare-drfone-review',
+  '/drfone-coupons': '/wondershare-drfone-review',
+  '/drfone': '/wondershare-drfone-review',
+  '/aliexpress-coupons.html': '/store?id=aliexpress',
+  '/aliexpress-coupons': '/store?id=aliexpress',
+  '/aliexpress': '/store?id=aliexpress',
+  '/nordvpn-coupons.html': '/store?id=nordvpn',
+  '/nordvpn-coupons': '/store?id=nordvpn',
+  '/nordvpn': '/store?id=nordvpn',
+  '/canva-coupons.html': '/canva-review',
+  '/canva-coupons': '/canva-review',
+  '/wps-office-coupons.html': '/wps-office',
+  '/wps-office-coupons': '/wps-office',
+  '/hostinger-coupons.html': '/store?id=hostinger',
+  '/hostinger-coupons': '/store?id=hostinger',
+  '/hostinger': '/store?id=hostinger',
+  '/war-thunder.html': '/store?id=war-thunder',
+  '/war-thunder': '/store?id=war-thunder',
+  '/notta-ai-coupons.html': '/store?id=notta-ai',
+  '/notta-ai-coupons': '/store?id=notta-ai',
+  '/notta-ai': '/store?id=notta-ai',
+  '/cdn-cgi/l/email-protection': '/contact'
+};
+
+app.use((req, res, next) => {
+  const cleanPath = (req.path || '').replace(/\/+$/, '') || '/';
+  if (legacyRedirects[cleanPath]) {
+    return res.redirect(301, legacyRedirects[cleanPath]);
+  }
+  if (cleanPath.startsWith('/category/')) {
+    return res.sendFile(path.join(__dirname, 'category.html'));
+  }
+  next();
+});
+
 // Explicit Extensionless Page Routes for New Website Architecture
 const cleanRoutes = [
   { route: '/contact', file: 'contact.html' },
@@ -84,10 +137,15 @@ const cleanRoutes = [
   { route: '/terms', file: 'terms.html' },
   { route: '/affiliate', file: 'affiliate.html' },
   { route: '/category', file: 'category.html' },
+  { route: '/categories', file: 'category.html' },
+  { route: '/blog', file: 'reviews.html' },
+  { route: '/deals', file: 'deal.html' },
   { route: '/store', file: 'store.html' },
   { route: '/review', file: 'review.html' },
   { route: '/author', file: 'author.html' },
   { route: '/deal', file: 'deal.html' },
+  { route: '/manifest.json', file: 'manifest.json' },
+  { route: '/favicon.ico', file: 'favicon.ico' },
   { route: '/hide-expert-vpn', file: 'hide-expert-vpn-coupons.html' },
   { route: '/hide-expert-vpn-coupons', file: 'hide-expert-vpn-coupons.html' },
   { route: '/lennuabi-coupons', file: 'lennuabi-coupons.html' },

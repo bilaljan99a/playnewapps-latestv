@@ -17,3 +17,45 @@
 /archive/* /410.html 410!
 /p/* /410.html 410!
 /b/* /410.html 410!
+
+# 301 Permanent Redirects for Clean SEO Structure
+/categories.html /category 301
+/categories /category 301
+/category/* /category.html 200
+/coupons.html /stores 301
+/coupons /stores 301
+/blog.html /reviews 301
+/blog /reviews 301
+/trending.html /deal 301
+/trending /deal 301
+/deals /deal 301
+/privacy-policy /privacy 301
+/terms-of-service /terms 301
+/disclosure /affiliate 301
+/movavi-video-suite-coupons.html /movavi-coupons 301
+/movavi-video-suite-coupons /movavi-coupons 301
+/filmora-14-coupons.html /wondershare-filmora-coupons 301
+/filmora-14 /wondershare-filmora-coupons 301
+/drfone-coupons.html /wondershare-drfone-review 301
+/drfone-coupons /wondershare-drfone-review 301
+/drfone /wondershare-drfone-review 301
+/aliexpress-coupons.html /store?id=aliexpress 301
+/aliexpress-coupons /store?id=aliexpress 301
+/aliexpress /store?id=aliexpress 301
+/nordvpn-coupons.html /store?id=nordvpn 301
+/nordvpn-coupons /store?id=nordvpn 301
+/nordvpn /store?id=nordvpn 301
+/canva-coupons.html /canva-review 301
+/canva-coupons /canva-review 301
+/wps-office-coupons.html /wps-office 301
+/wps-office-coupons /wps-office 301
+/hostinger-coupons.html /store?id=hostinger 301
+/hostinger-coupons /store?id=hostinger 301
+/hostinger /store?id=hostinger 301
+/war-thunder.html /store?id=war-thunder 301
+/war-thunder /store?id=war-thunder 301
+/notta-ai-coupons.html /store?id=notta-ai 301
+/notta-ai-coupons /store?id=notta-ai 301
+/notta-ai /store?id=notta-ai 301
+/cdn-cgi/l/email-protection /contact 301
+
