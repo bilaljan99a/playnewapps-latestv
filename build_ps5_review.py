@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+import re, os
+
+content = """<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
@@ -716,3 +718,7 @@
     </div>
 </body>
 </html>
+"""
+
+from generate_flagship_reviews import write_page
+write_page('ps5-review.html', content)
