@@ -680,14 +680,20 @@ class App {
     }
 
     static async initHomePage() {
+        // 1. Immediately attach interactive coupon listeners to pre-rendered HTML cards
+        const couponsGrid = document.querySelector('.coupon-grid');
+        if (couponsGrid && couponsGrid.children.length > 0) {
+            this.attachCouponListeners(couponsGrid);
+        }
+
         const [allReviews, coupons] = await Promise.all([
             getDataService().getAllReviews(),
             getDataService().getCoupons()
         ]);
 
-        // Populate Trending Slider
+        // Populate Trending Slider if empty
         const sliderTrack = document.getElementById('slider-track');
-        if (sliderTrack && allReviews && allReviews.length > 0) {
+        if (sliderTrack && (!sliderTrack.children.length || sliderTrack.children.length === 0) && allReviews && allReviews.length > 0) {
             const trending = allReviews.filter(r => r.isTrending);
             if (trending.length > 0) {
                 sliderTrack.innerHTML = trending.map(item => getComponents().createSlideCard(item)).join('');
@@ -760,7 +766,7 @@ class App {
         };
 
         if (reviewsGrid) {
-            updateGrid();
+            renderPagination(filteredReviews.length);
 
             if (sortSelect) {
                 sortSelect.addEventListener('change', (e) => {
@@ -794,9 +800,8 @@ class App {
             });
         }
 
-        // Populate Featured Deals Grid (Limit to curated top stores for clean visual UX & high conversion)
-        const couponsGrid = document.querySelector('.coupon-grid');
-        if (couponsGrid) {
+        // Populate Featured Deals Grid
+        if (couponsGrid && (!couponsGrid.children.length || couponsGrid.children.length === 0)) {
             const getStoreId = (c) => {
                 const s = c.storeId || c.store_id || c.store;
                 if (typeof s === 'object' && s !== null) return s.id;
@@ -813,7 +818,6 @@ class App {
             const seenStores = new Set();
             const featuredStoreDeals = [];
 
-            // Select best deal per priority store
             for (const pStore of priorityStores) {
                 const deal = coupons.find(c => {
                     const sid = String(getStoreId(c)).toLowerCase();
@@ -826,7 +830,6 @@ class App {
                 }
             }
 
-            // Fill up to 15 if any remaining
             if (featuredStoreDeals.length < 15) {
                 for (const c of coupons) {
                     const sid = String(getStoreId(c)).toLowerCase();
@@ -842,11 +845,13 @@ class App {
             couponsGrid.classList.add('home-deals-grid');
             couponsGrid.innerHTML = topCoupons.map(c => getComponents().createHomeDealCard(c)).join('');
             this.attachCouponListeners(couponsGrid);
+        } else if (couponsGrid) {
+            this.attachCouponListeners(couponsGrid);
         }
 
-        // Populate Featured Partner Stores Grid (Limit strictly to Top 20 featured stores)
+        // Populate Featured Partner Stores Grid if empty
         const storesGrid = document.getElementById('stores-grid');
-        if (storesGrid) {
+        if (storesGrid && (!storesGrid.children.length || storesGrid.children.length === 0)) {
             const stores = await getDataService().getStores();
             if (stores && stores.length > 0) {
                 const featuredStores = stores.slice(0, 20);

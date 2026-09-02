@@ -1,59 +1,68 @@
 class DataService {
     static _cache = new Map();
     static _inFlight = new Map();
+    static CACHE_KEY_PREFIX = 'pna_data_v5_';
+    static CACHE_TTL_MS = 5 * 60 * 1000; // 5 minutes cache
 
-    static _cleanLegacyCaches() {
+    static _cleanOldCaches() {
         try {
-            if (typeof sessionStorage !== 'undefined') {
-                const keysToRemove = [];
-                for (let i = 0; i < sessionStorage.length; i++) {
-                    const k = sessionStorage.key(i);
-                    if (k && (k.startsWith('pna_cache_') || k.includes('/data/'))) {
-                        keysToRemove.push(k);
-                    }
+            if (typeof localStorage === 'undefined') return;
+            for (let i = localStorage.length - 1; i >= 0; i--) {
+                const key = localStorage.key(i);
+                if (key && key.startsWith('pna_data_') && !key.startsWith(this.CACHE_KEY_PREFIX)) {
+                    localStorage.removeItem(key);
                 }
-                keysToRemove.forEach(k => sessionStorage.removeItem(k));
             }
         } catch (e) {}
     }
 
-    static async fetchJSON(path) {
-        this._cleanLegacyCaches();
+    static _getStorageCache(path) {
+        try {
+            if (typeof localStorage === 'undefined') return null;
+            this._cleanOldCaches();
+            const key = this.CACHE_KEY_PREFIX + path;
+            const item = localStorage.getItem(key);
+            if (!item) return null;
+            const parsed = JSON.parse(item);
+            if (parsed && parsed.data && (Date.now() - (parsed.time || 0) < this.CACHE_TTL_MS)) {
+                return parsed.data;
+            }
+        } catch (e) {}
+        return null;
+    }
 
-        // Check in-memory cache for the current page execution
+    static _setStorageCache(path, data) {
+        try {
+            if (typeof localStorage === 'undefined') return;
+            const key = this.CACHE_KEY_PREFIX + path;
+            localStorage.setItem(key, JSON.stringify({
+                time: Date.now(),
+                data: data
+            }));
+        } catch (e) {}
+    }
+
+    static async fetchJSON(path) {
+        // 1. Check in-memory cache for instant zero-latency return
         if (this._cache.has(path)) {
             return this._cache.get(path);
         }
 
-        // Check if request is already in flight (deduplicate simultaneous requests)
+        // 2. Check localStorage cache for instant return across sessions
+        const storageData = this._getStorageCache(path);
+        if (storageData) {
+            this._cache.set(path, storageData);
+            // Non-blocking background revalidation
+            this._revalidateInBackground(path);
+            return storageData;
+        }
+
+        // 3. Deduplicate simultaneous network requests
         if (this._inFlight.has(path)) {
             return await this._inFlight.get(path);
         }
 
-        const fetchPromise = (async () => {
-            const candidatePaths = [
-                path.startsWith('/') ? path : '/' + path,
-                path.startsWith('/') ? path.slice(1) : path,
-                '.' + (path.startsWith('/') ? path : '/' + path)
-            ];
-
-            const cacheBuster = `_t=${Date.now()}`;
-            for (const p of candidatePaths) {
-                try {
-                    const fetchUrl = p.includes('?') ? `${p}&${cacheBuster}` : `${p}?${cacheBuster}`;
-                    const response = await fetch(fetchUrl, { cache: 'no-store' });
-                    if (response.ok) {
-                        const data = await response.json();
-                        this._cache.set(path, data);
-                        return data;
-                    }
-                } catch (err) {
-                    // Try next fallback path
-                }
-            }
-            return null;
-        })();
-
+        const fetchPromise = this._executeFetch(path);
         this._inFlight.set(path, fetchPromise);
         try {
             const result = await fetchPromise;
@@ -61,6 +70,41 @@ class DataService {
         } finally {
             this._inFlight.delete(path);
         }
+    }
+
+    static async _executeFetch(path) {
+        const candidatePaths = [
+            path.startsWith('/') ? path : '/' + path,
+            path.startsWith('/') ? path.slice(1) : path,
+            '.' + (path.startsWith('/') ? path : '/' + path)
+        ];
+
+        for (const p of candidatePaths) {
+            try {
+                const response = await fetch(p);
+                if (response.ok) {
+                    const data = await response.json();
+                    this._cache.set(path, data);
+                    this._setStorageCache(path, data);
+                    return data;
+                }
+            } catch (err) {
+                // Try next fallback path
+            }
+        }
+        return null;
+    }
+
+    static _revalidateInBackground(path) {
+        setTimeout(async () => {
+            try {
+                const data = await this._executeFetch(path);
+                if (data) {
+                    this._cache.set(path, data);
+                    this._setStorageCache(path, data);
+                }
+            } catch (e) {}
+        }, 1000);
     }
 
     static async getApps() { return (await this.fetchJSON('/data/apps.json')) || []; }

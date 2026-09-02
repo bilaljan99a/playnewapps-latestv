@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" width="100%" height="100%" fill="none">
+  <!-- MyHeritage Icon Medallion -->
+  <g transform="translate(10, 10)">
+    <!-- Outer thick circular ring -->
+    <circle cx="40" cy="40" r="36" fill="none" stroke="#2D3139" stroke-width="8" />
+    <!-- Stylized inner family tree / dual silhouette profile -->
+    <path d="M40 22 C46 22 51 27 51 33 C51 38 48 42 44 44 C53 47 58 55 58 64 L48 64 C48 57 44 52 40 52 C36 52 32 57 32 64 L22 64 C22 55 27 47 36 44 C32 42 29 38 29 33 C29 27 34 22 40 22 Z" fill="#2D3139" />
+    <circle cx="40" cy="33" r="6" fill="#2D3139" />
+  </g>
+
+  <!-- "MyHeritage" Text -->
+  <text x="102" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="38" font-weight="800" fill="#2D3139" letter-spacing="-1">MyHeritage</text>
+
+  <!-- "DNA" Colored Logo Mark -->
+  <!-- D: Orange rounded play/delta shape -->
+  <g transform="translate(315, 27)">
+    <path d="M4 6 C4 2.5 7.8 0.5 10.8 2.3 L29.2 13.5 C32 15.2 32 19.3 29.2 21 L10.8 32.2 C7.8 34 4 32 4 28.5 Z" fill="#FFA352" />
+  </g>
+
+  <!-- N: Bright Coral/Red -->
+  <g transform="translate(346, 27)">
+    <path d="M4 33 L4 2 C4 0.9 4.9 0 6 0 L8.5 0 C9.3 0 10.1 0.4 10.5 1.1 L23.5 24.5 L23.5 2 C23.5 0.9 24.4 0 25.5 0 L27.5 0 C28.6 0 29.5 0.9 29.5 2 L29.5 33 C29.5 34.1 28.6 35 27.5 35 L25 35 C24.2 35 23.4 34.6 23 33.9 L10 10.5 L10 33 C10 34.1 9.1 35 8 35 L6 35 C4.9 35 4 34.1 4 33 Z" fill="#FF4438" />
+  </g>
+
+  <!-- A: Violet / Purple stylized chevron / lambda -->
+  <g transform="translate(378, 27)">
+    <path d="M2.2 33.2 L14.3 2.1 C14.7 1.1 15.7 0.5 16.8 0.5 C17.9 0.5 18.9 1.1 19.3 2.1 L31.4 33.2 C31.8 34.3 31.1 35.5 29.9 35.5 L26.2 35.5 C25.4 35.5 24.6 35 24.3 34.2 L16.8 14.5 L9.3 34.2 C9 35 8.2 35.5 7.4 35.5 L3.7 35.5 C2.5 35.5 1.8 34.3 2.2 33.2 Z" fill="#A83BE0" />
+  </g>
+</svg>

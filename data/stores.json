@@ -1,5 +1,68 @@
 [
   {
+    "id": "myheritage",
+    "name": "MyHeritage DNA",
+    "icon": "biotech",
+    "logo": "/assets/images/brands/myheritage-dna.svg",
+    "website": "https://www.myheritage.com/",
+    "storeUrl": "/myheritage-coupons",
+    "affiliateUrl": "https://naiawork.com/g/kmz7w822ucb68b264a76e403a0fd30/",
+    "affiliateLink": "https://naiawork.com/g/kmz7w822ucb68b264a76e403a0fd30/",
+    "rating": 4.94,
+    "votes": 84320,
+    "seoTitle": "MyHeritage DNA Coupon Codes & Promo Deals (2026) – Up to 75% Off",
+    "seoDescription": "Save up to 75% on MyHeritage DNA kits, DNA Traits, 14-day free trials, and Complete genealogy plans with verified 2026 coupon codes and discount offers.",
+    "about": "MyHeritage is a leading global discovery platform for exploring family history, genetic genealogy, and historical heritage. With a community of over 104 million registered users worldwide, a database of 20+ billion historical records, and cutting-edge DNA testing technology covering 2,114+ geographic regions, MyHeritage empowers families to uncover ethnic origins, find living genetic relatives, build interactive family trees, and bring ancestral photographs to life using world-class AI animation tools like DeepNostalgia and LiveMemory.",
+    "categories": [
+      "Genealogy & Family History",
+      "DNA & Genetic Testing",
+      "AI Photo Tools",
+      "Software & SaaS",
+      "Online Services"
+    ],
+    "whyShop": [
+      "High-Resolution Ethnicity Breakdown: Detailed genetic ancestry reports spanning 42 top-level ethnicities and 2,114+ high-precision Genetic Communities",
+      "Huge Global DNA Match Database: Connect with living cousins and relatives across Europe, North America, Australia, Latin America, and worldwide",
+      "20+ Billion Historical Records: Search global census, military records, birth, marriage, death certificates, and historical newspapers",
+      "Pioneering AI Photo Restoration: Animate vintage family photos with DeepNostalgia™, enhance facial clarity, colorize B&W pictures, and fix tears",
+      "Simple 2-Minute Cheek Swab: Easy, painless sample collection at home with zero blood or uncomfortable spitting required",
+      "CLIA-Certified & CAP-Accredited Lab: Strict laboratory testing standards and robust consumer privacy protection controls"
+    ],
+    "shoppingTips": [
+      "Take advantage of the 14-Day Free Trial for the MyHeritage Complete Plan to explore unlimited family trees and historical record collections at zero cost.",
+      "Order MyHeritage DNA during holiday flash sales and DNA Day to secure kits for as low as €29 / $39 (saving up to $60 off MSRP).",
+      "Purchase multi-kit bundles (2 or more DNA kits) to qualify for reduced or free shipping per kit when testing parents, siblings, or grandparents.",
+      "Upload raw DNA data from other testing providers (AncestryDNA, 23andMe, FamilyTreeDNA) to receive free DNA matches without buying a new kit.",
+      "Add the MyHeritage DNA Traits report at 75% off during checkout to unlock genetic insights on physical appearance, behavioral tendencies, and sensory traits."
+    ],
+    "faqs": [
+      {
+        "question": "How do I apply a MyHeritage coupon code?",
+        "answer": "Select your DNA kit or subscription plan on MyHeritage.com. Proceed to the secure checkout page, look for the 'Have a promo code?' link beneath the order summary, paste your verified coupon code, and click Apply to instantly recalculate your discounted total."
+      },
+      {
+        "question": "What is the best MyHeritage DNA discount available today?",
+        "answer": "Currently, you can save up to 75% on MyHeritage DNA Traits, get the MyHeritage DNA Kit starting from €29 / $39 (up to $60 off), and enjoy 50% off the annual Complete Membership with an included 14-Day Free Trial."
+      },
+      {
+        "question": "Can I test my DNA without spitting into a tube?",
+        "answer": "Yes! MyHeritage utilizes a gentle, non-invasive cheek swab method. Simply rub the soft cotton swab inside both cheeks for 30 to 60 seconds each, place the swabs into the provided vials, and mail them back to the laboratory."
+      },
+      {
+        "question": "Is there a free trial for MyHeritage membership?",
+        "answer": "Yes. MyHeritage provides a 14-Day Free Trial for its Complete Plan, which grants full access to 20+ billion historical records, unlimited family tree size, smart matching, and all advanced AI photo enhancement and animation features."
+      },
+      {
+        "question": "How long does it take to receive MyHeritage DNA results?",
+        "answer": "Once your sample arrives at the CLIA-certified laboratory, sequencing and analysis typically take 3 to 4 weeks. You will receive an email notification when your interactive ethnicity estimate and DNA matches are ready to view online."
+      },
+      {
+        "question": "Can I upload DNA data from AncestryDNA or 23andMe to MyHeritage?",
+        "answer": "Yes! MyHeritage allows free raw DNA data uploads from AncestryDNA, 23andMe, and FamilyTreeDNA. Uploading allows you to view shared DNA matches and contact living relatives at zero upfront cost."
+      }
+    ]
+  },
+  {
     "id": "elevenlabs",
     "name": "ElevenLabs",
     "icon": "record_voice_over",
