@@ -229,11 +229,16 @@ const cleanRoutes = [
   { route: '/myheritage-dna-coupons', file: 'myheritage-coupons.html' },
   { route: '/store/myheritage', file: 'myheritage-coupons.html' },
   { route: '/store/myheritage-dna', file: 'myheritage-coupons.html' },
+  { route: '/mytriv', file: 'mytriv-coupons.html' },
+  { route: '/mytriv-coupons', file: 'mytriv-coupons.html' },
+  { route: '/store/mytriv', file: 'mytriv-coupons.html' },
   { route: '/steam-deck-review', file: 'steam-deck-review.html' },
   { route: '/xbox-series-x-review', file: 'xbox-series-x-review.html' },
   { route: '/windows-11-review', file: 'windows-11-review.html' },
   { route: '/ps5-review', file: 'ps5-review.html' },
-  { route: '/oculus-quest-2-review', file: 'oculus-quest-2-review.html' }
+  { route: '/oculus-quest-2-review', file: 'oculus-quest-2-review.html' },
+  { route: '/asphalt-8-airborne-review', file: 'asphalt-8-airborne-review.html' },
+  { route: '/asphalt-8-review', file: 'asphalt-8-airborne-review.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {

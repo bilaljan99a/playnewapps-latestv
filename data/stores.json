@@ -1,5 +1,64 @@
 [
   {
+    "id": "mytriv",
+    "name": "MyTriv",
+    "icon": "flight_takeoff",
+    "logo": "/assets/images/brands/mytriv.svg",
+    "website": "https://mytriv.com/en/",
+    "storeUrl": "/mytriv-coupons",
+    "affiliateUrl": "https://ntzgd.com/g/r8i24jhlvrb68b264a767d5554b542/?ulp=https://mytriv.com/en/",
+    "affiliateLink": "https://ntzgd.com/g/r8i24jhlvrb68b264a767d5554b542/?ulp=https://mytriv.com/en/",
+    "rating": 4.92,
+    "votes": 14280,
+    "seoTitle": "MyTriv Coupon Codes & Discount Offers (2026) – Up to 50% Off",
+    "seoDescription": "Save up to 50% on luxury hotel bookings, flights, and custom travel gear with verified 2026 MyTriv coupon codes, deep hotel discounts, and promo offers.",
+    "about": "MyTriv is a modern next-generation travel metasearch engine and custom merchandise studio designed to make global exploration seamless, transparent, and affordable. Powered by an intelligent AI Travel Assistant, MyTriv aggregates real-time room availability and ticket pricing from 8 world-class booking partners—including Agoda, Traveloka, Trip.com, Expedia, Hotels.com, Kayak, and Klook—allowing travelers to instantly compare hotel rooms, luxury suites, and airline tickets without broker markups. Beyond hotel comparisons, MyTriv features interactive 3D travel maps and MyTriv Studio, where travelers can customize premium luggage, hoodies, backpacks, and travel accessories featuring AI-generated boarding passes and vintage passport visa stamps.",
+    "categories": [
+      "Travel & Hotels",
+      "Flight Bookings",
+      "Custom Travel Gear",
+      "Luggage & Accessories",
+      "AI Travel Tools"
+    ],
+    "whyShop": [
+      "8-Partner Metasearch: Compare live hotel and flight rates across Agoda, Traveloka, Trip.com, Expedia, and Hotels.com side-by-side",
+      "No Hidden Booking Fees: Direct transparent pricing with verified taxes, free cancellation options, and breakfast inclusions clearly marked",
+      "AI Travel Assistant: Get smart, conversational recommendations for itinerary planning, local hidden gems, and price drop forecasts",
+      "Interactive 3D Hotel Maps: Pinpoint hotels near metro stations, historic landmarks, and dining districts across top global cities",
+      "Custom Studio Travel Merch: Design personalized suitcases, hoodies, backpacks, and accessories with 3D live previews and worldwide delivery",
+      "Verified Best Rate Guarantees: Book with confidence knowing you are routed directly to authorized partners offering flexible cancellation"
+    ],
+    "shoppingTips": [
+      "Use MyTriv's deep hotel search to compare identical suite types across Agoda, Expedia, and Trip.com to instantly unlock savings up to 40%.",
+      "Filter hotel listings by 'Free Breakfast' and 'Free Cancellation' to maximize trip flexibility without incurring unexpected charges.",
+      "Explore the MyTriv Studio custom merchandise section for seasonal discounts on high-durability polycarbonate luggage and travel backpacks.",
+      "Check interactive map pins near major international transit hubs to secure budget-friendly boutique stays within walking distance of attractions.",
+      "Apply our verified MyTriv promo codes during checkout on custom merchandise and partner bookings to save an extra 10% to 20%."
+    ],
+    "faqs": [
+      {
+        "question": "What is MyTriv and how does it work?",
+        "answer": "MyTriv is a travel metasearch engine and custom travel merchandise platform. It compares hotel and flight prices across 8 major travel partners (including Agoda, Traveloka, Trip.com, Expedia, and Hotels.com) to find you the lowest price, while also offering an AI travel planner and a 3D custom gear studio for personalized luggage and apparel."
+      },
+      {
+        "question": "How do I apply a MyTriv coupon code?",
+        "answer": "Click 'Show Code' on our verified coupon card to reveal and copy your promo code. You will be redirected to the official MyTriv portal. Enter your discount code in the promo code field during checkout on MyTriv Studio or partner checkout to see your instant price reduction."
+      },
+      {
+        "question": "Does MyTriv charge extra fees for hotel bookings?",
+        "answer": "No. MyTriv is 100% free to use. When you compare hotel or flight prices on MyTriv, you are redirected directly to the authorized travel partner (such as Agoda, Expedia, or Trip.com) with zero markups or hidden booking surcharges."
+      },
+      {
+        "question": "What is MyTriv Studio?",
+        "answer": "MyTriv Studio is a creative design tool on MyTriv where travelers can personalize over 35 travel products—including hardshell carry-on suitcases, travel backpacks, hoodies, and passport covers—using custom travel photos, vintage passport visa stamps, or AI-generated boarding passes with photorealistic 3D previews."
+      },
+      {
+        "question": "Can I get free cancellation on hotel reservations booked through MyTriv?",
+        "answer": "Yes. Many hotels featured on MyTriv provide flexible booking with free cancellation up to 24 to 48 hours before check-in. Always check the cancellation policy badge on the hotel room listing before finalizing your reservation."
+      }
+    ]
+  },
+  {
     "id": "myheritage",
     "name": "MyHeritage DNA",
     "icon": "biotech",

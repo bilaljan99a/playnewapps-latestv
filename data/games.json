@@ -1,5 +1,47 @@
 [
     {
+        "id": "asphalt-8-airborne",
+        "title": "Asphalt 8: Airborne Review (2026): High-Speed Stunts, Physics & Multiplayer Verdict",
+        "name": "Asphalt 8: Airborne",
+        "description": "In-depth review of Gameloft's Asphalt 8: Airborne. Comprehensive analysis of 300+ licensed hypercars, barrel rolls and flat spins physics, 75+ tracks, multiplayer seasons, and monetization in 2026.",
+        "summary": "Gameloft's Asphalt 8: Airborne remains an exhilarating arcade racing juggernaut, combining over 300 licensed supercars, gravity-defying aerial stunts, and pulse-pounding multiplayer action.",
+        "icon": "/assets/images/brands/asphalt-8-airborne.svg",
+        "banner": "/assets/images/brands/asphalt-8-airborne-cover.jpg",
+        "rating": 4.7,
+        "categoryId": "games",
+        "developer": "Gameloft",
+        "version": "v7.7+ (2026 Edition)",
+        "size": "3.2 GB",
+        "platforms": [
+            "Android",
+            "iOS",
+            "Windows PC",
+            "macOS",
+            "Apple TV"
+        ],
+        "license": "Free-to-Play / In-App Purchases",
+        "updatedAt": "2026-09-02",
+        "badges": [
+            "Editor's Choice",
+            "Arcade Legend"
+        ],
+        "isFeatured": true,
+        "isTrending": true,
+        "reviewUrl": "/asphalt-8-airborne-review",
+        "authorId": "alex-tech",
+        "tags": [
+            "asphalt 8",
+            "gameloft",
+            "arcade racing",
+            "hypercars",
+            "multiplayer",
+            "nitro boost",
+            "aerial stunts"
+        ],
+        "reviewsCount": "9.4M",
+        "downloadsCount": "1B+ Downloads"
+    },
+    {
         "id": "steam-deck",
         "title": "Steam Deck Review (2026): Handheld PC Gaming & OLED Benchmark",
         "name": "Valve Steam Deck",
