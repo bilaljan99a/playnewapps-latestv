@@ -1,5 +1,65 @@
 [
   {
+    "id": "casetify",
+    "name": "CASETiFY",
+    "icon": "phone_iphone",
+    "logo": "/assets/images/brands/casetify.svg",
+    "website": "https://www.casetify.com",
+    "storeUrl": "/casetify-coupons",
+    "affiliateUrl": "https://bywiola.com/g/tv8h1uy8nib68b264a762f7a77e67e/?ulp=https://www.casetify.com",
+    "affiliateLink": "https://bywiola.com/g/tv8h1uy8nib68b264a762f7a77e67e/?ulp=https://www.casetify.com",
+    "rating": 4.94,
+    "votes": 28450,
+    "seoTitle": "CASETiFY Coupon Codes & Discount Offers (2026) – Up to 25% Off",
+    "seoDescription": "Save up to 25% on iPhone cases, Samsung cases, MagSafe accessories, and custom tech gear with verified 2026 CASETiFY promo codes, bundle deals, and free shipping.",
+    "about": "CASETiFY is the world's leading tech accessory brand renowned for combining military-grade drop defense with endless artistic personalization. Founded in 2011 as an innovative platform turning Instagram photography into durable custom phone cases, CASETiFY has grown into a global cultural phenomenon celebrated for proprietary impact materials like EcoShock™, extreme Ultra Bounce protection tested up to 32.8 feet, and high-profile Co-Lab partnerships with iconic franchises, anime series, and contemporary artists. From rugged smartphone cases to MagSafe Snappy cardholders, stainless steel Apple Watch bands, and MacBook snap-on armor, CASETiFY delivers premium protective style engineered with over 65% recycled and plant-based materials.",
+    "categories": [
+      "Phone Cases & Accessories",
+      "iPhone Cases",
+      "Samsung Galaxy Cases",
+      "MagSafe & Snappy Ecosystem",
+      "Apple Watch Bands & Tech",
+      "MacBook & iPad Protection"
+    ],
+    "whyShop": [
+      "Proprietary EcoShock™ Material Science: Up to 10x military-grade drop defense absorbing 95% of shock impacts",
+      "Extreme Customization: Personalize phone cases with names, custom typography, monograms, and signature layouts",
+      "Global Co-Lab Drops: Official limited-edition collaborations with Evangelion, Jujutsu Kaisen, Disney, Marvel, and renowned artists",
+      "Re/CASETiFY Sustainability: Crafted from over 65% recycled phone cases and ocean-bound plastics with zero virgin plastic packaging",
+      "Seamless MagSafe Compatibility: Ultra-strong built-in magnetic rings compatible with Apple MagSafe and Snappy accessories",
+      "Comprehensive 6 to 12-Month Warranty: Free replacement guarantee against defects, color fading, or material separation"
+    ],
+    "shoppingTips": [
+      "Use coupon code IMPACT2026 at checkout to save 10% on your single case order or tech accessory purchase.",
+      "Take advantage of the Buy 1 Get 10%, Buy 2 Get 20% bundle promotion with code BTS22 when upgrading your case and screen protector together.",
+      "Join Club Casetify for free to instantly receive an exclusive 15% welcome discount, birthday rewards, and VIP early access to Co-Lab launches.",
+      "Verify your student or educator status through UNiDAYS to receive an ongoing 15% discount on all non-collaboration tech gear.",
+      "Trade in your old phone case from any manufacturer via the Re/CASETiFY recycling program to receive a 15% off voucher."
+    ],
+    "faqs": [
+      {
+        "question": "How do I use a CASETiFY coupon code?",
+        "answer": "Click 'Show Code' on any verified offer to copy the promo code and navigate to CASETiFY. During checkout in your cart summary, paste your code into the 'Promo Code or Voucher' field and click 'Apply' to see your cart total immediately update."
+      },
+      {
+        "question": "Can I stack multiple discount codes at CASETiFY?",
+        "answer": "CASETiFY permits one promotional discount code per order. However, promo codes can often be combined with sitewide promotions like Free Standard Shipping on qualifying orders or bundle savings."
+      },
+      {
+        "question": "Are Co-Lab artist collaborations eligible for coupon codes?",
+        "answer": "Most limited-edition Co-Lab drops (such as anime, gaming, or designer collaborations) are excluded from standard discount codes due to licensing agreements, though Club Casetify members earn loyalty points and early drop access on these items."
+      },
+      {
+        "question": "What is the difference between CASETiFY Impact and Bounce cases?",
+        "answer": "Impact Cases feature EcoShock™ corner bumpers providing 8.2-foot (2.5m) military-grade drop defense in a slim profile. Bounce Cases feature expanded ribbed corner air pockets engineered for 21.3-foot (6.5m) drop defense, while Ultra Bounce provides 32.8-foot (10m) extreme defense."
+      },
+      {
+        "question": "What is CASETiFY's return and warranty policy?",
+        "answer": "CASETiFY offers a 10-day no-questions-asked money-back guarantee on unused merchandise, alongside a 6-month product warranty (extended to 12 months for Club Casetify Gold members) covering manufacturing defects and material delamination."
+      }
+    ]
+  },
+  {
     "id": "mytriv",
     "name": "MyTriv",
     "icon": "flight_takeoff",
