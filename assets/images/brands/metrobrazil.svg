@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100" width="500" height="100">
+  <defs>
+    <clipPath id="mb-clip">
+      <rect width="500" height="100" rx="8" ry="8"/>
+    </clipPath>
+    <filter id="text-depth" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  
+  <g clip-path="url(#mb-clip)">
+    <!-- Base Deep Blue Background -->
+    <rect width="500" height="100" fill="#4B7EC4"/>
+    
+    <!-- Yellow / Gold Brazilian Geo Polygon -->
+    <polygon points="12,0 285,0 252,100 70,100" fill="#FDBE3B"/>
+    <polygon points="0,0 28,0 0,65" fill="#4B7EC4"/>
+    <polygon points="0,75 75,100 0,100" fill="#4B7EC4"/>
+    
+    <!-- Blue Central Wedge -->
+    <polygon points="275,0 355,0 350,100 242,100" fill="#4B7EC4"/>
+    
+    <!-- Brazilian Green Geo Polygon -->
+    <path d="M 355 0 L 455 0 C 445 25 442 50 445 75 C 447 85 452 93 458 100 L 350 100 C 362 75 362 25 355 0 Z" fill="#98C373"/>
+    
+    <!-- Right Blue Accent -->
+    <path d="M 455 0 L 500 0 L 500 100 L 458 100 C 448 70 448 30 455 0 Z" fill="#4B7EC4"/>
+    
+    <!-- Sharp Modern Typographic Text: METRO BRAZIL -->
+    <text x="250" y="73" 
+          fill="#FFFFFF" 
+          font-family="system-ui, -apple-system, 'Plus Jakarta Sans', 'Arial Black', 'Impact', sans-serif" 
+          font-size="69" 
+          font-weight="900" 
+          font-stretch="condensed"
+          text-anchor="middle" 
+          letter-spacing="2"
+          filter="url(#text-depth)">METRO BRAZIL</text>
+  </g>
+</svg>
