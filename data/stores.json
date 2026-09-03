@@ -1,5 +1,65 @@
 [
   {
+    "id": "gamivo",
+    "name": "Gamivo",
+    "icon": "sports_esports",
+    "logo": "/assets/images/brands/gamivo.svg",
+    "website": "https://www.gamivo.com",
+    "storeUrl": "/gamivo-coupons",
+    "affiliateUrl": "https://tywhh.com/g/z1b7zvanvyb68b264a7638574005e1/?ulp=https://www.gamivo.com",
+    "affiliateLink": "https://tywhh.com/g/z1b7zvanvyb68b264a7638574005e1/?ulp=https://www.gamivo.com",
+    "rating": 4.91,
+    "votes": 18920,
+    "seoTitle": "Gamivo Discount Codes & Promo Offers (2026) – Up to 60% Off",
+    "seoDescription": "Save up to 60% on Steam CD keys, Xbox Game Pass, PlayStation Network codes, and PC software with verified 2026 Gamivo coupon codes, SMART VIP perks, and instant delivery.",
+    "about": "GAMIVO is a premier European digital marketplace connecting over 5 million gamers worldwide with verified merchants offering instant-activation video game CD keys, console gift cards, and PC software licenses. With the GAMIVO SMART VIP subscription, buyers unlock exclusive basket discounts, monthly free games, and comprehensive protection under the Customer Protection Program (CPP).",
+    "categories": [
+      "Video Games & CD Keys",
+      "Steam Keys",
+      "Xbox & PlayStation Cards",
+      "Software & Windows Keys",
+      "GAMIVO SMART VIP",
+      "Digital Gift Cards"
+    ],
+    "whyShop": [
+      "Massive Digital Catalog: Access over 25,000+ digital keys covering AAA blockbusters, indie gems, and software",
+      "Instant Digital Delivery: Activation codes delivered straight to your account and email inbox within seconds",
+      "GAMIVO SMART VIP Membership: Up to 20% extra discount, free monthly games, priority pre-order delivery, and 24/7 Live Chat",
+      "Customer Protection Program (CPP): Comprehensive buyer defense covering key validity, replacement, and refunds",
+      "Multi-Platform Support: Digital activation across Steam, Xbox, PlayStation Network, Nintendo eShop, EA, and Battle.net",
+      "Global & Regional Key Filters: Transparent region tags ensuring effortless activation in your home territory"
+    ],
+    "shoppingTips": [
+      "Use promo code BASKET-SMART to unlock up to 60% off your basket when joining the GAMIVO SMART VIP subscription program.",
+      "Apply coupon code ONCLOUD9 at checkout to score an extra 9% off any game keys or gift cards for baskets up to €75.",
+      "Subscribe to GAMIVO SMART for monthly free games, automatic Customer Protection Program coverage, and exclusive member-only pricing.",
+      "Always check the region tag (Global, EU, US) before completing your order to ensure immediate compatibility with your platform account.",
+      "Take advantage of daily flash drops and weekend publisher sales for discounts of up to 85% on top-tier video games."
+    ],
+    "faqs": [
+      {
+        "question": "How do I apply a Gamivo promo code?",
+        "answer": "Click Show Code on PlayNewApps to copy the verified code and open gamivo.com. Add your selected game keys or gift cards to your cart. In the checkout basket summary, paste your code into the Discount Code input field and click Apply to see your cart total immediately update."
+      },
+      {
+        "question": "What is the BASKET-SMART coupon code for?",
+        "answer": "BASKET-SMART provides an exclusive basket discount of up to 60% for new GAMIVO SMART members depending on your total basket value, stacking on top of marketplace savings."
+      },
+      {
+        "question": "What does the ONCLOUD9 promo code offer?",
+        "answer": "Coupon code ONCLOUD9 grants an extra 9% off your entire basket on orders up to €75 across video game keys, console subscriptions, and PC utility software."
+      },
+      {
+        "question": "What benefits are included with GAMIVO SMART?",
+        "answer": "GAMIVO SMART is a premium VIP subscription that provides up to 20% additional store discounts, a free game every month, priority 24/7 live chat support, automatic Customer Protection Program (CPP) coverage, and priority pre-order fulfillment."
+      },
+      {
+        "question": "What is the GAMIVO Customer Protection Program (CPP)?",
+        "answer": "CPP is GAMIVO buyer protection service guaranteeing that if any digital key fails to activate, the buyer receives priority mediation, instant key replacement, or full credit/refund."
+      }
+    ]
+  },
+  {
     "id": "casetify",
     "name": "CASETiFY",
     "icon": "phone_iphone",

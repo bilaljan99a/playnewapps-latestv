@@ -1,0 +1,44 @@
+<svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="350" height="350" fill="#F8FAFC"/>
+  <!-- Card Base -->
+  <rect x="35" y="45" width="280" height="260" rx="16" fill="url(#steam_grad)" filter="drop-shadow(0 10px 15px rgba(15,23,42,0.15))"/>
+  <!-- Card Header -->
+  <path d="M35 61C35 52.1634 42.1634 45 51 45H299C307.837 45 315 52.1634 315 61V110H35V61Z" fill="#171A21"/>
+  <!-- Steam Icon Graphic -->
+  <circle cx="75" cy="77" r="18" fill="#1B2838" stroke="#66C0F4" stroke-width="2"/>
+  <circle cx="71" cy="74" r="6" fill="#66C0F4"/>
+  <line x1="71" y1="74" x2="82" y2="82" stroke="#66C0F4" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="82" cy="82" r="4" fill="#C7D5E0"/>
+  <text x="105" y="75" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="18" fill="#FFFFFF">STEAM KEY</text>
+  <text x="105" y="93" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="11" fill="#66C0F4">PC DIGITAL DOWNLOAD</text>
+  
+  <!-- Digital Badge -->
+  <rect x="235" y="65" width="65" height="24" rx="12" fill="#2A475E"/>
+  <text x="267" y="81" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="10" fill="#66C0F4" text-anchor="middle">GLOBAL</text>
+
+  <!-- Inner Artwork Area -->
+  <rect x="55" y="125" width="240" height="110" rx="10" fill="#1B2838" stroke="#2A475E" stroke-width="1"/>
+  <rect x="70" y="140" width="80" height="80" rx="6" fill="#2A475E"/>
+  <!-- Controller Graphic -->
+  <path d="M95 185C90 185 86 177 88 170L92 155C93 150 97 147 102 147H118C123 147 127 150 128 155L132 170C134 177 130 185 125 185C121 185 117 181 115 178L113 175H107L105 178C103 181 99 185 95 185Z" fill="#66C0F4"/>
+  <circle cx="102" cy="160" r="2.5" fill="#1B2838"/>
+  <circle cx="118" cy="158" r="2" fill="#C7D5E0"/>
+  <circle cx="123" cy="163" r="2" fill="#C7D5E0"/>
+  
+  <text x="165" y="160" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">AAA Video Games</text>
+  <text x="165" y="178" font-family="system-ui, -apple-system, sans-serif" font-weight="500" font-size="11" fill="#C7D5E0">Instant Code In Account</text>
+  <text x="165" y="196" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="10" fill="#A4D007">✓ 100% Guaranteed</text>
+
+  <!-- Code Mask Box -->
+  <rect x="55" y="250" width="240" height="38" rx="8" fill="#171A21" stroke="#2A475E"/>
+  <text x="70" y="274" font-family="monospace" font-weight="700" font-size="12" fill="#66C0F4">KEY: 5TRM9-•••••-•••••</text>
+  <rect x="235" y="257" width="50" height="24" rx="6" fill="#66C0F4"/>
+  <text x="260" y="273" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="10" fill="#171A21" text-anchor="middle">ACTIVE</text>
+
+  <defs>
+    <linearGradient id="steam_grad" x1="35" y1="45" x2="315" y2="305" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B2838"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+</svg>

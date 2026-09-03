@@ -228,6 +228,12 @@
     <priority>0.95</priority>
   </url>
   <url>
+    <loc>https://www.playnewapps.store/gamivo-coupons</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://www.playnewapps.store/godlike-host-coupons</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>daily</changefreq>
@@ -742,6 +748,11 @@
   </url>
   <url>
     <loc>https://www.playnewapps.store/store?id=forcedrop</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.playnewapps.store/store?id=gamivo</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
