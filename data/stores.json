@@ -1,5 +1,89 @@
 [
   {
+    "id": "woodestic",
+    "name": "Woodestic",
+    "icon": "casino",
+    "logo": "/assets/images/brands/woodestic.svg",
+    "website": "https://woodestic.com",
+    "storeUrl": "/woodestic-coupons",
+    "affiliateUrl": "https://naiawork.com/g/do86ucnzhxb68b264a76c586cc6aee/?ulp=https://woodestic.com",
+    "affiliateLink": "https://naiawork.com/g/do86ucnzhxb68b264a76c586cc6aee/?ulp=https://woodestic.com",
+    "rating": 4.96,
+    "votes": 13420,
+    "seoTitle": "Woodestic Coupon Codes & Discount Offers (2026) – Handcrafted Crokinole, Carrom & Dexterity Games",
+    "seoDescription": "Save up to 15% sitewide on handcrafted Woodestic Crokinole boards, Carrom sets, Shuffleboard, and tournament accessories with verified 2026 promo codes and global express delivery.",
+    "about": "Woodestic is an artisan wooden board game atelier creating tournament-caliber Crokinole boards, Carrom sets, and dexterity games. Handcrafted in Europe using sustainable beech, cherry, and maple hardwoods with multi-layer mirror-smooth polyurethane glide finishes.",
+    "categories": [
+      "Crokinole Tournament Boards",
+      "Carrom Sets",
+      "Tabletop Shuffleboard",
+      "Dexterity & Tabletop Games",
+      "Tournament Gliss Powder & Accessories"
+    ],
+    "whyShop": [
+      "Master Artisan Craftsmanship: Handcrafted in Europe from premium seasoned hardwoods with microscopic tolerances",
+      "Championship-Caliber Surface: High-grade multi-layer polyurethane lacquer buffed to a glass-smooth frictionless glide",
+      "World Crokinole Championship Compliance: Standard regulation 26-inch playing surface, post placement, and bumper tension",
+      "100% Insured Global Shipping: Reinforced heavy-duty custom packaging engineered to eliminate transit impact",
+      "30-Day Money-Back Guarantee: Play at home with complete confidence backed by a full refund policy",
+      "Complete Game Ecosystem: Official tournament discs, gliss powder, wall hanging mounts, and padded carry bags"
+    ],
+    "shoppingTips": [
+      "Apply verified promo code WOOD10 at checkout on woodestic.com to claim an instant 10% sitewide discount.",
+      "Opt for the Tournament Bronze or Exclusive Bronze set to receive tournament-spec playing discs and scoring accessories bundled together.",
+      "Always add a 90g Gliss Powder container to keep your board playing at lightning-fast championship speeds.",
+      "Subscribe to the Woodestic newsletter to receive a welcome voucher and notifications on limited-run artisan wood releases.",
+      "Order wall hanging brackets along with your board to display your board as fine wall art when not in play."
+    ],
+    "faqs": [
+      {
+        "question": "How do I redeem a Woodestic discount code?",
+        "answer": "Click Show Code on PlayNewApps to reveal and copy your promo code while launching woodestic.com. Choose your Crokinole board, Carrom set, or accessories and proceed to checkout. Paste the code into the Coupon or Promo Code box and click Apply to see your total balance decrease immediately."
+      },
+      {
+        "question": "What are the main differences between Tournament and Exclusive Crokinole sets?",
+        "answer": "Both lines share the exact regulation tournament dimensions (26-inch playing surface). The Tournament Bronze line emphasizes pure competition performance with robust hardwood construction and resilient lacquer, while the Exclusive Bronze and Elite lines feature rare exotic wood veneers, inlaid brass accents, and hand-rubbed multi-coat polyurethane finishes."
+      },
+      {
+        "question": "Does Woodestic deliver internationally with damage protection?",
+        "answer": "Yes, Woodestic ships worldwide via premier courier partners (FedEx and DHL) using custom double-walled impact-absorbing foam packaging designed specifically for wooden game boards. Every shipment is 100% insured against loss or transit damage."
+      },
+      {
+        "question": "What maintenance is needed to keep a Woodestic board in prime condition?",
+        "answer": "Keep the playing surface clean with a soft microfiber cloth, apply ultra-fine Woodestic gliss powder during gameplay, and periodically polish the board with high-grade carnauba paste wax to maintain frictionless disc speed."
+      }
+    ],
+    "banners": [
+      {
+        "id": "woodestic-crokinole-championship",
+        "title": "Woodestic Handcrafted Crokinole Championship Sets & Artisan Boards",
+        "subtitle": "Experience tournament-standard smooth glide, authentic hardwood craftsmanship, and competition-spec bumpers from 19",
+        "image": "/assets/images/woodestic/woodestic-workshop-hero.jpg",
+        "link": "https://naiawork.com/g/do86ucnzhxb68b264a76c586cc6aee/?ulp=https://woodestic.com/shop/woodestic-crokinole-tournament-bronze-set/",
+        "buttonText": "Explore Tournament Sets",
+        "badge": "CHAMPIONSHIP GRADE"
+      },
+      {
+        "id": "woodestic-elite-crokinole",
+        "title": "Woodestic Crokinole Elite Set – Masterpiece Luxury Craftsmanship",
+        "subtitle": "The crowning jewel of the Woodestic workshop featuring exotic wood veneers, integrated disc channels, and mirror polyurethane finish",
+        "image": "/assets/images/woodestic/woodestic-crokinole-elite.webp",
+        "link": "https://naiawork.com/g/do86ucnzhxb68b264a76c586cc6aee/?ulp=https://woodestic.com/shop/woodestic-crokinole-elite-set/",
+        "buttonText": "View Elite Masterpiece",
+        "badge": "LIMITED EDITION"
+      },
+      {
+        "id": "woodestic-carrom-shuffleboard",
+        "title": "Woodestic Handcrafted Carrom & Tabletop Shuffleboard Games",
+        "subtitle": "Authentic wooden dexterity games designed for generations of family game nights and club tournaments from 49",
+        "image": "/assets/images/woodestic/woodestic-carrom-board.webp",
+        "link": "https://naiawork.com/g/do86ucnzhxb68b264a76c586cc6aee/?ulp=https://woodestic.com/shop/woodestic-carrom/",
+        "buttonText": "Shop Carrom & Games",
+        "badge": "ARTISAN QUALITY"
+      }
+    ]
+  },
+  {
     "id": "metrobrazil",
     "name": "Metro Brazil",
     "icon": "checkroom",
@@ -628,7 +712,7 @@
       },
       {
         "question": "Does ChicMe offer free shipping?",
-        "answer": "Yes, ChicMe provides free standard shipping on orders over 9 to the United States and most international destinations, with free express shipping available on orders over 29."
+        "answer": "Yes, ChicMe provides free standard shipping on orders over $69 to the United States and most international destinations, with free express shipping available on orders over 29."
       }
     ]
   },
@@ -2475,7 +2559,7 @@
       },
       {
         "question": "What is NordLynx and why is it faster than standard OpenVPN?",
-        "answer": "NordLynx is NordVPN's proprietary virtual private network protocol engineered specifically around WireGuard's ultra-fast cryptography. By implementing a custom double NAT (Network Address Translation) system, NordLynx delivers lightning-fast server handshakes in under 2 seconds and connection speeds exceeding 940 Mbps, bypassing the speed bottlenecks, packet loss, and latency issues common with traditional legacy protocols like OpenVPN while maintaining rock-solid military-grade security."
+        "answer": "NordLynx is NordVPN's proprietary virtual private network protocol engineered specifically around WireGuard's ultra-fast cryptography. By implementing a custom double NAT (Network Address Translation) system, NordLynx delivers lightning-fast server handshakes in under 2 seconds and connection speeds exceeding $6940 Mbps, bypassing the speed bottlenecks, packet loss, and latency issues common with traditional legacy protocols like OpenVPN while maintaining rock-solid military-grade security."
       },
       {
         "question": "Does NordVPN work with Netflix, BBC iPlayer, and other streaming services?",
@@ -2505,12 +2589,12 @@
     "detailedOverview": "NordVPN is globally recognized as the gold standard in virtual private network security, digital privacy, and internet freedom. Engineered by Nord Security in privacy-friendly Panama, NordVPN combines cutting-edge cryptographic protocols, ultra-high-speed infrastructure, and automated threat mitigation into a seamless, user-friendly application suite across desktop, mobile, and browser environments. In an era where digital surveillance, public Wi-Fi eavesdropping, ISP bandwidth throttling, and sophisticated cyberattacks pose constant risks, NordVPN provides an impenetrable shield for your online activities. With over 6,400 high-speed 10Gbps RAM-only servers strategically located across 111 countries worldwide, NordVPN ensures that your IP address remains masked, your internet traffic is encrypted with AES-256 and ChaCha20 standards, and your online presence stays completely private.",
     "brandHistory": "NordVPN was founded in 2012 by a group of childhood friends passionate about digital freedom, open internet access, and universal data privacy rights. Recognizing the growing threat of corporate tracking, government overreach, and cybercrime, the founders established NordVPN under the jurisdiction of Panama—a country with no mandatory data retention laws. Over the past decade, NordVPN has transformed from a standalone VPN service into Nord Security, a comprehensive cybersecurity ecosystem encompassing NordPass (an encrypted password manager), NordLocker (secure cloud storage), NordLayer (enterprise network security), and Incogni (data privacy removal service). Today, NordVPN serves over 15 million individuals and corporate clients globally, earning universal acclaim from security researchers, technology journalists, and privacy advocates.",
     "whoIsItFor": "NordVPN is engineered for anyone who values data privacy, digital freedom, and high-speed online security. Remote workers and frequent travelers rely on NordVPN to secure confidential corporate emails and banking transactions on untrusted public Wi-Fi networks in airports, hotels, and cafes. Gamers and streamers use NordVPN to prevent ISP bandwidth throttling, dodge DDoS attacks, and unblock geo-restricted streaming catalogs on Netflix, BBC iPlayer, Hulu, and Disney+. Tech enthusiasts and privacy advocates leverage NordVPN's advanced double-hop encryption, Onion Over VPN servers, and custom Meshnet virtual networking for secure P2P file sharing and remote server access. Families and small businesses benefit from NordVPN's 10-device simultaneous allowance, securing every laptop, smartphone, tablet, and smart TV under a single affordable subscription.",
-    "keyFeatures": "NordVPN provides an extensive array of advanced cybersecurity and networking features designed for complete online protection: 1) NordLynx Next-Gen Protocol: Built around WireGuard's lightweight codebase, NordLynx delivers connection speeds exceeding 940 Mbps with sub-2-second server connection times. 2) Threat Protection Pro™: System-level malware scanner that blocks malicious executable downloads, phishing sites, intrusive web trackers, and pop-up ads continuously. 3) Meshnet Encrypted Virtual LAN: Connect up to 60 personal devices globally into a private encrypted network for remote traffic routing and direct peer-to-peer file sharing. 4) 100% Diskless RAM-Only Servers: Operational server fleet operates entirely on volatile RAM memory, automatically wiping all data on every reboot. 5) SmartPlay Streaming Unblocking: Blends Smart DNS technology with VPN encryption to bypass geo-blocking firewalls on top streaming platforms effortlessly. 6) Dark Web Monitor: Continuously scans breach databases for leaked credentials and notifies you instantly if your email or passwords are compromised. 7) 10 Simultaneous Connections: Protect up to 10 devices under a single subscription account with cross-platform apps for Windows, macOS, Linux, iOS, Android, and Smart TVs.",
+    "keyFeatures": "NordVPN provides an extensive array of advanced cybersecurity and networking features designed for complete online protection: 1) NordLynx Next-Gen Protocol: Built around WireGuard's lightweight codebase, NordLynx delivers connection speeds exceeding $6940 Mbps with sub-2-second server connection times. 2) Threat Protection Pro™: System-level malware scanner that blocks malicious executable downloads, phishing sites, intrusive web trackers, and pop-up ads continuously. 3) Meshnet Encrypted Virtual LAN: Connect up to 60 personal devices globally into a private encrypted network for remote traffic routing and direct peer-to-peer file sharing. 4) 100% Diskless RAM-Only Servers: Operational server fleet operates entirely on volatile RAM memory, automatically wiping all data on every reboot. 5) SmartPlay Streaming Unblocking: Blends Smart DNS technology with VPN encryption to bypass geo-blocking firewalls on top streaming platforms effortlessly. 6) Dark Web Monitor: Continuously scans breach databases for leaked credentials and notifies you instantly if your email or passwords are compromised. 7) 10 Simultaneous Connections: Protect up to 10 devices under a single subscription account with cross-platform apps for Windows, macOS, Linux, iOS, Android, and Smart TVs.",
     "buyingGuide": "Selecting the ideal NordVPN subscription depends on your feature requirements and budget goals. NordVPN offers three main pricing tiers: Basic (core VPN protection, high-speed servers, 10 devices), Plus (adds Threat Protection Pro malware blocker and NordPass password manager), and Ultimate (adds 1TB NordLocker encrypted cloud storage and Cyber Incogni data removal). To maximize your budget, always opt for a 2-Year Plan instead of month-to-month billing. Choosing a 2-year commitment slashes monthly costs by up to 75% and routinely includes 3 extra bonus months free. Furthermore, all plans are backed by a risk-free 30-day money-back guarantee, allowing you to test every feature with zero financial commitment.",
     "extraSections": [
       {
         "title": "NordLynx Protocol & Gigabit Server Performance",
-        "content": "Speed and performance are paramount in modern VPN architecture. Traditional VPN protocols like OpenVPN often suffer from processing overhead that reduces baseline internet speeds. NordVPN solved this challenge by engineering NordLynx, a proprietary protocol built directly on WireGuard's lean cryptographic codebase. By combining WireGuard with a custom double NAT (Network Address Translation) system, NordLynx establishes secure server handshakes in under two seconds while maintaining gigabit download speeds exceeding 940 Mbps. Whether you are transferring multi-gigabyte files, streaming 4K HDR media, or engaging in competitive online multiplayer gaming, NordLynx guarantees minimal latency and zero bandwidth throttling."
+        "content": "Speed and performance are paramount in modern VPN architecture. Traditional VPN protocols like OpenVPN often suffer from processing overhead that reduces baseline internet speeds. NordVPN solved this challenge by engineering NordLynx, a proprietary protocol built directly on WireGuard's lean cryptographic codebase. By combining WireGuard with a custom double NAT (Network Address Translation) system, NordLynx establishes secure server handshakes in under two seconds while maintaining gigabit download speeds exceeding $6940 Mbps. Whether you are transferring multi-gigabyte files, streaming 4K HDR media, or engaging in competitive online multiplayer gaming, NordLynx guarantees minimal latency and zero bandwidth throttling."
       },
       {
         "title": "Threat Protection Pro™: OS-Level Anti-Malware & Ad Blocker",
@@ -4265,7 +4349,7 @@
     "votes": 3840,
     "seoTitle": "Adheart Review 2026: Best Ad Spy & Creative Tool",
     "seoDescription": "Discover winning Facebook, Instagram and TikTok ad creatives with Adheart. Find top competitor campaigns, media buying strategies, and high-converting landing pages.",
-    "about": "Adheart is a premier ad intelligence platform monitoring over 900+ million global ad creatives across Facebook, Instagram, TikTok, and web networks.",
+    "about": "Adheart is a premier ad intelligence platform monitoring over $6900+ million global ad creatives across Facebook, Instagram, TikTok, and web networks.",
     "shippingInfo": "Adheart is a 100% digital cloud SaaS platform providing immediate online access upon account activation with no installation required.",
     "buyerProtection": "Instant access upon subscription. Premium digital search capabilities and unlimited creative downloads backed by verified customer support.",
     "paymentMethods": [
@@ -4283,7 +4367,7 @@
       "Finance & Shopping Tools"
     ],
     "whyShop": [
-      "Search over 900+ million active and historical ad creatives across Facebook, Instagram, and TikTok.",
+      "Search over $6900+ million active and historical ad creatives across Facebook, Instagram, and TikTok.",
       "Filter by text, domain, page ID, country, format, language, and running days.",
       "Download high-resolution video creatives (MP4) and full landing page assets with a single click.",
       "Monitor competitor media buying budgets, creative scaling strategies, and winning product offers."
@@ -4342,7 +4426,7 @@
       }
     ],
     "detailedOverview": "Adheart is an industry-leading advertising spy tool and creative discovery engine designed for media buyers, e-commerce store owners, affiliate marketers, and digital agencies.",
-    "brandHistory": "Founded to solve the challenge of ad creative research, Adheart has scaled its indexing infrastructure to track over 900 million ads across global advertising networks.",
+    "brandHistory": "Founded to solve the challenge of ad creative research, Adheart has scaled its indexing infrastructure to track over $6900 million ads across global advertising networks.",
     "whoIsItFor": "Built for performance marketers, media buyers, e-commerce dropshippers, digital advertising agencies, and affiliate marketers seeking proven ad creatives.",
     "keyFeatures": "Meta Ad Intelligence, TikTok Spy, Creative Downloader, Advertiser Database, Landing Page Finder, and Keyword Search Engine.",
     "buyingGuide": "Select the Pro Plan for 300 daily searches and full video downloading capabilities. Use the annual option to lock in a 25% discount."
@@ -5600,7 +5684,7 @@
     "votes": 48320,
     "seoTitle": "Planner 5D Coupon Codes & Verified Promo Deals (2026) – Up to 60% Off",
     "seoDescription": "Save up to 60% on Planner 5D Premium and Commercial subscriptions with verified 2026 promo codes. Create 2D/3D floor plans, AI blueprint scans, 8,000+ item item catalog, and 4K photorealistic renders.",
-    "about": "Planner 5D is an intuitive, world-renowned 2D and 3D interior design and architectural floor planning software trusted by over 90 million homeowners, real estate agents, architects, and interior designers worldwide. Featuring advanced AI-powered blueprint digitization, an extensive 8,000+ item real-world furniture catalog, 4K photorealistic rendering engine, and augmented reality (AR) room projection, Planner 5D enables users to effortlessly draft, furnish, and visualize dream spaces across Web, iOS, Android, macOS, and Windows.",
+    "about": "Planner 5D is an intuitive, world-renowned 2D and 3D interior design and architectural floor planning software trusted by over $690 million homeowners, real estate agents, architects, and interior designers worldwide. Featuring advanced AI-powered blueprint digitization, an extensive 8,000+ item real-world furniture catalog, 4K photorealistic rendering engine, and augmented reality (AR) room projection, Planner 5D enables users to effortlessly draft, furnish, and visualize dream spaces across Web, iOS, Android, macOS, and Windows.",
     "categories": [
       "Design & Creative",
       "Home & Garden",
@@ -5683,7 +5767,7 @@
       "Explore the Corsair Certified Refurbished store section to access pristine factory-recertified keyboards, coolers, and power supplies up to 40% off MSRP.",
       "Students, educators, and apprentices can verify their academic status through Student Beans or UNiDAYS to receive an ongoing 15% educational discount.",
       "Sign up for the free Corsair VIP newsletter to receive an instant 10% welcome voucher and 24-hour early access to Black Friday and Prime Day flash deals.",
-      "Enjoy complimentary standard shipping on all qualifying orders exceeding 9 with no code required."
+      "Enjoy complimentary standard shipping on all qualifying orders exceeding $69 with no code required."
     ],
     "faqs": [
       {
@@ -5692,7 +5776,7 @@
       },
       {
         "question": "Does Corsair offer free shipping on direct orders?",
-        "answer": "Yes, Corsair provides free standard shipping on all orders over 9 in most supported global regions. International express courier options via DHL and FedEx are also available at checkout."
+        "answer": "Yes, Corsair provides free standard shipping on all orders over $69 in most supported global regions. International express courier options via DHL and FedEx are also available at checkout."
       },
       {
         "question": "What is the warranty coverage on Corsair components?",
@@ -5701,6 +5785,90 @@
       {
         "question": "Can I stack multiple coupon codes at Corsair checkout?",
         "answer": "Corsair checkout software accepts one promo code per transaction. However, verified percentage-off vouchers stack seamlessly on top of automatic sales, refurbished discounts, and free shipping thresholds."
+      }
+    ]
+  },
+  {
+    "id": "aovica",
+    "name": "Aovica",
+    "icon": "checkroom",
+    "logo": "/assets/images/brands/aovica.svg",
+    "website": "https://aovica.top",
+    "storeUrl": "/aovica-coupons",
+    "affiliateUrl": "https://rcpsj.com/g/76ypdp9d6wb68b264a76caca192191/?ulp=https://aovica.top",
+    "affiliateLink": "https://rcpsj.com/g/76ypdp9d6wb68b264a76caca192191/?ulp=https://aovica.top",
+    "rating": 4.93,
+    "votes": 12840,
+    "seoTitle": "Aovica Coupon Codes, Verified Promo Codes & Fashion Deals (2026) – Up to 20% Off & Free Shipping",
+    "seoDescription": "Save up to 20% sitewide on women's dresses, matching sets, swimwear, elegant blazers, and vacation fashion with verified 2026 Aovica promo codes and discount deals.",
+    "about": "Aovica is an online fashion destination dedicated to chic, contemporary women's apparel, stylish two-piece matching sets, elegant blazers, swimwear, and glamorous dresses. Combining trend-setting aesthetics with accessible direct-to-consumer pricing, Aovica delivers runway-inspired sophistication, quality tailoring, and seasonal wardrobe essentials worldwide.",
+    "categories": [
+      "Women's Fashion & Clothing",
+      "Two-Piece Sets & Blazers",
+      "Dresses & Evening Gowns",
+      "Swimwear & Bikinis",
+      "Vacation & Resort Wear",
+      "Matching Outfits"
+    ],
+    "whyShop": [
+      "Affordable Boutique Aesthetics: Runway-inspired two-piece sets, pearl blazers, and elegant dresses without luxury retail markups",
+      "Flattering Coordinated Silhouettes: Tailored matching sets designed for effortless styling across workwear, evenings, and vacations",
+      "Expansive Swim & Resort Collection: High-waist bikinis, flattering one-pieces, and breezy cover-ups for summer getaways",
+      "Worldwide Direct Shipping: Fast international delivery with complimentary standard shipping on qualifying orders over $69",
+      "Dedicated Customer Protection: Secure checkout encryption, responsive order tracking, and hassle-free returns on unworn items"
+    ],
+    "shoppingTips": [
+      "Click Show Code on our verified 20% sitewide coupon voucher to save instantly across matching sets and dresses.",
+      "Consolidate your wardrobe haul to exceed the $69 threshold and unlock complimentary tracked standard shipping worldwide.",
+      "Bundle two or more matching sets or blazers to take advantage of multi-item promotional savings.",
+      "Sign up for the Aovica email newsletter to receive an exclusive 10% new customer welcome discount code.",
+      "Check the seasonal clearance section for limited-time flash markdowns of up to 50% off select styles."
+    ],
+    "faqs": [
+      {
+        "question": "How do I redeem an Aovica coupon code?",
+        "answer": "Click Show Code on PlayNewApps to copy your verified coupon code and automatically open aovica.top. Add your desired clothing items to your shopping cart, proceed to checkout, and enter your revealed promo code in the 'Discount code or gift card' field before completing payment."
+      },
+      {
+        "question": "Does Aovica offer free shipping on international orders?",
+        "answer": "Yes, Aovica provides free standard shipping on all qualifying orders exceeding $69. Tracked international standard delivery takes approximately 7 to 15 business days depending on destination."
+      },
+      {
+        "question": "Can I return an item if the fit is not right?",
+        "answer": "Aovica accepts returns on unworn, unwashed apparel in original condition with tags attached within their designated return window. Note that intimate apparel and swimwear must have hygiene seals intact."
+      },
+      {
+        "question": "Can I combine multiple promo codes on Aovica?",
+        "answer": "Aovica allows one promo code per order at checkout. However, coupon codes can be applied to discounted items, clearance collections, and stacked with the $69 free shipping perk."
+      }
+    ],
+    "banners": [
+      {
+        "id": "aovica-lookbook-2026",
+        "title": "Aovica 2026 Contemporary Fashion Lookbook & Coordinated Sets",
+        "subtitle": "Runway-inspired tailored two-piece suits, resort bikinis, and evening silhouettes direct from aovica.top",
+        "image": "/assets/images/aovica/hero-banner.jpg",
+        "link": "https://rcpsj.com/g/76ypdp9d6wb68b264a76caca192191/?ulp=https://aovica.top",
+        "buttonText": "Explore 2026 Lookbook",
+        "badge": "OFFICIAL CAMPAIGN"
+      },
+      {
+        "id": "aovica-blazer-suits",
+        "title": "Tailored Two-Piece Blazer Pant Suits & Matching Ensembles",
+        "subtitle": "Coordinated workwear chic, pearl-accented blazers, and wide-leg trousers from 5",
+        "image": "/assets/images/aovica/2-piece-blazer-and-sleeveless-.webp",
+        "link": "https://rcpsj.com/g/76ypdp9d6wb68b264a76caca192191/?ulp=https://aovica.top",
+        "buttonText": "Shop Matching Sets",
+        "badge": "20% OFF CODE"
+      },
+      {
+        "id": "aovica-resort-swimwear",
+        "title": "Sculpting High-Waist Swimwear, Bodysuits & Cover-Up Sets",
+        "subtitle": "Tummy-control bikinis and beach cover-up skirts with fast worldwide tracked shipping",
+        "image": "/assets/images/aovica/bikini-bodysuit-swimwear-women.webp",
+        "link": "https://rcpsj.com/g/76ypdp9d6wb68b264a76caca192191/?ulp=https://aovica.top",
+        "buttonText": "Shop Swimwear Collection",
+        "badge": "15% OFF VOUCHER"
       }
     ]
   }

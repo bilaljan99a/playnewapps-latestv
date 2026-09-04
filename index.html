@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>PlayNewApps - App Reviews, Software & Deals (2026)</title>
+   <title>PlayNewApps - Verified Coupons, Software Deals & Hot Discounts (2026)</title>
     <link rel="canonical" href="https://www.playnewapps.store">
-   <meta name="description" content="Read honest app reviews, software reviews, buying guides, verified coupons and exclusive deals. Compare the best Android apps, iPhone apps and PC.">
+   <meta name="description" content="Discover verified coupon codes, exclusive software discounts, and trending affiliate product deals across tech, gaming, fashion, and global stores on PlayNewApps.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="p:domain_verify" content="46c4b69ca6ef8835a01a45aace709b0d"/>
     
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="PlayNewApps - App Reviews, Software & Deals (2026)">
-    <meta property="og:description" content="Read honest app reviews, software reviews, buying guides, verified coupons and exclusive deals. Compare the best Android apps, iPhone apps and PC.">
+    <meta property="og:title" content="PlayNewApps - Verified Coupons, Software Deals & Hot Discounts (2026)">
+    <meta property="og:description" content="Discover verified coupon codes, exclusive software discounts, and trending affiliate product deals across tech, gaming, fashion, and global stores on PlayNewApps.">
     <meta property="og:url" content="https://www.playnewapps.store">
     <meta property="og:site_name" content="PlayNewApps">
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="PlayNewApps - App Reviews, Software & Deals (2026)">
-    <meta name="twitter:description" content="Read honest app reviews, software reviews, buying guides, verified coupons and exclusive deals. Compare the best Android apps, iPhone apps and PC.">
+    <meta name="twitter:title" content="PlayNewApps - Verified Coupons, Software Deals & Hot Discounts (2026)">
+    <meta name="twitter:description" content="Discover verified coupon codes, exclusive software discounts, and trending affiliate product deals across tech, gaming, fashion, and global stores on PlayNewApps.">
     <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon-96x96.png">
     <link rel="shortcut icon" href="/assets/images/favicon.ico">
@@ -170,9 +170,9 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="#popular-categories" class="nav-link">Categories</a></li>
+                    <li><a href="/coupon" class="nav-link">Deals</a></li>
+                    <li><a href="/products" class="nav-link">Products</a></li>
                     <li><a href="/reviews" class="nav-link">Reviews</a></li>
-                    <li><a href="/reviews" class="nav-link">Blog</a></li>
                 </ul>
             </nav>
 
@@ -190,8 +190,8 @@
     <main id="main-content">
         <section class="hero">
             <div class="container hero-content">
-                <h1 class="hero-title">Discover the Best Apps & Software</h1>
-                <p class="hero-subtitle">In-depth reviews, buying guides, and exclusive deals for Android, iOS, and PC.</p>
+                <h1 class="hero-title">Discover Verified Coupons, Software Deals & Hot Products</h1>
+                <p class="hero-subtitle">In-depth software reviews, verified discount codes, and hand-picked product deals across tech, gaming, lifestyle, and global stores.</p>
                 
                 <div class="search-box-wrapper animate-fade-in-up delay-2">
                     <form class="search-box" action="#" role="search" id="search-form">
@@ -545,7 +545,7 @@
         <section id="reviews" class="section container reveal">
             <div class="section-header">
                 <h2 class="section-title">Latest Reviews</h2>
-                <a href="/reviews" class="view-all" aria-label="View All Reviews">View All <span class="material-icons-round" aria-hidden="true">arrow_forward</span></a>
+                <a href="/reviews" class="view-all" aria-label="View All Reviews">Explore all products <span class="material-icons-round" aria-hidden="true">arrow_forward</span></a>
             </div>
             
             <div class="category-filters" aria-label="Review Categories">
@@ -981,6 +981,33 @@
             </div>
         </section>
 
+        <!-- Trending Products & Curated Affiliate Deals Section -->
+        <section id="trending-products" class="section container reveal trending-products-section">
+            <div class="section-header" style="align-items: flex-start;">
+                <div>
+                    <h2 class="section-title">Trending Products &amp; Hot Deals</h2>
+                    <p class="section-subtitle" style="color: var(--text-secondary); margin-top: 0.35rem; font-size: 0.95rem; max-width: 600px;">
+                        Hand-picked electronics, gaming hardware, and lifestyle gear with direct verified savings from global stores. Click &ldquo;Check Price&rdquo; to view real-time store pricing.
+                    </p>
+                </div>
+                <a href="/products" class="view-all" aria-label="View All Products" style="flex-shrink: 0; margin-top: 0.5rem;">Explore all products <span class="material-icons-round" aria-hidden="true">arrow_forward</span></a>
+            </div>
+
+            <!-- Product Category Filter Tabs -->
+            <div class="product-filters-bar" role="tablist" aria-label="Product Categories">
+                <button class="product-filter-btn active" data-filter="all" role="tab" aria-selected="true">All Deals</button>
+                <button class="product-filter-btn" data-filter="tech" role="tab" aria-selected="false">Tech &amp; Gadgets</button>
+                <button class="product-filter-btn" data-filter="lifestyle" role="tab" aria-selected="false">Wearables &amp; Fitness</button>
+                <button class="product-filter-btn" data-filter="home" role="tab" aria-selected="false">Home &amp; Lifestyle</button>
+                <button class="product-filter-btn" data-filter="aliexpress" role="tab" aria-selected="false">AliExpress</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="products-grid">
+                <!-- Loaded dynamically via app.js -->
+            </div>
+        </section>
+
         <section id="deals" class="section container bg-soft reveal">
             <div class="section-header">
                 <h2 class="section-title">Top Software Deals & Coupons</h2>
@@ -1213,7 +1240,7 @@
                             <span class="home-deal-verified-tag"><span class="material-icons-round" aria-hidden="true" style="font-size: 13px;">verified</span> Verified</span>
                         </div>
                         <h3 class="home-deal-title" title="REDMAGIC 4K Gaming Monitor with Free Gaming Mouse Pad">
-                            <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fpages%2Fredmagic-4k-gaming-monitor" target="_blank" rel="noopener sponsored">REDMAGIC 4K Gaming Monitor with Free Gaming Mouse Pad</a>
+                            <a href="https://global.redmagic.gg/pages/redmagic-4k-gaming-monitor" target="_blank" rel="noopener sponsored">REDMAGIC 4K Gaming Monitor with Free Gaming Mouse Pad</a>
                         </h3>
                         <div class="home-deal-expiry">
                             <span class="material-icons-round" aria-hidden="true" style="font-size: 13px;">schedule</span>
@@ -1285,7 +1312,7 @@
                             <span class="home-deal-verified-tag"><span class="material-icons-round" aria-hidden="true" style="font-size: 13px;">verified</span> Verified</span>
                         </div>
                         <h3 class="home-deal-title" title="55% Off GOM Mix AI-Powered Video Editor (Annual & Lifetime)">
-                            <a href="https://yjfca.com/g/zaetcj1zjpb68b264a764561c716ec/?ulp=https%3A%2F%2Fwww.gomlab.com%2Fen%2F" target="_blank" rel="noopener sponsored">55% Off GOM Mix AI-Powered Video Editor (Annual & Lifetime)</a>
+                            <a href="https://www.gomlab.com/en/" target="_blank" rel="noopener sponsored">55% Off GOM Mix AI-Powered Video Editor (Annual & Lifetime)</a>
                         </h3>
                         <div class="home-deal-expiry">
                             <span class="material-icons-round" aria-hidden="true" style="font-size: 13px;">schedule</span>

@@ -110,6 +110,7 @@ class DataService {
     static async getApps() { return (await this.fetchJSON('/data/apps.json')) || []; }
     static async getGames() { return (await this.fetchJSON('/data/games.json')) || []; }
     static async getSoftware() { return (await this.fetchJSON('/data/software.json')) || []; }
+    static async getProducts() { return (await this.fetchJSON('/data/products.json')) || []; }
     
     static async getCoupons() {
         const [coupons, stores] = await Promise.all([

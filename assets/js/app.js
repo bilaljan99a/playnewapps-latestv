@@ -73,6 +73,8 @@ class App {
                 await this.initAuthorPage();
             } else if (path === '/coupon' || path.endsWith('/coupon.html') || path === '/coupons' || path.endsWith('/coupons.html')) {
                 await this.initCouponPage();
+            } else if (path === '/products' || path.endsWith('/products.html')) {
+                await this.initProductsPage();
             } else if (path === '/deal' || path.endsWith('/deal.html') || path === '/deals' || path.endsWith('/deals.html')) {
                 await this.initDealPage();
             } else if (path === '/review' || path.endsWith('/review.html') || path.startsWith('/review/') || (path.startsWith('/reviews/') && path !== '/reviews')) {
@@ -858,6 +860,40 @@ class App {
                 storesGrid.innerHTML = featuredStores.map(s => getComponents().createStoreCard(s)).join('');
             }
         }
+
+        // Populate Trending Affiliate Products Section
+        const productsGrid = document.getElementById('products-grid');
+        if (productsGrid) {
+            const products = await getDataService().getProducts();
+            if (products && products.length > 0) {
+                this.renderProductsSection(products, productsGrid);
+            }
+        }
+    }
+
+    static renderProductsSection(products, container) {
+        if (!container || !products || !products.length) return;
+
+        let activeFilter = 'all';
+
+        const renderFiltered = (filter) => {
+            const filtered = filter === 'all' 
+                ? products 
+                : products.filter(p => (p.categorySlug || '').toLowerCase() === filter.toLowerCase() || (p.store || '').toLowerCase() === filter.toLowerCase());
+            container.innerHTML = filtered.map(item => getComponents().createProductCard(item)).join('');
+        };
+
+        renderFiltered(activeFilter);
+
+        const filterBtns = document.querySelectorAll('.product-filter-btn');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                activeFilter = btn.getAttribute('data-filter') || 'all';
+                renderFiltered(activeFilter);
+            });
+        });
     }
 
     static renderReviews(items, container) {
@@ -3146,5 +3182,30 @@ App.initCouponPage = async function() {
     if (couponsGrid) {
         couponsGrid.innerHTML = allCoupons.map(c => getComponents().createCouponCard(c)).join('');
         this.attachCouponListeners(couponsGrid);
+    }
+};
+
+App.initProductsPage = async function() {
+    const heroTitle = document.querySelector('.hero-title');
+    if (heroTitle) heroTitle.textContent = 'Hot Products & Gadgets';
+    const heroSub = document.querySelector('.hero-subtitle');
+    if (heroSub) heroSub.textContent = 'Discover top tech, gaming setups, and trending gear with our exclusive recommendations.';
+    
+    const slider = document.getElementById('featured');
+    if(slider) slider.style.display = 'none';
+    const counters = document.querySelector('.counters-section');
+    if(counters) counters.style.display = 'none';
+    const reviews = document.getElementById('reviews');
+    if(reviews) reviews.style.display = 'none';
+
+    // The grid should have id="products-grid" in products.html
+    const grid = document.getElementById('products-grid') || document.querySelector('.coupon-grid');
+    if (grid) {
+        grid.className = 'grid products-grid';
+        grid.style.display = 'grid';
+        grid.style.gap = '1.5rem';
+        grid.style.gridTemplateColumns = 'repeat(auto-fill, minmax(280px, 1fr))';
+        const products = await getDataService().getProducts();
+        grid.innerHTML = products.map(p => getComponents().createProductCard(p)).join('');
     }
 };

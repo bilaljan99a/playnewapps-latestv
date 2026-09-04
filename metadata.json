@@ -1,6 +1,6 @@
 {
   "name": "PlayNewApps",
-  "description": "Premium App & Software Reviews, Deals, and Buying Guides.",
+  "description": "Verified Coupon Codes, Software Deals & Hot Product Discounts across Top Global Stores.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
