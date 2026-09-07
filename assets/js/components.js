@@ -276,16 +276,26 @@ class Components {
         const isAmazon = merchantName.toLowerCase().includes('amazon') || (item.store && item.store.toLowerCase().includes('amazon'));
         const merchantLogo = item.merchantLogo || (isAmazon ? '/assets/images/brands/amazon.svg' : '/assets/images/brands/aliexpress.svg');
         const img = item.image || (isAmazon ? '/assets/images/brands/amazon.svg' : '/assets/images/products/keyboard.jpg');
+        const badgeHtml = item.badge ? `<div class="product-card-top"><span class="product-card-badge">${item.badge}</span>${item.discount ? `<span class="product-card-discount">${item.discount}</span>` : ''}</div>` : '';
+        const priceHtml = item.salePrice ? `
+            <div class="product-price-row" style="display: flex; align-items: baseline; gap: 0.5rem; margin: 0.5rem 0 0.85rem;">
+                <span class="product-sale-price" style="font-size: 1.25rem; font-weight: 800; color: #059669;">${item.salePrice}</span>
+                ${item.originalPrice ? `<span class="product-orig-price" style="font-size: 0.85rem; color: #94a3b8; text-decoration: line-through;">${item.originalPrice}</span>` : ''}
+            </div>` : '';
         
         return `
             <article class="product-deal-card" data-category="${item.categorySlug || 'all'}">
+                ${badgeHtml}
                 <a href="${affiliateUrl}" target="_blank" rel="noopener noreferrer nofollow sponsored" class="product-img-wrapper" aria-label="View ${title}">
                     <img src="${img}" alt="${title}" width="320" height="240" loading="lazy" class="product-card-img" onerror="this.onerror=null; this.src='${isAmazon ? '/assets/images/brands/amazon.svg' : '/assets/images/products/keyboard.jpg'}';">
                 </a>
-                <div class="product-card-body" style="display: flex; flex-direction: column; justify-content: space-between; gap: 1rem; flex-grow: 1;">
-                    <h3 class="product-card-title" title="${title}">
-                        <a href="${affiliateUrl}" target="_blank" rel="noopener noreferrer nofollow sponsored">${title}</a>
-                    </h3>
+                <div class="product-card-body" style="display: flex; flex-direction: column; justify-content: space-between; gap: 0.75rem; flex-grow: 1;">
+                    <div>
+                        <h3 class="product-card-title" title="${title}">
+                            <a href="${affiliateUrl}" target="_blank" rel="noopener noreferrer nofollow sponsored">${title}</a>
+                        </h3>
+                        ${priceHtml}
+                    </div>
                     
                     <div class="product-card-action" style="margin-top: auto;">
                         <a href="${affiliateUrl}" target="_blank" rel="noopener noreferrer nofollow sponsored" class="btn btn-primary check-price-btn" aria-label="Check Price on ${merchantName}" style="width: 100%; display: flex; justify-content: center; align-items: center; gap: 0.5rem; text-align: center;">

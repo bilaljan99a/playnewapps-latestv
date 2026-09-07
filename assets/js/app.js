@@ -871,18 +871,68 @@ class App {
         }
     }
 
+    static getFeaturedHomePageProducts(allProducts, maxTotal = 16) {
+        if (!allProducts || !allProducts.length) return [];
+        const selected = [];
+        const selectedIds = new Set();
+
+        // 1. Group by store
+        const storeMap = new Map();
+        const amazonProducts = [];
+
+        for (const p of allProducts) {
+            const store = (p.store || p.merchantName || "").toLowerCase().trim();
+            if (store.includes("amazon")) {
+                amazonProducts.push(p);
+            } else {
+                if (!storeMap.has(store)) {
+                    storeMap.set(store, []);
+                }
+                storeMap.get(store).push(p);
+            }
+        }
+
+        // 2. Pick 1 product from each non-Amazon store ("sab store se ek ek")
+        for (const [, items] of storeMap.entries()) {
+            const sorted = [...items].sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || (b.rating || 0) - (a.rating || 0));
+            const chosen = sorted[0];
+            if (chosen && !selectedIds.has(chosen.id)) {
+                selected.push(chosen);
+                selectedIds.add(chosen.id);
+            }
+        }
+
+        // 3. Fill the remaining spots up to maxTotal with Amazon products ("and bake amazon wale")
+        const sortedAmazon = [...amazonProducts].sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || (b.rating || 0) - (a.rating || 0));
+        for (const p of sortedAmazon) {
+            if (selected.length >= maxTotal) break;
+            if (!selectedIds.has(p.id)) {
+                selected.push(p);
+                selectedIds.add(p.id);
+            }
+        }
+
+        return selected;
+    }
+
     static renderProductsSection(products, container) {
         if (!container || !products || !products.length) return;
 
         let activeFilter = 'all';
 
         const renderFiltered = (filter) => {
-            const filtered = filter === 'all' 
-                ? products 
-                : products.filter(p => (p.categorySlug || '').toLowerCase() === filter.toLowerCase() || (p.store || '').toLowerCase() === filter.toLowerCase());
-            // Featured on home page: exactly 12 products total
-            const featuredProducts = filtered.slice(0, 12);
-            container.innerHTML = featuredProducts.map(item => getComponents().createProductCard(item)).join('');
+            let listToRender = [];
+            if (filter === 'all') {
+                // Exactly 16 products (4 rows x 4 columns)
+                listToRender = App.getFeaturedHomePageProducts(products, 16);
+            } else {
+                const filtered = products.filter(p => 
+                    (p.categorySlug || '').toLowerCase() === filter.toLowerCase() || 
+                    (p.store || '').toLowerCase() === filter.toLowerCase()
+                );
+                listToRender = filtered.slice(0, 16);
+            }
+            container.innerHTML = listToRender.map(item => getComponents().createProductCard(item)).join('');
         };
 
         renderFiltered(activeFilter);
