@@ -6,9 +6,11 @@
     "dev": "node server.js",
     "start": "node server.js",
     "build": "node generate-sitemap.js && echo 'Static site ready'",
+    "amazon:import": "node scripts/amazon-auto-list.js",
     "lint": "echo 'No lint errors'"
   },
   "dependencies": {
+    "cheerio": "^1.2.0",
     "compression": "^1.8.1",
     "express": "^5.2.1",
     "jpeg-js": "^0.4.4",

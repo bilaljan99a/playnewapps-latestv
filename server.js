@@ -8,6 +8,71 @@ const PORT = 3000;
 // Enable gzip/deflate compression for fast asset delivery and high Google PageSpeed score
 app.use(compression());
 
+// Parse JSON and URL-encoded request bodies for API endpoints
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+const {
+  fetchAmazonProduct,
+  saveProduct,
+  deleteProduct,
+  listAmazonProducts
+} = require('./services/amazon-scraper');
+
+// Amazon Auto-Listing API Endpoints
+app.get('/api/amazon/config', (req, res) => {
+  res.json({
+    associateTag: process.env.AMAZON_ASSOCIATE_TAG || 'playnewapps-20',
+    marketplace: process.env.AMAZON_MARKETPLACE || 'com'
+  });
+});
+
+app.post('/api/amazon/fetch', async (req, res) => {
+  try {
+    const { input, tag } = req.body || {};
+    if (!input) {
+      return res.status(400).json({ success: false, error: 'Product URL or ASIN is required.' });
+    }
+    const product = await fetchAmazonProduct(input, tag);
+    res.json({ success: true, product });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message || 'Failed to fetch Amazon product.' });
+  }
+});
+
+app.post('/api/amazon/save', (req, res) => {
+  try {
+    const { product } = req.body || {};
+    if (!product || !product.title) {
+      return res.status(400).json({ success: false, error: 'Valid product data is required.' });
+    }
+    const result = saveProduct(product);
+    res.json({ success: true, result });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message || 'Failed to save product.' });
+  }
+});
+
+app.get('/api/amazon/list', (req, res) => {
+  try {
+    const products = listAmazonProducts();
+    res.json({ success: true, products });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+app.post('/api/amazon/delete', (req, res) => {
+  try {
+    const { id } = req.body || {};
+    if (!id) return res.status(400).json({ success: false, error: 'Product ID is required.' });
+    const result = deleteProduct(id);
+    res.json({ success: true, result });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
 // Disable all HTTP caching in development so preview always gets latest files
 app.use((req, res, next) => {
   res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0');
@@ -256,7 +321,15 @@ const cleanRoutes = [
   { route: '/ps5-review', file: 'ps5-review.html' },
   { route: '/oculus-quest-2-review', file: 'oculus-quest-2-review.html' },
   { route: '/asphalt-8-airborne-review', file: 'asphalt-8-airborne-review.html' },
-  { route: '/asphalt-8-review', file: 'asphalt-8-airborne-review.html' }
+  { route: '/asphalt-8-review', file: 'asphalt-8-airborne-review.html' },
+  { route: '/amazon-prime-video', file: 'amazon-prime-video-coupons.html' },
+  { route: '/amazon-prime-video-coupons', file: 'amazon-prime-video-coupons.html' },
+  { route: '/store/amazon-prime-video', file: 'amazon-prime-video-coupons.html' },
+  { route: '/kkday', file: 'kkday-coupons.html' },
+  { route: '/kkday-coupons', file: 'kkday-coupons.html' },
+  { route: '/store/kkday', file: 'kkday-coupons.html' },
+  { route: '/amazon-auto-list', file: 'amazon-auto-list.html' },
+  { route: '/admin/amazon', file: 'amazon-auto-list.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {

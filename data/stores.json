@@ -1,5 +1,94 @@
 [
   {
+    "id": "kkday",
+    "name": "KKday",
+    "icon": "flight_takeoff",
+    "logo": "/assets/images/brands/kkday.svg",
+    "website": "https://www.kkday.com",
+    "storeUrl": "/kkday-coupons",
+    "affiliateUrl": "https://rcpsj.com/g/sbdob37fx1b68b264a765053cbfa2e/?ulp=https://www.kkday.com/en-us",
+    "affiliateLink": "https://rcpsj.com/g/sbdob37fx1b68b264a765053cbfa2e/?ulp=https://www.kkday.com/en-us",
+    "rating": 4.95,
+    "votes": 28450,
+    "seoTitle": "KKday Coupon Codes & Discount Offers (2026) – 10% Off Tours, Attraction Tickets & eSIMs",
+    "seoDescription": "Save on KKday tours, theme park tickets, rail passes, and travel eSIMs with verified 2026 promo codes. Get 10% off sitewide (capped at ), flash deals, and instant confirmation.",
+    "about": "KKday is a premier global travel e-commerce platform curating over 30,000 handpicked travel experiences across 90+ countries and 550+ cities. From instant theme park e-vouchers (Universal Studios Japan, Tokyo Disneyland) to private mountain day trips, scenic rail passes, and high-speed global eSIMs, KKday delivers hassle-free, vetted adventures with real-time mobile ticketing.",
+    "categories": [
+      "Theme Parks & Attraction Tickets",
+      "Day Tours & Guided Sightseeing",
+      "High-Speed Travel eSIMs & Pocket WiFi",
+      "Rail Passes & Airport Transfers",
+      "Outdoor Adventures & Water Sports",
+      "Local Cultural Workshops & Food Tours"
+    ],
+    "whyShop": [
+      "Over 30,000 Vetted Experiences: Curated local activities, private charters, and official attraction partnerships across 90+ countries",
+      "Instant E-Voucher Delivery: Receive QR code tickets directly on your smartphone for rapid, paperless gate entry",
+      "Best Price Assurance: Competitive direct-from-operator rates with zero hidden booking surcharges",
+      "Verified Traveler Reviews: Transparent, authentic feedback from millions of global globetrotters and families",
+      "24/7 Multilingual Support: Dedicated customer assistance via in-app VoIP call, live chat, and email in English, Japanese, Chinese, and Korean",
+      "Rewarding Loyalty Points: Earn KKday points on every completed booking to apply as real cash discounts on your next getaway"
+    ],
+    "shoppingTips": [
+      "Click Show Code on PlayNewApps to claim your exclusive 10% sitewide promo code (capped at ) and redeem it at checkout on kkday.com.",
+      "Book attraction tickets and day tours at least 2 to 4 weeks in advance, especially during peak seasons like Cherry Blossom (Sakura) and Autumn Foliage.",
+      "Purchase an eSIM connectivity plan alongside your tour bookings to enjoy instant local high-speed data without swapping physical SIM cards.",
+      "Combine your bookings on the KKday mobile app to take advantage of app-exclusive flash coupons and accelerated point multipliers.",
+      "Look for activities labeled \"Instant Confirmation\" and \"Free Cancellation 24H Before\" for maximum itinerary flexibility."
+    ],
+    "faqs": [
+      {
+        "question": "How do I redeem a KKday promo code or discount voucher?",
+        "answer": "Click Show Code on PlayNewApps to copy the verified promo code and launch the official KKday booking portal. Select your desired tour, attraction tickets, or travel eSIM, choose your travel date and quantity, and proceed to the checkout page. In the Payment section under Use Coupon / Promo Code, paste your copied code and click Apply to instantly see your discount deducted before completing payment."
+      },
+      {
+        "question": "Does the 10% off KKday coupon code have a minimum spending requirement?",
+        "answer": "No, this verified promotional code has zero minimum spend requirement. You receive an instant 10% discount on your eligible booking, with total savings capped at ."
+      },
+      {
+        "question": "How do I receive and use my KKday e-tickets and tour vouchers?",
+        "answer": "Once payment is confirmed, KKday generates a digital e-voucher with a unique QR code and booking reference number. You can access it immediately within the KKday mobile app under My Bookings or via the PDF confirmation sent to your email. At the venue gate, rail station, or meeting point, simply show the QR code on your phone screen to scan and enter without printing paper tickets."
+      },
+      {
+        "question": "Can I cancel or reschedule my KKday booking if my travel plans change?",
+        "answer": "Most KKday tours and activities feature a clear cancellation policy stated on the product page. Many day tours and private charters offer 100% full refunds if cancelled at least 24 to 48 hours before the scheduled departure date. Certain fixed-date attraction tickets (such as theme parks) are non-refundable once issued per park operator regulations."
+      },
+      {
+        "question": "How does KKday eSIM work and how quickly is it activated?",
+        "answer": "KKday eSIMs require no physical shipping. After ordering, you receive a QR code in your email and app within 5 minutes. Simply scan the QR code in your phone settings under Cellular/Mobile Data to install the travel profile. When you land at your destination, toggle on data roaming for the eSIM profile to enjoy immediate 4G/5G internet access."
+      }
+    ],
+    "banners": [
+      {
+        "id": "kkday-japan-asia-hero",
+        "title": "KKday Vetted Asia & Global Travel Experiences",
+        "subtitle": "Explore 30,000+ top-rated day tours, theme park passes, and scenic excursions from ",
+        "image": "/assets/images/kkday/kkday-japan-travel-showcase.jpg",
+        "link": "https://rcpsj.com/g/sbdob37fx1b68b264a765053cbfa2e/?ulp=https://www.kkday.com/en-us",
+        "buttonText": "Explore Top Tours",
+        "badge": "FEATURED EXPERIENCES"
+      },
+      {
+        "id": "kkday-mt-fuji-day-tours",
+        "title": "Mount Fuji & Scenic Hakone Day Tours from Tokyo",
+        "subtitle": "Breathtaking alpine vistas, Lake Ashi pirate boat cruises, and outlet shopping from 5",
+        "image": "/assets/images/kkday/kkday-mt-fuji-tour.jpg",
+        "link": "https://rcpsj.com/g/sbdob37fx1b68b264a765053cbfa2e/?ulp=https://www.kkday.com/en-us",
+        "buttonText": "View Mt. Fuji Tours",
+        "badge": "TOP SELLER"
+      },
+      {
+        "id": "kkday-taipei-asia-passes",
+        "title": "Taiwan & Southeast Asia Attractions, Food Walks & Rail Passes",
+        "subtitle": "Authentic local immersion, high-speed rail tickets, and night market culinary tours",
+        "image": "/assets/images/kkday/kkday-taipei-asia-travel.jpg",
+        "link": "https://rcpsj.com/g/sbdob37fx1b68b264a765053cbfa2e/?ulp=https://www.kkday.com/en-us",
+        "buttonText": "Book City Passes",
+        "badge": "INSTANT CONFIRMATION"
+      }
+    ]
+  },
+  {
     "id": "woodestic",
     "name": "Woodestic",
     "icon": "casino",
@@ -5869,6 +5958,65 @@
         "link": "https://rcpsj.com/g/76ypdp9d6wb68b264a76caca192191/?ulp=https://aovica.top",
         "buttonText": "Shop Swimwear Collection",
         "badge": "15% OFF VOUCHER"
+      }
+    ]
+  },
+  {
+    "id": "amazon-prime-video",
+    "name": "Amazon Prime Video",
+    "icon": "play_circle",
+    "logo": "/assets/images/brands/prime-video.svg",
+    "website": "https://www.primevideo.com/",
+    "storeUrl": "/amazon-prime-video-coupons",
+    "affiliateUrl": "https://kdbov.com/g/6osk6x1ky4b68b264a76ce4f0d0bb0/",
+    "affiliateLink": "https://kdbov.com/g/6osk6x1ky4b68b264a76ce4f0d0bb0/",
+    "rating": 4.93,
+    "votes": 84210,
+    "seoTitle": "Amazon Prime Video Coupon Codes & Verified Promo Deals (2026) – 30-Day Free Trial & 50% Off",
+    "seoDescription": "Save with verified Amazon Prime Video promo codes, 30-day free trials, 50% student discounts, and Prime Video Channel promotions for 2026. Stream award-winning Amazon Originals in 4K HDR.",
+    "about": "Amazon Prime Video is an industry-leading global streaming entertainment platform offering unlimited access to thousands of blockbuster movies, critically acclaimed Amazon Original series, live sports, and integrated Prime Video Channels. Featuring crisp 4K UHD streaming with HDR10+ and Dolby Atmos, multi-device offline downloads, IMDb X-Ray behind-the-scenes insights, and personalized family profiles.",
+    "categories": [
+      "Streaming & Entertainment",
+      "Movies & TV Shows",
+      "Digital Media",
+      "Live Sports",
+      "Apps & Services"
+    ],
+    "whyShop": [
+      "30-Day Risk-Free Trial: Test the complete Amazon Prime Video catalog with zero upfront payment",
+      "Exclusive Amazon Originals: Stream The Boys, The Rings of Power, Reacher, Fallout, and Invincible in 4K HDR",
+      "Prime Video Channels: Seamlessly subscribe to Paramount+, Max, Starz, MGM+, and Crunchyroll in one app",
+      "IMDb X-Ray Integration: Instant real-time access to cast filmographies, trivia, and music while watching",
+      "Prime Student 50% Discount: College students get a 6-month free trial followed by half-price monthly rates",
+      "Multi-Screen Streaming: Stream up to 3 simultaneous screens with offline downloads on mobile and tablet devices"
+    ],
+    "shoppingTips": [
+      "Sign up for the Amazon Prime 30-Day Free Trial to binge top releases with zero financial commitment.",
+      "Verify student status with an active .edu email to unlock a 6-month trial and 50% off monthly subscriptions.",
+      "Look out for Prime Day and Black Friday channel promotions offering premium add-on channels for just sh.99/mo or 50% off for 2-3 months.",
+      "Choose 'No-Rush Shipping' on regular Amazon.com orders to earn promotional digital credits redeemable for Prime Video movie rentals.",
+      "Take advantage of Prime Video Channels 7-day free trials to watch specific sports events or new releases without committing."
+    ],
+    "faqs": [
+      {
+        "question": "How do I use an Amazon Prime Video promo code or digital credit?",
+        "answer": "To redeem a promo code or digital credit on Amazon Prime Video, go to Your Account, select 'Gift Cards & Promotional Credits', and enter your code. When you rent or purchase digital titles, your active promotional balance is automatically deducted before charging your credit card."
+      },
+      {
+        "question": "Can I get Amazon Prime Video without a full Amazon Prime membership?",
+        "answer": "Yes. Amazon offers a standalone Prime Video subscription for .99 per month. However, for 4.99 per month (or 39 per year), the full Amazon Prime membership includes free two-day shipping, Amazon Music Prime, Prime Gaming, and Prime Reading."
+      },
+      {
+        "question": "How does the Amazon Prime Video 30-day free trial work?",
+        "answer": "New customers and eligible returning members can start a 30-day free trial with full access to the entire streaming library in 4K HDR. You can cancel anytime before the 30 days elapse inside your Amazon Account settings to avoid recurring charges."
+      },
+      {
+        "question": "What is the Prime Student discount for Prime Video?",
+        "answer": "College students enrolled in at least one class can sign up for Prime Student, which offers an extended 6-month free trial followed by a discounted rate of .49 per month (50% off the standard rate) for up to 4 years."
+      },
+      {
+        "question": "How many devices can stream Amazon Prime Video simultaneously?",
+        "answer": "You can stream up to 3 titles at the same time using the same Amazon account. However, you can stream the same title on no more than 2 devices simultaneously."
       }
     ]
   }

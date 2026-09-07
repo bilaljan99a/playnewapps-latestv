@@ -107,10 +107,116 @@ class DataService {
         }, 1000);
     }
 
+    /**
+     * AMAZON ASSOCIATE TAG VALIDATION & INJECTION HELPER
+     * Validates detected URLs against official Amazon domains and injects the proper tag ('playnewapps-20')
+     * before rendering in the DOM.
+     * Supports all regional Amazon domains (.com, .co.uk, .de, .ca, .fr, .es, .it, .in, .co.jp, .com.au, .ae, etc.)
+     * and shortlinks (amzn.to, a.co).
+     *
+     * @param {string} url - The URL to validate and format
+     * @param {string} [tag='playnewapps-20'] - Associate tracking tag to inject
+     * @returns {string} - Amazon link with the verified tracking tag, or original URL if not Amazon
+     */
+    static formatAmazonAffiliateUrl(url, tag = 'playnewapps-20') {
+        if (!url || typeof url !== 'string') return url || '';
+        const trimmed = url.trim();
+        if (!trimmed || trimmed === '#' || trimmed.startsWith('javascript:')) return trimmed;
+
+        try {
+            const normalizedUrl = trimmed.startsWith('//')
+                ? 'https:' + trimmed
+                : (!trimmed.startsWith('http://') && !trimmed.startsWith('https://') && trimmed.includes('amazon.'))
+                    ? 'https://' + trimmed
+                    : trimmed;
+
+            const parsed = new URL(normalizedUrl);
+            const hostname = parsed.hostname.toLowerCase();
+
+            // Validate against Amazon domains and shortlinks
+            const isAmazon = /(^|\.)amazon\.[a-z.]{2,}$/i.test(hostname) ||
+                             /(^|\.)amzn\.to$/i.test(hostname) ||
+                             /(^|\.)a\.co$/i.test(hostname) ||
+                             hostname === 'amazon.com';
+
+            if (!isAmazon) {
+                return trimmed;
+            }
+
+            // Ensure proper tag is set/overridden to prevent missing or broken commission attribution
+            parsed.searchParams.set('tag', tag);
+            return parsed.toString();
+        } catch (e) {
+            // Fallback for malformed URLs that match Amazon domains
+            if (/amazon\.[a-z.]+/i.test(trimmed)) {
+                if (trimmed.includes('tag=')) {
+                    return trimmed.replace(/([?&])tag=[^&#]+/i, `$1tag=${encodeURIComponent(tag)}`);
+                }
+                const separator = trimmed.includes('?') ? '&' : '?';
+                return `${trimmed}${separator}tag=${encodeURIComponent(tag)}`;
+            }
+            return trimmed;
+        }
+    }
+
+    /**
+     * Helper to detect if a given URL belongs to Amazon
+     * @param {string} url
+     * @returns {boolean}
+     */
+    static isAmazonUrl(url) {
+        if (!url || typeof url !== 'string') return false;
+        try {
+            const normalized = url.startsWith('//') ? 'https:' + url : (url.startsWith('http') ? url : 'https://' + url);
+            const parsed = new URL(normalized);
+            const host = parsed.hostname.toLowerCase();
+            return /(^|\.)amazon\.[a-z.]{2,}$/i.test(host) || /(^|\.)amzn\.to$/i.test(host) || /(^|\.)a\.co$/i.test(host);
+        } catch (e) {
+            return /amazon\.[a-z.]+/i.test(url);
+        }
+    }
+
+    /**
+     * Scans DOM container for any Amazon links and ensures 'playnewapps-20' is injected
+     * @param {HTMLElement|Document} [container=document]
+     * @param {string} [tag='playnewapps-20']
+     */
+    static validateAmazonLinksInDOM(container = (typeof document !== 'undefined' ? document : null), tag = 'playnewapps-20') {
+        if (!container || !container.querySelectorAll) return;
+        try {
+            const links = container.querySelectorAll('a[href*="amazon."], a[href*="amzn.to"], a[href*="a.co"]');
+            links.forEach(link => {
+                const currentHref = link.getAttribute('href');
+                if (currentHref && this.isAmazonUrl(currentHref)) {
+                    const validated = this.formatAmazonAffiliateUrl(currentHref, tag);
+                    if (validated !== currentHref) {
+                        link.setAttribute('href', validated);
+                    }
+                }
+            });
+        } catch (e) {}
+    }
+
     static async getApps() { return (await this.fetchJSON('/data/apps.json')) || []; }
     static async getGames() { return (await this.fetchJSON('/data/games.json')) || []; }
     static async getSoftware() { return (await this.fetchJSON('/data/software.json')) || []; }
-    static async getProducts() { return (await this.fetchJSON('/data/products.json')) || []; }
+    
+    static async getProducts() {
+        const products = (await this.fetchJSON('/data/products.json')) || [];
+        return products.map(item => {
+            const copy = { ...item };
+            if (copy.affiliateUrl) {
+                copy.affiliateUrl = this.formatAmazonAffiliateUrl(copy.affiliateUrl);
+            }
+            if (copy.productUrl) {
+                copy.productUrl = this.formatAmazonAffiliateUrl(copy.productUrl);
+                if (!copy.affiliateUrl && this.isAmazonUrl(copy.productUrl)) {
+                    copy.affiliateUrl = copy.productUrl;
+                }
+            }
+            return copy;
+        });
+    }
     
     static async getCoupons() {
         const [coupons, stores] = await Promise.all([
@@ -134,7 +240,8 @@ class DataService {
                     affiliateLink: c.affiliateUrl || '#'
                 };
             }
-            const finalLink = c.affiliateLink || c.affiliateUrl || c.url || (storeObj ? storeObj.affiliateLink : '#');
+            const rawFinalLink = c.affiliateLink || c.affiliateUrl || c.url || (storeObj ? storeObj.affiliateLink : '#');
+            const finalLink = this.formatAmazonAffiliateUrl(rawFinalLink);
             return {
                 ...c,
                 storeId: c.storeId || storeObj.id,
@@ -164,4 +271,10 @@ class DataService {
         return all.find(item => item.id === id);
     }
 }
-window.DataService = DataService;
+
+if (typeof window !== 'undefined') {
+    window.DataService = DataService;
+}
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = DataService;
+}

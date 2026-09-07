@@ -266,7 +266,11 @@ class Components {
     }
 
     static createProductCard(item) {
-        const affiliateUrl = item.affiliateUrl || item.productUrl || '#';
+        let rawAffiliateUrl = item.affiliateUrl || item.productUrl || '#';
+        if (typeof window !== 'undefined' && window.DataService && typeof window.DataService.formatAmazonAffiliateUrl === 'function') {
+            rawAffiliateUrl = window.DataService.formatAmazonAffiliateUrl(rawAffiliateUrl);
+        }
+        const affiliateUrl = rawAffiliateUrl;
         const title = item.title || 'Featured Product';
         const merchantName = item.merchantName || item.store || 'Store';
         const merchantLogo = item.merchantLogo || '/assets/images/brands/aliexpress.svg';

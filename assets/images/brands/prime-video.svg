@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 90" width="360" height="90" fill="none">
+  <!-- Amazon Prime Video Wordmark & Smile Vector -->
+  <g transform="translate(10, 12)">
+    <!-- "prime" text -->
+    <text x="0" y="44" font-family="'Plus Jakarta Sans', 'Amazon Ember', 'Arial Black', -apple-system, sans-serif" font-weight="900" font-size="46" fill="#0F172A" letter-spacing="-0.03em">prime</text>
+    
+    <!-- Iconic Amazon Smile Arrow in Prime Blue -->
+    <path d="M 12 55 Q 68 76 112 53" fill="none" stroke="#00A8E1" stroke-width="5" stroke-linecap="round" />
+    <path d="M 104 48 L 115 52 L 109 63 Z" fill="#00A8E1" />
+
+    <!-- "video" text -->
+    <text x="135" y="44" font-family="'Plus Jakarta Sans', 'Amazon Ember', 'Arial', -apple-system, sans-serif" font-weight="400" font-size="46" fill="#00A8E1" letter-spacing="-0.02em">video</text>
+  </g>
+</svg>
