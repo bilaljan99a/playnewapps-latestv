@@ -399,8 +399,15 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="form-label" for="edit-image">Product Image URL</label>
-                            <input type="text" id="edit-image" class="form-input" oninput="updateLivePreview()">
+                            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.35rem;">
+                                <label class="form-label" for="edit-image" style="margin-bottom: 0;">Product Image URL (Verified HD Required)</label>
+                                <button type="button" id="btn-refetch-image" onclick="refetchProductImage()" style="background: #e0e7ff; color: #4338ca; border: none; padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 0.25rem;">
+                                    <span class="material-icons-round" style="font-size: 0.9rem;">refresh</span>
+                                    <span>Re-fetch Image</span>
+                                </button>
+                            </div>
+                            <input type="text" id="edit-image" class="form-input" placeholder="https://m.media-amazon.com/images/I/..." oninput="updateLivePreview()">
+                            <div id="img-status-indicator" style="font-size: 0.75rem; margin-top: 0.25rem;"></div>
                         </div>
 
                         <div class="form-group">
@@ -674,6 +681,90 @@
             }
         }
 
+        // Re-fetch HD Image Function
+        async function refetchProductImage(targetAsin) {
+            const asin = targetAsin || (currentProduct && currentProduct.asin) || (document.getElementById('amazon-input') ? document.getElementById('amazon-input').value.trim() : '');
+            if (!asin) {
+                alert('Please enter an Amazon URL or ASIN first.');
+                return;
+            }
+
+            const btn = document.getElementById('btn-refetch-image');
+            const statusIndicator = document.getElementById('img-status-indicator');
+            if (btn) {
+                btn.disabled = true;
+                btn.innerHTML = '<span class="material-icons-round" style="font-size: 0.9rem;">hourglass_top</span> Fetching...';
+            }
+            if (statusIndicator) {
+                statusIndicator.style.color = '#3b82f6';
+                statusIndicator.textContent = '🔄 Re-checking Amazon endpoints for verified image...';
+            }
+
+            try {
+                const res = await fetch('/api/amazon/refetch-image', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ asin, input: asin })
+                });
+                const data = await res.json();
+                if (data.success && data.image) {
+                    document.getElementById('edit-image').value = data.image;
+                    if (currentProduct) currentProduct.image = data.image;
+                    updateLivePreview();
+                    if (statusIndicator) {
+                        statusIndicator.style.color = '#10b981';
+                        statusIndicator.textContent = '✓ High-definition image successfully retrieved and applied!';
+                    }
+                } else {
+                    throw new Error(data.error || 'Failed to retrieve image.');
+                }
+            } catch (err) {
+                if (statusIndicator) {
+                    statusIndicator.style.color = '#ef4444';
+                    statusIndicator.textContent = '✗ ' + err.message;
+                }
+                alert('Image fetch failed: ' + err.message);
+            } finally {
+                if (btn) {
+                    btn.disabled = false;
+                    btn.innerHTML = '<span class="material-icons-round" style="font-size: 0.9rem;">refresh</span> Re-fetch Image';
+                }
+            }
+        }
+
+        // Repair Inventory Image
+        async function repairInventoryImage(asin) {
+            if (!asin) return;
+            try {
+                const res = await fetch('/api/amazon/refetch-image', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ asin })
+                });
+                const data = await res.json();
+                if (data.success && data.image) {
+                    // Update the product
+                    const listRes = await fetch('/api/amazon/list');
+                    const listData = await listRes.json();
+                    const prod = (listData.products || []).find(p => p.asin === asin || p.id.includes(asin.toLowerCase()));
+                    if (prod) {
+                        prod.image = data.image;
+                        await fetch('/api/amazon/save', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ product: prod })
+                        });
+                        alert('✓ Product image fixed successfully!');
+                        loadInventory();
+                    }
+                } else {
+                    alert('Could not auto-fetch image: ' + (data.error || 'Unknown error'));
+                }
+            } catch (err) {
+                alert('Repair failed: ' + err.message);
+            }
+        }
+
         // Live Preview Sync
         function updateLivePreview() {
             if (!currentProduct) return;
@@ -690,7 +781,17 @@
             const affUrl = document.getElementById('edit-affiliate').value || currentProduct.affiliateUrl;
             const highlights = document.getElementById('edit-highlights').value.split('\n').filter(h => h.trim());
 
-            document.getElementById('pv-img').src = img;
+            const pvImg = document.getElementById('pv-img');
+            pvImg.src = img;
+            pvImg.onerror = function() {
+                this.onerror = null;
+                this.src = '/assets/images/brands/amazon.svg';
+                const statusIndicator = document.getElementById('img-status-indicator');
+                if (statusIndicator) {
+                    statusIndicator.style.color = '#ef4444';
+                    statusIndicator.textContent = '⚠️ Image failed to load. Please click "Re-fetch Image" above.';
+                }
+            };
             document.getElementById('pv-badge').textContent = badge;
             document.getElementById('pv-title').textContent = title;
             document.getElementById('pv-saleprice').textContent = salePrice;
@@ -723,6 +824,23 @@
         // Publish to PlayNewApps
         async function publishProduct() {
             if (!currentProduct) return;
+
+            const titleVal = (document.getElementById('edit-title').value || '').trim();
+            if (!titleVal || titleVal.toLowerCase() === 'amazon.com' || titleVal.toLowerCase().includes('robot check') || titleVal.length < 4) {
+                alert("⚠️ Please enter a specific, descriptive product title before publishing. It cannot be 'Amazon.com'.");
+                document.getElementById('edit-title').focus();
+                return;
+            }
+            currentProduct.title = titleVal;
+
+            // Strict user rule: "image ke bagair koeye deal na ho"
+            const imgVal = (document.getElementById('edit-image').value || '').trim();
+            if (!imgVal || imgVal.includes('01._SCLZZZZZZZ_V1_.jpg') || imgVal.includes('pixel.gif') || imgVal.length < 12) {
+                alert("⚠️ Missing or invalid product image! Image ke bagair koi deal publish nahi ho sakti. Please click 'Re-fetch Image' or enter a valid product image URL.");
+                document.getElementById('edit-image').focus();
+                return;
+            }
+            currentProduct.image = imgVal;
 
             const saveBtn = document.getElementById('btn-save');
             saveBtn.disabled = true;
@@ -770,10 +888,13 @@
                     <tr>
                         <td>
                             <div style="display: flex; align-items: center; gap: 0.75rem;">
-                                <img src="${p.image}" alt="" class="inventory-thumb" onerror="this.src='/assets/images/brands/amazon.svg'">
+                                <img src="${p.image}" alt="" class="inventory-thumb" onerror="this.onerror=null; this.src='/assets/images/brands/amazon.svg';">
                                 <div>
                                     <strong style="display: block; max-width: 320px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #0f172a;">${p.title}</strong>
-                                    <span style="font-size: 0.75rem; color: #64748b;">ASIN: ${p.asin || p.id} • ${p.badge || 'Standard'}</span>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; color: #64748b; margin-top: 0.2rem;">
+                                        <span>ASIN: ${p.asin || p.id} • ${p.badge || 'Standard'}</span>
+                                        ${(!p.image || p.image.includes('01._SCLZZZZZZZ_V1_.jpg')) ? `<button onclick="repairInventoryImage('${p.asin}')" style="background:#fee2e2;color:#dc2626;border:none;padding:1px 5px;border-radius:3px;cursor:pointer;font-size:0.7rem;font-weight:700;">Fix Image</button>` : `<button onclick="repairInventoryImage('${p.asin}')" title="Refresh HD Image" style="background:#f1f5f9;color:#475569;border:none;padding:1px 5px;border-radius:3px;cursor:pointer;font-size:0.7rem;">↻ Image</button>`}
+                                    </div>
                                 </div>
                             </div>
                         </td>
@@ -865,11 +986,30 @@
                     prod.categorySlug = category;
                     prod.badge = badge;
 
-                    await fetch('/api/amazon/save', {
+                    // Ensure verified image is present; if not, retry image fetch
+                    if (!prod.image || prod.image.includes('01._SCLZZZZZZZ_V1_.jpg') || prod.image.includes('pixel.gif')) {
+                        const imgRes = await fetch('/api/amazon/refetch-image', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ asin: prod.asin, input: item })
+                        });
+                        const imgData = await imgRes.json();
+                        if (imgData.success && imgData.image) {
+                            prod.image = imgData.image;
+                        }
+                    }
+
+                    if (!prod.image || prod.image.includes('01._SCLZZZZZZZ_V1_.jpg') || prod.image.includes('pixel.gif')) {
+                        throw new Error("No verified image found. Product cannot be added without an image.");
+                    }
+
+                    const saveRes = await fetch('/api/amazon/save', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ product: prod })
                     });
+                    const saveData = await saveRes.json();
+                    if (!saveData.success) throw new Error(saveData.error || 'Failed to save product');
 
                     success++;
                     logBox.innerHTML += `<div style="color: #4ade80;">[${i+1}/${lines.length}] ✓ Added: ${prod.title.substring(0, 45)}... (${prod.salePrice})</div>`;

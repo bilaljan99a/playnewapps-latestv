@@ -14,9 +14,13 @@ app.use(express.urlencoded({ extended: true }));
 
 const {
   fetchAmazonProduct,
+  fetchRealAmazonImage,
+  upgradeAmazonImageUrl,
+  isValidImageUrl,
   saveProduct,
   deleteProduct,
-  listAmazonProducts
+  listAmazonProducts,
+  extractAsin
 } = require('./services/amazon-scraper');
 
 // Amazon Auto-Listing API Endpoints
@@ -40,13 +44,33 @@ app.post('/api/amazon/fetch', async (req, res) => {
   }
 });
 
-app.post('/api/amazon/save', (req, res) => {
+app.post('/api/amazon/refetch-image', async (req, res) => {
+  try {
+    const { input, asin } = req.body || {};
+    let targetAsin = asin;
+    if (!targetAsin && input) {
+      targetAsin = await extractAsin(input);
+    }
+    if (!targetAsin) {
+      return res.status(400).json({ success: false, error: 'Product ASIN or URL is required.' });
+    }
+    const imageUrl = await fetchRealAmazonImage(targetAsin);
+    if (!imageUrl) {
+      return res.status(404).json({ success: false, error: 'Could not fetch image from Amazon endpoints.' });
+    }
+    res.json({ success: true, asin: targetAsin, image: imageUrl });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message || 'Failed to re-fetch image.' });
+  }
+});
+
+app.post('/api/amazon/save', async (req, res) => {
   try {
     const { product } = req.body || {};
     if (!product || !product.title) {
       return res.status(400).json({ success: false, error: 'Valid product data is required.' });
     }
-    const result = saveProduct(product);
+    const result = await saveProduct(product);
     res.json({ success: true, result });
   } catch (err) {
     res.status(500).json({ success: false, error: err.message || 'Failed to save product.' });

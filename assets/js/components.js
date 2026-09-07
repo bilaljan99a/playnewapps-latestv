@@ -272,14 +272,15 @@ class Components {
         }
         const affiliateUrl = rawAffiliateUrl;
         const title = item.title || 'Featured Product';
-        const merchantName = item.merchantName || item.store || 'Store';
-        const merchantLogo = item.merchantLogo || '/assets/images/brands/aliexpress.svg';
-        const img = item.image || '/assets/images/products/keyboard.jpg';
+        const merchantName = item.merchantName || item.store || 'Amazon';
+        const isAmazon = merchantName.toLowerCase().includes('amazon') || (item.store && item.store.toLowerCase().includes('amazon'));
+        const merchantLogo = item.merchantLogo || (isAmazon ? '/assets/images/brands/amazon.svg' : '/assets/images/brands/aliexpress.svg');
+        const img = item.image || (isAmazon ? '/assets/images/brands/amazon.svg' : '/assets/images/products/keyboard.jpg');
         
         return `
             <article class="product-deal-card" data-category="${item.categorySlug || 'all'}">
                 <a href="${affiliateUrl}" target="_blank" rel="noopener noreferrer nofollow sponsored" class="product-img-wrapper" aria-label="View ${title}">
-                    <img src="${img}" alt="${title}" width="320" height="240" loading="lazy" class="product-card-img" onerror="this.src='/assets/images/products/keyboard.jpg'">
+                    <img src="${img}" alt="${title}" width="320" height="240" loading="lazy" class="product-card-img" onerror="this.onerror=null; this.src='${isAmazon ? '/assets/images/brands/amazon.svg' : '/assets/images/products/keyboard.jpg'}';">
                 </a>
                 <div class="product-card-body" style="display: flex; flex-direction: column; justify-content: space-between; gap: 1rem; flex-grow: 1;">
                     <h3 class="product-card-title" title="${title}">

@@ -880,7 +880,9 @@ class App {
             const filtered = filter === 'all' 
                 ? products 
                 : products.filter(p => (p.categorySlug || '').toLowerCase() === filter.toLowerCase() || (p.store || '').toLowerCase() === filter.toLowerCase());
-            container.innerHTML = filtered.map(item => getComponents().createProductCard(item)).join('');
+            // Featured on home page: exactly 12 products total
+            const featuredProducts = filtered.slice(0, 12);
+            container.innerHTML = featuredProducts.map(item => getComponents().createProductCard(item)).join('');
         };
 
         renderFiltered(activeFilter);
