@@ -1,5 +1,69 @@
 [
   {
+    "id": "the-luxury-closet",
+    "name": "The Luxury Closet",
+    "icon": "diamond",
+    "logo": "/assets/images/brands/the-luxury-closet.svg",
+    "website": "https://theluxurycloset.com",
+    "storeUrl": "/the-luxury-closet-coupons",
+    "affiliateUrl": "https://ad.admitad.com/g/quh26xvvn8b68b264a764413e8fc1b/?ulp=https://theluxurycloset.com",
+    "affiliateLink": "https://ad.admitad.com/g/quh26xvvn8b68b264a764413e8fc1b/?ulp=https://theluxurycloset.com",
+    "rating": 4.93,
+    "votes": 34210,
+    "seoTitle": "The Luxury Closet Promo Codes & Discount Offers (2026) – 10% Off & Up to 80% Off",
+    "seoDescription": "Save 10% up to $250 with code NEW10, 10% off in Australia with AU10, and up to 80% off authenticated pre-owned luxury handbags, watches & fine jewelry.",
+    "about": "The Luxury Closet is a premier global pre-loved luxury marketplace based in Dubai, UAE, offering thousands of authentic designer handbags, Swiss watches, fine jewelry, shoes, and apparel from iconic fashion houses including Hermès, Chanel, Louis Vuitton, Rolex, Cartier, and Gucci. Every single piece is rigorously inspected and verified by in-house master authenticators and certified AI forensic systems with a 100% lifetime authenticity guarantee.",
+    "categories": [
+      "Fashion & Luxury",
+      "Designer Handbags",
+      "Luxury Watches",
+      "Fine Jewelry",
+      "Designer Shoes",
+      "Pre-Owned Luxury"
+    ],
+    "whyShop": [
+      "100% Lifetime Authenticity Guarantee: Every item is verified through microscopic AI inspection (Entrupy) and certified in-house luxury experts.",
+      "Significant Savings on Iconic Brands: Save up to 70% to 80% off original retail prices on pristine and gently pre-owned designer pieces.",
+      "Huge Global Catalog: 50,000+ authenticated luxury items in stock spanning Hermès, Chanel, Louis Vuitton, Rolex, Cartier, and Van Cleef & Arpels.",
+      "Worldwide Insured Express Delivery: Safe, tracked, and insured international shipping to over 85 countries worldwide via DHL and FedEx.",
+      "Flexible Layaway & Split Payments: Reserve coveted collector pieces with low down payments or split payments into 4 interest-free installments.",
+      "Easy White-Glove Consignment: Earn up to 85% payouts when selling your authentic designer bags, watches, and fine jewelry."
+    ],
+    "shoppingTips": [
+      "Apply verified promo code NEW10 to receive 10% off your very first order, saving up to $250 on qualifying luxury handbags, watches, and jewelry.",
+      "Australian shoppers can apply promo code AU10 during checkout for an exclusive 10% discount up to $60 off on luxury orders delivered across Australia.",
+      "Check the 'Under $500' and 'Under $1,000' curated filters to discover authentic designer wallets, jewelry, and shoes at entry-level luxury prices.",
+      "Create an account to unlock TLC Club loyalty points on every purchase, redeemable for direct cash discounts on subsequent designer orders.",
+      "Take advantage of Layaway Reservation to lock in rare Hermès Birkins or Rolex watches with a small deposit while paying the balance over time."
+    ],
+    "faqs": [
+      {
+        "question": "How do I apply a promo code on The Luxury Closet?",
+        "answer": "Select your authentic designer item on The Luxury Closet. Proceed to the secure checkout page, look for the 'Coupon Code / Gift Card' input field below your order summary, paste your code (such as NEW10 or AU10), and click 'Apply' to instantly see the revised discounted total before finalizing payment."
+      },
+      {
+        "question": "What is the best The Luxury Closet coupon code available today?",
+        "answer": "The top verified coupon code is NEW10, which provides 10% off on your first purchase up to a maximum discount of $250. Customers shipping to Australia can also use code AU10 for 10% off up to $60."
+      },
+      {
+        "question": "Are all items on The Luxury Closet 100% authentic?",
+        "answer": "Yes. The Luxury Closet maintains a zero-tolerance policy against counterfeits. Every item passes through a multi-tier authentication process combining veteran luxury appraisers, high-magnification microscopy, database serial checks, and Entrupy AI authentication technology, backed by a 100% lifetime money-back authenticity guarantee."
+      },
+      {
+        "question": "Does The Luxury Closet ship internationally?",
+        "answer": "Yes, The Luxury Closet provides insured express worldwide delivery to over 85 countries including the United States, United Kingdom, Canada, Australia, European Union, and GCC countries via DHL and FedEx."
+      },
+      {
+        "question": "What is The Luxury Closet's return policy?",
+        "answer": "The Luxury Closet offers a 3-day hassle-free return window upon package delivery for eligible luxury items, provided the security tag remains intact and attached to the item in its original condition."
+      },
+      {
+        "question": "Can I sell or consign my designer bags on The Luxury Closet?",
+        "answer": "Yes! The Luxury Closet accepts pre-owned luxury items for consignment or direct cash buyout. Sellers can receive up to 85% payout depending on item value, with complimentary courier collection and professional authentication and photography included."
+      }
+    ]
+  },
+  {
     "id": "kkday",
     "name": "KKday",
     "icon": "flight_takeoff",

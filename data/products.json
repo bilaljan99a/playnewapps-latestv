@@ -1,5 +1,30 @@
 [
   {
+    "id": "amazon-b0h6zg8kf3",
+    "asin": "B0H6ZG8KF3",
+    "title": "GEEKOM A7 Mini PC, Ryzen 9 7940HS, 32GB RAM, 2TB SSD, Radeon 780M",
+    "category": "Computer & Gaming",
+    "categorySlug": "tech",
+    "store": "amazon",
+    "merchantName": "Amazon",
+    "merchantLogo": "/assets/images/brands/amazon.svg",
+    "image": "https://m.media-amazon.com/images/I/81t7Edlw-0L._AC_SL1200_.jpg",
+    "badge": "Amazon Best Seller",
+    "rating": 4.3,
+    "reviewsCount": 1850,
+    "originalPrice": "$1061.25",
+    "salePrice": "$849.00",
+    "discount": "",
+    "productUrl": "https://www.amazon.com/dp/B0H6ZG8KF3",
+    "affiliateUrl": "https://www.amazon.com/dp/B0H6ZG8KF3?tag=playnewapps-20",
+    "featured": true,
+    "highlights": [
+      "Official genuine merchandise with standard Amazon manufacturer warranty",
+      "Fast & reliable shipping with easy 30-day hassle-free returns",
+      "Prime eligible with customer satisfaction guarantee"
+    ]
+  },
+  {
     "id": "amazon-b08dntxyct",
     "asin": "B08DNTXYCT",
     "title": "EMEET Luna Conference Speaker and Microphone, 360° Voice Pickup for 8 Users",
@@ -1295,5 +1320,25 @@
       "AMD Ryzen Z1 Extreme processor with RDNA 3 graphics and 16GB LPDDR5X RAM",
       "Runs full Windows 11 with support for Steam, Xbox Game Pass, and Epic Games"
     ]
+  },
+  {
+    "id": "tlc-chanel-classic-double-flap",
+    "title": "Chanel Medium Classic Double Flap Bag Quilted Caviar (Authentic Pre-Owned)",
+    "description": "Authenticated pre-owned Chanel Medium Classic Double Flap bag in pristine black quilted caviar leather with 24k gold-plated hardware and signature CC turn-lock clasp.",
+    "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80",
+    "salePrice": "$7,490.00",
+    "originalPrice": "$10,200.00",
+    "discount": "27% OFF",
+    "badge": "AUTHENTIC PRE-OWNED",
+    "store": "the-luxury-closet",
+    "merchantName": "The Luxury Closet",
+    "merchantLogo": "/assets/images/brands/the-luxury-closet.svg",
+    "productUrl": "https://ad.admitad.com/g/quh26xvvn8b68b264a764413e8fc1b/?ulp=https://theluxurycloset.com/women/handbags",
+    "affiliateUrl": "https://ad.admitad.com/g/quh26xvvn8b68b264a764413e8fc1b/?ulp=https://theluxurycloset.com/women/handbags",
+    "category": "Fashion & Luxury",
+    "categorySlug": "fashion",
+    "rating": 4.95,
+    "reviewsCount": 1140,
+    "featured": true
   }
 ]

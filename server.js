@@ -353,7 +353,10 @@ const cleanRoutes = [
   { route: '/kkday-coupons', file: 'kkday-coupons.html' },
   { route: '/store/kkday', file: 'kkday-coupons.html' },
   { route: '/amazon-auto-list', file: 'amazon-auto-list.html' },
-  { route: '/admin/amazon', file: 'amazon-auto-list.html' }
+  { route: '/admin/amazon', file: 'amazon-auto-list.html' },
+  { route: '/the-luxury-closet', file: 'the-luxury-closet-coupons.html' },
+  { route: '/the-luxury-closet-coupons', file: 'the-luxury-closet-coupons.html' },
+  { route: '/store/the-luxury-closet', file: 'the-luxury-closet-coupons.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {
