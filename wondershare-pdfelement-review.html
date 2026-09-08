@@ -36,8 +36,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="preload" as="style" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preload" as="style" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
     <!-- Structured Data Schemas -->
     <script type="application/ld+json">
@@ -202,7 +202,7 @@
     <header class="header">
         <div class="container header-inner">
             <a href="/" class="logo" aria-label="PlayNewApps Home">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
+                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                 <span>PlayNewApps</span>
             </a>
             
@@ -213,14 +213,24 @@
             <nav id="main-nav" class="nav" aria-label="Main Navigation">
                 <ul class="nav-list">
                     <li><a href="/" class="nav-link">Home</a></li>
-                    <li><a href="/store?id=wondershare" class="nav-link">Software</a></li>
-                    <li><a href="/reviews" class="nav-link active">Reviews</a></li>
+                    <li class="nav-item dropdown" id="stores-dropdown-wrapper">
+                        <a href="/stores" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                            Stores <span class="material-icons-round dropdown-icon" aria-hidden="true">expand_more</span>
+                        </a>
+                        <div class="dropdown-menu" id="stores-dropdown-menu" aria-label="Stores Menu">
+                            <div class="dropdown-loading">Loading stores...</div>
+                        </div>
+                    </li>
+                    <li><a href="/products" class="nav-link">Products</a></li>
                     <li><a href="/coupon" class="nav-link">Coupons</a></li>
-                    <li><a href="/stores" class="nav-link">Stores</a></li>
+                    <li><a href="/reviews" class="nav-link active">Reviews</a></li>
                 </ul>
             </nav>
 
             <div class="header-actions">
+                <a href="/#search-form" class="icon-btn" aria-label="Search">
+                    <span class="material-icons-round" aria-hidden="true">search</span>
+                </a>
                 <a href="https://kjuzv.com/g/8u3trxihmwb68b264a76ef655e4ac9/?ulp=https%3A%2F%2Fpdf.wondershare.com%2F%3F_" target="_blank" rel="noopener sponsored" class="btn btn-primary nav-cta">Get PDFelement Deal</a>
             </div>
         </div>
@@ -250,7 +260,7 @@
 
                 <div class="review-author-bar">
                     <div class="author-info">
-                        <img src="/assets/images/logo.svg" alt="PlayNewApps Editorial Team" class="author-avatar" width="40" height="40">
+                        <img src="/assets/images/logo.svg" alt="PlayNewApps Editorial Team" class="author-avatar" width="40" height="40" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                         <div>
                             <span class="author-name">PlayNewApps Editorial Team</span>
                             <span class="review-date">Updated August 5, 2026 • 18 min read</span>
@@ -265,7 +275,7 @@
 
                 <!-- Hero Banner Image -->
                 <div class="hero-banner-wrapper">
-                    <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-way-img1-m.jpg" alt="Wondershare PDFelement 2026 Hero Review Banner" class="review-hero-banner" loading="eager" width="1200" height="500">
+                    <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-way-img1-m.jpg" alt="Wondershare PDFelement 2026 Hero Review Banner" class="review-hero-banner" loading="eager" width="1200" height="500" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                 </div>
 
                 <!-- Primary CTA Row -->
@@ -361,7 +371,7 @@
 
                     <!-- Screenshot 1: Home Dashboard -->
                     <figure class="article-figure my-lg">
-                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-way-img2-m.jpg" alt="Wondershare PDFelement 2026 Home Dashboard Interface" class="article-screenshot" loading="lazy" width="1200" height="700">
+                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-way-img2-m.jpg" alt="Wondershare PDFelement 2026 Home Dashboard Interface" class="article-screenshot" loading="lazy" width="1200" height="700" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <figcaption class="screenshot-caption"><strong>Figure 1:</strong> The redesigned PDFelement 2026 Home Dashboard, highlighting quick launch actions, recent document tracking, and direct access to Wondershare Document Cloud.</figcaption>
                     </figure>
 
@@ -400,7 +410,7 @@
 
                     <!-- Screenshot 2: AI Assistant -->
                     <figure class="article-figure my-lg">
-                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-ai-pdf-img1.jpg" alt="Wondershare PDFelement 2026 Lumi AI Assistant" class="article-screenshot" loading="lazy" width="1200" height="700">
+                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-ai-pdf-img1.jpg" alt="Wondershare PDFelement 2026 Lumi AI Assistant" class="article-screenshot" loading="lazy" width="1200" height="700" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <figcaption class="screenshot-caption"><strong>Figure 2:</strong> Lumi AI Assistant analyzing a 50-page cybersecurity risk assessment, generating bulleted executive key takeaways and actionable security recommendations in real time.</figcaption>
                     </figure>
 
@@ -420,7 +430,7 @@
 
                     <!-- Screenshot 3: PDF Editor -->
                     <figure class="article-figure my-lg">
-                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-way-img3-m.jpg" alt="Wondershare PDFelement 2026 Inline Text & Object Editor" class="article-screenshot" loading="lazy" width="1200" height="700">
+                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-way-img3-m.jpg" alt="Wondershare PDFelement 2026 Inline Text & Object Editor" class="article-screenshot" loading="lazy" width="1200" height="700" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <figcaption class="screenshot-caption"><strong>Figure 3:</strong> In-line text editing in PDFelement 2026. The editor automatically detects matching font family, size, line spacing, and paragraph alignment for seamless modifications.</figcaption>
                     </figure>
 
@@ -435,7 +445,7 @@
 
                     <!-- Screenshot 4: OCR -->
                     <figure class="article-figure my-lg">
-                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-way-img4-m.jpg" alt="Wondershare PDFelement 2026 OCR Engine" class="article-screenshot" loading="lazy" width="1200" height="700">
+                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-way-img4-m.jpg" alt="Wondershare PDFelement 2026 OCR Engine" class="article-screenshot" loading="lazy" width="1200" height="700" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <figcaption class="screenshot-caption"><strong>Figure 4:</strong> PDFelement 2026 OCR scanner converting a scanned tax deduction certificate into searchable, editable text and structured data tables with 99.84% accuracy.</figcaption>
                     </figure>
 
@@ -449,7 +459,7 @@
 
                     <!-- Screenshot 5: Batch Processing -->
                     <figure class="article-figure my-lg">
-                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-way-img5-m.jpg" alt="Wondershare PDFelement 2026 Batch Processing Studio" class="article-screenshot" loading="lazy" width="1200" height="700">
+                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-way-img5-m.jpg" alt="Wondershare PDFelement 2026 Batch Processing Studio" class="article-screenshot" loading="lazy" width="1200" height="700" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <figcaption class="screenshot-caption"><strong>Figure 5:</strong> Queueing 120+ corporate invoice files for high-speed parallel batch conversion into Microsoft Word format with GPU hardware acceleration.</figcaption>
                     </figure>
 
@@ -463,7 +473,7 @@
 
                     <!-- Screenshot 6: Export Window -->
                     <figure class="article-figure my-lg">
-                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-way-img6-m.jpg" alt="Wondershare PDFelement 2026 Export and Conversion Studio" class="article-screenshot" loading="lazy" width="1200" height="700">
+                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-way-img6-m.jpg" alt="Wondershare PDFelement 2026 Export and Conversion Studio" class="article-screenshot" loading="lazy" width="1200" height="700" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <figcaption class="screenshot-caption"><strong>Figure 6:</strong> The Multi-Format Export Studio, showing conversion presets for Word (.docx), Excel (.xlsx), PowerPoint (.pptx), EPUB eBooks, images, and ISO PDF/A archival formats.</figcaption>
                     </figure>
 
@@ -484,7 +494,7 @@
 
                     <!-- Screenshot 7: Compression -->
                     <figure class="article-figure my-lg">
-                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-way-img8-m.jpg" alt="Wondershare PDFelement 2026 Smart PDF Compressor" class="article-screenshot" loading="lazy" width="1200" height="700">
+                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-way-img8-m.jpg" alt="Wondershare PDFelement 2026 Smart PDF Compressor" class="article-screenshot" loading="lazy" width="1200" height="700" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <figcaption class="screenshot-caption"><strong>Figure 7:</strong> PDFelement 2026 compressing an 84.6 MB corporate annual report down to 12.8 MB (an 84.8% reduction) while preserving full visual clarity.</figcaption>
                     </figure>
 
@@ -498,7 +508,7 @@
 
                     <!-- Screenshot 8: Annotation -->
                     <figure class="article-figure my-lg">
-                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-ai-pdf-img2.jpg" alt="Wondershare PDFelement 2026 Annotation and Markup Toolbar" class="article-screenshot" loading="lazy" width="1200" height="700">
+                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-ai-pdf-img2.jpg" alt="Wondershare PDFelement 2026 Annotation and Markup Toolbar" class="article-screenshot" loading="lazy" width="1200" height="700" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <figcaption class="screenshot-caption"><strong>Figure 8:</strong> Highlighting, sticky note comments, red strike-throughs, blue underlinings, and custom APPROVED rubber stamps applied to a commercial contract draft.</figcaption>
                     </figure>
 
@@ -512,7 +522,7 @@
 
                     <!-- Screenshot 9: Forms -->
                     <figure class="article-figure my-lg">
-                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-ai-pdf-img3.jpg" alt="Wondershare PDFelement 2026 Interactive PDF Form Creator" class="article-screenshot" loading="lazy" width="1200" height="700">
+                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-ai-pdf-img3.jpg" alt="Wondershare PDFelement 2026 Interactive PDF Form Creator" class="article-screenshot" loading="lazy" width="1200" height="700" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <figcaption class="screenshot-caption"><strong>Figure 9:</strong> One-click automatic form field recognition turning a flat vendor onboarding form scan into interactive fillable text fields, dropdown menus, and certified signature blocks.</figcaption>
                     </figure>
 
@@ -526,7 +536,7 @@
 
                     <!-- Screenshot 10: Protection & Redaction -->
                     <figure class="article-figure my-lg">
-                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-bottom-bg.jpg" alt="Wondershare PDFelement 2026 Encryption and Redaction Suite" class="article-screenshot" loading="lazy" width="1200" height="700">
+                        <img src="https://images.wondershare.com/pdfelement/images2024/home/20240717/part-bottom-bg.jpg" alt="Wondershare PDFelement 2026 Encryption and Redaction Suite" class="article-screenshot" loading="lazy" width="1200" height="700" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <figcaption class="screenshot-caption"><strong>Figure 10:</strong> Applying 256-Bit AES password open permissions and executing permanent black-bar redaction over sensitive Social Security and bank account numbers.</figcaption>
                     </figure>
 
@@ -918,7 +928,7 @@
         <div class="container footer-inner">
             <div class="footer-brand">
                 <a href="/" class="logo">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" width="28" height="28">
+                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" width="28" height="28" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                     <span>PlayNewApps</span>
                 </a>
                 <p>Your trusted source for software reviews, app benchmarks, verified promo codes, and tech guides.</p>
@@ -960,8 +970,8 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="./assets/js/data-service.js" defer></script>
-    <script src="./assets/js/components.js" defer></script>
-    <script src="./assets/js/app.js" defer></script>
+    <script src="/assets/js/data-service.js" defer></script>
+    <script src="/assets/js/components.js" defer></script>
+    <script src="/assets/js/app.js" defer></script>
 </body>
 </html>

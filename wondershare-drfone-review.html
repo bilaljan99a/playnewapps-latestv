@@ -36,8 +36,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="preload" as="style" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preload" as="style" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
     <!-- Structured Data Schemas -->
     <script type="application/ld+json">
@@ -185,7 +185,7 @@
     <header class="header">
         <div class="container header-inner">
             <a href="/" class="logo" aria-label="PlayNewApps Home">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
+                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                 <span>PlayNewApps</span>
             </a>
             
@@ -196,14 +196,24 @@
             <nav id="main-nav" class="nav" aria-label="Main Navigation">
                 <ul class="nav-list">
                     <li><a href="/" class="nav-link">Home</a></li>
-                    <li><a href="/store?id=wondershare" class="nav-link">Software</a></li>
-                    <li><a href="/reviews" class="nav-link active">Reviews</a></li>
+                    <li class="nav-item dropdown" id="stores-dropdown-wrapper">
+                        <a href="/stores" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                            Stores <span class="material-icons-round dropdown-icon" aria-hidden="true">expand_more</span>
+                        </a>
+                        <div class="dropdown-menu" id="stores-dropdown-menu" aria-label="Stores Menu">
+                            <div class="dropdown-loading">Loading stores...</div>
+                        </div>
+                    </li>
+                    <li><a href="/products" class="nav-link">Products</a></li>
                     <li><a href="/coupon" class="nav-link">Coupons</a></li>
-                    <li><a href="/stores" class="nav-link">Stores</a></li>
+                    <li><a href="/reviews" class="nav-link active">Reviews</a></li>
                 </ul>
             </nav>
 
             <div class="header-actions">
+                <a href="/#search-form" class="icon-btn" aria-label="Search">
+                    <span class="material-icons-round" aria-hidden="true">search</span>
+                </a>
                 <a href="https://kjuzv.com/g/8u3trxihmwb68b264a76ef655e4ac9/?ulp=https%3A%2F%2Fdrfone.wondershare.com%2Fstore%2Findex-lb.html%3Ffrom%3Dhomepage" target="_blank" rel="noopener sponsored" class="btn btn-primary nav-cta">Get Dr.Fone Deal (59% OFF)</a>
             </div>
         </div>
@@ -323,7 +333,7 @@
                 <p>At its core, Wondershare Dr.Fone operates on a modular, desktop-driven client framework available for both macOS and Microsoft Windows. Rather than forcing users to download an overwhelming monolithic software blob, Dr.Fone utilizes a central launch pad hub where users can download and initialize specific tool modules as required by their current operational task.</p>
                 
                 <div style="position: relative; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); margin: 1.5rem 0;">
-                    <img src="https://images.wondershare.com/drfone/images2025/index/my-device-img.png" alt="Wondershare Dr.Fone Primary Dashboard Workspace showing modular toolkit" width="1000" height="600" style="width: 100%; height: auto; display: block;" loading="lazy">
+                    <img src="https://images.wondershare.com/drfone/images2025/index/my-device-img.png" alt="Wondershare Dr.Fone Primary Dashboard Workspace showing modular toolkit" width="1000" height="600" style="width: 100%; height: auto; display: block;" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                     <div style="padding: 0.75rem 1rem; background: var(--bg-card); border-top: 1px solid var(--border-color); font-size: 0.88rem; color: var(--text-secondary); text-align: center;">
                         <strong>Figure 1.0:</strong> The streamlined Wondershare Dr.Fone 14 dashboard workspace, providing immediate 1-click access to all mobile diagnostic and repair modules.
                     </div>
@@ -422,7 +432,7 @@
                 <p>Data loss is arguably the most distressing event a smartphone owner can experience. Accidental deletion, factory resets, water damage, broken digitizers, or system crashes can instantly render precious memories inaccessible. Dr.Fone's flagship <strong>Data Recovery</strong> module addresses these scenarios through three targeted recovery pathways: <em>Direct Device Flash Recovery</em>, <em>iTunes Backup Extraction</em>, and <em>iCloud / Google Cloud Data Recovery</em>.</p>
 
                 <div style="position: relative; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); margin: 1.5rem 0;">
-                    <img src="https://images.wondershare.com/drfone/images2025/index/data-recovery-ios-computer.png" alt="Wondershare Dr.Fone Data Recovery scanning deep flash memory" width="1000" height="600" style="width: 100%; height: auto; display: block;" loading="lazy">
+                    <img src="https://images.wondershare.com/drfone/images2025/index/data-recovery-ios-computer.png" alt="Wondershare Dr.Fone Data Recovery scanning deep flash memory" width="1000" height="600" style="width: 100%; height: auto; display: block;" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                     <div style="padding: 0.75rem 1rem; background: var(--bg-card); border-top: 1px solid var(--border-color); font-size: 0.88rem; color: var(--text-secondary); text-align: center;">
                         <strong>Figure 2.0:</strong> Dr.Fone deep scanning internal device storage, categorizing recoverable photos, videos, SMS messages, contacts, and WhatsApp records with full preview controls.
                     </div>
@@ -450,7 +460,7 @@
                 <p>Upgrading to a new flagship smartphone is an exciting moment, but migrating data between devices—especially across different operating systems like switching from iPhone to Android or vice versa—is historically fraught with frustration. Official migration utilities like Apple's "Move to iOS" or Samsung's "Smart Switch" often stall midway, drop call history, or fail to move non-standard media formats.</p>
 
                 <div style="position: relative; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); margin: 1.5rem 0;">
-                    <img src="https://images.wondershare.com/drfone/images2025/index/my-backup-img.png" alt="Wondershare Dr.Fone Phone Transfer 1-click device migration" width="1000" height="600" style="width: 100%; height: auto; display: block;" loading="lazy">
+                    <img src="https://images.wondershare.com/drfone/images2025/index/my-backup-img.png" alt="Wondershare Dr.Fone Phone Transfer 1-click device migration" width="1000" height="600" style="width: 100%; height: auto; display: block;" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                     <div style="padding: 0.75rem 1rem; background: var(--bg-card); border-top: 1px solid var(--border-color); font-size: 0.88rem; color: var(--text-secondary); text-align: center;">
                         <strong>Figure 3.0:</strong> Dr.Fone Phone Transfer performing direct 1-click migration between iPhone 15 Pro and Google Pixel 9 Pro XL.
                     </div>
@@ -465,7 +475,7 @@
                 <p>Because WhatsApp stores chat backups on platform-specific cloud services (iCloud for iOS, Google Drive for Android), native cross-platform chat migration has traditionally been impossible without performing full factory resets during initial setup. For professionals and business owners relying on WhatsApp for daily client communication, losing chat history is simply not an option.</p>
 
                 <div style="position: relative; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); margin: 1.5rem 0;">
-                    <img src="https://images.wondershare.com/drfone/images2025/index/phone-verification-img.png" alt="Wondershare Dr.Fone WhatsApp Transfer cross platform migration" width="1000" height="600" style="width: 100%; height: auto; display: block;" loading="lazy">
+                    <img src="https://images.wondershare.com/drfone/images2025/index/phone-verification-img.png" alt="Wondershare Dr.Fone WhatsApp Transfer cross platform migration" width="1000" height="600" style="width: 100%; height: auto; display: block;" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                     <div style="padding: 0.75rem 1rem; background: var(--bg-card); border-top: 1px solid var(--border-color); font-size: 0.88rem; color: var(--text-secondary); text-align: center;">
                         <strong>Figure 4.0:</strong> Dr.Fone WhatsApp Transfer bridging iOS and Android, copying 14,000+ messages, media attachments, and voice notes without data loss.
                     </div>
@@ -486,7 +496,7 @@
                 <p>When an operating system update fails midway, or when a system partition suffers corruption, mobile devices often fall into unbootable states. Common symptoms include the dreaded Apple logo boot loop, iPhone black screen of death, iPad frozen in Recovery/DFU mode, continuous restarting loops, or cryptic iTunes error codes (e.g., Error 4013, 11, 9, 27). On Android, corrupt bootloaders can cause devices to freeze indefinitely on brand splash screens.</p>
 
                 <div style="position: relative; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); margin: 1.5rem 0;">
-                    <img src="https://images.wondershare.com/drfone/images2025/index/system-repair-ios-computer.png" alt="Wondershare Dr.Fone System Repair fixing boot loops and system errors" width="1000" height="600" style="width: 100%; height: auto; display: block;" loading="lazy">
+                    <img src="https://images.wondershare.com/drfone/images2025/index/system-repair-ios-computer.png" alt="Wondershare Dr.Fone System Repair fixing boot loops and system errors" width="1000" height="600" style="width: 100%; height: auto; display: block;" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                     <div style="padding: 0.75rem 1rem; background: var(--bg-card); border-top: 1px solid var(--border-color); font-size: 0.88rem; color: var(--text-secondary); text-align: center;">
                         <strong>Figure 5.0:</strong> Dr.Fone System Repair interface offering Standard Mode (100% data retention) and Advanced Mode for severe firmware bricking.
                     </div>
@@ -505,7 +515,7 @@
                 <p>Forgetting a device passcode, purchasing a second-hand smartphone locked to a previous owner's account, or dealing with a broken touch screen that renders PIN entry impossible are common dilemmas. Dr.Fone's <strong>Screen Unlock</strong> module provides a comprehensive suite of unlocking utilities designed to bypass hardware and software locks quickly.</p>
 
                 <div style="position: relative; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); margin: 1.5rem 0;">
-                    <img src="https://images.wondershare.com/drfone/images2025/index/screen-unlock-left-phone.png" alt="Wondershare Dr.Fone Screen Unlock bypassing passcodes and locks" width="1000" height="600" style="width: 100%; height: auto; display: block;" loading="lazy">
+                    <img src="https://images.wondershare.com/drfone/images2025/index/screen-unlock-left-phone.png" alt="Wondershare Dr.Fone Screen Unlock bypassing passcodes and locks" width="1000" height="600" style="width: 100%; height: auto; display: block;" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                     <div style="padding: 0.75rem 1rem; background: var(--bg-card); border-top: 1px solid var(--border-color); font-size: 0.88rem; color: var(--text-secondary); text-align: center;">
                         <strong>Figure 6.0:</strong> Dr.Fone Screen Unlock module supporting numeric PIN, Face ID, Touch ID, Apple ID, Google FRP, Screen Time, and MDM bypass routines.
                     </div>
@@ -547,7 +557,7 @@
                 <p>Location-based applications, augmented reality (AR) mobile games like Pokémon GO, and geolocation-restricted dating or streaming apps rely heavily on device GPS hardware coordinates. Dr.Fone's <strong>Virtual Location</strong> tool allows users to spoof their device GPS coordinates anywhere in the world with a single click.</p>
 
                 <div style="position: relative; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); margin: 1.5rem 0;">
-                    <img src="https://images.wondershare.com/drfone/images2025/index/banner.png" alt="Wondershare Dr.Fone Virtual Location GPS joystick spoofer" width="1000" height="600" style="width: 100%; height: auto; display: block;" loading="lazy">
+                    <img src="https://images.wondershare.com/drfone/images2025/index/banner.png" alt="Wondershare Dr.Fone Virtual Location GPS joystick spoofer" width="1000" height="600" style="width: 100%; height: auto; display: block;" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                     <div style="padding: 0.75rem 1rem; background: var(--bg-card); border-top: 1px solid var(--border-color); font-size: 0.88rem; color: var(--text-secondary); text-align: center;">
                         <strong>Figure 7.0:</strong> Dr.Fone Virtual Location interface featuring 1-click teleport, multi-spot route creation, speed controls, and a real-time GPS joystick.
                     </div>
@@ -806,7 +816,7 @@
         <div class="container footer-inner">
             <div class="footer-col">
                 <a href="/" class="logo" aria-label="PlayNewApps Home">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
+                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                     <span>PlayNewApps</span>
                 </a>
                 <p class="footer-desc">Your trusted platform for in-depth software reviews, buying guides, and exclusive verified promo deals.</p>
@@ -848,9 +858,9 @@
     </footer>
 
     <!-- JS Scripts -->
-    <script src="./assets/js/data-service.js" defer></script>
-    <script src="./assets/js/components.js" defer></script>
-    <script src="./assets/js/app.js" defer></script>
-    <script src="./assets/js/script.js" defer></script>
+    <script src="/assets/js/data-service.js" defer></script>
+    <script src="/assets/js/components.js" defer></script>
+    <script src="/assets/js/app.js" defer></script>
+    <script src="/assets/js/script.js" defer></script>
 </body>
 </html>

@@ -97,6 +97,7 @@
             
             <nav class="nav" id="nav" aria-label="Main Navigation">
                 <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
                     <li class="nav-item dropdown" id="stores-dropdown-wrapper">
                         <a href="/stores" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
                             Stores <span class="material-icons-round dropdown-icon" aria-hidden="true">expand_more</span>
@@ -105,14 +106,16 @@
                             <div class="dropdown-loading">Loading stores...</div>
                         </div>
                     </li>
-                    <li><a href="/#featured" class="nav-link">Featured</a></li>
+                    <li><a href="/products" class="nav-link">Products</a></li>
+                    <li><a href="/coupon" class="nav-link active" aria-current="page">Coupons</a></li>
                     <li><a href="/reviews" class="nav-link">Reviews</a></li>
-                    <li><a href="/coupon" class="nav-link">Deals</a></li>
-                    <li><a href="/#faq" class="nav-link">FAQ</a></li>
                 </ul>
             </nav>
 
             <div class="header-actions">
+                <a href="/#search-form" class="icon-btn" aria-label="Search">
+                    <span class="material-icons-round" aria-hidden="true">search</span>
+                </a>
                 <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
                     <span class="material-icons-round" aria-hidden="true">dark_mode</span>
                 </button>
@@ -126,13 +129,13 @@
     <main id="main-content">
         <section class="hero reveal">
             <div class="container hero-content">
-                <h1 class="hero-title animate-fade-in-up">Discover the Best Apps & Software</h1>
-                <p class="hero-subtitle animate-fade-in-up delay-1">In-depth reviews, buying guides, and exclusive deals for Android, iOS, and PC.</p>
+                <h1 class="hero-title animate-fade-in-up">Verified Promo Codes, Coupons & Deals</h1>
+                <p class="hero-subtitle animate-fade-in-up delay-1">Save big on global tech brands, software subscriptions, electronics, and lifestyle services.</p>
                 
                 <div class="search-box-wrapper animate-fade-in-up delay-2">
                     <form class="search-box" action="#" role="search" id="search-form">
                         <span class="material-icons-round search-icon" aria-hidden="true">search</span>
-                        <input type="search" id="search-input" placeholder="Search for apps, software, games, or partner stores..." aria-label="Search apps, software, and stores" autocomplete="off">
+                        <input type="search" id="search-input" placeholder="Search products, stores, coupons, software, or games..." aria-label="Search products, software, coupons, and stores" autocomplete="off">
                         <button type="button" id="search-clear-btn" class="search-clear-btn" aria-label="Clear Search Input" style="display: none;">
                             <span class="material-icons-round" aria-hidden="true">close</span>
                         </button>

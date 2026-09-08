@@ -37,8 +37,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" media="print" onload="this.media='all'">
 
     <!-- CSS -->
-    <link rel="preload" as="style" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preload" as="style" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
     <!-- Structured Data Schemas -->
     <!-- 1. Product / Store Schema -->
@@ -194,12 +194,13 @@
     <header class="header" id="header">
         <div class="container header-container">
             <a href="/" class="logo" aria-label="PlayNewApps Home">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
+                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                 <span>PlayNewApps</span>
             </a>
             
-            <nav class="nav" id="nav" aria-label="Main Navigation">
+                        <nav class="nav" id="nav" aria-label="Main Navigation">
                 <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
                     <li class="nav-item dropdown" id="stores-dropdown-wrapper">
                         <a href="/stores" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
                             Stores <span class="material-icons-round dropdown-icon" aria-hidden="true">expand_more</span>
@@ -208,16 +209,20 @@
                             <div class="dropdown-loading">Loading stores...</div>
                         </div>
                     </li>
-                    <li><a href="/stores" class="nav-link">All Partner Stores</a></li>
-                    <li><a href="/reviews" class="nav-link">Software Reviews</a></li>
-                    <li><a href="/coupon" class="nav-link">Deals &amp; Coupons</a></li>
+                    <li><a href="/products" class="nav-link">Products</a></li>
+                    <li><a href="/coupon" class="nav-link">Coupons</a></li>
+                    <li><a href="/reviews" class="nav-link">Reviews</a></li>
                 </ul>
             </nav>
 
             <div class="header-actions">
+                <a href="/#search-form" class="icon-btn" aria-label="Search">
+                    <span class="material-icons-round" aria-hidden="true">search</span>
+                </a>
                 <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
                     <span class="material-icons-round" aria-hidden="true">dark_mode</span>
                 </button>
+            
             </div>
         </div>
     </header>
@@ -1187,7 +1192,7 @@
         <div class="container footer-container">
             <div class="footer-col footer-brand">
                 <a href="/" class="logo logo-footer">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
+                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                     <span>PlayNewApps</span>
                 </a>
                 <p class="footer-text">PlayNewApps is your trusted destination for tech reviews, software guides, and verified partner store discounts.</p>
@@ -1220,10 +1225,10 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="./assets/js/data-service.js" defer></script>
-    <script src="./assets/js/components.js" defer></script>
-    <script src="./assets/js/app.js" defer></script>
-    <script src="./assets/js/script.js" defer></script>
+    <script src="/assets/js/data-service.js" defer></script>
+    <script src="/assets/js/components.js" defer></script>
+    <script src="/assets/js/app.js" defer></script>
+    <script src="/assets/js/script.js" defer></script>
     <script>
         // FAQ Accordion Script
         document.addEventListener('DOMContentLoaded', () => {

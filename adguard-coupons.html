@@ -37,8 +37,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="preload" as="style" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preload" as="style" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>
@@ -181,19 +181,23 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 sm:h-20">
                 <a href="/" class="flex items-center gap-3 group">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="w-9 h-9 sm:w-10 sm:h-10 transition-transform group-hover:scale-105">
+                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="w-9 h-9 sm:w-10 sm:h-10 transition-transform group-hover:scale-105" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                     <div>
                         <span class="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight block">PlayNewApps</span>
                         <span class="text-[10px] sm:text-xs font-semibold text-slate-500 block -mt-1 uppercase tracking-wider">Verified Software Deals</span>
                     </div>
                 </a>
-                <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
-                    <a href="/" class="hover:text-blue-600 transition-colors">Home</a>
-                    <a href="/stores" class="hover:text-blue-600 transition-colors">All Stores</a>
-                    <a href="/category" class="hover:text-blue-600 transition-colors">Categories</a>
-                    <a href="/about" class="hover:text-blue-600 transition-colors">About Us</a>
+                                <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700">
+                    <a href="/" class="hover:text-amber-600 transition-colors">Home</a>
+                    <a href="/stores" class="hover:text-amber-600 transition-colors">Stores</a>
+                    <a href="/products" class="hover:text-amber-600 transition-colors">Products</a>
+                    <a href="/coupon" class="hover:text-amber-600 transition-colors">Coupons</a>
+                    <a href="/reviews" class="hover:text-amber-600 transition-colors">Reviews</a>
                 </nav>
                 <div class="flex items-center gap-3">
+                    <a href="/#search-form" class="inline-flex items-center justify-center w-9 h-9 rounded-xl text-slate-600 hover:text-amber-600 hover:bg-slate-100 transition-colors" aria-label="Search">
+                        <span class="material-icons-round text-lg">search</span>
+                    </a>
                     <a href="https://dhwnh.com/g/xc497owldvb68b264a76a9584d7a68/" target="_blank" rel="noopener sponsored" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-xs transition-all flex items-center gap-1.5">
                         <span>Visit AdGuard</span>
                         <span class="material-icons-round text-base">open_in_new</span>
@@ -1125,7 +1129,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="space-y-3">
                     <a href="/" class="flex items-center gap-2 text-white font-extrabold text-base sm:text-lg">
-                        <img src="/assets/images/logo.svg" alt="PlayNewApps" class="w-6 h-6">
+                        <img src="/assets/images/logo.svg" alt="PlayNewApps" class="w-6 h-6" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                         <span>PlayNewApps</span>
                     </a>
                     <p class="text-slate-400 text-xs leading-relaxed">
@@ -1169,6 +1173,6 @@
     </footer>
 
     <!-- SCRIPTS -->
-    <script src="./assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>

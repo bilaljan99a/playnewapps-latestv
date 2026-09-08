@@ -38,8 +38,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="preload" as="style" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preload" as="style" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
         .deal-card-featured {
@@ -216,16 +216,17 @@
             <div class="flex items-center justify-between h-16">
                 <!-- Logo -->
                 <a href="/" class="flex items-center gap-3 group">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto">
+                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                     <span class="font-extrabold text-xl text-slate-900 group-hover:text-blue-600 transition-colors">PlayNewApps</span>
                 </a>
 
                 <!-- Navigation Links -->
-                <nav class="hidden md:flex items-center gap-6">
-                    <a href="/stores" class="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors">All Stores</a>
-                    <a href="/stores?category=Software" class="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors">Software Deals</a>
-                    <a href="/stores?category=PC+Tools" class="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors">PC Tools</a>
-                    <a href="/about" class="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors">About Us</a>
+                                <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700">
+                    <a href="/" class="hover:text-amber-600 transition-colors">Home</a>
+                    <a href="/stores" class="hover:text-amber-600 transition-colors">Stores</a>
+                    <a href="/products" class="hover:text-amber-600 transition-colors">Products</a>
+                    <a href="/coupon" class="hover:text-amber-600 transition-colors">Coupons</a>
+                    <a href="/reviews" class="hover:text-amber-600 transition-colors">Reviews</a>
                 </nav>
 
                 <!-- Search Bar -->
@@ -255,7 +256,7 @@
                 <div class="flex items-center gap-3.5 min-w-0">
                     <!-- AOMEI Official Brand Logo -->
                     <div class="w-28 sm:w-36 h-11 sm:h-12 bg-white rounded-lg p-1.5 flex items-center justify-center shrink-0 border border-slate-200/80 shadow-2xs">
-                        <img src="./assets/images/brands/aomei.svg" alt="AOMEI Logo" class="w-full h-full object-contain">
+                        <img src="/assets/images/brands/aomei.svg" alt="AOMEI Logo" class="w-full h-full object-contain">
                     </div>
 
                     <!-- Store Title & Meta -->
@@ -840,7 +841,7 @@
                     <div class="space-y-2.5">
                         <a href="/adguard-coupons" class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition-colors group">
                             <div class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center p-1 shrink-0">
-                                <img src="./assets/images/brands/adguard.svg" alt="AdGuard" class="w-full h-full object-contain">
+                                <img src="/assets/images/brands/adguard.svg" alt="AdGuard" class="w-full h-full object-contain">
                             </div>
                             <div class="min-w-0">
                                 <span class="text-xs font-bold text-slate-900 group-hover:text-blue-600 block truncate">AdGuard</span>
@@ -849,7 +850,7 @@
                         </a>
                         <a href="/movavi-coupons" class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition-colors group">
                             <div class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center p-1 shrink-0">
-                                <img src="./assets/images/brands/movavi.svg" alt="Movavi" class="w-full h-full object-contain">
+                                <img src="/assets/images/brands/movavi.svg" alt="Movavi" class="w-full h-full object-contain">
                             </div>
                             <div class="min-w-0">
                                 <span class="text-xs font-bold text-slate-900 group-hover:text-blue-600 block truncate">Movavi</span>
@@ -858,7 +859,7 @@
                         </a>
                         <a href="/purevpn-coupons" class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition-colors group">
                             <div class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center p-1 shrink-0">
-                                <img src="./assets/images/brands/purevpn.svg" alt="PureVPN" class="w-full h-full object-contain">
+                                <img src="/assets/images/brands/purevpn.svg" alt="PureVPN" class="w-full h-full object-contain">
                             </div>
                             <div class="min-w-0">
                                 <span class="text-xs font-bold text-slate-900 group-hover:text-blue-600 block truncate">PureVPN</span>
@@ -878,7 +879,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
             <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div class="flex items-center gap-2">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-6 w-auto">
+                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="h-6 w-auto" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                     <span class="font-bold text-slate-900 text-sm">PlayNewApps</span>
                     <span class="text-slate-400">•</span>
                     <span>Verified Software Deals &amp; Coupons</span>
@@ -962,6 +963,6 @@
             window.open(affiliateUrl, '_blank');
         }
     </script>
-    <script src="./assets/js/script.js" defer></script>
+    <script src="/assets/js/script.js" defer></script>
 </body>
 </html>

@@ -46,7 +46,7 @@ class Components {
         return `
             <article class="card review-card" data-category="${item.categoryId || ''}">
                 <div class="card-img-wrapper ${isLogo ? 'has-logo-bg' : ''}">
-                    <img src="${img}" alt="${title}" class="${imgClass}" width="600" height="400" loading="lazy">
+                    <img src="${img}" alt="${title}" class="${imgClass}" width="600" height="400" loading="lazy" onerror="this.onerror=null; this.src='/assets/images/brands/default-store.svg';">
                     <span class="badge platform-badge"><span class="material-icons-round">${icon}</span> ${platform}</span>
                 </div>
                 <div class="card-content">
@@ -79,7 +79,7 @@ class Components {
         return `
             <article class="slide card review-card">
                 <div class="card-img-wrapper ${isLogo ? 'has-logo-bg' : ''}">
-                    <img src="${img}" alt="${title}" class="${imgClass}" width="600" height="400" loading="lazy">
+                    <img src="${img}" alt="${title}" class="${imgClass}" width="600" height="400" loading="lazy" onerror="this.onerror=null; this.src='/assets/images/brands/default-store.svg';">
                     <span class="badge platform-badge"><span class="material-icons-round">${icon}</span> ${platform}</span>
                 </div>
                 <div class="card-content">

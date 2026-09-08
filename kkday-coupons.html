@@ -477,14 +477,13 @@
                 </div>
 
                 <!-- Nav Links -->
-                <nav class="hidden lg:flex items-center gap-6 text-xs font-bold text-slate-600">
-                    <a href="/stores" class="hover:text-brand-600 transition-colors">All Stores</a>
-                    <a href="/category" class="hover:text-brand-600 transition-colors">Categories</a>
-                    <a href="/reviews" class="hover:text-brand-600 transition-colors">Reviews</a>
-                </nav>
+                <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"><a href="/" class="hover:text-teal-600 transition-colors">Home</a><a href="/stores" class="hover:text-teal-600 transition-colors">Stores</a><a href="/products" class="hover:text-teal-600 transition-colors">Products</a><a href="/coupon" class="hover:text-teal-600 transition-colors">Coupons</a><a href="/reviews" class="hover:text-teal-600 transition-colors">Reviews</a></nav>
 
                 <!-- CTA -->
                 <div class="flex items-center gap-3">
+                    <a href="/#search-form" class="inline-flex items-center justify-center w-9 h-9 rounded-xl text-slate-600 hover:text-amber-600 hover:bg-slate-100 transition-colors" aria-label="Search">
+                        <span class="material-icons-round text-lg">search</span>
+                    </a>
                     <a href="https://rcpsj.com/g/sbdob37fx1b68b264a765053cbfa2e/?ulp=https://www.kkday.com/en-us" target="_blank" rel="noopener sponsored" class="bg-kkteal-500 text-white text-xs font-extrabold px-4 py-2.5 rounded-xl hover:bg-kkteal-600 shadow-sm flex items-center gap-1.5 transition-all">
                         <span>Visit KKday</span>
                         <span class="material-icons-round text-sm">open_in_new</span>
@@ -498,13 +497,13 @@
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-grow w-full">
 
         <!-- Breadcrumb Navigation -->
-        <nav class="flex items-center gap-2 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-brand-600 transition-colors">Home</a>
-            <span class="material-icons-round text-xs text-slate-400">chevron_right</span>
-            <a href="/stores" class="hover:text-brand-600 transition-colors">Stores</a>
-            <span class="material-icons-round text-xs text-slate-400">chevron_right</span>
-            <span class="text-slate-800 font-semibold">KKday</span>
-        </nav>
+                        <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700">
+                    <a href="/" class="hover:text-amber-600 transition-colors">Home</a>
+                    <a href="/stores" class="hover:text-amber-600 transition-colors">Stores</a>
+                    <a href="/products" class="hover:text-amber-600 transition-colors">Products</a>
+                    <a href="/coupon" class="hover:text-amber-600 transition-colors">Coupons</a>
+                    <a href="/reviews" class="hover:text-amber-600 transition-colors">Reviews</a>
+                </nav>
 
         <!-- TOP STORE HEADER CARD (Clean & Minimalist: Logo Box + H1 Title ONLY) -->
         <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm mb-6 flex flex-col sm:flex-row items-center gap-6">
@@ -1366,7 +1365,7 @@
                         <span>Popular Related Stores</span>
                     </h3>
                     <div class="space-y-3">
-                        <a href="/store/kissandfly" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-slate-50 transition-colors border border-slate-100">
+                        <a href="/kissandfly-coupons" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-slate-50 transition-colors border border-slate-100">
                             <div class="flex items-center gap-3">
                                 <img src="/assets/images/brands/kissandfly.svg" alt="KissAndFly" class="w-8 h-8 object-contain" onerror="this.src='/assets/images/brands/default-store.svg'">
                                 <div>
@@ -1377,7 +1376,7 @@
                             <span class="material-icons-round text-slate-400 text-sm">chevron_right</span>
                         </a>
 
-                        <a href="/store/asaptickets" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-slate-50 transition-colors border border-slate-100">
+                        <a href="/asaptickets-coupons" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-slate-50 transition-colors border border-slate-100">
                             <div class="flex items-center gap-3">
                                 <img src="/assets/images/brands/asaptickets.svg" alt="ASAP Tickets" class="w-8 h-8 object-contain" onerror="this.src='/assets/images/brands/default-store.svg'">
                                 <div>
@@ -1388,7 +1387,7 @@
                             <span class="material-icons-round text-slate-400 text-sm">chevron_right</span>
                         </a>
 
-                        <a href="/store/lennuabi" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-slate-50 transition-colors border border-slate-100">
+                        <a href="/lennuabi-coupons" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-slate-50 transition-colors border border-slate-100">
                             <div class="flex items-center gap-3">
                                 <img src="/assets/images/brands/lennuabi.svg" alt="Lennuabi" class="w-8 h-8 object-contain" onerror="this.src='/assets/images/brands/default-store.svg'">
                                 <div>
@@ -1399,7 +1398,7 @@
                             <span class="material-icons-round text-slate-400 text-sm">chevron_right</span>
                         </a>
 
-                        <a href="/store/aliexpress" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-slate-50 transition-colors border border-slate-100">
+                        <a href="/store?id=aliexpress" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-slate-50 transition-colors border border-slate-100">
                             <div class="flex items-center gap-3">
                                 <img src="/assets/images/brands/aliexpress.svg" alt="AliExpress" class="w-8 h-8 object-contain" onerror="this.src='/assets/images/brands/default-store.svg'">
                                 <div>
@@ -1462,9 +1461,9 @@
                     <h4 class="text-white font-bold text-sm mb-3">Popular Stores</h4>
                     <ul class="space-y-2">
                         <li><a href="/kkday-coupons" class="hover:text-white transition-colors">KKday Tours &amp; eSIMs</a></li>
-                        <li><a href="/store/lenovo" class="hover:text-white transition-colors">Lenovo Official Deals</a></li>
+                        <li><a href="/lenovo-coupons" class="hover:text-white transition-colors">Lenovo Official Deals</a></li>
                         <li><a href="/amazon-prime-video-coupons" class="hover:text-white transition-colors">Amazon Prime Video</a></li>
-                        <li><a href="/store/aliexpress" class="hover:text-white transition-colors">AliExpress Choice Day</a></li>
+                        <li><a href="/store?id=aliexpress" class="hover:text-white transition-colors">AliExpress Choice Day</a></li>
                     </ul>
                 </div>
                 <div>

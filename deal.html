@@ -34,8 +34,8 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     </noscript>
 
-    <link rel="preload" as="style" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preload" as="style" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
     <script type="application/ld+json">
 {
@@ -72,34 +72,38 @@
     <header class="header" id="header">
         <div class="container header-container">
             <a href="/" class="logo" aria-label="PlayNewApps Home">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
+                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                 <span>PlayNewApps</span>
             </a>
             
-            <nav class="nav" id="nav" aria-label="Main Navigation">
+                        <nav class="nav" id="nav" aria-label="Main Navigation">
                 <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
                     <li class="nav-item dropdown" id="stores-dropdown-wrapper">
-                        <a href="stores.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        <a href="/stores" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
                             Stores <span class="material-icons-round dropdown-icon" aria-hidden="true">expand_more</span>
                         </a>
                         <div class="dropdown-menu" id="stores-dropdown-menu" aria-label="Stores Menu">
                             <div class="dropdown-loading">Loading stores...</div>
                         </div>
                     </li>
-                    <li><a href="index.html#featured" class="nav-link">Featured</a></li>
-                    <li><a href="index.html#reviews" class="nav-link">Reviews</a></li>
-                    <li><a href="coupon.html" class="nav-link">Deals</a></li>
-                    <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="/products" class="nav-link">Products</a></li>
+                    <li><a href="/coupon" class="nav-link">Coupons</a></li>
+                    <li><a href="/reviews" class="nav-link">Reviews</a></li>
                 </ul>
             </nav>
 
             <div class="header-actions">
+                <a href="/#search-form" class="icon-btn" aria-label="Search">
+                    <span class="material-icons-round" aria-hidden="true">search</span>
+                </a>
                 <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
                     <span class="material-icons-round" aria-hidden="true">dark_mode</span>
                 </button>
                 <button id="mobile-menu-btn" class="icon-btn mobile-only" aria-label="Open Menu" aria-expanded="false" aria-controls="nav">
                     <span class="material-icons-round" aria-hidden="true">menu</span>
                 </button>
+            
             </div>
         </div>
     </header>
@@ -107,8 +111,8 @@
     <main class="main-content">
         <nav class="container breadcrumbs" aria-label="Breadcrumb">
             <ol>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="coupon.html">Deals</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/coupon">Deals</a></li>
                 <li><a href="store.html" id="breadcrumb-store-link">Store</a></li>
                 <li aria-current="page" id="breadcrumb-deal-title">Deal</li>
             </ol>
@@ -189,7 +193,7 @@
                 <div class="sidebar-widget">
                     <h3 class="widget-title">Store Details</h3>
                     <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; text-align: center; padding: 0.5rem 0;">
-                        <img src="" alt="" id="sidebar-store-logo" width="80" height="80" style="object-fit: contain; background: #fff; padding: 6px; border-radius: 12px; border: 1px solid var(--border-color);">
+                        <img src="/assets/images/brands/default-store.svg" alt="Store Logo" id="sidebar-store-logo" onerror="this.onerror=null;this.src='/assets/images/brands/default-store.svg'" width="80" height="80" style="object-fit: contain; background: #fff; padding: 6px; border-radius: 12px; border: 1px solid var(--border-color);">
                         <div>
                             <h4 id="sidebar-store-name" style="margin-bottom: 0.25rem;">Store</h4>
                             <div id="sidebar-store-rating" style="display: flex; align-items: center; justify-content: center; gap: 0.25rem; color: #f59e0b; font-size: 0.9rem;"></div>
@@ -212,7 +216,7 @@
         <div class="container footer-grid">
             <div class="footer-col brand-col">
                 <a href="/" class="logo footer-logo" aria-label="PlayNewApps Home">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
+                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                     <span>PlayNewApps</span>
                 </a>
                 <p class="footer-desc">Your trusted source for premium app reviews, tech guides, software deals, and exclusive coupons worldwide.</p>
@@ -236,10 +240,10 @@
             <nav class="footer-col" aria-label="Quick Links">
                 <h3 class="footer-heading">Quick Links</h3>
                 <ul class="footer-links">
-                    <li><a href="/about.html">About Us</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
-                    <li><a href="/privacy.html">Privacy Policy</a></li>
-                    <li><a href="/affiliate.html">Affiliate Disclosure</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/affiliate">Affiliate Disclosure</a></li>
                 </ul>
             </nav>
         </div>
@@ -251,7 +255,7 @@
     <div class="cookie-banner" id="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-desc">
         <div class="cookie-content">
             <strong id="cookie-title">We use cookies</strong>
-            <p id="cookie-desc">We use cookies to improve your experience and analyze site traffic. By continuing, you agree to our <a href="/privacy.html">Privacy Policy</a>.</p>
+            <p id="cookie-desc">We use cookies to improve your experience and analyze site traffic. By continuing, you agree to our <a href="/privacy">Privacy Policy</a>.</p>
         </div>
         <div class="cookie-actions">
             <button class="btn btn-outline cookie-btn" id="cookie-decline">Decline</button>
@@ -265,9 +269,9 @@
         <span class="material-icons-round" aria-hidden="true">arrow_upward</span>
     </button>
 
-    <script src="./assets/js/data-service.js" defer></script>
-    <script src="./assets/js/components.js" defer></script>
-    <script src="./assets/js/app.js" defer></script>
-    <script src="./assets/js/script.js" defer></script>
+    <script src="/assets/js/data-service.js" defer></script>
+    <script src="/assets/js/components.js" defer></script>
+    <script src="/assets/js/app.js" defer></script>
+    <script src="/assets/js/script.js" defer></script>
 </body>
 </html>

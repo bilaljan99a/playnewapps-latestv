@@ -36,7 +36,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <style>
         .article-content p { font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; color: var(--text-secondary); }
         .article-content h2 { font-size: 2rem; margin-top: 3rem; margin-bottom: 1.25rem; color: var(--text-primary); }
@@ -129,13 +129,17 @@
 <body>
     <!-- Header Navigation placeholder -->
     <header style="background: #fff; padding: 1rem 2rem; border-bottom: 1px solid #eee; display: flex; align-items: center; justify-content: space-between;">
-        <a href="/" style="font-size: 1.5rem; font-weight: 900; color: #111; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
-            <span class="material-icons-round" style="color: #0284C7;">apps</span> PlayNewApps
+        <a href="/" style="font-size: 1.35rem; font-weight: 900; color: #0f172a; text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" width="36" height="36" style="width: 36px; height: 36px;" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
+            <span>PlayNewApps</span>
         </a>
-        <nav style="display: flex; gap: 1.5rem;">
-            <a href="/reviews" style="color: #444; text-decoration: none; font-weight: 500;">Reviews</a>
+        <nav style="display: flex; gap: 1.5rem; align-items: center;">
+            <a href="/" style="color: #444; text-decoration: none; font-weight: 500;">Home</a>
             <a href="/stores" style="color: #444; text-decoration: none; font-weight: 500;">Stores</a>
+            <a href="/products" style="color: #444; text-decoration: none; font-weight: 500;">Products</a>
             <a href="/coupon" style="color: #444; text-decoration: none; font-weight: 500;">Coupons</a>
+            <a href="/reviews" style="color: #444; text-decoration: none; font-weight: 500;">Reviews</a>
+            <a href="/#search-form" style="color: #444; text-decoration: none; display: flex; align-items: center;" aria-label="Search"><span class="material-icons-round">search</span></a>
         </nav>
     </header>
     <main class="container article-layout" style="padding-top: 1.5rem; padding-bottom: 4rem; max-width: 900px; margin: 0 auto; padding-inline: 1.5rem;">
@@ -199,7 +203,7 @@
             </ul>
 
             <div class="banner-wrapper">
-                <img src="https://eleven-public-cdn.elevenlabs.io/payloadcms/yfzxw4iha5-eleven-creative.webp" alt="ElevenLabs Creative Features" width="900" height="450" loading="lazy">
+                <img src="https://eleven-public-cdn.elevenlabs.io/payloadcms/yfzxw4iha5-eleven-creative.webp" alt="ElevenLabs Creative Features" width="900" height="450" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/brands/elevenlabs.svg'">
             </div>
 
             <h2>3. Main Features & Capabilities</h2>
@@ -217,7 +221,7 @@
             <p>The result? You get the pristine, professional tone of the AI voice actor, but with <em>your</em> exact emotional delivery and timing. This is phenomenal for creating high-energy YouTube intros, dramatic character dialogue for animations, or ensuring that complex brand names are pronounced with the precise rhythm you desire.</p>
 
             <div class="banner-wrapper">
-                <img src="https://eleven-public-cdn.elevenlabs.io/payloadcms/speech-to-speech-api.webp" alt="ElevenLabs Speech to Speech Interface" width="900" height="450" loading="lazy">
+                <img src="https://eleven-public-cdn.elevenlabs.io/payloadcms/speech-to-speech-api.webp" alt="ElevenLabs Speech to Speech Interface" width="900" height="450" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/brands/elevenlabs.svg'">
             </div>
 
             <h2>4. The Magic of Voice Cloning</h2>
@@ -240,7 +244,7 @@
             <p>This feature single-handedly allows YouTube creators, educators, and marketers to take their existing content and instantly distribute it to a global audience with zero friction.</p>
 
             <div class="banner-wrapper">
-                <img src="https://eleven-public-cdn.elevenlabs.io/payloadcms/x2qs7pu93vc-Dubbing_v2_Dude_Video_first_frame.webp" alt="ElevenLabs AI Dubbing Features" width="900" height="450" loading="lazy">
+                <img src="https://eleven-public-cdn.elevenlabs.io/payloadcms/x2qs7pu93vc-Dubbing_v2_Dude_Video_first_frame.webp" alt="ElevenLabs AI Dubbing Features" width="900" height="450" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/brands/elevenlabs.svg'">
             </div>
 
             <h2>6. Conversational AI & ElevenAgents</h2>
@@ -249,7 +253,7 @@
             <p>ElevenLabs has engineered its API to achieve ultra-low latency, ensuring that the AI can process the incoming text, generate the audio, and begin streaming the response back to the user in a matter of milliseconds. When paired with a fast large language model (LLM), ElevenLabs allows businesses to deploy conversational agents that feel genuinely human, capable of handling complex customer inquiries, booking appointments, or providing interactive tutoring.</p>
 
             <div class="banner-wrapper">
-                <img src="https://eleven-public-cdn.elevenlabs.io/payloadcms/9aadq8oeb8a-configure-your-conversational-ai-agent.webp" alt="ElevenLabs Agents" width="900" height="450" loading="lazy">
+                <img src="https://eleven-public-cdn.elevenlabs.io/payloadcms/9aadq8oeb8a-configure-your-conversational-ai-agent.webp" alt="ElevenLabs Agents" width="900" height="450" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/brands/elevenlabs.svg'">
             </div>
 
             <h2>7. The Voice Library: An Infinite Casting Agency</h2>
@@ -267,7 +271,7 @@
             <p>When it does mispronounce a niche acronym or a bizarrely spelled name, the solution is usually simple: spell the word phonetically in the text editor. The rendering speed is lightning fast; even long paragraphs are synthesized and ready for playback within seconds.</p>
 
             <div class="banner-wrapper">
-                <img src="https://eleven-public-cdn.elevenlabs.io/payloadcms/70i3eou5egx-voice-cloning-cover.webp" alt="ElevenLabs Voice Cloning & Quality Tuning Interface" width="900" height="450" loading="lazy">
+                <img src="https://eleven-public-cdn.elevenlabs.io/payloadcms/70i3eou5egx-voice-cloning-cover.webp" alt="ElevenLabs Voice Cloning & Quality Tuning Interface" width="900" height="450" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/brands/elevenlabs.svg'">
             </div>
 
             <h2>10. Ease of Use and Interface</h2>
@@ -295,7 +299,7 @@
             <p>Overall, the pricing is highly competitive. When you compare the $22 Creator Plan to the cost of hiring a human voice actor for two hours of finished audio, the return on investment is astronomical.</p>
 
             <div class="banner-wrapper">
-                <img src="https://eleven-public-cdn.elevenlabs.io/payloadcms/6ssxbw2c8no-Studio.webp" alt="ElevenLabs API and Pricing" width="900" height="450" loading="lazy">
+                <img src="https://eleven-public-cdn.elevenlabs.io/payloadcms/6ssxbw2c8no-Studio.webp" alt="ElevenLabs API and Pricing" width="900" height="450" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/brands/elevenlabs.svg'">
             </div>
 
             <h2>12. ElevenLabs vs. Murf AI</h2>
@@ -326,7 +330,7 @@
             </ul>
 
             <div class="banner-wrapper">
-                <img src="https://eleven-public-cdn.elevenlabs.io/payloadcms/uqrfhp9a8bb-epic-voices-voice-library.webp" alt="ElevenLabs Pros and Cons" width="900" height="450" loading="lazy">
+                <img src="https://eleven-public-cdn.elevenlabs.io/payloadcms/uqrfhp9a8bb-epic-voices-voice-library.webp" alt="ElevenLabs Pros and Cons" width="900" height="450" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/brands/elevenlabs.svg'">
             </div>
 
             <h2>15. Best Use Cases for ElevenLabs</h2>

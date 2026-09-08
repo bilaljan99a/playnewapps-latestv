@@ -69,6 +69,7 @@
             
             <nav class="nav" id="nav" aria-label="Main Navigation">
                 <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
                     <li class="nav-item dropdown" id="stores-dropdown-wrapper">
                         <a href="/stores" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
                             Stores <span class="material-icons-round dropdown-icon" aria-hidden="true">expand_more</span>
@@ -77,14 +78,16 @@
                             <div class="dropdown-loading">Loading stores...</div>
                         </div>
                     </li>
-                    <li><a href="/#featured" class="nav-link">Featured</a></li>
-                    <li><a href="/reviews" class="nav-link active">Reviews</a></li>
-                    <li><a href="/coupon" class="nav-link">Deals</a></li>
-                    <li><a href="/#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="/products" class="nav-link">Products</a></li>
+                    <li><a href="/coupon" class="nav-link">Coupons</a></li>
+                    <li><a href="/reviews" class="nav-link active" aria-current="page">Reviews</a></li>
                 </ul>
             </nav>
 
             <div class="header-actions">
+                <a href="/#search-form" class="icon-btn" aria-label="Search">
+                    <span class="material-icons-round" aria-hidden="true">search</span>
+                </a>
                 <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
                     <span class="material-icons-round" aria-hidden="true">dark_mode</span>
                 </button>

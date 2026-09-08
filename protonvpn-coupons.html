@@ -451,25 +451,25 @@
     <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
             <div class="flex items-center gap-8">
-                <a href="/" class="flex items-center gap-2 group">
-                    <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-600 flex items-center justify-center text-white font-black shadow-md shadow-brand-600/20 group-hover:scale-105 transition-transform">
-                        <span class="material-icons-round text-xl">local_offer</span>
+                <a href="/" class="flex items-center gap-3 group" aria-label="PlayNewApps Home">
+                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="w-9 h-9 sm:w-10 sm:h-10 transition-transform group-hover:scale-105" width="40" height="40" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
+                    <div>
+                        <span class="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight block">PlayNewApps</span>
+                        <span class="text-[10px] sm:text-xs font-semibold text-slate-500 block -mt-1 uppercase tracking-wider">Verified Software &amp; Deals</span>
                     </div>
-                    <span class="text-xl font-black text-slate-900 tracking-tight">PlayNew<span class="text-brand-600">Apps</span></span>
                 </a>
-                <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
-                    <a href="/stores" class="text-brand-600 flex items-center gap-1 hover:text-brand-700 transition-colors">
-                        <span class="material-icons-round text-base">storefront</span> Stores
-                    </a>
-                    <a href="/category" class="hover:text-brand-600 flex items-center gap-1 transition-colors">
-                        <span class="material-icons-round text-base">category</span> Categories
-                    </a>
-                    <a href="/reviews" class="hover:text-brand-600 flex items-center gap-1 transition-colors">
-                        <span class="material-icons-round text-base">rate_review</span> Reviews
-                    </a>
+                                <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700">
+                    <a href="/" class="hover:text-amber-600 transition-colors">Home</a>
+                    <a href="/stores" class="hover:text-amber-600 transition-colors">Stores</a>
+                    <a href="/products" class="hover:text-amber-600 transition-colors">Products</a>
+                    <a href="/coupon" class="hover:text-amber-600 transition-colors">Coupons</a>
+                    <a href="/reviews" class="hover:text-amber-600 transition-colors">Reviews</a>
                 </nav>
             </div>
             <div class="flex items-center gap-3">
+                    <a href="/#search-form" class="inline-flex items-center justify-center w-9 h-9 rounded-xl text-slate-600 hover:text-amber-600 hover:bg-slate-100 transition-colors" aria-label="Search">
+                        <span class="material-icons-round text-lg">search</span>
+                    </a>
                 <div class="relative hidden sm:block w-64">
                     <input type="text" id="store-search-input" placeholder="Search stores, coupons..." class="w-full pl-9 pr-4 py-2 text-xs bg-slate-100 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all">
                     <span class="material-icons-round absolute left-2.5 top-2.5 text-base text-slate-400">search</span>
@@ -1265,7 +1265,7 @@
                         </a>
                         <a href="/purevpn-coupons" class="flex items-center gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors">
                             <div class="w-10 h-10 rounded-lg bg-white border border-slate-200 p-1 flex items-center justify-center shrink-0">
-                                <img src="/assets/images/brands/purevpn.png" alt="PureVPN Logo" class="max-h-full max-w-full object-contain" width="32" height="32" onerror="this.src='/assets/images/brands/default-store.svg'">
+                                <img src="/assets/images/brands/purevpn.svg" alt="PureVPN Logo" class="max-h-full max-w-full object-contain" width="32" height="32" onerror="this.src='/assets/images/brands/default-store.svg'">
                             </div>
                             <div class="flex-grow">
                                 <h4 class="font-bold text-slate-800">PureVPN</h4>
@@ -1275,7 +1275,7 @@
                         </a>
                         <a href="/hide-expert-vpn-coupons" class="flex items-center gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors">
                             <div class="w-10 h-10 rounded-lg bg-white border border-slate-200 p-1 flex items-center justify-center shrink-0">
-                                <img src="/assets/images/brands/hide-expert-vpn.png" alt="Hide Expert VPN Logo" class="max-h-full max-w-full object-contain" width="32" height="32" onerror="this.src='/assets/images/brands/default-store.svg'">
+                                <img src="/assets/images/brands/hide-expert.svg" alt="Hide Expert VPN Logo" class="max-h-full max-w-full object-contain" width="32" height="32" onerror="this.src='/assets/images/brands/default-store.svg'">
                             </div>
                             <div class="flex-grow">
                                 <h4 class="font-bold text-slate-800">Hide Expert VPN</h4>

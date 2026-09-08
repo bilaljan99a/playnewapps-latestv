@@ -414,15 +414,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 sm:h-20">
                 <!-- Site Logo -->
-                <a href="/" class="flex items-center gap-3 group">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-500 flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
-                        <span class="material-icons-round text-2xl">auto_stories</span>
-                    </div>
+                <a href="/" class="flex items-center gap-3 group" aria-label="PlayNewApps Home">
+                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="w-9 h-9 sm:w-10 sm:h-10 transition-transform group-hover:scale-105" width="40" height="40" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                     <div>
-                        <span class="text-xl font-extrabold text-slate-900 tracking-tight flex items-center">
-                            PlayNew<span class="text-brand-600">Apps</span>
-                        </span>
-                        <span class="hidden sm:block text-[10px] font-bold tracking-widest text-slate-400 uppercase">Verified Promo Hub</span>
+                        <span class="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight block">PlayNewApps</span>
+                        <span class="text-[10px] sm:text-xs font-semibold text-slate-500 block -mt-1 uppercase tracking-wider">Verified Software &amp; Deals</span>
                     </div>
                 </a>
 
@@ -439,19 +435,12 @@
                 </div>
 
                 <!-- Nav Links -->
-                <nav class="flex items-center gap-4 sm:gap-6">
-                    <a href="/stores" class="text-sm font-bold text-slate-600 hover:text-brand-600 transition-colors">Stores</a>
-                    <a href="/category?id=education" class="text-sm font-bold text-slate-600 hover:text-brand-600 transition-colors hidden sm:block">Education</a>
-                    <a href="/category?id=apps" class="text-sm font-bold text-slate-600 hover:text-brand-600 transition-colors hidden sm:block">Apps &amp; AI</a>
-                    <a 
-                        href="https://dorinebeaumont.com/g/0lsosy937lb68b264a768cba3b3b49/" 
-                        target="_blank" 
-                        rel="nofollow noopener sponsored" 
-                        class="bg-brand-600 hover:bg-brand-700 text-white text-xs sm:text-sm font-extrabold px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl shadow-sm hover:shadow transition-all inline-flex items-center gap-1.5"
-                    >
-                        <span>Visit Headway</span>
-                        <span class="material-icons-round text-sm">open_in_new</span>
-                    </a>
+                                <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700">
+                    <a href="/" class="hover:text-amber-600 transition-colors">Home</a>
+                    <a href="/stores" class="hover:text-amber-600 transition-colors">Stores</a>
+                    <a href="/products" class="hover:text-amber-600 transition-colors">Products</a>
+                    <a href="/coupon" class="hover:text-amber-600 transition-colors">Coupons</a>
+                    <a href="/reviews" class="hover:text-amber-600 transition-colors">Reviews</a>
                 </nav>
             </div>
         </div>
@@ -1483,6 +1472,9 @@
                 <!-- About Headway Card -->
                 <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs space-y-5">
                     <div class="flex items-center gap-3">
+                    <a href="/#search-form" class="inline-flex items-center justify-center w-9 h-9 rounded-xl text-slate-600 hover:text-amber-600 hover:bg-slate-100 transition-colors" aria-label="Search">
+                        <span class="material-icons-round text-lg">search</span>
+                    </a>
                         <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center p-2">
                             <img src="./assets/images/brands/headway.svg" alt="Headway Icon" class="max-w-full max-h-full object-contain">
                         </div>

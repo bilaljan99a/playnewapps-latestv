@@ -37,7 +37,7 @@
 
     <!-- Tailwind CSS & Base Styles -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
     <style>
         .review-article-wrapper {
@@ -249,13 +249,17 @@
             <a href="/" class="flex items-center gap-2.5">
                 <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto" width="120" height="32" onerror="this.src='/assets/images/logo.png'">
             </a>
-            <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
-                <a href="/" class="hover:text-purple-600 transition-colors">Home</a>
-                <a href="/stores" class="hover:text-purple-600 transition-colors">Stores</a>
-                <a href="/reviews" class="text-purple-600 font-bold">Reviews</a>
-                <a href="/category" class="hover:text-purple-600 transition-colors">Categories</a>
-            </nav>
+                            <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700">
+                    <a href="/" class="hover:text-amber-600 transition-colors">Home</a>
+                    <a href="/stores" class="hover:text-amber-600 transition-colors">Stores</a>
+                    <a href="/products" class="hover:text-amber-600 transition-colors">Products</a>
+                    <a href="/coupon" class="hover:text-amber-600 transition-colors">Coupons</a>
+                    <a href="/reviews" class="hover:text-amber-600 transition-colors">Reviews</a>
+                </nav>
             <div class="flex items-center gap-3">
+                    <a href="/#search-form" class="inline-flex items-center justify-center w-9 h-9 rounded-xl text-slate-600 hover:text-amber-600 hover:bg-slate-100 transition-colors" aria-label="Search">
+                        <span class="material-icons-round text-lg">search</span>
+                    </a>
                 <a href="/reviews" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-purple-50 hover:text-purple-700 transition-colors">
                     <span class="material-icons-round text-base">sports_esports</span> All Game Reviews
                 </a>
@@ -663,7 +667,7 @@
     <footer class="bg-white border-t border-slate-200 mt-16 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
             <div class="flex items-center gap-3">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="h-7 w-auto" width="105" height="28">
+                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="h-7 w-auto" width="105" height="28" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                 <span class="text-xs text-slate-500">© 2026 PlayNewApps. All rights reserved.</span>
             </div>
             <div class="flex flex-wrap items-center gap-6 text-xs text-slate-600">

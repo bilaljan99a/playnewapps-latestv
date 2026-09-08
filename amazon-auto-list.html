@@ -6,6 +6,7 @@
     <title>Amazon Auto-Listing Tool & Product Importer | PlayNewApps</title>
     <meta name="description" content="Automated Amazon affiliate product fetcher and listing manager for PlayNewApps.">
     <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://playnewapps.store/amazon-auto-list">
 
     <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon-96x96.png">
@@ -256,18 +257,32 @@
     <header class="header" id="header">
         <div class="container header-container">
             <a href="/" class="logo" aria-label="PlayNewApps Home">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
+                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                 <span>PlayNewApps</span>
             </a>
             
-            <nav class="nav" id="nav" aria-label="Main Navigation">
+                        <nav class="nav" id="nav" aria-label="Main Navigation">
                 <ul class="nav-list">
                     <li><a href="/" class="nav-link">Home</a></li>
-                    <li><a href="/stores" class="nav-link">Stores</a></li>
-                    <li><a href="/coupon" class="nav-link">Deals &amp; Products</a></li>
-                    <li><a href="/amazon-auto-list" class="nav-link" style="color: #d97706; font-weight: 700;">Amazon Tool</a></li>
+                    <li class="nav-item dropdown" id="stores-dropdown-wrapper">
+                        <a href="/stores" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                            Stores <span class="material-icons-round dropdown-icon" aria-hidden="true">expand_more</span>
+                        </a>
+                        <div class="dropdown-menu" id="stores-dropdown-menu" aria-label="Stores Menu">
+                            <div class="dropdown-loading">Loading stores...</div>
+                        </div>
+                    </li>
+                    <li><a href="/products" class="nav-link">Products</a></li>
+                    <li><a href="/coupon" class="nav-link">Coupons</a></li>
+                    <li><a href="/reviews" class="nav-link">Reviews</a></li>
                 </ul>
             </nav>
+
+            <div class="header-actions">
+                <a href="/#search-form" class="icon-btn" aria-label="Search">
+                    <span class="material-icons-round" aria-hidden="true">search</span>
+                </a>
+            </div>
         </div>
     </header>
 
@@ -448,7 +463,7 @@
                             <div id="preview-active-card" style="display: none;">
                                 <article class="product-preview-card">
                                     <div style="position: relative;">
-                                        <img src="" alt="" id="pv-img" class="product-preview-img">
+                                        <img src="/assets/images/brands/default-store.svg" alt="Product preview" id="pv-img" class="product-preview-img">
                                         <span id="pv-badge" style="position: absolute; top: 10px; left: 10px; background: #f59e0b; color: #111827; font-size: 0.72rem; font-weight: 800; padding: 3px 8px; border-radius: 4px; text-transform: uppercase;">
                                             Amazon Best Seller
                                         </span>

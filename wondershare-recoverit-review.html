@@ -36,8 +36,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="preload" as="style" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preload" as="style" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
     <!-- Structured Data Schemas -->
     <script type="application/ld+json">
@@ -202,7 +202,7 @@
     <header class="header">
         <div class="container header-inner">
             <a href="/" class="logo" aria-label="PlayNewApps Home">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
+                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                 <span>PlayNewApps</span>
             </a>
             
@@ -213,14 +213,24 @@
             <nav id="main-nav" class="nav" aria-label="Main Navigation">
                 <ul class="nav-list">
                     <li><a href="/" class="nav-link">Home</a></li>
-                    <li><a href="/store?id=wondershare" class="nav-link">Software</a></li>
-                    <li><a href="/reviews" class="nav-link active">Reviews</a></li>
+                    <li class="nav-item dropdown" id="stores-dropdown-wrapper">
+                        <a href="/stores" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                            Stores <span class="material-icons-round dropdown-icon" aria-hidden="true">expand_more</span>
+                        </a>
+                        <div class="dropdown-menu" id="stores-dropdown-menu" aria-label="Stores Menu">
+                            <div class="dropdown-loading">Loading stores...</div>
+                        </div>
+                    </li>
+                    <li><a href="/products" class="nav-link">Products</a></li>
                     <li><a href="/coupon" class="nav-link">Coupons</a></li>
-                    <li><a href="/stores" class="nav-link">Stores</a></li>
+                    <li><a href="/reviews" class="nav-link active">Reviews</a></li>
                 </ul>
             </nav>
 
             <div class="header-actions">
+                <a href="/#search-form" class="icon-btn" aria-label="Search">
+                    <span class="material-icons-round" aria-hidden="true">search</span>
+                </a>
                 <a href="https://kjuzv.com/g/8u3trxihmwb68b264a76ef655e4ac9/?ulp=https%3A%2F%2Frecoverit.wondershare.com%2Fbuy%2Fstore.html%3F" target="_blank" rel="noopener sponsored" class="btn btn-primary nav-cta">Get Recoverit Deal</a>
             </div>
         </div>
@@ -270,7 +280,7 @@
 
                 <!-- Hero Banner Image -->
                 <div class="hero-image-wrapper my-md">
-                    <img src="https://images.wondershare.com/recoverit/images2025/index/banner.webp" alt="Wondershare Recoverit 13 Hero Banner" class="hero-banner-img" width="1200" height="500" style="width: 100%; height: auto; border-radius: 16px; box-shadow: var(--shadow-lg);">
+                    <img src="https://images.wondershare.com/recoverit/images2025/index/banner.webp" alt="Wondershare Recoverit 13 Hero Banner" class="hero-banner-img" width="1200" height="500" style="width: 100%; height: auto; border-radius: 16px; box-shadow: var(--shadow-lg);" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                 </div>
             </header>
 
@@ -322,7 +332,7 @@
                         <p>Wondershare Recoverit 13 is engineered around a clean, intuitive, modular interface designed for both non-technical home users and enterprise IT administrators. Unlike clunky legacy data recovery tools that overwhelm users with complex command-line prompts and obscure technical jargon, Recoverit 13 guides you step-by-step through a streamlined 3-click workflow: <strong>Select Location ➔ Deep Scan ➔ Preview &amp; Recover</strong>.</p>
                         <p>The installation footprint is remarkably lightweight, taking up under 150 MB of disk space. During idle states, the software consumes less than 45 MB of RAM, leaving system resources fully available for high-speed background sector reading.</p>
                         
-                        <img src="https://images.wondershare.com/recoverit/banner/v14-pc-0521.jpg" alt="Wondershare Recoverit 13 Primary Dashboard Screenshot" class="article-screenshot" width="1200" height="700">
+                        <img src="https://images.wondershare.com/recoverit/banner/v14-pc-0521.jpg" alt="Wondershare Recoverit 13 Primary Dashboard Screenshot" class="article-screenshot" width="1200" height="700" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <p class="text-caption text-center text-secondary mb-lg">Figure 1: The clean Wondershare Recoverit 13 primary dashboard featuring quick-access drive selection, shortcut folders, and specialized AI modes.</p>
                     </section>
 
@@ -338,7 +348,7 @@
                             <li><strong>Recycle Bin Direct Target Scan:</strong> Allows instant deep searching of permanently emptied Recycle Bins on Windows and Trash on macOS.</li>
                         </ul>
 
-                        <img src="https://images.wondershare.com/recoverit/images2025/index/intelligent-recovery-canvas-poster.png" alt="Wondershare Recoverit 13 Deep Scan Engine Screenshot" class="article-screenshot" width="1200" height="700">
+                        <img src="https://images.wondershare.com/recoverit/images2025/index/intelligent-recovery-canvas-poster.png" alt="Wondershare Recoverit 13 Deep Scan Engine Screenshot" class="article-screenshot" width="1200" height="700" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <p class="text-caption text-center text-secondary mb-lg">Figure 2: Real-time deep scanning engine displaying live file tree navigation, quality health indicators, and filter controls.</p>
                     </section>
 
@@ -412,7 +422,7 @@
 
                         <p>Recoverit 13 passed every lab scenario with flying colors. The scanning engine processed an impressive average speed of <strong>1.2 GB per second on NVMe SSDs</strong> and 140 MB/s on traditional mechanical HDDs.</p>
 
-                        <img src="https://images.wondershare.com/recoverit/images2025/index/efficiency-canvas-poster.png" alt="Wondershare Recoverit 13 Full HD File Preview Engine" class="article-screenshot" width="1200" height="700">
+                        <img src="https://images.wondershare.com/recoverit/images2025/index/efficiency-canvas-poster.png" alt="Wondershare Recoverit 13 Full HD File Preview Engine" class="article-screenshot" width="1200" height="700" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <p class="text-caption text-center text-secondary mb-lg">Figure 3: Deep HD File Preview inspecting Nikon RAW photo EXIF metadata and verifying 100% file health prior to recovery.</p>
                     </section>
 
@@ -427,10 +437,10 @@
                             <li><strong>AI Corrupted Video Repair Engine:</strong> Uses deep learning neural models to analyze corrupted MP4/MOV container headers, repair keyframe sync issues, eliminate stuttering, and align out-of-sync audio tracks using a reference sample video from the same camera device.</li>
                         </ol>
 
-                        <img src="https://images.wondershare.com/recoverit/images2025/index/repair-canvas-poster.png" alt="Wondershare Recoverit 13 AI Video Repair Interface" class="article-screenshot" width="1200" height="700">
+                        <img src="https://images.wondershare.com/recoverit/images2025/index/repair-canvas-poster.png" alt="Wondershare Recoverit 13 AI Video Repair Interface" class="article-screenshot" width="1200" height="700" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <p class="text-caption text-center text-secondary mb-lg">Figure 4: AI Frame Matching Video Repair transforming corrupted, unplayable 4K drone video files into 100% restored MP4 streams.</p>
 
-                        <img src="https://images.wondershare.com/recoverit/images2025/index/intelligent-recovery-canvas-poster.png" alt="Wondershare Recoverit Dual-Shot Video Stitching Diagram" class="article-screenshot" width="1200" height="700">
+                        <img src="https://images.wondershare.com/recoverit/images2025/index/intelligent-recovery-canvas-poster.png" alt="Wondershare Recoverit Dual-Shot Video Stitching Diagram" class="article-screenshot" width="1200" height="700" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <p class="text-caption text-center text-secondary mb-lg">Figure 5: Comparative diagram illustrating how Recoverit's Dual-Shot Stitching reassembles fragmented GoPro video sectors.</p>
                     </section>
 
@@ -439,13 +449,13 @@
                         <h2>7. Crashed Computer Rescue & NAS Remote Recovery</h2>
                         <p>When a computer experiences hardware failure or critical OS corruption, booting into Windows becomes impossible. Recoverit 13 Ultimate includes an emergency <strong>WinPE Bootable USB Creator</strong>. By creating a rescue USB on a working PC, you can boot the crashed computer directly into a standalone Recoverit environment and safely extract all internal hard drive files onto external storage without opening the PC chassis.</p>
 
-                        <img src="https://images.wondershare.com/recoverit/images2025/index/lost-canvas-poster.png" alt="Wondershare Recoverit WinPE Emergency USB Creator" class="article-screenshot" width="1200" height="700">
+                        <img src="https://images.wondershare.com/recoverit/images2025/index/lost-canvas-poster.png" alt="Wondershare Recoverit WinPE Emergency USB Creator" class="article-screenshot" width="1200" height="700" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <p class="text-caption text-center text-secondary mb-lg">Figure 6: WinPE Bootable Rescue USB creator preparing an emergency rescue drive for unbootable Windows computers.</p>
 
                         <h3>Remote NAS &amp; Linux Storage Recovery</h3>
                         <p>For small businesses and media studios relying on Synology, QNAP, or ASUSTOR Network Attached Storage (NAS) servers, traditional data recovery required pulling out hard drives and rebuilding complex RAID arrays on a desktop rig. Recoverit 13 introduces remote SSH network recovery. Simply enter your NAS IP address and administrator credentials to scan BTRFS, EXT4, and ZFS storage volumes directly over your local network.</p>
 
-                        <img src="https://images.wondershare.com/recoverit/images2025/index/computer-external-bg.png" alt="Wondershare Recoverit Remote NAS & Linux Recovery Interface" class="article-screenshot" width="1200" height="700">
+                        <img src="https://images.wondershare.com/recoverit/images2025/index/computer-external-bg.png" alt="Wondershare Recoverit Remote NAS & Linux Recovery Interface" class="article-screenshot" width="1200" height="700" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <p class="text-caption text-center text-secondary mb-lg">Figure 7: Connecting over SSH to scan remote Synology BTRFS RAID arrays without removing hard drives.</p>
                     </section>
 
@@ -508,7 +518,7 @@
                             </div>
                         </div>
 
-                        <img src="https://images.wondershare.com/recoverit/images2025/index/mobile-computer.png" alt="Wondershare Recoverit 2026 Pricing Matrix" class="article-screenshot" width="1200" height="700">
+                        <img src="https://images.wondershare.com/recoverit/images2025/index/mobile-computer.png" alt="Wondershare Recoverit 2026 Pricing Matrix" class="article-screenshot" width="1200" height="700" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <p class="text-caption text-center text-secondary mb-lg">Figure 8: Official Wondershare Recoverit 13 pricing matrix comparing Essential, Enhanced, and Ultimate feature tiers.</p>
 
                         <!-- Pricing Cards Grid -->
@@ -780,8 +790,8 @@
         </div>
     </footer>
 
-    <script src="./assets/js/data-service.js" defer></script>
-    <script src="./assets/js/components.js" defer></script>
-    <script src="./assets/js/app.js"></script>
+    <script src="/assets/js/data-service.js" defer></script>
+    <script src="/assets/js/components.js" defer></script>
+    <script src="/assets/js/app.js"></script>
 </body>
 </html>

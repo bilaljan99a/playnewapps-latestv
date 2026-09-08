@@ -36,8 +36,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="preload" as="style" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preload" as="style" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
     <!-- Structured Data Schema (Review, Product, SoftwareApplication, BreadcrumbList, FAQPage) -->
     <script type="application/ld+json">
@@ -157,7 +157,7 @@
     <header class="header">
         <div class="container header-inner">
             <a href="/" class="logo" aria-label="PlayNewApps Home">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
+                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                 <span>PlayNewApps</span>
             </a>
             
@@ -167,15 +167,25 @@
 
             <nav id="main-nav" class="nav" aria-label="Main Navigation">
                 <ul class="nav-list">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/category?id=all" class="active">Reviews</a></li>
-                    <li><a href="/wondershare-filmora-pricing">Filmora Pricing</a></li>
-                    <li><a href="/wondershare-filmora-coupons">Filmora Coupons</a></li>
-                    <li><a href="/stores">Stores</a></li>
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown" id="stores-dropdown-wrapper">
+                        <a href="/stores" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                            Stores <span class="material-icons-round dropdown-icon" aria-hidden="true">expand_more</span>
+                        </a>
+                        <div class="dropdown-menu" id="stores-dropdown-menu" aria-label="Stores Menu">
+                            <div class="dropdown-loading">Loading stores...</div>
+                        </div>
+                    </li>
+                    <li><a href="/products" class="nav-link">Products</a></li>
+                    <li><a href="/coupon" class="nav-link">Coupons</a></li>
+                    <li><a href="/reviews" class="nav-link active">Reviews</a></li>
                 </ul>
             </nav>
             
             <div class="header-actions">
+                <a href="/#search-form" class="icon-btn" aria-label="Search">
+                    <span class="material-icons-round" aria-hidden="true">search</span>
+                </a>
                 <button class="theme-toggle" aria-label="Toggle dark mode">
                     <span class="material-icons-round dark-icon" aria-hidden="true">dark_mode</span>
                     <span class="material-icons-round light-icon" aria-hidden="true">light_mode</span>
@@ -218,7 +228,7 @@
 
                     <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 1rem 0; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
                         <div style="display: flex; align-items: center; gap: 0.75rem;">
-                            <img src="/assets/images/logo.svg" alt="PlayNewApps Editorial Team" width="40" height="40" style="border-radius: 50%;">
+                            <img src="/assets/images/logo.svg" alt="PlayNewApps Editorial Team" width="40" height="40" style="border-radius: 50%;" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                             <div>
                                 <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">PlayNewApps Editorial Team</div>
                                 <div style="font-size: 0.85rem; color: var(--text-secondary);">Updated: August 2026 • 20 min read</div>
@@ -311,7 +321,7 @@
                     </p>
 
                     <figure style="margin: 2rem 0; text-align: center;">
-                        <img src="https://images.wondershare.com/filmora/filmora15/homepage/banner-video-poster.png" alt="Wondershare Filmora 15 Main Interface Hero Screenshot" width="1200" height="675" loading="lazy" style="width: 100%; height: auto; border-radius: var(--border-radius); border: 1px solid var(--border-color); box-shadow: var(--shadow-md);">
+                        <img src="https://images.wondershare.com/filmora/filmora15/homepage/banner-video-poster.png" alt="Wondershare Filmora 15 Main Interface Hero Screenshot" width="1200" height="675" loading="lazy" style="width: 100%; height: auto; border-radius: var(--border-radius); border: 1px solid var(--border-color); box-shadow: var(--shadow-md);" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <figcaption style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.75rem;">Figure 1: The Wondershare Filmora 15 multi-track timeline interface featuring AI Smart Cutout, color inspector, and dual waveform audio tracks.</figcaption>
                     </figure>
                 </section>
@@ -327,7 +337,7 @@
                     </p>
 
                     <figure style="margin: 2rem 0; text-align: center;">
-                        <img src="https://images.wondershare.com/filmora/filmora15/wondershare-filmora.png" alt="Wondershare Filmora 15 Dual Monitor Workspace" width="1200" height="675" loading="lazy" style="width: 100%; height: auto; border-radius: var(--border-radius); border: 1px solid var(--border-color); box-shadow: var(--shadow-md);">
+                        <img src="https://images.wondershare.com/filmora/filmora15/wondershare-filmora.png" alt="Wondershare Filmora 15 Dual Monitor Workspace" width="1200" height="675" loading="lazy" style="width: 100%; height: auto; border-radius: var(--border-radius); border: 1px solid var(--border-color); box-shadow: var(--shadow-md);" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <figcaption style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.75rem;">Figure 2: Filmora 15 dual monitor workspace with stock media browser, property inspector, and 4K real-time playback window.</figcaption>
                     </figure>
                 </section>
@@ -358,7 +368,7 @@
                     </div>
 
                     <figure style="margin: 2rem 0; text-align: center;">
-                        <img src="https://images.wondershare.com/filmora/filmora15/homepage/banner-video-poster.png" alt="Wondershare Filmora 15 Magnetic Multi-Track Timeline & Speed Ramping" width="1200" height="675" loading="lazy" style="width: 100%; height: auto; border-radius: var(--border-radius); border: 1px solid var(--border-color); box-shadow: var(--shadow-md);">
+                        <img src="https://images.wondershare.com/filmora/filmora15/homepage/banner-video-poster.png" alt="Wondershare Filmora 15 Magnetic Multi-Track Timeline & Speed Ramping" width="1200" height="675" loading="lazy" style="width: 100%; height: auto; border-radius: var(--border-radius); border: 1px solid var(--border-color); box-shadow: var(--shadow-md);" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <figcaption style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.75rem;">Figure 3: Multi-Track Magnetic Timeline with Bezier Speed Ramping, keyframe curves, and synced camera tracks.</figcaption>
                     </figure>
 
@@ -372,7 +382,7 @@
                     </div>
 
                     <figure style="margin: 2rem 0; text-align: center;">
-                        <img src="https://images.wondershare.com/filmora/filmora15/homepage/creativity-video-poster.png" alt="Filmora 15 AI Copilot 2.0 and Smart Editing Panel" width="1200" height="675" loading="lazy" style="width: 100%; height: auto; border-radius: var(--border-radius); border: 1px solid var(--border-color); box-shadow: var(--shadow-md);">
+                        <img src="https://images.wondershare.com/filmora/filmora15/homepage/creativity-video-poster.png" alt="Filmora 15 AI Copilot 2.0 and Smart Editing Panel" width="1200" height="675" loading="lazy" style="width: 100%; height: auto; border-radius: var(--border-radius); border: 1px solid var(--border-color); box-shadow: var(--shadow-md);" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <figcaption style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.75rem;">Figure 3: The Filmora 15 AI Innovation Hub showcasing AI Copilot 2.0, AI Voice Cloning, and AI Audio Denoising panel.</figcaption>
                     </figure>
                 </section>
@@ -385,7 +395,7 @@
                     </p>
 
                     <figure style="margin: 2rem 0; text-align: center;">
-                        <img src="https://images.wondershare.com/filmora/filmora15/homepage/resource-effects-poster.png" alt="Filmora 15 Visual Effects Library" width="1200" height="675" loading="lazy" style="width: 100%; height: auto; border-radius: var(--border-radius); border: 1px solid var(--border-color); box-shadow: var(--shadow-md);">
+                        <img src="https://images.wondershare.com/filmora/filmora15/homepage/resource-effects-poster.png" alt="Filmora 15 Visual Effects Library" width="1200" height="675" loading="lazy" style="width: 100%; height: auto; border-radius: var(--border-radius); border: 1px solid var(--border-color); box-shadow: var(--shadow-md);" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <figcaption style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.75rem;">Figure 4: Filmora 15 Visual FX library showing 3D titles, kinetic typography, LUT color grading presets, and speed ramping controls.</figcaption>
                     </figure>
                 </section>
@@ -431,7 +441,7 @@
                     </div>
 
                     <figure style="margin: 2rem 0; text-align: center;">
-                        <img src="https://images.wondershare.com/filmora/filmora15/homepage/smarter-mask-pic1.png" alt="Filmora 15 High Speed 4K Export Settings Dialog" width="1200" height="675" loading="lazy" style="width: 100%; height: auto; border-radius: var(--border-radius); border: 1px solid var(--border-color); box-shadow: var(--shadow-md);">
+                        <img src="https://images.wondershare.com/filmora/filmora15/homepage/smarter-mask-pic1.png" alt="Filmora 15 High Speed 4K Export Settings Dialog" width="1200" height="675" loading="lazy" style="width: 100%; height: auto; border-radius: var(--border-radius); border: 1px solid var(--border-color); box-shadow: var(--shadow-md);" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <figcaption style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.75rem;">Figure 5: Filmora 15 high-speed export dialog with hardware GPU acceleration, 4K UHD resolution, and custom bitrate selection.</figcaption>
                     </figure>
                 </section>
@@ -553,7 +563,7 @@
                     </p>
 
                     <figure style="margin: 2rem 0; text-align: center;">
-                        <img src="https://images.wondershare.com/filmora/filmora15/homepage/smarter-mask-pic3.png" alt="Wondershare Filmora 15 Pricing Comparison Graphic" width="1200" height="675" loading="lazy" style="width: 100%; height: auto; border-radius: var(--border-radius); border: 1px solid var(--border-color); box-shadow: var(--shadow-md);">
+                        <img src="https://images.wondershare.com/filmora/filmora15/homepage/smarter-mask-pic3.png" alt="Wondershare Filmora 15 Pricing Comparison Graphic" width="1200" height="675" loading="lazy" style="width: 100%; height: auto; border-radius: var(--border-radius); border: 1px solid var(--border-color); box-shadow: var(--shadow-md);" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                         <figcaption style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.75rem;">Figure 6: Visual breakdown of Wondershare Filmora 15 Annual ($49.99/yr), Cross-Platform ($69.99/yr), and Perpetual License ($79.99) options.</figcaption>
                     </figure>
 
@@ -592,7 +602,7 @@
                     </div>
 
                     <figure style="margin: 2rem 0; text-align: center;">
-                        <img src="https://images.wondershare.com/filmora/filmora15/homepage/smarter-mask-pic4.png" alt="Filmora 15 Editor Choice Award Graphic" width="1200" height="675" loading="lazy" style="width: 100%; height: auto; border-radius: var(--border-radius); border: 1px solid #334155;">
+                        <img src="https://images.wondershare.com/filmora/filmora15/homepage/smarter-mask-pic4.png" alt="Filmora 15 Editor Choice Award Graphic" width="1200" height="675" loading="lazy" style="width: 100%; height: auto; border-radius: var(--border-radius); border: 1px solid #334155;" onerror="this.onerror=null;this.src='/assets/images/brands/wondershare.svg'">
                     </figure>
 
                     <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
@@ -614,7 +624,7 @@
         <div class="container footer-grid">
             <div class="footer-col brand-col">
                 <a href="/" class="logo footer-logo" aria-label="PlayNewApps Home">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
+                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                     <span>PlayNewApps</span>
                 </a>
                 <p class="footer-desc">Your trusted destination for unbiased software reviews, tech guides, and verified coupons.</p>
@@ -649,9 +659,9 @@
         <span class="material-icons-round" aria-hidden="true">arrow_upward</span>
     </button>
 
-    <script src="./assets/js/data-service.js" defer></script>
-    <script src="./assets/js/components.js" defer></script>
-    <script src="./assets/js/app.js" defer></script>
-    <script src="./assets/js/script.js" defer></script>
+    <script src="/assets/js/data-service.js" defer></script>
+    <script src="/assets/js/components.js" defer></script>
+    <script src="/assets/js/app.js" defer></script>
+    <script src="/assets/js/script.js" defer></script>
 </body>
 </html>

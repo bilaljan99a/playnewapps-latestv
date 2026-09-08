@@ -157,6 +157,7 @@ class App {
         let allReviews = [];
         let stores = [];
         let coupons = [];
+        let products = [];
         let searchDataLoaded = false;
         let searchDataPromise = null;
 
@@ -166,14 +167,16 @@ class App {
 
             searchDataPromise = (async () => {
                 try {
-                    const [rData, sData, cData] = await Promise.all([
+                    const [rData, sData, cData, pData] = await Promise.all([
                         getDataService().getAllReviews(),
                         getDataService().getStores(),
-                        getDataService().getCoupons()
+                        getDataService().getCoupons(),
+                        getDataService().getProducts()
                     ]);
                     allReviews = rData || [];
                     stores = sData || [];
                     coupons = cData || [];
+                    products = pData || [];
                     searchDataLoaded = true;
                 } catch (err) {
                     console.error('[SEARCH] Failed to load search data:', err);
@@ -210,7 +213,7 @@ class App {
 
         const performSearch = (rawQuery) => {
             const query = (rawQuery || '').toLowerCase().trim();
-            if (!query) return { stores: [], reviews: [], deals: [], total: 0 };
+            if (!query) return { stores: [], products: [], reviews: [], deals: [], total: 0 };
 
             const matchedStores = (stores || []).filter(s => {
                 const name = (s.name || '').toLowerCase();
@@ -219,6 +222,16 @@ class App {
                 const seo = ((s.seoTitle || '') + ' ' + (s.seoDescription || '')).toLowerCase();
                 const id = (s.id || '').toLowerCase();
                 return name.includes(query) || about.includes(query) || cats.includes(query) || seo.includes(query) || id.includes(query);
+            });
+
+            const matchedProducts = (products || []).filter(p => {
+                const title = (p.title || '').toLowerCase();
+                const desc = (p.description || '').toLowerCase();
+                const cat = (p.category || p.categorySlug || '').toLowerCase();
+                const store = (p.store || p.merchantName || '').toLowerCase();
+                const badge = (p.badge || '').toLowerCase();
+                const asin = (p.asin || '').toLowerCase();
+                return title.includes(query) || desc.includes(query) || cat.includes(query) || store.includes(query) || badge.includes(query) || asin.includes(query);
             });
 
             const matchedReviews = (allReviews || []).filter(r => {
@@ -241,9 +254,10 @@ class App {
 
             return {
                 stores: matchedStores,
+                products: matchedProducts,
                 reviews: matchedReviews,
                 deals: matchedDeals,
-                total: matchedStores.length + matchedReviews.length + matchedDeals.length
+                total: matchedStores.length + matchedProducts.length + matchedReviews.length + matchedDeals.length
             };
         };
 
@@ -260,14 +274,14 @@ class App {
             }
 
             await ensureSearchData();
-            const { stores: matchedStores, reviews: matchedReviews, deals: matchedDeals, total } = performSearch(query);
+            const { stores: matchedStores, products: matchedProducts, reviews: matchedReviews, deals: matchedDeals, total } = performSearch(query);
 
             if (total === 0) {
                 suggestionsBox.innerHTML = `
                     <div style="padding: 1.25rem; text-align: center; color: var(--text-secondary);">
                         <span class="material-icons-round" style="font-size: 1.75rem; vertical-align: middle; margin-bottom: 0.25rem; color: #94a3b8;" aria-hidden="true">search_off</span>
                         <p style="margin: 0.25rem 0 0 0; font-size: 0.95rem; font-weight: 500;">No instant matches for "<strong>${escapeHtml(query)}</strong>"</p>
-                        <p style="margin: 0.25rem 0 0 0; font-size: 0.8rem;">Press Enter to search all software, stores, and coupons</p>
+                        <p style="margin: 0.25rem 0 0 0; font-size: 0.8rem;">Press Enter to search all products, software, stores, and coupons</p>
                     </div>
                 `;
                 suggestionsBox.classList.add('active');
@@ -298,10 +312,34 @@ class App {
                 });
             }
 
-            // 2. Apps & Software Reviews (up to 4)
+            // 2. Hot Products & Tech Hardware (up to 3)
+            if (matchedProducts.length > 0) {
+                html += `<div class="suggestion-group-title"><span class="material-icons-round" style="font-size: 1rem;" aria-hidden="true">shopping_bag</span> Hot Products (${matchedProducts.length})</div>`;
+                matchedProducts.slice(0, 3).forEach(p => {
+                    const prodLink = p.affiliateUrl || p.productUrl || '#';
+                    const storeName = p.merchantName || p.store || 'Amazon';
+                    const img = p.image || '/assets/images/brands/amazon.svg';
+                    html += `
+                        <a href="${prodLink}" target="_blank" rel="noopener noreferrer nofollow sponsored" class="suggestion-item">
+                            <img src="${img}" alt="${escapeHtml(p.title)}" class="suggestion-thumb" onerror="this.src='/assets/images/brands/amazon.svg'">
+                            <div class="suggestion-info">
+                                <div class="suggestion-title">${highlightMatch(p.title, query)}</div>
+                                <div class="suggestion-meta">
+                                    <span class="suggestion-badge" style="background:#e0e7ff;color:#4338ca;font-weight:700;">${escapeHtml(p.salePrice || 'Product')}</span>
+                                    <span>from ${escapeHtml(storeName)}</span>
+                                    ${p.discount ? `<span>• ${escapeHtml(p.discount)}</span>` : ''}
+                                </div>
+                            </div>
+                            <span class="material-icons-round suggestion-arrow" aria-hidden="true">open_in_new</span>
+                        </a>
+                    `;
+                });
+            }
+
+            // 3. Apps & Software Reviews (up to 3)
             if (matchedReviews.length > 0) {
                 html += `<div class="suggestion-group-title"><span class="material-icons-round" style="font-size: 1rem;" aria-hidden="true">apps</span> Apps & Software (${matchedReviews.length})</div>`;
-                matchedReviews.slice(0, 4).forEach(r => {
+                matchedReviews.slice(0, 3).forEach(r => {
                     const reviewLink = r.reviewUrl || (`review.html?id=${r.id}`);
                     const platform = (r.platforms && r.platforms.length > 0) ? r.platforms[0] : (r.platform || 'Software');
                     html += `
@@ -321,7 +359,7 @@ class App {
                 });
             }
 
-            // 3. Coupons & Deals (up to 3)
+            // 4. Coupons & Deals (up to 3)
             if (matchedDeals.length > 0) {
                 html += `<div class="suggestion-group-title"><span class="material-icons-round" style="font-size: 1rem;" aria-hidden="true">local_offer</span> Verified Deals & Coupons (${matchedDeals.length})</div>`;
                 matchedDeals.slice(0, 3).forEach(c => {
@@ -369,18 +407,20 @@ class App {
             if (!searchResultsSection || !searchResultsGrid) return;
 
             await ensureSearchData();
-            const { stores: matchedStores, reviews: matchedReviews, deals: matchedDeals, total } = performSearch(query);
+            const { stores: matchedStores, products: matchedProducts, reviews: matchedReviews, deals: matchedDeals, total } = performSearch(query);
 
             if (searchQueryDisplay) searchQueryDisplay.textContent = `"${query}"`;
             if (searchCountDisplay) searchCountDisplay.textContent = total;
 
             const countAll = document.getElementById('count-all');
             const countStores = document.getElementById('count-stores');
+            const countProducts = document.getElementById('count-products');
             const countReviews = document.getElementById('count-reviews');
             const countDeals = document.getElementById('count-deals');
 
             if (countAll) countAll.textContent = total;
             if (countStores) countStores.textContent = matchedStores.length;
+            if (countProducts) countProducts.textContent = matchedProducts.length;
             if (countReviews) countReviews.textContent = matchedReviews.length;
             if (countDeals) countDeals.textContent = matchedDeals.length;
 
@@ -411,6 +451,7 @@ class App {
             if (searchEmptyState) searchEmptyState.style.display = 'none';
 
             const storeCards = matchedStores.map(s => getComponents().createStoreCard(s));
+            const productCards = matchedProducts.map(p => getComponents().createProductCard(p));
             const reviewCards = matchedReviews.map(r => getComponents().createAppCard(r));
             const dealCards = matchedDeals.map(d => getComponents().createCouponCard(d));
 
@@ -438,7 +479,26 @@ class App {
                     `;
                 }
 
-                // 2. Apps & Software Reviews Section
+                // 2. Hot Products & Tech Hardware Section
+                if (matchedProducts.length > 0) {
+                    sectionsHtml += `
+                        <div class="search-category-section">
+                            <div class="search-category-header">
+                                <h3 class="search-category-title">
+                                    <span class="material-icons-round" aria-hidden="true">shopping_bag</span>
+                                    <span>Hot Products &amp; Tech Hardware</span>
+                                    <span class="category-count-badge">${matchedProducts.length}</span>
+                                </h3>
+                                ${matchedProducts.length > 6 ? `<button type="button" class="btn-filter-jump" data-target-filter="products">View all products &rarr;</button>` : ''}
+                            </div>
+                            <div class="grid product-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;">
+                                ${productCards.slice(0, 8).join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+
+                // 3. Apps & Software Reviews Section
                 if (matchedReviews.length > 0) {
                     sectionsHtml += `
                         <div class="search-category-section">
@@ -457,7 +517,7 @@ class App {
                     `;
                 }
 
-                // 3. Verified Deals & Coupons Section
+                // 4. Verified Deals & Coupons Section
                 if (matchedDeals.length > 0) {
                     sectionsHtml += `
                         <div class="search-category-section">
@@ -483,6 +543,12 @@ class App {
                     outputHtml = `<div class="search-no-filter-match"><p>No partner store matches found for "<strong>${escapeHtml(query)}</strong>".</p></div>`;
                 } else {
                     outputHtml = `<div class="store-cards-grid">${storeCards.join('')}</div>`;
+                }
+            } else if (filter === 'products') {
+                if (matchedProducts.length === 0) {
+                    outputHtml = `<div class="search-no-filter-match"><p>No hot products or tech hardware matches found for "<strong>${escapeHtml(query)}</strong>".</p></div>`;
+                } else {
+                    outputHtml = `<div class="grid product-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;">${productCards.join('')}</div>`;
                 }
             } else if (filter === 'reviews') {
                 if (matchedReviews.length === 0) {
@@ -1876,8 +1942,12 @@ App.initDealPage = async function() {
     // Sidebar Store Info
     const sbLogo = document.getElementById('sidebar-store-logo');
     if (sbLogo) {
-        sbLogo.src = deal.store.logo;
-        sbLogo.alt = deal.store.name;
+        sbLogo.src = (deal.store && deal.store.logo) || '/assets/images/brands/default-store.svg';
+        sbLogo.alt = (deal.store && deal.store.name) || 'Store';
+        sbLogo.onerror = () => {
+            sbLogo.onerror = null;
+            sbLogo.src = '/assets/images/brands/default-store.svg';
+        };
     }
     const sbName = document.getElementById('sidebar-store-name');
     if (sbName) sbName.textContent = deal.store.name;
@@ -2515,8 +2585,12 @@ App.initStorePage = async function() {
 
     const storeLogoEl = document.getElementById('store-logo');
     if (storeLogoEl) {
-        storeLogoEl.src = store.logo;
+        storeLogoEl.src = store.logo || '/assets/images/brands/default-store.svg';
         storeLogoEl.alt = `${store.name} Logo`;
+        storeLogoEl.onerror = () => {
+            storeLogoEl.onerror = null;
+            storeLogoEl.src = '/assets/images/brands/default-store.svg';
+        };
     }
 
     const storeAboutEl = document.getElementById('store-about');

@@ -36,8 +36,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="preload" as="style" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preload" as="style" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
     <!-- Structured Data Schema -->
     <script type="application/ld+json">
@@ -192,12 +192,13 @@
     <header class="header" id="header">
         <div class="container header-container">
             <a href="/" class="logo" aria-label="PlayNewApps Home">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
+                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                 <span>PlayNewApps</span>
             </a>
             
-            <nav class="nav" id="nav" aria-label="Main Navigation">
+                        <nav class="nav" id="nav" aria-label="Main Navigation">
                 <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
                     <li class="nav-item dropdown" id="stores-dropdown-wrapper">
                         <a href="/stores" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
                             Stores <span class="material-icons-round dropdown-icon" aria-hidden="true">expand_more</span>
@@ -206,20 +207,23 @@
                             <div class="dropdown-loading">Loading stores...</div>
                         </div>
                     </li>
-                    <li><a href="/#featured" class="nav-link">Featured</a></li>
-                    <li><a href="/reviews" class="nav-link active">Reviews</a></li>
-                    <li><a href="/coupon" class="nav-link">Deals</a></li>
-                    <li><a href="/#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="/products" class="nav-link">Products</a></li>
+                    <li><a href="/coupon" class="nav-link">Coupons</a></li>
+                    <li><a href="/reviews" class="nav-link">Reviews</a></li>
                 </ul>
             </nav>
 
             <div class="header-actions">
+                <a href="/#search-form" class="icon-btn" aria-label="Search">
+                    <span class="material-icons-round" aria-hidden="true">search</span>
+                </a>
                 <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
                     <span class="material-icons-round" aria-hidden="true">dark_mode</span>
                 </button>
                 <button id="mobile-menu-btn" class="icon-btn mobile-only" aria-label="Open Menu" aria-expanded="false" aria-controls="nav">
                     <span class="material-icons-round" aria-hidden="true">menu</span>
                 </button>
+            
             </div>
         </div>
     </header>
@@ -990,7 +994,7 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <a href="/" class="logo footer-logo" aria-label="PlayNewApps Home">
-                        <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
+                        <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
                         <span>PlayNewApps</span>
                     </a>
                     <p class="footer-desc">Your ultimate hub for verified software reviews, in-depth tech benchmarks, and exclusive discount promo codes.</p>
