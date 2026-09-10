@@ -589,6 +589,10 @@
                         <button type="button" class="btn btn-outline" onclick="exportProductsJson()" title="Download full JSON backup of products" style="font-size: 0.82rem; padding: 0.4rem 0.75rem; display: inline-flex; align-items: center; gap: 0.3rem;">
                             <span class="material-icons-round" style="font-size: 0.95rem;">download</span> Backup JSON
                         </button>
+                        <input type="file" id="file-import-json" accept=".json" style="display: none;" onchange="handleImportJsonFile(event)">
+                        <button type="button" class="btn btn-outline" onclick="triggerImportJson()" title="Upload a JSON backup file to restore products" style="font-size: 0.82rem; padding: 0.4rem 0.75rem; display: inline-flex; align-items: center; gap: 0.3rem; background: #f0fdf4; color: #166534; border-color: #bbf7d0;">
+                            <span class="material-icons-round" style="font-size: 0.95rem;">upload_file</span> Import JSON
+                        </button>
                         <button type="button" class="btn btn-outline" onclick="loadInventory()" style="font-size: 0.85rem; padding: 0.4rem 0.85rem;">
                             <span class="material-icons-round" style="font-size: 1rem; vertical-align: middle;">refresh</span> Refresh
                         </button>
@@ -1084,6 +1088,55 @@
             a.click();
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
+        }
+
+        // Import Full Products JSON
+        function triggerImportJson() {
+            const input = document.getElementById('file-import-json');
+            if (input) input.click();
+        }
+
+        async function handleImportJsonFile(event) {
+            const file = event.target.files && event.target.files[0];
+            if (!file) return;
+
+            try {
+                const text = await file.text();
+                const json = JSON.parse(text);
+                let products = Array.isArray(json) ? json : (json.products || []);
+                if (!Array.isArray(products) || products.length === 0) {
+                    alert('No valid products found in the uploaded JSON file.');
+                    return;
+                }
+
+                if (!confirm(`Import ${products.length} products from ${file.name} to the website?`)) {
+                    return;
+                }
+
+                // Update localStorage immediately
+                try {
+                    localStorage.setItem('pna_amazon_products_backup', JSON.stringify(products));
+                } catch (e) {
+                    console.warn('LocalStorage save error:', e);
+                }
+
+                const res = await fetch('/api/amazon/bulk-save', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ products })
+                });
+                const data = await res.json();
+                if (data.success) {
+                    alert(`✓ Successfully imported ${data.result?.added || products.length} products!`);
+                    loadInventory();
+                } else {
+                    alert('Import failed: ' + (data.error || 'Server error'));
+                }
+            } catch (err) {
+                alert('Failed to parse JSON file: ' + err.message);
+            } finally {
+                event.target.value = '';
+            }
         }
 
         // Delete Product

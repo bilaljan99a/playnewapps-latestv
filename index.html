@@ -39,7 +39,7 @@
     <!-- High Priority Preloads for Above-The-Fold Banners (Zero CLS & Instant LCP) -->
     <link rel="preload" as="image" href="/assets/images/banners/aliexpress-real-promo.svg" type="image/svg+xml" fetchpriority="high">
     <link rel="preload" as="image" href="/assets/images/banners/wondershare-real-promo.svg" type="image/svg+xml" media="(min-width: 993px)">
-    <link rel="preload" as="image" href="/assets/images/banners/lenovo-real-promo.svg" type="image/svg+xml" media="(min-width: 993px)">
+    <link rel="preload" as="image" href="/assets/images/banners/lenovo-hero-banner.jpg" type="image/jpeg" media="(min-width: 993px)">
 
     <!-- Primary Stylesheet (Zero Layout Shift) -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -226,7 +226,7 @@
                         <span class="material-icons-round" style="font-size: 1rem;" aria-hidden="true">search</span> Live Search
                     </span>
                     <h2 class="search-results-title">Search Results for <mark id="search-query-display">"..."</mark></h2>
-                    <p class="search-results-subtitle"><span id="search-count-display">0</span> results found across products, stores, apps, and verified deals</p>
+                    <p class="search-results-subtitle"><span id="search-count-display">0</span> results found across products, stores, apps, verified deals, and blog guides</p>
                 </div>
                 <div class="search-results-actions">
                     <button id="clear-search-btn" class="btn btn-outline btn-sm" aria-label="Reset and Clear Search">
@@ -251,6 +251,9 @@
                 </button>
                 <button class="search-tab-btn" data-search-filter="deals" role="tab" aria-selected="false">
                     <span class="material-icons-round icon-tab" aria-hidden="true">local_offer</span> Deals & Coupons <span class="tab-count" id="count-deals">0</span>
+                </button>
+                <button class="search-tab-btn" data-search-filter="blogs" role="tab" aria-selected="false">
+                    <span class="material-icons-round icon-tab" aria-hidden="true">auto_stories</span> Blog &amp; Guides <span class="tab-count" id="count-blogs">0</span>
                 </button>
             </div>
 
@@ -329,7 +332,7 @@
 
                 <!-- 3. Lenovo Real Laptop & Gaming Banner -->
                 <a href="/lenovo-coupons" class="brand-banner-card" aria-label="Lenovo Official Deals - Up to 60% Off ThinkPad & Legion Gaming Laptops">
-                    <img src="/assets/images/banners/lenovo-real-promo.svg" alt="Lenovo Official Deals - Real ThinkPad and Legion Gaming Laptops" width="600" height="338" loading="eager" fetchpriority="high" decoding="async" class="brand-banner-bg">
+                    <img src="/assets/images/banners/lenovo-hero-banner.jpg" alt="Lenovo Official Deals - Real ThinkPad and Legion Gaming Laptops" width="600" height="338" loading="eager" fetchpriority="high" decoding="async" class="brand-banner-bg">
                     <div class="brand-banner-overlay">
                         <div class="brand-banner-top-bar">
                             <div class="brand-banner-logo-pill">
@@ -572,8 +575,8 @@
 
             <div class="grid" id="reviews-grid" aria-live="polite">
                 <article class="card review-card" data-category="android">
-                    <div class="card-img-wrapper has-logo-bg" style="background: linear-gradient(135deg, #1e293b, #0f172a); display: flex; align-items: center; justify-content: center;">
-                        <span class="material-icons-round" style="font-size: 3.5rem; color: #38bdf8;" aria-hidden="true">article</span>
+                    <div class="card-img-wrapper has-logo-bg" style="background: #0f172a; overflow: hidden;">
+                        <img src="/assets/images/blog/apk-files-coupons-hero.svg" alt="APK Files Coupons Guide: How to Find the Best Coupon Codes &amp; Deals" class="card-img" width="600" height="315" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
                         <span class="badge platform-badge" style="background: #2563eb; color: #ffffff;"><span class="material-icons-round" style="font-size: 1rem;">menu_book</span> Editorial Guide</span>
                     </div>
                     <div class="card-content">
@@ -1016,10 +1019,6 @@
                     </p>
                 </div>
                 <div style="display: flex; align-items: center; gap: 0.75rem; flex-shrink: 0; margin-top: 0.5rem; flex-wrap: wrap;">
-                    <a href="/amazon-auto-list" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.4rem 0.85rem; display: inline-flex; align-items: center; gap: 0.35rem; text-decoration: none; border-radius: 8px;">
-                        <span class="material-icons-round" style="color: #f59e0b; font-size: 1.05rem;">auto_fix_high</span>
-                        <span>Amazon Tool</span>
-                    </a>
                     <a href="/products" class="view-all" aria-label="View All Products">Explore all products <span class="material-icons-round" aria-hidden="true">arrow_forward</span></a>
                 </div>
             </div>

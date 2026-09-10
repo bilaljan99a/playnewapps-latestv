@@ -256,6 +256,7 @@ class DataService {
     static async getStores() { return (await this.fetchJSON('/data/stores.json')) || []; }
     static async getCategories() { return (await this.fetchJSON('/data/categories.json')) || []; }
     static async getAuthors() { return (await this.fetchJSON('/data/authors.json')) || []; }
+    static async getBlogs() { return (await this.fetchJSON('/data/blogs.json')) || []; }
     
     static async getAllReviews() {
         const [apps, games, software] = await Promise.all([

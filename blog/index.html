@@ -104,10 +104,9 @@
     <main class="main-content" id="main-content">
         <!-- Breadcrumbs Navigation -->
         <nav class="container breadcrumbs" aria-label="Breadcrumb" style="padding-top: 1rem; padding-bottom: 0.5rem;">
-            <ol style="display: flex; align-items: center; gap: 0.5rem; list-style: none; font-size: 0.875rem; color: var(--text-secondary); margin: 0; padding: 0;">
-                <li><a href="/" style="color: var(--primary-color); text-decoration: none;">Home</a></li>
-                <li style="display: flex; align-items: center;"><span class="material-icons-round" style="font-size: 1rem;">chevron_right</span></li>
-                <li aria-current="page" style="color: var(--text-primary); font-weight: 500;">Blog &amp; Guides</li>
+            <ol style="margin: 0; padding: 0;">
+                <li><a href="/">Home</a></li>
+                <li aria-current="page">Blog &amp; Guides</li>
             </ol>
         </nav>
 
@@ -144,9 +143,9 @@
             <!-- Featured Article Spotlight Card -->
             <div style="margin-bottom: 2.5rem;" id="featured-spotlight-wrapper">
                 <article class="card" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; padding: 2rem; border-radius: 14px; border: 1px solid var(--border-color); background: var(--card-bg, #ffffff); box-shadow: var(--shadow-md);">
-                    <div style="background: linear-gradient(135deg, #1e293b, #0f172a); border-radius: 10px; min-height: 220px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; text-align: center; color: #ffffff;">
-                        <span class="material-icons-round" style="font-size: 4rem; color: #38bdf8; margin-bottom: 1rem;" aria-hidden="true">article</span>
-                        <span style="background: #2563eb; color: #ffffff; padding: 0.35rem 0.85rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 0.35rem;">
+                    <div style="background: #0f172a; border-radius: 10px; min-height: 220px; overflow: hidden; position: relative; display: flex; align-items: center; justify-content: center;">
+                        <img src="/assets/images/blog/apk-files-coupons-hero.png" alt="APK Files Coupons &amp; Deals Guide" style="width: 100%; height: 100%; object-fit: cover; display: block;" width="600" height="315" onerror="this.onerror=null;this.src='/assets/images/blog/apk-files-coupons-hero.svg';">
+                        <span style="position: absolute; top: 1rem; left: 1rem; background: #2563eb; color: #ffffff; padding: 0.35rem 0.85rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 0.35rem; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
                             <span class="material-icons-round" style="font-size: 0.95rem;">star</span> Featured Editorial
                         </span>
                     </div>
@@ -186,8 +185,6 @@
                     <button class="filter-btn active" data-cat="all" role="tab" aria-selected="true">All Posts</button>
                     <button class="filter-btn" data-cat="guides" role="tab" aria-selected="false">Shopping Guides</button>
                     <button class="filter-btn" data-cat="android" role="tab" aria-selected="false">Android &amp; Apps</button>
-                    <button class="filter-btn" data-cat="security" role="tab" aria-selected="false">Security &amp; VPN</button>
-                    <button class="filter-btn" data-cat="tech" role="tab" aria-selected="false">Tech Hardware</button>
                 </div>
             </div>
 
@@ -196,9 +193,9 @@
                 
                 <!-- Article 1: APK Files Coupons -->
                 <article class="card review-card" data-category="guides android">
-                    <div class="card-img-wrapper has-logo-bg" style="background: linear-gradient(135deg, #1e293b, #0f172a); display: flex; align-items: center; justify-content: center;">
-                        <span class="material-icons-round" style="font-size: 3.5rem; color: #38bdf8;" aria-hidden="true">article</span>
-                        <span class="badge platform-badge" style="background: #2563eb; color: #ffffff;"><span class="material-icons-round" style="font-size: 1rem;">menu_book</span> Guide</span>
+                    <div class="card-img-wrapper has-logo-bg" style="background: #0f172a; overflow: hidden;">
+                        <img src="/assets/images/blog/apk-files-coupons-hero.png" alt="APK Files Coupons: How to Find the Best Coupon Codes &amp; Deals" class="card-img" width="600" height="315" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.onerror=null;this.src='/assets/images/blog/apk-files-coupons-hero.svg';">
+                        <span class="badge platform-badge" style="background: #2563eb; color: #ffffff;"><span class="material-icons-round" style="font-size: 1rem;">menu_book</span> Editorial Guide</span>
                     </div>
                     <div class="card-content">
                         <h3 class="card-title"><a href="/blog/apk-files-coupons">APK Files Coupons: How to Find the Best Coupon Codes &amp; Deals</a></h3>
@@ -210,106 +207,6 @@
                         <div class="card-footer">
                             <span class="author">By PlayNewApps Editorial Team</span>
                             <a href="/blog/apk-files-coupons" class="read-review-link">Read Guide →</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Article 2: AdGuard Guide -->
-                <article class="card review-card" data-category="guides security">
-                    <div class="card-img-wrapper has-logo-bg">
-                        <img src="/assets/images/brands/adguard.svg" alt="AdGuard Coupons and Software Savings" class="card-img card-img-logo" width="600" height="400" loading="lazy">
-                        <span class="badge platform-badge"><span class="material-icons-round">security</span> Privacy</span>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title"><a href="/adguard-coupons">AdGuard Coupon Codes &amp; Privacy Savings Handbook</a></h3>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                            <span class="material-icons-round" style="font-size: 1rem; color: #10b981;">verified</span>
-                            <span>Verified Discounts &bull; Lifetime License Guide</span>
-                        </div>
-                        <p class="card-excerpt">How to unlock maximum discounts on AdGuard AdBlocker, AdGuard VPN, and AdGuard DNS. Step-by-step promo code walkthrough and multi-device family savings tips.</p>
-                        <div class="card-footer">
-                            <span class="author">By PlayNewApps</span>
-                            <a href="/adguard-coupons" class="read-review-link">View Offers →</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Article 3: Steam Deck Guide & Review -->
-                <article class="card review-card" data-category="tech">
-                    <div class="card-img-wrapper has-logo-bg">
-                        <img src="/assets/images/brands/steam-deck.svg" alt="Valve Steam Deck Review and Buying Guide" class="card-img card-img-logo" width="600" height="400" loading="lazy">
-                        <span class="badge platform-badge"><span class="material-icons-round">sports_esports</span> Handheld</span>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title"><a href="/steam-deck-review">Steam Deck &amp; OLED Benchmark: Handheld Gaming Buyer's Guide</a></h3>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                            <span class="material-icons-round" style="font-size: 1rem; color: #10b981;">verified</span>
-                            <span>Hardware Benchmark &bull; 15,000+ Games</span>
-                        </div>
-                        <p class="card-excerpt">In-depth performance benchmarks of AMD Zen 2/RDNA 2 APU, SteamOS 3.5 Proton compatibility, battery life tests, and essential accessory shopping recommendations.</p>
-                        <div class="card-footer">
-                            <span class="author">By PlayNewApps</span>
-                            <a href="/steam-deck-review" class="read-review-link">Read Review →</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Article 4: 1Password Guide -->
-                <article class="card review-card" data-category="guides security">
-                    <div class="card-img-wrapper has-logo-bg">
-                        <img src="/assets/images/brands/1password.svg" alt="1Password Security Discounts and Guide" class="card-img card-img-logo" width="600" height="400" loading="lazy">
-                        <span class="badge platform-badge"><span class="material-icons-round">vpn_key</span> Security</span>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title"><a href="/1password-coupons">1Password Coupons &amp; Family Plan Discount Guide</a></h3>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                            <span class="material-icons-round" style="font-size: 1rem; color: #10b981;">verified</span>
-                            <span>Vault Security &bull; Annual Billing Savings</span>
-                        </div>
-                        <p class="card-excerpt">Save on enterprise-grade credential management with verified 1Password discount vouchers, family sharing licenses, and student academic discount perks.</p>
-                        <div class="card-footer">
-                            <span class="author">By PlayNewApps</span>
-                            <a href="/1password-coupons" class="read-review-link">View Offers →</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Article 5: Lenovo Tech Guide -->
-                <article class="card review-card" data-category="guides tech">
-                    <div class="card-img-wrapper has-logo-bg">
-                        <img src="/assets/images/brands/lenovo.svg" alt="Lenovo Tech Hardware Deals and Guide" class="card-img card-img-logo" width="600" height="400" loading="lazy">
-                        <span class="badge platform-badge"><span class="material-icons-round">laptop</span> Hardware</span>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title"><a href="/lenovo-coupons">Lenovo Laptop &amp; PC Savings Guide: eCoupon Walkthrough</a></h3>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                            <span class="material-icons-round" style="font-size: 1rem; color: #10b981;">verified</span>
-                            <span>ThinkPad &amp; Legion &bull; Student Markdowns</span>
-                        </div>
-                        <p class="card-excerpt">How to stack Lenovo eCoupons, MyLenovo rewards, and student ID.me discounts on ThinkPad, Yoga, and Legion gaming machines during seasonal sales.</p>
-                        <div class="card-footer">
-                            <span class="author">By PlayNewApps</span>
-                            <a href="/lenovo-coupons" class="read-review-link">View Offers →</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Article 6: AliExpress Shopping Hacks -->
-                <article class="card review-card" data-category="guides">
-                    <div class="card-img-wrapper has-logo-bg">
-                        <img src="/assets/images/brands/aliexpress.svg" alt="AliExpress Shopping Hacks and Promo Guide" class="card-img card-img-logo" width="600" height="400" loading="lazy">
-                        <span class="badge platform-badge"><span class="material-icons-round">shopping_bag</span> Global Retail</span>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title"><a href="/aliexpress-coupons">AliExpress Promo Codes &amp; Choice Day Savings Guide</a></h3>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                            <span class="material-icons-round" style="font-size: 1rem; color: #10b981;">verified</span>
-                            <span>Choice Day &bull; Coin Discounts &bull; Fast Delivery</span>
-                        </div>
-                        <p class="card-excerpt">Comprehensive guide to stacking global AliExpress coupons, store vouchers, shopping coins, and Choice Day perks for maximum shopping discounts.</p>
-                        <div class="card-footer">
-                            <span class="author">By PlayNewApps</span>
-                            <a href="/aliexpress-coupons" class="read-review-link">View Offers →</a>
                         </div>
                     </div>
                 </article>

@@ -311,6 +311,39 @@ class Components {
             </article>
         `;
     }
+
+    static createBlogCard(blog) {
+        const title = blog.title || 'Blog Post';
+        const link = blog.url || blog.slug || '#';
+        const img = blog.image || '/assets/images/blog/apk-files-coupons-hero.svg';
+        const badge = blog.badge || 'Editorial Guide';
+        const desc = blog.description || '';
+        const author = blog.author || 'PlayNewApps Editorial Team';
+        const date = blog.date || 'September 2026';
+        
+        return `
+            <article class="card review-card blog-result-card" data-category="${blog.categorySlug || 'guides'}">
+                <div class="card-img-wrapper" style="background: #0f172a; overflow: hidden; position: relative;">
+                    <img src="${img}" alt="${title}" class="card-img" width="600" height="315" loading="lazy" style="width: 100%; height: 190px; object-fit: cover;" onerror="this.onerror=null;this.src='/assets/images/blog/apk-files-coupons-hero.svg';">
+                    <span class="badge platform-badge" style="background: #2563eb; color: #fff; font-weight: 700;">
+                        <span class="material-icons-round" style="font-size: 0.95rem;">menu_book</span> ${badge}
+                    </span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title"><a href="${link}">${title}</a></h3>
+                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
+                        <span class="material-icons-round" style="font-size: 1rem; color: #10b981;">verified</span>
+                        <span>${date} &bull; Verified Guide</span>
+                    </div>
+                    <p class="card-excerpt">${desc}</p>
+                    <div class="card-footer">
+                        <span class="author">By ${author}</span>
+                        <a href="${link}" class="read-review-link" style="font-weight: 700;">Read Guide &rarr;</a>
+                    </div>
+                </div>
+            </article>
+        `;
+    }
 }
 
 window.Components = Components;

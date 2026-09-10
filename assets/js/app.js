@@ -158,6 +158,7 @@ class App {
         let stores = [];
         let coupons = [];
         let products = [];
+        let blogs = [];
         let searchDataLoaded = false;
         let searchDataPromise = null;
 
@@ -167,16 +168,18 @@ class App {
 
             searchDataPromise = (async () => {
                 try {
-                    const [rData, sData, cData, pData] = await Promise.all([
+                    const [rData, sData, cData, pData, bData] = await Promise.all([
                         getDataService().getAllReviews(),
                         getDataService().getStores(),
                         getDataService().getCoupons(),
-                        getDataService().getProducts()
+                        getDataService().getProducts(),
+                        getDataService().getBlogs()
                     ]);
                     allReviews = rData || [];
                     stores = sData || [];
                     coupons = cData || [];
                     products = pData || [];
+                    blogs = bData || [];
                     searchDataLoaded = true;
                 } catch (err) {
                     console.error('[SEARCH] Failed to load search data:', err);
@@ -252,12 +255,22 @@ class App {
                 return title.includes(query) || desc.includes(query) || discount.includes(query) || code.includes(query) || storeName.includes(query);
             });
 
+            const matchedBlogs = (blogs || []).filter(b => {
+                const title = (b.title || '').toLowerCase();
+                const desc = (b.description || '').toLowerCase();
+                const cat = (b.category || b.categorySlug || '').toLowerCase();
+                const tags = (b.tags || []).map(t => t.toLowerCase()).join(' ');
+                const auth = (b.author || '').toLowerCase();
+                return title.includes(query) || desc.includes(query) || cat.includes(query) || tags.includes(query) || auth.includes(query);
+            });
+
             return {
                 stores: matchedStores,
                 products: matchedProducts,
                 reviews: matchedReviews,
                 deals: matchedDeals,
-                total: matchedStores.length + matchedProducts.length + matchedReviews.length + matchedDeals.length
+                blogs: matchedBlogs,
+                total: matchedStores.length + matchedProducts.length + matchedReviews.length + matchedDeals.length + matchedBlogs.length
             };
         };
 
@@ -382,6 +395,29 @@ class App {
                 });
             }
 
+            // 5. Blog & Editorial Guides (up to 3)
+            if (matchedBlogs.length > 0) {
+                html += `<div class="suggestion-group-title"><span class="material-icons-round" style="font-size: 1rem;" aria-hidden="true">auto_stories</span> Editorial Guides &amp; Blog (${matchedBlogs.length})</div>`;
+                matchedBlogs.slice(0, 3).forEach(b => {
+                    const blogLink = b.url || b.slug || 'apk-files-coupons.html';
+                    const blogImg = b.image || '/assets/images/blog/apk-files-coupons-hero.svg';
+                    html += `
+                        <a href="${blogLink}" class="suggestion-item">
+                            <img src="${blogImg}" alt="${escapeHtml(b.title)}" class="suggestion-thumb" style="object-fit:cover; border-radius: 6px;" onerror="this.src='/assets/images/brands/default-store.svg'">
+                            <div class="suggestion-info">
+                                <div class="suggestion-title">${highlightMatch(b.title, query)}</div>
+                                <div class="suggestion-meta">
+                                    <span class="suggestion-badge" style="background:#dbeafe;color:#1e40af;font-weight:700;">${escapeHtml(b.badge || 'Guide')}</span>
+                                    <span>${escapeHtml(b.date || '2026')}</span>
+                                    <span>• ${escapeHtml(b.readTime || 'Verified Guide')}</span>
+                                </div>
+                            </div>
+                            <span class="material-icons-round suggestion-arrow" aria-hidden="true">arrow_forward</span>
+                        </a>
+                    `;
+                });
+            }
+
             // Bottom View All row
             html += `
                 <div class="suggestion-view-all" id="suggestion-view-all-btn" role="button" tabindex="0">
@@ -417,12 +453,14 @@ class App {
             const countProducts = document.getElementById('count-products');
             const countReviews = document.getElementById('count-reviews');
             const countDeals = document.getElementById('count-deals');
+            const countBlogs = document.getElementById('count-blogs');
 
             if (countAll) countAll.textContent = total;
             if (countStores) countStores.textContent = matchedStores.length;
             if (countProducts) countProducts.textContent = matchedProducts.length;
             if (countReviews) countReviews.textContent = matchedReviews.length;
             if (countDeals) countDeals.textContent = matchedDeals.length;
+            if (countBlogs) countBlogs.textContent = matchedBlogs.length;
 
             // Update Tab Active states
             const tabBtns = searchResultsSection.querySelectorAll('.search-tab-btn');
@@ -454,6 +492,7 @@ class App {
             const productCards = matchedProducts.map(p => getComponents().createProductCard(p));
             const reviewCards = matchedReviews.map(r => getComponents().createAppCard(r));
             const dealCards = matchedDeals.map(d => getComponents().createCouponCard(d));
+            const blogCards = matchedBlogs.map(b => getComponents().createBlogCard(b));
 
             let outputHtml = '';
 
@@ -536,6 +575,25 @@ class App {
                     `;
                 }
 
+                // 5. Editorial Guides & Blog Section
+                if (matchedBlogs.length > 0) {
+                    sectionsHtml += `
+                        <div class="search-category-section">
+                            <div class="search-category-header">
+                                <h3 class="search-category-title">
+                                    <span class="material-icons-round" aria-hidden="true">auto_stories</span>
+                                    <span>Editorial Guides &amp; Blog Articles</span>
+                                    <span class="category-count-badge">${matchedBlogs.length}</span>
+                                </h3>
+                                ${matchedBlogs.length > 3 ? `<button type="button" class="btn-filter-jump" data-target-filter="blogs">View all guides &rarr;</button>` : ''}
+                            </div>
+                            <div class="grid review-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem;">
+                                ${blogCards.join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+
                 outputHtml = sectionsHtml;
 
             } else if (filter === 'stores') {
@@ -561,6 +619,12 @@ class App {
                     outputHtml = `<div class="search-no-filter-match"><p>No discount deals or coupons found for "<strong>${escapeHtml(query)}</strong>".</p></div>`;
                 } else {
                     outputHtml = `<div class="store-coupons-grid">${dealCards.join('')}</div>`;
+                }
+            } else if (filter === 'blogs') {
+                if (matchedBlogs.length === 0) {
+                    outputHtml = `<div class="search-no-filter-match"><p>No blog articles or savings guide matches found for "<strong>${escapeHtml(query)}</strong>".</p></div>`;
+                } else {
+                    outputHtml = `<div class="grid review-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem;">${blogCards.join('')}</div>`;
                 }
             }
 
@@ -1798,8 +1862,8 @@ App.initHeaderStoresDropdown = async function() {
             if (popularStores.length > 0) {
                 html += popularStores.map(store => `
                     <a href="store.html?id=${store.id}" class="dropdown-item">
-                        <img src="${store.logo}" alt="${store.name} logo" width="22" height="22" loading="lazy" style="object-fit: contain; background: #ffffff; border-radius: 4px; padding: 2px; border: 1px solid var(--border-color, #e2e8f0);">
-                        <span>${store.name}</span>
+                        <img src="${store.logo}" alt="${store.name}" width="22" height="22" loading="lazy" style="object-fit: contain; flex-shrink: 0; min-width: 22px; max-height: 22px; background: #ffffff; border-radius: 4px; padding: 1px; border: 1px solid var(--border-color, #e2e8f0);" onerror="this.onerror=null;this.src='/assets/images/brands/default-store.svg';">
+                        <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${store.name}</span>
                     </a>
                 `).join('');
             }

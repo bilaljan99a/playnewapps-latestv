@@ -8,9 +8,9 @@ const PORT = 3000;
 // Enable gzip/deflate compression for fast asset delivery and high Google PageSpeed score
 app.use(compression());
 
-// Parse JSON and URL-encoded request bodies for API endpoints
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+// Parse JSON and URL-encoded request bodies for API endpoints (with 50mb limit for bulk imports)
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 const {
   fetchAmazonProduct,
