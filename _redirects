@@ -19,13 +19,22 @@
 /b/* /410.html 410!
 
 # 301 Permanent Redirects for Clean SEO Structure
+/tools /tools.html 200
+/tool /tools.html 200
+/tools/* /tools.html 200
+/amazon-auto-list /amazon-auto-list.html 200
+/admin/amazon /amazon-auto-list.html 200
+/admin/tools /tools.html 200
+/blog/apk-files-coupons /apk-files-coupons.html 200
+/apk-files-coupons /apk-files-coupons.html 200
+/blog /blog.html 200
+/blog/ /blog.html 200
 /categories.html /category 301
 /categories /category 301
 /category/* /category.html 200
 /coupons.html /stores 301
 /coupons /stores 301
-/blog.html /reviews 301
-/blog /reviews 301
+/blog.html /blog 301
 /trending.html /deal 301
 /trending /deal 301
 /deals /deal 301

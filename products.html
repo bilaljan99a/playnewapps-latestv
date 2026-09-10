@@ -109,6 +109,7 @@
                     <li><a href="/products" class="nav-link active" aria-current="page">Products</a></li>
                     <li><a href="/coupon" class="nav-link">Coupons</a></li>
                     <li><a href="/reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="/blog" class="nav-link">Blog</a></li>
                 </ul>
             </nav>
 
@@ -191,9 +192,24 @@
         </section>
 
         <section id="products" class="section container bg-soft reveal">
-            <div class="section-header">
-                <h2 class="section-title">Hot Products & Tech Deals</h2>
+            <div class="section-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <h2 class="section-title" style="margin: 0;">Hot Products, Beauty Tech &amp; Gadgets</h2>
+                <a href="/amazon-auto-list" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.45rem 0.95rem; display: inline-flex; align-items: center; gap: 0.4rem; text-decoration: none; border-radius: 8px; font-weight: 600;">
+                    <span class="material-icons-round" style="color: #f59e0b; font-size: 1.15rem;">auto_fix_high</span>
+                    <span>Amazon Product Lister Tool</span>
+                </a>
             </div>
+            
+            <!-- Category and Store Filter Tabs -->
+            <div class="category-filters product-filters" role="tablist" aria-label="Product Categories" style="margin-bottom: 2rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                <button class="filter-btn product-filter-btn active" data-filter="all" role="tab" aria-selected="true">All Products</button>
+                <button class="filter-btn product-filter-btn" data-filter="wau" role="tab" aria-selected="false">WAU Beauty Tech</button>
+                <button class="filter-btn product-filter-btn" data-filter="amazon" role="tab" aria-selected="false">Amazon Deals</button>
+                <button class="filter-btn product-filter-btn" data-filter="tech" role="tab" aria-selected="false">Tech &amp; PC Gaming</button>
+                <button class="filter-btn product-filter-btn" data-filter="lifestyle" role="tab" aria-selected="false">Beauty &amp; Lifestyle</button>
+                <button class="filter-btn product-filter-btn" data-filter="aliexpress" role="tab" aria-selected="false">AliExpress</button>
+            </div>
+
             <!-- Products Grid -->
             <div class="grid products-grid" id="products-grid">
                 <!-- Loaded dynamically via app.js -->

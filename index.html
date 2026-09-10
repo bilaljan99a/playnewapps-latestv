@@ -173,6 +173,7 @@
                     <li><a href="/products" class="nav-link">Products</a></li>
                     <li><a href="/coupon" class="nav-link">Coupons</a></li>
                     <li><a href="/reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="/blog" class="nav-link">Blog</a></li>
                 </ul>
             </nav>
 
@@ -570,6 +571,24 @@
             </div>
 
             <div class="grid" id="reviews-grid" aria-live="polite">
+                <article class="card review-card" data-category="android">
+                    <div class="card-img-wrapper has-logo-bg" style="background: linear-gradient(135deg, #1e293b, #0f172a); display: flex; align-items: center; justify-content: center;">
+                        <span class="material-icons-round" style="font-size: 3.5rem; color: #38bdf8;" aria-hidden="true">article</span>
+                        <span class="badge platform-badge" style="background: #2563eb; color: #ffffff;"><span class="material-icons-round" style="font-size: 1rem;">menu_book</span> Editorial Guide</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title"><a href="/blog/apk-files-coupons">APK Files Coupons: How to Find the Best Coupon Codes &amp; Deals</a></h3>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
+                            <span class="material-icons-round" style="font-size: 1rem; color: #10b981;">verified</span>
+                            <span>Editorial Shopping Guide &bull; 2026 Edition</span>
+                        </div>
+                        <p class="card-excerpt">Comprehensive guide to finding legitimate APK Files coupons and Android software discount codes. Learn how to verify promo codes, avoid expired offers, and save safely.</p>
+                        <div class="card-footer">
+                            <span class="author">By PlayNewApps</span>
+                            <a href="/blog/apk-files-coupons" class="read-review-link">Read Guide →</a>
+                        </div>
+                    </div>
+                </article>
                 <article class="card review-card" data-category="games">
                     <div class="card-img-wrapper has-logo-bg">
                         <img src="/assets/images/brands/steam-deck.svg" alt="Steam Deck Review (2026): Handheld PC Gaming & OLED Benchmark" class="card-img card-img-logo" width="600" height="400" loading="lazy">
@@ -996,12 +1015,19 @@
                         Hand-picked electronics, gaming hardware, and lifestyle gear with direct verified savings from global stores. Click &ldquo;Check Price&rdquo; to view real-time store pricing.
                     </p>
                 </div>
-                <a href="/products" class="view-all" aria-label="View All Products" style="flex-shrink: 0; margin-top: 0.5rem;">Explore all products <span class="material-icons-round" aria-hidden="true">arrow_forward</span></a>
+                <div style="display: flex; align-items: center; gap: 0.75rem; flex-shrink: 0; margin-top: 0.5rem; flex-wrap: wrap;">
+                    <a href="/amazon-auto-list" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.4rem 0.85rem; display: inline-flex; align-items: center; gap: 0.35rem; text-decoration: none; border-radius: 8px;">
+                        <span class="material-icons-round" style="color: #f59e0b; font-size: 1.05rem;">auto_fix_high</span>
+                        <span>Amazon Tool</span>
+                    </a>
+                    <a href="/products" class="view-all" aria-label="View All Products">Explore all products <span class="material-icons-round" aria-hidden="true">arrow_forward</span></a>
+                </div>
             </div>
 
             <!-- Product Category Filter Tabs -->
             <div class="product-filters-bar" role="tablist" aria-label="Product Categories">
                 <button class="product-filter-btn active" data-filter="all" role="tab" aria-selected="true">All Deals</button>
+                <button class="product-filter-btn" data-filter="wau" role="tab" aria-selected="false">WAU Beauty Tech</button>
                 <button class="product-filter-btn" data-filter="tech" role="tab" aria-selected="false">Tech &amp; Gadgets</button>
                 <button class="product-filter-btn" data-filter="lifestyle" role="tab" aria-selected="false">Wearables &amp; Fitness</button>
                 <button class="product-filter-btn" data-filter="home" role="tab" aria-selected="false">Home &amp; Lifestyle</button>
@@ -1865,6 +1891,7 @@
                 <ul class="footer-links">
                     <li><a href="/about">About Us</a></li>
                     <li><a href="/contact">Contact</a></li>
+                    <li><a href="/blog">Blog &amp; Guides</a></li>
                     <li><a href="/privacy">Privacy Policy</a></li>
                     <li><a href="/affiliate">Affiliate Disclosure</a></li>
                 </ul>

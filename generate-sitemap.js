@@ -100,6 +100,7 @@ function generateSitemapXML() {
     { path: '/coupon', file: 'coupon.html', cf: 'daily', pr: '0.9' },
     { path: '/stores', file: 'stores.html', cf: 'daily', pr: '0.9' },
     { path: '/reviews', file: 'reviews.html', cf: 'daily', pr: '0.9' },
+    { path: '/blog', file: 'blog.html', cf: 'daily', pr: '0.9' },
     { path: '/about', file: 'about.html', cf: 'monthly', pr: '0.7' },
     { path: '/contact', file: 'contact.html', cf: 'monthly', pr: '0.7' },
     { path: '/privacy', file: 'privacy.html', cf: 'monthly', pr: '0.6' },
@@ -173,7 +174,10 @@ function generateSitemapXML() {
 
           const mtime = getFileLastmod(file);
           const cleanSlug = file.replace(/\.html$/, '');
-          if (file.endsWith('-coupons.html')) {
+          if (file === 'apk-files-coupons.html') {
+            addURL(`/blog/apk-files-coupons`, mtime, 'daily', '0.9');
+            addURL(`/${cleanSlug}`, mtime, 'daily', '0.9');
+          } else if (file.endsWith('-coupons.html')) {
             addURL(`/${cleanSlug}`, mtime, 'daily', '0.95');
           } else if (file.endsWith('-review.html') || file.endsWith('-pricing.html')) {
             addURL(`/${cleanSlug}`, mtime, 'weekly', '0.9');

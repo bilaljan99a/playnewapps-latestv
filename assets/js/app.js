@@ -3313,9 +3313,9 @@ App.initCouponPage = async function() {
 
 App.initProductsPage = async function() {
     const heroTitle = document.querySelector('.hero-title');
-    if (heroTitle) heroTitle.textContent = 'Hot Products & Gadgets';
+    if (heroTitle) heroTitle.textContent = 'Hot Products, Beauty Tech & Gadgets';
     const heroSub = document.querySelector('.hero-subtitle');
-    if (heroSub) heroSub.textContent = 'Discover top tech, gaming setups, and trending gear with our exclusive recommendations.';
+    if (heroSub) heroSub.textContent = 'Discover top tech, smart beauty devices, and trending gear with verified discounts and official deals.';
     
     const slider = document.getElementById('featured');
     if(slider) slider.style.display = 'none';
@@ -3332,6 +3332,52 @@ App.initProductsPage = async function() {
         grid.style.gap = '1.5rem';
         grid.style.gridTemplateColumns = 'repeat(auto-fill, minmax(280px, 1fr))';
         const products = await getDataService().getProducts();
-        grid.innerHTML = products.map(p => getComponents().createProductCard(p)).join('');
+
+        const renderFiltered = (filter) => {
+            let list = products;
+            if (filter !== 'all') {
+                list = products.filter(p => 
+                    (p.store || '').toLowerCase() === filter.toLowerCase() ||
+                    (p.categorySlug || '').toLowerCase() === filter.toLowerCase() ||
+                    (p.category || '').toLowerCase().includes(filter.toLowerCase())
+                );
+            }
+            grid.innerHTML = list.length 
+                ? list.map(p => getComponents().createProductCard(p)).join('')
+                : '<p style="grid-column: 1/-1; text-align: center; padding: 2rem; color: #64748b;">No products found for this category.</p>';
+        };
+
+        renderFiltered('all');
+
+        const filterBtns = document.querySelectorAll('.product-filter-btn');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.getAttribute('data-filter') || 'all';
+                renderFiltered(filter);
+            });
+        });
+
+        // Hook search if present
+        const searchInput = document.getElementById('search-input');
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                const q = (e.target.value || '').toLowerCase().trim();
+                if (!q) {
+                    const activeBtn = document.querySelector('.product-filter-btn.active');
+                    renderFiltered(activeBtn ? activeBtn.getAttribute('data-filter') || 'all' : 'all');
+                    return;
+                }
+                const matches = products.filter(p => 
+                    (p.title || '').toLowerCase().includes(q) ||
+                    (p.category || '').toLowerCase().includes(q) ||
+                    (p.merchantName || p.store || '').toLowerCase().includes(q)
+                );
+                grid.innerHTML = matches.length
+                    ? matches.map(p => getComponents().createProductCard(p)).join('')
+                    : '<p style="grid-column: 1/-1; text-align: center; padding: 2rem; color: #64748b;">No matching products found.</p>';
+            });
+        }
     }
 };

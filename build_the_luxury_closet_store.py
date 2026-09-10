@@ -23,7 +23,7 @@ store_entry = {
     "rating": 4.93,
     "votes": 34210,
     "seoTitle": "The Luxury Closet Promo Codes & Discount Offers (2026) – 10% Off & Up to 80% Off",
-    "seoDescription": "Save 10% up to $250 with code NEW10, 10% off in Australia with AU10, and up to 80% off authenticated pre-owned luxury handbags, watches & fine jewelry.",
+    "seoDescription": "Save 10% up to $250 on your first order, 10% off in Australia, and up to 80% off authenticated pre-owned luxury handbags, watches & fine jewelry.",
     "about": "The Luxury Closet is a premier global pre-loved luxury marketplace based in Dubai, UAE, offering thousands of authentic designer handbags, Swiss watches, fine jewelry, shoes, and apparel from iconic fashion houses including Hermès, Chanel, Louis Vuitton, Rolex, Cartier, and Gucci. Every single piece is rigorously inspected and verified by in-house master authenticators and certified AI forensic systems with a 100% lifetime authenticity guarantee.",
     "categories": [
         "Fashion & Luxury",
@@ -42,8 +42,8 @@ store_entry = {
         "Easy White-Glove Consignment: Earn up to 85% payouts when selling your authentic designer bags, watches, and fine jewelry."
     ],
     "shoppingTips": [
-        "Apply verified promo code NEW10 to receive 10% off your very first order, saving up to $250 on qualifying luxury handbags, watches, and jewelry.",
-        "Australian shoppers can apply promo code AU10 during checkout for an exclusive 10% discount up to $60 off on luxury orders delivered across Australia.",
+        "Click 'Show Code' on PlayNewApps to reveal your verified welcome voucher and save 10% up to $250 on qualifying luxury handbags, watches, and jewelry.",
+        "Australian shoppers can reveal an exclusive voucher for 10% discount up to $60 off on luxury orders delivered across Australia.",
         "Check the 'Under $500' and 'Under $1,000' curated filters to discover authentic designer wallets, jewelry, and shoes at entry-level luxury prices.",
         "Create an account to unlock TLC Club loyalty points on every purchase, redeemable for direct cash discounts on subsequent designer orders.",
         "Take advantage of Layaway Reservation to lock in rare Hermès Birkins or Rolex watches with a small deposit while paying the balance over time."
@@ -51,11 +51,11 @@ store_entry = {
     "faqs": [
         {
             "question": "How do I apply a promo code on The Luxury Closet?",
-            "answer": "Select your authentic designer item on The Luxury Closet. Proceed to the secure checkout page, look for the 'Coupon Code / Gift Card' input field below your order summary, paste your code (such as NEW10 or AU10), and click 'Apply' to instantly see the revised discounted total before finalizing payment."
+            "answer": "Select your authentic designer item on The Luxury Closet. Proceed to the secure checkout page, look for the 'Coupon Code / Gift Card' input field below your order summary, paste your revealed voucher code, and click 'Apply' to instantly see the revised discounted total before finalizing payment."
         },
         {
             "question": "What is the best The Luxury Closet coupon code available today?",
-            "answer": "The top verified coupon code is NEW10, which provides 10% off on your first purchase up to a maximum discount of $250. Customers shipping to Australia can also use code AU10 for 10% off up to $60."
+            "answer": "The top verified coupon provides 10% off on your first purchase up to a maximum discount of $250. Customers shipping to Australia can also reveal an exclusive voucher for 10% off up to $60. Click 'Show Code' above to reveal and copy your coupon code."
         },
         {
             "question": "Are all items on The Luxury Closet 100% authentic?",
@@ -95,7 +95,7 @@ tlc_coupons = [
         "store": "the-luxury-closet",
         "storeId": "the-luxury-closet",
         "title": "Enjoy 10% OFF Up to $250 on Your 1st Purchase",
-        "description": "Save 10% on your very first order at The Luxury Closet with verified coupon code NEW10. Maximum discount savings of $250 on authenticated designer bags, watches, fine jewelry, and luxury apparel.",
+        "description": "Save 10% on your very first order at The Luxury Closet. Maximum discount savings of $250 on authenticated designer bags, watches, fine jewelry, and luxury apparel. Click 'Show Code' to reveal and copy your voucher.",
         "code": "NEW10",
         "discount": "10% OFF",
         "type": "CODE",
@@ -111,14 +111,14 @@ tlc_coupons = [
         "successPercentage": 99,
         "successRate": "99%",
         "status": "Active",
-        "terms": "Valid for new customer accounts on qualifying luxury items. Max discount up to $250. Enter code NEW10 at checkout."
+        "terms": "Valid for new customer accounts on qualifying luxury items. Max discount up to $250. Click Show Code to reveal."
     },
     {
         "id": "tlc-au10-australia-exclusive",
         "store": "the-luxury-closet",
         "storeId": "the-luxury-closet",
         "title": "10% OFF Orders Delivered to Australia (Max $60 Discount)",
-        "description": "Exclusive discount for Australian shoppers: Get 10% off your order with promo code AU10 at checkout. Capped at a maximum discount of $60 on authentic pre-owned designer luxury.",
+        "description": "Exclusive discount for Australian shoppers: Get 10% off your order at checkout with an exclusive voucher. Capped at a maximum discount of $60 on authentic pre-owned designer luxury. Click 'Show Code' to reveal.",
         "code": "AU10",
         "discount": "10% OFF",
         "type": "CODE",
@@ -134,7 +134,7 @@ tlc_coupons = [
         "successPercentage": 98,
         "successRate": "98%",
         "status": "Active",
-        "terms": "Requires delivery address in Australia. Max discount $60. Enter code AU10 at checkout."
+        "terms": "Requires delivery address in Australia. Max discount $60. Click Show Code to reveal."
     },
     {
         "id": "tlc-handbags-sale-80",

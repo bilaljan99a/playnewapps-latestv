@@ -592,11 +592,78 @@ async function saveProduct(productData) {
   // Save back to file with clean indentation
   fs.writeFileSync(PRODUCTS_FILE, JSON.stringify(products, null, 2), 'utf8');
 
+  // Also maintain dedicated Amazon backup file
+  try {
+    const backupFile = path.join(__dirname, '..', 'data', 'products-amazon-backup.json');
+    const amazonItems = products.filter(p => p.store === 'amazon' || p.merchantName === 'Amazon');
+    fs.writeFileSync(backupFile, JSON.stringify(amazonItems, null, 2), 'utf8');
+  } catch (e) {
+    console.warn('Backup save error:', e.message);
+  }
+
   return {
     success: true,
     savedProduct: productData,
     totalProducts: products.length,
     isUpdate: existingIndex >= 0
+  };
+}
+
+/**
+ * Bulk save multiple products at once
+ */
+function bulkSaveProducts(productsList) {
+  if (!Array.isArray(productsList) || productsList.length === 0) {
+    return { success: false, message: 'No products provided' };
+  }
+  let products = [];
+  if (fs.existsSync(PRODUCTS_FILE)) {
+    try {
+      products = JSON.parse(fs.readFileSync(PRODUCTS_FILE, 'utf8'));
+    } catch (e) {
+      products = [];
+    }
+  }
+
+  let added = 0;
+  let updated = 0;
+
+  for (const item of productsList) {
+    if (!item || !item.title) continue;
+    const id = item.id || `amazon-${(item.asin || 'item').toLowerCase()}`;
+    item.id = id;
+    item.store = item.store || 'amazon';
+    item.merchantName = item.merchantName || 'Amazon';
+    item.merchantLogo = item.merchantLogo || '/assets/images/brands/amazon.svg';
+
+    const existingIndex = products.findIndex(p =>
+      p.id === id || (item.asin && (p.asin === item.asin || p.productUrl?.includes(item.asin)))
+    );
+
+    if (existingIndex >= 0) {
+      products[existingIndex] = { ...products[existingIndex], ...item };
+      updated++;
+    } else {
+      products.unshift(item);
+      added++;
+    }
+  }
+
+  fs.writeFileSync(PRODUCTS_FILE, JSON.stringify(products, null, 2), 'utf8');
+
+  try {
+    const backupFile = path.join(__dirname, '..', 'data', 'products-amazon-backup.json');
+    const amazonItems = products.filter(p => p.store === 'amazon' || p.merchantName === 'Amazon');
+    fs.writeFileSync(backupFile, JSON.stringify(amazonItems, null, 2), 'utf8');
+  } catch (e) {
+    console.warn('Backup save error:', e.message);
+  }
+
+  return {
+    success: true,
+    added,
+    updated,
+    totalProducts: products.length
   };
 }
 
@@ -633,6 +700,7 @@ module.exports = {
   upgradeAmazonImageUrl,
   isValidImageUrl,
   saveProduct,
+  bulkSaveProducts,
   deleteProduct,
   listAmazonProducts
 };

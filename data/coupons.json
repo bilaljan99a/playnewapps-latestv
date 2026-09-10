@@ -4,7 +4,7 @@
     "store": "the-luxury-closet",
     "storeId": "the-luxury-closet",
     "title": "Enjoy 10% OFF Up to $250 on Your 1st Purchase",
-    "description": "Save 10% on your very first order at The Luxury Closet with verified coupon code NEW10. Maximum discount savings of $250 on authenticated designer bags, watches, fine jewelry, and luxury apparel.",
+    "description": "Save 10% on your very first order at The Luxury Closet with verified discount. Maximum discount savings of $250 on authenticated designer bags, watches, fine jewelry, and luxury apparel.",
     "code": "NEW10",
     "discount": "10% OFF",
     "type": "CODE",
@@ -20,14 +20,14 @@
     "successPercentage": 99,
     "successRate": "99%",
     "status": "Active",
-    "terms": "Valid for new customer accounts on qualifying luxury items. Max discount up to $250. Enter code NEW10 at checkout."
+    "terms": "Valid for new customer accounts on qualifying luxury items. Max discount up to $250. Enter code coupon code at checkout."
   },
   {
     "id": "tlc-au10-australia-exclusive",
     "store": "the-luxury-closet",
     "storeId": "the-luxury-closet",
     "title": "10% OFF Orders Delivered to Australia (Max $60 Discount)",
-    "description": "Exclusive discount for Australian shoppers: Get 10% off your order with promo code AU10 at checkout. Capped at a maximum discount of $60 on authentic pre-owned designer luxury.",
+    "description": "Exclusive discount for Australian shoppers: Get 10% off your order with verified discount at checkout. Capped at a maximum discount of $60 on authentic pre-owned designer luxury.",
     "code": "AU10",
     "discount": "10% OFF",
     "type": "CODE",
@@ -43,7 +43,7 @@
     "successPercentage": 98,
     "successRate": "98%",
     "status": "Active",
-    "terms": "Requires delivery address in Australia. Max discount $60. Enter code AU10 at checkout."
+    "terms": "Requires delivery address in Australia. Max discount $60. Enter code coupon code at checkout."
   },
   {
     "id": "tlc-handbags-sale-80",

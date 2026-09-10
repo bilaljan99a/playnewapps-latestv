@@ -18,6 +18,7 @@ const {
   upgradeAmazonImageUrl,
   isValidImageUrl,
   saveProduct,
+  bulkSaveProducts,
   deleteProduct,
   listAmazonProducts,
   extractAsin
@@ -74,6 +75,19 @@ app.post('/api/amazon/save', async (req, res) => {
     res.json({ success: true, result });
   } catch (err) {
     res.status(500).json({ success: false, error: err.message || 'Failed to save product.' });
+  }
+});
+
+app.post('/api/amazon/bulk-save', async (req, res) => {
+  try {
+    const { products } = req.body || {};
+    if (!Array.isArray(products) || products.length === 0) {
+      return res.status(400).json({ success: false, error: 'Array of products is required.' });
+    }
+    const result = bulkSaveProducts(products);
+    res.json({ success: true, result });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message || 'Failed to bulk save products.' });
   }
 });
 
@@ -168,8 +182,7 @@ const legacyRedirects = {
   '/categories': '/category',
   '/coupons.html': '/stores',
   '/coupons': '/stores',
-  '/blog.html': '/reviews',
-  '/blog': '/reviews',
+  '/blog.html': '/blog',
   '/trending.html': '/deal',
   '/trending': '/deal',
   '/deals': '/deal',
@@ -227,7 +240,10 @@ const cleanRoutes = [
   { route: '/affiliate', file: 'affiliate.html' },
   { route: '/category', file: 'category.html' },
   { route: '/categories', file: 'category.html' },
-  { route: '/blog', file: 'reviews.html' },
+  { route: '/blog', file: 'blog.html' },
+  { route: '/blog/', file: 'blog.html' },
+  { route: '/blog/apk-files-coupons', file: 'apk-files-coupons.html' },
+  { route: '/apk-files-coupons', file: 'apk-files-coupons.html' },
   { route: '/deals', file: 'deal.html' },
   { route: '/store', file: 'store.html' },
   { route: '/review', file: 'review.html' },
@@ -353,7 +369,18 @@ const cleanRoutes = [
   { route: '/kkday-coupons', file: 'kkday-coupons.html' },
   { route: '/store/kkday', file: 'kkday-coupons.html' },
   { route: '/amazon-auto-list', file: 'amazon-auto-list.html' },
+  { route: '/amazon-auto-list.html', file: 'amazon-auto-list.html' },
   { route: '/admin/amazon', file: 'amazon-auto-list.html' },
+  { route: '/admin/tools', file: 'tools.html' },
+  { route: '/tools', file: 'tools.html' },
+  { route: '/tool', file: 'tools.html' },
+  { route: '/tools.html', file: 'tools.html' },
+  { route: '/tools/amazon', file: 'amazon-auto-list.html' },
+  { route: '/tools/amazon-auto-list', file: 'amazon-auto-list.html' },
+  { route: '/tools/amazon-auto-list.html', file: 'amazon-auto-list.html' },
+  { route: '/tools/amazon-lister', file: 'amazon-auto-list.html' },
+  { route: '/tools/lister', file: 'amazon-auto-list.html' },
+  { route: '/tool/amazon', file: 'amazon-auto-list.html' },
   { route: '/the-luxury-closet', file: 'the-luxury-closet-coupons.html' },
   { route: '/the-luxury-closet-coupons', file: 'the-luxury-closet-coupons.html' },
   { route: '/store/the-luxury-closet', file: 'the-luxury-closet-coupons.html' }
@@ -371,6 +398,34 @@ const fs = require('fs');
 app.use((req, res, next) => {
   const reqPath = req.path.replace(/^\/+|\/+$/g, '');
   if (!reqPath) return next();
+
+  // If path is tools or tool subpath
+  if (reqPath === 'tools' || reqPath === 'tool' || reqPath.startsWith('tools/') || reqPath.startsWith('tool/')) {
+    if (reqPath.includes('amazon') || reqPath.includes('lister')) {
+      return res.sendFile(path.join(__dirname, 'amazon-auto-list.html'));
+    }
+    const toolsFile = path.join(__dirname, 'tools.html');
+    if (fs.existsSync(toolsFile)) {
+      return res.sendFile(toolsFile);
+    }
+  }
+
+  // If path starts with blog/
+  if (reqPath.startsWith('blog/')) {
+    const blogSlug = reqPath.replace(/^blog\//, '');
+    const possibleFiles = [
+      `blog/${blogSlug}.html`,
+      `blog/${blogSlug}`,
+      `${blogSlug}.html`,
+      `${blogSlug}`
+    ];
+    for (const f of possibleFiles) {
+      const fullPath = path.join(__dirname, f);
+      if (fs.existsSync(fullPath) && fs.statSync(fullPath).isFile()) {
+        return res.sendFile(fullPath);
+      }
+    }
+  }
 
   // If path starts with store/
   if (reqPath.startsWith('store/')) {
