@@ -1,5 +1,138 @@
 [
   {
+    "id": "edrawsoft",
+    "name": "Edrawsoft",
+    "icon": "auto_fix_high",
+    "logo": "/assets/images/brands/edrawsoft.svg",
+    "website": "https://www.edrawsoft.com",
+    "storeUrl": "/edrawsoft-coupons",
+    "affiliateUrl": "https://naiawork.com/g/a0exmi3bfqb68b264a7671cd9bc0ec/",
+    "affiliateLink": "https://naiawork.com/g/a0exmi3bfqb68b264a7671cd9bc0ec/",
+    "rating": 4.92,
+    "votes": 12840,
+    "seoTitle": "Edrawsoft Coupon Codes & Discount Offers (2026) – Up to 60% Off Diagramming Software",
+    "seoDescription": "Save up to 60% on Wondershare EdrawMax, EdrawMind, and Edraw.AI with verified promo codes, perpetual bundle deals, and student discounts.",
+    "about": "Edrawsoft (a Wondershare company) is an industry-leading visual diagramming and productivity software provider. Its flagship products include EdrawMax (the versatile all-in-one diagramming platform for flowcharts, network architecture, floor plans, and engineering schemas), EdrawMind (AI-powered collaborative mind mapping and brainstorming), and Edraw.AI (next-generation automated diagram creation). Trusted by over 30 million professionals, Fortune 500 enterprises, and educational institutions worldwide, Edrawsoft delivers Microsoft Visio compatibility at a fraction of the cost.",
+    "categories": [
+      "Design & Graphics",
+      "Productivity Software",
+      "Diagramming & Flowcharts",
+      "Mind Mapping",
+      "AI Tools"
+    ],
+    "whyShop": [
+      "All-In-One Visual Solution: Build 280+ types of diagrams including flowcharts, UML, circuit diagrams, Gantt charts, org charts, and floor plans with 15,000+ vector symbols.",
+      "Full Visio Compatibility: Seamlessly import, edit, and export Microsoft Visio (.vsdx, .vsd) files without formatting loss at up to 70% lower licensing costs.",
+      "AI-Powered Diagramming: Generate complete mind maps, flowcharts, SWOT analyses, and lists instantly with integrated AI text-to-diagram prompts in Edraw.AI and EdrawMind.",
+      "Cross-Platform Freedom: Work flawlessly across Windows, macOS, Linux, Web browsers, iOS, and Android with real-time cloud team synchronization.",
+      "Flexible Perpetual & Subscription Licenses: Choose cost-effective annual subscriptions or buy once with lifetime perpetual licenses including free technical support.",
+      "30-Day Money-Back Guarantee: Try any Edrawsoft premium software risk-free with Wondershare's official satisfaction guarantee."
+    ],
+    "shoppingTips": [
+      "Click \"Show Code\" on PlayNewApps to reveal verified promo vouchers for an instant 20% off all EdrawMax and EdrawMind perpetual plans.",
+      "Choose Perpetual Bundles over single-year subscriptions to save up to 60% in long-term licensing fees with free lifetime software upgrades.",
+      "Students and educators can apply for the Edrawsoft Academic Program to unlock up to 40% educational discounts using an .edu email address.",
+      "Use EdrawMax Online's free tier to collaborate and test features directly in your browser before committing to a desktop license.",
+      "Enterprises and teams with 5+ seats can request volume quote discounts saving 25% or more on multi-user licenses."
+    ],
+    "faqs": [
+      {
+        "question": "How do I apply a promo code on Edrawsoft?",
+        "answer": "Select your desired software (EdrawMax, EdrawMind, or the All-in-One Bundle) on Edrawsoft.com and proceed to checkout. On the order review page, locate the \"I have a coupon\" or \"Discount Code\" checkbox, paste your code revealed on PlayNewApps, and click \"Apply\" to see your instant savings reflected before payment."
+      },
+      {
+        "question": "Can EdrawMax replace Microsoft Visio?",
+        "answer": "Yes. EdrawMax is widely considered the leading Visio alternative. It natively imports and exports .vsd and .vsdx files, features over 15,000 professional vector symbols across 280+ diagram categories, and costs a fraction of Microsoft Visio's recurring subscription fees."
+      },
+      {
+        "question": "What is the best Edrawsoft discount available today?",
+        "answer": "The best deal is the All-Platform Perpetual Bundle which saves up to 60% off combined standalone pricing, plus exclusive 20% off verified promo code valid on select software packages."
+      },
+      {
+        "question": "Does Edrawsoft offer a money-back guarantee?",
+        "answer": "Yes, Wondershare Edrawsoft offers an official 30-day money-back guarantee on software purchases, ensuring complete peace of mind."
+      },
+      {
+        "question": "Is Edrawsoft available on Mac and Linux?",
+        "answer": "Yes. Edrawsoft provides native desktop applications for Windows, macOS (including Apple Silicon M1/M2/M3/M4 chips), Linux, as well as a fully-featured cloud browser web app."
+      }
+    ],
+    "coupons": [
+      {
+        "id": "edraw-bundle-60",
+        "code": "BUNDLE60",
+        "type": "SALE",
+        "discount": "60% OFF",
+        "title": "Save Up to 60% OFF EdrawMax + EdrawMind Perpetual Bundle",
+        "description": "Get lifetime perpetual access to both EdrawMax and EdrawMind across Windows, Mac, Linux, and Web with free major version updates and 10GB cloud storage.",
+        "link": "https://naiawork.com/g/a0exmi3bfqb68b264a7671cd9bc0ec/",
+        "verified": true,
+        "successRate": 99,
+        "usersUsed": 3480
+      },
+      {
+        "id": "edraw-sitewide-20",
+        "code": "EDRAW20",
+        "type": "CODE",
+        "discount": "20% OFF",
+        "title": "Exclusive 20% OFF Sitewide on All Edraw Software & Licenses",
+        "description": "Apply this verified promo code during checkout to save 20% on any individual, perpetual, or multi-user license for EdrawMax, EdrawMind, or EdrawProj.",
+        "link": "https://naiawork.com/g/a0exmi3bfqb68b264a7671cd9bc0ec/",
+        "verified": true,
+        "successRate": 98,
+        "usersUsed": 2150
+      },
+      {
+        "id": "edraw-edu-40",
+        "code": "EDU40",
+        "type": "CODE",
+        "discount": "40% OFF",
+        "title": "Up to 40% OFF Student & Educator Academic Discount",
+        "description": "Verified students, teachers, and university staff can unlock up to 40% off EdrawMax and EdrawMind subscriptions with academic verification.",
+        "link": "https://naiawork.com/g/a0exmi3bfqb68b264a7671cd9bc0ec/",
+        "verified": true,
+        "successRate": 97,
+        "usersUsed": 1620
+      },
+      {
+        "id": "edraw-free-trial",
+        "code": "NO CODE NEEDED",
+        "type": "SALE",
+        "discount": "FREE TRIAL",
+        "title": "EdrawMax & EdrawMind Free Download & Online Trial",
+        "description": "Download EdrawMax or EdrawMind for free with access to 280+ diagram templates, 15,000+ vector shapes, and real-time online collaboration.",
+        "link": "https://naiawork.com/g/a0exmi3bfqb68b264a7671cd9bc0ec/",
+        "verified": true,
+        "successRate": 100,
+        "usersUsed": 5890
+      },
+      {
+        "id": "edraw-team-25",
+        "code": "TEAM25",
+        "type": "SALE",
+        "discount": "25% OFF",
+        "title": "25% OFF Team & Business Multi-User Licensing (5+ Seats)",
+        "description": "Save 25% or more on team licenses for IT departments, engineering teams, and corporate enterprises including centralized license management.",
+        "link": "https://naiawork.com/g/a0exmi3bfqb68b264a7671cd9bc0ec/",
+        "verified": true,
+        "successRate": 96,
+        "usersUsed": 940
+      },
+      {
+        "id": "edraw-ai-bonus",
+        "code": "AIBONUS",
+        "type": "SALE",
+        "discount": "FREE AI TOKENS",
+        "title": "Free AI Tokens with Edraw.AI & EdrawMind Subscriptions",
+        "description": "Get bonus AI generation credits included with your active subscription for automated mind maps, text-to-flowcharts, and smart diagrams.",
+        "link": "https://naiawork.com/g/a0exmi3bfqb68b264a7671cd9bc0ec/",
+        "verified": true,
+        "successRate": 98,
+        "usersUsed": 1410
+      }
+    ]
+  },
+  {
     "id": "the-luxury-closet",
     "name": "The Luxury Closet",
     "icon": "diamond",
@@ -2634,6 +2767,135 @@
     "keyFeatures": "Key features include built-in AI writing and data analysis assistants, OCR image-to-text conversion, PDF merging and format converting tools, extensive template libraries for resumes and pitch decks, and secure cloud file backup.",
     "buyingGuide": "Maximize your subscription value by opting for WPS Pro annual plans, which save up to 70% compared to monthly payments. Standard users can take advantage of the generous Free Edition for everyday document reading and editing.",
     "seoTitle": "WPS Office Promo Codes & Deals (2026)"
+  },
+  {
+    "id": "nordpass",
+    "name": "NordPass",
+    "icon": "/assets/images/brands/nordpass.svg",
+    "logo": "/assets/images/brands/nordpass.svg",
+    "website": "https://nordpass.com",
+    "affiliateLink": "https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/",
+    "storeUrl": "/nordpass-coupons",
+    "rating": 4.94,
+    "votes": 18420,
+    "seoTitle": "NordPass Promo Codes & Verified Deals (2026)",
+    "seoDescription": "Find verified NordPass coupon codes and promo offers for September 2026. Save up to 56% plus 3 extra months free on NordPass Premium, Family, and Business plans.",
+    "about": "NordPass is a next-generation password manager and passkey vault engineered by Nord Security, the creators of NordVPN. Powered by advanced XChaCha20 encryption and an audited Zero-Knowledge architecture, NordPass offers seamless biometric autofill, passkey management, real-time dark web data breach scanning, and multi-device cloud synchronization.",
+    "shippingInfo": "NordPass operates entirely as an instant digital cybersecurity service. All subscriptions, apps for Windows, macOS, Linux, iOS, and Android, and browser extensions are delivered digitally with zero physical shipping fees or transit delays.",
+    "buyerProtection": "NordPass provides a risk-free 30-day money-back guarantee on all Premium and Family subscriptions. All transactions are safeguarded with bank-grade 256-bit SSL encryption, and vaults are protected by local client-side Zero-Knowledge encryption.",
+    "paymentMethods": [
+      "Visa",
+      "MasterCard",
+      "American Express",
+      "Discover",
+      "PayPal",
+      "Google Pay",
+      "Apple Pay",
+      "Bitcoin",
+      "Ethereum",
+      "Cryptocurrencies (CoinGate)"
+    ],
+    "categories": [
+      "Cybersecurity",
+      "Password Manager",
+      "Software & Security",
+      "Software",
+      "PC Tools",
+      "Security & VPN",
+      "Apps"
+    ],
+    "whyShop": [
+      "Verified Official NordPass Discounts: Every promo code and special offer is regularly audited and tested by PlayNewApps to guarantee active savings at checkout.",
+      "Exclusive 56% Off + 3 Extra Months Deal: Maximize cost efficiency with top-tier multi-year subscription promotions.",
+      "Direct Safe Redirection: Secure, direct links straight to the official NordPass checkout portal without third-party redirection or intrusive ads.",
+      "In-Depth Cybersecurity Guides: PlayNewApps provides thorough cryptographic comparisons, plan breakdowns, and passkey tutorials.",
+      "Zero Extra Fees: Accessing verified NordPass discount codes on PlayNewApps is 100% free for all users worldwide."
+    ],
+    "shoppingTips": [
+      "Choose the 2-Year Plan (+3 extra months free) to lock in maximum savings of up to 56% off, cutting effective monthly cost to just $1.49/mo.",
+      "Protect your entire household with the NordPass Family Plan (6 private vaults) for just $2.79/mo total (under $0.47 per user per month).",
+      "Verify your student or youth status via Student Beans or Youth Discount to unlock an extra 15% academic markdown.",
+      "Look into NordVPN Complete or Ultimate security bundles to get NordPass bundled with NordVPN and 1TB encrypted cloud storage at steep volume discounts.",
+      "Take full advantage of the risk-free 30-day money-back guarantee to thoroughly evaluate cross-device syncing and passkeys."
+    ],
+    "coupons": [
+      {
+        "id": "nordpass-2yr-premium-56",
+        "code": "SAVE56PRO",
+        "type": "SALE",
+        "discount": "56% OFF + 3 MO FREE",
+        "title": "NordPass Premium 2-Year Plan — Save 56% + 3 Months Free ($1.49/mo)",
+        "description": "Unlock 56% off the NordPass Premium 2-year subscription plus receive 3 extra months free ($1.49/month effective rate). Includes unlimited password storage, biometrics, passkeys, and dark web data breach scanning.",
+        "link": "https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/",
+        "verified": true,
+        "successRate": 99,
+        "usersUsed": 4280
+      },
+      {
+        "id": "nordpass-family-2yr-53",
+        "code": "FAMILY53",
+        "type": "CODE",
+        "discount": "53% OFF",
+        "title": "NordPass Family 2-Year Plan — Save 53% for Up to 6 Independent Vaults ($2.79/mo)",
+        "description": "Protect your entire household with up to 6 separate, completely private user accounts for only $2.79 per month total (under $0.47 per user). Each member gets private encrypted vaults and passkeys.",
+        "link": "https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/",
+        "verified": true,
+        "successRate": 98,
+        "usersUsed": 2890
+      },
+      {
+        "id": "nordpass-annual-40",
+        "code": "ANNUAL40",
+        "type": "CODE",
+        "discount": "40% OFF",
+        "title": "NordPass Premium 1-Year Plan — Save 40% with Annual Billing ($2.39/mo)",
+        "description": "Save 40% when opting for 1-year annual billing on NordPass Premium ($2.39/month). Enjoy seamless cross-device synchronization across Windows, macOS, iOS, Android, and Linux.",
+        "link": "https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/",
+        "verified": true,
+        "successRate": 97,
+        "usersUsed": 1940
+      },
+      {
+        "id": "nordpass-student-15",
+        "code": "STUDENT15",
+        "type": "CODE",
+        "discount": "EXTRA 15% OFF",
+        "title": "Extra 15% OFF NordPass for Students & Youths (Ages 18–26)",
+        "description": "Verified university students and youths aged 18–26 receive an additional 15% off any 1-year or 2-year NordPass subscription tier via Student Beans or Youth Discount instant verification.",
+        "link": "https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/",
+        "verified": true,
+        "successRate": 98,
+        "usersUsed": 1410
+      },
+      {
+        "id": "nordpass-business-30",
+        "code": "BIZ30",
+        "type": "CODE",
+        "discount": "30% OFF",
+        "title": "NordPass Business & Teams — Up to 30% OFF Organization Cybersecurity ($3.59/user/mo)",
+        "description": "Empower your organization with enterprise password security starting at $3.59 per user per month. Includes Admin Panel, SSO integration with Okta and Azure AD, and company-wide password health metrics.",
+        "link": "https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/",
+        "verified": true,
+        "successRate": 96,
+        "usersUsed": 860
+      },
+      {
+        "id": "nordpass-free-trial",
+        "code": "NO CODE NEEDED",
+        "type": "SALE",
+        "discount": "100% FREE TRIAL",
+        "title": "NordPass Free Forever Edition & 30-Day Risk-Free Premium Trial",
+        "description": "Store unlimited logins, credit cards, and secure notes with zero expiration on one active device with NordPass Free. Test full Premium multi-device synchronization risk-free with the 30-day money-back guarantee.",
+        "link": "https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/",
+        "verified": true,
+        "successRate": 100,
+        "usersUsed": 7350
+      }
+    ],
+    "brandHistory": "Developed by Nord Security—the creators of NordVPN founded in 2012—NordPass was launched to modernize credential management with next-generation XChaCha20 encryption and FIDO2 passkey infrastructure.",
+    "whoIsItFor": "NordPass is engineered for individuals, families, remote workers, and businesses seeking modern, zero-knowledge password and passkey security across all operating systems without technical complexity.",
+    "keyFeatures": "Key features include XChaCha20 encryption, FIDO2 biometric passkeys, automated dark web data breach scanning, password health scoring, emergency access handover, and multi-device synchronization.",
+    "buyingGuide": "Maximize your savings by choosing the 2-year plan with 3 bonus months free, lowering effective cost to $1.49/mo, or get the 6-user Family Plan for $2.79/mo total ($0.47/user)."
   },
   {
     "id": "nordvpn",

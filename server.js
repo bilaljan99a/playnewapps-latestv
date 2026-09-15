@@ -222,6 +222,16 @@ app.use((req, res, next) => {
   if (legacyRedirects[cleanPath]) {
     return res.redirect(301, legacyRedirects[cleanPath]);
   }
+  if (cleanPath === '/store' || cleanPath === '/store.html') {
+    const id = (req.query.id || '').toLowerCase().trim();
+    if (id) {
+      const targetSlug = id.replace(/-coupons$/, '').replace(/-review$/, '');
+      const possibleFile = `${targetSlug}-coupons.html`;
+      if (fs.existsSync(path.join(__dirname, possibleFile))) {
+        return res.redirect(301, `/${targetSlug}-coupons`);
+      }
+    }
+  }
   if (cleanPath.startsWith('/category/')) {
     return res.sendFile(path.join(__dirname, 'category.html'));
   }
@@ -331,9 +341,17 @@ const cleanRoutes = [
   { route: '/asaptickets', file: 'asaptickets-coupons.html' },
   { route: '/asaptickets-coupons', file: 'asaptickets-coupons.html' },
   { route: '/store/asaptickets', file: 'asaptickets-coupons.html' },
+  { route: '/edrawsoft', file: 'edrawsoft-coupons.html' },
+  { route: '/edrawsoft-coupons', file: 'edrawsoft-coupons.html' },
+  { route: '/store/edrawsoft', file: 'edrawsoft-coupons.html' },
+  { route: '/edraw', file: 'edrawsoft-coupons.html' },
+  { route: '/edraw-coupons', file: 'edrawsoft-coupons.html' },
   { route: '/1password', file: '1password-coupons.html' },
   { route: '/1password-coupons', file: '1password-coupons.html' },
   { route: '/store/1password', file: '1password-coupons.html' },
+  { route: '/nordpass', file: 'nordpass-coupons.html' },
+  { route: '/nordpass-coupons', file: 'nordpass-coupons.html' },
+  { route: '/store/nordpass', file: 'nordpass-coupons.html' },
   { route: '/planner5d', file: 'planner5d-coupons.html' },
   { route: '/planner5d-coupons', file: 'planner5d-coupons.html' },
   { route: '/store/planner5d', file: 'planner5d-coupons.html' },
