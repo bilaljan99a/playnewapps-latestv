@@ -307,7 +307,7 @@ class App {
             if (matchedStores.length > 0) {
                 html += `<div class="suggestion-group-title"><span class="material-icons-round" style="font-size: 1rem;" aria-hidden="true">storefront</span> Partner Stores (${matchedStores.length})</div>`;
                 matchedStores.slice(0, 3).forEach(s => {
-                    const storeLink = s.storeUrl || `store.html?id=${s.id}`;
+                    const storeLink = s.storeUrl || s.url || ('/' + s.id + '-coupons');
                     html += `
                         <a href="${storeLink}" class="suggestion-item">
                             <img src="${s.logo}" alt="${s.name}" class="suggestion-thumb" onerror="this.src='/assets/images/brands/default-store.svg'">
@@ -353,7 +353,7 @@ class App {
             if (matchedReviews.length > 0) {
                 html += `<div class="suggestion-group-title"><span class="material-icons-round" style="font-size: 1rem;" aria-hidden="true">apps</span> Apps & Software (${matchedReviews.length})</div>`;
                 matchedReviews.slice(0, 3).forEach(r => {
-                    const reviewLink = r.reviewUrl || (`review.html?id=${r.id}`);
+                    const reviewLink = r.reviewUrl || r.url || ('/' + r.id + '-review');
                     const platform = (r.platforms && r.platforms.length > 0) ? r.platforms[0] : (r.platform || 'Software');
                     html += `
                         <a href="${reviewLink}" class="suggestion-item">
@@ -1861,7 +1861,7 @@ App.initHeaderStoresDropdown = async function() {
 
             if (popularStores.length > 0) {
                 html += popularStores.map(store => `
-                    <a href="store.html?id=${store.id}" class="dropdown-item">
+                    <a href="${store.storeUrl || ('/' + store.id + '-coupons')}" class="dropdown-item">
                         <img src="${store.logo}" alt="${store.name}" width="22" height="22" loading="lazy" style="object-fit: contain; flex-shrink: 0; min-width: 22px; max-height: 22px; background: #ffffff; border-radius: 4px; padding: 1px; border: 1px solid var(--border-color, #e2e8f0);" onerror="this.onerror=null;this.src='/assets/images/brands/default-store.svg';">
                         <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${store.name}</span>
                     </a>
@@ -1935,10 +1935,11 @@ App.initDealPage = async function() {
     document.head.appendChild(script);
 
     // Update Breadcrumbs
+    const targetStoreUrl = (deal.store && deal.store.storeUrl) ? deal.store.storeUrl : (deal.store ? '/' + deal.store.id + '-coupons' : '/stores');
     const storeBreadcrumb = document.getElementById('breadcrumb-store-link');
     if (storeBreadcrumb && deal.store) {
         storeBreadcrumb.textContent = deal.store.name;
-        storeBreadcrumb.href = `store.html?id=${deal.store.id}`;
+        storeBreadcrumb.href = targetStoreUrl;
     }
     const dealTitleBreadcrumb = document.getElementById('breadcrumb-deal-title');
     if (dealTitleBreadcrumb) dealTitleBreadcrumb.textContent = deal.title;
@@ -1950,11 +1951,11 @@ App.initDealPage = async function() {
         dealStoreLogo.alt = `${deal.store.name} Logo`;
     }
     const dealStoreLink = document.getElementById('deal-store-link');
-    if (dealStoreLink) dealStoreLink.href = `store.html?id=${deal.store.id}`;
+    if (dealStoreLink) dealStoreLink.href = targetStoreUrl;
     const dealStoreName = document.getElementById('deal-store-name');
     if (dealStoreName) {
         dealStoreName.textContent = deal.store.name;
-        dealStoreName.href = `store.html?id=${deal.store.id}`;
+        dealStoreName.href = targetStoreUrl;
     }
 
     // Discount & Badges
@@ -2020,7 +2021,7 @@ App.initDealPage = async function() {
         sbRating.innerHTML = `${getComponents().getRatingStars(store.rating || 4.9)} <span>${store.rating || 4.9} (${store.votes || 1000} votes)</span>`;
     }
     const sbLink = document.getElementById('sidebar-view-store-btn');
-    if (sbLink) sbLink.href = `store.html?id=${deal.store.id}`;
+    if (sbLink) sbLink.href = targetStoreUrl;
 
     // FAQs section
     const faqContainer = document.getElementById('deal-faq-container');
@@ -2928,7 +2929,7 @@ App.initStorePage = async function() {
         if (store.related && store.related.length > 0) {
             const relatedStores = stores.filter(s => store.related.includes(s.id));
             relatedList.innerHTML = relatedStores.map(s => `
-                <a href="store.html?id=${s.id}" class="related-store-item">
+                <a href="${s.storeUrl || ('/' + s.id + '-coupons')}" class="related-store-item">
                     <img src="${s.logo}" alt="${s.name}" class="related-store-icon" width="40" height="40">
                     <span>${s.name}</span>
                 </a>
@@ -3192,7 +3193,7 @@ App.renderAllStoresPage = async function() {
                         <div class="store-cards-grid">
                             ${storeList.map(s => {
                                 return `
-                                    <a href="${s.storeUrl || 'store.html?id=' + s.id}" class="store-card-item" aria-label="${s.name} promo codes and deals">
+                                    <a href="${s.storeUrl || ('/' + s.id + '-coupons')}" class="store-card-item" aria-label="${s.name} promo codes and deals">
                                         <div class="store-card-logo-wrap">
                                             <img src="${s.logo}" alt="${s.name} logo" width="80" height="80" loading="lazy" onerror="this.src='/assets/images/brands/default-store.svg'">
                                         </div>

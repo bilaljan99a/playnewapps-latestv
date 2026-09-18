@@ -37,7 +37,7 @@ class Components {
         const icon = this.getPlatformIcon(platform);
         const title = item.title || item.name || 'Software Review';
         const img = item.icon || item.logo || item.image || item.banner || '/assets/images/brands/wondershare.svg';
-        const link = item.reviewUrl || item.url || (item.id ? (item.id.includes('.html') ? item.id : 'review.html?id=' + item.id) : '#');
+        const link = item.reviewUrl || item.url || (item.id ? (item.id.includes('.html') || item.id.startsWith('/') ? item.id : '/' + item.id + '-review') : '#');
         const desc = item.description || item.summary || '';
         
         const isLogo = img.endsWith('.svg') || img.includes('/brands/') || img.includes('/apps/') || img.includes('logo');
@@ -70,7 +70,7 @@ class Components {
         const icon = this.getPlatformIcon(platform);
         const title = item.title || item.name || 'Software Review';
         const img = item.icon || item.logo || item.image || item.banner || '/assets/images/brands/wondershare.svg';
-        const link = item.reviewUrl || item.url || (item.id ? (item.id.includes('.html') ? item.id : 'review.html?id=' + item.id) : '#');
+        const link = item.reviewUrl || item.url || (item.id ? (item.id.includes('.html') || item.id.startsWith('/') ? item.id : '/' + item.id + '-review') : '#');
         const desc = item.description || item.summary || '';
 
         const isLogo = img.endsWith('.svg') || img.includes('/brands/') || img.includes('/apps/') || img.includes('logo');
@@ -199,7 +199,7 @@ class Components {
     }
 
     static createStoreCard(item) {
-        const viewLink = item.storeUrl || `store.html?id=${item.id}`;
+        const viewLink = item.storeUrl || item.url || (item.id ? (item.id.startsWith('/') ? item.id : '/' + item.id + '-coupons') : '#');
         const rating = item.rating ? `★ ${item.rating}` : '★ 4.9';
         return `
             <a href="${viewLink}" class="store-card-item" data-store-id="${item.id}">

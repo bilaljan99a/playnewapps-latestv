@@ -453,7 +453,8 @@
         "title": "Best Mobile Games with Console Graphics",
         "url": "/category.html?id=action"
       }
-    ]
+    ],
+    "reviewUrl": "/genshin-impact-review"
   },
   {
     "id": "cod-mobile",
@@ -628,6 +629,7 @@
         "question": "What are the minimum device requirements for COD: Mobile?",
         "answer": "COD: Mobile requires iOS 11.0 or later (minimum 2 GB RAM) or Android 5.1 or later (minimum 2 GB RAM), with approximately 15 to 20 GB of storage for HD resources."
       }
-    ]
+    ],
+    "reviewUrl": "/cod-mobile-review"
   }
 ]
