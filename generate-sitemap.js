@@ -63,6 +63,7 @@ function generateSitemapXML() {
     if (!url.startsWith(CANONICAL_HOST)) return;
     if (url.includes('dhwnh.com') || url.includes('rcpsj.com') || url.includes('bednari.com')) return;
     if (/\.(png|jpg|jpeg|gif|css|js|json|ico|svg|zip)$/i.test(url)) return;
+    if (url.includes('?')) return; // Ensure zero query-parameter URLs enter sitemap.xml
 
     // Standardize to clean, extensionless canonical URLs (remove .html to prevent 308 redirect in sitemap)
     try {
@@ -114,41 +115,35 @@ function generateSitemapXML() {
     addURL(page.path, mtime, page.cf, page.pr);
   }
 
-  // 2. Stores from data/stores.json
+  // 2. Stores from data/stores.json (Add canonical clean URLs only, no ?id= query params)
   const stores = loadJSON('data/stores.json');
   for (const s of stores) {
-    if (s && s.id) {
-      addURL(`/store?id=${encodeURIComponent(s.id)}`, null, 'daily', '0.9');
+    if (s) {
+      if (s.storeUrl && !s.storeUrl.includes('?')) {
+        addURL(s.storeUrl, null, 'daily', '0.95');
+      } else if (s.id) {
+        const couponFile = `${s.id}-coupons.html`;
+        const reviewFile = `${s.id}-review.html`;
+        const directFile = `${s.id}.html`;
+        if (fs.existsSync(path.join(__dirname, couponFile))) {
+          addURL(`/${s.id}-coupons`, getFileLastmod(couponFile), 'daily', '0.95');
+        } else if (fs.existsSync(path.join(__dirname, reviewFile))) {
+          addURL(`/${s.id}-review`, getFileLastmod(reviewFile), 'weekly', '0.9');
+        } else if (fs.existsSync(path.join(__dirname, directFile))) {
+          addURL(`/${s.id}`, getFileLastmod(directFile), 'daily', '0.9');
+        }
+      }
     }
   }
 
-  // 3. Authors from data/authors.json
-  const authors = loadJSON('data/authors.json');
-  for (const a of authors) {
-    if (a && a.id) {
-      addURL(`/author?id=${encodeURIComponent(a.id)}`, null, 'monthly', '0.6');
-    }
-  }
-
-  // 4. Software / Apps / Games dynamic reviews
+  // 3. Dynamic reviews (Only if dedicated clean review pages exist)
   const software = loadJSON('data/software.json');
   for (const item of software) {
     if (item && item.id) {
-      addURL(`/review?id=${encodeURIComponent(item.id)}`, null, 'weekly', '0.8');
-    }
-  }
-
-  const apps = loadJSON('data/apps.json');
-  for (const item of apps) {
-    if (item && item.id) {
-      addURL(`/review?id=${encodeURIComponent(item.id)}`, null, 'weekly', '0.8');
-    }
-  }
-
-  const games = loadJSON('data/games.json');
-  for (const item of games) {
-    if (item && item.id) {
-      addURL(`/review?id=${encodeURIComponent(item.id)}`, null, 'weekly', '0.8');
+      const reviewFile = `${item.id}-review.html`;
+      if (fs.existsSync(path.join(__dirname, reviewFile))) {
+        addURL(`/${item.id}-review`, getFileLastmod(reviewFile), 'weekly', '0.85');
+      }
     }
   }
 
