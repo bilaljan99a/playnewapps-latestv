@@ -19,10 +19,27 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
 </head>
 <body>
-    <div class="card">
-        <h1>404 Not Found</h1>
-        <p>The page you are looking for does not exist on PlayNewApps.</p>
+    <div class="card" id="error-card">
+        <h1 id="error-title">404 Not Found</h1>
+        <p id="error-desc">The page you are looking for does not exist on PlayNewApps.</p>
         <a href="/">Go to Homepage</a>
     </div>
+    <script>
+        (function() {
+            var path = window.location.pathname.toLowerCase();
+            var isBlogger = /^\/(19|20)\d{2}(\/|$|\.|\?)/.test(path) || 
+                            /^\/(search|feeds|label|b|p|archive)(\/|\?|\.|$)/.test(path) ||
+                            path.indexOf('-apk') !== -1;
+            if (isBlogger) {
+                document.title = '410 Gone - Page Removed';
+                var title = document.getElementById('error-title');
+                var desc = document.getElementById('error-desc');
+                var canon = document.getElementById('canonical-url');
+                if (title) { title.innerText = '410 Gone'; title.style.color = '#ef4444'; }
+                if (desc) { desc.innerText = 'This legacy blog post has been permanently removed and is no longer available on PlayNewApps.'; }
+                if (canon) { canon.setAttribute('href', '/410'); }
+            }
+        })();
+    </script>
 </body>
 </html>

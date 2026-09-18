@@ -209,17 +209,17 @@ const articleHtml = `
     <meta property="og:type" content="article">
     <meta property="og:title" content="Retouch4me Review 2026 – Ultimate AI Portrait Retouching Software">
     <meta property="og:description" content="Comprehensive hands-on evaluation of Retouch4me: The premier suite of AI-powered plugins for Photoshop and Lightroom that automates high-end portrait retouching.">
-    <meta property="og:url" content="https://playnewapps.store/retouch4me-review.html">
+    <meta property="og:url" content="https://www.playnewapps.store/retouch4me-review.html">
     <meta property="og:site_name" content="PlayNewApps">
-    <meta property="og:image" content="https://playnewapps.store/assets/images/banners/retouch4me-banner-deal-1.svg">
+    <meta property="og:image" content="https://www.playnewapps.store/assets/images/banners/retouch4me-banner-deal-1.svg">
     
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Retouch4me Review 2026 – AI Portrait Retouching">
     <meta name="twitter:description" content="Hands-on analysis of Retouch4me plugins, pricing, Dodge & Burn AI, and how it compares to Evoto and Imagen AI.">
-    <meta name="twitter:image" content="https://playnewapps.store/assets/images/banners/retouch4me-banner-deal-1.svg">
+    <meta name="twitter:image" content="https://www.playnewapps.store/assets/images/banners/retouch4me-banner-deal-1.svg">
     
-    <link rel="canonical" href="https://playnewapps.store/retouch4me-review.html">
+    <link rel="canonical" href="https://www.playnewapps.store/retouch4me-review.html">
     <link rel="icon" type="image/svg+xml" href="/assets/images/brands/retouch4me-logo.svg">
     
     <!-- Fonts & Icons -->
@@ -253,9 +253,9 @@ const articleHtml = `
       "@graph": [
         {
           "@type": "Product",
-          "@id": "https://playnewapps.store/retouch4me-review.html#product",
+          "@id": "https://www.playnewapps.store/retouch4me-review.html#product",
           "name": "Retouch4me",
-          "image": "https://playnewapps.store/assets/images/brands/retouch4me-logo.svg",
+          "image": "https://www.playnewapps.store/assets/images/brands/retouch4me-logo.svg",
           "description": "Retouch4me is a professional suite of AI-powered post-processing plugins for Photoshop and Lightroom, automating high-end portrait retouching, dodge & burn, and background cleanup.",
           "brand": {
             "@type": "Brand",
@@ -345,19 +345,19 @@ const articleHtml = `
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://playnewapps.store/"
+              "item": "https://www.playnewapps.store/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Software Reviews",
-              "item": "https://playnewapps.store/reviews.html"
+              "item": "https://www.playnewapps.store/reviews.html"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Retouch4me Review",
-              "item": "https://playnewapps.store/retouch4me-review.html"
+              "item": "https://www.playnewapps.store/retouch4me-review.html"
             }
           ]
         }

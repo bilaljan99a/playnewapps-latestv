@@ -13,7 +13,23 @@
   Cache-Control: no-cache
   X-Robots-Tag: noindex, nofollow
 
+/p
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/p/*
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/2018
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
 /2018/*
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/2019
   Cache-Control: public, max-age=86400
   X-Robots-Tag: noindex, nofollow
 
@@ -21,7 +37,15 @@
   Cache-Control: public, max-age=86400
   X-Robots-Tag: noindex, nofollow
 
+/2020
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
 /2020/*
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/2021
   Cache-Control: public, max-age=86400
   X-Robots-Tag: noindex, nofollow
 
@@ -29,7 +53,15 @@
   Cache-Control: public, max-age=86400
   X-Robots-Tag: noindex, nofollow
 
+/2022
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
 /2022/*
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/2023
   Cache-Control: public, max-age=86400
   X-Robots-Tag: noindex, nofollow
 
@@ -37,11 +69,23 @@
   Cache-Control: public, max-age=86400
   X-Robots-Tag: noindex, nofollow
 
+/2024
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
 /2024/*
   Cache-Control: public, max-age=86400
   X-Robots-Tag: noindex, nofollow
 
+/2025
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
 /2025/*
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/2026
   Cache-Control: public, max-age=86400
   X-Robots-Tag: noindex, nofollow
 
@@ -57,6 +101,34 @@
   Cache-Control: public, max-age=86400
   X-Robots-Tag: noindex, nofollow
 
+/feeds
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
 /feeds/*
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/label
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/label/*
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/archive
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/archive/*
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/b
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/b/*
   Cache-Control: public, max-age=86400
   X-Robots-Tag: noindex, nofollow

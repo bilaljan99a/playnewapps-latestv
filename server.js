@@ -138,10 +138,10 @@ app.use((req, res, next) => {
   const lowerPath = pathname.toLowerCase();
 
   // 1. Match old Blogger date-based archive structures: /2018/..., /2021/..., /1999/..., etc.
-  const isBloggerDatePath = /^\/(19|20)\d{2}(\/|$)/.test(pathname) || /^\/(19|20)\d{2}\/\d{2}/.test(pathname);
+  const isBloggerDatePath = /^\/(19|20)\d{2}(\/|$|\.|\?)/.test(lowerPath) || /^\/(19|20)\d{2}\/\d{2}/.test(lowerPath);
 
-  // 2. Match standard Blogger system directories
-  const isBloggerSystemPath = /^\/(search|feeds|label|b|p|archive)(\/|\?|$)/i.test(pathname);
+  // 2. Match standard Blogger system directories (including /p, /p/, /p/xyz, /search, /feeds, /label, /archive, /b)
+  const isBloggerSystemPath = /^\/(search|feeds|label|b|p|archive)(\/|\?|\.|$)/.test(lowerPath);
 
   // 3. Match legacy APK article paths from old site
   const isOldApkPath = lowerPath.includes('-apk') ||
