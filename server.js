@@ -137,6 +137,20 @@ app.use((req, res, next) => {
   const pathname = rawUrl.split('?')[0];
   const lowerPath = pathname.toLowerCase();
 
+  // Explicitly allow active store page for apk-files-coupons
+  if (lowerPath.includes('apk-files-coupons')) {
+    return next();
+  }
+
+  // Handle direct visits to /410 or /410.html
+  if (lowerPath === '/410' || lowerPath === '/410.html') {
+    res.status(410);
+    res.setHeader('Content-Type', 'text/html; charset=utf-8');
+    res.setHeader('Cache-Control', 'public, max-age=86400');
+    res.setHeader('X-Robots-Tag', 'noindex, nofollow');
+    return res.sendFile(path.join(__dirname, '410.html'));
+  }
+
   // 1. Match old Blogger date-based archive structures: /2018/..., /2021/..., /1999/..., etc.
   const isBloggerDatePath = /^\/(19|20)\d{2}(\/|$|\.|\?)/.test(lowerPath) || /^\/(19|20)\d{2}\/\d{2}/.test(lowerPath);
 
@@ -145,6 +159,7 @@ app.use((req, res, next) => {
 
   // 3. Match legacy APK article paths from old site
   const isOldApkPath = lowerPath.includes('-apk') ||
+                       lowerPath.includes('/apk-') ||
                        lowerPath.includes('hotspot-shield') ||
                        lowerPath.includes('netflix') ||
                        lowerPath.includes('ludo-star') ||
