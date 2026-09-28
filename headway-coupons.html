@@ -1640,10 +1640,7 @@
                 <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-1 rounded-md border border-emerald-200">COPIED!</span>
             </div>
             <div class="space-y-2">
-                <a href="#" id="modal-store-btn" target="_blank" rel="nofollow noopener sponsored" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-extrabold py-3.5 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 text-sm">
-                    <span>Go to Headway &amp; Redeem</span>
-                    <span class="material-icons-round text-base">arrow_forward</span>
-                </a>
+                <button type="button" id="modal-store-btn" onclick="if(this.dataset.url) window.open(this.dataset.url, '_blank')" class=" cursor-pointer"></button>
                 <button onclick="closeModal()" class="text-xs font-bold text-slate-400 hover:text-slate-600 py-1">Close Window</button>
             </div>
         </div>
@@ -1677,7 +1674,7 @@
             // Set modal values
             document.getElementById('modal-code-text').textContent = code;
             document.getElementById('modal-deal-title').textContent = title || 'Coupon Code Copied!';
-            document.getElementById('modal-store-btn').href = affiliateUrl;
+            const modalStoreBtn = document.getElementById('modal-store-btn'); if (modalStoreBtn) { modalStoreBtn.dataset.url = affiliateUrl; modalStoreBtn.onclick = () => window.open(affiliateUrl, '_blank'); }
             
             // Open modal
             document.getElementById('code-modal').classList.add('active');

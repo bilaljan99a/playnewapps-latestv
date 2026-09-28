@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appy Gamer Promo Codes, Coupons &amp; Video Game Deals (2026)</title>
+    <title>Appy Gamer Coupon Codes &amp; Promo Deals (2026)</title>
     <link rel="canonical" href="https://www.playnewapps.store/appygamer-coupons">
     <meta name="description" content="Save up to 85% with verified Appy Gamer coupon codes, Steam keys, PC game deals, Xbox Game Pass discounts, and gaming gear promo vouchers. 100% verified today.">
     <meta name="keywords" content="Appy Gamer Coupon Code, Appy Gamer Promo Code, AppyGamer coupons, video game discounts, Steam coupons, PC game deals, gaming promo codes 2026, Appy Gamer review, game keys discount, Xbox Game Pass discounts">
@@ -1211,9 +1211,7 @@
                     Paste this code in the <strong>Promo Code / Voucher</strong> box during checkout at the official store.
                 </p>
                 <div class="pt-2">
-                    <a id="modal-store-link" href="#" target="_blank" rel="noopener nofollow" class="w-full block py-3 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-sm shadow-md shadow-purple-200 transition-all">
-                        Continue to Store
-                    </a>
+                    <button type="button" id="modal-store-link" onclick="if(currentUrl) window.open(currentUrl, '_blank')" class=" cursor-pointer"></button>
                 </div>
             </div>
         </div>
@@ -1229,7 +1227,7 @@
             currentUrl = url;
             document.getElementById('modal-coupon-code').textContent = code;
             document.getElementById('modal-deal-title').textContent = title;
-            document.getElementById('modal-store-link').href = url;
+            const modalStoreLink = document.getElementById('modal-store-link'); if (modalStoreLink) { modalStoreLink.onclick = () => window.open(url, '_blank'); }
             
             // Auto copy to clipboard
             navigator.clipboard.writeText(code).catch(() => {});

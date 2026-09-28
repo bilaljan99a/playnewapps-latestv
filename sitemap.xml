@@ -61,12 +61,6 @@
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://www.playnewapps.store/amazon-auto-list</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
     <loc>https://www.playnewapps.store/amazon-prime-video-coupons</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>daily</changefreq>
@@ -668,12 +662,6 @@
   </url>
   <url>
     <loc>https://www.playnewapps.store/tiqets-coupons</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://www.playnewapps.store/tools</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>

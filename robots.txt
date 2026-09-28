@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
 
 # AI Search & Indexing Agents
 User-agent: Googlebot

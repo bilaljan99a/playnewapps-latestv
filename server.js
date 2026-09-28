@@ -229,13 +229,31 @@ const legacyRedirects = {
   '/notta-ai': '/notta-ai-coupons',
   '/adguard.html': '/adguard-coupons',
   '/adguard': '/adguard-coupons',
+  '/adheart-me.html': '/adheart',
+  '/adheart-me': '/adheart',
   '/italki.html': '/italki-coupons',
   '/italki': '/italki-coupons',
   '/hidemyname.html': '/hidemyname-vpn-coupons',
   '/hidemyname': '/hidemyname-vpn-coupons',
   '/recoverit.html': '/wondershare-recoverit-review',
+  '/recoverit': '/wondershare-recoverit-review',
+  '/wondershare-recoverit.html': '/wondershare-recoverit-review',
+  '/wondershare-recoverit': '/wondershare-recoverit-review',
   '/uniconverter.html': '/wondershare-uniconverter-review',
+  '/uniconverter': '/wondershare-uniconverter-review',
+  '/wondershare-uniconverter.html': '/wondershare-uniconverter-review',
+  '/wondershare-uniconverter': '/wondershare-uniconverter-review',
   '/pdfelement.html': '/wondershare-pdfelement-review',
+  '/pdfelement': '/wondershare-pdfelement-review',
+  '/retouch4me.html': '/retouch4me-coupons',
+  '/retouch4me': '/retouch4me-coupons',
+  '/jetpac-esim.html': '/jetpac',
+  '/jetpac-esim': '/jetpac',
+  '/way-com.html': '/way',
+  '/way-com': '/way',
+  '/hide-expert-vpn.html': '/hide-expert-vpn-coupons',
+  '/hide-expert-vpn': '/hide-expert-vpn-coupons',
+  '/llms': '/llms.txt',
   '/cdn-cgi/l/email-protection': '/contact'
 };
 
@@ -433,6 +451,16 @@ cleanRoutes.forEach(({ route, file }) => {
   app.get(route, (req, res) => {
     res.sendFile(path.join(__dirname, file));
   });
+});
+
+app.get('/llms.txt', (req, res) => {
+  res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+  res.sendFile(path.join(__dirname, 'llms.txt'));
+});
+
+app.get('/llms-full.txt', (req, res) => {
+  res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+  res.sendFile(path.join(__dirname, 'llms-full.txt'));
 });
 
 const fs = require('fs');

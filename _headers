@@ -5,6 +5,17 @@
   Content-Security-Policy: default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:;
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=86400
+
+/llms-full.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=86400
+
 /410.html
   Cache-Control: public, max-age=86400
   X-Robots-Tag: noindex, nofollow

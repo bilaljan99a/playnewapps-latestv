@@ -250,6 +250,48 @@
             margin-top: 1rem;
         }
     </style>
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://playnewapps.com/#organization",
+          "name": "PlayNewApps",
+          "url": "https://playnewapps.com",
+          "logo": "https://playnewapps.com/assets/images/logo.svg"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://playnewapps.com/tools#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://playnewapps.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Publisher Tools",
+              "item": "https://playnewapps.com/tools"
+            }
+          ]
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://playnewapps.com/tools#webapp",
+          "name": "PlayNewApps Publisher & Content Tools Suite",
+          "url": "https://playnewapps.com/tools",
+          "applicationCategory": "UtilitiesApplication, BusinessApplication",
+          "operatingSystem": "All modern web browsers",
+          "description": "Internal publisher utilities and automated Amazon product import tools for PlayNewApps editorial team."
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 

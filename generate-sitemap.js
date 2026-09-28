@@ -152,7 +152,12 @@ function generateSitemapXML() {
     'index.html', 'coupon.html', 'stores.html', 'reviews.html',
     'about.html', 'contact.html', 'privacy.html', 'terms.html',
     'affiliate.html', 'category.html', 'author.html', 'store.html',
-    'review.html', 'deal.html', '404.html', '410.html'
+    'review.html', 'deal.html', '404.html', '410.html',
+    'adguard.html', 'adheart-me.html', 'hidemyname.html', 'italki.html',
+    'movavi.html', 'pdfelement.html', 'recoverit.html', 'wondershare-recoverit.html',
+    'uniconverter.html', 'wondershare-uniconverter.html', 'retouch4me.html',
+    'jetpac-esim.html', 'way-com.html', 'hide-expert-vpn.html', 'wps-office.html',
+    'tools.html', 'amazon-auto-list.html'
   ]);
 
   try {

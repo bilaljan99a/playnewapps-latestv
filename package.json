@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "node server.js",
     "start": "node server.js",
-    "build": "node generate-sitemap.js && echo 'Static site ready'",
+    "minify": "node scripts/minify-assets.js",
+    "build": "node scripts/minify-assets.js && node generate-sitemap.js && echo 'Static site ready'",
     "amazon:import": "node scripts/amazon-auto-list.js",
     "lint": "echo 'No lint errors'"
   },
@@ -18,6 +19,8 @@
   },
   "devDependencies": {
     "@resvg/resvg-js": "^2.6.2",
-    "png-to-ico": "^3.0.2"
+    "clean-css": "^5.3.3",
+    "png-to-ico": "^3.0.2",
+    "terser": "^5.51.2"
   }
 }
