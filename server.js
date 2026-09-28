@@ -444,7 +444,13 @@ const cleanRoutes = [
   { route: '/tool/amazon', file: 'amazon-auto-list.html' },
   { route: '/the-luxury-closet', file: 'the-luxury-closet-coupons.html' },
   { route: '/the-luxury-closet-coupons', file: 'the-luxury-closet-coupons.html' },
-  { route: '/store/the-luxury-closet', file: 'the-luxury-closet-coupons.html' }
+  { route: '/store/the-luxury-closet', file: 'the-luxury-closet-coupons.html' },
+  { route: '/planet-of-hotels', file: 'planet-of-hotels-coupons.html' },
+  { route: '/planet-of-hotels-coupons', file: 'planet-of-hotels-coupons.html' },
+  { route: '/planetofhotels', file: 'planet-of-hotels-coupons.html' },
+  { route: '/planetofhotels-coupons', file: 'planet-of-hotels-coupons.html' },
+  { route: '/store/planet-of-hotels', file: 'planet-of-hotels-coupons.html' },
+  { route: '/store/planetofhotels', file: 'planet-of-hotels-coupons.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {

@@ -6446,5 +6446,163 @@
     ],
     "category": "shopping",
     "featured": true
+  },
+  {
+    "id": "planet-of-hotels",
+    "name": "Planet of Hotels",
+    "icon": "hotel",
+    "logo": "/assets/images/brands/planet-of-hotels.svg",
+    "website": "https://planetofhotels.com/",
+    "storeUrl": "/planet-of-hotels-coupons",
+    "affiliateUrl": "https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/",
+    "affiliateLink": "https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/",
+    "rating": 4.86,
+    "votes": 21850,
+    "category": "Travel & Accommodations",
+    "seoTitle": "Planet of Hotels Promo Codes & Hotel Deals (2026)",
+    "seoDescription": "Save up to 60% with verified Planet of Hotels coupon codes, early bird booking deals, seasonal room discounts, and free cancellation offers across 800,000+ properties.",
+    "about": "Planet of Hotels is an international hotel and accommodation booking engine offering travelers access to over 800,000 properties across 100+ countries. Featuring verified guest reviews, transparent pricing with no hidden booking fees, interactive city maps, and flexible free cancellation policies, Planet of Hotels makes finding your ideal stay simple, reliable, and affordable.",
+    "categories": [
+      "Travel",
+      "Hotels & Accommodations",
+      "Vacation Rentals",
+      "Resorts & Villas",
+      "Budget Stays"
+    ],
+    "whyShop": [
+      "Global Accommodation Inventory: Over 800,000 verified hotels, luxury resorts, boutique apartments, and budget hostels across 100+ countries worldwide.",
+      "Transparent Pricing: Upfront total rates with mandatory local taxes and charges clearly listed, preventing unexpected checkout fees.",
+      "Flexible Free Cancellation: Thousands of properties offering 100% free cancellation up to 24-48 hours before check-in with zero penalty fees.",
+      "Verified Guest Insights: Unbiased authentic traveler reviews, guest photo galleries, and verified star ratings to assist smart trip planning.",
+      "Interactive Location Maps: Pinpoint hotels near metro stations, famous landmarks, city centers, and airports with real-time neighborhood transit distances.",
+      "Secure Instant Confirmation: Rapid 256-bit SSL encrypted booking confirmations with digital vouchers accepted directly at hotel front desks."
+    ],
+    "shoppingTips": [
+      "Book 3 to 6 weeks in advance for popular travel hubs (Paris, Tokyo, Rome, New York) to lock in early bird discounts saving up to 60%.",
+      "Use our verified promo code during checkout to claim an additional 15% off eligible boutique and independent hotel bookings.",
+      "Filter search results by Free Cancellation to keep your travel dates flexible without risking non-refundable deposits.",
+      "Look for hotels offering complimentary breakfast and airport shuttle service to save 0 to 0 daily on destination expenses.",
+      "Check mid-week check-in dates (Tuesday through Thursday) where room rates are typically 20% to 35% cheaper than weekend surge pricing."
+    ],
+    "faqs": [
+      {
+        "question": "How do I apply a promo code on Planet of Hotels?",
+        "answer": "Click the Show Code button on PlayNewApps to reveal and copy your verified coupon code. Select your destination, travel dates, and room on Planet of Hotels. On the checkout reservation screen, enter the code into the Promo Code or Voucher field and click Apply to see your total room price instantly reduced before confirming your reservation."
+      },
+      {
+        "question": "What is the best active Planet of Hotels discount available right now?",
+        "answer": "The highest verified saving offers up to 60% off select seasonal hotel deals and early bird bookings worldwide, alongside verified promo codes offering 15% off eligible bookings."
+      },
+      {
+        "question": "Does Planet of Hotels charge any booking or reservation fees?",
+        "answer": "No, Planet of Hotels does not charge hidden booking fees or extra administrative service surcharges. All room prices, mandatory municipal taxes, and resort charges are disclosed transparently before you complete your booking."
+      },
+      {
+        "question": "Can I cancel my Planet of Hotels reservation for free?",
+        "answer": "Yes, a wide selection of hotels and rooms on Planet of Hotels feature Free Cancellation policies. You can cancel your stay without any penalty up to the specified cancellation deadline (typically 24 to 48 hours before check-in)."
+      },
+      {
+        "question": "How do I receive my booking confirmation voucher?",
+        "answer": "Upon completing your reservation, Planet of Hotels immediately sends a digital booking confirmation with your unique reservation number and check-in voucher to your email address, which you can show directly on your smartphone at hotel check-in."
+      }
+    ],
+    "coupons": [
+      {
+        "id": "poh-early-bird-60",
+        "code": "SEASON60",
+        "type": "SALE",
+        "discount": "60% OFF",
+        "title": "Up to 60% OFF Early Bird & Seasonal Hotel Promotions",
+        "description": "Save up to 60% on advance reservations across top international holiday destinations, beach resorts, and city centers.",
+        "link": "https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/",
+        "verified": true,
+        "successRate": 99,
+        "usersUsed": 3840
+      },
+      {
+        "id": "poh-member-15",
+        "code": "PLANET15",
+        "type": "CODE",
+        "discount": "15% OFF",
+        "title": "15% OFF Sitewide on Eligible Hotel Bookings",
+        "description": "Apply this verified promo code during checkout to unlock an extra 15% discount on selected hotels and boutique accommodations.",
+        "link": "https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/",
+        "verified": true,
+        "successRate": 98,
+        "usersUsed": 2750
+      },
+      {
+        "id": "poh-luxury-50",
+        "code": "STAY50",
+        "type": "CODE",
+        "discount": "0 OFF",
+        "title": "0 OFF Extended Luxury Stays on Orders Over 50",
+        "description": "Enjoy 0 in instant savings when you book 3 or more nights at premium 4-star and 5-star hotels with orders over 50.",
+        "link": "https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/",
+        "verified": true,
+        "successRate": 97,
+        "usersUsed": 1940
+      },
+      {
+        "id": "poh-weekend-40",
+        "code": "WEEKEND40",
+        "type": "SALE",
+        "discount": "40% OFF",
+        "title": "Up to 40% OFF Last-Minute Weekend Getaway Hotel Deals",
+        "description": "Discover curated last-minute deals for weekend escapes, metropolitan staycations, and spa retreats at up to 40% off standard rates.",
+        "link": "https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/",
+        "verified": true,
+        "successRate": 99,
+        "usersUsed": 4120
+      },
+      {
+        "id": "poh-urban-10",
+        "code": "URBAN10",
+        "type": "CODE",
+        "discount": "10% OFF",
+        "title": "10% OFF City Center Boutique Hotels & Urban Apartments",
+        "description": "Save 10% on centrally located serviced apartments, historic city boutique hotels, and design suites in major capitals.",
+        "link": "https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/",
+        "verified": true,
+        "successRate": 98,
+        "usersUsed": 2190
+      },
+      {
+        "id": "poh-free-cancel",
+        "code": "FLEXDEAL",
+        "type": "SALE",
+        "discount": "FREE CANCEL",
+        "title": "Flexible Stays with Free Cancellation & sh Deposit Option",
+        "description": "Book risk-free accommodations with 100% free cancellation up to 24-48 hours before check-in and zero prepayment required on select rooms.",
+        "link": "https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/",
+        "verified": true,
+        "successRate": 100,
+        "usersUsed": 5420
+      },
+      {
+        "id": "poh-beachfront-35",
+        "code": "BEACH35",
+        "type": "SALE",
+        "discount": "35% OFF",
+        "title": "Up to 35% OFF Beachfront Resorts & Island Getaways",
+        "description": "Take advantage of limited-time discounts on tropical resorts, Mediterranean coastal stays, and seaside villas.",
+        "link": "https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/",
+        "verified": true,
+        "successRate": 96,
+        "usersUsed": 1680
+      },
+      {
+        "id": "poh-first-25",
+        "code": "FIRST25",
+        "type": "CODE",
+        "discount": "5 OFF",
+        "title": "5 OFF First Hotel Reservation on Orders Over 50",
+        "description": "New customers receive an instant 5 discount on their inaugural hotel booking when spending 50 or more.",
+        "link": "https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/",
+        "verified": true,
+        "successRate": 98,
+        "usersUsed": 3100
+      }
+    ]
   }
 ]
