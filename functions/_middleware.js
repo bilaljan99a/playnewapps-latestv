@@ -1,7 +1,11 @@
 /**
  * Cloudflare Pages Middleware
- * Intercepts all incoming requests to playnewapps.store
- * Returns a real HTTP 410 Gone for legacy Blogger/Blogspot URLs and removed blog archives.
+ * Executes at Cloudflare Edge for playnewapps.com
+ * Handles:
+ * 1. HTTP 410 Gone for legacy Blogger/Blogspot URLs and old APK archives.
+ * 2. Strips legacy Blogger mobile parameter (?m=0, ?m=1) with 301 redirect.
+ * 3. 301 redirects legacy query parameter URLs (/store?id=xyz) directly to canonical /{slug}-coupons.
+ * 4. 301 redirects all legacy aliases and .html endpoints to clean canonical URLs (0 chains, 0 loops).
  */
 export async function onRequest(context) {
   const url = new URL(context.request.url);
@@ -16,7 +20,7 @@ export async function onRequest(context) {
   const isDirect410 = path === '/410' || path === '/410.html';
 
   // 1. Match legacy Blogger date-based archive structures:
-  // e.g. /2018, /2018/, /2018/01/post.html, /2019/..., /2020/04/afk-arena-mod-apk.html, /2023, /2024, etc.
+  // e.g. /2010 to /2029 (including /2018, /2018/, /2018/01/post.html, /2019/..., /2023, /2024, etc.)
   const isBloggerDatePath = /^\/(19|20)\d{2}(\/|$|\.|\?)/.test(path) || /^\/(19|20)\d{2}\/\d{2}/.test(path);
 
   // 2. Match standard Blogger system directories:
@@ -27,7 +31,14 @@ export async function onRequest(context) {
   const isOldApkPath = path.includes('-apk') || 
                        path.includes('/apk-') || 
                        path.includes('mod-apk') ||
-                       path.includes('apk-download');
+                       path.includes('apk-download') ||
+                       path.includes('hotspot-shield') ||
+                       path.includes('netflix') ||
+                       path.includes('ludo-star') ||
+                       path.includes('usa-network') ||
+                       path.includes('runes-of-magic') ||
+                       path.includes('bloons') ||
+                       (path.endsWith('.apk') && !path.startsWith('/assets/'));
 
   if (isDirect410 || isBloggerDatePath || isBloggerSystemPath || isOldApkPath) {
     const html410 = `<!DOCTYPE html>
@@ -37,7 +48,7 @@ export async function onRequest(context) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>410 Gone - Page Removed | PlayNewApps</title>
     <meta name="robots" content="noindex, nofollow">
-    <link rel="canonical" href="https://www.playnewapps.store/410">
+    <link rel="canonical" href="${url.origin}/410">
     <style>
         body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background: #0f172a; color: #f8fafc; text-align: center; }
         .card { max-width: 520px; padding: 2.5rem; background: #1e293b; border-radius: 12px; border: 1px solid #334155; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5); }
@@ -68,6 +79,85 @@ export async function onRequest(context) {
         "Cache-Control": "public, max-age=86400"
       }
     });
+  }
+
+  // 4. Strip legacy Blogger mobile parameter (?m=0, ?m=1)
+  if (url.searchParams.has('m')) {
+    url.searchParams.delete('m');
+    const remainingQuery = url.searchParams.toString();
+    const cleanDestination = url.origin + url.pathname + (remainingQuery ? '?' + remainingQuery : '');
+    return Response.redirect(cleanDestination, 301);
+  }
+
+  // 5. Clean /store?id=... query parameter destinations directly to canonical store pages
+  if (path === '/store' || path === '/store.html') {
+    const id = (url.searchParams.get('id') || '').toLowerCase().trim();
+    if (id) {
+      const cleanSlug = id.replace(/-coupons$/, '').replace(/-review$/, '');
+      return Response.redirect(`${url.origin}/${cleanSlug}-coupons`, 301);
+    }
+    return Response.redirect(`${url.origin}/stores`, 301);
+  }
+
+  // 6. Direct 301 Permanent Redirects for legacy and alternative paths (Zero chains, Zero loops)
+  const legacyRedirects = {
+    '/categories.html': '/category',
+    '/categories': '/category',
+    '/coupons.html': '/stores',
+    '/coupons': '/stores',
+    '/blog.html': '/blog',
+    '/trending.html': '/deal',
+    '/trending': '/deal',
+    '/deals': '/deal',
+    '/privacy-policy': '/privacy',
+    '/privacy.html': '/privacy',
+    '/terms-of-service': '/terms',
+    '/terms.html': '/terms',
+    '/disclosure': '/affiliate',
+    '/affiliate.html': '/affiliate',
+    '/movavi-video-suite-coupons.html': '/movavi-coupons',
+    '/movavi-video-suite-coupons': '/movavi-coupons',
+    '/movavi.html': '/movavi-coupons',
+    '/movavi': '/movavi-coupons',
+    '/filmora-14-coupons.html': '/wondershare-filmora-coupons',
+    '/filmora-14-coupons': '/wondershare-filmora-coupons',
+    '/filmora-14': '/wondershare-filmora-coupons',
+    '/drfone-coupons.html': '/wondershare-drfone-review',
+    '/drfone-coupons': '/wondershare-drfone-review',
+    '/drfone': '/wondershare-drfone-review',
+    '/aliexpress-coupons.html': '/aliexpress-coupons',
+    '/aliexpress.html': '/aliexpress-coupons',
+    '/aliexpress': '/aliexpress-coupons',
+    '/nordvpn-coupons.html': '/nordvpn-coupons',
+    '/nordvpn': '/nordvpn-coupons',
+    '/canva-coupons.html': '/canva-review',
+    '/canva-coupons': '/canva-review',
+    '/canva': '/canva-review',
+    '/wps-office-coupons.html': '/wps-office-review',
+    '/wps-office-coupons': '/wps-office-review',
+    '/wps-office.html': '/wps-office-review',
+    '/wps-office': '/wps-office-review',
+    '/hostinger-coupons.html': '/hostinger-coupons',
+    '/hostinger': '/hostinger-coupons',
+    '/war-thunder.html': '/war-thunder-coupons',
+    '/war-thunder': '/war-thunder-coupons',
+    '/notta-ai-coupons.html': '/notta-ai-coupons',
+    '/notta-ai': '/notta-ai-coupons',
+    '/adguard.html': '/adguard-coupons',
+    '/adguard': '/adguard-coupons',
+    '/italki.html': '/italki-coupons',
+    '/italki': '/italki-coupons',
+    '/hidemyname.html': '/hidemyname-vpn-coupons',
+    '/hidemyname': '/hidemyname-vpn-coupons',
+    '/recoverit.html': '/wondershare-recoverit-review',
+    '/uniconverter.html': '/wondershare-uniconverter-review',
+    '/pdfelement.html': '/wondershare-pdfelement-review',
+    '/cdn-cgi/l/email-protection': '/contact'
+  };
+
+  const cleanPath = path.replace(/\/+$/, '') || '/';
+  if (legacyRedirects[cleanPath]) {
+    return Response.redirect(`${url.origin}${legacyRedirects[cleanPath]}`, 301);
   }
 
   // Pass through all valid application and static assets

@@ -3,7 +3,7 @@
     "public": ".",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "redirects": [
-      { "regex": "^/(19|20)\\d{2}/.*", "destination": "/410.html", "type": 410 },
+      { "regex": "^/(19|20)\\d{2}(/.*)?$", "destination": "/410.html", "type": 410 },
       { "regex": "^/(search|feeds|label|archive|p|b)(/.*)?$", "destination": "/410.html", "type": 410 }
     ],
     "headers": [
