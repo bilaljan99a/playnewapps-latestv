@@ -170,6 +170,8 @@ export async function onRequest(context) {
     '/hide-expert-vpn.html': '/hide-expert-vpn-coupons',
     '/hide-expert-vpn': '/hide-expert-vpn-coupons',
     '/planetofhotels': '/planet-of-hotels-coupons',
+    '/italojewelry': '/italo-jewelry-coupons',
+    '/kickscrew': '/kicks-crew-coupons',
     '/llms': '/llms.txt',
     '/cdn-cgi/l/email-protection': '/contact'
   };

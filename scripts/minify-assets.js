@@ -1,7 +1,34 @@
 const fs = require('fs');
 const path = require('path');
-const CleanCSS = require('clean-css');
-const Terser = require('terser');
+let CleanCSS;
+try {
+  CleanCSS = require('clean-css');
+} catch (e) {
+  CleanCSS = null;
+}
+
+let Terser;
+try {
+  Terser = require('terser');
+} catch (e) {
+  Terser = null;
+}
+
+const vm = require('vm');
+
+function simpleMinifyCss(css) {
+  return css
+    .replace(/\/\*[\s\S]*?\*\//g, '')
+    .replace(/\s+/g, ' ')
+    .replace(/\s*([\{\};:,])\s*/g, '$1')
+    .replace(/;}/g, '}')
+    .trim();
+}
+
+function simpleMinifyJs(js) {
+  // Safe: do not strip slashes via naive regex, keep code intact
+  return js.trim();
+}
 
 async function minifyAssets() {
   console.log('[MINIFY] Starting asset minification...');
@@ -17,12 +44,12 @@ async function minifyAssets() {
     fs.writeFileSync(cssSrcPath, originalCss, 'utf-8');
   }
 
-  const minifiedCss = new CleanCSS({
+  const minifiedCss = CleanCSS ? new CleanCSS({
     level: {
       1: { all: true },
       2: { restructureRules: true }
     }
-  }).minify(originalCss).styles;
+  }).minify(originalCss).styles : simpleMinifyCss(originalCss);
 
   fs.writeFileSync(cssMinPath, minifiedCss, 'utf-8');
   fs.writeFileSync(cssPath, minifiedCss, 'utf-8');
@@ -41,21 +68,36 @@ async function minifyAssets() {
       fs.writeFileSync(srcPath, originalJs, 'utf-8');
     }
 
-    const result = await Terser.minify(originalJs, {
-      compress: {
-        dead_code: true,
-        drop_debugger: true,
-        conditionals: true,
-        evaluate: true
-      },
-      mangle: true
-    });
-
-    if (result.code) {
-      fs.writeFileSync(minPath, result.code, 'utf-8');
-      fs.writeFileSync(rawPath, result.code, 'utf-8');
-      console.log(`[MINIFY] JS ${file}: ${(originalJs.length / 1024).toFixed(1)} KB -> ${(result.code.length / 1024).toFixed(1)} KB (-${((1 - result.code.length / originalJs.length) * 100).toFixed(1)}%)`);
+    let minifiedJs = originalJs;
+    if (Terser) {
+      try {
+        const result = await Terser.minify(originalJs, {
+          compress: {
+            dead_code: true,
+            drop_debugger: true,
+            conditionals: true,
+            evaluate: true
+          },
+          mangle: true
+        });
+        if (result && result.code) minifiedJs = result.code;
+      } catch (err) {
+        minifiedJs = simpleMinifyJs(originalJs);
+      }
+    } else {
+      minifiedJs = simpleMinifyJs(originalJs);
     }
+
+    try {
+      new vm.Script(minifiedJs);
+    } catch (syntaxErr) {
+      console.warn(`[MINIFY] Warning: Minified ${file} had syntax issues, reverting to original.`, syntaxErr.message);
+      minifiedJs = originalJs;
+    }
+
+    fs.writeFileSync(minPath, minifiedJs, 'utf-8');
+    fs.writeFileSync(rawPath, minifiedJs, 'utf-8');
+    console.log(`[MINIFY] JS ${file}: ${(originalJs.length / 1024).toFixed(1)} KB -> ${(minifiedJs.length / 1024).toFixed(1)} KB (-${((1 - minifiedJs.length / originalJs.length) * 100).toFixed(1)}%)`);
   }
 
   // 3. Update HTML references to use .min.css and .min.js

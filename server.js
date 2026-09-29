@@ -3,7 +3,7 @@ const compression = require('compression');
 const path = require('path');
 const { generateSitemapXML, writeSitemapFile } = require('./generate-sitemap');
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Enable gzip/deflate compression for fast asset delivery and high Google PageSpeed score
 app.use(compression());
@@ -450,7 +450,19 @@ const cleanRoutes = [
   { route: '/planetofhotels', file: 'planet-of-hotels-coupons.html' },
   { route: '/planetofhotels-coupons', file: 'planet-of-hotels-coupons.html' },
   { route: '/store/planet-of-hotels', file: 'planet-of-hotels-coupons.html' },
-  { route: '/store/planetofhotels', file: 'planet-of-hotels-coupons.html' }
+  { route: '/store/planetofhotels', file: 'planet-of-hotels-coupons.html' },
+  { route: '/italo-jewelry', file: 'italo-jewelry-coupons.html' },
+  { route: '/italo-jewelry-coupons', file: 'italo-jewelry-coupons.html' },
+  { route: '/italojewelry', file: 'italo-jewelry-coupons.html' },
+  { route: '/italojewelry-coupons', file: 'italo-jewelry-coupons.html' },
+  { route: '/store/italo-jewelry', file: 'italo-jewelry-coupons.html' },
+  { route: '/store/italojewelry', file: 'italo-jewelry-coupons.html' },
+  { route: '/kicks-crew', file: 'kicks-crew-coupons.html' },
+  { route: '/kicks-crew-coupons', file: 'kicks-crew-coupons.html' },
+  { route: '/kickscrew', file: 'kicks-crew-coupons.html' },
+  { route: '/kickscrew-coupons', file: 'kicks-crew-coupons.html' },
+  { route: '/store/kicks-crew', file: 'kicks-crew-coupons.html' },
+  { route: '/store/kickscrew', file: 'kicks-crew-coupons.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {
