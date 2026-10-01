@@ -86,3 +86,7 @@
 
 # Dynamic Category Route Rewriting
 /category/* /category.html 200
+
+/sunsky /sunsky-online-coupons 301
+/sunsky-online /sunsky-online-coupons 301
+/sunsky-coupons /sunsky-online-coupons 301

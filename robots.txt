@@ -35,6 +35,11 @@ User-agent: Applebot-Extended
 Allow: /
 
 # Disallow legacy parameters & Blogger system paths
+Disallow: /api/
+Disallow: /amazon-auto-list
+Disallow: /tools
+Disallow: /410
+Disallow: /404
 Disallow: /search
 Disallow: /feeds
 Disallow: /archive

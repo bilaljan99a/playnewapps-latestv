@@ -74,3 +74,5 @@ PlayNewApps (https://www.playnewapps.store) is an authoritative consumer tech an
 ## Machine-Readable Endpoints
 - [XML Sitemap](https://www.playnewapps.store/sitemap.xml): Complete listing of all canonical pages, priority, and change frequency.
 - [LLMs Full Knowledge Base](https://www.playnewapps.store/llms-full.txt): Comprehensive deep context file with detailed store profiles and discount guidelines.
+
+- [SUNSKY](https://www.playnewapps.store/sunsky-online-coupons): Verified SUNSKY wholesale electronics discount codes, 15% off phone cases, and dropshipping offers.

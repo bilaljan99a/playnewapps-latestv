@@ -462,7 +462,22 @@ const cleanRoutes = [
   { route: '/kickscrew', file: 'kicks-crew-coupons.html' },
   { route: '/kickscrew-coupons', file: 'kicks-crew-coupons.html' },
   { route: '/store/kicks-crew', file: 'kicks-crew-coupons.html' },
-  { route: '/store/kickscrew', file: 'kicks-crew-coupons.html' }
+  { route: '/store/kickscrew', file: 'kicks-crew-coupons.html' },
+  { route: '/sunsky-online', file: 'sunsky-online-coupons.html' },
+  { route: '/sunsky-online-coupons', file: 'sunsky-online-coupons.html' },
+  { route: '/sunsky', file: 'sunsky-online-coupons.html' },
+  { route: '/sunsky-coupons', file: 'sunsky-online-coupons.html' },
+  { route: '/store/sunsky-online', file: 'sunsky-online-coupons.html' },
+  { route: '/store/sunsky', file: 'sunsky-online-coupons.html' },
+  { route: '/movavi', file: 'movavi-coupons.html' },
+  { route: '/retouch4me', file: 'retouch4me-coupons.html' },
+  { route: '/pdfelement', file: 'wondershare-pdfelement-review.html' },
+  { route: '/recoverit', file: 'wondershare-recoverit-review.html' },
+  { route: '/wondershare-recoverit', file: 'wondershare-recoverit-review.html' },
+  { route: '/jetpac-esim', file: 'jetpac-esim-coupons.html' },
+  { route: '/way', file: 'way.html' },
+  { route: '/way-com', file: 'way.html' },
+  { route: '/wps-office', file: 'wps-office-review.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {

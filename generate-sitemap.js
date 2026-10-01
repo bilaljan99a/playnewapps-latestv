@@ -176,7 +176,6 @@ function generateSitemapXML() {
           const cleanSlug = file.replace(/\.html$/, '');
           if (file === 'apk-files-coupons.html') {
             addURL(`/blog/apk-files-coupons`, mtime, 'daily', '0.9');
-            addURL(`/${cleanSlug}`, mtime, 'daily', '0.9');
           } else if (file.endsWith('-coupons.html')) {
             addURL(`/${cleanSlug}`, mtime, 'daily', '0.95');
           } else if (file.endsWith('-review.html') || file.endsWith('-pricing.html')) {
