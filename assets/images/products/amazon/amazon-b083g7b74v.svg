@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <radialGradient id="spotlight" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f1f5f9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Surface -->
+  <rect width="400" height="300" rx="16" fill="url(#bg-grad)"/>
+  <rect width="400" height="300" rx="16" fill="url(#spotlight)"/>
+  <rect x="1" y="1" width="398" height="298" rx="15" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Top Metadata Header -->
+  <g transform="translate(24, 28)">
+    <!-- Brand Pill -->
+    <rect x="0" y="0" width="85" height="22" rx="11" fill="#0f172a"/>
+    <text x="42.5" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1">HYDRO FLASK</text>
+  </g>
+
+  <!-- Amazon Verified Badge Top Right -->
+  <g transform="translate(315, 24)">
+    <circle cx="16" cy="16" r="14" fill="#ff9900" fill-opacity="0.15"/>
+    <circle cx="16" cy="16" r="10" fill="#ff9900"/>
+    <path d="M 12 16 L 15 19 L 21 13" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Center Artwork -->
+  
+        <!-- Insulated Tumbler / Water Bottle Vector Art -->
+        <g transform="translate(145, 25)">
+          <!-- Straw -->
+          <line x1="70" y1="0" x2="65" y2="40" stroke="#94a3b8" stroke-width="5" stroke-linecap="round"/>
+          <!-- Tumbler Lid -->
+          <rect x="18" y="32" width="74" height="14" rx="4" fill="#334155"/>
+          <!-- Tumbler Body -->
+          <path d="M 20 46 L 26 145 C 26 155, 84 155, 84 145 L 90 46 Z" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" filter="drop-shadow(0 8px 14px rgba(0,0,0,0.1))"/>
+          <!-- Handle -->
+          <path d="M 88 55 C 110 55, 110 115, 86 115" fill="none" stroke="#0284c7" stroke-width="6" stroke-linecap="round"/>
+          <!-- Accent Band -->
+          <path d="M 23 85 L 87 85" stroke="#0284c7" stroke-width="3"/>
+          <text x="55" y="110" font-family="sans-serif" font-size="10" font-weight="800" fill="#64748b" text-anchor="middle">40 oz</text>
+        </g>
+      
+
+  <!-- Bottom Details Bar -->
+  <g transform="translate(24, 238)">
+    <rect x="0" y="0" width="352" height="42" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#card-shadow)"/>
+    <!-- Title -->
+    <text x="14" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" fill="#0f172a">Wide Mouth Straw Lid 32 oz</text>
+    <!-- Subtitle -->
+    <text x="14" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" fill="#64748b">TempShield Double-Wall Vacuum Bottle</text>
+    <!-- Accent Dot -->
+    <circle cx="334" cy="21" r="5" fill="#0284c7"/>
+  </g>
+</svg>

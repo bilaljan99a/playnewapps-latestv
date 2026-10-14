@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <radialGradient id="spotlight" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f1f5f9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Surface -->
+  <rect width="400" height="300" rx="16" fill="url(#bg-grad)"/>
+  <rect width="400" height="300" rx="16" fill="url(#spotlight)"/>
+  <rect x="1" y="1" width="398" height="298" rx="15" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Top Metadata Header -->
+  <g transform="translate(24, 28)">
+    <!-- Brand Pill -->
+    <rect x="0" y="0" width="85" height="22" rx="11" fill="#0f172a"/>
+    <text x="42.5" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1">TP-LINK</text>
+  </g>
+
+  <!-- Amazon Verified Badge Top Right -->
+  <g transform="translate(315, 24)">
+    <circle cx="16" cy="16" r="14" fill="#ff9900" fill-opacity="0.15"/>
+    <circle cx="16" cy="16" r="10" fill="#ff9900"/>
+    <path d="M 12 16 L 15 19 L 21 13" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Center Artwork -->
+  
+        <!-- Universal Premium Tech Product Vector Art -->
+        <g transform="translate(130, 40)">
+          <rect x="0" y="0" width="140" height="110" rx="16" fill="#1e293b" stroke="#475569" stroke-width="2" filter="drop-shadow(0 8px 16px rgba(0,0,0,0.12))"/>
+          <circle cx="70" cy="55" r="28" fill="none" stroke="#0284c7" stroke-width="3" stroke-dasharray="8 4"/>
+          <circle cx="70" cy="55" r="16" fill="#0284c7" fill-opacity="0.2"/>
+          <circle cx="70" cy="55" r="8" fill="#0284c7"/>
+        </g>
+      
+
+  <!-- Bottom Details Bar -->
+  <g transform="translate(24, 238)">
+    <rect x="0" y="0" width="352" height="42" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#card-shadow)"/>
+    <!-- Title -->
+    <text x="14" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" fill="#0f172a">Deco XE75 Mesh System</text>
+    <!-- Subtitle -->
+    <text x="14" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" fill="#64748b">Tri-Band WiFi 6E • Up to 7200 Sq.Ft</text>
+    <!-- Accent Dot -->
+    <circle cx="334" cy="21" r="5" fill="#0284c7"/>
+  </g>
+</svg>
