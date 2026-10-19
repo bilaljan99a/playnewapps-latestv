@@ -56,7 +56,7 @@ async function minifyAssets() {
   console.log(`[MINIFY] CSS style.css: ${(originalCss.length / 1024).toFixed(1)} KB -> ${(minifiedCss.length / 1024).toFixed(1)} KB (-${((1 - minifiedCss.length / originalCss.length) * 100).toFixed(1)}%)`);
 
   // 2. Minify JavaScript files
-  const jsFiles = ['app.js', 'script.js', 'components.js', 'data-service.js'];
+  const jsFiles = ['app.js', 'script.js', 'components.js', 'data-service.js', 'chatbot.js'];
 
   for (const file of jsFiles) {
     const rawPath = path.join(__dirname, '../assets/js', file);

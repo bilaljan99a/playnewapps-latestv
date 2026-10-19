@@ -23,6 +23,38 @@ const {
   listAmazonProducts,
   extractAsin
 } = require('./services/amazon-scraper');
+const { handleChat } = require('./services/chat-assistant');
+
+// Gemini Shopping Assistant & Customer Support API Endpoints
+app.get('/api/chat/status', (req, res) => {
+  res.json({
+    success: true,
+    status: 'online',
+    model: 'gemini-3.8-flash',
+    associateTag: process.env.AMAZON_ASSOCIATE_TAG || 'playnewapps-20'
+  });
+});
+
+app.post('/api/chat', async (req, res) => {
+  try {
+    const { message, history } = req.body || {};
+    if (!message || typeof message !== 'string' || !message.trim()) {
+      return res.status(400).json({ success: false, error: 'A valid message string is required.' });
+    }
+    const result = await handleChat(message, history || []);
+    res.json({
+      success: true,
+      reply: result.reply,
+      recommendedProducts: result.recommendedProducts || []
+    });
+  } catch (err) {
+    console.error('[API /api/chat] Error:', err);
+    res.status(500).json({
+      success: false,
+      error: err.message || 'An error occurred while processing your request with the AI assistant.'
+    });
+  }
+});
 
 // Amazon Auto-Listing API Endpoints
 app.get('/api/amazon/config', (req, res) => {

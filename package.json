@@ -11,6 +11,7 @@
     "lint": "echo 'No lint errors'"
   },
   "dependencies": {
+    "@google/genai": "^2.30.0",
     "cheerio": "^1.2.0",
     "compression": "^1.8.1",
     "entities": "^8.1.0",
