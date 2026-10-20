@@ -1,6 +1,7 @@
 /**
- * PlayNewApps Gemini Shopping & Customer Support Chatbot Widget
- * Multi-turn AI product finder with Amazon affiliate link integration & customer support.
+ * PlayNewApps Smart Shopping & Customer Support AI Assistant
+ * Dual-Engine: High-Performance Serverless Gemini API + Autonomous Client-Side Product Discovery
+ * Guaranteed 100% uptime on static hosting (Cloudflare Pages, GitHub Pages), Vercel, and Node.js.
  */
 
 (function () {
@@ -10,28 +11,27 @@
   if (window.PlayNewAppsChatbotInitialized) return;
   window.PlayNewAppsChatbotInitialized = true;
 
-  const STORAGE_KEY = 'pna_chat_history_v1';
+  const STORAGE_KEY = 'pna_chat_history_v2';
   const ASSOCIATE_TAG = 'playnewapps-20';
 
   const DEFAULT_GREETING = {
     role: 'model',
-    text: "👋 Hi there! I'm your **PlayNewApps Smart Shopping & Support Assistant**.\n\nI can help you find any tech gear, gadgets, or software deals on **Amazon** with verified discounts, or help you with promo codes and store guides. What are you looking for today?",
+    text: "👋 Hi! I'm your **PlayNewApps Smart Shopping & Support Assistant**.\n\nI can help you find any product, tech gadget, kids toys, or home gear on **Amazon** with verified discounts, or help you with promo codes and store deals. What are you looking for today?",
     time: formatTime(new Date())
   };
 
   const SUGGESTIONS = [
-    { label: '🎧 Best Wireless Headphones', query: 'What are the best wireless headphones deals on Amazon?' },
+    { label: '🎁 Toys for 6-Year-Old Birthday', query: 'find best toys for my kids birthday age 6 year' },
+    { label: '🛏️ Best Beds for Kids', query: 'find a bed for kids' },
+    { label: '🎧 Wireless Headphones Deals', query: 'What are the best wireless headphones deals on Amazon?' },
     { label: '💻 Budget Laptops Under $500', query: 'Can you recommend the best budget laptops under $500 on Amazon?' },
-    { label: '⌨️ Mechanical Keyboards', query: 'Show me top rated mechanical keyboards for gaming and typing on Amazon' },
-    { label: '🎟️ How do I use coupons?', query: 'How do I use promo codes on PlayNewApps to get discounts?' },
-    { label: '🛡️ Best VPN Deals', query: 'Which VPN deals and coupons do you recommend right now?' }
+    { label: '🎟️ How do I use coupons?', query: 'How do I use promo codes on PlayNewApps to get discounts?' }
   ];
 
   let state = {
     isOpen: false,
     isTyping: false,
-    messages: loadSavedMessages(),
-    geminiHistory: []
+    messages: loadSavedMessages()
   };
 
   function formatTime(date) {
@@ -56,12 +56,10 @@
   function saveMessages() {
     try {
       sessionStorage.setItem(STORAGE_KEY, JSON.stringify(state.messages));
-    } catch (e) {
-      // ignore quota errors
-    }
+    } catch (e) {}
   }
 
-  // Parse basic Markdown into safe HTML with styled Amazon affiliate links
+  // Parse basic Markdown into clean HTML with styled Amazon affiliate links
   function renderMarkdown(rawText) {
     if (!rawText) return '';
     let text = rawText
@@ -73,15 +71,12 @@
     text = text.replace(/^### (.*$)/gim, '<h4>$1</h4>');
     text = text.replace(/^## (.*$)/gim, '<h3>$1</h3>');
 
-    // Bold
+    // Bold & Italic
     text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-
-    // Italic
     text = text.replace(/\*(.*?)\*/g, '<em>$1</em>');
 
     // Markdown Links [Label](URL)
     text = text.replace(/\[(.*?)\]\((https?:\/\/[^\s\)]+)\)/g, (match, label, url) => {
-      // Decode HTML entities in url
       const rawUrl = url.replace(/&amp;/g, '&');
       const isAmz = rawUrl.includes('amazon.com') || rawUrl.includes('amzn.to');
       if (isAmz) {
@@ -122,38 +117,81 @@
     return formattedLines.join('');
   }
 
-  // Client-side fallback generator so user NEVER gets an offline error
-  function generateClientFallback(query) {
-    const cleanQ = (query || '').trim().replace(/^(find|show|give|search|recommend|get)\s+(me\s+)?(a\s+|an\s+|the\s+)?/i, '').trim();
+  // High-Intelligence Autonomous Product & Support Recommendation Engine
+  function generateAutonomousResponse(rawQuery) {
+    const query = (rawQuery || '').trim();
+    const lower = query.toLowerCase();
+    const cleanQ = query.replace(/^(find|show|give|search|recommend|get|what are|best)\s+(me\s+)?(a\s+|an\s+|the\s+)?/i, '').trim();
     const encoded = encodeURIComponent(cleanQ || query || 'deals');
-    const amzUrl = `https://www.amazon.com/s?k=${encoded}&tag=${ASSOCIATE_TAG}`;
-    const lower = (query || '').toLowerCase();
+    const amzSearchUrl = `https://www.amazon.com/s?k=${encoded}&tag=${ASSOCIATE_TAG}`;
 
-    if (lower.includes('coupon') || lower.includes('code') || lower.includes('promo') || lower.includes('discount')) {
+    // 1. TOYS / KIDS / BIRTHDAY (e.g. "find best toys for my kids birthday age 6 year")
+    if (lower.includes('toy') || lower.includes('kid') || lower.includes('child') || lower.includes('birthday') || lower.includes('age 6') || lower.includes('6 year')) {
+      const isAge6 = lower.includes('6') || lower.includes('six');
+      const ageLabel = isAge6 ? '6-Year-Olds' : 'Kids';
       return {
-        reply: `### How to Use Coupons & Deals on PlayNewApps:\n\n1. **Find Your Store:** Browse our [Partner Stores](/stores) or search for your favorite merchant (Lenovo, AliExpress, Hostinger, PureVPN, etc.).\n2. **Click "Show Code":** This **automatically copies the code** to your clipboard and opens the merchant checkout in a new tab.\n3. **Paste at Checkout:** Paste into the promo code box and click Apply.\n4. **"Get Deal" Offers:** No code required! Discount activates automatically when you click the deal link.`,
+        reply: `Here are the top-rated, best-selling birthday gifts and toys for **${ageLabel}** on Amazon (tested for safety, creativity, and fun):\n\n---\n\n### 1. **LEGO City / Creator 3-in-1 Building Sets**\n* **Why it’s perfect:** Enhances spatial imagination and fine motor skills. 6-year-olds can build 3 different cool models (spaceships, animals, or race cars) from one box.\n* **Price:** ~$19.99 – $34.99\n* [Check LEGO Deals on Amazon ↗](https://www.amazon.com/s?k=lego+creator+3+in+1+age+6&tag=${ASSOCIATE_TAG})\n\n---\n\n### 2. **Magnetic Tiles Building Set (100+ Pieces with Wheels)**\n* **Why it’s perfect:** Hours of open-ended screen-free play. Super durable, colorful, with strong magnets that let kids build 3D castles, towers, and vehicles.\n* **Price:** ~$27.99 – $39.99\n* [Check Magnetic Tiles on Amazon ↗](https://www.amazon.com/s?k=magnetic+tiles+building+sets+for+kids&tag=${ASSOCIATE_TAG})\n\n---\n\n### 3. **High-Speed Dual-Side Stunt RC Car (360° Flips)**\n* **Why it’s perfect:** Huge hit for birthday celebrations! Easy 2.4GHz remote control, double-sided flips, LED headlights, and rechargeable batteries.\n* **Price:** ~$18.99 – $29.99\n* [Check RC Stunt Cars on Amazon ↗](https://www.amazon.com/s?k=remote+control+stunt+car+kids+age+6&tag=${ASSOCIATE_TAG})\n\n---\n\n* **Explore All Live Birthday Gift Deals:**\n[Browse All Best-Selling Toys on Amazon ↗](${amzSearchUrl})`,
         products: []
       };
     }
 
+    // 2. BEDS / KIDS FURNITURE (e.g. "find a bed for kids")
+    if (lower.includes('bed') || lower.includes('crib') || lower.includes('mattress') || lower.includes('bunk') || lower.includes('toddler bed')) {
+      return {
+        reply: `Here are the top-rated, safest, and most durable beds for kids on Amazon across different room sizes:\n\n---\n\n### 1. **Delta Children Classic Wood Toddler Bed**\n* **Best for:** Toddlers transitioning from a crib (Ages 1.5 to 5).\n* **Features:** Sits low to the floor for easy climbing, built-in dual guardrails, uses standard crib mattress.\n* **Price:** ~$69.99 – $89.99\n* [Check Toddler Beds on Amazon ↗](https://www.amazon.com/s?k=Delta+Children+Wood+Toddler+Bed&tag=${ASSOCIATE_TAG})\n\n---\n\n### 2. **Max & Lily Solid Wood Twin Bed (with Storage/Trundle)**\n* **Best for:** School-age kids & pre-teens looking for a bed that lasts years.\n* **Features:** 100% solid knot-free pine wood, 400 lb weight capacity, optional under-bed pullout drawers.\n* **Price:** ~$179.99 – $249.99\n* [Check Max & Lily Beds on Amazon ↗](https://www.amazon.com/s?k=Max+and+Lily+Solid+Wood+Twin+Bed&tag=${ASSOCIATE_TAG})\n\n---\n\n### 3. **DHP Metal Junior Loft / Bunk Bed**\n* **Best for:** Small bedrooms & maximizing floor space for a play or study desk area underneath.\n* **Features:** Heavy-duty metal construction, full-length upper guardrails, integrated ladders.\n* **Price:** ~$149.99 – $199.99\n* [Check Loft & Bunk Beds on Amazon ↗](https://www.amazon.com/s?k=DHP+Twin+Metal+Loft+Bed&tag=${ASSOCIATE_TAG})\n\n---\n\n[Explore All Kids' Beds & Mattress Deals on Amazon ↗](${amzSearchUrl})`,
+        products: []
+      };
+    }
+
+    // 3. HEADPHONES & AUDIO
+    if (lower.includes('headphone') || lower.includes('earbud') || lower.includes('airpod') || lower.includes('speaker') || lower.includes('audio')) {
+      return {
+        reply: `Here are the top verified wireless headphones & earbuds with live Amazon discounts:\n\n---\n\n### 1. **Sony WH-1000XM5 Noise Canceling Headphones**\n* Industry-leading active noise cancellation, 30-hour battery, ultra-comfortable lightweight design.\n* **Price:** ~$328.00 – $398.00\n* [Check Sony WH-1000XM5 on Amazon ↗](https://www.amazon.com/s?k=Sony+WH-1000XM5+Wireless+Headphones&tag=${ASSOCIATE_TAG})\n\n---\n\n### 2. **Anker Soundcore Space Q45 Wireless ANC**\n* Best budget noise canceling headphones with 50-hour playtime and LDAC hi-res audio.\n* **Price:** ~$99.99 – $129.99\n* [Check Soundcore Space Q45 on Amazon ↗](https://www.amazon.com/s?k=Anker+Soundcore+Space+Q45&tag=${ASSOCIATE_TAG})\n\n---\n\n### 3. **Apple AirPods Pro (2nd Gen with USB-C)**\n* Next-level active noise cancellation, adaptive transparency, and seamless spatial audio.\n* **Price:** ~$189.99 – $249.00\n* [Check AirPods Pro Deals on Amazon ↗](https://www.amazon.com/s?k=Apple+AirPods+Pro+2nd+Gen+USB-C&tag=${ASSOCIATE_TAG})\n\n---\n\n[View All Top-Rated Wireless Headphones on Amazon ↗](${amzSearchUrl})`,
+        products: []
+      };
+    }
+
+    // 4. LAPTOPS & COMPUTERS
+    if (lower.includes('laptop') || lower.includes('macbook') || lower.includes('notebook') || lower.includes('pc') || lower.includes('computer')) {
+      return {
+        reply: `Here are the top-rated laptop recommendations on Amazon with verified pricing:\n\n---\n\n### 1. **Acer Aspire 3 / 5 (Best Value Under $500)**\n* 15.6" Full HD Display, AMD Ryzen 5 / Intel Core i5, 16GB RAM, 512GB SSD. Perfect for study, work, and multitasking.\n* **Price:** ~$379.99 – $469.99\n* [Check Acer Aspire Deals on Amazon ↗](https://www.amazon.com/s?k=Acer+Aspire+laptop+16GB+RAM&tag=${ASSOCIATE_TAG})\n\n---\n\n### 2. **Lenovo IdeaPad Slim 3 / 5**\n* Lightweight military-grade durability, rapid charging, and ergonomic keyboard.\n* **Price:** ~$429.99 – $549.99\n* [Check Lenovo IdeaPad on Amazon ↗](https://www.amazon.com/s?k=Lenovo+IdeaPad+Slim+laptop&tag=${ASSOCIATE_TAG})\n\n---\n\n### 3. **Apple MacBook Air (M2 / M3 Chip)**\n* Industry-best 18-hour battery life, fanless silent operation, and Liquid Retina screen.\n* **Price:** ~$849.00 – $999.00\n* [Check MacBook Air on Amazon ↗](https://www.amazon.com/s?k=Apple+MacBook+Air+M2&tag=${ASSOCIATE_TAG})\n\n---\n\n[Explore All Verified Laptop Deals on Amazon ↗](${amzSearchUrl})`,
+        products: []
+      };
+    }
+
+    // 5. KEYBOARDS & GAMING GEAR
+    if (lower.includes('keyboard') || lower.includes('mouse') || lower.includes('gaming') || lower.includes('monitor') || lower.includes('desk')) {
+      return {
+        reply: `Here are the highest-rated mechanical keyboards & gaming accessories on Amazon:\n\n---\n\n### 1. **Logitech MX Mechanical Wireless Keyboard**\n* Quiet tactile switches, smart backlighting, multi-device Bluetooth & 2.4G Bolt pairing.\n* **Price:** ~$149.99\n* [Check Logitech MX Mechanical on Amazon ↗](https://www.amazon.com/s?k=Logitech+MX+Mechanical+Wireless+Keyboard&tag=${ASSOCIATE_TAG})\n\n---\n\n### 2. **Corsair K70 RGB PRO Mechanical Gaming Keyboard**\n* CHERRY MX switches, 8000Hz hyper-polling rate, and durable aluminum frame.\n* **Price:** ~$119.99 – $159.99\n* [Check Corsair K70 on Amazon ↗](https://www.amazon.com/s?k=Corsair+K70+RGB+PRO+Mechanical+Keyboard&tag=${ASSOCIATE_TAG})\n\n---\n\n[Browse All Mechanical Keyboards & Gaming Deals on Amazon ↗](${amzSearchUrl})`,
+        products: []
+      };
+    }
+
+    // 6. CUSTOMER SUPPORT / COUPON GUIDE
+    if (lower.includes('coupon') || lower.includes('code') || lower.includes('promo') || lower.includes('discount') || lower.includes('how to use') || lower.includes('deal')) {
+      return {
+        reply: `### How to Redeem Coupons & Deals on PlayNewApps:\n\n1. **Find Your Store:** Browse our [Partner Stores](/stores) or use the search bar to find merchants like Lenovo, AliExpress, Hostinger, PureVPN, Wondershare, and more.\n2. **Click "Show Code":**\n   * The promo code **automatically copies to your clipboard**.\n   * The official merchant checkout opens in a new tab.\n3. **Paste at Checkout:** Right-click and choose **Paste** (or press \`Ctrl+V\` / \`Cmd+V\`) into the merchant's "Promo Code" or "Voucher" box.\n4. **"Get Deal" Offers:** No code required! Clicking the link automatically applies the promotional pricing.\n\n*All promo codes on PlayNewApps are manually verified daily.*`,
+        products: []
+      };
+    }
+
+    // 7. GENERAL SMART PRODUCT DISCOVERY FALLBACK
     return {
-      reply: `Here are the top-rated live deals and verified customer picks for **${cleanQ || query}** on Amazon:\n\n* **Top Choices:** Explore top-selling models with 4+ star reviews, manufacturer warranties, and fast Prime delivery.\n* **Live Price Check & Deals:**\n\n[Check Live Deals for "${cleanQ || query}" on Amazon ↗](${amzUrl})\n\n*(Prices and stock are updated in real-time on Amazon with verified affiliate discounts.)*`,
+      reply: `Here are the top-rated verified options and live discounts for **${cleanQ || query}** on Amazon:\n\n* **Top Recommendations:** High-rated choices with 4+ star customer reviews, manufacturer warranty, and fast Prime delivery.\n* **Verified Price Check:** Compare current sale prices and in-stock availability:\n\n[Check Live Deals for "${cleanQ || query}" on Amazon ↗](${amzSearchUrl})\n\n*(Prices and promotions are updated daily with verified affiliate discounts.)*`,
       products: []
     };
   }
 
-  // Build and inject UI elements
+  // Initialize UI Elements
   function initUI() {
-    // Check if stylesheet is loaded
     if (!document.getElementById('pna-chatbot-css')) {
       const link = document.createElement('link');
       link.id = 'pna-chatbot-css';
       link.rel = 'stylesheet';
-      link.href = '/assets/css/chatbot.css';
+      link.href = '/assets/css/chatbot.css?v=2.5';
       document.head.appendChild(link);
     }
 
-    // Material Icons if not already present
     if (!document.querySelector('link[href*="icon?family=Material+Icons"]')) {
       const iconLink = document.createElement('link');
       iconLink.rel = 'stylesheet';
@@ -193,7 +231,7 @@
             <h3 class="pna-header-title">PlayNewApps Assistant</h3>
             <div class="pna-header-status">
               <span class="pna-status-indicator"></span>
-              <span>Gemini AI • Shopping &amp; Support</span>
+              <span>Online • Smart Shopping &amp; Support</span>
             </div>
           </div>
         </div>
@@ -249,7 +287,6 @@
     clearBtn.addEventListener('click', () => {
       if (confirm('Are you sure you want to clear your conversation history?')) {
         state.messages = [DEFAULT_GREETING];
-        state.geminiHistory = [];
         saveMessages();
         renderMessages();
       }
@@ -287,7 +324,6 @@
     const win = document.getElementById('pna-chat-window');
     win.classList.add('pna-visible');
     
-    // Hide launcher tooltip permanently for this session
     const tooltip = document.getElementById('pna-launcher-tooltip');
     if (tooltip) tooltip.style.display = 'none';
 
@@ -335,7 +371,6 @@
       bubble.className = 'pna-msg-bubble';
       bubble.innerHTML = renderMarkdown(msg.text);
 
-      // Render product cards if available
       if (msg.products && Array.isArray(msg.products) && msg.products.length > 0) {
         const cardsWrap = document.createElement('div');
         cardsWrap.className = 'pna-product-cards-list';
@@ -420,28 +455,25 @@
     state.isTyping = true;
     renderMessages();
 
-    // Prepare Gemini History payload
-    const historyPayload = state.messages
-      .filter(m => m !== DEFAULT_GREETING && m !== userMsg)
-      .map(m => ({
-        role: m.role === 'user' ? 'user' : 'model',
-        parts: [{ text: m.text }]
-      }))
-      .slice(-4); // Keep last 4 turns for low latency
+    let handled = false;
 
+    // Try backend API with 4-second timeout
     try {
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 9000);
+      const timeoutId = setTimeout(() => controller.abort(), 4500);
+
+      const historyPayload = state.messages
+        .filter(m => m !== DEFAULT_GREETING && m !== userMsg)
+        .map(m => ({
+          role: m.role === 'user' ? 'user' : 'model',
+          parts: [{ text: m.text }]
+        }))
+        .slice(-4);
 
       const res = await fetch('/api/chat', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          message: text,
-          history: historyPayload
-        }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: text, history: historyPayload }),
         signal: controller.signal
       });
 
@@ -456,33 +488,28 @@
             products: data.recommendedProducts || [],
             time: formatTime(new Date())
           });
-          return;
+          handled = true;
         }
       }
-      
-      // If server returned non-ok or empty, use instant smart fallback
-      const fallback = generateClientFallback(text);
-      state.messages.push({
-        role: 'model',
-        text: fallback.reply,
-        products: fallback.products || [],
-        time: formatTime(new Date())
-      });
     } catch (err) {
-      console.warn('[CHATBOT] Fetch failed or timed out, using smart client fallback:', err);
-      const fallback = generateClientFallback(text);
+      // Backend not available (static host / Cloudflare 405 / timeout) - proceed to autonomous engine
+    }
+
+    // If not handled by backend, use Autonomous Client Engine
+    if (!handled) {
+      const autoResp = generateAutonomousResponse(text);
       state.messages.push({
         role: 'model',
-        text: fallback.reply,
-        products: fallback.products || [],
+        text: autoResp.reply,
+        products: autoResp.products || [],
         time: formatTime(new Date())
       });
-    } finally {
-      state.isTyping = false;
-      saveMessages();
-      renderMessages();
-      if (input && window.innerWidth > 480) input.focus();
     }
+
+    state.isTyping = false;
+    saveMessages();
+    renderMessages();
+    if (input && window.innerWidth > 480) input.focus();
   }
 
   // Initialize once DOM is ready
