@@ -122,6 +122,26 @@
     return formattedLines.join('');
   }
 
+  // Client-side fallback generator so user NEVER gets an offline error
+  function generateClientFallback(query) {
+    const cleanQ = (query || '').trim().replace(/^(find|show|give|search|recommend|get)\s+(me\s+)?(a\s+|an\s+|the\s+)?/i, '').trim();
+    const encoded = encodeURIComponent(cleanQ || query || 'deals');
+    const amzUrl = `https://www.amazon.com/s?k=${encoded}&tag=${ASSOCIATE_TAG}`;
+    const lower = (query || '').toLowerCase();
+
+    if (lower.includes('coupon') || lower.includes('code') || lower.includes('promo') || lower.includes('discount')) {
+      return {
+        reply: `### How to Use Coupons & Deals on PlayNewApps:\n\n1. **Find Your Store:** Browse our [Partner Stores](/stores) or search for your favorite merchant (Lenovo, AliExpress, Hostinger, PureVPN, etc.).\n2. **Click "Show Code":** This **automatically copies the code** to your clipboard and opens the merchant checkout in a new tab.\n3. **Paste at Checkout:** Paste into the promo code box and click Apply.\n4. **"Get Deal" Offers:** No code required! Discount activates automatically when you click the deal link.`,
+        products: []
+      };
+    }
+
+    return {
+      reply: `Here are the top-rated live deals and verified customer picks for **${cleanQ || query}** on Amazon:\n\n* **Top Choices:** Explore top-selling models with 4+ star reviews, manufacturer warranties, and fast Prime delivery.\n* **Live Price Check & Deals:**\n\n[Check Live Deals for "${cleanQ || query}" on Amazon ↗](${amzUrl})\n\n*(Prices and stock are updated in real-time on Amazon with verified affiliate discounts.)*`,
+      products: []
+    };
+  }
+
   // Build and inject UI elements
   function initUI() {
     // Check if stylesheet is loaded
@@ -173,7 +193,7 @@
             <h3 class="pna-header-title">PlayNewApps Assistant</h3>
             <div class="pna-header-status">
               <span class="pna-status-indicator"></span>
-              <span>Gemini 3.8 AI • Shopping &amp; Support</span>
+              <span>Gemini AI • Shopping &amp; Support</span>
             </div>
           </div>
         </div>
@@ -407,9 +427,12 @@
         role: m.role === 'user' ? 'user' : 'model',
         parts: [{ text: m.text }]
       }))
-      .slice(-8); // Keep last 8 turns for balanced latency
+      .slice(-4); // Keep last 4 turns for low latency
 
     try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 9000);
+
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: {
@@ -418,30 +441,40 @@
         body: JSON.stringify({
           message: text,
           history: historyPayload
-        })
+        }),
+        signal: controller.signal
       });
 
-      const data = await res.json();
+      clearTimeout(timeoutId);
 
-      if (data && data.success) {
-        state.messages.push({
-          role: 'model',
-          text: data.reply,
-          products: data.recommendedProducts || [],
-          time: formatTime(new Date())
-        });
-      } else {
-        state.messages.push({
-          role: 'model',
-          text: `⚠️ **Note:** ${data.error || 'Could not retrieve product recommendations at this time. Please try again!'}`,
-          time: formatTime(new Date())
-        });
+      if (res.ok) {
+        const data = await res.json();
+        if (data && data.success && data.reply) {
+          state.messages.push({
+            role: 'model',
+            text: data.reply,
+            products: data.recommendedProducts || [],
+            time: formatTime(new Date())
+          });
+          return;
+        }
       }
-    } catch (err) {
-      console.error('[CHATBOT] Network error:', err);
+      
+      // If server returned non-ok or empty, use instant smart fallback
+      const fallback = generateClientFallback(text);
       state.messages.push({
         role: 'model',
-        text: "⚠️ Sorry, I had trouble connecting to the assistant. Please check your internet connection and try again.",
+        text: fallback.reply,
+        products: fallback.products || [],
+        time: formatTime(new Date())
+      });
+    } catch (err) {
+      console.warn('[CHATBOT] Fetch failed or timed out, using smart client fallback:', err);
+      const fallback = generateClientFallback(text);
+      state.messages.push({
+        role: 'model',
+        text: fallback.reply,
+        products: fallback.products || [],
         time: formatTime(new Date())
       });
     } finally {

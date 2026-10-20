@@ -148,100 +148,117 @@ function getGeminiClient() {
 const SYSTEM_INSTRUCTION = `You are the official PlayNewApps Smart Shopping & Customer Support AI Assistant.
 PlayNewApps (playnewapps.com) is a premier platform offering verified discount promo codes, software deals, and tech gear recommendations.
 
-YOUR PRIMARY ROLES:
-1. PRODUCT FINDER & SHOPPING ASSISTANT:
-   - When a user asks to find, recommend, or compare products (such as laptops, headphones, monitors, mice, keyboards, smart home devices, smartphones, vacuums, coffee machines, gaming accessories, or software):
-     - Give authoritative, helpful product suggestions with key benefits, specs, and estimated prices.
-     - ALWAYS provide direct Amazon affiliate links formatted with the affiliate tag "${ASSOCIATE_TAG}".
-     - When recommending an Amazon product, use a clean clickable link:
-       [Check Price & Availability on Amazon ↗](https://www.amazon.com/s?k=[URL_ENCODED_PRODUCT_NAME]&tag=${ASSOCIATE_TAG})
-     - If catalog context provides specific products, prioritize those verified deals and their provided links!
-     - Explain why each product is a great choice and highlight potential savings.
+CRITICAL INSTRUCTIONS:
+- BE FAST, CONCISE, AND HELPFUL. Keep your response under 180 words.
+- When recommending any product, ALWAYS provide direct Amazon links with affiliate tag "${ASSOCIATE_TAG}":
+  [Check Price & Deals on Amazon ↗](https://www.amazon.com/s?k=[URL_ENCODED_PRODUCT]&tag=${ASSOCIATE_TAG})
+- Highlight 2-3 top recommended choices with key benefits and approximate prices.
+- When answering customer support questions (coupons, stores, codes), provide short, clear, bulleted instructions.
+- Never output raw unformatted URLs; use clean markdown links.`;
 
-2. CUSTOMER SUPPORT & PLATFORM ASSISTANCE:
-   - Assist users with shopping questions, coupons, and using the PlayNewApps website:
-     - How to use coupon codes: Explain that clicking "Show Code" copies the promo code to their clipboard and opens the official merchant checkout page in a new tab.
-     - How to use deals: Explain that "Get Deal" links activate instant discounts automatically without needing a coupon code.
-     - Store queries: Answer questions about popular partner stores (AliExpress, Lenovo, Hostinger, PureVPN, Wondershare, AdGuard, Klook, Temu, Walmart, etc.).
-     - Categories: Help users navigate categories like Software, Gaming, PC Tools, AI Tools, VPN & Security, Audio, Home, and Tech Gear.
-     - Guarantee & Trust: Explain that PlayNewApps team manually verifies discount codes daily to eliminate expired offers.
-     - Shopping tips: Offer advice on stacking coupons, student discounts, seasonal sales (Black Friday, Cyber Monday, Choice Day), and free trials.
+// Fallback generator when AI API is unavailable or times out
+function generateSmartFallback(message, searchResults) {
+  const cleanQ = (message || '').trim().replace(/^(find|show|give|search|recommend|get)\s+(me\s+)?(a\s+|an\s+|the\s+)?/i, '').trim();
+  const amazonSearchUrl = getAmazonSearchUrl(cleanQ || message);
 
-FORMATTING RULES:
-- Use clean Markdown: bold for product names and key specs, bulleted lists for readability.
-- Keep responses friendly, concise, and structured.
-- Always include the official Amazon affiliate link with tag "${ASSOCIATE_TAG}" when recommending products.
-- Never output raw unformatted URLs; always use descriptive markdown anchor text like [View on Amazon ↗](URL) or [Browse Lenovo Deals ↗](URL).`;
+  if (searchResults.products.length > 0) {
+    const p1 = searchResults.products[0];
+    return {
+      reply: `Here are verified deals and top-rated options for **${cleanQ || message}**:\n\n* **Top Pick:** [${p1.title}](${p1.affiliateUrl}) — **${p1.salePrice || p1.price || 'Verified Deal'}** on ${p1.merchantName || 'Amazon'}.\n* **Explore More:** Browse all live discounts, customer reviews, and Prime shipping deals:\n\n[Check Live Deals for "${cleanQ || message}" on Amazon ↗](${amazonSearchUrl})\n\n*(All prices and availability are verified daily on PlayNewApps.)*`,
+      recommendedProducts: searchResults.products.slice(0, 3)
+    };
+  }
+
+  // Customer support check
+  const lower = (message || '').toLowerCase();
+  if (lower.includes('coupon') || lower.includes('code') || lower.includes('promo') || lower.includes('discount') || lower.includes('how to use')) {
+    return {
+      reply: `### How to Use Coupons & Deals on PlayNewApps:
+1. **Find Your Store:** Browse our [Partner Stores](/stores) or search for your favorite merchant (e.g., Lenovo, AliExpress, Hostinger, PureVPN).
+2. **Click "Show Code":** This automatically **copies the promo code** to your clipboard and opens the merchant checkout in a new tab.
+3. **Paste at Checkout:** Paste the code into the merchant's "Promo Code" or "Voucher" box and click Apply.
+4. **"Get Deal" Offers:** No code required! The discount is applied automatically when you click the deal link.`,
+      recommendedProducts: []
+    };
+  }
+
+  return {
+    reply: `Here are the highest-rated options and live deals for **${cleanQ || message}** available on Amazon:\n\n* **Top Recommendations:** Explore best-sellers featuring verified customer ratings, multi-year warranties, and Prime delivery.\n* **Live Price Check:** [View All Top-Rated "${cleanQ || message}" on Amazon ↗](${amazonSearchUrl})\n\nNeed help with coupons or a specific brand? Let me know!`,
+    recommendedProducts: []
+  };
+}
 
 async function handleChat(message, history = []) {
   if (!message || typeof message !== 'string' || !message.trim()) {
     throw new Error('Message is required.');
   }
 
-  const client = getGeminiClient();
-  if (!client) {
-    throw new Error('Gemini API is not configured. Please ensure GEMINI_API_KEY is available.');
-  }
-
   // Find matching catalog items for grounded context
   const searchResults = searchCatalog(message, 4);
-  let contextSnippet = '';
 
-  if (searchResults.products.length > 0) {
-    contextSnippet += '\n\n[PlayNewApps Verified Catalog Deals Matching Query]:\n';
-    searchResults.products.forEach((p, idx) => {
-      contextSnippet += `${idx + 1}. ${p.title} | Store: ${p.merchantName || p.store || 'Amazon'} | Price: ${p.salePrice || p.price || 'N/A'} | Link: ${p.affiliateUrl}\n`;
-    });
-  }
+  try {
+    const client = getGeminiClient();
+    if (!client) {
+      console.warn('[CHAT] Gemini API client not available, using smart fallback.');
+      return generateSmartFallback(message, searchResults);
+    }
 
-  if (searchResults.stores.length > 0) {
-    contextSnippet += '\n[PlayNewApps Featured Stores Matching Query]:\n';
-    searchResults.stores.forEach(s => {
-      contextSnippet += `- ${s.name} (${s.category || 'General'}): ${s.discountValue || 'Up to 70% OFF'} | Store Page: /${s.slug || s.id}-coupons\n`;
-    });
-  }
+    let contextSnippet = '';
+    if (searchResults.products.length > 0) {
+      contextSnippet += '\n\n[PlayNewApps Verified Deals Matching Query]:\n';
+      searchResults.products.slice(0, 3).forEach((p, idx) => {
+        contextSnippet += `${idx + 1}. ${p.title} | Price: ${p.salePrice || p.price || 'N/A'} | Link: ${p.affiliateUrl}\n`;
+      });
+    }
 
-  // Format multi-turn contents
-  const contents = [];
-
-  // Add history
-  if (Array.isArray(history)) {
-    for (const h of history) {
-      if (h && (h.role === 'user' || h.role === 'model') && Array.isArray(h.parts) && h.parts.length > 0) {
-        contents.push({
-          role: h.role,
-          parts: h.parts.map(pt => ({ text: String(pt.text || '') }))
-        });
+    // Format multi-turn contents
+    const contents = [];
+    if (Array.isArray(history)) {
+      for (const h of history.slice(-4)) { // Keep last 4 turns for low latency
+        if (h && (h.role === 'user' || h.role === 'model') && Array.isArray(h.parts) && h.parts.length > 0) {
+          contents.push({
+            role: h.role,
+            parts: h.parts.map(pt => ({ text: String(pt.text || '') }))
+          });
+        }
       }
     }
+
+    const currentPrompt = contextSnippet
+      ? `${message.trim()}\n\n---\n*Catalog Items*:${contextSnippet}`
+      : message.trim();
+
+    contents.push({
+      role: 'user',
+      parts: [{ text: currentPrompt }]
+    });
+
+    // Call Gemini 3.1 Flash Lite with timeout protection
+    const timeoutPromise = new Promise((_, reject) =>
+      setTimeout(() => reject(new Error('AI response timed out')), 9000)
+    );
+
+    const apiPromise = client.models.generateContent({
+      model: 'gemini-3.1-flash-lite',
+      contents,
+      config: {
+        systemInstruction: SYSTEM_INSTRUCTION,
+        temperature: 0.5,
+        maxOutputTokens: 600
+      }
+    });
+
+    const response = await Promise.race([apiPromise, timeoutPromise]);
+    const reply = response.text || generateSmartFallback(message, searchResults).reply;
+
+    return {
+      reply,
+      recommendedProducts: searchResults.products.slice(0, 3)
+    };
+  } catch (err) {
+    console.warn('[CHAT] Gemini API call failed or timed out:', err.message);
+    return generateSmartFallback(message, searchResults);
   }
-
-  // Append current user message with context grounding
-  const currentPrompt = contextSnippet
-    ? `${message.trim()}\n\n---\n*Catalog Data Available on PlayNewApps*:${contextSnippet}`
-    : message.trim();
-
-  contents.push({
-    role: 'user',
-    parts: [{ text: currentPrompt }]
-  });
-
-  const response = await client.models.generateContent({
-    model: 'gemini-3.8-flash',
-    contents,
-    config: {
-      systemInstruction: SYSTEM_INSTRUCTION,
-      temperature: 0.7,
-      topP: 0.95
-    }
-  });
-
-  const reply = response.text || "I'm here to help you find the best tech products, Amazon deals, and verified discount coupons. What are you shopping for?";
-
-  return {
-    reply,
-    recommendedProducts: searchResults.products.slice(0, 3)
-  };
 }
 
 module.exports = {

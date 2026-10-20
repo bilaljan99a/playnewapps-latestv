@@ -81,5 +81,10 @@
         { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
       ]
     }
-  ]
+  ],
+  "functions": {
+    "api/*.js": {
+      "maxDuration": 15
+    }
+  }
 }
