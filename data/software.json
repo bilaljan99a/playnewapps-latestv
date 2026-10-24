@@ -1,5 +1,122 @@
 [
   {
+    "id": "cursor-ai",
+    "name": "Cursor AI",
+    "developer": "Anysphere",
+    "category": "AI Code Editor & IDE",
+    "rating": 4.9,
+    "reviewCount": 19800,
+    "summary": "The AI-native code editor forked from VS Code, featuring multi-file Composer agents, codebase semantic indexing, and next-edit tab predictions.",
+    "logo": "/assets/images/brands/cursor-logo.svg",
+    "heroImage": "/assets/images/brands/cursor-logo.svg",
+    "reviewUrl": "/cursor-ai-review",
+    "affiliateUrl": "https://www.cursor.com",
+    "downloadUrl": "https://www.cursor.com",
+    "pricing": {
+      "free": "$0/mo (2,000 completions)",
+      "subscription": "From $20.00/mo"
+    },
+    "pros": [
+      "Agentic Composer edits multiple files across projects simultaneously",
+      "100% compatible with existing VS Code extensions and settings",
+      "Cursor Tab predicts multi-line and multi-location edits",
+      "Strict Privacy Mode ensures zero code retention for training"
+    ],
+    "cons": [
+      "500 fast frontier model requests per month on Pro tier",
+      "Requires standalone IDE rather than VS Code extension plugin"
+    ],
+    "title": "Cursor AI Review 2026",
+    "icon": "/assets/images/brands/cursor-logo.svg",
+    "image": "/assets/images/brands/cursor-logo.svg",
+    "description": "In-depth Cursor AI review for 2026. Explore Cursor Composer agent, Cursor Tab next-action prediction, codebase indexing, and pricing.",
+    "url": "cursor-ai-review.html",
+    "categoryId": "pc",
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Linux"
+    ]
+  },
+  {
+    "id": "perplexity-ai",
+    "name": "Perplexity AI",
+    "developer": "Perplexity Inc.",
+    "category": "AI Search & Research Engine",
+    "rating": 4.9,
+    "reviewCount": 24100,
+    "summary": "The revolutionary conversational answer engine that pairs frontier AI models with live web citations and multi-step Deep Research.",
+    "logo": "/assets/images/brands/perplexity-logo.svg",
+    "heroImage": "/assets/images/brands/perplexity-logo.svg",
+    "reviewUrl": "/perplexity-ai-review",
+    "affiliateUrl": "https://www.perplexity.ai",
+    "downloadUrl": "https://www.perplexity.ai",
+    "pricing": {
+      "free": "$0/mo (Unlimited Search)",
+      "subscription": "From $20.00/mo"
+    },
+    "pros": [
+      "Ad-free conversational search with real-time numbered citations",
+      "Frontier model switching: Claude 3.7 Sonnet, GPT-4o, DeepSeek-R1",
+      "Deep Research mode analyzes 120+ web sources autonomously",
+      "Perplexity Pages for instant published research reports"
+    ],
+    "cons": [
+      "Deep Research runs can take 3-6 minutes",
+      "Less suited for pure open-ended fiction writing"
+    ],
+    "title": "Perplexity AI Review 2026",
+    "icon": "/assets/images/brands/perplexity-logo.svg",
+    "image": "/assets/images/brands/perplexity-logo.svg",
+    "description": "Comprehensive Perplexity AI review for 2026. Explore Perplexity Pro, Deep Research, multi-model switching, and pricing.",
+    "url": "perplexity-ai-review.html",
+    "categoryId": "productivity",
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "macOS"
+    ]
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "developer": "Midjourney Inc.",
+    "category": "AI Image & Art Generator",
+    "rating": 4.9,
+    "reviewCount": 18400,
+    "summary": "The premier AI image generator renowned for hyper-realistic renders, artistic cinematic lighting, and creative visual fidelity.",
+    "logo": "/assets/images/brands/midjourney-logo.svg",
+    "heroImage": "/assets/images/brands/midjourney-logo.svg",
+    "reviewUrl": "/midjourney-review",
+    "affiliateUrl": "https://www.midjourney.com",
+    "downloadUrl": "https://www.midjourney.com",
+    "pricing": {
+      "free": "No Free Tier",
+      "subscription": "From $10.00/mo"
+    },
+    "pros": [
+      "Unrivaled photorealism and cinematic aesthetic lighting",
+      "Nuanced skin texture and volumetric rendering in v7",
+      "Style Reference (--sref) and Character Consistency (--cref)",
+      "Standalone Web Studio with inpainting and outpainting canvas"
+    ],
+    "cons": [
+      "No ongoing free trial plan",
+      "Stealth mode requires $60/mo Pro plan"
+    ],
+    "title": "Midjourney Review 2026",
+    "icon": "/assets/images/brands/midjourney-logo.svg",
+    "image": "/assets/images/brands/midjourney-logo.svg",
+    "description": "In-depth Midjourney review for 2026. Explore Midjourney v7 photorealism, web canvas editor, prompt parameters, pricing tiers, and comparisons.",
+    "url": "midjourney-review.html",
+    "categoryId": "design",
+    "platforms": [
+      "Web",
+      "Discord"
+    ]
+  },
+  {
     "id": "windows-11",
     "title": "Windows 11 Review (2026): 24H2 Architecture, DirectStorage & Copilot AI",
     "name": "Microsoft Windows 11",
@@ -37,7 +154,7 @@
       "PC",
       "Desktop"
     ],
-    "updatedAt": "2026-09-01",
+    "updatedAt": "2026-10-23T12:00:00.000Z",
     "isFeatured": true,
     "isTrending": true,
     "badges": [
@@ -51,7 +168,10 @@
       "directstorage",
       "copilot ai",
       "pc"
-    ]
+    ],
+    "featured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "avast-antivirus",
@@ -91,7 +211,13 @@
       "macOS",
       "Android",
       "iOS"
-    ]
+    ],
+    "featured": true,
+    "isFeatured": true,
+    "isTrending": true,
+    "isTop": true,
+    "priority": 1,
+    "updatedAt": "2026-10-23T12:00:00.000Z"
   },
   {
     "id": "elevenlabs",
@@ -168,7 +294,13 @@
       "PC",
       "macOS",
       "Windows"
-    ]
+    ],
+    "featured": true,
+    "isFeatured": true,
+    "isTrending": true,
+    "isTop": true,
+    "priority": 1,
+    "updatedAt": "2026-10-23T12:00:00.000Z"
   },
   {
     "id": "slidesgo-review",
@@ -217,7 +349,7 @@
       "Chrome Extension"
     ],
     "license": "Freemium / FlowGPT Pro",
-    "updatedAt": "2026-08-07",
+    "updatedAt": "2026-10-23T12:00:00.000Z",
     "badges": [
       "#1 AI Prompt Library 2026",
       "Editor Choice",
@@ -228,7 +360,10 @@
     "affiliateUrl": "https://flowgpt.com/?utm_source=playnewapps&utm_medium=review",
     "reviewUrl": "/flowgpt-review",
     "summary": "FlowGPT is the world's largest community-driven AI prompt platform. Featuring over 100,000 prompts, custom AI characters, real-time prompt variable testing, multi-model playgrounds (ChatGPT 4o, Claude 3.5 Sonnet, Gemini 1.5, Midjourney V6), and lucrative creator bounty programs.",
-    "video": "https://www.youtube.com/embed/gP1qq-36J_A"
+    "video": "https://www.youtube.com/embed/gP1qq-36J_A",
+    "featured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "box-cloud-storage-review",
@@ -248,7 +383,7 @@
       "Web"
     ],
     "license": "Free Trial / Business Subscriptions",
-    "updatedAt": "2026-08-07",
+    "updatedAt": "2026-10-23T12:00:00.000Z",
     "badges": [
       "Best Enterprise Cloud 2026",
       "Editor Choice",
@@ -259,7 +394,10 @@
     "affiliateUrl": "https://bjpql.com/g/r9oyizicg3b68b264a7687b97effec/?ulp=https%3A%2F%2Fwww.box.com%2Fen-gb%2Fpricing%3F",
     "reviewUrl": "/box-cloud-storage-review",
     "summary": "Box is the AI-powered Intelligent Content Management Platform built for businesses, teams, and enterprises. Featuring Box AI, Box Drive desktop streaming, Box Sign native e-signatures, Box Notes, Box Canvas, workflow automation, and 1500+ integrations with enterprise security and regulatory compliance.",
-    "video": "https://players.brightcove.net/6232633676001/bVxoAYQdS_default/index.html?videoId=6338274428112"
+    "video": "https://players.brightcove.net/6232633676001/bVxoAYQdS_default/index.html?videoId=6338274428112",
+    "featured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "wondershare-drfone-review",
@@ -313,7 +451,7 @@
       "Fire TV"
     ],
     "license": "Premium / Freemium Trial",
-    "updatedAt": "2026-07-30",
+    "updatedAt": "2026-10-23T12:00:00.000Z",
     "badges": [
       "Best Security 2026",
       "Editor Choice",
@@ -488,7 +626,10 @@
     "image": "/assets/images/brands/nordvpn.svg",
     "reviewUrl": "/nordvpn-review",
     "url": "review.html?id=nordvpn",
-    "reviewCount": 15400
+    "reviewCount": 15400,
+    "featured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "grammarly",
@@ -682,7 +823,7 @@
       "Android"
     ],
     "license": "Freemium / Paid",
-    "updatedAt": "2026-08-04",
+    "updatedAt": "2026-10-23T12:00:00.000Z",
     "badges": [
       "Editor Choice 2026",
       "AI Powered 2.0",
@@ -830,7 +971,10 @@
     "image": "/assets/images/brands/filmora.svg",
     "reviewUrl": "/wondershare-filmora-review",
     "url": "wondershare-filmora-review.html",
-    "reviewCount": 15400
+    "reviewCount": 15400,
+    "featured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "wps-office",
@@ -850,7 +994,7 @@
       "Linux"
     ],
     "license": "Freemium / Premium",
-    "updatedAt": "2026-08-05",
+    "updatedAt": "2026-10-23T12:00:00.000Z",
     "badges": [
       "Editor Choice 2026",
       "Best MS Office Alternative",
@@ -928,7 +1072,10 @@
     "image": "/assets/images/brands/wps-office.svg",
     "reviewUrl": "/wps-office-review",
     "url": "wps-office-review.html",
-    "reviewCount": 15400
+    "reviewCount": 15400,
+    "featured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "wondershare-pdfelement",
@@ -1422,6 +1569,12 @@
       "macOS",
       "iOS",
       "Android"
-    ]
+    ],
+    "featured": true,
+    "isFeatured": true,
+    "isTrending": true,
+    "isTop": true,
+    "priority": 1,
+    "updatedAt": "2026-10-23T12:00:00.000Z"
   }
 ]

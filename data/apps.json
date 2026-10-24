@@ -15,7 +15,7 @@
       "ChromeOS"
     ],
     "license": "One-time Purchase ($29.99)",
-    "updatedAt": "2026-05-15",
+    "updatedAt": "2026-10-23T12:00:00.000Z",
     "badges": [
       "Verified Review",
       "Editor's Choice"
@@ -187,7 +187,10 @@
         "answer": "Yes. LumaFusion features full 5-point color grading tools, keyframable color wheels, and native support for importing custom .cube or .3dl color lookup tables (LUTs)."
       }
     ],
-    "reviewUrl": "/lumafusion-pro-review"
+    "reviewUrl": "/lumafusion-pro-review",
+    "featured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "capcut-pro",
@@ -207,7 +210,7 @@
       "Web"
     ],
     "license": "Freemium ($7.99/mo Pro)",
-    "updatedAt": "2026-07-28",
+    "updatedAt": "2026-10-23T12:00:00.000Z",
     "badges": [
       "Editor Choice",
       "Trending",
@@ -383,7 +386,10 @@
         "answer": "Standard CapCut sound effects and templates are designed for social media sharing on TikTok, YouTube, and Instagram. CapCut Pro highlights commercially licensed royalty-free assets specifically for brand promotion."
       }
     ],
-    "reviewUrl": "/capcut-pro-review"
+    "reviewUrl": "/capcut-pro-review",
+    "featured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "kinemaster",
@@ -590,7 +596,7 @@
       "iOS"
     ],
     "license": "One-time Purchase ($5.99)",
-    "updatedAt": "2026-05-20",
+    "updatedAt": "2026-10-23T12:00:00.000Z",
     "badges": [
       "Verified Review",
       "Editor's Choice",
@@ -743,6 +749,9 @@
         "answer": "Yes. Every artwork created in Procreate Pocket automatically records a full 4K time-lapse video of your drawing workflow that can be exported and shared online."
       }
     ],
-    "reviewUrl": "/procreate-review"
+    "reviewUrl": "/procreate-review",
+    "featured": true,
+    "isTop": true,
+    "priority": 1
   }
 ]

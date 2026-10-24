@@ -724,7 +724,11 @@
         "question": "How does ElevenLabs Voice Cloning work?",
         "answer": "Instant Voice Cloning (IVC) requires just 1 to 2 minutes of clean spoken audio to synthesize a matching voice. Professional Voice Cloning (PVC) allows users to upload 30+ minutes of studio recordings for deep neural training that is virtually indistinguishable from the real speaker."
       }
-    ]
+    ],
+    "featured": true,
+    "isFeatured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "1password",
@@ -2007,7 +2011,11 @@
         "question": "What is the warranty on Lenovo laptops and PCs?",
         "answer": "All new Lenovo computers come with a standard 1-year limited warranty, with optional Premier Support and accidental damage protection upgrades available."
       }
-    ]
+    ],
+    "featured": true,
+    "isFeatured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "forcedrop",
@@ -2114,7 +2122,11 @@
         "question": "How many devices can I connect to PureVPN simultaneously?",
         "answer": "A single PureVPN subscription protects up to 10 simultaneous device connections across Windows, macOS, Android, iOS, Linux, Firestick, and routers."
       }
-    ]
+    ],
+    "featured": true,
+    "isFeatured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "vectorstock",
@@ -2546,7 +2558,11 @@
         "question": "Does Retouch4me offer annual subscription discounts?",
         "answer": "Yes! Retouch4me Annual Plans save you up to 31% compared to monthly subscriptions across Starter ($20/mo), Pro ($35/mo), and Business ($90/mo) tiers."
       }
-    ]
+    ],
+    "featured": true,
+    "isFeatured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "hidemyname",
@@ -2705,7 +2721,11 @@
       }
     ],
     "storeUrl": "/aliexpress-coupons",
-    "url": "/aliexpress-coupons"
+    "url": "/aliexpress-coupons",
+    "featured": true,
+    "isFeatured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "wps-office",
@@ -2769,7 +2789,11 @@
     "keyFeatures": "Key features include built-in AI writing and data analysis assistants, OCR image-to-text conversion, PDF merging and format converting tools, extensive template libraries for resumes and pitch decks, and secure cloud file backup.",
     "buyingGuide": "Maximize your subscription value by opting for WPS Pro annual plans, which save up to 70% compared to monthly payments. Standard users can take advantage of the generous Free Edition for everyday document reading and editing.",
     "seoTitle": "WPS Office Promo Codes & Deals (2026)",
-    "storeUrl": "/wps-office-review"
+    "storeUrl": "/wps-office-review",
+    "featured": true,
+    "isFeatured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "nordpass",
@@ -3035,7 +3059,11 @@
         "content": "PlayNewApps is your premier destination for verified software discounts, cybersecurity deals, and active promotional codes. Our dedicated deal curation team continuously tests and verifies every NordVPN coupon offer to ensure guaranteed savings at checkout. By accessing NordVPN through PlayNewApps, you get direct access to exclusive 75% off 2-year promotional packages, bonus subscription months, transparent plan breakdowns, and official affiliate links with zero hidden fees or misleading claims. Secure your digital life while saving money by getting your NordVPN subscription through PlayNewApps."
       }
     ],
-    "storeUrl": "/nordvpn-coupons"
+    "storeUrl": "/nordvpn-coupons",
+    "featured": true,
+    "isFeatured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "grammarly",
@@ -3298,7 +3326,11 @@
         "answer": "Applying a Hostinger promo code is simple and quick. Select your desired hosting plan on Hostinger's website and proceed to the checkout cart page. In the order summary section, click the link that reads 'Have a coupon code?'. Enter your active promo code (such as verified voucher) into the input box and click 'Apply' to instantly receive an additional 10% discount on your entire order total."
       }
     ],
-    "storeUrl": "/hostinger-coupons"
+    "storeUrl": "/hostinger-coupons",
+    "featured": true,
+    "isFeatured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "adobe",
@@ -3584,7 +3616,11 @@
         "answer": "Yes! Canva features powerful file import compatibility. You can drag and drop Adobe Photoshop (.psd), Illustrator (.ai), and PDF files directly into the Canva editor canvas. Canva automatically converts text boxes, vector shapes, images, and color layers into fully editable Canva design elements, allowing you to modify fonts, swap images, and apply Magic Studio AI tools to existing imported documents."
       }
     ],
-    "storeUrl": "/canva-review"
+    "storeUrl": "/canva-review",
+    "featured": true,
+    "isFeatured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "envato",
@@ -4134,7 +4170,11 @@
         "content": "PlayNewApps is your trusted destination for verified software deals, promo codes, and tech discounts. Our dedicated editorial team continuously verifies, tests, and updates coupon offers for leading creative and productivity software brands like Wondershare. When you access Wondershare through PlayNewApps, you receive direct access to official promo codes (such as FILMORA20, PDFELEM15, and RECOVER10), transparent plan comparisons, and direct affiliate links to official Wondershare checkout pages without third-party redirection risks or hidden fees. Save time and money on Wondershare software subscriptions by shopping through PlayNewApps."
       }
     ],
-    "storeUrl": "/wondershare-filmora-coupons"
+    "storeUrl": "/wondershare-filmora-coupons",
+    "featured": true,
+    "isFeatured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "war-thunder",
@@ -4984,7 +5024,11 @@
         "answer": "Yes, Box offers an Individual Free plan with 10 GB storage and 5 Box Sign e-signatures per month."
       }
     ],
-    "storeUrl": "/box"
+    "storeUrl": "/box",
+    "featured": true,
+    "isFeatured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "applicantally",
@@ -6445,7 +6489,10 @@
       "Fashion"
     ],
     "category": "shopping",
-    "featured": true
+    "featured": true,
+    "isFeatured": true,
+    "isTop": true,
+    "priority": 1
   },
   {
     "id": "planet-of-hotels",
