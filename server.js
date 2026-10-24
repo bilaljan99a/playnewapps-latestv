@@ -509,7 +509,10 @@ const cleanRoutes = [
   { route: '/jetpac-esim', file: 'jetpac-esim-coupons.html' },
   { route: '/way', file: 'way.html' },
   { route: '/way-com', file: 'way.html' },
-  { route: '/wps-office', file: 'wps-office-review.html' }
+  { route: '/wps-office', file: 'wps-office-review.html' },
+  { route: '/1password-review', file: '1password-review.html' },
+  { route: '/nordpass-review', file: 'nordpass-review.html' },
+  { route: '/adguard-review', file: 'adguard-review.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {
