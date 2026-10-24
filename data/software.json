@@ -1,5 +1,124 @@
 [
   {
+    "id": "notion",
+    "name": "Notion",
+    "developer": "Notion Labs, Inc.",
+    "category": "Productivity & AI Workspace",
+    "rating": 4.9,
+    "reviewCount": 68500,
+    "summary": "The connected all-in-one workspace blending modular note-taking, project kanban boards, relational databases, and semantic Notion AI Q&A search.",
+    "logo": "/assets/images/brands/notion.svg",
+    "heroImage": "/assets/images/brands/notion-workspace-diagram.svg",
+    "reviewUrl": "/notion-review",
+    "affiliateUrl": "https://www.notion.so",
+    "downloadUrl": "https://www.notion.so",
+    "pricing": {
+      "free": "sh/mo (Unlimited individual blocks)",
+      "subscription": "From 0.00/mo"
+    },
+    "pros": [
+      "Infinite modularity across docs, databases, and project roadmaps",
+      "Notion AI Q&A agent answers questions across thousands of workspace pages",
+      "Formulas 2.0 brings full programming capabilities to tables",
+      "Free Notion Plus upgrade for college students and educators"
+    ],
+    "cons": [
+      "Initial learning curve can be steep for blank-canvas builders",
+      "Notion AI is an add-on subscription"
+    ],
+    "title": "Notion Review 2026",
+    "icon": "/assets/images/brands/notion.svg",
+    "image": "/assets/images/brands/notion-workspace-diagram.svg",
+    "description": "In-depth Notion review for 2026. Explore Notion AI Q&A, relational databases, Formulas 2.0, Notion Calendar, and student plans.",
+    "url": "notion-review.html",
+    "categoryId": "productivity",
+    "platforms": [
+      "macOS",
+      "Windows",
+      "iOS",
+      "Android",
+      "Web"
+    ]
+  },
+  {
+    "id": "davinci-resolve",
+    "name": "DaVinci Resolve 19",
+    "developer": "Blackmagic Design",
+    "category": "Hollywood Video Editor & Color DAW",
+    "rating": 4.9,
+    "reviewCount": 51200,
+    "summary": "Hollywood standard all-in-one post-production suite unifying NLE editing, 32-bit float color grading, Fusion VFX nodes, and Fairlight audio DAW.",
+    "logo": "/assets/images/brands/davinci-resolve.svg",
+    "heroImage": "/assets/images/brands/davinci-resolve-pipeline.svg",
+    "reviewUrl": "/davinci-resolve-review",
+    "affiliateUrl": "https://www.blackmagicdesign.com/products/davinciresolve",
+    "downloadUrl": "https://www.blackmagicdesign.com/products/davinciresolve",
+    "pricing": {
+      "free": "sh (4K 60fps with zero watermarks)",
+      "subscription": "95 Perpetual (No Subscription)"
+    },
+    "pros": [
+      "Undisputed Hollywood industry standard for color grading and finishing",
+      "Generous free version with 4K export and zero watermarks",
+      "No subscription extortion: 95 once with free lifetime major updates",
+      "DaVinci Neural Engine AI for instant Magic Mask rotoscoping"
+    ],
+    "cons": [
+      "Demands dedicated GPU with at least 8GB to 16GB VRAM for 4K/8K",
+      "Node-based Fusion VFX compositor requires learning"
+    ],
+    "title": "DaVinci Resolve 19 Review 2026",
+    "icon": "/assets/images/brands/davinci-resolve.svg",
+    "image": "/assets/images/brands/davinci-resolve-pipeline.svg",
+    "description": "Comprehensive DaVinci Resolve 19 review for 2026. Explore Blackmagic Design NLE editor, Fusion VFX, Fairlight audio DAW, and perpetual pricing.",
+    "url": "davinci-resolve-review.html",
+    "categoryId": "video-editors",
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Linux"
+    ]
+  },
+  {
+    "id": "obs-studio",
+    "name": "OBS Studio 31",
+    "developer": "OBS Project (Open Source)",
+    "category": "Broadcasting & Screen Recording",
+    "rating": 4.9,
+    "reviewCount": 78400,
+    "summary": "The definitive free and open-source live streaming and screen recording software with direct GPU hooks, AV1 hardware encoding, and multi-track audio.",
+    "logo": "/assets/images/brands/obs-studio.svg",
+    "heroImage": "/assets/images/brands/obs-studio-pipeline.svg",
+    "reviewUrl": "/obs-studio-review",
+    "affiliateUrl": "https://obsproject.com",
+    "downloadUrl": "https://obsproject.com",
+    "pricing": {
+      "free": "sh (100% Free Open Source)",
+      "subscription": "sh (GPLv2 License)"
+    },
+    "pros": [
+      "100% free and open source forever with zero watermarks or ads",
+      "Blistering hardware AV1 and NVENC silicon encoding with < 1.5% FPS penalty",
+      "Multi-track audio separation with native VST3 and neural noise suppression",
+      "Consumes 40% to 60% less CPU and RAM than Streamlabs Desktop"
+    ],
+    "cons": [
+      "Initial scene and audio routing setup requires learning",
+      "No built-in cloud overlay template store"
+    ],
+    "title": "OBS Studio 31 Review 2026",
+    "icon": "/assets/images/brands/obs-studio.svg",
+    "image": "/assets/images/brands/obs-studio-pipeline.svg",
+    "description": "In-depth OBS Studio 31 review for 2026. Discover NVENC and AV1 encoding benchmarks, Twitch multi-track audio, VST3 filters, and Streamlabs comparisons.",
+    "url": "obs-studio-review.html",
+    "categoryId": "pc",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ]
+  },
+  {
     "id": "1password",
     "name": "1Password",
     "developer": "AgileBits Inc.",

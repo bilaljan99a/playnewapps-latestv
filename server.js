@@ -512,7 +512,10 @@ const cleanRoutes = [
   { route: '/wps-office', file: 'wps-office-review.html' },
   { route: '/1password-review', file: '1password-review.html' },
   { route: '/nordpass-review', file: 'nordpass-review.html' },
-  { route: '/adguard-review', file: 'adguard-review.html' }
+  { route: '/adguard-review', file: 'adguard-review.html' },
+  { route: '/notion-review', file: 'notion-review.html' },
+  { route: '/davinci-resolve-review', file: 'davinci-resolve-review.html' },
+  { route: '/obs-studio-review', file: 'obs-studio-review.html' }
 ];
 
 cleanRoutes.forEach(({ route, file }) => {
