@@ -5,9 +5,10 @@
  *   (1) the CURRENT tab navigates to the affiliate URL, and
  *   (2) a NEW tab opens on the same coupon page with ?pna_code=<code>,
  *       and browser focus switches to that new tab, where a modal shows
- *       the code (COPY button copies it; the card behind shows the code
- *       revealed inline). No auto-copy on the first click — copying happens
- *       only via the modal's COPY button, exactly like RetailMeNot.
+ *       the code (COPY button copies it and also opens the affiliate link
+ *       in a new tab — ShoppingSpout behavior, user-chosen 2026-11-03; the
+ *       card behind shows the code revealed inline). No auto-copy on the
+ *       first click — copying happens only via the modal's COPY button.
  * Closing the modal drops ?pna_code from the URL, so a fresh load shows
  * all cards masked again (session-tied state, like RetailMeNot).
  * Clicking an already-revealed control re-opens the modal only.
@@ -137,6 +138,12 @@ function pnaParseReveal(onclick) {
       var code = document.getElementById('pna-modal-code').textContent;
       pnaCopy(code);
       this.textContent = 'COPIED';
+      // ShoppingSpout behavior (user-chosen 2026-11-03): copying also
+      // fires the affiliate link in a new tab.
+      var store = document.getElementById('pna-modal-continue');
+      if (store && store.href) {
+        try { window.open(store.href, '_blank', 'noopener,noreferrer'); } catch (e) {}
+      }
     });
     return modal;
   }
