@@ -155,46 +155,13 @@
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
 
     <!-- Global Top Header -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Logo -->
-                <a href="/" class="flex items-center gap-3 group">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto">
-                    <span class="font-extrabold text-xl text-slate-900 group-hover:text-purple-600 transition-colors">PlayNewApps</span>
-                </a>
-                <!-- Navigation -->
-                <nav class="hidden md:flex items-center gap-6">
-                    <a href="/stores" class="text-sm font-semibold text-slate-700 hover:text-purple-600 transition-colors">All Stores</a>
-                    <a href="/category?id=electronics" class="text-sm font-semibold text-slate-700 hover:text-purple-600 transition-colors">Electronics</a>
-                    <a href="/products" class="text-sm font-semibold text-slate-700 hover:text-purple-600 transition-colors">Products</a>
-                    <a href="/coupon" class="text-sm font-semibold text-slate-700 hover:text-purple-600 transition-colors">Coupons</a>
-                    <a href="/reviews" class="text-sm font-semibold text-slate-700 hover:text-purple-600 transition-colors">Reviews</a>
-                </nav>
-                <!-- Search Box -->
-                <div class="relative w-64 hidden sm:block">
-                    <form action="/" method="GET" class="m-0 p-0" onsubmit="if(!this.q.value.trim()) return false;">
-                        <input type="text" name="q" id="global-search" placeholder="Search stores &amp; offers..." class="w-full bg-slate-100 text-xs text-slate-800 pl-9 pr-4 py-2 rounded-xl border border-slate-200 focus:outline-none focus:border-purple-500 focus:bg-white transition-all">
-                        <button type="submit" class="absolute left-2.5 top-2 text-slate-400 hover:text-purple-600 bg-transparent border-0 p-0 cursor-pointer flex items-center" aria-label="Search">
-                            <span class="material-icons-round text-base">search</span>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Content Container -->
     <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-5">
         
         <!-- Breadcrumbs -->
-        <nav class="flex items-center gap-2 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-slate-800">Home</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <a href="/stores" class="hover:text-slate-800">Stores</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <span class="text-slate-900 font-semibold">SUNSKY</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">SUNSKY</span> </nav>
 
         <!-- STRICT RULE Top Header Section (Clean & Minimalist: ONLY Logo Box + H1 Title) -->
         <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm mb-6 flex flex-col sm:flex-row items-center gap-6">
@@ -202,7 +169,7 @@
                 <img src="/assets/images/brands/sunsky.svg" alt="SUNSKY Official Logo" class="max-h-full max-w-full object-contain block" width="220" height="70" loading="eager">
             </div>
             <div class="text-center sm:text-left">
-                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">SUNSKY Coupon Codes &amp; Wholesale Discount Offers (2026)</h1>
+                <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">SUNSKY Coupon Codes &amp; Wholesale Discount Offers (2026)</h1> </div> </section>
             </div>
         </div>
 
@@ -258,9 +225,9 @@
 
                 <!-- Center: Info -->
                 <div class="flex-grow">
-                    <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com/product/default!link.do?itemNo=EDA007027104A" target="_blank" rel="noopener sponsored">15% OFF iPhone 16 Pro Max / Pro / Plus Lichi Texture PU Leather Cases</a>
-                    </h3>
+                    </h2>
                     <div class="flex flex-wrap items-center gap-3 mt-2 text-xs text-slate-500">
                         <span class="inline-flex items-center gap-1 text-emerald-600 font-medium">
                             <span class="material-icons-round text-sm">thumb_up</span>
@@ -279,7 +246,7 @@
          <div class="px-3 py-2 bg-slate-100 border border-slate-200 rounded-lg text-xs font-mono font-bold tracking-widest text-slate-500 select-none">
            ••••••••
          </div>
-         <button onclick="openCouponModal('deal-sunsky-1', 'EDA0070271', 'https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com/product/default!link.do?itemNo=EDA007027104A')" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white text-xs font-bold rounded-lg shadow-sm hover:shadow transition-all whitespace-nowrap cursor-pointer">
+         <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="openCouponModal('deal-sunsky-1', 'EDA0070271', 'https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com/product/default!link.do?itemNo=EDA007027104A')" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white text-xs font-bold rounded-lg shadow-sm hover:shadow transition-all whitespace-nowrap cursor-pointer">
            <span>Show Code</span>
            <span class="material-icons-round text-sm">content_copy</span>
          </button>
@@ -328,9 +295,9 @@
 
                 <!-- Center: Info -->
                 <div class="flex-grow">
-                    <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com/product/default!link.do?itemNo=EDA007027201D" target="_blank" rel="noopener sponsored">15% OFF Google Pixel 9 Pro XL & Pixel 9 Hybrid Ring Kickstand Shockproof Cases</a>
-                    </h3>
+                    </h2>
                     <div class="flex flex-wrap items-center gap-3 mt-2 text-xs text-slate-500">
                         <span class="inline-flex items-center gap-1 text-emerald-600 font-medium">
                             <span class="material-icons-round text-sm">thumb_up</span>
@@ -349,7 +316,7 @@
          <div class="px-3 py-2 bg-slate-100 border border-slate-200 rounded-lg text-xs font-mono font-bold tracking-widest text-slate-500 select-none">
            ••••••••
          </div>
-         <button onclick="openCouponModal('deal-sunsky-2', 'EDA0070272', 'https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com/product/default!link.do?itemNo=EDA007027201D')" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white text-xs font-bold rounded-lg shadow-sm hover:shadow transition-all whitespace-nowrap cursor-pointer">
+         <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="openCouponModal('deal-sunsky-2', 'EDA0070272', 'https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com/product/default!link.do?itemNo=EDA007027201D')" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white text-xs font-bold rounded-lg shadow-sm hover:shadow transition-all whitespace-nowrap cursor-pointer">
            <span>Show Code</span>
            <span class="material-icons-round text-sm">content_copy</span>
          </button>
@@ -398,9 +365,9 @@
 
                 <!-- Center: Info -->
                 <div class="flex-grow">
-                    <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com/product/default!link.do?itemNo=EDA007027301A" target="_blank" rel="noopener sponsored">15% OFF iPhone 16 Series Black Frame Two-Color Calf Texture PU Cases</a>
-                    </h3>
+                    </h2>
                     <div class="flex flex-wrap items-center gap-3 mt-2 text-xs text-slate-500">
                         <span class="inline-flex items-center gap-1 text-emerald-600 font-medium">
                             <span class="material-icons-round text-sm">thumb_up</span>
@@ -419,7 +386,7 @@
          <div class="px-3 py-2 bg-slate-100 border border-slate-200 rounded-lg text-xs font-mono font-bold tracking-widest text-slate-500 select-none">
            ••••••••
          </div>
-         <button onclick="openCouponModal('deal-sunsky-3', 'EDA0070273', 'https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com/product/default!link.do?itemNo=EDA007027301A')" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white text-xs font-bold rounded-lg shadow-sm hover:shadow transition-all whitespace-nowrap cursor-pointer">
+         <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="openCouponModal('deal-sunsky-3', 'EDA0070273', 'https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com/product/default!link.do?itemNo=EDA007027301A')" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white text-xs font-bold rounded-lg shadow-sm hover:shadow transition-all whitespace-nowrap cursor-pointer">
            <span>Show Code</span>
            <span class="material-icons-round text-sm">content_copy</span>
          </button>
@@ -468,9 +435,9 @@
 
                 <!-- Center: Info -->
                 <div class="flex-grow">
-                    <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com/product/default!link.do?itemNo=EDA007027401C" target="_blank" rel="noopener sponsored">15% OFF Google Pixel 9 Pro XL & Pixel 9 Skin-Feel MagSafe Magnetic Cases</a>
-                    </h3>
+                    </h2>
                     <div class="flex flex-wrap items-center gap-3 mt-2 text-xs text-slate-500">
                         <span class="inline-flex items-center gap-1 text-emerald-600 font-medium">
                             <span class="material-icons-round text-sm">thumb_up</span>
@@ -489,7 +456,7 @@
          <div class="px-3 py-2 bg-slate-100 border border-slate-200 rounded-lg text-xs font-mono font-bold tracking-widest text-slate-500 select-none">
            ••••••••
          </div>
-         <button onclick="openCouponModal('deal-sunsky-4', 'EDA0070274', 'https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com/product/default!link.do?itemNo=EDA007027401C')" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white text-xs font-bold rounded-lg shadow-sm hover:shadow transition-all whitespace-nowrap cursor-pointer">
+         <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="openCouponModal('deal-sunsky-4', 'EDA0070274', 'https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com/product/default!link.do?itemNo=EDA007027401C')" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white text-xs font-bold rounded-lg shadow-sm hover:shadow transition-all whitespace-nowrap cursor-pointer">
            <span>Show Code</span>
            <span class="material-icons-round text-sm">content_copy</span>
          </button>
@@ -538,9 +505,9 @@
 
                 <!-- Center: Info -->
                 <div class="flex-grow">
-                    <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com/product/default!link.do?itemNo=TBD0605166901A" target="_blank" rel="noopener sponsored">15% OFF Woodturning Pen Mandrel Collet Lathe Turning Clamping Tool</a>
-                    </h3>
+                    </h2>
                     <div class="flex flex-wrap items-center gap-3 mt-2 text-xs text-slate-500">
                         <span class="inline-flex items-center gap-1 text-emerald-600 font-medium">
                             <span class="material-icons-round text-sm">thumb_up</span>
@@ -559,7 +526,7 @@
          <div class="px-3 py-2 bg-slate-100 border border-slate-200 rounded-lg text-xs font-mono font-bold tracking-widest text-slate-500 select-none">
            ••••••••
          </div>
-         <button onclick="openCouponModal('deal-sunsky-5', 'TBD06051669', 'https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com/product/default!link.do?itemNo=TBD0605166901A')" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white text-xs font-bold rounded-lg shadow-sm hover:shadow transition-all whitespace-nowrap cursor-pointer">
+         <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="openCouponModal('deal-sunsky-5', 'TBD06051669', 'https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com/product/default!link.do?itemNo=TBD0605166901A')" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white text-xs font-bold rounded-lg shadow-sm hover:shadow transition-all whitespace-nowrap cursor-pointer">
            <span>Show Code</span>
            <span class="material-icons-round text-sm">content_copy</span>
          </button>
@@ -608,9 +575,9 @@
 
                 <!-- Center: Info -->
                 <div class="flex-grow">
-                    <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com/marketing/newArrivals" target="_blank" rel="noopener sponsored">Up to 25% OFF Trending New Arrivals in Consumer Electronics & Accessories</a>
-                    </h3>
+                    </h2>
                     <div class="flex flex-wrap items-center gap-3 mt-2 text-xs text-slate-500">
                         <span class="inline-flex items-center gap-1 text-emerald-600 font-medium">
                             <span class="material-icons-round text-sm">thumb_up</span>
@@ -673,9 +640,9 @@
 
                 <!-- Center: Info -->
                 <div class="flex-grow">
-                    <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com" target="_blank" rel="noopener sponsored">Up to 35% OFF Tiered Bulk Wholesale Volume Pricing (Zero MOQ)</a>
-                    </h3>
+                    </h2>
                     <div class="flex flex-wrap items-center gap-3 mt-2 text-xs text-slate-500">
                         <span class="inline-flex items-center gap-1 text-emerald-600 font-medium">
                             <span class="material-icons-round text-sm">thumb_up</span>
@@ -738,9 +705,9 @@
 
                 <!-- Center: Info -->
                 <div class="flex-grow">
-                    <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com" target="_blank" rel="noopener sponsored">Free Global Dropshipping Membership with Automated Order Sync & Blind Shipping</a>
-                    </h3>
+                    </h2>
                     <div class="flex flex-wrap items-center gap-3 mt-2 text-xs text-slate-500">
                         <span class="inline-flex items-center gap-1 text-emerald-600 font-medium">
                             <span class="material-icons-round text-sm">thumb_up</span>
@@ -803,9 +770,9 @@
 
                 <!-- Center: Info -->
                 <div class="flex-grow">
-                    <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com" target="_blank" rel="noopener sponsored">Up to 70% OFF Clearance Electronics, Tempered Glass & Cables</a>
-                    </h3>
+                    </h2>
                     <div class="flex flex-wrap items-center gap-3 mt-2 text-xs text-slate-500">
                         <span class="inline-flex items-center gap-1 text-emerald-600 font-medium">
                             <span class="material-icons-round text-sm">thumb_up</span>
@@ -868,9 +835,9 @@
 
                 <!-- Center: Info -->
                 <div class="flex-grow">
-                    <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com" target="_blank" rel="noopener sponsored">$5 OFF Your First Wholesale Order of $50 or More</a>
-                    </h3>
+                    </h2>
                     <div class="flex flex-wrap items-center gap-3 mt-2 text-xs text-slate-500">
                         <span class="inline-flex items-center gap-1 text-emerald-600 font-medium">
                             <span class="material-icons-round text-sm">thumb_up</span>
@@ -889,7 +856,7 @@
          <div class="px-3 py-2 bg-slate-100 border border-slate-200 rounded-lg text-xs font-mono font-bold tracking-widest text-slate-500 select-none">
            ••••••••
          </div>
-         <button onclick="openCouponModal('deal-sunsky-10', 'WELCOME5', 'https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com')" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white text-xs font-bold rounded-lg shadow-sm hover:shadow transition-all whitespace-nowrap cursor-pointer">
+         <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="openCouponModal('deal-sunsky-10', 'WELCOME5', 'https://dorinebeaumont.com/g/7npkd4cs1ib68b264a76869a299fda/?ulp=https://www.sunsky-online.com')" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white text-xs font-bold rounded-lg shadow-sm hover:shadow transition-all whitespace-nowrap cursor-pointer">
            <span>Show Code</span>
            <span class="material-icons-round text-sm">content_copy</span>
          </button>
@@ -1291,14 +1258,7 @@
     </main>
 
     <!-- Global Footer -->
-    <footer class="bg-white border-t border-slate-200 py-10 mt-16 text-xs text-slate-500">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
-            <p>© 2026 PlayNewApps. All Rights Reserved. Verified coupon codes, software reviews, and shopping guides.</p>
-            <p class="max-w-3xl mx-auto text-[11px] text-slate-400">
-                <strong>Affiliate Disclosure:</strong> PlayNewApps partners with official merchant networks including SUNSKY. When you click through our coupon links and finalize a qualifying purchase, we may earn an affiliate commission at zero additional cost to you.
-            </p>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- Code Reveal Modal -->
     <div id="coupon-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-xs hidden p-4" role="dialog" aria-modal="true" aria-labelledby="modal-title">

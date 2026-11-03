@@ -161,44 +161,13 @@
 <body class="min-h-screen flex flex-col bg-slate-50 text-slate-800">
 
     <!-- Global Top Navigation Header -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-3 group" aria-label="PlayNewApps Home">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="w-9 h-9 sm:w-10 sm:h-10 transition-transform group-hover:scale-105" width="40" height="40" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
-                    <div>
-                        <span class="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight block">PlayNewApps</span>
-                        <span class="text-[10px] sm:text-xs font-semibold text-slate-500 block -mt-1 uppercase tracking-wider">Verified Software &amp; Deals</span>
-                    </div>
-                </a>
-                            <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700">
-                    <a href="/" class="hover:text-amber-600 transition-colors">Home</a>
-                    <a href="/stores" class="hover:text-amber-600 transition-colors">Stores</a>
-                    <a href="/products" class="hover:text-amber-600 transition-colors">Products</a>
-                    <a href="/coupon" class="hover:text-amber-600 transition-colors">Coupons</a>
-                    <a href="/reviews" class="hover:text-amber-600 transition-colors">Reviews</a>
-                </nav>
-            <div class="flex items-center gap-3">
-                    <a href="/#search-form" class="inline-flex items-center justify-center w-9 h-9 rounded-xl text-slate-600 hover:text-amber-600 hover:bg-slate-100 transition-colors" aria-label="Search">
-                        <span class="material-icons-round text-lg">search</span>
-                    </a>
-                <a href="/stores" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-purple-50 hover:text-purple-700 transition-colors">
-                    <span class="material-icons-round text-base">grid_view</span> Browse All Stores
-                </a>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Content Container -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
         <!-- Breadcrumb Navigation -->
-        <nav class="flex items-center gap-2 text-xs sm:text-sm text-slate-500 mb-6" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-purple-600 transition-colors">Home</a>
-            <span class="text-slate-300">/</span>
-            <a href="/stores" class="hover:text-purple-600 transition-colors">Stores</a>
-            <span class="text-slate-300">/</span>
-            <span class="text-slate-800 font-bold" aria-current="page">Corsair Coupons</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">Corsair Coupons</span> </nav>
 
         <!-- TOP STORE HEADER CARD (Clean & Minimalist: Brand Logo Box + H1 Title ONLY - STRICT MANDATORY RULE) -->
         <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm mb-6 flex flex-col sm:flex-row items-center gap-6">
@@ -206,7 +175,7 @@
                 <img src="/assets/images/brands/corsair.svg" alt="Corsair Official Logo" class="max-h-full max-w-full object-contain block" width="220" height="70" loading="eager">
             </div>
             <div class="text-center sm:text-left">
-                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">Corsair Promo Codes, Verified Coupons &amp; PC Hardware Deals (2026)</h1>
+                <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">Corsair Promo Codes, Verified Coupons &amp; PC Hardware Deals (2026)</h1> </div> </section>
             </div>
         </div>
 
@@ -253,7 +222,7 @@
         <div class="space-y-4 mb-12" id="coupon-list">
 
             <!-- DEAL 1: 15% Sitewide Code (Featured) -->
-            <div class="coupon-card deal-item bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-md transition-shadow relative overflow-hidden" data-type="code">
+            <article class="coupon-card deal-item bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-md transition-shadow relative overflow-hidden" data-type="code">
                 <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
                     <div class="flex items-center gap-2">
                         <span class="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
@@ -272,12 +241,12 @@
                             <span class="text-xs font-bold uppercase tracking-wider mt-1">OFF</span>
                         </div>
                         <div>
-                            <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                            <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                                 <a href="https://ntzgd.com/g/hpl2levo9fb68b264a7645cfa0a3aa/?ulp=https://www.corsair.com/ww/en" target="_blank" rel="noopener sponsored" class="inline-flex items-center gap-1">
                                     15% Off Sitewide on High-Performance PC Hardware &amp; Gaming Gear
                                     <span class="material-icons-round text-base text-purple-600">open_in_new</span>
                                 </a>
-                            </h3>
+                            </h2>
                             <p class="text-xs sm:text-sm text-slate-600 mt-1">
                                 Save 15% across qualifying Corsair desktop components, gaming keyboards, ultra-lightweight mice, and cooling hardware.
                             </p>
@@ -292,7 +261,7 @@
                     </div>
                     <div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center gap-2 shrink-0 border-t sm:border-t-0 pt-4 sm:pt-0 border-slate-100">
                         <div class="flex items-center rounded-xl border-2 border-dashed border-purple-300 bg-purple-50/50 p-1">
-                            <span class="px-3 font-mono font-bold text-slate-400 text-sm tracking-widest select-none">••••••••</span>
+                            <span class="px-3 font-mono font-bold text-sm tracking-widest select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 px-4 py-3 rounded-xl select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                             <button type="button" onclick="openCouponModal('deal-1', 'CORSAIR15', 'https://ntzgd.com/g/hpl2levo9fb68b264a7645cfa0a3aa/?ulp=https://www.corsair.com/ww/en')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs rounded-lg shadow-sm transition-all cursor-pointer">
                                 Show Code
                             </button>
@@ -309,10 +278,10 @@
                 <div id="details-1" class="hidden mt-3 p-3 bg-slate-50 rounded-xl text-xs text-slate-600 border border-slate-200">
                     <p><strong>Terms &amp; Conditions:</strong> Apply your revealed discount code during checkout at corsair.com to take 15% off your eligible order. Excludes select limited-edition collaborator items and bulk commercial enterprise quantities.</p>
                 </div>
-            </div>
+            </article>
 
             <!-- DEAL 2: Free Shipping on Orders Over $79 (Sale) -->
-            <div class="coupon-card deal-item bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-md transition-shadow relative overflow-hidden" data-type="shipping">
+            <article class="coupon-card deal-item bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-md transition-shadow relative overflow-hidden" data-type="shipping">
                 <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
                     <div class="flex items-center gap-2">
                         <span class="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
@@ -331,12 +300,12 @@
                             <span class="text-[11px] font-bold uppercase tracking-wider mt-1">SHIPPING</span>
                         </div>
                         <div>
-                            <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-blue-600 transition-colors leading-snug">
+                            <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-blue-600 transition-colors leading-snug">
                                 <a href="https://ntzgd.com/g/hpl2levo9fb68b264a7645cfa0a3aa/?ulp=https://www.corsair.com/ww/en" target="_blank" rel="noopener sponsored" class="inline-flex items-center gap-1">
                                     Free Standard Shipping on All Domestic Orders Exceeding $79
                                     <span class="material-icons-round text-base text-blue-600">open_in_new</span>
                                 </a>
-                            </h3>
+                            </h2>
                             <p class="text-xs sm:text-sm text-slate-600 mt-1">
                                 Receive complimentary ground shipping on PC cases, power supplies, liquid coolers, and gaming peripherals with zero handling charges.
                             </p>
@@ -365,10 +334,10 @@
                 <div id="details-2" class="hidden mt-3 p-3 bg-slate-50 rounded-xl text-xs text-slate-600 border border-slate-200">
                     <p><strong>Shipping Terms:</strong> Applies automatically at checkout when merchandise subtotal equals or exceeds $79 before applicable sales taxes. Covers continental destinations with tracking confirmation.</p>
                 </div>
-            </div>
+            </article>
 
             <!-- DEAL 3: 20% Off DDR5 Memory (Code) -->
-            <div class="coupon-card deal-item bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-md transition-shadow relative overflow-hidden" data-type="hardware code">
+            <article class="coupon-card deal-item bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-md transition-shadow relative overflow-hidden" data-type="hardware code">
                 <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
                     <div class="flex items-center gap-2">
                         <span class="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
@@ -387,12 +356,12 @@
                             <span class="text-xs font-bold uppercase tracking-wider mt-1">OFF</span>
                         </div>
                         <div>
-                            <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                            <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                                 <a href="https://ntzgd.com/g/hpl2levo9fb68b264a7645cfa0a3aa/?ulp=https://www.corsair.com/ww/en" target="_blank" rel="noopener sponsored" class="inline-flex items-center gap-1">
                                     20% Off Vengeance &amp; Dominator Titanium DDR5 Memory Kits
                                     <span class="material-icons-round text-base text-purple-600">open_in_new</span>
                                 </a>
-                            </h3>
+                            </h2>
                             <p class="text-xs sm:text-sm text-slate-600 mt-1">
                                 Elevate system memory speeds with 20% off high-speed DDR5-6000+ CL30 kits engineered for AMD EXPO and Intel XMP 3.0 platforms.
                             </p>
@@ -407,7 +376,7 @@
                     </div>
                     <div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center gap-2 shrink-0 border-t sm:border-t-0 pt-4 sm:pt-0 border-slate-100">
                         <div class="flex items-center rounded-xl border-2 border-dashed border-purple-300 bg-purple-50/50 p-1">
-                            <span class="px-3 font-mono font-bold text-slate-400 text-sm tracking-widest select-none">••••••••</span>
+                            <span class="px-3 font-mono font-bold text-sm tracking-widest select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 px-4 py-3 rounded-xl select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                             <button type="button" onclick="openCouponModal('deal-3', 'MEMORY20', 'https://ntzgd.com/g/hpl2levo9fb68b264a7645cfa0a3aa/?ulp=https://www.corsair.com/ww/en')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs rounded-lg shadow-sm transition-all cursor-pointer">
                                 Show Code
                             </button>
@@ -424,10 +393,10 @@
                 <div id="details-3" class="hidden mt-3 p-3 bg-slate-50 rounded-xl text-xs text-slate-600 border border-slate-200">
                     <p><strong>Offer Details:</strong> Use your revealed voucher code at checkout to claim 20% savings on 32GB, 64GB, and 96GB dual-channel DDR5 desktop memory modules.</p>
                 </div>
-            </div>
+            </article>
 
             <!-- DEAL 4: $50 Off iCUE LINK Smart Bundles (Code) -->
-            <div class="coupon-card deal-item bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-md transition-shadow relative overflow-hidden" data-type="hardware code">
+            <article class="coupon-card deal-item bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-md transition-shadow relative overflow-hidden" data-type="hardware code">
                 <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
                     <div class="flex items-center gap-2">
                         <span class="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
@@ -446,12 +415,12 @@
                             <span class="text-xs font-bold uppercase tracking-wider mt-1">OFF</span>
                         </div>
                         <div>
-                            <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                            <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                                 <a href="https://ntzgd.com/g/hpl2levo9fb68b264a7645cfa0a3aa/?ulp=https://www.corsair.com/ww/en" target="_blank" rel="noopener sponsored" class="inline-flex items-center gap-1">
                                     $50 Instant Savings on iCUE LINK Titan AIO Liquid Coolers &amp; QX Fans
                                     <span class="material-icons-round text-base text-purple-600">open_in_new</span>
                                 </a>
-                            </h3>
+                            </h2>
                             <p class="text-xs sm:text-sm text-slate-600 mt-1">
                                 Streamline your cable management with Corsair's revolutionary single-cable iCUE LINK smart ecosystem bundles on orders over $250.
                             </p>
@@ -466,7 +435,7 @@
                     </div>
                     <div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center gap-2 shrink-0 border-t sm:border-t-0 pt-4 sm:pt-0 border-slate-100">
                         <div class="flex items-center rounded-xl border-2 border-dashed border-purple-300 bg-purple-50/50 p-1">
-                            <span class="px-3 font-mono font-bold text-slate-400 text-sm tracking-widest select-none">••••••••</span>
+                            <span class="px-3 font-mono font-bold text-sm tracking-widest select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 px-4 py-3 rounded-xl select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                             <button type="button" onclick="openCouponModal('deal-4', 'ICUELINK50', 'https://ntzgd.com/g/hpl2levo9fb68b264a7645cfa0a3aa/?ulp=https://www.corsair.com/ww/en')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs rounded-lg shadow-sm transition-all cursor-pointer">
                                 Show Code
                             </button>
@@ -483,10 +452,10 @@
                 <div id="details-4" class="hidden mt-3 p-3 bg-slate-50 rounded-xl text-xs text-slate-600 border border-slate-200">
                     <p><strong>Bundle Requirements:</strong> Add any eligible iCUE LINK liquid CPU cooler or 3-fan expansion starter kit totaling $250 or more and apply your revealed coupon code for an instant $50 reduction.</p>
                 </div>
-            </div>
+            </article>
 
             <!-- DEAL 5: Up to 40% Off Certified Refurbished Hardware (Sale) -->
-            <div class="coupon-card deal-item bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-md transition-shadow relative overflow-hidden" data-type="outlet">
+            <article class="coupon-card deal-item bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-md transition-shadow relative overflow-hidden" data-type="outlet">
                 <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
                     <div class="flex items-center gap-2">
                         <span class="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
@@ -505,12 +474,12 @@
                             <span class="text-xs font-bold uppercase tracking-wider mt-1">OFF</span>
                         </div>
                         <div>
-                            <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-blue-600 transition-colors leading-snug">
+                            <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-blue-600 transition-colors leading-snug">
                                 <a href="https://ntzgd.com/g/hpl2levo9fb68b264a7645cfa0a3aa/?ulp=https://www.corsair.com/ww/en" target="_blank" rel="noopener sponsored" class="inline-flex items-center gap-1">
                                     Up to 40% Off Corsair Certified Refurbished Keyboards, Mice &amp; PSUs
                                     <span class="material-icons-round text-base text-blue-600">open_in_new</span>
                                 </a>
-                            </h3>
+                            </h2>
                             <p class="text-xs sm:text-sm text-slate-600 mt-1">
                                 Score pristine factory-recertified gaming gear and power supplies thoroughly tested to original factory specifications with comprehensive warranty coverage.
                             </p>
@@ -539,10 +508,10 @@
                 <div id="details-5" class="hidden mt-3 p-3 bg-slate-50 rounded-xl text-xs text-slate-600 border border-slate-200">
                     <p><strong>Refurbished Policy:</strong> Each recertified product undergoes multi-point operational testing, thorough acoustic verification, and repacking with original accessories and certified warranty.</p>
                 </div>
-            </div>
+            </article>
 
             <!-- DEAL 6: 15% Off Student & Educator Discount (Code) -->
-            <div class="coupon-card deal-item bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-md transition-shadow relative overflow-hidden" data-type="code">
+            <article class="coupon-card deal-item bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-md transition-shadow relative overflow-hidden" data-type="code">
                 <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
                     <div class="flex items-center gap-2">
                         <span class="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
@@ -561,12 +530,12 @@
                             <span class="text-xs font-bold uppercase tracking-wider mt-1">OFF</span>
                         </div>
                         <div>
-                            <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                            <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                                 <a href="https://ntzgd.com/g/hpl2levo9fb68b264a7645cfa0a3aa/?ulp=https://www.corsair.com/ww/en" target="_blank" rel="noopener sponsored" class="inline-flex items-center gap-1">
                                     15% Off Corsair Student &amp; Educator Program
                                     <span class="material-icons-round text-base text-purple-600">open_in_new</span>
                                 </a>
-                            </h3>
+                            </h2>
                             <p class="text-xs sm:text-sm text-slate-600 mt-1">
                                 Verified high school, college, and university students and teaching faculty receive 15% off mechanical keyboards, headsets, and PC hardware.
                             </p>
@@ -581,7 +550,7 @@
                     </div>
                     <div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center gap-2 shrink-0 border-t sm:border-t-0 pt-4 sm:pt-0 border-slate-100">
                         <div class="flex items-center rounded-xl border-2 border-dashed border-purple-300 bg-purple-50/50 p-1">
-                            <span class="px-3 font-mono font-bold text-slate-400 text-sm tracking-widest select-none">••••••••</span>
+                            <span class="px-3 font-mono font-bold text-sm tracking-widest select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 px-4 py-3 rounded-xl select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                             <button type="button" onclick="openCouponModal('deal-6', 'STUDENT15', 'https://ntzgd.com/g/hpl2levo9fb68b264a7645cfa0a3aa/?ulp=https://www.corsair.com/ww/en')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs rounded-lg shadow-sm transition-all cursor-pointer">
                                 Show Code
                             </button>
@@ -598,10 +567,10 @@
                 <div id="details-6" class="hidden mt-3 p-3 bg-slate-50 rounded-xl text-xs text-slate-600 border border-slate-200">
                     <p><strong>Eligibility:</strong> Connect your academic account via Student Beans or UNiDAYS on corsair.com to unlock a single-use 15% voucher renewed annually throughout your enrollment.</p>
                 </div>
-            </div>
+            </article>
 
             <!-- DEAL 7: 10% Off Welcome Newsletter Discount (Code) -->
-            <div class="coupon-card deal-item bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-md transition-shadow relative overflow-hidden" data-type="code">
+            <article class="coupon-card deal-item bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-md transition-shadow relative overflow-hidden" data-type="code">
                 <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
                     <div class="flex items-center gap-2">
                         <span class="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
@@ -620,12 +589,12 @@
                             <span class="text-xs font-bold uppercase tracking-wider mt-1">OFF</span>
                         </div>
                         <div>
-                            <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                            <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                                 <a href="https://ntzgd.com/g/hpl2levo9fb68b264a7645cfa0a3aa/?ulp=https://www.corsair.com/ww/en" target="_blank" rel="noopener sponsored" class="inline-flex items-center gap-1">
                                     10% Off Your First Corsair Order with VIP Email Subscription
                                     <span class="material-icons-round text-base text-purple-600">open_in_new</span>
                                 </a>
-                            </h3>
+                            </h2>
                             <p class="text-xs sm:text-sm text-slate-600 mt-1">
                                 Register your email for the Corsair newsletter to unlock 10% off your initial purchase plus early access to holiday sales and component restocks.
                             </p>
@@ -640,7 +609,7 @@
                     </div>
                     <div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center gap-2 shrink-0 border-t sm:border-t-0 pt-4 sm:pt-0 border-slate-100">
                         <div class="flex items-center rounded-xl border-2 border-dashed border-purple-300 bg-purple-50/50 p-1">
-                            <span class="px-3 font-mono font-bold text-slate-400 text-sm tracking-widest select-none">••••••••</span>
+                            <span class="px-3 font-mono font-bold text-sm tracking-widest select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 px-4 py-3 rounded-xl select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                             <button type="button" onclick="openCouponModal('deal-7', 'WELCOME10', 'https://ntzgd.com/g/hpl2levo9fb68b264a7645cfa0a3aa/?ulp=https://www.corsair.com/ww/en')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs rounded-lg shadow-sm transition-all cursor-pointer">
                                 Show Code
                             </button>
@@ -657,10 +626,10 @@
                 <div id="details-7" class="hidden mt-3 p-3 bg-slate-50 rounded-xl text-xs text-slate-600 border border-slate-200">
                     <p><strong>Welcome Terms:</strong> Valid for first-time purchasers with an active account subscription at corsair.com. Dispatched directly to inbox after email confirmation.</p>
                 </div>
-            </div>
+            </article>
 
             <!-- DEAL 8: Up to 50% Off Special Offers & Clearance (Sale) -->
-            <div class="coupon-card deal-item bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-md transition-shadow relative overflow-hidden" data-type="outlet">
+            <article class="coupon-card deal-item bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-md transition-shadow relative overflow-hidden" data-type="outlet">
                 <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
                     <div class="flex items-center gap-2">
                         <span class="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
@@ -679,12 +648,12 @@
                             <span class="text-xs font-bold uppercase tracking-wider mt-1">OFF</span>
                         </div>
                         <div>
-                            <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-blue-600 transition-colors leading-snug">
+                            <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-blue-600 transition-colors leading-snug">
                                 <a href="https://ntzgd.com/g/hpl2levo9fb68b264a7645cfa0a3aa/?ulp=https://www.corsair.com/ww/en" target="_blank" rel="noopener sponsored" class="inline-flex items-center gap-1">
                                     Up to 50% Off Seasonal Corsair Hardware &amp; Gaming Gear Clearance
                                     <span class="material-icons-round text-base text-blue-600">open_in_new</span>
                                 </a>
-                            </h3>
+                            </h2>
                             <p class="text-xs sm:text-sm text-slate-600 mt-1">
                                 Save up to 50% on prior-generation gaming headsets, mechanical keyboards, custom water-cooling reservoirs, and PC accessories.
                             </p>
@@ -713,7 +682,7 @@
                 <div id="details-8" class="hidden mt-3 p-3 bg-slate-50 rounded-xl text-xs text-slate-600 border border-slate-200">
                     <p><strong>Clearance Terms:</strong> Discount applied directly to list prices on the Corsair Special Offers portal. Stock refreshed weekly with brand-new discontinued models.</p>
                 </div>
-            </div>
+            </article>
 
         </div>
 
@@ -1348,23 +1317,7 @@
     </main>
 
     <!-- Global Footer -->
-    <footer class="bg-white border-t border-slate-200 mt-16 py-12 text-sm text-slate-500">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-            <div class="flex items-center gap-3">
-                <a href="/" class="flex items-center gap-2">
-                    <span class="p-1.5 bg-gradient-to-tr from-purple-600 to-indigo-600 rounded-lg text-white">
-                        <span class="material-icons-round text-lg block">local_mall</span>
-                    </span>
-                    <span class="text-base font-bold text-slate-900">PlayNewApps</span>
-                </a>
-                <span class="text-slate-300">|</span>
-                <span>Verified Corsair Hardware Discounts (2026)</span>
-            </div>
-            <p class="text-xs text-slate-600 text-center sm:text-right">
-                All brand names, trademarks, and registered logos are property of their respective owners. PlayNewApps may earn an affiliate commission when purchases are made through links on this page at no extra cost to you.
-            </p>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- COUPON CODE REVEAL MODAL DIALOG (RetailMeNot Architecture) -->
     <div id="coupon-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 hidden">

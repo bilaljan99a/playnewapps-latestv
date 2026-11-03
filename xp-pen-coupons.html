@@ -31,6 +31,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/style.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Fonts & Material Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -162,66 +163,18 @@
     </noscript>
 
     <!-- HEADER NAVIGATION -->
-    <header class="header" id="header">
-        <div class="container header-container">
-            <a href="/" class="logo" aria-label="PlayNewApps Home">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
-                <span>PlayNewApps</span>
-            </a>
-
-            <nav class="nav" id="nav" aria-label="Main Navigation">
-                <ul class="nav-list">
-                    <li class="nav-item dropdown" id="stores-dropdown-wrapper">
-                        <a href="/stores" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-                            Stores <span class="material-icons-round dropdown-icon" aria-hidden="true">expand_more</span>
-                        </a>
-                        <div class="dropdown-menu" id="stores-dropdown-menu" aria-label="Stores Menu">
-                            <div class="dropdown-loading">Loading stores...</div>
-                        </div>
-                    </li>
-                    <li><a href="/#featured" class="nav-link">Featured</a></li>
-                    <li><a href="/#reviews" class="nav-link">Reviews</a></li>
-                    <li><a href="/coupon" class="nav-link">Deals</a></li>
-                    <li><a href="/#faq" class="nav-link">FAQ</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-actions">
-                <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="nofollow sponsored noopener" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
-                    <span>Shop at XP-PEN</span>
-                    <span class="material-icons-round" style="font-size: 1rem;">open_in_new</span>
-                </a>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <main class="main-content" id="main-content">
         <!-- BREADCRUMB -->
         <div class="container" style="padding-top: 1.25rem;">
-            <nav aria-label="Breadcrumb">
-                <ol class="breadcrumb" style="display: flex; gap: 0.5rem; align-items: center; list-style: none; padding: 0; margin: 0; font-size: 0.875rem; color: var(--text-secondary);">
-                    <li><a href="/" style="color: var(--text-secondary); text-decoration: none;">Home</a></li>
-                    <li><span class="material-icons-round" style="font-size: 1rem; vertical-align: middle;">chevron_right</span></li>
-                    <li><a href="/stores" style="color: var(--text-secondary); text-decoration: none;">Stores</a></li>
-                    <li><span class="material-icons-round" style="font-size: 1rem; vertical-align: middle;">chevron_right</span></li>
-                    <li style="color: var(--primary-color); font-weight: 600;">XP-PEN</li>
-                </ol>
-            </nav>
+            <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">XP-PEN</span> </nav>
         </div>
 
         <!-- CLEAN MINIMAL STORE HEADER - STRICT RULE COMPLIANT -->
-        <section class="store-header container reveal" style="margin-top: 1rem; margin-bottom: 2rem;">
-            <div class="store-header-content" style="display: flex; align-items: center; gap: 1.5rem;">
-                <div class="w-40 sm:w-52 h-16 sm:h-20" style="width: 160px; height: 80px; border-radius: 12px; background: #FFFFFF; border: 1px solid var(--border-color); padding: 0.5rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: var(--shadow-sm);">
-                    <img src="/assets/images/brands/xp-pen.svg" alt="Official XP-PEN Logo" style="width: 100%; height: 100%; object-fit: contain;">
-                </div>
-                <div>
-                    <h1 class="hero-title" style="font-size: 1.85rem; font-weight: 900; margin: 0; color: var(--text-primary); line-height: 1.25;">
+        <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="w-40 sm:w-52 h-16 sm:h-20 bg-white rounded-xl p-3 flex items-center justify-center border border-slate-200 flex-shrink-0 shadow-sm"> <img src="/assets/images/brands/xp-pen.svg" alt="Official XP-PEN Logo" class="max-h-full max-w-full object-contain"> </div> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
                         XP-PEN Coupon Codes &amp; Discount Offers (2026)
-                    </h1>
-                </div>
-            </div>
-        </section>
+                    </h1> </div> </section>
 
         <!-- STORE LAYOUT RESPONSIVE CONTAINER -->
         <div class="container store-page-grid reveal">
@@ -257,9 +210,9 @@
                                     <span class="discount-hero">5% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">5% OFF Sitewide Welcome Discount on All XP-PEN Products</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 100% Success</span>
                                         <span class="meta-dot">•</span>
@@ -268,7 +221,7 @@
                                 </div>
                                 <div class="coupon-action-box">
                                     <div class="code-reveal-wrapper" data-code="ADMWLC5" data-link="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/">
-                                        <span class="hidden-code-mask">••••••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                 </div>
@@ -304,9 +257,9 @@
                                     <span class="discount-hero">5% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">5% OFF All XP-PEN Drawing Tablets &amp; Pen Displays</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         <span class="meta-dot">•</span>
@@ -315,7 +268,7 @@
                                 </div>
                                 <div class="coupon-action-box">
                                     <div class="code-reveal-wrapper" data-code="ADMALL5" data-link="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/">
-                                        <span class="hidden-code-mask">••••••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                 </div>
@@ -351,9 +304,9 @@
                                     <span class="discount-hero">45% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">Up to 45% OFF Official XP-PEN Flash Sales &amp; Special Deals</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 98% Success</span>
                                         <span class="meta-dot">•</span>
@@ -395,9 +348,9 @@
                                     <span class="discount-hero">$300 OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">Up to $300 OFF Artist Pro Gen 2 Displays (World-First 16K Pressure)</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         <span class="meta-dot">•</span>
@@ -439,9 +392,9 @@
                                     <span class="discount-hero">35% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">Up to 35% OFF Artist Series Digital Drawing Displays (12", 16", 22")</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 97% Success</span>
                                         <span class="meta-dot">•</span>
@@ -483,9 +436,9 @@
                                     <span class="discount-hero">30% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">Up to 30% OFF Deco Pro Gen 2 Wireless Graphic Tablets</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 98% Success</span>
                                         <span class="meta-dot">•</span>
@@ -527,9 +480,9 @@
                                     <span class="discount-hero">40% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">Up to 40% OFF Deco Series Pen Tablets (Deco 01 V2, Deco L, Deco LW)</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         <span class="meta-dot">•</span>
@@ -571,9 +524,9 @@
                                     <span class="discount-hero">25% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">Up to 25% OFF Magic Drawing Pad (Standalone 12.2" Android 16K Tablet)</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         <span class="meta-dot">•</span>
@@ -615,9 +568,9 @@
                                     <span class="discount-hero">30% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">Up to 30% OFF Deco Fun Series (XS / S / L for osu! Gaming &amp; E-Learning)</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 98% Success</span>
                                         <span class="meta-dot">•</span>
@@ -659,9 +612,9 @@
                                     <span class="discount-hero">$100 OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">Up to $100 OFF Innovator 16 Ultra-Slim 9mm Digital Displays</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 97% Success</span>
                                         <span class="meta-dot">•</span>
@@ -703,9 +656,9 @@
                                     <span class="discount-hero">FREE</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">Free Creative Software Bundle with Every XP-PEN Tablet</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 100% Success</span>
                                         <span class="meta-dot">•</span>
@@ -747,9 +700,9 @@
                                     <span class="discount-hero">EDU DEAL</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">XP-PEN Student &amp; Teacher Discount: Extra 5% OFF with Student Beans</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         <span class="meta-dot">•</span>
@@ -791,9 +744,9 @@
                                     <span class="discount-hero">50% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">Up to 50% OFF Official Certified Refurbished Tablets &amp; Displays</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 96% Success</span>
                                         <span class="meta-dot">•</span>
@@ -835,9 +788,9 @@
                                     <span class="discount-hero">FREE</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">Free Standard Shipping on All Orders Over $50</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 100% Success</span>
                                         <span class="meta-dot">•</span>
@@ -879,9 +832,9 @@
                                     <span class="discount-hero">35% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">Up to 35% OFF XP-PEN Styluses, Stands &amp; ACK05 Wireless Remotes</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 98% Success</span>
                                         <span class="meta-dot">•</span>
@@ -923,9 +876,9 @@
                                     <span class="discount-hero">X-POINTS</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">XP-PEN Rewards Club: Earn X-Points for Instant Cash Discounts</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 100% Success</span>
                                         <span class="meta-dot">•</span>
@@ -967,9 +920,9 @@
                                     <span class="discount-hero">BUNDLE</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">Up to 35% OFF XP-PEN Creator Studio All-in-One Packs</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 98% Success</span>
                                         <span class="meta-dot">•</span>
@@ -1011,9 +964,9 @@
                                     <span class="discount-hero">25% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">Up to 25% OFF Star Series Tablets (Star G640 &amp; Star 03 V2)</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         <span class="meta-dot">•</span>
@@ -1055,9 +1008,9 @@
                                     <span class="discount-hero">$15 OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">Extra $15 OFF Orders Over $150 on Special Seasonal Events</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 97% Success</span>
                                         <span class="meta-dot">•</span>
@@ -1099,9 +1052,9 @@
                                     <span class="discount-hero">$30 OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">Extra $30 OFF Orders Over $300 on Multi-Screen Setup Orders</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 98% Success</span>
                                         <span class="meta-dot">•</span>
@@ -1143,9 +1096,9 @@
                                     <span class="discount-hero">30% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">Up to 30% OFF XP-PEN Note Plus Smart Digital Writing Pad</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 96% Success</span>
                                         <span class="meta-dot">•</span>
@@ -1187,9 +1140,9 @@
                                     <span class="discount-hero">18-MO</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">18-Month Official Manufacturer Warranty &amp; 30-Day Money-Back Guarantee</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 100% Success</span>
                                         <span class="meta-dot">•</span>
@@ -1231,9 +1184,9 @@
                                     <span class="discount-hero">35% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">Up to 35% OFF Star G960S Plus Graphic Tablet (With Digital Eraser Stylus)</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 98% Success</span>
                                         <span class="meta-dot">•</span>
@@ -1275,9 +1228,9 @@
                                     <span class="discount-hero">40% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://naiawork.com/g/yh6a95l4xfb68b264a76a4b51ee4f5/" target="_blank" rel="noopener sponsored">Up to 40% OFF XP-PEN Protective Travel Sleeves &amp; Carrying Bags</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 97% Success</span>
                                         <span class="meta-dot">•</span>
@@ -1616,50 +1569,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer" id="footer" style="margin-top: 4rem;">
-        <div class="container footer-container">
-            <div class="footer-col">
-                <a href="/" class="footer-logo">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" width="32" height="32">
-                    <span>PlayNewApps</span>
-                </a>
-                <p class="footer-desc">
-                    Your premier destination for verified software promo codes, app discounts, and technology reviews.
-                </p>
-            </div>
-            <div class="footer-col">
-                <h4 class="footer-title">Top Stores</h4>
-                <ul class="footer-links">
-                    <li><a href="/xp-pen-coupons">XP-PEN</a></li>
-                    <li><a href="/lenovo-coupons">Lenovo</a></li>
-                    <li><a href="/vevor-coupons">Vevor</a></li>
-                    <li><a href="/adguard-coupons">AdGuard</a></li>
-                    <li><a href="/aliexpress-coupons">AliExpress</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4 class="footer-title">Quick Links</h4>
-                <ul class="footer-links">
-                    <li><a href="/stores">All Stores</a></li>
-                    <li><a href="/coupon">All Deals</a></li>
-                    <li><a href="/reviews">App Reviews</a></li>
-                    <li><a href="/about">About Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4 class="footer-title">Legal &amp; Policy</h4>
-                <ul class="footer-links">
-                    <li><a href="/privacy">Privacy Policy</a></li>
-                    <li><a href="/terms">Terms of Service</a></li>
-                    <li><a href="/affiliate">Affiliate Disclosure</a></li>
-                    <li><a href="/contact">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="container footer-bottom">
-            <p>&copy; 2026 PlayNewApps. All rights reserved. All brand names and trademarks are property of their respective owners.</p>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- SCRIPTS -->
     <script src="/assets/js/components.min.js"></script>

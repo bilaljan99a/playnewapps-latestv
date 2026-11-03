@@ -392,40 +392,13 @@
 <body class="bg-slate-50 text-slate-800 antialiased font-['Plus_Jakarta_Sans',sans-serif]">
 
     <!-- Site Header -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-2xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2.5">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto" width="120" height="32" onerror="this.src='/assets/images/logo.png'">
-            </a>
-                            <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700">
-                    <a href="/" class="hover:text-amber-600 transition-colors">Home</a>
-                    <a href="/stores" class="hover:text-amber-600 transition-colors">Stores</a>
-                    <a href="/products" class="hover:text-amber-600 transition-colors">Products</a>
-                    <a href="/coupon" class="hover:text-amber-600 transition-colors">Coupons</a>
-                    <a href="/reviews" class="hover:text-amber-600 transition-colors">Reviews</a>
-                </nav>
-            <div class="flex items-center gap-3">
-                    <a href="/#search-form" class="inline-flex items-center justify-center w-9 h-9 rounded-xl text-slate-600 hover:text-amber-600 hover:bg-slate-100 transition-colors" aria-label="Search">
-                        <span class="material-icons-round text-lg">search</span>
-                    </a>
-                <a href="/stores" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-purple-50 hover:text-purple-700 transition-colors">
-                    <span class="material-icons-round text-base">grid_view</span> Browse All Stores
-                </a>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Content Container -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
         <!-- Breadcrumb Navigation -->
-        <nav class="flex items-center gap-2 text-xs sm:text-sm text-slate-500 mb-6" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-purple-600 transition-colors">Home</a>
-            <span class="text-slate-300">/</span>
-            <a href="/stores" class="hover:text-purple-600 transition-colors">Stores</a>
-            <span class="text-slate-300">/</span>
-            <span class="text-slate-800 font-bold" aria-current="page">CASETiFY Coupons</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">CASETiFY Coupons</span> </nav>
 
         <!-- TOP STORE HEADER CARD (Clean & Minimalist: Logo Box + H1 Title ONLY) -->
         <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm mb-6 flex flex-col sm:flex-row items-center gap-6">
@@ -433,7 +406,7 @@
                 <img src="/assets/images/brands/casetify.svg" alt="CASETiFY Official Logo" class="max-h-full max-w-full object-contain block" width="220" height="70" loading="eager" onerror="this.src='/assets/images/brands/casetify.png'">
             </div>
             <div class="text-center sm:text-left">
-                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">CASETiFY Coupon Codes &amp; Discount Offers (2026)</h1>
+                <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">CASETiFY Coupon Codes &amp; Discount Offers (2026)</h1> </div> </section>
             </div>
         </div>
 
@@ -480,7 +453,7 @@
         <div id="deals-list" class="space-y-4 mb-16">
 
             <!-- DEAL 1: Buy 1 or More - 10% Off (Verified Offer) -->
-            <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code cases">
+            <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code cases">
                 <!-- Top Ribbon -->
                 <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                     <div class="flex items-center gap-2">
@@ -506,11 +479,11 @@
 
                     <!-- Center Info Box -->
                     <div class="flex-1 min-w-0">
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
                             <a href="https://bywiola.com/g/tv8h1uy8nib68b264a762f7a77e67e/?ulp=https://www.casetify.com" target="_blank" rel="noopener sponsored" class="hover:underline">
                                 Buy 1 or More — Get 10% Off Sitewide on Cases &amp; Accessories
                             </a>
-                        </h3>
+                        </h2>
                         <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                             Save 10% off any smartphone case, iPad folio, MacBook sleeve, or tech accessory with this verified CASETiFY promo code.
                         </p>
@@ -530,7 +503,7 @@
                     <!-- Action Box: Hidden Code Mask & Button -->
                     <div class="shrink-0 flex flex-col items-stretch sm:items-end gap-2">
                         <div class="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200">
-                            <span class="code-pill-mask text-slate-600 font-bold px-3 text-xs select-none">••••••••</span>
+                            <span class="code-pill-mask font-bold px-3 text-xs select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                             <button type="button" onclick="openCouponModal('casetify-impact-10', 'IMPACT2026', 'https://bywiola.com/g/tv8h1uy8nib68b264a762f7a77e67e/?ulp=https://www.casetify.com')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-xs font-bold transition-all shadow-xs flex items-center gap-1 cursor-pointer">
                                 <span>Show Code</span>
                                 <span class="material-icons-round text-sm">content_copy</span>
@@ -558,10 +531,10 @@
                         <li>Can be stacked with Free Standard Shipping on qualifying domestic and international destinations.</li>
                     </ul>
                 </div>
-            </div>
+            </article>
 
             <!-- DEAL 2: Buy 1 get 10% Buy 2 get 20% (Verified Offer) -->
-            <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code bundles cases">
+            <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code bundles cases">
                 <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                     <div class="flex items-center gap-2">
                         <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold">
@@ -583,11 +556,11 @@
                     </div>
 
                     <div class="flex-1 min-w-0">
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
                             <a href="https://bywiola.com/g/tv8h1uy8nib68b264a762f7a77e67e/?ulp=https://www.casetify.com/promotion" target="_blank" rel="noopener sponsored" class="hover:underline">
                                 Bundle &amp; Save: Buy 1 Get 10% Off, Buy 2 Get 20% Off Your Entire Cart
                             </a>
-                        </h3>
+                        </h2>
                         <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                             Mix and match any phone case with charms, watch straps, or Snappy MagSafe chargers to unlock 20% off when you buy 2 or more items.
                         </p>
@@ -606,7 +579,7 @@
 
                     <div class="shrink-0 flex flex-col items-stretch sm:items-end gap-2">
                         <div class="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200">
-                            <span class="code-pill-mask text-slate-600 font-bold px-3 text-xs select-none">••••••••</span>
+                            <span class="code-pill-mask font-bold px-3 text-xs select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                             <button type="button" onclick="openCouponModal('casetify-bundle-bts-20', 'BTS22', 'https://bywiola.com/g/tv8h1uy8nib68b264a762f7a77e67e/?ulp=https://www.casetify.com/promotion')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-xs font-bold transition-all shadow-xs flex items-center gap-1 cursor-pointer">
                                 <span>Show Code</span>
                                 <span class="material-icons-round text-sm">content_copy</span>
@@ -628,10 +601,10 @@
                     <p class="font-bold text-slate-800 mb-1">Promotion Mechanics:</p>
                     <p>Apply coupon code verified coupon at checkout. Purchasing 1 qualifying item deducts 10%. Purchasing 2 or more qualifying items automatically scales the entire cart discount to 20% off.</p>
                 </div>
-            </div>
+            </article>
 
             <!-- DEAL 3: Free Shipping on All Orders -->
-            <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="sale shipping">
+            <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="sale shipping">
                 <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                     <div class="flex items-center gap-2">
                         <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold">
@@ -653,11 +626,11 @@
                     </div>
 
                     <div class="flex-1 min-w-0">
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-blue-600 transition-colors">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-blue-600 transition-colors">
                             <a href="https://bywiola.com/g/tv8h1uy8nib68b264a762f7a77e67e/?ulp=https://www.casetify.com" target="_blank" rel="noopener sponsored" class="hover:underline">
                                 Free Standard Shipping Worldwide on Qualifying Orders
                             </a>
-                        </h3>
+                        </h2>
                         <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                             Receive free standard doorstep delivery with real-time tracking on all eligible orders with no minimum spending threshold.
                         </p>
@@ -695,7 +668,7 @@
                     <p class="font-bold text-slate-800 mb-1">Shipping Details:</p>
                     <p>Standard delivery includes doorstep tracking and arrives in approximately 6 to 12 business days depending on location. Express courier delivery is also available for urgent orders.</p>
                 </div>
-            </div>
+            </article>
 
             <!-- DEAL 4: Club Casetify 15% Off First Purchase -->
             <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="sale">
@@ -763,7 +736,7 @@
             </div>
 
             <!-- DEAL 5: Up to 25% Off Military-Grade Ultra Bounce Cases (Verified Offer) -->
-            <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code cases">
+            <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code cases">
                 <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                     <div class="flex items-center gap-2">
                         <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold">
@@ -785,11 +758,11 @@
                     </div>
 
                     <div class="flex-1 min-w-0">
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
                             <a href="https://bywiola.com/g/tv8h1uy8nib68b264a762f7a77e67e/?ulp=https://www.casetify.com/iphone-cases" target="_blank" rel="noopener sponsored" class="hover:underline">
                                 Save Up to 25% on Military-Grade Ultra Bounce &amp; Extreme Drop Cases
                             </a>
-                        </h3>
+                        </h2>
                         <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                             Get maximum drop protection engineered with EcoShock™ material and ribbed corner air bags tested to survive drops up to 32.8 feet.
                         </p>
@@ -806,7 +779,7 @@
 
                     <div class="shrink-0 flex flex-col items-stretch sm:items-end gap-2">
                         <div class="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200">
-                            <span class="code-pill-mask text-slate-600 font-bold px-3 text-xs select-none">••••••••</span>
+                            <span class="code-pill-mask font-bold px-3 text-xs select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                             <button type="button" onclick="openCouponModal('casetify-ultra-bounce-25', 'BOUNCE25', 'https://bywiola.com/g/tv8h1uy8nib68b264a762f7a77e67e/?ulp=https://www.casetify.com/iphone-cases')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-xs font-bold transition-all shadow-xs flex items-center gap-1 cursor-pointer">
                                 <span>Show Code</span>
                                 <span class="material-icons-round text-sm">content_copy</span>
@@ -828,7 +801,7 @@
                     <p class="font-bold text-slate-800 mb-1">Protection Rating:</p>
                     <p>Applies to select Ultra Bounce and Impact series cases for Apple iPhone and Samsung Galaxy flagships. Features 10x MIL-STD-810G certification.</p>
                 </div>
-            </div>
+            </article>
 
             <!-- DEAL 6: 15% Student & Educator Discount with UNiDAYS -->
             <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="sale">
@@ -961,7 +934,7 @@
             </div>
 
             <!-- DEAL 8: 15% Off Snappy MagSafe Accessories (Verified Offer) -->
-            <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code accessories">
+            <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code accessories">
                 <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                     <div class="flex items-center gap-2">
                         <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold">
@@ -983,11 +956,11 @@
                     </div>
 
                     <div class="flex-1 min-w-0">
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
                             <a href="https://bywiola.com/g/tv8h1uy8nib68b264a762f7a77e67e/?ulp=https://www.casetify.com/series/snappy-series" target="_blank" rel="noopener sponsored" class="hover:underline">
                                 Take 15% Off MagSafe Snappy Cardholders, Grips &amp; Charging Docks
                             </a>
-                        </h3>
+                        </h2>
                         <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                             Upgrade your daily carry with magnetic phone grips, slim leatherette card wallets, and wireless power banks.
                         </p>
@@ -1004,7 +977,7 @@
 
                     <div class="shrink-0 flex flex-col items-stretch sm:items-end gap-2">
                         <div class="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200">
-                            <span class="code-pill-mask text-slate-600 font-bold px-3 text-xs select-none">••••••••</span>
+                            <span class="code-pill-mask font-bold px-3 text-xs select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                             <button type="button" onclick="openCouponModal('casetify-snappy-magsafe-15', 'SNAPPY15', 'https://bywiola.com/g/tv8h1uy8nib68b264a762f7a77e67e/?ulp=https://www.casetify.com/series/snappy-series')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-xs font-bold transition-all shadow-xs flex items-center gap-1 cursor-pointer">
                                 <span>Show Code</span>
                                 <span class="material-icons-round text-sm">content_copy</span>
@@ -1026,7 +999,7 @@
                     <p class="font-bold text-slate-800 mb-1">Eligible Accessories:</p>
                     <p>Includes Snappy Ring Stands, Snappy Cardholder Stands, magnetic car dash mounts, and wireless MagSafe battery packs.</p>
                 </div>
-            </div>
+            </article>
 
             <!-- DEAL 9: Exclusive Co-Lab Drops -->
             <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="sale">
@@ -1094,7 +1067,7 @@
             </div>
 
             <!-- DEAL 10: 10% Off Apple Watch & MacBook Cases (Verified Offer) -->
-            <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code accessories">
+            <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code accessories">
                 <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                     <div class="flex items-center gap-2">
                         <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold">
@@ -1116,11 +1089,11 @@
                     </div>
 
                     <div class="flex-1 min-w-0">
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
                             <a href="https://bywiola.com/g/tv8h1uy8nib68b264a762f7a77e67e/?ulp=https://www.casetify.com/apple-watch-bands" target="_blank" rel="noopener sponsored" class="hover:underline">
                                 10% Off Apple Watch Impact Bands, MacBook &amp; iPad Cases
                             </a>
-                        </h3>
+                        </h2>
                         <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                             Protect your laptop and wearables with snap-on hardshell MacBook cases, shockproof iPad folios, and premium Apple Watch link bands.
                         </p>
@@ -1137,7 +1110,7 @@
 
                     <div class="shrink-0 flex flex-col items-stretch sm:items-end gap-2">
                         <div class="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200">
-                            <span class="code-pill-mask text-slate-600 font-bold px-3 text-xs select-none">••••••••</span>
+                            <span class="code-pill-mask font-bold px-3 text-xs select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                             <button type="button" onclick="openCouponModal('casetify-watch-macbook-10', 'WATCH10', 'https://bywiola.com/g/tv8h1uy8nib68b264a762f7a77e67e/?ulp=https://www.casetify.com/apple-watch-bands')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-xs font-bold transition-all shadow-xs flex items-center gap-1 cursor-pointer">
                                 <span>Show Code</span>
                                 <span class="material-icons-round text-sm">content_copy</span>
@@ -1159,7 +1132,7 @@
                     <p class="font-bold text-slate-800 mb-1">Eligible Devices:</p>
                     <p>Compatible with Apple Watch Ultra / Series 10 / 9 / 8, MacBook Pro &amp; Air M2/M3/M4 models, and iPad Pro &amp; Air magnetic snap cases.</p>
                 </div>
-            </div>
+            </article>
 
         </div>
 
@@ -1716,21 +1689,7 @@
     </main>
 
     <!-- Global Site Footer -->
-    <footer class="bg-white border-t border-slate-200 mt-16 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-            <div class="flex items-center gap-3">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="h-7 w-auto" width="105" height="28">
-                <span class="text-xs text-slate-500">© 2026 PlayNewApps. All rights reserved.</span>
-            </div>
-            <div class="flex flex-wrap items-center gap-6 text-xs text-slate-600">
-                <a href="/privacy" class="hover:text-purple-600 transition-colors">Privacy Policy</a>
-                <a href="/terms" class="hover:text-purple-600 transition-colors">Terms of Service</a>
-                <a href="/affiliate" class="hover:text-purple-600 transition-colors">Affiliate Disclosure</a>
-                <a href="/stores" class="hover:text-purple-600 transition-colors">All Stores</a>
-                <a href="/reviews" class="hover:text-purple-600 transition-colors">Reviews</a>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- COUPON MODAL POPUP (Reveals code, copies to clipboard & redirects) -->
     <div id="coupon-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-xs hidden p-4">

@@ -154,48 +154,13 @@
 <body class="bg-slate-50 text-slate-800 font-['Plus_Jakarta_Sans',sans-serif] antialiased min-h-screen flex flex-col justify-between selection:bg-[#7F1A4E]/15 selection:text-[#7F1A4E]">
 
     <!-- Header Navigation -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Logo -->
-                <a href="/" class="flex items-center gap-3 group">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto">
-                    <span class="font-extrabold text-xl text-slate-900 group-hover:text-[#7F1A4E] transition-colors">PlayNewApps</span>
-                </a>
-
-                <!-- Navigation -->
-                <nav class="hidden md:flex items-center gap-6">
-                    <a href="/stores" class="font-bold text-sm text-slate-700 hover:text-[#7F1A4E] transition-colors">Stores</a>
-                    <a href="/coupon" class="font-semibold text-sm text-slate-600 hover:text-[#7F1A4E] transition-colors">Deals &amp; Coupons</a>
-                    <a href="/category?id=travel" class="font-semibold text-sm text-slate-600 hover:text-[#7F1A4E] transition-colors">Travel</a>
-                    <a href="/reviews" class="font-semibold text-sm text-slate-600 hover:text-[#7F1A4E] transition-colors">Reviews</a>
-                    <a href="/about" class="font-semibold text-sm text-slate-600 hover:text-[#7F1A4E] transition-colors">About</a>
-                </nav>
-
-                <!-- Action Button -->
-                <div class="flex items-center gap-3">
-                    <a href="https://codeaven.com/g/zrwntqeht4b68b264a763cffcf918a/" target="_blank" rel="noopener noreferrer nofollow" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#7F1A4E] hover:bg-[#68143f] text-white font-bold text-xs shadow-xs transition-colors cursor-pointer">
-                        <span class="material-icons-round text-sm">flight_takeoff</span>
-                        <span>Search Eurowings Flights</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Content Container -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 flex-1 w-full">
         
         <!-- Breadcrumb -->
-        <nav class="flex items-center gap-2 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-slate-800 transition-colors">Home</a>
-            <span class="material-icons-round text-xs text-slate-400">chevron_right</span>
-            <a href="/stores" class="hover:text-slate-800 transition-colors">Stores</a>
-            <span class="material-icons-round text-xs text-slate-400">chevron_right</span>
-            <a href="/category?id=travel" class="hover:text-slate-800 transition-colors">Travel</a>
-            <span class="material-icons-round text-xs text-slate-400">chevron_right</span>
-            <span class="text-slate-900 font-semibold">Eurowings</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/category?id=travel" class="hover:text-slate-800">Travel</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">Eurowings</span> </nav>
 
         <!-- Main Grid Layout: DEALS FIRST (COL-SPAN 8) + SIDEBAR (COL-SPAN 4) -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
@@ -206,10 +171,10 @@
                 <!-- DEALS & OFFERS SECTION (IMMEDIATELY VISIBLE AT THE VERY TOP) -->
                 <section id="deals-section" class="scroll-mt-20">
                     <div class="flex items-center justify-between mb-3.5">
-                        <h1 class="text-lg sm:text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2">
+                        <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
                             <span class="material-icons-round text-[#7F1A4E]">local_offer</span>
                             <span>Eurowings Promo Codes, Flight Deals &amp; Discounts</span>
-                        </h1>
+                        </h1> </div> </section>
                         <span class="text-xs font-bold px-2.5 py-1 bg-[#7F1A4E]/10 text-[#7F1A4E] rounded-full border border-[#7F1A4E]/20 shrink-0">8 Active Offers</span>
                     </div>
 
@@ -1327,23 +1292,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-slate-200 mt-12 py-8 text-slate-600 text-xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-                <div class="flex items-center gap-2">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-6 w-auto">
-                    <span class="font-bold text-slate-900">PlayNewApps</span>
-                    <span>&copy; 2026 PlayNewApps. All rights reserved.</span>
-                </div>
-                <div class="flex items-center gap-4">
-                    <a href="/privacy" class="hover:text-slate-900 transition-colors">Privacy Policy</a>
-                    <a href="/terms" class="hover:text-slate-900 transition-colors">Terms of Service</a>
-                    <a href="/about" class="hover:text-slate-900 transition-colors">About Us</a>
-                    <a href="/contact" class="hover:text-slate-900 transition-colors">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- Interactive Script -->
     <script>

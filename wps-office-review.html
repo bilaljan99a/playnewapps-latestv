@@ -37,6 +37,7 @@
 
     <!-- CSS -->
     <link rel="preload" as="style" href="./assets/css/style.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/style.min.css">
 
     <!-- Structured Data Schemas -->
@@ -212,35 +213,7 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
     
     <!-- Header Navigation -->
-    <header class="header" id="header">
-        <div class="container header-container">
-            <a href="/" class="logo" aria-label="PlayNewApps Home">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
-                <span>PlayNewApps</span>
-            </a>
-            
-            <nav class="nav" id="nav" aria-label="Main Navigation">
-                <ul class="nav-list">
-                    <li><a href="/" class="nav-link">Home</a></li>
-                    <li><a href="/category?id=software" class="nav-link active">Software Reviews</a></li>
-                    <li><a href="/stores" class="nav-link">Stores</a></li>
-                    <li><a href="/about" class="nav-link">About</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-actions">
-                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
-                    <span class="material-icons-round" aria-hidden="true">dark_mode</span>
-                </button>
-                <button id="mobile-menu-btn" class="icon-btn mobile-only" aria-label="Open Menu" aria-expanded="false" aria-controls="nav">
-                    <span class="material-icons-round" aria-hidden="true">menu</span>
-                </button>
-                <a href="https://yynbx.com/g/nv5qc75bd9b68b264a760e10b6b7ca/" target="_blank" rel="nofollow noopener noreferrer" class="btn btn-primary desktop-only" style="padding: 0.5rem 1.25rem; font-weight: 700; border-radius: 8px;">
-                    Download WPS Office
-                </a>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="hover:text-indigo-600 transition-colors">Stores</a> <a href="/reviews" class="text-indigo-600 font-bold transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Affiliate Disclosure Banner -->
     <div style="background: rgba(37, 99, 235, 0.05); border-bottom: 1px solid var(--border-color); padding: 0.6rem 0; font-size: 0.85rem; color: var(--text-secondary); text-align: center;">
@@ -256,38 +229,25 @@
         <main id="main-content" class="main-content">
             
             <!-- Breadcrumbs -->
-            <nav class="breadcrumbs" aria-label="Breadcrumb" style="margin-bottom: 1.5rem;">
-                <ol style="display: flex; gap: 0.5rem; flex-wrap: wrap; list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--text-secondary);">
-                    <li><a href="/" style="color: var(--text-secondary); text-decoration: none;">Home</a></li>
-                    <li>/</li>
-                    <li><a href="/category?id=software" style="color: var(--text-secondary); text-decoration: none;">Software Reviews</a></li>
-                    <li>/</li>
-                    <li style="color: var(--primary-color); font-weight: 700;">WPS Office 2026 Review</li>
-                </ol>
-            </nav>
+            <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/category?id=software" class="hover:text-slate-800">Software Reviews</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">WPS Office 2026 Review</span> </nav>
 
             <!-- Article Header -->
             <article class="review-article">
-                <header class="article-header" style="margin-bottom: 2rem;">
-                    <div style="display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.25rem; flex-wrap: wrap;">
-                        <img src="/assets/images/brands/wps-office.svg" alt="Official WPS Office Product Logo" width="72" height="72" style="border-radius: 16px; box-shadow: var(--shadow-sm); background: #ffffff; padding: 6px; border: 1px solid var(--border-color);">
+                <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="w-40 sm:w-52 h-16 sm:h-20 bg-white rounded-xl p-3 flex items-center justify-center border border-slate-200 flex-shrink-0 shadow-sm"> <img src="/assets/images/brands/wps-office.svg" alt="Official WPS Office Product Logo" class="max-h-full max-w-full object-contain"> </div> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+                                WPS Office 2026 Review: Features, WPS AI, PDF Suite & MS Office Comparison
+                            </h1> </div> </section> <div style="display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.25rem; flex-wrap: wrap;">
+                        
                         <div style="flex: 1; min-width: 280px;">
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.5rem;">
                                 <span class="badge" style="background: rgba(37,99,235,0.1); color: #2563eb; font-weight: 800; padding: 0.25rem 0.75rem; border-radius: 6px; font-size: 0.8rem;">Office Productivity</span>
                                 <span class="badge" style="background: rgba(16,185,129,0.1); color: #059669; font-weight: 800; padding: 0.25rem 0.75rem; border-radius: 6px; font-size: 0.8rem;">Trust Score: 98/100</span>
                                 <span class="badge" style="background: rgba(234,88,12,0.1); color: #ea580c; font-weight: 800; padding: 0.25rem 0.75rem; border-radius: 6px; font-size: 0.8rem;">Editor's Choice 2026</span>
                             </div>
-                            <h1 style="font-size: 2.3rem; font-weight: 900; line-height: 1.2; margin: 0; color: var(--text-primary);">
-                                WPS Office 2026 Review: Features, WPS AI, PDF Suite & MS Office Comparison
-                            </h1>
+                            
                         </div>
-                    </div>
-                    
-                    <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+                    </div> <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
                         An exhaustive, 3,500+ word hands-on evaluation of Kingsoft WPS Office 2026 (v12.8.2). Testing 100% Microsoft Word, Excel, and PowerPoint file fidelity, generative WPS AI capabilities, built-in PDF OCR Editor, multi-device cloud sync, and cost-benefit analysis versus Microsoft 365.
-                    </p>
-
-                    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 1rem 0; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+                    </p> <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 1rem 0; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
                         <div style="display: flex; align-items: center; gap: 0.75rem;">
                             <img src="/assets/images/logo.svg" alt="PlayNewApps Editorial Team" width="42" height="42" style="border-radius: 50%;">
                             <div>
@@ -307,7 +267,6 @@
                             <span style="font-weight: 900; font-size: 1.15rem; color: var(--text-primary);">4.8 / 5.0</span>
                         </div>
                     </div>
-                </header>
 
                 <!-- Resource Hub Box -->
                 <nav aria-label="Resource Hub Navigation" style="background: var(--surface-color); border: 1px solid var(--border-color); border-radius: var(--border-radius); padding: 1.25rem; margin-bottom: 2rem; box-shadow: var(--shadow-sm);">
@@ -1299,43 +1258,7 @@
     </div>
 
     <!-- Footer Navigation -->
-    <footer class="footer" style="background: var(--surface-color); border-top: 1px solid var(--border-color); padding: 3rem 0 1.5rem 0; margin-top: 4rem;">
-        <div class="container footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem;">
-            <div class="footer-col brand-col">
-                <a href="/" class="logo footer-logo" aria-label="PlayNewApps Home" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; font-weight: 800; font-size: 1.25rem; color: var(--text-primary); margin-bottom: 1rem;">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
-                    <span>PlayNewApps</span>
-                </a>
-                <p class="footer-desc" style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
-                    Your trusted destination for unbiased software reviews, tech buying guides, and verified official deals.
-                </p>
-            </div>
-            
-            <nav class="footer-col" aria-label="Productivity Reviews">
-                <h3 class="footer-heading" style="font-size: 1rem; font-weight: 800; color: var(--text-primary); margin-bottom: 1rem;">Top Software Reviews</h3>
-                <ul class="footer-links" style="list-style: none; padding: 0; margin: 0; line-height: 2; font-size: 0.9rem;">
-                    <li><a href="/wps-office-review" style="color: var(--text-secondary); text-decoration: none;">WPS Office 2026 Review</a></li>
-                    <li><a href="/wondershare-filmora-review" style="color: var(--text-secondary); text-decoration: none;">Wondershare Filmora 15</a></li>
-                    <li><a href="/category?id=software" style="color: var(--text-secondary); text-decoration: none;">All Software Reviews</a></li>
-                    <li><a href="/stores" style="color: var(--text-secondary); text-decoration: none;">Partner Software Stores</a></li>
-                </ul>
-            </nav>
-
-            <nav class="footer-col" aria-label="Quick Links">
-                <h3 class="footer-heading" style="font-size: 1rem; font-weight: 800; color: var(--text-primary); margin-bottom: 1rem;">Company & Legal</h3>
-                <ul class="footer-links" style="list-style: none; padding: 0; margin: 0; line-height: 2; font-size: 0.9rem;">
-                    <li><a href="/about" style="color: var(--text-secondary); text-decoration: none;">About PlayNewApps</a></li>
-                    <li><a href="/about#privacy" style="color: var(--text-secondary); text-decoration: none;">Privacy Policy</a></li>
-                    <li><a href="/about#terms" style="color: var(--text-secondary); text-decoration: none;">Terms of Service</a></li>
-                    <li><a href="/about#contact" style="color: var(--text-secondary); text-decoration: none;">Contact Editorial Team</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="container" style="border-top: 1px solid var(--border-color); margin-top: 2.5rem; padding-top: 1.5rem; text-align: center; font-size: 0.85rem; color: var(--text-secondary);">
-            <p>© <span id="current-year">2026</span> PlayNewApps. All rights reserved. All trademarks and brand logos belong to their respective owners.</p>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- Scripts -->
     <script src="./assets/js/script.min.js" defer></script>
