@@ -160,43 +160,13 @@
 <body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
 
     <!-- Header / Navbar -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Logo -->
-                <a href="/" class="flex items-center gap-3 group">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto">
-                    <span class="font-extrabold text-xl text-slate-900 group-hover:text-amber-600 transition-colors">PlayNewApps</span>
-                </a>
-
-                <!-- Navigation -->
-                <nav class="hidden md:flex items-center gap-6">
-                    <a href="/stores" class="text-sm font-semibold text-slate-700 hover:text-amber-600 transition-colors">All Stores</a>
-                    <a href="/category?id=productivity" class="text-sm font-semibold text-slate-700 hover:text-amber-600 transition-colors">Productivity Deals</a>
-                    <a href="/category?id=games" class="text-sm font-semibold text-slate-700 hover:text-amber-600 transition-colors">Gaming Tech</a>
-                    <a href="/reviews" class="text-sm font-semibold text-slate-700 hover:text-amber-600 transition-colors">Software Reviews</a>
-                </nav>
-
-                <!-- Search Bar -->
-                <div class="relative w-64 hidden sm:block">
-                    <input type="text" id="global-search" placeholder="Search stores &amp; offers..." class="w-full bg-slate-100 text-xs text-slate-800 pl-9 pr-4 py-2 rounded-xl border border-slate-200 focus:outline-none focus:border-red-500 focus:bg-white transition-all">
-                    <span class="material-icons-round absolute left-2.5 top-2 text-slate-400 text-base">search</span>
-                </div>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Container -->
     <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-5">
         
         <!-- Breadcrumbs -->
-        <nav class="flex items-center gap-2 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-slate-800">Home</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <a href="/stores" class="hover:text-slate-800">Stores</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <span class="text-slate-900 font-semibold">Lenovo</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">Lenovo</span> </nav>
 
         <!-- Compact Lenovo Store Header (Mobile-First Minimal Height) -->
         <div class="bg-white rounded-xl border border-slate-200 p-3.5 sm:p-4 shadow-sm mb-5">
@@ -210,7 +180,7 @@
                 <!-- Store Title & One Short Line -->
                 <div class="min-w-0">
                     <div class="flex items-center gap-2 flex-wrap">
-                        <h1 class="text-base sm:text-xl font-black text-slate-900 tracking-tight">Lenovo</h1>
+                        <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">Lenovo</h1> </div> </section>
                         <span class="px-2 py-0.5 rounded text-[10px] sm:text-xs font-extrabold bg-red-100 text-red-800">Laptops, PCs &amp; Gaming</span>
                         <span class="px-2 py-0.5 rounded text-[10px] sm:text-xs font-bold bg-amber-100 text-amber-900 hidden sm:inline-block">★ 4.9 (28.4k Ratings)</span>
                     </div>
@@ -240,7 +210,7 @@
                     <div class="space-y-3.5">
 
       <!-- Deal Card 1: CLP $20,000 Off Legion Gaming Computers & High-End Rigs -->
-      <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
+      <article class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
           <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
               <div class="flex items-start gap-3 sm:gap-4 min-w-0">
                   <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-red-600 border border-red-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-sm">
@@ -253,12 +223,12 @@
                           <span class="px-2 py-0.5 text-[10px] font-bold rounded bg-emerald-100 text-emerald-800">VERIFIED COUPON</span>
                           <span class="text-[11px] text-slate-400 font-medium">Status: Active</span>
                       </div>
-                      <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">CLP $20,000 Off Legion Gaming Computers & High-End Rigs</h3>
+                      <h2 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug"><a href="https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/" target="_blank" rel="nofollow noopener sponsored">CLP $20,000 Off Legion Gaming Computers & High-End Rigs</a></h2>
                       <p class="text-xs text-slate-600 mt-1">Save CLP $20,000 on high-performance Lenovo Legion gaming laptops, towers, and esports rigs with verified coupon.</p>
                   </div>
               </div>
               <div id="code-box-1" class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
-                  <button type="button" onclick="handleShowCode('LEGION20', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-1')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer">
+                  <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="handleShowCode('LEGION20', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-1')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer">
                       <span class="material-icons-round text-sm">content_copy</span>
                       <span>SHOW CODE &amp; VISIT</span>
                       <span class="bg-red-800 text-red-100 text-[10px] px-1.5 py-0.5 rounded font-mono font-bold tracking-wider">••••20</span>
@@ -283,10 +253,10 @@
                   <li>Click Show Code to reveal and automatically copy your code before checkout.</li>
               </ul>
           </div>
-      </div>
+      </article>
 
       <!-- Deal Card 2: CLP $5,000 Off Lenovo Legion Go Handheld Gaming Console -->
-      <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
+      <article class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
           <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
               <div class="flex items-start gap-3 sm:gap-4 min-w-0">
                   <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-red-600 border border-red-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-sm">
@@ -299,12 +269,12 @@
                           <span class="px-2 py-0.5 text-[10px] font-bold rounded bg-emerald-100 text-emerald-800">VERIFIED COUPON</span>
                           <span class="text-[11px] text-slate-400 font-medium">Status: Active</span>
                       </div>
-                      <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">CLP $5,000 Off Lenovo Legion Go Handheld Gaming Console</h3>
+                      <h2 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug"><a href="https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/" target="_blank" rel="nofollow noopener sponsored">CLP $5,000 Off Lenovo Legion Go Handheld Gaming Console</a></h2>
                       <p class="text-xs text-slate-600 mt-1">Get CLP $5,000 off the Legion Go handheld PC console featuring an 8.8-inch QHD+ 144Hz display and detachable TrueStrike controllers.</p>
                   </div>
               </div>
               <div id="code-box-2" class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
-                  <button type="button" onclick="handleShowCode('LEGIONGO5', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-2')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer">
+                  <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="handleShowCode('LEGIONGO5', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-2')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer">
                       <span class="material-icons-round text-sm">content_copy</span>
                       <span>SHOW CODE &amp; VISIT</span>
                       <span class="bg-purple-800 text-purple-100 text-[10px] px-1.5 py-0.5 rounded font-mono font-bold tracking-wider">••••O5</span>
@@ -329,10 +299,10 @@
                   <li>Includes standard manufacturer warranty and fast shipping.</li>
               </ul>
           </div>
-      </div>
+      </article>
 
       <!-- Deal Card 3: $300 Off Orders Above $2,000 Across Lenovo.com -->
-      <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
+      <article class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
           <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
               <div class="flex items-start gap-3 sm:gap-4 min-w-0">
                   <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-red-600 border border-red-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-sm">
@@ -345,12 +315,12 @@
                           <span class="px-2 py-0.5 text-[10px] font-bold rounded bg-emerald-100 text-emerald-800">VERIFIED COUPON</span>
                           <span class="text-[11px] text-slate-400 font-medium">Status: Active</span>
                       </div>
-                      <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">$300 Off Orders Above $2,000 Across Lenovo.com</h3>
+                      <h2 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug"><a href="https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/" target="_blank" rel="nofollow noopener sponsored">$300 Off Orders Above $2,000 Across Lenovo.com</a></h2>
                       <p class="text-xs text-slate-600 mt-1">Take an instant $300 off premium ThinkPad workstations, Legion Pro rigs, and Yoga convertibles on orders over $2,000.</p>
                   </div>
               </div>
               <div id="code-box-3" class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
-                  <button type="button" onclick="handleShowCode('LENOVO', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-3')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer">
+                  <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="handleShowCode('LENOVO', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-3')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer">
                       <span class="material-icons-round text-sm">content_copy</span>
                       <span>SHOW CODE &amp; VISIT</span>
                       <span class="bg-emerald-800 text-emerald-100 text-[10px] px-1.5 py-0.5 rounded font-mono font-bold tracking-wider">••••VO</span>
@@ -375,10 +345,10 @@
                   <li>Cannot be combined with certain doorbuster flash sales.</li>
               </ul>
           </div>
-      </div>
+      </article>
 
       <!-- Deal Card 4: $200 Off Orders Above $1,500 on Lenovo.com -->
-      <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
+      <article class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
           <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
               <div class="flex items-start gap-3 sm:gap-4 min-w-0">
                   <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-red-600 border border-red-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-sm">
@@ -391,12 +361,12 @@
                           <span class="px-2 py-0.5 text-[10px] font-bold rounded bg-emerald-100 text-emerald-800">VERIFIED COUPON</span>
                           <span class="text-[11px] text-slate-400 font-medium">Status: Active</span>
                       </div>
-                      <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">$200 Off Orders Above $1,500 on Lenovo.com</h3>
+                      <h2 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug"><a href="https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/" target="_blank" rel="nofollow noopener sponsored">$200 Off Orders Above $1,500 on Lenovo.com</a></h2>
                       <p class="text-xs text-slate-600 mt-1">Save $200 on business laptops, ultra-wide monitors, and desktop bundles when cart subtotal reaches $1,500.</p>
                   </div>
               </div>
               <div id="code-box-4" class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
-                  <button type="button" onclick="handleShowCode('LENOVO', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-4')" class="w-full sm:w-auto px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer">
+                  <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="handleShowCode('LENOVO', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-4')" class="w-full sm:w-auto px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer pna-show-code">
                       <span class="material-icons-round text-sm">content_copy</span>
                       <span>SHOW CODE &amp; VISIT</span>
                       <span class="bg-blue-800 text-blue-100 text-[10px] px-1.5 py-0.5 rounded font-mono font-bold tracking-wider">••••VO</span>
@@ -421,10 +391,10 @@
                   <li>Click Show Code to reveal and copy your promo code.</li>
               </ul>
           </div>
-      </div>
+      </article>
 
       <!-- Deal Card 5: $100 Off Orders Above $1,000 on Lenovo.com -->
-      <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
+      <article class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
           <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
               <div class="flex items-start gap-3 sm:gap-4 min-w-0">
                   <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-red-600 border border-red-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-sm">
@@ -437,12 +407,12 @@
                           <span class="px-2 py-0.5 text-[10px] font-bold rounded bg-emerald-100 text-emerald-800">VERIFIED COUPON</span>
                           <span class="text-[11px] text-slate-400 font-medium">Status: Active</span>
                       </div>
-                      <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">$100 Off Orders Above $1,000 on Lenovo.com</h3>
+                      <h2 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug"><a href="https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/" target="_blank" rel="nofollow noopener sponsored">$100 Off Orders Above $1,000 on Lenovo.com</a></h2>
                       <p class="text-xs text-slate-600 mt-1">Receive $100 off qualifying orders of $1,000 or more across all eligible laptops, PCs, and workstations.</p>
                   </div>
               </div>
               <div id="code-box-5" class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
-                  <button type="button" onclick="handleShowCode('LENOVO', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-5')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer">
+                  <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="handleShowCode('LENOVO', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-5')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer">
                       <span class="material-icons-round text-sm">content_copy</span>
                       <span>SHOW CODE &amp; VISIT</span>
                       <span class="bg-indigo-800 text-indigo-100 text-[10px] px-1.5 py-0.5 rounded font-mono font-bold tracking-wider">••••VO</span>
@@ -467,10 +437,10 @@
                   <li>Limit one eCoupon per order.</li>
               </ul>
           </div>
-      </div>
+      </article>
 
       <!-- Deal Card 6: Up to 10% Off Sitewide on Selected Hardware & Laptops -->
-      <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
+      <article class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
           <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
               <div class="flex items-start gap-3 sm:gap-4 min-w-0">
                   <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-red-600 border border-red-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-sm">
@@ -483,12 +453,12 @@
                           <span class="px-2 py-0.5 text-[10px] font-bold rounded bg-emerald-100 text-emerald-800">VERIFIED COUPON</span>
                           <span class="text-[11px] text-slate-400 font-medium">Status: Active</span>
                       </div>
-                      <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">Up to 10% Off Sitewide on Selected Hardware & Laptops</h3>
+                      <h2 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug"><a href="https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/" target="_blank" rel="nofollow noopener sponsored">Up to 10% Off Sitewide on Selected Hardware & Laptops</a></h2>
                       <p class="text-xs text-slate-600 mt-1">Enjoy up to 10% additional cart savings on select Lenovo PCs, laptops, and peripheral hardware.</p>
                   </div>
               </div>
               <div id="code-box-6" class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
-                  <button type="button" onclick="handleShowCode('LNVCARRITO', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-6')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer">
+                  <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="handleShowCode('LNVCARRITO', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-6')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer">
                       <span class="material-icons-round text-sm">content_copy</span>
                       <span>SHOW CODE &amp; VISIT</span>
                       <span class="bg-amber-800 text-amber-100 text-[10px] px-1.5 py-0.5 rounded font-mono font-bold tracking-wider">••••TO</span>
@@ -513,10 +483,10 @@
                   <li>Stacks with select instant web prices.</li>
               </ul>
           </div>
-      </div>
+      </article>
 
       <!-- Deal Card 7: Up to CLP $40,000 Off Lenovo Shopping Cart Orders -->
-      <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
+      <article class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
           <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
               <div class="flex items-start gap-3 sm:gap-4 min-w-0">
                   <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-red-600 border border-red-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-sm">
@@ -529,12 +499,12 @@
                           <span class="px-2 py-0.5 text-[10px] font-bold rounded bg-emerald-100 text-emerald-800">VERIFIED COUPON</span>
                           <span class="text-[11px] text-slate-400 font-medium">Status: Active</span>
                       </div>
-                      <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">Up to CLP $40,000 Off Lenovo Shopping Cart Orders</h3>
+                      <h2 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug"><a href="https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/" target="_blank" rel="nofollow noopener sponsored">Up to CLP $40,000 Off Lenovo Shopping Cart Orders</a></h2>
                       <p class="text-xs text-slate-600 mt-1">Apply verified promo code in cart to save up to CLP $40,000 on qualifying computing and gaming hardware.</p>
                   </div>
               </div>
               <div id="code-box-7" class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
-                  <button type="button" onclick="handleShowCode('LNVCARRITO', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-7')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer">
+                  <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="handleShowCode('LNVCARRITO', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-7')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer">
                       <span class="material-icons-round text-sm">content_copy</span>
                       <span>SHOW CODE &amp; VISIT</span>
                       <span class="bg-rose-800 text-rose-100 text-[10px] px-1.5 py-0.5 rounded font-mono font-bold tracking-wider">••••TO</span>
@@ -559,10 +529,10 @@
                   <li>One promo code per checkout transaction.</li>
               </ul>
           </div>
-      </div>
+      </article>
 
       <!-- Deal Card 8: Extra 5% Off Lenovo Computing Hardware & Electronics -->
-      <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
+      <article class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
           <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
               <div class="flex items-start gap-3 sm:gap-4 min-w-0">
                   <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-red-600 border border-red-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-sm">
@@ -575,12 +545,12 @@
                           <span class="px-2 py-0.5 text-[10px] font-bold rounded bg-emerald-100 text-emerald-800">VERIFIED COUPON</span>
                           <span class="text-[11px] text-slate-400 font-medium">Status: Active</span>
                       </div>
-                      <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">Extra 5% Off Lenovo Computing Hardware & Electronics</h3>
+                      <h2 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug"><a href="https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/" target="_blank" rel="nofollow noopener sponsored">Extra 5% Off Lenovo Computing Hardware & Electronics</a></h2>
                       <p class="text-xs text-slate-600 mt-1">Redeem verified coupon code at checkout for an extra 5% reduction on eligible Lenovo computers and displays.</p>
                   </div>
               </div>
               <div id="code-box-8" class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
-                  <button type="button" onclick="handleShowCode('LNVCARRITO', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-8')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer">
+                  <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="handleShowCode('LNVCARRITO', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-8')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer">
                       <span class="material-icons-round text-sm">content_copy</span>
                       <span>SHOW CODE &amp; VISIT</span>
                       <span class="bg-cyan-800 text-cyan-100 text-[10px] px-1.5 py-0.5 rounded font-mono font-bold tracking-wider">••••TO</span>
@@ -605,10 +575,10 @@
                   <li>Click Show Code to reveal and copy code.</li>
               </ul>
           </div>
-      </div>
+      </article>
 
       <!-- Deal Card 9: 3% Instant Cart Discount on Lenovo.com -->
-      <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
+      <article class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
           <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
               <div class="flex items-start gap-3 sm:gap-4 min-w-0">
                   <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-red-600 border border-red-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-sm">
@@ -621,12 +591,12 @@
                           <span class="px-2 py-0.5 text-[10px] font-bold rounded bg-emerald-100 text-emerald-800">VERIFIED COUPON</span>
                           <span class="text-[11px] text-slate-400 font-medium">Status: Active</span>
                       </div>
-                      <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">3% Instant Cart Discount on Lenovo.com</h3>
+                      <h2 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug"><a href="https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/" target="_blank" rel="nofollow noopener sponsored">3% Instant Cart Discount on Lenovo.com</a></h2>
                       <p class="text-xs text-slate-600 mt-1">Take an instant 3% off your entire cart total when checking out on official Lenovo online stores.</p>
                   </div>
               </div>
               <div id="code-box-9" class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
-                  <button type="button" onclick="handleShowCode('LNVCARRITO', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-9')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer">
+                  <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="handleShowCode('LNVCARRITO', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-9')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer">
                       <span class="material-icons-round text-sm">content_copy</span>
                       <span>SHOW CODE &amp; VISIT</span>
                       <span class="bg-teal-800 text-teal-100 text-[10px] px-1.5 py-0.5 rounded font-mono font-bold tracking-wider">••••TO</span>
@@ -651,7 +621,7 @@
                   <li>Applicable at cart review before payment.</li>
               </ul>
           </div>
-      </div>
+      </article>
 
       <!-- Deal Card 10: Exclusive Student Pricing on ThinkBook 14x — Starting from $799 -->
       <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm">
@@ -744,7 +714,7 @@
       </div>
 
       <!-- Deal Card 12: Up to $850 Off Yoga Slim 7x Copilot+ PC OLED Laptops -->
-      <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
+      <article class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-red-600">
           <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
               <div class="flex items-start gap-3 sm:gap-4 min-w-0">
                   <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-red-600 border border-red-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-sm">
@@ -757,12 +727,12 @@
                           <span class="px-2 py-0.5 text-[10px] font-bold rounded bg-emerald-100 text-emerald-800">VERIFIED COUPON</span>
                           <span class="text-[11px] text-slate-400 font-medium">Status: Active</span>
                       </div>
-                      <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">Up to $850 Off Yoga Slim 7x Copilot+ PC OLED Laptops</h3>
+                      <h2 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug"><a href="https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/" target="_blank" rel="nofollow noopener sponsored">Up to $850 Off Yoga Slim 7x Copilot+ PC OLED Laptops</a></h2>
                       <p class="text-xs text-slate-600 mt-1">Save up to $850 on the ultra-thin Yoga Slim 7x featuring Snapdragon X Elite, 32GB RAM, and 3K PureSight OLED screen.</p>
                   </div>
               </div>
               <div id="code-box-12" class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
-                  <button type="button" onclick="handleShowCode('EXTRASAVEAFF', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-12')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer">
+                  <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="handleShowCode('EXTRASAVEAFF', 'https://bednari.com/g/6iia5dppfeb68b264a76cc01b591a8/', 'code-box-12')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer">
                       <span class="material-icons-round text-sm">content_copy</span>
                       <span>SHOW CODE &amp; VISIT</span>
                       <span class="bg-violet-800 text-violet-100 text-[10px] px-1.5 py-0.5 rounded font-mono font-bold tracking-wider">••••FF</span>
@@ -787,7 +757,7 @@
                   <li>Includes 3-year battery warranty and premium display calibration.</li>
               </ul>
           </div>
-      </div>
+      </article>
 
       <!-- Deal Card 13: Up to $830 Off ThinkPad E16 Gen 3 Enterprise Laptops -->
       <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm">
@@ -1980,49 +1950,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#0f172a] text-slate-400 py-12 border-t border-slate-800 mt-auto text-xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div class="space-y-3">
-                    <div class="flex items-center gap-3">
-                        <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-8 rounded-lg shadow-sm">
-                        <span class="text-lg font-black text-white tracking-tight">PlayNewApps</span>
-                    </div>
-                    <p class="text-slate-400 leading-relaxed">
-                        PlayNewApps is an independent software review and verified coupon discovery hub. We test hardware, evaluate applications, and curate verified promotional savings.
-                    </p>
-                </div>
-                <div class="space-y-2">
-                    <h4 class="text-white font-bold text-sm">Popular Categories</h4>
-                    <ul class="space-y-1.5">
-                        <li><a href="/stores?category=Laptops" class="hover:text-white transition-colors">Laptops &amp; Ultrabooks</a></li>
-                        <li><a href="/stores?category=ThinkPad" class="hover:text-white transition-colors">ThinkPad Business PCs</a></li>
-                        <li><a href="/stores?category=Gaming" class="hover:text-white transition-colors">Legion Gaming Laptops</a></li>
-                        <li><a href="/reviews" class="hover:text-white transition-colors">Tech &amp; Hardware Reviews</a></li>
-                    </ul>
-                </div>
-                <div class="space-y-2">
-                    <h4 class="text-white font-bold text-sm">Legal &amp; Trust</h4>
-                    <ul class="space-y-1.5">
-                        <li><a href="/about" class="hover:text-white transition-colors">Editorial Policy &amp; Testing</a></li>
-                        <li><a href="/affiliate" class="hover:text-white transition-colors">Affiliate Disclosure</a></li>
-                        <li><a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a></li>
-                        <li><a href="/terms" class="hover:text-white transition-colors">Terms of Service</a></li>
-                        <li><a href="/contact" class="hover:text-white transition-colors">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="space-y-2">
-                    <h4 class="text-white font-bold text-sm">Lenovo Partner Verification</h4>
-                    <p class="text-slate-400 leading-relaxed">
-                        All Lenovo eCoupons, doorbuster deals, and promo codes on this page are verified with official Lenovo direct channels and affiliate networks on a daily schedule.
-                    </p>
-                </div>
-            </div>
-            <div class="border-t border-slate-800 pt-6 text-center text-slate-500">
-                <p>&copy; 2026 PlayNewApps. All rights reserved. Lenovo, ThinkPad, IdeaPad, Yoga, and Legion are registered trademarks of Lenovo Group Limited.</p>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- Scripts: Accordion Toggle & Show Code Reveal Handlers -->
     <script>

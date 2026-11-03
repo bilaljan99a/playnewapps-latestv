@@ -676,40 +676,13 @@
 <body class="bg-slate-50 text-slate-800 antialiased font-sans flex flex-col min-h-screen">
 
     <!-- Header Navigation -->
-    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
-            <div class="flex items-center gap-3">
-                <a href="/" class="flex items-center gap-2.5 group">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-9 group-hover:scale-105 transition-transform">
-                    <span class="font-extrabold text-xl tracking-tight text-slate-900">PlayNew<span class="text-purple-600">Apps</span></span>
-                </a>
-            </div>
-            <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
-                <a href="/" class="hover:text-purple-600 transition-colors">Home</a>
-                <a href="/stores" class="text-purple-600 font-bold">Stores</a>
-                <a href="/coupon" class="hover:text-purple-600 transition-colors">Coupons</a>
-                <a href="/reviews" class="hover:text-purple-600 transition-colors">Reviews</a>
-            </nav>
-            <div class="flex items-center gap-3">
-                <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-xs sm:text-sm shadow-xs transition-all duration-200">
-                    <span>Visit ChicMe</span>
-                    <span class="material-icons-round text-sm">launch</span>
-                </a>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Container -->
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full">
 
         <!-- Breadcrumb -->
-        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-4 overflow-x-auto whitespace-nowrap" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-purple-600">Home</a>
-            <span class="material-icons-round text-xs text-slate-400">chevron_right</span>
-            <a href="/stores" class="hover:text-purple-600">Stores</a>
-            <span class="material-icons-round text-xs text-slate-400">chevron_right</span>
-            <span class="text-slate-800 font-semibold">ChicMe Promo Codes &amp; Discounts</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">ChicMe Promo Codes &amp; Discounts</span> </nav>
 
                         <!-- Top Header Card (Clean & Minimalist: Logo Box + H1 Title ONLY) -->
         <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm mb-6 flex flex-col sm:flex-row items-center gap-6">
@@ -717,7 +690,7 @@
                 <img src="/assets/images/brands/chicme.png" alt="ChicMe Official Logo" class="max-h-full max-w-full object-contain block" width="220" height="70" loading="eager" onerror="this.src='/assets/images/brands/chicme.svg'">
             </div>
             <div class="text-center sm:text-left">
-                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">ChicMe Promo Codes &amp; Coupons (2026)</h1>
+                <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">ChicMe Promo Codes &amp; Coupons (2026)</h1> </div> </section>
             </div>
         </div>
 
@@ -737,7 +710,7 @@
                     </div>
                     <div class="space-y-4">
         <!-- Offer Card 1: 10% Off Back-to-School 2026 Collection with Promo Code -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-back-to-school-10-off">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-back-to-school-10-off">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -762,11 +735,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             10% Off Back-to-School 2026 Collection with Promo Code
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Save an extra 10% on trendy back-to-school outfits, casual tops, denim jeans, stylish cardigans, and campus fashion essentials.
                     </p>
@@ -781,8 +754,8 @@
 
                 <!-- Right Action Button -->
                 <div class="lg:col-span-3 flex flex-col items-stretch sm:items-end justify-center">
-                    <button type="button" onclick="revealCode(this, 'BACK10', 'https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/')" class="w-full sm:w-auto inline-flex items-center justify-between sm:justify-center gap-2.5 px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all duration-200 group cursor-pointer" aria-label="Show ChicMe discount code">
-                            <span class="code-pill-mask font-mono font-bold text-purple-100 bg-purple-900/40 px-2 py-0.5 rounded text-xs">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="revealCode(this, 'BACK10', 'https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/')" class="w-full sm:w-auto inline-flex items-center justify-between sm:justify-center gap-2.5 px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all duration-200 group cursor-pointer" aria-label="Show ChicMe discount code">
+                            
                             <span class="text-white flex items-center gap-1.5 font-extrabold uppercase tracking-wide text-xs">
                                 Show Code
                                 <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
@@ -805,9 +778,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Save an extra 10% on trendy back-to-school outfits, casual tops, denim jeans, stylish cardigans, and campus fashion essentials.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Valid on Back to School collection items through 30.09.2026 23:59. Enter code at checkout.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 2: Extra 15% Off Orders Over $98 with Coupon Code -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-orders-over-98-15-off">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-orders-over-98-15-off">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -832,11 +805,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Extra 15% Off Orders Over $98 with Coupon Code
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Enjoy an extra 15% off when your order subtotal reaches $98 or more across chic dresses, tops, two-piece sets, and curve fashion.
                     </p>
@@ -851,8 +824,8 @@
 
                 <!-- Right Action Button -->
                 <div class="lg:col-span-3 flex flex-col items-stretch sm:items-end justify-center">
-                    <button type="button" onclick="revealCode(this, 'ADMITAD015', 'https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/')" class="w-full sm:w-auto inline-flex items-center justify-between sm:justify-center gap-2.5 px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all duration-200 group cursor-pointer" aria-label="Show ChicMe discount code">
-                            <span class="code-pill-mask font-mono font-bold text-purple-100 bg-purple-900/40 px-2 py-0.5 rounded text-xs">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="revealCode(this, 'ADMITAD015', 'https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/')" class="w-full sm:w-auto inline-flex items-center justify-between sm:justify-center gap-2.5 px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all duration-200 group cursor-pointer" aria-label="Show ChicMe discount code">
+                            
                             <span class="text-white flex items-center gap-1.5 font-extrabold uppercase tracking-wide text-xs">
                                 Show Code
                                 <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
@@ -875,9 +848,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Enjoy an extra 15% off when your order subtotal reaches $98 or more across chic dresses, tops, two-piece sets, and curve fashion.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Requires a minimum order subtotal of $98. Enter verified coupon code at checkout.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 3: 10% Off Your First Order for New Customers with Promo Code -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-first-order-welcome-discount">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-first-order-welcome-discount">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -902,11 +875,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             10% Off Your First Order for New Customers with Promo Code
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Sign up as a new ChicMe member and receive an instant 10% discount on your first online fashion order.
                     </p>
@@ -921,8 +894,8 @@
 
                 <!-- Right Action Button -->
                 <div class="lg:col-span-3 flex flex-col items-stretch sm:items-end justify-center">
-                    <button type="button" onclick="revealCode(this, 'CHIC10', 'https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/')" class="w-full sm:w-auto inline-flex items-center justify-between sm:justify-center gap-2.5 px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all duration-200 group cursor-pointer" aria-label="Show ChicMe discount code">
-                            <span class="code-pill-mask font-mono font-bold text-purple-100 bg-purple-900/40 px-2 py-0.5 rounded text-xs">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="revealCode(this, 'CHIC10', 'https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/')" class="w-full sm:w-auto inline-flex items-center justify-between sm:justify-center gap-2.5 px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all duration-200 group cursor-pointer" aria-label="Show ChicMe discount code">
+                            
                             <span class="text-white flex items-center gap-1.5 font-extrabold uppercase tracking-wide text-xs">
                                 Show Code
                                 <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
@@ -945,9 +918,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Sign up as a new ChicMe member and receive an instant 10% discount on your first online fashion order.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Valid for first-time shoppers on their initial order upon registering an account.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 4: Extra 15% Off Your First In-App Order with Code -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-app-exclusive-15-off">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-app-exclusive-15-off">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -972,11 +945,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Extra 15% Off Your First In-App Order with Code
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Download the official ChicMe mobile app on iOS or Android and unlock an extra 15% off your first mobile purchase.
                     </p>
@@ -991,8 +964,8 @@
 
                 <!-- Right Action Button -->
                 <div class="lg:col-span-3 flex flex-col items-stretch sm:items-end justify-center">
-                    <button type="button" onclick="revealCode(this, 'APP15', 'https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/')" class="w-full sm:w-auto inline-flex items-center justify-between sm:justify-center gap-2.5 px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all duration-200 group cursor-pointer" aria-label="Show ChicMe discount code">
-                            <span class="code-pill-mask font-mono font-bold text-purple-100 bg-purple-900/40 px-2 py-0.5 rounded text-xs">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="revealCode(this, 'APP15', 'https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/')" class="w-full sm:w-auto inline-flex items-center justify-between sm:justify-center gap-2.5 px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all duration-200 group cursor-pointer" aria-label="Show ChicMe discount code">
+                            
                             <span class="text-white flex items-center gap-1.5 font-extrabold uppercase tracking-wide text-xs">
                                 Show Code
                                 <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
@@ -1015,9 +988,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Download the official ChicMe mobile app on iOS or Android and unlock an extra 15% off your first mobile purchase.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> App-exclusive promo code. Valid on your first purchase placed through the ChicMe mobile app.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 5: Extra $8 Off Orders Over $69 with Coupon Code -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-orders-over-69-8-off">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-orders-over-69-8-off">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -1042,11 +1015,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Extra $8 Off Orders Over $69 with Coupon Code
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Take $8 off your order when your cart total reaches $69 or more on stylish tops, dresses, and co-ords on ChicMe.
                     </p>
@@ -1061,8 +1034,8 @@
 
                 <!-- Right Action Button -->
                 <div class="lg:col-span-3 flex flex-col items-stretch sm:items-end justify-center">
-                    <button type="button" onclick="revealCode(this, 'SAVE8', 'https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/')" class="w-full sm:w-auto inline-flex items-center justify-between sm:justify-center gap-2.5 px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all duration-200 group cursor-pointer" aria-label="Show ChicMe discount code">
-                            <span class="code-pill-mask font-mono font-bold text-purple-100 bg-purple-900/40 px-2 py-0.5 rounded text-xs">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="revealCode(this, 'SAVE8', 'https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/')" class="w-full sm:w-auto inline-flex items-center justify-between sm:justify-center gap-2.5 px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all duration-200 group cursor-pointer" aria-label="Show ChicMe discount code">
+                            
                             <span class="text-white flex items-center gap-1.5 font-extrabold uppercase tracking-wide text-xs">
                                 Show Code
                                 <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
@@ -1085,9 +1058,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Take $8 off your order when your cart total reaches $69 or more on stylish tops, dresses, and co-ords on ChicMe.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Minimum cart value of $69 required before taxes and shipping fees.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 6: Extra $20 Off Orders Over $129 with Coupon Code -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-orders-over-129-20-off">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-orders-over-129-20-off">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -1112,11 +1085,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Extra $20 Off Orders Over $129 with Coupon Code
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Enjoy an extra $20 instant discount on qualifying fashion haul orders of $129 or more across all ChicMe collections.
                     </p>
@@ -1131,8 +1104,8 @@
 
                 <!-- Right Action Button -->
                 <div class="lg:col-span-3 flex flex-col items-stretch sm:items-end justify-center">
-                    <button type="button" onclick="revealCode(this, 'SAVE20', 'https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/')" class="w-full sm:w-auto inline-flex items-center justify-between sm:justify-center gap-2.5 px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all duration-200 group cursor-pointer" aria-label="Show ChicMe discount code">
-                            <span class="code-pill-mask font-mono font-bold text-purple-100 bg-purple-900/40 px-2 py-0.5 rounded text-xs">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="revealCode(this, 'SAVE20', 'https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/')" class="w-full sm:w-auto inline-flex items-center justify-between sm:justify-center gap-2.5 px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all duration-200 group cursor-pointer" aria-label="Show ChicMe discount code">
+                            
                             <span class="text-white flex items-center gap-1.5 font-extrabold uppercase tracking-wide text-xs">
                                 Show Code
                                 <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
@@ -1155,9 +1128,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Enjoy an extra $20 instant discount on qualifying fashion haul orders of $129 or more across all ChicMe collections.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Minimum cart value of $129 required before taxes and shipping fees.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 7: Free Standard Shipping on All Orders Over $59 -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-free-standard-shipping-deal">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-free-standard-shipping-deal">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -1182,11 +1155,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Free Standard Shipping on All Orders Over $59
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Get 100% free standard delivery to the United States and international destinations when you spend $59 or more on ChicMe.
                     </p>
@@ -1222,9 +1195,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Get 100% free standard delivery to the United States and international destinations when you spend $59 or more on ChicMe.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Free standard shipping automatically applies at checkout when order subtotal reaches $59+ after discounts.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 8: Up to 80% Off Flash Sale & Daily Clearance Markdowns -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-flash-sale-clearance-deal">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-flash-sale-clearance-deal">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -1249,11 +1222,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Up to 80% Off Flash Sale & Daily Clearance Markdowns
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Score massive discounts up to 80% off original retail prices on limited-time flash deals and clearance stock.
                     </p>
@@ -1289,9 +1262,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Score massive discounts up to 80% off original retail prices on limited-time flash deals and clearance stock.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Limited time flash sales updated daily. Prices as marked on sale items.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 9: Up to 60% Off Trendy Dresses: Maxi, Bodycon, Mini & Cocktail -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-dresses-collection-deal">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-dresses-collection-deal">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -1316,11 +1289,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Up to 60% Off Trendy Dresses: Maxi, Bodycon, Mini & Cocktail
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Save up to 60% on thousands of women's dresses including bodycon, maxi, cocktail, summer florals, and party styles.
                     </p>
@@ -1356,9 +1329,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Save up to 60% on thousands of women's dresses including bodycon, maxi, cocktail, summer florals, and party styles.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Valid on selected dress styles across the catalog. No promo code needed.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 10: Matching 2-Piece Sets & Stylish Jumpsuits from $14.99 -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-two-piece-sets-jumpsuits-deal">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-two-piece-sets-jumpsuits-deal">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -1383,11 +1356,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Matching 2-Piece Sets & Stylish Jumpsuits from $14.99
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Shop stylish knit coordinates, blazer-and-short combos, wide-leg loungewear, and one-piece jumpsuits starting at $14.99.
                     </p>
@@ -1423,9 +1396,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Shop stylish knit coordinates, blazer-and-short combos, wide-leg loungewear, and one-piece jumpsuits starting at $14.99.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Promotional prices as marked on participating 2-piece sets and jumpsuits.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 11: Up to 70% Off ChicMe Curve & Plus-Size Fashion (Sizes 0XL-5XL) -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-plus-size-curve-deal">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-plus-size-curve-deal">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -1450,11 +1423,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Up to 70% Off ChicMe Curve & Plus-Size Fashion (Sizes 0XL-5XL)
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Flattering plus-size dresses, tops, bottoms, and swimwear specifically tailored for sizes 0XL to 5XL at up to 70% off.
                     </p>
@@ -1490,9 +1463,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Flattering plus-size dresses, tops, bottoms, and swimwear specifically tailored for sizes 0XL to 5XL at up to 70% off.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Valid on Curve & Plus-Size collection styles while inventory lasts.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 12: Bikinis, Monokinis & Beach Cover-Ups from $6.99 -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-swimwear-beachwear-deal">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-swimwear-beachwear-deal">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -1517,11 +1490,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Bikinis, Monokinis & Beach Cover-Ups from $6.99
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Explore chic swimwear, high-waisted bikinis, monokinis, and sheer resort cover-ups starting at $6.99.
                     </p>
@@ -1557,9 +1530,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Explore chic swimwear, high-waisted bikinis, monokinis, and sheer resort cover-ups starting at $6.99.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Select swimwear styles as marked. Available while supplies last.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 13: Women's Tops, Graphic Tees & Elegant Blouses from $7.99 -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-tops-blouses-deal">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-tops-blouses-deal">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -1584,11 +1557,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Women's Tops, Graphic Tees & Elegant Blouses from $7.99
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Discover versatile crop tops, romantic lace blouses, bodysuits, and everyday tees starting from $7.99.
                     </p>
@@ -1624,9 +1597,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Discover versatile crop tops, romantic lace blouses, bodysuits, and everyday tees starting from $7.99.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Prices as marked on participating tops, camis, and blouses.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 14: Up to 50% Off Jeans, High-Waist Pants, Leggings & Skirts -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-bottoms-denim-deal">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-bottoms-denim-deal">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -1651,11 +1624,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Up to 50% Off Jeans, High-Waist Pants, Leggings & Skirts
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Save up to 50% on stretch denim, wide-leg palazzo pants, pleated mini skirts, and faux-leather leggings.
                     </p>
@@ -1691,9 +1664,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Save up to 50% on stretch denim, wide-leg palazzo pants, pleated mini skirts, and faux-leather leggings.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Discount reflected in product sale price across bottoms categories.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 15: Trendy Footwear: Strappy Heels, Sneakers, Boots & Sandals from $13.99 -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-shoes-footwear-deal">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-shoes-footwear-deal">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -1718,11 +1691,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Trendy Footwear: Strappy Heels, Sneakers, Boots & Sandals from $13.99
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Upgrade your shoe collection with strappy heels, chunky sneakers, ankle boots, and slide sandals from $13.99.
                     </p>
@@ -1758,9 +1731,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Upgrade your shoe collection with strappy heels, chunky sneakers, ankle boots, and slide sandals from $13.99.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Select footwear styles and sizes as marked online.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 16: Fashion Accessories, Handbags & Layered Jewelry from $2.99 -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-accessories-jewelry-deal">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-accessories-jewelry-deal">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -1785,11 +1758,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Fashion Accessories, Handbags & Layered Jewelry from $2.99
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Accessorize your outfits with trendy handbags, sunglasses, belts, and layered jewelry sets starting from $2.99.
                     </p>
@@ -1825,9 +1798,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Accessorize your outfits with trendy handbags, sunglasses, belts, and layered jewelry sets starting from $2.99.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Valid on participating jewelry, bags, and accessory items.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 17: Buy 2, Get 1 at 50% Off on Selected Styles -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-buy-2-get-1-50-off-deal">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-buy-2-get-1-50-off-deal">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -1852,11 +1825,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Buy 2, Get 1 at 50% Off on Selected Styles
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Mix and match participating dresses, tops, and sets to get the 3rd item at half price during this bundle promo.
                     </p>
@@ -1892,9 +1865,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Mix and match participating dresses, tops, and sets to get the 3rd item at half price during this bundle promo.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Discount applied to the lowest priced qualifying item in cart.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 18: Earn VIP Points on Every $1 Spent to Redeem for Cash Discounts -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-vip-points-rewards-deal">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-vip-points-rewards-deal">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -1919,11 +1892,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Earn VIP Points on Every $1 Spent to Redeem for Cash Discounts
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Join ChicMe VIP Club for free and earn 1 point for every $1 spent. Redeem points at checkout for up to 70% off your order value.
                     </p>
@@ -1959,9 +1932,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Join ChicMe VIP Club for free and earn 1 point for every $1 spent. Redeem points at checkout for up to 70% off your order value.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Free account membership required. Points subject to ChicMe loyalty program terms.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 19: Cozy Loungewear, Silk Pajamas & Robes from $9.99 -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-homewear-loungewear-deal">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-homewear-loungewear-deal">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -1986,11 +1959,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Cozy Loungewear, Silk Pajamas & Robes from $9.99
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Relax in style with soft ribbed knit loungewear, satin pajama sets, and cozy bathrobes starting from $9.99.
                     </p>
@@ -2026,9 +1999,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Relax in style with soft ribbed knit loungewear, satin pajama sets, and cozy bathrobes starting from $9.99.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Valid on homewear and nightwear collection items as marked.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 20: Lace Bodysuits, Bralettes & Intimates Sets from $8.99 -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-lingerie-intimates-deal">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-lingerie-intimates-deal">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -2053,11 +2026,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Lace Bodysuits, Bralettes & Intimates Sets from $8.99
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Discover feminine lace bralettes, sheer bodysuits, and sexy lingerie sets starting from $8.99.
                     </p>
@@ -2093,9 +2066,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Discover feminine lace bralettes, sheer bodysuits, and sexy lingerie sets starting from $8.99.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Select intimate apparel styles as marked online.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 21: 15% Student Discount with Instant Status Verification -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-student-discount-15-off">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-student-discount-15-off">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -2120,11 +2093,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             15% Student Discount with Instant Status Verification
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         College and university students enjoy an exclusive 15% discount across all fashion collections upon verifying student status.
                     </p>
@@ -2160,9 +2133,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> College and university students enjoy an exclusive 15% discount across all fashion collections upon verifying student status.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Requires student verification via ChicMe student portal. Usable on full-price items.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 22: Free Express Delivery on Orders Over $129 -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-free-express-shipping-deal">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-free-express-shipping-deal">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -2187,11 +2160,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Free Express Delivery on Orders Over $129
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Enjoy free expedited express delivery on qualifying fashion haul orders exceeding $129.
                     </p>
@@ -2227,9 +2200,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Enjoy free expedited express delivery on qualifying fashion haul orders exceeding $129.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> verified voucher when qualifying cart subtotal reaches $129+ after discounts.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 23: Winter Coats, Trench Jackets & Blazers from $24.99 -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-outerwear-jackets-deal">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-outerwear-jackets-deal">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -2254,11 +2227,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Winter Coats, Trench Jackets & Blazers from $24.99
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Stay warm in style with trench coats, tailored blazers, faux-fur jackets, and puffer coats starting from $24.99.
                     </p>
@@ -2294,9 +2267,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Stay warm in style with trench coats, tailored blazers, faux-fur jackets, and puffer coats starting from $24.99.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Outerwear prices as marked. Valid while promotional stock lasts.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 24: Party & Night Out Glamour Styles Up to 65% Off -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-party-night-out-deal">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-party-night-out-deal">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -2321,11 +2294,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Party & Night Out Glamour Styles Up to 65% Off
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Turn heads with sequin cocktail dresses, satin slips, cut-out gowns, and party tops at up to 65% off.
                     </p>
@@ -2361,9 +2334,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Turn heads with sequin cocktail dresses, satin slips, cut-out gowns, and party tops at up to 65% off.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Prices as marked on participating partywear collection items.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 25: 30-Day Hassle-Free Return Policy on Eligible Items -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-30-day-returns-guarantee">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-30-day-returns-guarantee">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -2388,11 +2361,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             30-Day Hassle-Free Return Policy on Eligible Items
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Shop with peace of mind thanks to ChicMe's 30-day return policy on unworn, unwashed items with original tags intact.
                     </p>
@@ -2428,9 +2401,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Shop with peace of mind thanks to ChicMe's 30-day return policy on unworn, unwashed items with original tags intact.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Returns accepted within 30 days of delivery. Items must be in original condition with tags.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 26: Last Chance Final Clearance: Everything Under $9.99 -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-clearance-under-10-deal">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-clearance-under-10-deal">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -2455,11 +2428,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Last Chance Final Clearance: Everything Under $9.99
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Grab amazing bargains on tops, accessories, and seasonal fashion items all priced under $9.99.
                     </p>
@@ -2495,9 +2468,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Grab amazing bargains on tops, accessories, and seasonal fashion items all priced under $9.99.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Final clearance markdowns. All items under $9.99 while supplies last.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 27: Buy 3 Tops or Tees, Get 1 Free on Selected Styles -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-buy-3-get-1-free-tops">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-buy-3-get-1-free-tops">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -2522,11 +2495,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Buy 3 Tops or Tees, Get 1 Free on Selected Styles
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Stock up on everyday t-shirts, camis, and casual blouses with this limited-time buy 3 get 1 free promotional bundle.
                     </p>
@@ -2562,9 +2535,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Stock up on everyday t-shirts, camis, and casual blouses with this limited-time buy 3 get 1 free promotional bundle.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Add 4 qualifying tops to your cart; the lowest-priced item is automatically discounted to $0.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 28: Exclusive Birthday Discount Voucher for Registered Members -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-birthday-discount-perk">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-birthday-discount-perk">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -2589,11 +2562,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Exclusive Birthday Discount Voucher for Registered Members
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Receive a personalized birthday discount voucher and double reward points during your birthday month as a ChicMe member.
                     </p>
@@ -2629,9 +2602,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Receive a personalized birthday discount voucher and double reward points during your birthday month as a ChicMe member.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Must enter date of birth in your ChicMe member profile at least 30 days prior to birthday month.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 29: Tiered Haul Savings: Up to Extra $30 Off Large Orders -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-buy-more-save-more-tiered">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-buy-more-save-more-tiered">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -2656,11 +2629,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Tiered Haul Savings: Up to Extra $30 Off Large Orders
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Stock up on complete wardrobe updates with tiered discounts: save $8 off $69, $15 off $98, or $20 to $30 off larger qualifying orders.
                     </p>
@@ -2696,9 +2669,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Stock up on complete wardrobe updates with tiered discounts: save $8 off $69, $15 off $98, or $20 to $30 off larger qualifying orders.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Tiered savings automatically apply or can be combined with applicable threshold promo codes.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 30: 10% Off Instant Discount Voucher on Newsletter Signup -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-newsletter-email-signup-deal">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-newsletter-email-signup-deal">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -2723,11 +2696,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             10% Off Instant Discount Voucher on Newsletter Signup
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Subscribe to the ChicMe email newsletter and receive an instant 10% off welcome voucher directly in your inbox.
                     </p>
@@ -2763,9 +2736,9 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Subscribe to the ChicMe email newsletter and receive an instant 10% off welcome voucher directly in your inbox.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Single-use promo voucher delivered via email upon initial newsletter subscription.</p>
             </div>
-        </div>
+        </article>
         <!-- Offer Card 31: Free Shopping Credits with Daily App Check-In -->
-        <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-daily-app-checkin-bonus">
+        <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 mb-4 shadow-sm border border-slate-200 hover:border-purple-300 transition-all duration-200" id="chicme-daily-app-checkin-bonus">
             <!-- Top Header Meta -->
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
@@ -2790,11 +2763,11 @@
 
                 <!-- Center Offer Info -->
                 <div class="lg:col-span-6 space-y-1.5">
-                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                         <a href="https://rzekl.com/g/gf807z8tarb68b264a76312b8f391a/" target="_blank" rel="noopener noreferrer nofollow">
                             Free Shopping Credits with Daily App Check-In
                         </a>
-                    </h3>
+                    </h2>
                     <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
                         Open the ChicMe app each day to claim free check-in points and coins redeemable for discounts at checkout.
                     </p>
@@ -2830,7 +2803,7 @@
                 <p><strong class="text-slate-700">Offer Details:</strong> Open the ChicMe app each day to claim free check-in points and coins redeemable for discounts at checkout.</p>
                 <p><strong class="text-slate-700">Terms & Conditions:</strong> Daily app check-in points accumulate in user wallet and can offset up to 70% of order totals.</p>
             </div>
-        </div>
+        </article>
                     </div>
                 </section>
 
@@ -3434,51 +3407,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-300 pt-12 pb-8 border-t border-slate-800 text-xs mt-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-            <div>
-                <div class="flex items-center gap-2 mb-3">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps" class="h-6 w-6">
-                    <span class="text-white font-black text-base">PlayNew<span class="text-purple-400">Apps</span></span>
-                </div>
-                <p class="text-slate-400 text-xs leading-relaxed">
-                    Your premier destination for verified promo codes, software deals, game discounts, and curated shopping guides.
-                </p>
-            </div>
-            <div>
-                <h3 class="text-white font-bold text-sm mb-3">Top Stores</h3>
-                <ul class="space-y-2">
-                    <li><a href="/chicme-coupons" class="hover:text-white transition-colors">ChicMe Promo Codes</a></li>
-                    <li><a href="/tiqets-coupons" class="hover:text-white transition-colors">Tiqets Discount Codes</a></li>
-                    <li><a href="/aliexpress-coupons" class="hover:text-white transition-colors">AliExpress Coupons</a></li>
-                    <li><a href="/asaptickets-coupons" class="hover:text-white transition-colors">ASAP Tickets Promo Codes</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-white font-bold text-sm mb-3">Quick Navigation</h3>
-                <ul class="space-y-2">
-                    <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
-                    <li><a href="/stores" class="hover:text-white transition-colors">All Stores</a></li>
-                    <li><a href="/coupon" class="hover:text-white transition-colors">All Coupons</a></li>
-                    <li><a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-white font-bold text-sm mb-3">Editorial Disclosure</h3>
-                <p class="text-slate-400 text-xs leading-relaxed">
-                    We may earn an affiliate commission when you click through links or use promo codes published on our site at no additional cost to you.
-                </p>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
-            <p>&copy; 2026 PlayNewApps. All rights reserved.</p>
-            <div class="flex items-center gap-4">
-                <a href="/privacy" class="hover:text-slate-400">Privacy Policy</a>
-                <a href="/terms" class="hover:text-slate-400">Terms of Service</a>
-                <a href="/contact" class="hover:text-slate-400">Contact Us</a>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- Interactive Reveal & Accordion Script -->
     <script>

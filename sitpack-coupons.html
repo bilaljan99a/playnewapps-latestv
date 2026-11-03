@@ -796,36 +796,13 @@
 <body class="bg-slate-50 text-slate-800 antialiased font-['Plus_Jakarta_Sans',sans-serif]">
 
     <!-- Site Header -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-2xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2.5">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto" width="120" height="32" onerror="this.src='/assets/images/logo.png'">
-            </a>
-            <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
-                <a href="/" class="hover:text-purple-600 transition-colors">Home</a>
-                <a href="/stores" class="text-purple-600 font-bold">Stores</a>
-                <a href="/reviews" class="hover:text-purple-600 transition-colors">Reviews</a>
-                <a href="/category" class="hover:text-purple-600 transition-colors">Categories</a>
-            </nav>
-            <div class="flex items-center gap-3">
-                <a href="/stores" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-purple-50 hover:text-purple-700 transition-colors">
-                    <span class="material-icons-round text-base">grid_view</span> Browse All Stores
-                </a>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Content Container -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
         <!-- Breadcrumb Navigation -->
-        <nav class="flex items-center gap-2 text-xs sm:text-sm text-slate-500 mb-6" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-purple-600 transition-colors">Home</a>
-            <span class="text-slate-300">/</span>
-            <a href="/stores" class="hover:text-purple-600 transition-colors">Stores</a>
-            <span class="text-slate-300">/</span>
-            <span class="text-slate-800 font-bold" aria-current="page">Sitpack Coupons</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">Sitpack Coupons</span> </nav>
 
         <!-- TOP STORE HEADER CARD (Clean & Minimalist: Logo Box + H1 Title ONLY) -->
         <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm mb-6 flex flex-col sm:flex-row items-center gap-6">
@@ -833,7 +810,7 @@
                 <img src="/assets/images/brands/sitpack.png" alt="Sitpack Official Logo" class="max-h-full max-w-full object-contain block" width="220" height="70" loading="eager" onerror="this.src='/assets/images/brands/sitpack.svg'">
             </div>
             <div class="text-center sm:text-left">
-                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">Sitpack Coupon Codes &amp; Discount Offers (2026)</h1>
+                <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">Sitpack Coupon Codes &amp; Discount Offers (2026)</h1> </div> </section>
             </div>
         </div>
 
@@ -907,11 +884,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Sitewide</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 15% Off Sitewide on Ultra-Portable Seating with Promo Code
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 99% Success
@@ -926,8 +903,8 @@
 
                 <!-- Right: Action Button -->
                 <div class="w-full md:w-auto flex flex-col items-stretch md:items-end justify-center gap-2 shrink-0">
-                    <button onclick="handleCouponClick('SIT15', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-1')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
-            <span class="code-pill-mask font-mono tracking-widest text-purple-200 text-sm">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="handleCouponClick('SIT15', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-1')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
+            
             <span class="border-l border-purple-400/40 pl-3 text-sm flex items-center gap-1 font-bold">
                 Show Code <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
             </span>
@@ -981,11 +958,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">New Customers</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 20% Off Your First Sitpack Order with Welcome Code
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 98% Success
@@ -1000,8 +977,8 @@
 
                 <!-- Right: Action Button -->
                 <div class="w-full md:w-auto flex flex-col items-stretch md:items-end justify-center gap-2 shrink-0">
-                    <button onclick="handleCouponClick('WELCOME20', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-2')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
-            <span class="code-pill-mask font-mono tracking-widest text-purple-200 text-sm">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="handleCouponClick('WELCOME20', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-2')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
+            
             <span class="border-l border-purple-400/40 pl-3 text-sm flex items-center gap-1 font-bold">
                 Show Code <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
             </span>
@@ -1055,11 +1032,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Outdoor</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 $20 Off Outdoor Seating & Gear Orders with Promo Code
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 97% Success
@@ -1074,8 +1051,8 @@
 
                 <!-- Right: Action Button -->
                 <div class="w-full md:w-auto flex flex-col items-stretch md:items-end justify-center gap-2 shrink-0">
-                    <button onclick="handleCouponClick('OUTDOOR20', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-3')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
-            <span class="code-pill-mask font-mono tracking-widest text-purple-200 text-sm">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="handleCouponClick('OUTDOOR20', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-3')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
+            
             <span class="border-l border-purple-400/40 pl-3 text-sm flex items-center gap-1 font-bold">
                 Show Code <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
             </span>
@@ -1129,11 +1106,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Compact Seating</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 10% Off Compact Seating Solutions with Coupon Code
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 96% Success
@@ -1148,8 +1125,8 @@
 
                 <!-- Right: Action Button -->
                 <div class="w-full md:w-auto flex flex-col items-stretch md:items-end justify-center gap-2 shrink-0">
-                    <button onclick="handleCouponClick('10OFF', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-4')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
-            <span class="code-pill-mask font-mono tracking-widest text-purple-200 text-sm">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="handleCouponClick('10OFF', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-4')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
+            
             <span class="border-l border-purple-400/40 pl-3 text-sm flex items-center gap-1 font-bold">
                 Show Code <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
             </span>
@@ -1203,11 +1180,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Ergonomics</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 15% Off Sitpack ZEN X Ergonomic Telescopic Stool with Code
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 98% Success
@@ -1222,8 +1199,8 @@
 
                 <!-- Right: Action Button -->
                 <div class="w-full md:w-auto flex flex-col items-stretch md:items-end justify-center gap-2 shrink-0">
-                    <button onclick="handleCouponClick('ZEN15', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-5')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
-            <span class="code-pill-mask font-mono tracking-widest text-purple-200 text-sm">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="handleCouponClick('ZEN15', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-5')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
+            
             <span class="border-l border-purple-400/40 pl-3 text-sm flex items-center gap-1 font-bold">
                 Show Code <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
             </span>
@@ -1277,11 +1254,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Clearance</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 Up to 80% Off Sitpack ZEN XII Carbon Portable Stool Clearance
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 99% Success
@@ -1349,11 +1326,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Campster</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 20% Off Sitpack Campster II Foldable Backpack Chair with Promo Code
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 98% Success
@@ -1368,8 +1345,8 @@
 
                 <!-- Right: Action Button -->
                 <div class="w-full md:w-auto flex flex-col items-stretch md:items-end justify-center gap-2 shrink-0">
-                    <button onclick="handleCouponClick('CAMPSTER20', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-7')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
-            <span class="code-pill-mask font-mono tracking-widest text-purple-200 text-sm">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="handleCouponClick('CAMPSTER20', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-7')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
+            
             <span class="border-l border-purple-400/40 pl-3 text-sm flex items-center gap-1 font-bold">
                 Show Code <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
             </span>
@@ -1423,11 +1400,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Accessories</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 40% Off Campster II Anti-Sink Multi-Terrain Ground Sheet
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 97% Success
@@ -1495,11 +1472,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Free Gift</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 Free Microfiber Camp Towel with Campster II Purchase with Code
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 96% Success
@@ -1514,8 +1491,8 @@
 
                 <!-- Right: Action Button -->
                 <div class="w-full md:w-auto flex flex-col items-stretch md:items-end justify-center gap-2 shrink-0">
-                    <button onclick="handleCouponClick('MICROFIBER', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-9')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
-            <span class="code-pill-mask font-mono tracking-widest text-purple-200 text-sm">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="handleCouponClick('MICROFIBER', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-9')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
+            
             <span class="border-l border-purple-400/40 pl-3 text-sm flex items-center gap-1 font-bold">
                 Show Code <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
             </span>
@@ -1569,11 +1546,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Multi-Buy</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 Buy One Get One 50% Off Select Sitpack Chairs with Promo Code
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 97% Success
@@ -1588,8 +1565,8 @@
 
                 <!-- Right: Action Button -->
                 <div class="w-full md:w-auto flex flex-col items-stretch md:items-end justify-center gap-2 shrink-0">
-                    <button onclick="handleCouponClick('BOGO50', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-10')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
-            <span class="code-pill-mask font-mono tracking-widest text-purple-200 text-sm">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="handleCouponClick('BOGO50', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-10')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
+            
             <span class="border-l border-purple-400/40 pl-3 text-sm flex items-center gap-1 font-bold">
                 Show Code <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
             </span>
@@ -1643,11 +1620,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Campster</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 Sitpack Campster II Foldable Chair Starting from $99 Sale
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 98% Success
@@ -1715,11 +1692,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Bundles</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 Save 30% on Sitpack Campster 2.0 Ultra-Lightweight Bundle
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 98% Success
@@ -1787,11 +1764,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Newsletter</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 15% Off Newsletter Sign-Up Welcome Discount on Any Order
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 99% Success
@@ -1859,11 +1836,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Refurbished</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 Sitpack Refurbished Certified Units from $49 Special Deal
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 97% Success
@@ -1931,11 +1908,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Pocket Stools</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 Sitpack 2.0 Telescopic Pocket Stool Value Pack Discount
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 98% Success
@@ -2003,11 +1980,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Office & Ergonomics</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 10% Off Standing Desk Ergonomic Accessories with Code
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 97% Success
@@ -2022,8 +1999,8 @@
 
                 <!-- Right: Action Button -->
                 <div class="w-full md:w-auto flex flex-col items-stretch md:items-end justify-center gap-2 shrink-0">
-                    <button onclick="handleCouponClick('ACTIVE10', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-16')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
-            <span class="code-pill-mask font-mono tracking-widest text-purple-200 text-sm">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="handleCouponClick('ACTIVE10', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-16')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
+            
             <span class="border-l border-purple-400/40 pl-3 text-sm flex items-center gap-1 font-bold">
                 Show Code <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
             </span>
@@ -2077,11 +2054,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Shipping</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 Free Worldwide Express Delivery on Qualifying Sitpack Bundles
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 99% Success
@@ -2149,11 +2126,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Accessories</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 20% Off Sitpack Folding Aluminum Table Accessory
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 96% Success
@@ -2221,11 +2198,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Accessories</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 15% Off Quilted Memory Foam Seat Warmers with Coupon Code
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 98% Success
@@ -2240,8 +2217,8 @@
 
                 <!-- Right: Action Button -->
                 <div class="w-full md:w-auto flex flex-col items-stretch md:items-end justify-center gap-2 shrink-0">
-                    <button onclick="handleCouponClick('WARMER15', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-19')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
-            <span class="code-pill-mask font-mono tracking-widest text-purple-200 text-sm">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="handleCouponClick('WARMER15', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-19')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
+            
             <span class="border-l border-purple-400/40 pl-3 text-sm flex items-center gap-1 font-bold">
                 Show Code <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
             </span>
@@ -2295,11 +2272,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Accessories</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 Sitpack ZEN X Ballistic Nylon Replacement Covers from $19
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 97% Success
@@ -2367,11 +2344,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Accessories</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 10% Off Sitpack S-Carabiners & Carry Shoulder Straps
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 98% Success
@@ -2439,11 +2416,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Events & Festivals</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 Up to 35% Off Seasonal Outdoor Festival & Tailgating Deals
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 97% Success
@@ -2511,11 +2488,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Bundles</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 Sitpack Travel & Commuter Bundle: Save $35 Instantly
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 98% Success
@@ -2583,11 +2560,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Special Discount</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 15% Off Student & Military Appreciation Discount on Sitpack
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 99% Success
@@ -2602,8 +2579,8 @@
 
                 <!-- Right: Action Button -->
                 <div class="w-full md:w-auto flex flex-col items-stretch md:items-end justify-center gap-2 shrink-0">
-                    <button onclick="handleCouponClick('HERO15', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-24')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
-            <span class="code-pill-mask font-mono tracking-widest text-purple-200 text-sm">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="handleCouponClick('HERO15', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-24')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
+            
             <span class="border-l border-purple-400/40 pl-3 text-sm flex items-center gap-1 font-bold">
                 Show Code <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
             </span>
@@ -2657,11 +2634,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Warranty</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 Official Lifetime Guarantee Included on All Sitpack Frames
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 100% Success
@@ -2729,11 +2706,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">EU Orders</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 Zero EU Import Duties & Fast 2-5 Day EU Dispatch Deal
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 99% Success
@@ -2801,11 +2778,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Photography</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 10% Off Photography & Birdwatching Portable Stools with Code
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 97% Success
@@ -2820,8 +2797,8 @@
 
                 <!-- Right: Action Button -->
                 <div class="w-full md:w-auto flex flex-col items-stretch md:items-end justify-center gap-2 shrink-0">
-                    <button onclick="handleCouponClick('PHOTO10', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-27')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
-            <span class="code-pill-mask font-mono tracking-widest text-purple-200 text-sm">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="handleCouponClick('PHOTO10', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-27')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
+            
             <span class="border-l border-purple-400/40 pl-3 text-sm flex items-center gap-1 font-bold">
                 Show Code <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
             </span>
@@ -2875,11 +2852,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Accessories</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 Sitpack Campster II Insulated Bottle Holder Discount from $14
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 98% Success
@@ -2947,11 +2924,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Corporate</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 Save 20% on Sitpack Corporate & Bulk Standing Ergonomics Orders
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 98% Success
@@ -2966,8 +2943,8 @@
 
                 <!-- Right: Action Button -->
                 <div class="w-full md:w-auto flex flex-col items-stretch md:items-end justify-center gap-2 shrink-0">
-                    <button onclick="handleCouponClick('CORP20', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-29')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
-            <span class="code-pill-mask font-mono tracking-widest text-purple-200 text-sm">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="handleCouponClick('CORP20', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-29')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
+            
             <span class="border-l border-purple-400/40 pl-3 text-sm flex items-center gap-1 font-bold">
                 Show Code <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
             </span>
@@ -3021,11 +2998,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Referral</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 Sitpack Friend Referral Reward: Give $15, Get $15 Credit
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 99% Success
@@ -3093,11 +3070,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Spare Parts</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 10% Off Campster II TPE Anti-Slip Replacement Feet 4-Pack
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 98% Success
@@ -3165,11 +3142,11 @@
     </span>
                             <span class="text-xs font-semibold text-slate-500">Ergonomics</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                             <a href="https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/" target="_blank" rel="nofollow noopener sponsored" class="hover:text-purple-600 transition-colors">
                                 Sitpack ZEN Dual Height Standing Stool Kit with Promo Code
                             </a>
-                        </h3>
+                        </h2>
                         <div class="flex items-center gap-3 text-xs text-slate-500">
                             <span class="flex items-center gap-1 text-emerald-600 font-semibold">
                                 <span class="material-icons-round text-sm">thumb_up</span> 98% Success
@@ -3184,8 +3161,8 @@
 
                 <!-- Right: Action Button -->
                 <div class="w-full md:w-auto flex flex-col items-stretch md:items-end justify-center gap-2 shrink-0">
-                    <button onclick="handleCouponClick('ZENPOSTURE', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-32')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
-            <span class="code-pill-mask font-mono tracking-widest text-purple-200 text-sm">••••••</span>
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="handleCouponClick('ZENPOSTURE', 'https://ujhjj.com/g/nljx8wkictb68b264a76ef57333d53/', 'deal-32')" class="w-full sm:w-auto relative group overflow-hidden bg-purple-600 hover:bg-purple-700 active:scale-[0.98] text-white font-bold px-6 py-3 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-3">
+            
             <span class="border-l border-purple-400/40 pl-3 text-sm flex items-center gap-1 font-bold">
                 Show Code <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">content_copy</span>
             </span>
@@ -3756,27 +3733,7 @@
     </main>
 
     <!-- Site Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 mt-16 text-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-            <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800">
-                <a href="/" class="flex items-center gap-2.5">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200" width="120" height="32" onerror="this.src='/assets/images/logo.png'">
-                </a>
-                <div class="flex flex-wrap items-center justify-center gap-6 text-xs sm:text-sm">
-                    <a href="/" class="hover:text-white transition-colors">Home</a>
-                    <a href="/stores" class="hover:text-white transition-colors">All Stores</a>
-                    <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a>
-                    <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="/terms" class="hover:text-white transition-colors">Terms of Service</a>
-                    <a href="/affiliate" class="hover:text-white transition-colors">Affiliate Disclosure</a>
-                </div>
-            </div>
-            <div class="text-xs text-slate-500 text-center space-y-2">
-                <p>© 2026 PlayNewApps. All rights reserved. All trademarks, logos, and brand assets are the property of their respective owners.</p>
-                <p>PlayNewApps is supported by readers. When you buy through links on our site, we may earn an affiliate commission at no extra cost to you.</p>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- Interactive JavaScript -->
     <script>

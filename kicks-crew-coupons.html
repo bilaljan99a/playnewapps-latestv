@@ -273,41 +273,13 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
     <!-- Header / Navbar -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Logo -->
-                <a href="/" class="flex items-center gap-3 group">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto">
-                    <span class="font-extrabold text-xl text-slate-900 group-hover:text-purple-600 transition-colors">PlayNewApps</span>
-                </a>
-                <!-- Navigation -->
-                <nav class="hidden md:flex items-center gap-6">
-                    <a href="/stores" class="text-sm font-semibold text-slate-700 hover:text-purple-600 transition-colors">All Stores</a>
-                    <a href="/category?id=fashion" class="text-sm font-semibold text-slate-700 hover:text-purple-600 transition-colors">Sneakers &amp; Streetwear</a>
-                    <a href="/category?id=electronics" class="text-sm font-semibold text-slate-700 hover:text-purple-600 transition-colors">Electronics</a>
-                    <a href="/reviews" class="text-sm font-semibold text-slate-700 hover:text-purple-600 transition-colors">Reviews</a>
-                </nav>
-                <!-- Search Bar -->
-                <div class="relative w-64 hidden sm:block">
-                    <input type="text" id="global-search" placeholder="Search stores &amp; offers..." class="w-full bg-slate-100 text-xs text-slate-800 pl-9 pr-4 py-2 rounded-xl border border-slate-200 focus:outline-none focus:border-purple-500 focus:bg-white transition-all">
-                    <span class="material-icons-round absolute left-2.5 top-2 text-slate-400 text-base">search</span>
-                </div>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Container -->
     <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-5">
         
         <!-- Breadcrumbs -->
-        <nav class="flex items-center gap-2 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-slate-800">Home</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <a href="/stores" class="hover:text-slate-800">Stores</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <span class="text-slate-900 font-semibold">KICKS CREW</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">KICKS CREW</span> </nav>
 
         <!-- STRICT RULE Top Header Section (Clean & Minimalist: ONLY Logo Box + H1 Title) -->
         <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm mb-6 flex flex-col sm:flex-row items-center gap-6">
@@ -315,7 +287,7 @@
                 <img src="/assets/images/brands/kicks-crew.svg" alt="KICKS CREW Official Logo" class="max-h-full max-w-full object-contain block" width="220" height="70" loading="eager">
             </div>
             <div class="text-center sm:text-left">
-                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">KICKS CREW Coupon Codes &amp; Discount Offers (2026)</h1>
+                <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">KICKS CREW Coupon Codes &amp; Discount Offers (2026)</h1> </div> </section>
             </div>
         </div>
 
@@ -351,7 +323,7 @@
                 <div id="deals-list" class="space-y-4 mb-12">
                     
                     <!-- DEAL 1: $20 OFF Orders Over $150 (HERO PROMO CODE: CREW20) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
                         <!-- Top Header Bar -->
                         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                             <div class="flex items-center gap-2">
@@ -375,11 +347,11 @@
                             </div>
                             <!-- Center Info Box -->
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
+                                <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
                                     <a href="https://dkfrh.com/g/mecn64hou7b68b264a761910db6aa6/" target="_blank" rel="noopener sponsored" class="hover:underline">
                                         $20 OFF Sneaker &amp; Streetwear Orders Over $150
                                     </a>
-                                </h3>
+                                </h2>
                                 <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                                     Receive an instant $20 discount on any sneaker or apparel purchase totaling $150 or more with this verified promo code.
                                 </p>
@@ -398,7 +370,7 @@
                             <!-- Action Box: Hidden Code Mask & Copy Button -->
                             <div class="shrink-0 flex flex-col items-stretch sm:items-end gap-2">
                                 <div class="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200">
-                                    <span class="code-pill-mask text-slate-600 font-bold px-3 text-xs select-none">••••••••</span>
+                                    <span class="code-pill-mask font-bold px-3 text-xs select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                     <button type="button" onclick="openCouponModal('kickscrew-save-20', 'CREW20', 'https://dkfrh.com/g/mecn64hou7b68b264a761910db6aa6/')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-xs font-bold transition-all shadow-xs flex items-center gap-1 cursor-pointer">
                                         <span>Show Code</span>
                                         <span class="material-icons-round text-sm">content_copy</span>
@@ -418,10 +390,10 @@
                             <p class="mb-1.5"><strong>Offer Terms:</strong> Requires minimum cart total of $150 before shipping and local taxes. Valid on all authenticated sneakers including Nike, Jordan, adidas, New Balance, and Fear of God Essentials.</p>
                             <p><strong>Verified By:</strong> PlayNewApps testing desk confirmed active on retro Jordan 1 and ASICS Gel-Kayano orders.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- DEAL 2: 15% OFF First In-App Order (Code) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
                         <!-- Top Header Bar -->
                         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                             <div class="flex items-center gap-2">
@@ -445,11 +417,11 @@
                             </div>
                             <!-- Center Info Box -->
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
+                                <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
                                     <a href="https://dkfrh.com/g/mecn64hou7b68b264a761910db6aa6/" target="_blank" rel="noopener sponsored" class="hover:underline">
                                         15% OFF First In-App Order on KICKS CREW Mobile
                                     </a>
-                                </h3>
+                                </h2>
                                 <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                                     Download the official KICKS CREW app and unlock 15% off your inaugural mobile sneaker checkout.
                                 </p>
@@ -468,7 +440,7 @@
                             <!-- Action Box: Hidden Code Mask & Copy Button -->
                             <div class="shrink-0 flex flex-col items-stretch sm:items-end gap-2">
                                 <div class="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200">
-                                    <span class="code-pill-mask text-slate-600 font-bold px-3 text-xs select-none">••••••••</span>
+                                    <span class="code-pill-mask font-bold px-3 text-xs select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                     <button type="button" onclick="openCouponModal('kickscrew-app-15', 'CREWAPP15', 'https://dkfrh.com/g/mecn64hou7b68b264a761910db6aa6/')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-xs font-bold transition-all shadow-xs flex items-center gap-1 cursor-pointer">
                                         <span>Show Code</span>
                                         <span class="material-icons-round text-sm">content_copy</span>
@@ -488,10 +460,10 @@
                             <p class="mb-1.5"><strong>Offer Terms:</strong> Valid exclusively when checking out through the official KICKS CREW Mobile App on iOS or Android. Applies to first-time app users.</p>
                             <p><strong>Highlights:</strong> App users also receive push notifications for rare shock releases and restocks.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- DEAL 3: Up to 60% OFF Flash Sale on Retro Basketball & Running Shoes (Sale Deal) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="sale">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="sale">
                         <!-- Top Header Bar -->
                         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                             <div class="flex items-center gap-2">
@@ -515,11 +487,11 @@
                             </div>
                             <!-- Center Info Box -->
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-blue-600 transition-colors">
+                                <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-blue-600 transition-colors">
                                     <a href="https://dkfrh.com/g/mecn64hou7b68b264a761910db6aa6/" target="_blank" rel="noopener sponsored" class="hover:underline">
                                         Up to 60% OFF Flash Sale on Retro Basketball &amp; Running Shoes
                                     </a>
-                                </h3>
+                                </h2>
                                 <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                                     Shop marked-down Nike, Jordan, adidas, and New Balance styles in the limited-time seasonal clearance event.
                                 </p>
@@ -555,10 +527,10 @@
                             <p class="mb-1.5"><strong>Offer Terms:</strong> Discounts automatically reflected in catalog pricing across hundreds of selected overstock and seasonal silhouettes. All pairs undergo full authentication.</p>
                             <p><strong>Sizes:</strong> Availability varies by size and authorized retailer stock.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- DEAL 4: $10 OFF Sitewide with Zero Order Minimum (Code) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
                         <!-- Top Header Bar -->
                         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                             <div class="flex items-center gap-2">
@@ -582,11 +554,11 @@
                             </div>
                             <!-- Center Info Box -->
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
+                                <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
                                     <a href="https://dkfrh.com/g/mecn64hou7b68b264a761910db6aa6/" target="_blank" rel="noopener sponsored" class="hover:underline">
                                         $10 OFF Sitewide with Zero Order Minimum
                                     </a>
-                                </h3>
+                                </h2>
                                 <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                                     Take an instant $10 off your entire order on any authentic pair of sneakers or streetwear apparel.
                                 </p>
@@ -605,7 +577,7 @@
                             <!-- Action Box: Hidden Code Mask & Copy Button -->
                             <div class="shrink-0 flex flex-col items-stretch sm:items-end gap-2">
                                 <div class="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200">
-                                    <span class="code-pill-mask text-slate-600 font-bold px-3 text-xs select-none">••••••••</span>
+                                    <span class="code-pill-mask font-bold px-3 text-xs select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                     <button type="button" onclick="openCouponModal('kickscrew-welcome-10', 'WELCOME10', 'https://dkfrh.com/g/mecn64hou7b68b264a761910db6aa6/')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-xs font-bold transition-all shadow-xs flex items-center gap-1 cursor-pointer">
                                         <span>Show Code</span>
                                         <span class="material-icons-round text-sm">content_copy</span>
@@ -625,10 +597,10 @@
                             <p class="mb-1.5"><strong>Offer Terms:</strong> Zero minimum purchase threshold required. Valid across all footwear, slides, apparel, and accessory categories.</p>
                             <p><strong>Verified By:</strong> Verified by PlayNewApps shopping desk on single sneaker orders under $100.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- DEAL 5: 25% OFF Streetwear & Designer Apparel (Code) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
                         <!-- Top Header Bar -->
                         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                             <div class="flex items-center gap-2">
@@ -652,11 +624,11 @@
                             </div>
                             <!-- Center Info Box -->
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
+                                <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
                                     <a href="https://dkfrh.com/g/mecn64hou7b68b264a761910db6aa6/" target="_blank" rel="noopener sponsored" class="hover:underline">
                                         25% OFF Streetwear, Hoodies &amp; Designer Apparel
                                     </a>
-                                </h3>
+                                </h2>
                                 <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                                     Save 25% on authentic streetwear hoodies, tees, track pants, and caps from premier fashion labels.
                                 </p>
@@ -675,7 +647,7 @@
                             <!-- Action Box: Hidden Code Mask & Copy Button -->
                             <div class="shrink-0 flex flex-col items-stretch sm:items-end gap-2">
                                 <div class="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200">
-                                    <span class="code-pill-mask text-slate-600 font-bold px-3 text-xs select-none">••••••••</span>
+                                    <span class="code-pill-mask font-bold px-3 text-xs select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                     <button type="button" onclick="openCouponModal('kickscrew-streetwear-25', 'STREET25', 'https://dkfrh.com/g/mecn64hou7b68b264a761910db6aa6/')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-xs font-bold transition-all shadow-xs flex items-center gap-1 cursor-pointer">
                                         <span>Show Code</span>
                                         <span class="material-icons-round text-sm">content_copy</span>
@@ -695,10 +667,10 @@
                             <p class="mb-1.5"><strong>Offer Terms:</strong> Valid on clothing catalog including Fear of God Essentials hoodies, Supreme tees, Stussy fleeces, and Jordan sportswear apparel.</p>
                             <p><strong>Authenticity:</strong> All apparel items undergo material and fabric tag inspection before dispatch.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- DEAL 6: Free Worldwide Shipping on Select Featured Drops (Sale Deal) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="sale">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="sale">
                         <!-- Top Header Bar -->
                         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                             <div class="flex items-center gap-2">
@@ -722,11 +694,11 @@
                             </div>
                             <!-- Center Info Box -->
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-blue-600 transition-colors">
+                                <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-blue-600 transition-colors">
                                     <a href="https://dkfrh.com/g/mecn64hou7b68b264a761910db6aa6/" target="_blank" rel="noopener sponsored" class="hover:underline">
                                         Free Worldwide Shipping on Select Featured Sneaker Drops
                                     </a>
-                                </h3>
+                                </h2>
                                 <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                                     Enjoy door-to-door insured worldwide courier delivery with tracking at zero additional cost on selected pairs.
                                 </p>
@@ -762,10 +734,10 @@
                             <p class="mb-1.5"><strong>Offer Terms:</strong> Free express shipping automatically applied to designated campaign items. Includes DHL, FedEx, and UPS tracking with signature verification upon delivery.</p>
                             <p><strong>Insurance:</strong> Full package transit insurance included automatically.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- DEAL 7: Extra 10% OFF New Balance, ASICS & Salomon Lifestyle Pairs (Code) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
                         <!-- Top Header Bar -->
                         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                             <div class="flex items-center gap-2">
@@ -789,11 +761,11 @@
                             </div>
                             <!-- Center Info Box -->
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
+                                <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
                                     <a href="https://dkfrh.com/g/mecn64hou7b68b264a761910db6aa6/" target="_blank" rel="noopener sponsored" class="hover:underline">
                                         Extra 10% OFF New Balance, ASICS &amp; Salomon Lifestyle Pairs
                                     </a>
-                                </h3>
+                                </h2>
                                 <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                                     Upgrade your daily rotation with 10% savings on trending New Balance 990v6, 2002R, and ASICS Gel-Kayano models.
                                 </p>
@@ -812,7 +784,7 @@
                             <!-- Action Box: Hidden Code Mask & Copy Button -->
                             <div class="shrink-0 flex flex-col items-stretch sm:items-end gap-2">
                                 <div class="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200">
-                                    <span class="code-pill-mask text-slate-600 font-bold px-3 text-xs select-none">••••••••</span>
+                                    <span class="code-pill-mask font-bold px-3 text-xs select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                     <button type="button" onclick="openCouponModal('kickscrew-nb-asics-10', 'RETRO10', 'https://dkfrh.com/g/mecn64hou7b68b264a761910db6aa6/')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-xs font-bold transition-all shadow-xs flex items-center gap-1 cursor-pointer">
                                         <span>Show Code</span>
                                         <span class="material-icons-round text-sm">content_copy</span>
@@ -832,10 +804,10 @@
                             <p class="mb-1.5"><strong>Offer Terms:</strong> Valid on select lifestyle and running models including New Balance 1906R, 550, ASICS GT-2160, and Salomon XT-6.</p>
                             <p><strong>Verified By:</strong> Verified by PlayNewApps shopping team on gorpcore and lifestyle silhouettes.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- DEAL 8: 15% OFF Austin Reaves AR1 & Signature Basketball Shoes (Code) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
                         <!-- Top Header Bar -->
                         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                             <div class="flex items-center gap-2">
@@ -859,11 +831,11 @@
                             </div>
                             <!-- Center Info Box -->
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
+                                <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
                                     <a href="https://dkfrh.com/g/mecn64hou7b68b264a761910db6aa6/" target="_blank" rel="noopener sponsored" class="hover:underline">
                                         15% OFF Austin Reaves AR1 &amp; Signature Basketball Shoes
                                     </a>
-                                </h3>
+                                </h2>
                                 <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                                     Exclusive 15% discount on Rigorer Austin Reaves AR1 colorways and elite performance court sneakers.
                                 </p>
@@ -882,7 +854,7 @@
                             <!-- Action Box: Hidden Code Mask & Copy Button -->
                             <div class="shrink-0 flex flex-col items-stretch sm:items-end gap-2">
                                 <div class="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200">
-                                    <span class="code-pill-mask text-slate-600 font-bold px-3 text-xs select-none">••••••••</span>
+                                    <span class="code-pill-mask font-bold px-3 text-xs select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                     <button type="button" onclick="openCouponModal('kickscrew-hoops-15', 'HOOPS15', 'https://dkfrh.com/g/mecn64hou7b68b264a761910db6aa6/')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-xs font-bold transition-all shadow-xs flex items-center gap-1 cursor-pointer">
                                         <span>Show Code</span>
                                         <span class="material-icons-round text-sm">content_copy</span>
@@ -902,7 +874,7 @@
                             <p class="mb-1.5"><strong>Offer Terms:</strong> Valid on Rigorer AR1 colorways ('Ice Cream', 'Milky Way', 'Showtime', 'Valentine\'s Day') and ANTA Kyrie Irving basketball models.</p>
                             <p><strong>Exclusivity:</strong> KICKS CREW is the official global launch partner for the Austin Reaves AR1 collection.</p>
                         </div>
-                    </div>
+                    </article>
 
                 </div>
 
@@ -2131,48 +2103,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 text-xs py-10 mt-16 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <div class="flex items-center gap-2 text-white font-bold text-base mb-3">
-                        <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-6 w-auto">
-                        <span>PlayNewApps</span>
-                    </div>
-                    <p class="text-slate-400 leading-relaxed">
-                        PlayNewApps is an independent consumer savings portal providing verified coupon codes, software reviews, and shopping guides for top international brands.
-                    </p>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold mb-3">Popular Stores</h4>
-                    <ul class="space-y-2">
-                        <li><a href="/kicks-crew-coupons" class="hover:text-white transition-colors">KICKS CREW Coupons</a></li>
-                        <li><a href="/lenovo-coupons" class="hover:text-white transition-colors">Lenovo Promo Codes</a></li>
-                        <li><a href="/italo-jewelry-coupons" class="hover:text-white transition-colors">Italo Jewelry Coupons</a></li>
-                        <li><a href="/aliexpress-coupons" class="hover:text-white transition-colors">AliExpress Deals</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold mb-3">Editorial &amp; Legal</h4>
-                    <ul class="space-y-2">
-                        <li><a href="/about" class="hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="/contact" class="hover:text-white transition-colors">Contact Editorial Team</a></li>
-                        <li><a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a></li>
-                        <li><a href="/terms" class="hover:text-white transition-colors">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold mb-3">Affiliate Disclaimer</h4>
-                    <p class="text-slate-400 leading-relaxed">
-                        PlayNewApps participates in affiliate marketing programs. We may earn a commission when you click or make purchases through our verified links, at no extra cost to you.
-                    </p>
-                </div>
-            </div>
-            <div class="pt-8 border-t border-slate-800 text-center text-slate-500">
-                <p>&copy; 2026 PlayNewApps. All rights reserved. Designated trademarks and brands belong to their respective owners.</p>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- Interactive Scripts -->
     <script>
