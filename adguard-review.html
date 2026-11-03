@@ -37,6 +37,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/style.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
     <style>
         .article-content p { font-size: 1.125rem; line-height: 1.85; margin-bottom: 1.5rem; color: var(--text-secondary); }
         .article-content h2 { font-size: 2rem; margin-top: 3rem; margin-bottom: 1.25rem; color: var(--text-primary); font-weight: 800; }
@@ -174,39 +175,17 @@
     </script>
 </head>
 <body>
-    <header style="background: #fff; padding: 1rem 2rem; border-bottom: 1px solid #eee; display: flex; align-items: center; justify-content: space-between;">
-        <a href="/" style="font-size: 1.35rem; font-weight: 900; color: #0f172a; text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
-            <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" width="36" height="36" style="width: 36px; height: 36px;" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
-            <span>PlayNewApps</span>
-        </a>
-        <nav style="display: flex; gap: 1.5rem; align-items: center;">
-            <a href="/" style="color: #444; text-decoration: none; font-weight: 500;">Home</a>
-            <a href="/stores" style="color: #444; text-decoration: none; font-weight: 500;">Stores</a>
-            <a href="/products" style="color: #444; text-decoration: none; font-weight: 500;">Products</a>
-            <a href="/coupon" style="color: #444; text-decoration: none; font-weight: 500;">Coupons</a>
-            <a href="/reviews" style="color: #444; text-decoration: none; font-weight: 500;">Reviews</a>
-            <a href="/#search-form" style="color: #444; text-decoration: none; display: flex; align-items: center;" aria-label="Search"><span class="material-icons-round">search</span></a>
-        </nav>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="hover:text-indigo-600 transition-colors">Stores</a> <a href="/reviews" class="text-indigo-600 font-bold transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <main class="container article-layout" style="padding-top: 1.5rem; padding-bottom: 4rem; max-width: 900px; margin: 0 auto; padding-inline: 1.5rem;">
-        <nav aria-label="Breadcrumb" class="breadcrumb" style="margin-bottom: 1.5rem;">
-            <ol style="display: flex; gap: 0.5rem; list-style: none; padding: 0; font-size: 0.875rem; color: var(--text-secondary); flex-wrap: wrap;">
-                <li><a href="/" style="color: #2e7d32; text-decoration: none;">Home</a></li>
-                <li>/</li>
-                <li><a href="/reviews" style="color: #2e7d32; text-decoration: none;">Software Reviews</a></li>
-                <li>/</li>
-                <li aria-current="page" style="font-weight: 600; color: var(--text-primary);">AdGuard Review 2026</li>
-            </ol>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/reviews" class="hover:text-slate-800">Software Reviews</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">AdGuard Review 2026</span> </nav>
 
-        <header class="article-header" style="margin-bottom: 3rem;">
-            <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+        <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="w-40 sm:w-52 h-16 sm:h-20 bg-white rounded-xl p-3 flex items-center justify-center border border-slate-200 flex-shrink-0 shadow-sm"> <img src="/assets/images/brands/adguard-icon.svg" alt="AdGuard Official Shield Logo" class="max-h-full max-w-full object-contain"> </div> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">AdGuard Review 2026: The Ultimate System-Wide Ad Blocker &amp; Privacy Shield</h1> </div> </section> <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
                 <div style="width: 80px; height: 80px; border-radius: 16px; border: 1px solid #e2e8f0; background: #ffffff; padding: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.05); flex-shrink: 0;">
-                    <img src="/assets/images/brands/adguard-icon.svg" alt="AdGuard Official Shield Logo" width="56" height="56" style="width: 100%; height: 100%; object-fit: contain;">
+                    
                 </div>
                 <div>
-                    <h1 style="font-size: 2.5rem; font-weight: 900; line-height: 1.2; margin: 0 0 0.5rem 0; color: var(--text-primary);">AdGuard Review 2026: The Ultimate System-Wide Ad Blocker &amp; Privacy Shield</h1>
+                    
                     <div style="display: flex; gap: 1rem; color: var(--text-muted); font-size: 0.95rem; align-items: center; flex-wrap: wrap;">
                         <span>By <strong>Tech Security Editorial Team</strong></span>
                         <span>•</span>
@@ -215,9 +194,7 @@
                         <span style="display: inline-flex; align-items: center; gap: 4px; color: #f59e0b; font-weight: 700;">★ 4.8 / 5.0 (54,100+ Verified User Ratings)</span>
                     </div>
                 </div>
-            </div>
-
-            <div class="specs-grid">
+            </div> <div class="specs-grid">
                 <div class="spec-item">
                     <div class="spec-label">Developer</div>
                     <div class="spec-value">AdGuard Software Ltd.</div>
@@ -234,9 +211,7 @@
                     <div class="spec-label">License Options</div>
                     <div class="spec-value">Annual from $2.49/mo or Lifetime</div>
                 </div>
-            </div>
-
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
+            </div> <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
                 <a href="https://dhwnh.com/g/xc497owldvb68b264a76a9584d7a68/" target="_blank" rel="noopener sponsored" class="cta-button">
                     Get Official AdGuard Discount <span class="material-icons-round" style="margin-left: 8px;">open_in_new</span>
                 </a>
@@ -244,7 +219,6 @@
                     View Verified AdGuard Coupons <span class="material-icons-round" style="margin-left: 8px;">local_offer</span>
                 </a>
             </div>
-        </header>
 
         <article class="article-content">
             <h2>1. Why Browser Extensions Are No Longer Enough</h2>
@@ -424,25 +398,6 @@
         </article>
     </main>
 
-    <footer style="background: #0f172a; color: #94a3b8; padding: 3rem 1.5rem; border-top: 1px solid #1e293b; margin-top: 4rem;">
-        <div style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem;">
-            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-                <a href="/" style="font-size: 1.25rem; font-weight: 900; color: #fff; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" width="28" height="28">
-                    <span>PlayNewApps</span>
-                </a>
-                <div style="display: flex; gap: 1.25rem; flex-wrap: wrap;">
-                    <a href="/stores" style="color: #94a3b8; text-decoration: none;">Stores</a>
-                    <a href="/coupon" style="color: #94a3b8; text-decoration: none;">Coupons</a>
-                    <a href="/reviews" style="color: #94a3b8; text-decoration: none;">Reviews</a>
-                    <a href="/about" style="color: #94a3b8; text-decoration: none;">About</a>
-                    <a href="/contact" style="color: #94a3b8; text-decoration: none;">Contact</a>
-                    <a href="/privacy" style="color: #94a3b8; text-decoration: none;">Privacy</a>
-                    <a href="/terms" style="color: #94a3b8; text-decoration: none;">Terms</a>
-                </div>
-            </div>
-            <p style="font-size: 0.85rem; line-height: 1.6; margin: 0;">&copy; 2026 PlayNewApps. All rights reserved. All brand names, logos, and trademarks displayed are property of their respective owners. We may earn an affiliate commission when you purchase through links on our site.</p>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 </body>
 </html>

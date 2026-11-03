@@ -37,6 +37,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/style.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
     <style>
         .article-content p { font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; color: var(--text-secondary); }
         .article-content h2 { font-size: 2rem; margin-top: 3rem; margin-bottom: 1.25rem; color: var(--text-primary); }
@@ -167,39 +168,17 @@
     </script>
 </head>
 <body>
-    <header style="background: #fff; padding: 1rem 2rem; border-bottom: 1px solid #eee; display: flex; align-items: center; justify-content: space-between;">
-        <a href="/" style="font-size: 1.35rem; font-weight: 900; color: #0f172a; text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
-            <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" width="36" height="36" style="width: 36px; height: 36px;" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
-            <span>PlayNewApps</span>
-        </a>
-        <nav style="display: flex; gap: 1.5rem; align-items: center;">
-            <a href="/" style="color: #444; text-decoration: none; font-weight: 500;">Home</a>
-            <a href="/stores" style="color: #444; text-decoration: none; font-weight: 500;">Stores</a>
-            <a href="/products" style="color: #444; text-decoration: none; font-weight: 500;">Products</a>
-            <a href="/coupon" style="color: #444; text-decoration: none; font-weight: 500;">Coupons</a>
-            <a href="/reviews" style="color: #444; text-decoration: none; font-weight: 500;">Reviews</a>
-            <a href="/#search-form" style="color: #444; text-decoration: none; display: flex; align-items: center;" aria-label="Search"><span class="material-icons-round">search</span></a>
-        </nav>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="hover:text-indigo-600 transition-colors">Stores</a> <a href="/reviews" class="text-indigo-600 font-bold transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <main class="container article-layout" style="padding-top: 1.5rem; padding-bottom: 4rem; max-width: 900px; margin: 0 auto; padding-inline: 1.5rem;">
-        <nav aria-label="Breadcrumb" class="breadcrumb" style="margin-bottom: 1.5rem;">
-            <ol style="display: flex; gap: 0.5rem; list-style: none; padding: 0; font-size: 0.875rem; color: var(--text-secondary); flex-wrap: wrap;">
-                <li><a href="/" style="color: #0d9488; text-decoration: none;">Home</a></li>
-                <li>/</li>
-                <li><a href="/reviews" style="color: #0d9488; text-decoration: none;">Software Reviews</a></li>
-                <li>/</li>
-                <li aria-current="page" style="font-weight: 600; color: var(--text-primary);">Perplexity AI Review 2026</li>
-            </ol>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/reviews" class="hover:text-slate-800">Software Reviews</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">Perplexity AI Review 2026</span> </nav>
 
-        <header class="article-header" style="margin-bottom: 3rem;">
-            <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+        <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">Perplexity AI Review 2026: Why This "Answer Engine" is Replacing Google for Millions</h1> </div> </section> <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
                 <div style="width: 80px; height: 80px; border-radius: 16px; border: 1px solid #e2e8f0; background: #ffffff; padding: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.05); flex-shrink: 0;">
                     <img src="/assets/images/brands/perplexity-logo.svg" alt="Perplexity AI Official Logo" width="56" height="56" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <div>
-                    <h1 style="font-size: 2.5rem; font-weight: 900; line-height: 1.2; margin: 0 0 0.5rem 0; color: var(--text-primary);">Perplexity AI Review 2026: Why This "Answer Engine" is Replacing Google for Millions</h1>
+                    
                     <div style="display: flex; gap: 1rem; color: var(--text-muted); font-size: 0.95rem; align-items: center; flex-wrap: wrap;">
                         <span>By <strong>Tech Editorial Team</strong></span>
                         <span>•</span>
@@ -208,9 +187,7 @@
                         <span style="display: inline-flex; align-items: center; gap: 4px; color: #f59e0b; font-weight: 700;">★ 4.9 / 5.0 (24,100+ Verified User Reviews)</span>
                     </div>
                 </div>
-            </div>
-
-            <div class="specs-grid">
+            </div> <div class="specs-grid">
                 <div class="spec-item">
                     <div class="spec-label">Developer</div>
                     <div class="spec-value">Perplexity Inc. (Aravind Srinivas)</div>
@@ -227,14 +204,11 @@
                     <div class="spec-label">Free Tier</div>
                     <div class="spec-value">Yes ($0/mo, Unlimited Search)</div>
                 </div>
-            </div>
-
-            <div style="text-align: center; margin: 2rem 0;">
+            </div> <div style="text-align: center; margin: 2rem 0;">
                 <a href="https://www.perplexity.ai" target="_blank" rel="noopener noreferrer" class="cta-button">
                     Try Perplexity AI for Free <span class="material-icons-round" style="margin-left: 8px;">open_in_new</span>
                 </a>
             </div>
-        </header>
 
         <article class="article-content">
             <h2>1. Introduction: The Death of Ten Blue Links</h2>
@@ -463,10 +437,7 @@
         </article>
     </main>
 
-    <footer style="background: #111; color: #888; padding: 4rem 2rem; text-align: center; margin-top: 4rem;">
-        <p>© 2026 PlayNewApps. All rights reserved.</p>
-        <p style="font-size: 0.85rem; max-width: 600px; margin: 1rem auto;">Disclaimer: This editorial review represents objective testing by PlayNewApps tech journalists. We may receive affiliate compensation from software providers at zero additional cost to you.</p>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <script src="/assets/js/chatbot.min.js?v=2.6" defer></script>
 </body>
