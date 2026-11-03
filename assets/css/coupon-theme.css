@@ -54,3 +54,8 @@
   background: #fff; color: #0f172a; font-weight: 700; font-size: 14px;
   padding: 12px 20px; border-radius: 10px; border: 2px solid #e2e8f0; cursor: pointer;
 }
+
+/* 2026-11-03: Show Code action row must never wrap — Filmora/AliExpress
+   screenshots showed mask dots and button text wrapping onto two lines. */
+span[class*="border-dashed"] { white-space: nowrap !important; flex-shrink: 0; }
+.pna-show-code, .show-code-btn, .btn-text { white-space: nowrap !important; flex-shrink: 0; }
