@@ -1,15 +1,19 @@
 /* PlayNewApps standard coupon reveal — ONE behavior on every coupon page.
  *
- * User rule: one click on "Show Code" must (1) copy the code, (2) SHOW the code
- * to the user, and (3) auto-open the affiliate link in a NEW tab — no second
- * click, no back-button, no same-tab navigation.
+ * User rule (refined 2026-11-03): one click on "Show Code" must (1) copy the
+ * code, (2) SHOW the code on the SAME tab — revealed inline in the card AND
+ * in one standard modal — and (3) keep the user on the tab so they can copy
+ * it. The affiliate link opens in a NEW tab only when the user clicks
+ * "Continue to store" in the modal. Rationale: browsers always switch focus
+ * to an auto-opened tab, so auto-open meant the user never saw the code.
  *
  * How it works: a capture-phase document listener intercepts every "Show Code"
  * click before any page handler runs (inline onclick, modal openers, delayed
  * openers). It extracts code + affiliate URL from the control, copies the
- * code, shows one standard modal with the code, and opens the affiliate URL
- * synchronously in a new tab. If extraction fails, the click is left alone so
- * the page's own behavior still runs — never break a working button.
+ * code, reveals it inline, and shows one standard modal with the code. If
+ * extraction fails, the click is left alone so the page's own behavior still
+ * runs — never break a working button. Clicking an already-revealed button
+ * re-opens the modal.
  *
  * The parser below (between PARSER-START / PARSER-END) is pure string logic
  * and is unit-tested in Node against every real onclick on the site.
@@ -140,6 +144,46 @@ function pnaParseReveal(onclick) {
     return null;
   }
 
+  function pnaMarkButton(btn, code) {
+    // Reveal the masked code inline wherever it lives, and mark the button.
+    // Only runs AFTER an explicit Show Code click (codes stay masked before).
+    var mask = null;
+    var label = null;
+    var spans = btn.querySelectorAll ? btn.querySelectorAll('span') : [];
+    for (var i = 0; i < spans.length; i++) {
+      var st = spans[i].textContent || '';
+      if (/•{3,}/.test(st)) mask = spans[i];
+      else if (/show code/i.test(st)) label = spans[i];
+    }
+    if (mask) {
+      mask.textContent = code;
+      mask.style.color = '#047857';
+      mask.style.fontWeight = '800';
+    }
+    if (label) {
+      label.textContent = 'Copied!';
+    } else if (!mask && btn.tagName === 'BUTTON') {
+      try { btn.textContent = 'Copied!'; } catch (err) {}
+    }
+    // Sibling mask (standard template: <span>••••</span> before the button).
+    var prev = btn.previousElementSibling;
+    if (prev && /•{3,}/.test(prev.textContent || '')) {
+      prev.textContent = code;
+      prev.style.color = '#047857';
+      prev.style.fontWeight = '800';
+    }
+    // Wrapper mask (shared-button pages).
+    var wrapper = btn.closest ? btn.closest('.code-reveal-wrapper') : null;
+    if (wrapper) {
+      var wm = wrapper.querySelector('.hidden-code-mask');
+      if (wm) {
+        wm.textContent = code;
+        wm.style.color = '#047857';
+        wm.style.fontWeight = '800';
+      }
+    }
+  }
+
   document.addEventListener('click', function (e) {
     var target = e.target;
     if (!target || !target.closest) return;
@@ -147,20 +191,30 @@ function pnaParseReveal(onclick) {
     if (!el) return;
     // Never intercept clicks inside our own modal or an old page modal.
     if (el.closest('#pna-reveal-modal')) return;
-    var text = (el.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase();
-    if (text.indexOf('show code') === -1) return;
-    var data = pnaExtract(el);
+    var doneCode = el.getAttribute && el.getAttribute('data-pna-code');
+    var doneUrl = el.getAttribute && el.getAttribute('data-pna-url');
+    var data = null;
+    if (doneCode && doneUrl) {
+      data = { code: doneCode, url: doneUrl };
+    } else {
+      var text = (el.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase();
+      if (text.indexOf('show code') === -1) return;
+      data = pnaExtract(el);
+    }
     if (!data || !data.code || !data.url) return; // leave unknown buttons alone
     e.preventDefault();
     e.stopPropagation();
     pnaCopy(data.code);
+    if (el.tagName === 'BUTTON') {
+      try {
+        el.setAttribute('data-pna-code', data.code);
+        el.setAttribute('data-pna-url', data.url);
+      } catch (err) {}
+      pnaMarkButton(el, data.code);
+    }
     var modal = pnaEnsureModal();
     document.getElementById('pna-modal-code').textContent = data.code;
     document.getElementById('pna-modal-continue').href = data.url;
     modal.className = '';
-    window.open(data.url, '_blank', 'noopener,noreferrer');
-    if (el.tagName === 'BUTTON') {
-      try { el.textContent = 'Copied!'; } catch (err) {}
-    }
   }, true);
 })();
