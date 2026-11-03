@@ -138,58 +138,18 @@
 <body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
 
     <!-- Header Navigation -->
-    <header class="header" id="header">
-        <div class="container header-container">
-            <a href="/" class="logo" aria-label="PlayNewApps Home">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
-                <span>PlayNewApps</span>
-            </a>
-            
-                        <nav class="nav" id="nav" aria-label="Main Navigation">
-                <ul class="nav-list">
-                    <li><a href="/" class="nav-link">Home</a></li>
-                    <li class="nav-item dropdown" id="stores-dropdown-wrapper">
-                        <a href="/stores" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-                            Stores <span class="material-icons-round dropdown-icon" aria-hidden="true">expand_more</span>
-                        </a>
-                        <div class="dropdown-menu" id="stores-dropdown-menu" aria-label="Stores Menu">
-                            <div class="dropdown-loading">Loading stores...</div>
-                        </div>
-                    </li>
-                    <li><a href="/products" class="nav-link">Products</a></li>
-                    <li><a href="/coupon" class="nav-link">Coupons</a></li>
-                    <li><a href="/reviews" class="nav-link">Reviews</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-actions">
-                <a href="/#search-form" class="icon-btn" aria-label="Search">
-                    <span class="material-icons-round" aria-hidden="true">search</span>
-                </a>
-                <a href="/stores" class="btn btn-primary btn-sm">Explore Software</a>
-            
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Wrapper -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 space-y-8 flex-grow w-full">
 
         <!-- Breadcrumb Navigation -->
-        <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-xs sm:text-sm text-slate-500 overflow-x-auto pb-1">
-            <a href="/" class="hover:text-sky-600 flex items-center gap-1">
-                <span class="material-icons-round text-base">home</span>
-                <span>Home</span>
-            </a>
-            <span class="material-icons-round text-xs text-slate-400">chevron_right</span>
-            <a href="/stores" class="hover:text-sky-600">Stores</a>
-            <span class="material-icons-round text-xs text-slate-400">chevron_right</span>
-            <span class="font-semibold text-slate-900">ApplicantAlly Promo Codes</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">home Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">ApplicantAlly Promo Codes</span> </nav>
 
         <!-- STORE COMPACT HERO HEADER -->
-        <section class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-xs relative overflow-hidden space-y-6">
-            <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-100 pb-4">
+        <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="w-40 sm:w-52 h-16 sm:h-20 bg-white rounded-xl p-3 flex items-center justify-center border border-slate-200 flex-shrink-0 shadow-sm"> <img src="/assets/images/brands/applicantally-icon.svg" alt="ApplicantAlly Official Store Logo" class="max-h-full max-w-full object-contain"> </div> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+                            ApplicantAlly Promo Codes &amp; Coupon Deals (2026)
+                        </h1> </div> </section> <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-100 pb-4">
                 <div class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-900 border border-emerald-200 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
                     <span class="material-icons-round text-emerald-600 text-base">verified</span>
                     <span>Verified ApplicantAlly Official Partner (2026)</span>
@@ -205,15 +165,11 @@
                     <span class="font-bold text-slate-900">4.9 / 5</span>
                     <span class="text-slate-400">(3,120+ Candidate Reviews)</span>
                 </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            </div> <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
                 <div class="flex items-start sm:items-center gap-5">
-                    <img src="/assets/images/brands/applicantally-icon.svg" alt="ApplicantAlly Official Store Logo" class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl p-2.5 bg-slate-50 border border-slate-200 object-contain shadow-xs shrink-0">
+                    
                     <div>
-                        <h1 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                            ApplicantAlly Promo Codes &amp; Coupon Deals (2026)
-                        </h1>
+                        
                         <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-3xl">
                             Save on ApplicantAlly AI live interview copilot for Zoom, Teams, and Meet. Verified discount codes, 15 free trial minutes, and 30 bonus minutes with verified coupon code.
                         </p>
@@ -221,10 +177,7 @@
                 </div>
 
 
-            </div>
-
-            <!-- KEY STATS ROW -->
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-xs border-t border-slate-100">
+            </div> <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-xs border-t border-slate-100">
                 <div class="bg-slate-50/80 p-3 rounded-xl border border-slate-200/60">
                     <span class="text-slate-400 block">Verified Coupons</span>
                     <span class="font-bold text-slate-900 text-sm">6 Active Deals</span>
@@ -242,7 +195,6 @@
                     <span class="font-bold text-slate-800 text-sm">Today (100% Working)</span>
                 </div>
             </div>
-        </section>
 
         <!-- VERIFIED COUPONS LIST SECTION -->
         <section id="verified-coupons" class="space-y-6">
@@ -261,16 +213,16 @@
                                         <span class="discount-hero">EXTRA 30 MINS FREE</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="#" target="_blank" rel="noopener sponsored">🎁 Extra 30 Free Minutes for Any Order (Verified Coupon)</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         </div>
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="ASTART30" data-link="#">
-                                        <span class="hidden-code-mask">••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -304,16 +256,16 @@
                                         <span class="discount-hero">100% FREE TRIAL</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="#" target="_blank" rel="noopener sponsored">⚡ Free 15-Minute Trial (No Credit Card Required)</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         </div>
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="NO CODE NEEDED" data-link="#">
-                                        <span class="hidden-code-mask">••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -347,16 +299,16 @@
                                         <span class="discount-hero">4 HOURS PACK</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="#" target="_blank" rel="noopener sponsored">💼 ApplicantAlly 4 Hours Interview Pack - $22</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         </div>
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="DEAL ACTIVATED" data-link="#">
-                                        <span class="hidden-code-mask">••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -390,16 +342,16 @@
                                         <span class="discount-hero">8 HOURS PACK</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="#" target="_blank" rel="noopener sponsored">⭐ ApplicantAlly 8 Hours Interview Pack - $44 (Popular Choice)</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         </div>
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="BEST VALUE" data-link="#">
-                                        <span class="hidden-code-mask">••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -433,16 +385,16 @@
                                         <span class="discount-hero">12 HOURS PACK</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="#" target="_blank" rel="noopener sponsored">🚀 ApplicantAlly 12 Hours Interview Pack - $58 (Lowest Hourly Rate)</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         </div>
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="MAX SAVINGS" data-link="#">
-                                        <span class="hidden-code-mask">••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -779,32 +731,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 mt-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-slate-800 pb-8">
-                <a href="/" class="flex items-center gap-2 text-white font-bold text-xl">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="w-7 h-7" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
-                    <span>PlayNewApps</span>
-                </a>
-                <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-300">
-                    <a href="/stores" class="hover:text-white transition">All Stores</a>
-                    <a href="/reviews" class="hover:text-white transition">Software Reviews</a>
-                    <a href="/coupon" class="hover:text-white transition">Coupons &amp; Deals</a>
-                    <a href="/about" class="hover:text-white transition">About Us</a>
-                    <a href="/contact" class="hover:text-white transition">Contact</a>
-                </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-                <p>&copy; 2026 PlayNewApps. Store deals, promo codes, and software discounts. All rights reserved.</p>
-                <div class="flex items-center gap-4">
-                    <a href="/privacy" class="hover:text-slate-300">Privacy Policy</a>
-                    <a href="/terms" class="hover:text-slate-300">Terms of Service</a>
-                    <a href="/affiliate" class="hover:text-slate-300">Affiliate Disclosure</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- INTERACTIVE CODE REVEAL & DETAILS TOGGLE JS SCRIPT -->
     <script>

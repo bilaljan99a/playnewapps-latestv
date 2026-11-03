@@ -37,6 +37,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
     <style>
         .review-article-wrapper {
             max-width: 960px;
@@ -544,46 +545,16 @@
 <body>
 
     <!-- Header Navigation -->
-    <header class="header" id="header">
-        <div class="container header-container">
-            <a href="/" class="logo" aria-label="PlayNewApps Home">
-                <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
-                <span>PlayNewApps</span>
-            </a>
-            <nav class="nav" id="nav" aria-label="Main Navigation">
-                <ul class="nav-list">
-                    <li><a href="/reviews" class="nav-link">Reviews</a></li>
-                    <li><a href="/stores" class="nav-link">Stores</a></li>
-                    <li><a href="/coupon" class="nav-link">Coupons</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
-                    <span class="material-icons-round" aria-hidden="true">dark_mode</span>
-                </button>
-                <button id="mobile-menu-btn" class="icon-btn mobile-only" aria-label="Open Menu" aria-expanded="false" aria-controls="nav">
-                    <span class="material-icons-round" aria-hidden="true">menu</span>
-                </button>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="hover:text-indigo-600 transition-colors">Stores</a> <a href="/reviews" class="text-indigo-600 font-bold transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Review Layout -->
     <main class="review-article-wrapper">
 
         <!-- Breadcrumb Navigation -->
-        <nav aria-label="Breadcrumb" style="margin-bottom: 1.5rem;">
-            <ol style="display: flex; gap: 0.5rem; list-style: none; padding: 0; font-size: 0.875rem; color: #64748b; flex-wrap: wrap;">
-                <li><a href="/" style="color: #0284c7; text-decoration: none;">Home</a></li>
-                <li>/</li>
-                <li><a href="/reviews" style="color: #0284c7; text-decoration: none;">Reviews</a></li>
-                <li>/</li>
-                <li aria-current="page" style="font-weight: 600; color: #0f172a;">Crossout Review 2026</li>
-            </ol>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/reviews" class="hover:text-slate-800">Reviews</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">Crossout Review 2026</span> </nav>
 
         <!-- Article Headline -->
-        <h1 class="review-header-title">Crossout Review 2026: The Ultimate Vehicle Combat &amp; Crafting MMO Evaluation</h1>
+        <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">Crossout Review 2026: The Ultimate Vehicle Combat &amp; Crafting MMO Evaluation</h1> </div> </section>
 
         <!-- Meta Bar -->
         <div class="review-meta-bar">
@@ -1067,37 +1038,7 @@
     </main>
 
     <!-- Footer -->
-    <footer style="background: #0f172a; color: #94a3b8; padding: 3rem 2rem; border-top: 1px solid #1e293b; font-size: 0.9rem;">
-        <div style="max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem;">
-            <div style="max-width: 350px;">
-                <a href="/" style="font-size: 1.4rem; font-weight: 900; color: #ffffff; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" width="28" height="28"> PlayNewApps
-                </a>
-                <p style="line-height: 1.6;">Your premier destination for verified software reviews, gaming evaluations, coupon promo codes, and app breakdowns.</p>
-            </div>
-            <div>
-                <h4 style="color: #ffffff; font-weight: 800; margin-bottom: 0.75rem;">Navigation</h4>
-                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
-                    <li><a href="/" style="color: #cbd5e1; text-decoration: none;">Home</a></li>
-                    <li><a href="/reviews" style="color: #cbd5e1; text-decoration: none;">Game &amp; Software Reviews</a></li>
-                    <li><a href="/stores" style="color: #cbd5e1; text-decoration: none;">Verified Stores</a></li>
-                    <li><a href="/crossout-coupons" style="color: #f59e0b; text-decoration: none; font-weight: 700;">Crossout Promo Deals</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 style="color: #ffffff; font-weight: 800; margin-bottom: 0.75rem;">Legal &amp; Disclosure</h4>
-                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
-                    <li><a href="/privacy" style="color: #cbd5e1; text-decoration: none;">Privacy Policy</a></li>
-                    <li><a href="/terms" style="color: #cbd5e1; text-decoration: none;">Terms of Service</a></li>
-                    <li><a href="/affiliate" style="color: #cbd5e1; text-decoration: none;">Affiliate Disclosure</a></li>
-                    <li><a href="/contact" style="color: #cbd5e1; text-decoration: none;">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-        <div style="max-width: 1100px; margin: 2rem auto 0 auto; padding-top: 1.5rem; border-top: 1px solid #1e293b; text-align: center; color: #64748b; font-size: 0.85rem;">
-            &copy; 2026 PlayNewApps. All rights reserved. Crossout is a registered trademark of Targem Games and Gaijin Entertainment.
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- Scripts -->
     <script src="./assets/js/script.min.js" defer></script>

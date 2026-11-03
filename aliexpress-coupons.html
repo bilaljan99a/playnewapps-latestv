@@ -163,57 +163,16 @@
 <body class="bg-slate-50 text-slate-900 font-sans antialiased min-h-screen flex flex-col">
 
     <!-- Header Navigation -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-amber-500 rounded-lg" aria-label="PlayNewApps Home">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="w-9 h-9 sm:w-10 sm:h-10 transition-transform group-hover:scale-105" width="40" height="40" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
-                <div>
-                    <span class="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight block">PlayNewApps</span>
-                    <span class="text-[10px] sm:text-xs font-semibold text-slate-500 block -mt-1 uppercase tracking-wider">Verified Shopping Deals</span>
-                </div>
-            </a>
-            
-            <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700">
-                <a href="/" class="hover:text-amber-600 transition-colors">Home</a>
-                <a href="/stores" class="hover:text-amber-600 transition-colors">Stores</a>
-                <a href="/coupon" class="hover:text-amber-600 transition-colors">Coupons</a>
-                <a href="/reviews" class="hover:text-amber-600 transition-colors">Reviews</a>
-            </nav>
-
-            <div class="flex items-center gap-3">
-                <a href="https://rzekl.com/g/1e8d114494b68b264a7616525dc3e8/" target="_blank" rel="nofollow noopener noreferrer" class="hidden sm:inline-flex items-center justify-center gap-1.5 px-4 py-2 text-xs font-bold text-white bg-amber-600 hover:bg-amber-700 rounded-xl transition shadow-sm">
-                    Visit AliExpress
-                    <span class="material-icons-round text-sm">open_in_new</span>
-                </a>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Breadcrumb Bar -->
-    <nav class="bg-slate-100 border-b border-slate-200 text-xs text-slate-500 py-2.5 px-4 sm:px-6 lg:px-8" aria-label="Breadcrumb">
-        <div class="max-w-7xl mx-auto flex items-center gap-2 overflow-x-auto whitespace-nowrap">
-            <a href="/" class="hover:text-slate-900 transition flex items-center gap-1">
-                <span class="material-icons-round text-sm">home</span> Home
-            </a>
-            <span class="text-slate-400">/</span>
-            <a href="/stores" class="hover:text-slate-900 transition">Stores</a>
-            <span class="text-slate-400">/</span>
-            <span class="text-slate-800 font-semibold">AliExpress Coupons</span>
-        </div>
-    </nav>
+    <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">home Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">AliExpress Coupons</span> </nav>
 
     <!-- Main Container -->
     <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-8">
 
         <!-- STRICT RULE: TOP HEADER SECTION (Clean & Minimalist - ONLY Brand Logo box + Store H1 Title) -->
-        <section id="store-header" class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm flex flex-col sm:flex-row items-center sm:items-center gap-6">
-            <div class="w-40 sm:w-52 h-16 sm:h-20 flex-shrink-0 bg-white rounded-xl border border-slate-200 p-3 flex items-center justify-center shadow-xs">
-                <img src="/assets/images/brands/aliexpress.svg" alt="AliExpress Official Logo" class="max-h-full max-w-full object-contain" width="180" height="48">
-            </div>
-            <div class="text-center sm:text-left flex-1">
-                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold font-display text-slate-900 tracking-tight">AliExpress Coupon Codes &amp; Discount Offers (2026)</h1>
-            </div>
-        </section>
+        <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="w-40 sm:w-52 h-16 sm:h-20 bg-white rounded-xl p-3 flex items-center justify-center border border-slate-200 flex-shrink-0 shadow-sm"> <img src="/assets/images/brands/aliexpress.svg" alt="AliExpress Official Logo" class="max-h-full max-w-full object-contain"> </div> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">AliExpress Coupon Codes &amp; Discount Offers (2026)</h1> </div> </section>
 
         <!-- COUPONS SECTION (Immediate Above-The-Fold Visibility) -->
         <section id="verified-coupons" class="space-y-4">
@@ -239,7 +198,7 @@
             <div class="space-y-4">
 
                 <!-- Coupon Card 1: $2 OFF Over $15 -->
-                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
                     <div class="p-4 sm:p-6 flex flex-col md:flex-row items-start md:items-center gap-4 sm:gap-6">
                         <!-- Left Hero Badge -->
                         <div class="w-full md:w-36 flex-shrink-0 flex md:flex-col items-center justify-between md:justify-center p-3 sm:p-4 bg-purple-50 border border-purple-100 rounded-xl text-purple-700 text-center">
@@ -273,7 +232,7 @@
                         <!-- Action Box (Strictly Hidden Promo Code) -->
                         <div class="w-full md:w-52 flex-shrink-0 flex flex-col gap-2">
                             <div class="relative flex items-center justify-between p-1 bg-purple-50 border border-dashed border-purple-300 rounded-xl">
-                                <span class="font-mono font-bold text-sm tracking-widest text-purple-900 pl-3 select-none" id="mask-afa2">••••••••</span>
+                                <span class="font-mono font-bold text-sm tracking-widest pl-3 select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 px-4 py-3 rounded-xl select-all tracking-wider text-center w-full sm:w-auto" id="mask-afa2">••••••••</span>
                                 <button onclick="handleCouponReveal('AFA2', 'mask-afa2', 'btn-afa2', 'https://rzekl.com/g/1e8d114494b68b264a7616525dc3e8/')" id="btn-afa2" class="px-4 py-2 text-xs font-extrabold text-white bg-purple-600 hover:bg-purple-700 rounded-lg shadow-sm transition flex items-center gap-1">
                                     <span>Show Code</span>
                                     <span class="material-icons-round text-sm">content_copy</span>
@@ -293,10 +252,10 @@
                             <p><strong>Excluded Categories:</strong> Virtual gift cards and specific restricted logistics items may be excluded.</p>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Coupon Card 2: $9 OFF Over $65 -->
-                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
                     <div class="p-4 sm:p-6 flex flex-col md:flex-row items-start md:items-center gap-4 sm:gap-6">
                         <!-- Left Hero Badge -->
                         <div class="w-full md:w-36 flex-shrink-0 flex md:flex-col items-center justify-between md:justify-center p-3 sm:p-4 bg-purple-50 border border-purple-100 rounded-xl text-purple-700 text-center">
@@ -330,7 +289,7 @@
                         <!-- Action Box -->
                         <div class="w-full md:w-52 flex-shrink-0 flex flex-col gap-2">
                             <div class="relative flex items-center justify-between p-1 bg-purple-50 border border-dashed border-purple-300 rounded-xl">
-                                <span class="font-mono font-bold text-sm tracking-widest text-purple-900 pl-3 select-none" id="mask-afa9">••••••••</span>
+                                <span class="font-mono font-bold text-sm tracking-widest pl-3 select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 px-4 py-3 rounded-xl select-all tracking-wider text-center w-full sm:w-auto" id="mask-afa9">••••••••</span>
                                 <button onclick="handleCouponReveal('AFA9', 'mask-afa9', 'btn-afa9', 'https://rzekl.com/g/1e8d114494b68b264a7616525dc3e8/')" id="btn-afa9" class="px-4 py-2 text-xs font-extrabold text-white bg-purple-600 hover:bg-purple-700 rounded-lg shadow-sm transition flex items-center gap-1">
                                     <span>Show Code</span>
                                     <span class="material-icons-round text-sm">content_copy</span>
@@ -349,10 +308,10 @@
                             <p><strong>Offer Terms:</strong> Requires an order total of $65 or higher. Ideal for purchasing electronics, smart home gadgets, mechanical keyboards, and fashion apparel. Enter promo code during checkout review.</p>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Coupon Card 3: $55 OFF Over $449 -->
-                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
                     <div class="p-4 sm:p-6 flex flex-col md:flex-row items-start md:items-center gap-4 sm:gap-6">
                         <!-- Left Hero Badge -->
                         <div class="w-full md:w-36 flex-shrink-0 flex md:flex-col items-center justify-between md:justify-center p-3 sm:p-4 bg-purple-50 border border-purple-100 rounded-xl text-purple-700 text-center">
@@ -386,7 +345,7 @@
                         <!-- Action Box -->
                         <div class="w-full md:w-52 flex-shrink-0 flex flex-col gap-2">
                             <div class="relative flex items-center justify-between p-1 bg-purple-50 border border-dashed border-purple-300 rounded-xl">
-                                <span class="font-mono font-bold text-sm tracking-widest text-purple-900 pl-3 select-none" id="mask-afa55">••••••••</span>
+                                <span class="font-mono font-bold text-sm tracking-widest pl-3 select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 px-4 py-3 rounded-xl select-all tracking-wider text-center w-full sm:w-auto" id="mask-afa55">••••••••</span>
                                 <button onclick="handleCouponReveal('AFA55', 'mask-afa55', 'btn-afa55', 'https://rzekl.com/g/1e8d114494b68b264a7616525dc3e8/')" id="btn-afa55" class="px-4 py-2 text-xs font-extrabold text-white bg-purple-600 hover:bg-purple-700 rounded-lg shadow-sm transition flex items-center gap-1">
                                     <span>Show Code</span>
                                     <span class="material-icons-round text-sm">content_copy</span>
@@ -405,7 +364,7 @@
                             <p><strong>Offer Terms:</strong> Valid on cart totals of $449 or more. Perfect for 3D printers, e-bikes, mini PCs, camera gear, and premium laser engravers. Limit one promo code per order.</p>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Coupon Card 4: Choice Day Sale Up to 60% Off -->
                 <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
@@ -914,27 +873,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-slate-200 py-10 mt-12 text-slate-500 text-xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
-                <div class="flex items-center gap-2">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="w-6 h-6" width="24" height="24" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
-                    <span class="font-extrabold text-slate-800 text-sm">PlayNewApps</span>
-                </div>
-                <div class="flex flex-wrap items-center gap-6 text-slate-600">
-                    <a href="/stores" class="hover:text-amber-600 transition">Stores</a>
-                    <a href="/coupon" class="hover:text-amber-600 transition">Coupons</a>
-                    <a href="/reviews" class="hover:text-amber-600 transition">Reviews</a>
-                    <a href="/privacy" class="hover:text-amber-600 transition">Privacy Policy</a>
-                    <a href="/terms" class="hover:text-amber-600 transition">Terms of Service</a>
-                    <a href="/affiliate" class="hover:text-amber-600 transition">Affiliate Disclosure</a>
-                </div>
-            </div>
-            <p class="text-center sm:text-left text-slate-400">
-                &copy; 2026 PlayNewApps. All rights reserved. Third-party trademarks and brand logos belong to their respective owners. We may earn an affiliate commission from qualifying purchases made through our referral links.
-            </p>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- Interactive Script for Code Reveal & Details Toggle -->
     <script>

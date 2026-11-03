@@ -164,25 +164,7 @@
     <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg focus:text-blue-600 focus:font-bold">Skip to main content</a>
 
     <!-- Header Navigation -->
-    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-40 border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-3 no-underline">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="w-8 h-8 rounded-lg">
-                <span class="font-extrabold text-xl tracking-tight text-slate-900">PlayNewApps</span>
-            </a>
-            <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
-                <a href="/" class="hover:text-blue-600 transition">Home</a>
-                <a href="/reviews" class="text-blue-600">Hardware &amp; Software Reviews</a>
-                <a href="/stores" class="hover:text-blue-600 transition">Stores &amp; Brands</a>
-                <a href="/coupons" class="hover:text-blue-600 transition">Verified Deals</a>
-            </nav>
-            <div class="flex items-center gap-3">
-                <a href="/reviews" class="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-sm transition">
-                    <span class="material-icons-round text-sm">arrow_back</span> All Reviews
-                </a>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="hover:text-indigo-600 transition-colors">Stores</a> <a href="/reviews" class="text-indigo-600 font-bold transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Container -->
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -200,18 +182,13 @@
         <main id="main-content" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden p-6 sm:p-10 lg:p-12">
             
             <!-- Article Header -->
-            <header class="mb-10 pb-8 border-b border-slate-200">
-                <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 w-fit px-3 py-1 rounded-full mb-4">
-                    <span class="material-icons-round text-sm">desktop_windows</span> Operating System • 24H2 Deep Dive Benchmark
-                </div>
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight mb-4">
+            <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="https://www.playnewapps.store/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="https://www.playnewapps.store/reviews" class="hover:text-slate-800">Software Reviews</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">Windows 11 Review</span> </nav> <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
                     Windows 11 Review (2026): 24H2 Kernel, DirectStorage &amp; Copilot AI
-                </h1>
-                <p class="text-lg sm:text-xl text-slate-600 leading-relaxed mb-6 font-normal">
+                </h1> </div> </section> <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 w-fit px-3 py-1 rounded-full mb-4">
+                    <span class="material-icons-round text-sm">desktop_windows</span> Operating System • 24H2 Deep Dive Benchmark
+                </div> <p class="text-lg sm:text-xl text-slate-600 leading-relaxed mb-6 font-normal">
                     An exhaustive architectural evaluation of Microsoft Windows 11 Version 24H2. We benchmark DirectStorage 1.2 GPU asset streaming throughput, hybrid Intel/AMD CPU scheduling, Rust kernel memory safety, Snap Layouts multitasking, and Copilot AI productivity integration.
-                </p>
-
-                <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-slate-100 text-sm text-slate-500">
+                </p> <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-slate-100 text-sm text-slate-500">
                     <div class="flex items-center gap-3">
                         <img src="/assets/images/logo.svg" alt="PlayNewApps Software Lab" class="w-10 h-10 rounded-full bg-slate-100 p-1">
                         <div>
@@ -225,7 +202,6 @@
                         <span class="text-xs text-blue-700 font-semibold ml-1">(Verified OS Benchmark)</span>
                     </div>
                 </div>
-            </header>
 
             <!-- Real Official Screenshot Hero -->
             <figure class="mb-10 rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 shadow-inner">
@@ -675,9 +651,7 @@
         </main>
 
         <!-- Footer -->
-        <footer class="mt-12 py-8 text-center text-xs text-slate-500 border-t border-slate-200">
-            <p>© 2026 PlayNewApps. Independent hardware and software testing laboratory. All brand trademarks are property of their respective owners.</p>
-        </footer>
+        <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     </div>
 </body>

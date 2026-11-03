@@ -135,42 +135,13 @@
 <body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
 
     <!-- Header / Navbar -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Logo -->
-                <a href="/" class="flex items-center gap-3 group">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto">
-                    <span class="font-extrabold text-xl text-slate-900 group-hover:text-emerald-600 transition-colors">PlayNewApps</span>
-                </a>
-
-                <!-- Search & Navigation -->
-                <nav class="hidden md:flex items-center gap-6">
-                    <a href="/stores" class="text-sm font-semibold text-slate-700 hover:text-emerald-600 transition-colors">All Stores</a>
-                    <a href="/category?id=software" class="text-sm font-semibold text-slate-700 hover:text-emerald-600 transition-colors">Software Deals</a>
-                    <a href="/reviews" class="text-sm font-semibold text-slate-700 hover:text-emerald-600 transition-colors">VPN Reviews</a>
-                </nav>
-
-                <!-- Search Bar -->
-                <div class="relative w-64 hidden sm:block">
-                    <input type="text" id="global-search" placeholder="Search stores & promo codes..." class="w-full bg-slate-100 text-xs text-slate-800 pl-9 pr-4 py-2 rounded-xl border border-slate-200 focus:outline-none focus:border-emerald-500 focus:bg-white transition-all">
-                    <span class="material-icons-round absolute left-2.5 top-2 text-slate-400 text-base">search</span>
-                </div>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Container -->
     <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
         
         <!-- Breadcrumbs -->
-        <nav class="flex items-center gap-2 text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-slate-800">Home</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <a href="/stores" class="hover:text-slate-800">Stores</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <span class="text-slate-900 font-semibold">PureVPN</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">PureVPN</span> </nav>
 
         <!-- Store Header Card -->
         <div class="bg-white rounded-2xl border border-slate-200 p-5 md:p-8 shadow-sm mb-8">
@@ -182,7 +153,7 @@
 
                 <!-- Store Info -->
                 <div class="flex-1 text-center sm:text-left">
-                    <h1 class="text-xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">PureVPN Coupon Codes &amp; Discount Offers (2026)</h1>
+                    <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">PureVPN Coupon Codes &amp; Discount Offers (2026)</h1> </div> </section>
                 </div>
             </div>
         </div>
@@ -218,9 +189,9 @@
                                     <span class="discount-hero">20% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/" target="_blank" rel="noopener sponsored">20% OFF On All PureVPN Subscription Plans</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 100% Success</span>
                                         <span class="meta-dot">•</span>
@@ -229,7 +200,7 @@
                                 </div>
                                 <div class="coupon-action-box">
                                     <div class="code-reveal-wrapper" data-code="admitad20" data-link="https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/">
-                                        <span class="hidden-code-mask">••••••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                 </div>
@@ -263,9 +234,9 @@
                                     <span class="discount-hero">85% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/" target="_blank" rel="noopener sponsored">Up to 85% OFF PureVPN Multi-Year Plans — Sitewide Special</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         <span class="meta-dot">•</span>
@@ -305,9 +276,9 @@
                                     <span class="discount-hero">+3 MO FREE</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/" target="_blank" rel="noopener sponsored">PureVPN 2-Year Plan + 3 Extra Free Months</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 100% Success</span>
                                         <span class="meta-dot">•</span>
@@ -347,9 +318,9 @@
                                     <span class="discount-hero">65% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/" target="_blank" rel="noopener sponsored">65% OFF PureVPN 1-Year Plan — Annual Special</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 98% Success</span>
                                         <span class="meta-dot">•</span>
@@ -389,9 +360,9 @@
                                     <span class="discount-hero">DEDICATED IP</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/" target="_blank" rel="noopener sponsored">PureVPN Dedicated IP Add-On Special Offer</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 100% Success</span>
                                         <span class="meta-dot">•</span>
@@ -431,9 +402,9 @@
                                     <span class="discount-hero">PORT FORWARD</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/" target="_blank" rel="noopener sponsored">PureVPN Port Forwarding Add-On — Fast Torrenting</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         <span class="meta-dot">•</span>
@@ -473,9 +444,9 @@
                                     <span class="discount-hero">30-DAY RISK-FREE</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/" target="_blank" rel="noopener sponsored">PureVPN 30-Day Money-Back Guarantee</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 100% Success</span>
                                         <span class="meta-dot">•</span>
@@ -771,16 +742,16 @@
                     </section>
 
                     <!-- Final CTA Footer inside article -->
-                    <div id="cta-code-box" class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-6 sm:p-8 text-center space-y-4 shadow-xl">
-                        <h3 class="text-xl sm:text-2xl font-black tracking-tight">Ready to Protect Your Online Privacy with PureVPN?</h3>
+                    <article id="cta-code-box" class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-6 sm:p-8 text-center space-y-4 shadow-xl">
+                        <h2 class="text-xl sm:text-2xl font-black tracking-tight"><a href="https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/" target="_blank" rel="nofollow noopener sponsored">Ready to Protect Your Online Privacy with PureVPN?</a></h2>
                         <p class="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto">
                             Don't miss out on exclusive 2026 savings! Click below to reveal and auto-copy our exclusive promo code for an extra 20% OFF on top of sitewide deals up to 85% OFF + 3 months free.
                         </p>
-                        <button onclick="handleShowCode('admitad20', 'https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/', 'cta-code-box')" class="inline-flex items-center gap-2 px-8 py-3.5 bg-purple-500 hover:bg-purple-600 text-slate-950 font-black text-sm rounded-xl transition-all shadow-lg hover:scale-105">
+                        <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="handleShowCode('admitad20', 'https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/', 'cta-code-box')" class="inline-flex items-center gap-2 px-8 py-3.5 bg-purple-500 hover:bg-purple-600 text-slate-950 font-black text-sm rounded-xl transition-all shadow-lg hover:scale-105 pna-show-code">
                             <span class="material-icons-round text-base">content_copy</span>
                             <span>SHOW CODE &amp; VISIT STORE</span>
                         </button>
-                    </div>
+                    </article>
 
                 </article>
 
@@ -828,18 +799,18 @@
                 </div>
 
                 <!-- Active Promo Code Quick Box -->
-                <div id="sidebar-code-box" class="bg-gradient-to-br from-emerald-900 to-slate-900 text-white rounded-2xl p-6 shadow-md border border-emerald-700 space-y-3">
+                <article id="sidebar-code-box" class="bg-gradient-to-br from-emerald-900 to-slate-900 text-white rounded-2xl p-6 shadow-md border border-emerald-700 space-y-3">
                     <div class="flex items-center gap-2 text-emerald-400 font-extrabold text-xs uppercase tracking-wider">
                         <span class="material-icons-round text-sm">content_copy</span>
                         <span>EXCLUSIVE PROMO CODE</span>
                     </div>
-                    <h4 class="text-lg font-black leading-snug">Extra 20% OFF PureVPN</h4>
+                    <h2 class="text-lg font-black leading-snug"><a href="https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/" target="_blank" rel="nofollow noopener sponsored">Extra 20% OFF PureVPN</a></h2>
                     <p class="text-xs text-slate-300">Click below to reveal and auto-copy the promo code for an extra 20% savings on all plans.</p>
-                    <button onclick="handleShowCode('admitad20', 'https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/', 'sidebar-code-box')" class="w-full py-3 bg-purple-500 hover:bg-purple-400 text-slate-950 font-black text-xs rounded-xl transition-all flex items-center justify-center gap-1.5 shadow-md">
+                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="handleShowCode('admitad20', 'https://plrvq.com/g/ayvzzawv40b68b264a76dd63dd688c/', 'sidebar-code-box')" class="w-full py-3 bg-purple-500 hover:bg-purple-400 text-slate-950 font-black text-xs rounded-xl transition-all flex items-center justify-center gap-1.5 shadow-md pna-show-code">
                         <span class="material-icons-round text-sm">content_copy</span>
                         <span>SHOW CODE &amp; VISIT STORE</span>
                     </button>
-                </div>
+                </article>
 
                 <!-- Similar VPN Stores Widget -->
                 <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
@@ -876,27 +847,7 @@
     </main>
 
     <!-- Global Footer -->
-    <footer class="bg-slate-900 text-slate-400 text-xs py-12 border-t border-slate-800 mt-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800">
-                <a href="/" class="flex items-center gap-3">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto">
-                    <span class="font-extrabold text-lg text-white">PlayNewApps</span>
-                </a>
-                <div class="flex items-center gap-6 font-semibold">
-                    <a href="/stores" class="hover:text-white transition-colors">Stores</a>
-                    <a href="/reviews" class="hover:text-white transition-colors">Reviews</a>
-                    <a href="/about" class="hover:text-white transition-colors">About Us</a>
-                    <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="/contact" class="hover:text-white transition-colors">Contact</a>
-                </div>
-            </div>
-            <div class="text-center md:text-left space-y-2 text-slate-500 text-[11px] leading-relaxed">
-                <p>Disclaimer: PlayNewApps is an independent coupon &amp; deal aggregator. We may earn an affiliate commission when users make purchases through our verified promotional links at zero extra cost to the buyer. All trademarks, logos, and brand names belong to their respective owners.</p>
-                <p>© 2026 PlayNewApps. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- Global Search & Coupon Toggle Scripts -->
     <script>
