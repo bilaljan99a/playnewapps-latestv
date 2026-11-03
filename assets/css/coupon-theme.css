@@ -1,0 +1,22 @@
+/* PlayNewApps unified coupon theme — linked from every *-coupons page.
+   Standard (repo AGENTS.md): Show Code = purple, Get Deal = blue.
+   This file only sets theme variables + fallback classes; Tailwind pages get their
+   utility classes swapped by normalize-theme.py, shared-CSS pages get pna-* classes. */
+:root {
+  --primary-color: #9333EA;
+  --primary-hover: #7E22CE;
+}
+.pna-show-code {
+  background-color: #9333EA !important;
+  color: #fff !important;
+}
+.pna-show-code:hover {
+  background-color: #7E22CE !important;
+}
+.pna-get-deal {
+  background-color: #2563EB !important;
+  color: #fff !important;
+}
+.pna-get-deal:hover {
+  background-color: #1D4ED8 !important;
+}
