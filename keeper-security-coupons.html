@@ -171,45 +171,13 @@
 <body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
 
     <!-- Header / Navbar -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Logo -->
-                <a href="/" class="flex items-center gap-3 group">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto">
-                    <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span>
-                </a>
-
-                <!-- Navigation -->
-                <nav class="hidden md:flex items-center gap-6">
-                    <a href="/stores" class="text-sm font-semibold text-slate-700 hover:text-indigo-600 transition-colors">All Stores</a>
-                    <a href="/category?id=productivity" class="text-sm font-semibold text-slate-700 hover:text-indigo-600 transition-colors">Productivity Deals</a>
-                    <a href="/category?id=games" class="text-sm font-semibold text-slate-700 hover:text-indigo-600 transition-colors">Gaming Tech</a>
-                    <a href="/reviews" class="text-sm font-semibold text-slate-700 hover:text-indigo-600 transition-colors">Software Reviews</a>
-                </nav>
-
-                <!-- Action Button -->
-                <div class="flex items-center gap-3">
-                    <a href="https://ziejy.com/g/d31t1s35szb68b264a76eb9db1a7c5/" target="_blank" rel="noopener sponsored" class="bg-[#0E1626] hover:bg-[#1E293B] text-white font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-xs transition-all flex items-center gap-1.5">
-                        <span>Shop at Keeper</span>
-                        <span class="material-icons-round text-base">open_in_new</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Container -->
     <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-5">
         
         <!-- Breadcrumbs -->
-        <nav class="flex items-center gap-2 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-slate-800">Home</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <a href="/stores" class="hover:text-slate-800">Stores</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <span class="text-slate-900 font-semibold">Keeper Security</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">Keeper Security</span> </nav>
 
         <!-- STRICT MANDATE COMPLIANT HEADER: Brand Logo Box + H1 Title ONLY -->
         <div class="bg-white rounded-xl border border-slate-200 p-4 sm:p-5 shadow-sm mb-6">
@@ -220,7 +188,7 @@
                 </div>
                 <!-- Store H1 Title -->
                 <div class="min-w-0">
-                    <h1 class="text-lg sm:text-2xl font-black text-slate-900 tracking-tight leading-tight">Keeper Security Coupon Codes & Discount Offers (2026)</h1>
+                    <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">Keeper Security Coupon Codes & Discount Offers (2026)</h1> </div> </section>
                 </div>
             </div>
         </div>
@@ -292,7 +260,7 @@
                         </div>
 
                         <!-- Deal Card 2: 50% Off Unlimited and Family -->
-                        <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-indigo-600">
+                        <article class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-indigo-600">
                             <div class="flex items-center justify-between pb-2 mb-3 border-b border-slate-100">
                                 <div class="flex items-center gap-2">
                                     <span class="inline-flex items-center gap-1 text-[11px] font-extrabold bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-md uppercase tracking-wide">
@@ -309,9 +277,9 @@
                                         <span class="text-[10px] font-bold uppercase mt-0.5">OFF</span>
                                     </div>
                                     <div class="min-w-0">
-                                        <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-indigo-600 transition-colors leading-snug">
+                                        <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-indigo-600 transition-colors leading-snug">
                                             <a href="https://ziejy.com/g/d31t1s35szb68b264a76eb9db1a7c5/" target="_blank" rel="noopener sponsored">50% Off Unlimited and Family Annual Subscriptions</a>
-                                        </h3>
+                                        </h2>
                                         <p class="text-xs text-slate-500 mt-1 flex items-center gap-2">
                                             <span class="flex items-center text-emerald-600 font-bold"><span class="material-icons-round text-sm mr-0.5">thumb_up</span> 99% Success</span>
                                             <span>•</span>
@@ -323,7 +291,7 @@
                                     <div class="relative bg-slate-100 border border-dashed border-indigo-300 rounded-xl px-4 py-2.5 text-center min-w-[120px]">
                                         <span id="code-text-1" class="font-mono font-black text-slate-400 tracking-widest text-sm select-none">••••••••</span>
                                     </div>
-                                    <button type="button" onclick="copyAndRedirect('KEEPER50', 'code-text-1', 'https://ziejy.com/g/d31t1s35szb68b264a76eb9db1a7c5/')" class="bg-purple-600 hover:bg-purple-700 text-white font-black text-xs sm:text-sm px-5 py-3 rounded-xl shadow-xs transition-all flex items-center justify-center gap-1.5 shrink-0">
+                                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="copyAndRedirect('KEEPER50', 'code-text-1', 'https://ziejy.com/g/d31t1s35szb68b264a76eb9db1a7c5/')" class="bg-purple-600 hover:bg-purple-700 text-white font-black text-xs sm:text-sm px-5 py-3 rounded-xl shadow-xs transition-all flex items-center justify-center gap-1.5 shrink-0">
                                         <span class="material-icons-round text-base">content_copy</span>
                                         <span>Show Code</span>
                                     </button>
@@ -339,7 +307,7 @@
                             <div id="details-50off" class="deal-details-content pt-3 text-xs text-slate-600 border-t border-slate-100 mt-2">
                                 <p>Unlock an instant 50% discount on annual billing for Keeper Unlimited individual subscriptions or Keeper Family 5-user packages. Discount automatically calculates in your checkout cart when you apply the verified promo code.</p>
                             </div>
-                        </div>
+                        </article>
 
                         <!-- Deal Card 3: Student Get 50% Off -->
                         <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-purple-600">
@@ -436,7 +404,7 @@
                         </div>
 
                         <!-- Deal Card 5: Keeper Family Plan Deal -->
-                        <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-amber-500">
+                        <article class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-amber-500">
                             <div class="flex items-center justify-between pb-2 mb-3 border-b border-slate-100">
                                 <div class="flex items-center gap-2">
                                     <span class="inline-flex items-center gap-1 text-[11px] font-extrabold bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-md uppercase tracking-wide">
@@ -453,9 +421,9 @@
                                         <span class="text-[10px] font-bold uppercase mt-0.5">FAMILY</span>
                                     </div>
                                     <div class="min-w-0">
-                                        <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-indigo-600 transition-colors leading-snug">
+                                        <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-indigo-600 transition-colors leading-snug">
                                             <a href="https://ziejy.com/g/d31t1s35szb68b264a76eb9db1a7c5/" target="_blank" rel="noopener sponsored">Keeper Family Plan: 5 Private Vaults + 10GB Cloud Storage at 50% Off</a>
-                                        </h3>
+                                        </h2>
                                         <p class="text-xs text-slate-500 mt-1 flex items-center gap-2">
                                             <span class="flex items-center text-emerald-600 font-bold"><span class="material-icons-round text-sm mr-0.5">thumb_up</span> 99% Success</span>
                                             <span>•</span>
@@ -467,7 +435,7 @@
                                     <div class="relative bg-slate-100 border border-dashed border-amber-300 rounded-xl px-4 py-2.5 text-center min-w-[120px]">
                                         <span id="code-text-family" class="font-mono font-black text-slate-400 tracking-widest text-sm select-none">••••••••</span>
                                     </div>
-                                    <button type="button" onclick="copyAndRedirect('FAMILY50', 'code-text-family', 'https://ziejy.com/g/d31t1s35szb68b264a76eb9db1a7c5/')" class="bg-purple-600 hover:bg-purple-700 text-white font-black text-xs sm:text-sm px-5 py-3 rounded-xl shadow-xs transition-all flex items-center justify-center gap-1.5 shrink-0">
+                                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="copyAndRedirect('FAMILY50', 'code-text-family', 'https://ziejy.com/g/d31t1s35szb68b264a76eb9db1a7c5/')" class="bg-purple-600 hover:bg-purple-700 text-white font-black text-xs sm:text-sm px-5 py-3 rounded-xl shadow-xs transition-all flex items-center justify-center gap-1.5 shrink-0">
                                         <span class="material-icons-round text-base">content_copy</span>
                                         <span>Show Code</span>
                                     </button>
@@ -483,7 +451,7 @@
                             <div id="details-family" class="deal-details-content pt-3 text-xs text-slate-600 border-t border-slate-100 mt-2">
                                 <p>The Keeper Family Plan equips each family member with their own completely private vault, shared family folders for Wi-Fi passwords and streaming logins, emergency contact access recovery, and 10GB of zero-knowledge encrypted cloud file storage.</p>
                             </div>
-                        </div>
+                        </article>
 
                         <!-- Deal Card 6: 14-Day Free Business & Enterprise Trial -->
                         <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-slate-800">
@@ -998,20 +966,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-slate-200 mt-12 py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-500 space-y-3">
-            <div class="flex items-center justify-center gap-6 font-semibold text-slate-700">
-                <a href="/about" class="hover:text-indigo-600 transition-colors">About Us</a>
-                <a href="/stores" class="hover:text-indigo-600 transition-colors">All Stores</a>
-                <a href="/reviews" class="hover:text-indigo-600 transition-colors">Software Reviews</a>
-                <a href="/privacy" class="hover:text-indigo-600 transition-colors">Privacy Policy</a>
-                <a href="/terms" class="hover:text-indigo-600 transition-colors">Terms of Service</a>
-                <a href="/contact" class="hover:text-indigo-600 transition-colors">Contact</a>
-            </div>
-            <p>© 2026 PlayNewApps. All rights reserved. Keeper Security® is a registered trademark of Keeper Security, Inc.</p>
-            <p class="text-[11px] text-slate-400">Disclaimer: We may receive affiliate compensation when you purchase through links on this site. Offers and promo codes are independently verified daily.</p>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- Interactive Script for Copying Code and Expanding Accordions -->
     <script>

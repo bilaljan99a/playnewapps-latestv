@@ -259,48 +259,22 @@
 <body class="min-h-screen flex flex-col antialiased">
 
     <!-- Top Site Navigation Header -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-40">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16 sm:h-20">
-                <a href="/" class="flex items-center gap-3 group">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="w-9 h-9 sm:w-10 sm:h-10 transition-transform group-hover:scale-105">
-                    <div>
-                        <span class="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight block">PlayNewApps</span>
-                        <span class="text-[10px] sm:text-xs font-semibold text-slate-500 block -mt-1 uppercase tracking-wider">Verified Software &amp; Deals</span>
-                    </div>
-                </a>
-                                <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700">
-                    <a href="/" class="hover:text-amber-600 transition-colors">Home</a>
-                    <a href="/stores" class="hover:text-amber-600 transition-colors">Stores</a>
-                    <a href="/products" class="hover:text-amber-600 transition-colors">Products</a>
-                    <a href="/coupon" class="hover:text-amber-600 transition-colors">Coupons</a>
-                    <a href="/reviews" class="hover:text-amber-600 transition-colors">Reviews</a>
-                </nav><div class="flex items-center gap-3"><a href="/#search-form" class="inline-flex items-center justify-center w-9 h-9 rounded-xl text-slate-600 hover:text-amber-600 hover:bg-slate-100 transition-colors" aria-label="Search"><span class="material-icons-round text-lg">search</span></a></div></div></div></header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Content Container -->
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-6 w-full">
 
         <!-- Breadcrumb Navigation -->
-        <nav class="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-500 overflow-x-auto pb-1" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-red-600 transition-colors flex items-center gap-1">
-                <span class="material-icons-round text-base">home</span>
-                <span>Home</span>
-            </a>
-            <span class="material-icons-round text-sm text-slate-400">chevron_right</span>
-            <a href="/stores" class="hover:text-red-600 transition-colors">Stores</a>
-            <span class="material-icons-round text-sm text-slate-400">chevron_right</span>
-            <span class="text-slate-900 font-semibold">REDMAGIC Promo Codes</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">home Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">REDMAGIC Promo Codes</span> </nav>
 
         <!-- CLEAN COMPACT STORE HEADER (ABOVE THE FOLD - ZERO CLUTTER) -->
-        <section class="bg-white rounded-2xl border border-slate-200 p-4 sm:p-5 shadow-xs">
-            <div class="flex items-center gap-3.5 sm:gap-5">
+        <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="w-40 sm:w-52 h-16 sm:h-20 bg-white rounded-xl p-3 flex items-center justify-center border border-slate-200 flex-shrink-0 shadow-sm"> <img src="/assets/images/brands/redmagic.svg" alt="Official REDMAGIC Logo" class="max-h-full max-w-full object-contain"> </div> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">REDMAGIC Promo Codes &amp; Verified Deals</h1> </div> </section> <div class="flex items-center gap-3.5 sm:gap-5">
                 <div class="w-24 h-16 sm:w-32 sm:h-20 p-2 rounded-2xl bg-white border border-slate-200 flex items-center justify-center shrink-0 shadow-xs">
-                    <img src="/assets/images/brands/redmagic.svg" alt="Official REDMAGIC Logo" class="w-full h-full object-contain">
+                    
                 </div>
                 <div>
                     <div class="flex items-center gap-2 flex-wrap">
-                        <h1 class="text-lg sm:text-2xl font-extrabold text-slate-900 tracking-tight leading-tight">REDMAGIC Promo Codes &amp; Verified Deals</h1>
+                        
                         <span class="inline-flex items-center gap-1 bg-emerald-50 text-emerald-800 border border-emerald-200 text-[11px] font-bold px-2 py-0.5 rounded-full">
                             <span class="material-icons-round text-xs text-emerald-600">verified</span> Verified Partner
                         </span>
@@ -322,7 +296,6 @@
                     </div>
                 </div>
             </div>
-        </section>
 
         <!-- ACTIVE COUPONS & PROMO DEALS SECTION (TOP PRIORITY CONVERSIONS) -->
         <section id="coupons-section" class="space-y-4">
@@ -341,9 +314,9 @@
                                         <span class="discount-hero">FREE MOUSE PAD</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fpages%2Fredmagic-4k-gaming-monitor" target="_blank" rel="noopener sponsored">REDMAGIC 4K Gaming Monitor with Free Gaming Mouse Pad</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -352,7 +325,7 @@
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="RMFMP" data-link="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fpages%2Fredmagic-4k-gaming-monitor">
-                                        <span class="hidden-code-mask">••••••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -386,9 +359,9 @@
                                         <span class="discount-hero">$10 OFF</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fpages%2Fredmagic-7-series" target="_blank" rel="noopener sponsored">$10 OFF REDMAGIC 7 Series Gaming Smartphones</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -397,7 +370,7 @@
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="AFFRM710" data-link="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fpages%2Fredmagic-7-series">
-                                        <span class="hidden-code-mask">••••••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -431,9 +404,9 @@
                                         <span class="discount-hero">$40 OFF</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fpages%2Fredmagic-mechanical-keyboard" target="_blank" rel="noopener sponsored">$40 OFF REDMAGIC Mechanical Gaming Keyboard</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -473,9 +446,9 @@
                                         <span class="discount-hero">40% OFF</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fproducts%2Fredmagic-gaming-mouse-pad" target="_blank" rel="noopener sponsored">40% OFF REDMAGIC Esports Gaming Mouse Pad</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -515,9 +488,9 @@
                                         <span class="discount-hero">30% OFF</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fproducts%2Fredmagic-gaming-mouse" target="_blank" rel="noopener sponsored">30% OFF REDMAGIC Tri-Mode Wireless Gaming Mouse</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -557,9 +530,9 @@
                                         <span class="discount-hero">20% OFF</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fpages%2Fredmagic-mechanical-keyboard" target="_blank" rel="noopener sponsored">20% OFF REDMAGIC Custom Mechanical Keyboards</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -599,9 +572,9 @@
                                         <span class="discount-hero">$5 OFF</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fpages%2Fredmagic-turbo-cooler" target="_blank" rel="noopener sponsored">$5 OFF REDMAGIC Turbo Cooler Active Magnetic Radiator</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -641,9 +614,9 @@
                                         <span class="discount-hero">$10 OFF</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fproducts%2Fredmagic-9-pro" target="_blank" rel="noopener sponsored">$10 OFF REDMAGIC 9 Pro + Gamepad 1 Bundle</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -683,9 +656,9 @@
                                         <span class="discount-hero">$5 OFF</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fproducts%2Fredmagic-9-pro" target="_blank" rel="noopener sponsored">$5 OFF REDMAGIC 9 Pro + VC Cooler 5 Pro Bundle</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -725,9 +698,9 @@
                                         <span class="discount-hero">$5 OFF</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fproducts%2Fredmagic-9-pro" target="_blank" rel="noopener sponsored">$5 OFF REDMAGIC 9 Pro + Gamepad 2 Bundle</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -767,9 +740,9 @@
                                         <span class="discount-hero">$5 OFF</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fproducts%2Fredmagic-9-pro" target="_blank" rel="noopener sponsored">$5 OFF REDMAGIC 9 Pro + Protective Armor Case Bundle</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -809,9 +782,9 @@
                                         <span class="discount-hero">$5 OFF</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fproducts%2Fredmagic-9-pro" target="_blank" rel="noopener sponsored">$5 OFF REDMAGIC 9 Pro + Tempered Glass Screen Protector Bundle</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -851,9 +824,9 @@
                                         <span class="discount-hero">FLAGSHIP LAUNCH</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/?ulp=https%3A%2F%2Fglobal.redmagic.gg%2Fpages%2Fredmagic-astra-2-gaming-tablet" target="_blank" rel="noopener sponsored">REDMAGIC Astra 2 & Nova Gaming Tablet Launch Offers</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -893,9 +866,9 @@
                                         <span class="discount-hero">FREE SHIPPING</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://yyczo.com/g/qmttmvxh1ub68b264a7656637026d8/" target="_blank" rel="noopener sponsored">Free Priority Shipping on Orders Over $50</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -1311,47 +1284,7 @@
     </div>
 
     <!-- Global Footer -->
-    <footer class="bg-[#0f172a] text-slate-400 py-12 border-t border-slate-800 mt-auto text-xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div class="space-y-3">
-                    <div class="flex items-center gap-3">
-                    <a href="/#search-form" class="inline-flex items-center justify-center w-9 h-9 rounded-xl text-slate-600 hover:text-amber-600 hover:bg-slate-100 transition-colors" aria-label="Search">
-                        <span class="material-icons-round text-lg">search</span>
-                    </a>
-                        <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-8 rounded-lg shadow-sm">
-                        <span class="text-lg font-black text-white tracking-tight">PlayNewApps</span>
-                    </div>
-                    <p class="text-slate-400 leading-relaxed">PlayNewApps is an independent software review and verified coupon discovery hub. We test hardware, evaluate applications, and curate verified promotional savings.</p>
-                </div>
-                <div class="space-y-2">
-                    <h4 class="text-white font-bold text-sm">Popular Categories</h4>
-                    <ul class="space-y-1.5">
-                        <li><a href="/stores?category=Gaming" class="hover:text-white transition-colors">Gaming Hardware &amp; Gear</a></li>
-                        <li><a href="/stores?category=Smartphones" class="hover:text-white transition-colors">Smartphones &amp; Mobile</a></li>
-                        <li><a href="/stores?category=PC%20Peripherals" class="hover:text-white transition-colors">PC Gaming Peripherals</a></li>
-                        <li><a href="/reviews" class="hover:text-white transition-colors">App &amp; Game Reviews</a></li>
-                    </ul>
-                </div>
-                <div class="space-y-2">
-                    <h4 class="text-white font-bold text-sm">Legal &amp; Trust</h4>
-                    <ul class="space-y-1.5">
-                        <li><a href="/about" class="hover:text-white transition-colors">Editorial Policy &amp; Testing</a></li>
-                        <li><a href="/affiliate" class="hover:text-white transition-colors">Affiliate Disclosure</a></li>
-                        <li><a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a></li>
-                        <li><a href="/terms" class="hover:text-white transition-colors">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div class="space-y-2">
-                    <h4 class="text-white font-bold text-sm">Partner Verification</h4>
-                    <p class="text-slate-400 leading-relaxed">All promotional discount codes on this page are tested and verified with the official REDMAGIC affiliate network on a daily schedule.</p>
-                </div>
-            </div>
-            <div class="border-t border-slate-800 pt-6 text-center text-slate-500">
-                <p>&copy; 2026 PlayNewApps. All rights reserved. REDMAGIC and Nubia are registered trademarks of Nubia Technology Co., Ltd.</p>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- Interactive Scripts -->
     <script>

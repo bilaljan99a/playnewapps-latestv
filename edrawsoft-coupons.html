@@ -25,6 +25,7 @@
     <!-- Favicon & Styles -->
     <link rel="icon" type="image/svg+xml" href="/assets/images/brands/edrawsoft-icon.svg">
     <link rel="stylesheet" href="/assets/css/style.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -138,56 +139,12 @@
     </div>
 
     <!-- Header Navigation -->
-    <header class="header" id="header">
-        <div class="container header-container">
-            <a href="/" class="logo" aria-label="PlayNewApps Home">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
-                <span>PlayNewApps</span>
-            </a>
-            
-            <nav class="nav" id="nav" aria-label="Main Navigation">
-                <ul class="nav-list">
-                    <li><a href="/" class="nav-link">Home</a></li>
-                    <li class="nav-item dropdown" id="stores-dropdown-wrapper">
-                        <a href="/stores" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-                            Stores <span class="material-icons-round dropdown-icon" aria-hidden="true">expand_more</span>
-                        </a>
-                        <div class="dropdown-menu" id="stores-dropdown-menu" aria-label="Stores Menu">
-                            <div class="dropdown-loading">Loading stores...</div>
-                        </div>
-                    </li>
-                    <li><a href="/products" class="nav-link">Products</a></li>
-                    <li><a href="/coupon" class="nav-link">Coupons</a></li>
-                    <li><a href="/reviews" class="nav-link">Reviews</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-actions">
-                <a href="/#search-form" class="icon-btn" aria-label="Search">
-                    <span class="material-icons-round" aria-hidden="true">search</span>
-                </a>
-                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
-                    <span class="material-icons-round" aria-hidden="true">dark_mode</span>
-                </button>
-                <button id="mobile-menu-btn" class="icon-btn mobile-only" aria-label="Open Menu" aria-expanded="false" aria-controls="nav">
-                    <span class="material-icons-round" aria-hidden="true">menu</span>
-                </button>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <main class="main-content" id="main-content">
         <!-- Breadcrumb Navigation -->
         <div class="container" style="padding-top: 1.25rem;">
-            <nav aria-label="Breadcrumb">
-                <ol class="breadcrumb" style="display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; list-style: none; padding: 0; margin: 0; font-size: 0.875rem; color: var(--text-secondary);">
-                    <li><a href="/" style="color: var(--text-secondary); text-decoration: none;">Home</a></li>
-                    <li><span class="material-icons-round" style="font-size: 1rem; vertical-align: middle;">chevron_right</span></li>
-                    <li><a href="/stores" style="color: var(--text-secondary); text-decoration: none;">Stores</a></li>
-                    <li><span class="material-icons-round" style="font-size: 1rem; vertical-align: middle;">chevron_right</span></li>
-                    <li style="color: var(--primary-color); font-weight: 600;">Edrawsoft Coupons &amp; Deals</li>
-                </ol>
-            </nav>
+            <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">Edrawsoft Coupons &amp; Deals</span> </nav>
         </div>
 
         <!-- MAIN CONTENT SECTION -->
@@ -198,14 +155,7 @@
                 <div class="review-main-body">
 
                     <!-- TOP HEADER SECTION (Clean & Minimalist - AGENTS.md Standard) -->
-                    <section id="store-header" class="store-top-header-card">
-                        <div class="store-logo-box">
-                            <img src="/assets/images/brands/edrawsoft.svg" alt="Edrawsoft Official Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;" width="170" height="52" fetchpriority="high">
-                        </div>
-                        <div class="store-title-wrap">
-                            <h1 class="store-main-h1">Edrawsoft Coupon Codes &amp; Discount Offers (2026)</h1>
-                        </div>
-                    </section>
+                    <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="w-40 sm:w-52 h-16 sm:h-20 bg-white rounded-xl p-3 flex items-center justify-center border border-slate-200 flex-shrink-0 shadow-sm"> <img src="/assets/images/brands/edrawsoft.svg" alt="Edrawsoft Official Logo" class="max-h-full max-w-full object-contain"> </div> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">Edrawsoft Coupon Codes &amp; Discount Offers (2026)</h1> </div> </section>
 
                     <!-- LIVE STATUS BAR -->
                     <div class="store-live-status-bar">
@@ -237,9 +187,9 @@
                                         <span class="discount-hero">60%</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://naiawork.com/g/a0exmi3bfqb68b264a7671cd9bc0ec/" target="_blank" rel="noopener sponsored">Save Up to 60% OFF EdrawMax + EdrawMind Perpetual Bundle</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Verified Success Rate</span>
                                             <span style="color: var(--text-secondary);">&bull;</span>
@@ -248,7 +198,7 @@
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="BUNDLE60" data-link="https://naiawork.com/g/a0exmi3bfqb68b264a7671cd9bc0ec/">
-                                            <span class="hidden-code-mask">••••••••</span>
+                                            <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                             <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                         </div>
                                     </div>
@@ -283,9 +233,9 @@
                                         <span class="discount-hero">20%</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://naiawork.com/g/a0exmi3bfqb68b264a7671cd9bc0ec/" target="_blank" rel="noopener sponsored">Exclusive 20% OFF Sitewide on All Edraw Software &amp; Licenses</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 98% Verified Success Rate</span>
                                             <span style="color: var(--text-secondary);">&bull;</span>
@@ -294,7 +244,7 @@
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="EDRAW20" data-link="https://naiawork.com/g/a0exmi3bfqb68b264a7671cd9bc0ec/">
-                                            <span class="hidden-code-mask">••••••••</span>
+                                            <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                             <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                         </div>
                                     </div>
@@ -329,9 +279,9 @@
                                         <span class="discount-hero">40%</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://naiawork.com/g/a0exmi3bfqb68b264a7671cd9bc0ec/" target="_blank" rel="noopener sponsored">Up to 40% OFF Student &amp; Educator Academic Discount</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 97% Verified Success Rate</span>
                                             <span style="color: var(--text-secondary);">&bull;</span>
@@ -340,7 +290,7 @@
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="EDU40" data-link="https://naiawork.com/g/a0exmi3bfqb68b264a7671cd9bc0ec/">
-                                            <span class="hidden-code-mask">••••••••</span>
+                                            <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                             <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                         </div>
                                     </div>
@@ -375,9 +325,9 @@
                                         <span class="discount-hero">FREE</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://naiawork.com/g/a0exmi3bfqb68b264a7671cd9bc0ec/" target="_blank" rel="noopener sponsored">EdrawMax &amp; EdrawMind Official Free Download &amp; Web Trial</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 100% Free Access</span>
                                             <span style="color: var(--text-secondary);">&bull;</span>
@@ -418,9 +368,9 @@
                                         <span class="discount-hero">25%</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://naiawork.com/g/a0exmi3bfqb68b264a7671cd9bc0ec/" target="_blank" rel="noopener sponsored">25% OFF Team &amp; Business Multi-User Licensing (5+ Seats)</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 96% Verified Success Rate</span>
                                             <span style="color: var(--text-secondary);">&bull;</span>
@@ -429,7 +379,7 @@
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="TEAM25" data-link="https://naiawork.com/g/a0exmi3bfqb68b264a7671cd9bc0ec/">
-                                            <span class="hidden-code-mask">••••••••</span>
+                                            <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                             <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                         </div>
                                     </div>
@@ -464,9 +414,9 @@
                                         <span class="discount-hero">BONUS</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="https://naiawork.com/g/a0exmi3bfqb68b264a7671cd9bc0ec/" target="_blank" rel="noopener sponsored">Free AI Diagram Tokens with Edraw.AI &amp; EdrawMind Active Plans</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 98% Verified Success Rate</span>
                                             <span style="color: var(--text-secondary);">&bull;</span>
@@ -475,7 +425,7 @@
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="AIBONUS" data-link="https://naiawork.com/g/a0exmi3bfqb68b264a7671cd9bc0ec/">
-                                            <span class="hidden-code-mask">••••••••</span>
+                                            <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                             <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                         </div>
                                     </div>
@@ -1002,52 +952,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer" style="background: var(--card-bg); border-top: 1px solid var(--border-color); padding: 3rem 0 1.5rem; margin-top: 3rem;">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
-                <div>
-                    <a href="/" class="logo" style="margin-bottom: 1rem; display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--text-color); font-weight: 800; font-size: 1.2rem;">
-                        <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" width="28" height="28" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
-                        <span>PlayNewApps</span>
-                    </a>
-                    <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">
-                        PlayNewApps is your premier destination for verified promo codes, store discounts, software reviews, and enterprise productivity masterclasses.
-                    </p>
-                </div>
-
-                <div>
-                    <h4 style="font-size: 1rem; font-weight: 800; color: var(--text-color); margin: 0 0 1rem;">Popular Partner Stores</h4>
-                    <ul style="list-style: none; padding: 0; margin: 0; line-height: 2; font-size: 0.875rem;">
-                        <li><a href="/edrawsoft-coupons" style="color: #0057FF; font-weight: 700; text-decoration: none;">Edrawsoft Diagramming Coupons</a></li>
-                        <li><a href="/presenti-ai-coupons" style="color: var(--text-secondary); text-decoration: none;">Presenti.ai AI Slides</a></li>
-                        <li><a href="/1password-coupons" style="color: var(--text-secondary); text-decoration: none;">1Password Vault</a></li>
-                        <li><a href="/alibaba" style="color: var(--text-secondary); text-decoration: none;">Alibaba B2B Wholesale</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 style="font-size: 1rem; font-weight: 800; color: var(--text-color); margin: 0 0 1rem;">Navigation</h4>
-                    <ul style="list-style: none; padding: 0; margin: 0; line-height: 2; font-size: 0.875rem;">
-                        <li><a href="/" style="color: var(--text-secondary); text-decoration: none;">Home</a></li>
-                        <li><a href="/stores" style="color: var(--text-secondary); text-decoration: none;">All Partner Stores</a></li>
-                        <li><a href="/reviews" style="color: var(--text-secondary); text-decoration: none;">Software Reviews</a></li>
-                        <li><a href="/coupon" style="color: var(--text-secondary); text-decoration: none;">Deals &amp; Coupons</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 style="font-size: 1rem; font-weight: 800; color: var(--text-color); margin: 0 0 1rem;">Disclosure &amp; Legal</h4>
-                    <p style="font-size: 0.825rem; color: var(--text-secondary); line-height: 1.6;">
-                        PlayNewApps is reader-supported. When you purchase software or services through links on our site, we may earn an affiliate commission at no extra cost to you. Edraw, EdrawMax, and EdrawMind are trademarks of Wondershare Technology Group Co., Ltd.
-                    </p>
-                </div>
-            </div>
-
-            <div style="border-top: 1px solid var(--border-color); padding-top: 1.5rem; text-align: center; font-size: 0.85rem; color: var(--text-secondary);">
-                <p style="margin: 0;">&copy; 2026 PlayNewApps. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- JS -->
     <script src="/assets/js/script.min.js"></script>

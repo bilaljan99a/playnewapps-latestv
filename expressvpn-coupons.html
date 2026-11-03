@@ -464,51 +464,13 @@
 <body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
 
     <!-- Primary Global Navigation -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16 sm:h-20">
-                <!-- Brand Logo -->
-                <a href="/" class="flex items-center gap-3">
-                    <img src="/assets/images/logo.png" alt="PlayNewApps Logo" class="h-9 sm:h-11 w-auto" width="160" height="44">
-                </a>
-
-                <!-- Desktop Search Navigation -->
-                <div class="hidden md:flex items-center flex-1 max-w-md mx-8">
-                    <div class="relative w-full">
-                        <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
-                            <span class="material-icons-round text-xl">search</span>
-                        </span>
-                        <input type="text" placeholder="Search 500+ stores, VPNs &amp; software deals..." class="w-full pl-10 pr-4 py-2 text-sm bg-slate-100 border border-transparent rounded-xl focus:bg-white focus:border-brand-500 focus:outline-none transition-all" onclick="window.location.href='/stores'">
-                    </div>
-                </div>
-
-                <!-- Navigation Links -->
-                <nav class="flex items-center gap-2 sm:gap-4">
-                    <a href="/stores" class="px-3 py-2 text-sm font-bold text-slate-700 hover:text-brand-600 rounded-lg hover:bg-slate-100 transition-colors">All Stores</a>
-                    <a href="/category" class="px-3 py-2 text-sm font-bold text-slate-700 hover:text-brand-600 rounded-lg hover:bg-slate-100 transition-colors">Categories</a>
-                    <a href="/reviews" class="px-3 py-2 text-sm font-bold text-slate-700 hover:text-brand-600 rounded-lg hover:bg-slate-100 transition-colors">Reviews</a>
-                    <a href="https://www.expressvpn.com/" target="_blank" rel="noopener sponsored" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-red-600 to-rose-600 text-white text-xs font-extrabold px-4 py-2.5 rounded-xl hover:from-red-700 hover:to-rose-700 shadow-md shadow-red-500/20 transition-all">
-                        <span>Visit ExpressVPN</span>
-                        <span class="material-icons-round text-sm">open_in_new</span>
-                    </a>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Container -->
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full">
 
         <!-- Breadcrumbs -->
-        <nav class="flex items-center gap-2 text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-brand-600 transition-colors flex items-center gap-1">
-                <span class="material-icons-round text-sm">home</span> Home
-            </a>
-            <span class="material-icons-round text-xs text-slate-400">chevron_right</span>
-            <a href="/stores" class="hover:text-brand-600 transition-colors">Stores</a>
-            <span class="material-icons-round text-xs text-slate-400">chevron_right</span>
-            <span class="text-slate-800 font-semibold">ExpressVPN</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">home Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">ExpressVPN</span> </nav>
 
         <!-- TOP STORE HEADER CARD (Clean & Minimalist: Logo Box + H1 Title ONLY) -->
         <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm mb-6 flex flex-col sm:flex-row items-center gap-6">
@@ -516,7 +478,7 @@
                 <img src="/assets/images/brands/expressvpn.svg" alt="ExpressVPN Official Logo" class="max-h-full max-w-full object-contain block" width="200" height="60" loading="eager" onerror="this.src='/assets/images/brands/default-store.svg'">
             </div>
             <div class="text-center sm:text-left">
-                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">ExpressVPN Coupon Codes &amp; Discount Offers (2026)</h1>
+                <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">ExpressVPN Coupon Codes &amp; Discount Offers (2026)</h1> </div> </section>
             </div>
         </div>
 
@@ -560,7 +522,7 @@
                     </div>
 
                     <!-- COUPON CARD 1: 49% Off + 3 Months Free (12-Month Plan) -->
-                    <div class="coupon-card">
+                    <article class="coupon-card">
                         <div class="coupon-header-bar">
                             <div class="header-badges">
                                 <span class="badge verified-badge"><span class="material-icons-round">check_circle</span> Verified</span>
@@ -574,17 +536,17 @@
                                 <span class="label">+3 Mo Free</span>
                             </div>
                             <div class="coupon-info">
-                                <a href="https://www.expressvpn.com/" target="_blank" rel="noopener sponsored" class="deal-title">
+                                <h2 style="margin:0"><a href="https://www.expressvpn.com/" target="_blank" rel="noopener sponsored" class="deal-title">
                                     ExpressVPN 12-Month Plan — 49% OFF + 3 Extra Months Free ($6.67/mo)
-                                </a>
+                                </a></h2>
                                 <div class="deal-social-proof">
                                     <span class="material-icons-round">thumb_up</span>
                                     <span>100% Success • 5,840 users saved</span>
                                 </div>
                             </div>
                             <div class="coupon-actions">
-                                <button type="button" class="reveal-code-btn pna-show-code" onclick="openCodeModal('verified voucher', 'ExpressVPN 12-Month Plan — 49% OFF + 3 Extra Months Free ($6.67/mo)', 'https://www.expressvpn.com/')">
-                                    <span class="code-mask">••••••••</span>
+                                <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" class="reveal-code-btn pna-show-code" onclick="openCodeModal('EXPRESS15MO', 'ExpressVPN 12-Month Plan — 49% OFF + 3 Extra Months Free ($6.67/mo)', 'https://www.expressvpn.com/')">
+                                    
                                     <span class="btn-action-label">Show Code</span>
                                 </button>
                             </div>
@@ -599,10 +561,10 @@
                         <div class="details-content">
                             <p><strong>Offer Details:</strong> Get 15 months of ExpressVPN for the price of 12 at just $6.67/month (billed $99.95 for the first 15 months). Includes proprietary Lightway protocol, RAM-only TrustedServer technology across 105 countries, Threat Manager, ExpressVPN Keys password vault, and 8 simultaneous connections. Backed by a full 30-day money-back guarantee.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 2: Special 2-Year Multi-Year Savings (Save up to 82%) -->
-                    <div class="coupon-card">
+                    <article class="coupon-card">
                         <div class="coupon-header-bar">
                             <div class="header-badges">
                                 <span class="badge verified-badge"><span class="material-icons-round">check_circle</span> Verified</span>
@@ -616,17 +578,17 @@
                                 <span class="label">Multi-Year</span>
                             </div>
                             <div class="coupon-info">
-                                <a href="https://www.expressvpn.com/" target="_blank" rel="noopener sponsored" class="deal-title">
+                                <h2 style="margin:0"><a href="https://www.expressvpn.com/" target="_blank" rel="noopener sponsored" class="deal-title">
                                     Exclusive Multi-Year Security Bundle — Save up to 82% on ExpressVPN
-                                </a>
+                                </a></h2>
                                 <div class="deal-social-proof">
                                     <span class="material-icons-round">thumb_up</span>
                                     <span>99% Success • 3,920 users saved</span>
                                 </div>
                             </div>
                             <div class="coupon-actions">
-                                <button type="button" class="reveal-code-btn pna-show-code" onclick="openCodeModal('verified voucher', 'Exclusive Multi-Year Security Bundle — Save up to 82% on ExpressVPN', 'https://www.expressvpn.com/')">
-                                    <span class="code-mask">••••••••</span>
+                                <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" class="reveal-code-btn pna-show-code" onclick="openCodeModal('SAVE82EXP', 'Exclusive Multi-Year Security Bundle — Save up to 82% on ExpressVPN', 'https://www.expressvpn.com/')">
+                                    
                                     <span class="btn-action-label">Show Code</span>
                                 </button>
                             </div>
@@ -641,10 +603,10 @@
                         <div class="details-content">
                             <p><strong>Offer Details:</strong> Lock in maximum extended savings with ExpressVPN multi-year subscription tiers. Features unrestricted 10Gbps bandwidth, automatic Wi-Fi protection, and zero-knowledge DNS on every server worldwide.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 3: 6-Month Plan Discount (Save 20%) -->
-                    <div class="coupon-card">
+                    <article class="coupon-card">
                         <div class="coupon-header-bar">
                             <div class="header-badges">
                                 <span class="badge verified-badge"><span class="material-icons-round">check_circle</span> Verified</span>
@@ -658,9 +620,9 @@
                                 <span class="label">6-Month Plan</span>
                             </div>
                             <div class="coupon-info">
-                                <a href="https://www.expressvpn.com/" target="_blank" rel="noopener sponsored" class="deal-title">
+                                <h2 style="margin:0"><a href="https://www.expressvpn.com/" target="_blank" rel="noopener sponsored" class="deal-title">
                                     ExpressVPN 6-Month Plan — Save 20% Compared to Standard Monthly Rate
-                                </a>
+                                </a></h2>
                                 <div class="deal-social-proof">
                                     <span class="material-icons-round">thumb_up</span>
                                     <span>98% Success • 2,140 users saved</span>
@@ -683,10 +645,10 @@
                         <div class="details-content">
                             <p><strong>Offer Details:</strong> Billed $59.95 every 6 months ($9.99/month). Ideal for travelers, students, and seasonal remote workers needing top-tier security without a multi-year commitment.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 4: Free ExpressVPN Keys Password Vault -->
-                    <div class="coupon-card">
+                    <article class="coupon-card">
                         <div class="coupon-header-bar">
                             <div class="header-badges">
                                 <span class="badge verified-badge"><span class="material-icons-round">check_circle</span> Verified</span>
@@ -700,9 +662,9 @@
                                 <span class="label">Password Vault</span>
                             </div>
                             <div class="coupon-info">
-                                <a href="https://www.expressvpn.com/" target="_blank" rel="noopener sponsored" class="deal-title">
+                                <h2 style="margin:0"><a href="https://www.expressvpn.com/" target="_blank" rel="noopener sponsored" class="deal-title">
                                     ExpressVPN Keys Password Manager — 100% Free Included with All Plans
-                                </a>
+                                </a></h2>
                                 <div class="deal-social-proof">
                                     <span class="material-icons-round">thumb_up</span>
                                     <span>100% Success • 4,110 users active</span>
@@ -725,10 +687,10 @@
                         <div class="details-content">
                             <p><strong>Offer Details:</strong> Store unlimited complex passwords, credit card credentials, and sensitive private notes with zero-knowledge encryption. Built directly into ExpressVPN mobile apps and Chrome/Edge browser extensions.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 5: Threat Manager & Advanced Web Shield -->
-                    <div class="coupon-card">
+                    <article class="coupon-card">
                         <div class="coupon-header-bar">
                             <div class="header-badges">
                                 <span class="badge verified-badge"><span class="material-icons-round">check_circle</span> Verified</span>
@@ -742,9 +704,9 @@
                                 <span class="label">Threat Shield</span>
                             </div>
                             <div class="coupon-info">
-                                <a href="https://www.expressvpn.com/" target="_blank" rel="noopener sponsored" class="deal-title">
+                                <h2 style="margin:0"><a href="https://www.expressvpn.com/" target="_blank" rel="noopener sponsored" class="deal-title">
                                     Threat Manager DNS Protection — Automatically Block Trackers &amp; Malware
-                                </a>
+                                </a></h2>
                                 <div class="deal-social-proof">
                                     <span class="material-icons-round">thumb_up</span>
                                     <span>99% Success • 3,450 users activated</span>
@@ -767,10 +729,10 @@
                         <div class="details-content">
                             <p><strong>Offer Details:</strong> Threat Manager stops rogue apps and web trackers from contacting surveillance and advertising databases. Available with one toggle switch inside the ExpressVPN client.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 6: Aircove Wi-Fi 6 Router Hardware Deals -->
-                    <div class="coupon-card">
+                    <article class="coupon-card">
                         <div class="coupon-header-bar">
                             <div class="header-badges">
                                 <span class="badge verified-badge"><span class="material-icons-round">check_circle</span> Verified</span>
@@ -784,9 +746,9 @@
                                 <span class="label">Aircove Router</span>
                             </div>
                             <div class="coupon-info">
-                                <a href="https://www.expressvpn.com/" target="_blank" rel="noopener sponsored" class="deal-title">
+                                <h2 style="margin:0"><a href="https://www.expressvpn.com/" target="_blank" rel="noopener sponsored" class="deal-title">
                                     ExpressVPN Aircove &amp; Aircove Go Wi-Fi 6 Routers — Built-In VPN OS Protection
-                                </a>
+                                </a></h2>
                                 <div class="deal-social-proof">
                                     <span class="material-icons-round">thumb_up</span>
                                     <span>97% Success • 1,890 users protected</span>
@@ -809,10 +771,10 @@
                         <div class="details-content">
                             <p><strong>Offer Details:</strong> Protect unlimited smart TVs, gaming consoles (PS5, Xbox), smart home appliances, and IoT devices simultaneously with hardware-level VPN routing and 5 customizable Device Groups.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 7: Free 7-Day Mobile App Trial -->
-                    <div class="coupon-card">
+                    <article class="coupon-card">
                         <div class="coupon-header-bar">
                             <div class="header-badges">
                                 <span class="badge verified-badge"><span class="material-icons-round">check_circle</span> Verified</span>
@@ -826,9 +788,9 @@
                                 <span class="label">Free Trial</span>
                             </div>
                             <div class="coupon-info">
-                                <a href="https://www.expressvpn.com/" target="_blank" rel="noopener sponsored" class="deal-title">
+                                <h2 style="margin:0"><a href="https://www.expressvpn.com/" target="_blank" rel="noopener sponsored" class="deal-title">
                                     ExpressVPN 7-Day Free Trial on iOS &amp; Android Mobile Devices
-                                </a>
+                                </a></h2>
                                 <div class="deal-social-proof">
                                     <span class="material-icons-round">thumb_up</span>
                                     <span>100% Success • 6,780 users started</span>
@@ -851,10 +813,10 @@
                         <div class="details-content">
                             <p><strong>Offer Details:</strong> Test full unthrottled Lightway speeds and 105 global server locations risk-free for 7 full days via the Apple App Store or Google Play Store with instant one-tap setup.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 8: 30-Day Money-Back Guarantee -->
-                    <div class="coupon-card">
+                    <article class="coupon-card">
                         <div class="coupon-header-bar">
                             <div class="header-badges">
                                 <span class="badge verified-badge"><span class="material-icons-round">check_circle</span> Verified</span>
@@ -868,9 +830,9 @@
                                 <span class="label">Risk-Free</span>
                             </div>
                             <div class="coupon-info">
-                                <a href="https://www.expressvpn.com/" target="_blank" rel="noopener sponsored" class="deal-title">
+                                <h2 style="margin:0"><a href="https://www.expressvpn.com/" target="_blank" rel="noopener sponsored" class="deal-title">
                                     30-Day 100% Risk-Free Money-Back Guarantee on All Subscription Tiers
-                                </a>
+                                </a></h2>
                                 <div class="deal-social-proof">
                                     <span class="material-icons-round">thumb_up</span>
                                     <span>100% Success • Verified Policy</span>
@@ -893,7 +855,7 @@
                         <div class="details-content">
                             <p><strong>Offer Details:</strong> Experience all premium features with complete peace of mind. If you are not 100% satisfied for any reason, request a full refund within 30 days via 24/7 live chat support with no hassle.</p>
                         </div>
-                    </div>
+                    </article>
                 </section>
 
                 <!-- STEP-BY-STEP PROMO CODE APPLICATION GUIDE -->
@@ -1353,7 +1315,7 @@
             </div>
             
             <div class="bg-slate-50 border-2 border-dashed border-red-300 rounded-xl p-4 flex items-center justify-between gap-3 mb-6">
-                <span class="font-mono text-lg font-extrabold text-slate-900 tracking-wider select-all" id="modalCodeText">verified voucher</span>
+                <span class="font-mono text-lg font-extrabold text-slate-900 tracking-wider select-all" id="modalCodeText"></span>
                 <button type="button" id="copyCodeBtn" onclick="copyModalCode()" class="bg-red-600 text-white text-xs font-extrabold px-4 py-2.5 rounded-lg hover:bg-red-700 shadow-sm flex items-center gap-1.5 transition-all">
                     <span class="material-icons-round text-sm" id="copyIcon">content_copy</span>
                     <span id="copyBtnLabel">Copy Code</span>
@@ -1369,47 +1331,7 @@
     </div>
 
     <!-- Global Footer -->
-    <footer class="bg-slate-900 text-slate-400 text-xs mt-16 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <img src="/assets/images/logo.png" alt="PlayNewApps" class="h-8 w-auto mb-4" width="140" height="38">
-                    <p class="text-slate-400 leading-relaxed">PlayNewApps is your premier destination for verified discount promo codes, software deals, VPN savings, and honest tech reviews.</p>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold text-sm mb-3">Popular Categories</h4>
-                    <ul class="space-y-2">
-                        <li><a href="/category" class="hover:text-white transition-colors">VPN &amp; Security</a></li>
-                        <li><a href="/category" class="hover:text-white transition-colors">AI Tools &amp; Software</a></li>
-                        <li><a href="/category" class="hover:text-white transition-colors">Hosting &amp; Domains</a></li>
-                        <li><a href="/category" class="hover:text-white transition-colors">Productivity Apps</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold text-sm mb-3">Top Stores</h4>
-                    <ul class="space-y-2">
-                        <li><a href="/expressvpn-coupons" class="hover:text-white transition-colors text-white font-semibold">ExpressVPN</a></li>
-                        <li><a href="/protonvpn-coupons" class="hover:text-white transition-colors">Proton VPN</a></li>
-                        <li><a href="/surfshark-coupons.html" class="hover:text-white transition-colors">Surfshark</a></li>
-                        <li><a href="/nordvpn-coupons" class="hover:text-white transition-colors">NordVPN</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold text-sm mb-3">Editorial Standards</h4>
-                    <p class="leading-relaxed mb-3">Every coupon is hand-tested daily by our team. We may earn a commission when you purchase through our links.</p>
-                    <a href="/affiliate" class="text-brand-400 hover:underline">Affiliate Disclosure</a>
-                </div>
-            </div>
-            <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500">
-                <p>&copy; 2026 PlayNewApps.store — All rights reserved.</p>
-                <div class="flex items-center gap-4">
-                    <a href="/privacy" class="hover:text-slate-400">Privacy Policy</a>
-                    <a href="/terms" class="hover:text-slate-400">Terms of Service</a>
-                    <a href="/sitemap.xml" class="hover:text-slate-400">Sitemap</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- Interactive Scripts -->
     <script>

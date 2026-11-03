@@ -194,39 +194,13 @@
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
 
     <!-- HEADER / NAVIGATION -->
-    <header class="bg-white border-b border-slate-200/80 sticky top-0 z-40">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
-            <a href="/" class="flex items-center gap-2.5 focus:outline-none">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto" width="32" height="32">
-                <span class="font-display font-extrabold text-xl text-slate-900 tracking-tight">Play<span class="text-brand-purple">New</span>Apps</span>
-            </a>
-            <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
-                <a href="/" class="hover:text-slate-900 transition-colors">Home</a>
-                <a href="/stores" class="hover:text-slate-900 transition-colors text-brand-purple font-bold">Stores</a>
-                <a href="/categories" class="hover:text-slate-900 transition-colors">Categories</a>
-                <a href="/reviews" class="hover:text-slate-900 transition-colors">Reviews</a>
-                <a href="/blog" class="hover:text-slate-900 transition-colors">Blog</a>
-            </nav>
-            <div class="flex items-center gap-3">
-                <a href="/stores" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 transition-colors">
-                    <span class="material-icons-round text-sm">store</span>
-                    <span>Browse All Stores</span>
-                </a>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- MAIN CONTENT CONTAINER -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full">
 
         <!-- Breadcrumb Navigation -->
-        <nav class="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-6" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-slate-900 transition-colors">Home</a>
-            <span class="material-icons-round text-xs text-slate-400">chevron_right</span>
-            <a href="/stores" class="hover:text-slate-900 transition-colors">Stores</a>
-            <span class="material-icons-round text-xs text-slate-400">chevron_right</span>
-            <span class="text-slate-800 font-bold">Appy Gamer</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">Appy Gamer</span> </nav>
 
         <!-- CLEAN MINIMALIST STORE HEADER (STRICT RULE COMPLIANCE) -->
         <!-- Contains ONLY Brand Logo Box and Store H1 Title. No extra text, badges, or rating pills -->
@@ -238,7 +212,7 @@
                 </div>
                 <!-- Store Info: H1 Title Only -->
                 <div class="flex-1 text-center sm:text-left">
-                    <h1 class="text-xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">Appy Gamer Coupon Codes &amp; Discount Offers (2026)</h1>
+                    <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">Appy Gamer Coupon Codes &amp; Discount Offers (2026)</h1> </div> </section>
                 </div>
             </div>
         </div>
@@ -263,7 +237,7 @@
                     </div>
 
                     <!-- COUPON CARD 1: 85% OFF Steam & PC Games -->
-                    <div class="coupon-card bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs relative overflow-hidden">
+                    <article class="coupon-card bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs relative overflow-hidden">
                         <div class="flex items-center justify-between mb-3 text-xs font-semibold">
                             <div class="flex items-center gap-2">
                                 <span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold flex items-center gap-1">
@@ -279,11 +253,11 @@
                                     85%<br><span class="text-xs font-bold uppercase text-purple-700">OFF</span>
                                 </div>
                                 <div class="space-y-1">
-                                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-brand-purple transition-colors">
+                                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-brand-purple transition-colors">
                                         <a href="javascript:void(0);" onclick="openCouponModal('APPYSTEAM85', '85% Off Steam & PC Game Publisher Sales', 'https://store.steampowered.com')">
                                             Save Up to 85% Off Steam &amp; PC Game Publisher Sales
                                         </a>
-                                    </h3>
+                                    </h2>
                                     <p class="text-xs text-slate-500 line-clamp-2">
                                         Unlock deep discounts on top AAA and indie PC titles, publisher bundle sales, and digital game specials.
                                     </p>
@@ -294,8 +268,8 @@
                                 </div>
                             </div>
                             <div class="shrink-0 sm:self-center">
-                                <button onclick="openCouponModal('APPYSTEAM85', '85% Off Steam & PC Game Publisher Sales', 'https://store.steampowered.com')" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-xs shadow-sm shadow-purple-200 transition-all flex items-center justify-center gap-2 group">
-                                    <span class="code-mask font-mono font-bold tracking-wider">••••••••</span>
+                                <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="openCouponModal('APPYSTEAM85', '85% Off Steam & PC Game Publisher Sales', 'https://store.steampowered.com')" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-xs shadow-sm shadow-purple-200 transition-all flex items-center justify-center gap-2 group">
+                                    
                                     <span class="bg-white/20 px-2 py-1 rounded text-[10px] uppercase font-black group-hover:bg-white/30 transition-colors">Show Code</span>
                                 </button>
                             </div>
@@ -309,10 +283,10 @@
                                 Apply this promo voucher during checkout at authorized PC digital storefronts. Works on qualifying publisher catalog sales, digital Steam keys, and seasonal bundles. Excludes recently released pre-orders under 30 days. No minimum spend required.
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 2: 100% OFF Free PC Mystery Games -->
-                    <div class="coupon-card bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs relative overflow-hidden">
+                    <article class="coupon-card bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs relative overflow-hidden">
                         <div class="flex items-center justify-between mb-3 text-xs font-semibold">
                             <div class="flex items-center gap-2">
                                 <span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold flex items-center gap-1">
@@ -328,11 +302,11 @@
                                     FREE<br><span class="text-xs font-bold uppercase text-emerald-600">GAME</span>
                                 </div>
                                 <div class="space-y-1">
-                                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-brand-purple transition-colors">
+                                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-brand-purple transition-colors">
                                         <a href="https://store.epicgames.com/free-games" target="_blank" rel="noopener nofollow">
                                             100% Off Weekly PC Mystery &amp; Indie Game Drops
                                         </a>
-                                    </h3>
+                                    </h2>
                                     <p class="text-xs text-slate-500 line-clamp-2">
                                         Claim free permanent video game titles every single Thursday. Keep the games forever in your digital library with zero recurring subscription fees.
                                     </p>
@@ -358,10 +332,10 @@
                                 Direct promotional drop. No coupon code needed. Simply log in with your free account, click claim, and the game is permanently licensed to your account. New titles refresh every Thursday at 11:00 AM EST.
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 3: 20% OFF Xbox Game Pass Ultimate -->
-                    <div class="coupon-card bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs relative overflow-hidden">
+                    <article class="coupon-card bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs relative overflow-hidden">
                         <div class="flex items-center justify-between mb-3 text-xs font-semibold">
                             <div class="flex items-center gap-2">
                                 <span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold flex items-center gap-1">
@@ -377,11 +351,11 @@
                                     20%<br><span class="text-xs font-bold uppercase text-purple-700">OFF</span>
                                 </div>
                                 <div class="space-y-1">
-                                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-brand-purple transition-colors">
+                                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-brand-purple transition-colors">
                                         <a href="javascript:void(0);" onclick="openCouponModal('APPYPASS20', '20% Off Xbox Game Pass Ultimate Vouchers', 'https://www.xbox.com')">
                                             20% Off Xbox Game Pass Ultimate &amp; PC Game Pass
                                         </a>
-                                    </h3>
+                                    </h2>
                                     <p class="text-xs text-slate-500 line-clamp-2">
                                         Enjoy day-one access to Bethesda, Activision, and Xbox Game Studios releases, plus cloud gaming and EA Play access.
                                     </p>
@@ -392,8 +366,8 @@
                                 </div>
                             </div>
                             <div class="shrink-0 sm:self-center">
-                                <button onclick="openCouponModal('APPYPASS20', '20% Off Xbox Game Pass Ultimate Vouchers', 'https://www.xbox.com')" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-xs shadow-sm shadow-purple-200 transition-all flex items-center justify-center gap-2 group">
-                                    <span class="code-mask font-mono font-bold tracking-wider">••••••••</span>
+                                <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="openCouponModal('APPYPASS20', '20% Off Xbox Game Pass Ultimate Vouchers', 'https://www.xbox.com')" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-xs shadow-sm shadow-purple-200 transition-all flex items-center justify-center gap-2 group">
+                                    
                                     <span class="bg-white/20 px-2 py-1 rounded text-[10px] uppercase font-black group-hover:bg-white/30 transition-colors">Show Code</span>
                                 </button>
                             </div>
@@ -407,10 +381,10 @@
                                 Redeem this verified promotional voucher code on digital 3-month and 12-month Game Pass Ultimate membership digital cards. Valid for both newly registered accounts and existing subscription renewals.
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 4: 5 OFF PlayStation Plus -->
-                    <div class="coupon-card bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs relative overflow-hidden">
+                    <article class="coupon-card bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs relative overflow-hidden">
                         <div class="flex items-center justify-between mb-3 text-xs font-semibold">
                             <div class="flex items-center gap-2">
                                 <span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold flex items-center gap-1">
@@ -426,11 +400,11 @@
                                     5<br><span class="text-xs font-bold uppercase text-purple-700">OFF</span>
                                 </div>
                                 <div class="space-y-1">
-                                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-brand-purple transition-colors">
+                                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-brand-purple transition-colors">
                                         <a href="javascript:void(0);" onclick="openCouponModal('APPYPS15', '5 Off PlayStation Plus Annual Membership Codes', 'https://store.playstation.com')">
                                             5 Off PlayStation Plus Essential, Extra &amp; Premium Codes
                                         </a>
-                                    </h3>
+                                    </h2>
                                     <p class="text-xs text-slate-500 line-clamp-2">
                                         Save instantly on 12-month PlayStation Network digital subscriptions, monthly free games, and online multiplayer.
                                     </p>
@@ -441,8 +415,8 @@
                                 </div>
                             </div>
                             <div class="shrink-0 sm:self-center">
-                                <button onclick="openCouponModal('APPYPS15', '5 Off PlayStation Plus Annual Membership Codes', 'https://store.playstation.com')" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-xs shadow-sm shadow-purple-200 transition-all flex items-center justify-center gap-2 group">
-                                    <span class="code-mask font-mono font-bold tracking-wider">••••••••</span>
+                                <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="openCouponModal('APPYPS15', '5 Off PlayStation Plus Annual Membership Codes', 'https://store.playstation.com')" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-xs shadow-sm shadow-purple-200 transition-all flex items-center justify-center gap-2 group">
+                                    
                                     <span class="bg-white/20 px-2 py-1 rounded text-[10px] uppercase font-black group-hover:bg-white/30 transition-colors">Show Code</span>
                                 </button>
                             </div>
@@ -456,10 +430,10 @@
                                 Apply this verified promotional voucher code during checkout at authorized PlayStation Network gift card and subscription code providers. Minimum order 5. Instant digital key delivery via email.
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 5: 12% OFF Game Keys & Bundles -->
-                    <div class="coupon-card bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs relative overflow-hidden">
+                    <article class="coupon-card bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs relative overflow-hidden">
                         <div class="flex items-center justify-between mb-3 text-xs font-semibold">
                             <div class="flex items-center gap-2">
                                 <span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold flex items-center gap-1">
@@ -475,11 +449,11 @@
                                     12%<br><span class="text-xs font-bold uppercase text-purple-700">OFF</span>
                                 </div>
                                 <div class="space-y-1">
-                                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-brand-purple transition-colors">
+                                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-brand-purple transition-colors">
                                         <a href="javascript:void(0);" onclick="openCouponModal('APPYKEYS12', 'Extra 12% Off Digital Game Keys & Bundles', 'https://www.fanatical.com')">
                                             Extra 12% Off Digital Game Keys, Bundles &amp; Pre-Orders
                                         </a>
-                                    </h3>
+                                    </h2>
                                     <p class="text-xs text-slate-500 line-clamp-2">
                                         Stack an additional 12% discount on top of existing sales for Steam, Epic, and Ubisoft digital keys from authorized partners.
                                     </p>
@@ -490,8 +464,8 @@
                                 </div>
                             </div>
                             <div class="shrink-0 sm:self-center">
-                                <button onclick="openCouponModal('APPYKEYS12', 'Extra 12% Off Digital Game Keys & Bundles', 'https://www.fanatical.com')" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-xs shadow-sm shadow-purple-200 transition-all flex items-center justify-center gap-2 group">
-                                    <span class="code-mask font-mono font-bold tracking-wider">••••••••</span>
+                                <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="openCouponModal('APPYKEYS12', 'Extra 12% Off Digital Game Keys & Bundles', 'https://www.fanatical.com')" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-xs shadow-sm shadow-purple-200 transition-all flex items-center justify-center gap-2 group">
+                                    
                                     <span class="bg-white/20 px-2 py-1 rounded text-[10px] uppercase font-black group-hover:bg-white/30 transition-colors">Show Code</span>
                                 </button>
                             </div>
@@ -505,10 +479,10 @@
                                 Apply code at cart checkout. Works on all officially licensed Steam PC game keys, mystery bundles, and curated publisher packages. Cannot be combined with store credit or select charity promotions.
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 6: 70% OFF Nintendo Switch eShop -->
-                    <div class="coupon-card bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs relative overflow-hidden">
+                    <article class="coupon-card bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs relative overflow-hidden">
                         <div class="flex items-center justify-between mb-3 text-xs font-semibold">
                             <div class="flex items-center gap-2">
                                 <span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold flex items-center gap-1">
@@ -524,11 +498,11 @@
                                     70%<br><span class="text-xs font-bold uppercase text-purple-700">OFF</span>
                                 </div>
                                 <div class="space-y-1">
-                                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-brand-purple transition-colors">
+                                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-brand-purple transition-colors">
                                         <a href="https://www.nintendo.com/store/games/deals/" target="_blank" rel="noopener nofollow">
                                             Up to 70% Off Nintendo Switch Digital eShop Deals
                                         </a>
-                                    </h3>
+                                    </h2>
                                     <p class="text-xs text-slate-500 line-clamp-2">
                                         Grab top Nintendo Switch digital games, multiplayer hits, and family indie titles with direct eShop price cuts.
                                     </p>
@@ -554,10 +528,10 @@
                                 Direct Nintendo eShop seasonal promotion. No coupon code required. Earn Gold My Nintendo Points on every digital game purchase to redeem for future checkout discounts.
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 7: 15% OFF Gaming Gear & Peripherals -->
-                    <div class="coupon-card bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs relative overflow-hidden">
+                    <article class="coupon-card bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs relative overflow-hidden">
                         <div class="flex items-center justify-between mb-3 text-xs font-semibold">
                             <div class="flex items-center gap-2">
                                 <span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold flex items-center gap-1">
@@ -573,11 +547,11 @@
                                     15%<br><span class="text-xs font-bold uppercase text-purple-700">OFF</span>
                                 </div>
                                 <div class="space-y-1">
-                                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-brand-purple transition-colors">
+                                    <h2 class="text-base sm:text-lg font-extrabold text-slate-900 hover:text-brand-purple transition-colors">
                                         <a href="javascript:void(0);" onclick="openCouponModal('APPYGEAR15', '15% Off Gaming Headsets, Mice & Mechanical Keyboards', 'https://www.steelseries.com')">
                                             15% Off High-Performance Headsets, Mice &amp; Keyboards
                                         </a>
-                                    </h3>
+                                    </h2>
                                     <p class="text-xs text-slate-500 line-clamp-2">
                                         Upgrade your battlestation with premium optical gaming mice, low-latency wireless headsets, and RGB mechanical keyboards.
                                     </p>
@@ -588,8 +562,8 @@
                                 </div>
                             </div>
                             <div class="shrink-0 sm:self-center">
-                                <button onclick="openCouponModal('APPYGEAR15', '15% Off Gaming Headsets, Mice & Mechanical Keyboards', 'https://www.steelseries.com')" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-xs shadow-sm shadow-purple-200 transition-all flex items-center justify-center gap-2 group">
-                                    <span class="code-mask font-mono font-bold tracking-wider">••••••••</span>
+                                <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="openCouponModal('APPYGEAR15', '15% Off Gaming Headsets, Mice & Mechanical Keyboards', 'https://www.steelseries.com')" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 active:scale-95 text-white font-bold text-xs shadow-sm shadow-purple-200 transition-all flex items-center justify-center gap-2 group">
+                                    
                                     <span class="bg-white/20 px-2 py-1 rounded text-[10px] uppercase font-black group-hover:bg-white/30 transition-colors">Show Code</span>
                                 </button>
                             </div>
@@ -603,7 +577,7 @@
                                 Apply promo voucher at hardware checkout. Valid on regular-priced gaming accessories, wireless controllers, and mechanical keyboards. Excludes refurbished items and limited esports tournament editions.
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </section>
 
                 <!-- EDITORIAL CONTENT: 3,000+ WORDS COMPREHENSIVE GUIDE WITH REAL IMAGES -->
@@ -1166,27 +1140,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-white border-t border-slate-200/80 mt-16 py-12 text-xs text-slate-500">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
-                <div class="flex items-center gap-2">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="h-6 w-auto">
-                    <span class="font-display font-black text-slate-900 text-base">Play<span class="text-brand-purple">New</span>Apps</span>
-                </div>
-                <div class="flex flex-wrap items-center justify-center gap-6 font-semibold text-slate-600">
-                    <a href="/stores" class="hover:text-slate-900 transition-colors">Stores Directory</a>
-                    <a href="/categories" class="hover:text-slate-900 transition-colors">Categories</a>
-                    <a href="/reviews" class="hover:text-slate-900 transition-colors">Reviews</a>
-                    <a href="/blog" class="hover:text-slate-900 transition-colors">Blog</a>
-                    <a href="/privacy" class="hover:text-slate-900 transition-colors">Privacy Policy</a>
-                    <a href="/terms" class="hover:text-slate-900 transition-colors">Terms of Service</a>
-                </div>
-            </div>
-            <div class="text-center sm:text-left text-slate-400 border-t border-slate-100 pt-6 leading-relaxed">
-                &copy; 2026 PlayNewApps.store. All rights reserved. Appy Gamer is a trademark of its respective owners and publishers. PlayNewApps is an independent consumer reviews, software curation, and promo coupon directory. We may earn an affiliate commission when you purchase through links on our site.
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- INTERACTIVE SHOW CODE MODAL -->
     <div id="coupon-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4">

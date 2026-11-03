@@ -273,41 +273,13 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
     <!-- Header / Navbar -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Logo -->
-                <a href="/" class="flex items-center gap-3 group">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto">
-                    <span class="font-extrabold text-xl text-slate-900 group-hover:text-blue-600 transition-colors">PlayNewApps</span>
-                </a>
-                <!-- Navigation -->
-                <nav class="hidden md:flex items-center gap-6">
-                    <a href="/stores" class="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors">All Stores</a>
-                    <a href="/category?id=travel" class="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors">Travel Deals</a>
-                    <a href="/category?id=productivity" class="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors">Productivity</a>
-                    <a href="/reviews" class="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors">Reviews</a>
-                </nav>
-                <!-- Search Bar -->
-                <div class="relative w-64 hidden sm:block">
-                    <input type="text" id="global-search" placeholder="Search stores &amp; offers..." class="w-full bg-slate-100 text-xs text-slate-800 pl-9 pr-4 py-2 rounded-xl border border-slate-200 focus:outline-none focus:border-blue-500 focus:bg-white transition-all">
-                    <span class="material-icons-round absolute left-2.5 top-2 text-slate-400 text-base">search</span>
-                </div>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Container -->
     <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-5">
         
         <!-- Breadcrumbs -->
-        <nav class="flex items-center gap-2 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-slate-800">Home</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <a href="/stores" class="hover:text-slate-800">Stores</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <span class="text-slate-900 font-semibold">Planet of Hotels</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">Planet of Hotels</span> </nav>
 
         <!-- STRICT RULE Top Header Section (Clean & Minimalist: ONLY Logo Box + H1 Title) -->
         <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm mb-6 flex flex-col sm:flex-row items-center gap-6">
@@ -315,7 +287,7 @@
                 <img src="/assets/images/brands/planet-of-hotels.svg" alt="Planet of Hotels Official Logo" class="max-h-full max-w-full object-contain block" width="220" height="70" loading="eager">
             </div>
             <div class="text-center sm:text-left">
-                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">Planet of Hotels Coupon Codes &amp; Discount Offers (2026)</h1>
+                <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">Planet of Hotels Coupon Codes &amp; Discount Offers (2026)</h1> </div> </section>
             </div>
         </div>
 
@@ -351,7 +323,7 @@
                 <div id="deals-list" class="space-y-4 mb-12">
                     
                     <!-- DEAL 1: Up to 60% OFF Early Bird (Verified Sale) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="sale">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="sale">
                         <!-- Top Header Bar -->
                         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                             <div class="flex items-center gap-2">
@@ -375,11 +347,11 @@
                             </div>
                             <!-- Center Info Box -->
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-blue-600 transition-colors">
+                                <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-blue-600 transition-colors">
                                     <a href="https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/" target="_blank" rel="noopener sponsored" class="hover:underline">
                                         Up to 60% OFF Early Bird &amp; Seasonal Hotel Promotions
                                     </a>
-                                </h3>
+                                </h2>
                                 <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                                     Save up to 60% on advance reservations across top international holiday destinations, beach resorts, and city centers worldwide.
                                 </p>
@@ -415,10 +387,10 @@
                             <p class="mb-1.5"><strong>Offer Terms:</strong> Discount applies automatically to selected early bird inventory booked at least 21 days prior to check-in. Subject to hotel availability and seasonal blackout dates. Can be combined with eligible credit card perks.</p>
                             <p><strong>Verified By:</strong> PlayNewApps Editorial Travel Desk. Tested on bookings across Rome, Tokyo, Barcelona, and Bangkok.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- DEAL 2: 15% OFF Sitewide Coupon (Verified Code) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
                         <!-- Top Header Bar -->
                         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                             <div class="flex items-center gap-2">
@@ -442,11 +414,11 @@
                             </div>
                             <!-- Center Info Box -->
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
+                                <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
                                     <a href="https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/" target="_blank" rel="noopener sponsored" class="hover:underline">
                                         15% OFF Sitewide on Eligible Hotel Bookings
                                     </a>
-                                </h3>
+                                </h2>
                                 <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                                     Apply this verified promo code during checkout to unlock an extra 15% discount on selected hotels and boutique accommodations.
                                 </p>
@@ -465,7 +437,7 @@
                             <!-- Action Box: Hidden Code Mask & Copy Button -->
                             <div class="shrink-0 flex flex-col items-stretch sm:items-end gap-2">
                                 <div class="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200">
-                                    <span class="code-pill-mask text-slate-600 font-bold px-3 text-xs select-none">••••••••</span>
+                                    <span class="code-pill-mask font-bold px-3 text-xs select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                     <button type="button" onclick="openCouponModal('poh-member-15', 'PLANET15', 'https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-xs font-bold transition-all shadow-xs flex items-center gap-1 cursor-pointer">
                                         <span>Show Code</span>
                                         <span class="material-icons-round text-sm">content_copy</span>
@@ -485,10 +457,10 @@
                             <p class="mb-1.5"><strong>Offer Terms:</strong> Valid on participating independent hotels, boutique apartments, and resorts worldwide. Enter the code in the checkout discount box prior to finalizing reservation.</p>
                             <p><strong>Exclusions:</strong> Excludes select non-discountable chain properties. One coupon redemption per booking transaction.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- DEAL 3: $50 OFF Extended Luxury Stays (Verified Code) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
                         <!-- Top Header Bar -->
                         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                             <div class="flex items-center gap-2">
@@ -512,11 +484,11 @@
                             </div>
                             <!-- Center Info Box -->
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
+                                <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
                                     <a href="https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/" target="_blank" rel="noopener sponsored" class="hover:underline">
                                         $50 OFF Extended Luxury Stays on Orders Over $350
                                     </a>
-                                </h3>
+                                </h2>
                                 <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                                     Enjoy $50 in instant savings when you book 3 or more nights at premium 4-star and 5-star hotels with orders over $350.
                                 </p>
@@ -535,7 +507,7 @@
                             <!-- Action Box: Hidden Code Mask & Copy Button -->
                             <div class="shrink-0 flex flex-col items-stretch sm:items-end gap-2">
                                 <div class="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200">
-                                    <span class="code-pill-mask text-slate-600 font-bold px-3 text-xs select-none">••••••••</span>
+                                    <span class="code-pill-mask font-bold px-3 text-xs select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                     <button type="button" onclick="openCouponModal('poh-luxury-50', 'STAY50', 'https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-xs font-bold transition-all shadow-xs flex items-center gap-1 cursor-pointer">
                                         <span>Show Code</span>
                                         <span class="material-icons-round text-sm">content_copy</span>
@@ -555,10 +527,10 @@
                             <p class="mb-1.5"><strong>Offer Terms:</strong> Requires a minimum total booking value of $350 before municipal taxes. Valid for multi-night stays (minimum 3 nights) across 4-star and 5-star properties.</p>
                             <p><strong>Verified By:</strong> Tested on luxury resort reservations in Dubai, London, Santorini, and Miami.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- DEAL 4: Up to 40% OFF Weekend Getaways (Verified Sale) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="sale">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="sale">
                         <!-- Top Header Bar -->
                         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                             <div class="flex items-center gap-2">
@@ -582,11 +554,11 @@
                             </div>
                             <!-- Center Info Box -->
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-blue-600 transition-colors">
+                                <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-blue-600 transition-colors">
                                     <a href="https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/" target="_blank" rel="noopener sponsored" class="hover:underline">
                                         Up to 40% OFF Last-Minute Weekend Getaway Hotel Deals
                                     </a>
-                                </h3>
+                                </h2>
                                 <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                                     Discover curated last-minute deals for weekend escapes, metropolitan staycations, and spa retreats at up to 40% off standard rates.
                                 </p>
@@ -622,10 +594,10 @@
                             <p class="mb-1.5"><strong>Offer Terms:</strong> Automatically applies to reservations booked within 7 days of arrival for Friday through Sunday stays. Pricing reflects direct real-time partner inventory discounts.</p>
                             <p><strong>Highlights:</strong> Instant electronic room vouchers and direct check-in verification.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- DEAL 5: 10% OFF City Center Boutique Hotels (Verified Code) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
                         <!-- Top Header Bar -->
                         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                             <div class="flex items-center gap-2">
@@ -649,11 +621,11 @@
                             </div>
                             <!-- Center Info Box -->
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
+                                <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
                                     <a href="https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/" target="_blank" rel="noopener sponsored" class="hover:underline">
                                         10% OFF City Center Boutique Hotels &amp; Urban Apartments
                                     </a>
-                                </h3>
+                                </h2>
                                 <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                                     Save 10% on centrally located serviced apartments, historic city boutique hotels, and design suites in major capitals.
                                 </p>
@@ -672,7 +644,7 @@
                             <!-- Action Box: Hidden Code Mask & Copy Button -->
                             <div class="shrink-0 flex flex-col items-stretch sm:items-end gap-2">
                                 <div class="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200">
-                                    <span class="code-pill-mask text-slate-600 font-bold px-3 text-xs select-none">••••••••</span>
+                                    <span class="code-pill-mask font-bold px-3 text-xs select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                     <button type="button" onclick="openCouponModal('poh-urban-10', 'URBAN10', 'https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-xs font-bold transition-all shadow-xs flex items-center gap-1 cursor-pointer">
                                         <span>Show Code</span>
                                         <span class="material-icons-round text-sm">content_copy</span>
@@ -692,10 +664,10 @@
                             <p class="mb-1.5"><strong>Offer Terms:</strong> Applicable to boutique urban stays and serviced city apartments with a minimum 2-night booking duration. Enter code in promo box during reservation.</p>
                             <p><strong>Verified By:</strong> PlayNewApps editorial test bookings across Paris, Amsterdam, Berlin, and Vienna.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- DEAL 6: Flexible Stays with Free Cancellation (Verified Deal) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="sale">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="sale">
                         <!-- Top Header Bar -->
                         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                             <div class="flex items-center gap-2">
@@ -719,11 +691,11 @@
                             </div>
                             <!-- Center Info Box -->
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-blue-600 transition-colors">
+                                <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-blue-600 transition-colors">
                                     <a href="https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/" target="_blank" rel="noopener sponsored" class="hover:underline">
                                         Flexible Stays with Free Cancellation &amp; $0 Deposit Option
                                     </a>
-                                </h3>
+                                </h2>
                                 <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                                     Book risk-free accommodations with 100% free cancellation up to 24-48 hours before check-in and zero prepayment required on select rooms.
                                 </p>
@@ -759,10 +731,10 @@
                             <p class="mb-1.5"><strong>Offer Terms:</strong> Select properties displaying the green "Free Cancellation" tag allow full booking cancellation with zero penalty fees up to the stated deadline (usually 24 to 48 hours prior to check-in).</p>
                             <p><strong>Payment Option:</strong> Many rooms offer "Pay at Hotel" with no upfront credit card charge required at the time of reservation.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- DEAL 7: Up to 35% OFF Beachfront Resorts (Verified Sale) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="sale">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="sale">
                         <!-- Top Header Bar -->
                         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                             <div class="flex items-center gap-2">
@@ -786,11 +758,11 @@
                             </div>
                             <!-- Center Info Box -->
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-blue-600 transition-colors">
+                                <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-blue-600 transition-colors">
                                     <a href="https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/" target="_blank" rel="noopener sponsored" class="hover:underline">
                                         Up to 35% OFF Beachfront Resorts &amp; Island Getaways
                                     </a>
-                                </h3>
+                                </h2>
                                 <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                                     Take advantage of limited-time discounts on tropical resorts, Mediterranean coastal stays, and seaside villas.
                                 </p>
@@ -826,10 +798,10 @@
                             <p class="mb-1.5"><strong>Offer Terms:</strong> Valid for participating coastal properties across the Caribbean, Mediterranean coast, Bali, Phuket, and the Canary Islands. Subject to seasonal blackout dates.</p>
                             <p><strong>Perks:</strong> Includes complimentary beach access, infinity pool access, and resort recreation passes at select properties.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- DEAL 8: $25 OFF First Hotel Reservation (Verified Code) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-xs relative overflow-hidden" data-category="code">
                         <!-- Top Header Bar -->
                         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-100 text-xs font-semibold">
                             <div class="flex items-center gap-2">
@@ -853,11 +825,11 @@
                             </div>
                             <!-- Center Info Box -->
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
+                                <h2 class="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors">
                                     <a href="https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/" target="_blank" rel="noopener sponsored" class="hover:underline">
                                         $25 OFF First Hotel Reservation on Orders Over $150
                                     </a>
-                                </h3>
+                                </h2>
                                 <p class="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2">
                                     New customers receive an instant $25 discount on their inaugural hotel booking when spending $150 or more.
                                 </p>
@@ -876,7 +848,7 @@
                             <!-- Action Box: Hidden Code Mask & Copy Button -->
                             <div class="shrink-0 flex flex-col items-stretch sm:items-end gap-2">
                                 <div class="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200">
-                                    <span class="code-pill-mask text-slate-600 font-bold px-3 text-xs select-none">••••••••</span>
+                                    <span class="code-pill-mask font-bold px-3 text-xs select-none border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                     <button type="button" onclick="openCouponModal('poh-first-25', 'FIRST25', 'https://uhtkc.com/g/zhz7s51tzib68b264a76d0cfe7b65a/')" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-xs font-bold transition-all shadow-xs flex items-center gap-1 cursor-pointer">
                                         <span>Show Code</span>
                                         <span class="material-icons-round text-sm">content_copy</span>
@@ -896,7 +868,7 @@
                             <p class="mb-1.5"><strong>Offer Terms:</strong> Valid exclusively for first-time account holders or new guest reservations with a total room price of $150 or more. Simply paste code at checkout.</p>
                             <p><strong>Verified By:</strong> Verified by PlayNewApps editorial staff on new account creation.</p>
                         </div>
-                    </div>
+                    </article>
 
                 </div>
 
@@ -1299,30 +1271,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 text-xs py-10 mt-16 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-4 pb-8 border-b border-slate-800">
-                <div class="flex items-center gap-3">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-7 w-auto brightness-200">
-                    <span class="font-extrabold text-base text-white">PlayNewApps</span>
-                </div>
-                <div class="flex flex-wrap items-center gap-6 text-slate-300">
-                    <a href="/stores" class="hover:text-white transition-colors">All Stores</a>
-                    <a href="/category" class="hover:text-white transition-colors">Categories</a>
-                    <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a>
-                    <a href="/about" class="hover:text-white transition-colors">About Us</a>
-                    <a href="/contact" class="hover:text-white transition-colors">Contact</a>
-                    <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="/terms" class="hover:text-white transition-colors">Terms of Service</a>
-                    <a href="/affiliate" class="hover:text-white transition-colors">Affiliate Disclosure</a>
-                </div>
-            </div>
-            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-500">
-                <p>&copy; 2026 PlayNewApps. All verified rights reserved. Brand names and logos are property of their respective owners.</p>
-                <p>Verified Daily For Maximum Savings.</p>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- Interactive Scripts -->
     <script>

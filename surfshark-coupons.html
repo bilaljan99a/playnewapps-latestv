@@ -171,53 +171,13 @@
 <body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
 
     <!-- Primary Global Navigation -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
-            <div class="flex items-center gap-8">
-                <a href="/" class="flex items-center gap-3 group" aria-label="PlayNewApps Home">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="w-9 h-9 sm:w-10 sm:h-10 transition-transform group-hover:scale-105" width="40" height="40" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
-                    <div>
-                        <span class="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight block">PlayNewApps</span>
-                        <span class="text-[10px] sm:text-xs font-semibold text-slate-500 block -mt-1 uppercase tracking-wider">Verified Software &amp; Deals</span>
-                    </div>
-                </a>
-                                <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700">
-                    <a href="/" class="hover:text-amber-600 transition-colors">Home</a>
-                    <a href="/stores" class="hover:text-amber-600 transition-colors">Stores</a>
-                    <a href="/products" class="hover:text-amber-600 transition-colors">Products</a>
-                    <a href="/coupon" class="hover:text-amber-600 transition-colors">Coupons</a>
-                    <a href="/reviews" class="hover:text-amber-600 transition-colors">Reviews</a>
-                </nav>
-            </div>
-            <div class="flex items-center gap-3">
-                    <a href="/#search-form" class="inline-flex items-center justify-center w-9 h-9 rounded-xl text-slate-600 hover:text-amber-600 hover:bg-slate-100 transition-colors" aria-label="Search">
-                        <span class="material-icons-round text-lg">search</span>
-                    </a>
-                <div class="relative hidden sm:block w-64">
-                    <input type="text" id="store-search-input" placeholder="Search stores, coupons..." class="w-full pl-9 pr-4 py-2 text-xs bg-slate-100 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:bg-white transition-all">
-                    <span class="material-icons-round absolute left-2.5 top-2.5 text-base text-slate-400">search</span>
-                </div>
-                <a href="https://surfshark.com" target="_blank" rel="noopener sponsored" class="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold text-xs px-4 py-2 rounded-xl shadow-xs transition-all flex items-center gap-1.5 shrink-0">
-                    <span>Visit Surfshark</span>
-                    <span class="material-icons-round text-sm">open_in_new</span>
-                </a>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Container -->
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full">
 
         <!-- Breadcrumbs -->
-        <nav class="flex items-center gap-2 text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-purple-600 transition-colors flex items-center gap-1">
-                <span class="material-icons-round text-sm">home</span> Home
-            </a>
-            <span class="material-icons-round text-xs text-slate-400">chevron_right</span>
-            <a href="/stores" class="hover:text-purple-600 transition-colors">Stores</a>
-            <span class="material-icons-round text-xs text-slate-400">chevron_right</span>
-            <span class="text-slate-800 font-semibold">Surfshark</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">home Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">Surfshark</span> </nav>
 
         <!-- TOP STORE HEADER CARD (Clean & Minimalist: Logo Box + H1 Title ONLY) -->
         <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm mb-6 flex flex-col sm:flex-row items-center gap-6">
@@ -225,7 +185,7 @@
                 <img src="/assets/images/brands/surfshark.svg" alt="Surfshark Official Logo" class="max-h-full max-w-full object-contain block" width="200" height="60" loading="eager" onerror="this.src='/assets/images/brands/default-store.svg'">
             </div>
             <div class="text-center sm:text-left">
-                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">Surfshark Coupon Codes &amp; Discount Offers (2026)</h1>
+                <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">Surfshark Coupon Codes &amp; Discount Offers (2026)</h1> </div> </section>
             </div>
         </div>
 
@@ -260,7 +220,7 @@
                 <div class="space-y-4">
 
                     <!-- COUPON CARD 1: 86% OFF 2-Year Plan + 3 MO FREE (FEATURED PROMO CODE) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-sm border-l-4 border-l-purple-600">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-sm border-l-4 border-l-purple-600">
                         <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
                             <div class="flex items-center gap-2">
                                 <span class="inline-flex items-center gap-1 text-[11px] font-extrabold bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-md uppercase tracking-wide">
@@ -279,9 +239,9 @@
                                     <span class="text-[9px] font-semibold text-emerald-300">+3 MO</span>
                                 </div>
                                 <div class="min-w-0">
-                                    <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                                    <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                                         <a href="https://surfshark.com" target="_blank" rel="noopener sponsored">86% Off Surfshark Starter 2-Year Plan + 3 Extra Months Free with Promo Code</a>
-                                    </h3>
+                                    </h2>
                                     <p class="text-xs text-slate-500 mt-1.5 flex items-center gap-2">
                                         <span class="flex items-center text-emerald-600 font-bold"><span class="material-icons-round text-sm mr-0.5">thumb_up</span> 99% Success</span>
                                         <span>•</span>
@@ -293,7 +253,7 @@
                                 <div class="relative bg-slate-100 border border-dashed border-purple-300 rounded-xl px-4 py-2.5 text-center min-w-[120px]">
                                     <span id="code-text-1" class="font-mono font-black text-slate-400 tracking-widest text-sm select-none">••••••••</span>
                                 </div>
-                                <button type="button" onclick="copyAndRedirect('SHARKSPECIAL', 'code-text-1', 'https://surfshark.com')" class="bg-purple-600 hover:bg-purple-700 text-white font-black text-xs sm:text-sm px-5 py-3 rounded-xl shadow-xs transition-all flex items-center justify-center gap-1.5 shrink-0 cursor-pointer">
+                                <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="copyAndRedirect('SHARKSPECIAL', 'code-text-1', 'https://surfshark.com')" class="bg-purple-600 hover:bg-purple-700 text-white font-black text-xs sm:text-sm px-5 py-3 rounded-xl shadow-xs transition-all flex items-center justify-center gap-1.5 shrink-0 cursor-pointer">
                                     <span class="material-icons-round text-base">content_copy</span>
                                     <span>Show Code</span>
                                 </button>
@@ -309,10 +269,10 @@
                         <div id="details-starter-86" class="deal-details-content pt-3 text-xs text-slate-600 border-t border-slate-100 mt-2">
                             <p>Lock in the lowest per-month rate on Surfshark Starter ($1.99/mo) with a 24-month subscription plus 3 bonus free months. Enjoy military-grade AES-256 and ChaCha20 encryption, WireGuard speeds, unlimited simultaneous devices, and a 30-day money-back guarantee.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 2: 84% OFF Surfshark One Security Suite (PROMO CODE) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-sm border-l-4 border-l-indigo-600">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-sm border-l-4 border-l-indigo-600">
                         <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
                             <div class="flex items-center gap-2">
                                 <span class="inline-flex items-center gap-1 text-[11px] font-extrabold bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-md uppercase tracking-wide">
@@ -330,9 +290,9 @@
                                     <span class="text-[9px] font-semibold text-indigo-200">ALL-IN-1</span>
                                 </div>
                                 <div class="min-w-0">
-                                    <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                                    <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                                         <a href="https://surfshark.com" target="_blank" rel="noopener sponsored">84% Off Surfshark One All-In-One Security Suite (VPN + Antivirus + Alert)</a>
-                                    </h3>
+                                    </h2>
                                     <p class="text-xs text-slate-500 mt-1.5 flex items-center gap-2">
                                         <span class="flex items-center text-emerald-600 font-bold"><span class="material-icons-round text-sm mr-0.5">thumb_up</span> 98% Success</span>
                                         <span>•</span>
@@ -344,7 +304,7 @@
                                 <div class="relative bg-slate-100 border border-dashed border-indigo-300 rounded-xl px-4 py-2.5 text-center min-w-[120px]">
                                     <span id="code-text-2" class="font-mono font-black text-slate-400 tracking-widest text-sm select-none">••••••••</span>
                                 </div>
-                                <button type="button" onclick="copyAndRedirect('SURFONE84', 'code-text-2', 'https://surfshark.com')" class="bg-purple-600 hover:bg-purple-700 text-white font-black text-xs sm:text-sm px-5 py-3 rounded-xl shadow-xs transition-all flex items-center justify-center gap-1.5 shrink-0 cursor-pointer">
+                                <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="copyAndRedirect('SURFONE84', 'code-text-2', 'https://surfshark.com')" class="bg-purple-600 hover:bg-purple-700 text-white font-black text-xs sm:text-sm px-5 py-3 rounded-xl shadow-xs transition-all flex items-center justify-center gap-1.5 shrink-0 cursor-pointer">
                                     <span class="material-icons-round text-base">content_copy</span>
                                     <span>Show Code</span>
                                 </button>
@@ -360,10 +320,10 @@
                         <div id="details-one-84" class="deal-details-content pt-3 text-xs text-slate-600 border-t border-slate-100 mt-2">
                             <p>Upgrade to complete cyber protection for just $2.49/mo. Includes high-speed VPN with unlimited devices, lightweight real-time Antivirus protection against malware/spyware, instant Dark Web breach monitoring, and zero-ad private search.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 3: 77% OFF Surfshark One+ with Incogni (DEAL) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-sm border-l-4 border-l-teal-600">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-sm border-l-4 border-l-teal-600">
                         <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
                             <div class="flex items-center gap-2">
                                 <span class="inline-flex items-center gap-1 text-[11px] font-extrabold bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-md uppercase tracking-wide">
@@ -381,9 +341,9 @@
                                     <span class="text-[9px] font-semibold text-teal-100">INCOGNI</span>
                                 </div>
                                 <div class="min-w-0">
-                                    <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                                    <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                                         <a href="https://surfshark.com" target="_blank" rel="noopener sponsored">Up to 77% Off Surfshark One+ with Automated Incogni Data Broker Removal</a>
-                                    </h3>
+                                    </h2>
                                     <p class="text-xs text-slate-500 mt-1.5 flex items-center gap-2">
                                         <span class="flex items-center text-emerald-600 font-bold"><span class="material-icons-round text-sm mr-0.5">thumb_up</span> 99% Success</span>
                                         <span>•</span>
@@ -408,7 +368,7 @@
                         <div id="details-oneplus" class="deal-details-content pt-3 text-xs text-slate-600 border-t border-slate-100 mt-2">
                             <p>Surfshark One+ pairs the full Surfshark One cybersecurity package with continuous automated data removal through Incogni. Incogni sends recurring opt-out requests to data brokers, people-search websites, and marketing registries on your behalf.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 4: Student Get 15% EXTRA (DEAL) -->
                     <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-sm border-l-4 border-l-emerald-600">
@@ -459,7 +419,7 @@
                     </div>
 
                     <!-- COUPON CARD 5: 70% OFF 1-Year Annual Subscription (DEAL) -->
-                    <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-sm border-l-4 border-l-blue-600">
+                    <article class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-sm border-l-4 border-l-blue-600">
                         <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
                             <div class="flex items-center gap-2">
                                 <span class="inline-flex items-center gap-1 text-[11px] font-extrabold bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-md uppercase tracking-wide">
@@ -477,9 +437,9 @@
                                     <span class="text-[9px] font-semibold text-blue-100">1-YEAR</span>
                                 </div>
                                 <div class="min-w-0">
-                                    <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
+                                    <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition-colors leading-snug">
                                         <a href="https://surfshark.com" target="_blank" rel="noopener sponsored">Save up to 70% on Surfshark 1-Year Annual Subscription Plans</a>
-                                    </h3>
+                                    </h2>
                                     <p class="text-xs text-slate-500 mt-1.5 flex items-center gap-2">
                                         <span class="flex items-center text-emerald-600 font-bold"><span class="material-icons-round text-sm mr-0.5">thumb_up</span> 98% Success</span>
                                         <span>•</span>
@@ -504,7 +464,7 @@
                         <div id="details-1year" class="deal-details-content pt-3 text-xs text-slate-600 border-t border-slate-100 mt-2">
                             <p>For users who prefer a 12-month annual commitment instead of 24 months, Surfshark offers up to 70% discount off standard month-to-month pricing with identical server access, streaming unlocking, and unlimited connections.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 6: 30-Day Money-Back Guarantee (DEAL) -->
                     <div class="deal-card bg-white rounded-2xl p-5 sm:p-6 shadow-sm border-l-4 border-l-slate-700">
@@ -1171,54 +1131,7 @@
     </main>
 
     <!-- Global Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-12 mt-16 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div class="space-y-3">
-                    <div class="flex items-center gap-2">
-                        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-purple-600 to-indigo-600 flex items-center justify-center text-white font-black shadow-md">
-                            <span class="material-icons-round text-lg">local_offer</span>
-                        </div>
-                        <span class="text-lg font-black text-white tracking-tight">PlayNew<span class="text-purple-400">Apps</span></span>
-                    </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">
-                        PlayNewApps is your trusted source for verified coupon codes, software deals, and expert tech reviews. We help thousands of shoppers save daily on premium digital products.
-                    </p>
-                </div>
-                <div>
-                    <h5 class="text-white text-xs font-bold uppercase tracking-wider mb-3">Popular Categories</h5>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="/category" class="hover:text-white transition-colors">VPN &amp; Security</a></li>
-                        <li><a href="/category" class="hover:text-white transition-colors">AI &amp; Productivity</a></li>
-                        <li><a href="/category" class="hover:text-white transition-colors">Web Hosting &amp; Cloud</a></li>
-                        <li><a href="/category" class="hover:text-white transition-colors">Gaming &amp; Entertainment</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h5 class="text-white text-xs font-bold uppercase tracking-wider mb-3">Top Stores</h5>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="/surfshark-coupons" class="hover:text-white transition-colors">Surfshark</a></li>
-                        <li><a href="/keeper-security-coupons" class="hover:text-white transition-colors">Keeper Security</a></li>
-                        <li><a href="/lenovo-coupons" class="hover:text-white transition-colors">Lenovo</a></li>
-                        <li><a href="/purevpn-coupons" class="hover:text-white transition-colors">PureVPN</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h5 class="text-white text-xs font-bold uppercase tracking-wider mb-3">Company &amp; Legal</h5>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="/about" class="hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a></li>
-                        <li><a href="/terms" class="hover:text-white transition-colors">Terms of Service</a></li>
-                        <li><a href="/contact" class="hover:text-white transition-colors">Contact Support</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="pt-8 border-t border-slate-800 text-xs text-slate-500 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
-                <p>&copy; 2026 PlayNewApps. All rights reserved. All trademarks, service marks, and brand names belong to their respective owners.</p>
-                <p>PlayNewApps is an independent coupon &amp; deal aggregator.</p>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- INTERACTION SCRIPT: CODE COPY & REDIRECT + DETAILS TOGGLE -->
     <script>

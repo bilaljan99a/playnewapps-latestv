@@ -423,49 +423,13 @@
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
 
     <!-- Global Top Navigation Header -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16 sm:h-20">
-                <!-- Site Logo -->
-                <a href="/" class="flex items-center gap-3 group">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto">
-                    <span class="font-extrabold text-xl text-slate-900 group-hover:text-brand-600 transition-colors">PlayNewApps</span>
-                </a>
-
-                <!-- Search Bar -->
-                <div class="hidden md:flex flex-1 max-w-md mx-8">
-                    <div class="relative w-full">
-                        <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-                            <span class="material-icons-round text-lg">search</span>
-                        </span>
-                        <input type="text" placeholder="Search verified promo codes &amp; stores..." class="w-full pl-10 pr-4 py-2 bg-slate-100/80 border border-slate-200/80 rounded-xl text-sm font-medium text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all">
-                    </div>
-                </div>
-
-                <!-- Navigation Links -->
-                <nav class="flex items-center gap-2 sm:gap-4">
-                    <a href="/category?id=travel" class="px-3 py-2 rounded-lg text-sm font-bold text-slate-700 hover:text-brand-600 hover:bg-slate-100 transition-colors">Travel</a>
-                    <a href="/category?id=all" class="px-3 py-2 rounded-lg text-sm font-bold text-slate-700 hover:text-brand-600 hover:bg-slate-100 transition-colors">All Stores</a>
-                    <a href="https://bjpql.com/g/uk7qqjwme4b68b264a766ca26c9222/" target="_blank" rel="nofollow noopener" class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-extrabold text-white bg-gradient-to-r from-brand-600 to-orange-500 hover:opacity-90 shadow-sm transition-all">
-                        <span>Visit Klook</span>
-                        <span class="material-icons-round text-sm">open_in_new</span>
-                    </a>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Container -->
     <main class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 w-full">
         
         <!-- Breadcrumbs -->
-        <nav class="flex items-center gap-2 text-xs font-semibold text-slate-400 mb-6 flex-wrap" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-slate-600 transition-colors">Home</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <a href="/category?id=travel" class="hover:text-slate-600 transition-colors">Travel</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <span class="text-slate-800 font-bold">Klook Promo Codes &amp; Coupons</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/category?id=travel" class="hover:text-slate-800">Travel</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">Klook Promo Codes &amp; Coupons</span> </nav>
 
         <!-- TOP HEADER SECTION (Clean & Minimalist: Logo Box + H1 Title Only) -->
         <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs mb-8">
@@ -476,9 +440,9 @@
                 </div>
                 <!-- Title & Meta -->
                 <div class="flex-1">
-                    <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                    <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
                         Klook Promo Codes &amp; Discount Offers (2026)
-                    </h1>
+                    </h1> </div> </section>
                 </div>
             </div>
         </div>
@@ -520,18 +484,18 @@
                                     <span class="sub-val">FIRST APP BOOKING</span>
                                 </div>
                                 <div class="coupon-info-col">
-                                    <a href="https://bjpql.com/g/uk7qqjwme4b68b264a766ca26c9222/" target="_blank" rel="nofollow noopener" class="coupon-title-link">
+                                    <h2 style="margin:0"><a href="https://bjpql.com/g/uk7qqjwme4b68b264a766ca26c9222/" target="_blank" rel="nofollow noopener" class="coupon-title-link">
                                         10% OFF Your First Activity or Tour Booking (New User Voucher)
-                                    </a>
+                                    </a></h2>
                                     <div class="social-proof-line">
                                         <span class="material-icons-round">thumb_up</span>
                                         <span>99% Success Rate • 38,420 uses this week</span>
                                     </div>
                                 </div>
                                 <div class="coupon-action-col">
-                                    <button onclick="openCodeModal('KLOOKFIRSTIN', '10% OFF First Klook App Booking', 'https://bjpql.com/g/uk7qqjwme4b68b264a766ca26c9222/')" class="code-reveal-btn pna-show-code">
+                                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="openCodeModal('KLOOKFIRSTIN', '10% OFF First Klook App Booking', 'https://bjpql.com/g/uk7qqjwme4b68b264a766ca26c9222/')" class="code-reveal-btn pna-show-code">
                                         <span>Show Code</span>
-                                        <span class="code-mask">••••••••</span>
+                                        
                                     </button>
                                 </div>
                             </div>
@@ -561,9 +525,9 @@
                                     <span class="sub-val">MEGA FLASH DEALS</span>
                                 </div>
                                 <div class="coupon-info-col">
-                                    <a href="https://bjpql.com/g/uk7qqjwme4b68b264a766ca26c9222/" target="_blank" rel="nofollow noopener" class="coupon-title-link">
+                                    <h2 style="margin:0"><a href="https://bjpql.com/g/uk7qqjwme4b68b264a766ca26c9222/" target="_blank" rel="nofollow noopener" class="coupon-title-link">
                                         Up to 85% OFF Global Flash Deals, Theme Parks &amp; Hotel Packages
-                                    </a>
+                                    </a></h2>
                                     <div class="social-proof-line">
                                         <span class="material-icons-round">thumb_up</span>
                                         <span>98% Success Rate • 24,190 travelers saved</span>
@@ -684,18 +648,18 @@
                                     <span class="sub-val">MAX APP DISCOUNT</span>
                                 </div>
                                 <div class="coupon-info-col">
-                                    <a href="https://bjpql.com/g/uk7qqjwme4b68b264a766ca26c9222/" target="_blank" rel="nofollow noopener" class="coupon-title-link">
+                                    <h2 style="margin:0"><a href="https://bjpql.com/g/uk7qqjwme4b68b264a766ca26c9222/" target="_blank" rel="nofollow noopener" class="coupon-title-link">
                                         10% OFF Klook App Orders (Capped at $100 Savings)
-                                    </a>
+                                    </a></h2>
                                     <div class="social-proof-line">
                                         <span class="material-icons-round">thumb_up</span>
                                         <span>97% Success Rate • High Cart Value Special</span>
                                     </div>
                                 </div>
                                 <div class="coupon-action-col">
-                                    <button onclick="openCodeModal('APP10TW', '10% OFF Klook App (Max $100)', 'https://bjpql.com/g/uk7qqjwme4b68b264a766ca26c9222/')" class="code-reveal-btn pna-show-code">
+                                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="openCodeModal('APP10TW', '10% OFF Klook App (Max $100)', 'https://bjpql.com/g/uk7qqjwme4b68b264a766ca26c9222/')" class="code-reveal-btn pna-show-code">
                                         <span>Show Code</span>
-                                        <span class="code-mask">••••••••</span>
+                                        
                                     </button>
                                 </div>
                             </div>
@@ -807,18 +771,18 @@
                                     <span class="sub-val">ALL-USER COUPON</span>
                                 </div>
                                 <div class="coupon-info-col">
-                                    <a href="https://bjpql.com/g/uk7qqjwme4b68b264a766ca26c9222/" target="_blank" rel="nofollow noopener" class="coupon-title-link">
+                                    <h2 style="margin:0"><a href="https://bjpql.com/g/uk7qqjwme4b68b264a766ca26c9222/" target="_blank" rel="nofollow noopener" class="coupon-title-link">
                                         10% OFF for New Users &amp; 5% OFF for Existing Travelers
-                                    </a>
+                                    </a></h2>
                                     <div class="social-proof-line">
                                         <span class="material-icons-round">thumb_up</span>
                                         <span>95% Success Rate • Works on Most Activities</span>
                                     </div>
                                 </div>
                                 <div class="coupon-action-col">
-                                    <button onclick="openCodeModal('TAANITRAVELSKLOOK', 'Up to 10% OFF Klook Experiences', 'https://bjpql.com/g/uk7qqjwme4b68b264a766ca26c9222/')" class="code-reveal-btn pna-show-code">
+                                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="openCodeModal('TAANITRAVELSKLOOK', 'Up to 10% OFF Klook Experiences', 'https://bjpql.com/g/uk7qqjwme4b68b264a766ca26c9222/')" class="code-reveal-btn pna-show-code">
                                         <span>Show Code</span>
-                                        <span class="code-mask">••••••••</span>
+                                        
                                     </button>
                                 </div>
                             </div>
@@ -1357,21 +1321,7 @@
     </div>
 
     <!-- Global Footer -->
-    <footer class="bg-white border-t border-slate-200 mt-16 py-12 text-slate-500 text-xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
-                <div class="flex items-center gap-2">
-                    <div class="w-8 h-8 rounded-lg bg-brand-600 text-white flex items-center justify-center font-bold text-sm">
-                        <span class="material-icons-round text-base">auto_stories</span>
-                    </div>
-                    <span class="font-extrabold text-slate-900 text-sm">PlayNewApps</span>
-                </div>
-                <p class="text-center sm:text-right text-slate-400">
-                    &copy; 2026 PlayNewApps. All rights reserved. Registered trademark names belong to their respective owners.
-                </p>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- Interactive Scripts -->
     <script>
