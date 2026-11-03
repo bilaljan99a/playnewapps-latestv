@@ -38,6 +38,7 @@
 
     <!-- CSS -->
     <link rel="preload" as="style" href="./assets/css/style.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/style.min.css">
 
     <!-- Mobile Responsiveness Fix for Grid & Cards -->
@@ -181,66 +182,18 @@
     </noscript>
 
     <!-- HEADER NAVIGATION -->
-    <header class="header" id="header">
-        <div class="container header-container">
-            <a href="/" class="logo" aria-label="PlayNewApps Home">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
-                <span>PlayNewApps</span>
-            </a>
-
-            <nav class="nav" id="nav" aria-label="Main Navigation">
-                <ul class="nav-list">
-                    <li class="nav-item dropdown" id="stores-dropdown-wrapper">
-                        <a href="/stores" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-                            Stores <span class="material-icons-round dropdown-icon" aria-hidden="true">expand_more</span>
-                        </a>
-                        <div class="dropdown-menu" id="stores-dropdown-menu" aria-label="Stores Menu">
-                            <div class="dropdown-loading">Loading stores...</div>
-                        </div>
-                    </li>
-                    <li><a href="/#featured" class="nav-link">Featured</a></li>
-                    <li><a href="/#reviews" class="nav-link">Reviews</a></li>
-                    <li><a href="/coupon" class="nav-link">Deals</a></li>
-                    <li><a href="/#faq" class="nav-link">FAQ</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-actions">
-                <a href="https://rzekl.com/g/b9jm5dg8a8b68b264a76fcfaae913b/" target="_blank" rel="nofollow sponsored noopener" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
-                    <span>Shop at Vevor</span>
-                    <span class="material-icons-round" style="font-size: 1rem;">open_in_new</span>
-                </a>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <main class="main-content" id="main-content">
         <!-- BREADCRUMB -->
         <div class="container" style="padding-top: 1.25rem;">
-            <nav aria-label="Breadcrumb">
-                <ol class="breadcrumb" style="display: flex; gap: 0.5rem; align-items: center; list-style: none; padding: 0; margin: 0; font-size: 0.875rem; color: var(--text-secondary);">
-                    <li><a href="/" style="color: var(--text-secondary); text-decoration: none;">Home</a></li>
-                    <li><span class="material-icons-round" style="font-size: 1rem; vertical-align: middle;">chevron_right</span></li>
-                    <li><a href="/stores" style="color: var(--text-secondary); text-decoration: none;">Stores</a></li>
-                    <li><span class="material-icons-round" style="font-size: 1rem; vertical-align: middle;">chevron_right</span></li>
-                    <li style="color: var(--primary-color); font-weight: 600;">Vevor</li>
-                </ol>
-            </nav>
+            <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">Vevor</span> </nav>
         </div>
 
         <!-- CLEAN MINIMAL STORE HEADER - STRICT RULE COMPLIANT -->
-        <section class="store-header container reveal" style="margin-top: 1rem; margin-bottom: 2rem;">
-            <div class="store-header-content" style="display: flex; align-items: center; gap: 1.5rem;">
-                <div class="w-40 sm:w-52 h-16 sm:h-20" style="width: 160px; height: 80px; border-radius: 12px; background: #FFFFFF; border: 1px solid var(--border-color); padding: 0.5rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: var(--shadow-sm);">
-                    <img src="/assets/images/brands/vevor.svg" alt="Official Vevor Logo" style="width: 100%; height: 100%; object-fit: contain;">
-                </div>
-                <div>
-                    <h1 class="hero-title" style="font-size: 1.85rem; font-weight: 900; margin: 0; color: var(--text-primary); line-height: 1.25;">
+        <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="w-40 sm:w-52 h-16 sm:h-20 bg-white rounded-xl p-3 flex items-center justify-center border border-slate-200 flex-shrink-0 shadow-sm"> <img src="/assets/images/brands/vevor.svg" alt="Official Vevor Logo" class="max-h-full max-w-full object-contain"> </div> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
                         Vevor Coupon Codes &amp; Discount Offers (2026)
-                    </h1>
-                </div>
-            </div>
-        </section>
+                    </h1> </div> </section>
 
         <!-- STORE LAYOUT RESPONSIVE CONTAINER -->
         <div class="container store-page-grid reveal">
@@ -276,9 +229,9 @@
                                     <span class="discount-hero">18% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://rzekl.com/g/b9jm5dg8a8b68b264a76fcfaae913b/" target="_blank" rel="noopener sponsored">18% OFF Selected Hot-Sale Machinery &amp; Workshop Essentials</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         <span class="meta-dot">•</span>
@@ -287,7 +240,7 @@
                                 </div>
                                 <div class="coupon-action-box">
                                     <div class="code-reveal-wrapper" data-code="VVUSTOP" data-link="https://rzekl.com/g/b9jm5dg8a8b68b264a76fcfaae913b/">
-                                        <span class="hidden-code-mask">••••••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                 </div>
@@ -322,9 +275,9 @@
                                     <span class="discount-hero">13% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://rzekl.com/g/b9jm5dg8a8b68b264a76fcfaae913b/" target="_blank" rel="noopener sponsored">13% OFF Sitewide on All Vevor Tools &amp; Equipment</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 98% Success</span>
                                         <span class="meta-dot">•</span>
@@ -333,7 +286,7 @@
                                 </div>
                                 <div class="coupon-action-box">
                                     <div class="code-reveal-wrapper" data-code="VVUSJ" data-link="https://rzekl.com/g/b9jm5dg8a8b68b264a76fcfaae913b/">
-                                        <span class="hidden-code-mask">••••••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                 </div>
@@ -368,9 +321,9 @@
                                     <span class="discount-hero">8% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://rzekl.com/g/b9jm5dg8a8b68b264a76fcfaae913b/" target="_blank" rel="noopener sponsored">Extra 8% OFF on All Vevor Hardware &amp; Machinery</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         <span class="meta-dot">•</span>
@@ -379,7 +332,7 @@
                                 </div>
                                 <div class="coupon-action-box">
                                     <div class="code-reveal-wrapper" data-code="VVUS8" data-link="https://rzekl.com/g/b9jm5dg8a8b68b264a76fcfaae913b/">
-                                        <span class="hidden-code-mask">••••••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                 </div>
@@ -414,9 +367,9 @@
                                     <span class="discount-hero">5% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://rzekl.com/g/b9jm5dg8a8b68b264a76fcfaae913b/" target="_blank" rel="noopener sponsored">5% OFF on Vevor US New Arrivals &amp; Newly Released Models</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 98% Success</span>
                                         <span class="meta-dot">•</span>
@@ -425,7 +378,7 @@
                                 </div>
                                 <div class="coupon-action-box">
                                     <div class="code-reveal-wrapper" data-code="VVUSNEW" data-link="https://rzekl.com/g/b9jm5dg8a8b68b264a76fcfaae913b/">
-                                        <span class="hidden-code-mask">••••••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                 </div>
@@ -460,9 +413,9 @@
                                     <span class="discount-hero">$3 OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://rzekl.com/g/b9jm5dg8a8b68b264a76fcfaae913b/" target="_blank" rel="noopener sponsored">$3 OFF Your Entire Order on Vevor</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 97% Success</span>
                                         <span class="meta-dot">•</span>
@@ -471,7 +424,7 @@
                                 </div>
                                 <div class="coupon-action-box">
                                     <div class="code-reveal-wrapper" data-code="ADUS2" data-link="https://rzekl.com/g/b9jm5dg8a8b68b264a76fcfaae913b/">
-                                        <span class="hidden-code-mask">••••••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                 </div>
@@ -506,9 +459,9 @@
                                     <span class="discount-hero">3% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://rzekl.com/g/b9jm5dg8a8b68b264a76fcfaae913b/" target="_blank" rel="noopener sponsored">3% OFF Sitewide Discount Coupon</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 98% Success</span>
                                         <span class="meta-dot">•</span>
@@ -517,7 +470,7 @@
                                 </div>
                                 <div class="coupon-action-box">
                                     <div class="code-reveal-wrapper" data-code="ADUS1" data-link="https://rzekl.com/g/b9jm5dg8a8b68b264a76fcfaae913b/">
-                                        <span class="hidden-code-mask">••••••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                 </div>
@@ -552,9 +505,9 @@
                                     <span class="discount-hero">55% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://rzekl.com/g/b9jm5dg8a8b68b264a76fcfaae913b/" target="_blank" rel="noopener sponsored">Up to 55% OFF Vevor Warehouse Clearance &amp; Flash Sales</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 100% Success</span>
                                         <span class="meta-dot">•</span>
@@ -595,9 +548,9 @@
                                     <span class="discount-hero">FREE SHIP</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://rzekl.com/g/b9jm5dg8a8b68b264a76fcfaae913b/" target="_blank" rel="noopener sponsored">100% Free Shipping Across 48 Contiguous US States</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 100% Success</span>
                                         <span class="meta-dot">•</span>
@@ -638,9 +591,9 @@
                                     <span class="discount-hero">40% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://rzekl.com/g/b9jm5dg8a8b68b264a76fcfaae913b/" target="_blank" rel="noopener sponsored">Up to 40% OFF Commercial Ice Machines &amp; Kitchen Equipment</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         <span class="meta-dot">•</span>
@@ -681,9 +634,9 @@
                                     <span class="discount-hero">35% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://rzekl.com/g/b9jm5dg8a8b68b264a76fcfaae913b/" target="_blank" rel="noopener sponsored">Up to 35% OFF Automotive Garage Lifts, Jacks &amp; Diesel Heaters</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         <span class="meta-dot">•</span>
@@ -724,9 +677,9 @@
                                     <span class="discount-hero">30% OFF</span>
                                 </div>
                                 <div class="coupon-info-box">
-                                    <h3 class="coupon-title">
+                                    <h2 class="coupon-title">
                                         <a href="https://rzekl.com/g/b9jm5dg8a8b68b264a76fcfaae913b/" target="_blank" rel="noopener sponsored">Up to 30% OFF MIG/TIG/MMA Welders &amp; Plasma Cutters</a>
-                                    </h3>
+                                    </h2>
                                     <div class="coupon-social-proof">
                                         <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 100% Success</span>
                                         <span class="meta-dot">•</span>
@@ -1077,42 +1030,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer" style="margin-top: 4rem; background: var(--bg-secondary); border-top: 1px solid var(--border-color); padding: 3rem 0 1.5rem 0;">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-bottom: 2.5rem;">
-                <div>
-                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
-                        <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" width="28" height="28">
-                        <span style="font-weight: 800; font-size: 1.15rem; color: var(--text-primary);">PlayNewApps</span>
-                    </div>
-                    <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">
-                        Your trusted destination for verified software reviews, verified coupon codes, and exclusive tech discounts.
-                    </p>
-                </div>
-                <div>
-                    <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary);">Quick Links</h4>
-                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.875rem;">
-                        <li><a href="/stores" style="color: var(--text-secondary); text-decoration: none;">All Stores</a></li>
-                        <li><a href="/coupon" style="color: var(--text-secondary); text-decoration: none;">Deals &amp; Coupons</a></li>
-                        <li><a href="/reviews" style="color: var(--text-secondary); text-decoration: none;">App &amp; Software Reviews</a></li>
-                        <li><a href="/about" style="color: var(--text-secondary); text-decoration: none;">About Us</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary);">Legal &amp; Policy</h4>
-                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.875rem;">
-                        <li><a href="/privacy" style="color: var(--text-secondary); text-decoration: none;">Privacy Policy</a></li>
-                        <li><a href="/terms" style="color: var(--text-secondary); text-decoration: none;">Terms of Service</a></li>
-                        <li><a href="/affiliate" style="color: var(--text-secondary); text-decoration: none;">Affiliate Disclosure</a></li>
-                        <li><a href="/contact" style="color: var(--text-secondary); text-decoration: none;">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div style="border-top: 1px solid var(--border-color); padding-top: 1.5rem; text-align: center; font-size: 0.85rem; color: var(--text-secondary);">
-                <p style="margin: 0;">&copy; 2026 PlayNewApps.store. All rights reserved. Vevor is a trademark of its respective owner.</p>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- APP JS -->
     <script src="/assets/js/data-service.min.js"></script>

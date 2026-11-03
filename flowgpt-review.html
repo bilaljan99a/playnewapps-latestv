@@ -37,6 +37,7 @@
 
     <!-- CSS -->
     <link rel="preload" as="style" href="./assets/css/style.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/style.min.css">
 
     <!-- Structured Data Schema -->
@@ -221,68 +222,22 @@
     </div>
 
     <!-- Header Navigation -->
-    <header class="header" id="header">
-        <div class="container header-container">
-            <a href="/" class="logo" aria-label="PlayNewApps Home">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
-                <span>PlayNewApps</span>
-            </a>
-            
-            <nav class="nav" id="nav" aria-label="Main Navigation">
-                <ul class="nav-list">
-                    <li class="nav-item dropdown" id="stores-dropdown-wrapper">
-                        <a href="/stores" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-                            Stores <span class="material-icons-round dropdown-icon" aria-hidden="true">expand_more</span>
-                        </a>
-                        <div class="dropdown-menu" id="stores-dropdown-menu" aria-label="Stores Menu">
-                            <div class="dropdown-loading">Loading stores...</div>
-                        </div>
-                    </li>
-                    <li><a href="/#featured" class="nav-link">Featured</a></li>
-                    <li><a href="/reviews" class="nav-link active">Reviews</a></li>
-                    <li><a href="/coupon" class="nav-link">Deals</a></li>
-                    <li><a href="/#faq" class="nav-link">FAQ</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-actions">
-                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
-                    <span class="material-icons-round" aria-hidden="true">dark_mode</span>
-                </button>
-                <button id="mobile-menu-btn" class="icon-btn mobile-only" aria-label="Open Menu" aria-expanded="false" aria-controls="nav">
-                    <span class="material-icons-round" aria-hidden="true">menu</span>
-                </button>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="hover:text-indigo-600 transition-colors">Stores</a> <a href="/reviews" class="text-indigo-600 font-bold transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <main class="container article-layout" style="padding-top: 1.5rem; padding-bottom: 4rem;">
         <!-- Breadcrumb Navigation -->
-        <nav aria-label="Breadcrumb" class="breadcrumb" style="margin-bottom: 1.5rem;">
-            <ol style="display: flex; gap: 0.5rem; list-style: none; padding: 0; font-size: 0.875rem; color: var(--text-secondary); flex-wrap: wrap;">
-                <li><a href="/" style="color: var(--primary-color); text-decoration: none;">Home</a></li>
-                <li>/</li>
-                <li><a href="/reviews" style="color: var(--primary-color); text-decoration: none;">Software Reviews</a></li>
-                <li>/</li>
-                <li aria-current="page" style="font-weight: 600; color: var(--text-primary);">FlowGPT Review 2026</li>
-            </ol>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/reviews" class="hover:text-slate-800">Software Reviews</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">FlowGPT Review 2026</span> </nav>
 
         <!-- Article Header Hero Section -->
-        <header class="article-header" style="margin-bottom: 2rem;">
-            <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
-                <img src="/assets/images/brands/flowgpt.svg" alt="FlowGPT Logo" style="width: 64px; height: 64px; border-radius: 16px; box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);">
+        <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="w-40 sm:w-52 h-16 sm:h-20 bg-white rounded-xl p-3 flex items-center justify-center border border-slate-200 flex-shrink-0 shadow-sm"> <img src="/assets/images/brands/flowgpt.svg" alt="FlowGPT Logo" class="max-h-full max-w-full object-contain"> </div> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">FlowGPT Review 2026: The Ultimate AI Prompt Library, Character Ecosystem & Marketplace</h1> </div> </section> <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                
                 <div>
                     <span class="badge" style="background: rgba(99, 102, 241, 0.12); color: #6366F1; font-weight: 700; padding: 0.35rem 0.85rem; border-radius: 20px; font-size: 0.8rem; letter-spacing: 0.5px;">#1 AI PROMPT LIBRARY 2026</span>
-                    <h1 style="font-size: clamp(1.8rem, 4vw, 2.75rem); font-weight: 900; line-height: 1.2; margin-top: 0.5rem; color: var(--text-primary);">FlowGPT Review 2026: The Ultimate AI Prompt Library, Character Ecosystem & Marketplace</h1>
+                    
                 </div>
-            </div>
-
-            <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem; max-width: 900px;">
+            </div> <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem; max-width: 900px;">
                 An in-depth hands-on review of FlowGPT — the world's largest open community AI prompt ecosystem. Discover how developers, students, writers, and marketers leverage over 100,000+ battle-tested prompts, custom AI characters, multi-model variable testing playgrounds, and creator cash bounties to supercharge ChatGPT, Claude 3.5, and Midjourney.
-            </p>
-
-            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 1rem 1.25rem; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; margin-bottom: 2rem;">
+            </p> <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 1rem 1.25rem; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; margin-bottom: 2rem;">
                 <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
                     <div style="display: flex; align-items: center; gap: 0.5rem;">
                         <span class="material-icons-round" style="color: #F59E0B;">star</span>
@@ -299,13 +254,9 @@
                 <a href="https://flowgpt.com/?utm_source=playnewapps&utm_medium=review" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%); color: white; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: transform 0.2s;">
                     Explore FlowGPT Free <span class="material-icons-round">launch</span>
                 </a>
-            </div>
-
-            <!-- Hero Overview Image -->
-            <div style="margin-bottom: 2.5rem; text-align: center;">
+            </div> <div style="margin-bottom: 2.5rem; text-align: center;">
                 <img src="/assets/images/flowgpt/flowgpt-hero-overview.svg" alt="FlowGPT AI Prompt Platform Interface and Features Overview" style="width: 100%; max-width: 1100px; height: auto; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md);">
             </div>
-        </header>
 
         <!-- Executive Summary Box -->
         <section class="card" style="padding: 2rem; background: var(--card-bg); border-radius: 16px; border: 1px solid var(--border-color); margin-bottom: 3rem; box-shadow: var(--shadow-sm);">
@@ -941,12 +892,7 @@
     </main>
 
     <!-- Footer -->
-    <footer style="background: var(--bg-secondary); border-top: 1px solid var(--border-color); padding: 3rem 0; margin-top: 4rem;">
-        <div class="container" style="text-align: center; color: var(--text-secondary); font-size: 0.875rem;">
-            <p style="margin-bottom: 0.5rem;">&copy; 2026 PlayNewApps. All rights reserved.</p>
-            <p>Independent software evaluation and review platform. Trademarks belong to their respective owners.</p>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- App Scripts -->
     <script src="./assets/js/data-service.min.js" defer></script>

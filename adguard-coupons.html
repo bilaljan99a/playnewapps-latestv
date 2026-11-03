@@ -179,54 +179,18 @@
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between">
 
     <!-- TOP HEADER / NAVBAR -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16 sm:h-20">
-                <a href="/" class="flex items-center gap-3 group">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="w-9 h-9 sm:w-10 sm:h-10 transition-transform group-hover:scale-105" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
-                    <div>
-                        <span class="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight block">PlayNewApps</span>
-                        <span class="text-[10px] sm:text-xs font-semibold text-slate-500 block -mt-1 uppercase tracking-wider">Verified Software Deals</span>
-                    </div>
-                </a>
-                                <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700">
-                    <a href="/" class="hover:text-amber-600 transition-colors">Home</a>
-                    <a href="/stores" class="hover:text-amber-600 transition-colors">Stores</a>
-                    <a href="/products" class="hover:text-amber-600 transition-colors">Products</a>
-                    <a href="/coupon" class="hover:text-amber-600 transition-colors">Coupons</a>
-                    <a href="/reviews" class="hover:text-amber-600 transition-colors">Reviews</a>
-                </nav>
-                <div class="flex items-center gap-3">
-                    <a href="/#search-form" class="inline-flex items-center justify-center w-9 h-9 rounded-xl text-slate-600 hover:text-amber-600 hover:bg-slate-100 transition-colors" aria-label="Search">
-                        <span class="material-icons-round text-lg">search</span>
-                    </a>
-                    <a href="https://dhwnh.com/g/xc497owldvb68b264a76a9584d7a68/" target="_blank" rel="noopener sponsored" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-xs transition-all flex items-center gap-1.5">
-                        <span>Visit AdGuard</span>
-                        <span class="material-icons-round text-base">open_in_new</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- MAIN CONTAINER -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 space-y-8 sm:space-y-12 flex-grow w-full">
 
         <!-- BREADCRUMB -->
-        <nav class="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-500 overflow-x-auto pb-1" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-blue-600 transition-colors flex items-center gap-1">
-                <span class="material-icons-round text-base">home</span>
-                <span>Home</span>
-            </a>
-            <span class="material-icons-round text-sm text-slate-400">chevron_right</span>
-            <a href="/stores" class="hover:text-blue-600 transition-colors">Stores</a>
-            <span class="material-icons-round text-sm text-slate-400">chevron_right</span>
-            <span class="text-slate-900 font-semibold">AdGuard Coupon Codes</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">home Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">AdGuard Coupon Codes</span> </nav>
 
         <!-- STORE COMPACT HERO HEADER -->
-        <section class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 text-slate-900 shadow-xs relative overflow-hidden space-y-4">
-            <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-3">
+        <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="w-40 sm:w-52 h-16 sm:h-20 bg-white rounded-xl p-3 flex items-center justify-center border border-slate-200 flex-shrink-0 shadow-sm"> <img src="/assets/images/brands/adguard.svg" alt="Official AdGuard Brand Logo" class="max-h-full max-w-full object-contain"> </div> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+                        AdGuard Coupon Codes, Promo Deals &amp; Privacy Software Offers (2026)
+                    </h1> </div> </section> <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-3">
                 <div class="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-900 border border-emerald-200/80 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                     <span class="material-icons-round text-emerald-600 text-sm">verified</span>
                     <span>Verified AdGuard Software Partner (2026)</span>
@@ -241,20 +205,15 @@
                     </div>
                     <span>4.9 / 5 (14,820+ Global User Ratings)</span>
                 </div>
-            </div>
-
-            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            </div> <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                 <div class="bg-slate-50 p-2.5 sm:p-3 rounded-2xl border border-slate-200 shrink-0 shadow-xs flex items-center justify-center w-24 sm:w-28 h-14 sm:h-16">
-                    <img src="/assets/images/brands/adguard.svg" alt="Official AdGuard Brand Logo" class="w-full h-auto max-h-full object-contain">
+                    
                 </div>
                 <div class="min-w-0 flex-1 space-y-1">
-                    <h1 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight break-words">
-                        AdGuard Coupon Codes, Promo Deals &amp; Privacy Software Offers (2026)
-                    </h1>
+                    
                     <p class="text-slate-500 text-xs sm:text-sm font-medium">System-Wide Ad Blocking • Tracker Protection • AdGuard DNS &amp; Stealth VPN</p>
                 </div>
             </div>
-        </section>
 
         <!-- ACTIVE COUPONS & PROMO DEALS SECTION (TOP PRIORITY FOR CONVERSIONS) -->
         <section id="verified-deals" class="space-y-6">
@@ -1141,53 +1100,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-slate-900 text-slate-400 text-xs sm:text-sm border-t border-slate-800 mt-12 py-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div class="space-y-3">
-                    <a href="/" class="flex items-center gap-2 text-white font-extrabold text-base sm:text-lg">
-                        <img src="/assets/images/logo.svg" alt="PlayNewApps" class="w-6 h-6" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
-                        <span>PlayNewApps</span>
-                    </a>
-                    <p class="text-slate-400 text-xs leading-relaxed">
-                        Your trusted portal for verified software promo codes, app reviews, tech discount offers, and cybersecurity deals worldwide.
-                    </p>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-3">Popular Stores</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="/adguard-coupons" class="hover:text-white transition-colors">AdGuard Promo Codes</a></li>
-                        <li><a href="/hidemyname-vpn-coupons" class="hover:text-white transition-colors">HideMyname VPN Deals</a></li>
-                        <li><a href="/movavi-coupons" class="hover:text-white transition-colors">Movavi Software Coupons</a></li>
-                        <li><a href="/retouch4me-coupons" class="hover:text-white transition-colors">Retouch4me AI Plugins</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-3">Quick Links</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="/stores" class="hover:text-white transition-colors">All Stores</a></li>
-                        <li><a href="/category" class="hover:text-white transition-colors">Categories</a></li>
-                        <li><a href="/about" class="hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="/contact" class="hover:text-white transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-3">Legal &amp; Disclosure</h4>
-                    <p class="text-slate-400 text-[11px] leading-relaxed">
-                        Disclosure: PlayNewApps is supported by readers. When you click through links or use promo codes on our website, we may earn an affiliate commission at no additional cost to you.
-                    </p>
-                </div>
-            </div>
-
-            <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-                <p>© <span id="current-year">2026</span> PlayNewApps. Store trademarks belong to their respective owners.</p>
-                <div class="flex gap-4">
-                    <a href="/privacy" class="hover:text-slate-400">Privacy Policy</a>
-                    <a href="/terms" class="hover:text-slate-400">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- SCRIPTS -->
     <script src="/assets/js/script.min.js"></script>

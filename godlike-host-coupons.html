@@ -145,42 +145,13 @@
 <body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
 
     <!-- Header / Navbar -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Logo -->
-                <a href="/" class="flex items-center gap-3 group">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto">
-                    <span class="font-extrabold text-xl text-slate-900 group-hover:text-amber-600 transition-colors">PlayNewApps</span>
-                </a>
-
-                <!-- Search & Navigation -->
-                <nav class="hidden md:flex items-center gap-6">
-                    <a href="/stores" class="text-sm font-semibold text-slate-700 hover:text-amber-600 transition-colors">All Stores</a>
-                    <a href="/category?id=games" class="text-sm font-semibold text-slate-700 hover:text-amber-600 transition-colors">Gaming Deals</a>
-                    <a href="/reviews" class="text-sm font-semibold text-slate-700 hover:text-amber-600 transition-colors">Software Reviews</a>
-                </nav>
-
-                <!-- Search Bar -->
-                <div class="relative w-64 hidden sm:block">
-                    <input type="text" id="global-search" placeholder="Search stores &amp; promo codes..." class="w-full bg-slate-100 text-xs text-slate-800 pl-9 pr-4 py-2 rounded-xl border border-slate-200 focus:outline-none focus:border-amber-500 focus:bg-white transition-all">
-                    <span class="material-icons-round absolute left-2.5 top-2 text-slate-400 text-base">search</span>
-                </div>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Container -->
     <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-5">
         
         <!-- Breadcrumbs -->
-        <nav class="flex items-center gap-2 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-slate-800">Home</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <a href="/stores" class="hover:text-slate-800">Stores</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <span class="text-slate-900 font-semibold">GODLIKE.Host</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">GODLIKE.Host</span> </nav>
 
         <!-- Compact GODLIKE.Host Store Header (Mobile-First Minimal Height) -->
         <div class="bg-white rounded-xl border border-slate-200 p-3.5 sm:p-4 shadow-sm mb-5">
@@ -194,7 +165,7 @@
                 <!-- Store Title & One Short Line -->
                 <div class="min-w-0">
                     <div class="flex items-center gap-2 flex-wrap">
-                        <h1 class="text-base sm:text-xl font-black text-slate-900 tracking-tight">GODLIKE.Host</h1>
+                        <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">GODLIKE.Host</h1> </div> </section>
                         <span class="px-2 py-0.5 rounded text-[10px] sm:text-xs font-extrabold bg-blue-100 text-blue-800">Game &amp; VPS Hosting</span>
                         <span class="px-2 py-0.5 rounded text-[10px] sm:text-xs font-bold bg-emerald-100 text-emerald-800 hidden sm:inline-block">Verified Partner</span>
                     </div>
@@ -235,9 +206,9 @@
                                         <span class="discount-hero">40% OFF</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="#" target="_blank" rel="noopener sponsored">40% OFF First Order from 12 GB RAM — Game Servers & VPS</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -246,7 +217,7 @@
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="affiliate40" data-link="#">
-                                        <span class="hidden-code-mask">••••••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -280,9 +251,9 @@
                                         <span class="discount-hero">30% OFF</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="#" target="_blank" rel="noopener sponsored">30% OFF First Order on Any Game Server or VPS Plan</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -291,7 +262,7 @@
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="affiliate30" data-link="#">
-                                        <span class="hidden-code-mask">••••••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -325,9 +296,9 @@
                                         <span class="discount-hero">50% OFF UPGRADE</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="#" target="_blank" rel="noopener sponsored">Upgrade to Double Server RAM with 50% OFF</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -336,7 +307,7 @@
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="NO CODE NEEDED" data-link="#">
-                                        <span class="hidden-code-mask">••••••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -370,9 +341,9 @@
                                         <span class="discount-hero">14 DAYS FREE</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="#" target="_blank" rel="noopener sponsored">14-Day Free Trial — 24/7 Minecraft & Game Server Hosting</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -381,7 +352,7 @@
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="NO CODE NEEDED" data-link="#">
-                                        <span class="hidden-code-mask">••••••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -415,9 +386,9 @@
                                         <span class="discount-hero">15% OFF ANNUAL</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="#" target="_blank" rel="noopener sponsored">Save Up to 15% Additional on Semi-Annual & Annual Plans</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -426,7 +397,7 @@
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="NO CODE NEEDED" data-link="#">
-                                        <span class="hidden-code-mask">••••••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -460,9 +431,9 @@
                                         <span class="discount-hero">FROM /MO</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="#" target="_blank" rel="noopener sponsored">Gaming VPS Server Hosting from .00 / per GB RAM</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -471,7 +442,7 @@
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="NO CODE NEEDED" data-link="#">
-                                        <span class="hidden-code-mask">••••••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -505,9 +476,9 @@
                                         <span class="discount-hero">3 DAYS REFUND</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="#" target="_blank" rel="noopener sponsored">Risk-Free 3-Day Full Money-Back Guarantee on All Plans</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                             <span class="meta-dot">•</span>
@@ -516,7 +487,7 @@
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="NO CODE NEEDED" data-link="#">
-                                        <span class="hidden-code-mask">••••••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -1026,26 +997,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-white mt-16 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800">
-                <a href="/" class="flex items-center gap-3">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps" class="h-8 w-auto">
-                    <span class="font-extrabold text-lg text-white">PlayNewApps</span>
-                </a>
-                <div class="flex items-center gap-6 text-xs text-slate-400">
-                    <a href="/stores" class="hover:text-white transition-colors">All Stores</a>
-                    <a href="/about" class="hover:text-white transition-colors">About Us</a>
-                    <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="/contact" class="hover:text-white transition-colors">Contact</a>
-                </div>
-            </div>
-            <div class="text-center md:text-left space-y-2 text-slate-500 text-[11px] leading-relaxed pt-6">
-                <p>Disclaimer: PlayNewApps is an independent coupon &amp; deal aggregator. We may earn an affiliate commission when users make purchases through our verified promotional links at zero extra cost to the buyer. All trademarks, logos, and brand names belong to their respective owners.</p>
-                <p>&copy; 2026 PlayNewApps. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- Global Search, Copy Code & Accordion Toggle Scripts -->
     <script>

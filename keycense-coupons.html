@@ -415,36 +415,7 @@
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
 
     <!-- Global Top Navigation Header -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16 sm:h-20">
-                <!-- Site Logo -->
-                <a href="/" class="flex items-center gap-3 group">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto">
-                    <span class="font-extrabold text-xl text-slate-900 group-hover:text-purple-600 transition-colors">PlayNewApps</span>
-                </a>
-
-                <!-- Search Bar -->
-                <div class="hidden md:flex flex-1 max-w-md mx-8">
-                    <div class="relative w-full">
-                        <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-                            <span class="material-icons-round text-lg">search</span>
-                        </span>
-                        <input type="text" placeholder="Search verified promo codes &amp; software deals..." class="w-full pl-10 pr-4 py-2 bg-slate-100/80 border border-slate-200/80 rounded-xl text-sm font-medium text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:bg-white transition-all">
-                    </div>
-                </div>
-
-                <!-- Navigation Links -->
-                <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700">
-                    <a href="/" class="hover:text-purple-600 transition-colors">Home</a>
-                    <a href="/stores" class="hover:text-purple-600 transition-colors">Stores</a>
-                    <a href="/products" class="hover:text-purple-600 transition-colors">Products</a>
-                    <a href="/coupon" class="hover:text-purple-600 transition-colors">Coupons</a>
-                    <a href="/reviews" class="hover:text-purple-600 transition-colors">Reviews</a>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Content Container -->
     <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
@@ -467,9 +438,9 @@
                 </div>
                 <!-- Title & Meta -->
                 <div class="flex-1">
-                    <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                    <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="https://www.playnewapps.store/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="https://www.playnewapps.store/category.html?id=pc" class="hover:text-slate-800">Software Deals</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">Keycense Coupons</span> </nav> <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
                         Keycense Coupon Codes &amp; Discount Offers (2026)
-                    </h1>
+                    </h1> </div> </section>
                 </div>
             </div>
         </div>
@@ -494,7 +465,7 @@
                     </div>
 
                     <!-- COUPON CARD 1: Verified Offer AutoDesk -->
-                    <div class="coupon-card">
+                    <article class="coupon-card">
                         <div class="coupon-header-bar">
                             <div class="header-badges">
                                 <span class="badge verified-badge"><span class="material-icons-round">check_circle</span> Verified</span>
@@ -508,17 +479,17 @@
                                 <span class="label">AutoDesk CAD</span>
                             </div>
                             <div class="coupon-info">
-                                <a href="https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/" target="_blank" rel="noopener sponsored" class="deal-title">
+                                <h2 style="margin:0"><a href="https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/" target="_blank" rel="noopener sponsored" class="deal-title">
                                     Exclusive 20% Off AutoDesk 3D Architecture, Revit &amp; CAD Suites
-                                </a>
+                                </a></h2>
                                 <div class="deal-social-proof">
                                     <span class="material-icons-round">thumb_up</span>
                                     <span>99% Success • 2,840 people used today</span>
                                 </div>
                             </div>
                             <div class="coupon-actions">
-                                <button type="button" class="reveal-code-btn pna-show-code" onclick="openCodeModal('verified voucher', '20% Off AutoDesk CAD &amp; Architecture Software', 'https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/')">
-                                    <span class="code-mask">••••••••</span>
+                                <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" class="reveal-code-btn pna-show-code" onclick="openCodeModal('BTS20', '20% Off AutoDesk CAD &amp; Architecture Software', 'https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/')">
+                                    
                                     <span class="btn-action-label">Show Code</span>
                                 </button>
                             </div>
@@ -533,10 +504,10 @@
                         <div class="details-content">
                             Save an extra 20% on eligible AutoDesk 2D drafting, 3D modeling, and BIM software licenses. Genuine product credentials delivered instantly via email with official download links. Enter promo code at checkout.
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 2: Verified Offer Office 2021 -->
-                    <div class="coupon-card">
+                    <article class="coupon-card">
                         <div class="coupon-header-bar">
                             <div class="header-badges">
                                 <span class="badge verified-badge"><span class="material-icons-round">check_circle</span> Verified</span>
@@ -550,17 +521,17 @@
                                 <span class="label">Office 2021</span>
                             </div>
                             <div class="coupon-info">
-                                <a href="https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/" target="_blank" rel="noopener sponsored" class="deal-title">
+                                <h2 style="margin:0"><a href="https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/" target="_blank" rel="noopener sponsored" class="deal-title">
                                     Extra 15% Off Microsoft Office 2021 Professional Plus Lifetime License
-                                </a>
+                                </a></h2>
                                 <div class="deal-social-proof">
                                     <span class="material-icons-round">thumb_up</span>
                                     <span>100% Success • 4,120 people used today</span>
                                 </div>
                             </div>
                             <div class="coupon-actions">
-                                <button type="button" class="reveal-code-btn pna-show-code" onclick="openCodeModal('verified voucher', '15% Off Microsoft Office 2021 Professional Plus', 'https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/')">
-                                    <span class="code-mask">••••••••</span>
+                                <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" class="reveal-code-btn pna-show-code" onclick="openCodeModal('BTS15', '15% Off Microsoft Office 2021 Professional Plus', 'https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/')">
+                                    
                                     <span class="btn-action-label">Show Code</span>
                                 </button>
                             </div>
@@ -575,10 +546,10 @@
                         <div class="details-content">
                             Get 15% off perpetual Microsoft Office 2021 Professional Plus licenses for Windows PC. Includes complete Word, Excel, PowerPoint, Outlook, Access, and Publisher suites without recurring subscription fees.
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 3: Verified Offer AnyViewer -->
-                    <div class="coupon-card">
+                    <article class="coupon-card">
                         <div class="coupon-header-bar">
                             <div class="header-badges">
                                 <span class="badge verified-badge"><span class="material-icons-round">check_circle</span> Verified</span>
@@ -592,17 +563,17 @@
                                 <span class="label">AnyViewer</span>
                             </div>
                             <div class="coupon-info">
-                                <a href="https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/" target="_blank" rel="noopener sponsored" class="deal-title">
+                                <h2 style="margin:0"><a href="https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/" target="_blank" rel="noopener sponsored" class="deal-title">
                                     10% Off AnyViewer Pro Remote Desktop Management Software
-                                </a>
+                                </a></h2>
                                 <div class="deal-social-proof">
                                     <span class="material-icons-round">thumb_up</span>
                                     <span>98% Success • 1,350 people used today</span>
                                 </div>
                             </div>
                             <div class="coupon-actions">
-                                <button type="button" class="reveal-code-btn pna-show-code" onclick="openCodeModal('verified voucher', '10% Off AnyViewer Pro Remote Desktop Software', 'https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/')">
-                                    <span class="code-mask">••••••••</span>
+                                <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" class="reveal-code-btn pna-show-code" onclick="openCodeModal('BTS10', '10% Off AnyViewer Pro Remote Desktop Software', 'https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/')">
+                                    
                                     <span class="btn-action-label">Show Code</span>
                                 </button>
                             </div>
@@ -617,10 +588,10 @@
                         <div class="details-content">
                             Save 10% on AnyViewer Pro plans. Enjoy high-speed remote screen mirroring, multi-monitor switching, encrypted remote file transfers, and unattended access for IT administrators and remote workers.
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 4: Windows 11 Pro -->
-                    <div class="coupon-card">
+                    <article class="coupon-card">
                         <div class="coupon-header-bar">
                             <div class="header-badges">
                                 <span class="badge verified-badge"><span class="material-icons-round">check_circle</span> Verified</span>
@@ -634,9 +605,9 @@
                                 <span class="label">Win 11 Pro</span>
                             </div>
                             <div class="coupon-info">
-                                <a href="https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/" target="_blank" rel="noopener sponsored" class="deal-title">
+                                <h2 style="margin:0"><a href="https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/" target="_blank" rel="noopener sponsored" class="deal-title">
                                     Up to 80% Off Genuine Microsoft Windows 11 Professional Lifetime Key
-                                </a>
+                                </a></h2>
                                 <div class="deal-social-proof">
                                     <span class="material-icons-round">thumb_up</span>
                                     <span>100% Success • 6,540 people used today</span>
@@ -659,10 +630,10 @@
                         <div class="details-content">
                             Direct discount applied automatically. Receive genuine 25-character digital product keys for Windows 11 Pro (32/64-bit) with BitLocker security, Sandbox isolation, and lifetime Microsoft updates.
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 5: Gift Cards Up to 25% Off -->
-                    <div class="coupon-card">
+                    <article class="coupon-card">
                         <div class="coupon-header-bar">
                             <div class="header-badges">
                                 <span class="badge verified-badge"><span class="material-icons-round">check_circle</span> Verified</span>
@@ -676,9 +647,9 @@
                                 <span class="label">Gift Cards</span>
                             </div>
                             <div class="coupon-info">
-                                <a href="https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/" target="_blank" rel="noopener sponsored" class="deal-title">
+                                <h2 style="margin:0"><a href="https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/" target="_blank" rel="noopener sponsored" class="deal-title">
                                     Save up to 25% on PlayStation, Xbox, Steam &amp; Nintendo Gift Cards
-                                </a>
+                                </a></h2>
                                 <div class="deal-social-proof">
                                     <span class="material-icons-round">thumb_up</span>
                                     <span>99% Success • 3,210 people used today</span>
@@ -701,10 +672,10 @@
                         <div class="details-content">
                             Discounts applied at checkout across PlayStation Store, Xbox Game Pass, Steam Wallet, and Nintendo eShop prepaid balance cards. Instant email delivery with zero service fees.
                         </div>
-                    </div>
+                    </article>
 
                     <!-- COUPON CARD 6: Antivirus & Cybersecurity -->
-                    <div class="coupon-card">
+                    <article class="coupon-card">
                         <div class="coupon-header-bar">
                             <div class="header-badges">
                                 <span class="badge verified-badge"><span class="material-icons-round">check_circle</span> Verified</span>
@@ -718,9 +689,9 @@
                                 <span class="label">Antivirus</span>
                             </div>
                             <div class="coupon-info">
-                                <a href="https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/" target="_blank" rel="noopener sponsored" class="deal-title">
+                                <h2 style="margin:0"><a href="https://grfpr.com/g/m5f0y6qe4xb68b264a765fef375e5b/" target="_blank" rel="noopener sponsored" class="deal-title">
                                     Up to 65% Off Kaspersky, Bitdefender &amp; Norton 360 Cybersecurity
-                                </a>
+                                </a></h2>
                                 <div class="deal-social-proof">
                                     <span class="material-icons-round">thumb_up</span>
                                     <span>100% Success • 2,190 people used today</span>
@@ -743,7 +714,7 @@
                         <div class="details-content">
                             Safeguard all your Windows, macOS, Android, and iOS devices with top-tier cybersecurity suites. Real-time ransomware defense, banking protection, and high-speed VPN included.
                         </div>
-                    </div>
+                    </article>
 
                 </section>
 
@@ -911,21 +882,21 @@
                                     <td class="font-bold text-slate-900">Microsoft Office 2021 Professional Plus</td>
                                     <td class="text-slate-500 line-through">$439.99</td>
                                     <td class="font-semibold text-slate-700">$59.90</td>
-                                    <td class="font-bold text-purple-600">$50.91 (Code: verified voucher)</td>
+                                    <td class="font-bold text-purple-600">$50.91 (Code: BTS15)</td>
                                     <td class="font-extrabold text-emerald-600">Save 88% ($389.08)</td>
                                 </tr>
                                 <tr>
                                     <td class="font-bold text-slate-900">AutoDesk Architectural CAD Software</td>
                                     <td class="text-slate-500 line-through">$1,975.00/yr</td>
                                     <td class="font-semibold text-slate-700">Wholesale Tier</td>
-                                    <td class="font-bold text-purple-600">Extra 20% OFF (Code: verified voucher)</td>
+                                    <td class="font-bold text-purple-600">Extra 20% OFF (Code: BTS20)</td>
                                     <td class="font-extrabold text-emerald-600">Save Hundreds</td>
                                 </tr>
                                 <tr>
                                     <td class="font-bold text-slate-900">AnyViewer Pro Remote Access (1 Year)</td>
                                     <td class="text-slate-500 line-through">$118.80/yr</td>
                                     <td class="font-semibold text-slate-700">$42.90</td>
-                                    <td class="font-bold text-purple-600">$38.61 (Code: verified voucher)</td>
+                                    <td class="font-bold text-purple-600">$38.61 (Code: BTS10)</td>
                                     <td class="font-extrabold text-emerald-600">Save 67% ($80.19)</td>
                                 </tr>
                                 <tr>
@@ -1019,7 +990,7 @@
                         <div class="border border-slate-200 rounded-xl p-4.5 bg-slate-50">
                             <h3 class="font-extrabold text-slate-900 text-sm sm:text-base mb-2">Where can I find Keycense deals?</h3>
                             <p class="text-slate-600 leading-relaxed">
-                                You can find all active, human-verified Keycense discount codes, bundle offers, and seasonal sales directly on this PlayNewApps store page, updated daily with verified coupons like verified voucher (20% off AutoDesk), verified voucher (15% off Office 2021 Pro Plus), and verified voucher (10% off AnyViewer Pro).
+                                You can find all active, human-verified Keycense discount codes, bundle offers, and seasonal sales directly on this PlayNewApps store page, updated daily with verified coupons like BTS20 (20% off AutoDesk), BTS20 (15% off Office 2021 Pro Plus), and BTS10 (10% off AnyViewer Pro).
                             </p>
                         </div>
 
@@ -1148,63 +1119,7 @@
     </main>
 
     <!-- Global Footer -->
-    <footer class="footer bg-slate-900 text-slate-400 mt-16 pt-12 pb-8 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                
-                <!-- Col 1: Brand -->
-                <div class="space-y-4">
-                    <a href="/" class="flex items-center gap-3 text-white font-black text-xl">
-                        <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto">
-                        <span>PlayNewApps</span>
-                    </a>
-                    <p class="text-xs text-slate-400 leading-relaxed">
-                        PlayNewApps is your trusted editorial platform for verified software discount codes, tech product reviews, and digital coupon savings.
-                    </p>
-                </div>
-
-                <!-- Col 2: Categories -->
-                <div>
-                    <h4 class="text-white text-xs font-black uppercase tracking-wider mb-3">Categories</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="/category?id=pc" class="hover:text-white transition-colors">PC Software</a></li>
-                        <li><a href="/category?id=productivity" class="hover:text-white transition-colors">Productivity Apps</a></li>
-                        <li><a href="/category?id=games" class="hover:text-white transition-colors">Games &amp; Consoles</a></li>
-                        <li><a href="/category?id=android" class="hover:text-white transition-colors">Android Utilities</a></li>
-                    </ul>
-                </div>
-
-                <!-- Col 3: Popular Stores -->
-                <div>
-                    <h4 class="text-white text-xs font-black uppercase tracking-wider mb-3">Top Stores</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="/keycense-coupons" class="text-purple-400 hover:text-white font-bold transition-colors">Keycense Deals</a></li>
-                        <li><a href="/aomei-coupons" class="hover:text-white transition-colors">AOMEI Software</a></li>
-                        <li><a href="/f-secure-coupons" class="hover:text-white transition-colors">F-Secure Antivirus</a></li>
-                        <li><a href="/lenovo-coupons" class="hover:text-white transition-colors">Lenovo Official</a></li>
-                    </ul>
-                </div>
-
-                <!-- Col 4: Legal & Contact -->
-                <div>
-                    <h4 class="text-white text-xs font-black uppercase tracking-wider mb-3">Information</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="/about" class="hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="/affiliate" class="hover:text-white transition-colors">Affiliate Disclosure</a></li>
-                        <li><a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a></li>
-                        <li><a href="/terms" class="hover:text-white transition-colors">Terms of Service</a></li>
-                        <li><a href="/contact" class="hover:text-white transition-colors">Contact Editorial Team</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
-                <p>&copy; 2026 PlayNewApps. All rights reserved.</p>
-                <p class="mt-2 sm:mt-0">All trademarks and logos belong to their respective owners.</p>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- INTERACTIVE CODE COPY MODAL -->
     <div id="code-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">

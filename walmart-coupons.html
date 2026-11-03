@@ -170,45 +170,13 @@
 <body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
 
     <!-- Header / Navbar -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Logo -->
-                <a href="/" class="flex items-center gap-3 group">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto">
-                    <span class="font-extrabold text-xl text-slate-900 group-hover:text-blue-600 transition-colors">PlayNewApps</span>
-                </a>
-
-                <!-- Navigation -->
-                <nav class="hidden md:flex items-center gap-6">
-                    <a href="/stores" class="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors">All Stores</a>
-                    <a href="/category?id=productivity" class="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors">Productivity Deals</a>
-                    <a href="/category?id=games" class="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors">Gaming Tech</a>
-                    <a href="/reviews" class="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors">Software Reviews</a>
-                </nav>
-
-                <!-- Action Button -->
-                <div class="flex items-center gap-3">
-                    <a href="https://bednari.com/g/4jg2ecwjgpb68b264a76bef27d4341/" target="_blank" rel="noopener sponsored" class="bg-[#0071DC] hover:bg-[#005bb5] text-white font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-xs transition-all flex items-center gap-1.5">
-                        <span>Shop at Walmart</span>
-                        <span class="material-icons-round text-base">open_in_new</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Container -->
     <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-5">
         
         <!-- Breadcrumbs -->
-        <nav class="flex items-center gap-2 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-slate-800">Home</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <a href="/stores" class="hover:text-slate-800">Stores</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <span class="text-slate-900 font-semibold">Walmart</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">Walmart</span> </nav>
 
         <!-- STRICT MANDATE COMPLIANT HEADER: Brand Logo Box + H1 Title ONLY -->
         <div class="bg-white rounded-xl border border-slate-200 p-4 sm:p-5 shadow-sm mb-6">
@@ -219,7 +187,7 @@
                 </div>
                 <!-- Store H1 Title -->
                 <div class="min-w-0">
-                    <h1 class="text-lg sm:text-2xl font-black text-slate-900 tracking-tight leading-tight">Walmart Coupon Codes & Discount Offers (2026)</h1>
+                    <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">Walmart Coupon Codes & Discount Offers (2026)</h1> </div> </section>
                 </div>
             </div>
         </div>
@@ -244,7 +212,7 @@
                     <div class="space-y-4">
 
                         <!-- Deal Card 1: $20 Off First 3 Online Grocery Orders of $75+ -->
-                        <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-[#0071DC]">
+                        <article class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-[#0071DC]">
                             <div class="flex items-center justify-between pb-2 mb-3 border-b border-slate-100">
                                 <div class="flex items-center gap-2">
                                     <span class="inline-flex items-center gap-1 text-[11px] font-extrabold bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-md uppercase tracking-wide">
@@ -261,9 +229,9 @@
                                         <span class="text-[10px] font-bold uppercase mt-0.5">OFF</span>
                                     </div>
                                     <div class="min-w-0">
-                                        <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">
+                                        <h2 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">
                                             <a href="https://bednari.com/g/4jg2ecwjgpb68b264a76bef27d4341/" target="_blank" rel="noopener sponsored" class="hover:text-[#0071DC] transition-colors">$20 Off First 3 Online Grocery Orders of $75+</a>
-                                        </h3>
+                                        </h2>
                                         <p class="text-xs text-slate-600 mt-1">Save $20 on each of your first three online grocery pickup or home delivery orders totaling $75 or more. Valid on produce, pantry, and essentials.</p>
                                         <div class="flex items-center gap-2 mt-2 text-[11px] text-slate-500 font-medium">
                                             <span class="inline-flex items-center text-emerald-600 font-bold gap-1">
@@ -275,10 +243,10 @@
                                     </div>
                                 </div>
                                 <div id="code-box-1" class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
-                                    <button type="button" onclick="handleShowCode('TRIPLE20', 'https://bednari.com/g/4jg2ecwjgpb68b264a76bef27d4341/', 'code-box-1')" class="w-full sm:w-auto px-5 py-2.5 bg-[#0071DC] hover:bg-[#005bb5] text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer pna-show-code">
+                                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="handleShowCode('TRIPLE20', 'https://bednari.com/g/4jg2ecwjgpb68b264a76bef27d4341/', 'code-box-1')" class="w-full sm:w-auto px-5 py-2.5 bg-[#0071DC] hover:bg-[#005bb5] text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer pna-show-code">
                                         <span class="material-icons-round text-sm">content_copy</span>
                                         <span>SHOW CODE</span>
-                                        <span class="bg-[#005bb5] text-blue-100 text-[10px] px-1.5 py-0.5 rounded font-mono font-bold tracking-wider">••••••••</span>
+                                        
                                     </button>
                                 </div>
                             </div>
@@ -297,10 +265,10 @@
                                     <li>Applicable to both curbside pickup and contactless doorstep delivery.</li>
                                 </ul>
                             </div>
-                        </div>
+                        </article>
 
                         <!-- Deal Card 2: Up to 60% Off 4K OLED Smart TVs, Laptops & Tech Rollbacks -->
-                        <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-[#FFC220]">
+                        <article class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-[#FFC220]">
                             <div class="flex items-center justify-between pb-2 mb-3 border-b border-slate-100">
                                 <div class="flex items-center gap-2">
                                     <span class="inline-flex items-center gap-1 text-[11px] font-extrabold bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-md uppercase tracking-wide">
@@ -317,9 +285,9 @@
                                         <span class="text-[10px] font-bold uppercase mt-0.5">OFF</span>
                                     </div>
                                     <div class="min-w-0">
-                                        <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">
+                                        <h2 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">
                                             <a href="https://bednari.com/g/4jg2ecwjgpb68b264a76bef27d4341/" target="_blank" rel="noopener sponsored" class="hover:text-[#0071DC] transition-colors">Up to 60% Off 4K OLED Smart TVs, Laptops & Tech Rollbacks</a>
-                                        </h3>
+                                        </h2>
                                         <p class="text-xs text-slate-600 mt-1">Massive price drops on Samsung, LG, TCL 4K Smart TVs, Apple iPads, HP laptops, Sony headphones, and smart home tech.</p>
                                         <div class="flex items-center gap-2 mt-2 text-[11px] text-slate-500 font-medium">
                                             <span class="inline-flex items-center text-emerald-600 font-bold gap-1">
@@ -352,7 +320,7 @@
                                     <li>Limited inventory available per region; prices vary by store warehouse fulfillment.</li>
                                 </ul>
                             </div>
-                        </div>
+                        </article>
 
                         <!-- Deal Card 3: 30-Day Free Trial of Walmart+ -->
                         <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-purple-600">
@@ -410,7 +378,7 @@
                         </div>
 
                         <!-- Deal Card 4: Up to 50% Off Home Essentials, Kitchen Cookware & Furniture -->
-                        <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-[#0071DC]">
+                        <article class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-[#0071DC]">
                             <div class="flex items-center justify-between pb-2 mb-3 border-b border-slate-100">
                                 <div class="flex items-center gap-2">
                                     <span class="inline-flex items-center gap-1 text-[11px] font-extrabold bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-md uppercase tracking-wide">
@@ -427,9 +395,9 @@
                                         <span class="text-[10px] font-bold uppercase mt-0.5">OFF</span>
                                     </div>
                                     <div class="min-w-0">
-                                        <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">
+                                        <h2 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">
                                             <a href="https://bednari.com/g/4jg2ecwjgpb68b264a76bef27d4341/" target="_blank" rel="noopener sponsored" class="hover:text-[#0071DC] transition-colors">Up to 50% Off Home Essentials, Kitchen Cookware & Furniture</a>
-                                        </h3>
+                                        </h2>
                                         <p class="text-xs text-slate-600 mt-1">Save on Ninja air fryers, Keurig coffee makers, Shark robot vacuums, Beautiful by Drew Barrymore appliances, and patio furniture.</p>
                                         <div class="flex items-center gap-2 mt-2 text-[11px] text-slate-500 font-medium">
                                             <span class="inline-flex items-center text-emerald-600 font-bold gap-1">
@@ -441,10 +409,10 @@
                                     </div>
                                 </div>
                                 <div id="code-box-4" class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
-                                    <button type="button" onclick="handleShowCode('HOMESAVE50', 'https://bednari.com/g/4jg2ecwjgpb68b264a76bef27d4341/', 'code-box-4')" class="w-full sm:w-auto px-5 py-2.5 bg-[#0071DC] hover:bg-[#005bb5] text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer pna-show-code">
+                                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="handleShowCode('HOMESAVE50', 'https://bednari.com/g/4jg2ecwjgpb68b264a76bef27d4341/', 'code-box-4')" class="w-full sm:w-auto px-5 py-2.5 bg-[#0071DC] hover:bg-[#005bb5] text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer pna-show-code">
                                         <span class="material-icons-round text-sm">content_copy</span>
                                         <span>SHOW CODE</span>
-                                        <span class="bg-[#005bb5] text-blue-100 text-[10px] px-1.5 py-0.5 rounded font-mono font-bold tracking-wider">••••••••</span>
+                                        
                                     </button>
                                 </div>
                             </div>
@@ -462,7 +430,7 @@
                                     <li>Discounts apply to items sold and shipped directly by Walmart.</li>
                                 </ul>
                             </div>
-                        </div>
+                        </article>
 
                         <!-- Deal Card 5: Up to $100 Off Set of 4 Tires + Free Lifetime Rotation -->
                         <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-sm border-l-4 border-l-slate-700">
@@ -995,26 +963,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 text-xs py-10 mt-12 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-4 border-b border-slate-800 pb-6">
-                <a href="/" class="flex items-center gap-2">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-7 w-auto brightness-200">
-                    <span class="font-extrabold text-base text-white">PlayNewApps</span>
-                </a>
-                <div class="flex flex-wrap items-center gap-6 text-xs">
-                    <a href="/stores" class="hover:text-white transition-colors">All Stores</a>
-                    <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a>
-                    <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="/terms" class="hover:text-white transition-colors">Terms of Service</a>
-                    <a href="/contact" class="hover:text-white transition-colors">Contact Us</a>
-                </div>
-            </div>
-            <div class="text-center text-slate-500 text-[11px] leading-relaxed">
-                <p>&copy; 2026 PlayNewApps. All rights reserved. Walmart and the Walmart spark logo are registered trademarks of Walmart Inc. We may earn an affiliate commission when you click coupon codes or links on this page at no extra cost to you.</p>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- Interactive Scripts: Show Code & Accordion Details -->
     <script>

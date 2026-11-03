@@ -158,75 +158,24 @@
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <header class="header" id="header">
-        <div class="container header-container">
-            <a href="/" class="logo" aria-label="PlayNewApps Home">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
-                <span>PlayNewApps</span>
-            </a>
-            
-            <nav class="nav" id="nav" aria-label="Main Navigation">
-                <ul class="nav-list">
-                    <li><a href="/" class="nav-link">Home</a></li>
-                    <li class="nav-item dropdown" id="stores-dropdown-wrapper">
-                        <a href="/stores" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-                            Stores <span class="material-icons-round dropdown-icon" aria-hidden="true">expand_more</span>
-                        </a>
-                        <div class="dropdown-menu" id="stores-dropdown-menu" aria-label="Stores Menu">
-                            <div class="dropdown-loading">Loading stores...</div>
-                        </div>
-                    </li>
-                    <li><a href="/products" class="nav-link">Products</a></li>
-                    <li><a href="/coupon" class="nav-link">Coupons</a></li>
-                    <li><a href="/reviews" class="nav-link">Reviews</a></li>
-                    <li><a href="/blog" class="nav-link active" aria-current="page">Blog</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-actions">
-                <a href="/#search-form" class="icon-btn" aria-label="Search">
-                    <span class="material-icons-round" aria-hidden="true">search</span>
-                </a>
-                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
-                    <span class="material-icons-round" aria-hidden="true">dark_mode</span>
-                </button>
-                <button id="mobile-menu-btn" class="icon-btn mobile-only" aria-label="Open Menu" aria-expanded="false" aria-controls="nav">
-                    <span class="material-icons-round" aria-hidden="true">menu</span>
-                </button>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <main class="main-content" id="main-content">
         <!-- Breadcrumbs Navigation -->
-        <nav class="container breadcrumbs" aria-label="Breadcrumb" style="padding-top: 1rem; padding-bottom: 0.5rem;">
-            <ol style="margin: 0; padding: 0;">
-                <li><a href="/">Home</a></li>
-                <li><a href="/blog">Blog &amp; Guides</a></li>
-                <li aria-current="page">APK Files Coupons</li>
-            </ol>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/blog" class="hover:text-slate-800">Blog &amp; Guides</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">APK Files Coupons</span> </nav>
 
         <!-- Article Container -->
         <article class="container" style="max-width: 900px; margin: 0 auto; padding-top: 1.5rem; padding-bottom: 4rem;">
             
             <!-- Article Header Card -->
-            <header style="margin-bottom: 2.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 2rem;">
-                <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(37, 99, 235, 0.08); color: var(--primary-color); padding: 0.35rem 0.85rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">
+            <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+                    APK Files Coupons: How to Find the Best Coupon Codes &amp; Deals
+                </h1> </div> </section> <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(37, 99, 235, 0.08); color: var(--primary-color); padding: 0.35rem 0.85rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">
                     <span class="material-icons-round" style="font-size: 1.1rem;">local_offer</span>
                     <span>Shopping Guide &bull; Verified Digital Savings</span>
-                </div>
-
-                <h1 style="font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 800; line-height: 1.25; color: var(--text-primary); margin-bottom: 1rem;">
-                    APK Files Coupons: How to Find the Best Coupon Codes &amp; Deals
-                </h1>
-
-                <p style="font-size: 1.15rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                </div> <p style="font-size: 1.15rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 1.5rem;">
                     A comprehensive editorial handbook on finding legitimate APK Files coupon codes, navigating mobile software promotional discounts, verifying active vouchers, and avoiding expired offers across the Android ecosystem.
-                </p>
-
-                <!-- Byline & Metadata -->
-                <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; font-size: 0.9rem; color: var(--text-secondary); padding-top: 1rem; border-top: 1px dashed var(--border-color);">
+                </p> <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; font-size: 0.9rem; color: var(--text-secondary); padding-top: 1rem; border-top: 1px dashed var(--border-color);">
                     <div style="display: flex; align-items: center; gap: 0.75rem;">
                         <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--primary-color); color: #ffffff; display: flex; align-items: center; justify-content: center; font-weight: 700;">
                             PA
@@ -247,10 +196,7 @@
                             <span>18 Min Read</span>
                         </span>
                     </div>
-                </div>
-
-                <!-- Editorial Safety & Verification Notice -->
-                <div style="margin-top: 1.5rem; background: var(--bg-color); border: 1px solid var(--border-color); border-left: 4px solid var(--primary-color); border-radius: 8px; padding: 1rem 1.25rem; font-size: 0.925rem; line-height: 1.55;">
+                </div> <div style="margin-top: 1.5rem; background: var(--bg-color); border: 1px solid var(--border-color); border-left: 4px solid var(--primary-color); border-radius: 8px; padding: 1rem 1.25rem; font-size: 0.925rem; line-height: 1.55;">
                     <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.25rem;">
                         <span class="material-icons-round" style="color: var(--primary-color); font-size: 1.25rem;">verified_user</span>
                         <span>PlayNewApps Transparency &amp; Verified Savings Standard</span>
@@ -259,7 +205,6 @@
                         PlayNewApps strictly promotes verified commercial discounts, official merchant vouchers, and legal digital promotions. We never distribute modified binaries, cracked files, or unauthorized packages. All deals referenced on our platform route shoppers directly to official publishers, authorized marketplaces, and verified checkout portals.
                     </p>
                 </div>
-            </header>
 
             <!-- Featured Hero Banner (Official Visual) -->
             <div style="margin-bottom: 2.5rem; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--border-color); background: #0f172a;">
@@ -829,46 +774,7 @@
         </article>
     </main>
 
-    <footer class="footer reveal active">
-        <div class="container footer-grid">
-            <div class="footer-col brand-col">
-                <a href="/" class="logo footer-logo" aria-label="PlayNewApps Home">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32">
-                    <span>PlayNewApps</span>
-                </a>
-                <p class="footer-desc">Your trusted source for premium app reviews, tech guides, software deals, and exclusive coupons worldwide.</p>
-                <div class="social-icons" aria-label="Social Media Links">
-                    <a href="https://facebook.com/playnewapps" target="_blank" rel="noopener" aria-label="Facebook"><span class="material-icons-round" aria-hidden="true">facebook</span></a>
-                    <a href="https://twitter.com/playnewapps" target="_blank" rel="noopener" aria-label="Twitter"><span class="material-icons-round" aria-hidden="true">flutter_dash</span></a>
-                    <a href="https://youtube.com/playnewapps" target="_blank" rel="noopener" aria-label="YouTube"><span class="material-icons-round" aria-hidden="true">play_circle</span></a>
-                </div>
-            </div>
-            
-            <nav class="footer-col" aria-label="Categories">
-                <h3 class="footer-heading">Categories</h3>
-                <ul class="footer-links">
-                    <li><a href="/category?id=android">Android Apps</a></li>
-                    <li><a href="/category?id=ios">iOS Apps</a></li>
-                    <li><a href="/category?id=pc">PC Software</a></li>
-                    <li><a href="/category?id=games">Games</a></li>
-                </ul>
-            </nav>
-
-            <nav class="footer-col" aria-label="Quick Links">
-                <h3 class="footer-heading">Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="/about">About Us</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/blog">Blog &amp; Guides</a></li>
-                    <li><a href="/privacy">Privacy Policy</a></li>
-                    <li><a href="/affiliate">Affiliate Disclosure</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="container footer-bottom">
-            <p>&copy; <time id="current-year"></time> PlayNewApps. All rights reserved.</p>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <div id="toast-container" class="toast-container" aria-live="polite"></div>
 

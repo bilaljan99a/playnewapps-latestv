@@ -230,61 +230,16 @@
 <body class="bg-slate-50 text-slate-900 font-sans antialiased min-h-screen flex flex-col">
 
     <!-- Header Navigation -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg" aria-label="PlayNewApps Home">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="w-9 h-9 sm:w-10 sm:h-10 transition-transform group-hover:scale-105" width="40" height="40" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
-                <div>
-                    <span class="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight block">PlayNewApps</span>
-                    <span class="text-[10px] sm:text-xs font-semibold text-slate-500 block -mt-1 uppercase tracking-wider">Verified Software Deals</span>
-                </div>
-            </a>
-            
-            <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700">
-                <a href="/" class="hover:text-purple-600 transition-colors">Home</a>
-                <a href="/stores" class="hover:text-purple-600 transition-colors">Stores</a>
-                <a href="/products" class="hover:text-purple-600 transition-colors">Products</a>
-                <a href="/coupon" class="hover:text-purple-600 transition-colors">Coupons</a>
-                <a href="/reviews" class="hover:text-purple-600 transition-colors">Reviews</a>
-            </nav>
-
-            <div class="flex items-center gap-3">
-                <a href="/#search-form" class="inline-flex items-center justify-center w-9 h-9 rounded-xl text-slate-600 hover:text-purple-600 hover:bg-slate-100 transition-colors" aria-label="Search">
-                    <span class="material-icons-round text-lg">search</span>
-                </a>
-                <a href="https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/" target="_blank" rel="nofollow noopener noreferrer" class="hidden sm:inline-flex items-center justify-center gap-1.5 px-4 py-2 text-xs font-bold text-white bg-purple-600 hover:bg-purple-700 rounded-xl transition shadow-sm">
-                    Visit NordPass
-                    <span class="material-icons-round text-sm">open_in_new</span>
-                </a>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Breadcrumb Bar -->
-    <nav class="bg-slate-100 border-b border-slate-200 text-xs text-slate-500 py-2.5 px-4 sm:px-6 lg:px-8" aria-label="Breadcrumb">
-        <div class="max-w-7xl mx-auto flex items-center gap-2 overflow-x-auto whitespace-nowrap">
-            <a href="/" class="hover:text-slate-900 transition flex items-center gap-1">
-                <span class="material-icons-round text-sm">home</span> Home
-            </a>
-            <span class="text-slate-400">/</span>
-            <a href="/stores" class="hover:text-slate-900 transition">Stores</a>
-            <span class="text-slate-400">/</span>
-            <span class="text-slate-800 font-semibold">NordPass Coupons</span>
-        </div>
-    </nav>
+    <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">home Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">NordPass Coupons</span> </nav>
 
     <!-- Main Container -->
     <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-8">
 
         <!-- STRICT RULE: TOP HEADER SECTION (Clean & Minimalist - NO badges, NO rating pills, NO description paragraph) -->
-        <section id="store-header" class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm flex flex-col sm:flex-row items-center sm:items-center gap-6">
-            <div class="w-40 sm:w-52 h-16 sm:h-20 flex-shrink-0 bg-white rounded-xl border border-slate-200 p-3 flex items-center justify-center shadow-xs">
-                <img src="/assets/images/brands/nordpass.svg" alt="NordPass Official Logo" class="max-h-full max-w-full object-contain" width="180" height="48">
-            </div>
-            <div class="text-center sm:text-left flex-1">
-                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold font-display text-slate-900 tracking-tight">NordPass Coupon Codes &amp; Discount Offers (2026)</h1>
-            </div>
-        </section>
+        <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="w-40 sm:w-52 h-16 sm:h-20 bg-white rounded-xl p-3 flex items-center justify-center border border-slate-200 flex-shrink-0 shadow-sm"> <img src="/assets/images/brands/nordpass.svg" alt="NordPass Official Logo" class="max-h-full max-w-full object-contain"> </div> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">NordPass Coupon Codes &amp; Discount Offers (2026)</h1> </div> </section>
 
         <!-- COUPONS SECTION (Immediate Above-The-Fold Visibility) -->
         <section id="verified-coupons" class="space-y-4">
@@ -310,7 +265,7 @@
             <div class="space-y-4">
 
                 <!-- Coupon Card 1: 56% OFF 2-Year Plan -->
-                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
                     <div class="p-4 sm:p-6 flex flex-col md:flex-row items-start md:items-center gap-4 sm:gap-6">
                         <!-- Left Hero Badge -->
                         <div class="w-full md:w-36 flex-shrink-0 flex md:flex-col items-center justify-between md:justify-center p-3 sm:p-4 bg-purple-50 border border-purple-100 rounded-xl text-purple-700 text-center">
@@ -327,11 +282,11 @@
                                 <span class="text-[11px] font-bold text-purple-700 bg-purple-50 border border-purple-200 px-2 py-0.5 rounded-md uppercase">SALE</span>
                                 <span class="text-xs text-slate-500 font-medium">Just $1.49/mo</span>
                             </div>
-                            <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition">
+                            <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition">
                                 <a href="https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/" target="_blank" rel="nofollow noopener noreferrer" onclick="openCouponModal('nordpass-2yr-premium-56', 'SAVE56PRO', 'https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/', 'NordPass Premium 2-Year Plan — Save 56% + 3 Months Free ($1.49/mo)')">
                                     NordPass Premium 2-Year Plan — Save 56% + 3 Months Free ($1.49/mo)
                                 </a>
-                            </h3>
+                            </h2>
                             <p class="text-xs sm:text-sm text-slate-600 line-clamp-2">
                                 Unlock 56% off the NordPass Premium 2-year subscription plus receive 3 extra months free ($1.49/month effective rate). Includes unlimited password storage, biometrics, passkeys, and dark web data breach scanning.
                             </p>
@@ -344,8 +299,8 @@
 
                         <!-- Right Action Box -->
                         <div class="w-full md:w-auto flex-shrink-0 flex flex-col items-center md:items-end gap-2">
-                            <button onclick="openCouponModal('nordpass-2yr-premium-56', 'SAVE56PRO', 'https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/', 'NordPass Premium 2-Year Plan — Save 56% + 3 Months Free ($1.49/mo)')" class="w-full sm:w-44 h-12 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white font-bold rounded-xl flex items-center justify-between px-4 transition shadow-sm group">
-                                <span class="coupon-mask text-xs">••••••••</span>
+                            <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="openCouponModal('nordpass-2yr-premium-56', 'SAVE56PRO', 'https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/', 'NordPass Premium 2-Year Plan — Save 56% + 3 Months Free ($1.49/mo)')" class="w-full sm:w-44 h-12 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white font-bold rounded-xl flex items-center justify-between px-4 transition shadow-sm group">
+                                
                                 <span class="text-xs uppercase tracking-wider font-extrabold bg-white/20 px-2.5 py-1 rounded-md group-hover:bg-white/30 transition">Show Code</span>
                             </button>
                             <span class="text-[11px] text-slate-600 font-semibold flex items-center gap-1"><span class="material-icons-round text-xs">schedule</span> Expires Dec 31, 2026</span>
@@ -362,10 +317,10 @@
                     <div id="details-1" class="hidden px-4 sm:px-6 py-3 bg-white border-t border-slate-100 text-xs text-slate-600 space-y-1.5">
                         <p><strong>Offer Terms:</strong> Valid for new and renewing customers opting for the 2-year subscription tier. Includes 3 additional free months for a total of 27 months of service. Full zero-knowledge architecture, unlimited synchronized devices, biometric unlock, and 30-day risk-free refund policy.</p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Coupon Card 2: 53% OFF Family Plan -->
-                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
                     <div class="p-4 sm:p-6 flex flex-col md:flex-row items-start md:items-center gap-4 sm:gap-6">
                         <!-- Left Hero Badge -->
                         <div class="w-full md:w-36 flex-shrink-0 flex md:flex-col items-center justify-between md:justify-center p-3 sm:p-4 bg-purple-50 border border-purple-100 rounded-xl text-purple-700 text-center">
@@ -382,11 +337,11 @@
                                 <span class="text-[11px] font-bold text-purple-700 bg-purple-50 border border-purple-200 px-2 py-0.5 rounded-md uppercase">CODE</span>
                                 <span class="text-xs text-slate-500 font-medium">Under $0.47/user/mo</span>
                             </div>
-                            <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition">
+                            <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition">
                                 <a href="https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/" target="_blank" rel="nofollow noopener noreferrer" onclick="openCouponModal('nordpass-family-2yr-53', 'FAMILY53', 'https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/', 'NordPass Family 2-Year Plan — Save 53% for Up to 6 Independent Vaults ($2.79/mo)')">
                                     NordPass Family 2-Year Plan — Save 53% for Up to 6 Independent Vaults ($2.79/mo)
                                 </a>
-                            </h3>
+                            </h2>
                             <p class="text-xs sm:text-sm text-slate-600 line-clamp-2">
                                 Protect your entire household with up to 6 separate, completely private user accounts for only $2.79 per month total (under $0.47 per user). Each member gets private encrypted vaults and passkeys.
                             </p>
@@ -399,8 +354,8 @@
 
                         <!-- Right Action Box -->
                         <div class="w-full md:w-auto flex-shrink-0 flex flex-col items-center md:items-end gap-2">
-                            <button onclick="openCouponModal('nordpass-family-2yr-53', 'FAMILY53', 'https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/', 'NordPass Family 2-Year Plan — Save 53% for Up to 6 Independent Vaults ($2.79/mo)')" class="w-full sm:w-44 h-12 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white font-bold rounded-xl flex items-center justify-between px-4 transition shadow-sm group">
-                                <span class="coupon-mask text-xs">••••••••</span>
+                            <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="openCouponModal('nordpass-family-2yr-53', 'FAMILY53', 'https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/', 'NordPass Family 2-Year Plan — Save 53% for Up to 6 Independent Vaults ($2.79/mo)')" class="w-full sm:w-44 h-12 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white font-bold rounded-xl flex items-center justify-between px-4 transition shadow-sm group">
+                                
                                 <span class="text-xs uppercase tracking-wider font-extrabold bg-white/20 px-2.5 py-1 rounded-md group-hover:bg-white/30 transition">Show Code</span>
                             </button>
                             <span class="text-[11px] text-slate-600 font-semibold flex items-center gap-1"><span class="material-icons-round text-xs">schedule</span> Expires Dec 31, 2026</span>
@@ -416,10 +371,10 @@
                     <div id="details-2" class="hidden px-4 sm:px-6 py-3 bg-white border-t border-slate-100 text-xs text-slate-600 space-y-1.5">
                         <p><strong>Offer Details:</strong> Includes 6 distinct user profiles with completely private master passwords, independent biometric vaults, shared secure folders, and account recovery options. Each account supports unlimited device logins simultaneously.</p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Coupon Card 3: 40% OFF 1-Year Plan -->
-                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
                     <div class="p-4 sm:p-6 flex flex-col md:flex-row items-start md:items-center gap-4 sm:gap-6">
                         <!-- Left Hero Badge -->
                         <div class="w-full md:w-36 flex-shrink-0 flex md:flex-col items-center justify-between md:justify-center p-3 sm:p-4 bg-purple-50 border border-purple-100 rounded-xl text-purple-700 text-center">
@@ -436,11 +391,11 @@
                                 <span class="text-[11px] font-bold text-purple-700 bg-purple-50 border border-purple-200 px-2 py-0.5 rounded-md uppercase">CODE</span>
                                 <span class="text-xs text-slate-500 font-medium">$2.39/month</span>
                             </div>
-                            <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition">
+                            <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition">
                                 <a href="https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/" target="_blank" rel="nofollow noopener noreferrer" onclick="openCouponModal('nordpass-annual-40', 'ANNUAL40', 'https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/', 'NordPass Premium 1-Year Plan — Save 40% with Annual Billing ($2.39/mo)')">
                                     NordPass Premium 1-Year Plan — Save 40% with Annual Billing ($2.39/mo)
                                 </a>
-                            </h3>
+                            </h2>
                             <p class="text-xs sm:text-sm text-slate-600 line-clamp-2">
                                 Save 40% when opting for 1-year annual billing on NordPass Premium ($2.39/month). Enjoy seamless cross-device synchronization across Windows, macOS, iOS, Android, and Linux.
                             </p>
@@ -453,8 +408,8 @@
 
                         <!-- Right Action Box -->
                         <div class="w-full md:w-auto flex-shrink-0 flex flex-col items-center md:items-end gap-2">
-                            <button onclick="openCouponModal('nordpass-annual-40', 'ANNUAL40', 'https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/', 'NordPass Premium 1-Year Plan — Save 40% with Annual Billing ($2.39/mo)')" class="w-full sm:w-44 h-12 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white font-bold rounded-xl flex items-center justify-between px-4 transition shadow-sm group">
-                                <span class="coupon-mask text-xs">••••••••</span>
+                            <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="openCouponModal('nordpass-annual-40', 'ANNUAL40', 'https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/', 'NordPass Premium 1-Year Plan — Save 40% with Annual Billing ($2.39/mo)')" class="w-full sm:w-44 h-12 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white font-bold rounded-xl flex items-center justify-between px-4 transition shadow-sm group">
+                                
                                 <span class="text-xs uppercase tracking-wider font-extrabold bg-white/20 px-2.5 py-1 rounded-md group-hover:bg-white/30 transition">Show Code</span>
                             </button>
                             <span class="text-[11px] text-slate-600 font-semibold flex items-center gap-1"><span class="material-icons-round text-xs">schedule</span> Expires Dec 31, 2026</span>
@@ -470,10 +425,10 @@
                     <div id="details-3" class="hidden px-4 sm:px-6 py-3 bg-white border-t border-slate-100 text-xs text-slate-600 space-y-1.5">
                         <p><strong>Terms:</strong> Standard 1-year annual billing rate. Includes all core security modules, automatic form filling, secure file attachments up to 3GB, and 24/7 customer support.</p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Coupon Card 4: Extra 15% Student Discount -->
-                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
                     <div class="p-4 sm:p-6 flex flex-col md:flex-row items-start md:items-center gap-4 sm:gap-6">
                         <!-- Left Hero Badge -->
                         <div class="w-full md:w-36 flex-shrink-0 flex md:flex-col items-center justify-between md:justify-center p-3 sm:p-4 bg-emerald-50 border border-emerald-100 rounded-xl text-emerald-700 text-center">
@@ -490,11 +445,11 @@
                                 <span class="text-[11px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-md uppercase">CODE</span>
                                 <span class="text-xs text-slate-500 font-medium">Ages 18–26</span>
                             </div>
-                            <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition">
+                            <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition">
                                 <a href="https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/" target="_blank" rel="nofollow noopener noreferrer" onclick="openCouponModal('nordpass-student-15', 'STUDENT15', 'https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/', 'Extra 15% OFF NordPass for Students & Youths (Ages 18–26)')">
                                     Extra 15% OFF NordPass for Students &amp; Youths (Ages 18–26)
                                 </a>
-                            </h3>
+                            </h2>
                             <p class="text-xs sm:text-sm text-slate-600 line-clamp-2">
                                 Verified university students and youths aged 18–26 receive an additional 15% off any 1-year or 2-year NordPass subscription tier via Student Beans or Youth Discount instant verification.
                             </p>
@@ -507,8 +462,8 @@
 
                         <!-- Right Action Box -->
                         <div class="w-full md:w-auto flex-shrink-0 flex flex-col items-center md:items-end gap-2">
-                            <button onclick="openCouponModal('nordpass-student-15', 'STUDENT15', 'https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/', 'Extra 15% OFF NordPass for Students & Youths (Ages 18–26)')" class="w-full sm:w-44 h-12 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white font-bold rounded-xl flex items-center justify-between px-4 transition shadow-sm group">
-                                <span class="coupon-mask text-xs">••••••••</span>
+                            <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="openCouponModal('nordpass-student-15', 'STUDENT15', 'https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/', 'Extra 15% OFF NordPass for Students & Youths (Ages 18–26)')" class="w-full sm:w-44 h-12 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white font-bold rounded-xl flex items-center justify-between px-4 transition shadow-sm group">
+                                
                                 <span class="text-xs uppercase tracking-wider font-extrabold bg-white/20 px-2.5 py-1 rounded-md group-hover:bg-white/30 transition">Show Code</span>
                             </button>
                             <span class="text-[11px] text-slate-600 font-semibold flex items-center gap-1"><span class="material-icons-round text-xs">schedule</span> Ongoing Academic Offer</span>
@@ -524,10 +479,10 @@
                     <div id="details-4" class="hidden px-4 sm:px-6 py-3 bg-white border-t border-slate-100 text-xs text-slate-600 space-y-1.5">
                         <p><strong>Verification Process:</strong> Verify active academic enrollment via official university email or Youth Discount portal. Code applies on top of existing multi-year discounts.</p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Coupon Card 5: Up to 30% OFF Business & Teams -->
-                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
                     <div class="p-4 sm:p-6 flex flex-col md:flex-row items-start md:items-center gap-4 sm:gap-6">
                         <!-- Left Hero Badge -->
                         <div class="w-full md:w-36 flex-shrink-0 flex md:flex-col items-center justify-between md:justify-center p-3 sm:p-4 bg-purple-50 border border-purple-100 rounded-xl text-purple-700 text-center">
@@ -544,11 +499,11 @@
                                 <span class="text-[11px] font-bold text-purple-700 bg-purple-50 border border-purple-200 px-2 py-0.5 rounded-md uppercase">CODE</span>
                                 <span class="text-xs text-slate-500 font-medium">From $3.59/user/mo</span>
                             </div>
-                            <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition">
+                            <h2 class="text-base sm:text-lg font-bold text-slate-900 hover:text-purple-600 transition">
                                 <a href="https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/" target="_blank" rel="nofollow noopener noreferrer" onclick="openCouponModal('nordpass-business-30', 'BIZ30', 'https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/', 'NordPass Business & Teams — Up to 30% OFF Organization Cybersecurity ($3.59/user/mo)')">
                                     NordPass Business &amp; Teams — Up to 30% OFF Organization Cybersecurity ($3.59/user/mo)
                                 </a>
-                            </h3>
+                            </h2>
                             <p class="text-xs sm:text-sm text-slate-600 line-clamp-2">
                                 Empower your organization with enterprise password security starting at $3.59 per user per month. Includes Admin Panel, SSO integration with Okta and Azure AD, and company-wide password health metrics.
                             </p>
@@ -561,8 +516,8 @@
 
                         <!-- Right Action Box -->
                         <div class="w-full md:w-auto flex-shrink-0 flex flex-col items-center md:items-end gap-2">
-                            <button onclick="openCouponModal('nordpass-business-30', 'BIZ30', 'https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/', 'NordPass Business & Teams — Up to 30% OFF Organization Cybersecurity ($3.59/user/mo)')" class="w-full sm:w-44 h-12 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white font-bold rounded-xl flex items-center justify-between px-4 transition shadow-sm group">
-                                <span class="coupon-mask text-xs">••••••••</span>
+                            <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button onclick="openCouponModal('nordpass-business-30', 'BIZ30', 'https://rkdro.com/g/mx19yq7dtcb68b264a76410fff306a/', 'NordPass Business & Teams — Up to 30% OFF Organization Cybersecurity ($3.59/user/mo)')" class="w-full sm:w-44 h-12 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white font-bold rounded-xl flex items-center justify-between px-4 transition shadow-sm group">
+                                
                                 <span class="text-xs uppercase tracking-wider font-extrabold bg-white/20 px-2.5 py-1 rounded-md group-hover:bg-white/30 transition">Show Code</span>
                             </button>
                             <span class="text-[11px] text-slate-600 font-semibold flex items-center gap-1"><span class="material-icons-round text-xs">schedule</span> Enterprise Special</span>
@@ -578,7 +533,7 @@
                     <div id="details-5" class="hidden px-4 sm:px-6 py-3 bg-white border-t border-slate-100 text-xs text-slate-600 space-y-1.5">
                         <p><strong>Business Benefits:</strong> Features SAML Single Sign-On (SSO) with Microsoft Entra ID, Google Workspace, and Okta. SCIM automated user provisioning, SIEM integration (Splunk, Datadog), and password policy enforcement.</p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Coupon Card 6: 100% Free Forever Edition & Trial -->
                 <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
@@ -966,21 +921,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-slate-200 mt-12 py-10 text-xs text-slate-500">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div class="flex items-center gap-3">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="h-6 w-6" width="24" height="24" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
-                <span class="font-bold text-slate-700">PlayNewApps</span>
-                <span>&copy; 2026 PlayNewApps. All rights reserved.</span>
-            </div>
-            <div class="flex items-center gap-6">
-                <a href="/privacy" class="hover:text-slate-900 transition">Privacy Policy</a>
-                <a href="/terms" class="hover:text-slate-900 transition">Terms of Service</a>
-                <a href="/affiliate" class="hover:text-slate-900 transition">Affiliate Disclosure</a>
-                <a href="/contact" class="hover:text-slate-900 transition">Contact</a>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- Interactive Coupon Modal Popup -->
     <div id="coupon-modal" class="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-xs flex items-center justify-center p-4 hidden">

@@ -175,51 +175,13 @@
 <body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
 
     <!-- Header / Navbar -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Logo -->
-                <a href="/" class="flex items-center gap-3 group">
-                    <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto">
-                    <span class="font-extrabold text-xl text-slate-900 group-hover:text-pink-600 transition-colors">PlayNewApps</span>
-                </a>
-
-                <!-- Navigation -->
-                <nav class="hidden md:flex items-center gap-6">
-                    <div class="relative group">
-                        <a href="/stores" class="font-bold text-sm text-slate-700 hover:text-pink-600 flex items-center gap-1 transition-colors">
-                            <span>Stores</span>
-                            <span class="material-icons-round text-base">expand_more</span>
-                        </a>
-                    </div>
-                    <a href="/#featured" class="font-semibold text-sm text-slate-600 hover:text-pink-600 transition-colors">Featured</a>
-                    <a href="/reviews" class="font-semibold text-sm text-slate-600 hover:text-pink-600 transition-colors">Reviews</a>
-                    <a href="/coupon" class="font-semibold text-sm text-slate-600 hover:text-pink-600 transition-colors">Deals</a>
-                    <a href="/#faq" class="font-semibold text-sm text-slate-600 hover:text-pink-600 transition-colors">FAQ</a>
-                </nav>
-
-                <!-- Action Button -->
-                <div class="flex items-center gap-3">
-                    <a href="https://axavl.com/g/p5q0qhi27eb68b264a76d7a7e9fcda/" target="_blank" rel="noopener noreferrer nofollow" class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-pink-600 hover:bg-pink-700 text-white font-bold text-xs shadow-xs transition-colors cursor-pointer">
-                        <span class="material-icons-round text-sm">shopping_bag</span>
-                        <span>Shop Official WAU</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <!-- Main Container -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full">
         
         <!-- Breadcrumb -->
-        <nav class="flex items-center gap-2 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-slate-800">Home</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <a href="/stores" class="hover:text-slate-800">Stores</a>
-            <span class="material-icons-round text-xs">chevron_right</span>
-            <span class="text-slate-900 font-semibold">WAU</span>
-        </nav>
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">WAU</span> </nav>
 
         <!-- Compact WAU Store Header -->
         <div class="bg-white rounded-xl border border-slate-200 p-3.5 sm:p-4 shadow-xs mb-5">
@@ -233,7 +195,7 @@
                 <!-- Store Title & Summary -->
                 <div class="min-w-0">
                     <div class="flex items-center gap-2 flex-wrap">
-                        <h1 class="text-base sm:text-xl font-black text-slate-900 tracking-tight">WAU Beauty Tech</h1>
+                        <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">WAU Beauty Tech</h1> </div> </section>
                         <span class="px-2 py-0.5 rounded text-[10px] sm:text-xs font-extrabold bg-pink-100 text-pink-900">Up to 30% OFF</span>
                         <span class="px-2 py-0.5 rounded text-[10px] sm:text-xs font-bold bg-amber-100 text-amber-900 hidden sm:inline-block">★ 4.9 (18.4k Reviews)</span>
                     </div>
@@ -263,7 +225,7 @@
                     <div class="space-y-3.5">
 
                         <!-- COUPON 1: 15% OFF ANY WAU ORDER (SHOW CODE MODAL REVEAL) -->
-                        <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-xs border-l-4 border-l-pink-600">
+                        <article class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-xs border-l-4 border-l-pink-600">
                             <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
                                 <div class="flex items-start gap-3 sm:gap-4 min-w-0">
                                     <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-pink-600 border border-pink-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-xs">
@@ -277,12 +239,12 @@
                                             <span class="text-[11px] text-slate-400 font-medium">Sitewide Savings</span>
                                         </div>
                                         <!-- ONLY Title is visible initially -->
-                                        <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">15% Off Any WAU Order</h3>
+                                        <h2 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug"><a href="https://axavl.com/g/p5q0qhi27eb68b264a76d7a7e9fcda/" target="_blank" rel="nofollow noopener sponsored">15% Off Any WAU Order</a></h2>
                                         <p class="text-xs text-slate-500 mt-1 italic">Click Show Code to reveal your exclusive verified coupon and unlock instant savings.</p>
                                     </div>
                                 </div>
                                 <div id="code-box-1" class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
-                                    <button type="button" onclick="handleShowCode('WAU15', 'https://axavl.com/g/p5q0qhi27eb68b264a76d7a7e9fcda/', 'code-box-1', '15% Off Any WAU Order', 'Save an instant 15% on any WAU beauty devices, LED phototherapy masks, hair care stylers, and cosmetics with code WAU15.')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-xs cursor-pointer">
+                                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="handleShowCode('WAU15', 'https://axavl.com/g/p5q0qhi27eb68b264a76d7a7e9fcda/', 'code-box-1', '15% Off Any WAU Order', 'Save an instant 15% on any WAU beauty devices, LED phototherapy masks, hair care stylers, and cosmetics with code WAU15.')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-xs cursor-pointer">
                                         <span class="material-icons-round text-sm">content_copy</span>
                                         <span>SHOW CODE</span>
                                         <span class="bg-pink-800 text-pink-100 text-[10px] px-1.5 py-0.5 rounded font-mono font-bold tracking-wider">••••15</span>
@@ -307,10 +269,10 @@
                                     <li>Includes official 1-year manufacturer hardware warranty and customer support.</li>
                                 </ul>
                             </div>
-                        </div>
+                        </article>
 
                         <!-- COUPON 2: 10% OFF FIRST DEVICE PURCHASE (SHOW CODE MODAL REVEAL) -->
-                        <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-xs border-l-4 border-l-purple-600">
+                        <article class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-xs border-l-4 border-l-purple-600">
                             <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
                                 <div class="flex items-start gap-3 sm:gap-4 min-w-0">
                                     <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-purple-600 border border-purple-700 flex flex-col items-center justify-center text-center shrink-0 text-white shadow-xs">
@@ -323,12 +285,12 @@
                                             <span class="px-2 py-0.5 text-[10px] font-bold rounded bg-emerald-100 text-emerald-800">VERIFIED CODE</span>
                                             <span class="text-[11px] text-slate-400 font-medium">Beauty Hardware</span>
                                         </div>
-                                        <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">10% Off First Device Purchase</h3>
+                                        <h2 class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug"><a href="https://axavl.com/g/p5q0qhi27eb68b264a76d7a7e9fcda/" target="_blank" rel="nofollow noopener sponsored">10% Off First Device Purchase</a></h2>
                                         <p class="text-xs text-slate-500 mt-1 italic">Click Show Code to reveal your welcome coupon code for your initial device purchase.</p>
                                     </div>
                                 </div>
                                 <div id="code-box-2" class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-1.5">
-                                    <button type="button" onclick="handleShowCode('WAU10', 'https://axavl.com/g/p5q0qhi27eb68b264a76d7a7e9fcda/', 'code-box-2', '10% Off First Device Purchase', 'Get an extra 10% off your initial WAU smart beauty device purchase with code WAU10.')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-xs cursor-pointer">
+                                    <span class="border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••••••</span> <button type="button" onclick="handleShowCode('WAU10', 'https://axavl.com/g/p5q0qhi27eb68b264a76d7a7e9fcda/', 'code-box-2', '10% Off First Device Purchase', 'Get an extra 10% off your initial WAU smart beauty device purchase with code WAU10.')" class="w-full sm:w-auto px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-extrabold text-xs rounded-lg transition-all flex items-center justify-center gap-2 shadow-xs cursor-pointer">
                                         <span class="material-icons-round text-sm">content_copy</span>
                                         <span>SHOW CODE</span>
                                         <span class="bg-purple-800 text-purple-100 text-[10px] px-1.5 py-0.5 rounded font-mono font-bold tracking-wider">••••10</span>
@@ -350,7 +312,7 @@
                                     <li>Applicable to LED masks, ultrasonic scrubbers, and sonic facial devices.</li>
                                 </ul>
                             </div>
-                        </div>
+                        </article>
 
                         <!-- DEAL 3: UP TO 30% OFF ACTIVE MAN & WELLNESS BUNDLES -->
                         <div class="deal-card bg-white rounded-xl p-4 sm:p-5 shadow-xs border-l-4 border-l-emerald-600">
@@ -998,19 +960,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-slate-200 py-10 px-4 sm:px-6 lg:px-8 mt-12">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-            <div class="flex items-center gap-2">
-                <span class="font-bold text-slate-900">PlayNewApps</span>
-                <span>© 2026. All rights reserved.</span>
-            </div>
-            <div class="flex items-center gap-6">
-                <a href="/privacy" class="hover:text-pink-700 transition-colors">Privacy Policy</a>
-                <a href="/terms" class="hover:text-pink-700 transition-colors">Terms of Service</a>
-                <a href="/contact" class="hover:text-pink-700 transition-colors">Contact Us</a>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <!-- Interactive JavaScript -->
     <script>

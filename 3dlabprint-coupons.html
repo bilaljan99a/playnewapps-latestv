@@ -37,6 +37,7 @@
 
     <!-- CSS -->
     <link rel="preload" as="style" href="/assets/css/style.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/assets/css/style.min.css">
 
     <!-- Mobile Responsiveness Fix for Grid & Cards -->
@@ -157,74 +158,29 @@
     </noscript>
 
     <!-- HEADER NAVIGATION -->
-    <header class="header" id="header">
-        <div class="container header-container">
-            <a href="/" class="logo" aria-label="PlayNewApps Home">
-                <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
-                <span>PlayNewApps</span>
-            </a>
-
-                        <nav class="nav" id="nav" aria-label="Main Navigation">
-                <ul class="nav-list">
-                    <li><a href="/" class="nav-link">Home</a></li>
-                    <li class="nav-item dropdown" id="stores-dropdown-wrapper">
-                        <a href="/stores" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-                            Stores <span class="material-icons-round dropdown-icon" aria-hidden="true">expand_more</span>
-                        </a>
-                        <div class="dropdown-menu" id="stores-dropdown-menu" aria-label="Stores Menu">
-                            <div class="dropdown-loading">Loading stores...</div>
-                        </div>
-                    </li>
-                    <li><a href="/products" class="nav-link">Products</a></li>
-                    <li><a href="/coupon" class="nav-link">Coupons</a></li>
-                    <li><a href="/reviews" class="nav-link">Reviews</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-actions">
-                <a href="/#search-form" class="icon-btn" aria-label="Search">
-                    <span class="material-icons-round" aria-hidden="true">search</span>
-                </a>
-                <a href="https://tjzuh.com/g/1oeih3zju8b68b264a76cd7db14f77/" target="_blank" rel="nofollow sponsored noopener" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
-                    <span>Shop at 3DLabPrint</span>
-                    <span class="material-icons-round" style="font-size: 1rem;">open_in_new</span>
-                </a>
-            
-            </div>
-        </div>
-    </header>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="flex items-center gap-3 group"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-9 w-auto"> <span class="font-extrabold text-xl text-slate-900 group-hover:text-indigo-600 transition-colors">PlayNewApps</span> </a> <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700"> <a href="/" class="hover:text-indigo-600 transition-colors">Home</a> <a href="/stores" class="text-indigo-600 font-bold transition-colors">Stores</a> <a href="/reviews" class="hover:text-indigo-600 transition-colors">Reviews</a> <a href="/coupon" class="hover:text-indigo-600 transition-colors">Deals</a> <a href="/blog" class="hover:text-indigo-600 transition-colors">Guides</a> </nav> <div class="flex items-center gap-3"> <a href="/#search-form" class="text-slate-500 hover:text-indigo-600 transition-colors" aria-label="Search"><span class="material-icons-round">search</span></a> <a href="/stores" class="text-xs sm:text-sm font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-3.5 py-2 rounded-lg transition-colors">All Stores</a> </div> </div> </div> </header>
 
     <main class="main-content" id="main-content">
         <!-- BREADCRUMB -->
         <div class="container" style="padding-top: 1.25rem;">
-            <nav aria-label="Breadcrumb">
-                <ol class="breadcrumb" style="display: flex; gap: 0.5rem; align-items: center; list-style: none; padding: 0; margin: 0; font-size: 0.875rem; color: var(--text-secondary);">
-                    <li><a href="/" style="color: var(--text-secondary); text-decoration: none;">Home</a></li>
-                    <li><span class="material-icons-round" style="font-size: 1rem; vertical-align: middle;">chevron_right</span></li>
-                    <li><a href="/stores" style="color: var(--text-secondary); text-decoration: none;">Stores</a></li>
-                    <li><span class="material-icons-round" style="font-size: 1rem; vertical-align: middle;">chevron_right</span></li>
-                    <li style="color: var(--primary-color); font-weight: 600;">3DLabPrint</li>
-                </ol>
-            </nav>
+            <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6" aria-label="Breadcrumb"> <a href="/" class="hover:text-slate-800">Home</a> <span class="material-icons-round text-xs">chevron_right</span> <a href="/stores" class="hover:text-slate-800">Stores</a> <span class="material-icons-round text-xs">chevron_right</span> <span class="text-slate-900 font-bold">3DLabPrint</span> </nav>
         </div>
 
         <!-- CLEAN MINIMAL STORE HEADER - OFFICIAL BRAND LOGO -->
-        <section class="store-header container reveal" style="margin-top: 1rem; margin-bottom: 2rem;">
-            <div class="store-header-content" style="display: flex; align-items: center; gap: 1.5rem;">
+        <section class="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-6"> <div class="w-40 sm:w-52 h-16 sm:h-20 bg-white rounded-xl p-3 flex items-center justify-center border border-slate-200 flex-shrink-0 shadow-sm"> <img src="/assets/images/brands/3dlabprint.svg" alt="Official 3DLabPrint Logo" class="max-h-full max-w-full object-contain"> </div> <div class="text-center sm:text-left flex-1"> <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+                        3DLabPrint Coupons, Promo Codes &amp; RC Aircraft Deals
+                    </h1> </div> </section> <div class="store-header-content" style="display: flex; align-items: center; gap: 1.5rem;">
                 <div style="width: 140px; height: 110px; border-radius: 14px; background: #FFFFFF; border: 1px solid var(--border-color); padding: 0.5rem; display: flex; align-items: center; justify-content: center; shrink-0: 0; box-shadow: var(--shadow-sm);">
-                    <img src="/assets/images/brands/3dlabprint.svg" alt="Official 3DLabPrint Logo" style="width: 100%; height: 100%; object-fit: contain;">
+                    
                 </div>
                 <div>
                     <div style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.25rem 0.75rem; background: rgba(37,99,235,0.08); border: 1px solid rgba(37,99,235,0.2); color: var(--primary-color); border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem;">
                         <span class="material-icons-round" style="font-size: 0.9rem;">verified</span>
                         <span>Verified Official 3DLabPrint Partner</span>
                     </div>
-                    <h1 class="hero-title" style="font-size: 1.85rem; font-weight: 900; margin: 0; color: var(--text-primary); line-height: 1.25;">
-                        3DLabPrint Coupons, Promo Codes &amp; RC Aircraft Deals
-                    </h1>
+                    
                 </div>
             </div>
-        </section>
 
         <!-- STORE LAYOUT RESPONSIVE CONTAINER -->
         <div class="container store-page-grid reveal">
@@ -246,16 +202,16 @@
                                         <span class="discount-hero">31% OFF</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="#" target="_blank" rel="noopener sponsored">Hawker Tempest Mk II Value Pack — Up to 31% OFF</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         </div>
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="NO CODE NEEDED" data-link="#">
-                                        <span class="hidden-code-mask">••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -289,16 +245,16 @@
                                         <span class="discount-hero">RC WARBIRD</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="#" target="_blank" rel="noopener sponsored">Hawker Tempest Mk II 3D Printable RC Aircraft STL</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         </div>
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="NO CODE NEEDED" data-link="#">
-                                        <span class="hidden-code-mask">••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -332,16 +288,16 @@
                                         <span class="discount-hero">EDF JET MODEL</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="#" target="_blank" rel="noopener sponsored">A-7 Corsair II Jet 3D Printable RC Model STL</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         </div>
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="NO CODE NEEDED" data-link="#">
-                                        <span class="hidden-code-mask">••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -375,16 +331,16 @@
                                         <span class="discount-hero">ROCKET PLANE</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="#" target="_blank" rel="noopener sponsored">Me 163B Komet Rocket Plane STL Files</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         </div>
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="NO CODE NEEDED" data-link="#">
-                                        <span class="hidden-code-mask">••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -418,16 +374,16 @@
                                         <span class="discount-hero">SHOP ALL MODELS</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="#" target="_blank" rel="noopener sponsored">3DLabPrint Shop Directory — All Printable RC Models</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         </div>
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="NO CODE NEEDED" data-link="#">
-                                        <span class="hidden-code-mask">••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -461,16 +417,16 @@
                                         <span class="discount-hero">UP TO 31% OFF</span>
                                     </div>
                                     <div class="coupon-info-box">
-                                        <h3 class="coupon-title">
+                                        <h2 class="coupon-title">
                                             <a href="#" target="_blank" rel="noopener sponsored">Up to 31% OFF 3DLabPrint RC Planes & Value Packs</a>
-                                        </h3>
+                                        </h2>
                                         <div class="coupon-social-proof">
                                             <span class="success-rate"><span class="material-icons-round" aria-hidden="true">thumb_up</span> 99% Success</span>
                                         </div>
                                     </div>
                                     <div class="coupon-action-box">
                                         <div class="code-reveal-wrapper" data-code="NO CODE NEEDED" data-link="#">
-                                        <span class="hidden-code-mask">••••</span>
+                                        <span class="hidden-code-mask border-2 border-dashed border-indigo-200 bg-indigo-50/50 text-indigo-950 font-mono font-bold px-4 py-3 rounded-xl text-sm select-all tracking-wider text-center w-full sm:w-auto">••••</span>
                                         <button class="btn show-code-btn pna-show-code" aria-label="Show Coupon Code and Copy">Show Code</button>
                                     </div>
                                     </div>
@@ -900,40 +856,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer reveal">
-        <div class="container footer-grid">
-            <div class="footer-col brand-col">
-                <a href="/" class="logo footer-logo" aria-label="PlayNewApps Home">
-                    <img src="/assets/images/logo.svg" alt="PlayNewApps Logo" class="logo-img" width="32" height="32" onerror="this.onerror=null;this.src='/assets/images/logo.png'">
-                    <span>PlayNewApps</span>
-                </a>
-                <p class="footer-desc">Your trusted source for premium app reviews, tech guides, software deals, and exclusive coupons worldwide.</p>
-            </div>
-            
-            <nav class="footer-col" aria-label="Categories">
-                <h3 class="footer-heading">Categories</h3>
-                <ul class="footer-links">
-                    <li><a href="/category?id=android">Android Apps</a></li>
-                    <li><a href="/category?id=ios">iOS Apps</a></li>
-                    <li><a href="/category?id=pc">PC Software</a></li>
-                    <li><a href="/category?id=games">Games</a></li>
-                </ul>
-            </nav>
-
-            <nav class="footer-col" aria-label="Quick Links">
-                <h3 class="footer-heading">Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="/about">About Us</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/privacy">Privacy Policy</a></li>
-                    <li><a href="/affiliate">Affiliate Disclosure</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="container footer-bottom">
-            <p>&copy; 2026 PlayNewApps. All rights reserved.</p>
-        </div>
-    </footer>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-sm"> <div class="flex items-center gap-3"> <img src="./assets/images/logo.svg" alt="PlayNewApps Logo" class="h-8 w-auto brightness-200"> <span class="font-bold text-white text-lg">PlayNewApps</span> </div> <div class="flex flex-wrap items-center gap-6"> <a href="/stores" class="hover:text-white transition-colors">All Stores</a> <a href="/reviews" class="hover:text-white transition-colors">Software Reviews</a> <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> <a href="/contact" class="hover:text-white transition-colors">Contact Us</a> </div> </div> <p class="text-xs text-slate-500 text-center pt-8">&copy; 2026 PlayNewApps. All rights reserved. Verified discounts, reviews, and editorial shopping guides.</p> </div> </footer>
 
     <script src="/assets/js/data-service.min.js" defer></script>
     <script src="/assets/js/components.min.js" defer></script>
