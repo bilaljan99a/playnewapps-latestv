@@ -1,22 +1,22 @@
 /* PlayNewApps standard coupon reveal — ONE behavior on every coupon page.
  *
- * User rule (refined 2026-11-03): one click on "Show Code" must (1) copy the
- * code, (2) SHOW the code on the SAME tab — revealed inline in the card AND
- * in one standard modal — and (3) keep the user on the tab so they can copy
- * it. The affiliate link opens in a NEW tab only when the user clicks
- * "Continue to store" in the modal. Rationale: browsers always switch focus
- * to an auto-opened tab, so auto-open meant the user never saw the code.
+ * RetailMeNot-exact flow (adapted 2026-11-03, supersedes the modal-only
+ * refined flow): one click on "Show Code" does TWO things at once —
+ *   (1) the CURRENT tab navigates to the affiliate URL, and
+ *   (2) a NEW tab opens on the same coupon page with ?pna_code=<code>,
+ *       and browser focus switches to that new tab, where a modal shows
+ *       the code (COPY button copies it; the card behind shows the code
+ *       revealed inline). No auto-copy on the first click — copying happens
+ *       only via the modal's COPY button, exactly like RetailMeNot.
+ * Closing the modal drops ?pna_code from the URL, so a fresh load shows
+ * all cards masked again (session-tied state, like RetailMeNot).
+ * Clicking an already-revealed control re-opens the modal only.
  *
- * How it works: a capture-phase document listener intercepts every "Show Code"
- * click before any page handler runs (inline onclick, modal openers, delayed
- * openers). It extracts code + affiliate URL from the control, copies the
- * code, reveals it inline, and shows one standard modal with the code. If
- * extraction fails, the click is left alone so the page's own behavior still
- * runs — never break a working button. Clicking an already-revealed button
- * re-opens the modal.
- *
- * The parser below (between PARSER-START / PARSER-END) is pure string logic
- * and is unit-tested in Node against every real onclick on the site.
+ * The script tag lives in <head> (not before </body>) so the capture
+ * listener is attached before any card button can be clicked — this kills
+ * the load race where an instant click ran the page's own handler.
+ * The parser below (between PARSER-START / PARSER-END) is pure string
+ * logic and is unit-tested in Node against every real onclick on the site.
  */
 
 /* PARSER-START */
@@ -92,6 +92,19 @@ function pnaParseReveal(onclick) {
     pnaFallbackCopy(text);
   }
 
+  function pnaCloseModal() {
+    var modal = document.getElementById('pna-reveal-modal');
+    if (modal) modal.className = 'pna-modal-hidden';
+    // RetailMeNot drops its modal param on close; do the same.
+    try {
+      var u = new URL(window.location.href);
+      if (u.searchParams.has('pna_code')) {
+        u.searchParams.delete('pna_code');
+        window.history.replaceState(null, '', u.toString());
+      }
+    } catch (e) {}
+  }
+
   function pnaEnsureModal() {
     var modal = document.getElementById('pna-reveal-modal');
     if (modal) return modal;
@@ -103,32 +116,40 @@ function pnaParseReveal(onclick) {
         '<div class="pna-modal-card" role="dialog" aria-label="Your coupon code">' +
           '<button type="button" class="pna-modal-close" aria-label="Close">&times;</button>' +
           '<div class="pna-modal-title">Your coupon code</div>' +
+          '<div id="pna-modal-deal" style="font-weight:700;margin:6px 0 10px;"></div>' +
           '<div class="pna-modal-code" id="pna-modal-code"></div>' +
-          '<div class="pna-modal-note">Copied to clipboard — paste it at checkout.</div>' +
+          '<div class="pna-modal-note">Copy and paste this code at checkout.</div>' +
           '<div class="pna-modal-actions">' +
+            '<button type="button" id="pna-modal-copy">COPY</button>' +
             '<a id="pna-modal-continue" target="_blank" rel="noopener noreferrer nofollow">Continue to store</a>' +
-            '<button type="button" id="pna-modal-copy">Copy again</button>' +
           '</div>' +
         '</div>' +
       '</div>';
     document.body.appendChild(modal);
-    modal.querySelector('.pna-modal-close').addEventListener('click', function () {
-      modal.className = 'pna-modal-hidden';
-    });
+    modal.querySelector('.pna-modal-close').addEventListener('click', pnaCloseModal);
     modal.querySelector('.pna-modal-overlay').addEventListener('click', function (e) {
-      if (e.target === this) modal.className = 'pna-modal-hidden';
+      if (e.target === this) pnaCloseModal();
     });
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') modal.className = 'pna-modal-hidden';
+      if (e.key === 'Escape') pnaCloseModal();
     });
     modal.querySelector('#pna-modal-copy').addEventListener('click', function () {
       var code = document.getElementById('pna-modal-code').textContent;
       pnaCopy(code);
-      this.textContent = 'Copied!';
-      var btn = this;
-      setTimeout(function () { btn.textContent = 'Copy again'; }, 2000);
+      this.textContent = 'COPIED';
     });
     return modal;
+  }
+
+  function pnaShowModal(data, dealTitle) {
+    var modal = pnaEnsureModal();
+    document.getElementById('pna-modal-code').textContent = data.code;
+    var deal = document.getElementById('pna-modal-deal');
+    if (deal) deal.textContent = dealTitle || '';
+    document.getElementById('pna-modal-continue').href = data.url;
+    var copyBtn = document.getElementById('pna-modal-copy');
+    copyBtn.textContent = 'COPY';
+    modal.className = '';
   }
 
   function pnaExtract(el) {
@@ -144,26 +165,19 @@ function pnaParseReveal(onclick) {
     return null;
   }
 
-  function pnaMarkButton(btn, code) {
-    // Reveal the masked code inline wherever it lives, and mark the button.
-    // Only runs AFTER an explicit Show Code click (codes stay masked before).
-    var mask = null;
-    var label = null;
+  // Reveal the masked code inline. No label changes here: nothing is
+  // copied yet, so no 'Copied!' state is ever shown before a COPY click.
+  function pnaRevealInline(btn, code) {
     var spans = btn.querySelectorAll ? btn.querySelectorAll('span') : [];
     for (var i = 0; i < spans.length; i++) {
       var st = spans[i].textContent || '';
-      if (/•{3,}/.test(st)) mask = spans[i];
-      else if (/show code/i.test(st)) label = spans[i];
-    }
-    if (mask) {
-      mask.textContent = code;
-      mask.style.color = '#047857';
-      mask.style.fontWeight = '800';
-    }
-    if (label) {
-      label.textContent = 'Copied!';
-    } else if (!mask && btn.tagName === 'BUTTON') {
-      try { btn.textContent = 'Copied!'; } catch (err) {}
+      if (/•{3,}/.test(st)) {
+        spans[i].textContent = code;
+        // Mask sits INSIDE the purple button: white text, not green — dark
+        // green on purple is unreadable (user-reported 2026-11-03).
+        spans[i].style.color = '#FFFFFF';
+        spans[i].style.fontWeight = '800';
+      }
     }
     // Sibling mask (standard template: <span>••••</span> before the button).
     var prev = btn.previousElementSibling;
@@ -184,6 +198,45 @@ function pnaParseReveal(onclick) {
     }
   }
 
+  // New-tab load path: the button area itself becomes the code pill,
+  // exactly like RetailMeNot's revealed card.
+  function pnaRevealCardForLoad(el, code) {
+    var spans = el.querySelectorAll ? el.querySelectorAll('span') : [];
+    var inBtn = false;
+    for (var i = 0; i < spans.length; i++) {
+      if (/•{3,}/.test(spans[i].textContent || '')) { inBtn = true; break; }
+    }
+    if (inBtn && el.tagName === 'BUTTON') {
+      try { el.textContent = code; } catch (e) {}
+      el.style.color = '#FFFFFF';
+      el.style.fontWeight = '800';
+      return;
+    }
+    pnaRevealInline(el, code);
+  }
+
+  function pnaCardTitle(el) {
+    try {
+      var card = el.closest ? el.closest('article') : null;
+      var h = card && (card.querySelector('h2 a') || card.querySelector('h2'));
+      if (h && h.textContent) return h.textContent.replace(/\s+/g, ' ').trim();
+    } catch (e) {}
+    return '';
+  }
+
+  function pnaModalUrl(code) {
+    try {
+      var u = new URL(window.location.href);
+      u.searchParams.delete('pna_code');
+      u.searchParams.set('pna_code', code);
+      u.hash = '';
+      return u.toString();
+    } catch (e) {
+      var base = window.location.href.split('#')[0].split('?')[0];
+      return base + '?pna_code=' + encodeURIComponent(code);
+    }
+  }
+
   document.addEventListener('click', function (e) {
     var target = e.target;
     if (!target || !target.closest) return;
@@ -194,8 +247,10 @@ function pnaParseReveal(onclick) {
     var doneCode = el.getAttribute && el.getAttribute('data-pna-code');
     var doneUrl = el.getAttribute && el.getAttribute('data-pna-url');
     var data = null;
+    var repeat = false;
     if (doneCode && doneUrl) {
       data = { code: doneCode, url: doneUrl };
+      repeat = true;
     } else {
       var text = (el.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase();
       if (text.indexOf('show code') === -1) return;
@@ -204,17 +259,60 @@ function pnaParseReveal(onclick) {
     if (!data || !data.code || !data.url) return; // leave unknown buttons alone
     e.preventDefault();
     e.stopPropagation();
-    pnaCopy(data.code);
     if (el.tagName === 'BUTTON') {
       try {
         el.setAttribute('data-pna-code', data.code);
         el.setAttribute('data-pna-url', data.url);
       } catch (err) {}
-      pnaMarkButton(el, data.code);
     }
-    var modal = pnaEnsureModal();
-    document.getElementById('pna-modal-code').textContent = data.code;
-    document.getElementById('pna-modal-continue').href = data.url;
-    modal.className = '';
+    if (repeat) {
+      // Already-revealed control: modal only, no navigation, no new tab.
+      pnaShowModal(data, pnaCardTitle(el));
+      return;
+    }
+    // RetailMeNot-exact: reveal inline as a fallback, open the modal tab,
+    // then navigate this tab to the affiliate URL. No auto-copy.
+    pnaRevealInline(el, data.code);
+    try { window.open(pnaModalUrl(data.code), '_blank', 'noopener,noreferrer'); } catch (err) {}
+    window.location.href = data.url;
   }, true);
+
+  function pnaHandleLoadParam() {
+    var code = null;
+    try { code = new URL(window.location.href).searchParams.get('pna_code'); } catch (e) {}
+    if (!code) return;
+    var els = document.querySelectorAll('button, a');
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
+      if (el.closest && el.closest('#pna-reveal-modal')) continue;
+      var data = null;
+      var oc = el.getAttribute && el.getAttribute('onclick');
+      if (oc) {
+        var parsed = pnaParseReveal(oc);
+        if (parsed && parsed.code === code) data = parsed;
+      }
+      if (!data) {
+        var wrapper = el.closest ? el.closest('.code-reveal-wrapper') : null;
+        var wcode = (wrapper && wrapper.getAttribute('data-code')) || el.getAttribute('data-code');
+        var wlink = (wrapper && wrapper.getAttribute('data-link')) || el.getAttribute('data-link');
+        if (wcode === code && wlink) data = { code: wcode, url: wlink };
+      }
+      if (!data) continue;
+      if (el.tagName === 'BUTTON') {
+        try {
+          el.setAttribute('data-pna-code', data.code);
+          el.setAttribute('data-pna-url', data.url);
+        } catch (err) {}
+      }
+      pnaRevealCardForLoad(el, code);
+      pnaShowModal(data, pnaCardTitle(el));
+      break;
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', pnaHandleLoadParam);
+  } else {
+    pnaHandleLoadParam();
+  }
 })();
